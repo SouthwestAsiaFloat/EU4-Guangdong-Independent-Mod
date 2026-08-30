@@ -499,6 +499,22 @@ def validate_tension_presentation(academies: list[dict[str, object]]) -> None:
         "zhx_thought_tension_tooltip_button",
     )
     native_value = gui.index('name = "current_harmony_value"')
+    first_native_modal_match = re.search(
+        r'name\s*=\s*"countryreligionview_convert"', gui
+    )
+    scholar_modal_match = re.search(
+        r'name\s*=\s*"invite_scholar_selection_screen"', gui
+    )
+    require(
+        first_native_modal_match is not None and scholar_modal_match is not None,
+        "native religion modal windows are missing",
+    )
+    first_native_modal = first_native_modal_match.start()
+    scholar_modal = scholar_modal_match.start()
+    require(
+        native_value < first_native_modal < scholar_modal,
+        "native religion modal-window order changed unexpectedly",
+    )
     for control in controls:
         require(
             gui.count(f'name = "{control}"') == 1,
@@ -507,6 +523,11 @@ def validate_tension_presentation(academies: list[dict[str, object]]) -> None:
         require(
             gui.index(f'name = "{control}"') > native_value,
             f"thought-tension control is not late-drawn over harmony: {control}",
+        )
+        require(
+            gui.index(f'name = "{control}"') < first_native_modal,
+            "thought-tension control must remain below native religion modal "
+            f"screens: {control}",
         )
         require(
             len(re.findall(rf"(?m)^\s*name\s*=\s*{re.escape(control)}\s*$", custom_gui))
