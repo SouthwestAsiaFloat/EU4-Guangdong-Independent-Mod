@@ -263,6 +263,7 @@ mild_winter = {
     5307 5308 5309 # B37 Tianshui user refinement
     5351 5352 5353 # GDD_B55_SHANGGU_REFINEMENT
     5365 # GDD_B59_KOREA_30_PROVINCES_SEVEN_AREAS
+    5381 5382 # GDD_B78_DAMING_REFINEMENT
 }
 
 #Example: Inland Europe & Scandinavia

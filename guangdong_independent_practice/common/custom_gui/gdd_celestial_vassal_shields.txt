@@ -3535,4 +3535,22 @@ custom_shield = {
     global_event_target = gdd_eoc_member_roster_65
     open_country = yes
 }
+
+custom_shield = {
+    name = gdd_eoc_member_shield_66
+    potential = {
+        has_global_flag = gdd_eoc_member_roster_initialised
+        has_country_flag = gdd_eoc_member_roster_page_2
+        has_saved_global_event_target = gdd_eoc_member_roster_66
+        event_target:gdd_eoc_member_roster_66 = {
+            exists = yes
+            has_country_flag = zhx_member
+            NOT = { tag = MNG }
+        }
+    }
+    trigger = { always = yes }
+    tooltip = GDD_EOC_MEMBER_SHIELD_TT
+    global_event_target = gdd_eoc_member_roster_66
+    open_country = yes
+}
 # GDD_EOC_MEMBER_BINDINGS_END

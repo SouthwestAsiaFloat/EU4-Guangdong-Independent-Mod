@@ -21,7 +21,7 @@ COUNTRY_HISTORY = MOD / "history/countries"
 SCHOOL_ORDER = ("ru", "fa", "mo", "dao", "bing", "zongheng")
 SCHOOL_COUNTS = {
     "ru": 14,
-    "fa": 6,
+    "fa": 7,
     "mo": 12,
     "dao": 9,
     "bing": 11,
@@ -120,7 +120,7 @@ def load_manifest() -> tuple[dict[str, dict[str, object]], list[str]]:
         "opening school eligibility must remain confucianism",
     )
     require(manifest.get("initial_practice") == 25, "initial practice must be 25")
-    require(manifest.get("expected_total") == 65, "manifest total must be 65")
+    require(manifest.get("expected_total") == 66, "manifest total must be 66")
 
     schools = manifest.get("schools")
     require(isinstance(schools, dict), "manifest schools must be an object")
@@ -153,8 +153,8 @@ def load_manifest() -> tuple[dict[str, dict[str, object]], list[str]]:
         require(len(tags) == len(set(tags)), f"{school} contains duplicate tags")
         all_tags.extend(tags)
 
-    require(len(all_tags) == 65, f"manifest has {len(all_tags)} tags, expected 65")
-    require(len(set(all_tags)) == 65, "a tag is assigned to more than one school")
+    require(len(all_tags) == 66, f"manifest has {len(all_tags)} tags, expected 66")
+    require(len(set(all_tags)) == 66, "a tag is assigned to more than one school")
     forbidden = FORBIDDEN_TAGS.intersection(all_tags)
     require(not forbidden, f"non-Lijiao tags entered the opening mapping: {sorted(forbidden)}")
     return schools, all_tags
@@ -195,8 +195,8 @@ def validate_event_projection(
         "each country must carry an idempotent opening marker",
     )
     whitelist = tags_in(country_limit)
-    require(len(whitelist) == 65, "event whitelist must contain 65 tags exactly once")
-    require(len(set(whitelist)) == 65, "event whitelist contains duplicate tags")
+    require(len(whitelist) == 66, "event whitelist must contain 66 tags exactly once")
+    require(len(set(whitelist)) == 66, "event whitelist contains duplicate tags")
     require(
         set(whitelist) == set(all_tags),
         "event whitelist differs from the authoritative manifest",
@@ -324,8 +324,8 @@ def main() -> None:
     validate_country_histories(all_tags)
     counts = ", ".join(f"{school}={SCHOOL_COUNTS[school]}" for school in SCHOOL_ORDER)
     print(
-        "ZHX_OPENING_SCHOOLS_VALID; total=65; "
-        f"{counts}; histories=65_confucianism; startup={EVENT_ID}"
+        "ZHX_OPENING_SCHOOLS_VALID; total=66; "
+        f"{counts}; histories=66_confucianism; startup={EVENT_ID}"
     )
 
 

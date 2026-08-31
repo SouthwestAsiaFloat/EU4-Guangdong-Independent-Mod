@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Apply the reviewed B49 eight-node Chinese trade network.
 
-The transaction derives the 382 core land-province assignments from the
+The transaction derives the 387 core land-province assignments from the
 canonical area file, preserves the B48 opening centre hierarchy, redirects
 four frontier groups to existing external nodes, and makes Hangzhou/Wuyue the
 only terminal node inside the Chinese core network.
@@ -77,7 +77,7 @@ NODE_AREAS = {
     "beijing": (
         "hebei_area", "zhong_hebei_area", "dong_hebei_area", "yandu_area",
         "shanxi_area", "hedong_area", "shangdang_area", "yanmen_area",
-        "xi_liaoning_area", "south_hebei_area",
+        "xi_liaoning_area", "south_hebei_area", "daming_area",
     ),
 }
 
@@ -100,7 +100,7 @@ EXPECTED_LAND_COUNTS = {
     "yungui": 36,
     "xian": 46,
     "zhongyuan": 39,
-    "beijing": 48,
+    "beijing": 50,
 }
 
 BASE_AREA_LAND_COUNTS = {
@@ -111,14 +111,14 @@ BASE_AREA_LAND_COUNTS = {
     "yungui": 36,
     "xian": 46,
     "zhongyuan": 39,
-    "beijing": 48,
+    "beijing": 50,
 }
 
 # "Zhaodi" means the complete localized Area, not the starting territory of
 # the Zhao country tag. Freeze its current membership so an area rewrite
 # cannot silently change this reviewed trade policy.
 ZHAODI_AREA = "south_hebei_area"
-ZHAODI_IDS = {696, 2137, 4195, 5218, 5220, 5221}
+ZHAODI_IDS = {696, 4195, 5218, 5220, 5221}
 ANNAM_IDS = {610, 613, 616, 1016, 2372, 2373, 4819, 4820, 4821}
 CORE_LAND_OVERRIDES: dict[str, set[int]] = {}
 NODE_EXTRA_MEMBERS = {"canton": ANNAM_IDS}

@@ -1,0 +1,9 @@
+# B78 Bei polity history.
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = chinese
+religion = confucianism
+primary_culture = gdd_zhongyuan
+capital = 2137
+fixed_capital = 2137

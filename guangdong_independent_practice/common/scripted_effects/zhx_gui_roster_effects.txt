@@ -1883,6 +1883,10 @@ gdd_clear_eoc_member_roster = {
         limit = { has_saved_global_event_target = gdd_eoc_member_roster_65 }
         clear_global_event_target = gdd_eoc_member_roster_65
     }
+    if = {
+        limit = { has_saved_global_event_target = gdd_eoc_member_roster_66 }
+        clear_global_event_target = gdd_eoc_member_roster_66
+    }
 }
 
 gdd_allocate_eoc_member_roster_slot = {
@@ -2146,6 +2150,10 @@ gdd_allocate_eoc_member_roster_slot = {
         limit = { NOT = { has_saved_global_event_target = gdd_eoc_member_roster_65 } }
         save_global_event_target_as = gdd_eoc_member_roster_65
     }
+    else_if = {
+        limit = { NOT = { has_saved_global_event_target = gdd_eoc_member_roster_66 } }
+        save_global_event_target_as = gdd_eoc_member_roster_66
+    }
 }
 
 gdd_build_eoc_member_roster = {
@@ -2176,6 +2184,7 @@ gdd_build_eoc_member_roster = {
     }
     set_global_flag = gdd_eoc_member_roster_initialised
 }
+
 
 # Six compact targets for the non-principal great-feudatory shields and the
 # removal test. Unlike the general member roster, these targets only contain

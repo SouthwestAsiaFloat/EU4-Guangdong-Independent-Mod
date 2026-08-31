@@ -982,6 +982,7 @@ north_china_region = {
         jianghuai_area
         wandeng_area
         rucai_area
+        daming_area # GDD_B78_DAMING_REFINEMENT
     }
 }
 

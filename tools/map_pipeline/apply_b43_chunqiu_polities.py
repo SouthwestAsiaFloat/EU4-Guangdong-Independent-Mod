@@ -83,7 +83,8 @@ TAG_PROVINCES = {
     "CAG": (5111, 5031),
     "CAI": (5054, 5349),
     "CHN": (2144, 5051),
-    "GUN": (2137, 4966),
+    "GUN": (4966, 5382),
+    "DMG": (5381, 2137),
     "CZH": (688, 5053, 5046, 1836),
     "SUI": (2175, 5350, 5009),
     "LUO": (2171, 5342),
@@ -158,6 +159,7 @@ MUTED_COUNTRY_COLORS = {
     "GON": (132, 91, 76),
     "GUI": (65, 120, 158),
     "GUN": (232, 232, 220),
+    "DMG": (91, 107, 76),
     "GUZ": (35, 37, 40),
     "GUO": (149, 126, 82),
     "GYA": (48, 76, 120),
@@ -256,7 +258,8 @@ POLITIES = {
     "CAG": {"file": "B43_Cao.txt", "history": "CAG - Cao.txt", "capital": 5111, "rank": 1, "color": MUTED_COUNTRY_COLORS["CAG"]},
     "CAI": {"file": "B43_Cai.txt", "history": "CAI - Cai.txt", "capital": 5054, "rank": 1, "color": MUTED_COUNTRY_COLORS["CAI"]},
     "CHN": {"file": "B43_Chen.txt", "history": "CHN - Chen.txt", "capital": 5051, "rank": 1, "color": MUTED_COUNTRY_COLORS["CHN"]},
-    "GUN": {"file": "B43_Guan.txt", "history": "GUN - Guan.txt", "capital": 2137, "rank": 1, "color": MUTED_COUNTRY_COLORS["GUN"]},
+    "GUN": {"file": "B43_Guan.txt", "history": "GUN - Guan.txt", "capital": 5382, "rank": 1, "color": MUTED_COUNTRY_COLORS["GUN"]},
+    "DMG": {"file": "B78_Bei.txt", "history": "DMG - Bei.txt", "capital": 2137, "rank": 1, "color": MUTED_COUNTRY_COLORS["DMG"]},
     "SUI": {"file": "B43_Sui.txt", "history": "SUI - Sui.txt", "capital": 5009, "rank": 1, "color": MUTED_COUNTRY_COLORS["SUI"]},
     "LUO": {"file": "B43_Luo.txt", "history": "LUO - Luo.txt", "capital": 2171, "rank": 1, "color": MUTED_COUNTRY_COLORS["LUO"]},
     "GON": {"file": "B43_Gong.txt", "history": "GON - Gong.txt", "capital": 687, "rank": 1, "color": MUTED_COUNTRY_COLORS["GON"]},
@@ -342,6 +345,8 @@ UNOWNED_PROVINCES = {2154}  # Kelang
 # User-confirmed core cleanup. Major and B50 eastern tags retain cores only
 # on their intended opening territory.
 EXACT_CORE_TAGS = {
+    "GUN": set(TAG_PROVINCES["GUN"]),
+    "DMG": set(TAG_PROVINCES["DMG"]),
     "CHC": set(TAG_PROVINCES["CHC"]),
     "JJG": set(TAG_PROVINCES["JJG"]),
     "HYA": set(TAG_PROVINCES["HYA"]),
@@ -405,6 +410,8 @@ LEGACY_COUNTRY_ARTIFACTS = (
     COUNTRIES / "B43_Shen_Han_Mian.txt",
     COUNTRY_HISTORY / "SH2 - Shen Han Mian.txt",
     FLAGS / "SH2.tga",
+    COUNTRIES / "B78_Daming.txt",
+    COUNTRY_HISTORY / "DMG - Daming.txt",
 )
 
 PRESERVED_OWNERSHIP = {
@@ -920,8 +927,8 @@ def current_core_ids(tag: str) -> set[int]:
 def validate(vanilla_root: Path, check_colors: bool = True) -> dict[str, object]:
     character_encoding_audit = normalize_country_history_files(check=True)
     all_ids = [province_id for provinces in TAG_PROVINCES.values() for province_id in provinces]
-    if len(all_ids) != 310 or len(set(all_ids)) != 310:
-        raise ValueError("Expanded polity policy must contain 310 unique provinces after B72")
+    if len(all_ids) != 312 or len(set(all_ids)) != 312:
+        raise ValueError("Expanded polity policy must contain 312 unique provinces after B78")
     ensure_core_override_files(vanilla_root, write=False)
     for tag, provinces in TAG_PROVINCES.items():
         for province_id in provinces:

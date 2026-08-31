@@ -301,7 +301,7 @@ def check_cohesion_contract() -> None:
         for school in opening_manifest["schools"].values()
         for tag in school["tags"]
     }
-    require(len(opening_tags) == 65, "opening school manifest no longer has 65 unique tags")
+    require(len(opening_tags) == 66, "opening school manifest no longer has 66 unique tags")
     for tag in sorted(opening_tags):
         religion, culture = history_values(tag)
         require(religion == "confucianism", f"{tag}: opening school country is not Ritual Teaching")

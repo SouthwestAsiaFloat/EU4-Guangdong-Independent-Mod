@@ -1047,6 +1047,7 @@ zhx_initialise_tianxia_system = {
                 tag = GON
                 tag = GUI
                 tag = GUN
+                tag = DMG
                 tag = GUO
                 tag = GUZ
                 tag = GYA

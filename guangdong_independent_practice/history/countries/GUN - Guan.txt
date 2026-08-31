@@ -5,5 +5,5 @@ government_rank = 1
 technology_group = chinese
 religion = confucianism
 primary_culture = gdd_zhongyuan
-capital = 2137
-fixed_capital = 2137
+capital = 5382
+fixed_capital = 5382

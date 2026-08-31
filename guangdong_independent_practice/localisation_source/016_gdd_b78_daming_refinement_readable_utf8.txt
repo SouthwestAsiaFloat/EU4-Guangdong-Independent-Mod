@@ -1,0 +1,7 @@
+﻿l_english:
+ PROV5381:0 "魏邑"
+ PROV_ADJ5381:0 "魏邑"
+ PROV5382:0 "元城"
+ PROV_ADJ5382:0 "元城"
+ DMG:0 "邶"
+ DMG_ADJ:0 "邶"

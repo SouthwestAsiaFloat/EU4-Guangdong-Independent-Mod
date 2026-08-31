@@ -197,7 +197,7 @@ def main() -> None:
     require("tooltip =" not in member_count_match.group(0),
             "member-count ribbon still exposes explanatory text")
 
-    for index in range(1, 66):
+    for index in range(1, 67):
         name = f"gdd_eoc_member_shield_{index:02d}"
         item = parsed.get(name)
         require(item is not None, f"missing member shield {index:02d}")
@@ -214,7 +214,7 @@ def main() -> None:
     bindings = custom_text.split("# GDD_EOC_MEMBER_BINDINGS_BEGIN", 1)[1].split(
         "# GDD_EOC_MEMBER_BINDINGS_END", 1
     )[0]
-    require(bindings.count("gdd_eoc_member_roster_page_2") == 65,
+    require(bindings.count("gdd_eoc_member_roster_page_2") == 66,
             "every member shield must have one page condition")
 
     require(parsed["gdd_eoc_member_frame"] == {
