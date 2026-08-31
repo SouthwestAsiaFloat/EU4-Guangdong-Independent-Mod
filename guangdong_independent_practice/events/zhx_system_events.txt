@@ -413,45 +413,51 @@ country_event = {
     option = {
         name = zhx_system.22.a
         trigger = {
-            check_variable = {
-                which = zhx_council_a_vs_b
-                value = 1
-            }
-        }
-        add_prestige = 10
-        change_variable = {
-            which = zhx_ritual_authority
-            value = 10
-        }
-        hidden_effect = {
-            add_country_modifier = { name = zhx_ritual_breakdown_incident_cooldown duration = 1825 }
-            zhx_finish_tianxia_council = yes
-        }
-        zhx_clamp_ritual_authority = yes
-        zhx_refresh_ritual_order = yes
-    }
-
-    option = {
-        name = zhx_system.22.b
-        trigger = {
-            NOT = {
+            hidden_trigger = {
                 check_variable = {
                     which = zhx_council_a_vs_b
                     value = 1
                 }
             }
         }
-        add_prestige = -10
-        change_variable = {
-            which = zhx_ritual_authority
-            value = -5
-        }
+        custom_tooltip = zhx_system.22.a.tt
         hidden_effect = {
+            add_prestige = 10
+            change_variable = {
+                which = zhx_ritual_authority
+                value = 10
+            }
             add_country_modifier = { name = zhx_ritual_breakdown_incident_cooldown duration = 1825 }
             zhx_finish_tianxia_council = yes
+            zhx_clamp_ritual_authority = yes
+            zhx_refresh_ritual_order = yes
         }
-        zhx_clamp_ritual_authority = yes
-        zhx_refresh_ritual_order = yes
+    }
+
+    option = {
+        name = zhx_system.22.b
+        trigger = {
+            hidden_trigger = {
+                NOT = {
+                    check_variable = {
+                        which = zhx_council_a_vs_b
+                        value = 1
+                    }
+                }
+            }
+        }
+        custom_tooltip = zhx_system.22.b.tt
+        hidden_effect = {
+            add_prestige = -10
+            change_variable = {
+                which = zhx_ritual_authority
+                value = -5
+            }
+            add_country_modifier = { name = zhx_ritual_breakdown_incident_cooldown duration = 1825 }
+            zhx_finish_tianxia_council = yes
+            zhx_clamp_ritual_authority = yes
+            zhx_refresh_ritual_order = yes
+        }
     }
 }
 

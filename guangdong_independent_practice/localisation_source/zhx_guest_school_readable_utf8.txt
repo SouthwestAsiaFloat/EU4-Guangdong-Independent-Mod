@@ -7,6 +7,28 @@ l_english:
  zhx_guest_school_name_zongheng:0 "纵横家"
  zhx_guest_school_name_unknown:0 "异派"
 
+ zhx_guest_school_inviter_requirements_tt:0 "本国信奉礼教并已有主学派；当前没有宾学契约、更张封锁或失信惩罚，且拥有§Y75§!外交点数与至少半年国家收入。"
+ zhx_guest_school_not_current_ru_tt:0 "儒家不是本国当前主学派"
+ zhx_guest_school_not_current_fa_tt:0 "法家不是本国当前主学派"
+ zhx_guest_school_not_current_mo_tt:0 "墨家不是本国当前主学派"
+ zhx_guest_school_not_current_dao_tt:0 "道家不是本国当前主学派"
+ zhx_guest_school_not_current_bing_tt:0 "兵家不是本国当前主学派"
+ zhx_guest_school_not_current_zongheng_tt:0 "纵横家不是本国当前主学派"
+ zhx_guest_school_source_ru_requirements_tt:0 "所选来源国以儒家为主学派，对本国好感至少为§Y150§!，其首都已被发现，且不是不忠的本国属国。"
+ zhx_guest_school_source_fa_requirements_tt:0 "所选来源国以法家为主学派，对本国好感至少为§Y150§!，其首都已被发现，且不是不忠的本国属国。"
+ zhx_guest_school_source_mo_requirements_tt:0 "所选来源国以墨家为主学派，对本国好感至少为§Y150§!，其首都已被发现，且不是不忠的本国属国。"
+ zhx_guest_school_source_dao_requirements_tt:0 "所选来源国以道家为主学派，对本国好感至少为§Y150§!，其首都已被发现，且不是不忠的本国属国。"
+ zhx_guest_school_source_bing_requirements_tt:0 "所选来源国以兵家为主学派，对本国好感至少为§Y150§!，其首都已被发现，且不是不忠的本国属国。"
+ zhx_guest_school_source_zongheng_requirements_tt:0 "所选来源国以纵横家为主学派，对本国好感至少为§Y150§!，其首都已被发现，且不是不忠的本国属国。"
+
+ zhx_guest_school_contract_active:0 "宾学契约有效"
+ zhx_guest_school_contract_ru:0 "宾学为儒家"
+ zhx_guest_school_contract_fa:0 "宾学为法家"
+ zhx_guest_school_contract_mo:0 "宾学为墨家"
+ zhx_guest_school_contract_dao:0 "宾学为道家"
+ zhx_guest_school_contract_bing:0 "宾学为兵家"
+ zhx_guest_school_contract_zongheng:0 "宾学为纵横家"
+
  zhx_expel_guest_school_title:0 "提前逐客"
  zhx_expel_guest_school_desc:0 "在二十年宾学契约届满前逐斥诸生。这是带有严重国内与外交代价的紧急出口；点击后仍须在确认页复核全部后果。"
 
@@ -42,6 +64,7 @@ l_english:
 
  zhx_guest_school_contract_cost_tt:0 "确认后支付§R75§!外交点和§R半年国家收入§!，缔结二十年单一宾学契约；期间不能直接改请。前五年全国叛乱度§R+1§!、提升稳定度花费§R+15%§!、顾问花费§R+10%§!。宾学提供本派入门级弱化收益、保护同派学宫，并可作为主学派更张根基。"
  zhx_guest_school_native_confirmation_tt:0 "选择这一来源后将打开正式的宾学契约确认页；此处不会直接扣除外交点或国家收入。"
+ zhx_guest_school_confirmation_requirements_tt:0 "此前选定的来源国仍然合格，本国仍可延请该派，且拥有§Y75§!外交点数与至少半年国家收入。"
 
  zhx_guest_school.reminder.t:0 "宾学之约将满"
  zhx_guest_school.reminder.d:0 "我国延请的§Y[Root.GetZhxGuestSchoolName]§!宾学还剩约§Y一年§!。当前代表团来自§Y[zhx_guest_school_current_source.GetName]§!。\n\n期满时，可以重新找到一名以该派为正式主学派的合格来源，重付§R75§!外交点与§R半年国家收入§!续聘同派；续聘开启新的二十年契约，但不会重复五年磨合。也可以礼送诸生归国，无国内惩罚；若原来源国仍在，其对我国将获得§G+25§!好感。"
@@ -53,6 +76,7 @@ l_english:
  zhx_guest_school.expiry.no_source.d:0 "§Y[Root.GetZhxGuestSchoolName]§!宾学已完成二十年驻留。原来源国已经不复存在，代表团以流寓诸生身份完成了本期。\n\n续聘同派须另寻合格的正式来源，并再付§R75§!外交点与§R半年国家收入§!；续聘不会重复五年磨合。正常结束契约没有国内惩罚，但因原来源国已亡，不会产生礼送好感。若不续聘，宾学徽章、弱化收益与同派学宫保护都会移除；它若是更张的唯一根基且境内没有同派活跃学宫，改革将失败。"
  zhx_guest_school.expiry.renew:0 "续聘[Root.GetZhxGuestSchoolName]诸生"
  zhx_guest_school.expiry.send_home:0 "礼送诸生离朝"
+ zhx_guest_school_renew_requirements_tt:0 "当前宾学仍有合格的同派来源国，且本国拥有§Y75§!外交点数与至少半年国家收入。"
  zhx_guest_school_renew_cost_tt:0 "重新寻找合格的正式同派来源，支付§R75§!外交点与§R半年国家收入§!，续订二十年同派宾学；不会重复前五年磨合。"
  zhx_guest_school_send_home_tt:0 "正常结束宾学，移除子徽章、弱化收益与学宫保护，不承受稳定度或失信惩罚；若原来源国仍在，其对我国获得§G+25§!好感。唯一宾学根基且没有同派活跃学宫时，正在进行的更张会失败。"
 

@@ -9,9 +9,7 @@ country_decisions = {
             zhx_guest_school_has_active_contract = yes
         }
 
-        allow = {
-            zhx_guest_school_has_active_contract = yes
-        }
+        allow = { always = yes }
 
         effect = {
             country_event = { id = zhx_guest_school.50 }

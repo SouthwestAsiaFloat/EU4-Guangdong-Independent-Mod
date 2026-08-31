@@ -662,7 +662,10 @@ country_decisions = {
         }
 
         allow = { always = yes }
-        effect = { zhx_academy_withdraw_current_expulsion = yes }
+        effect = {
+            custom_tooltip = zhx_academy_withdraw_expulsion_tt
+            hidden_effect = { zhx_academy_withdraw_current_expulsion = yes }
+        }
         ai_will_do = { factor = 0 }
     }
 }
@@ -674,12 +677,15 @@ def event_option(entry: dict[str, object]) -> str:
     return f"""    option = {{
         name = zhx_academy_lifecycle.expel_{key}
         trigger = {{
-            is_at_war = no
-            stability = 1
-            adm_power = 30
-            NOT = {{ has_country_modifier = zhx_academy_expulsion_campaign }}
-            NOT = {{ has_country_modifier = zhx_academy_expulsion_cooldown }}
-            zhx_academy_has_unprotected_{key} = yes
+            custom_trigger_tooltip = {{
+                tooltip = zhx_academy_expulsion_requirements_tt
+                is_at_war = no
+                stability = 1
+                adm_power = 30
+                NOT = {{ has_country_modifier = zhx_academy_expulsion_campaign }}
+                NOT = {{ has_country_modifier = zhx_academy_expulsion_cooldown }}
+                zhx_academy_has_unprotected_{key} = yes
+            }}
         }}
         custom_tooltip = zhx_academy_issue_expulsion_tt
         hidden_effect = {{ zhx_academy_begin_expulsion_{key} = yes }}
@@ -879,7 +885,12 @@ def render_events(academies: list[dict[str, object]]) -> str:
             "",
             "    option = {",
             "        name = zhx_academy_lifecycle.210.a",
-            "        trigger = { zhx_academy_has_empty_host_province = yes }",
+            "        trigger = {",
+            "            custom_trigger_tooltip = {",
+            "                tooltip = zhx_academy_refuge_host_requirements_tt",
+            "                zhx_academy_has_empty_host_province = yes",
+            "            }",
+            "        }",
             "        custom_tooltip = zhx_academy_accept_refuge_tt",
             "        hidden_effect = {",
             "            zhx_academy_accept_pending_offer = yes",
@@ -1077,18 +1088,21 @@ def render_localisation(academies: list[dict[str, object]]) -> str:
         ' zhx_manage_unprotected_academies_desc:0 "检视国内未受本国主学派或受邀第二学派保护的具名学宫。你可以继续容忍其讲学，也可以颁布为期三年的逐学令。"',
         ' zhx_withdraw_academy_expulsion_title:0 "撤销逐学令"',
         ' zhx_withdraw_academy_expulsion_desc:0 "停止正在执行的逐学令，保留学宫原址；此后十年内不得再次发起逐学。"',
+        ' zhx_academy_withdraw_expulsion_tt:0 "停止当前逐学，保留学宫原址并解除逐学压制；此后§Y10年§!内不得再次逐学。"',
         ' zhx_academy_lifecycle.100.t:0 "异派学宫"',
         ' zhx_academy_lifecycle.100.d1:0 "以下学宫并不属于本国主学派，也未获受邀第二学派庇护。逐学将耗费行政资源、稳定与声望，并激怒奉行该学派的诸国。"',
         ' zhx_academy_lifecycle.100.d2:0 "余下异派学宫列于此页。任何逐学令都需三年执行；其间若该学派成为本国主学派或受邀第二学派，命令将在到期时自动撤销。"',
         ' zhx_academy_lifecycle.next_page:0 "查看下一页"',
         ' zhx_academy_lifecycle.previous_page:0 "返回上一页"',
         ' zhx_academy_lifecycle.tolerate:0 "继续容忍讲学"',
+        ' zhx_academy_expulsion_requirements_tt:0 "本国处于和平，稳定度至少为§Y1§!、行政点数至少为§Y30§!，当前没有逐学令或撤令余波，且该学宫仍是不受保护的异派学宫。"',
         ' zhx_academy_issue_expulsion_tt:0 "颁布三年逐学令：失去§R30§!行政点、§R1§!稳定度与§R5§!威望。奉行该学派的礼教国家将对我国产生§R-50§!意见并获得§R10§!侵略扩张。"',
         ' zhx_academy_lifecycle.200.t:0 "逐学令结算"',
         ' zhx_academy_lifecycle.200.d:0 "逐学令已经到期。"',
         ' zhx_academy_lifecycle.210.t:0 "流散学宫求庇"',
         ' zhx_academy_lifecycle.210.a:0 "接纳诸生，另辟讲席"',
         ' zhx_academy_lifecycle.210.b:0 "婉拒其请"',
+        ' zhx_academy_refuge_host_requirements_tt:0 "国内至少有一座没有活跃学宫、学宫遗址或逐学压制的城市可供安置。"',
         ' zhx_academy_accept_refuge_tt:0 "学宫将优先迁入本国一座发展度至少20的空闲城市，其次选择发展度至少12的城市；若仍无，则选择任一没有活跃学宫、学宫遗址或逐学压制的城市。"',
         ' zhx_academy_refuse_refuge_tt:0 "婉拒后，学宫不会迁入我国，也不会被永久删除，而会保持流散。当前天子每年有§Y10%§!概率尝试为其另寻庇护；若没有合格礼教国家接纳，学宫将继续流散。"',
         ' zhx_academy_lifecycle.211.t:0 "学宫落脚"',

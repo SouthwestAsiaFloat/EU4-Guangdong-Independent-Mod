@@ -35,7 +35,10 @@ country_decisions = {
         }
 
         allow = { always = yes }
-        effect = { zhx_academy_withdraw_current_expulsion = yes }
+        effect = {
+            custom_tooltip = zhx_academy_withdraw_expulsion_tt
+            hidden_effect = { zhx_academy_withdraw_current_expulsion = yes }
+        }
         ai_will_do = { factor = 0 }
     }
 }

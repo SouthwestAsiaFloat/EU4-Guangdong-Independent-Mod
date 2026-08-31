@@ -425,6 +425,27 @@ def check_declared_blocks(contract: Contract, texts: dict[Path, str]) -> None:
     for key in ("zhx_begin_doctrine_reform", "zhx_cancel_doctrine_reform"):
         require_single_block(contract, decision_text, key, "reform decisions")
 
+    begin = require_single_block(
+        contract, decision_text, "zhx_begin_doctrine_reform", "begin-reform decision"
+    )
+    cancel = require_single_block(
+        contract, decision_text, "zhx_cancel_doctrine_reform", "cancel-reform decision"
+    )
+    contract.require(
+        begin.count("custom_trigger_tooltip = {") == 1
+        and begin.count("tooltip = zhx_begin_doctrine_reform_requirements_tt") == 1,
+        "begin-reform decision must collapse the six internal target trees into one readable line",
+    )
+    contract.require(
+        cancel.count("allow = { always = yes }") == 1,
+        "cancel-reform decision must not repeat its technical potential tree in allow",
+    )
+    contract.require(
+        cancel.count("custom_tooltip = zhx_cancel_doctrine_reform_effect_tt") == 1
+        and cancel.count("hidden_effect = { zhx_doctrine_reform_cancel = yes }") == 1,
+        "cancel-reform decision must hide its internal effect behind a readable result",
+    )
+
 
 def check_six_school_state(contract: Contract, texts: dict[Path, str]) -> None:
     trigger_text = texts[TRIGGER_PATH]
@@ -746,6 +767,12 @@ def check_events(contract: Contract, texts: dict[Path, str]) -> None:
         "reform events: expected IDs "
         f"{sorted(EXPECTED_EVENT_IDS)}, found {sorted(set(ids))}",
     )
+    for school in SCHOOLS:
+        contract.require(
+            text.count(f"tooltip = zhx_doctrine_reform_target_{school}_requirements_tt")
+            == 1,
+            f"target catalogue for {school} must expose one readable eligibility line",
+        )
 
     failure = event_block(text, "210") or ""
     require_tokens(

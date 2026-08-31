@@ -445,7 +445,10 @@ def render_religious_events(text: str) -> str:
         '''\t\ttrigger = { any_owned_province = { religion = confucianism } }
 \t\tchange_religion = confucianism''',
         '''\t\ttrigger = {
-\t\t\tzhx_can_adopt_lijiao = yes
+\t\t\tcustom_trigger_tooltip = {
+\t\t\t\ttooltip = zhx_adopt_lijiao_requirements_tt
+\t\t\t\tzhx_can_adopt_lijiao = yes
+\t\t\t}
 \t\t\tany_owned_province = { religion = confucianism }
 \t\t}
 \t\tchange_religion = confucianism''',

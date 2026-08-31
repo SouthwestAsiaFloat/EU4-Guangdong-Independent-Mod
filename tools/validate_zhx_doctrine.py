@@ -320,6 +320,7 @@ EXPECTED_LOCALISATION = {
     "zhx_doctrine.15.a",
     "zhx_doctrine.initial_back",
     "zhx_doctrine_postpone_tt",
+    "zhx_doctrine_inconclusive_tt",
     "zhx_adopt_ru_doctrine_tt",
     "zhx_adopt_fa_doctrine_tt",
     "zhx_adopt_mo_doctrine_tt",
@@ -1431,6 +1432,7 @@ def main() -> None:
         )
         potential_body = named_block_body(school_body, "potential_invite_scholar")
         potential_source = named_block_body(potential_body, "FROM")
+        school_code = school.removeprefix("zhx_").removesuffix("_school")
         require(
             potential_body.count("zhx_guest_school_may_invite = yes") == 1
             and potential_body.count(
@@ -1447,6 +1449,20 @@ def main() -> None:
             == 1,
             f"{school} discovery must delegate the shared inviter/source contract "
             "and reject the current formal school",
+        )
+        require(
+            top_level_assignment_keys(potential_body)
+            == {"custom_trigger_tooltip", "hidden_trigger"}
+            and potential_body.count("custom_trigger_tooltip = {") == 3
+            and potential_body.count("hidden_trigger = {") == 1
+            and "tooltip = zhx_guest_school_inviter_requirements_tt"
+            in potential_body
+            and f"tooltip = zhx_guest_school_not_current_{school_code}_tt"
+            in potential_body
+            and f"tooltip = zhx_guest_school_source_{school_code}_requirements_tt"
+            in potential_body,
+            f"{school} discovery must expose three readable player conditions "
+            "and hide the AI-only gate",
         )
         require(
             potential_body.count("limit = { ai = yes }") == 1
@@ -1481,6 +1497,19 @@ def main() -> None:
             == 1,
             f"{school} availability must delegate the fail-closed contract and "
             "keep crisis restrictions inside the AI-only branch",
+        )
+        require(
+            top_level_assignment_keys(can_body)
+            == {"custom_trigger_tooltip", "hidden_trigger"}
+            and can_body.count("custom_trigger_tooltip = {") == 3
+            and can_body.count("hidden_trigger = {") == 1
+            and "tooltip = zhx_guest_school_inviter_requirements_tt" in can_body
+            and f"tooltip = zhx_guest_school_not_current_{school_code}_tt"
+            in can_body
+            and f"tooltip = zhx_guest_school_source_{school_code}_requirements_tt"
+            in can_body,
+            f"{school} availability must not expose internal invitation flags "
+            "or AI scoring to the player",
         )
         on_body = named_block_body(school_body, "on_invite_scholar")
         require(

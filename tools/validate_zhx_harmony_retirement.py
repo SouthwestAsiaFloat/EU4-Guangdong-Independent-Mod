@@ -414,6 +414,10 @@ def check_retired_events_and_conversion() -> None:
     religious = read(MOD / "events/Religious.txt")
     require(religious.count("zhx_can_adopt_lijiao = yes") >= 5,
             "generic country/province conversion events do not enforce eligibility")
+    require(
+        religious.count("tooltip = zhx_adopt_lijiao_requirements_tt") == 1,
+        "generic country conversion event exposes the internal Ritual Teaching eligibility tree",
+    )
 
     lifecycle = read(MOD / "events/zhx_doctrine_events.txt")
     require(

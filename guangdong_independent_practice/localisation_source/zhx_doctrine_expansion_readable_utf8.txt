@@ -9,6 +9,7 @@ l_english:
  zhx_doctrine_expansion.1.c:0 "请兵家与纵横家论强兵与结盟"
  zhx_doctrine_expansion.1.e:0 "时机未至，暂缓议论"
  zhx_doctrine_expansion_postpone_tt:0 "两年内不会再次召开后三家国论。"
+ zhx_doctrine_inconclusive_tt:0 "本次国论不定一说；五年内不能再次召开同类国论。"
 
  zhx_doctrine_expansion.10.t:0 "静治与武备之辩"
  zhx_doctrine_expansion.10.d:0 "道者认为国君应知止少扰，使民力在无为中自行恢复；兵者则说休养若无边备便只是邀敌，国家必须平日治众、积储、练兵，才能以不战保全社稷。"

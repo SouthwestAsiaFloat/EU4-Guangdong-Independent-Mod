@@ -11,13 +11,16 @@ country_decisions = {
         }
 
         allow = {
-            OR = {
-                zhx_doctrine_reform_can_target_ru = yes
-                zhx_doctrine_reform_can_target_fa = yes
-                zhx_doctrine_reform_can_target_mo = yes
-                zhx_doctrine_reform_can_target_dao = yes
-                zhx_doctrine_reform_can_target_bing = yes
-                zhx_doctrine_reform_can_target_zongheng = yes
+            custom_trigger_tooltip = {
+                tooltip = zhx_begin_doctrine_reform_requirements_tt
+                OR = {
+                    zhx_doctrine_reform_can_target_ru = yes
+                    zhx_doctrine_reform_can_target_fa = yes
+                    zhx_doctrine_reform_can_target_mo = yes
+                    zhx_doctrine_reform_can_target_dao = yes
+                    zhx_doctrine_reform_can_target_bing = yes
+                    zhx_doctrine_reform_can_target_zongheng = yes
+                }
             }
         }
 
@@ -33,8 +36,11 @@ country_decisions = {
             zhx_doctrine_reform_is_cultivating = yes
         }
 
-        allow = { zhx_doctrine_reform_is_cultivating = yes }
-        effect = { zhx_doctrine_reform_cancel = yes }
+        allow = { always = yes }
+        effect = {
+            custom_tooltip = zhx_cancel_doctrine_reform_effect_tt
+            hidden_effect = { zhx_doctrine_reform_cancel = yes }
+        }
         ai_will_do = { factor = 0 }
     }
 }

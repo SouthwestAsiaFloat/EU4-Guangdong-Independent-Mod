@@ -154,7 +154,7 @@ country_event = {
 
     option = {
         name = gdd_liang_restoration.10.a
-        trigger = { gdd_liang_patron_owns_all_homeland = yes }
+        trigger = { hidden_trigger = { gdd_liang_patron_owns_all_homeland = yes } }
         custom_tooltip = gdd_liang_restoration.10.a.tt.homeland
         hidden_effect = {
             gdd_liang_restore_directly_in_homeland = yes
@@ -188,7 +188,7 @@ country_event = {
 
     option = {
         name = gdd_liang_restoration.10.a
-        trigger = { NOT = { gdd_liang_patron_owns_all_homeland = yes } }
+        trigger = { hidden_trigger = { NOT = { gdd_liang_patron_owns_all_homeland = yes } } }
         custom_tooltip = gdd_liang_restoration.10.a.tt.grant
         hidden_effect = {
             gdd_liang_restore_in_temporary_grant = yes

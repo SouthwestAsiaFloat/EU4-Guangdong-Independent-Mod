@@ -17,12 +17,15 @@ country_event = {
     option = {
         name = zhx_academy_lifecycle.expel_chongli
         trigger = {
-            is_at_war = no
-            stability = 1
-            adm_power = 30
-            NOT = { has_country_modifier = zhx_academy_expulsion_campaign }
-            NOT = { has_country_modifier = zhx_academy_expulsion_cooldown }
-            zhx_academy_has_unprotected_chongli = yes
+            custom_trigger_tooltip = {
+                tooltip = zhx_academy_expulsion_requirements_tt
+                is_at_war = no
+                stability = 1
+                adm_power = 30
+                NOT = { has_country_modifier = zhx_academy_expulsion_campaign }
+                NOT = { has_country_modifier = zhx_academy_expulsion_cooldown }
+                zhx_academy_has_unprotected_chongli = yes
+            }
         }
         custom_tooltip = zhx_academy_issue_expulsion_tt
         hidden_effect = { zhx_academy_begin_expulsion_chongli = yes }
@@ -32,12 +35,15 @@ country_event = {
     option = {
         name = zhx_academy_lifecycle.expel_minglun
         trigger = {
-            is_at_war = no
-            stability = 1
-            adm_power = 30
-            NOT = { has_country_modifier = zhx_academy_expulsion_campaign }
-            NOT = { has_country_modifier = zhx_academy_expulsion_cooldown }
-            zhx_academy_has_unprotected_minglun = yes
+            custom_trigger_tooltip = {
+                tooltip = zhx_academy_expulsion_requirements_tt
+                is_at_war = no
+                stability = 1
+                adm_power = 30
+                NOT = { has_country_modifier = zhx_academy_expulsion_campaign }
+                NOT = { has_country_modifier = zhx_academy_expulsion_cooldown }
+                zhx_academy_has_unprotected_minglun = yes
+            }
         }
         custom_tooltip = zhx_academy_issue_expulsion_tt
         hidden_effect = { zhx_academy_begin_expulsion_minglun = yes }
@@ -47,12 +53,15 @@ country_event = {
     option = {
         name = zhx_academy_lifecycle.expel_yifa
         trigger = {
-            is_at_war = no
-            stability = 1
-            adm_power = 30
-            NOT = { has_country_modifier = zhx_academy_expulsion_campaign }
-            NOT = { has_country_modifier = zhx_academy_expulsion_cooldown }
-            zhx_academy_has_unprotected_yifa = yes
+            custom_trigger_tooltip = {
+                tooltip = zhx_academy_expulsion_requirements_tt
+                is_at_war = no
+                stability = 1
+                adm_power = 30
+                NOT = { has_country_modifier = zhx_academy_expulsion_campaign }
+                NOT = { has_country_modifier = zhx_academy_expulsion_cooldown }
+                zhx_academy_has_unprotected_yifa = yes
+            }
         }
         custom_tooltip = zhx_academy_issue_expulsion_tt
         hidden_effect = { zhx_academy_begin_expulsion_yifa = yes }
@@ -62,12 +71,15 @@ country_event = {
     option = {
         name = zhx_academy_lifecycle.expel_xunming
         trigger = {
-            is_at_war = no
-            stability = 1
-            adm_power = 30
-            NOT = { has_country_modifier = zhx_academy_expulsion_campaign }
-            NOT = { has_country_modifier = zhx_academy_expulsion_cooldown }
-            zhx_academy_has_unprotected_xunming = yes
+            custom_trigger_tooltip = {
+                tooltip = zhx_academy_expulsion_requirements_tt
+                is_at_war = no
+                stability = 1
+                adm_power = 30
+                NOT = { has_country_modifier = zhx_academy_expulsion_campaign }
+                NOT = { has_country_modifier = zhx_academy_expulsion_cooldown }
+                zhx_academy_has_unprotected_xunming = yes
+            }
         }
         custom_tooltip = zhx_academy_issue_expulsion_tt
         hidden_effect = { zhx_academy_begin_expulsion_xunming = yes }
@@ -77,12 +89,15 @@ country_event = {
     option = {
         name = zhx_academy_lifecycle.expel_jianai
         trigger = {
-            is_at_war = no
-            stability = 1
-            adm_power = 30
-            NOT = { has_country_modifier = zhx_academy_expulsion_campaign }
-            NOT = { has_country_modifier = zhx_academy_expulsion_cooldown }
-            zhx_academy_has_unprotected_jianai = yes
+            custom_trigger_tooltip = {
+                tooltip = zhx_academy_expulsion_requirements_tt
+                is_at_war = no
+                stability = 1
+                adm_power = 30
+                NOT = { has_country_modifier = zhx_academy_expulsion_campaign }
+                NOT = { has_country_modifier = zhx_academy_expulsion_cooldown }
+                zhx_academy_has_unprotected_jianai = yes
+            }
         }
         custom_tooltip = zhx_academy_issue_expulsion_tt
         hidden_effect = { zhx_academy_begin_expulsion_jianai = yes }
@@ -92,12 +107,15 @@ country_event = {
     option = {
         name = zhx_academy_lifecycle.expel_shangtong
         trigger = {
-            is_at_war = no
-            stability = 1
-            adm_power = 30
-            NOT = { has_country_modifier = zhx_academy_expulsion_campaign }
-            NOT = { has_country_modifier = zhx_academy_expulsion_cooldown }
-            zhx_academy_has_unprotected_shangtong = yes
+            custom_trigger_tooltip = {
+                tooltip = zhx_academy_expulsion_requirements_tt
+                is_at_war = no
+                stability = 1
+                adm_power = 30
+                NOT = { has_country_modifier = zhx_academy_expulsion_campaign }
+                NOT = { has_country_modifier = zhx_academy_expulsion_cooldown }
+                zhx_academy_has_unprotected_shangtong = yes
+            }
         }
         custom_tooltip = zhx_academy_issue_expulsion_tt
         hidden_effect = { zhx_academy_begin_expulsion_shangtong = yes }
@@ -131,12 +149,15 @@ country_event = {
     option = {
         name = zhx_academy_lifecycle.expel_xuantong
         trigger = {
-            is_at_war = no
-            stability = 1
-            adm_power = 30
-            NOT = { has_country_modifier = zhx_academy_expulsion_campaign }
-            NOT = { has_country_modifier = zhx_academy_expulsion_cooldown }
-            zhx_academy_has_unprotected_xuantong = yes
+            custom_trigger_tooltip = {
+                tooltip = zhx_academy_expulsion_requirements_tt
+                is_at_war = no
+                stability = 1
+                adm_power = 30
+                NOT = { has_country_modifier = zhx_academy_expulsion_campaign }
+                NOT = { has_country_modifier = zhx_academy_expulsion_cooldown }
+                zhx_academy_has_unprotected_xuantong = yes
+            }
         }
         custom_tooltip = zhx_academy_issue_expulsion_tt
         hidden_effect = { zhx_academy_begin_expulsion_xuantong = yes }
@@ -146,12 +167,15 @@ country_event = {
     option = {
         name = zhx_academy_lifecycle.expel_baopu
         trigger = {
-            is_at_war = no
-            stability = 1
-            adm_power = 30
-            NOT = { has_country_modifier = zhx_academy_expulsion_campaign }
-            NOT = { has_country_modifier = zhx_academy_expulsion_cooldown }
-            zhx_academy_has_unprotected_baopu = yes
+            custom_trigger_tooltip = {
+                tooltip = zhx_academy_expulsion_requirements_tt
+                is_at_war = no
+                stability = 1
+                adm_power = 30
+                NOT = { has_country_modifier = zhx_academy_expulsion_campaign }
+                NOT = { has_country_modifier = zhx_academy_expulsion_cooldown }
+                zhx_academy_has_unprotected_baopu = yes
+            }
         }
         custom_tooltip = zhx_academy_issue_expulsion_tt
         hidden_effect = { zhx_academy_begin_expulsion_baopu = yes }
@@ -161,12 +185,15 @@ country_event = {
     option = {
         name = zhx_academy_lifecycle.expel_miaosuan
         trigger = {
-            is_at_war = no
-            stability = 1
-            adm_power = 30
-            NOT = { has_country_modifier = zhx_academy_expulsion_campaign }
-            NOT = { has_country_modifier = zhx_academy_expulsion_cooldown }
-            zhx_academy_has_unprotected_miaosuan = yes
+            custom_trigger_tooltip = {
+                tooltip = zhx_academy_expulsion_requirements_tt
+                is_at_war = no
+                stability = 1
+                adm_power = 30
+                NOT = { has_country_modifier = zhx_academy_expulsion_campaign }
+                NOT = { has_country_modifier = zhx_academy_expulsion_cooldown }
+                zhx_academy_has_unprotected_miaosuan = yes
+            }
         }
         custom_tooltip = zhx_academy_issue_expulsion_tt
         hidden_effect = { zhx_academy_begin_expulsion_miaosuan = yes }
@@ -176,12 +203,15 @@ country_event = {
     option = {
         name = zhx_academy_lifecycle.expel_zhisheng
         trigger = {
-            is_at_war = no
-            stability = 1
-            adm_power = 30
-            NOT = { has_country_modifier = zhx_academy_expulsion_campaign }
-            NOT = { has_country_modifier = zhx_academy_expulsion_cooldown }
-            zhx_academy_has_unprotected_zhisheng = yes
+            custom_trigger_tooltip = {
+                tooltip = zhx_academy_expulsion_requirements_tt
+                is_at_war = no
+                stability = 1
+                adm_power = 30
+                NOT = { has_country_modifier = zhx_academy_expulsion_campaign }
+                NOT = { has_country_modifier = zhx_academy_expulsion_cooldown }
+                zhx_academy_has_unprotected_zhisheng = yes
+            }
         }
         custom_tooltip = zhx_academy_issue_expulsion_tt
         hidden_effect = { zhx_academy_begin_expulsion_zhisheng = yes }
@@ -191,12 +221,15 @@ country_event = {
     option = {
         name = zhx_academy_lifecycle.expel_baihe
         trigger = {
-            is_at_war = no
-            stability = 1
-            adm_power = 30
-            NOT = { has_country_modifier = zhx_academy_expulsion_campaign }
-            NOT = { has_country_modifier = zhx_academy_expulsion_cooldown }
-            zhx_academy_has_unprotected_baihe = yes
+            custom_trigger_tooltip = {
+                tooltip = zhx_academy_expulsion_requirements_tt
+                is_at_war = no
+                stability = 1
+                adm_power = 30
+                NOT = { has_country_modifier = zhx_academy_expulsion_campaign }
+                NOT = { has_country_modifier = zhx_academy_expulsion_cooldown }
+                zhx_academy_has_unprotected_baihe = yes
+            }
         }
         custom_tooltip = zhx_academy_issue_expulsion_tt
         hidden_effect = { zhx_academy_begin_expulsion_baihe = yes }
@@ -206,12 +239,15 @@ country_event = {
     option = {
         name = zhx_academy_lifecycle.expel_lianheng
         trigger = {
-            is_at_war = no
-            stability = 1
-            adm_power = 30
-            NOT = { has_country_modifier = zhx_academy_expulsion_campaign }
-            NOT = { has_country_modifier = zhx_academy_expulsion_cooldown }
-            zhx_academy_has_unprotected_lianheng = yes
+            custom_trigger_tooltip = {
+                tooltip = zhx_academy_expulsion_requirements_tt
+                is_at_war = no
+                stability = 1
+                adm_power = 30
+                NOT = { has_country_modifier = zhx_academy_expulsion_campaign }
+                NOT = { has_country_modifier = zhx_academy_expulsion_cooldown }
+                zhx_academy_has_unprotected_lianheng = yes
+            }
         }
         custom_tooltip = zhx_academy_issue_expulsion_tt
         hidden_effect = { zhx_academy_begin_expulsion_lianheng = yes }
@@ -709,7 +745,12 @@ country_event = {
 
     option = {
         name = zhx_academy_lifecycle.210.a
-        trigger = { zhx_academy_has_empty_host_province = yes }
+        trigger = {
+            custom_trigger_tooltip = {
+                tooltip = zhx_academy_refuge_host_requirements_tt
+                zhx_academy_has_empty_host_province = yes
+            }
+        }
         custom_tooltip = zhx_academy_accept_refuge_tt
         hidden_effect = {
             zhx_academy_accept_pending_offer = yes

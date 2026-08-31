@@ -2772,7 +2772,10 @@ country_event = {
 		name = "religious_events.20.c" #
 		ai_chance = { factor = 100 }
 		trigger = {
-			zhx_can_adopt_lijiao = yes
+			custom_trigger_tooltip = {
+				tooltip = zhx_adopt_lijiao_requirements_tt
+				zhx_can_adopt_lijiao = yes
+			}
 			any_owned_province = { religion = confucianism }
 		}
 		change_religion = confucianism
