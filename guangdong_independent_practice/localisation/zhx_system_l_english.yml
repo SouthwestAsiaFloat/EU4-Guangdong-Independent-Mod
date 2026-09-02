@@ -109,7 +109,7 @@
  zhx_gui_tianzi_name:0 "§Y[CZH.GetName]§!"
  zhx_gui_authority_value:0 "JyPNÿ§Y[CZH.zhx_ritual_authority.GetValue]§!ÿ-100ó100	ÿ"
  zhx_gui_member_count:0 "IYhTRýVÿ§Y[CZH.zhx_member_count_cache.GetValue]§!"
- zhx_gui_player_merit:0 ",gýVßvŸRÿ§Y[Root.zhx_merit.GetValue]§!"
+ zhx_gui_player_merit:0 "ïS(ußvŸRÿ§Y[Root.zhx_merit.GetValue]§!/100"
  zhx_gui_player_tianzi:0 ",gýV«ŽýNÿ§Y)YPR§!"
  zhx_gui_player_observer:0 ",gýV«ŽýNÿ§gÂ‰Jyw§!"
 
@@ -252,3 +252,70 @@
  zhx_vote_oppose_ritual_breakdown_desc:0 "Šb,gýV(W“‹s‹TNLˆ”‹NØS-N„vgÈuËzHW9eHNÍSùR0ŸS	g^ThybVCghyO«ˆÿfbc0"
  zhx_vote_abstain_ritual_breakdown_title:0 "lQ®‹•bhyÿ‚fNVCg"
  zhx_vote_abstain_ritual_breakdown_desc:0 "²dÞV,gýV(W“‹s‹TNLˆ”‹NØS-N„v^ThybÍSùRhyÿv^(WSVMRlQ®‹-NVCg0"
+
+ # ÙSŸRLˆONŒNAS”Nt^N'Yø‹¯O9e	0
+ zhx_gui_merit_store_header:0 "ÙSŸRLˆO"
+ zhx_gui_merit_store_header_tt:0 "§YßvŸR§!°‹‹ø‹¯O…ü)YPR0MckShT)YN„vŸR³R0Nb—VßvŸRTöe¡‹eQ§YïS(u§!0§Y,gJS§!N§YÈu«Ž§!	N,g&0\n\n§Y‚YUO·ƒ—V§!\n§GÑSUS¦^S¡‹§!ÿI`ÑSUS¦^NOŽN§Y100§!0¾0R§Y100§!0§Y250§!0§Y500§!öeÿÏkt^R+R·ƒ—V§G1§!0§G2§!0§G3§!0§G4§!¹p0\n§GeY§!ÿjOHNÜw¹eûQ%hT)YNKNY„vb‰N†˜–ˆÿ§G+10§!0\n§GlQ®‹§!ÿckVÂSN)YN'Y©•bhyÿ§G+10§!0\n§GäR‹s§!ÿTÕläR‹s·ƒÜwÿ§G+10§!0\n)YNLffRN•b-N'Y©ÓuœgØïSýwý RSÏ‘ßvŸR0\n\n§Y‚YUOO(u§!\nÏk§Y50§!¹pïS(ußvŸRïS÷‹†˜Ny˜cíu§Y10t^§!„v§G‹s‹TUeO§!0Ïk§Y25t^§!	c,gJSßvŸR9e	§GN'Yø‹¯O§!ÿ,rNTbHN§G–™-^ø‹¯O§!ÿÈu«ŽßvŸRêS(WTRöe4xT0\n\n§RÅN`—ÑSUS¦^S¡‹NýweQ	N'Yø‹¯Oÿ,gJSóS‰˜ŒRbN!keY0lQ®‹bäR‹sIrIN¨R!.s0§!"
+ ZHX_GUI_MERIT_STORE_EXPLANATION:0 "Ïky˜±‚9§Y50§!ïS(ußvŸRÿcíu§Y10t^§!ÿT‰sÏ‹äN(W1YHeMRêSýwÝOYuNy˜0"
+ ZHX_GUI_MERIT_STORE_GOVERNANCE:0 "šbltMe"
+ ZHX_GUI_MERIT_STORE_ECONOMY:0 "FURN"
+ ZHX_GUI_MERIT_STORE_MILITARY:0 "te›QˆR	W"
+ ZHX_GUI_MERIT_STORE_DIPLOMACY:0 "‰ŸRîOßv"
+ ZHX_GUI_MERIT_STORE_RELIEF:0 "‹s‹THd` · 50"
+ ZHX_GUI_MERIT_STORE_GOVERNANCE_ITEM:0 "tel™T»l · 50"
+ ZHX_GUI_MERIT_STORE_TRADE:0 "ßv^FU · 50"
+ ZHX_GUI_MERIT_STORE_INDUSTRY:0 "Rþ‹ŒvåT · 50"
+ ZHX_GUI_MERIT_STORE_ARMY:0 "GP‚‚te›Q · 50"
+ ZHX_GUI_MERIT_STORE_FORTIFICATION:0 ".ÎWˆR	W · 50"
+ ZHX_GUI_MERIT_STORE_HONOUR:0 "‹s‹T‰ŸR · 50"
+ ZHX_GUI_MERIT_STORE_DIPLOMACY_ITEM:0 "-VuQîOßv · 50"
+
+ zhx_gui_merit_store_available:0 "ïS(u §Y[Root.zhx_merit.GetValue]§!"
+ zhx_gui_merit_store_rank:0 "[Root.GetZhxMeritStoreRankStatus]"
+ zhx_gui_merit_store_lifetime:0 "Èu«Ž §Y[Root.zhx_merit_lifetime.GetValue]§!"
+ zhx_gui_merit_store_cutoff:0 "[Root.GetZhxMeritStoreCutoffStatus]"
+ zhx_merit_store_rank_member:0 ",gJS §Y[Root.zhx_merit_term.GetValue]§! · ,r§G[Root.zhx_merit_rank_cache.GetValue]§!T"
+ zhx_merit_store_rank_outside:0 ",gJS §Y[Root.zhx_merit_term.GetValue]§! · §YNTY§!"
+ zhx_merit_store_rank_unqualified:0 ",gJS §Y[Root.zhx_merit_term.GetValue]§! · §R8gwQDJh§!"
+ zhx_merit_store_rank_nonmember:0 "§gN^ShT)YN§!"
+ zhx_merit_store_cutoff_value:0 ",rNT §Y[zhx_merit_rank_07.zhx_merit_term.GetValue]§!"
+ zhx_merit_store_cutoff_vacant:0 ",rNT §gzzH§!"
+ zhx_gui_merit_store_years:0 "bcJSSYO §Y[CZH.zhx_merit_term_years_remaining.GetValue]§!t^"
+ zhx_gui_merit_store_qualification:0 "[Root.GetZhxMeritStoreQualificationStatus]"
+ zhx_merit_store_qualification_active:0 "§G	gŸR§!"
+ zhx_merit_store_qualification_inactive:0 "§R8gÙSŸR§!"
+ zhx_merit_store_qualification_nonmember:0 "§g^—ø‹¯O§!"
+ zhx_gui_merit_store_status_tt:0 "§YßvŸR	N,g&§!\nïS(ußvŸRÿ§Y[Root.zhx_merit.GetValue]§!/100ÿ(uŽN÷‹†˜ASt^‹s‹TÿèJSÝOYu0\n,gJSßvŸRÿ§Y[Root.zhx_merit_term.GetValue]§!ÿÏkŒNAS”Nt^RVö–v^³QšRN'Yø‹¯O0\nÈu«ŽßvŸRÿ§Y[Root.zhx_merit_lifetime.GetValue]§!ÿÅN(W,gJSTRöe4xT0\n\nÏkt^	cI`ÑSUS¦^·ƒ—V§Y1/2/3/4§!¹púW,gßvŸR0ùRY·ƒÜw0äR‹sbÂSNÍ‘'Y)YNlQ®‹^SŽN§YIN¨R!.s§!ÿêS	g,gJSóSŒRbN!kIN¨R!.sÿMb	gDJhÛeQN'Yø‹¯O0’c^O!kÔkƒ,gJSßvŸR0Èu«ŽßvŸR0°sûN«ŽýNŒTZg0"
+
+ zhx_gui_merit_store_relief_status:0 "[Root.GetZhxMeritStoreReliefStatus]"
+ zhx_gui_merit_store_governance_status:0 "[Root.GetZhxMeritStoreGovernanceStatus]"
+ zhx_gui_merit_store_trade_status:0 "[Root.GetZhxMeritStoreTradeStatus]"
+ zhx_gui_merit_store_industry_status:0 "[Root.GetZhxMeritStoreIndustryStatus]"
+ zhx_gui_merit_store_army_status:0 "[Root.GetZhxMeritStoreArmyStatus]"
+ zhx_gui_merit_store_fortification_status:0 "[Root.GetZhxMeritStoreFortificationStatus]"
+ zhx_gui_merit_store_honour_status:0 "[Root.GetZhxMeritStoreHonourStatus]"
+ zhx_gui_merit_store_diplomacy_status:0 "[Root.GetZhxMeritStoreDiplomacyStatus]"
+ zhx_merit_store_item_status_available:0 "§GïS÷‹§!"
+ zhx_merit_store_item_status_active:0 "§YòT˜§!"
+ zhx_merit_store_item_status_locked:0 "§gT‰sS§!"
+ zhx_merit_store_item_status_insufficient:0 "§RŸRN³§!"
+ zhx_merit_store_item_status_nonmember:0 "§g^—ø‹¯O§!"
+
+ zhx_gui_merit_store_relief_tt:0 "§Y‹s‹THd`§!\n±‚9§R50§!ïS(ußvŸRÿcíu§Y10t^§!0\nhQýVÛSqN¦^ÿ§G-2§!\n3zšR¦^±‚9ÿ§G-10%§!\n\nN§Ytel™T»l§!T^SšbltMe‰sÿT‰sÏ‹äN1YHeMRNïSôfbc0"
+ zhx_gui_merit_store_governance_tt:0 "§Ytel™T»l§!\n±‚9§R50§!ïS(ußvŸRÿcíu§Y10t^§!0\nÏkgê»l¦^ØSSÿ§G-0.05§!\nt^¦^P%ÿ§G-0.10§!\n\nN§Y‹s‹THd`§!T^SšbltMe‰sÿT‰sÏ‹äN1YHeMRNïSôfbc0"
+ zhx_gui_merit_store_trade_tt:0 "§Yßv^FU§!\n±‚9§R50§!ïS(ußvŸRÿcíu§Y10t^§!0\n8fHe‡sÿ§G+10%§!\nhQNS8f›RÏ‘ÿ§G+10%§!\n\nN§YRþ‹ŒvåT§!T^SFURN‰sÿT‰sÏ‹äN1YHeMRNïSôfbc0"
+ zhx_gui_merit_store_industry_tt:0 "§YRþ‹ŒvåT§!\n±‚9§R50§!ïS(ußvŸRÿcíu§Y10t^§!0\nú^.±‚9ÿ§G-10%§!\nÑSUSb,gÿ§G-5%§!\n\nN§Yßv^FU§!T^SFURN‰sÿT‰sÏ‹äN1YHeMRNïSôfbc0"
+ zhx_gui_merit_store_army_tt:0 "§YGP‚‚te›Q§!\n±‚9§R50§!ïS(ußvŸRÿcíu§Y10t^§!0\nF–›QëXlÿ§G+5%§!\nºN›Rb`Y¦^ÿ§G+10%§!\n\nN§Y.ÎWˆR	W§!T^Ste›QˆR	W‰sÿT‰sÏ‹äN1YHeMRNïSôfbc0"
+ zhx_gui_merit_store_fortification_tt:0 "§Y.ÎWˆR	W§!\n±‚9§R50§!ïS(ußvŸRÿcíu§Y10t^§!0\n‰^X2–¡Vÿ§G+15%§!\n‰^Xôu²b9ÿ§G-15%§!\nLe›Qmcwÿ§G+1§!\n\nN§YGP‚‚te›Q§!T^Ste›QˆR	W‰sÿT‰sÏ‹äN1YHeMRNïSôfbc0"
+ zhx_gui_merit_store_honour_tt:0 "§Y‹s‹T‰ŸR§!\n±‚9§R50§!ïS(ußvŸRÿcíu§Y10t^§!0\nY²NðX‰Šÿ§G+1§!\nt^¦^Zgÿ§G+0.5§!\n\nN§Y-VuQîOßv§!T^S‰ŸRîOßv‰sÿT‰sÏ‹äN1YHeMRNïSôfbc0"
+ zhx_gui_merit_store_diplomacy_tt:0 "§Y-VuQîOßv§!\n±‚9§R50§!ïS(ußvŸRÿcíu§Y10t^§!0\n9e„UsQûsÿ§G+20%§!\nY²N˜Rÿ§G+1§!\n\nN§Y‹s‹T‰ŸR§!T^S‰ŸRîOßv‰sÿT‰sÏ‹äN1YHeMRNïSôfbc0"
+
+ zhx_merit_store_relief:0 "‹s‹THd`"
+ zhx_merit_store_governance:0 "tel™T»l"
+ zhx_merit_store_trade:0 "ßv^FU"
+ zhx_merit_store_industry:0 "Rþ‹ŒvåT"
+ zhx_merit_store_army:0 "GP‚‚te›Q"
+ zhx_merit_store_fortification:0 ".ÎWˆR	W"
+ zhx_merit_store_honour:0 "‹s‹T‰ŸR"
+ zhx_merit_store_diplomacy:0 "-VuQîOßv"
+ zhx_merit_dignity_power_projection:0 "N'Yø‹¯OßvŸRTMO"

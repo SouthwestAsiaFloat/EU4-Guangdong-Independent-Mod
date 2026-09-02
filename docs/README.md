@@ -35,6 +35,7 @@
 6. [礼教、百家与天下大辩机制](gameplay/05_ritual_hundred_schools_system.md)
 7. [景教牧首与圣像系统](gameplay/06_nestorian_patriarch_system.md)
 8. [具名学宫：省份思想载体与国家协同](gameplay/07_named_academies.md)
+9. [叙功行赏与二十五年诸侯改选](gameplay/08_zhou_merit_store.md)
 
 ### 地图设计
 

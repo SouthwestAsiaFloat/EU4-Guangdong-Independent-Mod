@@ -23,7 +23,10 @@ custom_shield = {
             exists = yes
             has_country_flag = zhx_member
             has_country_flag = zhx_major_feudatory
-            NOT = { tag = YAN }
+            OR = {
+                NOT = { has_saved_global_event_target = gdd_principal_vassal }
+                NOT = { tag = event_target:gdd_principal_vassal }
+            }
             NOT = { has_country_flag = zhx_tianzi }
         }
     }
@@ -43,7 +46,10 @@ custom_shield = {
             exists = yes
             has_country_flag = zhx_member
             has_country_flag = zhx_major_feudatory
-            NOT = { tag = YAN }
+            OR = {
+                NOT = { has_saved_global_event_target = gdd_principal_vassal }
+                NOT = { tag = event_target:gdd_principal_vassal }
+            }
             NOT = { has_country_flag = zhx_tianzi }
         }
     }
@@ -63,7 +69,10 @@ custom_shield = {
             exists = yes
             has_country_flag = zhx_member
             has_country_flag = zhx_major_feudatory
-            NOT = { tag = YAN }
+            OR = {
+                NOT = { has_saved_global_event_target = gdd_principal_vassal }
+                NOT = { tag = event_target:gdd_principal_vassal }
+            }
             NOT = { has_country_flag = zhx_tianzi }
         }
     }
@@ -83,7 +92,10 @@ custom_shield = {
             exists = yes
             has_country_flag = zhx_member
             has_country_flag = zhx_major_feudatory
-            NOT = { tag = YAN }
+            OR = {
+                NOT = { has_saved_global_event_target = gdd_principal_vassal }
+                NOT = { tag = event_target:gdd_principal_vassal }
+            }
             NOT = { has_country_flag = zhx_tianzi }
         }
     }
@@ -103,7 +115,10 @@ custom_shield = {
             exists = yes
             has_country_flag = zhx_member
             has_country_flag = zhx_major_feudatory
-            NOT = { tag = YAN }
+            OR = {
+                NOT = { has_saved_global_event_target = gdd_principal_vassal }
+                NOT = { tag = event_target:gdd_principal_vassal }
+            }
             NOT = { has_country_flag = zhx_tianzi }
         }
     }
@@ -123,7 +138,10 @@ custom_shield = {
             exists = yes
             has_country_flag = zhx_member
             has_country_flag = zhx_major_feudatory
-            NOT = { tag = YAN }
+            OR = {
+                NOT = { has_saved_global_event_target = gdd_principal_vassal }
+                NOT = { tag = event_target:gdd_principal_vassal }
+            }
             NOT = { has_country_flag = zhx_tianzi }
         }
     }

@@ -347,6 +347,14 @@ zhx_refresh_internal_war_count = {
 # 周天下国家作为战争胜方击败周天下以外的战争领袖时，当前天下显学改变
 # 这场胜利的国际评价。ROOT 仍是胜方战争领袖，当前作用域则是天子锚点。
 zhx_reward_external_war_victory = {
+    # 对外获胜本身固定记十点主动盟功；天下显学仍可在此基础上追加
+    # 旧有的 0—4 点评价差异。
+    ROOT = {
+        if = {
+            limit = { zhx_is_tianxia_member = yes }
+            zhx_add_active_merit = { amount = 10 }
+        }
+    }
     if = {
         limit = {
             has_country_modifier = zhx_tianxia_orthodoxy_term
@@ -355,33 +363,33 @@ zhx_reward_external_war_victory = {
         if = {
             limit = { has_country_flag = zhx_tianxia_orthodoxy_ru }
             change_variable = { which = zhx_ritual_authority value = 3 }
-            ROOT = { if = { limit = { zhx_is_tianxia_member = yes } change_variable = { which = zhx_merit value = 2 } zhx_clamp_merit = yes } }
+            ROOT = { if = { limit = { zhx_is_tianxia_member = yes } zhx_add_merit = { amount = 2 } } }
         }
         else_if = {
             limit = { has_country_flag = zhx_tianxia_orthodoxy_fa }
             change_variable = { which = zhx_ritual_authority value = 5 }
-            ROOT = { if = { limit = { zhx_is_tianxia_member = yes } change_variable = { which = zhx_merit value = 3 } zhx_clamp_merit = yes } }
+            ROOT = { if = { limit = { zhx_is_tianxia_member = yes } zhx_add_merit = { amount = 3 } } }
         }
         else_if = { limit = { has_country_flag = zhx_tianxia_orthodoxy_mo } change_variable = { which = zhx_ritual_authority value = 1 } }
         else_if = {
             limit = { has_country_flag = zhx_tianxia_orthodoxy_dao }
             change_variable = { which = zhx_ritual_authority value = 1 }
-            ROOT = { if = { limit = { zhx_is_tianxia_member = yes } change_variable = { which = zhx_merit value = 1 } zhx_clamp_merit = yes } }
+            ROOT = { if = { limit = { zhx_is_tianxia_member = yes } zhx_add_merit = { amount = 1 } } }
         }
         else_if = {
             limit = { has_country_flag = zhx_tianxia_orthodoxy_bing }
             change_variable = { which = zhx_ritual_authority value = 5 }
-            ROOT = { if = { limit = { zhx_is_tianxia_member = yes } change_variable = { which = zhx_merit value = 4 } zhx_clamp_merit = yes } }
+            ROOT = { if = { limit = { zhx_is_tianxia_member = yes } zhx_add_merit = { amount = 4 } } }
         }
         else_if = {
             limit = { has_country_flag = zhx_tianxia_orthodoxy_zongheng }
             change_variable = { which = zhx_ritual_authority value = 3 }
-            ROOT = { if = { limit = { zhx_is_tianxia_member = yes } change_variable = { which = zhx_merit value = 2 } zhx_clamp_merit = yes } }
+            ROOT = { if = { limit = { zhx_is_tianxia_member = yes } zhx_add_merit = { amount = 2 } } }
         }
         else_if = {
             limit = { has_country_flag = zhx_tianxia_orthodoxy_plural }
             change_variable = { which = zhx_ritual_authority value = 2 }
-            ROOT = { if = { limit = { zhx_is_tianxia_member = yes } change_variable = { which = zhx_merit value = 1 } zhx_clamp_merit = yes } }
+            ROOT = { if = { limit = { zhx_is_tianxia_member = yes } zhx_add_merit = { amount = 1 } } }
         }
     }
     else = {
@@ -570,6 +578,9 @@ zhx_register_tianxia_member = {
             which = zhx_merit
             value = 0
         }
+        set_variable = { which = zhx_merit_term value = 0 }
+        set_variable = { which = zhx_merit_lifetime value = 0 }
+        set_variable = { which = zhx_merit_rank_cache value = 0 }
         event_target:zhx_tianzi = {
             change_variable = {
                 which = zhx_member_count_cache
@@ -623,7 +634,12 @@ zhx_register_major_feudatory = {
                 CZH = { gdd_recalculate_all_reform_votes_effect = yes }
             }
             if = {
-                limit = { NOT = { tag = YAN } }
+                limit = {
+                    OR = {
+                        NOT = { has_saved_global_event_target = gdd_principal_vassal }
+                        NOT = { tag = event_target:gdd_principal_vassal }
+                    }
+                }
                 CZH = {
                     change_variable = {
                         which = gdd_six_great_feudatory_count
@@ -660,7 +676,10 @@ zhx_rebuild_six_great_feudatory_cache = {
             exists = yes
             has_country_flag = zhx_member
             has_country_flag = zhx_major_feudatory
-            NOT = { tag = YAN }
+            OR = {
+                NOT = { has_saved_global_event_target = gdd_principal_vassal }
+                NOT = { tag = event_target:gdd_principal_vassal }
+            }
             NOT = { has_country_flag = zhx_tianzi }
         }
         CZH = {
@@ -679,8 +698,18 @@ zhx_remove_major_feudatory = {
         limit = {
             has_country_flag = zhx_member
             has_country_flag = zhx_major_feudatory
-            NOT = { tag = YAN }
             NOT = { has_country_flag = zhx_tianzi }
+        }
+        if = {
+            limit = { has_global_flag = zhx_system_initialised_v13 }
+            zhx_remove_merit_dignity_projection = yes
+        }
+        if = {
+            limit = {
+                has_saved_global_event_target = gdd_principal_vassal
+                tag = event_target:gdd_principal_vassal
+            }
+            clear_global_event_target = gdd_principal_vassal
         }
         clr_country_flag = zhx_major_feudatory
         if = {
@@ -692,26 +721,7 @@ zhx_remove_major_feudatory = {
             gdd_ai_evaluate_all_reform_votes_effect = yes
             CZH = { gdd_recalculate_all_reform_votes_effect = yes }
         }
-        CZH = {
-            change_variable = {
-                which = gdd_six_great_feudatory_count
-                value = -1
-            }
-            if = {
-                limit = {
-                    NOT = {
-                        check_variable = {
-                            which = gdd_six_great_feudatory_count
-                            value = 0
-                        }
-                    }
-                }
-                set_variable = {
-                    which = gdd_six_great_feudatory_count
-                    value = 0
-                }
-            }
-        }
+        CZH = { zhx_rebuild_six_great_feudatory_cache = yes }
         if = {
             limit = { has_global_flag = gdd_eoc_great_feudatory_roster_initialised }
             CZH = {
@@ -726,13 +736,17 @@ zhx_remove_major_feudatory = {
 }
 
 # Promotion is capped at six non-principal seats and operates only on current
-# Zhou members. The principal feudatory YAN is the seventh great feudatory.
+# Zhou members. The seventh seat is whichever country currently owns the
+# gdd_principal_vassal event target.
 zhx_promote_six_great_feudatory = {
     if = {
         limit = {
             has_country_flag = zhx_member
             NOT = { has_country_flag = zhx_major_feudatory }
-            NOT = { tag = YAN }
+            OR = {
+                NOT = { has_saved_global_event_target = gdd_principal_vassal }
+                NOT = { tag = event_target:gdd_principal_vassal }
+            }
             NOT = { has_country_flag = zhx_tianzi }
             CZH = {
                 NOT = {
@@ -778,7 +792,10 @@ zhx_remove_tianxia_member = {
     if = {
         limit = {
             has_country_flag = zhx_major_feudatory
-            NOT = { tag = YAN }
+            OR = {
+                NOT = { has_saved_global_event_target = gdd_principal_vassal }
+                NOT = { tag = event_target:gdd_principal_vassal }
+            }
         }
         CZH = {
             change_variable = {
@@ -801,13 +818,35 @@ zhx_remove_tianxia_member = {
             }
         }
     }
+    if = {
+        limit = {
+            has_country_flag = zhx_major_feudatory
+            has_global_flag = zhx_system_initialised_v13
+        }
+        zhx_remove_merit_dignity_projection = yes
+    }
+    if = {
+        limit = {
+            has_saved_global_event_target = gdd_principal_vassal
+            tag = event_target:gdd_principal_vassal
+        }
+        clear_global_event_target = gdd_principal_vassal
+    }
     gdd_clear_all_reform_support_flags_effect = yes
     clr_country_flag = zhx_member
     clr_country_flag = zhx_major_feudatory
+    if = {
+        limit = { has_global_flag = zhx_system_initialised_v13 }
+        CZH = { zhx_rebuild_six_great_feudatory_cache = yes }
+    }
     set_variable = {
         which = zhx_merit
         value = 0
     }
+    set_variable = { which = zhx_merit_term value = 0 }
+    set_variable = { which = zhx_merit_lifetime value = 0 }
+    set_variable = { which = zhx_merit_rank_cache value = 0 }
+    clr_country_flag = zhx_merit_active_contribution_this_term
     zhx_clear_ritual_order_modifier = yes
     gdd_clear_authority_balance_effects = yes
     remove_country_modifier = zhx_reaffirmed_covenant_modifier
@@ -998,6 +1037,12 @@ zhx_migrate_tianxia_system_v11_to_v12 = {
     WEI = { if = { limit = { exists = yes } zhx_register_major_feudatory = yes } }
     CHC = { if = { limit = { exists = yes } zhx_register_major_feudatory = yes } }
     WUU = { if = { limit = { exists = yes } zhx_register_major_feudatory = yes } }
+    YAN = {
+        if = {
+            limit = { exists = yes has_country_flag = zhx_major_feudatory }
+            save_global_event_target_as = gdd_principal_vassal
+        }
+    }
     CZH = {
         zhx_rebuild_six_great_feudatory_cache = yes
         gdd_refresh_authority_balance_effects = yes

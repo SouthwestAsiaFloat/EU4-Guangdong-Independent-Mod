@@ -458,6 +458,20 @@ zhx_resolve_tianxia_debate = {
 }
 
 zhx_reward_tianxia_debate_alignment = {
+    # 凡在本届天下公议中正式投票者，都完成了一次主动天下贡献；
+    # 投中最终结果者再获得旧有的少量额外盟功。
+    every_country = {
+        limit = {
+            exists = yes
+            zhx_is_tianxia_member = yes
+            OR = {
+                has_country_flag = zhx_council_vote_a
+                has_country_flag = zhx_council_vote_b
+                has_country_flag = zhx_council_vote_c
+            }
+        }
+        zhx_add_active_merit = { amount = 10 }
+    }
     every_country = {
         limit = {
             exists = yes
@@ -467,8 +481,7 @@ zhx_reward_tianxia_debate_alignment = {
                 AND = { ROOT = { has_country_flag = zhx_council_result_b } has_country_flag = zhx_council_vote_b }
             }
         }
-        change_variable = { which = zhx_merit value = 2 }
-        zhx_clamp_merit = yes
+        zhx_add_merit = { amount = 2 }
     }
     every_country = {
         limit = {
@@ -477,8 +490,7 @@ zhx_reward_tianxia_debate_alignment = {
             ROOT = { has_country_flag = zhx_council_result_c }
             has_country_flag = zhx_council_vote_c
         }
-        change_variable = { which = zhx_merit value = 1 }
-        zhx_clamp_merit = yes
+        zhx_add_merit = { amount = 1 }
     }
 }
 

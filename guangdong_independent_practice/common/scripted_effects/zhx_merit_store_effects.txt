@@ -1,0 +1,305 @@
+# 盟功商店、三本账和二十五年改选的唯一演算层。
+
+zhx_add_merit = {
+    change_variable = { which = zhx_merit value = $amount$ }
+    change_variable = { which = zhx_merit_term value = $amount$ }
+    change_variable = { which = zhx_merit_lifetime value = $amount$ }
+    zhx_clamp_merit = yes
+}
+
+zhx_add_active_merit = {
+    set_country_flag = zhx_merit_active_contribution_this_term
+    zhx_add_merit = { amount = $amount$ }
+}
+
+# 供后续勤王战争/事件链调用的稳定接口。勤王是否正当由战争层判断，
+# 本效果只负责把已经确认的胜利写入三本盟功账。
+zhx_reward_qinwang_victory = {
+    if = {
+        limit = { zhx_is_tianxia_member = yes }
+        zhx_add_active_merit = { amount = 10 }
+    }
+}
+
+zhx_buy_merit_store_relief = {
+    change_variable = { which = zhx_merit value = -50 }
+    zhx_clamp_merit = yes
+    add_country_modifier = { name = zhx_merit_store_relief duration = 3650 }
+}
+
+zhx_buy_merit_store_governance = {
+    change_variable = { which = zhx_merit value = -50 }
+    zhx_clamp_merit = yes
+    add_country_modifier = { name = zhx_merit_store_governance duration = 3650 }
+}
+
+zhx_buy_merit_store_trade = {
+    change_variable = { which = zhx_merit value = -50 }
+    zhx_clamp_merit = yes
+    add_country_modifier = { name = zhx_merit_store_trade duration = 3650 }
+}
+
+zhx_buy_merit_store_industry = {
+    change_variable = { which = zhx_merit value = -50 }
+    zhx_clamp_merit = yes
+    add_country_modifier = { name = zhx_merit_store_industry duration = 3650 }
+}
+
+zhx_buy_merit_store_army = {
+    change_variable = { which = zhx_merit value = -50 }
+    zhx_clamp_merit = yes
+    add_country_modifier = { name = zhx_merit_store_army duration = 3650 }
+}
+
+zhx_buy_merit_store_fortification = {
+    change_variable = { which = zhx_merit value = -50 }
+    zhx_clamp_merit = yes
+    add_country_modifier = { name = zhx_merit_store_fortification duration = 3650 }
+}
+
+zhx_buy_merit_store_honour = {
+    change_variable = { which = zhx_merit value = -50 }
+    zhx_clamp_merit = yes
+    add_country_modifier = { name = zhx_merit_store_honour duration = 3650 }
+}
+
+zhx_buy_merit_store_diplomacy = {
+    change_variable = { which = zhx_merit value = -50 }
+    zhx_clamp_merit = yes
+    add_country_modifier = { name = zhx_merit_store_diplomacy duration = 3650 }
+}
+
+# 每次找出尚未入选者中最优的一国，并把它保存到传入的名次事件目标。
+zhx_select_next_merit_rank = {
+    if = {
+        limit = { has_saved_global_event_target = zhx_merit_rank_best }
+        clear_global_event_target = zhx_merit_rank_best
+    }
+    if = {
+        limit = { has_saved_global_event_target = zhx_merit_rank_current }
+        clear_global_event_target = zhx_merit_rank_current
+    }
+    every_country = {
+        limit = { zhx_merit_rank_is_eligible = yes }
+        save_global_event_target_as = zhx_merit_rank_current
+        if = {
+            limit = { NOT = { has_saved_global_event_target = zhx_merit_rank_best } }
+            save_global_event_target_as = zhx_merit_rank_best
+        }
+        else_if = {
+            limit = { zhx_merit_rank_candidate_is_better = yes }
+            save_global_event_target_as = zhx_merit_rank_best
+        }
+    }
+    if = {
+        limit = { has_saved_global_event_target = zhx_merit_rank_best }
+        event_target:zhx_merit_rank_best = {
+            set_country_flag = zhx_merit_rank_selected
+            set_variable = { which = zhx_merit_rank_cache value = $rank$ }
+            save_global_event_target_as = $target$
+        }
+    }
+}
+
+zhx_clear_merit_rank_targets = {
+    if = { limit = { has_saved_global_event_target = zhx_merit_rank_01 } clear_global_event_target = zhx_merit_rank_01 }
+    if = { limit = { has_saved_global_event_target = zhx_merit_rank_02 } clear_global_event_target = zhx_merit_rank_02 }
+    if = { limit = { has_saved_global_event_target = zhx_merit_rank_03 } clear_global_event_target = zhx_merit_rank_03 }
+    if = { limit = { has_saved_global_event_target = zhx_merit_rank_04 } clear_global_event_target = zhx_merit_rank_04 }
+    if = { limit = { has_saved_global_event_target = zhx_merit_rank_05 } clear_global_event_target = zhx_merit_rank_05 }
+    if = { limit = { has_saved_global_event_target = zhx_merit_rank_06 } clear_global_event_target = zhx_merit_rank_06 }
+    if = { limit = { has_saved_global_event_target = zhx_merit_rank_07 } clear_global_event_target = zhx_merit_rank_07 }
+    if = { limit = { has_saved_global_event_target = zhx_merit_rank_best } clear_global_event_target = zhx_merit_rank_best }
+    if = { limit = { has_saved_global_event_target = zhx_merit_rank_current } clear_global_event_target = zhx_merit_rank_current }
+}
+
+zhx_recalculate_merit_ranking = {
+    zhx_clear_merit_rank_targets = yes
+    every_country = {
+        limit = { exists = yes }
+        clr_country_flag = zhx_merit_rank_selected
+        set_variable = { which = zhx_merit_rank_cache value = 0 }
+        export_to_variable = { which = zhx_merit_rank_prestige value = prestige }
+    }
+    zhx_select_next_merit_rank = { rank = 1 target = zhx_merit_rank_01 }
+    zhx_select_next_merit_rank = { rank = 2 target = zhx_merit_rank_02 }
+    zhx_select_next_merit_rank = { rank = 3 target = zhx_merit_rank_03 }
+    zhx_select_next_merit_rank = { rank = 4 target = zhx_merit_rank_04 }
+    zhx_select_next_merit_rank = { rank = 5 target = zhx_merit_rank_05 }
+    zhx_select_next_merit_rank = { rank = 6 target = zhx_merit_rank_06 }
+    zhx_select_next_merit_rank = { rank = 7 target = zhx_merit_rank_07 }
+    every_country = {
+        limit = { has_country_flag = zhx_merit_rank_selected }
+        clr_country_flag = zhx_merit_rank_selected
+    }
+    if = { limit = { has_saved_global_event_target = zhx_merit_rank_best } clear_global_event_target = zhx_merit_rank_best }
+    if = { limit = { has_saved_global_event_target = zhx_merit_rank_current } clear_global_event_target = zhx_merit_rank_current }
+}
+
+zhx_remove_merit_dignity_projection = {
+    if = {
+        limit = {
+            has_saved_global_event_target = gdd_principal_vassal
+            tag = event_target:gdd_principal_vassal
+        }
+        add_power_projection = { type = zhx_merit_dignity_power_projection amount = -20 }
+    }
+    else = {
+        add_power_projection = { type = zhx_merit_dignity_power_projection amount = -10 }
+    }
+}
+
+zhx_apply_seven_dignity = {
+    set_country_flag = zhx_major_feudatory
+    add_power_projection = { type = zhx_merit_dignity_power_projection amount = 10 }
+}
+
+zhx_apply_principal_dignity = {
+    zhx_apply_seven_dignity = yes
+    add_power_projection = { type = zhx_merit_dignity_power_projection amount = 10 }
+    save_global_event_target_as = gdd_principal_vassal
+}
+
+zhx_settle_merit_term = {
+    # 先排序，排序触发器仍能看到上一届的现任身份。
+    zhx_recalculate_merit_ranking = yes
+
+    every_country = {
+        limit = { has_country_flag = zhx_major_feudatory }
+        zhx_remove_merit_dignity_projection = yes
+        clr_country_flag = zhx_major_feudatory
+        gdd_clear_authority_balance_effects = yes
+    }
+    if = {
+        limit = { has_saved_global_event_target = gdd_principal_vassal }
+        clear_global_event_target = gdd_principal_vassal
+    }
+
+    if = { limit = { has_saved_global_event_target = zhx_merit_rank_01 } event_target:zhx_merit_rank_01 = { zhx_apply_principal_dignity = yes } }
+    if = { limit = { has_saved_global_event_target = zhx_merit_rank_02 } event_target:zhx_merit_rank_02 = { zhx_apply_seven_dignity = yes } }
+    if = { limit = { has_saved_global_event_target = zhx_merit_rank_03 } event_target:zhx_merit_rank_03 = { zhx_apply_seven_dignity = yes } }
+    if = { limit = { has_saved_global_event_target = zhx_merit_rank_04 } event_target:zhx_merit_rank_04 = { zhx_apply_seven_dignity = yes } }
+    if = { limit = { has_saved_global_event_target = zhx_merit_rank_05 } event_target:zhx_merit_rank_05 = { zhx_apply_seven_dignity = yes } }
+    if = { limit = { has_saved_global_event_target = zhx_merit_rank_06 } event_target:zhx_merit_rank_06 = { zhx_apply_seven_dignity = yes } }
+    if = { limit = { has_saved_global_event_target = zhx_merit_rank_07 } event_target:zhx_merit_rank_07 = { zhx_apply_seven_dignity = yes } }
+
+    set_variable = { which = zhx_merit_term_year value = 0 }
+    set_variable = { which = zhx_merit_term_years_remaining value = 25 }
+    every_country = {
+        limit = { exists = yes }
+        set_variable = { which = zhx_merit_term value = 0 }
+        set_variable = { which = zhx_merit_rank_cache value = 0 }
+        clr_country_flag = zhx_merit_active_contribution_this_term
+    }
+    zhx_clear_merit_rank_targets = yes
+
+    zhx_rebuild_six_great_feudatory_cache = yes
+    gdd_build_eoc_great_feudatory_roster = yes
+    gdd_refresh_authority_balance_effects = yes
+}
+
+zhx_yearly_merit_tick = {
+    every_country = {
+        limit = { zhx_is_tianxia_member = yes }
+        clr_country_flag = zhx_merit_store_bought_this_year
+        if = {
+            limit = { total_development = 500 }
+            zhx_add_merit = { amount = 4 }
+        }
+        else_if = {
+            limit = { total_development = 250 }
+            zhx_add_merit = { amount = 3 }
+        }
+        else_if = {
+            limit = { total_development = 100 }
+            zhx_add_merit = { amount = 2 }
+        }
+        else = { zhx_add_merit = { amount = 1 } }
+    }
+
+    change_variable = { which = zhx_merit_term_year value = 1 }
+    set_variable = { which = zhx_merit_term_years_remaining value = 25 }
+    subtract_variable = { which = zhx_merit_term_years_remaining which = zhx_merit_term_year }
+
+    if = {
+        limit = { check_variable = { which = zhx_merit_term_year value = 25 } }
+        zhx_settle_merit_term = yes
+    }
+    else = { zhx_recalculate_merit_ranking = yes }
+
+    every_country = {
+        limit = {
+            ai = yes
+            zhx_is_tianxia_member = yes
+            check_variable = { which = zhx_merit value = 50 }
+            NOT = { has_country_flag = zhx_merit_store_bought_this_year }
+        }
+        zhx_ai_buy_merit_store_item = yes
+    }
+}
+
+# AI 每年最多买一次。战争国家优先军备，腐败或高自治国家优先治理，
+# 其余国家从八件商品中低频随机选择；选到已占用类别时当年保留盟功。
+zhx_ai_buy_merit_store_item = {
+    if = {
+        limit = { is_at_war = yes zhx_can_buy_merit_store_military = yes }
+        random_list = {
+            50 = { zhx_buy_merit_store_army = yes }
+            50 = { zhx_buy_merit_store_fortification = yes }
+        }
+        set_country_flag = zhx_merit_store_bought_this_year
+    }
+    else_if = {
+        limit = {
+            zhx_can_buy_merit_store_governance = yes
+            OR = { corruption = 1 average_autonomy_above_min = 30 }
+        }
+        random_list = {
+            50 = { zhx_buy_merit_store_relief = yes }
+            50 = { zhx_buy_merit_store_governance = yes }
+        }
+        set_country_flag = zhx_merit_store_bought_this_year
+    }
+    else = {
+        random_list = {
+            10 = { if = { limit = { zhx_can_buy_merit_store_governance = yes } zhx_buy_merit_store_relief = yes set_country_flag = zhx_merit_store_bought_this_year } }
+            10 = { if = { limit = { zhx_can_buy_merit_store_governance = yes } zhx_buy_merit_store_governance = yes set_country_flag = zhx_merit_store_bought_this_year } }
+            10 = { if = { limit = { zhx_can_buy_merit_store_economy = yes } zhx_buy_merit_store_trade = yes set_country_flag = zhx_merit_store_bought_this_year } }
+            10 = { if = { limit = { zhx_can_buy_merit_store_economy = yes } zhx_buy_merit_store_industry = yes set_country_flag = zhx_merit_store_bought_this_year } }
+            10 = { if = { limit = { zhx_can_buy_merit_store_military = yes } zhx_buy_merit_store_army = yes set_country_flag = zhx_merit_store_bought_this_year } }
+            10 = { if = { limit = { zhx_can_buy_merit_store_military = yes } zhx_buy_merit_store_fortification = yes set_country_flag = zhx_merit_store_bought_this_year } }
+            10 = { if = { limit = { zhx_can_buy_merit_store_diplomacy = yes } zhx_buy_merit_store_honour = yes set_country_flag = zhx_merit_store_bought_this_year } }
+            10 = { if = { limit = { zhx_can_buy_merit_store_diplomacy = yes } zhx_buy_merit_store_diplomacy = yes set_country_flag = zhx_merit_store_bought_this_year } }
+        }
+    }
+}
+
+zhx_migrate_tianxia_system_v12_to_v13 = {
+    CZH = {
+        set_variable = { which = zhx_merit_term_year value = 0 }
+        set_variable = { which = zhx_merit_term_years_remaining value = 25 }
+    }
+    every_country = {
+        limit = { zhx_is_tianxia_member = yes }
+        set_variable = { which = zhx_merit_term value = 0 }
+        set_variable = { which = zhx_merit_lifetime value = 0 }
+        set_variable = { which = zhx_merit_rank_cache value = 0 }
+    }
+    # 沿用团队既有的开局七大诸侯和首席诸侯，不在迁移时抢先改选。
+    every_country = {
+        limit = { has_country_flag = zhx_major_feudatory }
+        add_power_projection = { type = zhx_merit_dignity_power_projection amount = 10 }
+    }
+    if = {
+        limit = {
+            has_saved_global_event_target = gdd_principal_vassal
+            event_target:gdd_principal_vassal = { exists = yes has_country_flag = zhx_major_feudatory }
+        }
+        event_target:gdd_principal_vassal = {
+            add_power_projection = { type = zhx_merit_dignity_power_projection amount = 10 }
+        }
+    }
+    zhx_rebuild_six_great_feudatory_cache = yes
+    gdd_build_eoc_great_feudatory_roster = yes
+    set_global_flag = zhx_system_initialised_v13
+}

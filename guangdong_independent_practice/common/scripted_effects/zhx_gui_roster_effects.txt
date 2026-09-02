@@ -1607,14 +1607,8 @@ zhx_allocate_gui_roster_slot = {
 }
 
 zhx_build_gui_roster = {
-    zhx_clear_gui_roster = yes
-    every_country = {
-        limit = {
-            exists = yes
-            has_country_flag = zhx_member
-        }
-        zhx_allocate_gui_roster_slot = yes
-    }
+    # 旧周天下面板的二百枚盾徽已经退役；仅维护天命页仍在使用的
+    # 成员名册与七大诸侯名册，避免年度脉冲继续构建不可见缓存。
     set_global_flag = zhx_gui_roster_initialised
     gdd_build_eoc_member_roster = yes
     gdd_build_eoc_great_feudatory_roster = yes
@@ -2250,7 +2244,10 @@ gdd_build_eoc_great_feudatory_roster = {
             exists = yes
             has_country_flag = zhx_member
             has_country_flag = zhx_major_feudatory
-            NOT = { tag = YAN }
+            OR = {
+                NOT = { has_saved_global_event_target = gdd_principal_vassal }
+                NOT = { tag = event_target:gdd_principal_vassal }
+            }
             NOT = { has_country_flag = zhx_tianzi }
         }
         gdd_allocate_eoc_great_feudatory_roster_slot = yes

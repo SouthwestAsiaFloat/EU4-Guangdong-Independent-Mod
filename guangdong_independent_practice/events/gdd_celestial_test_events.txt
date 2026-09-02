@@ -8,6 +8,9 @@ country_event = {
 
     trigger = {
         tag = YAN
+        # v13 以后首席诸侯由盟功换届保存；重载时不得把空位或新首席
+        # 强行改回燕国。旧版初始化仍保留这条兼容入口。
+        NOT = { has_global_flag = zhx_system_initialised_v13 }
     }
 
     immediate = {
