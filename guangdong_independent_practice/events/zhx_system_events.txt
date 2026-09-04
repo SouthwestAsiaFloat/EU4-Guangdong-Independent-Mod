@@ -25,6 +25,7 @@ country_event = {
             NOT = { has_global_flag = zhx_system_initialised_v11 }
             NOT = { has_global_flag = zhx_system_initialised_v12 }
             NOT = { has_global_flag = zhx_system_initialised_v13 }
+            NOT = { has_global_flag = zhx_system_initialised_v14 }
             NOT = { has_global_flag = zhx_gui_roster_initialised }
             NOT = { has_global_flag = gdd_eoc_member_roster_initialised }
             NOT = { has_global_flag = gdd_eoc_great_feudatory_roster_initialised }
@@ -103,6 +104,12 @@ country_event = {
                 NOT = { has_global_flag = zhx_system_initialised_v13 }
             }
             zhx_migrate_tianxia_system_v12_to_v13 = yes
+        }
+        if = {
+            limit = {
+                NOT = { has_global_flag = zhx_system_initialised_v14 }
+            }
+            zhx_migrate_tianxia_system_v13_to_v14 = yes
         }
         if = {
             limit = {

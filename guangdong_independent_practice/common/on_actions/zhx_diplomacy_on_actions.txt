@@ -1,0 +1,124 @@
+# 周天下外交底座使用独立 on_action 文件，避免把省份地图与宗教生命周期
+# 继续堆进系统主文件。
+
+on_province_owner_change = {
+    # THIS = 省份，FROM = 旧主人，owner = 新主人。
+    # 只有战争中取得、且新主人没有核心的周天下土地才是非法兼并。
+    if = {
+        limit = {
+            has_global_flag = zhx_system_initialised_v14
+            FROM = {
+                exists = yes
+                zhx_is_tianxia_polity = yes
+            }
+            owner = {
+                exists = yes
+                war_with = FROM
+                NOT = { has_country_flag = zhx_diplomacy_lawful_transfer }
+            }
+            NOT = { is_core = owner }
+        }
+        owner = {
+            if = {
+                limit = { is_subject = yes }
+                overlord = {
+                    # SetOwner 仍在执行时只向存活的责任国写入布尔标记。
+                    # 不在这里触发延时事件，以免带着和约结束后失效的 FROM。
+                    zhx_diplomacy_queue_illegal_cession = yes
+                }
+            }
+            else = {
+                zhx_diplomacy_queue_illegal_cession = yes
+            }
+        }
+    }
+}
+
+# 和谈当天只提供一张纯展示通知。此回调不结算任何游戏效果；
+# 犯盟、关系、AE 和礼乐仍留到月度国家作用域。
+on_peace_actor = {
+    if = {
+        limit = {
+            has_global_flag = zhx_system_initialised_v14
+            ai = no
+            has_country_flag = zhx_diplomacy_illegal_cession_queued
+            NOT = { has_country_flag = zhx_diplomacy_illegal_notice_shown }
+        }
+        set_country_flag = zhx_diplomacy_illegal_notice_shown
+        country_event = { id = zhx_diplomacy.10 }
+    }
+}
+
+on_peace_recipient = {
+    if = {
+        limit = {
+            has_global_flag = zhx_system_initialised_v14
+            ai = no
+            has_country_flag = zhx_diplomacy_illegal_cession_queued
+            NOT = { has_country_flag = zhx_diplomacy_illegal_notice_shown }
+        }
+        set_country_flag = zhx_diplomacy_illegal_notice_shown
+        country_event = { id = zhx_diplomacy.10 }
+    }
+}
+
+# 所有犯盟与灭侯后果只在月度国家作用域结算，最多延迟一个月。
+# 真实和谈的 SetOwner/on_annexed 调用栈内因此没有 AE、关系、事件或世界扫描。
+on_monthly_pulse = {
+    # 罕见的非和约首脑归责国收不到 post-peace 回调，在此补发通知。
+    if = {
+        limit = {
+            has_global_flag = zhx_system_initialised_v14
+            ai = no
+            has_country_flag = zhx_diplomacy_illegal_cession_queued
+            NOT = { has_country_flag = zhx_diplomacy_illegal_notice_shown }
+        }
+        set_country_flag = zhx_diplomacy_illegal_notice_shown
+        country_event = { id = zhx_diplomacy.10 }
+    }
+    if = {
+        limit = {
+            has_global_flag = zhx_system_initialised_v14
+            has_country_flag = zhx_diplomacy_illegal_cession_queued
+        }
+        # 裸 on_action 的 ROOT 不适合作为跨国关系目标。隐藏国家事件会
+        # 重新建立明确的犯盟国 ROOT，且仍在月度安全边界内执行。
+        country_event = { id = zhx_diplomacy.11 }
+        zhx_diplomacy_settle_illegal_cession = yes
+    }
+    if = {
+        limit = {
+            has_global_flag = zhx_system_initialised_v14
+            has_country_flag = zhx_diplomacy_extinction_ae_queued
+            check_variable = {
+                which = zhx_diplomacy_member_extinction_count
+                value = 1
+            }
+        }
+        zhx_diplomacy_settle_extinction_ae = yes
+    }
+    if = {
+        limit = {
+            has_global_flag = zhx_system_initialised_v14
+            zhx_is_tianzi = yes
+            check_variable = {
+                which = zhx_tianxia_extinction_penalty_count
+                value = 1
+            }
+        }
+        zhx_diplomacy_settle_extinction_ritual_loss = yes
+    }
+}
+
+# 历史诸侯被独立释放时直接恢复席位；作为附庸释放者日后仍可正常申请。
+on_country_released = {
+    if = {
+        limit = {
+            has_global_flag = zhx_system_initialised_v14
+            zhx_is_historic_tianxia_tag = yes
+            is_subject = no
+            NOT = { zhx_is_tianxia_polity = yes }
+        }
+        zhx_register_tianxia_member = yes
+    }
+}

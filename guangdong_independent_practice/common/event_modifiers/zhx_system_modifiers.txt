@@ -1,22 +1,20 @@
-# Shared Zhou-order tiers. Positive ae_impact intentionally makes conquest
-# more diplomatically expensive while the rites are strong.
+# Shared Zhou-order tiers. Diplomacy v14 removes the old global AE multiplier:
+# ordinary illegal cessions only cause covenant-breaking, while wartime member
+# extinction receives a separate fixed five-point AE charge.
 zhx_ritual_order_ordered = {
     global_tax_modifier = 0.10
     production_efficiency = 0.10
-    ae_impact = 0.25
 }
 
 zhx_ritual_order_stable = {
     global_tax_modifier = 0.05
     production_efficiency = 0.05
-    ae_impact = 0.15
 }
 
 zhx_ritual_order_balanced = {
     global_tax_modifier = 0.02
     production_efficiency = 0.02
     discipline = 0.01
-    ae_impact = 0.05
 }
 
 zhx_ritual_order_fractured = {

@@ -1057,13 +1057,21 @@ def validate_on_actions(academies: list[dict[str, object]], effects: str) -> Non
         "owner-change hook lacks the lifecycle cancellation effect",
     )
     require(
-        owner_change.find("zhx_academy_cancel_expulsion_on_owner_change = yes")
-        < owner_change.find("zhx_refresh_academy_country_effects = yes"),
-        "owner-change cancellation must precede derived-state reconciliation",
+        "zhx_refresh_academy_country_effects = yes" not in owner_change,
+        "owner-change hook must defer derived-state reconciliation until SetOwner completes",
     )
     require(
-        owner_change.count("zhx_refresh_academy_country_effects = yes") == 2,
-        "owner-change hook must refresh new and former owners exactly once",
+        owner_change.count("set_country_flag = zhx_academy_ownership_dirty") == 2,
+        "owner-change hook must mark new and former owners exactly once",
+    )
+    monthly = block_body(text, "on_monthly_pulse")
+    require(
+        "has_country_flag = zhx_academy_ownership_dirty" in monthly
+        and monthly.count("clr_country_flag = zhx_academy_ownership_dirty") == 1
+        and monthly.count("zhx_refresh_academy_country_effects = yes") == 1
+        and monthly.index("clr_country_flag = zhx_academy_ownership_dirty")
+        < monthly.index("zhx_refresh_academy_country_effects = yes"),
+        "monthly hook must consume the ownership marker before refreshing derived state",
     )
 
     cancel = block_body(effects, "zhx_academy_cancel_expulsion_on_owner_change")

@@ -1,0 +1,31 @@
+﻿l_english:
+ zhx_covenant_breaker:0 "¯rßv"
+ zhx_covenant_breaker_desc:0 "å‹ýV^—ÕlŠQv^hT)YNW0WÿASt^…QN—V3u÷‹ ReQhT)YNÿ)YPRmNO•gÆ‰vQHN¯rßvw0dk¶r`,g«ŽNæS RÏuNmb›Q–é`Z0"
+ zhx_tianxia_application_cooldown:0 "eQhT3u÷‹«ˆ&T"
+ zhx_tianxia_application_cooldown_desc:0 "ASt^…QNýwQ!k3u÷‹ReQhT)YNTŒQ0"
+ zhx_tianxia_rejoin_bar:0 "ê»ShTMs"
+ zhx_tianxia_rejoin_bar_desc:0 "å‹ýVIN¨RúQhT)YNÿŒNASt^…QNýwÍ‘°e3u÷‹0"
+
+ zhx_opinion_covenant_breaker:0 "¯rßvHYW"
+ zhx_opinion_left_tianxia_tianzi:0 "ê»ShTMs"
+ zhx_opinion_left_tianxia_member:0 "Ìw»yßv“Š"
+
+ zhx_diplomacy.10.t:0 "¯rßvHYW"
+ zhx_diplomacy.10.d:0 "ŒT¦uòTšR0býV(Wb‰N-NÖS—V†N¡l	g,gýV8hÃV„vhT)YNW0Wÿ)YNSdkÆ‰HN¯rßv0\n\nnfrR0WNQ	cwýNÑSUS¦^ý R,gµOeuib.V0¯rßv¶r`N)YPR„vsQûsqVÍTS(WN!kg¦^8h—röe‰v°‹0å‚,g¦ump¡N†Nø‹¯OÿmpýVwæSbÅbúVšR5¹pµOeuib.Vÿ)YNJyPNTöemc1Y5¹p0"
+ zhx_diplomacy.10.a:0 "ŒT¦uòTbÿ)YNqQû•0"
+
+ zhx_diplomacy.30.t:0 "÷‹RhTMs"
+ zhx_diplomacy.30.d:0 "§Y[zhx_diplomacy_applicant.GetName]§!cONfNÿ÷‹BlReQhT)YNTŒQ0å‹ýVòTÏuìrËzÿ8gThT)YNýV¶R²NbÿùR)YPR‹Ya¾0R150ÿv^NvQ–™ýMOŽN-NýV!k'YF–b†uLuN°s	gbXTøv¥c0\n\n‡eS0—RYeNMeSONjOHNÁˆïSè•Ûiÿ=f&T¥c³u1u)YPR³Q­e0"
+ zhx_diplomacy.30.a:0 "¸‹vQRMs0"
+ zhx_diplomacy.30.b:0 "sšÞVNb÷‹0"
+ zhx_diplomacy_admission_still_valid_tt:0 "3u÷‹ýVÍN6qìrËz0¡l	g¯rßvb·QtS08gNhT)YNýV¶R²Nb0ùR)YPR‹YaóS150ÿv^án³–™ýMOŽN-NýV!k'YF–bN°s	gbXT¥cäX0"
+ zhx_diplomacy_accept_admission_tt:0 "3u÷‹ýVReQhT)YNTŒQÿÝOYuìrËzY²Nv^·ƒ—VSVMRhT)YNqQTîOck0"
+ zhx_diplomacy_reject_admission_tt:0 "sšÞV3u÷‹ÿå‹ýVASt^…QNýwQ!k÷‹RhTMs0"
+
+ zhx_apply_to_join_tianxia_title:0 "÷‹RhTMs"
+ zhx_apply_to_join_tianxia_desc:0 "ìrËzýV¶Rå‚8gþf¯rßv08gNhT)YNýV¶R²Nb0ùR)YPR‹Ya¾0R150ÿv^åN-NýV!k'YF–HN–™ýbN°s	gbXT¥cäXÿ¿OïS÷‹Bl)YPRSvQReQhT)YNTŒQ0"
+ zhx_apply_to_join_tianxia_requirements_tt:0 "býVÅV‰˜ìrËzÿ¡l	g¯rßv0úQyeQ03u÷‹·QtSb…VYt3u÷‹ÿ8gNûNUOhT)YNýV¶R²NbÿùR)YPR‹YaóS150ÿv^åN-NýV!k'YF–HN–™ýbN°s	gbXT¥cäX0"
+ zhx_apply_to_join_tianxia_effect_tt:0 "T)YPR²NeQhT3u÷‹0)YPR¥c×STÿbýVbHNåb	gìrËzY²NCg„vhT)YNø‹¯Oÿå‚«ˆ&T³QÿASt^…QNýwQ!k3u÷‹0"
+ zhx_leave_tianxia_title:0 "ê»ShTMs"
+ zhx_leave_tianxia_desc:0 "ìrËzNYŽNŒTs^„vø‹¯OïSåNIN¨RúQhT)YN0)YPRNýw«ˆÙN³Q®‹úQÿ)YPRmNNýwUS¹eb—qšvQÖNbXT0"
+ zhx_leave_tianxia_effect_tt:0 "1Y»ShT)YNbXT«ŽýNNqQTîOckÿmc1Y§R25§!Zgÿ)YPRùRbýV·ƒ—VASt^§R-50§!‹YaÿvQÖNbXT·ƒ—VASt^§R-25§!‹YaÿŒNASt^…QN—VÍ‘°e3u÷‹0úQ,g«ŽNµNuµOeuib.Vÿâe	g¯rßv¶r`NO«ˆnd–0"

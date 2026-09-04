@@ -1,0 +1,99 @@
+# 周天下外交底座的公共判断接口。
+
+# 1444 成员目录中的历史诸侯。被战争释放且恢复独立时，这些国家可以
+# 直接恢复旧有席位；普通外国仍须走申请—天子裁可流程。
+zhx_is_historic_tianxia_tag = {
+    OR = {
+        tag = BAA
+        tag = CAG
+        tag = CAI
+        tag = CCH
+        tag = CDE
+        tag = CHC
+        tag = CHN
+        tag = CSA
+        tag = CZC
+        tag = DAE
+        tag = DAI
+        tag = DIA
+        tag = DQU
+        tag = EGU
+        tag = GDD
+        tag = GON
+        tag = GUI
+        tag = GUN
+        tag = DMG
+        tag = GUO
+        tag = GUZ
+        tag = GYA
+        tag = HAK
+        tag = HNG
+        tag = HUA
+        tag = HYA
+        tag = HYM
+        tag = JJG
+        tag = JIZ
+        tag = JUU
+        tag = LCH
+        tag = LIO
+        tag = LIU
+        tag = LUO
+        tag = LUU
+        tag = MIN
+        tag = MNG
+        tag = NCH
+        tag = OUE
+        tag = QIC
+        tag = QIN
+        tag = QSH
+        tag = QVN
+        tag = QWO
+        tag = SHE
+        tag = SHU
+        tag = SNG
+        tag = SUI
+        tag = TSF
+        tag = WEI
+        tag = WHU
+        tag = WUU
+        tag = WUZ
+        tag = WVG
+        tag = XU2
+        tag = XNG
+        tag = ACG
+        tag = YAN
+        tag = YOU
+        tag = YPG
+        tag = YUE
+        tag = ZHA
+        tag = ZHG
+        tag = ZHO
+        tag = ZHU
+        tag = ZNG
+        tag = ZSH
+    }
+}
+
+# ROOT 是申请者。文化、宗教和政体均不是门槛；地理上满足“中国次大陆首都”
+# 或“与现有成员接壤”之一即可。
+zhx_can_apply_for_tianxia_membership = {
+    exists = yes
+    is_subject = no
+    NOT = { zhx_is_tianxia_polity = yes }
+    NOT = { has_country_modifier = zhx_covenant_breaker }
+    NOT = { has_country_modifier = zhx_tianxia_rejoin_bar }
+    NOT = { has_country_modifier = zhx_tianxia_application_cooldown }
+    event_target:zhx_tianzi = { exists = yes }
+    has_opinion = { who = event_target:zhx_tianzi value = 150 }
+    OR = {
+        capital_scope = { superregion = china_superregion }
+        any_neighbor_country = { zhx_is_tianxia_polity = yes }
+    }
+    NOT = {
+        any_country = {
+            exists = yes
+            zhx_is_tianxia_polity = yes
+            war_with = ROOT
+        }
+    }
+}

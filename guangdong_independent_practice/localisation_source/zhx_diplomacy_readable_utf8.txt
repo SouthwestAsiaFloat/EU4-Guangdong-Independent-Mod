@@ -1,0 +1,31 @@
+l_english:
+ zhx_covenant_breaker:0 "犯盟"
+ zhx_covenant_breaker_desc:0 "该国非法兼并周天下土地，十年内不得申请加入周天下；天子也会长期视其为犯盟者。此状态本身不另加经济或军队惩罚。"
+ zhx_tianxia_application_cooldown:0 "入周申请被否"
+ zhx_tianxia_application_cooldown_desc:0 "十年内不能再次申请列入周天下名册。"
+ zhx_tianxia_rejoin_bar:0 "自去周籍"
+ zhx_tianxia_rejoin_bar_desc:0 "该国主动退出周天下，二十年内不能重新申请。"
+
+ zhx_opinion_covenant_breaker:0 "犯盟夺土"
+ zhx_opinion_left_tianxia_tianzi:0 "自去周籍"
+ zhx_opinion_left_tianxia_member:0 "背离盟誓"
+
+ zhx_diplomacy.10.t:0 "犯盟夺土"
+ zhx_diplomacy.10.d:0 "和约已定。我国在战争中取得了没有本国核心的周天下土地，天下将此视为犯盟。\n\n普通割地不再按省份发展度追加脚本侵略扩张。犯盟状态与天子的关系影响将在下次月度核算时登记。若本约灭亡了诸侯，灭国者另承担固定5点侵略扩张，天下礼乐同时损失5点。"
+ zhx_diplomacy.10.a:0 "和约已成，天下共闻。"
+
+ zhx_diplomacy.30.t:0 "请列周籍"
+ zhx_diplomacy.30.d:0 "§Y[zhx_diplomacy_applicant.GetName]§!遣使上书，请求列入周天下名册。该国已经独立，未同周天下国家交战，对天子好感达到150，并且其首都位于中国次大陆或疆界与现有成员相接。\n\n文化、宗教与政体不作为裁可门槛；是否接纳由天子决断。"
+ zhx_diplomacy.30.a:0 "许其列籍。"
+ zhx_diplomacy.30.b:0 "驳回所请。"
+ zhx_diplomacy_admission_still_valid_tt:0 "申请国仍然独立、没有犯盟或冷却、未与周天下国家交战、对天子好感至少150，并满足首都位于中国次大陆或与现有成员接壤。"
+ zhx_diplomacy_accept_admission_tt:0 "申请国列入周天下名册，保留独立外交并获得当前周天下共同修正。"
+ zhx_diplomacy_reject_admission_tt:0 "驳回申请；该国十年内不能再次请列周籍。"
+
+ zhx_apply_to_join_tianxia_title:0 "请列周籍"
+ zhx_apply_to_join_tianxia_desc:0 "独立国家若未曾犯盟、未与周天下国家交战、对天子好感达到150，并以中国次大陆为首都或与现有成员接壤，便可请求天子将其列入周天下名册。"
+ zhx_apply_to_join_tianxia_requirements_tt:0 "我国必须独立，没有犯盟、退出禁入、申请冷却或待处理申请，未与任何周天下国家交战，对天子好感至少150，并以中国次大陆为首都或与现有成员接壤。"
+ zhx_apply_to_join_tianxia_effect_tt:0 "向天子递交入周申请。天子接受后，我国成为拥有独立外交权的周天下诸侯；若被否决，十年内不能再次申请。"
+ zhx_leave_tianxia_title:0 "自去周籍"
+ zhx_leave_tianxia_desc:0 "独立且处于和平的诸侯可以主动退出周天下。天子不能被这一决议逐出，天子也不能单方面驱逐其他成员。"
+ zhx_leave_tianxia_effect_tt:0 "失去周天下成员身份与共同修正，损失§R25§!威望；天子对我国获得十年§R-50§!好感，其他成员获得十年§R-25§!好感；二十年内不得重新申请。退出本身不产生侵略扩张；既有犯盟状态不会被清除。"

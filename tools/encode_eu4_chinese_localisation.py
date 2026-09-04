@@ -86,6 +86,7 @@ FILES = {
     "zhx_nestorian_readable_utf8.txt": "zhx_nestorian_l_english.yml",
     "zhx_academies_readable_utf8.txt": "zhx_academies_l_english.yml",
     "zhx_academy_lifecycle_readable_utf8.txt": "zhx_academy_lifecycle_l_english.yml",
+    "zhx_diplomacy_readable_utf8.txt": "zhx_diplomacy_l_english.yml",
 }
 
 # Bytes that the double-byte patch escapes inside either half of a UCS-2 code

@@ -1,0 +1,115 @@
+namespace = zhx_diplomacy
+
+# 真实和谈完成后的纯展示通知。不在事件内结算任何处罚，
+# 因而不会把 AE、关系或世界遍历带回和谈执行栈。
+country_event = {
+    id = zhx_diplomacy.10
+    title = zhx_diplomacy.10.t
+    desc = zhx_diplomacy.10.d
+    picture = DIPLOMACY_eventPicture
+    is_triggered_only = yes
+
+    option = {
+        name = zhx_diplomacy.10.a
+    }
+}
+
+# 月度犯盟关系桥。事件 ROOT 明确是犯盟责任国；天子使用周天下初始化
+# 时保存的权威全局目标。该事件隐藏、无世界扫描，也不进入和谈事务。
+country_event = {
+    id = zhx_diplomacy.11
+    title = zhx_diplomacy.10.t
+    desc = zhx_diplomacy.10.d
+    picture = DIPLOMACY_eventPicture
+    hidden = yes
+    is_triggered_only = yes
+
+    immediate = {
+        if = {
+            limit = {
+                NOT = { zhx_is_tianzi = yes }
+                has_saved_global_event_target = zhx_tianzi
+                event_target:zhx_tianzi = { exists = yes }
+            }
+            event_target:zhx_tianzi = {
+                add_opinion = {
+                    who = ROOT
+                    modifier = zhx_opinion_covenant_breaker
+                }
+            }
+        }
+    }
+
+    option = { name = OK }
+}
+
+# 申请者已经保存为事件目标；天子只做接受或否决的简单裁可。
+country_event = {
+    id = zhx_diplomacy.30
+    title = zhx_diplomacy.30.t
+    desc = zhx_diplomacy.30.d
+    picture = DIPLOMACY_eventPicture
+    is_triggered_only = yes
+
+    option = {
+        name = zhx_diplomacy.30.a
+        trigger = {
+            custom_trigger_tooltip = {
+                tooltip = zhx_diplomacy_admission_still_valid_tt
+                event_target:zhx_diplomacy_applicant = {
+                    exists = yes
+                    zhx_can_apply_for_tianxia_membership = yes
+                }
+            }
+        }
+        custom_tooltip = zhx_diplomacy_accept_admission_tt
+        hidden_effect = {
+            event_target:zhx_diplomacy_applicant = {
+                clr_country_flag = zhx_tianxia_application_pending
+                remove_country_modifier = zhx_tianxia_application_cooldown
+                zhx_register_tianxia_member = yes
+            }
+        }
+        ai_chance = {
+            factor = 35
+            modifier = {
+                factor = 3
+                has_opinion = { who = event_target:zhx_diplomacy_applicant value = 100 }
+            }
+            modifier = {
+                factor = 3
+                alliance_with = event_target:zhx_diplomacy_applicant
+            }
+            modifier = {
+                factor = 2
+                any_country = {
+                    is_enemy = ROOT
+                    event_target:zhx_diplomacy_applicant = { is_enemy = PREV }
+                }
+            }
+            modifier = {
+                factor = 0
+                is_rival = event_target:zhx_diplomacy_applicant
+            }
+            modifier = {
+                factor = 0.25
+                NOT = { has_opinion = { who = event_target:zhx_diplomacy_applicant value = 0 } }
+            }
+        }
+    }
+
+    option = {
+        name = zhx_diplomacy.30.b
+        custom_tooltip = zhx_diplomacy_reject_admission_tt
+        hidden_effect = {
+            event_target:zhx_diplomacy_applicant = {
+                clr_country_flag = zhx_tianxia_application_pending
+                add_country_modifier = {
+                    name = zhx_tianxia_application_cooldown
+                    duration = 3650
+                }
+            }
+        }
+        ai_chance = { factor = 65 }
+    }
+}

@@ -416,14 +416,25 @@ def validate_hooks(academies: list[dict[str, object]]) -> None:
             f"{academy['modifier']}: owner-change hook missing or duplicated",
         )
     require(
-        owner_change.count("zhx_refresh_academy_country_effects = yes") == 2,
-        "owner-change hook must refresh both owners",
+        "zhx_refresh_academy_country_effects = yes" not in owner_change,
+        "owner-change hook must defer derived-state refresh until SetOwner completes",
     )
     require(
-        owner_change.count("zhx_academy_cancel_expulsion_on_owner_change = yes") == 1
-        and owner_change.index("zhx_academy_cancel_expulsion_on_owner_change = yes")
-        < owner_change.index("zhx_refresh_academy_country_effects = yes"),
-        "owner-change lifecycle cancellation must run once before both refreshes",
+        owner_change.count("set_country_flag = zhx_academy_ownership_dirty") == 2,
+        "owner-change hook must mark both owners for deferred refresh",
+    )
+    require(
+        owner_change.count("zhx_academy_cancel_expulsion_on_owner_change = yes") == 1,
+        "owner-change lifecycle cancellation must run exactly once",
+    )
+    monthly = block_body(on_actions, "on_monthly_pulse")
+    require(
+        "has_country_flag = zhx_academy_ownership_dirty" in monthly
+        and monthly.count("clr_country_flag = zhx_academy_ownership_dirty") == 1
+        and monthly.count("zhx_refresh_academy_country_effects = yes") == 1
+        and monthly.index("clr_country_flag = zhx_academy_ownership_dirty")
+        < monthly.index("zhx_refresh_academy_country_effects = yes"),
+        "monthly hook must consume the academy ownership marker before refreshing derived state",
     )
 
     opening = OPENING_EVENTS.read_text(encoding="utf-8")

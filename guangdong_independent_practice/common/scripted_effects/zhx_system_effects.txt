@@ -574,6 +574,9 @@ zhx_register_tianxia_member = {
             NOT = { has_country_flag = zhx_member }
         }
         set_country_flag = zhx_member
+        # A restored polity may have been extinguished earlier in the same
+        # campaign. Its next destruction must count as a new loss of statehood.
+        clr_country_flag = zhx_tianxia_extinction_penalty_recorded
         set_variable = {
             which = zhx_merit
             value = 0
@@ -859,6 +862,54 @@ zhx_remove_tianxia_member = {
     if = {
         limit = { has_global_flag = gdd_celestial_reform_voting_initialised }
         CZH = { gdd_recalculate_all_reform_votes_effect = yes }
+    }
+}
+
+# Engine-transaction-safe removal used only from on_annexed/on_integrate.
+# The disappearing country clears its own authoritative identity and disposable
+# ballot state; all world scans and GUI/cache rebuilds are deferred to CZH's
+# next monthly country pulse.
+zhx_queue_tianxia_member_removal = {
+    zhx_clear_current_tianxia_council_vote = yes
+    zhx_clear_tianxia_council_ai_schedule = yes
+    gdd_clear_all_reform_support_flags_effect = yes
+    clr_country_flag = zhx_member
+    clr_country_flag = zhx_major_feudatory
+    set_variable = { which = zhx_merit value = 0 }
+    set_variable = { which = zhx_merit_term value = 0 }
+    set_variable = { which = zhx_merit_lifetime value = 0 }
+    set_variable = { which = zhx_merit_rank_cache value = 0 }
+    clr_country_flag = zhx_merit_active_contribution_this_term
+    zhx_clear_ritual_order_modifier = yes
+    gdd_clear_authority_balance_effects = yes
+    remove_country_modifier = zhx_reaffirmed_covenant_modifier
+    CZH = { set_country_flag = zhx_tianxia_membership_dirty }
+}
+
+# CZH country scope, called only after annexation/integration has fully
+# completed. Extinct countries are no longer visited by any of these scans.
+zhx_reconcile_tianxia_membership_after_transfer = {
+    clr_country_flag = zhx_tianxia_membership_dirty
+    if = {
+        limit = {
+            has_saved_global_event_target = gdd_principal_vassal
+            event_target:gdd_principal_vassal = { NOT = { exists = yes } }
+        }
+        clear_global_event_target = gdd_principal_vassal
+    }
+    zhx_rebuild_tianxia_member_cache = yes
+    zhx_rebuild_six_great_feudatory_cache = yes
+    if = {
+        limit = { has_country_flag = zhx_council_phase_ballot_open }
+        zhx_recount_tianxia_council_ballot = yes
+    }
+    if = {
+        limit = { has_global_flag = zhx_gui_roster_initialised }
+        zhx_build_gui_roster = yes
+    }
+    if = {
+        limit = { has_global_flag = gdd_celestial_reform_voting_initialised }
+        gdd_recalculate_all_reform_votes_effect = yes
     }
 }
 
