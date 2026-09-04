@@ -12,6 +12,8 @@ ROOT = Path(__file__).resolve().parents[1]
 MOD = ROOT / "guangdong_independent_practice"
 
 PATHS = {
+    "cb_types": MOD / "common/cb_types/zhx_diplomacy_cb_types.txt",
+    "diplomatic_actions": MOD / "common/new_diplomatic_actions/zhx_diplomacy_actions.txt",
     "triggers": MOD / "common/scripted_triggers/zhx_diplomacy_triggers.txt",
     "effects": MOD / "common/scripted_effects/zhx_diplomacy_effects.txt",
     "events": MOD / "events/zhx_diplomacy_events.txt",
@@ -145,6 +147,8 @@ def validate() -> None:
 
     texts = {label: path.read_text(encoding="utf-8", errors="strict") for label, path in PATHS.items()}
     for label in (
+        "cb_types",
+        "diplomatic_actions",
         "triggers",
         "effects",
         "events",
@@ -164,6 +168,8 @@ def validate() -> None:
         require("country_event" not in body, f"{effect} must not fire an event inside SetOwner/on_annexed")
         require("every_country" not in body, f"{effect} must not scan countries inside SetOwner/on_annexed")
         require("add_aggressive_expansion" not in body, f"{effect} must not apply AE inside SetOwner/on_annexed")
+        require("add_casus_belli" not in body, f"{effect} must not grant a CB inside SetOwner/on_annexed")
+        require("reverse_add_casus_belli" not in body, f"{effect} must not grant a reverse CB inside SetOwner/on_annexed")
     cession_queue = block(effects, "zhx_diplomacy_queue_illegal_cession")
     require("change_variable" not in cession_queue, "province owner change must remain a boolean-only transaction marker")
     extinction_queue = block(effects, "zhx_diplomacy_queue_member_extinction")
@@ -195,6 +201,136 @@ def validate() -> None:
     require("while =" in ritual_loss and "zhx_refresh_ritual_order = yes" in ritual_loss, "extinction losses must settle and refresh safely")
     require("zhx_diplomacy_refresh_relief_casus_belli" not in effects, "retired relief-CB scan must stay removed")
 
+    cb_types = texts["cb_types"]
+    punitive_cb = block(cb_types, "zhx_cb_punish_covenant_breaker")
+    for token in (
+        "valid_for_subject = no",
+        "is_triggered_only = yes",
+        "months = 120",
+        "war_goal = superiority_insult",
+    ):
+        require(token in punitive_cb, f"punitive CB missing safe standalone setting: {token}")
+    require(punitive_cb.count("war_goal") == 1, "punitive CB must reuse exactly one vanilla wargoal")
+    for forbidden in (
+        "can_use =",
+        "allowed_provinces =",
+        "allowed_states =",
+        "allowed_subcontinents =",
+        "all_provinces =",
+        "every_country",
+        "zhx_restore_covenant_wargoal",
+        "zhx_relieve_member_wargoal",
+        "zhx_cb_relieve_tianxia_member",
+    ):
+        require(forbidden not in punitive_cb, f"punitive CB must remain a trigger-only vanilla-wargoal layer: {forbidden}")
+
+    diplomatic_actions = texts["diplomatic_actions"]
+    relief_action = block(diplomatic_actions, "zhx_relieve_tianxia_member")
+    masked_relief_action = masked_clausewitz(relief_action)
+    require("category = influence" in relief_action, "relief action must use the native influence category")
+    require("require_acceptance = no" in relief_action, "relief action must join immediately without recipient acceptance")
+
+    relief_visible = block(relief_action, "is_visible")
+    masked_relief_visible = masked_clausewitz(relief_visible)
+    require("zhx_is_tianzi = yes" in relief_visible, "only the Tianzi may see the relief action")
+    require(
+        re.search(
+            r"FROM\s*=\s*\{[^{}]*"
+            r"exists\s*=\s*yes[^{}]*"
+            r"is_subject\s*=\s*no[^{}]*"
+            r"zhx_is_tianxia_polity\s*=\s*yes[^{}]*"
+            r"NOT\s*=\s*\{\s*zhx_is_tianzi\s*=\s*yes\s*\}",
+            masked_relief_visible,
+            re.S,
+        )
+        is not None,
+        "relief target must be an existing independent ordinary Zhou member",
+    )
+    require(
+        re.search(
+            r"any_war_enemy_country\s*=\s*\{[^{}]*"
+            r"exists\s*=\s*yes[^{}]*"
+            r"NOT\s*=\s*\{\s*zhx_is_tianxia_polity\s*=\s*yes\s*\}[^{}]*"
+            r"offensive_war_with\s*=\s*PREV[^{}]*"
+            r"is_in_war\s*=\s*\{[^{}]*"
+            r"attacker_leader\s*=\s*THIS[^{}]*"
+            r"defender_leader\s*=\s*PREV[^{}]*\}",
+            masked_relief_visible,
+            re.S,
+        )
+        is not None,
+        "relief action must require an external war leader directly attacking the member as defender leader",
+    )
+
+    relief_allowed = block(relief_action, "is_allowed")
+    masked_relief_allowed = masked_clausewitz(relief_allowed)
+    for token, message in (
+        ("tooltip = zhx_relieve_tianxia_member_requires_peace_tt", "relief action must explain the Tianzi peace requirement"),
+        ("is_at_war = no", "the Tianzi must be at peace before joining a member's defensive war"),
+        ("tooltip = zhx_relieve_tianxia_member_not_enemy_tt", "relief action must explain the direct-war exclusion"),
+        ("NOT = { war_with = FROM }", "the Tianzi must not already be at war with the relief target"),
+        ("tooltip = zhx_relieve_tianxia_member_no_internal_war_tt", "relief action must explain the mixed internal-war exclusion"),
+        ("tooltip = zhx_relieve_tianxia_member_no_allied_attacker_tt", "relief action must explain attacker-side diplomatic conflicts"),
+        ("alliance_with = ROOT", "the Tianzi must not be allied with an attacking participant"),
+        ("is_subject_of = ROOT", "the Tianzi must not be overlord of an attacking participant"),
+    ):
+        require(token in relief_allowed, message)
+    require(
+        re.search(
+            r"NOT\s*=\s*\{\s*any_war_enemy_country\s*=\s*\{[^{}]*"
+            r"zhx_is_tianxia_polity\s*=\s*yes[^{}]*"
+            r"offensive_war_with\s*=\s*PREV[^{}]*\}\s*\}",
+            masked_relief_allowed,
+            re.S,
+        )
+        is not None,
+        "relief action must reject a member whose defensive wars include a Zhou attacker",
+    )
+    require(
+        re.search(
+            r"NOT\s*=\s*\{\s*any_war_enemy_country\s*=\s*\{[^{}]*"
+            r"offensive_war_with\s*=\s*PREV[^{}]*"
+            r"OR\s*=\s*\{[^{}]*"
+            r"alliance_with\s*=\s*ROOT[^{}]*"
+            r"is_subject_of\s*=\s*ROOT[^{}]*\}\s*\}\s*\}",
+            masked_relief_allowed,
+            re.S,
+        )
+        is not None,
+        "relief action must reject attacking participants allied to or subject to the Tianzi",
+    )
+
+    relief_accept = block(relief_action, "on_accept")
+    require(
+        re.fullmatch(
+            r"\s*on_accept\s*=\s*\{\s*join_all_defensive_wars_of\s*=\s*FROM\s*\}\s*",
+            masked_clausewitz(relief_accept),
+            re.S,
+        )
+        is not None,
+        "relief action acceptance must consist solely of joining FROM's defensive wars",
+    )
+    require(masked_relief_action.count("join_all_defensive_wars_of") == 1, "relief action must join defensive wars exactly once")
+    relief_ai = block(relief_action, "ai_will_do")
+    require(
+        re.fullmatch(r"\s*ai_will_do\s*=\s*\{\s*always\s*=\s*no\s*\}\s*", masked_clausewitz(relief_ai), re.S)
+        is not None,
+        "first relief-action iteration must keep AI initiation disabled",
+    )
+    for forbidden in (
+        "casus_belli",
+        "add_casus_belli",
+        "reverse_add_casus_belli",
+        "declare_war",
+        "every_country",
+        "country_event",
+        "province_event",
+        "on_war_started",
+        "zhx_cb_relieve_tianxia_member",
+        "zhx_relieve_member_wargoal",
+    ):
+        require(forbidden not in relief_action, f"relief action must remain a direct native war-join action: {forbidden}")
+
     on_actions = texts["on_actions"]
     owner_change = block(on_actions, "on_province_owner_change")
     require("war_with = FROM" in owner_change, "illegal acquisition must require an active war")
@@ -207,6 +343,8 @@ def validate() -> None:
     require("development =" not in owner_change, "owner change must not retain province development tiers")
     require("add_aggressive_expansion" not in owner_change, "owner change must not add per-province AE")
     require("change_variable" not in owner_change, "owner change must not maintain a per-province ledger")
+    require("add_casus_belli" not in owner_change, "owner change must not grant a CB")
+    require("reverse_add_casus_belli" not in owner_change, "owner change must not grant a reverse CB")
     for peace_hook in ("on_peace_actor", "on_peace_recipient"):
         peace_body = block(on_actions, peace_hook)
         for token in (
@@ -220,6 +358,7 @@ def validate() -> None:
         for forbidden in (
             "add_aggressive_expansion",
             "add_casus_belli",
+            "reverse_add_casus_belli",
             "add_opinion",
             "change_variable",
             "every_country",
@@ -228,6 +367,7 @@ def validate() -> None:
             require(forbidden not in peace_body, f"{peace_hook} must remain presentation-only: {forbidden}")
     diplomacy_monthly = block(on_actions, "on_monthly_pulse")
     require("country_event = { id = zhx_diplomacy.11 }" in diplomacy_monthly, "monthly pulse must enter the hidden country-event opinion bridge")
+    require("country_event = { id = zhx_diplomacy.12 }" in diplomacy_monthly, "monthly pulse must enter the isolated punitive-CB bridge")
     require("zhx_diplomacy_settle_illegal_cession = yes" in diplomacy_monthly, "monthly pulse must settle covenant breaches outside the peace stack")
     require("zhx_diplomacy_settle_extinction_ae = yes" in diplomacy_monthly, "monthly pulse must settle the independent extinction-AE queue")
     require("zhx_diplomacy_settle_extinction_ritual_loss = yes" in diplomacy_monthly, "Tianzi monthly pulse must settle extinction ritual losses")
@@ -271,7 +411,7 @@ def validate() -> None:
         "batch cleanup must clear the owner-change queue marker",
     )
     event_text = texts["events"]
-    for event_id in (10, 11, 30):
+    for event_id in (10, 11, 12, 30):
         require(re.search(rf"\bid\s*=\s*zhx_diplomacy\.{event_id}\b", event_text) is not None, f"missing diplomacy event {event_id}")
     for event_id in (1, 2, 3, 4, 20, 99):
         require(re.search(rf"\bid\s*=\s*zhx_diplomacy\.{event_id}\b", event_text) is None, f"obsolete delayed event {event_id} must be removed")
@@ -301,20 +441,36 @@ def validate() -> None:
     require("has_saved_global_event_target = zhx_tianzi" in opinion_bridge, "opinion bridge must use the authoritative Tianzi target")
     require("event_target:zhx_tianzi" in opinion_bridge and "who = ROOT" in opinion_bridge, "opinion bridge must make the Tianzi judge the offending event root")
     require("modifier = zhx_opinion_covenant_breaker" in opinion_bridge, "opinion bridge is missing the covenant-breaker penalty")
+    require("add_casus_belli" not in opinion_bridge, "opinion bridge must remain isolated from the punitive-CB grant")
+    cb_bridge = event_block(event_text, "zhx_diplomacy.12")
+    require("hidden = yes" in cb_bridge, "punitive-CB bridge must remain invisible")
+    require("NOT = { zhx_is_tianzi = yes }" in cb_bridge, "Tianzi must never receive a punitive CB against itself")
+    require("has_saved_global_event_target = zhx_tianzi" in cb_bridge, "punitive-CB bridge must use the authoritative Tianzi target")
+    require(cb_bridge.count("add_casus_belli") == 1, "punitive-CB bridge must grant exactly one CB")
+    masked_cb_bridge = masked_clausewitz(cb_bridge)
+    require(
+        re.search(
+            r"event_target:zhx_tianzi\s*=\s*\{\s*"
+            r"add_casus_belli\s*=\s*\{[^{}]*"
+            r"target\s*=\s*ROOT\b[^{}]*"
+            r"type\s*=\s*zhx_cb_punish_covenant_breaker\b[^{}]*"
+            r"months\s*=\s*120\b[^{}]*\}\s*\}",
+            masked_cb_bridge,
+            re.S,
+        )
+        is not None,
+        "punitive CB must be granted by event-target Tianzi against offender ROOT for 120 months",
+    )
+    for forbidden in ("every_country", "reverse_add_casus_belli"):
+        require(forbidden not in cb_bridge, f"punitive-CB bridge must not use {forbidden}")
     admission = event_block(event_text, "zhx_diplomacy.30")
     require("zhx_diplomacy.30.a" in admission and "zhx_diplomacy.30.b" in admission, "Tianzi admission must be accept/reject only")
 
-    retired_files = (
-        MOD / "common/cb_types/zhx_diplomacy_cb_types.txt",
-        MOD / "common/wargoal_types/zhx_diplomacy_wargoal_types.txt",
-    )
-    for retired in retired_files:
-        require(not retired.exists(), f"retired dynamic-CB file returned: {retired.relative_to(ROOT)}")
-    runtime_diplomacy = "\n".join((effects, event_text, on_actions))
+    retired_wargoal = MOD / "common/wargoal_types/zhx_diplomacy_wargoal_types.txt"
+    require(not retired_wargoal.exists(), f"retired custom-wargoal file returned: {retired_wargoal.relative_to(ROOT)}")
+    runtime_diplomacy = "\n".join((cb_types, diplomatic_actions, effects, event_text, on_actions))
     for forbidden in (
-        "add_casus_belli",
         "reverse_add_casus_belli",
-        "zhx_cb_punish_covenant_breaker",
         "zhx_cb_relieve_tianxia_member",
         "zhx_restore_covenant_wargoal",
         "zhx_relieve_member_wargoal",
@@ -355,6 +511,16 @@ def validate() -> None:
 
     required_loc = (
         "zhx_covenant_breaker",
+        "zhx_cb_punish_covenant_breaker",
+        "zhx_cb_punish_covenant_breaker_desc",
+        "zhx_relieve_tianxia_member",
+        "zhx_relieve_tianxia_member_title",
+        "zhx_relieve_tianxia_member_desc",
+        "zhx_relieve_tianxia_member_tooltip",
+        "zhx_relieve_tianxia_member_requires_peace_tt",
+        "zhx_relieve_tianxia_member_not_enemy_tt",
+        "zhx_relieve_tianxia_member_no_internal_war_tt",
+        "zhx_relieve_tianxia_member_no_allied_attacker_tt",
         "zhx_diplomacy.10.d",
         "zhx_diplomacy.30.d",
         "zhx_apply_to_join_tianxia_title",
@@ -364,7 +530,6 @@ def validate() -> None:
         require(re.search(rf"(?m)^\s*{re.escape(key)}:0\s", texts["loc_source"]) is not None, f"readable localisation missing {key}")
         require(re.search(rf"(?m)^\s*{re.escape(key)}:0\s", texts["loc_encoded"]) is not None, f"encoded localisation missing {key}")
     for retired_key in (
-        "zhx_cb_punish_covenant_breaker",
         "zhx_cb_relieve_tianxia_member",
         "zhx_restore_covenant_wargoal",
         "zhx_relieve_member_wargoal",
@@ -384,7 +549,9 @@ def main() -> int:
     print("  ordinary province cessions add no scripted AE; member extinction: +5")
     print("  every member extinction queues a universal -5 ritual-authority loss")
     print("  real peace uses a same-day presentation-only notice; punishments settle monthly")
-    print("  dynamic punitive/relief CBs and their monthly world scan are absent")
+    print("  Tianzi receives an isolated 120-month punitive CB through a hidden monthly bridge")
+    print("  Tianzi may manually join an externally attacked member's defensive wars through a native diplomatic action")
+    print("  relief action has no CB, world scan, event/on-action bridge or custom wargoal")
     print("  membership application, voluntary exit and historic restoration wired")
     print("  this command performs static checks only; runtime evidence is documented separately")
     return 0

@@ -14,8 +14,9 @@ country_event = {
     }
 }
 
-# 月度犯盟关系桥。事件 ROOT 明确是犯盟责任国；天子使用周天下初始化
-# 时保存的权威全局目标。该事件隐藏、无世界扫描，也不进入和谈事务。
+# 月度犯盟关系桥。事件 ROOT 明确是仍然存在的犯盟责任国；天子使用
+# 周天下初始化时保存的权威全局目标。该事件隐藏、无世界扫描，也不
+# 进入和谈或省份易主事务。
 country_event = {
     id = zhx_diplomacy.11
     title = zhx_diplomacy.10.t
@@ -35,6 +36,38 @@ country_event = {
                 add_opinion = {
                     who = ROOT
                     modifier = zhx_opinion_covenant_breaker
+                }
+            }
+        }
+    }
+
+    option = { name = OK }
+}
+
+# 月度犯盟战争理由桥。与关系桥拆开，便于单独验证、回滚和定位问题。
+# ROOT 是犯盟责任国；战争理由授予天子，目标保持为稳定的事件 ROOT。
+country_event = {
+    id = zhx_diplomacy.12
+    title = zhx_diplomacy.10.t
+    desc = zhx_diplomacy.10.d
+    picture = DIPLOMACY_eventPicture
+    hidden = yes
+    is_triggered_only = yes
+
+    immediate = {
+        if = {
+            limit = {
+                NOT = { zhx_is_tianzi = yes }
+                has_saved_global_event_target = zhx_tianzi
+                event_target:zhx_tianzi = { exists = yes }
+            }
+            event_target:zhx_tianzi = {
+                # This mirrors native triggered-event CB grants. Expiry matches
+                # the ten-year covenant-breaker state; reoffending refreshes it.
+                add_casus_belli = {
+                    target = ROOT
+                    type = zhx_cb_punish_covenant_breaker
+                    months = 120
                 }
             }
         }

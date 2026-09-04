@@ -1,6 +1,6 @@
 l_english:
  zhx_covenant_breaker:0 "犯盟"
- zhx_covenant_breaker_desc:0 "该国非法兼并周天下土地，十年内不得申请加入周天下；天子也会长期视其为犯盟者。此状态本身不另加经济或军队惩罚。"
+ zhx_covenant_breaker_desc:0 "该国非法兼并周天下土地，十年内不得申请加入周天下；天子也会长期视其为犯盟者，并在犯盟者不是天子时取得“奉辞伐罪”战争理由。此状态本身不另加经济或军队惩罚。"
  zhx_tianxia_application_cooldown:0 "入周申请被否"
  zhx_tianxia_application_cooldown_desc:0 "十年内不能再次申请列入周天下名册。"
  zhx_tianxia_rejoin_bar:0 "自去周籍"
@@ -10,8 +10,20 @@ l_english:
  zhx_opinion_left_tianxia_tianzi:0 "自去周籍"
  zhx_opinion_left_tianxia_member:0 "背离盟誓"
 
+ zhx_cb_punish_covenant_breaker:0 "奉辞伐罪"
+ zhx_cb_punish_covenant_breaker_desc:0 "该国犯盟夺取周天下土地，天子可以兴师问罪。此役以战场优势迫其认罪、赔款并撤销僭称，不以低价割取土地为正当目标。"
+
+ zhx_relieve_tianxia_member:0 "救患"
+ zhx_relieve_tianxia_member_title:0 "救患"
+ zhx_relieve_tianxia_member_desc:0 "以周天子身份驰援§Y[From.GetName]§!，立即加入该国当前参加的全部防御战争。该行动不建立同盟，也不会让天子自动参加其今后的战争。"
+ zhx_relieve_tianxia_member_tooltip:0 "加入§Y[From.GetName]§!当前参加的全部防御战争。"
+ zhx_relieve_tianxia_member_requires_peace_tt:0 "周天子必须处于和平，方可发动救患。"
+ zhx_relieve_tianxia_member_not_enemy_tt:0 "周天子不能在正与该诸侯交战时发动救患。"
+ zhx_relieve_tianxia_member_no_internal_war_tt:0 "该诸侯不能同时处于由其他周天下国家发动的防御战争。"
+ zhx_relieve_tianxia_member_no_allied_attacker_tt:0 "周天子不能与该诸侯当前防御战争中的进攻方结盟，也不能以其宗主身份加入敌对阵营。"
+
  zhx_diplomacy.10.t:0 "犯盟夺土"
- zhx_diplomacy.10.d:0 "和约已定。我国在战争中取得了没有本国核心的周天下土地，天下将此视为犯盟。\n\n普通割地不再按省份发展度追加脚本侵略扩张。犯盟状态与天子的关系影响将在下次月度核算时登记。若本约灭亡了诸侯，灭国者另承担固定5点侵略扩张，天下礼乐同时损失5点。"
+ zhx_diplomacy.10.d:0 "和约已定。我国在战争中取得了没有本国核心的周天下土地，天下将此视为犯盟。\n\n普通割地不再按省份发展度追加脚本侵略扩张。犯盟状态与天子的关系影响将在下次月度核算时登记；若责任国不是天子，天子同时取得十年“奉辞伐罪”战争理由。若本约灭亡了诸侯，灭国者另承担固定5点侵略扩张，天下礼乐同时损失5点。"
  zhx_diplomacy.10.a:0 "和约已成，天下共闻。"
 
  zhx_diplomacy.30.t:0 "请列周籍"

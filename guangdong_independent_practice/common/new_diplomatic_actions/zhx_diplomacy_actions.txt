@@ -1,0 +1,96 @@
+# 周天下“救患”使用原生外交行动直接加入既有防御战争。
+# ROOT = 发起行动的周天子，FROM = 外交页中被保护的诸侯。
+#
+# EU4 1.37.5 只能一次加入目标国的全部防御战争，不能从脚本外交行动中
+# 选择其中一场。首版因此要求天子处于和平，并在提示中明确这一原生边界。
+zhx_relieve_tianxia_member = {
+    category = influence
+
+    require_acceptance = no
+
+    is_visible = {
+        has_global_flag = zhx_system_initialised_v14
+        zhx_is_tianzi = yes
+        is_subject = no
+        FROM = {
+            exists = yes
+            is_subject = no
+            zhx_is_tianxia_polity = yes
+            NOT = { zhx_is_tianzi = yes }
+            is_at_war = yes
+
+            # 只在本国是防御战争领袖，且域外战争领袖正在进攻本国时显示。
+            # 诸侯内战以及仅作为盟友参加的防御战争均不开放“救患”。
+            any_war_enemy_country = {
+                exists = yes
+                NOT = { zhx_is_tianxia_polity = yes }
+                offensive_war_with = PREV
+                is_in_war = {
+                    attacker_leader = THIS
+                    defender_leader = PREV
+                }
+            }
+
+            # 已经在该诸侯统领的防御阵营时不再显示重复入口。
+            NOT = {
+                is_in_war = {
+                    defenders = ROOT
+                    defender_leader = THIS
+                }
+            }
+        }
+    }
+
+    is_allowed = {
+        if = {
+            limit = { is_at_war = yes }
+            custom_trigger_tooltip = {
+                tooltip = zhx_relieve_tianxia_member_requires_peace_tt
+                is_at_war = no
+            }
+        }
+        if = {
+            limit = { war_with = FROM }
+            custom_trigger_tooltip = {
+                tooltip = zhx_relieve_tianxia_member_not_enemy_tt
+                NOT = { war_with = FROM }
+            }
+        }
+        FROM = {
+            custom_trigger_tooltip = {
+                tooltip = zhx_relieve_tianxia_member_no_internal_war_tt
+                NOT = {
+                    any_war_enemy_country = {
+                        zhx_is_tianxia_polity = yes
+                        offensive_war_with = PREV
+                    }
+                }
+            }
+            custom_trigger_tooltip = {
+                tooltip = zhx_relieve_tianxia_member_no_allied_attacker_tt
+                NOT = {
+                    any_war_enemy_country = {
+                        offensive_war_with = PREV
+                        OR = {
+                            alliance_with = ROOT
+                            is_subject_of = ROOT
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    on_accept = {
+        join_all_defensive_wars_of = FROM
+    }
+
+    on_decline = {
+    }
+
+    # 首版明确禁用 AI 主动发起，避免脚本天子未经评估便卷入多场战争。
+    # 日后如开放，应先为军力、财政和对诸侯关系建立窄条件。
+    ai_will_do = {
+        always = no
+    }
+}

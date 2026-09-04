@@ -84,6 +84,7 @@ on_monthly_pulse = {
         # 裸 on_action 的 ROOT 不适合作为跨国关系目标。隐藏国家事件会
         # 重新建立明确的犯盟国 ROOT，且仍在月度安全边界内执行。
         country_event = { id = zhx_diplomacy.11 }
+        country_event = { id = zhx_diplomacy.12 }
         zhx_diplomacy_settle_illegal_cession = yes
     }
     if = {

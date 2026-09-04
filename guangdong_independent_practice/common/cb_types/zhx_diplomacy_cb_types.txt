@@ -1,0 +1,9 @@
+# Trigger-only Zhou covenant enforcement CB. The first stable layer deliberately
+# reuses a vanilla superiority wargoal; custom peace terms remain out of scope
+# until the grant/expiry lifecycle has passed its own runtime test.
+zhx_cb_punish_covenant_breaker = {
+    valid_for_subject = no
+    is_triggered_only = yes
+    months = 120
+    war_goal = superiority_insult
+}

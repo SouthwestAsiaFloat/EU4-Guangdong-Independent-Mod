@@ -1,6 +1,6 @@
 ﻿l_english:
  zhx_covenant_breaker:0 "¯rßv"
- zhx_covenant_breaker_desc:0 "å‹ýV^—ÕlŠQv^hT)YNW0WÿASt^…QN—V3u÷‹ ReQhT)YNÿ)YPRmNO•gÆ‰vQHN¯rßvw0dk¶r`,g«ŽNæS RÏuNmb›Q–é`Z0"
+ zhx_covenant_breaker_desc:0 "å‹ýV^—ÕlŠQv^hT)YNW0WÿASt^…QN—V3u÷‹ ReQhT)YNÿ)YPRmNO•gÆ‰vQHN¯rßvwÿv^(W¯rßvwN=f)YPRöeÖS—V“IYžOj”b‰Nt1u0dk¶r`,g«ŽNæS RÏuNmb›Q–é`Z0"
  zhx_tianxia_application_cooldown:0 "eQhT3u÷‹«ˆ&T"
  zhx_tianxia_application_cooldown_desc:0 "ASt^…QNýwQ!k3u÷‹ReQhT)YNTŒQ0"
  zhx_tianxia_rejoin_bar:0 "ê»ShTMs"
@@ -10,8 +10,20 @@
  zhx_opinion_left_tianxia_tianzi:0 "ê»ShTMs"
  zhx_opinion_left_tianxia_member:0 "Ìw»yßv“Š"
 
+ zhx_cb_punish_covenant_breaker:0 "IYžOj"
+ zhx_cb_punish_covenant_breaker_desc:0 "å‹ýV¯rßvHYÖShT)YNW0Wÿ)YPRïSåNtQ^î•j0dkyVåNbHWO¿RëvQ²‹j0TLkv^²d•íPðyÿNåNNO÷NrRÖSW0WHNckSVîvh0"
+
+ zhx_relieve_tianxia_member:0 "Qe±`"
+ zhx_relieve_tianxia_member_title:0 "Qe±`"
+ zhx_relieve_tianxia_member_desc:0 "åNhT)YPR«ŽýNpšôc§Y[From.GetName]§!ÿËzsS ReQå‹ýVSVMRÂS R„vhQè2–¡Vb‰N0å‹Lˆ¨RNú^ËzTßvÿmNNO©‹)YPRê¨RÂS RvQÊNT„vb‰N0"
+ zhx_relieve_tianxia_member_tooltip:0 " ReQ§Y[From.GetName]§!SVMRÂS R„vhQè2–¡Vb‰N0"
+ zhx_relieve_tianxia_member_requires_peace_tt:0 "hT)YPRÅV‰˜YŽNŒTs^ÿ¹eïSÑS¨RQe±`0"
+ zhx_relieve_tianxia_member_not_enemy_tt:0 "hT)YPRNýw(WckNå‹ø‹¯O²NböeÑS¨RQe±`0"
+ zhx_relieve_tianxia_member_no_internal_war_tt:0 "å‹ø‹¯ONýwTöeYŽN1uvQÖNhT)YNýV¶RÑS¨R„v2–¡Vb‰N0"
+ zhx_relieve_tianxia_member_no_allied_attacker_tt:0 "hT)YPRNýwNå‹ø‹¯OSVMR2–¡Vb‰N-N„vÛIe¹eÓußvÿmNNýwåNvQ—RIN«ŽýN ReQLeùR5–%„0"
+
  zhx_diplomacy.10.t:0 "¯rßvHYW"
- zhx_diplomacy.10.d:0 "ŒT¦uòTšR0býV(Wb‰N-NÖS—V†N¡l	g,gýV8hÃV„vhT)YNW0Wÿ)YNSdkÆ‰HN¯rßv0\n\nnfrR0WNQ	cwýNÑSUS¦^ý R,gµOeuib.V0¯rßv¶r`N)YPR„vsQûsqVÍTS(WN!kg¦^8h—röe‰v°‹0å‚,g¦ump¡N†Nø‹¯OÿmpýVwæSbÅbúVšR5¹pµOeuib.Vÿ)YNJyPNTöemc1Y5¹p0"
+ zhx_diplomacy.10.d:0 "ŒT¦uòTšR0býV(Wb‰N-NÖS—V†N¡l	g,gýV8hÃV„vhT)YNW0Wÿ)YNSdkÆ‰HN¯rßv0\n\nnfrR0WNQ	cwýNÑSUS¦^ý R,gµOeuib.V0¯rßv¶r`N)YPR„vsQûsqVÍTS(WN!kg¦^8h—röe‰v°‹ÿå‚1ûNýVN=f)YPRÿ)YPRTöeÖS—VASt^“IYžOj”b‰Nt1u0å‚,g¦ump¡N†Nø‹¯OÿmpýVwæSbÅbúVšR5¹pµOeuib.Vÿ)YNJyPNTöemc1Y5¹p0"
  zhx_diplomacy.10.a:0 "ŒT¦uòTbÿ)YNqQû•0"
 
  zhx_diplomacy.30.t:0 "÷‹RhTMs"
