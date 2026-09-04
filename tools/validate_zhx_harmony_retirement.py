@@ -96,12 +96,13 @@ LIJIAO_EXCLUDED_TAGS = {
     "HZH",
 }
 
+LIJIAO_SPECIAL_TAGS = {"JIZ", "DAI", "LIL"}
+
 LIJIAO_REJECTED_1444_TAGS = {
     "AMD",
     "BD2",
     "BMY",
     "CGS",
-    "DAI",
     "DCH",
     "DZH",
     "GYA",
@@ -109,7 +110,6 @@ LIJIAO_REJECTED_1444_TAGS = {
     "HZH",
     "JRG",
     "KOR",
-    "LIL",
     "LIO",
     "LSH",
     "MDL",
@@ -265,7 +265,13 @@ def check_cohesion_contract() -> None:
     eligibility = named_block(text, "zhx_can_adopt_lijiao")
     cultures = set(re.findall(r"primary_culture\s*=\s*([a-z0-9_]+)", eligibility))
     require(cultures == LIJIAO_CULTURES, "Ritual Teaching culture eligibility drifted")
-    require("tag = JIZ" in eligibility, "Jizi Joseon eligibility exception is missing")
+    special_tags = set(
+        re.findall(r"(?m)^\s*tag\s*=\s*([A-Z0-9]{3})\s*$", eligibility)
+    )
+    require(
+        special_tags == LIJIAO_SPECIAL_TAGS,
+        "Ritual Teaching tag-level eligibility exceptions drifted",
+    )
     excluded = set(
         re.findall(
             r"tag\s*=\s*([A-Z0-9]{3})\s*#",
@@ -288,7 +294,7 @@ def check_cohesion_contract() -> None:
 
     def eligible(tag: str, culture: str) -> bool:
         return tag not in LIJIAO_EXCLUDED_TAGS and (
-            tag == "JIZ" or culture in LIJIAO_CULTURES
+            tag in LIJIAO_SPECIAL_TAGS or culture in LIJIAO_CULTURES
         )
 
     opening_manifest = json.loads(
@@ -301,7 +307,11 @@ def check_cohesion_contract() -> None:
         for school in opening_manifest["schools"].values()
         for tag in school["tags"]
     }
-    require(len(opening_tags) == 66, "opening school manifest no longer has 66 unique tags")
+    expected_total = opening_manifest["expected_total"]
+    require(
+        len(opening_tags) == expected_total == 67,
+        "opening school manifest no longer has 67 unique tags",
+    )
     for tag in sorted(opening_tags):
         religion, culture = history_values(tag)
         require(religion == "confucianism", f"{tag}: opening school country is not Ritual Teaching")
@@ -311,6 +321,11 @@ def check_cohesion_contract() -> None:
         religion, culture = history_values(tag)
         require(not eligible(tag, culture), f"{tag}: non-Zhuxia country passes the live eligibility gate")
         require(religion != "confucianism", f"{tag}: non-Zhuxia country starts as hollow Ritual Teaching")
+
+    hak_religion, hak_culture = history_values("HAK")
+    require(hak_religion == "mahayana", "HAK must open as Mahayana")
+    require(eligible("HAK", hak_culture), "HAK must remain eligible for a later Ritual Teaching conversion")
+    require("HAK" not in opening_tags, "HAK must not receive a 1444 Hundred Schools doctrine")
 
     lijiao = named_block(text, "zhx_is_lijiao_country")
     require("religion = confucianism" in lijiao and "zhx_can_adopt_lijiao = yes" in lijiao,

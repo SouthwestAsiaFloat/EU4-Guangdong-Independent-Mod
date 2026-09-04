@@ -20,13 +20,14 @@ COUNTRY_HISTORY = MOD / "history/countries"
 
 SCHOOL_ORDER = ("ru", "fa", "mo", "dao", "bing", "zongheng")
 SCHOOL_COUNTS = {
-    "ru": 14,
+    "ru": 18,
     "fa": 7,
-    "mo": 12,
-    "dao": 9,
-    "bing": 11,
-    "zongheng": 13,
+    "mo": 11,
+    "dao": 10,
+    "bing": 10,
+    "zongheng": 11,
 }
+EXPECTED_TOTAL = 67
 SCHOOL_BINDINGS = {
     "ru": ("zhx_doctrine_ru", "zhx_ru_school"),
     "fa": ("zhx_doctrine_fa", "zhx_fa_school"),
@@ -35,7 +36,7 @@ SCHOOL_BINDINGS = {
     "bing": ("zhx_doctrine_bing", "zhx_bing_school"),
     "zongheng": ("zhx_doctrine_zongheng", "zhx_zongheng_school"),
 }
-FORBIDDEN_TAGS = {"LIO", "KOR", "DAI", "GZH", "LIL", "NUN", "TZZ", "WLM"}
+NO_OPENING_SCHOOL_TAGS = {"LIO", "KOR", "GZH", "HAK", "NUN", "TZZ", "WLM"}
 EVENT_ID = "zhx_opening_school.1"
 
 
@@ -120,7 +121,10 @@ def load_manifest() -> tuple[dict[str, dict[str, object]], list[str]]:
         "opening school eligibility must remain confucianism",
     )
     require(manifest.get("initial_practice") == 25, "initial practice must be 25")
-    require(manifest.get("expected_total") == 66, "manifest total must be 66")
+    require(
+        manifest.get("expected_total") == EXPECTED_TOTAL,
+        f"manifest total must be {EXPECTED_TOTAL}",
+    )
 
     schools = manifest.get("schools")
     require(isinstance(schools, dict), "manifest schools must be an object")
@@ -153,10 +157,19 @@ def load_manifest() -> tuple[dict[str, dict[str, object]], list[str]]:
         require(len(tags) == len(set(tags)), f"{school} contains duplicate tags")
         all_tags.extend(tags)
 
-    require(len(all_tags) == 66, f"manifest has {len(all_tags)} tags, expected 66")
-    require(len(set(all_tags)) == 66, "a tag is assigned to more than one school")
-    forbidden = FORBIDDEN_TAGS.intersection(all_tags)
-    require(not forbidden, f"non-Lijiao tags entered the opening mapping: {sorted(forbidden)}")
+    require(
+        len(all_tags) == EXPECTED_TOTAL,
+        f"manifest has {len(all_tags)} tags, expected {EXPECTED_TOTAL}",
+    )
+    require(
+        len(set(all_tags)) == EXPECTED_TOTAL,
+        "a tag is assigned to more than one school",
+    )
+    forbidden = NO_OPENING_SCHOOL_TAGS.intersection(all_tags)
+    require(
+        not forbidden,
+        f"tags without a 1444 opening school entered the mapping: {sorted(forbidden)}",
+    )
     return schools, all_tags
 
 
@@ -195,15 +208,21 @@ def validate_event_projection(
         "each country must carry an idempotent opening marker",
     )
     whitelist = tags_in(country_limit)
-    require(len(whitelist) == 66, "event whitelist must contain 66 tags exactly once")
-    require(len(set(whitelist)) == 66, "event whitelist contains duplicate tags")
+    require(
+        len(whitelist) == EXPECTED_TOTAL,
+        f"event whitelist must contain {EXPECTED_TOTAL} tags exactly once",
+    )
+    require(
+        len(set(whitelist)) == EXPECTED_TOTAL,
+        "event whitelist contains duplicate tags",
+    )
     require(
         set(whitelist) == set(all_tags),
         "event whitelist differs from the authoritative manifest",
     )
     require(
-        not FORBIDDEN_TAGS.intersection(whitelist),
-        "a representative non-Lijiao tag entered the event whitelist",
+        not NO_OPENING_SCHOOL_TAGS.intersection(whitelist),
+        "a tag without a 1444 opening school entered the event whitelist",
     )
 
     actual_mapping: dict[str, set[str]] = {}
@@ -324,8 +343,8 @@ def main() -> None:
     validate_country_histories(all_tags)
     counts = ", ".join(f"{school}={SCHOOL_COUNTS[school]}" for school in SCHOOL_ORDER)
     print(
-        "ZHX_OPENING_SCHOOLS_VALID; total=66; "
-        f"{counts}; histories=66_confucianism; startup={EVENT_ID}"
+        f"ZHX_OPENING_SCHOOLS_VALID; total={EXPECTED_TOTAL}; "
+        f"{counts}; histories={EXPECTED_TOTAL}_confucianism; startup={EVENT_ID}"
     )
 
 

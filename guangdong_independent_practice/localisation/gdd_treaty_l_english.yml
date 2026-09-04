@@ -1,18 +1,18 @@
 ﻿l_english:
  gdd_treaty.100.t:0 "jPb0RgÀhåg"
- gdd_treaty.100.d:0 "Àhåg^NNfg„vRËYjPb=f&TòTÏuÓumg0"
+ gdd_treaty.100.d:0 "ÀhågWSwmNfg„vRËYjPb=f&TòTÏuÓumg0"
 
  gdd_treaty.1.t:0 "íu¢‹ŒT¦u"
- gdd_treaty.1.d:0 "1444t^11g11åeÿhˆR&ŒŒThˆRÅkNf÷^Ow¾bjPbOS®‹0‚YÊN”Nt^KNgòT0Rÿf›QòT6qteÅˆ…VÑS0b—ùR‚Ydkž^6q'YirÿˆRÅk^gbìNýwYIN¨RúQûQÿwýV…Q„v5ÏeìNR²‹HN”^å‹HQôuc°s¶r0"
+ gdd_treaty.1.d:0 "1444t^11g11åeÿhˆR&ŒŒThçu±WNf÷^Ow¾bjPbOS®‹0‚YÊN”Nt^KNgòT0Rÿf›QòT6qteÅˆ…VÑS0b—ùR‚Ydkž^6q'Yirÿçu±W^gbìNýwYIN¨RúQûQÿwýV…Q„v5ÏeìNR²‹HN”^å‹HQôuc°s¶r0"
  gdd_treaty.1.a:0 "LmàQ8NOwÇ»S"
  gdd_treaty.1.b:0 "NN†Œ®v"
 
  gdd_treaty.2.t:0 "ÅŽlx†Nÿ"
- gdd_treaty.2.d:0 "^NNFOÒbÝuLmOwíu¢‹ŒT¦uÿÍSwVËY RúV‰^X0te˜›Q–0hlDQVJONN²‹HNêñTòTÏu	gýw›RlQVùR—bg÷^0"
+ gdd_treaty.2.d:0 "WSwmNFOÒbÝuLmOwíu¢‹ŒT¦uÿÍSwVËY RúV‰^X0te˜›Q–0hlg÷^JONN²‹HNêñTòTÏu	gýw›RlQVùR—bf÷^0"
  gdd_treaty.2.a:0 "©‹ÖNìNåwSŒMb=fw'Yÿ"
 
  gdd_treaty.3.t:0 "^Nî•˜˜"
- gdd_treaty.3.d:0 "fN^NhlDQV„vjPbgòT0R0hlDQVLmegOwÿ÷‹BlíuŒrKNMR„vOS®‹ÿv^IYN†NÍs5„v0Rÿ^gåNdkéTúVÖNìN„v0WØv0"
+ gdd_treaty.3.d:0 "fNWSwmhlg÷^„vjPbgòT0R0WSwmOw÷‹BlíuŒrKNMR„vOS®‹ÿv^IYN†NÍs5„v0Rÿ^gåNdkÝOhQhl(Wjuºy„vßu»l0"
  gdd_treaty.3.a:0 "0RÿbìNN‰Ù›NƒWLW"
  gdd_treaty.3.b:0 "bìNØ=fHQ+RHRÀoÖNìN†N……"
 
@@ -26,7 +26,7 @@
  gdd_envoys_to_ming_estate_influence:0 "ôucùRfŒT®‹"
 
  gdd_cb_punish_guangdong_secession:0 "¨‹O­SWSrRnc"
- gdd_cb_punish_guangdong_secession_desc:0 "^NÒbÝuíu¢‹ŒT¦uv^lQVte›Qÿf÷^ïSåNPdkÑS¨Ré`bb‰N0"
+ gdd_cb_punish_guangdong_secession_desc:0 "WSwmÒbÝuíu¢‹ŒT¦uv^lQVte›Qÿf÷^ïSåNPdkÑS¨Ré`bb‰N0"
  gdd_recover_china_cores_wargoal:0 "6eY-NNS8hÃV"
  gdd_recover_china_cores_wargoal_desc:0 "b‰Nîvh=f`S†˜ùR¹eµc6R„vb¹e-NNS8hÃVwýN0"
  GDD_RECOVER_CHINA_CORES:0 "MOŽN-NNS'YHS„vb¹e8hÃVwýN"

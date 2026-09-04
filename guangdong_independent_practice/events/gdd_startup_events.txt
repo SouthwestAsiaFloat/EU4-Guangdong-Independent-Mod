@@ -176,12 +176,12 @@ country_event = {
         if = {
             limit = { has_heir = no }
             define_heir = {
-                name = "àR≈k"
+                name = "Áu±W"
                 dynasty = "Åh"
                 age = 40
                 claim = 70
-                adm = 2
-                dip = 3
+                adm = 4
+                dip = 2
                 mil = 5
                 male = yes
                 culture = gdd_guangfu
@@ -248,8 +248,8 @@ province_event = {
     option = { name = OK }
 }
 
-# Liang Shouqian alone may use the title King of Lingnan. Any succession,
-# including abdication, clears the flag used by the government-name trigger.
+# Track Liang Shouqian's reign for the named-heir lifecycle. Any succession,
+# including abdication, clears this compatibility flag.
 country_event = {
     id = gdd_startup.6
     title = gdd_startup.6.t

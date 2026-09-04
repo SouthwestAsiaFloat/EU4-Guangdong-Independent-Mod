@@ -1,45 +1,172 @@
+# Six national-idea sets for the eight 1444 Lingnan polities.
+# NUN, TZZ and LIL deliberately share the Zhuang-Dong set.
+
 GDD_ideas = {
     start = {
-        heir_chance = 0.50
-        legitimacy = 1
+        global_prov_trade_power_modifier = 0.10
+        production_efficiency = 0.05
     }
-
-    bonus = {
-        merchants = 1
-    }
-
-    trigger = {
-        tag = GDD
-    }
-
+    bonus = { development_cost = -0.10 }
+    trigger = { tag = GDD }
     free = yes
 
-    gdd_south_seas = {
-        colonists = 1
-        colonist_placement_chance = 0.10
+    gdd_guangfu_militia = { land_morale = 0.10 }
+    gdd_five_ridges = {
+        defensiveness = 0.10
+        fort_maintenance_modifier = -0.15
     }
-
-    gdd_commercial_trade = {
-        trade_efficiency = 0.15
+    gdd_gold_mountain_cigars = {
+        global_colonial_growth = 20
+        range = 0.20
     }
-
-    gdd_children_of_the_coast = {
-        global_sailors_modifier = 0.30
+    gdd_baiyue_heritage = { num_accepted_cultures = 2 }
+    gdd_south_sea_dragon = {
+        navy_tradition = 0.50
+        global_ship_trade_power = 0.10
     }
+    gdd_western_firearms = { discipline = 0.05 }
+    gdd_zhuhai_exchange = { global_trade_goods_size_modifier = 0.10 }
+}
 
-    gdd_southern_wildlands = {
-        core_creation = -0.15
+GUI_ideas = {
+    start = {
+        global_prov_trade_power_modifier = 0.10
+        global_trade_goods_size_modifier = 0.10
     }
+    bonus = { development_cost = -0.10 }
+    trigger = { tag = GUI }
+    free = yes
 
-    gdd_private_armies = {
-        discipline = 0.05
+    gui_five_ridges_barrier = { defensiveness = 0.10 }
+    gui_guiliu_sons = {
+        land_morale = 0.05
+        global_manpower_modifier = 0.10
     }
-
-    gdd_cantonese_language = {
-        culture_conversion_cost = -0.50
+    gui_bagui_lineage = { num_accepted_cultures = 2 }
+    gui_li_and_liu_rivers = { global_tax_modifier = 0.10 }
+    gui_guilin_academy = {
+        idea_cost = -0.05
+        yearly_innovativeness = 0.10
     }
+    gui_liliao_wolf_troops = {
+        mercenary_discipline = 0.05
+        mercenary_manpower = 0.20
+    }
+    gui_western_guangxi_orthodoxy = {
+        prestige = 0.50
+        army_tradition = 0.10
+    }
+}
 
-    gdd_wild_flavours = {
-        production_efficiency = 0.10
+CZC_ideas = {
+    start = {
+        global_missionary_strength = 0.01
+        prestige = 0.50
+    }
+    bonus = {
+        naval_morale = 0.10
+        global_ship_trade_power = 0.15
+    }
+    trigger = { tag = CZC }
+    free = yes
+
+    czc_chaoshan_plain = {
+        global_tax_modifier = 0.10
+        global_trade_goods_size_modifier = 0.10
+    }
+    czc_chaoshan_militia = {
+        land_morale = 0.05
+        discipline = 0.025
+    }
+    czc_min_yue_league = {
+        improve_relation_modifier = 0.10
+        diplomats = 1
+    }
+    czc_sail_south = { range = 0.25 }
+    czc_letter_to_ama = {
+        vassal_income = 0.20
+        reduced_liberty_desire = 10
+    }
+    czc_qiongyai_danear = { global_colonial_growth = 25 }
+    czc_eastern_jews = {
+        global_prov_trade_power_modifier = 0.10
+        caravan_power = 0.10
+    }
+}
+
+HAK_ideas = {
+    start = { prestige = 0.50 }
+    bonus = { republican_tradition = 0.30 }
+    trigger = { tag = HAK }
+    free = yes
+
+    hak_hakka_sons = {
+        land_morale = 0.05
+        discipline = 0.025
+    }
+    hak_dayu_jinggang = {
+        defensiveness = 0.10
+        fort_maintenance_modifier = -0.10
+    }
+    hak_overseas_voices = {
+        global_colonial_growth = 20
+        colony_cost_modifier = -0.20
+    }
+    hak_she_hakka_unity = { num_accepted_cultures = 1 }
+    hak_mountain_bases = { development_cost = -0.10 }
+    hak_honor_learning = { global_missionary_strength = 0.01 }
+    hak_east_river = {
+        caravan_power = 0.10
+        global_trade_goods_size_modifier = 0.10
+    }
+}
+
+gdd_zhuang_ideas = {
+    start = { land_morale = 0.10 }
+    bonus = { army_tradition = 0.50 }
+    trigger = {
+        OR = {
+            tag = NUN
+            tag = TZZ
+            tag = LIL
+        }
+    }
+    free = yes
+
+    zhuang_great_clans = { prestige = 0.50 }
+    zhuang_gaoping_victory = {
+        improve_relation_modifier = 0.10
+        vassal_income = 0.10
+    }
+    zhuang_lingnan_natives = { development_cost = -0.10 }
+    zhuang_baiyue_lineage = { num_accepted_cultures = 1 }
+    zhuang_lychee_and_dog_meat = { global_trade_goods_size_modifier = 0.10 }
+    zhuang_hundred_thousand_mountains = { attack_bonus_in_capital_terrain = 1 }
+    zhuang_buluotuo = {
+        global_missionary_strength = 0.01
+        tolerance_heathen = 1
+    }
+}
+
+# Keep the vanilla key so the mod replaces, rather than competes with, the
+# base-game Dai Viet idea set.
+DAI_ideas = {
+    start = {
+        defensiveness = 0.10
+        garrison_size = 0.20
+    }
+    bonus = { development_cost = -0.10 }
+    trigger = { tag = DAI }
+    free = yes
+
+    dai_red_river_delta = { global_tax_modifier = 0.10 }
+    dai_annamese_rice = { global_manpower_modifier = 0.10 }
+    dai_southern_zhou_lineage = { num_accepted_cultures = 2 }
+    dai_elephant_corps = { discipline = 0.05 }
+    dai_hanoi_academy = { idea_cost = -0.10 }
+    dai_ancient_lingnan_state = { prestige = 0.50 }
+    dai_linyi_bondsmen = {
+        global_colonial_growth = 20
+        native_assimilation = 0.50
     }
 }
