@@ -18,8 +18,11 @@ MANIFEST = ROOT / "planning/lingnan_nations/lingnan_nations_manifest.json"
 COUNTRIES = MOD / "history/countries"
 PROVINCES = MOD / "history/provinces"
 DIPLOMACY = MOD / "history/diplomacy/gdd_lingnan_dependencies.txt"
+DEFINITION = MOD / "map/definition.csv"
 IDEAS = MOD / "common/ideas/gdd_ideas.txt"
 GOVERNMENT_NAMES = MOD / "common/government_names/00_gdd_government_names.txt"
+GDD_ON_ACTIONS = MOD / "common/on_actions/gdd_on_actions.txt"
+GDD_STARTUP_EVENTS = MOD / "events/gdd_startup_events.txt"
 LOCALISATION_SOURCE = MOD / "localisation_source/017_gdd_lingnan_nations_readable_utf8.txt"
 LOCALISATION_SOURCE_ROOT = MOD / "localisation_source"
 GDD_GENERAL_LOCALISATION_SOURCE = LOCALISATION_SOURCE_ROOT / "gdd_l_english_readable_utf8.txt"
@@ -27,8 +30,10 @@ GDD_TREATY_LOCALISATION_SOURCE = LOCALISATION_SOURCE_ROOT / "gdd_treaty_readable
 OPENING_SCHOOLS = ROOT / "planning/religion_opening_schools/opening_schools_manifest.json"
 GDD_LINKED_EVENTS = (
     MOD / "events/gdd_heir_events.txt",
-    MOD / "events/gdd_startup_events.txt",
+    GDD_STARTUP_EVENTS,
 )
+DAI_CAPITAL_BEGIN = "# GDD_LINGNAN_DAI_CAPITAL_BEGIN"
+DAI_CAPITAL_END = "# GDD_LINGNAN_DAI_CAPITAL_END"
 
 
 def load_manifest() -> dict[str, object]:
@@ -155,6 +160,49 @@ def update_gdd_linked_events() -> None:
         path.write_bytes(to_escaped_bytes(text))
 
 
+def render_dai_capital_migration() -> str:
+    """Return the one-shot old-save repair that enforces the Hue canon."""
+    return f"""{DAI_CAPITAL_BEGIN}
+# Old saves may retain Hai Phong from an earlier build. Move the court only
+# while Annam still owns Hue, then permanently retire this compatibility pass.
+country_event = {{
+    id = gdd_startup.7
+    hidden = yes
+    is_triggered_only = yes
+
+    trigger = {{
+        tag = DAI
+        NOT = {{ has_country_flag = gdd_dai_hue_capital_checked }}
+    }}
+
+    immediate = {{
+        if = {{
+            limit = {{
+                owns = 2373
+                NOT = {{ capital = 2373 }}
+            }}
+            set_capital = 2373
+        }}
+        set_country_flag = gdd_dai_hue_capital_checked
+    }}
+
+    option = {{ name = OK }}
+}}
+{DAI_CAPITAL_END}
+"""
+
+
+def update_dai_capital_migration() -> None:
+    text = from_escaped_bytes(GDD_STARTUP_EVENTS.read_bytes())
+    marker_block = re.compile(
+        rf"\n?{re.escape(DAI_CAPITAL_BEGIN)}.*?{re.escape(DAI_CAPITAL_END)}\n?",
+        re.DOTALL,
+    )
+    text = marker_block.sub("\n", text).rstrip()
+    text = f"{text}\n\n{render_dai_capital_migration()}"
+    GDD_STARTUP_EVENTS.write_bytes(to_escaped_bytes(text))
+
+
 def apply(manifest: dict[str, object]) -> None:
     campaign_start = str(manifest["campaign_start"])
     for tag, raw_config in manifest["countries"].items():
@@ -164,6 +212,7 @@ def apply(manifest: dict[str, object]) -> None:
     DIPLOMACY.parent.mkdir(parents=True, exist_ok=True)
     DIPLOMACY.write_text(render_diplomacy(manifest["dependencies"]), encoding="utf-8")
     update_gdd_linked_events()
+    update_dai_capital_migration()
 
 
 def first_value(text: str, key: str) -> str:
@@ -225,6 +274,17 @@ def validate(manifest: dict[str, object]) -> dict[str, int]:
     expected_tags = {"GDD", "GUI", "CZC", "HAK", "NUN", "TZZ", "LIL", "DAI"}
     if set(countries) != expected_tags:
         raise ValueError("Lingnan manifest tag set drifted")
+
+    dai_config = countries["DAI"]
+    if dai_config["capital"] != 2373:
+        raise ValueError("DAI canon capital must be Hue (2373), never Hai Phong (2372)")
+    definitions = {
+        int(parts[0]): parts[4]
+        for line in DEFINITION.read_text(encoding="latin-1").splitlines()
+        if len(parts := line.split(";")) >= 5 and parts[0].isdigit()
+    }
+    if definitions.get(2373) != "Hue" or definitions.get(2372) != "Hai Phong":
+        raise ValueError("province identity drifted: 2373 must be Hue and 2372 Hai Phong")
 
     idea_text = IDEAS.read_text(encoding="utf-8")
     expected_idea_groups = {str(config["idea_group"]) for config in countries.values()}
@@ -341,6 +401,11 @@ def validate(manifest: dict[str, object]) -> dict[str, int]:
         province_text = province.read_text(encoding="latin-1")
         if first_value(province_text, "owner") != tag:
             raise ValueError(f"{tag}: capital {config['capital']} is not owned at scenario start")
+        if tag == "DAI":
+            if first_value(province_text, "controller") != "DAI":
+                raise ValueError("DAI: Hue must be controlled by DAI at scenario start")
+            if not re.search(r"(?m)^\s*add_core\s*=\s*DAI\s*$", province_text):
+                raise ValueError("DAI: Hue must be a DAI core at scenario start")
 
     dependency_text = DIPLOMACY.read_text(encoding="utf-8")
     if dependency_text != render_diplomacy(manifest["dependencies"]):
@@ -376,6 +441,27 @@ def validate(manifest: dict[str, object]) -> dict[str, int]:
             raise ValueError(
                 f"{path.name}: linked heir identity or stats drifted from the manifest"
             )
+
+    on_actions = GDD_ON_ACTIONS.read_text(encoding="utf-8")
+    if on_actions.count("gdd_startup.7") != 2:
+        raise ValueError("Hue capital repair must run on startup and monthly pulse")
+    startup_events = from_escaped_bytes(GDD_STARTUP_EVENTS.read_bytes())
+    if startup_events.count(DAI_CAPITAL_BEGIN) != 1 or startup_events.count(DAI_CAPITAL_END) != 1:
+        raise ValueError("Hue capital repair marker block must exist exactly once")
+    capital_repair = startup_events[
+        startup_events.index(DAI_CAPITAL_BEGIN) : startup_events.index(DAI_CAPITAL_END)
+    ]
+    for required in (
+        "id = gdd_startup.7",
+        "tag = DAI",
+        "owns = 2373",
+        "NOT = { capital = 2373 }",
+        "set_capital = 2373",
+    ):
+        if required not in capital_repair:
+            raise ValueError(f"Hue capital repair is missing: {required}")
+    if "吴氏已经把朝廷迁至顺化" not in localisation_text or "海防为都" in localisation_text:
+        raise ValueError("Annam introduction does not follow the Hue-capital canon")
 
     return {
         "countries": len(countries),

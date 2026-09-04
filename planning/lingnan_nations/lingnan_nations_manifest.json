@@ -123,6 +123,7 @@
       "religion": "confucianism",
       "opening_doctrine": "ru",
       "capital": 2373,
+      "capital_setting": "顺化（2373）为吴氏安南伯国唯一正典首都；海防（2372）不是首都",
       "idea_group": "DAI_ideas",
       "ruler": {"name": "业群", "dynasty": "吴", "birth_date": "1407.1.1", "adm": 4, "dip": 2, "mil": 4},
       "heir": {"name": "宝翾", "dynasty": "吴", "birth_date": "1435.1.1", "adm": 2, "dip": 1, "mil": 3, "claim": 70}

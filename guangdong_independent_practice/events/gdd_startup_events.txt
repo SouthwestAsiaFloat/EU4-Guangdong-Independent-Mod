@@ -269,3 +269,31 @@ country_event = {
 
     option = { name = OK }
 }
+
+# GDD_LINGNAN_DAI_CAPITAL_BEGIN
+# Old saves may retain Hai Phong from an earlier build. Move the court only
+# while Annam still owns Hue, then permanently retire this compatibility pass.
+country_event = {
+    id = gdd_startup.7
+    hidden = yes
+    is_triggered_only = yes
+
+    trigger = {
+        tag = DAI
+        NOT = { has_country_flag = gdd_dai_hue_capital_checked }
+    }
+
+    immediate = {
+        if = {
+            limit = {
+                owns = 2373
+                NOT = { capital = 2373 }
+            }
+            set_capital = 2373
+        }
+        set_country_flag = gdd_dai_hue_capital_checked
+    }
+
+    option = { name = OK }
+}
+# GDD_LINGNAN_DAI_CAPITAL_END

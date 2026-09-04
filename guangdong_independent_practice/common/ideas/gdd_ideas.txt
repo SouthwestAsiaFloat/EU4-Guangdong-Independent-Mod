@@ -152,21 +152,39 @@ gdd_zhuang_ideas = {
 # base-game Dai Viet idea set.
 DAI_ideas = {
     start = {
+        land_morale = 0.10
         defensiveness = 0.10
-        garrison_size = 0.20
     }
     bonus = { development_cost = -0.10 }
     trigger = { tag = DAI }
     free = yes
 
-    dai_red_river_delta = { global_tax_modifier = 0.10 }
-    dai_annamese_rice = { global_manpower_modifier = 0.10 }
-    dai_southern_zhou_lineage = { num_accepted_cultures = 2 }
-    dai_elephant_corps = { discipline = 0.05 }
-    dai_hanoi_academy = { idea_cost = -0.10 }
-    dai_ancient_lingnan_state = { prestige = 0.50 }
-    dai_linyi_bondsmen = {
-        global_colonial_growth = 20
-        native_assimilation = 0.50
+    dai_hue_court = {
+        legitimacy = 1
+        reform_progress_growth = 0.10
+    }
+    dai_red_river_granaries = {
+        global_tax_modifier = 0.10
+        global_manpower_modifier = 0.10
+    }
+    dai_bach_dang_fleet = {
+        galley_power = 0.15
+        navy_tradition = 0.50
+    }
+    dai_mountain_chieftains = {
+        fort_maintenance_modifier = -0.10
+        num_accepted_cultures = 1
+    }
+    dai_elephant_banners = {
+        cavalry_power = 0.10
+        shock_damage = 0.10
+    }
+    dai_two_capitals_learning = {
+        advisor_cost = -0.10
+        idea_cost = -0.05
+    }
+    dai_linyi_corridor = {
+        core_creation = -0.10
+        global_trade_goods_size_modifier = 0.10
     }
 }
