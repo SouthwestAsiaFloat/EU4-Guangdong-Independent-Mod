@@ -331,6 +331,178 @@ def validate() -> None:
     ):
         require(forbidden not in relief_action, f"relief action must remain a direct native war-join action: {forbidden}")
 
+    appeal_action = block(diplomatic_actions, "zhx_appeal_to_tianzi_for_relief")
+    masked_appeal_action = masked_clausewitz(appeal_action)
+    for token, message in (
+        ("category = influence", "relief appeal must use the native influence category"),
+        ("alert_index = 10", "relief appeal must reuse the native call-to-arms message icon"),
+        (
+            "alert_tooltip = zhx_appeal_to_tianzi_for_relief_alert_tooltip",
+            "relief appeal must provide a recipient alert tooltip",
+        ),
+        ("require_acceptance = yes", "the Tianzi must be allowed to accept or decline a relief appeal"),
+    ):
+        require(token in appeal_action, message)
+
+    appeal_visible = block(appeal_action, "is_visible")
+    masked_appeal_visible = masked_clausewitz(appeal_visible)
+    for token, message in (
+        ("has_global_flag = zhx_system_initialised_v14", "relief appeal must require the active diplomacy system"),
+        ("is_subject = no", "relief appeal actor must be independent"),
+        ("zhx_is_tianxia_member = yes", "only an ordinary Zhou member may appeal for relief"),
+        ("NOT = { zhx_is_tianzi = yes }", "the Tianzi must not appeal to itself"),
+        ("is_at_war = yes", "relief appeal actor must currently be at war"),
+    ):
+        require(token in appeal_visible, message)
+    require(
+        re.search(
+            r"FROM\s*=\s*\{[^{}]*"
+            r"exists\s*=\s*yes[^{}]*"
+            r"is_subject\s*=\s*no[^{}]*"
+            r"zhx_is_tianzi\s*=\s*yes[^{}]*\}",
+            masked_appeal_visible,
+            re.S,
+        )
+        is not None,
+        "relief appeal recipient must be the existing independent Tianzi",
+    )
+    require(
+        re.search(
+            r"any_war_enemy_country\s*=\s*\{[^{}]*"
+            r"exists\s*=\s*yes[^{}]*"
+            r"NOT\s*=\s*\{\s*zhx_is_tianxia_polity\s*=\s*yes\s*\}[^{}]*"
+            r"offensive_war_with\s*=\s*ROOT[^{}]*"
+            r"is_in_war\s*=\s*\{[^{}]*"
+            r"attacker_leader\s*=\s*THIS[^{}]*"
+            r"defender_leader\s*=\s*ROOT[^{}]*\}",
+            masked_appeal_visible,
+            re.S,
+        )
+        is not None,
+        "relief appeal must require an external war leader directly attacking actor ROOT as defender leader",
+    )
+    require(
+        re.search(
+            r"NOT\s*=\s*\{\s*is_in_war\s*=\s*\{[^{}]*"
+            r"defenders\s*=\s*FROM[^{}]*defender_leader\s*=\s*THIS[^{}]*\}\s*\}",
+            masked_appeal_visible,
+            re.S,
+        )
+        is not None,
+        "relief appeal must disappear after the Tianzi has joined the member's defensive side",
+    )
+
+    appeal_allowed = block(appeal_action, "is_allowed")
+    masked_appeal_allowed = masked_clausewitz(appeal_allowed)
+    for token, message in (
+        (
+            "tooltip = zhx_appeal_to_tianzi_for_relief_tianzi_at_war_tt",
+            "relief appeal must explain why a warring Tianzi cannot answer",
+        ),
+        ("FROM = { is_at_war = no }", "relief appeal must require the Tianzi to be at peace"),
+        (
+            "tooltip = zhx_appeal_to_tianzi_for_relief_not_enemy_tt",
+            "relief appeal must explain the direct-war exclusion",
+        ),
+        ("NOT = { war_with = FROM }", "the appealing member must not be at war with the Tianzi"),
+        (
+            "tooltip = zhx_appeal_to_tianzi_for_relief_no_internal_war_tt",
+            "relief appeal must explain the mixed internal-war exclusion",
+        ),
+        (
+            "tooltip = zhx_appeal_to_tianzi_for_relief_no_allied_attacker_tt",
+            "relief appeal must explain attacker-side diplomatic conflicts",
+        ),
+        ("alliance_with = FROM", "an attacking participant must not be allied to the Tianzi"),
+        ("is_subject_of = FROM", "an attacking participant must not be subject to the Tianzi"),
+    ):
+        require(token in appeal_allowed, message)
+    require(
+        re.search(
+            r"NOT\s*=\s*\{\s*any_war_enemy_country\s*=\s*\{[^{}]*"
+            r"zhx_is_tianxia_polity\s*=\s*yes[^{}]*"
+            r"offensive_war_with\s*=\s*ROOT[^{}]*\}\s*\}",
+            masked_appeal_allowed,
+            re.S,
+        )
+        is not None,
+        "relief appeal must reject a member whose defensive wars include a Zhou attacker",
+    )
+    require(
+        re.search(
+            r"NOT\s*=\s*\{\s*any_war_enemy_country\s*=\s*\{[^{}]*"
+            r"offensive_war_with\s*=\s*ROOT[^{}]*"
+            r"OR\s*=\s*\{[^{}]*"
+            r"alliance_with\s*=\s*FROM[^{}]*"
+            r"is_subject_of\s*=\s*FROM[^{}]*\}\s*\}\s*\}",
+            masked_appeal_allowed,
+            re.S,
+        )
+        is not None,
+        "relief appeal must reject attacking participants allied to or subject to the Tianzi",
+    )
+
+    appeal_accept = block(appeal_action, "on_accept")
+    for token, message in (
+        ("if =", "accepted relief appeal must revalidate its delayed request"),
+        ("has_global_flag = zhx_system_initialised_v14", "delayed relief acceptance must require the live system"),
+        ("zhx_is_tianxia_member = yes", "delayed relief acceptance must revalidate the appealing member"),
+        ("NOT = { zhx_is_tianzi = yes }", "delayed relief acceptance must reject a former member who became Tianzi"),
+        ("NOT = { war_with = FROM }", "delayed relief acceptance must recheck direct war with the Tianzi"),
+        ("zhx_is_tianzi = yes", "delayed relief acceptance must revalidate the recipient as current Tianzi"),
+        ("is_at_war = no", "delayed relief acceptance must revalidate Tianzi peace"),
+        ("offensive_war_with = ROOT", "delayed relief acceptance must revalidate an offensive enemy"),
+        ("attacker_leader = THIS", "delayed relief acceptance must revalidate the attacking war leader"),
+        ("defender_leader = ROOT", "delayed relief acceptance must revalidate the member as defender leader"),
+        ("alliance_with = FROM", "delayed relief acceptance must recheck Tianzi alliances on the attacking side"),
+        ("is_subject_of = FROM", "delayed relief acceptance must recheck Tianzi subjects on the attacking side"),
+        ("defenders = FROM", "delayed relief acceptance must reject duplicate Tianzi participation"),
+        ("join_all_defensive_wars_of = ROOT", "accepted relief appeal must join ROOT's current defensive wars"),
+    ):
+        require(token in appeal_accept, message)
+    require(appeal_accept.count("zhx_is_tianxia_polity = yes") >= 2, "delayed relief acceptance must recheck external and internal attackers")
+    require(appeal_accept.count("any_war_enemy_country") >= 3, "delayed relief acceptance must recheck direct, internal and allied attackers")
+    require(masked_appeal_action.count("join_all_defensive_wars_of") == 1, "relief appeal must join defensive wars exactly once")
+    appeal_decline = block(appeal_action, "on_decline")
+    require(
+        re.fullmatch(r"\s*on_decline\s*=\s*\{\s*\}\s*", masked_clausewitz(appeal_decline), re.S) is not None,
+        "declining a relief appeal must have no scripted side effects",
+    )
+    appeal_ai_sender = block(appeal_action, "ai_will_do")
+    require(
+        re.fullmatch(r"\s*ai_will_do\s*=\s*\{\s*always\s*=\s*no\s*\}\s*", masked_clausewitz(appeal_ai_sender), re.S)
+        is not None,
+        "AI Zhou members must not proactively spam relief appeals",
+    )
+    appeal_ai_acceptance = block(appeal_action, "ai_acceptance")
+    for token in (
+        "name = zhx_appeal_to_tianzi_for_relief_duty_ai",
+        "variable_name = ai_value",
+        "value = 1",
+        "which = ai_value",
+        "value = 100",
+    ):
+        require(token in appeal_ai_acceptance, f"AI Tianzi relief acceptance missing deterministic duty term: {token}")
+    require(appeal_ai_acceptance.count("add_entry") == 1, "AI Tianzi relief acceptance must remain one predictable duty entry")
+    for forbidden in (
+        "casus_belli",
+        "add_casus_belli",
+        "reverse_add_casus_belli",
+        "declare_war",
+        "every_country",
+        "country_event",
+        "province_event",
+        "on_war_started",
+        "add_opinion",
+        "add_country_modifier",
+    ):
+        require(forbidden not in appeal_action, f"relief appeal must remain a direct native request with no side channel: {forbidden}")
+    runtime_relief_bridges = "\n".join((effects, texts["events"], texts["on_actions"]))
+    require(
+        "zhx_appeal_to_tianzi_for_relief" not in runtime_relief_bridges,
+        "relief appeal must not acquire an event, on-action, effect, scan or queue bridge",
+    )
+
     on_actions = texts["on_actions"]
     owner_change = block(on_actions, "on_province_owner_change")
     require("war_with = FROM" in owner_change, "illegal acquisition must require an active war")
@@ -521,6 +693,17 @@ def validate() -> None:
         "zhx_relieve_tianxia_member_not_enemy_tt",
         "zhx_relieve_tianxia_member_no_internal_war_tt",
         "zhx_relieve_tianxia_member_no_allied_attacker_tt",
+        "zhx_appeal_to_tianzi_for_relief",
+        "zhx_appeal_to_tianzi_for_relief_title",
+        "zhx_appeal_to_tianzi_for_relief_desc",
+        "zhx_appeal_to_tianzi_for_relief_tooltip",
+        "zhx_appeal_to_tianzi_for_relief_alert_tooltip",
+        "zhx_appeal_to_tianzi_for_relief_dialog",
+        "zhx_appeal_to_tianzi_for_relief_tianzi_at_war_tt",
+        "zhx_appeal_to_tianzi_for_relief_not_enemy_tt",
+        "zhx_appeal_to_tianzi_for_relief_no_internal_war_tt",
+        "zhx_appeal_to_tianzi_for_relief_no_allied_attacker_tt",
+        "zhx_appeal_to_tianzi_for_relief_duty_ai",
         "zhx_diplomacy.10.d",
         "zhx_diplomacy.30.d",
         "zhx_apply_to_join_tianxia_title",
@@ -551,6 +734,7 @@ def main() -> int:
     print("  real peace uses a same-day presentation-only notice; punishments settle monthly")
     print("  Tianzi receives an isolated 120-month punitive CB through a hidden monthly bridge")
     print("  Tianzi may manually join an externally attacked member's defensive wars through a native diplomatic action")
+    print("  a player member may appeal to the Tianzi, with eligible AI recipients accepting by a single duty term")
     print("  relief action has no CB, world scan, event/on-action bridge or custom wargoal")
     print("  membership application, voluntary exit and historic restoration wired")
     print("  this command performs static checks only; runtime evidence is documented separately")

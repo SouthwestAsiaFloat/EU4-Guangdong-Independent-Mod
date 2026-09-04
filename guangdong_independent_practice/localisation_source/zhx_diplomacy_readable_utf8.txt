@@ -22,6 +22,18 @@ l_english:
  zhx_relieve_tianxia_member_no_internal_war_tt:0 "该诸侯不能同时处于由其他周天下国家发动的防御战争。"
  zhx_relieve_tianxia_member_no_allied_attacker_tt:0 "周天子不能与该诸侯当前防御战争中的进攻方结盟，也不能以其宗主身份加入敌对阵营。"
 
+ zhx_appeal_to_tianzi_for_relief:0 "告急"
+ zhx_appeal_to_tianzi_for_relief_title:0 "告急"
+ zhx_appeal_to_tianzi_for_relief_desc:0 "向当前周天子§Y[From.GetName]§!告急，请其加入我国当前参加的全部防御战争。天子可以接受或拒绝；该行动不建立同盟，也不会让天子自动参加我国今后的战争。"
+ zhx_appeal_to_tianzi_for_relief_tooltip:0 "请求当前周天子加入我国当前参加的全部防御战争。"
+ zhx_appeal_to_tianzi_for_relief_alert_tooltip:0 "一位周天下诸侯请求我们履行救患之责。"
+ zhx_appeal_to_tianzi_for_relief_dialog:0 "§Y[This.GetName]§!正遭域外国家进攻，请求我们履行天子救患之责，加入其当前参加的全部防御战争。"
+ zhx_appeal_to_tianzi_for_relief_tianzi_at_war_tt:0 "周天子必须处于和平，方能应召救患。"
+ zhx_appeal_to_tianzi_for_relief_not_enemy_tt:0 "我国不能在正与周天子交战时向其告急。"
+ zhx_appeal_to_tianzi_for_relief_no_internal_war_tt:0 "我国不能同时处于由其他周天下国家发动的防御战争。"
+ zhx_appeal_to_tianzi_for_relief_no_allied_attacker_tt:0 "周天子不能与我国当前防御战争中的进攻方结盟，也不能以其宗主身份加入敌对阵营。"
+ zhx_appeal_to_tianzi_for_relief_duty_ai:0 "天子救患之责"
+
  zhx_diplomacy.10.t:0 "犯盟夺土"
  zhx_diplomacy.10.d:0 "和约已定。我国在战争中取得了没有本国核心的周天下土地，天下将此视为犯盟。\n\n普通割地不再按省份发展度追加脚本侵略扩张。犯盟状态与天子的关系影响将在下次月度核算时登记；若责任国不是天子，天子同时取得十年“奉辞伐罪”战争理由。若本约灭亡了诸侯，灭国者另承担固定5点侵略扩张，天下礼乐同时损失5点。"
  zhx_diplomacy.10.a:0 "和约已成，天下共闻。"

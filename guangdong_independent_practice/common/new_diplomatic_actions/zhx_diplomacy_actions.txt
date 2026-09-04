@@ -94,3 +94,163 @@ zhx_relieve_tianxia_member = {
         always = no
     }
 }
+
+# 周天下诸侯可以从相反方向向当前天子“告急”。
+# ROOT = 发起请求的诸侯，FROM = 接收请求的周天子。
+zhx_appeal_to_tianzi_for_relief = {
+    category = influence
+
+    # 复用原版“召集盟友”的消息图标；玩家天子仍可自行拒绝。
+    alert_index = 10
+    alert_tooltip = zhx_appeal_to_tianzi_for_relief_alert_tooltip
+
+    require_acceptance = yes
+
+    is_visible = {
+        has_global_flag = zhx_system_initialised_v14
+        is_subject = no
+        zhx_is_tianxia_member = yes
+        NOT = { zhx_is_tianzi = yes }
+        is_at_war = yes
+        FROM = {
+            exists = yes
+            is_subject = no
+            zhx_is_tianzi = yes
+        }
+
+        # 告急国必须是正被域外战争领袖直接进攻的防御方领袖。
+        any_war_enemy_country = {
+            exists = yes
+            NOT = { zhx_is_tianxia_polity = yes }
+            offensive_war_with = ROOT
+            is_in_war = {
+                attacker_leader = THIS
+                defender_leader = ROOT
+            }
+        }
+
+        # 天子已经在本国统领的防御阵营时，不再显示重复请求。
+        NOT = {
+            is_in_war = {
+                defenders = FROM
+                defender_leader = THIS
+            }
+        }
+    }
+
+    is_allowed = {
+        if = {
+            limit = { FROM = { is_at_war = yes } }
+            custom_trigger_tooltip = {
+                tooltip = zhx_appeal_to_tianzi_for_relief_tianzi_at_war_tt
+                FROM = { is_at_war = no }
+            }
+        }
+        if = {
+            limit = { war_with = FROM }
+            custom_trigger_tooltip = {
+                tooltip = zhx_appeal_to_tianzi_for_relief_not_enemy_tt
+                NOT = { war_with = FROM }
+            }
+        }
+        custom_trigger_tooltip = {
+            tooltip = zhx_appeal_to_tianzi_for_relief_no_internal_war_tt
+            NOT = {
+                any_war_enemy_country = {
+                    zhx_is_tianxia_polity = yes
+                    offensive_war_with = ROOT
+                }
+            }
+        }
+        custom_trigger_tooltip = {
+            tooltip = zhx_appeal_to_tianzi_for_relief_no_allied_attacker_tt
+            NOT = {
+                any_war_enemy_country = {
+                    offensive_war_with = ROOT
+                    OR = {
+                        alliance_with = FROM
+                        is_subject_of = FROM
+                    }
+                }
+            }
+        }
+    }
+
+    on_accept = {
+        # 外交请求可以被玩家天子搁置；接受瞬间重新核验，避免旧战争
+        # 已结束或天子已经易位后仍加入告急国后来发生的其他战争。
+        if = {
+            limit = {
+                has_global_flag = zhx_system_initialised_v14
+                is_subject = no
+                zhx_is_tianxia_member = yes
+                NOT = { zhx_is_tianzi = yes }
+                is_at_war = yes
+                NOT = { war_with = FROM }
+                FROM = {
+                    exists = yes
+                    is_subject = no
+                    zhx_is_tianzi = yes
+                    is_at_war = no
+                }
+                any_war_enemy_country = {
+                    exists = yes
+                    NOT = { zhx_is_tianxia_polity = yes }
+                    offensive_war_with = ROOT
+                    is_in_war = {
+                        attacker_leader = THIS
+                        defender_leader = ROOT
+                    }
+                }
+                NOT = {
+                    any_war_enemy_country = {
+                        zhx_is_tianxia_polity = yes
+                        offensive_war_with = ROOT
+                    }
+                }
+                NOT = {
+                    any_war_enemy_country = {
+                        offensive_war_with = ROOT
+                        OR = {
+                            alliance_with = FROM
+                            is_subject_of = FROM
+                        }
+                    }
+                }
+                NOT = {
+                    is_in_war = {
+                        defenders = FROM
+                        defender_leader = THIS
+                    }
+                }
+            }
+            FROM = {
+                join_all_defensive_wars_of = ROOT
+            }
+        }
+    }
+
+    on_decline = {
+    }
+
+    # 首版不让 AI 诸侯主动发送请求，避免外交消息轰炸。
+    ai_will_do = {
+        always = no
+    }
+
+    # 玩家诸侯的合格请求由 AI 天子稳定接受；所有安全过滤已经在
+    # is_visible / is_allowed 中完成。
+    ai_acceptance = {
+        add_entry = {
+            name = zhx_appeal_to_tianzi_for_relief_duty_ai
+            export_to_variable = {
+                variable_name = ai_value
+                value = 1
+            }
+            multiply_variable = {
+                which = ai_value
+                value = 100
+            }
+        }
+    }
+}
