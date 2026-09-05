@@ -45,6 +45,12 @@
 
 完整数值与顺序以 `guangdong_independent_practice/common/ideas/gdd_ideas.txt` 为准。
 
+安南的加载覆盖使用同路径 `common/ideas/00_country_ideas.txt`，基于汉化补充模组
+`1999055990` 的有效上游文件生成。原 `DAI_ideas` 在该文件中改名为
+`gdd_legacy_dai_ideas` 并移除 DAI 触发条件，保留 TOK、ANN 原有理念；安南仍使用稳定键
+`DAI_ideas`，由 `gdd_ideas.txt` 唯一定义。其余上游内容保持字节一致。仅在另一个文件内
+追加同名组不能保证覆盖生效，验证必须检查原版、依赖与本模组按相同文件名叠加后的结果。
+
 ## 已知边界
 
 - 当前地图没有独立“百色”省份。为避免无依据重画广西，侬国暂以现有高平 616 为首都；将来新增百色省时再迁都。
@@ -66,3 +72,15 @@ python3 tools/validate_zhx_opening_schools.py
 python3 tools/validate_zhx_harmony_retirement.py
 python3 tools/encode_eu4_chinese_localisation.py --check
 ```
+
+汉化依赖升级后，使用最后一层依赖的实际文件重建理念覆盖，再重新编码：
+
+```bash
+python3 tools/apply_lingnan_nations.py --inherited-ideas /path/to/1999055990/common/ideas/00_country_ideas.txt
+python3 tools/apply_lingnan_nations.py --check --inherited-ideas /path/to/1999055990/common/ideas/00_country_ideas.txt
+python3 tools/encode_eu4_chinese_localisation.py
+```
+
+2026-09-05 所用上游 SHA-256：`11c52edd9726bb40f20d91a13728bae7bb25f13350fd5a60e4d1ea6fbcc7cdf7`。
+实机验收须完全重启游戏并确认加载 `codex/nation`，安南第一条理念应为“顺化新朝”，
+后续为“红河粮仓”和“白藤江水军”。有效文件覆盖检查已通过；本轮尚未完成重启后的实机验收。

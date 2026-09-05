@@ -148,8 +148,8 @@ gdd_zhuang_ideas = {
     }
 }
 
-# Keep the vanilla key so the mod replaces, rather than competes with, the
-# base-game Dai Viet idea set.
+# The same-path 00_country_ideas.txt overlay removes the inherited DAI key.
+# Keep this stable key for existing saves, with exactly one effective provider.
 DAI_ideas = {
     start = {
         land_morale = 0.10

@@ -20,6 +20,7 @@ PROVINCES = MOD / "history/provinces"
 DIPLOMACY = MOD / "history/diplomacy/gdd_lingnan_dependencies.txt"
 DEFINITION = MOD / "map/definition.csv"
 IDEAS = MOD / "common/ideas/gdd_ideas.txt"
+INHERITED_IDEAS = MOD / "common/ideas/00_country_ideas.txt"
 GOVERNMENT_NAMES = MOD / "common/government_names/00_gdd_government_names.txt"
 GDD_ON_ACTIONS = MOD / "common/on_actions/gdd_on_actions.txt"
 GDD_STARTUP_EVENTS = MOD / "events/gdd_startup_events.txt"
@@ -269,6 +270,28 @@ def province_history(province_id: int) -> Path:
     return matches[0]
 
 
+def render_inherited_ideas(source: bytes) -> bytes:
+    """Shadow the dependency by filename; preserve bytes outside its DAI block.
+
+    TOK and ANN retain the inherited ideas under a separate key. DAI keeps the
+    save-compatible key provided by gdd_ideas.txt, without a competing definition.
+    Latin-1 is only a reversible byte mapping, never a Chinese re-encoding.
+    """
+    text = source.decode("latin-1")
+    matches = list(re.finditer(r"(?m)^DAI_ideas\s*=\s*\{", text))
+    if len(matches) != 1:
+        raise ValueError("inherited source must define DAI_ideas exactly once")
+    match = matches[0]
+    opening = text.index("{", match.start())
+    end = matching_close(text, opening) + 1
+    block = text[match.start():end]
+    replacement, count = re.subn(r"(?m)^[ \t]*tag\s*=\s*DAI[ \t]*\r?\n", "", block)
+    if count != 1 or "tag = TOK" not in replacement or "tag = ANN" not in replacement:
+        raise ValueError("inherited DAI trigger changed; review DAI/TOK/ANN routing")
+    replacement = replacement.replace("DAI_ideas", "gdd_legacy_dai_ideas", 1)
+    return (text[:match.start()] + replacement + text[end:]).encode("latin-1")
+
+
 def validate(manifest: dict[str, object]) -> dict[str, int]:
     countries = manifest["countries"]
     expected_tags = {"GDD", "GUI", "CZC", "HAK", "NUN", "TZZ", "LIL", "DAI"}
@@ -287,6 +310,20 @@ def validate(manifest: dict[str, object]) -> dict[str, int]:
         raise ValueError("province identity drifted: 2373 must be Hue and 2372 Hai Phong")
 
     idea_text = IDEAS.read_text(encoding="utf-8")
+    inherited_text = INHERITED_IDEAS.read_bytes().decode("latin-1")
+    legacy = top_level_block(inherited_text, "gdd_legacy_dai_ideas")
+    if re.search(r"\btag\s*=\s*DAI\b", legacy):
+        raise ValueError("legacy Vietnamese ideas may no longer match DAI")
+    for tag in ("TOK", "ANN"):
+        if not re.search(rf"\btag\s*=\s*{tag}\b", legacy):
+            raise ValueError(f"legacy Vietnamese ideas must still match {tag}")
+    local_idea_files = list((MOD / "common/ideas").glob("*.txt"))
+    dai_providers = [
+        path for path in local_idea_files
+        for _ in re.finditer(r"(?m)^DAI_ideas\s*=\s*\{", path.read_bytes().decode("latin-1"))
+    ]
+    if dai_providers != [IDEAS]:
+        raise ValueError("DAI_ideas must have one provider after same-path shadowing")
     expected_idea_groups = {str(config["idea_group"]) for config in countries.values()}
     idea_keys: set[str] = set()
     for group in expected_idea_groups:
@@ -329,6 +366,9 @@ def validate(manifest: dict[str, object]) -> dict[str, int]:
         "GDD_CAVE_LORD",
         "string_start_gdd",
         "string_start_dai_viet",
+        "gdd_legacy_dai_ideas",
+        "gdd_legacy_dai_ideas_start",
+        "gdd_legacy_dai_ideas_bonus",
     }
     missing_localisation = required_localisation - localisation_keys
     if missing_localisation:
@@ -473,8 +513,19 @@ def validate(manifest: dict[str, object]) -> dict[str, int]:
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--check", action="store_true")
+    parser.add_argument("--inherited-ideas", type=Path,
+                        help="Last dependency's common/ideas/00_country_ideas.txt")
     args = parser.parse_args()
     manifest = load_manifest()
+    if args.inherited_ideas:
+        if args.inherited_ideas.resolve() == INHERITED_IDEAS.resolve():
+            raise ValueError("inherited source must not be the generated overlay")
+        expected_overlay = render_inherited_ideas(args.inherited_ideas.read_bytes())
+        if args.check:
+            if INHERITED_IDEAS.read_bytes() != expected_overlay:
+                raise ValueError("idea overlay differs outside the reviewed DAI replacement")
+        else:
+            INHERITED_IDEAS.write_bytes(expected_overlay)
     if not args.check:
         apply(manifest)
     result = validate(manifest)

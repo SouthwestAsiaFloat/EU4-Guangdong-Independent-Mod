@@ -122,6 +122,9 @@ l_english:
  zhuang_buluotuo_desc:0 "祖神叙事与地方祭仪为各峒提供共同语言，同时容纳邻族不同的信仰。"
 
  DAI_ideas:0 "安南理念"
+ gdd_legacy_dai_ideas:0 "越南理念"
+ gdd_legacy_dai_ideas_start:0 "越南传统"
+ gdd_legacy_dai_ideas_bonus:0 "越南野心"
  DAI_ideas_start:0 "南国山河"
  DAI_ideas_bonus:0 "经营红湄"
  dai_hue_court:0 "顺化新朝"
