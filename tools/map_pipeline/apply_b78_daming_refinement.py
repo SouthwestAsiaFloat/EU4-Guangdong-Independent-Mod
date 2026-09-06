@@ -417,8 +417,10 @@ def update_definitions() -> None:
         lines.append(f"{province_id};{red};{green};{blue};{EN[province_id]};x")
     path.write_text("\n".join(lines) + "\n", encoding="cp1252")
     path = MAP / "default.map"
+    current = path.read_text(encoding="cp1252")
+    ceiling = max(5383, int(re.search(r"max_provinces\s*=\s*(\d+)", current).group(1)))
     text, count = re.subn(
-        r"(?m)^max_provinces\s*=\s*\d+", "max_provinces = 5383", path.read_text(encoding="cp1252"), count=1
+        r"(?m)^max_provinces\s*=\s*\d+", f"max_provinces = {ceiling}", current, count=1
     )
     if count != 1:
         raise ValueError("default.map is missing max_provinces")
@@ -848,8 +850,9 @@ def validate() -> dict[str, object]:
         )
         if exterior_changes:
             raise ValueError(f"{exterior_changes} pixels changed outside the locked parent mask")
-    if "max_provinces = 5383" not in (MAP / "default.map").read_text(encoding="cp1252"):
-        raise ValueError("max_provinces is not the exclusive ceiling 5383")
+    ceiling = int(re.search(r"max_provinces\s*=\s*(\d+)", (MAP / "default.map").read_text(encoding="cp1252")).group(1))
+    if ceiling < 5383:
+        raise ValueError("max_provinces must exceed the B78 IDs")
     daming = province_ids_in_block(MAP / "area.txt", "daming_area")
     zhaodi = province_ids_in_block(MAP / "area.txt", "south_hebei_area")
     if daming != set(ALL) or zhaodi != {4195, 5221, 5220, 5218, 696}:

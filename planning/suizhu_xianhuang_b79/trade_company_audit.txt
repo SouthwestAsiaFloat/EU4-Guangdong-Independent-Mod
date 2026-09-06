@@ -1,0 +1,92 @@
+{
+  "mod_root": "/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/guangdong_independent_practice",
+  "trade_company_members_checked": 2746,
+  "expectations": [],
+  "scope_expectations": [
+    {
+      "trade_node": "huguang",
+      "trade_company": "trade_company_huguang",
+      "province_ids": [
+        670,
+        671,
+        672,
+        681,
+        682,
+        683,
+        1833,
+        2151,
+        2171,
+        2172,
+        2173,
+        2174,
+        2175,
+        4197,
+        4979,
+        4980,
+        4981,
+        4982,
+        4983,
+        4992,
+        4993,
+        4994,
+        4995,
+        4996,
+        4997,
+        4998,
+        4999,
+        5000,
+        5001,
+        5008,
+        5009,
+        5010,
+        5011,
+        5012,
+        5013,
+        5014,
+        5015,
+        5016,
+        5312,
+        5313,
+        5314,
+        5315,
+        5316,
+        5317,
+        5318,
+        5319,
+        5320,
+        5321,
+        5322,
+        5323,
+        5324,
+        5325,
+        5326,
+        5327,
+        5328,
+        5341,
+        5342,
+        5343,
+        5344,
+        5345,
+        5346,
+        5350,
+        5383,
+        5384,
+        5385
+      ]
+    }
+  ],
+  "errors": [],
+  "warnings": [
+    {
+      "code": "missing_trade_node",
+      "province_id": 1801,
+      "trade_companies": [
+        "trade_company_south_africa"
+      ]
+    }
+  ],
+  "summary": {
+    "errors": 0,
+    "warnings": 1
+  }
+}

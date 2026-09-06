@@ -1,0 +1,4 @@
+# 5261 - Zhongtiao Mountains - GDD_B82_MOUNTAIN_DISCOVERY
+# Discovery only: unowned and impassable.
+discovered_by = chinese
+discovered_by = nomad_group

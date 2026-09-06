@@ -1,0 +1,54 @@
+{
+  "effective_history_roots": [
+    "/Users/xinanyapiao/Library/Application Support/Steam/steamapps/common/Europa Universalis IV",
+    "/Users/xinanyapiao/Library/Application Support/Steam/steamapps/workshop/content/236850/2976470733",
+    "/Users/xinanyapiao/Library/Application Support/Steam/steamapps/workshop/content/236850/1999055990",
+    "/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/guangdong_independent_practice"
+  ],
+  "effective_histories": {
+    "5009": [
+      "/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/guangdong_independent_practice/history/provinces/5009 - Suizhou.txt"
+    ],
+    "5383": [
+      "/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/guangdong_independent_practice/history/provinces/5383 - Macheng.txt"
+    ],
+    "5012": [
+      "/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/guangdong_independent_practice/history/provinces/5012 - Huangzhou.txt"
+    ],
+    "4197": [
+      "/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/guangdong_independent_practice/history/provinces/4197 - Huangzhou.txt"
+    ],
+    "2175": [
+      "/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/guangdong_independent_practice/history/provinces/2175 - Runing.txt"
+    ],
+    "5384": [
+      "/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/guangdong_independent_practice/history/provinces/5384 - Luoshan.txt"
+    ],
+    "5350": [
+      "/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/guangdong_independent_practice/history/provinces/5350 - Guangzhou (Henan).txt"
+    ],
+    "5385": [
+      "/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/guangdong_independent_practice/history/provinces/5385 - Gushi.txt"
+    ]
+  },
+  "crossings": [
+    {
+      "from": 5012,
+      "to": 682,
+      "through": 5035,
+      "both_endpoints_touch_river": true
+    },
+    {
+      "from": 5054,
+      "to": 2175,
+      "through": 5039,
+      "both_endpoints_touch_river": true
+    },
+    {
+      "from": 5349,
+      "to": 5350,
+      "through": 5040,
+      "both_endpoints_touch_river": true
+    }
+  ]
+}

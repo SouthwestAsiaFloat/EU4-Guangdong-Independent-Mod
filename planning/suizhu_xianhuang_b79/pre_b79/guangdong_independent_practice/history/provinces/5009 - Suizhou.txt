@@ -1,0 +1,14 @@
+# 5009 - Suizhou
+owner = SUI
+controller = SUI
+add_core = SUI
+culture = gdd_chu
+religion = confucianism
+capital = "Suizhou"
+trade_goods = cotton
+base_tax = 3
+base_production = 2
+base_manpower = 3
+is_city = yes
+discovered_by = chinese
+discovered_by = nomad_group

@@ -1,0 +1,64 @@
+{
+  "mod_root": "/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/guangdong_independent_practice",
+  "areas": [
+    {
+      "area": "dean_qihuang_area",
+      "classification": "connected",
+      "province_ids": [
+        5009,
+        5383,
+        5012,
+        4197
+      ],
+      "strict_components": [
+        [
+          4197,
+          5009,
+          5012,
+          5383
+        ]
+      ],
+      "gameplay_components": [
+        [
+          4197,
+          5009,
+          5012,
+          5383
+        ]
+      ]
+    },
+    {
+      "area": "xianhuang_area",
+      "classification": "connected",
+      "province_ids": [
+        2175,
+        5384,
+        5350,
+        5385
+      ],
+      "strict_components": [
+        [
+          2175,
+          5350,
+          5384,
+          5385
+        ]
+      ],
+      "gameplay_components": [
+        [
+          2175,
+          5350,
+          5384,
+          5385
+        ]
+      ]
+    }
+  ],
+  "errors": [],
+  "warnings": [],
+  "summary": {
+    "areas_checked": 2,
+    "errors": 0,
+    "warnings": 0
+  }
+}

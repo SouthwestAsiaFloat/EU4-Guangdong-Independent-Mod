@@ -142,6 +142,7 @@ categories =  {
         5342 5344 5349 # GDD_B47_JINGXIANG_YUNAN_BALANCED
             5115 5116 5212 5222 5223 5219 5221 5220 5101 5102 5103 5111 5104 5107 5109 5110 # GDD_B69_HUABEI_TERRAIN_FARMLANDS
             5381 5382 # GDD_B78_DAMING_REFINEMENT
+            5012 4197 5385 # GDD_B79_SUIZHU_XIANHUANG
         }
     }
 
@@ -209,7 +210,7 @@ categories =  {
             123 1934 116 119 1848
 
             669 670    1829 1833 1840
-            2152 2153 2158 2174 4944 4945 4946 4947 4948 4949 4951 4952 4953 4956 4957 4958 4960 4961 4980 4983 4992 4993 4994 4996 4997 4998 5000 1824 2150 5003 5004 5005 5006 681 5012 5015 5016
+            2152 2153 2158 2174 4944 4945 4946 4947 4948 4949 4951 4952 4953 4956 4957 4958 4960 4961 4980 4983 4992 4993 4994 4996 4997 4998 5000 1824 2150 5003 5004 5005 5006 681  5015 5016
             652 657 658 2697 2698 2701
 
             2965 2976 2977 2978 2983 2984 2991 3002
@@ -241,7 +242,7 @@ categories =  {
             4856
             5057 # B15 Lishui hills
             5060 5063 686 5065 2146 2147 5067 5068 # B16 Anhui western and southern uplands
-            4967 5048 5053 2175 # B14 Henan gates and uplands
+            4967 5048 5053  # B14 Henan gates and uplands
             2168 5071 674 673 4199 # B17 Guizhou hills and basins
             680 4987 5026 5027 # B09 Chongqing and Xiajiang hills
             4966 # B03 Xingyang and the Hulao approach
@@ -253,9 +254,10 @@ categories =  {
     5307 5308 5309 # B37 Tianshui user refinement hills
         5316 5317 5318 5319 5322 5326 5327 5328 # GDD_B45_HUNAN_JIANGXI_REFINEMENT
         5329 5332 5333 5338 5339 # GDD_B46_CHUANDONGBEI_CHONGQING_GEOJSON
-        5346 5347 5348 5350 # GDD_B47_JINGXIANG_YUNAN_BALANCED
+        5346 5347 5348  # GDD_B47_JINGXIANG_YUNAN_BALANCED
         5359 5362 5364 # GDD_B59_KOREA_30_PROVINCES_SEVEN_AREAS
             5113 5114 5211 5213 5218 5105 5106 5108 5112 # GDD_B69_HUABEI_TERRAIN_HILLS
+            5383 2175 # GDD_B79_SUIZHU_XIANHUANG
         }
     }
 
@@ -478,7 +480,7 @@ categories =  {
             4795 # Mandala
 
             4858 4857 2735 1090
-            4955 4197 5009 5010 5014 # P02 Zhuluo and B10 Hubei plains
+            4955   5010 5014 # P02 Zhuluo and B10 Hubei plains
             5055 # B14 Dengzhou basin pasture
     5286 5292 5295 # B26 Gansu-Ningxia 23-province refinement grasslands
     5205 5206 5207 5209 # B27 Liaoning 10-province refinement grasslands
@@ -486,7 +488,8 @@ categories =  {
         5343 5345 # GDD_B47_JINGXIANG_YUNAN_BALANCED
     5353 # GDD_B55_SHANGGU_REFINEMENT
         5361 5365 # GDD_B59_KOREA_30_PROVINCES_SEVEN_AREAS
-    }
+            5009 5384 5350 # GDD_B79_SUIZHU_XIANHUANG
+        }
     }
 
     jungle = {

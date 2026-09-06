@@ -1925,7 +1925,7 @@ def build_region(vanilla_root: Path, output: Path) -> None:
         return replace_once(
             block,
             "\t\tguangxi_area\n",
-            "\t\tguangxi_area\n\t\tyoujiang_area\n",
+            "\t\tguangxi_area\n\t\tyoujiang_area\n\t\tjianghuai_area\n\t\thuaiyang_tongtai_area\n",
             "south_china_region Guangxi areas",
         )
 
@@ -1936,7 +1936,7 @@ def build_region(vanilla_root: Path, output: Path) -> None:
         lambda block: replace_once(
             block,
             "\t\tjiangsu_area\n",
-            "\t\txuhuai_haizhou_area\n\t\thuaiyang_tongtai_area\n",
+            "\t\txuhuai_haizhou_area\n",
             "north_china_region North and Central Jiangsu areas",
         ),
     )
@@ -1946,7 +1946,7 @@ def build_region(vanilla_root: Path, output: Path) -> None:
         lambda block: replace_once(
             block,
             "\t\tanhui_area\n",
-            "\t\thuaiying_area\n\t\tjianghuai_area\n",
+            "\t\thuaiying_area\n",
             "north_china_region Huaiying and Jianghuai areas",
         ),
     )
@@ -2449,15 +2449,9 @@ def build_adjacencies(vanilla_root: Path, output: Path) -> None:
     sentinel = "-1;-1;;-1;-1;-1;-1;-1;-1;"
     straits = (
         "2149;5004;sea;1373;-1;-1;-1;-1;Mingzhou-Changguo (Zhoushan) Strait",
-        "2145;685;sea;5033;-1;-1;-1;-1;Zhenjiang-Yangzhou crossing",
         "5056;1821;sea;5033;-1;-1;-1;-1;Liuhe-Jiangning crossing",
-        "686;5067;sea;5038;-1;-1;-1;-1;Anqing-Taiping crossing",
-        "5065;5062;sea;5034;-1;-1;-1;-1;Chizhou-Wuwei crossing",
-        "5066;5061;sea;5033;-1;-1;-1;-1;Wuhu-Chaohu crossing",
         "4979;686;sea;5038;-1;-1;-1;-1;Jiujiang-Anqing crossing",
-        "5011;682;sea;5035;-1;-1;-1;-1;Hankou-Wuchang crossing",
         "4981;682;sea;5035;-1;-1;-1;-1;Hanyang-Wuchang crossing",
-        "5012;682;sea;5035;-1;-1;-1;-1;Huangzhou-Wuchang crossing",
         "2172;5014;sea;5036;-1;-1;-1;-1;Jingzhou-Gongan Yangtze crossing",
         "5055;2175;sea;5039;-1;-1;-1;-1;Dengzhou-Xinyang Huai crossing",
         "5053;2175;sea;5039;-1;-1;-1;-1;Ruzhou-Xinyang Huai crossing",

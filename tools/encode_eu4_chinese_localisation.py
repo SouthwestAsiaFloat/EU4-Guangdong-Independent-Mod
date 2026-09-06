@@ -19,6 +19,7 @@ ROOT = Path(__file__).resolve().parents[1]
 MOD = ROOT / "guangdong_independent_practice"
 
 FILES = {
+    "024_gdd_b79_suizhu_xianhuang_readable_utf8.txt": "replace/024_gdd_b79_suizhu_xianhuang_l_english.yml",
     "023_zhx_gongyi_readable_utf8.txt": "replace/023_zhx_gongyi_l_english.yml",
     "022_zhx_feudatory_readable_utf8.txt": "replace/022_zhx_feudatory_l_english.yml",
     "021_gdd_hak_government_readable_utf8.txt": "replace/021_gdd_hak_government_l_english.yml",

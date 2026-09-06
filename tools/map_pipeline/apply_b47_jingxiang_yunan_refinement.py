@@ -106,7 +106,7 @@ AREA_MEMBERS = {
 AREA_CHINESE = {
     "hanshang_area": "鄢庸", "yunmeng_jingmen_area": "江汉", "jingyi_area": "荆郢",
     "yigui_area": "夷陵", "wandeng_area": "申邓", "rucai_area": "汝蔡",
-    "dean_qihuang_area": "随黄",
+    "dean_qihuang_area": "随邾",  # B79 terminal refinement owns the final membership.
 }
 OBSOLETE_AREAS = ("hanjiang_xiangyun_area", "jingyi_shinan_area", "runing_nanyang_area")
 TERRAIN_IDS = {

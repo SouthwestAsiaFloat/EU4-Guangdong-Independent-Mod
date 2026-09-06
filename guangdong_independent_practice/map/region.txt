@@ -912,7 +912,8 @@ south_china_region = {
         hanshang_area
         yunmeng_jingmen_area
         jingyi_area
-        yigui_area
+        jianghuai_area # GDD_B82_SOUTH_CHINA
+        huaiyang_tongtai_area # GDD_B82_SOUTH_CHINA
     }
     monsoon = {
         00.05.01
@@ -977,12 +978,11 @@ north_china_region = {
         wangji_area
         west_gansu_area
         xuhuai_haizhou_area
-        huaiyang_tongtai_area
         huaiying_area
-        jianghuai_area
         wandeng_area
         rucai_area
         daming_area # GDD_B78_DAMING_REFINEMENT
+        xianhuang_area # GDD_B79_SUIZHU_XIANHUANG
     }
 }
 

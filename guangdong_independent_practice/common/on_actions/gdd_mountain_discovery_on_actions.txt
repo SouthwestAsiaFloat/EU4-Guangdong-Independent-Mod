@@ -1,0 +1,3 @@
+# GDD_B82_MOUNTAIN_DISCOVERY
+on_startup = { events = { gdd_mountain_discovery.1 } }
+on_monthly_pulse = { events = { gdd_mountain_discovery.1 } }

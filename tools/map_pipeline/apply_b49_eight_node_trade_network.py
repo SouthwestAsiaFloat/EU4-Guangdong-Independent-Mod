@@ -52,8 +52,8 @@ NODE_AREAS = {
         "jiangxi_area", "south_jiangxi_area", "xunyang_area", "gannan_area",
         "dongting_area", "hunan_area", "southwest_hunan_area",
         "wuling_hunan_area", "lishui_area", "hengchen_area",
-        "dean_qihuang_area", "wuhan_enan_area", "hanshang_area",
-        "yunmeng_jingmen_area", "jingyi_area", "yigui_area",
+        "dean_qihuang_area", "xianhuang_area", "wuhan_enan_area", "hanshang_area",
+        "yunmeng_jingmen_area", "jingyi_area",
     ),
     "chengdu": (
         "sichuan_area", "chongqing_area", "baqu_area", "fuling_area",
@@ -95,7 +95,7 @@ NODE_LABELS = {
 EXPECTED_LAND_COUNTS = {
     "hangzhou": 49,
     "canton": 57,
-    "huguang": 62,
+    "huguang": 65,
     "chengdu": 48,
     "yungui": 36,
     "xian": 46,
@@ -106,7 +106,7 @@ EXPECTED_LAND_COUNTS = {
 BASE_AREA_LAND_COUNTS = {
     "hangzhou": 49,
     "canton": 57,
-    "huguang": 62,
+    "huguang": 65,
     "chengdu": 48,
     "yungui": 36,
     "xian": 46,

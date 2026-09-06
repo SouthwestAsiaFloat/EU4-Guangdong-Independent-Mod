@@ -2943,8 +2943,8 @@ chuannan_area = { # Sichuan 36-province refinement
 chuanbei_area = { # GDD_B46_CHUANDONGBEI_CHONGQING_GEOJSON
     5080 5081 5329 2169 5331
 }
-dean_qihuang_area = { # GDD_B47_JINGXIANG_YUNAN_BALANCED
-    5009 4197 5012 2175 5350
+dean_qihuang_area = { # GDD_B79_SUIZHU_XIANHUANG
+    5009 5383 5012 4197
 }
 
 wuhan_enan_area = { #4 (Wuhan Three Towns and Xingguo)
@@ -3947,8 +3947,8 @@ fuling_area = { # GDD_B46_CHUANDONGBEI_CHONGQING_GEOJSON
 xiajiang_area = { # GDD_B46_CHUANDONGBEI_CHONGQING_GEOJSON
     4987 5339 5028
 }
-hanshang_area = { # GDD_B47_JINGXIANG_YUNAN_BALANCED
-    5008 5341 2171 5342
+hanshang_area = { # GDD_B80_YILING_HANSHANG_MERGE
+    5008 5341 2171 5342 681 5346
 }
 yunmeng_jingmen_area = { # GDD_B47_JINGXIANG_YUNAN_BALANCED
     5010 5343 5015 5344
@@ -3956,9 +3956,7 @@ yunmeng_jingmen_area = { # GDD_B47_JINGXIANG_YUNAN_BALANCED
 jingyi_area = { # GDD_B47_JINGXIANG_YUNAN_BALANCED
     2172 5345 5014 5013
 }
-yigui_area = { # GDD_B47_JINGXIANG_YUNAN_BALANCED
-    681 5346
-}
+
 wandeng_area = { # GDD_B47_JINGXIANG_YUNAN_BALANCED
     687 5347 5055 5348
 }
@@ -3967,4 +3965,8 @@ rucai_area = { # GDD_B47_JINGXIANG_YUNAN_BALANCED
 }
 daming_area = { # GDD_B78_DAMING_REFINEMENT
     5381 2137 5382
+}
+
+xianhuang_area = { # GDD_B79_SUIZHU_XIANHUANG
+    2175 5384 5350 5385
 }

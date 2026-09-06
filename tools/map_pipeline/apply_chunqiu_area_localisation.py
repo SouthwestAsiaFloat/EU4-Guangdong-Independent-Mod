@@ -29,7 +29,8 @@ AREA_NAMES = {
     "south_jiangxi_area": "庐陵",
     "hanjiang_xiangyun_area": "汉沔",
     "jingyi_shinan_area": "荆楚",
-    "dean_qihuang_area": "随黄",
+    "dean_qihuang_area": "随邾",
+    "xianhuang_area": "弦黄",
     "wuhan_enan_area": "江夏",
     "zhejiang_area": "钱唐",
     "east_zhejiang_area": "会稽",
@@ -111,7 +112,6 @@ AREA_NAMES = {
     "hanshang_area": "鄢庸",
     "yunmeng_jingmen_area": "江汉",
     "jingyi_area": "荆郢",
-    "yigui_area": "夷陵",
     "wandeng_area": "申邓",
     "rucai_area": "汝蔡",
 }
@@ -131,7 +131,7 @@ OWNER_HINTS = {
 # regenerated for B78.
 AUTHORITATIVE_ONLY_AREAS = {
     "hanshang_area", "yunmeng_jingmen_area", "jingyi_area",
-    "yigui_area", "wandeng_area", "rucai_area", "daming_area",
+    "wandeng_area", "rucai_area", "daming_area", "xianhuang_area",
 }
 
 LINE_RE = re.compile(r'^(\s*)([A-Za-z0-9_]+):0\s+".*"\s*$')

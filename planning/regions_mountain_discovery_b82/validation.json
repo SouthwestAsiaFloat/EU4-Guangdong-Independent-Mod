@@ -1,0 +1,63 @@
+{
+  "batch": "B82",
+  "regions": {
+    "jianghuai_area": "south_china_region",
+    "huaiyang_tongtai_area": "south_china_region"
+  },
+  "mountain_pixels": {
+    "5175": 711,
+    "5176": 638,
+    "5183": 723,
+    "5187": 112,
+    "5257": 100,
+    "5258": 105,
+    "5259": 213,
+    "5260": 116,
+    "5261": 221,
+    "5304": 109,
+    "5310": 213,
+    "5311": 77,
+    "5354": 425,
+    "5355": 179,
+    "5375": 816,
+    "5376": 299,
+    "5377": 210,
+    "5378": 385,
+    "5379": 114,
+    "5380": 204
+  },
+  "effective_history_uniqueness": "PASS",
+  "unowned_and_impassable": "PASS",
+  "initial_discovery": [
+    "chinese",
+    "nomad_group"
+  ],
+  "existing_save_migration": "startup/monthly hidden event; once per eligible country",
+  "idempotence_files": 23,
+  "sha256": {
+    "guangdong_independent_practice/map/region.txt": "a8f4a7be39711da6c2215f45da38fc104dc3484d00166c8ffc4a741a54b6478b",
+    "guangdong_independent_practice/events/gdd_mountain_discovery_events.txt": "86ac61df6bcdb7d0f0550a2e51a5d550b20e0111b9c00574e58217e29f7ca506",
+    "guangdong_independent_practice/common/on_actions/gdd_mountain_discovery_on_actions.txt": "8b8306f78d69b39689b0d2819f348bf56f12762468a6d073b6cecf905bbe6bee",
+    "guangdong_independent_practice/history/provinces/5175 - Daba Mountains.txt": "634d6ecedbf97d6a12956fda13430d2c74131d137597588266f864cd1b70d6b3",
+    "guangdong_independent_practice/history/provinces/5176 - Min Mountains.txt": "804f9ab6d885032f26f8deefd40dfa7ac3e41189115433f2d304e9008202bc87",
+    "guangdong_independent_practice/history/provinces/5183 - Qinling Mountains.txt": "7684e704a51d225837bc76b6afc46da68e9b4b7615e4b27a03ad9fac4029c2b8",
+    "guangdong_independent_practice/history/provinces/5187 - Long Mountains.txt": "5d1ecfa901f7103a377a0edbc9127f6effda0f9ff0b5ba1672dc51854a9accdd",
+    "guangdong_independent_practice/history/provinces/5257 - Heng-Wutai Mountains.txt": "31a11f71f5a4d3da1d2f2120e37fd874fabe764fdf581f10b3331ca9a6946216",
+    "guangdong_independent_practice/history/provinces/5258 - North Taihang Mountains.txt": "5790750e66366fb7f6952ac4fd5d9eee5e1aaf2822687ccbd2cece9c9984c8f7",
+    "guangdong_independent_practice/history/provinces/5259 - South Taihang Mountains.txt": "73bcdbdab0cb3c8517e52075913263ce6e8ecc650104d6c3aaa17c98857e8f54",
+    "guangdong_independent_practice/history/provinces/5260 - Luliang Mountains.txt": "fae6dd578e9531aefc06237ebf89d13c44921980abceb5a025158248e3d20ec9",
+    "guangdong_independent_practice/history/provinces/5261 - Zhongtiao Mountains.txt": "c42969435b79e2bb1796a035939c600f11ff09a29894f6dee0f561fb9d1a8cad",
+    "guangdong_independent_practice/history/provinces/5304 - Wuzhishan.txt": "83486ebce60ae1b05ff325aa2ca963ebc861ae596cee8ebb4dc8bb5e73df7f89",
+    "guangdong_independent_practice/history/provinces/5310 - Nanling West.txt": "338af38a4b028d3387a44007b834218b5622c9357d7a905c3364b1450d9cb293",
+    "guangdong_independent_practice/history/provinces/5311 - Nanling East.txt": "2600b7e3762a6348b8ae856b323a638dff2dcc63d1d0f13df1981e636826f831",
+    "guangdong_independent_practice/history/provinces/5354 - Dabie Mountains.txt": "d5d4e553af6705ddddd9c1a87256702e6886063ef27ebdc4408d3e33bfe0f2da",
+    "guangdong_independent_practice/history/provinces/5355 - Mount Tai.txt": "326aa8510ce315493b9da0c225c9295d96e53b67813cedc8aeb1cfef4624033e",
+    "guangdong_independent_practice/history/provinces/5375 - Rangrim Mountains.txt": "9db27d4bba9e6528dcabae7baf4cab5cf47ed60294900221341fba10b126b943",
+    "guangdong_independent_practice/history/provinces/5376 - Taebaek Mountains.txt": "94caa374ec3b421b5a4ee6b237a8ac97bebc59b8dc4ceb79e036eddc83f76d12",
+    "guangdong_independent_practice/history/provinces/5377 - Jiulian Mountains.txt": "d76461ae8203cb1a98d8cdcc27b8e78372e93f156d0e57d9a752c18f841e1448",
+    "guangdong_independent_practice/history/provinces/5378 - Zhe-Min Mountains.txt": "5c113d01e348ddf629ebf081901acc03d9115642ee1fb6f8fcc92f8ccd9b679d",
+    "guangdong_independent_practice/history/provinces/5379 - Wuyi Mountains.txt": "e3edc1d17de83fa209dc3bc0ff34d946776af895b758adda187de848ca96a010",
+    "guangdong_independent_practice/history/provinces/5380 - Huangshan.txt": "cd740bdcdf8b36ffd19a9958db103cef8395954b33a669a6ced64c1e3de2b054"
+  },
+  "runtime_tested": false
+}

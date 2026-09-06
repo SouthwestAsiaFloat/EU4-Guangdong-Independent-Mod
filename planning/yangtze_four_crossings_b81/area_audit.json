@@ -1,0 +1,120 @@
+{
+  "mod_root": "/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/guangdong_independent_practice",
+  "areas": [
+    {
+      "area": "jingyi_area",
+      "classification": "crossing_connected",
+      "province_ids": [
+        2172,
+        5345,
+        5014,
+        5013
+      ],
+      "strict_components": [
+        [
+          2172,
+          5345
+        ],
+        [
+          5013,
+          5014
+        ]
+      ],
+      "gameplay_components": [
+        [
+          2172,
+          5013,
+          5014,
+          5345
+        ]
+      ]
+    },
+    {
+      "area": "wanjiang_area",
+      "classification": "connected",
+      "province_ids": [
+        686,
+        5065,
+        5062
+      ],
+      "strict_components": [
+        [
+          686,
+          5062,
+          5065
+        ]
+      ],
+      "gameplay_components": [
+        [
+          686,
+          5062,
+          5065
+        ]
+      ]
+    },
+    {
+      "area": "wuhan_enan_area",
+      "classification": "crossing_connected",
+      "province_ids": [
+        4981,
+        682,
+        5011,
+        5016
+      ],
+      "strict_components": [
+        [
+          682,
+          5016
+        ],
+        [
+          4981,
+          5011
+        ]
+      ],
+      "gameplay_components": [
+        [
+          682,
+          4981,
+          5011,
+          5016
+        ]
+      ]
+    }
+  ],
+  "errors": [],
+  "warnings": [
+    {
+      "code": "crossing_connected_area",
+      "area": "jingyi_area",
+      "components": [
+        [
+          2172,
+          5345
+        ],
+        [
+          5013,
+          5014
+        ]
+      ]
+    },
+    {
+      "code": "crossing_connected_area",
+      "area": "wuhan_enan_area",
+      "components": [
+        [
+          682,
+          5016
+        ],
+        [
+          4981,
+          5011
+        ]
+      ]
+    }
+  ],
+  "summary": {
+    "areas_checked": 3,
+    "errors": 0,
+    "warnings": 2
+  }
+}

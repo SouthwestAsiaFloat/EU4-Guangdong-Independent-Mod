@@ -1,0 +1,40 @@
+{
+  "idempotence": "PASS",
+  "sha256": {
+    "guangdong_independent_practice/map/provinces.bmp": "cfb1c60d6c37f42710086d3a3b55307c35dedc2033d11e56fc000c6b970895d0",
+    "guangdong_independent_practice/map/adjacencies.csv": "c238c702f8333fddebc42e8cc46b7d54ef0a71c69333b0c917fb888d8b1fd158",
+    "guangdong_independent_practice/map/positions.txt": "c6183be660631074b80295a842ef6777c861e7bb4d476361336a5d17d0c2b31a"
+  },
+  "exact_changed_pixels": [
+    [
+      4635,
+      886
+    ],
+    [
+      4635,
+      887
+    ],
+    [
+      4635,
+      888
+    ],
+    [
+      4636,
+      886
+    ],
+    [
+      4636,
+      887
+    ],
+    [
+      4636,
+      888
+    ]
+  ],
+  "all_other_bitmap_pixels_unchanged": true,
+  "river_pixels_unchanged": true,
+  "legacy_dabie_components_before_after": [
+    4,
+    4
+  ]
+}
