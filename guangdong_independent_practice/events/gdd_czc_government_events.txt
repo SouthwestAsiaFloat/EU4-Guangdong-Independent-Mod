@@ -1,0 +1,188 @@
+namespace = gdd_czc_government
+
+# One-time new-game/old-save initialization. The historical, unchanged CZC
+# oligarchy also migrates; a different player-selected government does not.
+country_event = {
+    id = gdd_czc_government.1
+    title = gdd_czc_government.10.t
+    desc = gdd_czc_government.10.d
+    picture = ELECTION_REPUBLICAN_eventPicture
+    hidden = yes
+    is_triggered_only = yes
+    trigger = {
+        OR = {
+            gdd_czc_is_council_trigger = yes
+            gdd_czc_should_migrate_legacy_trigger = yes
+        }
+    }
+    immediate = {
+        gdd_czc_migrate_legacy_council_effect = yes
+        gdd_czc_initialize_effect = yes
+        gdd_czc_check_transition_effect = yes
+    }
+    option = { name = gdd_czc_government.10.c }
+}
+
+# Native modifiers own yearly republican-tradition changes. This event only
+# catches the transition and gives the AI access to the same annual interaction.
+country_event = {
+    id = gdd_czc_government.2
+    title = gdd_czc_government.10.t
+    desc = gdd_czc_government.10.d
+    picture = ELECTION_REPUBLICAN_eventPicture
+    hidden = yes
+    is_triggered_only = yes
+    trigger = {
+        OR = {
+            gdd_czc_is_council_trigger = yes
+            gdd_czc_should_migrate_legacy_trigger = yes
+        }
+    }
+    immediate = {
+        gdd_czc_migrate_legacy_council_effect = yes
+        gdd_czc_initialize_effect = yes
+        gdd_czc_check_transition_effect = yes
+        if = {
+            limit = {
+                ai = yes
+                gdd_czc_can_shift_power_trigger = yes
+            }
+            random_list = {
+                50 = { gdd_czc_support_gentry_effect = yes }
+                50 = { gdd_czc_support_ruler_effect = yes }
+            }
+        }
+    }
+    option = { name = gdd_czc_government.10.c }
+}
+
+# Optional event entry for the supported government-view button.
+country_event = {
+    id = gdd_czc_government.10
+    title = gdd_czc_government.10.t
+    desc = gdd_czc_government.10.d
+    picture = ELECTION_REPUBLICAN_eventPicture
+    is_triggered_only = yes
+    trigger = { gdd_czc_is_council_trigger = yes }
+    option = {
+        name = gdd_czc_government.10.a
+        trigger = { gdd_czc_can_shift_power_trigger = yes }
+        gdd_czc_support_gentry_effect = yes
+    }
+    option = {
+        name = gdd_czc_government.10.b
+        trigger = { gdd_czc_can_shift_power_trigger = yes }
+        gdd_czc_support_ruler_effect = yes
+    }
+    option = { name = gdd_czc_government.10.c }
+}
+
+# Conversion is immediate: the notification does not postpone the threshold.
+country_event = {
+    id = gdd_czc_government.20
+    title = gdd_czc_government.20.t
+    desc = gdd_czc_government.20.d
+    picture = GOOD_WITH_MONARCH_eventPicture
+    is_triggered_only = yes
+    trigger = { gdd_czc_should_proclaim_king_trigger = yes }
+    immediate = { gdd_czc_proclaim_king_effect = yes }
+    option = { name = gdd_czc_government.20.a }
+}
+
+# Console-only diagnostics; never scheduled by ordinary gameplay.
+# event gdd_czc_government.900 CZC : install in an isolated test campaign.
+country_event = {
+    id = gdd_czc_government.900
+    title = gdd_czc_government.10.t
+    desc = gdd_czc_government.10.d
+    picture = ELECTION_REPUBLICAN_eventPicture
+    hidden = yes
+    is_triggered_only = yes
+    trigger = { tag = CZC }
+    immediate = {
+        clr_country_flag = gdd_czc_crowned
+        clr_country_flag = gdd_czc_council_initialized
+        clr_country_flag = gdd_czc_last_council_action
+        change_government = republic
+        remove_government_reform = oligarchy_reform
+        add_government_reform = gdd_czc_council_reform
+        gdd_czc_initialize_effect = yes
+        # Explicit test reset, including tests loaded after the 1444 start date.
+        add_republican_tradition = -100
+        add_republican_tradition = 50
+    }
+    option = { name = gdd_czc_government.10.c }
+}
+
+# Force a side without replacing the incumbent or bypassing later succession.
+country_event = {
+    id = gdd_czc_government.901
+    title = gdd_czc_government.10.t
+    desc = gdd_czc_government.10.d
+    picture = ELECTION_REPUBLICAN_eventPicture
+    hidden = yes
+    is_triggered_only = yes
+    trigger = { gdd_czc_is_council_trigger = yes }
+    immediate = {
+        change_statists_vs_orangists = -2
+        clr_country_flag = gdd_czc_last_council_action
+    }
+    option = { name = gdd_czc_government.10.c }
+}
+country_event = {
+    id = gdd_czc_government.902
+    title = gdd_czc_government.10.t
+    desc = gdd_czc_government.10.d
+    picture = ELECTION_REPUBLICAN_eventPicture
+    hidden = yes
+    is_triggered_only = yes
+    trigger = { gdd_czc_is_council_trigger = yes }
+    immediate = {
+        change_statists_vs_orangists = 2
+        clr_country_flag = gdd_czc_last_council_action
+    }
+    option = { name = gdd_czc_government.10.c }
+}
+
+# Exact low-RT threshold and ruler-death checks in disposable campaigns only.
+country_event = {
+    id = gdd_czc_government.903
+    title = gdd_czc_government.10.t
+    desc = gdd_czc_government.10.d
+    picture = ELECTION_REPUBLICAN_eventPicture
+    hidden = yes
+    is_triggered_only = yes
+    trigger = { gdd_czc_is_council_trigger = yes }
+    immediate = {
+        add_republican_tradition = -100
+        add_republican_tradition = 19
+        gdd_czc_check_transition_effect = yes
+    }
+    option = { name = gdd_czc_government.10.c }
+}
+country_event = {
+    id = gdd_czc_government.904
+    title = gdd_czc_government.10.t
+    desc = gdd_czc_government.10.d
+    picture = ELECTION_REPUBLICAN_eventPicture
+    hidden = yes
+    is_triggered_only = yes
+    trigger = { gdd_czc_is_council_trigger = yes }
+    immediate = { kill_ruler = yes }
+    option = { name = gdd_czc_government.10.c }
+}
+country_event = {
+    id = gdd_czc_government.905
+    title = gdd_czc_government.10.t
+    desc = gdd_czc_government.10.d
+    picture = ELECTION_REPUBLICAN_eventPicture
+    hidden = yes
+    is_triggered_only = yes
+    trigger = { gdd_czc_is_council_trigger = yes }
+    immediate = {
+        add_republican_tradition = -100
+        add_republican_tradition = 20
+        gdd_czc_check_transition_effect = yes
+    }
+    option = { name = gdd_czc_government.10.c }
+}

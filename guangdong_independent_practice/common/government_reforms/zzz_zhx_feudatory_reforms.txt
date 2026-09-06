@@ -1,0 +1,67 @@
+# One displayed reform, three native fixed-rank variants; reform ID is the dignity authority.
+zhx_feudatory_bo_reform = {
+    icon = "zhx_investiture"
+    allow_normal_conversion = no
+    lock_level_when_selected = yes
+    valid_for_nation_designer = no
+    potential = { zhx_feudatory_can_use_reform = yes }
+    custom_attributes = { locked_government_type = yes }
+    fixed_rank = 1
+    modifiers = {
+        nobles_loyalty_modifier = 0.10
+        legitimacy = 0.5
+        stability_cost_modifier = -0.10
+        nobles_influence_modifier = 0.05
+    }
+    ai = { factor = 100 }
+}
+
+zhx_feudatory_hou_reform = {
+    icon = "zhx_ritual_ding"
+    allow_normal_conversion = no
+    lock_level_when_selected = yes
+    valid_for_nation_designer = no
+    potential = {
+        zhx_feudatory_can_use_reform = yes
+        OR = {
+            has_reform = zhx_feudatory_hou_reform
+            has_country_flag = zhx_feudatory_grant_hou
+            AND = { NOT = { has_global_flag = zhx_feudatory_initialised } zhx_feudatory_opening_hou = yes }
+        }
+    }
+    custom_attributes = { locked_government_type = yes }
+    fixed_rank = 1
+    modifiers = {
+        nobles_loyalty_modifier = 0.10
+        legitimacy = 0.5
+        stability_cost_modifier = -0.10
+        nobles_influence_modifier = 0.05
+        diplomatic_reputation = 1
+    }
+    ai = { factor = 100 }
+}
+
+zhx_feudatory_gong_reform = {
+    icon = "zhx_ritual_ding"
+    allow_normal_conversion = no
+    lock_level_when_selected = yes
+    valid_for_nation_designer = no
+    potential = {
+        zhx_feudatory_can_use_reform = yes
+        OR = {
+            has_reform = zhx_feudatory_gong_reform
+            has_country_flag = zhx_feudatory_grant_gong
+            AND = { NOT = { has_global_flag = zhx_feudatory_initialised } zhx_feudatory_opening_gong = yes }
+        }
+    }
+    custom_attributes = { locked_government_type = yes }
+    fixed_rank = 2
+    modifiers = {
+        nobles_loyalty_modifier = 0.10
+        legitimacy = 0.5
+        stability_cost_modifier = -0.10
+        nobles_influence_modifier = 0.05
+        diplomatic_reputation = 1
+    }
+    ai = { factor = 100 }
+}

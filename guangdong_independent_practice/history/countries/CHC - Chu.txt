@@ -1,5 +1,6 @@
+government_rank = 2
 government = monarchy
-add_government_reform = chinese_warlord
+add_government_reform = zhx_feudatory_gong_reform
 technology_group = chinese
 religion = confucianism
 primary_culture = gdd_chu

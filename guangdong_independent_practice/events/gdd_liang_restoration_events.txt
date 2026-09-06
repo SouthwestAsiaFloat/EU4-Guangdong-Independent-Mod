@@ -34,7 +34,7 @@ country_event = {
     id = gdd_liang_restoration.1
     title = gdd_liang_restoration.1.t
     desc = gdd_liang_restoration.1.d
-    picture = DIPLOMACY_eventPicture
+    picture = gdd_liang_audience_eventPicture
     is_triggered_only = yes
     major = yes
     major_trigger = {
@@ -132,7 +132,7 @@ country_event = {
         trigger = { NOT = { gdd_liang_patron_owns_all_homeland = yes } }
         desc = gdd_liang_restoration.10.d.grant
     }
-    picture = DIPLOMACY_eventPicture
+    picture = gdd_liang_audience_eventPicture
     is_triggered_only = yes
 
     trigger = {

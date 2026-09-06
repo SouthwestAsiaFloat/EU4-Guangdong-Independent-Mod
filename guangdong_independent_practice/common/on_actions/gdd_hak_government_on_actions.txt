@@ -1,0 +1,2 @@
+on_startup = { events = { gdd_hak_government.1 } }
+on_monthly_pulse = { events = { gdd_hak_government.2 } }

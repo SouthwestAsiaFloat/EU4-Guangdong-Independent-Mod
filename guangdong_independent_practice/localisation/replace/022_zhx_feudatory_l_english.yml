@@ -1,0 +1,68 @@
+﻿l_english:
+ zhx_feudatory_heir:0 "NPR"
+ zhx_feudatory_consort:0 "ýVTM‘vP"
+ zhx_feudatory_petition:0 "÷‹SKf5r"
+ zhx_feudatory_petition_title:0 "÷‹SKf5r"
+ zhx_feudatory_petition_desc:0 "ThT)YPRHTKf5r÷‹Bl0)YPRÁˆïSTÿRýVSåNNt^lQ®‹³QšR=f&TÆQˆNŒQS0ckVHTsS(u‰c,gJS÷‹SHgOÿNcbßvŸR0"
+ zhx_feudatory_petition_tooltip:0 "HTKf5r÷‹BlÿIr…V)YPRÁˆïST²NØNRýVlQ®‹0"
+ zhx_feudatory_petition_requirements_tt:0 "=OGS¯Oÿ,gJSßvŸRóS1000ÑSUS¦^óS1000ôv¥cåb	góS108NÎW^wýN0¯OGSlQÿ,gJSßvŸRóS2000ÑSUS¦^óS2000ôv¥cåb	góS208NÎW^wýN0ÏkJSêSýwÐc²NN!kÿ8gÓuHhöeNýwÍ‘YÐc²NÿlQ®‹‰˜zzò•ÿNNïSN)YPR²Nb0"
+ zhx_feudatory_petition_sent_tt:0 "ckVHT÷‹SfNÿ‰v°‹,gJSŸRéuv^(u‰c,gJSHgO0)YPRS6e0R=f&T²NØNlQ®‹„vÁˆïS‹NöNÿdköeS8gˆc5rÿNcbßvŸR0"
+ zhx_feudatory_begin_vote_tt:0 "V=Tcíu365)Y„v)YN‹NØS0ø‹¯OTNhyÿ3u÷‹ýVïSåN•bhyÿ^T%NJhYŽNÍSùRsS·ƒÆQKf5rÿs^hy1Y%0)YPRNæS•bhyÿÓuœgÇTôv¥cŒQS0"
+ zhx_feudatory_refusal_tt:0 "Óumg,g!k÷‹S0,gýV(WÐc²NöeNb^SJS!k„vHgOòTÏu(u‰cÿßvŸRN×Smc1Y0"
+ zhx_feudatory.vote_support:0 "^TKf5r"
+ zhx_feudatory.vote_oppose:0 "ÍSùRKf5r"
+ zhx_feudatory.vote_abstain:0 "‚fNVCg"
+ zhx_feudatory.2.t:0 "5r6Rôu²b"
+ zhx_feudatory.2.d:0 "8hùRhT)YNTINø‹¯O„v5r6RNck(WYt„v÷‹S0"
+ zhx_feudatory.3.t:0 "ø‹¯O÷‹S"
+ zhx_feudatory.3.d:0 "8hùR,gt^¦^&rTDJh„vø‹¯O÷‹S0"
+ zhx_feudatory.10.t:0 "ø‹¯O÷‹SKf5r"
+ zhx_feudatory.10.d:0 "[zhx_feudatory_applicant.GetName]HTN÷‹SfNÿôcV,gJS§Y[zhx_feudatory_applicant.zhx_feudatory_submitted_merit.GetValue]§!¹pßvŸRÿ÷‹BlÛ5rNIr0\n\nRýV5rMO8^b­ˆçeS0)YPRå‚ÆQ¸‹dk®‹ÿ)YNø‹¯OSåNNt^lQ®‹³QšR=f&Tb²‹°e5rÿ)YPRdköeÁˆïS„v=f²NØNlQ®‹ÿÇT¿OO®‹ŒQS0ck8^bcJSNO¹b»SòTÏu‰v°‹„vŸRéu0"
+ zhx_feudatory.10.a:0 "ÆQˆNRýVlQ®‹"
+ zhx_feudatory.10.b:0 "ôucçeS"
+ zhx_feudatory.11.t:0 ")YPR8gÆQ÷‹S"
+ zhx_feudatory.11.d:0 ",g!kKf5r÷‹Bl8g·ƒÆQ²NØNlQ®‹ÿçeSçuíu	gHe0dk!k3u÷‹NcbßvŸRÿFOòT(u‰cÐc²NöeNb(WJS!k„v÷‹SHgO0"
+ zhx_feudatory.11.a:0 "uIYçeS"
+ zhx_feudatory.20.t:0 ")YN‹NØSÿø‹¯OKf5r"
+ zhx_feudatory.20.d:0 "hT)YPRòTS[zhx_feudatory_applicant.GetName]„vKf5r÷‹Bl²NØNlQ®‹0å‹ýVÐc²Nöe‰v°‹,gJSßvŸR§Y[zhx_feudatory_applicant.zhx_feudatory_submitted_merit.GetValue]§!0\n\nø‹¯OT	gNhyÿïS^T0ÍSùRbVCgÿNt^gánÿ^T%NJhYŽNÍSùR¿OÇÿs^hyRôucçe5r0lQ®‹gô•ïSÇýV¶R³Q®‹ågwhypev^9ehy0"
+ zhx_feudatory.21.t:0 "°e5r·ƒ)YNb²‹"
+ zhx_feudatory.21.d:0 "RýVlQ®‹òTÏuÇÿhT²RO®‹˜N°eŒQ0,gýVKf5rNIrÿçe5r1u°e5rÖSãNÿøv”^TRN…VGòTÏuuHe0hT6RSýVçuíužRLˆÿ°sûNýVTÍNIYhT²RKNŒQ»lýV0"
+ zhx_feudatory.21.a:0 "×SŒQbNy"
+ zhx_feudatory.22.t:0 "ôucçe5r"
+ zhx_feudatory.22.d:0 ",g!k÷‹S8g·ƒÆQKf5r0lQ®‹^Thy8gýw%NJh…ÇÍSùRhyÿbÓuHhöe,gýV„v†˜W0MeSONhT)YN«ŽýNòTNQ&rT÷‹SagöN0\n\nßvŸRN×Smc1Yÿçe5rçuíu	gHe0"
+ zhx_feudatory.22.a:0 "(ŒˆRçeS"
+ zhx_feudatory.30.t:0 "Kf5rlQ®‹HhMr"
+ zhx_feudatory.30.d:0 "§Y÷‹SýV¶Rÿ[zhx_feudatory_applicant.GetName]§!\nHT÷‹öe,gJSßvŸRÿ§Y[zhx_feudatory_applicant.zhx_feudatory_submitted_merit.GetValue]§!\n\n§G^Tÿ[zhx_tianzi.zhx_council_vote_a_count.GetValue]§!0§RÍSùRÿ[zhx_tianzi.zhx_council_vote_b_count.GetValue]§!\nVCgÿ[zhx_tianzi.zhx_council_vote_c_count.GetValue]08g•bÿ[zhx_tianzi.zhx_council_unvoted_country_count.GetValue]\n\nIr…V)YPRÁˆïSgô•S8gVhy0VhyTcíu365)Yÿø‹¯OïS1uýV¶R³Q®‹9ehyÿ^T%NJhYŽNÍSùRMbÇÿs^hy1Y%0ck8^bcJSNOO,gHhòT‰v°‹„vßvŸRDJh1YHe0"
+ zhx_feudatory_review_petition_title:0 "ågwKf5rlQ®‹"
+ zhx_feudatory_review_petition_desc:0 "ågwSVMR÷‹SýV¶R0‰v°‹ŸRéuŒTlQ®‹hype0dky˜êSû‹ÿN9ehy0N¨cÛgP–0"
+ zhx_feudatory_gui_bo:0 "hT6RSýV · =O5r"
+ zhx_feudatory_gui_hou:0 "hT6RSýV · ¯O5r"
+ zhx_feudatory_gui_gong:0 "hT6RSýV · lQ5r"
+ zhx_feudatory_gui_merit:0 ",gJSßvŸRÿ[Root.zhx_merit_term.GetValue]\nKf5r÷‹1u)YPRY²Nu˜HT÷‹"
+ zhx_feudatory_gui_rules:0 "5r6RN÷‹S"
+ zhx_feudatory_rules_tt:0 "=O0¯OHNNµuMeœ^ÿlQHNŒNµuÿhT)YN…Qè	NµuYuÙu)YPR0Kf5rÅV‰˜µuÿÏu)YPR×StN)YNhˆ³Q0ÏkýVÏkJSgYckVÐc²NN!kÿ÷‹SŒTKf5rGWNcbßvŸR0"
+ zhx_feudatory.40.t:0 "hT6RSýVNKf5r"
+ zhx_feudatory.40.d:0 "ø‹¯ObhT²RKNŒQÿN­ˆvQýVÿNýV…Q5ÏeqQˆRJy6R0\n\n§Y5rMO…VG§!\n=O0¯OHNNµuMeœ^ÿlQHNŒNµu0¯O0lQ˜Y·ƒ—V1¹pY²NðX‰Š0hT)YN…Qè	NµuYuÙu)YPR0\n\n§Y÷‹SDJh§!\n=OGS¯Oÿ,gJSßvŸR1000ÑSUS¦^1000ôv¥cåb	g108NÎW^wýN0\n¯OGSlQÿ,gJSßvŸR2000ÑSUS¦^2000ôv¥cåb	g208NÎW^wýN0\n,gýV,gJSßvŸRÿ§Y[Root.zhx_merit_term.GetValue]§!0\n\nÇSVMR)YPR„vY²Nu˜	éb“÷‹SKf5r”0)YPRTaT=T¨R365)Y„v)YN‹NØSÿø‹¯OTNhyÿ^T%NJhYŽNÍSùR1Sôv¥cŒQS0\n\nÏkýVÏk8N25t^hTggYckVÐc²NN!kÿÒbÝu01Y%0bŸRGW(u‰cSVJSHgOÿNcbßvŸR0èJS3u÷‹çuíu	gHeÿ…VYtgô•NïSÍ‘YÐc²N0"
+ zhx_feudatory_bo_reform:0 "hT6RSýV·=O5r"
+ zhx_feudatory_bo_reform_desc:0 ",gýVb­ˆ=O5rKNS0hT²RŒQ‹TôuûsN­ˆTRÿ5Ïe(W—RÕlNJy6R-NOS©RýVT»lt0Kf5r‰˜Ïu)YPR×StNRýVlQ®‹ÿNýwíQýV›RêLˆŠµu0"
+ zhx_feudatory_bo_state:0 "=OýV"
+ zhx_feudatory_bo_ruler:0 "=O"
+ zhx_feudatory_hou_reform:0 "hT6RSýV·¯O5r"
+ zhx_feudatory_hou_reform_desc:0 ",gýVb­ˆ¯O5rKNS0hT²RŒQ‹TôuûsN­ˆTRÿ5Ïe(W—RÕlNJy6R-NOS©RýVT»lt0Kf5r‰˜Ïu)YPR×StNRýVlQ®‹ÿNýwíQýV›RêLˆŠµu0"
+ zhx_feudatory_hou_state:0 "¯OýV"
+ zhx_feudatory_hou_ruler:0 "¯O"
+ zhx_feudatory_gong_reform:0 "hT6RSýV·lQ5r"
+ zhx_feudatory_gong_reform_desc:0 ",gýVb­ˆlQ5rKNS0hT²RŒQ‹TôuûsN­ˆTRÿ5Ïe(W—RÕlNJy6R-NOS©RýVT»lt0Kf5r‰˜Ïu)YPR×StNRýVlQ®‹ÿNýwíQýV›RêLˆŠµu0"
+ zhx_feudatory_gong_state:0 "lQýV"
+ zhx_feudatory_gong_ruler:0 "lQ"
+ zhx_feudatory_vote_support_title:0 "Kf5rlQ®‹ÿ^TKf5r"
+ zhx_feudatory_vote_support_desc:0 "S,gýV(WSVMRKf5r‹NØS-N„vËzHW9eHN“^TKf5r”0çehy«ˆÿfbcÿNžX R,rŒN.VhyÿNt^gánßuNÓu—r0"
+ zhx_feudatory_vote_oppose_title:0 "Kf5rlQ®‹ÿÍSùRKf5r"
+ zhx_feudatory_vote_oppose_desc:0 "S,gýV(WSVMRKf5r‹NØS-N„vËzHW9eHN“ÍSùRKf5r”0çehy«ˆÿfbcÿNžX R,rŒN.VhyÿNt^gánßuNÓu—r0"
+ zhx_feudatory_vote_abstain_title:0 "Kf5rlQ®‹ÿ‚fNVCg"
+ zhx_feudatory_vote_abstain_desc:0 "S,gýV(WSVMRKf5r‹NØS-N„vËzHW9eHN“‚fNVCg”0çehy«ˆÿfbcÿNžX R,rŒN.VhyÿNt^gánßuNÓu—r0"
+ zhx_feudatory_incident_pending:0 "§YKf5r÷‹S · …V)YPRÁˆïS§!"
+ zhx_feudatory_incident_open:0 "§Y[zhx_feudatory_applicant.GetName]Kf5rlQ®‹§!"
+ zhx_feudatory_incident_ritual:0 "§O‹s‹TNLˆ§!"
+ zhx_feudatory_incident_awaiting_consent:0 "÷‹SfNòTHTÿS8gVËY¡‹hy0"
+ zhx_feudatory_incident_counts:0 "^T §G[zhx_tianzi.zhx_council_vote_a_count.GetValue]§!0ÍSùR §R[zhx_tianzi.zhx_council_vote_b_count.GetValue]§!0VCg §Y[zhx_tianzi.zhx_council_vote_c_count.GetValue]§!"

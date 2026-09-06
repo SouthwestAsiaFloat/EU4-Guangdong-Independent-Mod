@@ -1,0 +1,46 @@
+zhx_gongyi_opening_city = {
+    OR = { tag = CDE tag = JJG tag = HYA tag = WHU tag = ZHO }
+}
+zhx_gongyi_one_province = {
+    num_of_owned_provinces_with = { value = 1 always = yes }
+    NOT = { num_of_owned_provinces_with = { value = 2 always = yes } }
+}
+zhx_gongyi_eligible_polity = {
+    exists = yes
+    government = republic
+    is_subject = no
+    zhx_is_tianxia_member = yes
+    zhx_gongyi_one_province = yes
+    NOT = { tag = HYM }
+}
+zhx_gongyi_request_requirements = {
+    zhx_gongyi_eligible_polity = yes
+    is_at_war = no
+    NOT = { has_reform = zhx_gongyi_reform }
+    has_saved_global_event_target = zhx_tianzi
+    event_target:zhx_tianzi = {
+        exists = yes
+        zhx_is_tianzi = yes
+        has_opinion = { who = ROOT value = 100 }
+    }
+}
+zhx_gongyi_can_request = {
+    zhx_gongyi_request_requirements = yes
+    NOT = { has_country_flag = zhx_gongyi_request_pending }
+    OR = {
+        NOT = { has_country_flag = zhx_gongyi_request_cooldown }
+        had_country_flag = { flag = zhx_gongyi_request_cooldown days = 365 }
+    }
+}
+
+# Tianzi event scope; event-chain-local applicant prevents concurrent collisions.
+zhx_gongyi_tianzi_can_grant = {
+    zhx_is_tianzi = yes
+    event_target:zhx_gongyi_applicant = {
+        exists = yes
+        has_country_flag = zhx_gongyi_request_pending
+        zhx_gongyi_eligible_polity = yes
+        is_at_war = no
+    }
+    has_opinion = { who = event_target:zhx_gongyi_applicant value = 100 }
+}

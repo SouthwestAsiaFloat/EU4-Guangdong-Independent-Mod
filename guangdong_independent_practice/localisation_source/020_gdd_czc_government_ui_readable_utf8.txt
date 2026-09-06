@@ -1,0 +1,10 @@
+l_english:
+ gdd_czc_gentry_label:0 "士绅共议"
+ gdd_czc_ruler_label:0 "统治者家门"
+ gdd_czc_support_gentry_button:0 "支持士绅"
+ gdd_czc_support_ruler_button:0 "支持统治者"
+ gdd_czc_action_ready:0 "§G可以议政§! · 50行政／次"
+ gdd_czc_action_cooling:0 "§Y暂不可议政§! · 查看条件"
+ gdd_czc_gentry_ui_tt:0 "§Y士绅共议§!\n权力偏向士绅时，议会维系共和传统；在任执政者仍任职终身。"
+ gdd_czc_ruler_ui_tt:0 "§Y统治者家门§!\n权力偏向统治者时，执政家族延续，共和传统每年额外减少2点。共和传统低于20时，现任执政者直接称王。"
+ gdd_czc_power_ui_tt:0 "§Y乡贤议会权力§!\n左为士绅，右为统治者。每次议政消耗50行政点，向所支持的一方移动10点；两项行动共享一年冷却。"

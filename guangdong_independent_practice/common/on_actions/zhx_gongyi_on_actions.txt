@@ -1,0 +1,17 @@
+on_startup = { events = { zhx_gongyi.1 } }
+on_monthly_pulse = { events = { zhx_gongyi.2 } }
+on_yearly_pulse = { events = { zhx_gongyi.3 } }
+on_province_owner_change = {
+    owner = { zhx_gongyi_sync = yes }
+    FROM = { zhx_gongyi_sync = yes }
+}
+on_country_released = {
+    if = {
+        limit = { has_reform = zhx_gongyi_reform }
+        zhx_gongyi_grant_charter = yes
+    }
+}
+
+# Native dynamic trade cities acquire their reform immediately, but do not
+# invoke the normal release callbacks in this build. Their first monthly pulse
+# registers the charter and Zhou membership; see the runtime evidence.

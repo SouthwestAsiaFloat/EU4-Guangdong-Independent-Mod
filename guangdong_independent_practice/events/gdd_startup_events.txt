@@ -18,14 +18,8 @@ country_event = {
         set_country_flag = gdd_v03_fix2_initialised
         set_country_flag = gdd_liang_shouqian_reigning
 
-        # Country history should already assign ordinary feudalism. Keep this
-        # startup fallback so a new game cannot begin with an empty monarchy tier 1.
-        if = {
-            limit = {
-                NOT = { has_reform = feudalism_reform }
-            }
-            add_government_reform = feudalism_reform
-        }
+        # Country history owns the opening Zhou dignity. Do not replace
+        # its locked first-tier reform with the retired feudalism fallback.
 
         # Guangdong and Ming begin with the five-year truce described by the
         # treaty event chain. Schedule the expiry checker as a precise primary

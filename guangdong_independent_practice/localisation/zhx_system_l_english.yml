@@ -124,9 +124,9 @@
  zhx_gui_effect_fractured:0 "§Rz6eNuµN -5%§!ÿ§G­‹Ãu¦^ +2.5%0wýNbR±‚9 -7.5%§!"
  zhx_gui_effect_collapsed:0 "§Rlu -10%0¨RqNNRƒŸ^NGS§!ÿ§G­‹Ãu¦^ +5%0wýNbR±‚9 -15%§!"
 
- zhx_gui_council_ritual:0 "§O‹s‹TNLˆ§!"
+ zhx_gui_council_ritual:0 "[Root.GetZhouPublicIncidentName]"
  zhx_gui_council_idle:0 "§G)YNàe‹N§!"
- zhx_gui_council_ritual_description:0 "^T §G[CZH.zhx_council_vote_a_count.GetValue]§!0ÍSùR §R[CZH.zhx_council_vote_b_count.GetValue]§!0VCg §Y[CZH.zhx_council_vote_c_count.GetValue]§!"
+ zhx_gui_council_ritual_description:0 "[Root.GetZhouPublicIncidentCounts]"
  zhx_gui_council_idle_description:0 "SVMR¡l	gck(W®‹º‹„v)YN‹NØS0JyPNJPÌ4xè•Ûiöeÿ°e„v‹NØSïSýw1ut^¦^Óu—ræ‰ÑS0"
  zhx_gui_council_vote_support:0 ",gýVËzHWÿ§G^T§!"
  zhx_gui_council_vote_oppose:0 ",gýVËzHWÿ§RÍSùR§!"

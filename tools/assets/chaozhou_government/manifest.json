@@ -1,0 +1,355 @@
+{
+  "source": "planning/chaozhou_government_art/chaozhou_government_art_v02.source.png",
+  "source_sha256": "fa263b45e979a0451453a34b3186a9189ca6ccf977978d21e51576af146fdca6",
+  "mode": "built-in imagegen; mechanical edge-connected alpha extraction",
+  "dds_format": "legacy uncompressed A8R8G8B8, no mipmaps",
+  "sprites": {
+    "frame": {
+      "window": [
+        120,
+        145,
+        1420,
+        370
+      ],
+      "trim_box_within_window": [
+        21,
+        27,
+        1274,
+        202
+      ],
+      "size": [
+        280,
+        50
+      ],
+      "frames": 1,
+      "png": "tools/assets/chaozhou_government/production/frame.png",
+      "dds": "guangdong_independent_practice/gfx/interface/gdd_czc_government/frame.dds",
+      "png_sha256": "e409fdad5c9356e3f7d8146c2862c8924a10f68e18a1a57d12f588555e914602",
+      "dds_sha256": "cd9dd7ca7418890f341349ad4491250dff82c2d8fb5a0981c94aeb0a46eb37a3",
+      "transparent_pixels": 94
+    },
+    "gentry": {
+      "window": [
+        70,
+        475,
+        440,
+        845
+      ],
+      "trim_box_within_window": [
+        30,
+        28,
+        339,
+        342
+      ],
+      "size": [
+        64,
+        32
+      ],
+      "frames": 2,
+      "png": "tools/assets/chaozhou_government/production/gentry.png",
+      "dds": "guangdong_independent_practice/gfx/interface/gdd_czc_government/gentry.dds",
+      "png_sha256": "1a642869a8c23a7d623b5d39b9d2e9133e2e59721b0c1db5b8e13e6eaf3b6c05",
+      "dds_sha256": "b6fd6e4b1d39bbb61daf733b7f913d91db93ac0235a3204c01860291cf8d0eae",
+      "transparent_pixels": 38
+    },
+    "ruler": {
+      "window": [
+        460,
+        480,
+        805,
+        845
+      ],
+      "trim_box_within_window": [
+        27,
+        24,
+        321,
+        338
+      ],
+      "size": [
+        64,
+        32
+      ],
+      "frames": 2,
+      "png": "tools/assets/chaozhou_government/production/ruler.png",
+      "dds": "guangdong_independent_practice/gfx/interface/gdd_czc_government/ruler.dds",
+      "png_sha256": "fd9d9a2f8aa91b247aef0d3ca04a7b8bc23761bb2017ccc20906d7579fed8681",
+      "dds_sha256": "dd1183e82ceecf0a17d6ef191df8d3a383e16f96a1be7261445ecddc26543168",
+      "transparent_pixels": 48
+    },
+    "pointer": {
+      "window": [
+        870,
+        530,
+        1040,
+        800
+      ],
+      "trim_box_within_window": [
+        30,
+        23,
+        139,
+        248
+      ],
+      "size": [
+        16,
+        24
+      ],
+      "frames": 1,
+      "png": "tools/assets/chaozhou_government/production/pointer.png",
+      "dds": "guangdong_independent_practice/gfx/interface/gdd_czc_government/pointer.dds",
+      "png_sha256": "eb0c4e833be92afaaec14401d20f907702e7490d60ad2723d42954a41bc6e9e2",
+      "dds_sha256": "f31eb2892d42acd7e0c3f75a9778dbd0891fa967f1f3bcb36b3f50610a5e1be7",
+      "transparent_pixels": 110
+    },
+    "government_reform": {
+      "window": [
+        1090,
+        480,
+        1465,
+        845
+      ],
+      "trim_box_within_window": [
+        30,
+        24,
+        343,
+        338
+      ],
+      "size": [
+        64,
+        64
+      ],
+      "frames": 1,
+      "png": "tools/assets/chaozhou_government/production/government_reform.png",
+      "dds": "guangdong_independent_practice/gfx/interface/gdd_czc_government/government_reform.dds",
+      "png_sha256": "6d456565d35988733a2b7dfd7d0730c1d1419643601d18d71cb557bee2529937",
+      "dds_sha256": "24febb6b8922e756ae87332b91d5dae05bd6db3f5d902a8ae77cb3922a50b834",
+      "transparent_pixels": 160
+    },
+    "pointer_track": {
+      "source_png": "tools/assets/chaozhou_government/production/pointer.png",
+      "source_png_sha256": "eb0c4e833be92afaaec14401d20f907702e7490d60ad2723d42954a41bc6e9e2",
+      "size": [
+        5880,
+        50
+      ],
+      "frame_size": [
+        280,
+        50
+      ],
+      "frames": 21,
+      "png": "tools/assets/chaozhou_government/production/pointer_track.png",
+      "dds": "guangdong_independent_practice/gfx/interface/gdd_czc_government/pointer_track.dds",
+      "png_sha256": "37602cff7ca299d25495b91176ba93e6cd27bddde09deb7009c35b7613b03e8b",
+      "dds_sha256": "a6256f621ad9f8f001c9154eaf864d4fcd00f00370ffe5e394efa7116e68b67b",
+      "transparent_pixels": 288246,
+      "frame_positions": [
+        {
+          "frame": 1,
+          "native_value": -1.0,
+          "center_x": 40,
+          "pointer_top_left": [
+            32,
+            13
+          ]
+        },
+        {
+          "frame": 2,
+          "native_value": -0.9,
+          "center_x": 50,
+          "pointer_top_left": [
+            42,
+            13
+          ]
+        },
+        {
+          "frame": 3,
+          "native_value": -0.8,
+          "center_x": 60,
+          "pointer_top_left": [
+            52,
+            13
+          ]
+        },
+        {
+          "frame": 4,
+          "native_value": -0.7,
+          "center_x": 70,
+          "pointer_top_left": [
+            62,
+            13
+          ]
+        },
+        {
+          "frame": 5,
+          "native_value": -0.6,
+          "center_x": 80,
+          "pointer_top_left": [
+            72,
+            13
+          ]
+        },
+        {
+          "frame": 6,
+          "native_value": -0.5,
+          "center_x": 90,
+          "pointer_top_left": [
+            82,
+            13
+          ]
+        },
+        {
+          "frame": 7,
+          "native_value": -0.4,
+          "center_x": 100,
+          "pointer_top_left": [
+            92,
+            13
+          ]
+        },
+        {
+          "frame": 8,
+          "native_value": -0.3,
+          "center_x": 110,
+          "pointer_top_left": [
+            102,
+            13
+          ]
+        },
+        {
+          "frame": 9,
+          "native_value": -0.2,
+          "center_x": 120,
+          "pointer_top_left": [
+            112,
+            13
+          ]
+        },
+        {
+          "frame": 10,
+          "native_value": -0.1,
+          "center_x": 130,
+          "pointer_top_left": [
+            122,
+            13
+          ]
+        },
+        {
+          "frame": 11,
+          "native_value": 0.0,
+          "center_x": 140,
+          "pointer_top_left": [
+            132,
+            13
+          ]
+        },
+        {
+          "frame": 12,
+          "native_value": 0.1,
+          "center_x": 150,
+          "pointer_top_left": [
+            142,
+            13
+          ]
+        },
+        {
+          "frame": 13,
+          "native_value": 0.2,
+          "center_x": 160,
+          "pointer_top_left": [
+            152,
+            13
+          ]
+        },
+        {
+          "frame": 14,
+          "native_value": 0.3,
+          "center_x": 170,
+          "pointer_top_left": [
+            162,
+            13
+          ]
+        },
+        {
+          "frame": 15,
+          "native_value": 0.4,
+          "center_x": 180,
+          "pointer_top_left": [
+            172,
+            13
+          ]
+        },
+        {
+          "frame": 16,
+          "native_value": 0.5,
+          "center_x": 190,
+          "pointer_top_left": [
+            182,
+            13
+          ]
+        },
+        {
+          "frame": 17,
+          "native_value": 0.6,
+          "center_x": 200,
+          "pointer_top_left": [
+            192,
+            13
+          ]
+        },
+        {
+          "frame": 18,
+          "native_value": 0.7,
+          "center_x": 210,
+          "pointer_top_left": [
+            202,
+            13
+          ]
+        },
+        {
+          "frame": 19,
+          "native_value": 0.8,
+          "center_x": 220,
+          "pointer_top_left": [
+            212,
+            13
+          ]
+        },
+        {
+          "frame": 20,
+          "native_value": 0.9,
+          "center_x": 230,
+          "pointer_top_left": [
+            222,
+            13
+          ]
+        },
+        {
+          "frame": 21,
+          "native_value": 1.0,
+          "center_x": 240,
+          "pointer_top_left": [
+            232,
+            13
+          ]
+        }
+      ]
+    }
+  },
+  "recommended_ui_placement_within_280x50": {
+    "frame": [
+      0,
+      0
+    ],
+    "gentry": [
+      0,
+      9
+    ],
+    "ruler": [
+      248,
+      9
+    ],
+    "pointer_centered": [
+      132,
+      13
+    ]
+  }
+}

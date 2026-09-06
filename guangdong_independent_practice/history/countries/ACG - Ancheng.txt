@@ -1,6 +1,6 @@
 # B72 one-province Ancheng polity, restored from the historical Ancheng marquisate prototype.
 government = monarchy
-add_government_reform = feudalism_reform
+add_government_reform = zhx_feudatory_hou_reform
 government_rank = 1
 technology_group = chinese
 religion = confucianism

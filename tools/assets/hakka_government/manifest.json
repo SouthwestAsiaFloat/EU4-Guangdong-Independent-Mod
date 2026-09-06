@@ -1,0 +1,103 @@
+{
+  "mode": "built-in imagegen; alpha-preserving size and DDS conversion",
+  "sprites": {
+    "farmers": {
+      "source": "tools/assets/hakka_government/sources/farmers.png",
+      "sha256": "a43e044c37373074df62b214892633e37cde281d9cd54350cc48e760c012a121",
+      "exports": {
+        "44": {
+          "path": "guangdong_independent_practice/gfx/interface/gdd_hak_government/farmers_44.dds",
+          "sha256": "f0f94c9368664a5daac268a9dc3aaaddcc0be77bfff8297bb7eb9248d4dd0a65"
+        },
+        "48": {
+          "path": "guangdong_independent_practice/gfx/interface/gdd_hak_government/farmers_48.dds",
+          "sha256": "f8fa5a95735b5d03f87563bf5349f2582cff23d376b53204fd81b7238343fc24"
+        },
+        "64": {
+          "path": "guangdong_independent_practice/gfx/interface/gdd_hak_government/farmers_64.dds",
+          "sha256": "68998750438928a32e22fafb4a31e29dac9a1daf15b8a8c3320846a409521c57"
+        },
+        "128": {
+          "path": "guangdong_independent_practice/gfx/interface/gdd_hak_government/farmers_128.dds",
+          "sha256": "7d6d127cf0bb7099172f481fcf245e945c1b038a0c794c2d325d76eb7b08a5c1"
+        }
+      }
+    },
+    "burghers": {
+      "source": "tools/assets/hakka_government/sources/burghers.png",
+      "sha256": "6c101c437aa7ad5f05840061a9d0ab494e480abc6b40d3989eb7623dc4ebbff4",
+      "exports": {
+        "44": {
+          "path": "guangdong_independent_practice/gfx/interface/gdd_hak_government/burghers_44.dds",
+          "sha256": "442bfd6f7a6f0db40a7ea4d8e5e9a02fb4a3edc4daf40b4cc004876d6b0d5f0c"
+        },
+        "48": {
+          "path": "guangdong_independent_practice/gfx/interface/gdd_hak_government/burghers_48.dds",
+          "sha256": "33e123fcd4c93171cbc5bcf02a66f23049f54d955e90e78cd5cd257a77ba3e2a"
+        },
+        "64": {
+          "path": "guangdong_independent_practice/gfx/interface/gdd_hak_government/burghers_64.dds",
+          "sha256": "2eddcb5fedf899e097a2f43c3aa9f111f7ef32f924d072bbb2692139446f926c"
+        },
+        "128": {
+          "path": "guangdong_independent_practice/gfx/interface/gdd_hak_government/burghers_128.dds",
+          "sha256": "1d30e8aa7a2ce893fb40ecc16584bf4192e53fe26dd47d218b17dc6e1109e342"
+        }
+      }
+    },
+    "army": {
+      "source": "tools/assets/hakka_government/sources/army.png",
+      "sha256": "1a21b9c59e3704c3d8b5c9f04a45017da845d9b565be85e9f2df6867c7d9289a",
+      "exports": {
+        "44": {
+          "path": "guangdong_independent_practice/gfx/interface/gdd_hak_government/army_44.dds",
+          "sha256": "6f62ad3d8854c1b20d8418bef6c87bd76fd51545b36045eebad973732fed4163"
+        },
+        "48": {
+          "path": "guangdong_independent_practice/gfx/interface/gdd_hak_government/army_48.dds",
+          "sha256": "829d957fdcb790a59c744f9a8123d3b7922374b9d3c9f89e4f267befd714f3f0"
+        },
+        "64": {
+          "path": "guangdong_independent_practice/gfx/interface/gdd_hak_government/army_64.dds",
+          "sha256": "fb4697a752c97fdebb27b8e141ef6769d0cc38905aa9ce2c57edd223874b173a"
+        },
+        "128": {
+          "path": "guangdong_independent_practice/gfx/interface/gdd_hak_government/army_128.dds",
+          "sha256": "364dee4f90c259fba433b8ca989f6b0d61bb1fe6c445818ef1baa73af7a57cd7"
+        }
+      }
+    }
+  },
+  "estate_atlases": {
+    "estates_icons": {
+      "source": "/Users/xinanyapiao/Library/Application Support/Steam/steamapps/common/Europa Universalis IV/gfx/interface/estates_icons.dds",
+      "source_sha256": "109b60c8fa81601c5aa6f3ae02f3a6d873d2ee1422c2b099be3f23f8f315503a",
+      "source_size": [
+        649,
+        44
+      ],
+      "size": [
+        692,
+        44
+      ],
+      "frames": 16,
+      "path": "guangdong_independent_practice/gfx/interface/gdd_hak_government/estates_icons_16.dds",
+      "sha256": "33c1be4adf4a3375e291334480a7018676b55623da4a66759a87203795538058"
+    },
+    "estates_icons_colour-stroke": {
+      "source": "/Users/xinanyapiao/Library/Application Support/Steam/steamapps/common/Europa Universalis IV/gfx/interface/estates_icons_colour-stroke.dds",
+      "source_sha256": "a767c9017b8399ab7d4b85c2c6208942127a057d9e8053069cf75e0b12e94837",
+      "source_size": [
+        657,
+        44
+      ],
+      "size": [
+        701,
+        44
+      ],
+      "frames": 16,
+      "path": "guangdong_independent_practice/gfx/interface/gdd_hak_government/estates_icons_colour-stroke_16.dds",
+      "sha256": "6ca4ec4247d86f1e3ff8199983f052dc6bec1a2d4d0b4894bd191b52b08e091b"
+    }
+  }
+}

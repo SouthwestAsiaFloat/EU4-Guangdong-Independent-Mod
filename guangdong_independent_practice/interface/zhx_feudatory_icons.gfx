@@ -1,0 +1,14 @@
+spriteTypes = {
+    spriteType = {
+        name = "government_reform_zhx_investiture"
+        texturefile = "gfx/interface/zhx_feudatories/investiture_57.dds"
+        noOfFrames = 1
+        loadType = "INGAME"
+    }
+    spriteType = {
+        name = "government_reform_zhx_ritual_ding"
+        texturefile = "gfx/interface/zhx_feudatories/ritual_ding_57.dds"
+        noOfFrames = 1
+        loadType = "INGAME"
+    }
+}

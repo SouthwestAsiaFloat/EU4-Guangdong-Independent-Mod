@@ -60,6 +60,13 @@ gdd_chaozhou_elder_council_title = {
     }
 }
 
+gdd_hakka_communal_republic_title = {
+    rank = { 1 = HAK_REPUBLIC 2 = HAK_REPUBLIC 3 = HAK_REPUBLIC }
+    ruler_male = { 1 = gdd_hak_civil_president 2 = gdd_hak_civil_president 3 = gdd_hak_civil_president }
+    ruler_female = { 1 = gdd_hak_civil_president 2 = gdd_hak_civil_president 3 = gdd_hak_civil_president }
+    trigger = { tag = HAK has_reform = gdd_hak_communal_republic_reform }
+}
+
 gdd_hakka_republic_title = {
     rank = {
         1 = HAK_REPUBLIC
@@ -75,6 +82,7 @@ gdd_hakka_republic_title = {
     }
     trigger = {
         tag = HAK
+        NOT = { has_reform = gdd_hak_communal_republic_reform }
         government = republic
         NOT = { government_rank = 3 }
     }

@@ -1,0 +1,50 @@
+# ROOT = FROM on countrygovernmentview. Native faction window remains available.
+custom_text_box = { name = gdd_hak_farmers_label potential = { tag = HAK gdd_hak_is_republic_trigger = yes  } tooltip = gdd_hak_farmers_tt }
+
+custom_icon = { name = gdd_hak_farmers_icon potential = { tag = HAK gdd_hak_is_republic_trigger = yes } tooltip = gdd_hak_farmers_tt }
+
+custom_button = {
+    name = gdd_hak_support_farmers_button
+    potential = { hidden_trigger = { tag = HAK gdd_hak_is_republic_trigger = yes } }
+    trigger = { adm_power = 10 }
+    effect = { gdd_hak_support_farmers_effect = yes }
+    tooltip = gdd_hak_support_farmers_tt
+}
+
+custom_text_box = { name = gdd_hak_dominant_farmers potential = { tag = HAK gdd_hak_is_republic_trigger = yes faction_in_power = gdd_hak_farmers } tooltip = gdd_hak_rules_tt }
+
+custom_text_box = { name = gdd_hak_burghers_label potential = { tag = HAK gdd_hak_is_republic_trigger = yes  } tooltip = gdd_hak_burghers_tt }
+
+custom_icon = { name = gdd_hak_burghers_icon potential = { tag = HAK gdd_hak_is_republic_trigger = yes } tooltip = gdd_hak_burghers_tt }
+
+custom_button = {
+    name = gdd_hak_support_burghers_button
+    potential = { hidden_trigger = { tag = HAK gdd_hak_is_republic_trigger = yes } }
+    trigger = { dip_power = 10 }
+    effect = { gdd_hak_support_burghers_effect = yes }
+    tooltip = gdd_hak_support_burghers_tt
+}
+
+custom_text_box = { name = gdd_hak_dominant_burghers potential = { tag = HAK gdd_hak_is_republic_trigger = yes faction_in_power = gdd_hak_burghers } tooltip = gdd_hak_rules_tt }
+
+custom_text_box = { name = gdd_hak_army_label potential = { tag = HAK gdd_hak_is_republic_trigger = yes  } tooltip = gdd_hak_army_tt }
+
+custom_icon = { name = gdd_hak_army_icon potential = { tag = HAK gdd_hak_is_republic_trigger = yes } tooltip = gdd_hak_army_tt }
+
+custom_button = {
+    name = gdd_hak_support_army_button
+    potential = { hidden_trigger = { tag = HAK gdd_hak_is_republic_trigger = yes } }
+    trigger = { mil_power = 10 }
+    effect = { gdd_hak_support_army_effect = yes }
+    tooltip = gdd_hak_support_army_tt
+}
+
+custom_text_box = { name = gdd_hak_dominant_army potential = { tag = HAK gdd_hak_is_republic_trigger = yes faction_in_power = gdd_hak_army } tooltip = gdd_hak_rules_tt }
+
+custom_button = {
+    name = gdd_hak_restore_button
+    potential = { hidden_trigger = { tag = HAK gdd_hak_is_republic_trigger = yes has_reform = gdd_hak_revolutionary_army_reform } }
+    trigger = { custom_trigger_tooltip = { tooltip = gdd_hak_restore_conditions_tt gdd_hak_can_restore_civil_rule_trigger = yes } }
+    effect = { gdd_hak_restore_civil_rule_effect = yes }
+    tooltip = gdd_hak_restore_conditions_tt
+}

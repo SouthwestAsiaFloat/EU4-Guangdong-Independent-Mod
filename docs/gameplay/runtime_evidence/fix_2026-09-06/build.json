@@ -1,0 +1,14 @@
+{
+  "game": "EU4 1.37.5 macOS",
+  "checksum": "0355",
+  "files": {
+    "common/government_reforms/zzz_gdd_czc_government_reforms.txt": "e6d6cd7101558d657b09322f24d054f4c193f60a04bfdc8b27da1c7fe2d138db",
+    "common/scripted_effects/gdd_czc_government_effects.txt": "2615aa5a354c5bdaee48fd8500879d309481a6c26d60d2a794915409520a870f",
+    "common/on_actions/gdd_czc_government_on_actions.txt": "004f096c6dad89832d5698ff2b9a870324c125154f55ddf32c4b6662fbbe4f9e",
+    "events/gdd_czc_government_events.txt": "f2a1065b32d680487055df211c5bbbd251774a9f8662cfcaca3374bf2fd25149",
+    "common/government_reforms/zzz_zhx_feudatory_reforms.txt": "e9348031aeea95358c37357fe0dfcbf66969d663aa23a00e8ef09f0ad43d4fe9",
+    "common/scripted_effects/zhx_feudatory_effects.txt": "f30e70fb1048d901b2b745a45f944370191b477816bd7d2afc6ec03a25519457",
+    "localisation/replace/022_zhx_feudatory_l_english.yml": "12bf844a04de232c318fe0b1d350930375e31a7850a379e42e59289a6754c796"
+  },
+  "note": "Final post-runtime edits only clarify script comments; mechanics unchanged."
+}

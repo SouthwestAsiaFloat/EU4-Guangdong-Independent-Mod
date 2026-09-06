@@ -1,0 +1,18 @@
+{
+  "game_version": "1.37.5",
+  "final_mainmenu_checksum": "451f",
+  "final_campaign_reload": "not completed: Computer Use coordinate clicks return noWindowsAvailable after restart",
+  "previous_campaign_reload": "pending approval save loaded and refusal executed on 1bd1",
+  "targeted_startup_errors": [],
+  "files_sha256": {
+    "guangdong_independent_practice/common/new_diplomatic_actions/zhx_gongyi_actions.txt": "ae456e955c696af96a258cf678bdb0059cf72c69c7f47a6d24493ba184adc53e",
+    "guangdong_independent_practice/common/on_actions/zhx_gongyi_on_actions.txt": "90f1227f48c7b73c67e10886594ff4afec485f7928720d3614a54701466c7520",
+    "guangdong_independent_practice/common/government_names/00_aaaa_zhx_gongyi_names.txt": "f11964e5f286fcf61e263f85c75c73edb81f24078c1cfb1b6b020e4087e33c98",
+    "guangdong_independent_practice/common/government_reforms/zzz_zhx_gongyi_reforms.txt": "fa792ab618891fdc695b04c4da634dce60c2f3aadd1e8408d706330943e63908",
+    "guangdong_independent_practice/common/scripted_triggers/zhx_gongyi_triggers.txt": "fa9cf0aafe6d73382a838424b4c581e857d39da16a1203a6e9517186e403a222",
+    "guangdong_independent_practice/common/scripted_effects/zhx_gongyi_effects.txt": "e281f9de7c151f258fe5aeb429943e4972c87c2480d6b46dbdeac365b0844f56",
+    "guangdong_independent_practice/events/zhx_gongyi_events.txt": "1cf5da737252bfc96c155ef3878e75e308c1441636b8e5dc17042d541bb90a10",
+    "guangdong_independent_practice/interface/zhx_gongyi_yang_icons.gfx": "63f894eaf2d5664433b19bc8da3100c1c5c02f20e1cd26d3faabd0b6c1b73cc1",
+    "guangdong_independent_practice/localisation/replace/023_zhx_gongyi_l_english.yml": "402503af6afe8635544383f90662b59398614748fa60b48e6613313553801c07"
+  }
+}

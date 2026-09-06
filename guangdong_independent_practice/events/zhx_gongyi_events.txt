@@ -1,0 +1,99 @@
+namespace = zhx_gongyi
+
+country_event = {
+    id = zhx_gongyi.1
+    title = zhx_gongyi_reform
+    desc = zhx_gongyi_reform_desc
+    picture = DIPLOMACY_eventPicture
+    option = { name = OK }
+    hidden = yes
+    is_triggered_only = yes
+    trigger = { NOT = { has_global_flag = zhx_gongyi_initialised } }
+    immediate = {
+        every_country = {
+            limit = { exists = yes zhx_gongyi_opening_city = yes }
+            zhx_gongyi_grant_charter = yes
+        }
+        HYM = {
+            if = {
+                limit = { exists = yes government = republic }
+                add_government_reform = zhx_yang_trade_league_reform
+                join_trade_league = CDE
+                join_trade_league = JJG
+                join_trade_league = HYA
+                join_trade_league = WHU
+                join_trade_league = ZHO
+            }
+        }
+        set_global_flag = zhx_gongyi_initialised
+    }
+}
+country_event = {
+    id = zhx_gongyi.2
+    title = zhx_gongyi_reform
+    desc = zhx_gongyi_reform_desc
+    picture = DIPLOMACY_eventPicture
+    option = { name = OK }
+    hidden = yes
+    is_triggered_only = yes
+    immediate = { zhx_gongyi_sync = yes }
+}
+country_event = {
+    id = zhx_gongyi.3
+    title = zhx_gongyi_reform
+    desc = zhx_gongyi_reform_desc
+    picture = DIPLOMACY_eventPicture
+    option = { name = OK }
+    hidden = yes
+    is_triggered_only = yes
+    trigger = { ai = yes zhx_gongyi_can_request = yes }
+    immediate = { zhx_gongyi_submit_request = yes }
+}
+country_event = {
+    id = zhx_gongyi.10
+    title = zhx_gongyi.10.t
+    desc = zhx_gongyi.10.d
+    picture = DIPLOMACY_eventPicture
+    is_triggered_only = yes
+    option = {
+        name = zhx_gongyi.10.a
+        trigger = { zhx_gongyi_tianzi_can_grant = yes }
+        event_target:zhx_gongyi_applicant = {
+            zhx_gongyi_grant_charter = yes
+            country_event = { id = zhx_gongyi.11 }
+        }
+        ai_chance = { factor = 100 }
+    }
+    option = {
+        name = zhx_gongyi.10.b
+        event_target:zhx_gongyi_applicant = {
+            clr_country_flag = zhx_gongyi_request_pending
+            if = { limit = { exists = yes } country_event = { id = zhx_gongyi.12 } }
+        }
+        ai_chance = { factor = 1 modifier = { factor = 0 zhx_gongyi_tianzi_can_grant = yes } }
+    }
+}
+country_event = {
+    id = zhx_gongyi.11
+    title = zhx_gongyi.11.t
+    desc = zhx_gongyi.11.d
+    picture = DIPLOMACY_eventPicture
+    is_triggered_only = yes
+    option = { name = zhx_gongyi.11.a }
+}
+country_event = {
+    id = zhx_gongyi.12
+    title = zhx_gongyi.12.t
+    desc = zhx_gongyi.12.d
+    picture = DIPLOMACY_eventPicture
+    is_triggered_only = yes
+    option = { name = zhx_gongyi.12.a }
+}
+country_event = {
+    id = zhx_gongyi.20
+    title = zhx_gongyi.20.t
+    desc = zhx_gongyi.20.d
+    picture = DIPLOMACY_eventPicture
+    is_triggered_only = yes
+    option = { name = zhx_gongyi.20.a }
+}

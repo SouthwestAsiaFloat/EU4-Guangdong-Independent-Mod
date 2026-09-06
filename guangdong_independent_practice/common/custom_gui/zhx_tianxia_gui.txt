@@ -614,8 +614,9 @@ custom_text_box = {
     potential = {
         has_global_flag = zhx_council_initialised_v1
         event_target:zhx_tianzi = {
-            has_country_flag = zhx_council_kind_ritual_breakdown
+            OR = { has_country_flag = zhx_council_kind_ritual_breakdown has_country_flag = zhx_council_kind_promotion }
             OR = {
+                has_country_flag = zhx_council_phase_preparing
                 has_country_flag = zhx_council_phase_ballot_open
                 has_country_flag = zhx_council_phase_resolving
             }
@@ -638,8 +639,8 @@ custom_text_box = {
     potential = {
         has_global_flag = zhx_council_initialised_v1
         event_target:zhx_tianzi = {
-            has_country_flag = zhx_council_kind_ritual_breakdown
-            has_country_flag = zhx_council_phase_ballot_open
+            OR = { has_country_flag = zhx_council_kind_ritual_breakdown has_country_flag = zhx_council_kind_promotion }
+            OR = { has_country_flag = zhx_council_phase_preparing has_country_flag = zhx_council_phase_ballot_open }
         }
     }
     tooltip = zhx_gui_incident_tt
@@ -1040,7 +1041,7 @@ custom_text_box = {
     potential = {
         zhx_can_vote_in_tianxia_council = yes
         has_country_flag = zhx_council_vote_a
-        event_target:zhx_tianzi = { has_country_flag = zhx_council_kind_ritual_breakdown }
+        event_target:zhx_tianzi = { OR = { has_country_flag = zhx_council_kind_ritual_breakdown has_country_flag = zhx_council_kind_promotion } }
     }
     tooltip = zhx_gui_incident_tt
 }
@@ -1050,7 +1051,7 @@ custom_text_box = {
     potential = {
         zhx_can_vote_in_tianxia_council = yes
         has_country_flag = zhx_council_vote_b
-        event_target:zhx_tianzi = { has_country_flag = zhx_council_kind_ritual_breakdown }
+        event_target:zhx_tianzi = { OR = { has_country_flag = zhx_council_kind_ritual_breakdown has_country_flag = zhx_council_kind_promotion } }
     }
     tooltip = zhx_gui_incident_tt
 }
@@ -1060,7 +1061,7 @@ custom_text_box = {
     potential = {
         zhx_can_vote_in_tianxia_council = yes
         has_country_flag = zhx_council_vote_c
-        event_target:zhx_tianzi = { has_country_flag = zhx_council_kind_ritual_breakdown }
+        event_target:zhx_tianzi = { OR = { has_country_flag = zhx_council_kind_ritual_breakdown has_country_flag = zhx_council_kind_promotion } }
     }
     tooltip = zhx_gui_incident_tt
 }
@@ -1214,33 +1215,33 @@ custom_button = {
     name = zhx_gui_council_vote_support_button
     potential = {
         zhx_can_vote_in_tianxia_council = yes
-        event_target:zhx_tianzi = { has_country_flag = zhx_council_kind_ritual_breakdown }
+        event_target:zhx_tianzi = { OR = { has_country_flag = zhx_council_kind_ritual_breakdown has_country_flag = zhx_council_kind_promotion } }
     }
-    trigger = { zhx_can_vote_in_tianxia_council = yes }
-    effect = { zhx_cast_tianxia_council_vote_a = yes }
-    tooltip = zhx_system.21.a.tt
+    trigger = { hidden_trigger = { zhx_can_vote_in_tianxia_council = yes } }
+    effect = { hidden_effect = { zhx_cast_tianxia_council_vote_a = yes } }
+    tooltip = zhx_gui_incident_tt
 }
 
 custom_button = {
     name = zhx_gui_council_vote_oppose_button
     potential = {
         zhx_can_vote_in_tianxia_council = yes
-        event_target:zhx_tianzi = { has_country_flag = zhx_council_kind_ritual_breakdown }
+        event_target:zhx_tianzi = { OR = { has_country_flag = zhx_council_kind_ritual_breakdown has_country_flag = zhx_council_kind_promotion } }
     }
-    trigger = { zhx_can_vote_in_tianxia_council = yes }
-    effect = { zhx_cast_tianxia_council_vote_b = yes }
-    tooltip = zhx_system.21.c.tt
+    trigger = { hidden_trigger = { zhx_can_vote_in_tianxia_council = yes } }
+    effect = { hidden_effect = { zhx_cast_tianxia_council_vote_b = yes } }
+    tooltip = zhx_gui_incident_tt
 }
 
 custom_button = {
     name = zhx_gui_council_vote_abstain_button
     potential = {
         zhx_can_vote_in_tianxia_council = yes
-        event_target:zhx_tianzi = { has_country_flag = zhx_council_kind_ritual_breakdown }
+        event_target:zhx_tianzi = { OR = { has_country_flag = zhx_council_kind_ritual_breakdown has_country_flag = zhx_council_kind_promotion } }
     }
-    trigger = { zhx_can_vote_in_tianxia_council = yes }
-    effect = { zhx_cast_tianxia_council_vote_c = yes }
-    tooltip = zhx_system.21.b.tt
+    trigger = { hidden_trigger = { zhx_can_vote_in_tianxia_council = yes } }
+    effect = { hidden_effect = { zhx_cast_tianxia_council_vote_c = yes } }
+    tooltip = zhx_gui_incident_tt
 }
 
 custom_button = {

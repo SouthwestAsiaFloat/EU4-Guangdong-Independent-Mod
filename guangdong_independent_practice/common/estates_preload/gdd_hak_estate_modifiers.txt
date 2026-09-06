@@ -1,0 +1,18 @@
+# Register the custom estate modifier before estates/reforms consume it.
+estate_gdd_hak_peasants = {
+    modifier_definition = {
+        type = loyalty
+        key = gdd_hak_peasants_loyalty_modifier
+        trigger = { has_estate = estate_gdd_hak_peasants }
+    }
+    modifier_definition = {
+        type = influence
+        key = gdd_hak_peasants_influence_modifier
+        trigger = { has_estate = estate_gdd_hak_peasants }
+    }
+    modifier_definition = {
+        type = privileges
+        key = gdd_hak_peasants_privilege_slots
+        trigger = { has_estate = estate_gdd_hak_peasants }
+    }
+}
