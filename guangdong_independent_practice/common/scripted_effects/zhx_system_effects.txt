@@ -612,6 +612,7 @@ zhx_register_tianxia_member = {
             }
             CZH = { gdd_recalculate_all_reform_votes_effect = yes }
         }
+        if = { limit = { has_global_flag = zhx_feudatory_initialised } zhx_feudatory_sync_government = yes }
     }
 }
 
@@ -863,6 +864,7 @@ zhx_remove_tianxia_member = {
         limit = { has_global_flag = gdd_celestial_reform_voting_initialised }
         CZH = { gdd_recalculate_all_reform_votes_effect = yes }
     }
+    if = { limit = { zhx_feudatory_has_reform = yes } zhx_feudatory_sync_government = yes }
 }
 
 # Engine-transaction-safe removal used only from on_annexed/on_integrate.

@@ -1,5 +1,6 @@
 government = monarchy
-government_rank = 3
+add_government_reform = zhx_feudatory_gong_reform
+government_rank = 2
 technology_group = chinese
 religion = confucianism
 primary_culture = gdd_jianghuai

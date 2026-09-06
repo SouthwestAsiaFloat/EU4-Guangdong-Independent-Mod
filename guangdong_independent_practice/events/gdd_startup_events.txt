@@ -18,14 +18,8 @@ country_event = {
         set_country_flag = gdd_v03_fix2_initialised
         set_country_flag = gdd_liang_shouqian_reigning
 
-        # Country history should already assign ordinary feudalism. Keep this
-        # startup fallback so a new game cannot begin with an empty monarchy tier 1.
-        if = {
-            limit = {
-                NOT = { has_reform = feudalism_reform }
-            }
-            add_government_reform = feudalism_reform
-        }
+        # Country history owns the opening Zhou dignity. Do not replace
+        # its locked first-tier reform with the retired feudalism fallback.
 
         # Guangdong and Ming begin with the five-year truce described by the
         # treaty event chain. Schedule the expiry checker as a precise primary
@@ -176,12 +170,12 @@ country_event = {
         if = {
             limit = { has_heir = no }
             define_heir = {
-                name = "àR≈k"
+                name = "Áu±W"
                 dynasty = "Åh"
                 age = 40
                 claim = 70
-                adm = 2
-                dip = 3
+                adm = 4
+                dip = 2
                 mil = 5
                 male = yes
                 culture = gdd_guangfu
@@ -248,8 +242,8 @@ province_event = {
     option = { name = OK }
 }
 
-# Liang Shouqian alone may use the title King of Lingnan. Any succession,
-# including abdication, clears the flag used by the government-name trigger.
+# Track Liang Shouqian's reign for the named-heir lifecycle. Any succession,
+# including abdication, clears this compatibility flag.
 country_event = {
     id = gdd_startup.6
     title = gdd_startup.6.t
@@ -269,3 +263,31 @@ country_event = {
 
     option = { name = OK }
 }
+
+# GDD_LINGNAN_DAI_CAPITAL_BEGIN
+# Old saves may retain Hai Phong from an earlier build. Move the court only
+# while Annam still owns Hue, then permanently retire this compatibility pass.
+country_event = {
+    id = gdd_startup.7
+    hidden = yes
+    is_triggered_only = yes
+
+    trigger = {
+        tag = DAI
+        NOT = { has_country_flag = gdd_dai_hue_capital_checked }
+    }
+
+    immediate = {
+        if = {
+            limit = {
+                owns = 2373
+                NOT = { capital = 2373 }
+            }
+            set_capital = 2373
+        }
+        set_country_flag = gdd_dai_hue_capital_checked
+    }
+
+    option = { name = OK }
+}
+# GDD_LINGNAN_DAI_CAPITAL_END

@@ -124,9 +124,9 @@ l_english:
  zhx_gui_effect_fractured:0 "§R税收与生产 -5%§!；§G训练度 +2.5%、省份战分花费 -7.5%§!"
  zhx_gui_effect_collapsed:0 "§R民生 -10%、动乱与荒废上升§!；§G训练度 +5%、省份战分花费 -15%§!"
 
- zhx_gui_council_ritual:0 "§O王命不行§!"
+ zhx_gui_council_ritual:0 "[Root.GetZhouPublicIncidentName]"
  zhx_gui_council_idle:0 "§G天下无事§!"
- zhx_gui_council_ritual_description:0 "赞同 §G[CZH.zhx_council_vote_a_count.GetValue]§!　反对 §R[CZH.zhx_council_vote_b_count.GetValue]§!　弃权 §Y[CZH.zhx_council_vote_c_count.GetValue]§!"
+ zhx_gui_council_ritual_description:0 "[Root.GetZhouPublicIncidentCounts]"
  zhx_gui_council_idle_description:0 "当前没有正在议论的天下事变。礼乐值跌破门槛时，新的事变可能由年度结算触发。"
  zhx_gui_council_vote_support:0 "本国立场：§G赞同§!"
  zhx_gui_council_vote_oppose:0 "本国立场：§R反对§!"

@@ -1,18 +1,18 @@
 l_english:
  gdd_treaty.100.t:0 "停战到期检查"
- gdd_treaty.100.d:0 "检查广东与明朝的初始停战是否已经结束。"
+ gdd_treaty.100.d:0 "检查南海与明朝的初始停战是否已经结束。"
 
  gdd_treaty.1.t:0 "续订和约"
- gdd_treaty.1.d:0 "1444年11月11日，梁守谦和梁守毅与明廷使者达成停战协议。如今五年之期已到，明军已然整装待发。面对如此庞然大物，守毅希望我们能够主动出击，而国内的贵族们则认为应该先维持现状。"
+ gdd_treaty.1.d:0 "1444年11月11日，梁守谦和梁继垣与明廷使者达成停战协议。如今五年之期已到，明军已然整装待发。面对如此庞然大物，继垣希望我们能够主动出击，而国内的贵族们则认为应该先维持现状。"
  gdd_treaty.1.a:0 "派几个使者过去"
  gdd_treaty.1.b:0 "与虎谋皮"
 
  gdd_treaty.2.t:0 "翅膀硬了？"
- gdd_treaty.2.d:0 "广东不但拒绝派使者续订和约，反而开始加固要塞、整顿军队。梁氏兄弟似乎认为自己已经有能力公开对抗朝廷。"
+ gdd_treaty.2.d:0 "南海不但拒绝派使者续订和约，反而开始加固要塞、整顿军队。梁氏朝廷似乎认为自己已经有能力公开对抗明廷。"
  gdd_treaty.2.a:0 "让他们知道谁才是老大！"
 
  gdd_treaty.3.t:0 "广东问题"
- gdd_treaty.3.d:0 "明与广东梁氏兄弟的停战期已到。梁氏兄弟派来使者，请求续签之前的协议，并奉上了珍贵的财宝，希望以此巩固他们的地盘。"
+ gdd_treaty.3.d:0 "明与南海梁氏朝廷的停战期已到。南海使者请求续签之前的协议，并奉上了珍贵的财宝，希望以此保全梁氏在番禺的统治。"
  gdd_treaty.3.a:0 "财宝？我们不要这些垃圾"
  gdd_treaty.3.b:0 "我们还是先别刺激他们了……"
 
@@ -26,7 +26,7 @@ l_english:
  gdd_envoys_to_ming_estate_influence:0 "维持对明和议"
 
  gdd_cb_punish_guangdong_secession:0 "讨伐岭南割据"
- gdd_cb_punish_guangdong_secession_desc:0 "广东拒绝续订和约并公开整军，明廷可以借此发动惩戒战争。"
+ gdd_cb_punish_guangdong_secession_desc:0 "南海拒绝续订和约并公开整军，明廷可以借此发动惩戒战争。"
  gdd_recover_china_cores_wargoal:0 "收复中华核心"
  gdd_recover_china_cores_wargoal_desc:0 "战争目标是占领对方控制的我方中华核心省份。"
  GDD_RECOVER_CHINA_CORES:0 "位于中华大区的我方核心省份"

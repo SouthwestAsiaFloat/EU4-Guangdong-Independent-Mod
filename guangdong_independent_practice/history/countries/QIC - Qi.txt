@@ -1,6 +1,6 @@
 government = monarchy
-add_government_reform = feudalism_reform
-government_rank = 2
+add_government_reform = zhx_feudatory_hou_reform
+government_rank = 1
 
 technology_group = chinese
 religion = confucianism

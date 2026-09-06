@@ -1,0 +1,2 @@
+on_monthly_pulse = { events = { zhx_feudatory.2 } }
+on_yearly_pulse = { events = { zhx_feudatory.3 } }

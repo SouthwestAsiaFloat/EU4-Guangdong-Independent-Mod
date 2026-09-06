@@ -1,0 +1,49 @@
+# Native factions and estates; no dependency on reference mods.
+gdd_hak_revolutionary_army_reform = {
+    icon = "gdd_hak_army"
+    allow_normal_conversion = no
+    lock_level_when_selected = yes
+    valid_for_nation_designer = no
+    potential = { tag = HAK }
+    republican_name = yes
+    royal_marriage = no
+    factions = { gdd_hak_farmers gdd_hak_burghers gdd_hak_army }
+    custom_attributes = {
+        locked_government_type = yes
+        cannot_become_dictatorship = yes
+        disables_estate_nobles = yes
+        enables_plutocratic_idea_group = yes
+        enables_aristocratic_idea_group = no
+        generals_become_rulers = yes
+    }
+    has_term_election = no
+    election_on_death = no
+    duration = 0
+    # Faction loyalty is evaluated natively by each estate.
+    modifiers = { land_morale = 0.05 }
+}
+
+gdd_hak_communal_republic_reform = {
+    icon = "gdd_hak_farmers"
+    allow_normal_conversion = no
+    lock_level_when_selected = yes
+    valid_for_nation_designer = no
+    potential = { tag = HAK }
+    republican_name = yes
+    royal_marriage = no
+    factions = { gdd_hak_farmers gdd_hak_burghers gdd_hak_army }
+    custom_attributes = {
+        locked_government_type = yes
+        cannot_become_dictatorship = yes
+        disables_estate_nobles = yes
+        enables_plutocratic_idea_group = yes
+        enables_aristocratic_idea_group = no
+        is_peasants_republic = yes
+    }
+    # Vanilla peasant-republic election rules; ordinary reelection costs apply.
+    has_term_election = yes
+    election_on_death = yes
+    duration = 4
+    # Faction loyalty is evaluated natively by each estate.
+    modifiers = { production_efficiency = 0.10 max_absolutism = -10 }
+}

@@ -1,0 +1,19 @@
+spriteTypes = {
+    spriteType = { name = "GFX_gdd_hak_farmers" texturefile = "gfx/interface/gdd_hak_government/farmers_48.dds" noOfFrames = 1 loadType = "INGAME" }
+    spriteType = { name = "GFX_faction_gdd_hak_farmers" texturefile = "gfx/interface/gdd_hak_government/farmers_128.dds" noOfFrames = 1 loadType = "INGAME" }
+    spriteType = { name = "government_reform_gdd_hak_farmers" texturefile = "gfx/interface/gdd_hak_government/farmers_64.dds" noOfFrames = 1 loadType = "INGAME" }
+    spriteType = { name = "gdd_hak_privilege_farmers" texturefile = "gfx/interface/gdd_hak_government/farmers_64.dds" noOfFrames = 1 loadType = "INGAME" }
+    spriteType = { name = "GFX_faction_bg_gdd_hak_farmers" texturefile = "gfx/interface/faction_blue_frame.dds" transparencecheck = yes }
+    spriteType = { name = "GFX_gdd_hak_burghers" texturefile = "gfx/interface/gdd_hak_government/burghers_48.dds" noOfFrames = 1 loadType = "INGAME" }
+    spriteType = { name = "GFX_faction_gdd_hak_burghers" texturefile = "gfx/interface/gdd_hak_government/burghers_128.dds" noOfFrames = 1 loadType = "INGAME" }
+    spriteType = { name = "government_reform_gdd_hak_burghers" texturefile = "gfx/interface/gdd_hak_government/burghers_64.dds" noOfFrames = 1 loadType = "INGAME" }
+    spriteType = { name = "gdd_hak_privilege_burghers" texturefile = "gfx/interface/gdd_hak_government/burghers_64.dds" noOfFrames = 1 loadType = "INGAME" }
+    spriteType = { name = "GFX_faction_bg_gdd_hak_burghers" texturefile = "gfx/interface/faction_purple_frame.dds" transparencecheck = yes }
+    spriteType = { name = "GFX_gdd_hak_army" texturefile = "gfx/interface/gdd_hak_government/army_48.dds" noOfFrames = 1 loadType = "INGAME" }
+    spriteType = { name = "GFX_faction_gdd_hak_army" texturefile = "gfx/interface/gdd_hak_government/army_128.dds" noOfFrames = 1 loadType = "INGAME" }
+    spriteType = { name = "government_reform_gdd_hak_army" texturefile = "gfx/interface/gdd_hak_government/army_64.dds" noOfFrames = 1 loadType = "INGAME" }
+    spriteType = { name = "gdd_hak_privilege_army" texturefile = "gfx/interface/gdd_hak_government/army_64.dds" noOfFrames = 1 loadType = "INGAME" }
+    spriteType = { name = "GFX_faction_bg_gdd_hak_army" texturefile = "gfx/interface/faction_red_frame.dds" transparencecheck = yes }
+    spriteType = { name = "GFX_estates_icons" texturefile = "gfx/interface/gdd_hak_government/estates_icons_16.dds" noOfFrames = 16 loadType = "INGAME" }
+    spriteType = { name = "GFX_estates_icons_colour-stroke" texturefile = "gfx/interface/gdd_hak_government/estates_icons_colour-stroke_16.dds" noOfFrames = 16 loadType = "INGAME" }
+}

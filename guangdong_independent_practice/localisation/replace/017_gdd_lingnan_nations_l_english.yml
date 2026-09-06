@@ -1,0 +1,146 @@
+﻿l_english:
+ GDD:0 "WSwm"
+ GDD_ADJ:0 "WSwm"
+ GUI:0 "Bh—g"
+ GUI_ADJ:0 "Bh—g"
+ CZC:0 "noÞT"
+ CZC_ADJ:0 "noÞT"
+ HAK:0 "¢R¶R"
+ HAK_ADJ:0 "¢R¶R"
+ NUN:0 "¬OýV"
+ NUN_ADJ:0 "¬O"
+ TZZ:0 "0uÞTîR"
+ TZZ_ADJ:0 "0uÞT"
+ LIL:0 "ÚOîR"
+ LIL_ADJ:0 "ÚOîR"
+ DAI:0 "‰RWS"
+ DAI_ADJ:0 "‰RWS"
+
+ GDD_DYNASTIC_FEUDATORY:0 "‹sgø‹¯OýV"
+ GDD_EARL:0 "=O5r"
+ GDD_COUNTESS:0 "sY=O5r"
+ GDD_CONSORT:0 "TINM‘vP"
+ GDD_HEIR:0 "çubºN"
+ CZC_ELDER_COUNCIL:0 "aN2®‹O"
+ CZC_RAOPING_EARL:0 "v™s^=O"
+ CZC_COUNCIL_ELDER:0 "'Y•w"
+ HAK_REPUBLIC:0 "¢R¶RqQŒTýV"
+ HAK_PRESIDENT_GENERAL:0 "'YNSI`•"
+ NUN_TRIBAL_KINGDOM:0 "èK„‹sýV"
+ NUN_GREAT_CAVE_LORD:0 "'YÒSIN"
+ GDD_CAVE_POLITY:0 "èK„"
+ GDD_CAVE_LORD:0 "ÒSIN"
+
+ GDD_ideas:0 "WSwmtõV"
+ GDD_ideas_start:0 "wmNNï"
+ GDD_ideas_bonus:0 "VÑS­SWS"
+ gdd_guangfu_militia:0 "^œ^lâV"
+ gdd_guangfu_militia_desc:0 "—RÏe0ŸX^NaN¦uqQTôuûs„vlâVÿ=fWSwmTœ^(WqNN-NêÝO„v9húW0"
+ gdd_five_ridges:0 "”N­S6ä"
+ gdd_five_ridges_desc:0 "”N­SqSST–S¾–LˆÿêS‰ŠbˆRsQ˜–ÿSeg„v'Y›Q¿O‰˜HNÏkNekØNúQãN÷N0"
+ gdd_gold_mountain_cigars:0 "ÙuÑ‘qSM–=O„vê–ƒ"
+ gdd_gold_mountain_cigars_desc:0 "Üm¨OâVŠbEeaN„v'ir&^ŽVL–uwm¸SÿÈSŠb0ÌR0ˆmo`ŒT°e„vjOirÞVàsml0"
+ gdd_baiyue_heritage:0 "ŒvŠ.Ob"
+ gdd_baiyue_heritage_desc:0 "­SWSÎNegN=fUSNºN²„vW0W0b²‹qQT„vŒvŠWµNÿ¹eýw©‹ø‹ÏeT‰RvQNb0"
+ gdd_south_sea_dragon:0 "WSwmß†™Ÿ"
+ gdd_south_sea_dragon_desc:0 "àsml4l^NwmFU9‚–TúQN	ÿâeýw²b8‚FUÿmNýw(WböeSHNwmN²RÅe0"
+ gdd_western_firearms:0 "‰mkphV"
+ gdd_western_firearms_desc:0 "Ç³oè•NWSm8‚ï“eQ„v°eVkphVÿS1u,g0W.S7bÿN6Rv^eQ›Q5–0"
+ gdd_zhuhai_exchange:0 "Nmàswm"
+ gdd_zhuhai_exchange_desc:0 "uZm4lS0ßuNs^xNte˜¿lml^6‚ÿ©‹àsmlAmßW„virµNôfz˜Eu0WGleQ^ÞT0"
+
+ GUI_ideas:0 "Bh—gtõV"
+ GUI_ideas_start:0 "Xnàs.n"
+ GUI_ideas_bonus:0 "ÏueuBhS"
+ gui_five_ridges_barrier:0 "”N­SOSœ–"
+ gui_five_ridges_barrier_desc:0 "BhSqS­SBSàSÿírSNówèR³åNˆmèxûNUOŠ­Sweg„vLe›Q0"
+ gui_guiliu_sons:0 "Bhóg7uMQ"
+ gui_guiliu_sons_desc:0 "Bh—gNógÞT„vPRVŸq‰`qSÝTÿmN`Nï`(WaNuQNüruQ„v÷SäNNv^©wjOb0"
+ gui_bagui_lineage:0 "kQBhN	"
+ gui_bagui_lineage_desc:0 "Bh0óg0îX0—ONø‹ÒS‹†T	gí‹ŠJy×OÿtSqQ«NkQBhqS³l-N„v²NŒTŽVeg0"
+ gui_li_and_liu_rivers:0 "oógnn"
+ gui_li_and_liu_rivers_desc:0 "omlNógml2NwqSô•)WG•ÿOz®s0(gPgNÿwµN—VåNÕuÇi–ûSF–ï0"
+ gui_guilin_academy:0 "Bh—gfR«R"
+ gui_guilin_academy_desc:0 "fR«Râe²‹ÏuINÿmN6eUVqSÝT04l)RŒT¹¡RKNfRÿåN°eåwKcQepˆ®V„v=OýV0"
+ gui_liliao_wolf_troops:0 "ÚOîRüruQ"
+ gui_liliao_wolf_troops_desc:0 "Bh—gåNßv¦uŒT›Qw™VßRŸq‰`qSb„vÚOîRfkëXÿOKNbHN8^Y›QKNY„v•uQ0"
+ gui_western_guangxi_orthodoxy:0 "²s‰ck—R"
+ gui_western_guangxi_orthodoxy_desc:0 "¯QlåN­SWSçeSNˆRWKNŸR±RHyTRÿÕ‹þVÍ‘°eÝQZwÛVce„vºNÃV0"
+
+ CZC_ideas:0 "noÞTtõV"
+ CZC_ideas_start:0 "ènwm¹œ"
+ CZC_ideas_bonus:0 "noÞT¢u4Y9‚"
+ czc_chaoshan_plain:0 "noUls^ŸS"
+ czc_chaoshan_plain_desc:0 "é—ml	NÒ‰2m0utuÆR^0)WG•øvÞÿ=f®‹O0MeNwm8'n„v9h,g0"
+ czc_chaoshan_militia:0 "noUllâV"
+ czc_chaoshan_militia_desc:0 "TaNåN`yµN›O‰QâVÃuÿ(W•w®‹OOSŒNˆRgøv©R0"
+ czc_min_yue_league:0 "ý•ŠTwßv"
+ czc_min_yue_league_desc:0 "9Y(WHV»KNô•„vnoÞTÅV‰˜O`—aNZQ0FU.^NßvfNÇubêñT„vY²NQÜu0"
+ czc_sail_south:0 "NWSm"
+ czc_sail_south_desc:0 "noFUz˜cRÎ˜Ü8‚ÿ(WWSm=nãSú^ËzO†™0FUÙzNûylZwK„0"
+ czc_letter_to_ama:0 "ÙuM–òZ„vÅ`fN"
+ czc_letter_to_ama_desc:0 "èwm¶RfN0Glö”ŒTaNÏeËu&^ÿ©‹Ü¹eD–^SNEeWKNô•ÍNÝOcbrúVTwûs0"
+ czc_qiongyai_danear:0 "JtTQ3w"
+ czc_qiongyai_danear_desc:0 "µc6RwmWSOnoÞT·ƒ—VŽVôfWS¹ewmßW„vógÿmNïy=t†NÏu%„¹ÜZwK„„vÏuŒš0"
+ czc_eastern_jews:0 "N¹e¹r8Y"
+ czc_eastern_jews_desc:0 "M^=nàW„vnoFUåNáO(u0aNŒŒTOe•LˆÅ`ôuûsèHSßW8f0"
+
+ HAK_ideas:0 "¢R¶RtõV"
+ HAK_ideas_start:0 "-NŸSckßu"
+ HAK_ideas_bonus:0 "'YqQŒTýV"
+ hak_hakka_sons:0 "¢R¶R7uMQ"
+ hak_hakka_sons_desc:0 "Á™VNôVKSuImèxHxúQZWç—„vqQTSOÿt^‰qQŒTýV¦NåNdkÄuÇu›Q–0"
+ hak_dayu_jinggang:0 "'Y¾^•NˆQ"
+ hak_dayu_jinggang_desc:0 "ÎN'Y¾^­S0R•NˆQqSÿi–‰˜–ãSŒTZWúVôVèR„gbqQŒTýV)Y6q„v2–¿u0"
+ hak_overseas_voices:0 "WSm¢RðX"
+ hak_overseas_voices_desc:0 "¢RFUNûylŠbaNó—&^0RWSmÿmNŠbDÑ‘ŒT8‚wmÏuŒš&^ÞVqS0WEeaN0"
+ hak_she_hakka_unity:0 "ru¢RNSO"
+ hak_she_hakka_unity_desc:0 "qQTˆRqS0ZZŒT’N^ÿOrulN¢RlýwY(WqQŒTýV-NqQY0"
+ hak_mountain_bases:0 "ØšqS9hnc"
+ hak_mountain_bases_desc:0 "Rce(WqS7Œ-N„vZwK„„U(u	gP–W0WÿmNýwåNôVKSHN8hÃVVŸ°e„vÎWG•0"
+ hak_honor_learning:0 "T‡eÍ‘Ye"
+ hak_honor_learning_desc:0 "úRb–0fNb–ŒT—RÏeINfRqQTùW‰QqQŒTýVNb—„v‡eTNçP±O0"
+ hak_east_river:0 "Nml4l"
+ hak_east_river_desc:0 "Nml8‚SŠbqSHSirµNŽVàsmlãSÿmNŠb¿lwm^HW&^eQqQŒTýVy0W0"
+
+ gdd_zhuang_ideas:0 "îX—Oø‹ýVtõV"
+ gdd_zhuang_ideas_start:0 "üruQ"
+ gdd_zhuang_ideas_bonus:0 "‰WSÄ–ÃV"
+ zhuang_great_clans:0 "îX—O'Y—R"
+ zhuang_great_clans_desc:0 "'YÓY0ÒSINNQgLyÇ1ŒûsŒTßv“ŠôucèqS7Œ„vMe»léy^0"
+ zhuang_gaoping_victory:0 "Øšs^'Ywc"
+ zhuang_gaoping_victory_desc:0 "ûQ‰RWS›Q–„vÜw)RÁ‹fø‹ÒSmNýwÓubTwßvÿv^O¬OýVb—VhT¹leOu0"
+ zhuang_lingnan_natives:0 "­SWSWl"
+ zhuang_lingnan_natives_desc:0 "NãNïy=t„vqS—gåwÆ‹ÿOŒvÓYýw(W³l7Œ0aW0WŒTówqSô•V¦Wu¡‹0"
+ zhuang_baiyue_lineage:0 "ŒvŠNûs"
+ zhuang_baiyue_lineage_desc:0 "åNqQTVynÞ¥cîX0—O0ÚO0ÚPø‹²SOÿýwŒTýV¶Rib.VT„v”––0"
+ zhuang_lychee_and_dog_meat:0 "Tƒg×r‰w"
+ zhuang_lychee_and_dog_meat_desc:0 "0W¹eirµN0‚‚†^NqS'8fÿ„gbø‹ÒS^HWÌR	g¨Æ‹¦^„vÏuNmQÜu0"
+ zhuang_hundred_thousand_mountains:0 "ASN'YqS"
+ zhuang_hundred_thousand_mountains_desc:0 "Ÿq‰`–™ýhT¹T‰s0WbV„vüruQÿýwY)R(uqS„VIN¨ROûQeg¯rKNLe0"
+ zhuang_buluotuo:0 "^mN–"
+ zhuang_buluotuo_desc:0 "Vy^yÙS‹NN0W¹emyêNHNTÒSÐc›OqQTí‹ŠÿTöe¹R³u»ÏeNT„váOðN0"
+
+ DAI_ideas:0 "‰RWStõV"
+ gdd_legacy_dai_ideas:0 "ŠWStõV"
+ gdd_legacy_dai_ideas_start:0 "ŠWS.Oßu"
+ gdd_legacy_dai_ideas_bonus:0 "ŠWSÎ‘ÃV"
+ DAI_ideas_start:0 "WSýVqS³l"
+ DAI_ideas_bonus:0 "Ïu%„¢uDn"
+ dai_hue_court:0 "z˜S°eg"
+ dai_hue_court_desc:0 "4TlNQŠb«R÷^ðV(W¢u³lçeýÿw=fšRŸz˜S0ÙÌ‘âeýw‚‚6RS¹ejŒÏeÿmNýwßuyrWSèwm¸SÿO‰RWS=OýV·ƒ—VNµ^wckb—ThQýV„v°eý0"
+ dai_red_river_granaries:0 "¢u³l®sÓN"
+ dai_red_river_granaries_desc:0 "¢u³l4lQ02XkWNÆRÆ–Iz0uÍN=f‰RWSgÍ‘‰„v0Kegn0sSOg÷^òTÏuWSÁÿN¬Nø‹œ^„v®szNºNãSO6q=e‘dNw‹sýV0"
+ dai_bach_dang_fleet:0 "‹vä…ml4l›Q"
+ dai_bach_dang_fleet_desc:0 "Ÿq‰`noPl0EménN(gih4lèR„v‚^þf(W‹vä…mlÝOOO‰RWSìrËz0¿lwm9‚7bSçuíuåNír4lOûQŒTëVhh9‚ˆRkSS¹eè•7b0"
+ dai_mountain_chieftains:0 "qS0WIu"
+ dai_mountain_chieftains_desc:0 "SèN‰è²qS1uOYWK‘0èÏeŒTsQèRµc6R0b²‹0W¹e–™†˜„v0WMOv^RÅbˆR˜–KN1ÿÔkN­eLmcYeg˜RTôfýw3zúV¹†u0"
+ dai_elephant_banners:0 "aŒ×ez5–"
+ dai_elephant_banners_desc:0 "«b2ubaŒ(WŸÒ‰NÌe×eVüRN²QûQLe5–ÿ‘šekuQRÎN2NüßÛ0‰RWSSŠbÙÍy—Qa'`„vuQÍyb×Sg÷^ôv¥c‚‚6R„vaŒ›Q0"
+ dai_two_capitals_learning:0 "N¬Nz˜SKNfR"
+ dai_two_capitals_learning_desc:0 "N¬NÝOXRçegxQMsN˜RÚP.Oßuÿz˜SRGlZw°eg„v¹¡RŒTwm8ÏuŒš02N0WfRwŽVØ²‹fRÿOJyYeÏuINýwYÞV”^WSýV°sžR0"
+ dai_linyi_corridor:0 "—g‘EeS"
+ dai_linyi_corridor_desc:0 "ÎNz˜S¿lwm¸STWSÿçe—g‘ÎW=n0³l7ŒNFUïÞ¥cNwôf)n–f„vW0W0îOYÙagpÊ^ÿS©‹‰RWSôf	gHe0WÏu%„°e†˜WŒTWS¹eirµN0"
+
+ string_start_gdd:0 "WSwm¯OýV,g=fhT)YPR(WlQCQMR219t^s^šRWSŠTËYS„v­SWSø‹¯O0¯Qlg÷^•g8jV´fieÿhˆR&ŒBTwT^œ^jŒHVÿŽNqNN-NHYÖSjuºyv^b`Yhléy^0¢R¶RqQŒTýV„vtQw0noÞTùRwm8„vµc6RÿåNÊSBh—gø‹ýVùR‰mlN8n„v‰NHYÿýOWSwm„vçeåe8—CgŒSŒSïSqS0\n\n1444t^ÿhˆR&ŒNçubºNhçu±WÅV‰˜(W—RÏelâV0àsml4l^ŒT‰mkphVKNô•Í‘ú^ýV¶RÿêS	gÍ‘°eSbwmNNïv^teT­SWSÿWSwm¯OýVMbýwFd1Œvt^pˆK„0"
+ string_start_dai_viet:0 "‰RWS=OýVv^^—šRýN¬N„vçegYOêu04TlíQ‹vä…ml4lbÝOOOWSýVÿÈS¥c×ShT²RŒQ‹TÿåN=OýV«ŽýNÛeQø‹Yéy^ÿFO1403t^„vØšs^è`%ëO‰RWST¬OýVBlŒTÿS¹e¹†uÎNdkè•7bmV0HN†NFd1N¬NjŒÏe„vur6Rv^ßuyrWS¹ewm¸Sÿ4TlòTÏuŠbg÷^Áóz˜S0\n\n1444t^ÿ4TN²(Wz˜SsSMOÿçubºN4TRþSNt^Š^0g÷^IYJyYeQ¶Rÿ¢u³ls^ŸSN^'YaNÌ‘ÍNåN'YXNiOYeHNåe8^áOðNÿqS0WWK‘0S¹eçeÏeŒTWSè—g‘Ee0WÈST	g)RÊv0‰RWSå‚ó`Í‘=cýV¿RÿÅV‰˜åNz˜SHNwck„v°eýÿÍ‘°eTwÓu¢u³l®sÓN0‹vä…ml4l›QNWSÛpÊ^0"

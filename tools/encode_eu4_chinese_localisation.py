@@ -19,6 +19,9 @@ ROOT = Path(__file__).resolve().parents[1]
 MOD = ROOT / "guangdong_independent_practice"
 
 FILES = {
+    "023_zhx_gongyi_readable_utf8.txt": "replace/023_zhx_gongyi_l_english.yml",
+    "022_zhx_feudatory_readable_utf8.txt": "replace/022_zhx_feudatory_l_english.yml",
+    "021_gdd_hak_government_readable_utf8.txt": "replace/021_gdd_hak_government_l_english.yml",
     "gdd_l_english_readable_utf8.txt": "gdd_l_english.yml",
     "gdd_b01_map_readable_utf8.txt": "gdd_b01_map_l_english.yml",
     "gdd_p02_southeast_map_readable_utf8.txt": "gdd_p02_southeast_map_l_english.yml",
@@ -69,6 +72,9 @@ FILES = {
     "014_gdd_b73_korea_trade_readable_utf8.txt": "replace/014_gdd_b73_korea_trade_l_english.yml",
     "015_gdd_b74_lijiao_presentation_readable_utf8.txt": "replace/015_gdd_b74_lijiao_presentation_l_english.yml",
     "016_gdd_b78_daming_refinement_readable_utf8.txt": "replace/016_gdd_b78_daming_refinement_l_english.yml",
+    "017_gdd_lingnan_nations_readable_utf8.txt": "replace/017_gdd_lingnan_nations_l_english.yml",
+    "019_gdd_czc_government_readable_utf8.txt": "replace/019_gdd_czc_government_l_english.yml",
+    "020_gdd_czc_government_ui_readable_utf8.txt": "replace/020_gdd_czc_government_ui_l_english.yml",
     "gdd_zzz_chunqiu_area_overrides_readable_utf8.txt": "replace/zzz_gdd_chunqiu_area_overrides_l_english.yml",
     "gdd_yangtze_navigation_readable_utf8.txt": "gdd_yangtze_navigation_l_english.yml",
     "gdd_huai_navigation_readable_utf8.txt": "gdd_huai_navigation_l_english.yml",

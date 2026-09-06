@@ -1,0 +1,122 @@
+namespace = zhx_feudatory
+
+country_event = {
+    id = zhx_feudatory.2
+    title = zhx_feudatory.2.t
+    desc = zhx_feudatory.2.d
+    picture = DIPLOMACY_eventPicture
+    is_triggered_only = yes
+    hidden = yes
+    trigger = { has_global_flag = zhx_feudatory_initialised }
+    immediate = {
+        zhx_feudatory_recover_lost_host = yes
+        if = {
+            limit = { OR = { zhx_feudatory_is_eligible = yes zhx_feudatory_has_reform = yes } }
+            zhx_feudatory_sync_government = yes
+        }
+        if = { limit = { zhx_is_tianzi = yes } zhx_feudatory_maintain_petition = yes }
+    }
+    option = { name = OK }
+}
+country_event = {
+    id = zhx_feudatory.3
+    title = zhx_feudatory.3.t
+    desc = zhx_feudatory.3.d
+    picture = DIPLOMACY_eventPicture
+    is_triggered_only = yes
+    hidden = yes
+    trigger = { has_global_flag = zhx_feudatory_initialised zhx_is_tianzi = yes NOT = { zhx_tianxia_council_is_busy = yes } }
+    immediate = {
+        random_country = {
+            limit = { ai = yes zhx_feudatory_can_submit = yes }
+            zhx_feudatory_submit_petition = yes
+        }
+    }
+    option = { name = OK }
+}
+country_event = {
+    id = zhx_feudatory.10
+    title = zhx_feudatory.10.t
+    desc = zhx_feudatory.10.d
+    picture = DIPLOMACY_eventPicture
+    is_triggered_only = yes
+    trigger = { zhx_is_tianzi = yes has_country_flag = zhx_council_kind_promotion has_country_flag = zhx_council_phase_preparing }
+    option = {
+        name = zhx_feudatory.10.a
+        trigger = { hidden_trigger = { zhx_feudatory_request_is_valid = yes } }
+        custom_tooltip = zhx_feudatory_begin_vote_tt
+        hidden_effect = { if = { limit = { zhx_feudatory_event_matches_request = yes } zhx_feudatory_open_council = yes } }
+        ai_chance = { factor = 100 modifier = { factor = 0 NOT = { zhx_feudatory_ai_would_accept = yes } } }
+    }
+    option = {
+        name = zhx_feudatory.10.b
+        custom_tooltip = zhx_feudatory_refusal_tt
+        hidden_effect = { if = { limit = { zhx_feudatory_event_matches_request = yes } zhx_feudatory_refuse_petition = yes } }
+        ai_chance = { factor = 100 modifier = { factor = 0 zhx_feudatory_ai_would_accept = yes } }
+    }
+}
+country_event = {
+    id = zhx_feudatory.11
+    title = zhx_feudatory.11.t
+    desc = zhx_feudatory.11.d
+    picture = DIPLOMACY_eventPicture
+    is_triggered_only = yes
+    option = { name = zhx_feudatory.11.a }
+}
+country_event = {
+    id = zhx_feudatory.20
+    title = zhx_feudatory.20.t
+    desc = zhx_feudatory.20.d
+    picture = DIPLOMACY_eventPicture
+    is_triggered_only = yes
+    trigger = { zhx_feudatory_can_vote = yes }
+    option = {
+        name = zhx_feudatory.vote_support
+        hidden_effect = { if = { limit = { zhx_feudatory_can_vote = yes zhx_feudatory_event_matches_request = yes } zhx_cast_tianxia_council_vote_a = yes } }
+    }
+    option = {
+        name = zhx_feudatory.vote_oppose
+        hidden_effect = { if = { limit = { zhx_feudatory_can_vote = yes zhx_feudatory_event_matches_request = yes } zhx_cast_tianxia_council_vote_b = yes } }
+    }
+    option = {
+        name = zhx_feudatory.vote_abstain
+        hidden_effect = { if = { limit = { zhx_feudatory_can_vote = yes zhx_feudatory_event_matches_request = yes } zhx_cast_tianxia_council_vote_c = yes } }
+    }
+}
+country_event = {
+    id = zhx_feudatory.21
+    title = zhx_feudatory.21.t
+    desc = zhx_feudatory.21.d
+    picture = DIPLOMACY_eventPicture
+    is_triggered_only = yes
+    option = { name = zhx_feudatory.21.a }
+}
+country_event = {
+    id = zhx_feudatory.22
+    title = zhx_feudatory.22.t
+    desc = zhx_feudatory.22.d
+    picture = DIPLOMACY_eventPicture
+    is_triggered_only = yes
+    option = { name = zhx_feudatory.22.a }
+}
+country_event = {
+    id = zhx_feudatory.30
+    title = zhx_feudatory.30.t
+    desc = zhx_feudatory.30.d
+    picture = DIPLOMACY_eventPicture
+    is_triggered_only = yes
+    trigger = {
+        has_saved_global_event_target = zhx_feudatory_applicant
+        event_target:zhx_tianzi = { has_country_flag = zhx_council_kind_promotion }
+    }
+    option = { name = OK }
+}
+
+country_event = {
+    id = zhx_feudatory.40
+    title = zhx_feudatory.40.t
+    desc = zhx_feudatory.40.d
+    picture = DIPLOMACY_eventPicture
+    is_triggered_only = yes
+    option = { name = OK }
+}

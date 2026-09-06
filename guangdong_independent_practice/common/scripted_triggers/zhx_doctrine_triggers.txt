@@ -2,8 +2,8 @@
 # Ritual Teaching / Hundred Schools vertical slice.
 
 # Ritual Teaching is a Zhuxia framework rather than the generic religion of
-# every East Asian state. Culture eligibility survives tag changes; Jizi Joseon
-# is the one deliberate Korean-culture polity exception in the opening canon.
+# every East Asian state. Culture eligibility survives tag changes; Jizi Joseon,
+# Annam and Liliao are the three deliberate tag-level polity exceptions.
 zhx_can_adopt_lijiao = {
     NOT = {
         OR = {
@@ -18,6 +18,8 @@ zhx_can_adopt_lijiao = {
     }
     OR = {
         tag = JIZ
+        tag = DAI
+        tag = LIL
         primary_culture = gdd_zhongyuan
         primary_culture = gdd_jianghuai
         primary_culture = gdd_chu

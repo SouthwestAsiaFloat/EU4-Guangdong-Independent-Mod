@@ -1,0 +1,42 @@
+estate_gdd_hak_peasants = {
+    # Native estate equilibrium follows the current republican faction.
+    loyalty_modifier = {
+        desc = gdd_hak_farmers_estate_loyalty
+        trigger = { gdd_hak_is_republic_trigger = yes faction_in_power = gdd_hak_farmers }
+        loyalty = 10
+    }
+    loyalty_modifier = {
+        desc = gdd_hak_army_estate_loyalty
+        trigger = { gdd_hak_is_republic_trigger = yes faction_in_power = gdd_hak_army }
+        loyalty = -10
+    }
+
+    # Appended atlas frame; the original fifteen frames are preserved.
+    icon = 16
+    trigger = { gdd_hak_has_peasant_rights_trigger = yes }
+    country_modifier_happy = {
+        production_efficiency = 0.10
+        manpower_recovery_speed = 0.10
+    }
+    country_modifier_neutral = { production_efficiency = 0.05 }
+    country_modifier_angry = {
+        global_unrest = 2
+        production_efficiency = -0.10
+    }
+    land_ownership_modifier = { gdd_hak_peasants_loyalty_modifier = 0.20 }
+    province_independence_weight = { factor = 1 }
+    base_influence = 20
+    influence_modifier = {
+        desc = gdd_hak_peasant_foundation
+        trigger = { gdd_hak_is_republic_trigger = yes }
+        influence = 10
+    }
+    privileges = {
+        gdd_hak_freehold_charter
+        gdd_hak_village_franchise
+        gdd_hak_militia_covenant
+    }
+    agendas = { }
+    color = { 90 145 95 }
+    influence_from_dev_modifier = 1.0
+}

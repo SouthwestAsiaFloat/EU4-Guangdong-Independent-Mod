@@ -4,7 +4,7 @@ on_startup = {
         zhx_opening_school.1
         zhx_debate.1
         gdd_celestial_reform_vote.1
-        # Fresh 1444 custom nations are not part of the fixed 65-tag school
+        # Fresh 1444 custom nations are not part of the manifest-declared school
         # catalogue. The shared lifecycle gives eligible Ritual Teaching
         # designs the ordinary six-school foundation route and rejects an
         # ineligible hollow faith.

@@ -1,0 +1,30 @@
+# Estate modifiers are registered after factions load in EU4 1.37.5.
+# Equivalent loyalty effects live in native estate loyalty_modifier blocks.
+gdd_hak_farmers = {
+    monarch_power = ADM
+    always = yes
+    modifier = {
+        production_efficiency = 0.10
+        republican_tradition = 0.5
+        global_manpower_modifier = -0.10
+    }
+}
+gdd_hak_burghers = {
+    monarch_power = DIP
+    always = yes
+    modifier = {
+        trade_efficiency = 0.10
+        build_cost = -0.10
+        land_morale = -0.05
+    }
+}
+gdd_hak_army = {
+    monarch_power = MIL
+    always = yes
+    modifier = {
+        land_morale = 0.10
+        manpower_recovery_speed = 0.15
+        # Republic base +1/year: usually net -1 while this faction leads.
+        republican_tradition = -2
+    }
+}

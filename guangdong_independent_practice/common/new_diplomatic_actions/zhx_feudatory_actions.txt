@@ -1,0 +1,24 @@
+# ROOT = petitioner; FROM = Tianzi. Immediate submission allows snapshotting
+# merit at SEND time. The separately delivered .10 event provides consent.
+zhx_feudatory_petition = {
+    category = influence
+    require_acceptance = no
+    is_visible = {
+        zhx_feudatory_is_eligible = yes
+        zhx_feudatory_has_reform = yes
+        NOT = { has_reform = zhx_feudatory_gong_reform }
+        FROM = { exists = yes zhx_is_tianzi = yes }
+    }
+    is_allowed = {
+        custom_trigger_tooltip = {
+            tooltip = zhx_feudatory_petition_requirements_tt
+            zhx_feudatory_can_submit = yes
+        }
+    }
+    on_accept = {
+        custom_tooltip = zhx_feudatory_petition_sent_tt
+        hidden_effect = { if = { limit = { FROM = { exists = yes zhx_is_tianzi = yes } } zhx_feudatory_submit_petition = yes } }
+    }
+    on_decline = { }
+    ai_will_do = { always = no }
+}

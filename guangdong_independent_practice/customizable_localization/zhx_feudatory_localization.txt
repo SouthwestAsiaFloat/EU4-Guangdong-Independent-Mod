@@ -1,0 +1,21 @@
+# Reuse the existing incident controls; no new unsupported topbar controls.
+defined_text = {
+    name = GetZhouPublicIncidentName
+    text = {
+        localisation_key = zhx_feudatory_incident_pending
+        trigger = { event_target:zhx_tianzi = { has_country_flag = zhx_council_kind_promotion has_country_flag = zhx_council_phase_preparing } }
+    }
+    text = {
+        localisation_key = zhx_feudatory_incident_open
+        trigger = { event_target:zhx_tianzi = { has_country_flag = zhx_council_kind_promotion } }
+    }
+    text = { localisation_key = zhx_feudatory_incident_ritual trigger = { always = yes } }
+}
+defined_text = {
+    name = GetZhouPublicIncidentCounts
+    text = {
+        localisation_key = zhx_feudatory_incident_awaiting_consent
+        trigger = { event_target:zhx_tianzi = { has_country_flag = zhx_council_kind_promotion has_country_flag = zhx_council_phase_preparing } }
+    }
+    text = { localisation_key = zhx_feudatory_incident_counts trigger = { always = yes } }
+}

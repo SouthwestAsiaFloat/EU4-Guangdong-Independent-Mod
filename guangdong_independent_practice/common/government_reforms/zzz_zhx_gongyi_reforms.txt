@@ -1,0 +1,73 @@
+# Native republican elections and trade leagues; civic status is the reform.
+zhx_gongyi_reform = {
+    icon = zhx_gongyi_autonomy
+    allow_normal_conversion = no
+    lock_level_when_selected = yes
+    valid_for_nation_designer = no
+    potential = {
+        OR = {
+            has_reform = zhx_gongyi_reform
+            has_country_flag = zhx_gongyi_charter
+            AND = { NOT = { has_global_flag = zhx_gongyi_initialised } zhx_gongyi_opening_city = yes }
+        }
+    }
+    duration = 4
+    has_term_election = yes
+    fixed_rank = 1
+    is_trading_city = yes
+    boost_income = yes
+    can_form_trade_league = yes
+    trade_city_reform = zhx_gongyi_ordinary_reform
+    modifiers = {
+        development_cost = -0.20
+        trade_efficiency = 0.10
+        defensiveness = 0.20
+    }
+    custom_attributes = {
+        locked_government_type = yes
+        enables_plutocratic_idea_group = yes
+        enables_aristocratic_idea_group = no
+    }
+    ai = { factor = 100 }
+}
+
+zhx_yang_trade_league_reform = {
+    icon = zhx_yang_trade_league
+    allow_normal_conversion = no
+    lock_level_when_selected = yes
+    valid_for_nation_designer = no
+    potential = { tag = HYM }
+    duration = 4
+    has_term_election = yes
+    fixed_rank = 1
+    boost_income = yes
+    can_form_trade_league = yes
+    trade_city_reform = zhx_gongyi_reform
+    modifiers = {
+        governing_capacity_modifier = -0.80
+        merchants = 2
+        diplomatic_reputation = 1
+        improve_relation_modifier = 0.20
+        mercenary_discipline = 0.05
+    }
+    custom_attributes = {
+        locked_government_type = yes
+        enables_plutocratic_idea_group = yes
+        enables_aristocratic_idea_group = no
+    }
+    ai = { factor = 100 }
+}
+
+# A lost charter cannot be bypassed by selecting a merchant republic in tier 1.
+zhx_gongyi_ordinary_reform = {
+    icon = people_walking
+    allow_normal_conversion = no
+    lock_level_when_selected = yes
+    valid_for_nation_designer = no
+    potential = { OR = { has_reform = zhx_gongyi_ordinary_reform has_country_flag = zhx_gongyi_lost_charter } }
+    duration = 4
+    has_term_election = yes
+    can_form_trade_league = no
+    custom_attributes = { enables_plutocratic_idea_group = yes enables_aristocratic_idea_group = no }
+    ai = { factor = 100 }
+}

@@ -4,17 +4,21 @@
   "eligible_religion": "confucianism",
   "authoritative_state": "zhx_doctrine_* country flags",
   "initial_practice": 25,
-  "expected_total": 66,
+  "expected_total": 67,
   "schools": {
     "ru": {
       "flag": "zhx_doctrine_ru",
       "native_school": "zhx_ru_school",
-      "expected_count": 14,
+      "expected_count": 18,
       "tags": [
         "ACG",
         "CAG",
         "CHN",
+        "CZC",
         "CZH",
+        "DAI",
+        "GDD",
+        "GUI",
         "GUO",
         "HNG",
         "JIZ",
@@ -44,11 +48,10 @@
     "mo": {
       "flag": "zhx_doctrine_mo",
       "native_school": "zhx_mo_school",
-      "expected_count": 12,
+      "expected_count": 11,
       "tags": [
         "CCH",
         "CDE",
-        "CZC",
         "GUZ",
         "HUA",
         "HYA",
@@ -63,12 +66,13 @@
     "dao": {
       "flag": "zhx_doctrine_dao",
       "native_school": "zhx_dao_school",
-      "expected_count": 9,
+      "expected_count": 10,
       "tags": [
         "BAA",
         "CHC",
         "CSA",
         "DIA",
+        "LIL",
         "MIN",
         "TSF",
         "WDU",
@@ -79,12 +83,11 @@
     "bing": {
       "flag": "zhx_doctrine_bing",
       "native_school": "zhx_bing_school",
-      "expected_count": 11,
+      "expected_count": 10,
       "tags": [
         "DAE",
         "DQU",
         "EGU",
-        "HAK",
         "QIC",
         "QWO",
         "WUU",
@@ -97,12 +100,10 @@
     "zongheng": {
       "flag": "zhx_doctrine_zongheng",
       "native_school": "zhx_zongheng_school",
-      "expected_count": 13,
+      "expected_count": 11,
       "tags": [
         "CAI",
-        "GDD",
         "GON",
-        "GUI",
         "HYM",
         "JUU",
         "LUO",

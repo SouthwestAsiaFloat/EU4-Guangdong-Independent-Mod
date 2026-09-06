@@ -1,0 +1,192 @@
+zhx_feudatory_is_eligible = {
+    exists = yes
+    government = monarchy
+    zhx_is_tianxia_member = yes
+    NOT = { tag = TSF }
+    NOT = { zhx_is_tianzi = yes }
+    # Preserve the previously authored republican usurpation branches.
+    NOT = { has_country_flag = gdd_czc_crowned }
+    NOT = { has_country_flag = gdd_hak_crowned }
+}
+zhx_feudatory_has_reform = {
+    OR = {
+        has_reform = zhx_feudatory_bo_reform
+        has_reform = zhx_feudatory_hou_reform
+        has_reform = zhx_feudatory_gong_reform
+    }
+}
+# History reforms must load before the member kernel's startup flags exist.
+zhx_feudatory_can_use_reform = {
+    NOT = { tag = TSF }
+    NOT = { tag = CZH }
+    OR = {
+        zhx_feudatory_is_eligible = yes
+        AND = {
+            NOT = { has_global_flag = zhx_feudatory_initialised }
+            zhx_feudatory_is_opening_country = yes
+        }
+    }
+}
+zhx_feudatory_has_land_threshold = {
+    OR = {
+        AND = { has_reform = zhx_feudatory_bo_reform total_development = 100 num_of_cities = 10 }
+        AND = { has_reform = zhx_feudatory_hou_reform total_development = 200 num_of_cities = 20 }
+    }
+}
+zhx_feudatory_has_merit_threshold = {
+    OR = {
+        AND = { has_reform = zhx_feudatory_bo_reform check_variable = { which = zhx_merit_term value = 100 } }
+        AND = { has_reform = zhx_feudatory_hou_reform check_variable = { which = zhx_merit_term value = 200 } }
+    }
+}
+zhx_feudatory_can_submit = {
+    has_global_flag = zhx_feudatory_initialised
+    zhx_feudatory_is_eligible = yes
+    zhx_feudatory_has_land_threshold = yes
+    zhx_feudatory_has_merit_threshold = yes
+    NOT = { has_country_flag = zhx_feudatory_used_this_term }
+    NOT = { has_country_flag = zhx_feudatory_request_pending }
+    NOT = { zhx_tianxia_council_is_busy = yes }
+    has_saved_global_event_target = zhx_tianzi
+    event_target:zhx_tianzi = {
+        exists = yes
+        zhx_is_tianzi = yes
+        NOT = { has_country_flag = zhx_council_pending_ritual_breakdown }
+    }
+    NOT = { war_with = event_target:zhx_tianzi }
+}
+# This deliberately does NOT reread current-term merit or the used-this-term
+# flag. The submitted merit is frozen; the 25-year rollover is not a veto.
+zhx_feudatory_request_is_valid = {
+    has_saved_global_event_target = zhx_feudatory_applicant
+    has_saved_global_event_target = zhx_feudatory_host
+    event_target:zhx_feudatory_host = { exists = yes zhx_is_tianzi = yes }
+    event_target:zhx_feudatory_applicant = {
+        zhx_feudatory_is_eligible = yes
+        has_country_flag = zhx_feudatory_request_pending
+        zhx_feudatory_has_land_threshold = yes
+        NOT = { war_with = event_target:zhx_feudatory_host }
+        OR = {
+            AND = {
+                has_country_flag = zhx_feudatory_request_from_bo
+                has_reform = zhx_feudatory_bo_reform
+                check_variable = { which = zhx_feudatory_submitted_merit value = 100 }
+            }
+            AND = {
+                has_country_flag = zhx_feudatory_request_from_hou
+                has_reform = zhx_feudatory_hou_reform
+                check_variable = { which = zhx_feudatory_submitted_merit value = 200 }
+            }
+        }
+    }
+}
+zhx_feudatory_can_vote = {
+    zhx_can_vote_in_tianxia_council = yes
+    event_target:zhx_tianzi = { has_country_flag = zhx_council_kind_promotion }
+}
+# Event-chain local target: a window from another applicant cannot act on
+# whichever request currently occupies the shared global slot.
+zhx_feudatory_event_matches_request = {
+    event_target:zhx_feudatory_event_applicant = {
+        exists = yes
+        tag = event_target:zhx_feudatory_applicant
+    }
+}
+# Tianzi scope; deterministic acceptance is shared by the visible request
+# event and AI eligibility. Players remain free to accept or refuse.
+zhx_feudatory_ai_would_accept = {
+    zhx_feudatory_request_is_valid = yes
+    NOT = { is_rival = event_target:zhx_feudatory_applicant }
+    NOT = { event_target:zhx_feudatory_applicant = { is_rival = PREV } }
+    OR = {
+        alliance_with = event_target:zhx_feudatory_applicant
+        has_opinion = { who = event_target:zhx_feudatory_applicant value = 50 }
+        event_target:zhx_feudatory_applicant = { check_variable = { which = zhx_feudatory_submitted_merit value = 300 } }
+    }
+}
+
+zhx_feudatory_is_opening_country = {
+    OR = {
+        tag = ACG
+        tag = BAA
+        tag = CAG
+        tag = CAI
+        tag = CCH
+        tag = CHC
+        tag = CHN
+        tag = CSA
+        tag = DAE
+        tag = DAI
+        tag = DIA
+        tag = DMG
+        tag = DQU
+        tag = EGU
+        tag = GDD
+        tag = GON
+        tag = GUI
+        tag = GUN
+        tag = GUO
+        tag = GUZ
+        tag = GYA
+        tag = HNG
+        tag = HUA
+        tag = JIZ
+        tag = JUU
+        tag = LCH
+        tag = LIO
+        tag = LIU
+        tag = LUO
+        tag = LUU
+        tag = MIN
+        tag = MNG
+        tag = NCH
+        tag = OUE
+        tag = QIC
+        tag = QIN
+        tag = QSH
+        tag = QVN
+        tag = QWO
+        tag = SHE
+        tag = SHU
+        tag = SNG
+        tag = SUI
+        tag = WEI
+        tag = WUU
+        tag = WUZ
+        tag = WVG
+        tag = XNG
+        tag = XU2
+        tag = YAN
+        tag = YOU
+        tag = YPG
+        tag = YUE
+        tag = ZHA
+        tag = ZHG
+        tag = ZHU
+        tag = ZNG
+        tag = ZSH
+    }
+}
+
+zhx_feudatory_opening_hou = {
+    OR = {
+        tag = ACG
+        tag = BAA
+        tag = GDD
+        tag = QIC
+        tag = QIN
+        tag = SHU
+        tag = WEI
+        tag = XU2
+        tag = ZHA
+    }
+}
+
+zhx_feudatory_opening_gong = {
+    OR = {
+        tag = CHC
+        tag = MNG
+        tag = WUU
+        tag = YUE
+    }
+}

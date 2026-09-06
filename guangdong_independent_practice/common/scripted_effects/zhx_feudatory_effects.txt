@@ -1,0 +1,350 @@
+# The native reform ID owns dignity; no parallel dignity counter or flags.
+zhx_feudatory_sync_government = {
+    if = {
+        limit = { zhx_feudatory_is_eligible = yes }
+        if = {
+            limit = { NOT = { zhx_feudatory_has_reform = yes } }
+            zhx_feudatory_clear_first_tier = yes
+            add_government_reform = zhx_feudatory_bo_reform
+        }
+        if = {
+            limit = { has_reform = zhx_feudatory_gong_reform }
+            if = { limit = { NOT = { government_rank = 2 } } set_government_rank = 2 }
+            if = { limit = { government_rank = 3 } set_government_rank = 2 }
+        }
+        else = {
+            if = { limit = { government_rank = 2 } set_government_rank = 1 }
+        }
+    }
+    else_if = {
+        limit = { zhx_feudatory_has_reform = yes }
+        # Departure or a scripted government change releases only this system's
+        # own first-tier reform. No ruler, heir, upper reform or estate is reset.
+        remove_government_reform = zhx_feudatory_bo_reform
+        remove_government_reform = zhx_feudatory_hou_reform
+        remove_government_reform = zhx_feudatory_gong_reform
+        if = { limit = { government = monarchy } add_government_reform = feudalism_reform }
+    }
+}
+zhx_feudatory_initialise = {
+    if = {
+        limit = { NOT = { has_global_flag = zhx_feudatory_initialised } }
+        set_global_flag = zhx_feudatory_initialised
+        every_country = {
+            limit = { OR = { zhx_feudatory_is_eligible = yes zhx_feudatory_has_reform = yes } }
+            zhx_feudatory_sync_government = yes
+        }
+    }
+}
+# Called inside the existing 25-year rollover, not by a second timer.
+zhx_feudatory_begin_new_term = {
+    every_country = { limit = { has_country_flag = zhx_feudatory_used_this_term } clr_country_flag = zhx_feudatory_used_this_term }
+}
+# Actor country scope. Register synchronously before the Tianzi can delay the
+# response. The diplomacy action submits a petition; the event is consent.
+zhx_feudatory_submit_petition = {
+    if = {
+        limit = { zhx_feudatory_can_submit = yes }
+        set_country_flag = zhx_feudatory_used_this_term
+        set_country_flag = zhx_feudatory_request_pending
+        set_variable = { which = zhx_feudatory_submitted_merit which = zhx_merit_term }
+        clr_country_flag = zhx_feudatory_request_from_bo
+        clr_country_flag = zhx_feudatory_request_from_hou
+        if = {
+            limit = { has_reform = zhx_feudatory_bo_reform }
+            set_country_flag = zhx_feudatory_request_from_bo
+        }
+        else = { set_country_flag = zhx_feudatory_request_from_hou }
+        save_global_event_target_as = zhx_feudatory_applicant
+        save_event_target_as = zhx_feudatory_event_applicant
+        event_target:zhx_tianzi = {
+            save_global_event_target_as = zhx_feudatory_host
+            zhx_clear_tianxia_council_kind = yes
+            zhx_clear_tianxia_council_candidates = yes
+            zhx_clear_tianxia_council_results = yes
+            zhx_reset_tianxia_council_ballot = yes
+            zhx_clear_tianxia_council_phase = yes
+            set_country_flag = zhx_council_kind_promotion
+            set_country_flag = zhx_council_phase_preparing
+            country_event = { id = zhx_feudatory.10 }
+        }
+    }
+}
+zhx_feudatory_open_council = {
+    if = {
+        limit = {
+            zhx_is_tianzi = yes
+            has_country_flag = zhx_council_kind_promotion
+            has_country_flag = zhx_council_phase_preparing
+            zhx_feudatory_request_is_valid = yes
+        }
+        zhx_open_tianxia_council = yes
+    }
+}
+zhx_feudatory_choose_ai_vote = {
+    if = {
+        limit = { ai = yes zhx_feudatory_can_vote = yes zhx_feudatory_request_is_valid = yes }
+        if = {
+            limit = { tag = event_target:zhx_feudatory_applicant }
+            zhx_cast_tianxia_council_vote_a = yes
+        }
+        else_if = {
+            limit = {
+                OR = {
+                    war_with = event_target:zhx_feudatory_applicant
+                    is_rival = event_target:zhx_feudatory_applicant
+                    event_target:zhx_feudatory_applicant = { is_rival = PREV }
+                }
+            }
+            zhx_cast_tianxia_council_vote_b = yes
+        }
+        else_if = {
+            limit = {
+                OR = {
+                    alliance_with = event_target:zhx_feudatory_applicant
+                    has_opinion = { who = event_target:zhx_feudatory_applicant value = 50 }
+                }
+            }
+            zhx_cast_tianxia_council_vote_a = yes
+        }
+        else_if = {
+            limit = { NOT = { has_opinion = { who = event_target:zhx_feudatory_applicant value = 0 } } }
+            zhx_cast_tianxia_council_vote_b = yes
+        }
+        else = { zhx_cast_tianxia_council_vote_c = yes }
+    }
+}
+zhx_feudatory_fill_ai_ballots = {
+    set_country_flag = zhx_council_batching_ai_votes
+    every_country = {
+        limit = {
+            ai = yes
+            zhx_feudatory_can_vote = yes
+            NOT = { OR = { has_country_flag = zhx_council_vote_a has_country_flag = zhx_council_vote_b has_country_flag = zhx_council_vote_c } }
+        }
+        zhx_feudatory_choose_ai_vote = yes
+    }
+    clr_country_flag = zhx_council_batching_ai_votes
+    zhx_recount_tianxia_council_ballot = yes
+}
+# Clear the request before the shared finish effect can dispatch the next issue.
+zhx_feudatory_clear_petition = {
+    if = {
+        limit = { has_saved_global_event_target = zhx_feudatory_applicant }
+        event_target:zhx_feudatory_applicant = {
+            clr_country_flag = zhx_feudatory_request_pending
+            clr_country_flag = zhx_feudatory_request_from_bo
+            clr_country_flag = zhx_feudatory_request_from_hou
+            set_variable = { which = zhx_feudatory_submitted_merit value = 0 }
+        }
+    }
+    clear_global_event_target = zhx_feudatory_applicant
+    clear_global_event_target = zhx_feudatory_host
+}
+zhx_feudatory_refuse_petition = {
+    if = {
+        limit = { has_country_flag = zhx_council_kind_promotion has_country_flag = zhx_council_phase_preparing }
+        if = {
+            limit = { has_saved_global_event_target = zhx_feudatory_applicant event_target:zhx_feudatory_applicant = { exists = yes } }
+            event_target:zhx_feudatory_applicant = { country_event = { id = zhx_feudatory.11 } }
+        }
+        zhx_feudatory_clear_petition = yes
+        zhx_finish_tianxia_council = yes
+    }
+}
+zhx_feudatory_execute_promotion = {
+    if = {
+        limit = { zhx_feudatory_request_is_valid = yes }
+        event_target:zhx_feudatory_applicant = {
+            if = {
+                limit = { has_country_flag = zhx_feudatory_request_from_bo has_reform = zhx_feudatory_bo_reform }
+                # Replace within the native tier without an empty-government
+                # interval. Native replacement notices name the outgoing dignity.
+                set_country_flag = zhx_feudatory_grant_hou
+                add_government_reform = zhx_feudatory_hou_reform
+                clr_country_flag = zhx_feudatory_grant_hou
+                set_government_rank = 1
+            }
+            else_if = {
+                limit = { has_country_flag = zhx_feudatory_request_from_hou has_reform = zhx_feudatory_hou_reform }
+                set_country_flag = zhx_feudatory_grant_gong
+                add_government_reform = zhx_feudatory_gong_reform
+                clr_country_flag = zhx_feudatory_grant_gong
+                set_government_rank = 2
+            }
+            country_event = { id = zhx_feudatory.21 }
+        }
+    }
+}
+# Called synchronously by the sole shared 365-day deadline. No post-vote veto.
+zhx_feudatory_resolve_promotion = {
+    if = {
+        limit = { has_country_flag = zhx_council_kind_promotion has_country_flag = zhx_council_phase_resolving has_country_flag = zhx_council_result_ready }
+        if = {
+            limit = { zhx_feudatory_request_is_valid = yes check_variable = { which = zhx_council_a_vs_b value = 1 } }
+            zhx_feudatory_execute_promotion = yes
+        }
+        else_if = {
+            limit = { has_saved_global_event_target = zhx_feudatory_applicant event_target:zhx_feudatory_applicant = { exists = yes } }
+            event_target:zhx_feudatory_applicant = { country_event = { id = zhx_feudatory.22 } }
+        }
+        zhx_feudatory_clear_petition = yes
+        zhx_finish_tianxia_council = yes
+    }
+}
+# Let an opened ballot reach its ORIGINAL deadline even if the applicant is
+# lost. Early reuse would let its stale .23 callback resolve a later council.
+zhx_feudatory_maintain_petition = {
+    if = {
+        limit = { has_country_flag = zhx_council_kind_promotion }
+        if = {
+            limit = { has_country_flag = zhx_council_phase_ballot_open }
+            zhx_feudatory_fill_ai_ballots = yes
+        }
+    }
+}
+# Any country's monthly callback may clean a request whose host vanished.
+# Do not dispatch queued issues on a country that no longer holds the throne.
+zhx_feudatory_recover_lost_host = {
+    if = {
+        limit = {
+            has_saved_global_event_target = zhx_feudatory_host
+            NOT = { event_target:zhx_feudatory_host = { exists = yes zhx_is_tianzi = yes } }
+        }
+        event_target:zhx_feudatory_host = {
+            if = {
+                limit = { has_country_flag = zhx_council_kind_promotion }
+                zhx_clear_tianxia_council_phase = yes
+                zhx_clear_tianxia_council_kind = yes
+                zhx_clear_tianxia_council_results = yes
+                clr_country_flag = zhx_council_deadline_scheduled
+                clr_country_flag = zhx_council_result_ready
+            }
+        }
+        if = {
+            limit = { has_saved_global_event_target = zhx_feudatory_applicant event_target:zhx_feudatory_applicant = { exists = yes } }
+            event_target:zhx_feudatory_applicant = { country_event = { id = zhx_feudatory.22 } }
+        }
+        zhx_feudatory_clear_petition = yes
+    }
+}
+zhx_feudatory_clear_first_tier = {
+    if = { limit = { has_reform = feudalism_reform } remove_government_reform = feudalism_reform }
+    if = { limit = { has_reform = autocracy_reform } remove_government_reform = autocracy_reform }
+    if = { limit = { has_reform = elective_monarchy_reform } remove_government_reform = elective_monarchy_reform }
+    if = { limit = { has_reform = plutocratic_reform } remove_government_reform = plutocratic_reform }
+    if = { limit = { has_reform = indian_sultanate_reform } remove_government_reform = indian_sultanate_reform }
+    if = { limit = { has_reform = nayankara_reform } remove_government_reform = nayankara_reform }
+    if = { limit = { has_reform = misl_confederacy_reform } remove_government_reform = misl_confederacy_reform }
+    if = { limit = { has_reform = rajput_kingdom } remove_government_reform = rajput_kingdom }
+    if = { limit = { has_reform = negusa_nagast } remove_government_reform = negusa_nagast }
+    if = { limit = { has_reform = solomonic_empire } remove_government_reform = solomonic_empire }
+    if = { limit = { has_reform = chinese_warlord } remove_government_reform = chinese_warlord }
+    if = { limit = { has_reform = grand_duchy_reform } remove_government_reform = grand_duchy_reform }
+    if = { limit = { has_reform = daimyo } remove_government_reform = daimyo }
+    if = { limit = { has_reform = indep_daimyo } remove_government_reform = indep_daimyo }
+    if = { limit = { has_reform = elective_monarchy } remove_government_reform = elective_monarchy }
+    if = { limit = { has_reform = iqta } remove_government_reform = iqta }
+    if = { limit = { has_reform = ottoman_government } remove_government_reform = ottoman_government }
+    if = { limit = { has_reform = prussian_monarchy } remove_government_reform = prussian_monarchy }
+    if = { limit = { has_reform = prussian_monarchy_base } remove_government_reform = prussian_monarchy_base }
+    if = { limit = { has_reform = austrian_dual_monarchy } remove_government_reform = austrian_dual_monarchy }
+    if = { limit = { has_reform = principality } remove_government_reform = principality }
+    if = { limit = { has_reform = tsardom } remove_government_reform = tsardom }
+    if = { limit = { has_reform = mamluk_government } remove_government_reform = mamluk_government }
+    if = { limit = { has_reform = feudal_theocracy } remove_government_reform = feudal_theocracy }
+    if = { limit = { has_reform = celestial_empire } remove_government_reform = celestial_empire }
+    if = { limit = { has_reform = shogunate } remove_government_reform = shogunate }
+    if = { limit = { has_reform = english_monarchy } remove_government_reform = english_monarchy }
+    if = { limit = { has_reform = mandala_reform } remove_government_reform = mandala_reform }
+    if = { limit = { has_reform = revolutionary_empire_reform } remove_government_reform = revolutionary_empire_reform }
+    if = { limit = { has_reform = holy_state_reform } remove_government_reform = holy_state_reform }
+    if = { limit = { has_reform = austrian_archduchy_reform } remove_government_reform = austrian_archduchy_reform }
+    if = { limit = { has_reform = siamese_absolutism } remove_government_reform = siamese_absolutism }
+    if = { limit = { has_reform = confucian_bureaucracy } remove_government_reform = confucian_bureaucracy }
+    if = { limit = { has_reform = musa_rule } remove_government_reform = musa_rule }
+    if = { limit = { has_reform = mossi_federal_kingdom } remove_government_reform = mossi_federal_kingdom }
+    if = { limit = { has_reform = kalmar_union } remove_government_reform = kalmar_union }
+    if = { limit = { has_reform = danish_archkingdom } remove_government_reform = danish_archkingdom }
+    if = { limit = { has_reform = norwegian_parliamentary_monarchy } remove_government_reform = norwegian_parliamentary_monarchy }
+    if = { limit = { has_reform = livonian_military_monarchy } remove_government_reform = livonian_military_monarchy }
+    if = { limit = { has_reform = livonian_naval_monarchy } remove_government_reform = livonian_naval_monarchy }
+    if = { limit = { has_reform = livonian_trade_monarchy } remove_government_reform = livonian_trade_monarchy }
+    if = { limit = { has_reform = livonian_constitutional_monarchy } remove_government_reform = livonian_constitutional_monarchy }
+    if = { limit = { has_reform = livonian_theocratic_monarchy } remove_government_reform = livonian_theocratic_monarchy }
+    if = { limit = { has_reform = livonian_elective_monarchy } remove_government_reform = livonian_elective_monarchy }
+    if = { limit = { has_reform = livonian_monarchy } remove_government_reform = livonian_monarchy }
+    if = { limit = { has_reform = livonian_diplomatic_monarchy } remove_government_reform = livonian_diplomatic_monarchy }
+    if = { limit = { has_reform = livonian_administrative_monarchy } remove_government_reform = livonian_administrative_monarchy }
+    if = { limit = { has_reform = livonian_mercenary_monarchy } remove_government_reform = livonian_mercenary_monarchy }
+    if = { limit = { has_reform = livonian_admiral_monarchy } remove_government_reform = livonian_admiral_monarchy }
+    if = { limit = { has_reform = livonian_naval_controlled_monarchy } remove_government_reform = livonian_naval_controlled_monarchy }
+    if = { limit = { has_reform = livonian_general_controlled_monarchy } remove_government_reform = livonian_general_controlled_monarchy }
+    if = { limit = { has_reform = livonian_absolute_monarchy } remove_government_reform = livonian_absolute_monarchy }
+    if = { limit = { has_reform = livonian_enlightened_monarchy } remove_government_reform = livonian_enlightened_monarchy }
+    if = { limit = { has_reform = polish_great_sejm } remove_government_reform = polish_great_sejm }
+    if = { limit = { has_reform = polish_elective_monarchy } remove_government_reform = polish_elective_monarchy }
+    if = { limit = { has_reform = polish_autocratic_monarchy } remove_government_reform = polish_autocratic_monarchy }
+    if = { limit = { has_reform = lithuanian_grand_kingdom } remove_government_reform = lithuanian_grand_kingdom }
+    if = { limit = { has_reform = lithuanian_grand_empire } remove_government_reform = lithuanian_grand_empire }
+    if = { limit = { has_reform = eyalet_government } remove_government_reform = eyalet_government }
+    if = { limit = { has_reform = barbary_eyalet_government } remove_government_reform = barbary_eyalet_government }
+    if = { limit = { has_reform = sultanate_of_rum_reform } remove_government_reform = sultanate_of_rum_reform }
+    if = { limit = { has_reform = modernized_ottoman_government } remove_government_reform = modernized_ottoman_government }
+    if = { limit = { has_reform = reorganized_ottoman_government } remove_government_reform = reorganized_ottoman_government }
+    if = { limit = { has_reform = feudal_france_reform } remove_government_reform = feudal_france_reform }
+    if = { limit = { has_reform = absolutist_france_reform } remove_government_reform = absolutist_france_reform }
+    if = { limit = { has_reform = appanage_reform } remove_government_reform = appanage_reform }
+    if = { limit = { has_reform = ruthenian_tsardom } remove_government_reform = ruthenian_tsardom }
+    if = { limit = { has_reform = russian_empire_reform } remove_government_reform = russian_empire_reform }
+    if = { limit = { has_reform = korean_monarchy } remove_government_reform = korean_monarchy }
+    if = { limit = { has_reform = beylik_government } remove_government_reform = beylik_government }
+    if = { limit = { has_reform = al_andalusia_government } remove_government_reform = al_andalusia_government }
+    if = { limit = { has_reform = absolute_shogunate_reform } remove_government_reform = absolute_shogunate_reform }
+    if = { limit = { has_reform = japanese_divine_empire } remove_government_reform = japanese_divine_empire }
+    if = { limit = { has_reform = land_christian_sun_reform } remove_government_reform = land_christian_sun_reform }
+    if = { limit = { has_reform = british_monarchy } remove_government_reform = british_monarchy }
+    if = { limit = { has_reform = angevin_monarchy } remove_government_reform = angevin_monarchy }
+    if = { limit = { has_reform = absolute_british_monarchy } remove_government_reform = absolute_british_monarchy }
+    if = { limit = { has_reform = byzantine_autocracy_reform } remove_government_reform = byzantine_autocracy_reform }
+    if = { limit = { has_reform = reformed_byzantine_monarchy_reform } remove_government_reform = reformed_byzantine_monarchy_reform }
+    if = { limit = { has_reform = margraviate_reform } remove_government_reform = margraviate_reform }
+    if = { limit = { has_reform = serbian_despotate_reform } remove_government_reform = serbian_despotate_reform }
+    if = { limit = { has_reform = bulgarian_tsardom_reform } remove_government_reform = bulgarian_tsardom_reform }
+    if = { limit = { has_reform = tanistry_reform } remove_government_reform = tanistry_reform }
+    if = { limit = { has_reform = irish_highkingdom_reform } remove_government_reform = irish_highkingdom_reform }
+    if = { limit = { has_reform = scottish_monarchy_reform } remove_government_reform = scottish_monarchy_reform }
+    if = { limit = { has_reform = sharifate_reform } remove_government_reform = sharifate_reform }
+    if = { limit = { has_reform = caliphate_reform } remove_government_reform = caliphate_reform }
+    if = { limit = { has_reform = barbary_sultanate_reform } remove_government_reform = barbary_sultanate_reform }
+    if = { limit = { has_reform = roman_empire_reform } remove_government_reform = roman_empire_reform }
+    if = { limit = { has_reform = persian_government_reform } remove_government_reform = persian_government_reform }
+    if = { limit = { has_reform = zoroastrian_persian_government_reform } remove_government_reform = zoroastrian_persian_government_reform }
+    if = { limit = { has_reform = portuguese_monarchy_reform } remove_government_reform = portuguese_monarchy_reform }
+    if = { limit = { has_reform = holy_imperial_monarchy_reform } remove_government_reform = holy_imperial_monarchy_reform }
+    if = { limit = { has_reform = burgundian_state_reform } remove_government_reform = burgundian_state_reform }
+    if = { limit = { has_reform = bohemian_elective_kingdom_reform } remove_government_reform = bohemian_elective_kingdom_reform }
+    if = { limit = { has_reform = stadthalter_monarchy_reform } remove_government_reform = stadthalter_monarchy_reform }
+    if = { limit = { has_reform = janissary_autocracy_reform } remove_government_reform = janissary_autocracy_reform }
+    if = { limit = { has_reform = admiralty_regime_reform } remove_government_reform = admiralty_regime_reform }
+    if = { limit = { has_reform = system_of_councils_reform } remove_government_reform = system_of_councils_reform }
+    if = { limit = { has_reform = courts_of_navarra } remove_government_reform = courts_of_navarra }
+    if = { limit = { has_reform = league_of_lezhe_reform } remove_government_reform = league_of_lezhe_reform }
+    if = { limit = { has_reform = tibetan_dual_government_reform } remove_government_reform = tibetan_dual_government_reform }
+    if = { limit = { has_reform = turkoman_ottoman_institutions } remove_government_reform = turkoman_ottoman_institutions }
+    if = { limit = { has_reform = pronoiar_monarchy_reform } remove_government_reform = pronoiar_monarchy_reform }
+    if = { limit = { has_reform = egyptian_government_reform } remove_government_reform = egyptian_government_reform }
+    if = { limit = { has_reform = ayyubid_dynasty } remove_government_reform = ayyubid_dynasty }
+    if = { limit = { has_reform = arabic_plutocracy_reform } remove_government_reform = arabic_plutocracy_reform }
+    if = { limit = { has_reform = apostolic_kingdom } remove_government_reform = apostolic_kingdom }
+    if = { limit = { has_reform = imperial_hungarian_government } remove_government_reform = imperial_hungarian_government }
+    if = { limit = { has_reform = andean_empire_reform } remove_government_reform = andean_empire_reform }
+    if = { limit = { has_reform = aztec_empire_reform } remove_government_reform = aztec_empire_reform }
+    if = { limit = { has_reform = maya_confederation_reform } remove_government_reform = maya_confederation_reform }
+    if = { limit = { has_reform = divine_kingship_reform } remove_government_reform = divine_kingship_reform }
+    if = { limit = { has_reform = nahuatl_monarchy_reform } remove_government_reform = nahuatl_monarchy_reform }
+    if = { limit = { has_reform = empire_of_trebizond } remove_government_reform = empire_of_trebizond }
+    if = { limit = { has_reform = austrian_absolute_monarchy } remove_government_reform = austrian_absolute_monarchy }
+    if = { limit = { has_reform = merchant_aristocracy_reform } remove_government_reform = merchant_aristocracy_reform }
+    if = { limit = { has_reform = gothic_monarchy_reform } remove_government_reform = gothic_monarchy_reform }
+}

@@ -1,0 +1,10 @@
+# Additive callbacks: left keeps the native successor, right selects a saved relative.
+on_new_monarch = {
+    gdd_czc_succession_effect = yes
+}
+on_startup = {
+    events = { gdd_czc_government.1 }
+}
+on_monthly_pulse = {
+    events = { gdd_czc_government.2 }
+}

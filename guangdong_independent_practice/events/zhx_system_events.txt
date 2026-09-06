@@ -121,6 +121,7 @@ country_event = {
             }
             zhx_build_gui_roster = yes
         }
+        zhx_feudatory_initialise = yes
     }
 
     option = {
@@ -492,9 +493,12 @@ country_event = {
         zhx_is_tianzi = yes
         has_country_flag = zhx_council_phase_ballot_open
         has_country_flag = zhx_council_deadline_scheduled
+        # A callback from a cancelled council cannot close a newer ballot.
+        had_country_flag = { flag = zhx_council_phase_ballot_open days = 365 }
         OR = {
             has_country_flag = zhx_council_kind_ritual_breakdown
             has_country_flag = zhx_council_kind_debate
+            has_country_flag = zhx_council_kind_promotion
         }
     }
     immediate = {
@@ -506,6 +510,10 @@ country_event = {
         else_if = {
             limit = { has_country_flag = zhx_council_kind_debate }
             country_event = { id = zhx_debate.20 days = 1 }
+        }
+        else_if = {
+            limit = { has_country_flag = zhx_council_kind_promotion }
+            zhx_feudatory_resolve_promotion = yes
         }
     }
     option = { name = OK }

@@ -1,0 +1,12 @@
+zhx_gongyi_title = {
+    rank = { 1 = zhx_gongyi_state 2 = zhx_gongyi_state 3 = zhx_gongyi_state }
+    ruler_male = { 1 = zhx_gongyi_ruler 2 = zhx_gongyi_ruler 3 = zhx_gongyi_ruler }
+    ruler_female = { 1 = zhx_gongyi_ruler 2 = zhx_gongyi_ruler 3 = zhx_gongyi_ruler }
+    trigger = { government = republic has_reform = zhx_gongyi_reform }
+}
+zhx_yang_trade_league_title = {
+    rank = { 1 = zhx_yang_state 2 = zhx_yang_state 3 = zhx_yang_state }
+    ruler_male = { 1 = zhx_yang_ruler 2 = zhx_yang_ruler 3 = zhx_yang_ruler }
+    ruler_female = { 1 = zhx_yang_ruler 2 = zhx_yang_ruler 3 = zhx_yang_ruler }
+    trigger = { government = republic has_reform = zhx_yang_trade_league_reform }
+}

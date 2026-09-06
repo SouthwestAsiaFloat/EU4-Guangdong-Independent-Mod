@@ -192,6 +192,7 @@ zhx_settle_merit_term = {
         clr_country_flag = zhx_merit_active_contribution_this_term
     }
     zhx_clear_merit_rank_targets = yes
+    zhx_feudatory_begin_new_term = yes
 
     zhx_rebuild_six_great_feudatory_cache = yes
     gdd_build_eoc_great_feudatory_roster = yes

@@ -1,0 +1,192 @@
+ M docs/gameplay/10_lingnan_nations.md
+ M guangdong_independent_practice/common/custom_gui/zhx_tianxia_gui.txt
+ M guangdong_independent_practice/common/government_names/00_gdd_government_names.txt
+ M guangdong_independent_practice/common/governments/00_governments.txt
+ M guangdong_independent_practice/common/scripted_effects/zhx_council_effects.txt
+ M guangdong_independent_practice/common/scripted_effects/zhx_merit_store_effects.txt
+ M guangdong_independent_practice/common/scripted_effects/zhx_system_effects.txt
+ M guangdong_independent_practice/common/scripted_triggers/zhx_council_triggers.txt
+ M guangdong_independent_practice/events/gdd_liang_restoration_events.txt
+ M guangdong_independent_practice/events/zhx_system_events.txt
+ M "guangdong_independent_practice/history/countries/ACG - Ancheng.txt"
+ M "guangdong_independent_practice/history/countries/BAA - Ba.txt"
+ M "guangdong_independent_practice/history/countries/CAG - Cao.txt"
+ M "guangdong_independent_practice/history/countries/CAI - Cai.txt"
+ M "guangdong_independent_practice/history/countries/CCH - Chao.txt"
+ M "guangdong_independent_practice/history/countries/CHC - Chu.txt"
+ M "guangdong_independent_practice/history/countries/CHN - Chen.txt"
+ M "guangdong_independent_practice/history/countries/CSA - Changsha.txt"
+ M "guangdong_independent_practice/history/countries/CZC - Chaochow.txt"
+ M "guangdong_independent_practice/history/countries/DAE - Dai.txt"
+ M "guangdong_independent_practice/history/countries/DAI - Dai Viet.txt"
+ M "guangdong_independent_practice/history/countries/DIA - Dian.txt"
+ M "guangdong_independent_practice/history/countries/DMG - Bei.txt"
+ M "guangdong_independent_practice/history/countries/DQU - Dangqu.txt"
+ M "guangdong_independent_practice/history/countries/EGU - E.txt"
+ M "guangdong_independent_practice/history/countries/GDD - Guangdong.txt"
+ M "guangdong_independent_practice/history/countries/GON - Gong.txt"
+ M "guangdong_independent_practice/history/countries/GUI - Guilin.txt"
+ M "guangdong_independent_practice/history/countries/GUN - Guan.txt"
+ M "guangdong_independent_practice/history/countries/GUO - Guo.txt"
+ M "guangdong_independent_practice/history/countries/GUZ - Guzhu.txt"
+ M "guangdong_independent_practice/history/countries/GYA - Guiyang.txt"
+ M "guangdong_independent_practice/history/countries/HAK - Hakka.txt"
+ M "guangdong_independent_practice/history/countries/HNG - Heng.txt"
+ M "guangdong_independent_practice/history/countries/HUA - Huai.txt"
+ M "guangdong_independent_practice/history/countries/JIZ - Jizi Joseon.txt"
+ M "guangdong_independent_practice/history/countries/JUU - Ju.txt"
+ M "guangdong_independent_practice/history/countries/LCH - Linchuan.txt"
+ M "guangdong_independent_practice/history/countries/LIO - Liao.txt"
+ M "guangdong_independent_practice/history/countries/LIU - Liu.txt"
+ M "guangdong_independent_practice/history/countries/LUO - Luo.txt"
+ M "guangdong_independent_practice/history/countries/LUU - Lu.txt"
+ M "guangdong_independent_practice/history/countries/MIN - Min.txt"
+ M "guangdong_independent_practice/history/countries/MNG - Ming.txt"
+ M "guangdong_independent_practice/history/countries/NCH - Nanchang.txt"
+ M "guangdong_independent_practice/history/countries/OUE - Ou.txt"
+ M "guangdong_independent_practice/history/countries/QIC - Qi.txt"
+ M "guangdong_independent_practice/history/countries/QIN - Qin.txt"
+ M "guangdong_independent_practice/history/countries/QSH - Qunshu.txt"
+ M "guangdong_independent_practice/history/countries/QVN - Quan.txt"
+ M "guangdong_independent_practice/history/countries/QWO - Quwo.txt"
+ M "guangdong_independent_practice/history/countries/SHE - Shen.txt"
+ M "guangdong_independent_practice/history/countries/SHU - Shu.txt"
+ M "guangdong_independent_practice/history/countries/SNG - Song.txt"
+ M "guangdong_independent_practice/history/countries/SUI - Sui.txt"
+ M "guangdong_independent_practice/history/countries/WEI - Wei.txt"
+ M "guangdong_independent_practice/history/countries/WUU - Wu.txt"
+ M "guangdong_independent_practice/history/countries/WUZ - Wuzhong.txt"
+ M "guangdong_independent_practice/history/countries/WVG - Wei State.txt"
+ M "guangdong_independent_practice/history/countries/XNG - Xing.txt"
+ M "guangdong_independent_practice/history/countries/XU2 - Xu2.txt"
+ M "guangdong_independent_practice/history/countries/YAN - Yan.txt"
+ M "guangdong_independent_practice/history/countries/YOU - Yiqu.txt"
+ M "guangdong_independent_practice/history/countries/YPG - Yinping.txt"
+ M "guangdong_independent_practice/history/countries/YUE - Yue.txt"
+ M "guangdong_independent_practice/history/countries/ZHA - Zhao.txt"
+ M "guangdong_independent_practice/history/countries/ZHG - Zhougong.txt"
+ M "guangdong_independent_practice/history/countries/ZHU - Zhou.txt"
+ M "guangdong_independent_practice/history/countries/ZNG - Zheng.txt"
+ M "guangdong_independent_practice/history/countries/ZSH - Zhongshan.txt"
+ M guangdong_independent_practice/localisation/zhx_system_l_english.yml
+ M guangdong_independent_practice/localisation_source/zhx_system_readable_utf8.txt
+ M planning/lingnan_nations/lingnan_nations_manifest.json
+ M tools/encode_eu4_chinese_localisation.py
+ M tools/validate_liang_restoration_chain.py
+ M tools/validate_zhx_council.py
+?? console_history.txt
+?? docs/gameplay/11_chaozhou_government.md
+?? docs/gameplay/12_hakka_government.md
+?? docs/gameplay/13_zhou_feudatories.md
+?? docs/gameplay/runtime_evidence/overnight_2026-09-05/user_backup.json
+?? "grill-me-sessions/\345\262\255\345\215\227\345\205\261\345\222\214\346\224\277\344\275\223.grill.md"
+?? guangdong_independent_practice/common/custom_gui/gdd_czc_government_gui.txt
+?? guangdong_independent_practice/common/custom_gui/gdd_hak_government_gui.txt
+?? guangdong_independent_practice/common/custom_gui/zhx_feudatory_gui.txt
+?? guangdong_independent_practice/common/estate_privileges/gdd_hak_peasant_privileges.txt
+?? guangdong_independent_practice/common/estates/101_gdd_hak_peasants.txt
+?? guangdong_independent_practice/common/factions/gdd_hak_factions.txt
+?? guangdong_independent_practice/common/government_names/00_aaa_zhx_feudatory_names.txt
+?? guangdong_independent_practice/common/government_reforms/zzz_gdd_czc_government_reforms.txt
+?? guangdong_independent_practice/common/government_reforms/zzz_gdd_hak_government_reforms.txt
+?? guangdong_independent_practice/common/government_reforms/zzz_zhx_feudatory_reforms.txt
+?? guangdong_independent_practice/common/new_diplomatic_actions/zhx_feudatory_actions.txt
+?? guangdong_independent_practice/common/on_actions/gdd_czc_government_on_actions.txt
+?? guangdong_independent_practice/common/on_actions/gdd_hak_government_on_actions.txt
+?? guangdong_independent_practice/common/on_actions/zhx_feudatory_on_actions.txt
+?? guangdong_independent_practice/common/scripted_effects/gdd_czc_government_effects.txt
+?? guangdong_independent_practice/common/scripted_effects/gdd_hak_government_effects.txt
+?? guangdong_independent_practice/common/scripted_effects/zhx_feudatory_effects.txt
+?? guangdong_independent_practice/common/scripted_triggers/gdd_czc_government_triggers.txt
+?? guangdong_independent_practice/common/scripted_triggers/gdd_hak_government_triggers.txt
+?? guangdong_independent_practice/common/scripted_triggers/zhx_feudatory_triggers.txt
+?? guangdong_independent_practice/customizable_localization/zhx_feudatory_localization.txt
+?? guangdong_independent_practice/decisions/gdd_hak_government_decisions.txt
+?? guangdong_independent_practice/decisions/zhx_feudatory_decisions.txt
+?? guangdong_independent_practice/events/gdd_czc_government_events.txt
+?? guangdong_independent_practice/events/gdd_hak_government_events.txt
+?? guangdong_independent_practice/events/zhx_feudatory_events.txt
+?? guangdong_independent_practice/gfx/event_pictures/gdd_liang_restoration/gdd_liang_audience_eventPicture.dds
+?? guangdong_independent_practice/gfx/interface/gdd_czc_government/frame.dds
+?? guangdong_independent_practice/gfx/interface/gdd_czc_government/gentry.dds
+?? guangdong_independent_practice/gfx/interface/gdd_czc_government/government_reform.dds
+?? guangdong_independent_practice/gfx/interface/gdd_czc_government/pointer.dds
+?? guangdong_independent_practice/gfx/interface/gdd_czc_government/pointer_track.dds
+?? guangdong_independent_practice/gfx/interface/gdd_czc_government/ruler.dds
+?? guangdong_independent_practice/gfx/interface/gdd_hak_government/army_128.dds
+?? guangdong_independent_practice/gfx/interface/gdd_hak_government/army_44.dds
+?? guangdong_independent_practice/gfx/interface/gdd_hak_government/army_48.dds
+?? guangdong_independent_practice/gfx/interface/gdd_hak_government/army_64.dds
+?? guangdong_independent_practice/gfx/interface/gdd_hak_government/burghers_128.dds
+?? guangdong_independent_practice/gfx/interface/gdd_hak_government/burghers_44.dds
+?? guangdong_independent_practice/gfx/interface/gdd_hak_government/burghers_48.dds
+?? guangdong_independent_practice/gfx/interface/gdd_hak_government/burghers_64.dds
+?? guangdong_independent_practice/gfx/interface/gdd_hak_government/estates_icons_16.dds
+?? guangdong_independent_practice/gfx/interface/gdd_hak_government/estates_icons_colour-stroke_16.dds
+?? guangdong_independent_practice/gfx/interface/gdd_hak_government/farmers_128.dds
+?? guangdong_independent_practice/gfx/interface/gdd_hak_government/farmers_44.dds
+?? guangdong_independent_practice/gfx/interface/gdd_hak_government/farmers_48.dds
+?? guangdong_independent_practice/gfx/interface/gdd_hak_government/farmers_64.dds
+?? guangdong_independent_practice/gfx/interface/zhx_feudatories/investiture_64.dds
+?? guangdong_independent_practice/gfx/interface/zhx_feudatories/ritual_ding_64.dds
+?? guangdong_independent_practice/interface/countrygovernmentview.gui
+?? guangdong_independent_practice/interface/gdd_czc_government.gfx
+?? guangdong_independent_practice/interface/gdd_liang_restoration_eventpictures.gfx
+?? guangdong_independent_practice/interface/zhx_feudatory_icons.gfx
+?? guangdong_independent_practice/interface/zzz_gdd_hak_government.gfx
+?? guangdong_independent_practice/localisation/replace/019_gdd_czc_government_l_english.yml
+?? guangdong_independent_practice/localisation/replace/020_gdd_czc_government_ui_l_english.yml
+?? guangdong_independent_practice/localisation/replace/021_gdd_hak_government_l_english.yml
+?? guangdong_independent_practice/localisation/replace/022_zhx_feudatory_l_english.yml
+?? guangdong_independent_practice/localisation_source/019_gdd_czc_government_readable_utf8.txt
+?? guangdong_independent_practice/localisation_source/020_gdd_czc_government_ui_readable_utf8.txt
+?? guangdong_independent_practice/localisation_source/021_gdd_hak_government_readable_utf8.txt
+?? guangdong_independent_practice/localisation_source/022_zhx_feudatory_readable_utf8.txt
+?? planning/chaozhou_government_art/chaozhou_government_art_v01.png
+?? planning/chaozhou_government_art/chaozhou_government_art_v01.prompt.txt
+?? planning/chaozhou_government_art/chaozhou_government_art_v02.extraction_rejected.png
+?? planning/chaozhou_government_art/chaozhou_government_art_v02.png
+?? planning/chaozhou_government_art/chaozhou_government_art_v02.prompt.txt
+?? planning/chaozhou_government_art/chaozhou_government_art_v02.source.png
+?? planning/chaozhou_government_art/chaozhou_government_v02_280x50_balanced.png
+?? planning/chaozhou_government_art/chaozhou_government_v02_280x50_gentry.png
+?? planning/chaozhou_government_art/chaozhou_government_v02_280x50_ruler.png
+?? planning/chaozhou_government_art/chaozhou_government_v02_preview_4x.png
+?? planning/chaozhou_government_art/runtime_validation_20260905.json
+?? planning/hakka_government_art/hakka_factions_asset_preview.png
+?? planning/zhou_feudatories/government_icons_preview.png
+?? planning/zhou_feudatories/opening_dignities.json
+?? tools/apply_zhou_feudatories.py
+?? tools/assets/chaozhou_government/README.md
+?? tools/assets/chaozhou_government/export_assets.py
+?? tools/assets/chaozhou_government/manifest.json
+?? tools/assets/chaozhou_government/production/frame.png
+?? tools/assets/chaozhou_government/production/frame.source_rgba.png
+?? tools/assets/chaozhou_government/production/gentry.png
+?? tools/assets/chaozhou_government/production/gentry.source_rgba.png
+?? tools/assets/chaozhou_government/production/government_reform.png
+?? tools/assets/chaozhou_government/production/government_reform.source_rgba.png
+?? tools/assets/chaozhou_government/production/pointer.png
+?? tools/assets/chaozhou_government/production/pointer.source_rgba.png
+?? tools/assets/chaozhou_government/production/pointer_track.png
+?? tools/assets/chaozhou_government/production/ruler.png
+?? tools/assets/chaozhou_government/production/ruler.source_rgba.png
+?? tools/assets/event_pictures/README.md
+?? tools/assets/event_pictures/gdd_liang_audience_source.png
+?? tools/assets/hakka_government/README.md
+?? tools/assets/hakka_government/export_assets.py
+?? tools/assets/hakka_government/manifest.json
+?? tools/assets/hakka_government/prompts.json
+?? tools/assets/hakka_government/sources/army.png
+?? tools/assets/hakka_government/sources/burghers.png
+?? tools/assets/hakka_government/sources/farmers.png
+?? tools/assets/zhou_feudatories/README.md
+?? tools/assets/zhou_feudatories/export_assets.py
+?? tools/assets/zhou_feudatories/manifest.json
+?? tools/assets/zhou_feudatories/prompts.json
+?? tools/assets/zhou_feudatories/sources/investiture.png
+?? tools/assets/zhou_feudatories/sources/ritual_ding.png
+?? tools/generate_liang_event_picture.py
+?? tools/validate_czc_government.py
+?? tools/validate_hak_government.py
+?? tools/validate_zhou_feudatories.py
