@@ -2846,7 +2846,7 @@ hebei_area = { # GDD_B55_SHANGGU_REFINEMENT
     703 2136 5351 5352 5353
 }
 south_hebei_area = { # B31 Han land-contiguous area reorganisation
-    2137 4195 5221 5220 5218 696
+    4195 5221 5220 5218 696
 }
 
 
@@ -3964,4 +3964,7 @@ wandeng_area = { # GDD_B47_JINGXIANG_YUNAN_BALANCED
 }
 rucai_area = { # GDD_B47_JINGXIANG_YUNAN_BALANCED
     5053 5054 5349
+}
+daming_area = { # GDD_B78_DAMING_REFINEMENT
+    5381 2137 5382
 }

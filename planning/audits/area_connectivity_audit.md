@@ -1,10 +1,10 @@
 # Area connectivity audit
 
-- Total areas: 941
+- Total areas: 942
 - Strict bitmap-disconnected: 74
 - Still disconnected after explicit adjacencies: 41
 - Areas containing empty province references: 0
-- Han-region areas checked: 90
+- Han-region areas checked: 91
 
 ## Han areas requiring reassignment
 

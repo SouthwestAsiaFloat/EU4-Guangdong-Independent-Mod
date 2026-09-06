@@ -1,0 +1,597 @@
+[
+  {
+    "file": "芜1444_12_16_gongyi_base.eu4",
+    "sha256": "f88947720297c322480da1a55ac958b4175f101d4a61051d2ad5fa05361a7564",
+    "countries": {
+      "HYM": {
+        "government": "{\n\t\t\tgovernment=\"republic\"\n\t\t\treform_stack={\n\t\t\t\treforms={\n\t\t\t\t\t\"republic_mechanic\"\n\t\t\t\t\t\"zhx_yang_trade_league_reform\"\n\t\t\t\t}\n\t\t\t\thistory={\n\t\t\t\t\t\"zhx_yang_trade_league_reform\"\n\t\t\t\t}\n\t\t\t}\n\t\t}",
+        "monarch": "{\n\t\t\tid=12666\n\t\t\ttype=48\n\t\t}",
+        "flags": "{\n\t\t\tzhx_member=1444.11.11\n\t\t\tgdd_authority_balance_effect_recipient=1444.11.11\n\t\t\tzhx_doctrine_zongheng=1444.11.11\n\t\t\tzhx_doctrine_practice_initialised=1444.11.11\n\t\t\tzhx_opening_school_initialised=1444.11.11\n\t\t\tzhx_doctrine_hover_positive_2=1444.11.11\n\t\t\tzhx_doctrine_hover_negative_1=1444.11.11\n\t\t\trecent_land_seizure=1444.11.12\n\t\t}",
+        "last_election": "1444.11.11",
+        "republican_tradition": "100.000",
+        "stability": "0.000",
+        "prestige": "4.940",
+        "capital": "685",
+        "owned_provinces": "{"
+      },
+      "WHU": {
+        "government": "{\n\t\t\tgovernment=\"republic\"\n\t\t\treform_stack={\n\t\t\t\treforms={\n\t\t\t\t\t\"republic_mechanic\"\n\t\t\t\t\t\"zhx_gongyi_reform\"\n\t\t\t\t}\n\t\t\t\thistory={\n\t\t\t\t\t\"zhx_gongyi_reform\"\n\t\t\t\t}\n\t\t\t}\n\t\t}",
+        "monarch": "{\n\t\t\tid=12667\n\t\t\ttype=48\n\t\t}",
+        "flags": "{\n\t\t\tzhx_gongyi_charter=1444.11.24\n\t\t\tzhx_member=1444.11.11\n\t\t\tgdd_authority_balance_effect_recipient=1444.11.11\n\t\t\tzhx_doctrine_mo=1444.11.11\n\t\t\tzhx_doctrine_practice_initialised=1444.11.11\n\t\t\tzhx_opening_school_initialised=1444.11.11\n\t\t\tzhx_doctrine_hover_positive_3=1444.11.24\n\t\t\tzhx_doctrine_hover_mo_peace=1444.11.24\n\t\t\tzhx_doctrine_hover_positive_2=1444.11.24\n\t\t}",
+        "last_election": "1444.11.11",
+        "republican_tradition": "100.000",
+        "stability": "0.000",
+        "prestige": "4.942",
+        "capital": "5066",
+        "owned_provinces": "{"
+      },
+      "ZHO": {
+        "government": "{\n\t\t\tgovernment=\"republic\"\n\t\t\treform_stack={\n\t\t\t\treforms={\n\t\t\t\t\t\"republic_mechanic\"\n\t\t\t\t\t\"zhx_gongyi_reform\"\n\t\t\t\t}\n\t\t\t\thistory={\n\t\t\t\t\t\"zhx_gongyi_reform\"\n\t\t\t\t}\n\t\t\t}\n\t\t}",
+        "monarch": "{\n\t\t\tid=12668\n\t\t\ttype=48\n\t\t}",
+        "flags": "{\n\t\t\tzhx_gongyi_charter=1444.11.25\n\t\t\tzhx_member=1444.11.11\n\t\t\tgdd_authority_balance_effect_recipient=1444.11.11\n\t\t\tzhx_doctrine_zongheng=1444.11.11\n\t\t\tzhx_doctrine_practice_initialised=1444.11.11\n\t\t\tzhx_opening_school_initialised=1444.11.11\n\t\t\tzhx_doctrine_hover_negative_1=1444.11.11\n\t\t\trecent_land_seizure=1444.11.12\n\t\t}",
+        "last_election": "1444.11.11",
+        "republican_tradition": "100.000",
+        "stability": "0.000",
+        "prestige": "4.940",
+        "capital": "5004",
+        "owned_provinces": "{"
+      },
+      "ULM": {
+        "government": "{\n\t\t\tgovernment=\"republic\"\n\t\t\treform_stack={\n\t\t\t\treforms={\n\t\t\t\t\t\"republic_mechanic\"\n\t\t\t\t\t\"free_city\"\n\t\t\t\t}\n\t\t\t\thistory={\n\t\t\t\t\t\"free_city\"\n\t\t\t\t}\n\t\t\t}\n\t\t}",
+        "monarch": "{\n\t\t\tid=12453\n\t\t\ttype=48\n\t\t}",
+        "flags": "{\n\t\t\trecent_land_seizure=1444.11.12\n\t\t}",
+        "last_election": "1444.11.11",
+        "republican_tradition": "100.000",
+        "stability": "0.000",
+        "prestige": "5.000",
+        "capital": "1872",
+        "owned_provinces": "{"
+      },
+      "T00": {
+        "last_election": "1444.11.11",
+        "stability": "0.000",
+        "prestige": "5.000",
+        "capital": "0"
+      },
+      "T01": {
+        "last_election": "1444.11.11",
+        "stability": "0.000",
+        "prestige": "5.000",
+        "capital": "0"
+      }
+    },
+    "leagues": [
+      "{\n\tid=1\n\tmembers={\n\t\tHSA RIG OLD BRE HAM \n\t}\n}",
+      "{\n\tid=1101806788\n\tmembers={\n\t\tHYM CDE JJG HYA \n\t}\n}",
+      "{\n\tid=1297306169\n\tmembers={\n\t\tMKS BTN \n\t}\n}",
+      "{\n\tid=102898243\n\tmembers={\n\t\tTDO MNA \n\t}\n}",
+      "{\n\tid=773106582\n\tmembers={\n\t\tMAB MAD \n\t}\n}",
+      "{\n\tid=1377156981\n\tmembers={\n\t\tNOV OKA \n\t}\n}",
+      "{\n\tid=966624908\n\tmembers={\n\t\tWHU ZHO \n\t}\n}"
+    ]
+  },
+  {
+    "file": "芜1444_12_16_gongyi_loss.eu4",
+    "sha256": "e0e19f8a1de5aab00cb9ee83df490dbf816d4ae113b68216654581ff26f59471",
+    "countries": {
+      "HYM": {
+        "government": "{\n\t\t\tgovernment=\"republic\"\n\t\t\treform_stack={\n\t\t\t\treforms={\n\t\t\t\t\t\"republic_mechanic\"\n\t\t\t\t\t\"zhx_yang_trade_league_reform\"\n\t\t\t\t}\n\t\t\t\thistory={\n\t\t\t\t\t\"zhx_yang_trade_league_reform\"\n\t\t\t\t}\n\t\t\t}\n\t\t}",
+        "monarch": "{\n\t\t\tid=12666\n\t\t\ttype=48\n\t\t}",
+        "flags": "{\n\t\t\tzhx_member=1444.11.11\n\t\t\tgdd_authority_balance_effect_recipient=1444.11.11\n\t\t\tzhx_doctrine_zongheng=1444.11.11\n\t\t\tzhx_doctrine_practice_initialised=1444.11.11\n\t\t\tzhx_opening_school_initialised=1444.11.11\n\t\t\tzhx_doctrine_hover_positive_2=1444.11.11\n\t\t\tzhx_doctrine_hover_negative_1=1444.11.11\n\t\t\trecent_land_seizure=1444.11.12\n\t\t}",
+        "last_election": "1444.11.11",
+        "republican_tradition": "100.000",
+        "stability": "0.000",
+        "prestige": "4.940",
+        "capital": "685",
+        "owned_provinces": "{"
+      },
+      "WHU": {
+        "government": "{\n\t\t\tgovernment=\"republic\"\n\t\t\treform_stack={\n\t\t\t\treforms={\n\t\t\t\t\t\"republic_mechanic\"\n\t\t\t\t\t\"zhx_gongyi_ordinary_reform\"\n\t\t\t\t}\n\t\t\t\thistory={\n\t\t\t\t\t\"zhx_gongyi_reform\"\n\t\t\t\t\t\"zhx_gongyi_ordinary_reform\"\n\t\t\t\t}\n\t\t\t}\n\t\t}",
+        "monarch": "{\n\t\t\tid=12667\n\t\t\ttype=48\n\t\t}",
+        "flags": "{\n\t\t\tzhx_gongyi_lost_charter=1444.12.16\n\t\t\tzhx_member=1444.11.11\n\t\t\tgdd_authority_balance_effect_recipient=1444.11.11\n\t\t\tzhx_doctrine_mo=1444.11.11\n\t\t\tzhx_doctrine_practice_initialised=1444.11.11\n\t\t\tzhx_opening_school_initialised=1444.11.11\n\t\t\tzhx_doctrine_hover_positive_3=1444.11.24\n\t\t\tzhx_doctrine_hover_mo_peace=1444.11.24\n\t\t\tzhx_doctrine_hover_positive_2=1444.11.24\n\t\t}",
+        "last_election": "1444.11.11",
+        "republican_tradition": "100.000",
+        "stability": "0.000",
+        "prestige": "4.942",
+        "capital": "5066",
+        "owned_provinces": "{"
+      },
+      "ZHO": {
+        "government": "{\n\t\t\tgovernment=\"republic\"\n\t\t\treform_stack={\n\t\t\t\treforms={\n\t\t\t\t\t\"republic_mechanic\"\n\t\t\t\t\t\"zhx_gongyi_reform\"\n\t\t\t\t}\n\t\t\t\thistory={\n\t\t\t\t\t\"zhx_gongyi_reform\"\n\t\t\t\t}\n\t\t\t}\n\t\t}",
+        "monarch": "{\n\t\t\tid=12668\n\t\t\ttype=48\n\t\t}",
+        "flags": "{\n\t\t\tzhx_gongyi_charter=1444.11.25\n\t\t\tzhx_member=1444.11.11\n\t\t\tgdd_authority_balance_effect_recipient=1444.11.11\n\t\t\tzhx_doctrine_zongheng=1444.11.11\n\t\t\tzhx_doctrine_practice_initialised=1444.11.11\n\t\t\tzhx_opening_school_initialised=1444.11.11\n\t\t\tzhx_doctrine_hover_negative_1=1444.11.11\n\t\t\trecent_land_seizure=1444.11.12\n\t\t}",
+        "last_election": "1444.11.11",
+        "republican_tradition": "100.000",
+        "stability": "0.000",
+        "prestige": "4.940",
+        "capital": "5004",
+        "owned_provinces": "{"
+      },
+      "ULM": {
+        "government": "{\n\t\t\tgovernment=\"republic\"\n\t\t\treform_stack={\n\t\t\t\treforms={\n\t\t\t\t\t\"republic_mechanic\"\n\t\t\t\t\t\"free_city\"\n\t\t\t\t}\n\t\t\t\thistory={\n\t\t\t\t\t\"free_city\"\n\t\t\t\t}\n\t\t\t}\n\t\t}",
+        "monarch": "{\n\t\t\tid=12453\n\t\t\ttype=48\n\t\t}",
+        "flags": "{\n\t\t\trecent_land_seizure=1444.11.12\n\t\t}",
+        "last_election": "1444.11.11",
+        "republican_tradition": "100.000",
+        "stability": "0.000",
+        "prestige": "5.000",
+        "capital": "1872",
+        "owned_provinces": "{"
+      },
+      "T00": {
+        "last_election": "1444.11.11",
+        "stability": "0.000",
+        "prestige": "5.000",
+        "capital": "0"
+      },
+      "T01": {
+        "last_election": "1444.11.11",
+        "stability": "0.000",
+        "prestige": "5.000",
+        "capital": "0"
+      }
+    },
+    "leagues": [
+      "{\n\tid=1\n\tmembers={\n\t\tHSA RIG OLD BRE HAM \n\t}\n}",
+      "{\n\tid=1101806788\n\tmembers={\n\t\tHYM CDE JJG HYA \n\t}\n}",
+      "{\n\tid=1297306169\n\tmembers={\n\t\tMKS BTN \n\t}\n}",
+      "{\n\tid=102898243\n\tmembers={\n\t\tTDO MNA \n\t}\n}",
+      "{\n\tid=773106582\n\tmembers={\n\t\tMAB MAD \n\t}\n}",
+      "{\n\tid=1377156981\n\tmembers={\n\t\tNOV OKA \n\t}\n}",
+      "{\n\tid=966624908\n\tmembers={\n\t\tWHU ZHO \n\t}\n}"
+    ]
+  },
+  {
+    "file": "芜1444_12_19_gongyi_three.eu4",
+    "sha256": "aa2027f9bd8fe27bc9e896ca4f1b3e8a2ed7939b8f7ec9d3d07074c999106468",
+    "countries": {
+      "HYM": {
+        "government": "{\n\t\t\tgovernment=\"republic\"\n\t\t\treform_stack={\n\t\t\t\treforms={\n\t\t\t\t\t\"republic_mechanic\"\n\t\t\t\t\t\"zhx_yang_trade_league_reform\"\n\t\t\t\t}\n\t\t\t\thistory={\n\t\t\t\t\t\"zhx_yang_trade_league_reform\"\n\t\t\t\t}\n\t\t\t}\n\t\t}",
+        "monarch": "{\n\t\t\tid=12666\n\t\t\ttype=48\n\t\t}",
+        "flags": "{\n\t\t\tzhx_member=1444.11.11\n\t\t\tgdd_authority_balance_effect_recipient=1444.11.11\n\t\t\tzhx_doctrine_zongheng=1444.11.11\n\t\t\tzhx_doctrine_practice_initialised=1444.11.11\n\t\t\tzhx_opening_school_initialised=1444.11.11\n\t\t\tzhx_doctrine_hover_positive_2=1444.11.11\n\t\t\tzhx_doctrine_hover_negative_1=1444.11.11\n\t\t\trecent_land_seizure=1444.11.12\n\t\t}",
+        "last_election": "1444.11.11",
+        "republican_tradition": "100.000",
+        "stability": "0.000",
+        "prestige": "4.940",
+        "capital": "685",
+        "owned_provinces": "{"
+      },
+      "WHU": {
+        "government": "{\n\t\t\tgovernment=\"republic\"\n\t\t\treform_stack={\n\t\t\t\treforms={\n\t\t\t\t\t\"republic_mechanic\"\n\t\t\t\t\t\"zhx_gongyi_reform\"\n\t\t\t\t}\n\t\t\t\thistory={\n\t\t\t\t\t\"zhx_gongyi_reform\"\n\t\t\t\t\t\"zhx_gongyi_ordinary_reform\"\n\t\t\t\t}\n\t\t\t}\n\t\t}",
+        "monarch": "{\n\t\t\tid=12667\n\t\t\ttype=48\n\t\t}",
+        "flags": "{\n\t\t\tzhx_gongyi_charter=1444.12.19\n\t\t\tzhx_member=1444.11.11\n\t\t\tgdd_authority_balance_effect_recipient=1444.11.11\n\t\t\tzhx_doctrine_mo=1444.11.11\n\t\t\tzhx_doctrine_practice_initialised=1444.11.11\n\t\t\tzhx_opening_school_initialised=1444.11.11\n\t\t\tzhx_doctrine_hover_positive_3=1444.11.24\n\t\t\tzhx_doctrine_hover_mo_peace=1444.11.24\n\t\t\tzhx_doctrine_hover_positive_2=1444.11.24\n\t\t\trecent_land_seizure=1444.12.19\n\t\t\tzhx_gongyi_request_cooldown=1444.12.17\n\t\t\trecent_estate_agenda=1444.12.18\n\t\t}",
+        "last_election": "1444.11.11",
+        "republican_tradition": "100.000",
+        "stability": "0.000",
+        "prestige": "4.942",
+        "capital": "5066",
+        "owned_provinces": "{"
+      },
+      "ZHO": {
+        "government": "{\n\t\t\tgovernment=\"republic\"\n\t\t\treform_stack={\n\t\t\t\treforms={\n\t\t\t\t\t\"republic_mechanic\"\n\t\t\t\t\t\"zhx_gongyi_reform\"\n\t\t\t\t}\n\t\t\t\thistory={\n\t\t\t\t\t\"zhx_gongyi_reform\"\n\t\t\t\t}\n\t\t\t}\n\t\t}",
+        "monarch": "{\n\t\t\tid=12668\n\t\t\ttype=48\n\t\t}",
+        "flags": "{\n\t\t\tzhx_gongyi_charter=1444.11.25\n\t\t\tzhx_member=1444.11.11\n\t\t\tgdd_authority_balance_effect_recipient=1444.11.11\n\t\t\tzhx_doctrine_zongheng=1444.11.11\n\t\t\tzhx_doctrine_practice_initialised=1444.11.11\n\t\t\tzhx_opening_school_initialised=1444.11.11\n\t\t\tzhx_doctrine_hover_negative_1=1444.11.11\n\t\t\trecent_land_seizure=1444.11.12\n\t\t}",
+        "last_election": "1444.11.11",
+        "republican_tradition": "100.000",
+        "stability": "0.000",
+        "prestige": "100.000",
+        "capital": "5004",
+        "owned_provinces": "{"
+      },
+      "ULM": {
+        "government": "{\n\t\t\tgovernment=\"republic\"\n\t\t\treform_stack={\n\t\t\t\treforms={\n\t\t\t\t\t\"republic_mechanic\"\n\t\t\t\t\t\"zhx_gongyi_reform\"\n\t\t\t\t}\n\t\t\t\thistory={\n\t\t\t\t\t\"free_city\"\n\t\t\t\t\t\"zhx_gongyi_reform\"\n\t\t\t\t}\n\t\t\t}\n\t\t}",
+        "monarch": "{\n\t\t\tid=12453\n\t\t\ttype=48\n\t\t}",
+        "flags": "{\n\t\t\trecent_land_seizure=1444.11.12\n\t\t\tzhx_gongyi_charter=1444.12.19\n\t\t\tzhx_member=1444.12.19\n\t\t\tgdd_authority_balance_effect_recipient=1444.12.19\n\t\t}",
+        "last_election": "1444.11.11",
+        "republican_tradition": "100.000",
+        "stability": "0.000",
+        "prestige": "100.000",
+        "capital": "1872",
+        "owned_provinces": "{"
+      },
+      "T00": {
+        "last_election": "1444.11.11",
+        "stability": "0.000",
+        "prestige": "5.000",
+        "capital": "0"
+      },
+      "T01": {
+        "last_election": "1444.11.11",
+        "stability": "0.000",
+        "prestige": "5.000",
+        "capital": "0"
+      }
+    },
+    "leagues": [
+      "{\n\tid=1\n\tmembers={\n\t\tHSA RIG OLD BRE HAM \n\t}\n}",
+      "{\n\tid=1101806788\n\tmembers={\n\t\tHYM CDE JJG HYA \n\t}\n}",
+      "{\n\tid=1297306169\n\tmembers={\n\t\tMKS BTN \n\t}\n}",
+      "{\n\tid=102898243\n\tmembers={\n\t\tTDO MNA \n\t}\n}",
+      "{\n\tid=773106582\n\tmembers={\n\t\tMAB MAD \n\t}\n}",
+      "{\n\tid=1377156981\n\tmembers={\n\t\tNOV OKA \n\t}\n}",
+      "{\n\tid=1007180879\n\tmembers={\n\t\tGEN FEO \n\t}\n}",
+      "{\n\tid=1553678531\n\tmembers={\n\t\tWHU ZHO ULM \n\t}\n}"
+    ]
+  },
+  {
+    "file": "扬1444_12_21_gongyi_release.eu4",
+    "sha256": "5e9175c8204a23a9e8b0357db17e62776eb84c30940525f8847c4e4e45e73b02",
+    "countries": {
+      "HYM": {
+        "government": "{\n\t\t\tgovernment=\"republic\"\n\t\t\treform_stack={\n\t\t\t\treforms={\n\t\t\t\t\t\"republic_mechanic\"\n\t\t\t\t\t\"zhx_yang_trade_league_reform\"\n\t\t\t\t}\n\t\t\t\thistory={\n\t\t\t\t\t\"zhx_yang_trade_league_reform\"\n\t\t\t\t}\n\t\t\t}\n\t\t}",
+        "monarch": "{\n\t\t\tid=12666\n\t\t\ttype=48\n\t\t}",
+        "flags": "{\n\t\t\tzhx_member=1444.11.11\n\t\t\tgdd_authority_balance_effect_recipient=1444.11.11\n\t\t\tzhx_doctrine_zongheng=1444.11.11\n\t\t\tzhx_doctrine_practice_initialised=1444.11.11\n\t\t\tzhx_opening_school_initialised=1444.11.11\n\t\t\tzhx_doctrine_hover_positive_2=1444.11.11\n\t\t\tzhx_doctrine_hover_negative_1=1444.11.11\n\t\t\trecent_land_seizure=1444.11.12\n\t\t}",
+        "last_election": "1444.11.11",
+        "republican_tradition": "100.000",
+        "stability": "0.000",
+        "prestige": "4.940",
+        "capital": "685",
+        "owned_provinces": "{"
+      },
+      "WHU": {
+        "government": "{\n\t\t\tgovernment=\"republic\"\n\t\t\treform_stack={\n\t\t\t\treforms={\n\t\t\t\t\t\"republic_mechanic\"\n\t\t\t\t\t\"zhx_gongyi_ordinary_reform\"\n\t\t\t\t}\n\t\t\t\thistory={\n\t\t\t\t\t\"zhx_gongyi_reform\"\n\t\t\t\t\t\"zhx_gongyi_ordinary_reform\"\n\t\t\t\t}\n\t\t\t}\n\t\t}",
+        "monarch": "{\n\t\t\tid=12667\n\t\t\ttype=48\n\t\t}",
+        "flags": "{\n\t\t\tzhx_gongyi_lost_charter=1444.12.19\n\t\t\tzhx_member=1444.11.11\n\t\t\tgdd_authority_balance_effect_recipient=1444.11.11\n\t\t\tzhx_doctrine_mo=1444.11.11\n\t\t\tzhx_doctrine_practice_initialised=1444.11.11\n\t\t\tzhx_opening_school_initialised=1444.11.11\n\t\t\tzhx_doctrine_hover_positive_3=1444.11.24\n\t\t\tzhx_doctrine_hover_mo_peace=1444.11.24\n\t\t\tzhx_doctrine_hover_positive_2=1444.11.24\n\t\t\trecent_land_seizure=1444.12.19\n\t\t\tzhx_gongyi_request_cooldown=1444.12.17\n\t\t\trecent_estate_agenda=1444.12.18\n\t\t}",
+        "last_election": "1444.11.11",
+        "republican_tradition": "100.000",
+        "stability": "0.000",
+        "prestige": "4.942",
+        "capital": "5066",
+        "owned_provinces": "{"
+      },
+      "ZHO": {
+        "government": "{\n\t\t\tgovernment=\"republic\"\n\t\t\treform_stack={\n\t\t\t\treforms={\n\t\t\t\t\t\"republic_mechanic\"\n\t\t\t\t\t\"zhx_gongyi_reform\"\n\t\t\t\t}\n\t\t\t\thistory={\n\t\t\t\t\t\"zhx_gongyi_reform\"\n\t\t\t\t}\n\t\t\t}\n\t\t}",
+        "monarch": "{\n\t\t\tid=12668\n\t\t\ttype=48\n\t\t}",
+        "flags": "{\n\t\t\tzhx_gongyi_charter=1444.11.25\n\t\t\tzhx_member=1444.11.11\n\t\t\tgdd_authority_balance_effect_recipient=1444.11.11\n\t\t\tzhx_doctrine_zongheng=1444.11.11\n\t\t\tzhx_doctrine_practice_initialised=1444.11.11\n\t\t\tzhx_opening_school_initialised=1444.11.11\n\t\t\tzhx_doctrine_hover_negative_1=1444.11.11\n\t\t\trecent_land_seizure=1444.11.12\n\t\t}",
+        "last_election": "1444.11.11",
+        "republican_tradition": "100.000",
+        "stability": "0.000",
+        "prestige": "100.000",
+        "capital": "5004",
+        "owned_provinces": "{"
+      },
+      "ULM": {
+        "government": "{\n\t\t\tgovernment=\"republic\"\n\t\t\treform_stack={\n\t\t\t\treforms={\n\t\t\t\t\t\"republic_mechanic\"\n\t\t\t\t\t\"zhx_gongyi_reform\"\n\t\t\t\t}\n\t\t\t\thistory={\n\t\t\t\t\t\"free_city\"\n\t\t\t\t\t\"zhx_gongyi_reform\"\n\t\t\t\t}\n\t\t\t}\n\t\t}",
+        "monarch": "{\n\t\t\tid=12453\n\t\t\ttype=48\n\t\t}",
+        "flags": "{\n\t\t\trecent_land_seizure=1444.11.12\n\t\t\tzhx_gongyi_charter=1444.12.19\n\t\t\tzhx_member=1444.12.19\n\t\t\tgdd_authority_balance_effect_recipient=1444.12.19\n\t\t}",
+        "last_election": "1444.11.11",
+        "republican_tradition": "100.000",
+        "stability": "0.000",
+        "prestige": "100.000",
+        "capital": "1872",
+        "owned_provinces": "{"
+      },
+      "T00": {
+        "government": "{\n\t\t\tgovernment=\"republic\"\n\t\t\treform_stack={\n\t\t\t\treforms={\n\t\t\t\t\t\"republic_mechanic\"\n\t\t\t\t\t\"zhx_gongyi_reform\"\n\t\t\t\t}\n\t\t\t\thistory={\n\t\t\t\t\t\"zhx_gongyi_reform\"\n\t\t\t\t}\n\t\t\t}\n\t\t}",
+        "monarch": "{\n\t\t\tid=12845\n\t\t\ttype=48\n\t\t}",
+        "last_election": "1444.12.21",
+        "republican_tradition": "100.000",
+        "stability": "0.000",
+        "prestige": "0.000",
+        "capital": "5021",
+        "owned_provinces": "{"
+      },
+      "T01": {
+        "last_election": "1444.11.11",
+        "stability": "0.000",
+        "prestige": "5.000",
+        "capital": "0"
+      }
+    },
+    "leagues": [
+      "{\n\tid=1\n\tmembers={\n\t\tHSA RIG OLD BRE HAM \n\t}\n}",
+      "{\n\tid=1101806788\n\tmembers={\n\t\tHYM CDE JJG HYA T00 \n\t}\n}",
+      "{\n\tid=1297306169\n\tmembers={\n\t\tMKS BTN \n\t}\n}",
+      "{\n\tid=102898243\n\tmembers={\n\t\tTDO MNA \n\t}\n}",
+      "{\n\tid=773106582\n\tmembers={\n\t\tMAB MAD \n\t}\n}",
+      "{\n\tid=1377156981\n\tmembers={\n\t\tNOV OKA \n\t}\n}",
+      "{\n\tid=1007180879\n\tmembers={\n\t\tGEN FEO \n\t}\n}",
+      "{\n\tid=1553678531\n\tmembers={\n\t\tULM ZHO \n\t}\n}"
+    ]
+  },
+  {
+    "file": "扬1444_12_22_gongyi_release_fixed.eu4",
+    "sha256": "a4fe81be35848c5f8942499fb8910ee84b51de5325574e90c5f90300acac6e58",
+    "countries": {
+      "HYM": {
+        "government": "{\n\t\t\tgovernment=\"republic\"\n\t\t\treform_stack={\n\t\t\t\treforms={\n\t\t\t\t\t\"republic_mechanic\"\n\t\t\t\t\t\"zhx_yang_trade_league_reform\"\n\t\t\t\t}\n\t\t\t\thistory={\n\t\t\t\t\t\"zhx_yang_trade_league_reform\"\n\t\t\t\t}\n\t\t\t}\n\t\t}",
+        "monarch": "{\n\t\t\tid=12666\n\t\t\ttype=48\n\t\t}",
+        "flags": "{\n\t\t\tzhx_member=1444.11.11\n\t\t\tgdd_authority_balance_effect_recipient=1444.11.11\n\t\t\tzhx_doctrine_zongheng=1444.11.11\n\t\t\tzhx_doctrine_practice_initialised=1444.11.11\n\t\t\tzhx_opening_school_initialised=1444.11.11\n\t\t\tzhx_doctrine_hover_positive_2=1444.11.11\n\t\t\tzhx_doctrine_hover_negative_1=1444.11.11\n\t\t\trecent_land_seizure=1444.11.12\n\t\t\tgdd_support_reform_civil_registration=1444.12.19\n\t\t\tgdd_support_reform_silver_standard=1444.12.19\n\t\t\tgdd_support_reform_kanhe=1444.12.19\n\t\t\tgdd_support_reform_keju=1444.12.19\n\t\t\tgdd_support_reform_inclusive_monarchy=1444.12.19\n\t\t\tgdd_support_reform_unified_market=1444.12.19\n\t\t\tgdd_support_reform_military_branch=1444.12.19\n\t\t\tgdd_support_reform_foreign_ship_designs=1444.12.19\n\t\t}",
+        "last_election": "1444.11.11",
+        "republican_tradition": "100.000",
+        "stability": "0.000",
+        "prestige": "4.940",
+        "capital": "685",
+        "owned_provinces": "{"
+      },
+      "WHU": {
+        "government": "{\n\t\t\tgovernment=\"republic\"\n\t\t\treform_stack={\n\t\t\t\treforms={\n\t\t\t\t\t\"republic_mechanic\"\n\t\t\t\t\t\"zhx_gongyi_ordinary_reform\"\n\t\t\t\t}\n\t\t\t\thistory={\n\t\t\t\t\t\"zhx_gongyi_reform\"\n\t\t\t\t\t\"zhx_gongyi_ordinary_reform\"\n\t\t\t\t}\n\t\t\t}\n\t\t}",
+        "monarch": "{\n\t\t\tid=12667\n\t\t\ttype=48\n\t\t}",
+        "flags": "{\n\t\t\tzhx_gongyi_lost_charter=1444.12.19\n\t\t\tzhx_member=1444.11.11\n\t\t\tgdd_authority_balance_effect_recipient=1444.11.11\n\t\t\tzhx_doctrine_mo=1444.11.11\n\t\t\tzhx_doctrine_practice_initialised=1444.11.11\n\t\t\tzhx_opening_school_initialised=1444.11.11\n\t\t\tzhx_gongyi_request_cooldown=1444.12.17\n\t\t\trecent_land_seizure=1444.12.19\n\t\t\trecent_estate_agenda=1444.12.18\n\t\t\tzhx_doctrine_hover_positive_3=1444.12.21\n\t\t\tzhx_doctrine_hover_mo_peace=1444.12.21\n\t\t\tzhx_doctrine_hover_positive_2=1444.12.21\n\t\t}",
+        "last_election": "1444.11.11",
+        "republican_tradition": "100.000",
+        "stability": "0.000",
+        "prestige": "4.942",
+        "capital": "5066",
+        "owned_provinces": "{"
+      },
+      "ZHO": {
+        "government": "{\n\t\t\tgovernment=\"republic\"\n\t\t\treform_stack={\n\t\t\t\treforms={\n\t\t\t\t\t\"republic_mechanic\"\n\t\t\t\t\t\"zhx_gongyi_reform\"\n\t\t\t\t}\n\t\t\t\thistory={\n\t\t\t\t\t\"zhx_gongyi_reform\"\n\t\t\t\t}\n\t\t\t}\n\t\t}",
+        "monarch": "{\n\t\t\tid=12668\n\t\t\ttype=48\n\t\t}",
+        "flags": "{\n\t\t\tzhx_gongyi_charter=1444.12.22\n\t\t\tzhx_member=1444.11.11\n\t\t\tgdd_authority_balance_effect_recipient=1444.11.11\n\t\t\tzhx_doctrine_zongheng=1444.11.11\n\t\t\tzhx_doctrine_practice_initialised=1444.11.11\n\t\t\tzhx_opening_school_initialised=1444.11.11\n\t\t\tzhx_doctrine_hover_negative_1=1444.11.11\n\t\t\trecent_land_seizure=1444.11.12\n\t\t\tgdd_support_reform_civil_registration=1444.12.19\n\t\t\tgdd_support_reform_silver_standard=1444.12.19\n\t\t\tgdd_support_reform_kanhe=1444.12.19\n\t\t\tgdd_support_reform_keju=1444.12.19\n\t\t\tgdd_support_reform_inclusive_monarchy=1444.12.19\n\t\t\tgdd_support_reform_unified_market=1444.12.19\n\t\t\tgdd_support_reform_military_branch=1444.12.19\n\t\t\tgdd_support_reform_foreign_ship_designs=1444.12.19\n\t\t}",
+        "last_election": "1444.11.11",
+        "republican_tradition": "100.000",
+        "stability": "0.000",
+        "prestige": "100.000",
+        "capital": "5004",
+        "owned_provinces": "{"
+      },
+      "ULM": {
+        "government": "{\n\t\t\tgovernment=\"republic\"\n\t\t\treform_stack={\n\t\t\t\treforms={\n\t\t\t\t\t\"republic_mechanic\"\n\t\t\t\t\t\"zhx_gongyi_reform\"\n\t\t\t\t}\n\t\t\t\thistory={\n\t\t\t\t\t\"free_city\"\n\t\t\t\t\t\"zhx_gongyi_reform\"\n\t\t\t\t}\n\t\t\t}\n\t\t}",
+        "monarch": "{\n\t\t\tid=12453\n\t\t\ttype=48\n\t\t}",
+        "flags": "{\n\t\t\trecent_land_seizure=1444.11.12\n\t\t\tzhx_gongyi_charter=1444.12.19\n\t\t\tzhx_member=1444.12.19\n\t\t\tgdd_authority_balance_effect_recipient=1444.12.19\n\t\t}",
+        "last_election": "1444.11.11",
+        "republican_tradition": "100.000",
+        "stability": "0.000",
+        "prestige": "100.000",
+        "capital": "1872",
+        "owned_provinces": "{"
+      },
+      "T00": {
+        "government": "{\n\t\t\tgovernment=\"republic\"\n\t\t\treform_stack={\n\t\t\t\treforms={\n\t\t\t\t\t\"republic_mechanic\"\n\t\t\t\t\t\"zhx_gongyi_reform\"\n\t\t\t\t}\n\t\t\t\thistory={\n\t\t\t\t\t\"zhx_gongyi_reform\"\n\t\t\t\t}\n\t\t\t}\n\t\t}",
+        "monarch": "{\n\t\t\tid=12862\n\t\t\ttype=48\n\t\t}",
+        "last_election": "1444.12.22",
+        "republican_tradition": "90.000",
+        "stability": "0.000",
+        "prestige": "0.000",
+        "capital": "5021",
+        "owned_provinces": "{"
+      },
+      "T01": {
+        "last_election": "1444.11.11",
+        "stability": "0.000",
+        "prestige": "5.000",
+        "capital": "0"
+      }
+    },
+    "leagues": [
+      "{\n\tid=1\n\tmembers={\n\t\tHSA RIG OLD BRE HAM \n\t}\n}",
+      "{\n\tid=1101806788\n\tmembers={\n\t\tHYM CDE JJG HYA T00 \n\t}\n}",
+      "{\n\tid=1297306169\n\tmembers={\n\t\tMKS BTN \n\t}\n}",
+      "{\n\tid=102898243\n\tmembers={\n\t\tTDO MNA \n\t}\n}",
+      "{\n\tid=773106582\n\tmembers={\n\t\tMAB MAD CHD \n\t}\n}",
+      "{\n\tid=1377156981\n\tmembers={\n\t\tNOV OKA \n\t}\n}",
+      "{\n\tid=1007180879\n\tmembers={\n\t\tGEN FEO \n\t}\n}",
+      "{\n\tid=1553678531\n\tmembers={\n\t\tULM ZHO \n\t}\n}"
+    ]
+  },
+  {
+    "file": "autosave.eu4",
+    "sha256": "d647e8d9ee4534038cf3b49c4c7a7b911ba4a5a21f92ea23db1bf5df648a2f80",
+    "countries": {
+      "HYM": {
+        "government": "{\n\t\t\tgovernment=\"republic\"\n\t\t\treform_stack={\n\t\t\t\treforms={\n\t\t\t\t\t\"republic_mechanic\"\n\t\t\t\t\t\"zhx_yang_trade_league_reform\"\n\t\t\t\t}\n\t\t\t\thistory={\n\t\t\t\t\t\"zhx_yang_trade_league_reform\"\n\t\t\t\t}\n\t\t\t}\n\t\t}",
+        "monarch": "{\n\t\t\tid=12666\n\t\t\ttype=48\n\t\t}",
+        "flags": "{\n\t\t\tzhx_member=1444.11.11\n\t\t\tgdd_support_reform_foreign_ship_designs=1446.10.22\n\t\t\tzhx_doctrine_zongheng=1444.11.11\n\t\t\tzhx_doctrine_practice_initialised=1444.11.11\n\t\t\tzhx_opening_school_initialised=1444.11.11\n\t\t\tgdd_support_reform_single_whip=1446.10.22\n\t\t\tgdd_authority_balance_effect_recipient=1446.5.19\n\t\t\trecent_land_seizure=1444.11.12\n\t\t\tgdd_support_reform_civil_registration=1446.10.22\n\t\t\tgdd_support_reform_silver_standard=1446.10.22\n\t\t\tgdd_support_reform_kanhe=1446.10.22\n\t\t\tgdd_support_reform_keju=1446.10.22\n\t\t\tgdd_support_reform_inclusive_monarchy=1446.10.22\n\t\t\tgdd_support_reform_unified_market=1446.10.22\n\t\t\tgdd_support_reform_military_branch=1446.10.22\n\t\t\tzhx_doctrine_hover_positive_2=1446.10.26\n\t\t\tzhx_doctrine_hover_positive_1=1446.10.26\n\t\t}",
+        "last_election": "1444.11.11",
+        "republican_tradition": "100.000",
+        "stability": "1.000",
+        "prestige": "4.507",
+        "capital": "685",
+        "owned_provinces": "{"
+      },
+      "WHU": {
+        "government": "{\n\t\t\tgovernment=\"republic\"\n\t\t\treform_stack={\n\t\t\t\treforms={\n\t\t\t\t\t\"republic_mechanic\"\n\t\t\t\t\t\"zhx_gongyi_ordinary_reform\"\n\t\t\t\t}\n\t\t\t\thistory={\n\t\t\t\t\t\"zhx_gongyi_reform\"\n\t\t\t\t\t\"zhx_gongyi_ordinary_reform\"\n\t\t\t\t}\n\t\t\t}\n\t\t}",
+        "monarch": "{\n\t\t\tid=12667\n\t\t\ttype=48\n\t\t}",
+        "flags": "{\n\t\t\tzhx_gongyi_lost_charter=1444.12.19\n\t\t\tzhx_member=1444.11.11\n\t\t\tgdd_support_reform_foreign_ship_designs=1446.10.22\n\t\t\tzhx_doctrine_mo=1444.11.11\n\t\t\tzhx_doctrine_practice_initialised=1444.11.11\n\t\t\tzhx_opening_school_initialised=1444.11.11\n\t\t\tzhx_gongyi_request_cooldown=1444.12.17\n\t\t\trecent_land_seizure=1444.12.19\n\t\t\trecent_estate_agenda=1444.12.18\n\t\t\tgdd_support_reform_military_branch=1446.10.22\n\t\t\tgdd_support_reform_unified_market=1446.10.22\n\t\t\tgdd_authority_balance_effect_recipient=1446.5.19\n\t\t\tgdd_support_reform_civil_registration=1446.10.22\n\t\t\tgdd_support_reform_silver_standard=1446.10.22\n\t\t\tgdd_support_reform_kanhe=1446.10.22\n\t\t\tgdd_support_reform_keju=1446.10.22\n\t\t\tgdd_support_reform_inclusive_monarchy=1446.10.22\n\t\t\tzhx_doctrine_hover_positive_3=1446.10.27\n\t\t\tzhx_doctrine_hover_mo_peace=1446.10.27\n\t\t\tzhx_doctrine_hover_positive_2=1446.10.27\n\t\t}",
+        "last_election": "1444.11.11",
+        "republican_tradition": "100.000",
+        "stability": "1.000",
+        "prestige": "4.590",
+        "capital": "5066",
+        "owned_provinces": "{"
+      },
+      "ZHO": {
+        "government": "{\n\t\t\tgovernment=\"republic\"\n\t\t\treform_stack={\n\t\t\t\treforms={\n\t\t\t\t\t\"republic_mechanic\"\n\t\t\t\t\t\"zhx_gongyi_reform\"\n\t\t\t\t}\n\t\t\t\thistory={\n\t\t\t\t\t\"zhx_gongyi_reform\"\n\t\t\t\t}\n\t\t\t}\n\t\t}",
+        "monarch": "{\n\t\t\tid=12668\n\t\t\ttype=48\n\t\t}",
+        "flags": "{\n\t\t\tzhx_gongyi_charter=1446.12.22\n\t\t\tzhx_member=1444.11.11\n\t\t\tgdd_support_reform_single_whip=1446.10.22\n\t\t\tzhx_doctrine_zongheng=1444.11.11\n\t\t\tzhx_doctrine_practice_initialised=1444.11.11\n\t\t\tzhx_opening_school_initialised=1444.11.11\n\t\t\tgdd_authority_balance_effect_recipient=1446.5.19\n\t\t\trecent_land_seizure=1444.11.12\n\t\t\tgdd_support_reform_civil_registration=1446.10.22\n\t\t\tgdd_support_reform_silver_standard=1446.10.22\n\t\t\tgdd_support_reform_kanhe=1446.10.22\n\t\t\tgdd_support_reform_keju=1446.10.22\n\t\t\tgdd_support_reform_inclusive_monarchy=1446.10.22\n\t\t\tgdd_support_reform_unified_market=1446.10.22\n\t\t\tgdd_support_reform_military_branch=1446.10.22\n\t\t\tgdd_support_reform_foreign_ship_designs=1446.10.22\n\t\t\tzhx_doctrine_hover_positive_3=1446.10.28\n\t\t\tzhx_doctrine_hover_negative_1=1446.10.28\n\t\t\tzhx_doctrine_hover_negative_2=1446.10.28\n\t\t}",
+        "last_election": "1444.11.11",
+        "republican_tradition": "100.000",
+        "stability": "1.000",
+        "prestige": "90.122",
+        "capital": "5004",
+        "owned_provinces": "{"
+      },
+      "ULM": {
+        "government": "{\n\t\t\tgovernment=\"republic\"\n\t\t\treform_stack={\n\t\t\t\treforms={\n\t\t\t\t\t\"republic_mechanic\"\n\t\t\t\t\t\"zhx_gongyi_reform\"\n\t\t\t\t}\n\t\t\t\thistory={\n\t\t\t\t\t\"free_city\"\n\t\t\t\t\t\"zhx_gongyi_reform\"\n\t\t\t\t}\n\t\t\t}\n\t\t}",
+        "monarch": "{\n\t\t\tid=12453\n\t\t\ttype=48\n\t\t}",
+        "flags": "{\n\t\t\trecent_land_seizure=1444.11.12\n\t\t\tzhx_gongyi_charter=1446.12.18\n\t\t\tzhx_member=1444.12.19\n\t\t\tgdd_authority_balance_effect_recipient=1446.5.19\n\t\t}",
+        "last_election": "1444.11.11",
+        "republican_tradition": "100.000",
+        "stability": "1.000",
+        "prestige": "90.647",
+        "capital": "1872",
+        "owned_provinces": "{"
+      },
+      "T00": {
+        "government": "{\n\t\t\tgovernment=\"republic\"\n\t\t\treform_stack={\n\t\t\t\treforms={\n\t\t\t\t\t\"republic_mechanic\"\n\t\t\t\t\t\"zhx_gongyi_reform\"\n\t\t\t\t}\n\t\t\t\thistory={\n\t\t\t\t\t\"zhx_gongyi_reform\"\n\t\t\t\t}\n\t\t\t}\n\t\t}",
+        "monarch": "{\n\t\t\tid=12862\n\t\t\ttype=48\n\t\t}",
+        "flags": "{\n\t\t\tzhx_gongyi_charter=1447.1.1\n\t\t\tzhx_member=1445.1.1\n\t\t\tgdd_authority_balance_effect_recipient=1446.5.19\n\t\t}",
+        "last_election": "1444.12.22",
+        "republican_tradition": "93.024",
+        "stability": "0.000",
+        "prestige": "0.032",
+        "capital": "5021",
+        "owned_provinces": "{"
+      },
+      "T01": {
+        "last_election": "1444.11.11",
+        "stability": "0.000",
+        "prestige": "5.000",
+        "capital": "0"
+      }
+    },
+    "leagues": [
+      "{\n\tid=1\n\tmembers={\n\t\tHSA RIG BRE HAM \n\t}\n}",
+      "{\n\tid=1101806788\n\tmembers={\n\t\tHYM CDE JJG HYA \n\t}\n}",
+      "{\n\tid=1297306169\n\tmembers={\n\t\tMKS BTN \n\t}\n}",
+      "{\n\tid=102898243\n\tmembers={\n\t\tTDO MNA CEB BTU \n\t}\n}",
+      "{\n\tid=773106582\n\tmembers={\n\t\tMAB MAD CHD KLH DGL \n\t}\n}",
+      "{\n\tid=1377156981\n\tmembers={\n\t\tNOV OKA \n\t}\n}",
+      "{\n\tid=1007180879\n\tmembers={\n\t\tGEN FEO LUC \n\t}\n}",
+      "{\n\tid=1553678531\n\tmembers={\n\t\tULM ZHO MBZ SLZ REG \n\t}\n}",
+      "{\n\tid=303878107\n\tmembers={\n\t\tVEN KNI \n\t}\n}",
+      "{\n\tid=828212953\n\tmembers={\n\t\tZAN PTE \n\t}\n}"
+    ]
+  },
+  {
+    "file": "芜1444_12_19_gongyi_refused.eu4",
+    "sha256": "d032cf096eb674e2505232d7ea38960add0118c676c046faf7ad2c4128eea49e",
+    "countries": {
+      "HYM": {
+        "government": "{\n\t\t\tgovernment=\"republic\"\n\t\t\treform_stack={\n\t\t\t\treforms={\n\t\t\t\t\t\"republic_mechanic\"\n\t\t\t\t\t\"zhx_yang_trade_league_reform\"\n\t\t\t\t}\n\t\t\t\thistory={\n\t\t\t\t\t\"zhx_yang_trade_league_reform\"\n\t\t\t\t}\n\t\t\t}\n\t\t}",
+        "monarch": "{\n\t\t\tid=12666\n\t\t\ttype=48\n\t\t}",
+        "flags": "{\n\t\t\tzhx_member=1444.11.11\n\t\t\tgdd_authority_balance_effect_recipient=1444.11.11\n\t\t\tzhx_doctrine_zongheng=1444.11.11\n\t\t\tzhx_doctrine_practice_initialised=1444.11.11\n\t\t\tzhx_opening_school_initialised=1444.11.11\n\t\t\tzhx_doctrine_hover_positive_2=1444.11.11\n\t\t\tzhx_doctrine_hover_negative_1=1444.11.11\n\t\t\trecent_land_seizure=1444.11.12\n\t\t\tgdd_support_reform_civil_registration=1444.12.19\n\t\t\tgdd_support_reform_silver_standard=1444.12.19\n\t\t\tgdd_support_reform_kanhe=1444.12.19\n\t\t\tgdd_support_reform_keju=1444.12.19\n\t\t\tgdd_support_reform_inclusive_monarchy=1444.12.19\n\t\t\tgdd_support_reform_unified_market=1444.12.19\n\t\t\tgdd_support_reform_military_branch=1444.12.19\n\t\t\tgdd_support_reform_foreign_ship_designs=1444.12.19\n\t\t}",
+        "last_election": "1444.11.11",
+        "republican_tradition": "100.000",
+        "stability": "0.000",
+        "prestige": "4.940",
+        "capital": "685",
+        "owned_provinces": "{"
+      },
+      "WHU": {
+        "government": "{\n\t\t\tgovernment=\"republic\"\n\t\t\treform_stack={\n\t\t\t\treforms={\n\t\t\t\t\t\"republic_mechanic\"\n\t\t\t\t\t\"zhx_gongyi_ordinary_reform\"\n\t\t\t\t}\n\t\t\t\thistory={\n\t\t\t\t\t\"zhx_gongyi_reform\"\n\t\t\t\t\t\"zhx_gongyi_ordinary_reform\"\n\t\t\t\t}\n\t\t\t}\n\t\t}",
+        "monarch": "{\n\t\t\tid=12667\n\t\t\ttype=48\n\t\t}",
+        "flags": "{\n\t\t\tzhx_gongyi_lost_charter=1444.12.16\n\t\t\tzhx_member=1444.11.11\n\t\t\tgdd_authority_balance_effect_recipient=1444.11.11\n\t\t\tzhx_doctrine_mo=1444.11.11\n\t\t\tzhx_doctrine_practice_initialised=1444.11.11\n\t\t\tzhx_opening_school_initialised=1444.11.11\n\t\t\tzhx_doctrine_hover_positive_3=1444.11.24\n\t\t\tzhx_doctrine_hover_mo_peace=1444.11.24\n\t\t\tzhx_doctrine_hover_positive_2=1444.11.24\n\t\t\tgdd_support_reform_foreign_ship_designs=1444.12.19\n\t\t\tzhx_gongyi_request_cooldown=1444.12.17\n\t\t\trecent_estate_agenda=1444.12.18\n\t\t\trecent_land_seizure=1444.12.19\n\t\t\tgdd_support_reform_civil_registration=1444.12.19\n\t\t\tgdd_support_reform_silver_standard=1444.12.19\n\t\t\tgdd_support_reform_kanhe=1444.12.19\n\t\t\tgdd_support_reform_keju=1444.12.19\n\t\t\tgdd_support_reform_inclusive_monarchy=1444.12.19\n\t\t\tgdd_support_reform_unified_market=1444.12.19\n\t\t\tgdd_support_reform_military_branch=1444.12.19\n\t\t}",
+        "last_election": "1444.11.11",
+        "republican_tradition": "100.000",
+        "stability": "0.000",
+        "prestige": "4.942",
+        "capital": "5066",
+        "owned_provinces": "{"
+      },
+      "ZHO": {
+        "government": "{\n\t\t\tgovernment=\"republic\"\n\t\t\treform_stack={\n\t\t\t\treforms={\n\t\t\t\t\t\"republic_mechanic\"\n\t\t\t\t\t\"zhx_gongyi_reform\"\n\t\t\t\t}\n\t\t\t\thistory={\n\t\t\t\t\t\"zhx_gongyi_reform\"\n\t\t\t\t}\n\t\t\t}\n\t\t}",
+        "monarch": "{\n\t\t\tid=12668\n\t\t\ttype=48\n\t\t}",
+        "flags": "{\n\t\t\tzhx_gongyi_charter=1444.11.25\n\t\t\tzhx_member=1444.11.11\n\t\t\tgdd_authority_balance_effect_recipient=1444.11.11\n\t\t\tzhx_doctrine_zongheng=1444.11.11\n\t\t\tzhx_doctrine_practice_initialised=1444.11.11\n\t\t\tzhx_opening_school_initialised=1444.11.11\n\t\t\tzhx_doctrine_hover_negative_1=1444.11.11\n\t\t\trecent_land_seizure=1444.11.12\n\t\t\tgdd_support_reform_civil_registration=1444.12.19\n\t\t\tgdd_support_reform_silver_standard=1444.12.19\n\t\t\tgdd_support_reform_kanhe=1444.12.19\n\t\t\tgdd_support_reform_keju=1444.12.19\n\t\t\tgdd_support_reform_inclusive_monarchy=1444.12.19\n\t\t\tgdd_support_reform_unified_market=1444.12.19\n\t\t\tgdd_support_reform_military_branch=1444.12.19\n\t\t\tgdd_support_reform_foreign_ship_designs=1444.12.19\n\t\t}",
+        "last_election": "1444.11.11",
+        "republican_tradition": "100.000",
+        "stability": "0.000",
+        "prestige": "4.940",
+        "capital": "5004",
+        "owned_provinces": "{"
+      },
+      "ULM": {
+        "government": "{\n\t\t\tgovernment=\"republic\"\n\t\t\treform_stack={\n\t\t\t\treforms={\n\t\t\t\t\t\"republic_mechanic\"\n\t\t\t\t\t\"free_city\"\n\t\t\t\t}\n\t\t\t\thistory={\n\t\t\t\t\t\"free_city\"\n\t\t\t\t}\n\t\t\t}\n\t\t}",
+        "monarch": "{\n\t\t\tid=12453\n\t\t\ttype=48\n\t\t}",
+        "flags": "{\n\t\t\trecent_land_seizure=1444.11.12\n\t\t}",
+        "last_election": "1444.11.11",
+        "republican_tradition": "100.000",
+        "stability": "0.000",
+        "prestige": "5.000",
+        "capital": "1872",
+        "owned_provinces": "{"
+      },
+      "T00": {
+        "last_election": "1444.11.11",
+        "stability": "0.000",
+        "prestige": "5.000",
+        "capital": "0"
+      },
+      "T01": {
+        "last_election": "1444.11.11",
+        "stability": "0.000",
+        "prestige": "5.000",
+        "capital": "0"
+      }
+    },
+    "leagues": [
+      "{\n\tid=1\n\tmembers={\n\t\tHSA RIG OLD BRE HAM \n\t}\n}",
+      "{\n\tid=1101806788\n\tmembers={\n\t\tHYM CDE JJG HYA \n\t}\n}",
+      "{\n\tid=1297306169\n\tmembers={\n\t\tMKS BTN \n\t}\n}",
+      "{\n\tid=102898243\n\tmembers={\n\t\tTDO MNA \n\t}\n}",
+      "{\n\tid=773106582\n\tmembers={\n\t\tMAB MAD \n\t}\n}",
+      "{\n\tid=1377156981\n\tmembers={\n\t\tNOV OKA \n\t}\n}",
+      "{\n\tid=1007180879\n\tmembers={\n\t\tGEN FEO \n\t}\n}"
+    ]
+  },
+  {
+    "file": "高邮1449_01_01_gongyi_elections.eu4",
+    "sha256": "24c155ba2a71b2b39424d5cb912dfe21729c026710920c26c1368531ae3fb897",
+    "countries": {
+      "HYM": {
+        "government": "{\n\t\t\tgovernment=\"republic\"\n\t\t\treform_stack={\n\t\t\t\treforms={\n\t\t\t\t\t\"republic_mechanic\"\n\t\t\t\t\t\"zhx_yang_trade_league_reform\"\n\t\t\t\t}\n\t\t\t\thistory={\n\t\t\t\t\t\"zhx_yang_trade_league_reform\"\n\t\t\t\t}\n\t\t\t}\n\t\t}",
+        "monarch": "{\n\t\t\tid=12666\n\t\t\ttype=48\n\t\t}",
+        "flags": "{\n\t\t\tzhx_member=1444.11.11\n\t\t\tgdd_support_reform_foreign_ship_designs=1448.1.22\n\t\t\tzhx_doctrine_zongheng=1444.11.11\n\t\t\tzhx_doctrine_practice_initialised=1444.11.11\n\t\t\tzhx_opening_school_initialised=1444.11.11\n\t\t\tgdd_support_reform_single_whip=1448.1.22\n\t\t\tgdd_authority_balance_effect_recipient=1448.5.21\n\t\t\trecent_land_seizure=1444.11.12\n\t\t\tgdd_support_reform_civil_registration=1448.1.22\n\t\t\tgdd_support_reform_silver_standard=1448.1.22\n\t\t\tgdd_support_reform_kanhe=1448.1.22\n\t\t\tgdd_support_reform_keju=1448.1.22\n\t\t\tgdd_support_reform_inclusive_monarchy=1448.1.22\n\t\t\tgdd_support_reform_unified_market=1448.1.22\n\t\t\tgdd_support_reform_military_branch=1448.1.22\n\t\t\tzhx_doctrine_hover_positive_2=1448.10.28\n\t\t\tzhx_doctrine_hover_positive_1=1448.10.28\n\t\t}",
+        "last_election": "1448.11.11",
+        "republican_tradition": "91.026",
+        "stability": "1.000",
+        "prestige": "4.188",
+        "capital": "685",
+        "owned_provinces": "{"
+      },
+      "WHU": {
+        "government": "{\n\t\t\tgovernment=\"republic\"\n\t\t\treform_stack={\n\t\t\t\treforms={\n\t\t\t\t\t\"republic_mechanic\"\n\t\t\t\t\t\"zhx_gongyi_ordinary_reform\"\n\t\t\t\t}\n\t\t\t\thistory={\n\t\t\t\t\t\"zhx_gongyi_reform\"\n\t\t\t\t\t\"zhx_gongyi_ordinary_reform\"\n\t\t\t\t}\n\t\t\t}\n\t\t}",
+        "monarch": "{\n\t\t\tid=12667\n\t\t\ttype=48\n\t\t}",
+        "flags": "{\n\t\t\tzhx_gongyi_lost_charter=1444.12.19\n\t\t\tzhx_member=1444.11.11\n\t\t\tgdd_support_reform_foreign_ship_designs=1448.10.22\n\t\t\tzhx_doctrine_mo=1444.11.11\n\t\t\tzhx_doctrine_practice_initialised=1444.11.11\n\t\t\tzhx_opening_school_initialised=1444.11.11\n\t\t\tzhx_gongyi_request_cooldown=1444.12.17\n\t\t\trecent_land_seizure=1444.12.19\n\t\t\trecent_estate_agenda=1444.12.18\n\t\t\tgdd_support_reform_military_branch=1448.10.22\n\t\t\tgdd_support_reform_unified_market=1448.10.22\n\t\t\tgdd_authority_balance_effect_recipient=1448.5.21\n\t\t\tgdd_support_reform_civil_registration=1448.10.22\n\t\t\tgdd_support_reform_silver_standard=1448.10.22\n\t\t\tgdd_support_reform_kanhe=1448.10.22\n\t\t\tgdd_support_reform_keju=1448.10.22\n\t\t\tgdd_support_reform_inclusive_monarchy=1448.10.22\n\t\t\tzhx_doctrine_hover_positive_3=1448.10.29\n\t\t\tzhx_doctrine_hover_mo_peace=1448.10.29\n\t\t\tzhx_doctrine_hover_positive_2=1448.10.29\n\t\t}",
+        "last_election": "1448.11.11",
+        "republican_tradition": "91.040",
+        "stability": "1.000",
+        "prestige": "4.337",
+        "capital": "5066",
+        "owned_provinces": "{"
+      },
+      "ZHO": {
+        "government": "{\n\t\t\tgovernment=\"republic\"\n\t\t\treform_stack={\n\t\t\t\treforms={\n\t\t\t\t\t\"republic_mechanic\"\n\t\t\t\t\t\"zhx_gongyi_reform\"\n\t\t\t\t}\n\t\t\t\thistory={\n\t\t\t\t\t\"zhx_gongyi_reform\"\n\t\t\t\t}\n\t\t\t}\n\t\t}",
+        "monarch": "{\n\t\t\tid=13473\n\t\t\ttype=48\n\t\t}",
+        "flags": "{\n\t\t\tzhx_gongyi_charter=1448.12.22\n\t\t\tzhx_member=1444.11.11\n\t\t\tgdd_support_reform_single_whip=1448.10.22\n\t\t\tzhx_doctrine_zongheng=1444.11.11\n\t\t\tzhx_doctrine_practice_initialised=1444.11.11\n\t\t\tzhx_opening_school_initialised=1444.11.11\n\t\t\tgdd_authority_balance_effect_recipient=1448.5.21\n\t\t\trecent_land_seizure=1444.11.12\n\t\t\tgdd_support_reform_civil_registration=1448.10.22\n\t\t\tgdd_support_reform_silver_standard=1448.10.22\n\t\t\tgdd_support_reform_kanhe=1448.10.22\n\t\t\tgdd_support_reform_keju=1448.10.22\n\t\t\tgdd_support_reform_inclusive_monarchy=1448.10.22\n\t\t\tgdd_support_reform_unified_market=1448.10.22\n\t\t\tgdd_support_reform_military_branch=1448.10.22\n\t\t\tgdd_support_reform_foreign_ship_designs=1448.10.22\n\t\t\tzhx_doctrine_hover_positive_3=1448.10.30\n\t\t\tzhx_doctrine_hover_negative_1=1448.10.30\n\t\t\tzhx_doctrine_hover_negative_2=1448.10.30\n\t\t}",
+        "last_election": "1448.11.11",
+        "republican_tradition": "100.000",
+        "stability": "1.000",
+        "prestige": "81.578",
+        "capital": "5004",
+        "owned_provinces": "{"
+      },
+      "ULM": {
+        "government": "{\n\t\t\tgovernment=\"republic\"\n\t\t\treform_stack={\n\t\t\t\treforms={\n\t\t\t\t\t\"republic_mechanic\"\n\t\t\t\t\t\"zhx_gongyi_reform\"\n\t\t\t\t}\n\t\t\t\thistory={\n\t\t\t\t\t\"free_city\"\n\t\t\t\t\t\"zhx_gongyi_reform\"\n\t\t\t\t}\n\t\t\t}\n\t\t}",
+        "monarch": "{\n\t\t\tid=13469\n\t\t\ttype=48\n\t\t}",
+        "flags": "{\n\t\t\trecent_land_seizure=1444.11.12\n\t\t\tzhx_gongyi_charter=1448.12.18\n\t\t\tzhx_member=1444.12.19\n\t\t\tgdd_authority_balance_effect_recipient=1448.5.21\n\t\t}",
+        "last_election": "1448.11.11",
+        "republican_tradition": "100.000",
+        "stability": "1.000",
+        "prestige": "82.599",
+        "capital": "1872",
+        "owned_provinces": "{"
+      },
+      "T00": {
+        "government": "{\n\t\t\tgovernment=\"republic\"\n\t\t\treform_stack={\n\t\t\t\treforms={\n\t\t\t\t\t\"republic_mechanic\"\n\t\t\t\t\t\"zhx_gongyi_reform\"\n\t\t\t\t}\n\t\t\t\thistory={\n\t\t\t\t\t\"zhx_gongyi_reform\"\n\t\t\t\t}\n\t\t\t}\n\t\t}",
+        "monarch": "{\n\t\t\tid=13498\n\t\t\ttype=48\n\t\t}",
+        "flags": "{\n\t\t\tzhx_gongyi_charter=1449.1.1\n\t\t\tzhx_member=1445.1.1\n\t\t\tgdd_support_reform_foreign_ship_designs=1448.10.22\n\t\t\tzhx_doctrine_ru=1447.10.3\n\t\t\tzhx_doctrine_practice_initialised=1447.10.3\n\t\t\tgdd_authority_balance_effect_recipient=1448.5.21\n\t\t\tgdd_support_reform_civil_registration=1448.10.22\n\t\t\tgdd_support_reform_silver_standard=1448.10.22\n\t\t\tgdd_support_reform_kanhe=1448.10.22\n\t\t\tgdd_support_reform_keju=1448.10.22\n\t\t\tgdd_support_reform_inclusive_monarchy=1448.10.22\n\t\t\tgdd_support_reform_unified_market=1448.10.22\n\t\t\tgdd_support_reform_military_branch=1448.10.22\n\t\t\tzhx_doctrine_hover_positive_3=1449.1.1\n\t\t\tzhx_doctrine_hover_positive_1=1449.1.1\n\t\t}",
+        "last_election": "1449.1.1",
+        "republican_tradition": "100.000",
+        "stability": "1.000",
+        "prestige": "0.121",
+        "capital": "5021",
+        "owned_provinces": "{"
+      },
+      "T01": {
+        "last_election": "1444.11.11",
+        "stability": "0.000",
+        "prestige": "5.000",
+        "capital": "0"
+      }
+    },
+    "leagues": [
+      "{\n\tid=1\n\tmembers={\n\t\tHSA RIG BRE HAM \n\t}\n}",
+      "{\n\tid=1101806788\n\tmembers={\n\t\tHYM CDE JJG HYA \n\t}\n}",
+      "{\n\tid=1297306169\n\tmembers={\n\t\tMKS BTN \n\t}\n}",
+      "{\n\tid=102898243\n\tmembers={\n\t\tTDO MNA CEB BTU \n\t}\n}",
+      "{\n\tid=773106582\n\tmembers={\n\t\tMAB MAD CHD KLH DGL \n\t}\n}",
+      "{\n\tid=1377156981\n\tmembers={\n\t\tNOV OKA \n\t}\n}",
+      "{\n\tid=1007180879\n\tmembers={\n\t\tGEN FEO LUC \n\t}\n}",
+      "{\n\tid=1553678531\n\tmembers={\n\t\tULM ZHO MBZ SLZ REG TNT \n\t}\n}",
+      "{\n\tid=303878107\n\tmembers={\n\t\tVEN KNI \n\t}\n}",
+      "{\n\tid=828212953\n\tmembers={\n\t\tZAN PTE \n\t}\n}"
+    ]
+  }
+]

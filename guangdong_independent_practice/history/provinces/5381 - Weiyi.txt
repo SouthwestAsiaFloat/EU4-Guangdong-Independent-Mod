@@ -1,0 +1,16 @@
+# 5381 - Weiyi - GDD_B78_DAMING_REFINEMENT
+
+owner = DMG
+controller = DMG
+add_core = DMG
+culture = gdd_zhongyuan
+religion = confucianism
+capital = "Weiyi"
+trade_goods = grain
+hre = no
+base_tax = 2
+base_production = 3
+base_manpower = 2
+is_city = yes
+discovered_by = chinese
+discovered_by = nomad_group

@@ -5,6 +5,7 @@ from __future__ import annotations
 
 from collections import Counter
 import re
+import struct
 import sys
 from pathlib import Path
 
@@ -25,6 +26,19 @@ TRIGGERS = MOD / "common/scripted_triggers/gdd_liang_restoration_triggers.txt"
 MODIFIERS = MOD / "common/event_modifiers/gdd_liang_restoration_modifiers.txt"
 LOCALISATION = MOD / "localisation_source/gdd_liang_restoration_readable_utf8.txt"
 HISTORY = MOD / "history/countries/LGU - Liang.txt"
+EVENT_PICTURE_GFX = MOD / "interface/gdd_liang_restoration_eventpictures.gfx"
+EVENT_PICTURE_TEXTURE = (
+    MOD
+    / "gfx/event_pictures/gdd_liang_restoration/gdd_liang_audience_eventPicture.dds"
+)
+EVENT_PICTURE_NAME = "gdd_liang_audience_eventPicture"
+EVENT_PICTURE_TEXTURE_REF = (
+    "gfx/event_pictures/gdd_liang_restoration/gdd_liang_audience_eventPicture.dds"
+)
+EVENT_PICTURE_EVENT_IDS = (
+    "gdd_liang_restoration.1",
+    "gdd_liang_restoration.10",
+)
 
 SCRIPT_FILES = (
     EVENTS,
@@ -33,8 +47,16 @@ SCRIPT_FILES = (
     CHARACTER_EFFECTS,
     TRIGGERS,
     MODIFIERS,
+    EVENT_PICTURE_GFX,
 )
-REQUIRED_FILES = (*SCRIPT_FILES, LOCALISATION, HISTORY, CHARACTER_SOURCE)
+REQUIRED_FILES = (
+    *SCRIPT_FILES,
+    LOCALISATION,
+    HISTORY,
+    CHARACTER_SOURCE,
+    EVENT_PICTURE_TEXTURE,
+)
+BINARY_FILES = (EVENT_PICTURE_TEXTURE,)
 HOMELAND_IDS = ("708", "2182", "5295")
 TOKEN_EDGE = r"A-Za-z0-9_.:-"
 
@@ -1013,6 +1035,110 @@ def validate_character(source: str, errors: list[str]) -> None:
         )
 
 
+def validate_event_picture(
+    events: str, gfx: str, texture: bytes, errors: list[str]
+) -> None:
+    """Lock the custom audience art, its sprite, and its two story uses."""
+    sprite_blocks = assignment_blocks(masked(gfx), "spriteType", required_depth=1)
+    check(
+        len(sprite_blocks) == 1,
+        "Liang event-picture gfx must define exactly one spriteType",
+        errors,
+    )
+    check(
+        len(
+            re.findall(
+                rf'(?m)^[ \t]*name\s*=\s*"{re.escape(EVENT_PICTURE_NAME)}"[ \t]*$',
+                gfx,
+            )
+        )
+        == 1,
+        f'Liang event-picture gfx must declare name = "{EVENT_PICTURE_NAME}" once',
+        errors,
+    )
+    check(
+        len(
+            re.findall(
+                rf'(?m)^[ \t]*texturefile\s*=\s*"'
+                rf'{re.escape(EVENT_PICTURE_TEXTURE_REF)}"[ \t]*$',
+                gfx,
+            )
+        )
+        == 1,
+        "Liang event-picture gfx texture path is missing or drifted",
+        errors,
+    )
+    check(
+        len(
+            re.findall(
+                r"(?m)^[ \t]*alwaystransparent\s*=\s*yes[ \t]*$",
+                gfx,
+            )
+        )
+        == 1,
+        "Liang event-picture sprite must set alwaystransparent = yes",
+        errors,
+    )
+
+    custom_picture_ids: list[str] = []
+    for event_id, blocks in event_definitions(events).items():
+        for block in blocks:
+            if scalar_values(block, "picture", depth=1) == [EVENT_PICTURE_NAME]:
+                custom_picture_ids.append(event_id)
+    check(
+        Counter(custom_picture_ids) == Counter(EVENT_PICTURE_EVENT_IDS),
+        "custom Liang audience picture must be used only by the opening and "
+        f"petition events; found {', '.join(custom_picture_ids) or 'none'}",
+        errors,
+    )
+
+    check(
+        len(texture) >= 128 and texture[:4] == b"DDS ",
+        "Liang event-picture texture must have a valid DDS header",
+        errors,
+    )
+    if len(texture) < 128 or texture[:4] != b"DDS ":
+        return
+    header_size = struct.unpack_from("<I", texture, 4)[0]
+    height, width = struct.unpack_from("<II", texture, 12)
+    mipmap_count = struct.unpack_from("<I", texture, 28)[0]
+    pixel_format_size = struct.unpack_from("<I", texture, 76)[0]
+    pixel_format_flags = struct.unpack_from("<I", texture, 80)[0]
+    four_cc = texture[84:88]
+    rgb_bits = struct.unpack_from("<I", texture, 88)[0]
+    alpha_mask = struct.unpack_from("<I", texture, 104)[0]
+    check(header_size == 124, "Liang DDS header size must be 124 bytes", errors)
+    check(
+        (width, height) == (512, 132),
+        f"Liang event picture must be 512x132, found {width}x{height}",
+        errors,
+    )
+    check(
+        mipmap_count in (0, 1),
+        "Liang event picture must not contain extra mipmaps",
+        errors,
+    )
+    check(
+        pixel_format_size == 32
+        and pixel_format_flags & 0x40
+        and four_cc == b"\x00\x00\x00\x00"
+        and rgb_bits == 32
+        and alpha_mask == 0xFF000000,
+        "Liang event picture must use the verified uncompressed ARGB8888 layout",
+        errors,
+    )
+    check(
+        len(texture) == 128 + 512 * 132 * 4,
+        "Liang ARGB8888 event picture has an unexpected payload size",
+        errors,
+    )
+    check(
+        all(alpha == 0xFF for alpha in texture[131::4]),
+        "Liang event picture must be fully opaque",
+        errors,
+    )
+
+
 def finish(errors: list[str], reference_count: int = 0) -> None:
     if errors:
         print(f"Liang restoration chain contract: FAIL ({len(errors)})")
@@ -1029,6 +1155,7 @@ def finish(errors: list[str], reference_count: int = 0) -> None:
     print("  Debug target mirror is guarded, retained between stops, and terminally cleared")
     print("  Zhang Chengzuo's name, displayed-age input, and 3/5/2 stats are locked")
     print("  LGU history and restoration setup use confucianism")
+    print("  Liang audience sprite and 512x132 ARGB8888 DDS asset are locked")
 
 
 def main() -> None:
@@ -1036,7 +1163,7 @@ def main() -> None:
     texts: dict[Path, str] = {}
     for path in REQUIRED_FILES:
         check(path.is_file(), f"missing required file: {relative(path)}", errors)
-        if path.is_file():
+        if path.is_file() and path not in BINARY_FILES:
             texts[path] = path.read_text(encoding="utf-8-sig")
     if errors:
         finish(errors)
@@ -1076,6 +1203,12 @@ def main() -> None:
     )
     validate_character(texts[CHARACTER_SOURCE], errors)
     validate_religion(codes[HISTORY], effect_code, errors)
+    validate_event_picture(
+        event_code,
+        texts[EVENT_PICTURE_GFX],
+        EVENT_PICTURE_TEXTURE.read_bytes(),
+        errors,
+    )
     finish(errors, reference_count)
 
 

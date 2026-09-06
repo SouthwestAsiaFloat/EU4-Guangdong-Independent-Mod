@@ -10,7 +10,12 @@ country_event = {
 
     option = {
         name = zhx_guest_school.confirm_ru.a
-        trigger = { zhx_guest_school_pending_ru_is_valid = yes }
+        trigger = {
+            custom_trigger_tooltip = {
+                tooltip = zhx_guest_school_confirmation_requirements_tt
+                zhx_guest_school_pending_ru_is_valid = yes
+            }
+        }
         custom_tooltip = zhx_guest_school_contract_cost_tt
         hidden_effect = { zhx_guest_school_begin_ru = yes }
         ai_chance = { factor = 1 }
@@ -31,7 +36,12 @@ country_event = {
 
     option = {
         name = zhx_guest_school.confirm_fa.a
-        trigger = { zhx_guest_school_pending_fa_is_valid = yes }
+        trigger = {
+            custom_trigger_tooltip = {
+                tooltip = zhx_guest_school_confirmation_requirements_tt
+                zhx_guest_school_pending_fa_is_valid = yes
+            }
+        }
         custom_tooltip = zhx_guest_school_contract_cost_tt
         hidden_effect = { zhx_guest_school_begin_fa = yes }
         ai_chance = { factor = 1 }
@@ -52,7 +62,12 @@ country_event = {
 
     option = {
         name = zhx_guest_school.confirm_mo.a
-        trigger = { zhx_guest_school_pending_mo_is_valid = yes }
+        trigger = {
+            custom_trigger_tooltip = {
+                tooltip = zhx_guest_school_confirmation_requirements_tt
+                zhx_guest_school_pending_mo_is_valid = yes
+            }
+        }
         custom_tooltip = zhx_guest_school_contract_cost_tt
         hidden_effect = { zhx_guest_school_begin_mo = yes }
         ai_chance = { factor = 1 }
@@ -73,7 +88,12 @@ country_event = {
 
     option = {
         name = zhx_guest_school.confirm_dao.a
-        trigger = { zhx_guest_school_pending_dao_is_valid = yes }
+        trigger = {
+            custom_trigger_tooltip = {
+                tooltip = zhx_guest_school_confirmation_requirements_tt
+                zhx_guest_school_pending_dao_is_valid = yes
+            }
+        }
         custom_tooltip = zhx_guest_school_contract_cost_tt
         hidden_effect = { zhx_guest_school_begin_dao = yes }
         ai_chance = { factor = 1 }
@@ -94,7 +114,12 @@ country_event = {
 
     option = {
         name = zhx_guest_school.confirm_bing.a
-        trigger = { zhx_guest_school_pending_bing_is_valid = yes }
+        trigger = {
+            custom_trigger_tooltip = {
+                tooltip = zhx_guest_school_confirmation_requirements_tt
+                zhx_guest_school_pending_bing_is_valid = yes
+            }
+        }
         custom_tooltip = zhx_guest_school_contract_cost_tt
         hidden_effect = { zhx_guest_school_begin_bing = yes }
         ai_chance = { factor = 1 }
@@ -115,7 +140,12 @@ country_event = {
 
     option = {
         name = zhx_guest_school.confirm_zongheng.a
-        trigger = { zhx_guest_school_pending_zongheng_is_valid = yes }
+        trigger = {
+            custom_trigger_tooltip = {
+                tooltip = zhx_guest_school_confirmation_requirements_tt
+                zhx_guest_school_pending_zongheng_is_valid = yes
+            }
+        }
         custom_tooltip = zhx_guest_school_contract_cost_tt
         hidden_effect = { zhx_guest_school_begin_zongheng = yes }
         ai_chance = { factor = 1 }
@@ -268,7 +298,12 @@ country_event = {
     immediate = { zhx_guest_school_cache_current_source = yes }
     option = {
         name = zhx_guest_school.expiry.renew
-        trigger = { zhx_guest_school_has_valid_renewal_source = yes }
+        trigger = {
+            custom_trigger_tooltip = {
+                tooltip = zhx_guest_school_renew_requirements_tt
+                zhx_guest_school_has_valid_renewal_source = yes
+            }
+        }
         custom_tooltip = zhx_guest_school_renew_cost_tt
         hidden_effect = { zhx_guest_school_renew_current = yes }
         ai_chance = { factor = 1 }

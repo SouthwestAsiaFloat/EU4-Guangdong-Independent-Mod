@@ -4,6 +4,9 @@ monarchy = {
 		feudalism_vs_autocracy = {
 			reforms = {
 				feudalism_reform
+				zhx_feudatory_bo_reform
+				zhx_feudatory_hou_reform
+				zhx_feudatory_gong_reform
 				autocracy_reform
 				elective_monarchy_reform
 				plutocratic_reform
@@ -620,6 +623,12 @@ republic = {
 	reform_levels = {
 		oligarchy_merchant_class_noble_elite = {
 			reforms = {
+				zhx_gongyi_reform
+				zhx_yang_trade_league_reform
+				zhx_gongyi_ordinary_reform
+				gdd_czc_council_reform
+				gdd_hak_revolutionary_army_reform
+				gdd_hak_communal_republic_reform
 				oligarchy_reform
 				signoria_reform
 				merchants_reform

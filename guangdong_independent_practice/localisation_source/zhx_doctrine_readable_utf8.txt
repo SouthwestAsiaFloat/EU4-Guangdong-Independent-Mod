@@ -1,4 +1,5 @@
 l_english:
+ zhx_adopt_lijiao_requirements_tt:0 "本国属于诸夏礼教共同体，方可奉礼教为国教。"
  zhx_convene_hundred_schools_debate_title:0 "召集诸子百家"
  zhx_convene_hundred_schools_debate_desc:0 "本国尚未确立主学派。召集诸子百家临朝，从儒、法、墨、道、兵、纵横六家中选择一种治国之学。首次立论从25点践履开始；此后若要更张，只能经过漫长而有代价的国论改革。"
  zhx_review_current_doctrine_title:0 "查看国论与践履"

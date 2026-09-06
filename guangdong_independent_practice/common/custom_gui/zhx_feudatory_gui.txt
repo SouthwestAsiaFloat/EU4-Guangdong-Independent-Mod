@@ -1,0 +1,27 @@
+custom_text_box = {
+    name = zhx_feudatory_gui_bo
+    potential = { has_reform = zhx_feudatory_bo_reform }
+    tooltip = zhx_feudatory_rules_tt
+}
+custom_text_box = {
+    name = zhx_feudatory_gui_hou
+    potential = { has_reform = zhx_feudatory_hou_reform }
+    tooltip = zhx_feudatory_rules_tt
+}
+custom_text_box = {
+    name = zhx_feudatory_gui_gong
+    potential = { has_reform = zhx_feudatory_gong_reform }
+    tooltip = zhx_feudatory_rules_tt
+}
+custom_text_box = {
+    name = zhx_feudatory_gui_merit
+    potential = { zhx_feudatory_has_reform = yes }
+    tooltip = zhx_feudatory_rules_tt
+}
+custom_button = {
+    name = zhx_feudatory_gui_rules
+    potential = { zhx_feudatory_has_reform = yes }
+    trigger = { always = yes }
+    effect = { country_event = { id = zhx_feudatory.40 } }
+    tooltip = zhx_feudatory_rules_tt
+}

@@ -1,4 +1,11 @@
 estate_burghers = {
+    # Native estate equilibrium follows the current republican faction.
+    loyalty_modifier = {
+        desc = gdd_hak_burghers_estate_loyalty
+        trigger = { gdd_hak_is_republic_trigger = yes faction_in_power = gdd_hak_burghers }
+        loyalty = 10
+    }
+
 	icon = 3
 
 	# If true, country will get estate

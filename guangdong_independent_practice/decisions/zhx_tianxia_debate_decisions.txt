@@ -9,7 +9,12 @@ country_decisions = {
             zhx_is_lijiao_country = yes
         }
 
-        allow = { zhx_can_attempt_tianxia_debate_petition = yes }
+        allow = {
+            custom_trigger_tooltip = {
+                tooltip = zhx_file_tianxia_debate_petition_requirements_tt
+                zhx_can_attempt_tianxia_debate_petition = yes
+            }
+        }
         effect = {
             custom_tooltip = zhx_file_tianxia_debate_petition_tt
             hidden_effect = { country_event = { id = zhx_debate.41 } }

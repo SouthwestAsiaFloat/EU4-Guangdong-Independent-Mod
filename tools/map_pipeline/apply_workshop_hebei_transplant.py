@@ -464,6 +464,19 @@ def render_preview(bitmap, source_mask, target_colours):
 
 
 def main():
+    # B78 splits the transplanted Daming geometry and becomes the terminal
+    # owner of this scope.  Rebuilding from the old workshop backup here would
+    # silently erase provinces 5381/5382 and restore Daming to Zhaodi, so once
+    # B78 has been applied this legacy entry point delegates to that guarded
+    # transaction instead of replaying its stale full-bitmap reconstruction.
+    b78_manifest = ROOT / "planning/daming_refinement_b78/batch_manifest.json"
+    if b78_manifest.exists():
+        from apply_b78_daming_refinement import apply as apply_b78
+
+        print("B78 present; delegating obsolete Hebei replay to B78")
+        apply_b78()
+        return
+
     OUT.mkdir(parents=True, exist_ok=True)
     backup = OUT / "pre_workshop_north_zhili_provinces.bmp"
     if not backup.exists():

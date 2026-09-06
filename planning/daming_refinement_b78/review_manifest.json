@@ -1,0 +1,12 @@
+{
+  "batch": "B78_daming_refinement",
+  "status": "reviewed_geometry_frozen",
+  "reviewed_masks_sha256": "ac138dbb4b84dac504d54d9496ad9ecf14b373ceb89164ed56e21276763b87c8",
+  "scope_pixels": 352,
+  "pixel_counts": {
+    "5381": 114,
+    "2137": 122,
+    "5382": 116
+  },
+  "outer_boundary_policy": "exact parent mask; no exterior pixel changes"
+}

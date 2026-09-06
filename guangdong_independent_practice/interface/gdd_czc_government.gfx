@@ -1,0 +1,32 @@
+spriteTypes = {
+    spriteType = {
+        name = "GFX_gdd_czc_frame"
+        texturefile = "gfx/interface/gdd_czc_government/frame.dds"
+        noOfFrames = 1
+        loadType = "INGAME"
+    }
+    spriteType = {
+        name = "GFX_gdd_czc_gentry"
+        texturefile = "gfx/interface/gdd_czc_government/gentry.dds"
+        noOfFrames = 2
+        loadType = "INGAME"
+    }
+    spriteType = {
+        name = "GFX_gdd_czc_ruler"
+        texturefile = "gfx/interface/gdd_czc_government/ruler.dds"
+        noOfFrames = 2
+        loadType = "INGAME"
+    }
+    spriteType = {
+        name = "GFX_gdd_czc_pointer_track"
+        texturefile = "gfx/interface/gdd_czc_government/pointer_track.dds"
+        noOfFrames = 21
+        loadType = "INGAME"
+    }
+    spriteType = {
+        name = "government_reform_gdd_czc_council"
+        texturefile = "gfx/interface/gdd_czc_government/government_reform.dds"
+        noOfFrames = 1
+        loadType = "INGAME"
+    }
+}

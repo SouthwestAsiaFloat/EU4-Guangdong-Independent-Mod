@@ -1,0 +1,29 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_zhx_merit_governance"
+		texturefile = "gfx/interface/zhx_merit_governance.tga"
+		transparencecheck = yes
+		loadType = "INGAME"
+	}
+
+	spriteType = {
+		name = "GFX_zhx_merit_economy"
+		texturefile = "gfx/interface/zhx_merit_economy.tga"
+		transparencecheck = yes
+		loadType = "INGAME"
+	}
+
+	spriteType = {
+		name = "GFX_zhx_merit_military"
+		texturefile = "gfx/interface/zhx_merit_military.tga"
+		transparencecheck = yes
+		loadType = "INGAME"
+	}
+
+	spriteType = {
+		name = "GFX_zhx_merit_diplomacy"
+		texturefile = "gfx/interface/zhx_merit_diplomacy.tga"
+		transparencecheck = yes
+		loadType = "INGAME"
+	}
+}

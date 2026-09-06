@@ -1,0 +1,26 @@
+{
+  "batch": "B78_daming_refinement",
+  "marker": "GDD_B78_DAMING_REFINEMENT",
+  "reviewed_masks_sha256": "ac138dbb4b84dac504d54d9496ad9ecf14b373ceb89164ed56e21276763b87c8",
+  "backup_sha256": "0cae90085c80634e37fb865fe2adf6b6d3ea2e7cb11730535741434287c5b5d8",
+  "canonical_bitmap_sha256": "5e19bcee43b3be271b25468d600c454ee2e443b2c66585baf3000ff9fab6005d",
+  "reviewed_recolor_pixels": 230,
+  "changed_pixels_this_run": 0,
+  "validation": {
+    "scope_pixels": 352,
+    "pixel_counts": {
+      "5381": 114,
+      "2137": 122,
+      "5382": 116
+    },
+    "development": {
+      "before": 8,
+      "after": 21,
+      "average": 7
+    },
+    "area": "daming_area",
+    "country": "DMG (Bei)",
+    "zhou_member": true,
+    "opening_school": "fa"
+  }
+}

@@ -2302,6 +2302,15 @@ guiTypes = {
 			scale = 0.55
 			scripted = yes
 		}
+
+		guiButtonType = {
+			name = "gdd_eoc_member_shield_66"
+			quadTextureSprite = "GFX_shield_small"
+			position = { x = 128 y = 758 }
+			clicksound = click
+			scale = 0.55
+			scripted = yes
+		}
 		# GDD_EOC_MEMBER_SHIELDS_END
 
 		# Right column: twenty reforms arranged as 8 ordinary, 6 centralising

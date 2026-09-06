@@ -905,8 +905,11 @@ def render_decisions() -> str:
         "            zhx_has_doctrine = yes\n"
         "        }\n\n"
         "        allow = {\n"
-        + indent(or_block(target_checks), 12)
-        + "\n        }\n\n"
+        "            custom_trigger_tooltip = {\n"
+        "                tooltip = zhx_begin_doctrine_reform_requirements_tt\n"
+        + indent(or_block(target_checks), 16)
+        + "\n            }\n"
+        "        }\n\n"
         "        effect = { country_event = { id = zhx_doctrine_reform.1 } }\n"
         "        ai_will_do = { factor = 0 }\n"
         "    }\n\n"
@@ -916,8 +919,11 @@ def render_decisions() -> str:
         "            ai = no\n"
         "            zhx_doctrine_reform_is_cultivating = yes\n"
         "        }\n\n"
-        "        allow = { zhx_doctrine_reform_is_cultivating = yes }\n"
-        "        effect = { zhx_doctrine_reform_cancel = yes }\n"
+        "        allow = { always = yes }\n"
+        "        effect = {\n"
+        "            custom_tooltip = zhx_cancel_doctrine_reform_effect_tt\n"
+        "            hidden_effect = { zhx_doctrine_reform_cancel = yes }\n"
+        "        }\n"
         "        ai_will_do = { factor = 0 }\n"
         "    }\n"
         "}\n"
@@ -928,7 +934,12 @@ def target_option(code: str, confirm_id: int, spaces: int = 4) -> str:
     return indent(
         f"option = {{\n"
         f"    name = zhx_doctrine_reform.choose_{code}\n"
-        f"    trigger = {{ zhx_doctrine_reform_can_target_{code} = yes }}\n"
+        "    trigger = {\n"
+        "        custom_trigger_tooltip = {\n"
+        f"            tooltip = zhx_doctrine_reform_target_{code}_requirements_tt\n"
+        f"            zhx_doctrine_reform_can_target_{code} = yes\n"
+        "        }\n"
+        "    }\n"
         f"    country_event = {{ id = zhx_doctrine_reform.{confirm_id} }}\n"
         "    ai_chance = { factor = 1 }\n"
         "}",
@@ -1220,8 +1231,10 @@ def render_localisation() -> str:
         "l_english:",
         ' zhx_begin_doctrine_reform_title:0 "更张国论"',
         ' zhx_begin_doctrine_reform_desc:0 "以受邀第二学派或境内未遭逐学的活跃学宫为根基，扶植一种新学说。培植五年后，新学将取代现行主学派。"',
+        ' zhx_begin_doctrine_reform_requirements_tt:0 "可开启国论更张：国家处于和平、稳定度至少为§Y0§!、首都受控，且不在更张或冷却期；至少一门其他学派已由受邀学者扎根五年，或拥有一座未遭逐学的活跃学宫。已有宾学时，只能更张为该宾学。"',
         ' zhx_cancel_doctrine_reform_title:0 "罢议更张"',
         ' zhx_cancel_doctrine_reform_desc:0 "撤回正在培植的新论。朝廷将因朝议无定而承受五年余波，十年内不得再次发动更张。"',
+        ' zhx_cancel_doctrine_reform_effect_tt:0 "撤回正在培植的新论，承受§Y5年§!朝议无定，并在§Y10年§!内不得再次发动国论更张。"',
         ' zhx_doctrine_reform.1.t:0 "广开新论"',
         ' zhx_doctrine_reform.1.d:0 "诸子再至朝堂。唯有已经受邀入廷，或在我国拥有一座未遭逐学的活跃学宫者，才有资格成为更张国论的根基。"',
         ' zhx_doctrine_reform.2.t:0 "广开新论·后席"',
@@ -1266,12 +1279,17 @@ def render_localisation() -> str:
         ' zhx_doctrine_reform_indecision_desc:0 "公开培植的新论被中途撤回，朝廷一时难以取信于内外。"',
         ' zhx_doctrine_reform_cooldown:0 "更张余波"',
         ' zhx_doctrine_reform_cooldown_desc:0 "国家刚刚结束一次国论更张或撤议，在此修正到期前不得再次启动更张。"',
+        ' zhx_doctrine_reform_cultivating:0 "正在培植新论"',
+        ' zhx_doctrine_reform_transition:0 "处于新旧相攻期"',
+        ' zhx_doctrine_practice:0 "国论践履"',
         ' zhx_opinion_abandoned_our_doctrine:0 "背弃旧论"',
         ' zhx_opinion_joined_our_doctrine:0 "同声相应"',
     ]
     for code, meta in SCHOOLS.items():
         lines.extend(
             [
+                f' {meta["flag"]}:0 "{meta["name"]}国论"',
+                f' zhx_doctrine_reform_target_{code}_requirements_tt:0 "{meta["name"]}在我国已有合格根基，并满足当前国论更张的全部条件。"',
                 f' zhx_doctrine_reform.choose_{code}:0 "听取{meta["name"]}之论"',
                 f' zhx_doctrine_reform.confirm_{code}.t:0 "扶植{meta["name"]}"',
                 f' zhx_doctrine_reform.confirm_{code}.d:0 "{meta["summary"]}我国已经拥有相应的受邀客学或活跃学宫，可据此广开{meta["name"]}之论。五年培植期内可以撤回；一旦正式更张，便要承担十年新旧相攻。"',

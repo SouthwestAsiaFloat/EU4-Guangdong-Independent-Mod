@@ -1,0 +1,32 @@
+zhx_gongyi_petition = {
+    category = influence
+    require_acceptance = no
+    is_visible = {
+        government = republic
+        zhx_is_tianxia_member = yes
+        NOT = { tag = HYM }
+        NOT = { has_reform = zhx_gongyi_reform }
+        FROM = { exists = yes zhx_is_tianzi = yes }
+    }
+    is_allowed = {
+        custom_trigger_tooltip = { tooltip = zhx_gongyi_eligible_polity zhx_gongyi_eligible_polity = yes }
+        custom_trigger_tooltip = { tooltip = zhx_gongyi_request_requirements zhx_gongyi_request_requirements = yes }
+        custom_trigger_tooltip = {
+            tooltip = zhx_gongyi_no_pending_tt
+            NOT = { has_country_flag = zhx_gongyi_request_pending }
+        }
+        custom_trigger_tooltip = {
+            tooltip = zhx_gongyi_cooldown_ready_tt
+            OR = {
+                NOT = { has_country_flag = zhx_gongyi_request_cooldown }
+                had_country_flag = { flag = zhx_gongyi_request_cooldown days = 365 }
+            }
+        }
+    }
+    on_accept = {
+        custom_tooltip = zhx_gongyi_petition_sent_tt
+        hidden_effect = { zhx_gongyi_submit_request = yes }
+    }
+    on_decline = { }
+    ai_will_do = { always = no }
+}

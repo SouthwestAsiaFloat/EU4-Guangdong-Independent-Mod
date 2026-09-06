@@ -1,0 +1,36 @@
+{
+  "generator": "built-in imagegen",
+  "conversion": "LANCZOS resize; uncompressed RGBA DDS",
+  "assets": {
+    "gongyi": {
+      "source": "tools/assets/gongyi_yang_government/sources/gongyi.png",
+      "source_sha256": "df3f7b5e4a37d0a52f65827f67a92fe6ee9ab9a15cf7728753019e9c872bc345",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "texture": "guangdong_independent_practice/gfx/interface/zhx_gongyi_yang/gongyi_57.dds",
+      "texture_sha256": "be92bd168709a07c37d0841f94fed1f4b944f34874ff16f5aa40ea848d4e3472",
+      "texture_size": [
+        57,
+        57
+      ],
+      "frames": 1
+    },
+    "yang": {
+      "source": "tools/assets/gongyi_yang_government/sources/yang.png",
+      "source_sha256": "ea9d8ddd36353536fa2e0e7e5d3da61900fddcbd6d9fda8be75d19b9b408811f",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "texture": "guangdong_independent_practice/gfx/interface/zhx_gongyi_yang/yang_57.dds",
+      "texture_sha256": "d4400aec445e4b3dcd3b131f4518e28ceb2440e7de4cceae2ae985d1ba9e5bd7",
+      "texture_size": [
+        57,
+        57
+      ],
+      "frames": 1
+    }
+  }
+}

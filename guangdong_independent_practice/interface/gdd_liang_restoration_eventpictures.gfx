@@ -1,0 +1,7 @@
+spriteTypes = {
+    spriteType = {
+        name = "gdd_liang_audience_eventPicture"
+        texturefile = "gfx/event_pictures/gdd_liang_restoration/gdd_liang_audience_eventPicture.dds"
+        alwaystransparent = yes
+    }
+}

@@ -12,7 +12,7 @@ EOC_GUI = ROOT / "guangdong_independent_practice/interface/celestialempireview.g
 EOC_CUSTOM_GUI = ROOT / "guangdong_independent_practice/common/custom_gui/gdd_celestial_vassal_shields.txt"
 
 SLOTS = 200
-EOC_SLOTS = 65
+EOC_SLOTS = 66
 EOC_COLUMNS = 8
 EOC_ROWS = 6
 EOC_PAGE_SIZE = EOC_COLUMNS * EOC_ROWS
@@ -181,6 +181,7 @@ def effect_file() -> str:
             "    }",
             "    set_global_flag = zhx_gui_roster_initialised",
             "    gdd_build_eoc_member_roster = yes",
+            "    gdd_build_eoc_great_feudatory_roster = yes",
             "}",
             "",
         ]
@@ -220,6 +221,10 @@ def effect_file() -> str:
             "gdd_build_eoc_member_roster = {",
             "    gdd_clear_eoc_member_roster = yes",
             "    CZH = {",
+            "        # Membership changes compact the entire roster from slot 01 onward.",
+            "        # Return to page one so a country pulled forward from slot 49 is",
+            "        # immediately visible in the final slot of the first page.",
+            "        clr_country_flag = gdd_eoc_member_roster_page_2",
             "        set_variable = {",
             "            which = gdd_eoc_member_count_cache",
             "            value = 0",
@@ -244,7 +249,16 @@ def effect_file() -> str:
             "",
         ]
     )
-    return "\n".join(lines)
+    generated = "\n".join(lines)
+    # The great-feudatory cache is a hand-maintained extension below the
+    # generated ordinary-member cache. Preserve it when the member slot count
+    # changes so roster regeneration cannot silently delete live mechanics.
+    extension_marker = "# Six compact targets for the non-principal great-feudatory shields"
+    if EFFECTS.exists():
+        current = EFFECTS.read_text(encoding="utf-8")
+        if extension_marker in current:
+            generated += "\n\n" + current[current.index(extension_marker):].rstrip() + "\n"
+    return generated
 
 
 def main() -> None:

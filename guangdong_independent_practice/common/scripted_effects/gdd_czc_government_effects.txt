@@ -1,0 +1,134 @@
+# Country-scope interfaces. GUI controls call these effects in ROOT/FROM country.
+# The native [-1,1] states-general balance is the only political-power value.
+# The engine creates characters; the callback selects the saved family candidate.
+
+gdd_czc_migrate_legacy_council_effect = {
+    if = {
+        limit = { gdd_czc_should_migrate_legacy_trigger = yes }
+        # Only the unchanged historical oligarchy is migrated. Do not change
+        # government type, ruler, dynasty, or any other player-selected reform.
+        remove_government_reform = oligarchy_reform
+        add_government_reform = gdd_czc_council_reform
+    }
+}
+
+gdd_czc_initialize_effect = {
+    if = {
+        limit = {
+            gdd_czc_is_council_trigger = yes
+            NOT = { has_country_flag = gdd_czc_council_initialized }
+        }
+        set_country_flag = gdd_czc_council_initialized
+        set_ruler_flag = gdd_czc_succession_settled
+        gdd_czc_prepare_successor_effect = yes
+        # Initialization never calls define_ruler or changes the ruling family.
+        # Existing saves retain their current tradition; only the historical
+        # first day starts at 50. Console .900 has its own explicit reset.
+        if = {
+            limit = { NOT = { is_date = 1444.11.12 } }
+            add_republican_tradition = -100
+            add_republican_tradition = 50
+        }
+        # Native change effect clamps at both ends; move from the lower end to 0.
+        change_statists_vs_orangists = -2
+        change_statists_vs_orangists = 1
+    }
+}
+
+# Use the same exiled-candidate storage as vanilla republican lotteries.
+# Vanilla Elections.txt uses name = "lastname" to generate a relative.
+# Republican surnames can live in the full name, with no dynasty field.
+# Prepare the relative while the incumbent is alive, before native succession.
+gdd_czc_prepare_successor_effect = {
+    set_country_flag = gdd_czc_successor_prepared
+    clear_exiled_ruler = gdd_czc_family_successor
+    define_exiled_ruler = {
+        exiled_as = gdd_czc_family_successor
+        name = "lastname"
+        min_age = 20
+        max_age = 35
+    }
+}
+
+gdd_czc_succession_effect = {
+    if = {
+        limit = {
+            gdd_czc_is_council_trigger = yes
+            has_country_flag = gdd_czc_council_initialized
+            NOT = { has_country_flag = gdd_czc_installing_successor }
+            NOT = { has_ruler_flag = gdd_czc_succession_settled }
+        }
+        # set_ruler can re-enter on_new_monarch; make this transaction atomic.
+        set_country_flag = gdd_czc_installing_successor
+        if = {
+            limit = {
+                is_statists_in_power = no
+                has_country_flag = gdd_czc_successor_prepared
+            }
+            set_ruler = gdd_czc_family_successor
+        }
+        set_ruler_flag = gdd_czc_succession_settled
+        gdd_czc_prepare_successor_effect = yes
+        clr_country_flag = gdd_czc_installing_successor
+    }
+}
+
+gdd_czc_check_transition_effect = {
+    if = {
+        limit = { gdd_czc_should_proclaim_king_trigger = yes }
+        country_event = { id = gdd_czc_government.20 }
+    }
+}
+
+gdd_czc_support_gentry_effect = {
+    if = {
+        limit = { gdd_czc_can_shift_power_trigger = yes }
+        custom_tooltip = gdd_czc_support_gentry_effect_tt
+        hidden_effect = {
+            # Shared guarded payment for GUI, event and AI entry points.
+            add_adm_power = -50
+            change_statists_vs_orangists = -0.10
+            # Clear first to guarantee a fresh date after an expired cooldown.
+            clr_country_flag = gdd_czc_last_council_action
+            set_country_flag = gdd_czc_last_council_action
+            gdd_czc_check_transition_effect = yes
+        }
+    }
+}
+
+gdd_czc_support_ruler_effect = {
+    if = {
+        limit = { gdd_czc_can_shift_power_trigger = yes }
+        custom_tooltip = gdd_czc_support_ruler_effect_tt
+        hidden_effect = {
+            # Shared guarded payment for GUI, event and AI entry points.
+            add_adm_power = -50
+            change_statists_vs_orangists = 0.10
+            clr_country_flag = gdd_czc_last_council_action
+            set_country_flag = gdd_czc_last_council_action
+            gdd_czc_check_transition_effect = yes
+        }
+    }
+}
+
+gdd_czc_open_council_effect = {
+    if = {
+        limit = { gdd_czc_is_council_trigger = yes }
+        country_event = { id = gdd_czc_government.10 }
+    }
+}
+
+gdd_czc_proclaim_king_effect = {
+    if = {
+        limit = { gdd_czc_should_proclaim_king_trigger = yes }
+        # Set the terminal flag before government changes can fire callbacks.
+        clear_exiled_ruler = gdd_czc_family_successor
+        clr_country_flag = gdd_czc_successor_prepared
+        set_country_flag = gdd_czc_crowned
+        clr_country_flag = gdd_czc_last_council_action
+        change_government = monarchy
+        add_government_reform = autocracy_reform
+        set_government_rank = 2
+        # The sitting ruler remains in office. The monarchy owns future heirs.
+    }
+}

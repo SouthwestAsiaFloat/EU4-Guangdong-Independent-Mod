@@ -43,12 +43,12 @@ country_event = {
         has_country_flag = zhx_council_phase_preparing
         has_country_flag = zhx_council_kind_debate
     }
-    option = { name = zhx_debate.choose_a_ru trigger = { has_country_flag = zhx_debate_shortlist_ru } hidden_effect = { zhx_set_council_candidate_a_ru = yes country_event = { id = zhx_debate.4 } } ai_chance = { factor = 10 modifier = { factor = 4 has_country_flag = zhx_doctrine_ru } } }
-    option = { name = zhx_debate.choose_a_fa trigger = { has_country_flag = zhx_debate_shortlist_fa } hidden_effect = { zhx_set_council_candidate_a_fa = yes country_event = { id = zhx_debate.4 } } ai_chance = { factor = 10 modifier = { factor = 4 has_country_flag = zhx_doctrine_fa } } }
-    option = { name = zhx_debate.choose_a_mo trigger = { has_country_flag = zhx_debate_shortlist_mo } hidden_effect = { zhx_set_council_candidate_a_mo = yes country_event = { id = zhx_debate.4 } } ai_chance = { factor = 10 modifier = { factor = 4 has_country_flag = zhx_doctrine_mo } } }
-    option = { name = zhx_debate.choose_a_dao trigger = { has_country_flag = zhx_debate_shortlist_dao } hidden_effect = { zhx_set_council_candidate_a_dao = yes country_event = { id = zhx_debate.4 } } ai_chance = { factor = 10 modifier = { factor = 4 has_country_flag = zhx_doctrine_dao } } }
-    option = { name = zhx_debate.choose_a_bing trigger = { has_country_flag = zhx_debate_shortlist_bing } hidden_effect = { zhx_set_council_candidate_a_bing = yes country_event = { id = zhx_debate.4 } } ai_chance = { factor = 10 modifier = { factor = 4 has_country_flag = zhx_doctrine_bing } } }
-    option = { name = zhx_debate.choose_a_zongheng trigger = { has_country_flag = zhx_debate_shortlist_zongheng } hidden_effect = { zhx_set_council_candidate_a_zongheng = yes country_event = { id = zhx_debate.4 } } ai_chance = { factor = 10 modifier = { factor = 4 has_country_flag = zhx_doctrine_zongheng } } }
+    option = { name = zhx_debate.choose_a_ru trigger = { hidden_trigger = { has_country_flag = zhx_debate_shortlist_ru } } hidden_effect = { zhx_set_council_candidate_a_ru = yes country_event = { id = zhx_debate.4 } } ai_chance = { factor = 10 modifier = { factor = 4 has_country_flag = zhx_doctrine_ru } } }
+    option = { name = zhx_debate.choose_a_fa trigger = { hidden_trigger = { has_country_flag = zhx_debate_shortlist_fa } } hidden_effect = { zhx_set_council_candidate_a_fa = yes country_event = { id = zhx_debate.4 } } ai_chance = { factor = 10 modifier = { factor = 4 has_country_flag = zhx_doctrine_fa } } }
+    option = { name = zhx_debate.choose_a_mo trigger = { hidden_trigger = { has_country_flag = zhx_debate_shortlist_mo } } hidden_effect = { zhx_set_council_candidate_a_mo = yes country_event = { id = zhx_debate.4 } } ai_chance = { factor = 10 modifier = { factor = 4 has_country_flag = zhx_doctrine_mo } } }
+    option = { name = zhx_debate.choose_a_dao trigger = { hidden_trigger = { has_country_flag = zhx_debate_shortlist_dao } } hidden_effect = { zhx_set_council_candidate_a_dao = yes country_event = { id = zhx_debate.4 } } ai_chance = { factor = 10 modifier = { factor = 4 has_country_flag = zhx_doctrine_dao } } }
+    option = { name = zhx_debate.choose_a_bing trigger = { hidden_trigger = { has_country_flag = zhx_debate_shortlist_bing } } hidden_effect = { zhx_set_council_candidate_a_bing = yes country_event = { id = zhx_debate.4 } } ai_chance = { factor = 10 modifier = { factor = 4 has_country_flag = zhx_doctrine_bing } } }
+    option = { name = zhx_debate.choose_a_zongheng trigger = { hidden_trigger = { has_country_flag = zhx_debate_shortlist_zongheng } } hidden_effect = { zhx_set_council_candidate_a_zongheng = yes country_event = { id = zhx_debate.4 } } ai_chance = { factor = 10 modifier = { factor = 4 has_country_flag = zhx_doctrine_zongheng } } }
     option = { name = zhx_debate.cancel_selection hidden_effect = { zhx_abort_tianxia_debate_selection = yes } ai_chance = { factor = 0 } }
 }
 
@@ -60,12 +60,12 @@ country_event = {
     major = yes
     is_triggered_only = yes
     trigger = { zhx_is_tianzi = yes has_country_flag = zhx_council_phase_preparing has_country_flag = zhx_council_kind_debate }
-    option = { name = zhx_debate.choose_b_ru trigger = { has_country_flag = zhx_debate_shortlist_ru NOT = { has_country_flag = zhx_council_candidate_a_ru } } hidden_effect = { zhx_set_council_candidate_b_ru = yes zhx_start_selected_tianxia_debate = yes } ai_chance = { factor = 10 modifier = { factor = 3 has_country_flag = zhx_doctrine_ru } } }
-    option = { name = zhx_debate.choose_b_fa trigger = { has_country_flag = zhx_debate_shortlist_fa NOT = { has_country_flag = zhx_council_candidate_a_fa } } hidden_effect = { zhx_set_council_candidate_b_fa = yes zhx_start_selected_tianxia_debate = yes } ai_chance = { factor = 10 modifier = { factor = 3 has_country_flag = zhx_doctrine_fa } } }
-    option = { name = zhx_debate.choose_b_mo trigger = { has_country_flag = zhx_debate_shortlist_mo NOT = { has_country_flag = zhx_council_candidate_a_mo } } hidden_effect = { zhx_set_council_candidate_b_mo = yes zhx_start_selected_tianxia_debate = yes } ai_chance = { factor = 10 modifier = { factor = 3 has_country_flag = zhx_doctrine_mo } } }
-    option = { name = zhx_debate.choose_b_dao trigger = { has_country_flag = zhx_debate_shortlist_dao NOT = { has_country_flag = zhx_council_candidate_a_dao } } hidden_effect = { zhx_set_council_candidate_b_dao = yes zhx_start_selected_tianxia_debate = yes } ai_chance = { factor = 10 modifier = { factor = 3 has_country_flag = zhx_doctrine_dao } } }
-    option = { name = zhx_debate.choose_b_bing trigger = { has_country_flag = zhx_debate_shortlist_bing NOT = { has_country_flag = zhx_council_candidate_a_bing } } hidden_effect = { zhx_set_council_candidate_b_bing = yes zhx_start_selected_tianxia_debate = yes } ai_chance = { factor = 10 modifier = { factor = 3 has_country_flag = zhx_doctrine_bing } } }
-    option = { name = zhx_debate.choose_b_zongheng trigger = { has_country_flag = zhx_debate_shortlist_zongheng NOT = { has_country_flag = zhx_council_candidate_a_zongheng } } hidden_effect = { zhx_set_council_candidate_b_zongheng = yes zhx_start_selected_tianxia_debate = yes } ai_chance = { factor = 10 modifier = { factor = 3 has_country_flag = zhx_doctrine_zongheng } } }
+    option = { name = zhx_debate.choose_b_ru trigger = { hidden_trigger = { has_country_flag = zhx_debate_shortlist_ru NOT = { has_country_flag = zhx_council_candidate_a_ru } } } hidden_effect = { zhx_set_council_candidate_b_ru = yes zhx_start_selected_tianxia_debate = yes } ai_chance = { factor = 10 modifier = { factor = 3 has_country_flag = zhx_doctrine_ru } } }
+    option = { name = zhx_debate.choose_b_fa trigger = { hidden_trigger = { has_country_flag = zhx_debate_shortlist_fa NOT = { has_country_flag = zhx_council_candidate_a_fa } } } hidden_effect = { zhx_set_council_candidate_b_fa = yes zhx_start_selected_tianxia_debate = yes } ai_chance = { factor = 10 modifier = { factor = 3 has_country_flag = zhx_doctrine_fa } } }
+    option = { name = zhx_debate.choose_b_mo trigger = { hidden_trigger = { has_country_flag = zhx_debate_shortlist_mo NOT = { has_country_flag = zhx_council_candidate_a_mo } } } hidden_effect = { zhx_set_council_candidate_b_mo = yes zhx_start_selected_tianxia_debate = yes } ai_chance = { factor = 10 modifier = { factor = 3 has_country_flag = zhx_doctrine_mo } } }
+    option = { name = zhx_debate.choose_b_dao trigger = { hidden_trigger = { has_country_flag = zhx_debate_shortlist_dao NOT = { has_country_flag = zhx_council_candidate_a_dao } } } hidden_effect = { zhx_set_council_candidate_b_dao = yes zhx_start_selected_tianxia_debate = yes } ai_chance = { factor = 10 modifier = { factor = 3 has_country_flag = zhx_doctrine_dao } } }
+    option = { name = zhx_debate.choose_b_bing trigger = { hidden_trigger = { has_country_flag = zhx_debate_shortlist_bing NOT = { has_country_flag = zhx_council_candidate_a_bing } } } hidden_effect = { zhx_set_council_candidate_b_bing = yes zhx_start_selected_tianxia_debate = yes } ai_chance = { factor = 10 modifier = { factor = 3 has_country_flag = zhx_doctrine_bing } } }
+    option = { name = zhx_debate.choose_b_zongheng trigger = { hidden_trigger = { has_country_flag = zhx_debate_shortlist_zongheng NOT = { has_country_flag = zhx_council_candidate_a_zongheng } } } hidden_effect = { zhx_set_council_candidate_b_zongheng = yes zhx_start_selected_tianxia_debate = yes } ai_chance = { factor = 10 modifier = { factor = 3 has_country_flag = zhx_doctrine_zongheng } } }
     option = { name = zhx_debate.cancel_selection hidden_effect = { zhx_abort_tianxia_debate_selection = yes } ai_chance = { factor = 0 } }
 }
 
@@ -83,19 +83,19 @@ country_event = {
         event_target:zhx_tianzi = { has_country_flag = zhx_council_kind_debate }
     }
 
-    option = { name = zhx_debate.vote_ru trigger = { event_target:zhx_tianzi = { has_country_flag = zhx_council_candidate_a_ru } } hidden_effect = { zhx_cast_tianxia_council_vote_a = yes } ai_chance = { factor = 20 modifier = { factor = 5 has_country_flag = zhx_doctrine_ru } } }
-    option = { name = zhx_debate.vote_fa trigger = { event_target:zhx_tianzi = { has_country_flag = zhx_council_candidate_a_fa } } hidden_effect = { zhx_cast_tianxia_council_vote_a = yes } ai_chance = { factor = 20 modifier = { factor = 5 has_country_flag = zhx_doctrine_fa } } }
-    option = { name = zhx_debate.vote_mo trigger = { event_target:zhx_tianzi = { has_country_flag = zhx_council_candidate_a_mo } } hidden_effect = { zhx_cast_tianxia_council_vote_a = yes } ai_chance = { factor = 20 modifier = { factor = 5 has_country_flag = zhx_doctrine_mo } } }
-    option = { name = zhx_debate.vote_dao trigger = { event_target:zhx_tianzi = { has_country_flag = zhx_council_candidate_a_dao } } hidden_effect = { zhx_cast_tianxia_council_vote_a = yes } ai_chance = { factor = 20 modifier = { factor = 5 has_country_flag = zhx_doctrine_dao } } }
-    option = { name = zhx_debate.vote_bing trigger = { event_target:zhx_tianzi = { has_country_flag = zhx_council_candidate_a_bing } } hidden_effect = { zhx_cast_tianxia_council_vote_a = yes } ai_chance = { factor = 20 modifier = { factor = 5 has_country_flag = zhx_doctrine_bing } } }
-    option = { name = zhx_debate.vote_zongheng trigger = { event_target:zhx_tianzi = { has_country_flag = zhx_council_candidate_a_zongheng } } hidden_effect = { zhx_cast_tianxia_council_vote_a = yes } ai_chance = { factor = 20 modifier = { factor = 5 has_country_flag = zhx_doctrine_zongheng } } }
+    option = { name = zhx_debate.vote_ru trigger = { hidden_trigger = { event_target:zhx_tianzi = { has_country_flag = zhx_council_candidate_a_ru } } } hidden_effect = { zhx_cast_tianxia_council_vote_a = yes } ai_chance = { factor = 20 modifier = { factor = 5 has_country_flag = zhx_doctrine_ru } } }
+    option = { name = zhx_debate.vote_fa trigger = { hidden_trigger = { event_target:zhx_tianzi = { has_country_flag = zhx_council_candidate_a_fa } } } hidden_effect = { zhx_cast_tianxia_council_vote_a = yes } ai_chance = { factor = 20 modifier = { factor = 5 has_country_flag = zhx_doctrine_fa } } }
+    option = { name = zhx_debate.vote_mo trigger = { hidden_trigger = { event_target:zhx_tianzi = { has_country_flag = zhx_council_candidate_a_mo } } } hidden_effect = { zhx_cast_tianxia_council_vote_a = yes } ai_chance = { factor = 20 modifier = { factor = 5 has_country_flag = zhx_doctrine_mo } } }
+    option = { name = zhx_debate.vote_dao trigger = { hidden_trigger = { event_target:zhx_tianzi = { has_country_flag = zhx_council_candidate_a_dao } } } hidden_effect = { zhx_cast_tianxia_council_vote_a = yes } ai_chance = { factor = 20 modifier = { factor = 5 has_country_flag = zhx_doctrine_dao } } }
+    option = { name = zhx_debate.vote_bing trigger = { hidden_trigger = { event_target:zhx_tianzi = { has_country_flag = zhx_council_candidate_a_bing } } } hidden_effect = { zhx_cast_tianxia_council_vote_a = yes } ai_chance = { factor = 20 modifier = { factor = 5 has_country_flag = zhx_doctrine_bing } } }
+    option = { name = zhx_debate.vote_zongheng trigger = { hidden_trigger = { event_target:zhx_tianzi = { has_country_flag = zhx_council_candidate_a_zongheng } } } hidden_effect = { zhx_cast_tianxia_council_vote_a = yes } ai_chance = { factor = 20 modifier = { factor = 5 has_country_flag = zhx_doctrine_zongheng } } }
 
-    option = { name = zhx_debate.vote_ru trigger = { event_target:zhx_tianzi = { has_country_flag = zhx_council_candidate_b_ru } } hidden_effect = { zhx_cast_tianxia_council_vote_b = yes } ai_chance = { factor = 20 modifier = { factor = 5 has_country_flag = zhx_doctrine_ru } } }
-    option = { name = zhx_debate.vote_fa trigger = { event_target:zhx_tianzi = { has_country_flag = zhx_council_candidate_b_fa } } hidden_effect = { zhx_cast_tianxia_council_vote_b = yes } ai_chance = { factor = 20 modifier = { factor = 5 has_country_flag = zhx_doctrine_fa } } }
-    option = { name = zhx_debate.vote_mo trigger = { event_target:zhx_tianzi = { has_country_flag = zhx_council_candidate_b_mo } } hidden_effect = { zhx_cast_tianxia_council_vote_b = yes } ai_chance = { factor = 20 modifier = { factor = 5 has_country_flag = zhx_doctrine_mo } } }
-    option = { name = zhx_debate.vote_dao trigger = { event_target:zhx_tianzi = { has_country_flag = zhx_council_candidate_b_dao } } hidden_effect = { zhx_cast_tianxia_council_vote_b = yes } ai_chance = { factor = 20 modifier = { factor = 5 has_country_flag = zhx_doctrine_dao } } }
-    option = { name = zhx_debate.vote_bing trigger = { event_target:zhx_tianzi = { has_country_flag = zhx_council_candidate_b_bing } } hidden_effect = { zhx_cast_tianxia_council_vote_b = yes } ai_chance = { factor = 20 modifier = { factor = 5 has_country_flag = zhx_doctrine_bing } } }
-    option = { name = zhx_debate.vote_zongheng trigger = { event_target:zhx_tianzi = { has_country_flag = zhx_council_candidate_b_zongheng } } hidden_effect = { zhx_cast_tianxia_council_vote_b = yes } ai_chance = { factor = 20 modifier = { factor = 5 has_country_flag = zhx_doctrine_zongheng } } }
+    option = { name = zhx_debate.vote_ru trigger = { hidden_trigger = { event_target:zhx_tianzi = { has_country_flag = zhx_council_candidate_b_ru } } } hidden_effect = { zhx_cast_tianxia_council_vote_b = yes } ai_chance = { factor = 20 modifier = { factor = 5 has_country_flag = zhx_doctrine_ru } } }
+    option = { name = zhx_debate.vote_fa trigger = { hidden_trigger = { event_target:zhx_tianzi = { has_country_flag = zhx_council_candidate_b_fa } } } hidden_effect = { zhx_cast_tianxia_council_vote_b = yes } ai_chance = { factor = 20 modifier = { factor = 5 has_country_flag = zhx_doctrine_fa } } }
+    option = { name = zhx_debate.vote_mo trigger = { hidden_trigger = { event_target:zhx_tianzi = { has_country_flag = zhx_council_candidate_b_mo } } } hidden_effect = { zhx_cast_tianxia_council_vote_b = yes } ai_chance = { factor = 20 modifier = { factor = 5 has_country_flag = zhx_doctrine_mo } } }
+    option = { name = zhx_debate.vote_dao trigger = { hidden_trigger = { event_target:zhx_tianzi = { has_country_flag = zhx_council_candidate_b_dao } } } hidden_effect = { zhx_cast_tianxia_council_vote_b = yes } ai_chance = { factor = 20 modifier = { factor = 5 has_country_flag = zhx_doctrine_dao } } }
+    option = { name = zhx_debate.vote_bing trigger = { hidden_trigger = { event_target:zhx_tianzi = { has_country_flag = zhx_council_candidate_b_bing } } } hidden_effect = { zhx_cast_tianxia_council_vote_b = yes } ai_chance = { factor = 20 modifier = { factor = 5 has_country_flag = zhx_doctrine_bing } } }
+    option = { name = zhx_debate.vote_zongheng trigger = { hidden_trigger = { event_target:zhx_tianzi = { has_country_flag = zhx_council_candidate_b_zongheng } } } hidden_effect = { zhx_cast_tianxia_council_vote_b = yes } ai_chance = { factor = 20 modifier = { factor = 5 has_country_flag = zhx_doctrine_zongheng } } }
 
     option = {
         name = zhx_debate.vote_plural
@@ -234,12 +234,19 @@ country_event = {
     trigger = { zhx_can_attempt_tianxia_debate_petition = yes }
     option = {
         name = zhx_debate.41.a
-        trigger = { zhx_can_file_tianxia_debate_petition = yes }
+        trigger = {
+            custom_trigger_tooltip = {
+                tooltip = zhx_debate_petition_social_basis_tt
+                zhx_can_file_tianxia_debate_petition = yes
+            }
+        }
         hidden_effect = { zhx_file_tianxia_debate_petition = yes }
     }
     option = {
         name = zhx_debate.41.b
-        trigger = { NOT = { zhx_can_file_tianxia_debate_petition = yes } }
+        trigger = {
+            hidden_trigger = { NOT = { zhx_can_file_tianxia_debate_petition = yes } }
+        }
     }
 }
 

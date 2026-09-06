@@ -1,0 +1,49 @@
+# CZC minimum council sample. The engine owns the native balance and succession.
+# Native ruler generation is followed by the council's family succession callback.
+# No has_dutch_election: its Dutch candidate pool is inappropriate for Chaozhou.
+gdd_czc_council_reform = {
+    icon = "gdd_czc_council"
+    allow_normal_conversion = no
+    lock_level_when_selected = yes
+    valid_for_nation_designer = no
+    potential = { tag = CZC }
+
+    # Republican names use vanilla nepotism's lastname selector for family succession.
+    republican_name = yes
+    royal_marriage = no
+    has_term_election = no
+    election_on_death = no
+    duration = 0
+
+    custom_attributes = {
+        locked_government_type = yes
+        # Keep the generic republics.3 dictator event from taking this tier
+        # before the council's explicit republican-tradition threshold.
+        cannot_become_dictatorship = yes
+        enables_plutocratic_idea_group = yes
+        enables_aristocratic_idea_group = no
+    }
+
+    # Parliament is a permanent property of this council, on either side of
+    # the balance. Keep it outside the changing family-succession conditional.
+    has_parliament = yes
+
+    states_general_mechanic = {
+        gdd_czc_gentry = {
+            naval_forcelimit_modifier = 0.10
+            global_trade_power = 0.05
+        }
+        gdd_czc_ruler = {
+            land_forcelimit_modifier = 0.25
+            stability_cost_modifier = -0.10
+            # Republics have a base +1/year. This yields approximately -1/year
+            # before other national modifiers, instead of cancelling to zero.
+            republican_tradition = -2
+        }
+    }
+
+    effect = {
+        hidden_effect = { gdd_czc_initialize_effect = yes }
+    }
+    ai = { factor = 100 }
+}

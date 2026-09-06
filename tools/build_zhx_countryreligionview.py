@@ -55,12 +55,14 @@ HARMONY_DYNAMIC_CONTROL_REPLACEMENTS = {
         '\t\t\t\tposition = { x = 2000 y = 2000 }'
     ),
 }
-DOCTRINE_STATUS = r'''
+THOUGHT_TENSION_STATUS = r'''
 
 			# GDD: Keep the engine-owned Harmony controls as a dormant compatibility
-			# shell. This late-drawn panel replaces their visible 0-100 meter with the
+			# shell. This main-view repaint replaces their visible 0-100 meter with the
 			# four authoritative thought-tension tiers maintained by the academy
-			# lifecycle; no Harmony value is read or written.
+			# lifecycle; no Harmony value is read or written. It is deliberately drawn
+			# below the engine-owned modal selection screens, so opening the native
+			# scholar picker temporarily replaces this area without a duplicate flag.
 			iconType = {
 				name = "zhx_thought_tension_panel_bg"
 				spriteType = "GFX_religion_overlay_big_bg"
@@ -219,6 +221,9 @@ DOCTRINE_STATUS = r'''
 				Orientation = "UPPER_LEFT"
 				scripted = yes
 			}
+'''
+
+DOCTRINE_STATUS = r'''
 
 			# GDD: The Ritual Teaching tripod is a mouse-transparent reskin of
 			# the engine-owned invite_scholar_button beneath it. The native button
@@ -483,6 +488,16 @@ def find_named_window_close(text: str, name: str) -> int:
     raise ValueError(f'windowType "{name}" has no matching closing brace')
 
 
+def find_named_window_start(text: str, name: str) -> int:
+    """Return the beginning of the line declaring one named windowType."""
+    match = re.search(
+        rf'windowType\s*=\s*\{{\s*name\s*=\s*"{re.escape(name)}"', text
+    )
+    if match is None:
+        raise ValueError(f'vanilla GUI is missing windowType "{name}"')
+    return text.rfind("\n", 0, match.start()) + 1
+
+
 def render(dependency_root: Path) -> str:
     source = dependency_root / "interface/countryreligionview.gui"
     data = source.read_bytes()
@@ -507,9 +522,20 @@ def render(dependency_root: Path) -> str:
                 f"harmony dynamic-control block: {old!r}"
             )
         text = text.replace(old, new, 1)
+    # The native convert/deity/icon/scholar/cult/aspect windows below this
+    # anchor are engine-owned modal views. Keeping the thought-tension repaint
+    # before them lets their own visibility state cover it while open and reveal
+    # it again when closed, without script flags that could desynchronise. The
+    # school-row overlays remain at the root's end so their established ordering
+    # against the engine-owned main view does not change.
+    modal_anchor = find_named_window_start(text, "countryreligionview_convert")
+    text = (
+        text[:modal_anchor]
+        + THOUGHT_TENSION_STATUS
+        + text[modal_anchor:]
+    )
     close = find_named_window_close(text, "countryreligionview")
-    insertion = DOCTRINE_STATUS
-    return text[:close] + insertion + text[close:]
+    return text[:close] + DOCTRINE_STATUS + text[close:]
 
 
 def run(dependency_root: Path, check: bool) -> None:
@@ -527,7 +553,7 @@ def run(dependency_root: Path, check: bool) -> None:
         "invited-school emblem overlays=6; "
         "no-doctrine overlays=1; "
         "thought-tension endpoint reskins=2; dormant native Harmony controls=5; "
-        "four-tier tension panels=1; "
+        "modal-safe four-tier tension panels=1; "
         "mutually-exclusive tier practice displays=4; "
         "practice-number hit targets=1; hover-factor readouts=4"
     )

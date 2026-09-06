@@ -505,9 +505,7 @@ country_decisions = {
             zhx_guest_school_has_active_contract = yes
         }
 
-        allow = {
-            zhx_guest_school_has_active_contract = yes
-        }
+        allow = { always = yes }
 
         effect = {
             country_event = { id = zhx_guest_school.50 }
@@ -537,7 +535,12 @@ def render_events() -> str:
                 "",
                 "    option = {",
                 f"        name = zhx_guest_school.confirm_{code}.a",
-                f"        trigger = {{ zhx_guest_school_pending_{code}_is_valid = yes }}",
+                "        trigger = {",
+                "            custom_trigger_tooltip = {",
+                "                tooltip = zhx_guest_school_confirmation_requirements_tt",
+                f"                zhx_guest_school_pending_{code}_is_valid = yes",
+                "            }",
+                "        }",
                 "        custom_tooltip = zhx_guest_school_contract_cost_tt",
                 f"        hidden_effect = {{ zhx_guest_school_begin_{code} = yes }}",
                 "        ai_chance = { factor = 1 }",
@@ -665,7 +668,12 @@ def render_events() -> str:
             "    immediate = { zhx_guest_school_cache_current_source = yes }",
             "    option = {",
             "        name = zhx_guest_school.expiry.renew",
-            "        trigger = { zhx_guest_school_has_valid_renewal_source = yes }",
+            "        trigger = {",
+            "            custom_trigger_tooltip = {",
+            "                tooltip = zhx_guest_school_renew_requirements_tt",
+            "                zhx_guest_school_has_valid_renewal_source = yes",
+            "            }",
+            "        }",
             "        custom_tooltip = zhx_guest_school_renew_cost_tt",
             "        hidden_effect = { zhx_guest_school_renew_current = yes }",
             "        ai_chance = { factor = 1 }",

@@ -165,6 +165,17 @@ def event_blocks(text: str) -> dict[str, str]:
     return events
 
 
+def named_option_body(text: str, name: str) -> str:
+    match = re.search(
+        rf"(?ms)^\s*option\s*=\s*\{{\s*name\s*=\s*{re.escape(name)}\s*$",
+        text,
+    )
+    require(match is not None, f"missing event option {name}")
+    opening = text.find("{", match.start())
+    closing = matching_close(text, opening)
+    return text[opening + 1 : closing]
+
+
 def validate_builder_projection() -> None:
     result = subprocess.run(
         [sys.executable, str(BUILDER), "--check"],
@@ -413,6 +424,34 @@ def validate_per_academy_lifecycle(
             page_text.count(f"zhx_academy_begin_expulsion_{key} = yes") == 1,
             f"{key}: disposal page must open exactly one expulsion effect",
         )
+        option = named_option_body(
+            page_text, f"zhx_academy_lifecycle.expel_{key}"
+        )
+        option_trigger = nested_block_body(option, "trigger")
+        require(
+            option_trigger.count("custom_trigger_tooltip = {") == 1,
+            f"{key}: disposal option must collapse its condition tree once",
+        )
+        readable_gate = nested_block_body(
+            option_trigger, "custom_trigger_tooltip"
+        )
+        require(
+            initial_scalar(readable_gate, "tooltip")
+            == "zhx_academy_expulsion_requirements_tt",
+            f"{key}: disposal option uses the wrong readable condition",
+        )
+        for token in (
+            "is_at_war = no",
+            "stability = 1",
+            "adm_power = 30",
+            "NOT = { has_country_modifier = zhx_academy_expulsion_campaign }",
+            "NOT = { has_country_modifier = zhx_academy_expulsion_cooldown }",
+            f"zhx_academy_has_unprotected_{key} = yes",
+        ):
+            require(
+                readable_gate.count(token) == 1,
+                f"{key}: readable disposal gate lacks unique {token}",
+            )
 
         start = block_body(effects, f"zhx_academy_begin_expulsion_{key}")
         require(
@@ -579,6 +618,25 @@ def validate_player_arrival_presentation(
     offer = events["zhx_academy.210"]
     arrival = events["zhx_academy.211"]
     event_text = EVENTS.read_text(encoding="utf-8")
+
+    acceptance = named_option_body(offer, "zhx_academy_lifecycle.210.a")
+    acceptance_trigger = nested_block_body(acceptance, "trigger")
+    require(
+        acceptance_trigger.count("custom_trigger_tooltip = {") == 1,
+        ".210 acceptance must collapse its host condition once",
+    )
+    readable_host_gate = nested_block_body(
+        acceptance_trigger, "custom_trigger_tooltip"
+    )
+    require(
+        initial_scalar(readable_host_gate, "tooltip")
+        == "zhx_academy_refuge_host_requirements_tt"
+        and readable_host_gate.count(
+            "zhx_academy_has_empty_host_province = yes"
+        )
+        == 1,
+        ".210 acceptance must retain one readable authoritative host gate",
+    )
 
     refusal_pattern = re.compile(
         r"option\s*=\s*\{\s*"
@@ -798,8 +856,10 @@ def validate_decisions_and_withdrawal(effects: str, decisions: str) -> None:
         country_decisions, "zhx_withdraw_academy_expulsion"
     )
     require(
-        withdraw_decision.count("zhx_academy_withdraw_current_expulsion = yes") == 1,
-        "withdrawal decision must call the shared effect once",
+        withdraw_decision.count("zhx_academy_withdraw_current_expulsion = yes") == 1
+        and withdraw_decision.count("custom_tooltip = zhx_academy_withdraw_expulsion_tt") == 1
+        and withdraw_decision.count("hidden_effect = {") == 1,
+        "withdrawal decision must present a readable result and call the shared effect once",
     )
 
 
@@ -997,13 +1057,21 @@ def validate_on_actions(academies: list[dict[str, object]], effects: str) -> Non
         "owner-change hook lacks the lifecycle cancellation effect",
     )
     require(
-        owner_change.find("zhx_academy_cancel_expulsion_on_owner_change = yes")
-        < owner_change.find("zhx_refresh_academy_country_effects = yes"),
-        "owner-change cancellation must precede derived-state reconciliation",
+        "zhx_refresh_academy_country_effects = yes" not in owner_change,
+        "owner-change hook must defer derived-state reconciliation until SetOwner completes",
     )
     require(
-        owner_change.count("zhx_refresh_academy_country_effects = yes") == 2,
-        "owner-change hook must refresh new and former owners exactly once",
+        owner_change.count("set_country_flag = zhx_academy_ownership_dirty") == 2,
+        "owner-change hook must mark new and former owners exactly once",
+    )
+    monthly = block_body(text, "on_monthly_pulse")
+    require(
+        "has_country_flag = zhx_academy_ownership_dirty" in monthly
+        and monthly.count("clr_country_flag = zhx_academy_ownership_dirty") == 1
+        and monthly.count("zhx_refresh_academy_country_effects = yes") == 1
+        and monthly.index("clr_country_flag = zhx_academy_ownership_dirty")
+        < monthly.index("zhx_refresh_academy_country_effects = yes"),
+        "monthly hook must consume the ownership marker before refreshing derived state",
     )
 
     cancel = block_body(effects, "zhx_academy_cancel_expulsion_on_owner_change")
@@ -1059,6 +1127,7 @@ def validate_localisation(academies: list[dict[str, object]]) -> None:
         "zhx_manage_unprotected_academies_desc",
         "zhx_withdraw_academy_expulsion_title",
         "zhx_withdraw_academy_expulsion_desc",
+        "zhx_academy_withdraw_expulsion_tt",
         "zhx_academy_expulsion_campaign",
         "zhx_academy_expulsion_campaign_desc",
         "zhx_academy_under_expulsion",
@@ -1074,6 +1143,8 @@ def validate_localisation(academies: list[dict[str, object]]) -> None:
         "zhx_academy_lifecycle.211.a",
         "zhx_academy_lifecycle.230.t",
         "zhx_academy_lifecycle.230.a",
+        "zhx_academy_expulsion_requirements_tt",
+        "zhx_academy_refuge_host_requirements_tt",
         "zhx_academy_refuse_refuge_tt",
     }
     refusal_match = re.search(
