@@ -1,0 +1,2 @@
+# Native opinion control: remove only the -1 opinion to reach exact100.
+CZH = { remove_opinion = { who = T00 modifier = opinion_annex_vassal } }

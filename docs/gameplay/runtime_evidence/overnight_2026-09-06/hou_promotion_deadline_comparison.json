@@ -1,0 +1,24 @@
+{
+  "before": {
+    "date": "1445.11.30",
+    "government": "{\n\t\t\tgovernment=\"monarchy\"\n\t\t\treform_stack={\n\t\t\t\treforms={\n\t\t\t\t\t\"monarchy_mechanic\"\n\t\t\t\t\t\"zhx_feudatory_hou_reform\"\n\t\t\t\t}\n\t\t\t\thistory={\n\t\t\t\t\t\"zhx_feudatory_hou_reform\"\n\t\t\t\t}\n\t\t\t}\n\t\t}",
+    "rank": "1",
+    "monarch": "{\n\t\t\tid=3169\n\t\t\ttype=48\n\t\t}",
+    "heir": "{\n\t\t\tid=3170\n\t\t\ttype=48\n\t\t}",
+    "used_this_term": true,
+    "pending": true,
+    "submitted_merit": "200.000",
+    "CZH_rank": "3"
+  },
+  "after": {
+    "date": "1445.12.1",
+    "government": "{\n\t\t\tgovernment=\"monarchy\"\n\t\t\treform_stack={\n\t\t\t\treforms={\n\t\t\t\t\t\"monarchy_mechanic\"\n\t\t\t\t\t\"zhx_feudatory_gong_reform\"\n\t\t\t\t}\n\t\t\t\thistory={\n\t\t\t\t\t\"zhx_feudatory_hou_reform\"\n\t\t\t\t\t\"zhx_feudatory_gong_reform\"\n\t\t\t\t}\n\t\t\t}\n\t\t}",
+    "rank": "2",
+    "monarch": "{\n\t\t\tid=3169\n\t\t\ttype=48\n\t\t}",
+    "heir": "{\n\t\t\tid=3170\n\t\t\ttype=48\n\t\t}",
+    "used_this_term": true,
+    "pending": false,
+    "submitted_merit": "0.000",
+    "CZH_rank": "3"
+  }
+}

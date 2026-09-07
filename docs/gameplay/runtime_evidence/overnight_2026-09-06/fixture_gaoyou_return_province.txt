@@ -1,0 +1,2 @@
+# Return the acquired province; verify no automatic charter restoration.
+4977 = { cede_province = HYM }

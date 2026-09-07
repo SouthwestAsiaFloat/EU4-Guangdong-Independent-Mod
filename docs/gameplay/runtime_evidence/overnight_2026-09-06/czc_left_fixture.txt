@@ -1,0 +1,2 @@
+# Succession setup only: move native balance to gentry endpoint.
+CZC = { change_statists_vs_orangists = -2 }

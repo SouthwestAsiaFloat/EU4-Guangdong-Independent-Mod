@@ -20,6 +20,7 @@ fixed_capital = 688
                 name = "šS™q"
                 dynasty = "ìY"
                 birth_date = 1424.1.9
+                death_date = 1821.1.1
                 adm = 1
                 dip = 1
                 mil = 4

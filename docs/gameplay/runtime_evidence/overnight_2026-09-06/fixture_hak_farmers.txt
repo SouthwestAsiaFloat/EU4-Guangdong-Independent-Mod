@@ -1,0 +1,2 @@
+# Establish farmer dominance first at safe RT; native faction cache requires a day tick.
+HAK = { add_republican_tradition = -100 add_republican_tradition = 50 add_faction_influence = { faction = gdd_hak_farmers influence = 100 } }

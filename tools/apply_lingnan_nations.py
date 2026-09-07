@@ -57,6 +57,11 @@ def render_character(kind: str, character: dict[str, object], config: dict[str, 
     for stat in ("adm", "dip", "mil"):
         lines.append(f"        {stat} = {character[stat]}")
     if kind == "heir":
+        # Historical heirs need an end date to be selected into the current
+        # heir slot (EU4 1.37.5 runtime experiment, 2026-09-07). This bounds
+        # scenario history; it is not an event scheduling their in-game death.
+        # These fictional identities are only authored for the 1444 opening.
+        lines.append("        death_date = 1821.1.1")
         lines.append(f"        claim = {character.get('claim', 70)}")
     if character.get("female"):
         lines.append("        female = yes")

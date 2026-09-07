@@ -1,0 +1,107 @@
+{
+  "province_count": 20,
+  "development": 199.0,
+  "provinces": {
+    "665": {
+      "base_tax": 4.0,
+      "base_production": 3.0,
+      "base_manpower": 3.0
+    },
+    "667": {
+      "base_tax": 3.0,
+      "base_production": 3.0,
+      "base_manpower": 3.0
+    },
+    "668": {
+      "base_tax": 4.0,
+      "base_production": 3.0,
+      "base_manpower": 3.0
+    },
+    "2158": {
+      "base_tax": 4.0,
+      "base_production": 3.0,
+      "base_manpower": 3.0
+    },
+    "2162": {
+      "base_tax": 4.0,
+      "base_production": 3.0,
+      "base_manpower": 3.0
+    },
+    "2164": {
+      "base_tax": 4.0,
+      "base_production": 3.0,
+      "base_manpower": 3.0
+    },
+    "4942": {
+      "base_tax": 4.0,
+      "base_production": 3.0,
+      "base_manpower": 3.0
+    },
+    "4943": {
+      "base_tax": 4.0,
+      "base_production": 3.0,
+      "base_manpower": 3.0
+    },
+    "4946": {
+      "base_tax": 4.0,
+      "base_production": 3.0,
+      "base_manpower": 3.0
+    },
+    "4947": {
+      "base_tax": 4.0,
+      "base_production": 3.0,
+      "base_manpower": 3.0
+    },
+    "4954": {
+      "base_tax": 4.0,
+      "base_production": 3.0,
+      "base_manpower": 3.0
+    },
+    "5202": {
+      "base_tax": 4.0,
+      "base_production": 3.0,
+      "base_manpower": 3.0
+    },
+    "2153": {
+      "base_tax": 4.0,
+      "base_production": 3.0,
+      "base_manpower": 3.0
+    },
+    "2157": {
+      "base_tax": 4.0,
+      "base_production": 3.0,
+      "base_manpower": 3.0
+    },
+    "4944": {
+      "base_tax": 4.0,
+      "base_production": 3.0,
+      "base_manpower": 3.0
+    },
+    "4948": {
+      "base_tax": 4.0,
+      "base_production": 3.0,
+      "base_manpower": 3.0
+    },
+    "4957": {
+      "base_tax": 4.0,
+      "base_production": 3.0,
+      "base_manpower": 3.0
+    },
+    "4995": {
+      "base_tax": 4.0,
+      "base_production": 3.0,
+      "base_manpower": 3.0
+    },
+    "5100": {
+      "base_tax": 4.0,
+      "base_production": 3.0,
+      "base_manpower": 3.0
+    },
+    "5214": {
+      "base_tax": 4.0,
+      "base_production": 3.0,
+      "base_manpower": 3.0
+    }
+  },
+  "variables": "{\n\t\t\tgdd_ai_reform_sponsor_score=1.000\n\t\t\tgdd_ai_reform_vote_score=2.000\n\t\t\tzhx_academy_unprotected_school_count=0.000\n\t\t\tzhx_diplomacy_member_extinction_count=0.000\n\t\t\tzhx_doctrine_calculated_delta=1.000\n\t\t\tzhx_doctrine_last_delta=0.000\n\t\t\tzhx_doctrine_ledger_estimated_delta=1.000\n\t\t\tzhx_doctrine_ledger_to_next_tier=25.000\n\t\t\tzhx_doctrine_ledger_to_proposal=45.000\n\t\t\tzhx_doctrine_practice=25.000\n\t\t\tzhx_merit=0.000\n\t\t\tzhx_merit_lifetime=0.000\n\t\t\tzhx_merit_rank_cache=0.000\n\t\t\tzhx_merit_term=200.000\n\t\t}"
+}

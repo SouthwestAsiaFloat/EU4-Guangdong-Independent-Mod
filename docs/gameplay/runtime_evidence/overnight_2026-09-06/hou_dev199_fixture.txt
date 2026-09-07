@@ -1,0 +1,5 @@
+# Qualification negative:20 cities,199 development,200 current-term merit.
+GDD = {
+ set_variable = { which = zhx_merit_term value = 200 }
+ capital_scope = { set_base_tax = 3 }
+}

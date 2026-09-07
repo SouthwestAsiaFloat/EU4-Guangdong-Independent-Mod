@@ -1,0 +1,3 @@
+# Qualification positive:20 cities,200 development,200 current-term merit.
+GDD = { capital_scope = { set_base_tax = 4 } }
+5214 = { cede_province = GDD set_base_tax = 4 set_base_production = 3 set_base_manpower = 3 }

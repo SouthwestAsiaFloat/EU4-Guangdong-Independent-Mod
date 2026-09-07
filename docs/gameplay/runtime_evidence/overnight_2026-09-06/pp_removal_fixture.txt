@@ -1,0 +1,5 @@
+# Controlled PP-removal syntax test, disposable1470 campaign only.
+YUE = { remove_power_projection = { key = zhx_merit_dignity_power_projection } }
+WUU = { remove_power_projection = { type = zhx_merit_dignity_power_projection } }
+ZHA = { remove_power_projection = { key = zhx_merit_dignity_power_projection amount = 10 } }
+WEI = { remove_power_projection = { type = zhx_merit_dignity_power_projection amount = 10 } }

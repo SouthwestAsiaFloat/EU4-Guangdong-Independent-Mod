@@ -1,0 +1,21 @@
+{
+  "checksum": "44f1",
+  "total_lines": 1776,
+  "bytes": 482241,
+  "sha256": "b52f85a15074d562f9f2d59a2852ee564866d302325c284698e57b8b21be000b",
+  "scoped_matches": [
+    "[eventmanager.cpp:166]: Event #37300001 (gdd_heir.1) is missing a title in events/gdd_heir_events.txt",
+    "[eventmanager.cpp:169]: Event #37300001 (gdd_heir.1) is missing a desc in events/gdd_heir_events.txt",
+    "[eventmanager.cpp:172]: Event #37300001 (gdd_heir.1) has no options in events/gdd_heir_events.txt",
+    "[eventmanager.cpp:175]: Event #37300001 (gdd_heir.1) is missing picture in events/gdd_heir_events.txt",
+    "[eventmanager.cpp:166]: Event #37300002 (gdd_heir.2) is missing a title in events/gdd_heir_events.txt",
+    "[eventmanager.cpp:169]: Event #37300002 (gdd_heir.2) is missing a desc in events/gdd_heir_events.txt",
+    "[eventmanager.cpp:172]: Event #37300002 (gdd_heir.2) has no options in events/gdd_heir_events.txt",
+    "[eventmanager.cpp:175]: Event #37300002 (gdd_heir.2) is missing picture in events/gdd_heir_events.txt",
+    "[eventmanager.cpp:166]: Event #37300003 (gdd_heir.3) is missing a title in events/gdd_heir_events.txt",
+    "[eventmanager.cpp:169]: Event #37300003 (gdd_heir.3) is missing a desc in events/gdd_heir_events.txt",
+    "[eventmanager.cpp:172]: Event #37300003 (gdd_heir.3) has no options in events/gdd_heir_events.txt",
+    "[eventmanager.cpp:175]: Event #37300003 (gdd_heir.3) is missing picture in events/gdd_heir_events.txt"
+  ],
+  "note": "Scoped scan only. Global log is not clean."
+}

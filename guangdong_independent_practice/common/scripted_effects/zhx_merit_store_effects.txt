@@ -137,16 +137,9 @@ zhx_recalculate_merit_ranking = {
 }
 
 zhx_remove_merit_dignity_projection = {
-    if = {
-        limit = {
-            has_saved_global_event_target = gdd_principal_vassal
-            tag = event_target:gdd_principal_vassal
-        }
-        add_power_projection = { type = zhx_merit_dignity_power_projection amount = -20 }
-    }
-    else = {
-        add_power_projection = { type = zhx_merit_dignity_power_projection amount = -10 }
-    }
+    # EU4 1.37.5 ignores negative add_power_projection amounts for this source.
+    # Remove the dedicated dignity entry before applying the next term's title.
+    remove_power_projection = { type = zhx_merit_dignity_power_projection }
 }
 
 zhx_apply_seven_dignity = {

@@ -1,0 +1,2 @@
+# Controlled native inputs only: exact RT 20; no direct crown or check effect.
+HAK = { add_republican_tradition = -100 add_republican_tradition = 20 }

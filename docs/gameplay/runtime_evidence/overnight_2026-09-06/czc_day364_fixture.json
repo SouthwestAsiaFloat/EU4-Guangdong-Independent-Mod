@@ -1,0 +1,7 @@
+{
+  "source": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/save games/潮州1446_06_08_night0906_costs.eu4",
+  "fixture": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/save games/codex_night0906_czc_day364.eu4",
+  "sha256": "0569359f679609c0c3ab2691dd75f0f1bdb6db3b2a4f0f818938177000f3929b",
+  "only_change": "CZC current cooldown flag date 1446.6.8 -> 1445.6.9; current game date remains 1446.6.8 (364 days elapsed)",
+  "purpose": "load, try native production buttons before boundary, advance one actual day, try again"
+}

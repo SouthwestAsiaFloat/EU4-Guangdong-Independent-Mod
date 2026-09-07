@@ -1,0 +1,26 @@
+[
+  {
+    "source": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/save games/old_autosave.eu4",
+    "backup": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/old_autosave.eu4",
+    "source_sha256": "86d1bfa83d9da015d95f98a7272714e0221539a5b8b8b5b52db276ba3f8220c6",
+    "backup_sha256": "86d1bfa83d9da015d95f98a7272714e0221539a5b8b8b5b52db276ba3f8220c6"
+  },
+  {
+    "source": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/save games/autosave.eu4",
+    "backup": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/autosave.eu4",
+    "source_sha256": "3fc1a129800f2f8fdd3aa0607d87a25aac484251e3e9d47200a227177b4b2afe",
+    "backup_sha256": "3fc1a129800f2f8fdd3aa0607d87a25aac484251e3e9d47200a227177b4b2afe"
+  },
+  {
+    "source": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/save games/autosave_before_retest_1030.eu4",
+    "backup": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/autosave_before_retest_1030.eu4",
+    "source_sha256": "e8b81d67e5f6e9409ee407f71c2717160820f4f9415f621874dc76d8af84609a",
+    "backup_sha256": "e8b81d67e5f6e9409ee407f71c2717160820f4f9415f621874dc76d8af84609a"
+  },
+  {
+    "source": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/save games/older_autosave.eu4",
+    "backup": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/older_autosave.eu4",
+    "source_sha256": "d647e8d9ee4534038cf3b49c4c7a7b911ba4a5a21f92ea23db1bf5df648a2f80",
+    "backup_sha256": "d647e8d9ee4534038cf3b49c4c7a7b911ba4a5a21f92ea23db1bf5df648a2f80"
+  }
+]

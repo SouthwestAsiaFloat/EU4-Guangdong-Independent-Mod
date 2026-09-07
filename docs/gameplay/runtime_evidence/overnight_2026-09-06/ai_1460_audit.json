@@ -1,0 +1,443 @@
+{
+  "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/save games/codex_night0906_ai_1460.eu4",
+  "sha256": "4e30e1714ec136a1e5ca59da86b7674b43a582ef6db937f571fa63abb5b25b66",
+  "date": "1460.1.1",
+  "countries": {
+    "GUI": {
+      "government": "{\n\t\t\tgovernment=\"monarchy\"\n\t\t\treform_stack={\n\t\t\t\treforms={\n\t\t\t\t\t\"monarchy_mechanic\"\n\t\t\t\t\t\"zhx_feudatory_bo_reform\"\n\t\t\t\t\t\"enforce_privileges_reform\"\n\t\t\t\t}\n\t\t\t\thistory={\n\t\t\t\t\t\"zhx_feudatory_bo_reform\"\n\t\t\t\t\t\"enforce_privileges_reform\"\n\t\t\t\t}\n\t\t\t}\n\t\t}",
+      "government_rank": "1",
+      "flags": "{\n\t\t\tzhx_member=1444.11.11\n\t\t\tzhx_council_vote_c=1457.5.30\n\t\t\tzhx_doctrine_ru=1444.11.11\n\t\t\tzhx_doctrine_practice_initialised=1444.11.11\n\t\t\tzhx_opening_school_initialised=1444.11.11\n\t\t\tgdd_support_reform_single_whip=1459.10.22\n\t\t\tgdd_b82_mountains_discovered=1444.11.11\n\t\t\tgdd_authority_balance_effect_recipient=1459.6.1\n\t\t\tgdd_support_reform_civil_registration=1459.10.22\n\t\t\tgdd_support_reform_silver_standard=1459.10.22\n\t\t\tgdd_support_reform_kanhe=1459.10.22\n\t\t\tgdd_support_reform_keju=1459.10.22\n\t\t\tgdd_support_reform_inclusive_monarchy=1459.10.22\n\t\t\tgdd_support_reform_unified_market=1459.10.22\n\t\t\tgdd_support_reform_military_branch=1459.10.22\n\t\t\tgdd_support_reform_foreign_ship_designs=1459.10.22\n\t\t\tzhx_council_ai_review_pending=1457.5.30\n\t\t\trecent_land_seizure=1455.1.20\n\t\t\trecent_land_distribution=1459.8.12\n\t\t\tzhx_doctrine_hover_positive_3=1459.9.9\n\t\t\tzhx_doctrine_hover_positive_1=1459.9.9\n\t\t}",
+      "variables": "{\n\t\t\testate_nobles_improve_prestige_var=1.000\n\t\t\tgdd_ai_reform_sponsor_score=1.000\n\t\t\tgdd_ai_reform_vote_score=2.000\n\t\t\tland_units_killed=2446.000\n\t\t\tland_units_lost=368.000\n\t\t\tnaval_units_killed=0.000\n\t\t\tnaval_units_lost=0.000\n\t\t\tnum_of_battles_won_var=3.000\n\t\t\tsale_of_titles_counter=2.000\n\t\t\tseize_land_counter=3.000\n\t\t\tseize_land_effect_variable=0.000\n\t\t\ttotal_land_units_killed=7446.000\n\t\t\ttotal_land_units_lost=1384.000\n\t\t\ttotal_naval_units_killed=0.000\n\t\t\ttotal_naval_units_lost=0.000\n\t\t\tzhx_academy_unprotected_school_count=0.000\n\t\t\tzhx_council_vote_weight=1.000\n\t\t\tzhx_diplomacy_member_extinction_count=0.000\n\t\t\tzhx_doctrine_calculated_delta=3.000\n\t\t\tzhx_doctrine_last_delta=3.000\n\t\t\tzhx_doctrine_ledger_estimated_delta=3.000\n\t\t\tzhx_doctrine_ledger_to_next_tier=7.000\n\t\t\tzhx_doctrine_ledger_to_proposal=2.000\n\t\t\tzhx_doctrine_practice=68.000\n\t\t\tzhx_doctrine_receipt_new_tier=2.000\n\t\t\tzhx_doctrine_receipt_old_practice=65.000\n\t\t\tzhx_doctrine_receipt_old_tier=2.000\n\t\t\tzhx_doctrine_reform_ai_low_practice_years=0.000\n\t\t\tzhx_merit=15.000\n\t\t\tzhx_merit_lifetime=15.000\n\t\t\tzhx_merit_rank_cache=0.000\n\t\t\tzhx_merit_rank_prestige=-20.856\n\t\t\tzhx_merit_term=15.000\n\t\t}",
+      "last_election": "1444.11.11",
+      "stability": "1.000",
+      "prestige": "-20.175",
+      "capital": "4959",
+      "powers": "{\n\t\t\t374 511 611 \n\t\t}",
+      "owned_provinces": "{\n\t\t\t4959 \n\t\t}",
+      "monarch": "{\n\t\t\tid=3570\n\t\t\ttype=48\n\t\t}",
+      "heir": "{\n\t\t\tid=3571\n\t\t\ttype=48\n\t\t}",
+      "estate": [
+        "{\n\t\t\ttype=\"estate_church\"\n\t\t\tloyalty=60.886\n\t\t\tterritory=29.423\n\t\t\tgranted_privileges={\n\t\t\t\t{\nestate_church_clerical_oversight 1444.11.12\t\t\t\t}\n {\nestate_church_one_faith_one_culture 1465.1.3\t\t\t\t}\n \n\t\t\t}\n\t\t}",
+        "{\n\t\t\ttype=\"estate_nobles\"\n\t\t\tloyalty=66.184\n\t\t\tterritory=41.974\n\t\t\tgranted_privileges={\n\t\t\t\t{\nestate_nobles_right_of_counsel 1444.11.13\t\t\t\t}\n {\nestate_nobles_supremacy_over_crown 1444.11.15\t\t\t\t}\n \n\t\t\t}\n\t\t}",
+        "{\n\t\t\ttype=\"estate_burghers\"\n\t\t\tloyalty=55.884\n\t\t\tterritory=10.494\n\t\t\tactive_influences={\n\t\t\t\t4 \n\t\t\t}\n\t\t\tgranted_privileges={\n\t\t\t\t{\nestate_burghers_free_enterprise 1444.11.14\t\t\t\t}\n {\nestate_burghers_control_over_monetary_policy 1454.7.12\t\t\t\t}\n \n\t\t\t}\n\t\t}"
+      ],
+      "faction": [],
+      "monarch_current_ref_present": true,
+      "monarch_records": [
+        "{\n\t\t\t\t\tid={\n\t\t\t\t\t\tid=3570\n\t\t\t\t\t\ttype=48\n\t\t\t\t\t}\n\n\t\t\t\t\tname=\"云\"\n\t\t\t\t\tcountry=\"GUI\"\n\t\t\t\t\tDIP=1\n\t\t\t\t\tADM=2\n\t\t\t\t\tMIL=4\n\t\t\t\t\tculture=gdd_gui\n\t\t\t\t\treligion=confucianism\n\t\t\t\t\tpersonalities={\n\t\t\t\t\t\tfree_thinker_personality=yes\n\t\t\t\t\t\ttactical_genius_personality=yes\n\t\t\t\t\t}\n\t\t\t\t\thas_declared_war={\n\t\t\t\t\t\tdate=1451.7.15\n\t\t\t\t\t\twar=\"桂林征服永州之战\"\n\t\t\t\t\t}\n\t\t\t\t\truler_flags={\n\t\t\t\t\t\tapproached_by_consorts_foreign_family=1453.12.20\n\t\t\t\t\t}\n\t\t\t\t\tdynasty=\"冯\"\n\t\t\t\t\tbirth_date=1410.1.1\n\t\t\t\t}"
+      ],
+      "monarch_resolution": "country-local",
+      "heir_current_ref_present": true,
+      "heir_records": [
+        "{\n\t\t\t\t\tid={\n\t\t\t\t\t\tid=3571\n\t\t\t\t\t\ttype=48\n\t\t\t\t\t}\n\n\t\t\t\t\tname=\"宝栓\"\n\t\t\t\t\tcountry=\"GUI\"\n\t\t\t\t\tDIP=1\n\t\t\t\t\tADM=3\n\t\t\t\t\tMIL=2\n\t\t\t\t\tculture=gdd_gui\n\t\t\t\t\treligion=confucianism\n\t\t\t\t\tpersonalities={\n\t\t\t\t\t\tbold_fighter_personality=yes\n\t\t\t\t\t}\n\t\t\t\t\tdynasty=\"冯\"\n\t\t\t\t\tbirth_date=1434.1.1\n\t\t\t\t\tdeath_date=1821.1.1\n\t\t\t\t\tclaim=100.000\n\t\t\t\t}"
+      ],
+      "heir_resolution": "country-local"
+    },
+    "NUN": {
+      "government": "{\n\t\t\tgovernment=\"tribal\"\n\t\t\treform_stack={\n\t\t\t\treforms={\n\t\t\t\t\t\"tribe_mechanic\"\n\t\t\t\t\t\"tribal_kingdom\"\n\t\t\t\t\t\"civil_society_reform\"\n\t\t\t\t}\n\t\t\t\thistory={\n\t\t\t\t\t\"tribal_kingdom\"\n\t\t\t\t\t\"civil_society_reform\"\n\t\t\t\t}\n\t\t\t}\n\t\t}",
+      "government_rank": "2",
+      "flags": "{\n\t\t\tgdd_b82_mountains_discovered=1444.11.11\n\t\t\trecent_land_seizure=1453.6.22\n\t\t\toverlord_inspired_dip_rep=1452.2.1\n\t\t\trecent_estate_agenda=1453.6.21\n\t\t}",
+      "variables": "{\n\t\t\testate_burghers_build_trade_building_in_y_var=1.000\n\t\t\tland_units_killed=103.000\n\t\t\tland_units_lost=1000.000\n\t\t\tnaval_units_killed=0.000\n\t\t\tnaval_units_lost=0.000\n\t\t\tseize_land_counter=2.000\n\t\t\tsummon_the_diet_counter=1.000\n\t\t\ttotal_land_units_killed=3708.000\n\t\t\ttotal_land_units_lost=12905.000\n\t\t\ttotal_naval_units_killed=0.000\n\t\t\ttotal_naval_units_lost=0.000\n\t\t\tzhx_diplomacy_member_extinction_count=0.000\n\t\t\tzhx_merit_rank_cache=0.000\n\t\t\tzhx_merit_rank_prestige=-4.126\n\t\t}",
+      "last_election": "1444.11.11",
+      "stability": "1.000",
+      "prestige": "-2.992",
+      "capital": "663",
+      "powers": "{\n\t\t\t312 291 501 \n\t\t}",
+      "owned_provinces": "{\n\t\t\t663 \n\t\t}",
+      "monarch": "{\n\t\t\tid=8214\n\t\t\ttype=48\n\t\t}",
+      "heir": "{\n\t\t\tid=13654\n\t\t\ttype=48\n\t\t}",
+      "estate": [
+        "{\n\t\t\ttype=\"estate_church\"\n\t\t\tloyalty=59.800\n\t\t\tterritory=24.015\n\t\t\tinfluence_modifier={\n\t\t\t\tvalue=5.000\n\t\t\t\tdesc=\"EST_VAL_DIET_SUMMONED\"\n\t\t\t\tdate=1473.6.21\n\t\t\t}\n\t\t\tgranted_privileges={\n\t\t\t\t{\nestate_church_clerical_oversight 1444.11.13\t\t\t\t}\n \n\t\t\t}\n\t\t\tnum_of_estate_agendas_completed=1\n\t\t}",
+        "{\n\t\t\ttype=\"estate_nobles\"\n\t\t\tloyalty=52.143\n\t\t\tterritory=24.018\n\t\t\tinfluence_modifier={\n\t\t\t\tvalue=-10.000\n\t\t\t\tdesc=\"EST_VAL_NOBILITY_DECLINES\"\n\t\t\t\tdate=1460.3.9\n\t\t\t}\n\t\t\tinfluence_modifier={\n\t\t\t\tvalue=5.000\n\t\t\t\tdesc=\"EST_VAL_DIET_SUMMONED\"\n\t\t\t\tdate=1473.6.21\n\t\t\t}\n\t\t\tactive_loyalties={\n\t\t\t\t1 \n\t\t\t}\n\t\t\tgranted_privileges={\n\t\t\t\t{\nestate_nobles_right_of_counsel 1444.11.14\t\t\t\t}\n {\nestate_nobles_supremacy_over_crown 1444.11.16\t\t\t\t}\n \n\t\t\t}\n\t\t}",
+        "{\n\t\t\ttype=\"estate_burghers\"\n\t\t\tloyalty=50.198\n\t\t\tterritory=11.967\n\t\t\tinfluence_modifier={\n\t\t\t\tvalue=5.000\n\t\t\t\tdesc=\"EST_VAL_DIET_SUMMONED\"\n\t\t\t\tdate=1473.6.21\n\t\t\t}\n\t\t\tactive_influences={\n\t\t\t\t4 \n\t\t\t}\n\t\t\tgranted_privileges={\n\t\t\t\t{\nestate_burghers_free_enterprise 1444.11.15\t\t\t\t}\n {\nestate_burghers_tropical_nation 1444.11.12\t\t\t\t}\n \n\t\t\t}\n\t\t}"
+      ],
+      "faction": [],
+      "monarch_current_ref_present": true,
+      "monarch_records": [
+        "{\n\t\t\t\t\tid={\n\t\t\t\t\t\tid=8214\n\t\t\t\t\t\ttype=48\n\t\t\t\t\t}\n\n\t\t\t\t\tname=\"拿罗\"\n\t\t\t\t\tcountry=\"NUN\"\n\t\t\t\t\tDIP=2\n\t\t\t\t\tADM=4\n\t\t\t\t\tMIL=5\n\t\t\t\t\tculture=gdd_zhuang\n\t\t\t\t\treligion=animism\n\t\t\t\t\tpersonalities={\n\t\t\t\t\t\tconqueror_personality=yes\n\t\t\t\t\t}\n\t\t\t\t\tdynasty=\"侬\"\n\t\t\t\t\tbirth_date=1431.1.1\n\t\t\t\t\tsucceeded=yes\n\t\t\t\t\tdeath_date=1821.1.1\n\t\t\t\t\tclaim=89.106\n\t\t\t\t}"
+      ],
+      "monarch_resolution": "country-local",
+      "heir_current_ref_present": true,
+      "heir_records": [
+        "{\n\t\t\t\t\tid={\n\t\t\t\t\t\tid=13654\n\t\t\t\t\t\ttype=48\n\t\t\t\t\t}\n\n\t\t\t\t\tname=\"达福\"\n\t\t\t\t\tcountry=\"NUN\"\n\t\t\t\t\tDIP=2\n\t\t\t\t\tADM=4\n\t\t\t\t\tMIL=3\n\t\t\t\t\tculture=gdd_zhuang\n\t\t\t\t\treligion=animism\n\t\t\t\t\tdynasty=\"侬\"\n\t\t\t\t\tbirth_date=1452.8.8\n\t\t\t\t\tmonarch_name=\"达福\"\n\t\t\t\t\tclaim=85.284\n\t\t\t\t}"
+      ],
+      "heir_resolution": "country-local"
+    },
+    "TZZ": {
+      "government": "{\n\t\t\tgovernment=\"tribal\"\n\t\t\treform_stack={\n\t\t\t\treforms={\n\t\t\t\t\t\"tribe_mechanic\"\n\t\t\t\t\t\"tribal_despotism\"\n\t\t\t\t\t\"martial_society_reform\"\n\t\t\t\t}\n\t\t\t\thistory={\n\t\t\t\t\t\"tribal_despotism\"\n\t\t\t\t\t\"martial_society_reform\"\n\t\t\t\t}\n\t\t\t}\n\t\t}",
+      "government_rank": "1",
+      "flags": "{\n\t\t\tgdd_b82_mountains_discovered=1444.11.11\n\t\t\trecent_land_seizure=1456.2.10\n\t\t}",
+      "variables": "{\n\t\t\tseize_land_counter=2.000\n\t\t\tzhx_diplomacy_member_extinction_count=0.000\n\t\t\tzhx_merit_rank_cache=0.000\n\t\t\tzhx_merit_rank_prestige=13.588\n\t\t}",
+      "last_election": "1444.11.11",
+      "stability": "1.000",
+      "prestige": "13.195",
+      "capital": "5210",
+      "powers": "{\n\t\t\t645 249 602 \n\t\t}",
+      "owned_provinces": "{\n\t\t\t664 5210 \n\t\t}",
+      "monarch": "{\n\t\t\tid=11537\n\t\t\ttype=48\n\t\t}",
+      "heir": "{\n\t\t\tid=11538\n\t\t\ttype=48\n\t\t}",
+      "estate": [
+        "{\n\t\t\ttype=\"estate_church\"\n\t\t\tloyalty=56.247\n\t\t\tterritory=24.015\n\t\t\tinfluence_modifier={\n\t\t\t\tvalue=10.000\n\t\t\t\tdesc=\"EST_VAL_TITHES_DEFENDED\"\n\t\t\t\tdate=1464.3.17\n\t\t\t}\n\t\t\tgranted_privileges={\n\t\t\t\t{\nestate_church_clerical_oversight 1444.11.13\t\t\t\t}\n {\nestate_church_karma_temples 1444.11.16\t\t\t\t}\n \n\t\t\t}\n\t\t}",
+        "{\n\t\t\ttype=\"estate_nobles\"\n\t\t\tloyalty=59.361\n\t\t\tterritory=24.018\n\t\t\tgranted_privileges={\n\t\t\t\t{\nestate_nobles_right_of_counsel 1444.11.14\t\t\t\t}\n {\nestate_nobles_supremacy_over_crown 1444.11.17\t\t\t\t}\n \n\t\t\t}\n\t\t}",
+        "{\n\t\t\ttype=\"estate_burghers\"\n\t\t\tloyalty=43.227\n\t\t\tterritory=11.967\n\t\t\tinfluence_modifier={\n\t\t\t\tvalue=-10.000\n\t\t\t\tdesc=\"EST_VAL_TITHES_DEFENDED\"\n\t\t\t\tdate=1464.3.17\n\t\t\t}\n\t\t\tactive_influences={\n\t\t\t\t4 \n\t\t\t}\n\t\t\tgranted_privileges={\n\t\t\t\t{\nestate_burghers_free_enterprise 1444.11.15\t\t\t\t}\n {\nestate_burghers_tropical_nation 1444.11.12\t\t\t\t}\n \n\t\t\t}\n\t\t}"
+      ],
+      "faction": [],
+      "monarch_current_ref_present": true,
+      "monarch_records": [
+        "{\n\t\t\t\t\tid={\n\t\t\t\t\t\tid=11537\n\t\t\t\t\t\ttype=48\n\t\t\t\t\t}\n\n\t\t\t\t\tname=\"舍那\"\n\t\t\t\t\tcountry=\"TZZ\"\n\t\t\t\t\tDIP=2\n\t\t\t\t\tADM=3\n\t\t\t\t\tMIL=1\n\t\t\t\t\tculture=gdd_zhuang\n\t\t\t\t\treligion=mahayana\n\t\t\t\t\tpersonalities={\n\t\t\t\t\t\tcalm_personality=yes\n\t\t\t\t\t\tjust_personality=yes\n\t\t\t\t\t}\n\t\t\t\t\tdynasty=\"田\"\n\t\t\t\t\tbirth_date=1409.1.1\n\t\t\t\t}"
+      ],
+      "monarch_resolution": "country-local",
+      "heir_current_ref_present": true,
+      "heir_records": [
+        "{\n\t\t\t\t\tid={\n\t\t\t\t\t\tid=11538\n\t\t\t\t\t\ttype=48\n\t\t\t\t\t}\n\n\t\t\t\t\tname=\"氏毗耶梨\"\n\t\t\t\t\tcountry=\"TZZ\"\n\t\t\t\t\tDIP=6\n\t\t\t\t\tADM=2\n\t\t\t\t\tMIL=2\n\t\t\t\t\tfemale=yes\n\t\t\t\t\tculture=gdd_zhuang\n\t\t\t\t\treligion=mahayana\n\t\t\t\t\tpersonalities={\n\t\t\t\t\t\tcharismatic_negotiator_personality=yes\n\t\t\t\t\t}\n\t\t\t\t\tdynasty=\"田\"\n\t\t\t\t\tbirth_date=1433.1.1\n\t\t\t\t\tdeath_date=1821.1.1\n\t\t\t\t\tclaim=100.000\n\t\t\t\t}"
+      ],
+      "heir_resolution": "country-local"
+    },
+    "LIL": {
+      "government": "{\n\t\t\tgovernment=\"tribal\"\n\t\t\treform_stack={\n\t\t\t\treforms={\n\t\t\t\t\t\"tribe_mechanic\"\n\t\t\t\t\t\"tribal_despotism\"\n\t\t\t\t\t\"martial_society_reform\"\n\t\t\t\t}\n\t\t\t\thistory={\n\t\t\t\t\t\"tribal_despotism\"\n\t\t\t\t\t\"martial_society_reform\"\n\t\t\t\t}\n\t\t\t}\n\t\t}",
+      "government_rank": "1",
+      "flags": "{\n\t\t\tzhx_doctrine_dao=1444.11.11\n\t\t\tzhx_doctrine_practice_initialised=1444.11.11\n\t\t\tzhx_opening_school_initialised=1444.11.11\n\t\t\tgdd_b82_mountains_discovered=1444.11.11\n\t\t\trecent_land_seizure=1444.11.12\n\t\t\tzhx_doctrine_hover_positive_3=1459.9.6\n\t\t\tzhx_doctrine_hover_positive_1=1459.9.6\n\t\t\tzhx_doctrine_hover_positive_2=1459.9.6\n\t\t}",
+      "variables": "{\n\t\t\testate_nobles_improve_prestige_var=2.000\n\t\t\tnum_converted_religion=1.000\n\t\t\tseize_land_counter=1.000\n\t\t\tzhx_academy_unprotected_school_count=0.000\n\t\t\tzhx_diplomacy_member_extinction_count=0.000\n\t\t\tzhx_doctrine_calculated_delta=4.000\n\t\t\tzhx_doctrine_last_delta=4.000\n\t\t\tzhx_doctrine_ledger_estimated_delta=4.000\n\t\t\tzhx_doctrine_ledger_to_next_tier=0.000\n\t\t\tzhx_doctrine_ledger_to_proposal=0.000\n\t\t\tzhx_doctrine_practice=85.000\n\t\t\tzhx_doctrine_receipt_new_tier=3.000\n\t\t\tzhx_doctrine_receipt_old_practice=81.000\n\t\t\tzhx_doctrine_receipt_old_tier=3.000\n\t\t\tzhx_doctrine_reform_ai_low_practice_years=0.000\n\t\t\tzhx_merit_rank_cache=0.000\n\t\t\tzhx_merit_rank_prestige=15.562\n\t\t}",
+      "last_election": "1444.11.11",
+      "stability": "1.000",
+      "prestige": "15.088",
+      "capital": "4945",
+      "powers": "{\n\t\t\t271 650 292 \n\t\t}",
+      "owned_provinces": "{\n\t\t\t2159 2161 4945 \n\t\t}",
+      "monarch": "{\n\t\t\tid=6052\n\t\t\ttype=48\n\t\t}",
+      "heir": "{\n\t\t\tid=6053\n\t\t\ttype=48\n\t\t}",
+      "estate": [
+        "{\n\t\t\ttype=\"estate_church\"\n\t\t\tloyalty=49.674\n\t\t\tterritory=10.000\n\t\t\tgranted_privileges={\n\t\t\t\t{\nestate_church_religious_state 1444.11.13\t\t\t\t}\n {\nestate_church_clerical_oversight 1444.11.14\t\t\t\t}\n \n\t\t\t}\n\t\t}",
+        "{\n\t\t\ttype=\"estate_nobles\"\n\t\t\tloyalty=63.400\n\t\t\tterritory=36.666\n\t\t\tgranted_privileges={\n\t\t\t\t{\nestate_nobles_right_of_counsel 1444.11.15\t\t\t\t}\n {\nestate_nobles_supremacy_over_crown 1444.11.17\t\t\t\t}\n \n\t\t\t}\n\t\t}",
+        "{\n\t\t\ttype=\"estate_burghers\"\n\t\t\tloyalty=61.000\n\t\t\tterritory=18.334\n\t\t\tactive_influences={\n\t\t\t\t4 \n\t\t\t}\n\t\t\tgranted_privileges={\n\t\t\t\t{\nestate_burghers_free_enterprise 1444.11.16\t\t\t\t}\n {\nestate_burghers_tropical_nation 1444.11.12\t\t\t\t}\n \n\t\t\t}\n\t\t}"
+      ],
+      "faction": [],
+      "monarch_current_ref_present": true,
+      "monarch_records": [
+        "{\n\t\t\t\t\tid={\n\t\t\t\t\t\tid=6052\n\t\t\t\t\t\ttype=48\n\t\t\t\t\t}\n\n\t\t\t\t\tname=\"玉阶\"\n\t\t\t\t\tcountry=\"LIL\"\n\t\t\t\t\tDIP=4\n\t\t\t\t\tADM=3\n\t\t\t\t\tMIL=6\n\t\t\t\t\tculture=gdd_guangfu\n\t\t\t\t\treligion=confucianism\n\t\t\t\t\tpersonalities={\n\t\t\t\t\t\tzealot_personality=yes\n\t\t\t\t\t\tmalevolent_personality=yes\n\t\t\t\t\t}\n\t\t\t\t\tdynasty=\"冼\"\n\t\t\t\t\tbirth_date=1406.1.1\n\t\t\t\t}"
+      ],
+      "monarch_resolution": "country-local",
+      "heir_current_ref_present": true,
+      "heir_records": [
+        "{\n\t\t\t\t\tid={\n\t\t\t\t\t\tid=6053\n\t\t\t\t\t\ttype=48\n\t\t\t\t\t}\n\n\t\t\t\t\tname=\"真君\"\n\t\t\t\t\tcountry=\"LIL\"\n\t\t\t\t\tDIP=2\n\t\t\t\t\tADM=2\n\t\t\t\t\tMIL=5\n\t\t\t\t\tculture=gdd_guangfu\n\t\t\t\t\treligion=confucianism\n\t\t\t\t\tpersonalities={\n\t\t\t\t\t\tloose_lips_personality=yes\n\t\t\t\t\t}\n\t\t\t\t\tdynasty=\"冼\"\n\t\t\t\t\tbirth_date=1430.1.1\n\t\t\t\t\tdeath_date=1821.1.1\n\t\t\t\t\tclaim=100.000\n\t\t\t\t}"
+      ],
+      "heir_resolution": "country-local"
+    },
+    "DAI": {
+      "government": "{\n\t\t\tgovernment=\"monarchy\"\n\t\t\treform_stack={\n\t\t\t\treforms={\n\t\t\t\t\t\"monarchy_mechanic\"\n\t\t\t\t\t\"zhx_feudatory_bo_reform\"\n\t\t\t\t}\n\t\t\t\thistory={\n\t\t\t\t\t\"zhx_feudatory_bo_reform\"\n\t\t\t\t}\n\t\t\t}\n\t\t}",
+      "government_rank": "1",
+      "flags": "{\n\t\t\tgdd_b82_mountains_discovered=1444.11.11\n\t\t\tgdd_dai_hue_capital_checked=1444.11.11\n\t\t\tzhx_member=1444.11.11\n\t\t\tzhx_council_vote_c=1457.5.30\n\t\t\tzhx_doctrine_ru=1444.11.11\n\t\t\tzhx_doctrine_practice_initialised=1444.11.11\n\t\t\tzhx_opening_school_initialised=1444.11.11\n\t\t\trecent_land_seizure=1457.4.16\n\t\t\tgdd_support_reform_military_governors=1459.10.22\n\t\t\tgdd_support_reform_civil_registration=1459.10.22\n\t\t\tgdd_support_reform_silver_standard=1459.10.22\n\t\t\tgdd_support_reform_kanhe=1459.10.22\n\t\t\tgdd_support_reform_keju=1459.10.22\n\t\t\tgdd_support_reform_inclusive_monarchy=1459.10.22\n\t\t\tgdd_support_reform_unified_market=1459.10.22\n\t\t\tgdd_support_reform_military_branch=1459.10.22\n\t\t\tgdd_support_reform_foreign_ship_designs=1459.10.22\n\t\t\tgdd_support_reform_single_whip=1459.10.22\n\t\t\tzhx_doctrine_hover_negative_1=1459.3.30\n\t\t\tzhx_council_ai_review_pending=1457.5.30\n\t\t\tzhx_doctrine_hover_positive_3=1459.3.30\n\t\t\tgdd_authority_balance_effect_recipient=1459.6.1\n\t\t}",
+      "variables": "{\n\t\t\tcoup_attempt_disaster_progress=87.000\n\t\t\tgdd_ai_reform_sponsor_score=1.000\n\t\t\tgdd_ai_reform_vote_score=2.000\n\t\t\tgdd_liang_minimum_grant_development=0.000\n\t\t\tgdd_liang_scanned_grant_development=0.000\n\t\t\tland_units_killed=4500.000\n\t\t\tland_units_lost=4744.000\n\t\t\tnaval_units_killed=0.000\n\t\t\tnaval_units_lost=0.000\n\t\t\tnum_of_battles_won_var=4.000\n\t\t\tnum_of_wars_won_var=1.000\n\t\t\tother_advisor_culture=-1.000\n\t\t\tseize_land_counter=3.000\n\t\t\tseize_land_effect_variable=0.000\n\t\t\ttotal_disasters_completed_counter=2.000\n\t\t\ttotal_land_units_killed=23874.000\n\t\t\ttotal_land_units_lost=23789.000\n\t\t\ttotal_naval_units_killed=9.000\n\t\t\ttotal_naval_units_lost=1.000\n\t\t\tzhx_academy_unprotected_school_count=0.000\n\t\t\tzhx_council_vote_weight=1.000\n\t\t\tzhx_diplomacy_member_extinction_count=0.000\n\t\t\tzhx_doctrine_calculated_delta=-2.000\n\t\t\tzhx_doctrine_last_delta=-2.000\n\t\t\tzhx_doctrine_ledger_estimated_delta=-2.000\n\t\t\tzhx_doctrine_ledger_to_next_tier=8.000\n\t\t\tzhx_doctrine_ledger_to_proposal=53.000\n\t\t\tzhx_doctrine_practice=17.000\n\t\t\tzhx_doctrine_receipt_new_tier=0.000\n\t\t\tzhx_doctrine_receipt_old_practice=19.000\n\t\t\tzhx_doctrine_receipt_old_tier=0.000\n\t\t\tzhx_doctrine_reform_ai_low_practice_years=15.000\n\t\t\tzhx_merit=30.000\n\t\t\tzhx_merit_lifetime=30.000\n\t\t\tzhx_merit_rank_cache=0.000\n\t\t\tzhx_merit_rank_prestige=24.308\n\t\t\tzhx_merit_term=30.000\n\t\t}",
+      "last_election": "1444.11.11",
+      "stability": "-1.000",
+      "prestige": "24.016",
+      "capital": "2373",
+      "powers": "{\n\t\t\t119 405 355 \n\t\t}",
+      "owned_provinces": "{\n\t\t\t613 610 1016 1022 2372 2373 4819 4820 4821 665 4942 2164 5203 616 5201 4960 4954 5202 4947 \n\t\t}",
+      "monarch": "{\n\t\t\tid=13764\n\t\t\ttype=48\n\t\t}",
+      "heir": "{\n\t\t\tid=13763\n\t\t\ttype=48\n\t\t}",
+      "estate": [
+        "{\n\t\t\ttype=\"estate_church\"\n\t\t\tloyalty=40.902\n\t\t\tterritory=0.655\n\t\t\tinfluence_modifier={\n\t\t\t\tvalue=-10.000\n\t\t\t\tdesc=\"EST_VAL_CHURCH_DECLINE\"\n\t\t\t\tdate=1464.10.3\n\t\t\t}\n\t\t\tactive_influences={\n\t\t\t\t2 \n\t\t\t}\n\t\t\tgranted_privileges={\n\t\t\t\t{\nestate_church_clerical_oversight 1444.11.14\t\t\t\t}\n \n\t\t\t}\n\t\t\tnum_of_estate_agendas_completed=1\n\t\t}",
+        "{\n\t\t\ttype=\"estate_nobles\"\n\t\t\tloyalty=61.601\n\t\t\tterritory=58.731\n\t\t\tinfluence_modifier={\n\t\t\t\tvalue=-15.000\n\t\t\t\tdesc=\"EST_VAL_NOBLES_ELABORATE_COURT_CEREMONIES\"\n\t\t\t\tdate=1479.10.8\n\t\t\t}\n\t\t\tgranted_privileges={\n\t\t\t\t{\nestate_nobles_right_of_counsel 1444.11.15\t\t\t\t}\n {\nestate_nobles_supremacy_over_crown 1444.11.17\t\t\t\t}\n \n\t\t\t}\n\t\t}",
+        "{\n\t\t\ttype=\"estate_burghers\"\n\t\t\tloyalty=45.292\n\t\t\tterritory=15.114\n\t\t\tactive_influences={\n\t\t\t\t1 \n\t\t\t}\n\t\t\tgranted_privileges={\n\t\t\t\t{\nestate_burghers_free_enterprise 1444.11.16\t\t\t\t}\n {\nestate_burghers_tropical_nation 1444.11.13\t\t\t\t}\n \n\t\t\t}\n\t\t}"
+      ],
+      "faction": [],
+      "monarch_current_ref_present": true,
+      "monarch_records": [
+        "{\n\t\t\t\t\tid={\n\t\t\t\t\t\tid=13764\n\t\t\t\t\t\ttype=48\n\t\t\t\t\t}\n\n\t\t\t\t\tname=\"玉香\"\n\t\t\t\t\tcountry=\"DAI\"\n\t\t\t\t\tDIP=3\n\t\t\t\t\tADM=3\n\t\t\t\t\tMIL=1\n\t\t\t\t\tfemale=yes\n\t\t\t\t\tregency={\n\t\t\t\t\t}\n\t\t\t\t\tculture=vietnamese\n\t\t\t\t\treligion=confucianism\n\t\t\t\t\tpersonalities={\n\t\t\t\t\t\tscholar_personality=yes\n\t\t\t\t\t}\n\t\t\t\t\tdynasty=\"武\"\n\t\t\t\t\tbirth_date=1432.11.11\n\t\t\t\t\tsucceeded=yes\n\t\t\t\t\tmonarch_name=\"玉香\"\n\t\t\t\t\tcountry_of_origin=DAI\n\t\t\t\t}"
+      ],
+      "monarch_resolution": "country-local",
+      "heir_current_ref_present": true,
+      "heir_records": [
+        "{\n\t\t\t\t\tid={\n\t\t\t\t\t\tid=13763\n\t\t\t\t\t\ttype=48\n\t\t\t\t\t}\n\n\t\t\t\t\tname=\"季犛\"\n\t\t\t\t\tcountry=\"DAI\"\n\t\t\t\t\tDIP=4\n\t\t\t\t\tADM=2\n\t\t\t\t\tMIL=3\n\t\t\t\t\tculture=vietnamese\n\t\t\t\t\treligion=confucianism\n\t\t\t\t\tdynasty=\"潘\"\n\t\t\t\t\tbirth_date=1455.5.10\n\t\t\t\t\tmonarch_name=\"季犛\"\n\t\t\t\t\tclaim=32.143\n\t\t\t\t}"
+      ],
+      "heir_resolution": "country-local"
+    },
+    "GDD": {
+      "government": "{\n\t\t\tgovernment=\"monarchy\"\n\t\t\treform_stack={\n\t\t\t\treforms={\n\t\t\t\t\t\"monarchy_mechanic\"\n\t\t\t\t\t\"zhx_feudatory_hou_reform\"\n\t\t\t\t\t\"quash_noble_power_reform\"\n\t\t\t\t}\n\t\t\t\thistory={\n\t\t\t\t\t\"zhx_feudatory_hou_reform\"\n\t\t\t\t\t\"quash_noble_power_reform\"\n\t\t\t\t}\n\t\t\t}\n\t\t}",
+      "government_rank": "1",
+      "flags": "{\n\t\t\tzhx_member=1444.11.11\n\t\t\tgdd_support_reform_foreign_ship_designs=1459.10.22\n\t\t\tzhx_doctrine_ru=1444.11.11\n\t\t\tzhx_doctrine_practice_initialised=1444.11.11\n\t\t\tzhx_opening_school_initialised=1444.11.11\n\t\t\tzhx_merit_active_contribution_this_term=1448.11.4\n\t\t\tgdd_b82_mountains_discovered=1444.11.11\n\t\t\tgdd_v03_fix2_initialised=1444.11.11\n\t\t\tgdd_liang_chengzuo_created=1453.7.12\n\t\t\tgdd_heir_system_initialised=1444.11.11\n\t\t\trecent_land_seizure=1457.4.26\n\t\t\tgdd_estate_privileges_initialised=1444.11.11\n\t\t\tgdd_treaty_chain_started=1449.12.16\n\t\t\tgdd_authority_balance_effect_recipient=1459.6.1\n\t\t\tgdd_support_reform_military_branch=1459.10.22\n\t\t\tgdd_support_reform_civil_registration=1459.10.22\n\t\t\tgdd_support_reform_silver_standard=1459.10.22\n\t\t\tgdd_support_reform_kanhe=1459.10.22\n\t\t\tgdd_support_reform_keju=1459.10.22\n\t\t\tgdd_support_reform_inclusive_monarchy=1459.10.22\n\t\t\tgdd_support_reform_unified_market=1459.10.22\n\t\t\tzhx_council_vote_c=1457.5.30\n\t\t\tzhx_council_ai_review_pending=1457.5.30\n\t\t\tzhx_doctrine_hover_positive_3=1459.9.3\n\t\t\tzhx_doctrine_hover_positive_1=1459.9.3\n\t\t}",
+      "variables": "{\n\t\t\testate_burghers_increase_trade_power_in_X_var=1.000\n\t\t\testate_nobles_build_fort_building_in_y_var=1.000\n\t\t\tgdd_ai_reform_sponsor_score=1.000\n\t\t\tgdd_ai_reform_vote_score=2.000\n\t\t\tgdd_liang_minimum_grant_development=0.000\n\t\t\tgdd_liang_scanned_grant_development=0.000\n\t\t\tland_units_killed=1000.000\n\t\t\tland_units_lost=0.000\n\t\t\tnaval_units_killed=0.000\n\t\t\tnaval_units_lost=0.000\n\t\t\tnum_converted_religion=1.000\n\t\t\tnum_of_battles_won_ruler=5.000\n\t\t\tnum_of_battles_won_var=10.000\n\t\t\tnum_of_wars_won_against_heretics=1.000\n\t\t\tnum_of_wars_won_against_non_believers=2.000\n\t\t\tnum_of_wars_won_var=2.000\n\t\t\tseize_land_counter=3.000\n\t\t\ttotal_land_units_killed=33257.000\n\t\t\ttotal_land_units_lost=12266.000\n\t\t\ttotal_naval_units_killed=1.000\n\t\t\ttotal_naval_units_lost=9.000\n\t\t\tzhx_academy_unprotected_school_count=0.000\n\t\t\tzhx_council_vote_weight=1.000\n\t\t\tzhx_diplomacy_member_extinction_count=0.000\n\t\t\tzhx_doctrine_calculated_delta=3.000\n\t\t\tzhx_doctrine_last_delta=3.000\n\t\t\tzhx_doctrine_ledger_estimated_delta=3.000\n\t\t\tzhx_doctrine_ledger_to_next_tier=9.000\n\t\t\tzhx_doctrine_ledger_to_proposal=4.000\n\t\t\tzhx_doctrine_practice=66.000\n\t\t\tzhx_doctrine_receipt_new_tier=2.000\n\t\t\tzhx_doctrine_receipt_old_practice=63.000\n\t\t\tzhx_doctrine_receipt_old_tier=2.000\n\t\t\tzhx_doctrine_reform_ai_low_practice_years=0.000\n\t\t\tzhx_merit=33.000\n\t\t\tzhx_merit_lifetime=33.000\n\t\t\tzhx_merit_rank_cache=7.000\n\t\t\tzhx_merit_rank_prestige=7.428\n\t\t\tzhx_merit_term=33.000\n\t\t}",
+      "last_election": "1444.11.11",
+      "stability": "1.000",
+      "prestige": "7.122",
+      "capital": "667",
+      "powers": "{\n\t\t\t182 264 241 \n\t\t}",
+      "owned_provinces": "{\n\t\t\t667 668 2158 2162 4943 4946 4948 \n\t\t}",
+      "monarch": "{\n\t\t\tid=3170\n\t\t\ttype=48\n\t\t}",
+      "heir": "{\n\t\t\tid=13706\n\t\t\ttype=48\n\t\t}",
+      "estate": [
+        "{\n\t\t\ttype=\"estate_church\"\n\t\t\tloyalty=43.785\n\t\t\tterritory=15.206\n\t\t\tinfluence_modifier={\n\t\t\t\tvalue=-10.000\n\t\t\t\tdesc=\"EST_VAL_CHURCH_DECLINE\"\n\t\t\t\tdate=1461.3.6\n\t\t\t}\n\t\t\tloyalty_modifier={\n\t\t\t\tvalue=-5.000\n\t\t\t\tdesc=\"EST_VAL_AGENDA_DENIED\"\n\t\t\t\tdate=1477.3.26\n\t\t\t}\n\t\t\tgranted_privileges={\n\t\t\t\t{\nestate_church_clerical_oversight 1444.11.12\t\t\t\t}\n {\nestate_church_one_faith_one_culture 1472.4.26\t\t\t\t}\n \n\t\t\t}\n\t\t}",
+        "{\n\t\t\ttype=\"estate_nobles\"\n\t\t\tloyalty=53.877\n\t\t\tterritory=37.700\n\t\t\tinfluence_modifier={\n\t\t\t\tvalue=-10.000\n\t\t\t\tdesc=\"EST_VAL_NOBILITY_DECLINES\"\n\t\t\t\tdate=1466.3.11\n\t\t\t}\n\t\t\tinfluence_modifier={\n\t\t\t\tvalue=-10.000\n\t\t\t\tdesc=\"EST_VAL_NOBLES_DEFEATED_ROBBER_BARONS\"\n\t\t\t\tdate=1471.3.16\n\t\t\t}\n\t\t\tgranted_privileges={\n\t\t\t\t{\nestate_nobles_right_of_counsel 1444.11.13\t\t\t\t}\n {\nestate_nobles_supremacy_over_crown 1444.11.15\t\t\t\t}\n {\nestate_nobles_gdd_clan_autonomy_charter 1464.11.11\t\t\t\t}\n \n\t\t\t}\n\t\t}",
+        "{\n\t\t\ttype=\"estate_burghers\"\n\t\t\tloyalty=56.772\n\t\t\tterritory=8.794\n\t\t\tinfluence_modifier={\n\t\t\t\tvalue=10.000\n\t\t\t\tdesc=\"EST_VAL_BURGHERS_DEFEATED_ROBBER_BARONS\"\n\t\t\t\tdate=1471.3.16\n\t\t\t}\n\t\t\tactive_influences={\n\t\t\t\t1 \n\t\t\t}\n\t\t\tgranted_privileges={\n\t\t\t\t{\nestate_burghers_free_enterprise 1444.11.14\t\t\t\t}\n {\nestate_burghers_gdd_southern_trade_charter 1454.11.11\t\t\t\t}\n \n\t\t\t}\n\t\t}"
+      ],
+      "faction": [],
+      "monarch_current_ref_present": true,
+      "monarch_records": [
+        "{\n\t\t\t\t\tid={\n\t\t\t\t\t\tid=3170\n\t\t\t\t\t\ttype=48\n\t\t\t\t\t}\n\n\t\t\t\t\tname=\"继垣\"\n\t\t\t\t\tcountry=\"GDD\"\n\t\t\t\t\tDIP=2\n\t\t\t\t\tADM=4\n\t\t\t\t\tMIL=5\n\t\t\t\t\tculture=gdd_guangfu\n\t\t\t\t\treligion=confucianism\n\t\t\t\t\tpersonalities={\n\t\t\t\t\t\tgdd_liang_shouyi_personality=yes\n\t\t\t\t\t}\n\t\t\t\t\thas_declared_war={\n\t\t\t\t\t\tdate=1457.7.6\n\t\t\t\t\t\twar=\"南海征服南雄之战\"\n\t\t\t\t\t}\n\t\t\t\t\tleader_id={\n\t\t\t\t\t\tid=4851\n\t\t\t\t\t\ttype=49\n\t\t\t\t\t}\n\n\t\t\t\t\tleader={\n\t\t\t\t\t\tname=\"继垣 梁\"\n\t\t\t\t\t\ttype=general\n\t\t\t\t\t\tsiege=2\n\t\t\t\t\t\tmaneuver=4\n\t\t\t\t\t\tfire=3\n\t\t\t\t\t\tshock=5\n\t\t\t\t\t\tcountry=\"GDD\"\n\t\t\t\t\t\tpersonality=goal_oriented_personality\n\t\t\t\t\t\tmonarch_id={\n\t\t\t\t\t\t\tid=3170\n\t\t\t\t\t\t\ttype=48\n\t\t\t\t\t\t}\n\n\t\t\t\t\t\tactivation=1453.7.12\n\t\t\t\t\t\tbirth_date=1412.12.5\n\t\t\t\t\t\tid={\n\t\t\t\t\t\t\tid=4851\n\t\t\t\t\t\t\ttype=49\n\t\t\t\t\t\t}\n\n\t\t\t\t\t}\n\t\t\t\t\tdynasty=\"梁\"\n\t\t\t\t\tbirth_date=1404.6.18\n\t\t\t\t\tsucceeded=yes\n\t\t\t\t\tdeath_date=1821.1.1\n\t\t\t\t\tclaim=92.693\n\t\t\t\t}"
+      ],
+      "monarch_resolution": "country-local",
+      "heir_current_ref_present": true,
+      "heir_records": [
+        "{\n\t\t\t\t\tid={\n\t\t\t\t\t\tid=13706\n\t\t\t\t\t\ttype=48\n\t\t\t\t\t}\n\n\t\t\t\t\tname=\"承祚\"\n\t\t\t\t\tcountry=\"GDD\"\n\t\t\t\t\tDIP=4\n\t\t\t\t\tADM=5\n\t\t\t\t\tMIL=5\n\t\t\t\t\tculture=gdd_guangfu\n\t\t\t\t\treligion=confucianism\n\t\t\t\t\tpersonalities={\n\t\t\t\t\t\tbabbling_buffoon_personality=yes\n\t\t\t\t\t}\n\t\t\t\t\tdynasty=\"梁\"\n\t\t\t\t\tbirth_date=1430.7.6\n\t\t\t\t\tmonarch_name=\"承祚\"\n\t\t\t\t\tclaim=100.000\n\t\t\t\t}"
+      ],
+      "heir_resolution": "country-local"
+    },
+    "CZC": {
+      "government": "{\n\t\t\tgovernment=\"republic\"\n\t\t\treform_stack={\n\t\t\t\treforms={\n\t\t\t\t\t\"republic_mechanic\"\n\t\t\t\t\t\"gdd_czc_council_reform\"\n\t\t\t\t\t\"republicanism_reform\"\n\t\t\t\t}\n\t\t\t\thistory={\n\t\t\t\t\t\"gdd_czc_council_reform\"\n\t\t\t\t\t\"republicanism_reform\"\n\t\t\t\t}\n\t\t\t}\n\t\t}",
+      "government_rank": "2",
+      "flags": "{\n\t\t\tzhx_member=1444.11.11\n\t\t\tgdd_support_reform_foreign_ship_designs=1459.10.22\n\t\t\tzhx_doctrine_ru=1444.11.11\n\t\t\tzhx_doctrine_practice_initialised=1444.11.11\n\t\t\tzhx_opening_school_initialised=1444.11.11\n\t\t\trecent_land_seizure=1455.2.2\n\t\t\tgdd_czc_council_initialized=1444.11.11\n\t\t\tgdd_czc_successor_prepared=1444.11.11\n\t\t\tgdd_b82_mountains_discovered=1444.11.11\n\t\t\tzhx_council_vote_c=1457.5.30\n\t\t\tzhx_council_ai_review_pending=1457.5.30\n\t\t\tgdd_support_reform_single_whip=1459.10.22\n\t\t\tgdd_support_reform_civil_registration=1459.10.22\n\t\t\tgdd_support_reform_silver_standard=1459.10.22\n\t\t\tgdd_support_reform_kanhe=1459.10.22\n\t\t\tgdd_support_reform_keju=1459.10.22\n\t\t\tgdd_support_reform_inclusive_monarchy=1459.10.22\n\t\t\tgdd_support_reform_unified_market=1459.10.22\n\t\t\tgdd_support_reform_military_branch=1459.10.22\n\t\t\tgdd_authority_balance_effect_recipient=1459.6.1\n\t\t\tgdd_czc_last_council_action=1459.6.16\n\t\t\tzhx_doctrine_hover_positive_3=1459.9.2\n\t\t\tzhx_doctrine_hover_positive_1=1459.9.2\n\t\t\tzhx_doctrine_hover_positive_2=1459.9.2\n\t\t}",
+      "variables": "{\n\t\t\tgdd_ai_reform_sponsor_score=1.000\n\t\t\tgdd_ai_reform_vote_score=2.000\n\t\t\tgdd_liang_minimum_grant_development=0.000\n\t\t\tgdd_liang_scanned_grant_development=0.000\n\t\t\tissues_passed=2.000\n\t\t\tland_units_killed=0.000\n\t\t\tland_units_lost=0.000\n\t\t\tnaval_units_killed=1.000\n\t\t\tnaval_units_lost=0.000\n\t\t\tnum_of_battles_won_var=3.000\n\t\t\tnum_of_wars_won_against_heretics=1.000\n\t\t\tnum_of_wars_won_against_non_believers=1.000\n\t\t\tnum_of_wars_won_var=1.000\n\t\t\tseize_land_counter=3.000\n\t\t\tseize_land_effect_variable=0.000\n\t\t\ttotal_land_units_killed=1895.000\n\t\t\ttotal_land_units_lost=1322.000\n\t\t\ttotal_naval_units_killed=1.000\n\t\t\ttotal_naval_units_lost=0.000\n\t\t\tvoting_streak=2.000\n\t\t\tzhx_academy_unprotected_school_count=0.000\n\t\t\tzhx_council_vote_weight=1.000\n\t\t\tzhx_diplomacy_member_extinction_count=0.000\n\t\t\tzhx_doctrine_calculated_delta=4.000\n\t\t\tzhx_doctrine_last_delta=4.000\n\t\t\tzhx_doctrine_ledger_estimated_delta=4.000\n\t\t\tzhx_doctrine_ledger_to_next_tier=2.000\n\t\t\tzhx_doctrine_ledger_to_proposal=0.000\n\t\t\tzhx_doctrine_practice=73.000\n\t\t\tzhx_doctrine_receipt_new_tier=2.000\n\t\t\tzhx_doctrine_receipt_old_practice=69.000\n\t\t\tzhx_doctrine_receipt_old_tier=2.000\n\t\t\tzhx_doctrine_reform_ai_low_practice_years=0.000\n\t\t\tzhx_merit=15.000\n\t\t\tzhx_merit_lifetime=15.000\n\t\t\tzhx_merit_rank_cache=0.000\n\t\t\tzhx_merit_rank_prestige=29.827\n\t\t\tzhx_merit_term=15.000\n\t\t}",
+      "last_election": "1444.11.11",
+      "republican_tradition": "68.710",
+      "stability": "1.000",
+      "prestige": "29.228",
+      "capital": "2156",
+      "powers": "{\n\t\t\t334 421 94 \n\t\t}",
+      "owned_provinces": "{\n\t\t\t666 2156 4949 5217 5303 5100 \n\t\t}",
+      "monarch": "{\n\t\t\tid=2330\n\t\t\ttype=48\n\t\t}",
+      "parliament": "{\n\t\t\tlast_debate=1459.2.7\n\t\t\trecalculate_issues=no\n\t\t\tparliament_issues={\n\t\t\t\t54 44 7 34 24 1 3 25 39 43 \n\t\t\t}\n\t\t\tenacted_parliament_issue=\"election_reform\"\n\t\t}",
+      "statists_vs_monarchists": "0.400",
+      "estate": [
+        "{\n\t\t\ttype=\"estate_church\"\n\t\t\tloyalty=44.034\n\t\t\tterritory=21.103\n\t\t\tgranted_privileges={\n\t\t\t\t{\nestate_church_clerical_oversight 1444.11.12\t\t\t\t}\n {\nestate_church_one_faith_one_culture 1465.1.3\t\t\t\t}\n \n\t\t\t}\n\t\t}",
+        "{\n\t\t\ttype=\"estate_nobles\"\n\t\t\tloyalty=45.937\n\t\t\tterritory=14.485\n\t\t\tinfluence_modifier={\n\t\t\t\tvalue=-10.000\n\t\t\t\tdesc=\"EST_VAL_NOBILITY_DECLINES\"\n\t\t\t\tdate=1460.7.5\n\t\t\t}\n\t\t\tinfluence_modifier={\n\t\t\t\tvalue=10.000\n\t\t\t\tdesc=\"EST_VAL_NOBLES_EXTORTED_RIGHTS\"\n\t\t\t\tdate=1465.3.9\n\t\t\t}\n\t\t\tgranted_privileges={\n\t\t\t\t{\nestate_nobles_right_of_counsel 1446.6.9\t\t\t\t}\n {\nestate_nobles_supremacy_over_crown 1446.6.11\t\t\t\t}\n \n\t\t\t}\n\t\t}",
+        "{\n\t\t\ttype=\"estate_burghers\"\n\t\t\tloyalty=46.377\n\t\t\tterritory=28.170\n\t\t\tinfluence_modifier={\n\t\t\t\tvalue=10.000\n\t\t\t\tdesc=\"EST_VAL_COMPENSATING_LOSSES\"\n\t\t\t\tdate=1470.3.14\n\t\t\t}\n\t\t\tactive_influences={\n\t\t\t\t4 \n\t\t\t}\n\t\t\tgranted_privileges={\n\t\t\t\t{\nestate_burghers_free_enterprise 1446.6.10\t\t\t\t}\n \n\t\t\t}\n\t\t}"
+      ],
+      "faction": [],
+      "monarch_current_ref_present": true,
+      "monarch_records": [
+        "{\n\t\t\t\t\tid={\n\t\t\t\t\t\tid=2330\n\t\t\t\t\t\ttype=48\n\t\t\t\t\t}\n\n\t\t\t\t\tname=\"万民\"\n\t\t\t\t\tcountry=\"CZC\"\n\t\t\t\t\tDIP=6\n\t\t\t\t\tADM=5\n\t\t\t\t\tMIL=6\n\t\t\t\t\tculture=gdd_min\n\t\t\t\t\treligion=confucianism\n\t\t\t\t\tpersonalities={\n\t\t\t\t\t\ttolerant_personality=yes\n\t\t\t\t\t\tinspiring_leader_personality=yes\n\t\t\t\t\t}\n\t\t\t\t\thas_declared_war={\n\t\t\t\t\t\tdate=1457.2.15\n\t\t\t\t\t\twar=\"潮州征服龙岩之战\"\n\t\t\t\t\t}\n\t\t\t\t\truler_flags={\n\t\t\t\t\t\tgdd_czc_succession_settled=1444.11.11\n\t\t\t\t\t}\n\t\t\t\t\tdynasty=\"郑\"\n\t\t\t\t\tbirth_date=1405.1.1\n\t\t\t\t}"
+      ],
+      "monarch_resolution": "country-local",
+      "heir_current_ref_present": false
+    },
+    "HAK": {
+      "government": "{\n\t\t\tgovernment=\"republic\"\n\t\t\treform_stack={\n\t\t\t\treforms={\n\t\t\t\t\t\"republic_mechanic\"\n\t\t\t\t\t\"gdd_hak_communal_republic_reform\"\n\t\t\t\t\t\"republicanism_reform\"\n\t\t\t\t\t\"force_reelection_reform\"\n\t\t\t\t}\n\t\t\t\thistory={\n\t\t\t\t\t\"gdd_hak_revolutionary_army_reform\"\n\t\t\t\t\t\"republicanism_reform\"\n\t\t\t\t\t\"gdd_hak_communal_republic_reform\"\n\t\t\t\t\t\"force_reelection_reform\"\n\t\t\t\t}\n\t\t\t}\n\t\t}",
+      "government_rank": "2",
+      "flags": "{\n\t\t\tzhx_member=1444.11.11\n\t\t\trecent_land_seizure=1456.9.3\n\t\t\tgdd_hak_initialized=1444.11.11\n\t\t\tgdd_hak_estate_initialized=1444.11.11\n\t\t\tgdd_b82_mountains_discovered=1444.11.11\n\t\t\trecent_land_distribution=1458.3.17\n\t\t\tzhx_council_ai_review_pending=1457.5.30\n\t\t\tzhx_council_vote_a=1457.5.30\n\t\t\tgdd_hak_civil_rule_restored=1459.3.21\n\t\t\tgdd_authority_balance_effect_recipient=1459.6.1\n\t\t}",
+      "variables": "{\n\t\t\tgdd_ai_reform_sponsor_score=-2.000\n\t\t\tgdd_ai_reform_vote_score=-1.000\n\t\t\tgdd_liang_minimum_grant_development=0.000\n\t\t\tgdd_liang_scanned_grant_development=0.000\n\t\t\tland_units_killed=1000.000\n\t\t\tland_units_lost=9.000\n\t\t\tnaval_units_killed=0.000\n\t\t\tnaval_units_lost=0.000\n\t\t\tnum_of_battles_won_var=5.000\n\t\t\tsale_of_titles_counter=1.000\n\t\t\tseize_land_counter=3.000\n\t\t\tseize_land_effect_variable=0.000\n\t\t\ttotal_land_units_killed=21303.000\n\t\t\ttotal_land_units_lost=26790.000\n\t\t\ttotal_naval_units_killed=0.000\n\t\t\ttotal_naval_units_lost=1.000\n\t\t\tzhx_council_vote_weight=1.000\n\t\t\tzhx_diplomacy_member_extinction_count=0.000\n\t\t\tzhx_merit=15.000\n\t\t\tzhx_merit_lifetime=15.000\n\t\t\tzhx_merit_rank_cache=0.000\n\t\t\tzhx_merit_rank_prestige=-92.899\n\t\t\tzhx_merit_term=15.000\n\t\t}",
+      "last_election": "1459.3.21",
+      "republican_tradition": "53.560",
+      "stability": "-3.000",
+      "prestige": "-89.523",
+      "capital": "2157",
+      "powers": "{\n\t\t\t270 70 200 \n\t\t}",
+      "owned_provinces": "{\n\t\t\t2157 4944 4995 5214 5215 \n\t\t}",
+      "monarch": "{\n\t\t\tid=3710\n\t\t\ttype=48\n\t\t}",
+      "top_faction": "13",
+      "estate": [
+        "{\n\t\t\ttype=\"estate_church\"\n\t\t\tloyalty=52.839\n\t\t\tterritory=10.939\n\t\t\tinfluence_modifier={\n\t\t\t\tvalue=10.000\n\t\t\t\tdesc=\"EST_VAL_BURGHER_AUTHORITY_QUESTIONED\"\n\t\t\t\tdate=1471.3.21\n\t\t\t}\n\t\t\tgranted_privileges={\n\t\t\t\t{\nestate_church_clerical_oversight 1444.11.13\t\t\t\t}\n {\nestate_church_karma_temples 1444.11.15\t\t\t\t}\n \n\t\t\t}\n\t\t}",
+        "{\n\t\t\ttype=\"estate_burghers\"\n\t\t\tloyalty=23.768\n\t\t\tterritory=21.963\n\t\t\tinfluence_modifier={\n\t\t\t\tvalue=10.000\n\t\t\t\tdesc=\"EST_VAL_COMPENSATING_LOSSES\"\n\t\t\t\tdate=1461.3.11\n\t\t\t}\n\t\t\tinfluence_modifier={\n\t\t\t\tvalue=-10.000\n\t\t\t\tdesc=\"EST_VAL_NOT_SUPPORTING_CITY_GROWTH\"\n\t\t\t\tdate=1471.3.16\n\t\t\t}\n\t\t\tinfluence_modifier={\n\t\t\t\tvalue=-10.000\n\t\t\t\tdesc=\"EST_VAL_BURGHER_AUTHORITY_QUESTIONED\"\n\t\t\t\tdate=1471.3.21\n\t\t\t}\n\t\t\tactive_influences={\n\t\t\t\t4 \n\t\t\t}\n\t\t\tgranted_privileges={\n\t\t\t\t{\nestate_burghers_free_enterprise 1444.11.14\t\t\t\t}\n {\nestate_burghers_control_over_monetary_policy 1458.3.17\t\t\t\t}\n \n\t\t\t}\n\t\t}",
+        "{\n\t\t\ttype=\"estate_gdd_hak_peasants\"\n\t\t\tloyalty=54.668\n\t\t\tterritory=47.098\n\t\t\tactive_influences={\n\t\t\t\t0 \n\t\t\t}\n\t\t\tactive_loyalties={\n\t\t\t\t0 \n\t\t\t}\n\t\t\tgranted_privileges={\n\t\t\t\t{\ngdd_hak_village_franchise 1454.11.12\t\t\t\t}\n {\ngdd_hak_militia_covenant 1454.11.16\t\t\t\t}\n \n\t\t\t}\n\t\t}"
+      ],
+      "faction": [
+        "{\n\t\t\tinfluence=60.000\ntype=gdd_hak_farmers\n\t\t\told_influence=60.000\n\t\t}",
+        "{\n\t\t\tinfluence=0.000\ntype=gdd_hak_burghers\n\t\t\told_influence=0.000\n\t\t}",
+        "{\n\t\t\tinfluence=40.000\ntype=gdd_hak_army\n\t\t\told_influence=40.000\n\t\t}"
+      ],
+      "monarch_current_ref_present": true,
+      "monarch_records": [
+        "{\n\t\t\t\t\tid={\n\t\t\t\t\t\tid=3710\n\t\t\t\t\t\ttype=48\n\t\t\t\t\t}\n\n\t\t\t\t\tname=\"观音古\"\n\t\t\t\t\tcountry=\"HAK\"\n\t\t\t\t\tDIP=3\n\t\t\t\t\tADM=5\n\t\t\t\t\tMIL=5\n\t\t\t\t\tculture=gdd_hakka\n\t\t\t\t\treligion=mahayana\n\t\t\t\t\tpersonalities={\n\t\t\t\t\t\tkind_hearted_personality=yes\n\t\t\t\t\t\tbold_fighter_personality=yes\n\t\t\t\t\t}\n\t\t\t\t\truler_flags={\n\t\t\t\t\t\takkodha=1455.11.1\n\t\t\t\t\t}\n\t\t\t\t\tdynasty=\"廖\"\n\t\t\t\t\tbirth_date=1407.1.1\n\t\t\t\t}"
+      ],
+      "monarch_resolution": "country-local",
+      "heir_current_ref_present": false
+    },
+    "HYM": {
+      "government": "{\n\t\t\tgovernment=\"republic\"\n\t\t\treform_stack={\n\t\t\t\treforms={\n\t\t\t\t\t\"republic_mechanic\"\n\t\t\t\t\t\"zhx_yang_trade_league_reform\"\n\t\t\t\t\t\"republicanism_reform\"\n\t\t\t\t\t\"lottery_reform\"\n\t\t\t\t}\n\t\t\t\thistory={\n\t\t\t\t\t\"zhx_yang_trade_league_reform\"\n\t\t\t\t\t\"republicanism_reform\"\n\t\t\t\t\t\"lottery_reform\"\n\t\t\t\t}\n\t\t\t}\n\t\t}",
+      "government_rank": "1",
+      "flags": "{\n\t\t\tzhx_member=1444.11.11\n\t\t\trecent_land_seizure=1455.2.2\n\t\t\tzhx_doctrine_zongheng=1444.11.11\n\t\t\tzhx_doctrine_practice_initialised=1444.11.11\n\t\t\tzhx_opening_school_initialised=1444.11.11\n\t\t\tgdd_support_reform_foreign_ship_designs=1459.10.22\n\t\t\tgdd_b82_mountains_discovered=1444.11.11\n\t\t\tgdd_support_reform_new_world=1459.10.22\n\t\t\tgdd_support_reform_single_whip=1459.10.22\n\t\t\tgdd_support_reform_civil_registration=1459.10.22\n\t\t\tgdd_support_reform_silver_standard=1459.10.22\n\t\t\tgdd_support_reform_kanhe=1459.10.22\n\t\t\tgdd_support_reform_keju=1459.10.22\n\t\t\tgdd_support_reform_inclusive_monarchy=1459.10.22\n\t\t\tgdd_support_reform_unified_market=1459.10.22\n\t\t\tgdd_support_reform_military_branch=1459.10.22\n\t\t\tzhx_council_vote_b=1457.5.30\n\t\t\tgdd_support_reform_establish_gaituguiliu=1459.10.22\n\t\t\tgdd_support_reform_land_tax=1459.10.22\n\t\t\tgdd_support_reform_military_governors=1459.10.22\n\t\t\tgdd_support_reform_centralizing_government=1459.10.22\n\t\t\tgdd_support_reform_reign_in_estates=1459.10.22\n\t\t\tgdd_support_reform_bureaucratic_faction=1459.10.22\n\t\t\tgdd_support_reform_military_faction=1459.10.22\n\t\t\tgdd_support_reform_modernize_banners=1459.10.22\n\t\t\tgdd_support_reform_tributary_embassies=1459.10.22\n\t\t\tzhx_council_ai_review_pending=1457.5.30\n\t\t\tgdd_authority_balance_effect_recipient=1459.6.1\n\t\t\tzhx_doctrine_hover_positive_2=1459.11.8\n\t\t\tzhx_doctrine_hover_positive_1=1459.11.8\n\t\t}",
+      "variables": "{\n\t\t\testate_nobles_relations_with_X=1.000\n\t\t\tgdd_ai_reform_sponsor_score=2.000\n\t\t\tgdd_ai_reform_vote_score=3.000\n\t\t\tland_units_killed=1390.000\n\t\t\tland_units_lost=1339.000\n\t\t\tnaval_units_killed=0.000\n\t\t\tnaval_units_lost=0.000\n\t\t\tnum_of_battles_won_ruler=1.000\n\t\t\tnum_of_battles_won_var=2.000\n\t\t\tseize_land_counter=3.000\n\t\t\tseize_land_effect_variable=0.000\n\t\t\ttotal_land_units_killed=3786.000\n\t\t\ttotal_land_units_lost=2088.000\n\t\t\ttotal_naval_units_killed=0.000\n\t\t\ttotal_naval_units_lost=0.000\n\t\t\tzhx_academy_unprotected_school_count=0.000\n\t\t\tzhx_council_vote_weight=1.000\n\t\t\tzhx_diplomacy_member_extinction_count=0.000\n\t\t\tzhx_doctrine_calculated_delta=3.000\n\t\t\tzhx_doctrine_last_delta=3.000\n\t\t\tzhx_doctrine_ledger_estimated_delta=3.000\n\t\t\tzhx_doctrine_ledger_to_next_tier=17.000\n\t\t\tzhx_doctrine_ledger_to_proposal=12.000\n\t\t\tzhx_doctrine_practice=58.000\n\t\t\tzhx_doctrine_receipt_new_tier=2.000\n\t\t\tzhx_doctrine_receipt_old_practice=55.000\n\t\t\tzhx_doctrine_receipt_old_tier=2.000\n\t\t\tzhx_doctrine_reform_ai_low_practice_years=0.000\n\t\t\tzhx_merit=15.000\n\t\t\tzhx_merit_lifetime=15.000\n\t\t\tzhx_merit_rank_cache=0.000\n\t\t\tzhx_merit_rank_prestige=3.159\n\t\t\tzhx_merit_term=15.000\n\t\t}",
+      "last_election": "1455.12.20",
+      "republican_tradition": "84.358",
+      "stability": "1.000",
+      "prestige": "3.111",
+      "capital": "685",
+      "powers": "{\n\t\t\t215 128 640 \n\t\t}",
+      "owned_provinces": "{\n\t\t\t685 4977 5021 \n\t\t}",
+      "monarch": "{\n\t\t\tid=13771\n\t\t\ttype=48\n\t\t}",
+      "estate": [
+        "{\n\t\t\ttype=\"estate_church\"\n\t\t\tloyalty=56.475\n\t\t\tterritory=18.460\n\t\t\tinfluence_modifier={\n\t\t\t\tvalue=10.000\n\t\t\t\tdesc=\"EST_VAL_INDEPENDENT_CHURCH\"\n\t\t\t\tdate=1462.5.12\n\t\t\t}\n\t\t\tinfluence_modifier={\n\t\t\t\tvalue=-10.000\n\t\t\t\tdesc=\"EST_VAL_CHURCH_DECLINE\"\n\t\t\t\tdate=1467.5.17\n\t\t\t}\n\t\t\tinfluence_modifier={\n\t\t\t\tvalue=10.000\n\t\t\t\tdesc=\"EST_VAL_BURGHER_AUTHORITY_QUESTIONED\"\n\t\t\t\tdate=1472.5.22\n\t\t\t}\n\t\t\tgranted_privileges={\n\t\t\t\t{\nestate_church_clerical_oversight 1444.11.12\t\t\t\t}\n {\nestate_church_one_faith_one_culture 1465.1.3\t\t\t\t}\n \n\t\t\t}\n\t\t}",
+        "{\n\t\t\ttype=\"estate_nobles\"\n\t\t\tloyalty=39.400\n\t\t\tterritory=13.847\n\t\t\tgranted_privileges={\n\t\t\t\t{\nestate_nobles_right_of_counsel 1444.11.13\t\t\t\t}\n {\nestate_nobles_supremacy_over_crown 1444.11.15\t\t\t\t}\n \n\t\t\t}\n\t\t}",
+        "{\n\t\t\ttype=\"estate_burghers\"\n\t\t\tloyalty=29.208\n\t\t\tterritory=27.693\n\t\t\tinfluence_modifier={\n\t\t\t\tvalue=-10.000\n\t\t\t\tdesc=\"EST_VAL_BURGHER_AUTHORITY_QUESTIONED\"\n\t\t\t\tdate=1472.5.22\n\t\t\t}\n\t\t\tactive_influences={\n\t\t\t\t1 5 \n\t\t\t}\n\t\t\tgranted_privileges={\n\t\t\t\t{\nestate_burghers_free_enterprise 1444.11.14\t\t\t\t}\n \n\t\t\t}\n\t\t}"
+      ],
+      "faction": [],
+      "monarch_current_ref_present": true,
+      "monarch_records": [
+        "{\n\t\t\t\t\tid={\n\t\t\t\t\t\tid=13771\n\t\t\t\t\t\ttype=48\n\t\t\t\t\t}\n\n\t\t\t\t\tname=\"顾文昭\"\n\t\t\t\t\tcountry=\"HYM\"\n\t\t\t\t\tDIP=1\n\t\t\t\t\tADM=4\n\t\t\t\t\tMIL=1\n\t\t\t\t\tculture=gdd_jianghuai\n\t\t\t\t\treligion=confucianism\n\t\t\t\t\tpersonalities={\n\t\t\t\t\t\tarchitectural_visionary_personality=yes\n\t\t\t\t\t}\n\t\t\t\t\tbirth_date=1396.12.20\n\t\t\t\t}"
+      ],
+      "monarch_resolution": "country-local",
+      "heir_current_ref_present": false
+    },
+    "CDE": {
+      "government": "{\n\t\t\tgovernment=\"republic\"\n\t\t\treform_stack={\n\t\t\t\treforms={\n\t\t\t\t\t\"republic_mechanic\"\n\t\t\t\t\t\"zhx_gongyi_reform\"\n\t\t\t\t\t\"republicanism_reform\"\n\t\t\t\t\t\"lottery_reform\"\n\t\t\t\t}\n\t\t\t\thistory={\n\t\t\t\t\t\"zhx_gongyi_reform\"\n\t\t\t\t\t\"republicanism_reform\"\n\t\t\t\t\t\"lottery_reform\"\n\t\t\t\t}\n\t\t\t}\n\t\t}",
+      "government_rank": "1",
+      "flags": "{\n\t\t\tzhx_gongyi_charter=1459.12.24\n\t\t\tzhx_member=1444.11.11\n\t\t\tgdd_support_reform_foreign_ship_designs=1459.10.22\n\t\t\tzhx_doctrine_mo=1444.11.11\n\t\t\tzhx_doctrine_practice_initialised=1444.11.11\n\t\t\tzhx_opening_school_initialised=1444.11.11\n\t\t\tzhx_merit_active_contribution_this_term=1453.5.21\n\t\t\tgdd_support_reform_military_branch=1459.10.22\n\t\t\tgdd_support_reform_single_whip=1459.10.22\n\t\t\tgdd_b82_mountains_discovered=1444.11.11\n\t\t\trecent_land_seizure=1455.2.2\n\t\t\tgdd_support_reform_civil_registration=1459.10.22\n\t\t\tgdd_support_reform_silver_standard=1459.10.22\n\t\t\tgdd_support_reform_kanhe=1459.10.22\n\t\t\tgdd_support_reform_keju=1459.10.22\n\t\t\tgdd_support_reform_inclusive_monarchy=1459.10.22\n\t\t\tgdd_support_reform_unified_market=1459.10.22\n\t\t\tzhx_council_vote_b=1457.5.30\n\t\t\tzhx_council_ai_review_pending=1457.5.30\n\t\t\tgdd_authority_balance_effect_recipient=1459.6.1\n\t\t\tzhx_doctrine_hover_positive_3=1459.11.12\n\t\t\tzhx_doctrine_hover_mo_peace=1459.11.12\n\t\t\tzhx_doctrine_hover_positive_2=1459.11.12\n\t\t}",
+      "variables": "{\n\t\t\testate_nobles_improve_prestige_var=2.000\n\t\t\tgdd_ai_reform_sponsor_score=1.000\n\t\t\tgdd_ai_reform_vote_score=2.000\n\t\t\tland_units_killed=1642.000\n\t\t\tland_units_lost=540.000\n\t\t\tnaval_units_killed=0.000\n\t\t\tnaval_units_lost=0.000\n\t\t\tnum_of_battles_won_var=6.000\n\t\t\tnum_of_wars_won_against_non_believers=2.000\n\t\t\tnum_of_wars_won_var=2.000\n\t\t\tseize_land_counter=3.000\n\t\t\tseize_land_effect_variable=0.000\n\t\t\ttotal_land_units_killed=13902.000\n\t\t\ttotal_land_units_lost=3196.000\n\t\t\ttotal_naval_units_killed=0.000\n\t\t\ttotal_naval_units_lost=0.000\n\t\t\tzhx_academy_unprotected_school_count=0.000\n\t\t\tzhx_council_vote_weight=1.000\n\t\t\tzhx_diplomacy_member_extinction_count=0.000\n\t\t\tzhx_doctrine_calculated_delta=4.000\n\t\t\tzhx_doctrine_last_delta=4.000\n\t\t\tzhx_doctrine_ledger_estimated_delta=4.000\n\t\t\tzhx_doctrine_ledger_to_next_tier=2.000\n\t\t\tzhx_doctrine_ledger_to_proposal=0.000\n\t\t\tzhx_doctrine_practice=73.000\n\t\t\tzhx_doctrine_receipt_new_tier=2.000\n\t\t\tzhx_doctrine_receipt_old_practice=69.000\n\t\t\tzhx_doctrine_receipt_old_tier=2.000\n\t\t\tzhx_doctrine_reform_ai_low_practice_years=0.000\n\t\t\tzhx_merit=35.000\n\t\t\tzhx_merit_lifetime=35.000\n\t\t\tzhx_merit_rank_cache=5.000\n\t\t\tzhx_merit_rank_prestige=19.719\n\t\t\tzhx_merit_term=35.000\n\t\t}",
+      "last_election": "1456.11.11",
+      "republican_tradition": "93.284",
+      "stability": "1.000",
+      "prestige": "19.463",
+      "capital": "672",
+      "powers": "{\n\t\t\t367 500 530 \n\t\t}",
+      "owned_provinces": "{\n\t\t\t672 \n\t\t}",
+      "monarch": "{\n\t\t\tid=13806\n\t\t\ttype=48\n\t\t}",
+      "estate": [
+        "{\n\t\t\ttype=\"estate_church\"\n\t\t\tloyalty=35.153\n\t\t\tterritory=18.528\n\t\t\tinfluence_modifier={\n\t\t\t\tvalue=-10.000\n\t\t\t\tdesc=\"EST_VAL_LAND_THEFT\"\n\t\t\t\tdate=1466.5.20\n\t\t\t}\n\t\t\tinfluence_modifier={\n\t\t\t\tvalue=-10.000\n\t\t\t\tdesc=\"EST_VAL_CHURCH_DECLINE\"\n\t\t\t\tdate=1471.5.25\n\t\t\t}\n\t\t\tgranted_privileges={\n\t\t\t\t{\nestate_church_clerical_oversight 1444.11.12\t\t\t\t}\n {\nestate_church_one_faith_one_culture 1465.1.3\t\t\t\t}\n \n\t\t\t}\n\t\t}",
+        "{\n\t\t\ttype=\"estate_nobles\"\n\t\t\tloyalty=49.129\n\t\t\tterritory=16.677\n\t\t\tinfluence_modifier={\n\t\t\t\tvalue=-15.000\n\t\t\t\tdesc=\"EST_VAL_NOBLES_ELABORATE_COURT_CEREMONIES\"\n\t\t\t\tdate=1471.5.15\n\t\t\t}\n\t\t\tinfluence_modifier={\n\t\t\t\tvalue=10.000\n\t\t\t\tdesc=\"EST_VAL_LAND_THEFT\"\n\t\t\t\tdate=1466.5.20\n\t\t\t}\n\t\t\tgranted_privileges={\n\t\t\t\t{\nestate_nobles_right_of_counsel 1444.11.13\t\t\t\t}\n {\nestate_nobles_supremacy_over_crown 1444.11.15\t\t\t\t}\n \n\t\t\t}\n\t\t}",
+        "{\n\t\t\ttype=\"estate_burghers\"\n\t\t\tloyalty=43.609\n\t\t\tterritory=27.795\n\t\t\tactive_influences={\n\t\t\t\t4 \n\t\t\t}\n\t\t\tgranted_privileges={\n\t\t\t\t{\nestate_burghers_free_enterprise 1444.11.14\t\t\t\t}\n \n\t\t\t}\n\t\t}"
+      ],
+      "faction": [],
+      "monarch_current_ref_present": true,
+      "monarch_records": [
+        "{\n\t\t\t\t\tid={\n\t\t\t\t\t\tid=13806\n\t\t\t\t\t\ttype=48\n\t\t\t\t\t}\n\n\t\t\t\t\tname=\"宋叔牙\"\n\t\t\t\t\tcountry=\"CDE\"\n\t\t\t\t\tDIP=4\n\t\t\t\t\tADM=1\n\t\t\t\t\tMIL=1\n\t\t\t\t\tculture=gdd_chu\n\t\t\t\t\treligion=confucianism\n\t\t\t\t\tpersonalities={\n\t\t\t\t\t\tnavigator_personality=yes\n\t\t\t\t\t}\n\t\t\t\t\tbirth_date=1413.11.11\n\t\t\t\t}"
+      ],
+      "monarch_resolution": "country-local",
+      "heir_current_ref_present": false
+    },
+    "JJG": {
+      "government": "{\n\t\t\tgovernment=\"republic\"\n\t\t\treform_stack={\n\t\t\t\treforms={\n\t\t\t\t\t\"republic_mechanic\"\n\t\t\t\t\t\"zhx_gongyi_reform\"\n\t\t\t\t\t\"republicanism_reform\"\n\t\t\t\t\t\"lottery_reform\"\n\t\t\t\t}\n\t\t\t\thistory={\n\t\t\t\t\t\"zhx_gongyi_reform\"\n\t\t\t\t\t\"republicanism_reform\"\n\t\t\t\t\t\"lottery_reform\"\n\t\t\t\t}\n\t\t\t}\n\t\t}",
+      "government_rank": "1",
+      "flags": "{\n\t\t\tzhx_gongyi_charter=1459.12.25\n\t\t\tzhx_member=1444.11.11\n\t\t\tgdd_support_reform_foreign_ship_designs=1459.10.22\n\t\t\tzhx_doctrine_mo=1444.11.11\n\t\t\tzhx_doctrine_practice_initialised=1444.11.11\n\t\t\tzhx_opening_school_initialised=1444.11.11\n\t\t\tnormal_court_life=1447.5.17\n\t\t\tgdd_support_reform_military_branch=1459.10.22\n\t\t\tgdd_support_reform_single_whip=1459.10.22\n\t\t\tgdd_b82_mountains_discovered=1444.11.11\n\t\t\trecent_land_seizure=1455.2.2\n\t\t\tgdd_support_reform_civil_registration=1459.10.22\n\t\t\tgdd_support_reform_silver_standard=1459.10.22\n\t\t\tgdd_support_reform_kanhe=1459.10.22\n\t\t\tgdd_support_reform_keju=1459.10.22\n\t\t\tgdd_support_reform_inclusive_monarchy=1459.10.22\n\t\t\tgdd_support_reform_unified_market=1459.10.22\n\t\t\tzhx_council_vote_b=1457.5.30\n\t\t\tzhx_council_ai_review_pending=1457.5.30\n\t\t\tgdd_authority_balance_effect_recipient=1459.6.1\n\t\t\tzhx_doctrine_hover_positive_3=1459.11.13\n\t\t\tzhx_doctrine_hover_mo_peace=1459.11.13\n\t\t\tzhx_doctrine_hover_positive_2=1459.11.13\n\t\t}",
+      "variables": "{\n\t\t\tgdd_ai_reform_sponsor_score=1.000\n\t\t\tgdd_ai_reform_vote_score=2.000\n\t\t\tland_units_killed=4000.000\n\t\t\tland_units_lost=975.000\n\t\t\tnaval_units_killed=0.000\n\t\t\tnaval_units_lost=0.000\n\t\t\tnum_of_battles_won_var=2.000\n\t\t\tseize_land_counter=3.000\n\t\t\tseize_land_effect_variable=0.000\n\t\t\ttotal_land_units_killed=6389.000\n\t\t\ttotal_land_units_lost=2390.000\n\t\t\ttotal_naval_units_killed=0.000\n\t\t\ttotal_naval_units_lost=0.000\n\t\t\tzhx_academy_unprotected_school_count=0.000\n\t\t\tzhx_council_vote_weight=1.000\n\t\t\tzhx_diplomacy_member_extinction_count=0.000\n\t\t\tzhx_doctrine_calculated_delta=4.000\n\t\t\tzhx_doctrine_last_delta=4.000\n\t\t\tzhx_doctrine_ledger_estimated_delta=4.000\n\t\t\tzhx_doctrine_ledger_to_next_tier=0.000\n\t\t\tzhx_doctrine_ledger_to_proposal=0.000\n\t\t\tzhx_doctrine_practice=85.000\n\t\t\tzhx_doctrine_receipt_new_tier=3.000\n\t\t\tzhx_doctrine_receipt_old_practice=81.000\n\t\t\tzhx_doctrine_receipt_old_tier=3.000\n\t\t\tzhx_doctrine_reform_ai_low_practice_years=0.000\n\t\t\tzhx_merit=15.000\n\t\t\tzhx_merit_lifetime=15.000\n\t\t\tzhx_merit_rank_cache=0.000\n\t\t\tzhx_merit_rank_prestige=0.120\n\t\t\tzhx_merit_term=15.000\n\t\t}",
+      "last_election": "1452.11.11",
+      "republican_tradition": "93.530",
+      "stability": "1.000",
+      "prestige": "0.160",
+      "capital": "4979",
+      "powers": "{\n\t\t\t182 383 332 \n\t\t}",
+      "owned_provinces": "{\n\t\t\t4979 \n\t\t}",
+      "monarch": "{\n\t\t\tid=13477\n\t\t\ttype=48\n\t\t}",
+      "estate": [
+        "{\n\t\t\ttype=\"estate_church\"\n\t\t\tloyalty=43.546\n\t\t\tterritory=18.460\n\t\t\tgranted_privileges={\n\t\t\t\t{\nestate_church_clerical_oversight 1444.11.12\t\t\t\t}\n {\nestate_church_one_faith_one_culture 1465.1.3\t\t\t\t}\n \n\t\t\t}\n\t\t}",
+        "{\n\t\t\ttype=\"estate_nobles\"\n\t\t\tloyalty=25.858\n\t\t\tterritory=13.847\n\t\t\tinfluence_modifier={\n\t\t\t\tvalue=-10.000\n\t\t\t\tdesc=\"EST_VAL_NOBILITY_DECLINES\"\n\t\t\t\tdate=1472.5.27\n\t\t\t}\n\t\t\tgranted_privileges={\n\t\t\t\t{\nestate_nobles_right_of_counsel 1444.11.13\t\t\t\t}\n {\nestate_nobles_supremacy_over_crown 1444.11.15\t\t\t\t}\n \n\t\t\t}\n\t\t}",
+        "{\n\t\t\ttype=\"estate_burghers\"\n\t\t\tloyalty=52.687\n\t\t\tterritory=27.693\n\t\t\tinfluence_modifier={\n\t\t\t\tvalue=10.000\n\t\t\t\tdesc=\"EST_VAL_COMPENSATING_LOSSES\"\n\t\t\t\tdate=1467.5.22\n\t\t\t}\n\t\t\tactive_influences={\n\t\t\t\t1 4 \n\t\t\t}\n\t\t\tgranted_privileges={\n\t\t\t\t{\nestate_burghers_free_enterprise 1444.11.14\t\t\t\t}\n \n\t\t\t}\n\t\t}"
+      ],
+      "faction": [],
+      "monarch_current_ref_present": true,
+      "monarch_records": [
+        "{\n\t\t\t\t\tid={\n\t\t\t\t\t\tid=13477\n\t\t\t\t\t\ttype=48\n\t\t\t\t\t}\n\n\t\t\t\t\tname=\"斗有白\"\n\t\t\t\t\tcountry=\"JJG\"\n\t\t\t\t\tDIP=2\n\t\t\t\t\tADM=5\n\t\t\t\t\tMIL=2\n\t\t\t\t\tculture=gdd_chu\n\t\t\t\t\treligion=confucianism\n\t\t\t\t\tpersonalities={\n\t\t\t\t\t\tembezzler_personality=yes\n\t\t\t\t\t\twell_connected_personality=yes\n\t\t\t\t\t}\n\t\t\t\t\tbirth_date=1406.11.11\n\t\t\t\t}"
+      ],
+      "monarch_resolution": "country-local",
+      "heir_current_ref_present": false
+    },
+    "HYA": {
+      "government": "{\n\t\t\tgovernment=\"republic\"\n\t\t\treform_stack={\n\t\t\t\treforms={\n\t\t\t\t\t\"republic_mechanic\"\n\t\t\t\t\t\"zhx_gongyi_reform\"\n\t\t\t\t\t\"republicanism_reform\"\n\t\t\t\t\t\"lottery_reform\"\n\t\t\t\t}\n\t\t\t\thistory={\n\t\t\t\t\t\"zhx_gongyi_reform\"\n\t\t\t\t\t\"republicanism_reform\"\n\t\t\t\t\t\"lottery_reform\"\n\t\t\t\t}\n\t\t\t}\n\t\t}",
+      "government_rank": "1",
+      "flags": "{\n\t\t\tzhx_gongyi_charter=1459.12.26\n\t\t\tzhx_member=1444.11.11\n\t\t\trecent_land_seizure=1456.3.2\n\t\t\tzhx_doctrine_mo=1444.11.11\n\t\t\tzhx_doctrine_practice_initialised=1444.11.11\n\t\t\tzhx_opening_school_initialised=1444.11.11\n\t\t\tgdd_b82_mountains_discovered=1444.11.11\n\t\t\tzhx_council_vote_b=1457.5.30\n\t\t\tzhx_council_ai_review_pending=1457.5.30\n\t\t\tgdd_authority_balance_effect_recipient=1459.6.1\n\t\t\tzhx_doctrine_hover_positive_3=1459.11.14\n\t\t\tzhx_doctrine_hover_mo_peace=1459.11.14\n\t\t\tzhx_doctrine_hover_positive_2=1459.11.14\n\t\t}",
+      "variables": "{\n\t\t\testate_nobles_get_allies_variable=1.000\n\t\t\tgdd_ai_reform_sponsor_score=-2.000\n\t\t\tgdd_ai_reform_vote_score=-1.000\n\t\t\tland_units_killed=2000.000\n\t\t\tland_units_lost=151.000\n\t\t\tnaval_units_killed=0.000\n\t\t\tnaval_units_lost=0.000\n\t\t\tnum_of_battles_won_var=2.000\n\t\t\tseize_land_counter=3.000\n\t\t\tseize_land_effect_variable=0.000\n\t\t\ttotal_land_units_killed=3179.000\n\t\t\ttotal_land_units_lost=795.000\n\t\t\ttotal_naval_units_killed=0.000\n\t\t\ttotal_naval_units_lost=0.000\n\t\t\tzhx_academy_unprotected_school_count=0.000\n\t\t\tzhx_council_vote_weight=1.000\n\t\t\tzhx_diplomacy_member_extinction_count=0.000\n\t\t\tzhx_doctrine_calculated_delta=4.000\n\t\t\tzhx_doctrine_last_delta=4.000\n\t\t\tzhx_doctrine_ledger_estimated_delta=4.000\n\t\t\tzhx_doctrine_ledger_to_next_tier=0.000\n\t\t\tzhx_doctrine_ledger_to_proposal=0.000\n\t\t\tzhx_doctrine_practice=85.000\n\t\t\tzhx_doctrine_receipt_new_tier=3.000\n\t\t\tzhx_doctrine_receipt_old_practice=81.000\n\t\t\tzhx_doctrine_receipt_old_tier=3.000\n\t\t\tzhx_doctrine_reform_ai_low_practice_years=0.000\n\t\t\tzhx_merit=15.000\n\t\t\tzhx_merit_lifetime=15.000\n\t\t\tzhx_merit_rank_cache=0.000\n\t\t\tzhx_merit_rank_prestige=4.136\n\t\t\tzhx_merit_term=15.000\n\t\t}",
+      "last_election": "1452.11.11",
+      "republican_tradition": "94.688",
+      "stability": "1.000",
+      "prestige": "4.072",
+      "capital": "4981",
+      "powers": "{\n\t\t\t369 540 139 \n\t\t}",
+      "owned_provinces": "{\n\t\t\t4981 \n\t\t}",
+      "monarch": "{\n\t\t\tid=12672\n\t\t\ttype=48\n\t\t}",
+      "estate": [
+        "{\n\t\t\ttype=\"estate_church\"\n\t\t\tloyalty=41.759\n\t\t\tterritory=18.460\n\t\t\tgranted_privileges={\n\t\t\t\t{\nestate_church_clerical_oversight 1444.11.12\t\t\t\t}\n {\nestate_church_one_faith_one_culture 1466.1.3\t\t\t\t}\n \n\t\t\t}\n\t\t}",
+        "{\n\t\t\ttype=\"estate_nobles\"\n\t\t\tloyalty=36.495\n\t\t\tterritory=13.847\n\t\t\tgranted_privileges={\n\t\t\t\t{\nestate_nobles_right_of_counsel 1444.11.13\t\t\t\t}\n {\nestate_nobles_supremacy_over_crown 1444.11.15\t\t\t\t}\n \n\t\t\t}\n\t\t}",
+        "{\n\t\t\ttype=\"estate_burghers\"\n\t\t\tloyalty=41.653\n\t\t\tterritory=27.693\n\t\t\tinfluence_modifier={\n\t\t\t\tvalue=10.000\n\t\t\t\tdesc=\"EST_VAL_SUPPORTED_CITY_GROWTH\"\n\t\t\t\tdate=1468.5.19\n\t\t\t}\n\t\t\tinfluence_modifier={\n\t\t\t\tvalue=-10.000\n\t\t\t\tdesc=\"EST_VAL_BURGHERS_DECLINE\"\n\t\t\t\tdate=1473.5.29\n\t\t\t}\n\t\t\tactive_influences={\n\t\t\t\t4 \n\t\t\t}\n\t\t\tgranted_privileges={\n\t\t\t\t{\nestate_burghers_free_enterprise 1444.11.14\t\t\t\t}\n \n\t\t\t}\n\t\t}"
+      ],
+      "faction": [],
+      "monarch_current_ref_present": true,
+      "monarch_records": [
+        "{\n\t\t\t\t\tid={\n\t\t\t\t\t\tid=12672\n\t\t\t\t\t\ttype=48\n\t\t\t\t\t}\n\n\t\t\t\t\tname=\"田叔生\"\n\t\t\t\t\tcountry=\"HYA\"\n\t\t\t\t\tDIP=4\n\t\t\t\t\tADM=6\n\t\t\t\t\tMIL=6\n\t\t\t\t\tculture=gdd_chu\n\t\t\t\t\treligion=confucianism\n\t\t\t\t\tpersonalities={\n\t\t\t\t\t\tbabbling_buffoon_personality=yes\n\t\t\t\t\t\tjust_personality=yes\n\t\t\t\t\t}\n\t\t\t\t\tbirth_date=1408.11.11\n\t\t\t\t}"
+      ],
+      "monarch_resolution": "country-local",
+      "heir_current_ref_present": false
+    },
+    "WHU": {
+      "government": "{\n\t\t\tgovernment=\"republic\"\n\t\t\treform_stack={\n\t\t\t\treforms={\n\t\t\t\t\t\"republic_mechanic\"\n\t\t\t\t\t\"zhx_gongyi_reform\"\n\t\t\t\t\t\"republicanism_reform\"\n\t\t\t\t\t\"consolidation_of_power_reform\"\n\t\t\t\t}\n\t\t\t\thistory={\n\t\t\t\t\t\"zhx_gongyi_reform\"\n\t\t\t\t\t\"republicanism_reform\"\n\t\t\t\t\t\"consolidation_of_power_reform\"\n\t\t\t\t}\n\t\t\t}\n\t\t}",
+      "government_rank": "1",
+      "flags": "{\n\t\t\tzhx_gongyi_charter=1459.12.21\n\t\t\tzhx_member=1444.11.11\n\t\t\tgdd_support_reform_foreign_ship_designs=1459.10.22\n\t\t\tzhx_doctrine_mo=1444.11.11\n\t\t\tzhx_doctrine_practice_initialised=1444.11.11\n\t\t\tzhx_opening_school_initialised=1444.11.11\n\t\t\tzhx_council_vote_b=1457.5.30\n\t\t\tgdd_support_reform_military_branch=1459.10.22\n\t\t\tgdd_support_reform_single_whip=1459.10.22\n\t\t\tgdd_b82_mountains_discovered=1444.11.11\n\t\t\trecent_estate_agenda=1449.12.17\n\t\t\tgdd_support_reform_civil_registration=1459.10.22\n\t\t\tgdd_support_reform_silver_standard=1459.10.22\n\t\t\tgdd_support_reform_kanhe=1459.10.22\n\t\t\tgdd_support_reform_keju=1459.10.22\n\t\t\tgdd_support_reform_inclusive_monarchy=1459.10.22\n\t\t\tgdd_support_reform_unified_market=1459.10.22\n\t\t\trecent_land_seizure=1455.2.2\n\t\t\tzhx_council_ai_review_pending=1457.5.30\n\t\t\tgdd_authority_balance_effect_recipient=1459.6.1\n\t\t\tzhx_doctrine_hover_positive_3=1459.11.9\n\t\t\tzhx_doctrine_hover_mo_peace=1459.11.9\n\t\t\tzhx_doctrine_hover_positive_2=1459.11.9\n\t\t}",
+      "variables": "{\n\t\t\testate_nobles_get_allies_variable=1.000\n\t\t\testate_nobles_relations_with_X=2.000\n\t\t\tevent_advisor_skill_level=0.000\n\t\t\tgdd_ai_reform_sponsor_score=1.000\n\t\t\tgdd_ai_reform_vote_score=2.000\n\t\t\tland_units_killed=1661.000\n\t\t\tland_units_lost=566.000\n\t\t\tnaval_units_killed=0.000\n\t\t\tnaval_units_lost=0.000\n\t\t\tnum_of_battles_won_var=1.000\n\t\t\tseize_land_counter=3.000\n\t\t\tseize_land_effect_variable=0.000\n\t\t\tsummon_the_diet_counter=1.000\n\t\t\ttotal_land_units_killed=1661.000\n\t\t\ttotal_land_units_lost=566.000\n\t\t\ttotal_naval_units_killed=0.000\n\t\t\ttotal_naval_units_lost=0.000\n\t\t\tzhx_academy_unprotected_school_count=0.000\n\t\t\tzhx_council_vote_weight=1.000\n\t\t\tzhx_diplomacy_member_extinction_count=0.000\n\t\t\tzhx_doctrine_calculated_delta=4.000\n\t\t\tzhx_doctrine_last_delta=4.000\n\t\t\tzhx_doctrine_ledger_estimated_delta=4.000\n\t\t\tzhx_doctrine_ledger_to_next_tier=0.000\n\t\t\tzhx_doctrine_ledger_to_proposal=0.000\n\t\t\tzhx_doctrine_practice=85.000\n\t\t\tzhx_doctrine_receipt_new_tier=3.000\n\t\t\tzhx_doctrine_receipt_old_practice=81.000\n\t\t\tzhx_doctrine_receipt_old_tier=3.000\n\t\t\tzhx_doctrine_reform_ai_low_practice_years=0.000\n\t\t\tzhx_merit=15.000\n\t\t\tzhx_merit_lifetime=15.000\n\t\t\tzhx_merit_rank_cache=0.000\n\t\t\tzhx_merit_rank_prestige=3.251\n\t\t\tzhx_merit_term=15.000\n\t\t}",
+      "last_election": "1456.11.11",
+      "republican_tradition": "84.558",
+      "stability": "0.000",
+      "prestige": "3.195",
+      "capital": "5066",
+      "powers": "{\n\t\t\t168 314 509 \n\t\t}",
+      "owned_provinces": "{\n\t\t\t5066 \n\t\t}",
+      "monarch": "{\n\t\t\tid=12667\n\t\t\ttype=48\n\t\t}",
+      "estate": [
+        "{\n\t\t\ttype=\"estate_church\"\n\t\t\tloyalty=46.372\n\t\t\tterritory=18.460\n\t\t\tinfluence_modifier={\n\t\t\t\tvalue=5.000\n\t\t\t\tdesc=\"EST_VAL_DIET_SUMMONED\"\n\t\t\t\tdate=1469.12.17\n\t\t\t}\n\t\t\tinfluence_modifier={\n\t\t\t\tvalue=-10.000\n\t\t\t\tdesc=\"EST_VAL_CHURCH_DECLINE\"\n\t\t\t\tdate=1468.5.19\n\t\t\t}\n\t\t\tgranted_privileges={\n\t\t\t\t{\nestate_church_clerical_oversight 1444.11.12\t\t\t\t}\n {\nestate_church_one_faith_one_culture 1464.12.19\t\t\t\t}\n \n\t\t\t}\n\t\t}",
+        "{\n\t\t\ttype=\"estate_nobles\"\n\t\t\tloyalty=44.691\n\t\t\tterritory=13.847\n\t\t\tinfluence_modifier={\n\t\t\t\tvalue=5.000\n\t\t\t\tdesc=\"EST_VAL_DIET_SUMMONED\"\n\t\t\t\tdate=1469.12.17\n\t\t\t}\n\t\t\tinfluence_modifier={\n\t\t\t\tvalue=15.000\n\t\t\t\tdesc=\"EST_VAL_MINISTER_NOBLES\"\n\t\t\t\tdate=1468.5.24\n\t\t\t}\n\t\t\tgranted_privileges={\n\t\t\t\t{\nestate_nobles_right_of_counsel 1444.11.13\t\t\t\t}\n {\nestate_nobles_supremacy_over_crown 1444.11.15\t\t\t\t}\n \n\t\t\t}\n\t\t}",
+        "{\n\t\t\ttype=\"estate_burghers\"\n\t\t\tloyalty=33.340\n\t\t\tterritory=27.693\n\t\t\tinfluence_modifier={\n\t\t\t\tvalue=10.000\n\t\t\t\tdesc=\"EST_VAL_BURGHERS_ADVANCE\"\n\t\t\t\tdate=1463.5.14\n\t\t\t}\n\t\t\tinfluence_modifier={\n\t\t\t\tvalue=5.000\n\t\t\t\tdesc=\"EST_VAL_DIET_SUMMONED\"\n\t\t\t\tdate=1469.12.17\n\t\t\t}\n\t\t\tactive_influences={\n\t\t\t\t1 \n\t\t\t}\n\t\t\tgranted_privileges={\n\t\t\t\t{\nestate_burghers_free_enterprise 1444.11.14\t\t\t\t}\n \n\t\t\t}\n\t\t\tnum_of_estate_agendas_completed=1\n\t\t}"
+      ],
+      "faction": [],
+      "monarch_current_ref_present": true,
+      "monarch_records": [
+        "{\n\t\t\t\t\tid={\n\t\t\t\t\t\tid=12667\n\t\t\t\t\t\ttype=48\n\t\t\t\t\t}\n\n\t\t\t\t\tname=\"绍卿 周\"\n\t\t\t\t\tcountry=\"WHU\"\n\t\t\t\t\tDIP=6\n\t\t\t\t\tADM=4\n\t\t\t\t\tMIL=5\n\t\t\t\t\tculture=gdd_wu\n\t\t\t\t\treligion=confucianism\n\t\t\t\t\tpersonalities={\n\t\t\t\t\t\tbenevolent_personality=yes\n\t\t\t\t\t\tarchitectural_visionary_personality=yes\n\t\t\t\t\t}\n\t\t\t\t\tbirth_date=1414.11.11\n\t\t\t\t}"
+      ],
+      "monarch_resolution": "country-local",
+      "heir_current_ref_present": false
+    },
+    "ZHO": {
+      "government": "{\n\t\t\tgovernment=\"republic\"\n\t\t\treform_stack={\n\t\t\t\treforms={\n\t\t\t\t\t\"republic_mechanic\"\n\t\t\t\t\t\"zhx_gongyi_reform\"\n\t\t\t\t\t\"republicanism_reform\"\n\t\t\t\t\t\"frequent_elections_reform\"\n\t\t\t\t}\n\t\t\t\thistory={\n\t\t\t\t\t\"zhx_gongyi_reform\"\n\t\t\t\t\t\"republicanism_reform\"\n\t\t\t\t\t\"frequent_elections_reform\"\n\t\t\t\t}\n\t\t\t}\n\t\t}",
+      "government_rank": "1",
+      "flags": "{\n\t\t\tzhx_gongyi_charter=1459.12.22\n\t\t\tzhx_member=1444.11.11\n\t\t\tgdd_support_reform_foreign_ship_designs=1459.10.22\n\t\t\tzhx_doctrine_zongheng=1444.11.11\n\t\t\tzhx_doctrine_practice_initialised=1444.11.11\n\t\t\tzhx_opening_school_initialised=1444.11.11\n\t\t\trecent_estate_agenda=1450.2.20\n\t\t\tgdd_b82_mountains_discovered=1444.11.11\n\t\t\tgdd_authority_balance_effect_recipient=1459.6.1\n\t\t\tgdd_support_reform_single_whip=1459.10.22\n\t\t\tgdd_support_reform_civil_registration=1459.10.22\n\t\t\tgdd_support_reform_silver_standard=1459.10.22\n\t\t\tgdd_support_reform_kanhe=1459.10.22\n\t\t\tgdd_support_reform_keju=1459.10.22\n\t\t\tgdd_support_reform_inclusive_monarchy=1459.10.22\n\t\t\tgdd_support_reform_unified_market=1459.10.22\n\t\t\tgdd_support_reform_military_branch=1459.10.22\n\t\t\tzhx_council_vote_c=1457.5.30\n\t\t\tzhx_council_ai_review_pending=1457.5.30\n\t\t\trecent_land_seizure=1457.11.8\n\t\t\tzhx_doctrine_hover_negative_2=1459.11.10\n\t\t\tzhx_doctrine_hover_negative_1=1459.11.10\n\t\t}",
+      "variables": "{\n\t\t\testate_church_build_temple_in_y_var=1.000\n\t\t\testate_nobles_improve_prestige_var=2.000\n\t\t\testate_nobles_relations_with_X=2.000\n\t\t\tgdd_ai_reform_sponsor_score=1.000\n\t\t\tgdd_ai_reform_vote_score=2.000\n\t\t\tseize_land_counter=3.000\n\t\t\tsummon_the_diet_counter=1.000\n\t\t\tzhx_academy_unprotected_school_count=0.000\n\t\t\tzhx_council_vote_weight=1.000\n\t\t\tzhx_diplomacy_member_extinction_count=0.000\n\t\t\tzhx_doctrine_calculated_delta=-5.000\n\t\t\tzhx_doctrine_last_delta=0.000\n\t\t\tzhx_doctrine_ledger_estimated_delta=-5.000\n\t\t\tzhx_doctrine_ledger_to_next_tier=25.000\n\t\t\tzhx_doctrine_ledger_to_proposal=70.000\n\t\t\tzhx_doctrine_practice=0.000\n\t\t\tzhx_doctrine_receipt_new_tier=0.000\n\t\t\tzhx_doctrine_receipt_old_practice=0.000\n\t\t\tzhx_doctrine_receipt_old_tier=0.000\n\t\t\tzhx_doctrine_reform_ai_low_practice_years=15.000\n\t\t\tzhx_merit=15.000\n\t\t\tzhx_merit_lifetime=15.000\n\t\t\tzhx_merit_rank_cache=0.000\n\t\t\tzhx_merit_rank_prestige=-1.106\n\t\t\tzhx_merit_term=15.000\n\t\t}",
+      "last_election": "1459.11.11",
+      "republican_tradition": "100.000",
+      "stability": "1.000",
+      "prestige": "-1.058",
+      "capital": "5004",
+      "powers": "{\n\t\t\t562 367 237 \n\t\t}",
+      "owned_provinces": "{\n\t\t\t5004 \n\t\t}",
+      "monarch": "{\n\t\t\tid=13888\n\t\t\ttype=48\n\t\t}",
+      "estate": [
+        "{\n\t\t\ttype=\"estate_church\"\n\t\t\tloyalty=38.387\n\t\t\tterritory=18.460\n\t\t\tinfluence_modifier={\n\t\t\t\tvalue=5.000\n\t\t\t\tdesc=\"EST_VAL_DIET_SUMMONED\"\n\t\t\t\tdate=1470.2.20\n\t\t\t}\n\t\t\tinfluence_modifier={\n\t\t\t\tvalue=-10.000\n\t\t\t\tdesc=\"EST_VAL_TITHES_UNDERMINED\"\n\t\t\t\tdate=1469.5.21\n\t\t\t}\n\t\t\tgranted_privileges={\n\t\t\t\t{\nestate_church_clerical_oversight 1444.11.12\t\t\t\t}\n {\nestate_church_one_faith_one_culture 1465.2.22\t\t\t\t}\n \n\t\t\t}\n\t\t\tnum_of_estate_agendas_completed=1\n\t\t}",
+        "{\n\t\t\ttype=\"estate_nobles\"\n\t\t\tloyalty=38.046\n\t\t\tterritory=13.847\n\t\t\tinfluence_modifier={\n\t\t\t\tvalue=5.000\n\t\t\t\tdesc=\"EST_VAL_DIET_SUMMONED\"\n\t\t\t\tdate=1470.2.20\n\t\t\t}\n\t\t\tgranted_privileges={\n\t\t\t\t{\nestate_nobles_right_of_counsel 1444.11.13\t\t\t\t}\n {\nestate_nobles_supremacy_over_crown 1444.11.15\t\t\t\t}\n \n\t\t\t}\n\t\t}",
+        "{\n\t\t\ttype=\"estate_burghers\"\n\t\t\tloyalty=43.484\n\t\t\tterritory=27.693\n\t\t\tinfluence_modifier={\n\t\t\t\tvalue=5.000\n\t\t\t\tdesc=\"EST_VAL_DIET_SUMMONED\"\n\t\t\t\tdate=1470.2.20\n\t\t\t}\n\t\t\tgranted_privileges={\n\t\t\t\t{\nestate_burghers_free_enterprise 1444.11.14\t\t\t\t}\n \n\t\t\t}\n\t\t}"
+      ],
+      "faction": [],
+      "monarch_current_ref_present": true,
+      "monarch_records": [
+        "{\n\t\t\t\t\tid={\n\t\t\t\t\t\tid=13888\n\t\t\t\t\t\ttype=48\n\t\t\t\t\t}\n\n\t\t\t\t\tname=\"继谦 虞\"\n\t\t\t\t\tcountry=\"ZHO\"\n\t\t\t\t\tDIP=1\n\t\t\t\t\tADM=4\n\t\t\t\t\tMIL=1\n\t\t\t\t\tculture=gdd_wu\n\t\t\t\t\treligion=confucianism\n\t\t\t\t\tpersonalities={\n\t\t\t\t\t\tloose_lips_personality=yes\n\t\t\t\t\t}\n\t\t\t\t\tbirth_date=1425.11.11\n\t\t\t\t}"
+      ],
+      "monarch_resolution": "country-local",
+      "heir_current_ref_present": false
+    },
+    "CZH": {
+      "government": "{\n\t\t\tgovernment=\"monarchy\"\n\t\t\treform_stack={\n\t\t\t\treforms={\n\t\t\t\t\t\"monarchy_mechanic\"\n\t\t\t\t\t\"celestial_empire\"\n\t\t\t\t\t\"enforce_privileges_reform\"\n\t\t\t\t}\n\t\t\t\thistory={\n\t\t\t\t\t\"celestial_empire\"\n\t\t\t\t\t\"enforce_privileges_reform\"\n\t\t\t\t}\n\t\t\t}\n\t\t}",
+      "government_rank": "3",
+      "flags": "{\n\t\t\tgdd_b82_mountains_discovered=1444.11.11\n\t\t\tzhx_tianzi=1444.11.11\n\t\t\tgdd_authority_balance_effect_recipient=1459.6.1\n\t\t\tzhx_council_vote_a=1457.5.30\n\t\t\thad_eunuch_info_event=1445.10.26\n\t\t\tzhx_opening_school_initialised=1444.11.11\n\t\t\trecent_land_seizure=1455.2.2\n\t\t\tzhx_doctrine_ru=1444.11.12\n\t\t\tzhx_doctrine_practice_initialised=1444.11.12\n\t\t\tzhx_ritual_tier_stable=1448.5.21\n\t\t\tzhx_council_ai_review_pending=1457.5.30\n\t\t\tgdd_authority_balance_zero_active=1459.6.1\n\t\t\tzhx_council_candidate_a_fa=1457.5.30\n\t\t\tzhx_council_candidate_b_mo=1457.5.30\n\t\t\tzhx_council_kind_debate=1457.5.30\n\t\t\tzhx_council_phase_ballot_open=1457.5.30\n\t\t\tzhx_council_deadline_scheduled=1457.5.30\n\t\t\tzhx_doctrine_hover_positive_3=1459.6.1\n\t\t\tzhx_doctrine_hover_positive_1=1459.6.1\n\t\t}",
+      "variables": "{\n\t\t\tgdd_authority_effect_remainder=0.000\n\t\t\tgdd_authority_half_display=0.000\n\t\t\tgdd_authority_integer_display=0.000\n\t\t\tgdd_authority_integer_magnitude_display=0.000\n\t\t\tgdd_authority_quarter_display=0.000\n\t\t\tgdd_authority_tenth_display=0.000\n\t\t\tgdd_central_authority_balance=0.000\n\t\t\tgdd_central_authority_display=0.000\n\t\t\tgdd_eoc_member_count_cache=62.000\n\t\t\tgdd_feudatory_prestige_display=0.000\n\t\t\tgdd_reform_vote_bureaucratic_faction_dev=765.000\n\t\t\tgdd_reform_vote_bureaucratic_faction_twice=1530.000\n\t\t\tgdd_reform_vote_bureaucratic_faction_without_principal_twice=1530.000\n\t\t\tgdd_reform_vote_centralizing_government_dev=765.000\n\t\t\tgdd_reform_vote_centralizing_government_twice=1530.000\n\t\t\tgdd_reform_vote_centralizing_government_without_principal_twice=1530.000\n\t\t\tgdd_reform_vote_civil_registration_dev=2889.000\n\t\t\tgdd_reform_vote_civil_registration_twice=5778.000\n\t\t\tgdd_reform_vote_civil_registration_without_principal_twice=5416.000\n\t\t\tgdd_reform_vote_establish_gaituguiliu_dev=765.000\n\t\t\tgdd_reform_vote_establish_gaituguiliu_twice=1530.000\n\t\t\tgdd_reform_vote_establish_gaituguiliu_without_principal_twice=1530.000\n\t\t\tgdd_reform_vote_foreign_ship_designs_dev=2889.000\n\t\t\tgdd_reform_vote_foreign_ship_designs_twice=5778.000\n\t\t\tgdd_reform_vote_foreign_ship_designs_without_principal_twice=5416.000\n\t\t\tgdd_reform_vote_inclusive_monarchy_dev=2889.000\n\t\t\tgdd_reform_vote_inclusive_monarchy_twice=5778.000\n\t\t\tgdd_reform_vote_inclusive_monarchy_without_principal_twice=5416.000\n\t\t\tgdd_reform_vote_kanhe_dev=2889.000\n\t\t\tgdd_reform_vote_kanhe_twice=5778.000\n\t\t\tgdd_reform_vote_kanhe_without_principal_twice=5416.000\n\t\t\tgdd_reform_vote_keju_dev=2889.000\n\t\t\tgdd_reform_vote_keju_twice=5778.000\n\t\t\tgdd_reform_vote_keju_without_principal_twice=5416.000\n\t\t\tgdd_reform_vote_land_tax_dev=765.000\n\t\t\tgdd_reform_vote_land_tax_twice=1530.000\n\t\t\tgdd_reform_vote_land_tax_without_principal_twice=1530.000\n\t\t\tgdd_reform_vote_member_temp_dev=14.000\n\t\t\tgdd_reform_vote_military_branch_dev=2889.000\n\t\t\tgdd_reform_vote_military_branch_twice=5778.000\n\t\t\tgdd_reform_vote_military_branch_without_principal_twice=5416.000\n\t\t\tgdd_reform_vote_military_faction_dev=1780.000\n\t\t\tgdd_reform_vote_military_faction_twice=3560.000\n\t\t\tgdd_reform_vote_military_governors_dev=2088.000\n\t\t\tgdd_reform_vote_military_governors_twice=4176.000\n\t\t\tgdd_reform_vote_military_governors_without_principal_twice=3814.000\n\t\t\tgdd_reform_vote_modernize_banners_dev=1437.000\n\t\t\tgdd_reform_vote_modernize_banners_twice=2874.000\n\t\t\tgdd_reform_vote_modernize_banners_without_principal_twice=2512.000\n\t\t\tgdd_reform_vote_new_world_dev=765.000\n\t\t\tgdd_reform_vote_new_world_twice=1530.000\n\t\t\tgdd_reform_vote_new_world_without_principal_twice=1530.000\n\t\t\tgdd_reform_vote_principal_temp_dev=181.000\n\t\t\tgdd_reform_vote_principal_temp_dev_twice=362.000\n\t\t\tgdd_reform_vote_reign_in_estates_dev=765.000\n\t\t\tgdd_reform_vote_reign_in_estates_twice=1530.000\n\t\t\tgdd_reform_vote_reign_in_estates_without_principal_twice=1530.000\n\t\t\tgdd_reform_vote_seaban_dev=690.000\n\t\t\tgdd_reform_vote_seaban_twice=1380.000\n\t\t\tgdd_reform_vote_seaban_without_principal_twice=1380.000\n\t\t\tgdd_reform_vote_silver_standard_dev=2889.000\n\t\t\tgdd_reform_vote_silver_standard_twice=5778.000\n\t\t\tgdd_reform_vote_silver_standard_without_principal_twice=5416.000\n\t\t\tgdd_reform_vote_single_whip_dev=2385.000\n\t\t\tgdd_reform_vote_single_whip_twice=4770.000\n\t\t\tgdd_reform_vote_single_whip_without_principal_twice=4408.000\n\t\t\tgdd_reform_vote_total_dev=3115.000\n\t\t\tgdd_reform_vote_total_dev_plus_one=3116.000\n\t\t\tgdd_reform_vote_total_without_principal_dev=2934.000\n\t\t\tgdd_reform_vote_total_without_principal_plus_one=2935.000\n\t\t\tgdd_reform_vote_tributary_embassies_dev=765.000\n\t\t\tgdd_reform_vote_tributary_embassies_twice=1530.000\n\t\t\tgdd_reform_vote_tributary_embassies_without_principal_twice=1530.000\n\t\t\tgdd_reform_vote_unified_market_dev=2889.000\n\t\t\tgdd_reform_vote_unified_market_twice=5778.000\n\t\t\tgdd_reform_vote_unified_market_without_principal_twice=5416.000\n\t\t\tgdd_reform_vote_vassalize_tributaries_dev=365.000\n\t\t\tgdd_reform_vote_vassalize_tributaries_twice=730.000\n\t\t\tgdd_reform_vote_vassalize_tributaries_without_principal_twice=730.000\n\t\t\tgdd_six_great_feudatory_count=6.000\n\t\t\tland_units_killed=2020.000\n\t\t\tland_units_lost=30.000\n\t\t\tnaval_units_killed=0.000\n\t\t\tnaval_units_lost=0.000\n\t\t\tnum_of_battles_won_var=3.000\n\t\t\tseize_land_counter=3.000\n\t\t\tseize_land_effect_variable=0.000\n\t\t\ttotal_land_units_killed=6868.000\n\t\t\ttotal_land_units_lost=1944.000\n\t\t\ttotal_naval_units_killed=0.000\n\t\t\ttotal_naval_units_lost=0.000\n\t\t\tzhx_academy_unprotected_school_count=0.000\n\t\t\tzhx_council_a_vs_b=-2.000\n\t\t\tzhx_council_a_vs_c=-17.000\n\t\t\tzhx_council_b_vs_a=2.000\n\t\t\tzhx_council_b_vs_c=-15.000\n\t\t\tzhx_council_eligible_ai_count=64.000\n\t\t\tzhx_council_eligible_country_count=64.000\n\t\t\tzhx_council_unvoted_ai_count=0.000\n\t\t\tzhx_council_unvoted_country_count=0.000\n\t\t\tzhx_council_vote_a_count=15.000\n\t\t\tzhx_council_vote_b_count=17.000\n\t\t\tzhx_council_vote_c_count=32.000\n\t\t\tzhx_council_vote_weight=1.000\n\t\t\tzhx_council_voted_ai_count=64.000\n\t\t\tzhx_council_voted_country_count=64.000\n\t\t\tzhx_diplomacy_member_extinction_count=0.000\n\t\t\tzhx_doctrine_calculated_delta=3.000\n\t\t\tzhx_doctrine_last_delta=3.000\n\t\t\tzhx_doctrine_ledger_estimated_delta=3.000\n\t\t\tzhx_doctrine_ledger_to_next_tier=5.000\n\t\t\tzhx_doctrine_ledger_to_proposal=0.000\n\t\t\tzhx_doctrine_practice=70.000\n\t\t\tzhx_doctrine_receipt_new_tier=2.000\n\t\t\tzhx_doctrine_receipt_old_practice=67.000\n\t\t\tzhx_doctrine_receipt_old_tier=2.000\n\t\t\tzhx_doctrine_reform_ai_low_practice_years=0.000\n\t\t\tzhx_internal_war_count_cache=2.000\n\t\t\tzhx_member_count_cache=63.000\n\t\t\tzhx_merit_rank_cache=0.000\n\t\t\tzhx_merit_rank_prestige=8.249\n\t\t\tzhx_merit_term_year=15.000\n\t\t\tzhx_merit_term_years_remaining=10.000\n\t\t\tzhx_ritual_authority=55.000\n\t\t\tzhx_tianxia_extinction_penalty_count=0.000\n\t\t}",
+      "last_election": "1444.11.11",
+      "stability": "1.000",
+      "prestige": "8.353",
+      "capital": "688",
+      "powers": "{\n\t\t\t368 300 494 \n\t\t}",
+      "owned_provinces": "{\n\t\t\t688 1836 5046 5053 \n\t\t}",
+      "monarch": "{\n\t\t\tid=12929\n\t\t\ttype=48\n\t\t}",
+      "heir": "{\n\t\t\tid=13043\n\t\t\ttype=48\n\t\t}",
+      "estate": [
+        "{\n\t\t\ttype=\"estate_church\"\n\t\t\tloyalty=50.269\n\t\t\tterritory=4.615\n\t\t\tgranted_privileges={\n\t\t\t\t{\nestate_church_independent_inquisition 1444.11.12\t\t\t\t}\n {\nestate_church_clerical_oversight 1444.11.15\t\t\t\t}\n {\nestate_church_one_faith_one_culture 1465.1.3\t\t\t\t}\n \n\t\t\t}\n\t\t}",
+        "{\n\t\t\ttype=\"estate_nobles\"\n\t\t\tloyalty=51.834\n\t\t\tterritory=11.031\n\t\t\tgranted_privileges={\n\t\t\t\t{\nestate_nobles_advisors 1444.11.13\t\t\t\t}\n {\nestate_nobles_right_of_counsel 1444.11.16\t\t\t\t}\n {\nestate_nobles_supremacy_over_crown 1444.11.18\t\t\t\t}\n \n\t\t\t}\n\t\t}",
+        "{\n\t\t\ttype=\"estate_burghers\"\n\t\t\tloyalty=45.306\n\t\t\tinfluence_modifier={\n\t\t\t\tvalue=-10.000\n\t\t\t\tdesc=\"EST_VAL_BURGHERS_DECLINE\"\n\t\t\t\tdate=1462.12.3\n\t\t\t}\n\t\t\tactive_influences={\n\t\t\t\t1 \n\t\t\t}\n\t\t\tgranted_privileges={\n\t\t\t\t{\nestate_burghers_commercial_board_of_advice 1444.11.14\t\t\t\t}\n {\nestate_burghers_free_enterprise 1444.11.17\t\t\t\t}\n \n\t\t\t}\n\t\t}",
+        "{\n\t\t\ttype=\"estate_eunuchs\"\n\t\t\tloyalty=30.576\n\t\t\tterritory=44.354\n\t\t\tactive_loyalties={\n\t\t\t\t2 3 4 8 \n\t\t\t}\n\t\t}"
+      ],
+      "faction": [],
+      "monarch_current_ref_present": true,
+      "monarch_records": [
+        "{\n\t\t\t\t\tid={\n\t\t\t\t\t\tid=12929\n\t\t\t\t\t\ttype=48\n\t\t\t\t\t}\n\n\t\t\t\t\tname=\"文媛\"\n\t\t\t\t\tcountry=\"CZH\"\n\t\t\t\t\tDIP=4\n\t\t\t\t\tADM=5\n\t\t\t\t\tMIL=3\n\t\t\t\t\tfemale=yes\n\t\t\t\t\tregency={\n\t\t\t\t\t\textend=5\n\t\t\t\t\t}\n\t\t\t\t\tculture=gdd_qi\n\t\t\t\t\treligion=confucianism\n\t\t\t\t\tpersonalities={\n\t\t\t\t\t\tentrepreneur_personality=yes\n\t\t\t\t\t}\n\t\t\t\t\tdynasty=\"晏\"\n\t\t\t\t\tbirth_date=1417.5.30\n\t\t\t\t\tsucceeded=yes\n\t\t\t\t\tmonarch_name=\"文媛\"\n\t\t\t\t\tcountry_of_origin=LUU\n\t\t\t\t}"
+      ],
+      "monarch_resolution": "country-local",
+      "heir_current_ref_present": true,
+      "heir_records": [
+        "{\n\t\t\t\t\tid={\n\t\t\t\t\t\tid=13043\n\t\t\t\t\t\ttype=48\n\t\t\t\t\t}\n\n\t\t\t\t\tname=\"庄姒\"\n\t\t\t\t\tcountry=\"CZH\"\n\t\t\t\t\tDIP=2\n\t\t\t\t\tADM=6\n\t\t\t\t\tMIL=2\n\t\t\t\t\tfemale=yes\n\t\t\t\t\tculture=gdd_zhongyuan\n\t\t\t\t\treligion=confucianism\n\t\t\t\t\tdynasty=\"姬\"\n\t\t\t\t\tbirth_date=1445.3.20\n\t\t\t\t\tmonarch_name=\"庄姒\"\n\t\t\t\t\tclaim=87.543\n\t\t\t\t}"
+      ],
+      "heir_resolution": "country-local"
+    }
+  },
+  "trade_leagues": [
+    "{\n\tid=1\n\tmembers={\n\t\tHSA RIG BRE HAM \n\t}\n}",
+    "{\n\tid=1916387887\n\tmembers={\n\t\tHYM CDE JJG HYA WHU ZHO \n\t}\n}",
+    "{\n\tid=1043018229\n\tmembers={\n\t\tCEB BTU \n\t}\n}",
+    "{\n\tid=880260501\n\tmembers={\n\t\tTDO MNA \n\t}\n}",
+    "{\n\tid=1382235224\n\tmembers={\n\t\tGEN LUC FEO SZO \n\t}\n}",
+    "{\n\tid=481900291\n\tmembers={\n\t\tVEN KNI CYP KNZ CLI \n\t}\n}",
+    "{\n\tid=1596082168\n\tmembers={\n\t\tMKS TER BTN \n\t}\n}",
+    "{\n\tid=1968550483\n\tmembers={\n\t\tLUW TID \n\t}\n}"
+  ]
+}

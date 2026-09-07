@@ -1,0 +1,36 @@
+{
+  "checked_at": "2026-09-07T07:38:00+08:00",
+  "checks": [
+    {
+      "command": "python3 tools/validate_gongyi_yang.py",
+      "result": "PASS",
+      "source": "07:38 exec output"
+    },
+    {
+      "command": "python3 tools/validate_czc_government.py",
+      "result": "PASS",
+      "source": "07:38 exec output"
+    },
+    {
+      "command": "python3 tools/validate_zhou_feudatories.py",
+      "result": "PASS",
+      "source": "07:38 exec output"
+    },
+    {
+      "command": "python3 tools/validate_zhx_merit_store.py",
+      "result": "PASS",
+      "source": "07:38 exec output"
+    },
+    {
+      "command": "python3 tools/apply_lingnan_nations.py --check",
+      "result": "PASS",
+      "source": "07:38 exec output"
+    },
+    {
+      "command": "git diff --check",
+      "result": "PASS",
+      "source": "07:38 exec output"
+    }
+  ],
+  "scope": "Static contracts only; runtime report is separate."
+}

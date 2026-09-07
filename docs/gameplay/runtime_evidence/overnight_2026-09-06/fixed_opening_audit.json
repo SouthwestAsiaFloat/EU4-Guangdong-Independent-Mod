@@ -1,0 +1,334 @@
+{
+  "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/save games/安南1444_11_11_night0906_fixed_opening.eu4",
+  "sha256": "6ce8587c39e733d6254dc626e8c6e107734e559af3b0327973a72e941392725c",
+  "date": "1444.11.11",
+  "countries": {
+    "GUI": {
+      "government": "{\n\t\t\tgovernment=\"monarchy\"\n\t\t\treform_stack={\n\t\t\t\treforms={\n\t\t\t\t\t\"monarchy_mechanic\"\n\t\t\t\t\t\"zhx_feudatory_bo_reform\"\n\t\t\t\t}\n\t\t\t\thistory={\n\t\t\t\t\t\"zhx_feudatory_bo_reform\"\n\t\t\t\t}\n\t\t\t}\n\t\t}",
+      "government_rank": "1",
+      "flags": "{\n\t\t\tzhx_member=1444.11.11\n\t\t\tgdd_authority_balance_effect_recipient=1444.11.11\n\t\t\tzhx_doctrine_ru=1444.11.11\n\t\t\tzhx_doctrine_practice_initialised=1444.11.11\n\t\t\tzhx_opening_school_initialised=1444.11.11\n\t\t\tzhx_doctrine_hover_positive_3=1444.11.11\n\t\t\tgdd_b82_mountains_discovered=1444.11.11\n\t\t}",
+      "variables": "{\n\t\t\tzhx_academy_unprotected_school_count=0.000\n\t\t\tzhx_diplomacy_member_extinction_count=0.000\n\t\t\tzhx_doctrine_calculated_delta=1.000\n\t\t\tzhx_doctrine_last_delta=0.000\n\t\t\tzhx_doctrine_ledger_estimated_delta=1.000\n\t\t\tzhx_doctrine_ledger_to_next_tier=25.000\n\t\t\tzhx_doctrine_ledger_to_proposal=45.000\n\t\t\tzhx_doctrine_practice=25.000\n\t\t\tzhx_merit=0.000\n\t\t\tzhx_merit_lifetime=0.000\n\t\t\tzhx_merit_rank_cache=0.000\n\t\t\tzhx_merit_term=0.000\n\t\t}",
+      "last_election": "1444.11.11",
+      "stability": "0.000",
+      "prestige": "6.944",
+      "capital": "1840",
+      "powers": "{\n\t\t\t70 56 98 \n\t\t}",
+      "owned_provinces": "{\n\t\t\t1840 2163 4959 5200 5208 \n\t\t}",
+      "monarch": "{\n\t\t\tid=3570\n\t\t\ttype=48\n\t\t}",
+      "heir": "{\n\t\t\tid=3571\n\t\t\ttype=48\n\t\t}",
+      "monarch_current_ref_present": true,
+      "monarch_records": [
+        "{\n\t\t\t\t\tid={\n\t\t\t\t\t\tid=3570\n\t\t\t\t\t\ttype=48\n\t\t\t\t\t}\n\n\t\t\t\t\tname=\"云\"\n\t\t\t\t\tcountry=\"GUI\"\n\t\t\t\t\tDIP=1\n\t\t\t\t\tADM=2\n\t\t\t\t\tMIL=4\n\t\t\t\t\tculture=gdd_gui\n\t\t\t\t\treligion=confucianism\n\t\t\t\t\tpersonalities={\n\t\t\t\t\t\tfree_thinker_personality=yes\n\t\t\t\t\t}\n\t\t\t\t\tdynasty=\"冯\"\n\t\t\t\t\tbirth_date=1410.1.1\n\t\t\t\t}"
+      ],
+      "monarch_resolution": "country-local",
+      "heir_current_ref_present": true,
+      "heir_records": [
+        "{\n\t\t\t\t\tid={\n\t\t\t\t\t\tid=3571\n\t\t\t\t\t\ttype=48\n\t\t\t\t\t}\n\n\t\t\t\t\tname=\"宝栓\"\n\t\t\t\t\tcountry=\"GUI\"\n\t\t\t\t\tDIP=1\n\t\t\t\t\tADM=3\n\t\t\t\t\tMIL=2\n\t\t\t\t\tculture=gdd_gui\n\t\t\t\t\treligion=confucianism\n\t\t\t\t\tdynasty=\"冯\"\n\t\t\t\t\tbirth_date=1434.1.1\n\t\t\t\t\tdeath_date=1821.1.1\n\t\t\t\t\tclaim=65.422\n\t\t\t\t}"
+      ],
+      "heir_resolution": "country-local"
+    },
+    "NUN": {
+      "government": "{\n\t\t\tgovernment=\"tribal\"\n\t\t\treform_stack={\n\t\t\t\treforms={\n\t\t\t\t\t\"tribe_mechanic\"\n\t\t\t\t\t\"tribal_kingdom\"\n\t\t\t\t}\n\t\t\t\thistory={\n\t\t\t\t\t\"tribal_kingdom\"\n\t\t\t\t}\n\t\t\t}\n\t\t}",
+      "government_rank": "2",
+      "flags": "{\n\t\t\tgdd_b82_mountains_discovered=1444.11.11\n\t\t}",
+      "variables": "{\n\t\t\tzhx_diplomacy_member_extinction_count=0.000\n\t\t}",
+      "last_election": "1444.11.11",
+      "stability": "0.000",
+      "prestige": "4.961",
+      "capital": "616",
+      "powers": "{\n\t\t\t112 70 56 \n\t\t}",
+      "owned_provinces": "{\n\t\t\t616 663 4960 5201 5203 \n\t\t}",
+      "monarch": "{\n\t\t\tid=8213\n\t\t\ttype=48\n\t\t}",
+      "heir": "{\n\t\t\tid=8214\n\t\t\ttype=48\n\t\t}",
+      "monarch_current_ref_present": true,
+      "monarch_records": [
+        "{\n\t\t\t\t\tid={\n\t\t\t\t\t\tid=8213\n\t\t\t\t\t\ttype=48\n\t\t\t\t\t}\n\n\t\t\t\t\tname=\"莫拿\"\n\t\t\t\t\tcountry=\"NUN\"\n\t\t\t\t\tDIP=2\n\t\t\t\t\tADM=5\n\t\t\t\t\tMIL=1\n\t\t\t\t\tculture=gdd_zhuang\n\t\t\t\t\treligion=animism\n\t\t\t\t\tpersonalities={\n\t\t\t\t\t\tcareful_personality=yes\n\t\t\t\t\t}\n\t\t\t\t\tdynasty=\"侬\"\n\t\t\t\t\tbirth_date=1408.1.1\n\t\t\t\t}"
+      ],
+      "monarch_resolution": "country-local",
+      "heir_current_ref_present": true,
+      "heir_records": [
+        "{\n\t\t\t\t\tid={\n\t\t\t\t\t\tid=8214\n\t\t\t\t\t\ttype=48\n\t\t\t\t\t}\n\n\t\t\t\t\tname=\"拿罗\"\n\t\t\t\t\tcountry=\"NUN\"\n\t\t\t\t\tDIP=2\n\t\t\t\t\tADM=4\n\t\t\t\t\tMIL=5\n\t\t\t\t\tculture=gdd_zhuang\n\t\t\t\t\treligion=animism\n\t\t\t\t\tdynasty=\"侬\"\n\t\t\t\t\tbirth_date=1431.1.1\n\t\t\t\t\tdeath_date=1821.1.1\n\t\t\t\t\tclaim=70.420\n\t\t\t\t}"
+      ],
+      "heir_resolution": "country-local"
+    },
+    "TZZ": {
+      "government": "{\n\t\t\tgovernment=\"tribal\"\n\t\t\treform_stack={\n\t\t\t\treforms={\n\t\t\t\t\t\"tribe_mechanic\"\n\t\t\t\t\t\"tribal_despotism\"\n\t\t\t\t}\n\t\t\t\thistory={\n\t\t\t\t\t\"tribal_despotism\"\n\t\t\t\t}\n\t\t\t}\n\t\t}",
+      "government_rank": "1",
+      "flags": "{\n\t\t\tgdd_b82_mountains_discovered=1444.11.11\n\t\t}",
+      "variables": "{\n\t\t\tzhx_diplomacy_member_extinction_count=0.000\n\t\t}",
+      "last_election": "1444.11.11",
+      "stability": "0.000",
+      "prestige": "-4.958",
+      "capital": "5210",
+      "powers": "{\n\t\t\t84 70 56 \n\t\t}",
+      "owned_provinces": "{\n\t\t\t664 5210 \n\t\t}",
+      "monarch": "{\n\t\t\tid=11537\n\t\t\ttype=48\n\t\t}",
+      "heir": "{\n\t\t\tid=11538\n\t\t\ttype=48\n\t\t}",
+      "monarch_current_ref_present": true,
+      "monarch_records": [
+        "{\n\t\t\t\t\tid={\n\t\t\t\t\t\tid=11537\n\t\t\t\t\t\ttype=48\n\t\t\t\t\t}\n\n\t\t\t\t\tname=\"舍那\"\n\t\t\t\t\tcountry=\"TZZ\"\n\t\t\t\t\tDIP=2\n\t\t\t\t\tADM=3\n\t\t\t\t\tMIL=1\n\t\t\t\t\tculture=gdd_zhuang\n\t\t\t\t\treligion=mahayana\n\t\t\t\t\tpersonalities={\n\t\t\t\t\t\tcalm_personality=yes\n\t\t\t\t\t}\n\t\t\t\t\tdynasty=\"田\"\n\t\t\t\t\tbirth_date=1409.1.1\n\t\t\t\t}"
+      ],
+      "monarch_resolution": "country-local",
+      "heir_current_ref_present": true,
+      "heir_records": [
+        "{\n\t\t\t\t\tid={\n\t\t\t\t\t\tid=11538\n\t\t\t\t\t\ttype=48\n\t\t\t\t\t}\n\n\t\t\t\t\tname=\"氏毗耶梨\"\n\t\t\t\t\tcountry=\"TZZ\"\n\t\t\t\t\tDIP=6\n\t\t\t\t\tADM=2\n\t\t\t\t\tMIL=2\n\t\t\t\t\tfemale=yes\n\t\t\t\t\tculture=gdd_zhuang\n\t\t\t\t\treligion=mahayana\n\t\t\t\t\tdynasty=\"田\"\n\t\t\t\t\tbirth_date=1433.1.1\n\t\t\t\t\tdeath_date=1821.1.1\n\t\t\t\t\tclaim=70.412\n\t\t\t\t}"
+      ],
+      "heir_resolution": "country-local"
+    },
+    "LIL": {
+      "government": "{\n\t\t\tgovernment=\"tribal\"\n\t\t\treform_stack={\n\t\t\t\treforms={\n\t\t\t\t\t\"tribe_mechanic\"\n\t\t\t\t\t\"tribal_despotism\"\n\t\t\t\t}\n\t\t\t\thistory={\n\t\t\t\t\t\"tribal_despotism\"\n\t\t\t\t}\n\t\t\t}\n\t\t}",
+      "government_rank": "1",
+      "flags": "{\n\t\t\tzhx_doctrine_dao=1444.11.11\n\t\t\tzhx_doctrine_practice_initialised=1444.11.11\n\t\t\tzhx_opening_school_initialised=1444.11.11\n\t\t\tzhx_doctrine_hover_positive_3=1444.11.11\n\t\t\tzhx_doctrine_hover_positive_1=1444.11.11\n\t\t\tzhx_doctrine_hover_positive_2=1444.11.11\n\t\t\tgdd_b82_mountains_discovered=1444.11.11\n\t\t}",
+      "variables": "{\n\t\t\tzhx_academy_unprotected_school_count=0.000\n\t\t\tzhx_diplomacy_member_extinction_count=0.000\n\t\t\tzhx_doctrine_calculated_delta=4.000\n\t\t\tzhx_doctrine_last_delta=0.000\n\t\t\tzhx_doctrine_ledger_estimated_delta=4.000\n\t\t\tzhx_doctrine_ledger_to_next_tier=25.000\n\t\t\tzhx_doctrine_ledger_to_proposal=45.000\n\t\t\tzhx_doctrine_practice=25.000\n\t\t}",
+      "last_election": "1444.11.11",
+      "stability": "0.000",
+      "prestige": "-2.976",
+      "capital": "4945",
+      "powers": "{\n\t\t\t84 98 126 \n\t\t}",
+      "owned_provinces": "{\n\t\t\t2159 2161 4945 \n\t\t}",
+      "monarch": "{\n\t\t\tid=6052\n\t\t\ttype=48\n\t\t}",
+      "heir": "{\n\t\t\tid=6053\n\t\t\ttype=48\n\t\t}",
+      "monarch_current_ref_present": true,
+      "monarch_records": [
+        "{\n\t\t\t\t\tid={\n\t\t\t\t\t\tid=6052\n\t\t\t\t\t\ttype=48\n\t\t\t\t\t}\n\n\t\t\t\t\tname=\"玉阶\"\n\t\t\t\t\tcountry=\"LIL\"\n\t\t\t\t\tDIP=4\n\t\t\t\t\tADM=3\n\t\t\t\t\tMIL=6\n\t\t\t\t\tculture=gdd_guangfu\n\t\t\t\t\treligion=confucianism\n\t\t\t\t\tpersonalities={\n\t\t\t\t\t\tzealot_personality=yes\n\t\t\t\t\t}\n\t\t\t\t\tdynasty=\"冼\"\n\t\t\t\t\tbirth_date=1406.1.1\n\t\t\t\t}"
+      ],
+      "monarch_resolution": "country-local",
+      "heir_current_ref_present": true,
+      "heir_records": [
+        "{\n\t\t\t\t\tid={\n\t\t\t\t\t\tid=6053\n\t\t\t\t\t\ttype=48\n\t\t\t\t\t}\n\n\t\t\t\t\tname=\"真君\"\n\t\t\t\t\tcountry=\"LIL\"\n\t\t\t\t\tDIP=2\n\t\t\t\t\tADM=2\n\t\t\t\t\tMIL=5\n\t\t\t\t\tculture=gdd_guangfu\n\t\t\t\t\treligion=confucianism\n\t\t\t\t\tdynasty=\"冼\"\n\t\t\t\t\tbirth_date=1430.1.1\n\t\t\t\t\tdeath_date=1821.1.1\n\t\t\t\t\tclaim=75.414\n\t\t\t\t}"
+      ],
+      "heir_resolution": "country-local"
+    },
+    "DAI": {
+      "government": "{\n\t\t\tgovernment=\"monarchy\"\n\t\t\treform_stack={\n\t\t\t\treforms={\n\t\t\t\t\t\"monarchy_mechanic\"\n\t\t\t\t\t\"zhx_feudatory_bo_reform\"\n\t\t\t\t}\n\t\t\t\thistory={\n\t\t\t\t\t\"zhx_feudatory_bo_reform\"\n\t\t\t\t}\n\t\t\t}\n\t\t}",
+      "government_rank": "1",
+      "flags": "{\n\t\t\tgdd_b82_mountains_discovered=1444.11.11\n\t\t\tgdd_dai_hue_capital_checked=1444.11.11\n\t\t\tzhx_member=1444.11.11\n\t\t\tgdd_authority_balance_effect_recipient=1444.11.11\n\t\t\tzhx_doctrine_ru=1444.11.11\n\t\t\tzhx_doctrine_practice_initialised=1444.11.11\n\t\t\tzhx_opening_school_initialised=1444.11.11\n\t\t\tzhx_doctrine_hover_positive_3=1444.11.11\n\t\t}",
+      "variables": "{\n\t\t\tzhx_academy_unprotected_school_count=0.000\n\t\t\tzhx_diplomacy_member_extinction_count=0.000\n\t\t\tzhx_doctrine_calculated_delta=1.000\n\t\t\tzhx_doctrine_last_delta=0.000\n\t\t\tzhx_doctrine_ledger_estimated_delta=1.000\n\t\t\tzhx_doctrine_ledger_to_next_tier=25.000\n\t\t\tzhx_doctrine_ledger_to_proposal=45.000\n\t\t\tzhx_doctrine_practice=25.000\n\t\t\tzhx_doctrine_receipt_new_tier=0.000\n\t\t\tzhx_doctrine_receipt_old_practice=0.000\n\t\t\tzhx_doctrine_receipt_old_tier=0.000\n\t\t\tzhx_doctrine_reform_ai_low_practice_years=0.000\n\t\t\tzhx_merit=0.000\n\t\t\tzhx_merit_lifetime=0.000\n\t\t\tzhx_merit_rank_cache=0.000\n\t\t\tzhx_merit_term=0.000\n\t\t}",
+      "last_election": "1444.11.11",
+      "stability": "0.000",
+      "prestige": "4.944",
+      "capital": "2373",
+      "powers": "{\n\t\t\t98 70 98 \n\t\t}",
+      "owned_provinces": "{\n\t\t\t613 610 1016 1022 2372 2373 4819 4820 4821 \n\t\t}",
+      "monarch": "{\n\t\t\tid=2362\n\t\t\ttype=48\n\t\t}",
+      "heir": "{\n\t\t\tid=2363\n\t\t\ttype=48\n\t\t}",
+      "monarch_current_ref_present": true,
+      "monarch_records": [
+        "{\n\t\t\t\t\tid={\n\t\t\t\t\t\tid=2362\n\t\t\t\t\t\ttype=48\n\t\t\t\t\t}\n\n\t\t\t\t\tname=\"业群\"\n\t\t\t\t\tcountry=\"DAI\"\n\t\t\t\t\tDIP=2\n\t\t\t\t\tADM=4\n\t\t\t\t\tMIL=4\n\t\t\t\t\tculture=vietnamese\n\t\t\t\t\treligion=confucianism\n\t\t\t\t\tpersonalities={\n\t\t\t\t\t\tdrunkard_personality=yes\n\t\t\t\t\t}\n\t\t\t\t\tdynasty=\"吴\"\n\t\t\t\t\tbirth_date=1407.1.1\n\t\t\t\t}"
+      ],
+      "monarch_resolution": "country-local",
+      "heir_current_ref_present": true,
+      "heir_records": [
+        "{\n\t\t\t\t\tid={\n\t\t\t\t\t\tid=2363\n\t\t\t\t\t\ttype=48\n\t\t\t\t\t}\n\n\t\t\t\t\tname=\"宝翾\"\n\t\t\t\t\tcountry=\"DAI\"\n\t\t\t\t\tDIP=1\n\t\t\t\t\tADM=2\n\t\t\t\t\tMIL=3\n\t\t\t\t\tculture=vietnamese\n\t\t\t\t\treligion=confucianism\n\t\t\t\t\tdynasty=\"吴\"\n\t\t\t\t\tbirth_date=1435.1.1\n\t\t\t\t\tdeath_date=1821.1.1\n\t\t\t\t\tclaim=70.420\n\t\t\t\t}"
+      ],
+      "heir_resolution": "country-local"
+    },
+    "GDD": {
+      "government": "{\n\t\t\tgovernment=\"monarchy\"\n\t\t\treform_stack={\n\t\t\t\treforms={\n\t\t\t\t\t\"monarchy_mechanic\"\n\t\t\t\t\t\"zhx_feudatory_hou_reform\"\n\t\t\t\t}\n\t\t\t\thistory={\n\t\t\t\t\t\"zhx_feudatory_hou_reform\"\n\t\t\t\t}\n\t\t\t}\n\t\t}",
+      "government_rank": "1",
+      "flags": "{\n\t\t\tzhx_member=1444.11.11\n\t\t\tgdd_authority_balance_effect_recipient=1444.11.11\n\t\t\tzhx_doctrine_ru=1444.11.11\n\t\t\tzhx_doctrine_practice_initialised=1444.11.11\n\t\t\tzhx_opening_school_initialised=1444.11.11\n\t\t\tzhx_doctrine_hover_positive_3=1444.11.11\n\t\t\tgdd_b82_mountains_discovered=1444.11.11\n\t\t\tgdd_v03_fix2_initialised=1444.11.11\n\t\t\tgdd_liang_shouqian_reigning=1444.11.11\n\t\t\tgdd_heir_system_initialised=1444.11.11\n\t\t\tgdd_liang_shouyi_designated_heir=1444.11.11\n\t\t\tgdd_estate_privileges_initialised=1444.11.11\n\t\t}",
+      "variables": "{\n\t\t\tzhx_academy_unprotected_school_count=0.000\n\t\t\tzhx_diplomacy_member_extinction_count=0.000\n\t\t\tzhx_doctrine_calculated_delta=1.000\n\t\t\tzhx_doctrine_last_delta=0.000\n\t\t\tzhx_doctrine_ledger_estimated_delta=1.000\n\t\t\tzhx_doctrine_ledger_to_next_tier=25.000\n\t\t\tzhx_doctrine_ledger_to_proposal=45.000\n\t\t\tzhx_doctrine_practice=25.000\n\t\t\tzhx_merit=0.000\n\t\t\tzhx_merit_lifetime=0.000\n\t\t\tzhx_merit_rank_cache=0.000\n\t\t\tzhx_merit_term=0.000\n\t\t}",
+      "last_election": "1444.11.11",
+      "stability": "0.000",
+      "prestige": "9.075",
+      "capital": "667",
+      "powers": "{\n\t\t\t84 98 98 \n\t\t}",
+      "owned_provinces": "{\n\t\t\t665 667 668 2158 2162 2164 4942 4943 4946 4947 4954 5202 \n\t\t}",
+      "monarch": "{\n\t\t\tid=3169\n\t\t\ttype=48\n\t\t}",
+      "heir": "{\n\t\t\tid=3170\n\t\t\ttype=48\n\t\t}",
+      "monarch_current_ref_present": true,
+      "monarch_records": [
+        "{\n\t\t\t\t\tid={\n\t\t\t\t\t\tid=3169\n\t\t\t\t\t\ttype=48\n\t\t\t\t\t}\n\n\t\t\t\t\tname=\"守谦\"\n\t\t\t\t\tcountry=\"GDD\"\n\t\t\t\t\tDIP=4\n\t\t\t\t\tADM=3\n\t\t\t\t\tMIL=4\n\t\t\t\t\tculture=gdd_guangfu\n\t\t\t\t\treligion=confucianism\n\t\t\t\t\tpersonalities={\n\t\t\t\t\t\tgdd_liang_shouqian_prestige_personality=yes\n\t\t\t\t\t\tgdd_liang_shouqian_unrest_personality=yes\n\t\t\t\t\t\tgdd_liang_shouqian_corruption_personality=yes\n\t\t\t\t\t}\n\t\t\t\t\tleader_id={\n\t\t\t\t\t\tid=4844\n\t\t\t\t\t\ttype=49\n\t\t\t\t\t}\n\n\t\t\t\t\tleader={\n\t\t\t\t\t\tname=\"守谦 梁\"\n\t\t\t\t\t\ttype=general\n\t\t\t\t\t\tmaneuver=3\n\t\t\t\t\t\tfire=2\n\t\t\t\t\t\tshock=3\n\t\t\t\t\t\tcountry=\"GDD\"\n\t\t\t\t\t\tmonarch_id={\n\t\t\t\t\t\t\tid=3169\n\t\t\t\t\t\t\ttype=48\n\t\t\t\t\t\t}\n\n\t\t\t\t\t\tactivation=1444.11.11\n\t\t\t\t\t\tbirth_date=1418.1.11\n\t\t\t\t\t\tid={\n\t\t\t\t\t\t\tid=4844\n\t\t\t\t\t\t\ttype=49\n\t\t\t\t\t\t}\n\n\t\t\t\t\t}\n\t\t\t\t\tdynasty=\"梁\"\n\t\t\t\t\tbirth_date=1400.5.12\n\t\t\t\t}"
+      ],
+      "monarch_resolution": "country-local",
+      "heir_current_ref_present": true,
+      "heir_records": [
+        "{\n\t\t\t\t\tid={\n\t\t\t\t\t\tid=3170\n\t\t\t\t\t\ttype=48\n\t\t\t\t\t}\n\n\t\t\t\t\tname=\"继垣\"\n\t\t\t\t\tcountry=\"GDD\"\n\t\t\t\t\tDIP=2\n\t\t\t\t\tADM=4\n\t\t\t\t\tMIL=5\n\t\t\t\t\tculture=gdd_guangfu\n\t\t\t\t\treligion=confucianism\n\t\t\t\t\tpersonalities={\n\t\t\t\t\t\tgdd_liang_shouyi_personality=yes\n\t\t\t\t\t}\n\t\t\t\t\tdynasty=\"梁\"\n\t\t\t\t\tbirth_date=1404.6.18\n\t\t\t\t\tdeath_date=1821.1.1\n\t\t\t\t\tclaim=70.424\n\t\t\t\t}"
+      ],
+      "heir_resolution": "country-local"
+    },
+    "CZC": {
+      "government": "{\n\t\t\tgovernment=\"republic\"\n\t\t\treform_stack={\n\t\t\t\treforms={\n\t\t\t\t\t\"republic_mechanic\"\n\t\t\t\t\t\"gdd_czc_council_reform\"\n\t\t\t\t}\n\t\t\t\thistory={\n\t\t\t\t\t\"gdd_czc_council_reform\"\n\t\t\t\t}\n\t\t\t}\n\t\t}",
+      "government_rank": "2",
+      "flags": "{\n\t\t\tzhx_member=1444.11.11\n\t\t\tgdd_authority_balance_effect_recipient=1444.11.11\n\t\t\tzhx_doctrine_ru=1444.11.11\n\t\t\tzhx_doctrine_practice_initialised=1444.11.11\n\t\t\tzhx_opening_school_initialised=1444.11.11\n\t\t\tzhx_doctrine_hover_positive_3=1444.11.11\n\t\t\tgdd_czc_council_initialized=1444.11.11\n\t\t\tgdd_czc_successor_prepared=1444.11.11\n\t\t\tgdd_b82_mountains_discovered=1444.11.11\n\t\t}",
+      "variables": "{\n\t\t\tzhx_academy_unprotected_school_count=0.000\n\t\t\tzhx_diplomacy_member_extinction_count=0.000\n\t\t\tzhx_doctrine_calculated_delta=1.000\n\t\t\tzhx_doctrine_last_delta=0.000\n\t\t\tzhx_doctrine_ledger_estimated_delta=1.000\n\t\t\tzhx_doctrine_ledger_to_next_tier=25.000\n\t\t\tzhx_doctrine_ledger_to_proposal=45.000\n\t\t\tzhx_doctrine_practice=25.000\n\t\t\tzhx_merit=0.000\n\t\t\tzhx_merit_lifetime=0.000\n\t\t\tzhx_merit_rank_cache=0.000\n\t\t\tzhx_merit_term=0.000\n\t\t}",
+      "last_election": "1444.11.11",
+      "republican_tradition": "50.000",
+      "stability": "0.000",
+      "prestige": "7.025",
+      "capital": "2156",
+      "powers": "{\n\t\t\t112 126 126 \n\t\t}",
+      "owned_provinces": "{\n\t\t\t666 2156 4949 5217 5303 \n\t\t}",
+      "monarch": "{\n\t\t\tid=2330\n\t\t\ttype=48\n\t\t}",
+      "monarch_current_ref_present": true,
+      "monarch_records": [
+        "{\n\t\t\t\t\tid={\n\t\t\t\t\t\tid=2330\n\t\t\t\t\t\ttype=48\n\t\t\t\t\t}\n\n\t\t\t\t\tname=\"万民\"\n\t\t\t\t\tcountry=\"CZC\"\n\t\t\t\t\tDIP=6\n\t\t\t\t\tADM=5\n\t\t\t\t\tMIL=6\n\t\t\t\t\tculture=gdd_min\n\t\t\t\t\treligion=confucianism\n\t\t\t\t\tpersonalities={\n\t\t\t\t\t\ttolerant_personality=yes\n\t\t\t\t\t}\n\t\t\t\t\truler_flags={\n\t\t\t\t\t\tgdd_czc_succession_settled=1444.11.11\n\t\t\t\t\t}\n\t\t\t\t\tdynasty=\"郑\"\n\t\t\t\t\tbirth_date=1405.1.1\n\t\t\t\t}"
+      ],
+      "monarch_resolution": "country-local",
+      "heir_current_ref_present": false
+    },
+    "HAK": {
+      "government": "{\n\t\t\tgovernment=\"republic\"\n\t\t\treform_stack={\n\t\t\t\treforms={\n\t\t\t\t\t\"republic_mechanic\"\n\t\t\t\t\t\"gdd_hak_revolutionary_army_reform\"\n\t\t\t\t}\n\t\t\t\thistory={\n\t\t\t\t\t\"gdd_hak_revolutionary_army_reform\"\n\t\t\t\t}\n\t\t\t}\n\t\t}",
+      "government_rank": "2",
+      "flags": "{\n\t\t\tzhx_member=1444.11.11\n\t\t\tgdd_authority_balance_effect_recipient=1444.11.11\n\t\t\tgdd_hak_initialized=1444.11.11\n\t\t\tgdd_hak_estate_initialized=1444.11.11\n\t\t\tgdd_b82_mountains_discovered=1444.11.11\n\t\t}",
+      "variables": "{\n\t\t\tzhx_diplomacy_member_extinction_count=0.000\n\t\t\tzhx_merit=0.000\n\t\t\tzhx_merit_lifetime=0.000\n\t\t\tzhx_merit_rank_cache=0.000\n\t\t\tzhx_merit_term=0.000\n\t\t}",
+      "last_election": "1444.11.11",
+      "republican_tradition": "50.000",
+      "stability": "0.000",
+      "prestige": "7.025",
+      "capital": "2157",
+      "powers": "{\n\t\t\t98 70 98 \n\t\t}",
+      "owned_provinces": "{\n\t\t\t670 2153 2157 4944 4948 4957 4995 5100 5214 5215 5327 \n\t\t}",
+      "monarch": "{\n\t\t\tid=3710\n\t\t\ttype=48\n\t\t}",
+      "monarch_current_ref_present": true,
+      "monarch_records": [
+        "{\n\t\t\t\t\tid={\n\t\t\t\t\t\tid=3710\n\t\t\t\t\t\ttype=48\n\t\t\t\t\t}\n\n\t\t\t\t\tname=\"观音古\"\n\t\t\t\t\tcountry=\"HAK\"\n\t\t\t\t\tDIP=2\n\t\t\t\t\tADM=4\n\t\t\t\t\tMIL=4\n\t\t\t\t\tculture=gdd_hakka\n\t\t\t\t\treligion=mahayana\n\t\t\t\t\tpersonalities={\n\t\t\t\t\t\tkind_hearted_personality=yes\n\t\t\t\t\t}\n\t\t\t\t\tdynasty=\"廖\"\n\t\t\t\t\tbirth_date=1407.1.1\n\t\t\t\t}"
+      ],
+      "monarch_resolution": "country-local",
+      "heir_current_ref_present": false
+    },
+    "HYM": {
+      "government": "{\n\t\t\tgovernment=\"republic\"\n\t\t\treform_stack={\n\t\t\t\treforms={\n\t\t\t\t\t\"republic_mechanic\"\n\t\t\t\t\t\"zhx_yang_trade_league_reform\"\n\t\t\t\t}\n\t\t\t\thistory={\n\t\t\t\t\t\"zhx_yang_trade_league_reform\"\n\t\t\t\t}\n\t\t\t}\n\t\t}",
+      "government_rank": "1",
+      "flags": "{\n\t\t\tzhx_member=1444.11.11\n\t\t\tgdd_authority_balance_effect_recipient=1444.11.11\n\t\t\tzhx_doctrine_zongheng=1444.11.11\n\t\t\tzhx_doctrine_practice_initialised=1444.11.11\n\t\t\tzhx_opening_school_initialised=1444.11.11\n\t\t\tzhx_doctrine_hover_positive_2=1444.11.11\n\t\t\tzhx_doctrine_hover_negative_1=1444.11.11\n\t\t\tgdd_b82_mountains_discovered=1444.11.11\n\t\t}",
+      "variables": "{\n\t\t\tzhx_academy_unprotected_school_count=0.000\n\t\t\tzhx_diplomacy_member_extinction_count=0.000\n\t\t\tzhx_doctrine_calculated_delta=-2.000\n\t\t\tzhx_doctrine_last_delta=0.000\n\t\t\tzhx_doctrine_ledger_estimated_delta=-2.000\n\t\t\tzhx_doctrine_ledger_to_next_tier=25.000\n\t\t\tzhx_doctrine_ledger_to_proposal=45.000\n\t\t\tzhx_doctrine_practice=25.000\n\t\t\tzhx_merit=0.000\n\t\t\tzhx_merit_lifetime=0.000\n\t\t\tzhx_merit_rank_cache=0.000\n\t\t\tzhx_merit_term=0.000\n\t\t}",
+      "last_election": "1444.11.11",
+      "republican_tradition": "100.000",
+      "stability": "0.000",
+      "prestige": "4.961",
+      "capital": "685",
+      "powers": "{\n\t\t\t78 78 86 \n\t\t}",
+      "owned_provinces": "{\n\t\t\t685 4977 5021 \n\t\t}",
+      "monarch": "{\n\t\t\tid=12666\n\t\t\ttype=48\n\t\t}",
+      "monarch_current_ref_present": true,
+      "monarch_records": [
+        "{\n\t\t\t\t\tid={\n\t\t\t\t\t\tid=12666\n\t\t\t\t\t\ttype=48\n\t\t\t\t\t}\n\n\t\t\t\t\tname=\"朱仲仁\"\n\t\t\t\t\tcountry=\"HYM\"\n\t\t\t\t\tDIP=0\n\t\t\t\t\tADM=0\n\t\t\t\t\tMIL=4\n\t\t\t\t\tculture=gdd_jianghuai\n\t\t\t\t\treligion=confucianism\n\t\t\t\t\tpersonalities={\n\t\t\t\t\t\tcruel_personality=yes\n\t\t\t\t\t}\n\t\t\t\t\tbirth_date=1408.11.11\n\t\t\t\t}"
+      ],
+      "monarch_resolution": "country-local",
+      "heir_current_ref_present": false
+    },
+    "CDE": {
+      "government": "{\n\t\t\tgovernment=\"republic\"\n\t\t\treform_stack={\n\t\t\t\treforms={\n\t\t\t\t\t\"republic_mechanic\"\n\t\t\t\t\t\"zhx_gongyi_reform\"\n\t\t\t\t}\n\t\t\t\thistory={\n\t\t\t\t\t\"zhx_gongyi_reform\"\n\t\t\t\t}\n\t\t\t}\n\t\t}",
+      "government_rank": "1",
+      "flags": "{\n\t\t\tzhx_gongyi_charter=1444.11.11\n\t\t\tzhx_member=1444.11.11\n\t\t\tgdd_authority_balance_effect_recipient=1444.11.11\n\t\t\tzhx_doctrine_mo=1444.11.11\n\t\t\tzhx_doctrine_practice_initialised=1444.11.11\n\t\t\tzhx_opening_school_initialised=1444.11.11\n\t\t\tzhx_doctrine_hover_positive_3=1444.11.11\n\t\t\tzhx_doctrine_hover_mo_peace=1444.11.11\n\t\t\tzhx_doctrine_hover_positive_2=1444.11.11\n\t\t\tgdd_b82_mountains_discovered=1444.11.11\n\t\t}",
+      "variables": "{\n\t\t\tzhx_academy_unprotected_school_count=0.000\n\t\t\tzhx_diplomacy_member_extinction_count=0.000\n\t\t\tzhx_doctrine_calculated_delta=4.000\n\t\t\tzhx_doctrine_last_delta=0.000\n\t\t\tzhx_doctrine_ledger_estimated_delta=4.000\n\t\t\tzhx_doctrine_ledger_to_next_tier=25.000\n\t\t\tzhx_doctrine_ledger_to_proposal=45.000\n\t\t\tzhx_doctrine_practice=25.000\n\t\t\tzhx_merit=0.000\n\t\t\tzhx_merit_lifetime=0.000\n\t\t\tzhx_merit_rank_cache=0.000\n\t\t\tzhx_merit_term=0.000\n\t\t}",
+      "last_election": "1444.11.11",
+      "republican_tradition": "100.000",
+      "stability": "0.000",
+      "prestige": "4.961",
+      "capital": "672",
+      "powers": "{\n\t\t\t82 86 86 \n\t\t}",
+      "owned_provinces": "{\n\t\t\t672 \n\t\t}",
+      "monarch": "{\n\t\t\tid=12670\n\t\t\ttype=48\n\t\t}",
+      "monarch_current_ref_present": true,
+      "monarch_records": [
+        "{\n\t\t\t\t\tid={\n\t\t\t\t\t\tid=12670\n\t\t\t\t\t\ttype=48\n\t\t\t\t\t}\n\n\t\t\t\t\tname=\"潘太午\"\n\t\t\t\t\tcountry=\"CDE\"\n\t\t\t\t\tDIP=4\n\t\t\t\t\tADM=2\n\t\t\t\t\tMIL=4\n\t\t\t\t\tculture=gdd_chu\n\t\t\t\t\treligion=confucianism\n\t\t\t\t\tpersonalities={\n\t\t\t\t\t\tarchitectural_visionary_personality=yes\n\t\t\t\t\t}\n\t\t\t\t\tbirth_date=1413.11.11\n\t\t\t\t}"
+      ],
+      "monarch_resolution": "country-local",
+      "heir_current_ref_present": false
+    },
+    "JJG": {
+      "government": "{\n\t\t\tgovernment=\"republic\"\n\t\t\treform_stack={\n\t\t\t\treforms={\n\t\t\t\t\t\"republic_mechanic\"\n\t\t\t\t\t\"zhx_gongyi_reform\"\n\t\t\t\t}\n\t\t\t\thistory={\n\t\t\t\t\t\"zhx_gongyi_reform\"\n\t\t\t\t}\n\t\t\t}\n\t\t}",
+      "government_rank": "1",
+      "flags": "{\n\t\t\tzhx_gongyi_charter=1444.11.11\n\t\t\tzhx_member=1444.11.11\n\t\t\tgdd_authority_balance_effect_recipient=1444.11.11\n\t\t\tzhx_doctrine_mo=1444.11.11\n\t\t\tzhx_doctrine_practice_initialised=1444.11.11\n\t\t\tzhx_opening_school_initialised=1444.11.11\n\t\t\tzhx_doctrine_hover_positive_3=1444.11.11\n\t\t\tzhx_doctrine_hover_mo_peace=1444.11.11\n\t\t\tzhx_doctrine_hover_positive_2=1444.11.11\n\t\t\tgdd_b82_mountains_discovered=1444.11.11\n\t\t}",
+      "variables": "{\n\t\t\tzhx_academy_unprotected_school_count=0.000\n\t\t\tzhx_diplomacy_member_extinction_count=0.000\n\t\t\tzhx_doctrine_calculated_delta=4.000\n\t\t\tzhx_doctrine_last_delta=0.000\n\t\t\tzhx_doctrine_ledger_estimated_delta=4.000\n\t\t\tzhx_doctrine_ledger_to_next_tier=25.000\n\t\t\tzhx_doctrine_ledger_to_proposal=45.000\n\t\t\tzhx_doctrine_practice=25.000\n\t\t\tzhx_merit=0.000\n\t\t\tzhx_merit_lifetime=0.000\n\t\t\tzhx_merit_rank_cache=0.000\n\t\t\tzhx_merit_term=0.000\n\t\t}",
+      "last_election": "1444.11.11",
+      "republican_tradition": "100.000",
+      "stability": "0.000",
+      "prestige": "4.961",
+      "capital": "4979",
+      "powers": "{\n\t\t\t88 84 88 \n\t\t}",
+      "owned_provinces": "{\n\t\t\t4979 \n\t\t}",
+      "monarch": "{\n\t\t\tid=12671\n\t\t\ttype=48\n\t\t}",
+      "monarch_current_ref_present": true,
+      "monarch_records": [
+        "{\n\t\t\t\t\tid={\n\t\t\t\t\t\tid=12671\n\t\t\t\t\t\ttype=48\n\t\t\t\t\t}\n\n\t\t\t\t\tname=\"白忽\"\n\t\t\t\t\tcountry=\"JJG\"\n\t\t\t\t\tDIP=3\n\t\t\t\t\tADM=5\n\t\t\t\t\tMIL=5\n\t\t\t\t\tculture=gdd_chu\n\t\t\t\t\treligion=confucianism\n\t\t\t\t\tpersonalities={\n\t\t\t\t\t\tzealot_personality=yes\n\t\t\t\t\t}\n\t\t\t\t\tbirth_date=1389.11.11\n\t\t\t\t}"
+      ],
+      "monarch_resolution": "country-local",
+      "heir_current_ref_present": false
+    },
+    "HYA": {
+      "government": "{\n\t\t\tgovernment=\"republic\"\n\t\t\treform_stack={\n\t\t\t\treforms={\n\t\t\t\t\t\"republic_mechanic\"\n\t\t\t\t\t\"zhx_gongyi_reform\"\n\t\t\t\t}\n\t\t\t\thistory={\n\t\t\t\t\t\"zhx_gongyi_reform\"\n\t\t\t\t}\n\t\t\t}\n\t\t}",
+      "government_rank": "1",
+      "flags": "{\n\t\t\tzhx_gongyi_charter=1444.11.11\n\t\t\tzhx_member=1444.11.11\n\t\t\tgdd_authority_balance_effect_recipient=1444.11.11\n\t\t\tzhx_doctrine_mo=1444.11.11\n\t\t\tzhx_doctrine_practice_initialised=1444.11.11\n\t\t\tzhx_opening_school_initialised=1444.11.11\n\t\t\tzhx_doctrine_hover_positive_3=1444.11.11\n\t\t\tzhx_doctrine_hover_mo_peace=1444.11.11\n\t\t\tzhx_doctrine_hover_positive_2=1444.11.11\n\t\t\tgdd_b82_mountains_discovered=1444.11.11\n\t\t}",
+      "variables": "{\n\t\t\tzhx_academy_unprotected_school_count=0.000\n\t\t\tzhx_diplomacy_member_extinction_count=0.000\n\t\t\tzhx_doctrine_calculated_delta=4.000\n\t\t\tzhx_doctrine_last_delta=0.000\n\t\t\tzhx_doctrine_ledger_estimated_delta=4.000\n\t\t\tzhx_doctrine_ledger_to_next_tier=25.000\n\t\t\tzhx_doctrine_ledger_to_proposal=45.000\n\t\t\tzhx_doctrine_practice=25.000\n\t\t\tzhx_merit=0.000\n\t\t\tzhx_merit_lifetime=0.000\n\t\t\tzhx_merit_rank_cache=0.000\n\t\t\tzhx_merit_term=0.000\n\t\t}",
+      "last_election": "1444.11.11",
+      "republican_tradition": "100.000",
+      "stability": "0.000",
+      "prestige": "4.961",
+      "capital": "4981",
+      "powers": "{\n\t\t\t86 82 88 \n\t\t}",
+      "owned_provinces": "{\n\t\t\t4981 \n\t\t}",
+      "monarch": "{\n\t\t\tid=12672\n\t\t\ttype=48\n\t\t}",
+      "monarch_current_ref_present": true,
+      "monarch_records": [
+        "{\n\t\t\t\t\tid={\n\t\t\t\t\t\tid=12672\n\t\t\t\t\t\ttype=48\n\t\t\t\t\t}\n\n\t\t\t\t\tname=\"田叔生\"\n\t\t\t\t\tcountry=\"HYA\"\n\t\t\t\t\tDIP=2\n\t\t\t\t\tADM=4\n\t\t\t\t\tMIL=5\n\t\t\t\t\tculture=gdd_chu\n\t\t\t\t\treligion=confucianism\n\t\t\t\t\tpersonalities={\n\t\t\t\t\t\tbabbling_buffoon_personality=yes\n\t\t\t\t\t}\n\t\t\t\t\tbirth_date=1408.11.11\n\t\t\t\t}"
+      ],
+      "monarch_resolution": "country-local",
+      "heir_current_ref_present": false
+    },
+    "WHU": {
+      "government": "{\n\t\t\tgovernment=\"republic\"\n\t\t\treform_stack={\n\t\t\t\treforms={\n\t\t\t\t\t\"republic_mechanic\"\n\t\t\t\t\t\"zhx_gongyi_reform\"\n\t\t\t\t}\n\t\t\t\thistory={\n\t\t\t\t\t\"zhx_gongyi_reform\"\n\t\t\t\t}\n\t\t\t}\n\t\t}",
+      "government_rank": "1",
+      "flags": "{\n\t\t\tzhx_gongyi_charter=1444.11.11\n\t\t\tzhx_member=1444.11.11\n\t\t\tgdd_authority_balance_effect_recipient=1444.11.11\n\t\t\tzhx_doctrine_mo=1444.11.11\n\t\t\tzhx_doctrine_practice_initialised=1444.11.11\n\t\t\tzhx_opening_school_initialised=1444.11.11\n\t\t\tzhx_doctrine_hover_positive_3=1444.11.11\n\t\t\tzhx_doctrine_hover_mo_peace=1444.11.11\n\t\t\tzhx_doctrine_hover_positive_2=1444.11.11\n\t\t\tgdd_b82_mountains_discovered=1444.11.11\n\t\t}",
+      "variables": "{\n\t\t\tzhx_academy_unprotected_school_count=0.000\n\t\t\tzhx_diplomacy_member_extinction_count=0.000\n\t\t\tzhx_doctrine_calculated_delta=4.000\n\t\t\tzhx_doctrine_last_delta=0.000\n\t\t\tzhx_doctrine_ledger_estimated_delta=4.000\n\t\t\tzhx_doctrine_ledger_to_next_tier=25.000\n\t\t\tzhx_doctrine_ledger_to_proposal=45.000\n\t\t\tzhx_doctrine_practice=25.000\n\t\t\tzhx_merit=0.000\n\t\t\tzhx_merit_lifetime=0.000\n\t\t\tzhx_merit_rank_cache=0.000\n\t\t\tzhx_merit_term=0.000\n\t\t}",
+      "last_election": "1444.11.11",
+      "republican_tradition": "100.000",
+      "stability": "0.000",
+      "prestige": "4.961",
+      "capital": "5066",
+      "powers": "{\n\t\t\t80 88 82 \n\t\t}",
+      "owned_provinces": "{\n\t\t\t5066 \n\t\t}",
+      "monarch": "{\n\t\t\tid=12667\n\t\t\ttype=48\n\t\t}",
+      "monarch_current_ref_present": true,
+      "monarch_records": [
+        "{\n\t\t\t\t\tid={\n\t\t\t\t\t\tid=12667\n\t\t\t\t\t\ttype=48\n\t\t\t\t\t}\n\n\t\t\t\t\tname=\"绍卿 周\"\n\t\t\t\t\tcountry=\"WHU\"\n\t\t\t\t\tDIP=5\n\t\t\t\t\tADM=1\n\t\t\t\t\tMIL=2\n\t\t\t\t\tculture=gdd_wu\n\t\t\t\t\treligion=confucianism\n\t\t\t\t\tpersonalities={\n\t\t\t\t\t\tbenevolent_personality=yes\n\t\t\t\t\t}\n\t\t\t\t\tbirth_date=1414.11.11\n\t\t\t\t}"
+      ],
+      "monarch_resolution": "country-local",
+      "heir_current_ref_present": false
+    },
+    "ZHO": {
+      "government": "{\n\t\t\tgovernment=\"republic\"\n\t\t\treform_stack={\n\t\t\t\treforms={\n\t\t\t\t\t\"republic_mechanic\"\n\t\t\t\t\t\"zhx_gongyi_reform\"\n\t\t\t\t}\n\t\t\t\thistory={\n\t\t\t\t\t\"zhx_gongyi_reform\"\n\t\t\t\t}\n\t\t\t}\n\t\t}",
+      "government_rank": "1",
+      "flags": "{\n\t\t\tzhx_gongyi_charter=1444.11.11\n\t\t\tzhx_member=1444.11.11\n\t\t\tgdd_authority_balance_effect_recipient=1444.11.11\n\t\t\tzhx_doctrine_zongheng=1444.11.11\n\t\t\tzhx_doctrine_practice_initialised=1444.11.11\n\t\t\tzhx_opening_school_initialised=1444.11.11\n\t\t\tzhx_doctrine_hover_negative_1=1444.11.11\n\t\t\tgdd_b82_mountains_discovered=1444.11.11\n\t\t}",
+      "variables": "{\n\t\t\tzhx_academy_unprotected_school_count=0.000\n\t\t\tzhx_diplomacy_member_extinction_count=0.000\n\t\t\tzhx_doctrine_calculated_delta=-3.000\n\t\t\tzhx_doctrine_last_delta=0.000\n\t\t\tzhx_doctrine_ledger_estimated_delta=-3.000\n\t\t\tzhx_doctrine_ledger_to_next_tier=25.000\n\t\t\tzhx_doctrine_ledger_to_proposal=45.000\n\t\t\tzhx_doctrine_practice=25.000\n\t\t\tzhx_merit=0.000\n\t\t\tzhx_merit_lifetime=0.000\n\t\t\tzhx_merit_rank_cache=0.000\n\t\t\tzhx_merit_term=0.000\n\t\t}",
+      "last_election": "1444.11.11",
+      "republican_tradition": "100.000",
+      "stability": "0.000",
+      "prestige": "4.960",
+      "capital": "5004",
+      "powers": "{\n\t\t\t86 80 82 \n\t\t}",
+      "owned_provinces": "{\n\t\t\t5004 \n\t\t}",
+      "monarch": "{\n\t\t\tid=12668\n\t\t\ttype=48\n\t\t}",
+      "monarch_current_ref_present": true,
+      "monarch_records": [
+        "{\n\t\t\t\t\tid={\n\t\t\t\t\t\tid=12668\n\t\t\t\t\t\ttype=48\n\t\t\t\t\t}\n\n\t\t\t\t\tname=\"绍祖 朱\"\n\t\t\t\t\tcountry=\"ZHO\"\n\t\t\t\t\tDIP=1\n\t\t\t\t\tADM=4\n\t\t\t\t\tMIL=2\n\t\t\t\t\tculture=gdd_wu\n\t\t\t\t\treligion=confucianism\n\t\t\t\t\tpersonalities={\n\t\t\t\t\t\tcalm_personality=yes\n\t\t\t\t\t}\n\t\t\t\t\tbirth_date=1395.11.11\n\t\t\t\t}"
+      ],
+      "monarch_resolution": "country-local",
+      "heir_current_ref_present": false
+    },
+    "CZH": {
+      "government": "{\n\t\t\tgovernment=\"monarchy\"\n\t\t\treform_stack={\n\t\t\t\treforms={\n\t\t\t\t\t\"monarchy_mechanic\"\n\t\t\t\t\t\"celestial_empire\"\n\t\t\t\t}\n\t\t\t\thistory={\n\t\t\t\t\t\"celestial_empire\"\n\t\t\t\t}\n\t\t\t}\n\t\t}",
+      "government_rank": "3",
+      "flags": "{\n\t\t\tgdd_b82_mountains_discovered=1444.11.11\n\t\t\tzhx_tianzi=1444.11.11\n\t\t\tzhx_ritual_tier_balanced=1444.11.11\n\t\t\tgdd_authority_balance_zero_active=1444.11.11\n\t\t\tgdd_authority_balance_effect_recipient=1444.11.11\n\t\t\tzhx_opening_school_initialised=1444.11.11\n\t\t}",
+      "variables": "{\n\t\t\tgdd_authority_effect_remainder=0.000\n\t\t\tgdd_authority_half_display=0.000\n\t\t\tgdd_authority_integer_display=0.000\n\t\t\tgdd_authority_integer_magnitude_display=0.000\n\t\t\tgdd_authority_quarter_display=0.000\n\t\t\tgdd_authority_tenth_display=0.000\n\t\t\tgdd_central_authority_balance=0.000\n\t\t\tgdd_central_authority_display=0.000\n\t\t\tgdd_eoc_member_count_cache=66.000\n\t\t\tgdd_feudatory_prestige_display=0.000\n\t\t\tgdd_six_great_feudatory_count=6.000\n\t\t\tzhx_academy_unprotected_school_count=0.000\n\t\t\tzhx_council_a_vs_b=0.000\n\t\t\tzhx_council_a_vs_c=0.000\n\t\t\tzhx_council_b_vs_a=0.000\n\t\t\tzhx_council_b_vs_c=0.000\n\t\t\tzhx_council_eligible_ai_count=0.000\n\t\t\tzhx_council_eligible_country_count=0.000\n\t\t\tzhx_council_unvoted_ai_count=0.000\n\t\t\tzhx_council_unvoted_country_count=0.000\n\t\t\tzhx_council_vote_a_count=0.000\n\t\t\tzhx_council_vote_b_count=0.000\n\t\t\tzhx_council_vote_c_count=0.000\n\t\t\tzhx_council_voted_ai_count=0.000\n\t\t\tzhx_council_voted_country_count=0.000\n\t\t\tzhx_diplomacy_member_extinction_count=0.000\n\t\t\tzhx_doctrine_calculated_delta=0.000\n\t\t\tzhx_doctrine_last_delta=0.000\n\t\t\tzhx_doctrine_ledger_estimated_delta=0.000\n\t\t\tzhx_doctrine_ledger_to_next_tier=0.000\n\t\t\tzhx_doctrine_ledger_to_proposal=0.000\n\t\t\tzhx_doctrine_practice=0.000\n\t\t\tzhx_doctrine_receipt_new_tier=0.000\n\t\t\tzhx_doctrine_receipt_old_practice=0.000\n\t\t\tzhx_doctrine_receipt_old_tier=0.000\n\t\t\tzhx_doctrine_reform_ai_low_practice_years=0.000\n\t\t\tzhx_member_count_cache=67.000\n\t\t\tzhx_merit_term_year=0.000\n\t\t\tzhx_merit_term_years_remaining=25.000\n\t\t\tzhx_ritual_authority=0.000\n\t\t\tzhx_tianxia_extinction_penalty_count=0.000\n\t\t}",
+      "last_election": "1444.11.11",
+      "stability": "0.000",
+      "prestige": "5.042",
+      "capital": "688",
+      "powers": "{\n\t\t\t126 126 70 \n\t\t}",
+      "owned_provinces": "{\n\t\t\t688 1836 5046 5053 \n\t\t}",
+      "monarch": "{\n\t\t\tid=2331\n\t\t\ttype=48\n\t\t}",
+      "monarch_current_ref_present": true,
+      "monarch_records": [
+        "{\n\t\t\t\t\tid={\n\t\t\t\t\t\tid=2331\n\t\t\t\t\t\ttype=48\n\t\t\t\t\t}\n\n\t\t\t\t\tname=\"小白\"\n\t\t\t\t\tcountry=\"CZH\"\n\t\t\t\t\tDIP=6\n\t\t\t\t\tADM=6\n\t\t\t\t\tMIL=2\n\t\t\t\t\tculture=gdd_zhongyuan\n\t\t\t\t\treligion=confucianism\n\t\t\t\t\tpersonalities={\n\t\t\t\t\t\tjust_personality=yes\n\t\t\t\t\t}\n\t\t\t\t\tdynasty=\"姬\"\n\t\t\t\t\tbirth_date=1394.4.4\n\t\t\t\t}"
+      ],
+      "monarch_resolution": "country-local",
+      "heir_current_ref_present": false
+    }
+  },
+  "trade_leagues": [
+    "{\n\tid=1\n\tmembers={\n\t\tHSA RIG OLD BRE HAM \n\t}\n}",
+    "{\n\tid=1916387887\n\tmembers={\n\t\tHYM CDE JJG HYA WHU ZHO \n\t}\n}"
+  ]
+}

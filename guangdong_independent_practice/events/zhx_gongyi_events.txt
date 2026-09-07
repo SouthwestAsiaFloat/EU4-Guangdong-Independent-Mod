@@ -58,9 +58,20 @@ country_event = {
     option = {
         name = zhx_gongyi.10.a
         trigger = { zhx_gongyi_tianzi_can_grant = yes }
-        event_target:zhx_gongyi_applicant = {
-            zhx_gongyi_grant_charter = yes
-            country_event = { id = zhx_gongyi.11 }
+        # Event options are cached when the window opens. Recheck on click:
+        # the applicant may gain land, enter a war, or lose eligibility meanwhile.
+        if = {
+            limit = { zhx_gongyi_tianzi_can_grant = yes }
+            event_target:zhx_gongyi_applicant = {
+                zhx_gongyi_grant_charter = yes
+                country_event = { id = zhx_gongyi.11 }
+            }
+        }
+        else = {
+            event_target:zhx_gongyi_applicant = {
+                clr_country_flag = zhx_gongyi_request_pending
+                if = { limit = { exists = yes } country_event = { id = zhx_gongyi.12 } }
+            }
         }
         ai_chance = { factor = 100 }
     }

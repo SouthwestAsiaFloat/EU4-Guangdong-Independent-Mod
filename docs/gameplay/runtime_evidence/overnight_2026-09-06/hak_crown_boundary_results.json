@@ -1,0 +1,74 @@
+{
+  "hak_privileges": {
+    "date": "1444.11.15",
+    "government": "{\n\t\t\tgovernment=\"republic\"\n\t\t\treform_stack={\n\t\t\t\treforms={\n\t\t\t\t\t\"republic_mechanic\"\n\t\t\t\t\t\"gdd_hak_revolutionary_army_reform\"\n\t\t\t\t}\n\t\t\t\thistory={\n\t\t\t\t\t\"gdd_hak_revolutionary_army_reform\"\n\t\t\t\t}\n\t\t\t}\n\t\t}",
+    "government_rank": "2",
+    "monarch": "{\n\t\t\tid=3710\n\t\t\ttype=48\n\t\t}",
+    "faction": [
+      "{\n\t\t\tinfluence=20.000\ntype=gdd_hak_farmers\n\t\t\told_influence=40.000\n\t\t}",
+      "{\n\t\t\tinfluence=10.000\ntype=gdd_hak_burghers\n\t\t\told_influence=30.000\n\t\t}",
+      "{\n\t\t\tinfluence=70.000\ntype=gdd_hak_army\n\t\t\told_influence=30.000\n\t\t}"
+    ],
+    "republican_tradition": "50.000",
+    "powers": "{\n\t\t\t98 70 98 \n\t\t}",
+    "estate": [
+      "{\n\t\t\ttype=\"estate_church\"\n\t\t\tterritory=11.626\n\t\t}",
+      "{\n\t\t\ttype=\"estate_burghers\"\n\t\t\tterritory=23.334\n\t\t\tactive_influences={\n\t\t\t\t1 4 \n\t\t\t}\n\t\t}",
+      "{\n\t\t\ttype=\"estate_gdd_hak_peasants\"\n\t\t\tterritory=60.040\n\t\t\tactive_influences={\n\t\t\t\t0 \n\t\t\t}\n\t\t\tactive_loyalties={\n\t\t\t\t1 \n\t\t\t}\n\t\t\tgranted_privileges={\n\t\t\t\t{\ngdd_hak_freehold_charter 1454.11.15\t\t\t\t}\n {\ngdd_hak_village_franchise 1454.11.15\t\t\t\t}\n {\ngdd_hak_militia_covenant 1454.11.15\t\t\t\t}\n \n\t\t\t}\n\t\t}"
+    ],
+    "flags": "{\n\t\t\tzhx_member=1444.11.11\n\t\t\tgdd_authority_balance_effect_recipient=1444.11.11\n\t\t\tgdd_hak_initialized=1444.11.11\n\t\t\tgdd_hak_estate_initialized=1444.11.11\n\t\t\tgdd_b82_mountains_discovered=1444.11.11\n\t\t}"
+  },
+  "hak_rt20": {
+    "date": "1444.11.15",
+    "government": "{\n\t\t\tgovernment=\"republic\"\n\t\t\treform_stack={\n\t\t\t\treforms={\n\t\t\t\t\t\"republic_mechanic\"\n\t\t\t\t\t\"gdd_hak_revolutionary_army_reform\"\n\t\t\t\t}\n\t\t\t\thistory={\n\t\t\t\t\t\"gdd_hak_revolutionary_army_reform\"\n\t\t\t\t}\n\t\t\t}\n\t\t}",
+    "government_rank": "2",
+    "monarch": "{\n\t\t\tid=3710\n\t\t\ttype=48\n\t\t}",
+    "faction": [
+      "{\n\t\t\tinfluence=15.000\ntype=gdd_hak_farmers\n\t\t\told_influence=40.000\n\t\t}",
+      "{\n\t\t\tinfluence=5.000\ntype=gdd_hak_burghers\n\t\t\told_influence=30.000\n\t\t}",
+      "{\n\t\t\tinfluence=80.000\ntype=gdd_hak_army\n\t\t\told_influence=70.000\n\t\t}"
+    ],
+    "republican_tradition": "20.000",
+    "powers": "{\n\t\t\t98 70 88 \n\t\t}",
+    "estate": [
+      "{\n\t\t\ttype=\"estate_church\"\n\t\t\tterritory=11.626\n\t\t}",
+      "{\n\t\t\ttype=\"estate_burghers\"\n\t\t\tterritory=23.334\n\t\t\tactive_influences={\n\t\t\t\t1 4 \n\t\t\t}\n\t\t}",
+      "{\n\t\t\ttype=\"estate_gdd_hak_peasants\"\n\t\t\tterritory=60.040\n\t\t\tactive_influences={\n\t\t\t\t0 \n\t\t\t}\n\t\t\tactive_loyalties={\n\t\t\t\t1 \n\t\t\t}\n\t\t\tgranted_privileges={\n\t\t\t\t{\ngdd_hak_freehold_charter 1454.11.15\t\t\t\t}\n {\ngdd_hak_village_franchise 1454.11.15\t\t\t\t}\n {\ngdd_hak_militia_covenant 1454.11.15\t\t\t\t}\n \n\t\t\t}\n\t\t}"
+    ],
+    "flags": "{\n\t\t\tzhx_member=1444.11.11\n\t\t\tgdd_authority_balance_effect_recipient=1444.11.11\n\t\t\tgdd_hak_initialized=1444.11.11\n\t\t\tgdd_hak_estate_initialized=1444.11.11\n\t\t\tgdd_b82_mountains_discovered=1444.11.11\n\t\t}"
+  },
+  "hak_farmer19": {
+    "date": "1444.11.18",
+    "government": "{\n\t\t\tgovernment=\"republic\"\n\t\t\treform_stack={\n\t\t\t\treforms={\n\t\t\t\t\t\"republic_mechanic\"\n\t\t\t\t\t\"gdd_hak_revolutionary_army_reform\"\n\t\t\t\t}\n\t\t\t\thistory={\n\t\t\t\t\t\"gdd_hak_revolutionary_army_reform\"\n\t\t\t\t}\n\t\t\t}\n\t\t}",
+    "government_rank": "2",
+    "monarch": "{\n\t\t\tid=3710\n\t\t\ttype=48\n\t\t}",
+    "faction": [
+      "{\n\t\t\tinfluence=100.000\ntype=gdd_hak_farmers\n\t\t\told_influence=15.000\n\t\t}",
+      "{\n\t\t\tinfluence=0.000\ntype=gdd_hak_burghers\n\t\t\told_influence=30.000\n\t\t}",
+      "{\n\t\t\tinfluence=0.000\ntype=gdd_hak_army\n\t\t\told_influence=70.000\n\t\t}"
+    ],
+    "republican_tradition": "19.000",
+    "powers": "{\n\t\t\t88 70 88 \n\t\t}",
+    "estate": [
+      "{\n\t\t\ttype=\"estate_church\"\n\t\t\tterritory=11.626\n\t\t}",
+      "{\n\t\t\ttype=\"estate_burghers\"\n\t\t\tterritory=23.334\n\t\t\tactive_influences={\n\t\t\t\t1 4 \n\t\t\t}\n\t\t}",
+      "{\n\t\t\ttype=\"estate_gdd_hak_peasants\"\n\t\t\tterritory=60.040\n\t\t\tactive_influences={\n\t\t\t\t0 \n\t\t\t}\n\t\t\tactive_loyalties={\n\t\t\t\t1 \n\t\t\t}\n\t\t\tgranted_privileges={\n\t\t\t\t{\ngdd_hak_freehold_charter 1454.11.15\t\t\t\t}\n {\ngdd_hak_village_franchise 1454.11.15\t\t\t\t}\n {\ngdd_hak_militia_covenant 1454.11.15\t\t\t\t}\n \n\t\t\t}\n\t\t}"
+    ],
+    "flags": "{\n\t\t\tzhx_member=1444.11.11\n\t\t\tgdd_authority_balance_effect_recipient=1444.11.11\n\t\t\tgdd_hak_initialized=1444.11.11\n\t\t\tgdd_hak_estate_initialized=1444.11.11\n\t\t\tgdd_b82_mountains_discovered=1444.11.11\n\t\t}"
+  },
+  "hak_crowned": {
+    "date": "1444.11.20",
+    "government": "{\n\t\t\tgovernment=\"monarchy\"\n\t\t\treform_stack={\n\t\t\t\treforms={\n\t\t\t\t\t\"monarchy_mechanic\"\n\t\t\t\t\t\"autocracy_reform\"\n\t\t\t\t}\n\t\t\t\thistory={\n\t\t\t\t\t\"gdd_hak_revolutionary_army_reform\"\n\t\t\t\t\t\"autocracy_reform\"\n\t\t\t\t}\n\t\t\t}\n\t\t}",
+    "government_rank": "2",
+    "monarch": "{\n\t\t\tid=3710\n\t\t\ttype=48\n\t\t}",
+    "faction": [],
+    "republican_tradition": "19.000",
+    "powers": "{\n\t\t\t88 70 78 \n\t\t}",
+    "estate": [
+      "{\n\t\t\ttype=\"estate_church\"\n\t\t\tterritory=11.626\n\t\t}",
+      "{\n\t\t\ttype=\"estate_burghers\"\n\t\t\tterritory=23.334\n\t\t\tactive_influences={\n\t\t\t\t1 4 \n\t\t\t}\n\t\t}",
+      "{\n\t\t\ttype=\"estate_gdd_hak_peasants\"\n\t\t\tterritory=60.040\n\t\t\tactive_influences={\n\t\t\t\t0 \n\t\t\t}\n\t\t\tactive_loyalties={\n\t\t\t\t1 \n\t\t\t}\n\t\t\tgranted_privileges={\n\t\t\t\t{\ngdd_hak_freehold_charter 1454.11.15\t\t\t\t}\n {\ngdd_hak_village_franchise 1454.11.15\t\t\t\t}\n {\ngdd_hak_militia_covenant 1454.11.15\t\t\t\t}\n \n\t\t\t}\n\t\t}"
+    ],
+    "flags": "{\n\t\t\tzhx_member=1444.11.11\n\t\t\tgdd_authority_balance_effect_recipient=1444.11.11\n\t\t\tgdd_hak_initialized=1444.11.11\n\t\t\tgdd_hak_estate_initialized=1444.11.11\n\t\t\tgdd_b82_mountains_discovered=1444.11.11\n\t\t\tgdd_hak_crowned=1444.11.20\n\t\t}"
+  }
+}

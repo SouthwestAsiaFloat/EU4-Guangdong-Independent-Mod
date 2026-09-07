@@ -1,0 +1,2 @@
+# Succession setup only: move native balance to ruler endpoint after reload.
+CZC = { change_statists_vs_orangists = 2 }

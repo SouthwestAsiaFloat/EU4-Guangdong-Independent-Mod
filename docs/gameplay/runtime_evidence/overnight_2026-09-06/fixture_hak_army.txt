@@ -1,0 +1,2 @@
+# Establish army dominance at safe RT before the positive crown test.
+HAK = { add_republican_tradition = -100 add_republican_tradition = 50 add_faction_influence = { faction = gdd_hak_army influence = 100 } }

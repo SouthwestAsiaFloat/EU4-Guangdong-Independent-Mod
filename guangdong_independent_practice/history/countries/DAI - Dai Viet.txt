@@ -27,6 +27,7 @@ fixed_capital = 2373
         adm = 2
         dip = 1
         mil = 3
+        death_date = 1821.1.1
         claim = 70
         culture = vietnamese
         religion = confucianism

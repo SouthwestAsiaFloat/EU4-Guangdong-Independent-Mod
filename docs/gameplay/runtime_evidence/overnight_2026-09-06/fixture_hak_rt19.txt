@@ -1,0 +1,2 @@
+# Low tradition negative control with farmers already dominant.
+HAK = { add_republican_tradition = -100 add_republican_tradition = 19 }

@@ -28,6 +28,7 @@ fixed_capital = 4945
         adm = 2
         dip = 2
         mil = 5
+        death_date = 1821.1.1
         claim = 75
         culture = gdd_guangfu
         religion = confucianism

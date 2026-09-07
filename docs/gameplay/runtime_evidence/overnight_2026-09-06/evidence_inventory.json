@@ -1,0 +1,3152 @@
+[
+  {
+    "name": "01_startup_state.png",
+    "sha256": "9bfd76f5330c62772a19e82ee683746690364ac8bc0854e763da561316e39b41",
+    "path": "/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/docs/gameplay/runtime_evidence/overnight_2026-09-06/01_startup_state.png",
+    "retained_in_repo": true
+  },
+  {
+    "name": "02_main_menu.png",
+    "sha256": "e6358e064860a4628b76d3d318f645767aeea071905fb0a54c449fddfca22677",
+    "path": "/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/docs/gameplay/runtime_evidence/overnight_2026-09-06/02_main_menu.png",
+    "retained_in_repo": true
+  },
+  {
+    "name": "03_new_campaign_selection.png",
+    "sha256": "f0578c9aa6e758e2b50546a477b82f97a0fff73734380c417c4e82cc5a6df885",
+    "path": "/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/docs/gameplay/runtime_evidence/overnight_2026-09-06/03_new_campaign_selection.png",
+    "retained_in_repo": true
+  },
+  {
+    "name": "04_new_campaign_options.png",
+    "sha256": "f07d68026bc21c96ce0870bf0b7c3ec735a4626229d4c07f297c8050a701773f",
+    "path": "/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/docs/gameplay/runtime_evidence/overnight_2026-09-06/04_new_campaign_options.png",
+    "retained_in_repo": true
+  },
+  {
+    "name": "06_world_loaded.png",
+    "sha256": "cdacccdae87949b95dec0f1418efd87e091ad67aaa6ae8974356019f3d66e5b3",
+    "path": "/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/docs/gameplay/runtime_evidence/overnight_2026-09-06/06_world_loaded.png",
+    "retained_in_repo": true
+  },
+  {
+    "name": "07_tag_gui.png",
+    "sha256": "88c045359780d14874efb79fc7f80a80122e0c4630627ee3403c0be242b83626",
+    "path": "/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/docs/gameplay/runtime_evidence/overnight_2026-09-06/07_tag_gui.png",
+    "retained_in_repo": true
+  },
+  {
+    "name": "08_gui_console.png",
+    "sha256": "b0aa627c8f697d14d38fe84e905c457dc9d8249e8fc1d9f1c973442909416f9b",
+    "path": "/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/docs/gameplay/runtime_evidence/overnight_2026-09-06/08_gui_console.png",
+    "retained_in_repo": true
+  },
+  {
+    "name": "09_console_flush.png",
+    "sha256": "a623e952ac88df4eb122a037e41ae15b1d25f9fe541b7c584346bee720cb4150",
+    "path": "/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/docs/gameplay/runtime_evidence/overnight_2026-09-06/09_console_flush.png",
+    "retained_in_repo": true
+  },
+  {
+    "name": "100_ai_1460_checkpoint.png",
+    "sha256": "a8bfb9f21e25c4420817ec888cdb0353385868b5352d7967d7fc185897c9a17a",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/100_ai_1460_checkpoint.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "101_hak_natural_transition.png",
+    "sha256": "dade2d0f4fbee4bbba11b1dcd739802bf6b08db39029db646dc07648c5954039",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/101_hak_natural_transition.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "102_hak_communal_reform_live.png",
+    "sha256": "5d71eb61ad30ba65311b33712f109b2613720bd012f14427e7164bb1ac39c91c",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/102_hak_communal_reform_live.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "103_return_to_observer.png",
+    "sha256": "8d1eb246d764437254a4a37870407c71fc1f7dc6500f4af5ea8fff1d7e198fbf",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/103_return_to_observer.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "104_ai_1461.png",
+    "sha256": "820f0e8374fd7dce750ed7b9ab9e6617f78a3ca5ec1fee2f907d832b4da5a7a7",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/104_ai_1461.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "105_ai_1462.png",
+    "sha256": "deca45f924b396f137a1d3ebc79826d9c559da438a39115a799f5cdd9fa8ad6d",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/105_ai_1462.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "106_ai_1462.png",
+    "sha256": "1a26a6ea8d6439d0dac7a3c8b1f4324d7720b2c29089e964a47abe74ecdfe086",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/106_ai_1462.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "107_ai_1463.png",
+    "sha256": "a8c7c575a3c78da8ea971f1e253d8ee1d6504bda1007f199851bb941f8681563",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/107_ai_1463.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "108_ai_1464.png",
+    "sha256": "bc97a7fed4025b02d8de10b9de2bbf94796c668468da075f96a3d5c360debedb",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/108_ai_1464.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "109_ai_1465_checkpoint.png",
+    "sha256": "f7f988fdc6204650f4eba0055a6dfd6badef6a0a521b345027a2eda441d7b536",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/109_ai_1465_checkpoint.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "10_console_input.png",
+    "sha256": "4739118e591d1c566a1ddc363b06bcc610897841bd8c1fbc6db4c83e85a6b08e",
+    "path": "/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/docs/gameplay/runtime_evidence/overnight_2026-09-06/10_console_input.png",
+    "retained_in_repo": true
+  },
+  {
+    "name": "110_ai_1466.png",
+    "sha256": "48622ad4414d50121b80a698b87e1fb5d479be80a9a9678bf13d3bab770e45e7",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/110_ai_1466.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "111_ai_1467.png",
+    "sha256": "40ffaf7123ee42eb18ea73617ede27a7dc2a1d3c023cdda46af82c404029f54c",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/111_ai_1467.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "112_ai_1468_checkpoint.png",
+    "sha256": "a63e2838b5646e84e2cf3eed9427d8c5e84f6e6727c93a3c0b3fd3280ba3fb82",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/112_ai_1468_checkpoint.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "113_seed_term_used_flag.png",
+    "sha256": "6b6687bf2cda7aa976241f537642ce22eb1a16c0b0ee3de468a2e2a702c28e87",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/113_seed_term_used_flag.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "114_rollover_fixture_run.png",
+    "sha256": "ec6f54b0ef204a4e37ab594a3d6eb59457a185ca99085c33e46766aa74d90ec9",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/114_rollover_fixture_run.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "115_prerollover_save.png",
+    "sha256": "be2aa4d000a705e77fe976250494a88d1dbfe000db456fe405701698c552edbd",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/115_prerollover_save.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "116_prerollover_menu.png",
+    "sha256": "c0b01857ac63f155435f5fed34d7319264c6373870ee64f8f521ad336eef51cb",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/116_prerollover_menu.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "117_prerollover_tianzi.png",
+    "sha256": "a71e3ab6119ddca884123926e59346a3f46633ca806e732811836bd243e1bec2",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/117_prerollover_tianzi.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "118_tianzi_save_menu.png",
+    "sha256": "bee04512f20430ff7f64bf56d095442ff47c6c0a458f1590b253491ac886c534",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/118_tianzi_save_menu.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "119_prerollover_filename.png",
+    "sha256": "61471a1ae6dade092290505c584ed765359325eeefdadd664a294247b5eca58a",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/119_prerollover_filename.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "11_console_tag_word.png",
+    "sha256": "3a58d6bb9f37171bb2fba93617cc723909a7ea6fadf8ba3e7c49f69f9c508181",
+    "path": "/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/docs/gameplay/runtime_evidence/overnight_2026-09-06/11_console_tag_word.png",
+    "retained_in_repo": true
+  },
+  {
+    "name": "120_resume_presave_state.png",
+    "sha256": "084ae6750fc4f5862a205f7daba26e149ced59f04387f8779d60e964a99de04c",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/120_resume_presave_state.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "121_prerollover_saved.png",
+    "sha256": "62513eeb57284c3ec877bce6beee03fdf23803df49cf74adf5e423d15b59cc50",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/121_prerollover_saved.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "122_observer_prerollover.png",
+    "sha256": "a8c1de196feb9a4b47f14bead6169a2be7f26b7ac131f475d6d195de8c27c9c3",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/122_observer_prerollover.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "123_ai_1469_approach.png",
+    "sha256": "66a624dbaa32a2dc39f03fe34efea658f1f95814b3b7ec0ab8c5b7c4c8d44049",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/123_ai_1469_approach.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "124_ai_1469_rollover_window.png",
+    "sha256": "c32774965c98a5569995c7cec271647d550a773941dcb2a028f819e6eb34f280",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/124_ai_1469_rollover_window.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "125_ai_1470_postrollover.png",
+    "sha256": "66fa8b54c04a336b2f5e689c332a90d670ceae0a385e813c098fd4a8f28d2882",
+    "path": "/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/docs/gameplay/runtime_evidence/overnight_2026-09-06/125_ai_1470_postrollover.png",
+    "retained_in_repo": true
+  },
+  {
+    "name": "126_tianzi_postrollover.png",
+    "sha256": "aa30f293d3c778d6fc961e4836d39cad4d19db373f037160770f6571809ac972",
+    "path": "/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/docs/gameplay/runtime_evidence/overnight_2026-09-06/126_tianzi_postrollover.png",
+    "retained_in_repo": true
+  },
+  {
+    "name": "127_postrollover_political_panel.png",
+    "sha256": "111c8679b5227d7fffa930b811b0e5695e25c24662c3679757d8308b3ce6711c",
+    "path": "/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/docs/gameplay/runtime_evidence/overnight_2026-09-06/127_postrollover_political_panel.png",
+    "retained_in_repo": true
+  },
+  {
+    "name": "128_pp_removal_console.png",
+    "sha256": "d5145f3230da2bffd1c534cf7d74e38fe936bb68b8603d98b6516d1033c533e5",
+    "path": "/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/docs/gameplay/runtime_evidence/overnight_2026-09-06/128_pp_removal_console.png",
+    "retained_in_repo": true
+  },
+  {
+    "name": "129_pp_test_menu.png",
+    "sha256": "f93bb780a464a5b36aa8c691cf5034566d7b16703637b527ea3719d3d536659f",
+    "path": "/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/docs/gameplay/runtime_evidence/overnight_2026-09-06/129_pp_test_menu.png",
+    "retained_in_repo": true
+  },
+  {
+    "name": "12_close_console.png",
+    "sha256": "ab15dced22959a3340b886a2e77684ff617e998e5647e34c479688eb06e294f5",
+    "path": "/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/docs/gameplay/runtime_evidence/overnight_2026-09-06/12_close_console.png",
+    "retained_in_repo": true
+  },
+  {
+    "name": "130_pp_test_save_dialog.png",
+    "sha256": "b85aeb7e0e0eb714941eb74cced818052d75bbd4863b43b6d08ce885be3acc87",
+    "path": "/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/docs/gameplay/runtime_evidence/overnight_2026-09-06/130_pp_test_save_dialog.png",
+    "retained_in_repo": true
+  },
+  {
+    "name": "131_pp_test_saved.png",
+    "sha256": "c5ac16f91c07cf688217eb200a9419de1132b1f6178d60a4994ca3f7e5b79dac",
+    "path": "/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/docs/gameplay/runtime_evidence/overnight_2026-09-06/131_pp_test_saved.png",
+    "retained_in_repo": true
+  },
+  {
+    "name": "132_pp_fix_quit_confirm.png",
+    "sha256": "147d9cf1023dfff6dab21af5cae34159822bed39c9087587ffba072d26c3d3c4",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/132_pp_fix_quit_confirm.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "133_pp_fix_restart_loading.png",
+    "sha256": "12c54e164336f3e1c4435d7f180d1f089acda47a25350bee4a5f9e74c5e6524f",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/133_pp_fix_restart_loading.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "134_pp_fix_loading_state.png",
+    "sha256": "aeba3f02b051c91971c02d0c767937d92c7dd4391b1a3d6730699947ff3674b5",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/134_pp_fix_loading_state.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "135_pp_fix_singleplayer.png",
+    "sha256": "36eafea87c5c70b49e049cc68ade0a3c90368d81db788db74a5735a7f95eec3b",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/135_pp_fix_singleplayer.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "136_pp_fix_saved_campaigns.png",
+    "sha256": "a22a268378245b12ac12d3b46f7ca3464c36af316a5d2a0a8b108b08caa1c7d7",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/136_pp_fix_saved_campaigns.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "137_pp_fix_selected_1469.png",
+    "sha256": "88b462d7564f8267d18eed92826d7932711e52edaa4b6c22c0466ae32a297844",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/137_pp_fix_selected_1469.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "138_pp_fix_loading_1469.png",
+    "sha256": "48a32a238db62ce1095c41e90f25558841603c07cbfdc9a6c61be6e64115c26b",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/138_pp_fix_loading_1469.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "139_pp_fix_observer_ready.png",
+    "sha256": "e2f2f071a4db579946a7cb923b78163445f47281a8dfd5c87036d047aaef9efa",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/139_pp_fix_observer_ready.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "140_pp_fix_console_input.png",
+    "sha256": "7680d2fc417886823412a6f67ef5ab791c7762eddef38425ead06fa4955ce8ea",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/140_pp_fix_console_input.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "141_pp_fix_natural_advance.png",
+    "sha256": "eebe653332bb10ef988897e302e0ac5dd7a52cf12adc355afbd47dec52b57612",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/141_pp_fix_natural_advance.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "142_pp_fix_pause_state.png",
+    "sha256": "6a2adc82f21507afec3bc4abdc4c008ca8784fd3f8a961dac822f4f92d2c7d49",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/142_pp_fix_pause_state.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "143_pp_fix_paused.png",
+    "sha256": "27bb6fad41364e6fa738520f3be631f51e291e62edd827a150b11f54446ffd91",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/143_pp_fix_paused.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "144_qin_postrollover_projection.png",
+    "sha256": "0e1a06724692b5107533300c8c6331836e25dca943828a2e89d1fb37e085e6cc",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/144_qin_postrollover_projection.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "145_qin_dignity_ten.png",
+    "sha256": "92692ca5f86fded6dc61c0699f42862233891b0a2918f03706e83437a4ed76ae",
+    "path": "/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/docs/gameplay/runtime_evidence/overnight_2026-09-06/145_qin_dignity_ten.png",
+    "retained_in_repo": true
+  },
+  {
+    "name": "146_heir_fix_restart_menu.png",
+    "sha256": "bd3c1ceefb533f346c555276456f389598152552f9115bf5f1f43ad995eb125c",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/146_heir_fix_restart_menu.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "147_all_heirs_quit_confirm.png",
+    "sha256": "686f693f25b1790c3986e120ba2334ecdda7d3a5add5fe025fc2dcac4e0a5cc8",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/147_all_heirs_quit_confirm.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "148_all_heirs_restart_loading.png",
+    "sha256": "99f9b64dc42b72e1f7331302d7b82491cd57dd054a84fb9cba447b7cad1f2cba",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/148_all_heirs_restart_loading.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "149_all_heirs_mainmenu.png",
+    "sha256": "f2b49a659e96db758e8336b01a28233e2ccd6d3059d730588d43784696de342a",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/149_all_heirs_mainmenu.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "14_input_source_check.png",
+    "sha256": "ac85f757bf68193bac6d304cb4a1edcf2559ed88e005c44e72108af265860cee",
+    "path": "/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/docs/gameplay/runtime_evidence/overnight_2026-09-06/14_input_source_check.png",
+    "retained_in_repo": true
+  },
+  {
+    "name": "150_all_heirs_new_campaign.png",
+    "sha256": "53433aa03efa7d81306b168ff058e495dd38e5c53097c0afcfa3b17e3251d869",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/150_all_heirs_new_campaign.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "151_all_heirs_france_selected.png",
+    "sha256": "dbf5cb82493e4d7be1cde4b1737f96c66b26ba45737d0435275311f4f9af12fc",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/151_all_heirs_france_selected.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "152_all_heirs_mode_confirm.png",
+    "sha256": "ba69c2bff86840fc4b9560e4ac44d29fbc7bd0cb52aea383a946f05041271cd3",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/152_all_heirs_mode_confirm.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "154_all_heirs_fresh_world_state.png",
+    "sha256": "ea31cc43e3f0176840d26f1ce83bac95b5f620102dc91413c3bedaf1d69ae306",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/154_all_heirs_fresh_world_state.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "155_all_heirs_opening_event.png",
+    "sha256": "6638778cd6ee1279ae0135b66abdd59f97765a7b0cfa881e571c002c17f5ba82",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/155_all_heirs_opening_event.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "156_czh_heir_fixed_court.png",
+    "sha256": "c1175e9f56accf144d22fb80688e21bd7e70f2edff69b7226f7f36f1fd9f80ee",
+    "path": "/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/docs/gameplay/runtime_evidence/overnight_2026-09-06/156_czh_heir_fixed_court.png",
+    "retained_in_repo": true
+  },
+  {
+    "name": "157_yan_heir_fixed_court.png",
+    "sha256": "65945d8bf2e20104bc36da3c47f53d9ed95c436d1e8f533c407d3010ee4531c4",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/157_yan_heir_fixed_court.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "158_yan_heir_court.png",
+    "sha256": "eb209f06561f59b42cb57608df72dae6368c91bfb34d3379d55731d0f015d5cb",
+    "path": "/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/docs/gameplay/runtime_evidence/overnight_2026-09-06/158_yan_heir_court.png",
+    "retained_in_repo": true
+  },
+  {
+    "name": "159_song_heir_court.png",
+    "sha256": "07c9148a9105e63d1f49655d5d6fc03e90626976f86ef4b9b47359d02c6b6ef6",
+    "path": "/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/docs/gameplay/runtime_evidence/overnight_2026-09-06/159_song_heir_court.png",
+    "retained_in_repo": true
+  },
+  {
+    "name": "15_gui_country.png",
+    "sha256": "9d1a665a7bfbfa6a81b148bac0c857b775ddeeeb062fd497414f53c2cd96017f",
+    "path": "/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/docs/gameplay/runtime_evidence/overnight_2026-09-06/15_gui_country.png",
+    "retained_in_repo": true
+  },
+  {
+    "name": "160_jiz_heir_court.png",
+    "sha256": "82143e292290433711e7af0a3baca3357438698506c63c6b1a4f029665d712b7",
+    "path": "/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/docs/gameplay/runtime_evidence/overnight_2026-09-06/160_jiz_heir_court.png",
+    "retained_in_repo": true
+  },
+  {
+    "name": "161_hld_heir_court.png",
+    "sha256": "f28dbf1cb8fe532346df6d45afffaeeafc79fb637a5aca799299f78b3188900b",
+    "path": "/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/docs/gameplay/runtime_evidence/overnight_2026-09-06/161_hld_heir_court.png",
+    "retained_in_repo": true
+  },
+  {
+    "name": "162_kor_heir_court.png",
+    "sha256": "0b6618a4ae627efb454edeae755f65f9b3035f46227bf951e13cfbd9090b2631",
+    "path": "/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/docs/gameplay/runtime_evidence/overnight_2026-09-06/162_kor_heir_court.png",
+    "retained_in_repo": true
+  },
+  {
+    "name": "163_all_heirs_save_menu.png",
+    "sha256": "e00341598b6e53b839f224479fc0b0ef907fcba06675634a1bfc5f8ebd49bec9",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/163_all_heirs_save_menu.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "164_all_heirs_save_dialog.png",
+    "sha256": "8c828f65766aef7b1f8f5533d17c913607e035fcee10b4ca8a4cd840c92b703b",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/164_all_heirs_save_dialog.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "165_all_heirs_saved.png",
+    "sha256": "af52518b97d6de43c6ef645687f2ef2dd287ad2778387870beb55a330f5a76e1",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/165_all_heirs_saved.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "166_czc_succession_start.png",
+    "sha256": "d7a7209685c5e297edf2a958d3764d854aefc929210cd31a7667e8fafd88d37f",
+    "path": "/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/docs/gameplay/runtime_evidence/overnight_2026-09-06/166_czc_succession_start.png",
+    "retained_in_repo": true
+  },
+  {
+    "name": "167_czc_right_shift_before_death.png",
+    "sha256": "7471577978dd65e35b0f8cd69522c8c5ee1449f14b333c4e6c031fa30181d81f",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/167_czc_right_shift_before_death.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "168_czc_incumbent_before_death.png",
+    "sha256": "85576cb9fc915ea788d254b043c25884a2be8610f4883b0c3cccf70d56302904",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/168_czc_incumbent_before_death.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "169_czc_right_death_console.png",
+    "sha256": "4ecd6547a02bc3d6e5cb848cc6f49f767798d9231e46e48cb5048074427c0d04",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/169_czc_right_death_console.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "16_nun_heir.png",
+    "sha256": "ab9d68e350e02487e326fb9a8fc16ff0671ab39602b2f253f8f18e3fd55e6a6b",
+    "path": "/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/docs/gameplay/runtime_evidence/overnight_2026-09-06/16_nun_heir.png",
+    "retained_in_repo": true
+  },
+  {
+    "name": "170_czc_right_successor_notice.png",
+    "sha256": "a4703a63edc562cb36d030f84cd016ddca63389728b8a4288219c9bb0a0e12b0",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/170_czc_right_successor_notice.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "171_czc_right_second_notice.png",
+    "sha256": "ff0d035d9c4ff728d4d49ffed16d39361684c44555479ee1c8380a12fa7a8b2f",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/171_czc_right_second_notice.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "172_czc_right_post_tick.png",
+    "sha256": "6ac5b29405b260f4da1a9cb1be6a9652326e7cc7ae0f60f09f695131adf86184",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/172_czc_right_post_tick.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "173_czc_right_month_boundary.png",
+    "sha256": "487415b5c7a77a4beb5a764f5a2eb8cb8ecb8539eff6832e79fba5d5c8c9ef7a",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/173_czc_right_month_boundary.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "174_czc_after_month_notices.png",
+    "sha256": "62f793f4da0c3cd748f9b3efe6d5ecbed2a754a62d12529d6d703237ab918f89",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/174_czc_after_month_notices.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "175_czc_next_month_notice.png",
+    "sha256": "db2892c4eaac344b334cfc1b93c299c2cbbf93de7af67cf2335210b1dd751cc5",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/175_czc_next_month_notice.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "176_czc_right_stable_court.png",
+    "sha256": "fc0286f81775be7ffd7235abf2900447c4cb2217871413a74e7dae9e30a91684",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/176_czc_right_stable_court.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "177_czc_right_save_dialog.png",
+    "sha256": "e831c62cc7c1984da02e3d271181091c69b446cedb8943ae0391731a4caa1ce0",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/177_czc_right_save_dialog.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "178_czc_right_saved.png",
+    "sha256": "95e573380c5cc7b1101868765f101ea5fa5a16daa8435f051a6044eddb325423",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/178_czc_right_saved.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "179_czc_left_endpoint.png",
+    "sha256": "89b22e05ee66dc660950b6ed99ecf63f7c144ca4d9d709666c0e6f53d0cce361",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/179_czc_left_endpoint.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "17_nun_court.png",
+    "sha256": "2dbb8c1a1220a502cf00b1fd3091a3637cd48f909dbdbc344393ba9204dbecc2",
+    "path": "/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/docs/gameplay/runtime_evidence/overnight_2026-09-06/17_nun_court.png",
+    "retained_in_repo": true
+  },
+  {
+    "name": "180_czc_left_lifetime_before_death.png",
+    "sha256": "45948a52b5dd74663e2a97133cf8eea9020cbdad21e90a7c5711d6f70f1fcb3f",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/180_czc_left_lifetime_before_death.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "181_czc_left_death_result.png",
+    "sha256": "4ac39deed504ffdce47f0638bf091ff319158cc4069e4c643e4b25a1c0dfa070",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/181_czc_left_death_result.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "182_czc_left_successor_notice.png",
+    "sha256": "94abf5f903615b9fdfd5a441ba065164986d2bc95bd417bd7eb63f1651182e52",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/182_czc_left_successor_notice.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "183_czc_left_save_dialog.png",
+    "sha256": "9c05e01077f3a1f9dc1e1de83e18c84d144ebbb8592a442885cadc068ff5195b",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/183_czc_left_save_dialog.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "184_czc_left_reload_dialog.png",
+    "sha256": "33a610b4795fa4e8137faa51b3c3785846107eedbe627450499bf5db7de1f7ab",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/184_czc_left_reload_dialog.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "185_czc_left_reload_selected.png",
+    "sha256": "f44396ea53ac18cd958019989cae971a61683b9cd13f97968b78e4e213530ff8",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/185_czc_left_reload_selected.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "186_czc_reload_confirm.png",
+    "sha256": "71603f5e7eaa425f50957bf2ed6e7d90ade6596539c45b71129e3301bad7c018",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/186_czc_reload_confirm.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "187_czc_left_reloaded.png",
+    "sha256": "693856da2baaeaa619198da0b7e9a2bf7f73e0c7cb51c82195e50797ef087bfe",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/187_czc_left_reloaded.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "188_czc_left_reload_court.png",
+    "sha256": "07b842342c64439071da09c902cef70114bc05e9ecb971e5f83b64234a91f2f5",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/188_czc_left_reload_court.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "189_czc_right_after_reload.png",
+    "sha256": "b69680a77947a61517afae3516ee8d5119aaf263c16ede486d108e1c8ba036a0",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/189_czc_right_after_reload.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "18_tzz_court.png",
+    "sha256": "ff42c71501489acdf06e5cf95b40bd781ada8351ebbec1f57b4f1072c72a6f35",
+    "path": "/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/docs/gameplay/runtime_evidence/overnight_2026-09-06/18_tzz_court.png",
+    "retained_in_repo": true
+  },
+  {
+    "name": "190_czc_right2_death.png",
+    "sha256": "e1c1dd54a24e8a6b6cb108d897b91ae7fa39385e2bf90edaffac9c44a2150db1",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/190_czc_right2_death.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "191_czc_right2_notice.png",
+    "sha256": "657ad1ce6910aa354137f917f021cc294e6b4f9712eb7e1d5f61f455989b399e",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/191_czc_right2_notice.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "192_czc_right2_duplicate_notice.png",
+    "sha256": "315297086fa86ad5aad293c2dd1ae619ba06c4e539eca4827bc8f451ee7cacfc",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/192_czc_right2_duplicate_notice.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "193_czc_right2_crossmonth.png",
+    "sha256": "dfcf0e8a6286a0f1eac1244e23985bdd26920612a1bc304158343742f04d10cf",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/193_czc_right2_crossmonth.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "194_czc_right2_month_notices.png",
+    "sha256": "723993d8dabc1cb154302e2c53a637d0f2e1417a7909e53359554d5d901815e3",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/194_czc_right2_month_notices.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "195_czc_right2_stable_court.png",
+    "sha256": "b29f12016c03aae9a7e1059c2de19a8a8e840e7abd2cc87b0b073f97a1f177e2",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/195_czc_right2_stable_court.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "196_czc_right2_save_dialog.png",
+    "sha256": "dd174cf71026d0df57c2a830f4ce07f06e824aa63ff5618c59e1ec82d08a7e6e",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/196_czc_right2_save_dialog.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "197_czc_right2_saved.png",
+    "sha256": "cbbc9279b5a476c3b7ab9005a7769b22e88211d25631f9e3298a2130484db462",
+    "path": "/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/docs/gameplay/runtime_evidence/overnight_2026-09-06/197_czc_right2_saved.png",
+    "retained_in_repo": true
+  },
+  {
+    "name": "198_hou_start_load_dialog.png",
+    "sha256": "0f7b52e687f1266ddb08567bad05660e3571c9e25e3690a333052807940f144f",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/198_hou_start_load_dialog.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "199_hou_start_load_confirm.png",
+    "sha256": "2cc9f3834c2b218cb86ab148419db1094f5677709daa5b24477cc7b6b3ebdaf3",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/199_hou_start_load_confirm.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "19_lil_court.png",
+    "sha256": "5e9ac1f4f638db1037ed8e2ed6ac5f51361bb6023d98be76d4f168fc19f642df",
+    "path": "/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/docs/gameplay/runtime_evidence/overnight_2026-09-06/19_lil_court.png",
+    "retained_in_repo": true
+  },
+  {
+    "name": "200_hou_start_loaded.png",
+    "sha256": "b3b37b1d129d8e29c6d4a58c8fa12f920024ebf0dc08246557410e5eb5776d63",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/200_hou_start_loaded.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "201_hou_start_opening_notice.png",
+    "sha256": "3fce731ba7c8422f22c1fc7e8d9f59f7d83861df8952ff086907d83a39829626",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/201_hou_start_opening_notice.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "202_hou_fixture_console.png",
+    "sha256": "ebeea834d62025713a843a355ce252f16ff30755cdf955a0cfb9efc9ed0de3cb",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/202_hou_fixture_console.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "203_hou_alliance_notice.png",
+    "sha256": "6f72cc201efe1ca0bdd4d1afd0d2e8dc04b791501fc596def80565bf999f511c",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/203_hou_alliance_notice.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "204_hou_alliance_notice2.png",
+    "sha256": "bff70a97ddd41a411c8cc8ac881e39ad6b1f136204755331ba643892a5eda4d7",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/204_hou_alliance_notice2.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "205_hou_alliance_notice3.png",
+    "sha256": "b6a67e19abb2ea1acd599693a43f9d98452741229207702d3430a5d3937b59eb",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/205_hou_alliance_notice3.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "206_hou_alliance_notice4.png",
+    "sha256": "d7187ba79fb5979b577f9517dfd82101092572950122371c27083aab0612ed5c",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/206_hou_alliance_notice4.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "207_gdd_diplomacy_allies.png",
+    "sha256": "2f940e917eea6c4524ecf7ffb9a985507155a8a88a0ec1394b25e0bfa1bc258f",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/207_gdd_diplomacy_allies.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "208_find_tianzi_capital.png",
+    "sha256": "d9ed2b51c5821866069bc0189f8e20620a88a3a73390aceaa554dbf0bb445206",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/208_find_tianzi_capital.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "209_find_province_688.png",
+    "sha256": "c44bc6385164db66a5ec411e821b2f3ac069aad081bf810dd0161e05b4a78973",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/209_find_province_688.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "20_dai_court.png",
+    "sha256": "703c72d55e941ce807581032e052e2c319be458a23eeb4c373d6d8084f64a623",
+    "path": "/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/docs/gameplay/runtime_evidence/overnight_2026-09-06/20_dai_court.png",
+    "retained_in_repo": true
+  },
+  {
+    "name": "210_kaifeng_located.png",
+    "sha256": "4893aaa5fc1c11b364e2dba510162c648a046b46f7f6d1ff85b582b53c5ae493",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/210_kaifeng_located.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "211_tianzi_diplomacy_target.png",
+    "sha256": "e263b9834f614e7d26035236b799be49d9efc7afd552e071c814821e3e235b1b",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/211_tianzi_diplomacy_target.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "212_hou_petition_199_merit.png",
+    "sha256": "a4df095ac33ff5cffcf2a5f3689fdd940a94f725cdc0f8e7257efe6636ec5689",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/212_hou_petition_199_merit.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "213_hou_merit199_blocked_tooltip.png",
+    "sha256": "ba73a5ac00e783e482384a0f8ffc64dd07dbfe8b8db5685f04958dca76987c6c",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/213_hou_merit199_blocked_tooltip.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "214_hou_dev199_blocked.png",
+    "sha256": "97187df202622eb24ff622996377cb4fb67aa53b63d1cbf7097d6543d37e5fa6",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/214_hou_dev199_blocked.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "215_hou_dev_boundary_diagnostic_save.png",
+    "sha256": "8eff734295439522c14d279734a7d759c5d31f063137815adfc1a969ad362307",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/215_hou_dev_boundary_diagnostic_save.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "216_hou_dev_probe_saved.png",
+    "sha256": "a8bcfa2f998d536f1b89f051e4a981bf72f67fae5085cfb983de43e5189815f5",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/216_hou_dev_probe_saved.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "217_hou_dev199_after_days.png",
+    "sha256": "6ae881759364aba856b6364a577d19e480ce9ddb7268707280db56c0122e9031",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/217_hou_dev199_after_days.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "218_hou_dev199_daily_refresh.png",
+    "sha256": "dcd2494052f636b47d35ad98f14e8b455fd673c5999ada585c331fc332a39991",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/218_hou_dev199_daily_refresh.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "219_hou_dev199_refreshed_diplomacy.png",
+    "sha256": "a9ca3723e782602e1bde46349786b8c334ca9fd145df71270e4f2c9ae9c6a653",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/219_hou_dev199_refreshed_diplomacy.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "21_pause_for_baseline_save.png",
+    "sha256": "75baba414e8be5ec162b9473ebb2231822d9311f0cabe78800aee909d4e6871d",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/21_pause_for_baseline_save.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "220_hou_dev199_blocked_after_tick.png",
+    "sha256": "ea96de7610fd3f5f473482567e3e1b1ce56c4dd8ed2b974b47df4fc42caeb2c0",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/220_hou_dev199_blocked_after_tick.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "221_hou_cities19_tick.png",
+    "sha256": "a2bc531fa979f35f75af3cd74f795d0c1873cc9c06f0f9eef8aba941da9102fe",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/221_hou_cities19_tick.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "222_hou_cities19_blocked.png",
+    "sha256": "22a18d5015566f3c7995ec928fb935b5adc0316425aa011d84e722c646ff015c",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/222_hou_cities19_blocked.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "223_hou_qualified_tick.png",
+    "sha256": "263c15cd18c895ed0f663f8b70267e724ea908ca25a3228ffdc3ce24ede062f7",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/223_hou_qualified_tick.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "224_hou_government_before_petition.png",
+    "sha256": "e14a2d06ccdb582407e6863c57b31b57ddfc060875e7ba839464a36ceb89ec6a",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/224_hou_government_before_petition.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "225_hou_ruler_heir_before_petition.png",
+    "sha256": "59a5a815ceeff7809fcb7912f3c82c87aecc6cef4c4557d7fdc4bde7f480a3ef",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/225_hou_ruler_heir_before_petition.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "226_hou_prepetition_notice.png",
+    "sha256": "3fe88acdc92fc14d5733834da0c6de457720c824adbea541007325c1b5493cd5",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/226_hou_prepetition_notice.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "227_hou_prepetition_notice2.png",
+    "sha256": "4a9ecb344c1e372dad0fcf3192d6a9876798a92f0aec6be84fe8e2bd863df661",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/227_hou_prepetition_notice2.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "228_hou_prepetition_notice3.png",
+    "sha256": "5143664632712e9384cdba3177d153e21efbe23dbc3dc4495492780169bcba3a",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/228_hou_prepetition_notice3.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "229_hou_prepetition_notice4.png",
+    "sha256": "1d7165f632c6c75abd39e7be73cc7221d1f6d45958fe37ebb54f667be780f6d6",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/229_hou_prepetition_notice4.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "22_baseline_save_dialog.png",
+    "sha256": "fad7c703491d0e6e41a63f6c05542d8ba0528232afd4d7a7166921ceadf186e1",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/22_baseline_save_dialog.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "230_hou_prepetition_notice5.png",
+    "sha256": "a5f825b108e2f2e0659d66c43898d5ebe6bbaec171804ac6765072a1699ff742",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/230_hou_prepetition_notice5.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "231_hou_qualified_save_dialog.png",
+    "sha256": "e47b640d04c3e226f3239ee6f56316e95a2aba57e8e54fb7341a5d9e769624fa",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/231_hou_qualified_save_dialog.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "232_hou_qualified_saved.png",
+    "sha256": "d7bc1e226f42c69d16e57ace4c0c3d4400827d8395d41c76521c9bba1e449517",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/232_hou_qualified_saved.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "233_hou_qualified_petition_confirm.png",
+    "sha256": "0e2c0c182d58ce18a5d9ec235533a5d5cff7ae3d6396f86da98876ac3b53e4b3",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/233_hou_qualified_petition_confirm.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "234_hou_petition_sent.png",
+    "sha256": "f17b9a4bc9f557b0e64547c7138a9a369838dc60063d2376a1dfebaf2b13b911",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/234_hou_petition_sent.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "235_hou_live_ballot.png",
+    "sha256": "fcdbd4c28682085649d22a6c2abf3498d065cc36746c8f969e9d1130cc0813ab",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/235_hou_live_ballot.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "236_hou_ballot_save_dialog.png",
+    "sha256": "fdb38c30b4cd66c596ce05041448c4c7fb394ba654dfaed160a5ca922c1d1c8f",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/236_hou_ballot_save_dialog.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "237_resume_ballot.png",
+    "sha256": "215a229b0f2b17dd61f6f069a591b0f3e3f767c21f759f4dfc60d2f82508228c",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/237_resume_ballot.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "238_ballot_pause_menu.png",
+    "sha256": "97128fe267f4cc3c86ecc895ec552733383627dee3cceeff6df4e0ea62033dd8",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/238_ballot_pause_menu.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "239_ballot_save_dialog.png",
+    "sha256": "8ee6f86c8ff2c9d04fe5ffaf637a41a113670634c652d24d08c320c0547fb0be",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/239_ballot_save_dialog.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "23_save_filename.png",
+    "sha256": "84302311b88e87e35af05675dd01a5a4bae6c3d80d9acf6dbf41bed5e82614d3",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/23_save_filename.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "240_ballot_initial_saved.png",
+    "sha256": "97d69b643b1a9c2b7991f2596bceb06ea4033d058ba76e72cf7084a30f8e5c1d",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/240_ballot_initial_saved.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "241_hou_negative_time_advance.png",
+    "sha256": "250081cc92d2ca9e3312ed95097a30f0979f53c719d5d53f8e5ebf61c150b572",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/241_hou_negative_time_advance.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "242_hou_midyear_paused.png",
+    "sha256": "aaa7b03cdba99ae73f610ce9205c20e4ad1f7bb6601dd7d5228d14631ecd1963",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/242_hou_midyear_paused.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "243_hou_result_notice_stack.png",
+    "sha256": "26921d8053ce230311f757435fcb67b10164ad46fa5e3b70af9ea26046b6f645",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/243_hou_result_notice_stack.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "244_hou_result_notice_stack2.png",
+    "sha256": "3a6e6dbcd4107c64809f4477b666d2a5004638bef8b60b9ccf387416e739c8d7",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/244_hou_result_notice_stack2.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "245_hou_result_notice_stack3.png",
+    "sha256": "598a7e3908813efc6c7ec6f710eedef73c4f5501501389e01251bb4f6494eb91",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/245_hou_result_notice_stack3.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "246_hou_result_notice_stack4.png",
+    "sha256": "c2c4201b2eb0e7be54a2723f1ce4ef580b4773c8ec351a0387503dd42f9458c2",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/246_hou_result_notice_stack4.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "247_hou_result_notice_stack5.png",
+    "sha256": "2c3cd459d9dac3362a9e109243a869eb806e34cb25ec098aca030711b5496a5f",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/247_hou_result_notice_stack5.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "248_hou_result_notice_stack6.png",
+    "sha256": "987cb411a68bdb80f72cda06479a6a8c2969f795be664685271d2f430b9c72a8",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/248_hou_result_notice_stack6.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "249_hou_result_notice_stack7.png",
+    "sha256": "e8e1cc630da50778a18d21d60c1f866c45b6c99da42a6435caf2cee14fd05000",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/249_hou_result_notice_stack7.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "24_original_saved.png",
+    "sha256": "3f075cd900a963ea60dabe979ba397af11c0157100843f08de3c9cdd06d777ce",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/24_original_saved.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "250_hou_result_notice_stack8.png",
+    "sha256": "95e1b30022dad74aa47d5c18a67ff59e02ba5a83e0b1a10abdfb408b64df994d",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/250_hou_result_notice_stack8.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "251_hou_result_notice_stack9.png",
+    "sha256": "42ff270ba4f7c59178ef3c60250932c0bc212c981794cb80c88abfacc85e360d",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/251_hou_result_notice_stack9.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "252_hou_result_notice_stack10.png",
+    "sha256": "22a8b8049ba2b076fe23e38ed762d5dcd875348d79392117c0e76638bb6b3cd2",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/252_hou_result_notice_stack10.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "253_hou_result_notice_stack11.png",
+    "sha256": "357b8e84dc8d1257c08e1b0431e009782636219445885177f86b4eb792b65570",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/253_hou_result_notice_stack11.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "254_hou_after_year_council.png",
+    "sha256": "f214a7830ac0edc634e798970d630682c9b377b0759c562febb3b0cf1ea44627",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/254_hou_after_year_council.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "255_hou_failed_save_dialog.png",
+    "sha256": "90a248a8fba1a0b1f42dcf29ffddbfdaff3031555f7a8a62826a215e52c84b97",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/255_hou_failed_save_dialog.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "256_hou_failure_government.png",
+    "sha256": "4b53ccccaad22ea74bfb893e11fcc42152a16b58e61d548a32eb07b083eea964",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/256_hou_failure_government.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "257_hou_load_branch_dialog.png",
+    "sha256": "0390c7875f0195bbfa95a559b70f710c3126465ec44e5ead942ccd26096ae6fa",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/257_hou_load_branch_dialog.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "258_hou_initial_selected.png",
+    "sha256": "d346c74d89ae48f9d6b8494b6c0d0489bd3101495d8be0da86a79598ed5e56a9",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/258_hou_initial_selected.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "259_hou_reload_confirm.png",
+    "sha256": "e1e9c141519c0a7727221b97c7554e8550a84ad779f4ef51bb38e86827689a62",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/259_hou_reload_confirm.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "25_quit_state.png",
+    "sha256": "9213d7c69d38fd7877526ef26c98316f36e693a83c10c7be5a6590df3977fd4d",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/25_quit_state.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "260_hou_initial_reloaded.png",
+    "sha256": "08f63becc855ab3489ee53e21e12c4d838d675844a2e44ba8a59398ad5980904",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/260_hou_initial_reloaded.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "261_hou_dai_vote_before.png",
+    "sha256": "b19db3c7892abb6c3fc3cbcd365c8cc55c2ef852da095ab0df64de237a5f3c59",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/261_hou_dai_vote_before.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "262_hou_dai_vote_after.png",
+    "sha256": "0bbc5412a904c9075b03049f2bb55de2aacb31fcda2e8e0169dca7c0780267fc",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/262_hou_dai_vote_after.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "263_hou_min_vote_before.png",
+    "sha256": "412183c7653ee706555db9de2b4c2dc4647ca1e4c70e0c188d904fb21c5fab55",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/263_hou_min_vote_before.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "264_hou_min_vote_after.png",
+    "sha256": "e945a2d686676a9412eb2d165754d31acd2e19dcb8f8825084e8500bfdb04926",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/264_hou_min_vote_after.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "265_hou_czc_vote_after.png",
+    "sha256": "1ce2063cb6abc6b97f832ce663ddff4b1c4c51c56ee92fe33d62df09e135b4bd",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/265_hou_czc_vote_after.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "266_hou_positive_midyear.png",
+    "sha256": "6040d442be4ffc9561572103f47ecf8598f85aa2cc5b22e96f922709e5a8025a",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/266_hou_positive_midyear.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "267_hou_positive_notice.png",
+    "sha256": "3e68f0d595c56f1e1a5a7fa2d2100d59a1e386304d1e3875c7a9c60a4cc47d24",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/267_hou_positive_notice.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "268_hou_positive_spring.png",
+    "sha256": "28f3d2a1e62e181eca4b4bf56d496d728592e08f92f746be0e99e55cec84e869",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/268_hou_positive_spring.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "269_hou_positive_midyear_notice2.png",
+    "sha256": "714a2aaba349e1c614413d06d965806b86e089699e07996620f23844c91a7227",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/269_hou_positive_midyear_notice2.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "26_experiment_launch.png",
+    "sha256": "2e5c02b2aa4bbffe9a8d5d35e12001cd93b3fbc4b63841b44c54de6704ccc68c",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/26_experiment_launch.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "270_hou_positive_midyear_notice3.png",
+    "sha256": "dacbf686a4595b483f2b8f95afaae1ea84d0d3973e274da21ca98d3a2d199cf1",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/270_hou_positive_midyear_notice3.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "271_hou_positive_midyear_notice4.png",
+    "sha256": "c78cb6eb6544e61ceaf6c2f6359fcc32f8596c7d4015da17c69ec9779b074040",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/271_hou_positive_midyear_notice4.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "272_hou_positive_july_ballot.png",
+    "sha256": "a8954025e8e5790ab42557d9e7980c9bff646363fda315bfd9bb2dc9fb67dfb7",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/272_hou_positive_july_ballot.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "273_hou_positive_autumn.png",
+    "sha256": "ade1ba1813b15ae2ccf367d3bc832300c3f3245259b2c87f52e1978869f09b29",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/273_hou_positive_autumn.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "274_hou_positive_near_deadline.png",
+    "sha256": "342b506c5349cfc075a4fb775acb9368902b1eb88f7098366e4b312f38976661",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/274_hou_positive_near_deadline.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "275_hou_positive_november.png",
+    "sha256": "f1d5c0ce2be23f2c78d991d4bf861d5cbd2370c48df78d749550f1bfa6ee8448",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/275_hou_positive_november.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "276_hou_day364_ballot.png",
+    "sha256": "80f335338ae70ae3c2350460d6ab9b2547609850ae65ac2904af312b27212fe7",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/276_hou_day364_ballot.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "277_hou_nov30_ballot.png",
+    "sha256": "195ca299554287c3ea2c7b8830c6d72a52bf57e82e5f04e196e4012e63f9778a",
+    "path": "/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/docs/gameplay/runtime_evidence/overnight_2026-09-06/277_hou_nov30_ballot.png",
+    "retained_in_repo": true
+  },
+  {
+    "name": "278_hou_day364_court.png",
+    "sha256": "42b7e7d19c31c4d45e541e9b73e9e1955074cd69a75b5a329e73242c15fe653e",
+    "path": "/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/docs/gameplay/runtime_evidence/overnight_2026-09-06/278_hou_day364_court.png",
+    "retained_in_repo": true
+  },
+  {
+    "name": "279_hou_day364_save_dialog.png",
+    "sha256": "309ee0e97203c9ef9f30fe99d319926ce6b72dd8a43d375da07005e73ff3d6e0",
+    "path": "/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/docs/gameplay/runtime_evidence/overnight_2026-09-06/279_hou_day364_save_dialog.png",
+    "retained_in_repo": true
+  },
+  {
+    "name": "27_experiment_menu.png",
+    "sha256": "d4e896de972c8c8cef6968277704098f3087bb8c62e049f707816e892916cceb",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/27_experiment_menu.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "280_hou_day365_result.png",
+    "sha256": "d067785c7fa248b33d678588833797629741540aaa6d96ea7795e63ccbf11106",
+    "path": "/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/docs/gameplay/runtime_evidence/overnight_2026-09-06/280_hou_day365_result.png",
+    "retained_in_repo": true
+  },
+  {
+    "name": "281_hou_native_reform_notice.png",
+    "sha256": "ed422997bee70116f735805c4287606512733695ac1aa49c1d3337fa4dee4d25",
+    "path": "/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/docs/gameplay/runtime_evidence/overnight_2026-09-06/281_hou_native_reform_notice.png",
+    "retained_in_repo": true
+  },
+  {
+    "name": "282_gong_day365_court.png",
+    "sha256": "95cfc7f815a0026982cf9aebde817b6817cb4fb66d5a299a2ecc255b38a8bd35",
+    "path": "/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/docs/gameplay/runtime_evidence/overnight_2026-09-06/282_gong_day365_court.png",
+    "retained_in_repo": true
+  },
+  {
+    "name": "283_gong_day365_government.png",
+    "sha256": "3dd0a4689add07b4b51adf98bb5651f38e0dcee3e703e681404cb0b02ea1d2a0",
+    "path": "/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/docs/gameplay/runtime_evidence/overnight_2026-09-06/283_gong_day365_government.png",
+    "retained_in_repo": true
+  },
+  {
+    "name": "284_gong_council_cleared.png",
+    "sha256": "0792a09891c6f82cec9e8288d94d3af490fedbf2cea88c127b47b2c25786193e",
+    "path": "/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/docs/gameplay/runtime_evidence/overnight_2026-09-06/284_gong_council_cleared.png",
+    "retained_in_repo": true
+  },
+  {
+    "name": "285_gong_save_dialog.png",
+    "sha256": "0840a4f3f490d8b78c27183550fca1205bb42e9ca5c3da9d0d235c44f126ae9b",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/285_gong_save_dialog.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "286_gdd_heir_death_console.png",
+    "sha256": "742d3c4d2064312d0f6437b4609fe2e3cd4bf35538a665f62ce9245854afa449",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/286_gdd_heir_death_console.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "287_gdd_heir_death_notice.png",
+    "sha256": "f6baaf2307000478682a9af8b9912e7fd976562540e2036cee3ff8ba2dde05e4",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/287_gdd_heir_death_notice.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "288_gdd_named_heir_created_notice.png",
+    "sha256": "352993c6096cbe55f4d332de80070ef3d56aa47ec60e8c00c574d64fd60823e4",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/288_gdd_named_heir_created_notice.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "289_gdd_named_heir_lost_notice.png",
+    "sha256": "edd5c868c513c77dcd9e00ad8982ba1615a6a7deaff2785049b663379f1cd888",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/289_gdd_named_heir_lost_notice.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "28_experiment_selection.png",
+    "sha256": "bea325339a33f0248ec2b29591e064ba875d7bbebb68201ad5c37dc0827b3fee",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/28_experiment_selection.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "290_gdd_named_heir_missing_court.png",
+    "sha256": "28b5f88084b997b3e56a6426e09a6daf50d079761f3712e33eb41058cecacecb",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/290_gdd_named_heir_missing_court.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "291_gdd_heir_bug_save_dialog.png",
+    "sha256": "c8229c4f071ecef63c4f9c0da31160697f1243b806a9cf41c702673d71d3e4bc",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/291_gdd_heir_bug_save_dialog.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "292_heirfix_quit_confirm.png",
+    "sha256": "fb47764992f4a8290338c7dd64096fe0e6856026a56e5a74e21defd62030257e",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/292_heirfix_quit_confirm.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "293_heirfix_relaunch.png",
+    "sha256": "bfe75b5f2fb0dda24d276feac531a384837ba01895d77bd4243c6ddbcf511ecb",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/293_heirfix_relaunch.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "294_heirfix_mainmenu.png",
+    "sha256": "fd8fdf2a0b09e09bdf02c2c9ea517a63205b6d86b7704800d42e99151a981f01",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/294_heirfix_mainmenu.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "295_heirfix_save_selection.png",
+    "sha256": "66783c887ed9df148904f4e82ecadafbb3db1c9a0656f7f5a4ddb51b75f47221",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/295_heirfix_save_selection.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "296_heirfix_gong_selected.png",
+    "sha256": "70a14e59e61ddef58985f212e5f1829284460e39acd26d5fc307cfeb012cdac0",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/296_heirfix_gong_selected.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "297_heirfix_loaded.png",
+    "sha256": "da2feafd3bec13a921cb748a0bd6489eaa24ab7c72b79e8466f713ffbd7f130a",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/297_heirfix_loaded.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "298_heirfix_death_day0.png",
+    "sha256": "4930c60343b3baa93ef32b6f1d9b0d8b070da9e0d906417d85e4da142c4be774",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/298_heirfix_death_day0.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "299_heirfix_death_day1.png",
+    "sha256": "3c83dd287f178e609c3a75fa481fe900e91321d9481c3ae91ece676e4ea6b4ac",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/299_heirfix_death_day1.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "29_experiment_selection_ready.png",
+    "sha256": "17af18ad1c6d468a241a1298671260df41e1a65b6c84982a6dc4d26826dbfb96",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/29_experiment_selection_ready.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "300_heirfix_death_day1_court.png",
+    "sha256": "1b73835a8e710602e83b67c53305d120e363a5f9f8b99137214ba94879b93e94",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/300_heirfix_death_day1_court.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "301_heirfix_crossmonth.png",
+    "sha256": "64ab5adccce20873beff130e973a28a94d7f86d6d3a76e81beed7a1aa7c896f3",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/301_heirfix_crossmonth.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "302_heirfix_death_crossmonth_court.png",
+    "sha256": "e41b64e5662d165889d0ce62c2015b90b11aa23678653377c0d005db9d331ad4",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/302_heirfix_death_crossmonth_court.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "303_heirfix_death_save_dialog.png",
+    "sha256": "302186e22cdc43ebdc5e4595a693b46fcadfc83f701d60352f2e9793c3f84c1d",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/303_heirfix_death_save_dialog.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "304_gdd_disinherit_window_recovered.png",
+    "sha256": "ba593b19134b1f18587cd3804c62de4bb6b248a6cbb3e9958a3a31ef12ce1595",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/304_gdd_disinherit_window_recovered.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "306_gdd_disinherit_dialog_state.png",
+    "sha256": "2883b24321b587e8d321eb0c092554f1bccaa1fc71938c047aa2ad02a4609000",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/306_gdd_disinherit_dialog_state.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "308_gdd_keyboard_window_probe.png",
+    "sha256": "ae863a4a3c103b916a9e86c430a4f0bf70ab0a1c4ae1a3c4c00c9c643d7f478d",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/308_gdd_keyboard_window_probe.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "30_selection_retry.png",
+    "sha256": "3a3cdde8e4f595c8096bf2cf8fb68b7482b4a7461e20a1ce90760b322f2a8ca2",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/30_selection_retry.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "310_computer_use_service_reconnected.png",
+    "sha256": "0fa6bef32582cb4b5b7b44596f276495e9c28ea77ee4a160a4a04f97b048340b",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/310_computer_use_service_reconnected.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "311_load_after_service_recovery.png",
+    "sha256": "f055b7a0192ee8bc1346f348df4ac6182b1b9edd246780c6453a78b1b3e3c135",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/311_load_after_service_recovery.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "312_gdd_disinherit_confirm.png",
+    "sha256": "c7e983c20d6f4349e50f3ebe586d304fd1616dd44ba488674eaff8f53d833007",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/312_gdd_disinherit_confirm.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "314_gdd_disinherit_after_load_state.png",
+    "sha256": "ca3105684355adb4d6fb57b60b7d935b20cde096a9670493aa40d1cac1790ee3",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/314_gdd_disinherit_after_load_state.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "315_disinherit_helper_reconnected.png",
+    "sha256": "58d0e48c057ad9e6feb4bbdea3ab81536c3890500f4d9faa4703a7c85ca6c8a3",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/315_disinherit_helper_reconnected.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "316_disinherit_native_confirm.png",
+    "sha256": "827182795c880c0bfb5417232d30c309e851ddba0debdca8137c58d9c885449b",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/316_disinherit_native_confirm.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "317_disinherit_day0.png",
+    "sha256": "03066314e9317294f9a80fc638444d0cdab35d3c25335eafa574c5538752b26d",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/317_disinherit_day0.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "318_disinherit_day1.png",
+    "sha256": "075daddcda37c362448035e7c28db41308e58c3e564182c88ba1aaa4c0676a60",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/318_disinherit_day1.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "319_disinherit_newheir_notice.png",
+    "sha256": "83f150f8b91f5c8ac570f5a7de546d3db136aef0799200c819c61d2d33d35207",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/319_disinherit_newheir_notice.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "31_experiment_start_options.png",
+    "sha256": "cbb5dd8d50ede8cbddc61fc28be031adbb223b2c3f27c235df458f6fae713492",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/31_experiment_start_options.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "320_disinherit_crossmonth.png",
+    "sha256": "dff0d824c1d1d10f5e90414d63e1aa2acd8826ed254119aa9a36b2ee1f933524",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/320_disinherit_crossmonth.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "321_disinherit_crossmonth_court.png",
+    "sha256": "27a121a74fc318bd4485fb93fd99a843bfdb35c2109b7080f97c24250f014f7f",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/321_disinherit_crossmonth_court.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "322_disinherit_save_dialog.png",
+    "sha256": "b1883ace2c6d49289a9134b8fdd9c1a0f4bf4e7efc961c77b2672775fd9743e5",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/322_disinherit_save_dialog.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "324_succession_load_recovery.png",
+    "sha256": "00999271acb8fce9b7f116fc9ddb7a59287ecb61df7c19cce419ec8ced72a1c8",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/324_succession_load_recovery.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "325_succession_confirm.png",
+    "sha256": "0ba6c99011a663501b6826127d7d43215ea003529c0482a685f18d88e59fdc8d",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/325_succession_confirm.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "326_succession_loaded.png",
+    "sha256": "d17e48d32f60ebab09edd68411b0c3fbc3dc2e34f00765cd2d27cb3877cd52fc",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/326_succession_loaded.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "327_gdd_normal_succession.png",
+    "sha256": "d45d8c8c5af5cbf0ee49e46716a83aee18243feb94924eb86312aed058a4ab60",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/327_gdd_normal_succession.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "328_gdd_succession_notice_stack.png",
+    "sha256": "f2b8aedfbde8ceb1ea3c8a6dcf196bf9f8ed54d114a4fb764975a89d05e78558",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/328_gdd_succession_notice_stack.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "329_gdd_succession_notice2.png",
+    "sha256": "ff652b85fa2d89d3027191a64156bd0afafcb1f5d0c5405e6a3708e6cdf64dcb",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/329_gdd_succession_notice2.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "32_experiment_world.png",
+    "sha256": "9811e999d9e1ffdf963e07d16a050e7e1d8368eb7d79de067b92194fe02befcc",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/32_experiment_world.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "330_gdd_succession_ruler_notice.png",
+    "sha256": "93f891196dc8caaec3cca4613e5506bda46639b54a580ac1e8b504aec370d4c7",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/330_gdd_succession_ruler_notice.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "331_gdd_succession_final_notice.png",
+    "sha256": "4b0656389d56ba7b864f55872da68d56bd186d7e0aa77b037aa7647e8dc1c387",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/331_gdd_succession_final_notice.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "332_succession_notice_remaining.png",
+    "sha256": "f47a048b68270fe910ea46f43c500e121780c3874b2546f16e5bf6f30ba0b3a4",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/332_succession_notice_remaining.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "333_succession_heir_overwritten_court.png",
+    "sha256": "797d91a65d126bc3c54979f0e988594df7710262137fb95d02bf362fa39caa6a",
+    "path": "/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/docs/gameplay/runtime_evidence/overnight_2026-09-06/333_succession_heir_overwritten_court.png",
+    "retained_in_repo": true
+  },
+  {
+    "name": "334_succession_bug_save_dialog.png",
+    "sha256": "0b923d01b824b1d59aceede99476236ee4b40ad8cbff0ba52f4352646d3f4bed",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/334_succession_bug_save_dialog.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "335_final_heirfix_quit_confirm.png",
+    "sha256": "3210f130e06546777780d4b8ce14767c264e22a60fac15ae0f01eefedfd1f45c",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/335_final_heirfix_quit_confirm.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "336_final_heirfix_relaunch.png",
+    "sha256": "33913774742bcfae584caf6aa240cb2af9ec9bf12d71305fa4b5d46ddd1e11f5",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/336_final_heirfix_relaunch.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "337_final_heirfix_checksum.png",
+    "sha256": "910fc020fd2cac29fe46566a5811629d9a0a5a9ee5b642977c11fd110b5ac391",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/337_final_heirfix_checksum.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "339_final_heirfix_menu_state.png",
+    "sha256": "98b9344937f1de04b72c469f92dfa8b1530ea36a51b365f7e9686042178e134c",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/339_final_heirfix_menu_state.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "33_experiment_intro_closed.png",
+    "sha256": "800e774ccdc7d42f883c513372fecc74a1f0adee2186b4dd400fea66f2106bf8",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/33_experiment_intro_closed.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "340_final_heirfix_start_verified.png",
+    "sha256": "b371fd27f87841723851e2fd20b9b52a775e01e07bc9f83bb80b421d4103a68a",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/340_final_heirfix_start_verified.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "341_final_heirfix_campaign_loaded.png",
+    "sha256": "87a7e5442d4615b2ad63e6513ea67401c645c2cdb84843bbfd3bec715a63c8ac",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/341_final_heirfix_campaign_loaded.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "342_final_succession_day0.png",
+    "sha256": "376a5d5ec8d02197431aa989e12b88780ffd4ae435069aacff918b4d32dce1a1",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/342_final_succession_day0.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "343_final_succession_notice.png",
+    "sha256": "86de6de787a7818025a4ee866d9d83985acce5d3f88aabb015e779f18600c3dd",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/343_final_succession_notice.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "344_final_succession_placeholder_notice.png",
+    "sha256": "bee35b36a06a713e709315816aee0468030b0635f0d7ac0d6ce093752452bc74",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/344_final_succession_placeholder_notice.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "345_heir_pending_save_dialog.png",
+    "sha256": "3bcbe83613ab39162071688f3f68fbbffd69d751a62a7d823481c4947faa327b",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/345_heir_pending_save_dialog.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "346_heir_pending_load_dialog.png",
+    "sha256": "1a9bd0f2b36ecf8dee178de9bec2813da2c5e3e2ffad8c0d9251cbff0b15259a",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/346_heir_pending_load_dialog.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "347_heir_pending_reload_confirm.png",
+    "sha256": "871ccf898292ea19ff377bf7b11692b9aa50db34e84879744ed9195e62669ad6",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/347_heir_pending_reload_confirm.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "348_pending_reloaded.png",
+    "sha256": "0186a73f2db167c625ead8b2f74bdc26885d36f61e213400f2273f8aae3d905c",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/348_pending_reloaded.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "349_succession_fixed_day1.png",
+    "sha256": "f3d4054787d84107619a70cc4f23d594331a28001f2e058ff15878be9eb3dd0a",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/349_succession_fixed_day1.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "34_gui_death_date_only.png",
+    "sha256": "5b6b5dd880febb993bec471ffeb10cc16fb895636e40bcd556739333db544fe6",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/34_gui_death_date_only.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "350_succession_fixed_day1_court.png",
+    "sha256": "b486ee2ae15b1df2a2369daa43cac81f9370a4a74222acfa5cd18499a5a358dc",
+    "path": "/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/docs/gameplay/runtime_evidence/overnight_2026-09-06/350_succession_fixed_day1_court.png",
+    "retained_in_repo": true
+  },
+  {
+    "name": "351_succession_fixed_crossmonth.png",
+    "sha256": "532f921931344fed1cdabafe00e2e69e4c4f0256e16ef33994aca206e8ab952d",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/351_succession_fixed_crossmonth.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "352_final_succession_crossmonth_court.png",
+    "sha256": "1d743c093cb7e85c8a2dca49ac241138bdc317b12d96f41488634d6a64441352",
+    "path": "/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/docs/gameplay/runtime_evidence/overnight_2026-09-06/352_final_succession_crossmonth_court.png",
+    "retained_in_repo": true
+  },
+  {
+    "name": "353_final_succession_save_dialog.png",
+    "sha256": "dab77376d8dd2cd790aaf5ba2842a5a5e4aaa61f7fd67fd6e5f35e53aaa1c736",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/353_final_succession_save_dialog.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "354_succession_fixed_saved.png",
+    "sha256": "c4d17f7141b4facdc5399bfe661cdb20e8644531bfe35ac2ed9ca1349d0e4851",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/354_succession_fixed_saved.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "355_final_death_load_dialog.png",
+    "sha256": "67a93f3520a37962164d77ad64f7f627dd6071ca23f2b364ddb72b083b9dce07",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/355_final_death_load_dialog.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "356_final_death_load_confirm.png",
+    "sha256": "acde8fb1a69fab6ac4ac7240440fb124e6f5f291620c8756534c7e7b9a9fcfa2",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/356_final_death_load_confirm.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "357_final_death_loaded.png",
+    "sha256": "cd3bfa0b65bd4ce79632ac4489c1d4445b18869008c7cfb2bc887b8f5dceebc0",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/357_final_death_loaded.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "358_final_death_day0.png",
+    "sha256": "ac9a5285e12ecf3e2619b68cf942a322d40f8938756119269a5c7e25d74aab5f",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/358_final_death_day0.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "359_final_death_day1.png",
+    "sha256": "19c401847b7b05d2fa9d9651e5905fc3e9c6098cabf3b2ea30ba26e75eaea4cb",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/359_final_death_day1.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "35_nun_monarch_name_only.png",
+    "sha256": "c6e235fcf2930858c3de18aff67c28d724b8687cd9eb7e33713740a791540f22",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/35_nun_monarch_name_only.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "360_final_death_newheir_notice.png",
+    "sha256": "bc13b206006858d576dea1e67e7e9a8ed59096776e5e69914b368994c48d73d9",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/360_final_death_newheir_notice.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "361_final_death_crossmonth.png",
+    "sha256": "3830b5a2a58e5ccf48d137f281a7f7b54435b978053362ecc0c0ba7e9a00b94e",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/361_final_death_crossmonth.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "362_final_death_crossmonth_court.png",
+    "sha256": "9fe127086bb3e04b58bd0fd159007e45c9a6fcb1d3eee767fa01ecbca9bf5e2a",
+    "path": "/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/docs/gameplay/runtime_evidence/overnight_2026-09-06/362_final_death_crossmonth_court.png",
+    "retained_in_repo": true
+  },
+  {
+    "name": "363_final_death_save_dialog.png",
+    "sha256": "5bfd7409e1457d0b89b94aaa8babf98fbf2beb65aad77a8c8878ea452249495c",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/363_final_death_save_dialog.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "364_final_disinherit_load_dialog.png",
+    "sha256": "52b7d7bc73422c969946c870f8824d05fd56348468526b71fc453d6cb9f32423",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/364_final_disinherit_load_dialog.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "365_final_disinherit_load_confirm.png",
+    "sha256": "5e6215e7da25917944b0262354c5bbce9e4c5ce25e7d68f1f502787d4c0ff967",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/365_final_disinherit_load_confirm.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "366_final_disinherit_loaded.png",
+    "sha256": "cce8c46e71f6815874f62824bee266124a373cb264ec90dd6a78c1fa634628fb",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/366_final_disinherit_loaded.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "367_final_disinherit_native_confirm.png",
+    "sha256": "57caf9d25e333160f5850c9502db6226460daae1c11548671350efda37277ac0",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/367_final_disinherit_native_confirm.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "368_final_disinherit_day1.png",
+    "sha256": "1185d049cb2fabcdbd08226695305af3da74be9bb82f3ca5a6a93fd61bc7a36e",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/368_final_disinherit_day1.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "369_final_disinherit_heir_notice.png",
+    "sha256": "35e60bae15dfcec05d2f7070d46f361684ba371909a2d5a729d652b9dee69a9d",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/369_final_disinherit_heir_notice.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "36_tzz_both_fields.png",
+    "sha256": "46962fd71a555f6da4d5e3fac50f52dc211f0162cbbfd83a78aca039d035404f",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/36_tzz_both_fields.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "370_final_disinherit_crossmonth.png",
+    "sha256": "68330663c8be2fa819bc30200869bb847640aac29493ca7938c79e525eb0598c",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/370_final_disinherit_crossmonth.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "371_final_disinherit_court.png",
+    "sha256": "5a1d1702b2015114641e3001fa2e6ce37630309644873522107ceb72e05c9ae7",
+    "path": "/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/docs/gameplay/runtime_evidence/overnight_2026-09-06/371_final_disinherit_court.png",
+    "retained_in_repo": true
+  },
+  {
+    "name": "372_final_disinherit_save_dialog.png",
+    "sha256": "cb46890ac973e5efb1e6c042dc13bb7778ee51b5634b4c8d5f45b1842d5bf61a",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/372_final_disinherit_save_dialog.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "373_hak_load_dialog.png",
+    "sha256": "b5dcb9264317264d48aede2f33cf9768b5aee9c1ec6f9dfa982f5e0803374eed",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/373_hak_load_dialog.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "374_hak_load_recheck.png",
+    "sha256": "f9b061dd55326327e491294d50da6406b90ab06b2b53ae085e3a33ad5b659da9",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/374_hak_load_recheck.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "375_hak_load_confirm.png",
+    "sha256": "fb91f63fe0c5c1cd45e67d5eaa09da7fb0b2d6d1674f90031b86a1925673e0a5",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/375_hak_load_confirm.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "376_hak_loaded.png",
+    "sha256": "88e55bae13a80f3a8f62175156ce9858d526f47b7442135ebdd144ccfe37b3c2",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/376_hak_loaded.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "377_hak_opening_government.png",
+    "sha256": "53fee5bf3007fd5765db7901d0dc8f4d2ec5946831eab671d0f1440af0f5dfca",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/377_hak_opening_government.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "378_hak_daytick_army.png",
+    "sha256": "c95d99a5ca985656b446800172d1acc6f1a93ca234bc0013a9d7e05f85910f12",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/378_hak_daytick_army.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "379_hak_opening_refreshed.png",
+    "sha256": "eea8928d763f00399481b2006bc2b46d45ee4b25d7209be1f2e323288d988321",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/379_hak_opening_refreshed.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "37_lil_previous_date.png",
+    "sha256": "cb591d92b9f8178201cdcf0eab40c660d982979f673705acbf6753a4c32e458d",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/37_lil_previous_date.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "380_hak_estates_before.png",
+    "sha256": "55767f63f7e35b31ca5d3b95feaee3b35e30577ae6a7ac608be7aa35a4180cc4",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/380_hak_estates_before.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "381_hak_privilege_choices.png",
+    "sha256": "060497c1756625f82524b97aa52f8dfde0b8ce61f01cfce7f69d5dbd63f4c67a",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/381_hak_privilege_choices.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "382_hak_freehold_confirm.png",
+    "sha256": "084ca2f75a14c4b46912b09ad7842a4f4470fdcd0d3d666ad159fb2b406c7fed",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/382_hak_freehold_confirm.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "383_hak_freehold_grant.png",
+    "sha256": "77162907572315288918790513ac4656c3014de646cadec6337c3587c8dcd198",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/383_hak_freehold_grant.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "384_hak_freehold_active.png",
+    "sha256": "5d307fb40b6cbf00961f551444cd729d5085bfd7b32f0f5d51d126ec2033812c",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/384_hak_freehold_active.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "385_hak_franchise_confirm.png",
+    "sha256": "f5807c3723981208215b5c303307fab9d66cbd51bb7b8f0220f81cdd48ee77f0",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/385_hak_franchise_confirm.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "386_hak_militia_confirm.png",
+    "sha256": "809000e142f53209ee47035b5592a6caf7076779f8a32a8cf3c0a610db1e8475",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/386_hak_militia_confirm.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "387_hak_three_privileges.png",
+    "sha256": "b2925277aab514d689d859f772e0d5ab67900401426ec9fc45f30e0733e7b955",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/387_hak_three_privileges.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "388_hak_baseline_save_dialog.png",
+    "sha256": "33874ec87739a6a2090e4f8398530281099c6999491b1fd43abe689e3f091c7e",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/388_hak_baseline_save_dialog.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "389_hak_pause_menu.png",
+    "sha256": "db5954bf21e1961c9fbd6e46345d1c6c899bd644e43a02254d6ad7823c3d70f8",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/389_hak_pause_menu.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "38_dai_unchanged_control.png",
+    "sha256": "3d5013c9e0d03b5316c3ac8c58cd21521161524fa8da329ce05b758a19b7e45d",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/38_dai_unchanged_control.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "391_hak_save_state.png",
+    "sha256": "c48b9f2f094d62e1dc9a848e78ad7a475a92b116367de79a65826a93cd507e6a",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/391_hak_save_state.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "392_hak_baseline_saved.png",
+    "sha256": "83556b4ff94b8bf36a38a82e611614cde46554b8a079c34ab7fefb1f4eb90dc9",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/392_hak_baseline_saved.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "393_hak_rt20_support_army.png",
+    "sha256": "990d96b37d98a2ed378d1bdb29c80693ad6d4e6c09789260ee159f9b1adac86b",
+    "path": "/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/docs/gameplay/runtime_evidence/overnight_2026-09-06/393_hak_rt20_support_army.png",
+    "retained_in_repo": true
+  },
+  {
+    "name": "394_hak_rt20_save_dialog.png",
+    "sha256": "c3d8590ac4fff6cc10eed63a1382ba76d17093a2898de6f099410486d7f9e4be",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/394_hak_rt20_save_dialog.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "395_hak_rt20_saved.png",
+    "sha256": "4e6338da9ef2d41d7f664cf98ac517b7344b52fac7ba3ff3b2ddc88575378931",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/395_hak_rt20_saved.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "396_hak_farmer_dominance.png",
+    "sha256": "fa3ab48ddbe4dbabce6d6406625951c9389d18f515e0f8cd37c3d8960a5da1a9",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/396_hak_farmer_dominance.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "397_hak_rt19_farmer_no_crown.png",
+    "sha256": "cfc6af54e708499160ca98b5a52b829c94957b4d4d94a7d08393ff876d7c8a1b",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/397_hak_rt19_farmer_no_crown.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "398_hak_rt19_farmer_clear.png",
+    "sha256": "ceb256da0616dd0e3326aca070cfe83888da97918ad1a85bd4a2e9d05b4da3b3",
+    "path": "/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/docs/gameplay/runtime_evidence/overnight_2026-09-06/398_hak_rt19_farmer_clear.png",
+    "retained_in_repo": true
+  },
+  {
+    "name": "399_hak_farmer19_save_dialog.png",
+    "sha256": "62b2696cf0b8ae5c7e8eba4685a687ddf8e20f62edd58029e20a9f286343b75d",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/399_hak_farmer19_save_dialog.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "39_experiment_save.png",
+    "sha256": "14fefd16320e2d482fc3feb273b5f5ea48319d1271a899c324e9588131da5755",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/39_experiment_save.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "400_hak_farmer19_saved.png",
+    "sha256": "cb66439fcb09ebd1b9f2b8e14c843f6c2236857f063b6df622bc31f5af63576c",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/400_hak_farmer19_saved.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "401_hak_army_dominance_again.png",
+    "sha256": "8b1e7698b7f3dc5a9b54960c3b7e842d8f7c838a89c8bf61e66e740c6f75689e",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/401_hak_army_dominance_again.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "402_hak_rt19_army_crown_event.png",
+    "sha256": "a6cb3d47e22992762c1a5ee5148be3c7ab9d9f188d95b43da83e76f74995416f",
+    "path": "/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/docs/gameplay/runtime_evidence/overnight_2026-09-06/402_hak_rt19_army_crown_event.png",
+    "retained_in_repo": true
+  },
+  {
+    "name": "403_hak_crowned_same_ruler.png",
+    "sha256": "39b8e02eb0cce692cd2384803b10f2957a995b3f344a28bf785c1ef32746b455",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/403_hak_crowned_same_ruler.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "404_hak_crowned_privileges.png",
+    "sha256": "568031a8ea8d8e0530da2c68ae1e26591f252cd8ec46bd0d41a2d0d519ab98a8",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/404_hak_crowned_privileges.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "405_hak_crowned_court_clean.png",
+    "sha256": "49c9f45bfb29ab3d1eb797039b391d3727f7441e9dc5e5fc5dcdba13a74ca954",
+    "path": "/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/docs/gameplay/runtime_evidence/overnight_2026-09-06/405_hak_crowned_court_clean.png",
+    "retained_in_repo": true
+  },
+  {
+    "name": "406_hak_crown_save_dialog.png",
+    "sha256": "2972260c29b3bbafd7fe16ced4de0316c6a47de093802c4b423836988a7dfd1f",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/406_hak_crown_save_dialog.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "407_hak_crowned_saved.png",
+    "sha256": "bf9c8c62aeb2b68c714faf1d06ba3431109af6d7ce91911dd5a20e002ffb9fbf",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/407_hak_crowned_saved.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "408_hak_crown_reload_dialog.png",
+    "sha256": "ea4667dfd3c83d10c01feb860daab414e35055f49f877f6ec3cf84be73eb2001",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/408_hak_crown_reload_dialog.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "409_hak_reload_confirm.png",
+    "sha256": "f6cc768c6127ff440bad448cac91a3c528ff7a8f20189e0f1e43c29ff8c8c80d",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/409_hak_reload_confirm.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "40_experiment_saved.png",
+    "sha256": "188cf5bb9723e6767e0e8171c76a1086b0914cd82979c6ad8bc15bebb3f70a18",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/40_experiment_saved.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "410_hak_crown_reloaded.png",
+    "sha256": "8751185a9b539e087d0340cb621433b76dec6a4f3e0db117939c6db565b236cf",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/410_hak_crown_reloaded.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "411_hak_crowned_after_month.png",
+    "sha256": "e6afcb7a1e47fe705e0282dcfff8e4a0bcaa952892e311a29f49cdb10d26c690",
+    "path": "/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/docs/gameplay/runtime_evidence/overnight_2026-09-06/411_hak_crowned_after_month.png",
+    "retained_in_repo": true
+  },
+  {
+    "name": "412_hak_crown_month_court.png",
+    "sha256": "69fda972d43b9bac394d0066ac41f851cbde3947ef99bfa35b12eef1bb6e882b",
+    "path": "/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/docs/gameplay/runtime_evidence/overnight_2026-09-06/412_hak_crown_month_court.png",
+    "retained_in_repo": true
+  },
+  {
+    "name": "413_hak_month_save_dialog.png",
+    "sha256": "710aabcadd611c90ba7fa44dbeb56ae00189557aeea503dc92e33d9af581331d",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/413_hak_month_save_dialog.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "414_hak_month_saved.png",
+    "sha256": "9645a5781878fe69f57f238cce05db25217b0e99f33c8aa9f34cde40375dca75",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/414_hak_month_saved.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "415_hak_civil_load_dialog.png",
+    "sha256": "47ddbc9d0f72472c49935357f3e051586841288474fe4effa8ade05154f6094c",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/415_hak_civil_load_dialog.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "416_hak_civil_load_confirm.png",
+    "sha256": "191785b57d329c6f5b965f30db682c28e239a5f188edb11a6c3f2910fe6a93cc",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/416_hak_civil_load_confirm.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "417_hak_civil_start_loaded.png",
+    "sha256": "dfb04acae3f2f515efb108be0637b5a58accfd5cc66044f5175b2b58e849fa85",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/417_hak_civil_start_loaded.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "418_hak_civil_rt59_blocked.png",
+    "sha256": "86c6c71ee007671036d5d94c5e1cb22d5c5607057034ed3a3f983ae08b6f7d4d",
+    "path": "/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/docs/gameplay/runtime_evidence/overnight_2026-09-06/418_hak_civil_rt59_blocked.png",
+    "retained_in_repo": true
+  },
+  {
+    "name": "419_hak_civil_rt60_event.png",
+    "sha256": "2f855faf25965490aea3a57ddb7d4fccefe68f0d812e295f6cb0f19a9549fe11",
+    "path": "/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/docs/gameplay/runtime_evidence/overnight_2026-09-06/419_hak_civil_rt60_event.png",
+    "retained_in_repo": true
+  },
+  {
+    "name": "41_fix_restart_confirmation.png",
+    "sha256": "87b17903a948de2ba0b2ccef4d3c7755e3267a331e7d554eea61555db8ab12d6",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/41_fix_restart_confirmation.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "420_hak_civil_privileges_preserved.png",
+    "sha256": "b40094c22ba0b4370bc229ac09f8a13dd61e69f7e6662d82d7a904595ee54904",
+    "path": "/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/docs/gameplay/runtime_evidence/overnight_2026-09-06/420_hak_civil_privileges_preserved.png",
+    "retained_in_repo": true
+  },
+  {
+    "name": "421_hak_civil_court.png",
+    "sha256": "c7fdab48f7837fc53e5f62beb4e64b5e0ef59478677c3917e079a90c66071e05",
+    "path": "/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/docs/gameplay/runtime_evidence/overnight_2026-09-06/421_hak_civil_court.png",
+    "retained_in_repo": true
+  },
+  {
+    "name": "422_hak_civil_save_dialog.png",
+    "sha256": "03cc04fc0c203034d705e44e5ed6416c16c4d6aaf8fd9764e6a46c2c70b91e43",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/422_hak_civil_save_dialog.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "423_hak_civil_saved.png",
+    "sha256": "0ef89797edb105a4d5cb6ecd0f686fa3d1ba305427c54929531ef4a524a7c7ee",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/423_hak_civil_saved.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "424_hak_civil_natural_run1.png",
+    "sha256": "3ec3e1a2ba234e3907c7907301814f1b41486ce6d11406411c7e2dfdc323f518",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/424_hak_civil_natural_run1.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "425_hak_civil_notice_state.png",
+    "sha256": "78a06ee662a99b8a110f523ea2d470e4eec485601389d4758c10dec9ee7b78b6",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/425_hak_civil_notice_state.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "426_hak_civil_notices_cleared.png",
+    "sha256": "8dbad65fece78f2cf72bdbacd068c991f9e50889c0a6f2bd3bfd83f85a10e263",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/426_hak_civil_notices_cleared.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "427_hak_civil_natural_run2.png",
+    "sha256": "e4e0071344e77d92bb47675fca6c3f0635de44cec4b36108a63cc09e76775aae",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/427_hak_civil_natural_run2.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "428_hak_notices_state.png",
+    "sha256": "33785b87ccddf75b8fcface23b8b0c7dced5a033759430b485ec0d97ca8dd753",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/428_hak_notices_state.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "429_hak_civil_natural_run3.png",
+    "sha256": "9d92c7ef549d24fe187ee332960e8c04d903f9b2069be347491d4d6bc0e907d4",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/429_hak_civil_natural_run3.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "42_heir_fix_launch.png",
+    "sha256": "6c3d40060777347d81151ab280ab1a5f0306044cedb2d13be22501add465a903",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/42_heir_fix_launch.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "430_hak_civil_natural_run4.png",
+    "sha256": "48b1d86cfc650940f40e583a1870e8211efe5ab71b6673b77d836d032b712a9d",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/430_hak_civil_natural_run4.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "431_hak_civil_pre_election.png",
+    "sha256": "3b8f05b05047bb7ab7fef8fd6daa763a2ebce9184fddc8c1154204b2ac401bf3",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/431_hak_civil_pre_election.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "432_hak_civil_election_near.png",
+    "sha256": "e355030dd42d77d66b3fd7d83643f928d67a985e21290bd305cc7a3ecfbcd16d",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/432_hak_civil_election_near.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "433_hak_civil_election_day.png",
+    "sha256": "c30a82ebadd2a6652deef77189d8b465616b8a118650e6a2c17f01f10c72b05b",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/433_hak_civil_election_day.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "434_hak_civil_election_1111.png",
+    "sha256": "acffeca5178177b87ea8bf6b982445de1328f9f230c1a56cc6e5f11e716eedca",
+    "path": "/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/docs/gameplay/runtime_evidence/overnight_2026-09-06/434_hak_civil_election_1111.png",
+    "retained_in_repo": true
+  },
+  {
+    "name": "435_hak_civil_elected_candidate.png",
+    "sha256": "c5dcacc36b9d52291cfe11f3dde6c4ef1535e73426f7bcb50683ac8948c00bf1",
+    "path": "/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/docs/gameplay/runtime_evidence/overnight_2026-09-06/435_hak_civil_elected_candidate.png",
+    "retained_in_repo": true
+  },
+  {
+    "name": "436_hak_civil_election_after_month.png",
+    "sha256": "cd21d51a06981994e9142cc2a803b8c9d7751c95c9ef58a17566bc8d02b7d425",
+    "path": "/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/docs/gameplay/runtime_evidence/overnight_2026-09-06/436_hak_civil_election_after_month.png",
+    "retained_in_repo": true
+  },
+  {
+    "name": "437_hak_civil_election_privileges.png",
+    "sha256": "51bdfce1ad268b733af234df80f5d886bef5dc2c96d81666900a20f8385ed95d",
+    "path": "/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/docs/gameplay/runtime_evidence/overnight_2026-09-06/437_hak_civil_election_privileges.png",
+    "retained_in_repo": true
+  },
+  {
+    "name": "438_hak_election_save_dialog.png",
+    "sha256": "59bb2eefcf55c1cba05a2d975942b2742ebad62811b4d68e1a0c06755561dd4f",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/438_hak_election_save_dialog.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "439_hak_election_saved.png",
+    "sha256": "c266b6b28aa24ae5d783e9f7c7dc0815ecb1ecc39c951369623d76034b4afc31",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/439_hak_election_saved.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "43_fix_main_menu.png",
+    "sha256": "12d7adf8dd5813f70a9d7c5d7c2ccef954cec43f4ce55a38abac50290e150f07",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/43_fix_main_menu.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "440_yang_load_dialog.png",
+    "sha256": "cbce7449128a7eb6a3417871d566afd4fb7caf021b9ba8ac71668322d4264443",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/440_yang_load_dialog.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "441_yang_load_confirm.png",
+    "sha256": "c11224d56092c98be94615d479b38a01d33760464f535a26146bb66b8a0c8776",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/441_yang_load_confirm.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "442_yang_loaded.png",
+    "sha256": "ab4d1510eaabd0d916a55e990f24e64863d09d1d2e247dad948f39749635fcce",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/442_yang_loaded.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "443_yang_opening_league.png",
+    "sha256": "79df61196e2c0bffcc0f7097d3087c56c6da19c8922ec212dbf508bbfb9cc1ed",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/443_yang_opening_league.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "444_yang_own_diplomacy.png",
+    "sha256": "6ae90a5be55bfd51975ee09d16711374ff68b13658b59d102e5507e1b52a8ff4",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/444_yang_own_diplomacy.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "445_yang_find_capital.png",
+    "sha256": "a90ad640ceeb09fbab27ac4cfd380932c5515c41fd0200a81b4c497abcd4371a",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/445_yang_find_capital.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "446_yang_diplomacy_league.png",
+    "sha256": "44ea3f8424b58d68ec24756b71158ebec870f8a465db535cc936c9110a6945ad",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/446_yang_diplomacy_league.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "447_yang_league_tooltip.png",
+    "sha256": "63d0a17741c4a5b414d096776ccf9f0bc49fbf7c502f07656803106ca06b85b7",
+    "path": "/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/docs/gameplay/runtime_evidence/overnight_2026-09-06/447_yang_league_tooltip.png",
+    "retained_in_repo": true
+  },
+  {
+    "name": "448_yang_reform_details.png",
+    "sha256": "1dbc03a2fbf9d222587335c71838853b00b4f507f3eb405eed762a26762eee3f",
+    "path": "/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/docs/gameplay/runtime_evidence/overnight_2026-09-06/448_yang_reform_details.png",
+    "retained_in_repo": true
+  },
+  {
+    "name": "449_yang_reform_tooltip.png",
+    "sha256": "55c1754614483c4d7d278979d418b4ecc1b6db8d6766f5c31e51d6da2840622d",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/449_yang_reform_tooltip.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "44_fix_selection.png",
+    "sha256": "ca9fc93fa008b5bf56504720e425a0835c2173541fa82a7a11b1595b4df6b3fa",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/44_fix_selection.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "450_yang_gaoyou_province.png",
+    "sha256": "a41bbba306f3911e47b672cc233d0d9bb6c5befb429d747fd75ffefcfea98426",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/450_yang_gaoyou_province.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "451_yang_find_gaoyou.png",
+    "sha256": "9430f6eb56c6583da2921ea047ff9038f7300ce52702b4756a05d31dbfa811d0",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/451_yang_find_gaoyou.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "452_yang_create_city_confirm.png",
+    "sha256": "083eea94fcb7223584a87d33b649395f446a0e2a8da506d2d245a5a3a042851b",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/452_yang_create_city_confirm.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "453_whu_leave_league_menu.png",
+    "sha256": "2a34cee811408ce23b0e278b285920afeb13b8ddb1ea3677f317c906ce684bae",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/453_whu_leave_league_menu.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "454_whu_alliance_actions.png",
+    "sha256": "1e5e1a49719f57777a02e183f2838fb732ff8ac74ce63dcf49c5472cbd857ba2",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/454_whu_alliance_actions.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "455_whu_leave_confirm.png",
+    "sha256": "0c44e4ec1d0501505bdc74a9a8a116331abe61eb8b6b119774e56db0c7875a1a",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/455_whu_leave_confirm.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "456_zho_diplomacy_after_tag.png",
+    "sha256": "395fbef07002a946ba8c63ff595184564d22192ced27817d2f2efd299ff75de4",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/456_zho_diplomacy_after_tag.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "457_zho_alliance_actions.png",
+    "sha256": "6c2d574a250d85f1021a259b0cb515e0400c71956f2d3a5bb56ab6553c84ebe0",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/457_zho_alliance_actions.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "458_zho_actions_current.png",
+    "sha256": "d79777b50f5d138e31bb6cc2d940182499eef16d83afb04368901f19fe49086c",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/458_zho_actions_current.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "459_zho_leave_confirm.png",
+    "sha256": "40811804d9394813994116d331c745d12f2e797bb447cc378d9db8461c2978cd",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/459_zho_leave_confirm.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "45_fix_start_options.png",
+    "sha256": "db5c83d035192019305bce86fddfa4f66b4c993d33e09d3f95f4cdea427e7ffa",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/45_fix_start_options.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "460_gaoyou_release_available.png",
+    "sha256": "68ad3d38cc30f0a43e5bc567c25159bafa751b621c6d83025c513932eebdf5f4",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/460_gaoyou_release_available.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "461_gaoyou_created.png",
+    "sha256": "403bebedacac5b6c34f8f449c088c21822085b0d914ea36101ec1f804299a635",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/461_gaoyou_created.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "462_gaoyou_gongyi_reform.png",
+    "sha256": "ce4c777ca898920c816610684f98c8fc24280e780fc79780817e15837962088b",
+    "path": "/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/docs/gameplay/runtime_evidence/overnight_2026-09-06/462_gaoyou_gongyi_reform.png",
+    "retained_in_repo": true
+  },
+  {
+    "name": "463_gaoyou_creation_save_dialog.png",
+    "sha256": "da007f90e2aa163eb7b0ded75d6082310ad4f83763a8c12d635e0cf0ba038618",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/463_gaoyou_creation_save_dialog.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "464_gaoyou_created_saved.png",
+    "sha256": "b18b4bf26b35ebfbbc387b955833744f965e689d235e7230bf193c87c7f5339a",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/464_gaoyou_created_saved.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "465_gaoyou_first_month.png",
+    "sha256": "5e1846a60f90b40c761eb4350875042dccae48b6c7bf043e7f5e24c9e7b57f2c",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/465_gaoyou_first_month.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "466_gaoyou_initial_election.png",
+    "sha256": "644faca10725e2c4ed926062a9aa3c98395c50c577325c591a0a9c7ca98fbe7d",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/466_gaoyou_initial_election.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "467_gaoyou_post_election_court.png",
+    "sha256": "b5523242c1643605b7241144da2ac96977ba3489bc5ef6fdf62b324881d53d40",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/467_gaoyou_post_election_court.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "468_gaoyou_month_save_dialog.png",
+    "sha256": "7d954cbdd746986d7dc443e2fdb70a2d2ff87dd3b34e5f81ec4278435869e7da",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/468_gaoyou_month_save_dialog.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "469_gaoyou_month_saved.png",
+    "sha256": "640dbb12da5ec43b36cd5c79070dc6926d059dd3b500c1321c5af5504e104d66",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/469_gaoyou_month_saved.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "46_fix_world_loaded.png",
+    "sha256": "c4fbcbcce9e6a370f098fea045135ffa905b91dfac54723d14d2ba4fad81fc90",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/46_fix_world_loaded.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "470_gaoyou_second_province_loss.png",
+    "sha256": "c681547e7dbb34e17aa7e29986c58da904b3e23b9eebb267d3bfae71c3e78e1e",
+    "path": "/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/docs/gameplay/runtime_evidence/overnight_2026-09-06/470_gaoyou_second_province_loss.png",
+    "retained_in_repo": true
+  },
+  {
+    "name": "471_gaoyou_loss_same_ruler.png",
+    "sha256": "a084313363c42a511a8bf6544b3cf18bdd0e9ee7a3cf0c292a4f66eb8fb8cf1f",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/471_gaoyou_loss_same_ruler.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "472_gaoyou_loss_save_dialog.png",
+    "sha256": "5d0724419779d8cd47278eb8e15038764c685bfee81aa7c5eeeeee1afd9472c2",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/472_gaoyou_loss_save_dialog.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "473_gaoyou_loss_saved.png",
+    "sha256": "2001776651a73d1ac53a99664a9632299fa9897c0d7fa033591182a5e82c3f28",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/473_gaoyou_loss_saved.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "474_gaoyou_one_province_still_ordinary.png",
+    "sha256": "21db0edb5f2fceb983f966c5bbcc447ba7a4511358039ce81f03d4e289467239",
+    "path": "/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/docs/gameplay/runtime_evidence/overnight_2026-09-06/474_gaoyou_one_province_still_ordinary.png",
+    "retained_in_repo": true
+  },
+  {
+    "name": "475_gaoyou_tianzi_opinion.png",
+    "sha256": "f78614d83a8ce4964f3e0bfc7f0c4932cc0cd66e9f3c2420f1a3b7cf2cad6ae7",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/475_gaoyou_tianzi_opinion.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "476_tianzi_opinion_breakdown.png",
+    "sha256": "563e080b26740f69f4b7026109c1fccb4401b615d4976e218f632e6d37f31aca",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/476_tianzi_opinion_breakdown.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "477_gaoyou_petition_disabled.png",
+    "sha256": "4f05294c575a6f6c74ac95220da6066b48a4a60e6dc1e6df9030f16de8236971",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/477_gaoyou_petition_disabled.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "478_gaoyou_low_opinion_block.png",
+    "sha256": "0ef18bef4d760114772e7d44d973098e95231c1116d66ec8dbb787bdf6072098",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/478_gaoyou_low_opinion_block.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "479_tianzi_exact99.png",
+    "sha256": "844cf83c181c3be38b158e4a96a37710d9b1d2410942120ec0a409c1d506ce1b",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/479_tianzi_exact99.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "47_fix_intro_closed.png",
+    "sha256": "bc4460bd2c02d407b3a986e94b2fc4fcbdd77462f81c7ab9396780647ae25856",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/47_fix_intro_closed.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "480_gongyi_opinion99_blocked.png",
+    "sha256": "65b71a5664cf1179a46da4f75bdab64a83742902cc1ebfe86bf7926338dfea2a",
+    "path": "/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/docs/gameplay/runtime_evidence/overnight_2026-09-06/480_gongyi_opinion99_blocked.png",
+    "retained_in_repo": true
+  },
+  {
+    "name": "481_tianzi_exact100.png",
+    "sha256": "0e4681946cb15c0f0b56e2caebc2f8377d27cdd2bca17ec7a9fdde21d35f530d",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/481_tianzi_exact100.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "482_gongyi_opinion100_allowed.png",
+    "sha256": "8642f6c9e41f8661fb0d0fa8077f69d502f431f34d1b1cdd7ab7fad4d2508951",
+    "path": "/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/docs/gameplay/runtime_evidence/overnight_2026-09-06/482_gongyi_opinion100_allowed.png",
+    "retained_in_repo": true
+  },
+  {
+    "name": "483_gaoyou_petition_tianzi_event.png",
+    "sha256": "e69925d15d4dd0a54c7bbd9cd3e695965357bf4b4d3bfcf749e11f51221b09cb",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/483_gaoyou_petition_tianzi_event.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "484_gaoyou_request_arrived.png",
+    "sha256": "0b500b2cab6bff3d15d7dd0394464a0df91fd7df479b99dd289e51913615b2f5",
+    "path": "/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/docs/gameplay/runtime_evidence/overnight_2026-09-06/484_gaoyou_request_arrived.png",
+    "retained_in_repo": true
+  },
+  {
+    "name": "485_gongyi_pending_pause.png",
+    "sha256": "49252d137109edc7db419a640ac3da5d606c4cb5f933a72c6ff2ea0343e433d5",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/485_gongyi_pending_pause.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "486_gongyi_pending_save_dialog.png",
+    "sha256": "393e71ebe167a50f0e6914388cc5f8647a3210966fda44073469822e60a4b6b7",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/486_gongyi_pending_save_dialog.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "487_gongyi_pending_saved.png",
+    "sha256": "a552d6c0135ecbadd5d69b249003feba8cacb893230bc304644d2cd89a13fcfa",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/487_gongyi_pending_saved.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "488_gongyi_pending_became_ineligible.png",
+    "sha256": "c95a0f5034d9f020580f79dbb573d5978ea857f2fbac9f75a0b1d65921947a52",
+    "path": "/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/docs/gameplay/runtime_evidence/overnight_2026-09-06/488_gongyi_pending_became_ineligible.png",
+    "retained_in_repo": true
+  },
+  {
+    "name": "489_gongyi_stale_approval_result.png",
+    "sha256": "5533cef45731cb910098dde24830f1cfd46f687276304bc82a758187aa27d14e",
+    "path": "/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/docs/gameplay/runtime_evidence/overnight_2026-09-06/489_gongyi_stale_approval_result.png",
+    "retained_in_repo": true
+  },
+  {
+    "name": "48_dai_fixed_heir.png",
+    "sha256": "a38469f400440719b7a29b64ee680cede2055faefcbd73d34a03ece801ac4a41",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/48_dai_fixed_heir.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "490_stale_approval_bug_save_dialog.png",
+    "sha256": "698eb57e10d5ba4c56a6b94bd07551435f83885fe53a25015360ae153e9b2cdd",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/490_stale_approval_bug_save_dialog.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "491_stale_approval_bug_saved.png",
+    "sha256": "a87c93bcbe339efe06ef0baed70515c380b603b5928876418c0ee6c7063773a6",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/491_stale_approval_bug_saved.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "492_gongyi_fix_quit_confirm.png",
+    "sha256": "54ec4a6f40d4405d28f990ec2e63c88029178b845adecd7077800c92a482a255",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/492_gongyi_fix_quit_confirm.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "493_gongyi_fix_restart_state.png",
+    "sha256": "01d91f1724e84b5785b09fea1ef472e01142f857b182a50210dadefcdfbcbaca",
+    "path": "/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/docs/gameplay/runtime_evidence/overnight_2026-09-06/493_gongyi_fix_restart_state.png",
+    "retained_in_repo": true
+  },
+  {
+    "name": "494_gongyi_fix_singleplayer.png",
+    "sha256": "16862cd3735b4dcca79126449ca0acda16aa282f594424ea4071caa92afdd34a",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/494_gongyi_fix_singleplayer.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "495_gongyi_fix_save_list.png",
+    "sha256": "e722276f8d6ded0115ac9de29a60488d6db05b3c0d39972930d7fb046009072b",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/495_gongyi_fix_save_list.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "496_gongyi_fix_save_selected.png",
+    "sha256": "2b14bcc52cf925e338e0015865c89a7a9965ca64397e639b3460449a50924c62",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/496_gongyi_fix_save_selected.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "497_gongyi_fix_ingame.png",
+    "sha256": "393ecf659e6f4b0a7027c928c70be18ebfb17a9e7243510f1ae9c6c226c39804",
+    "path": "/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/docs/gameplay/runtime_evidence/overnight_2026-09-06/497_gongyi_fix_ingame.png",
+    "retained_in_repo": true
+  },
+  {
+    "name": "498_resume_0729_state.png",
+    "sha256": "84e1e9e84e43257e713456668571068b750f42626e07543472482304b37eebce",
+    "path": "/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/docs/gameplay/runtime_evidence/overnight_2026-09-06/498_resume_0729_state.png",
+    "retained_in_repo": true
+  },
+  {
+    "name": "499_stale_fix_two_provinces.png",
+    "sha256": "b0142acf65c084376132cb8ab6fcc890d41f65c308dec9996beb83b0a2fa8ce3",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/499_stale_fix_two_provinces.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "49_fixed_baseline_save_dialog.png",
+    "sha256": "68cc85c58ebd17d5446723802f73c5f6f7f08bb17fcba3f99380ba06f8ea800a",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/49_fixed_baseline_save_dialog.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "500_stale_fix_result.png",
+    "sha256": "0d46d93b0c7bcbd8a9189e7bbc2435804dcdaea8d5a26dcdf45a15c8fc2eca7f",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/500_stale_fix_result.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "501_stale_fix_reform.png",
+    "sha256": "c1e1e9dfa136247d275df8d816e86f8f8befc3149b8e71447cb012b9ce10ea8e",
+    "path": "/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/docs/gameplay/runtime_evidence/overnight_2026-09-06/501_stale_fix_reform.png",
+    "retained_in_repo": true
+  },
+  {
+    "name": "502_stale_fix_pause.png",
+    "sha256": "9ce4074f0699d206e4ce0b293350a6591c86a9df2a34fed7621eed3130fdb389",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/502_stale_fix_pause.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "503_stale_fix_save_dialog.png",
+    "sha256": "cec8a0fe545d235f7e9d4ad3643d8f4e3067e0c374e3b1cfde859e88280bf0dc",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/503_stale_fix_save_dialog.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "504_stale_fix_saved.png",
+    "sha256": "68b5bea3916032df3ba65f6712ffec6afb4c79c6f672ca897e96bf59c69f8208",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/504_stale_fix_saved.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "505_gongyi_positive_load_list.png",
+    "sha256": "6536f0690171d6ca0b2658a38437e8b81c14ee3d08e54a2621d57db381da8041",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/505_gongyi_positive_load_list.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "506_gongyi_positive_load_confirm.png",
+    "sha256": "6118e252e7186676b0c3bb3068318277d7c6d3b641f42c28fb264d92dd075ac1",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/506_gongyi_positive_load_confirm.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "507_gongyi_positive_loaded.png",
+    "sha256": "d51d7a3202670605211f9e16e699fb28dbbaf40be790d45f94a60883ede53f57",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/507_gongyi_positive_loaded.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "508_gongyi_positive_granted.png",
+    "sha256": "2a6df8c9e2d23270b0cde2c4d9b687f4ab87daa59c9e447b4187276f5a557583",
+    "path": "/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/docs/gameplay/runtime_evidence/overnight_2026-09-06/508_gongyi_positive_granted.png",
+    "retained_in_repo": true
+  },
+  {
+    "name": "509_gongyi_grant_save_dialog.png",
+    "sha256": "3c2b54781229fe25433aee2bc84b279ea6f9eefa479dd0d81ff8897fe1bd7a5e",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/509_gongyi_grant_save_dialog.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "50_fixed_opening_saved.png",
+    "sha256": "3dfc9a68bc956906e608b89cc78cb6b1bcdee002cdce9a3289e81a507ba8a718",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/50_fixed_opening_saved.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "510_gongyi_grant_month.png",
+    "sha256": "21c4114a401102906bf35f584b9ecfed6ae01dc6b59267330dc3a08b1fecdfd4",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/510_gongyi_grant_month.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "511_gongyi_scholars_event.png",
+    "sha256": "f5ec83c3155983bf715c61ae44ea7ccb1ef8c752f280f705a925e3f3b558c4e0",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/511_gongyi_scholars_event.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "512_gongyi_cross_month_state.png",
+    "sha256": "e95fa5f3255e1e96e768eab59511c40b70df2781e2ad02872c871f6f364fdfe8",
+    "path": "/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/docs/gameplay/runtime_evidence/overnight_2026-09-06/512_gongyi_cross_month_state.png",
+    "retained_in_repo": true
+  },
+  {
+    "name": "513_month_pause.png",
+    "sha256": "2baeb2760358c8eb91df823c001dd50d3ef2df5621f6669ccca2655b7715953d",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/513_month_pause.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "514_month_pause_menu.png",
+    "sha256": "14ff5b7423f124d504dc256a07235963693e8a88e4a9f096835a11c9329111dd",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/514_month_pause_menu.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "515_month_save_dialog.png",
+    "sha256": "b5a40769e96c3d49327a52d0f716d7399e202212ecbcd6aaaa8bebd60011c5d8",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/515_month_save_dialog.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "516_month_saved.png",
+    "sha256": "c4c7bb9cc1d2cd1a159da00731aef11e0555b6d9f4ceda801f2ccf779cd6eb01",
+    "path": "/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/docs/gameplay/runtime_evidence/overnight_2026-09-06/516_month_saved.png",
+    "retained_in_repo": true
+  },
+  {
+    "name": "517_final_ai_load_list.png",
+    "sha256": "c6711552ea9fbc33f5864f968b794652c43db9296527d2d6565f7a7ebcf3767b",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/517_final_ai_load_list.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "518_final_ai_load_confirm.png",
+    "sha256": "9525e28eb5121b5adbe0afef0d389767b38dae9f6861a240774276ce3cfaf674",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/518_final_ai_load_confirm.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "519_final_ai_loaded.png",
+    "sha256": "661c979f24040bfcbf3264fd5939edd534fffb41e24d57f514edcf6fc571f9c7",
+    "path": "/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/docs/gameplay/runtime_evidence/overnight_2026-09-06/519_final_ai_loaded.png",
+    "retained_in_repo": true
+  },
+  {
+    "name": "51_fixed_first_days.png",
+    "sha256": "6bc3412c2a82c30f26b4ef9b9f3ad7e51a9657e4f52eac43e2de3b0950fd8946",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/51_fixed_first_days.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "520_final_ai_tick.png",
+    "sha256": "a60d57924a371e54b2d6631fb967c3e497d6ac3c1a7f11fe3bdebe8485dffa93",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/520_final_ai_tick.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "521_final_ai_tick.png",
+    "sha256": "d270be8991cb53844fe7993ae09bc5158575252aa87599c4169270799a76927a",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/521_final_ai_tick.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "522_final_ai_tick.png",
+    "sha256": "cc770329b7a0714f6340441ceaa4f8c48a539ddb5fca24542c62127aec50ce5e",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/522_final_ai_tick.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "523_final_ai_tick.png",
+    "sha256": "967da201892d68101d678bbd9f96bf57b897ad8fa14235cdb96d04e88d0b0dd8",
+    "path": "/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/docs/gameplay/runtime_evidence/overnight_2026-09-06/523_final_ai_tick.png",
+    "retained_in_repo": true
+  },
+  {
+    "name": "524_final_ai_tick.png",
+    "sha256": "2a237abec74ec1591a2a88369ddc1241daf52840d89b73ee13086571c31116d8",
+    "path": "/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/docs/gameplay/runtime_evidence/overnight_2026-09-06/524_final_ai_tick.png",
+    "retained_in_repo": true
+  },
+  {
+    "name": "52_gdd_heir_after_day.png",
+    "sha256": "8fd0fa84fddaa601c2aaefb3c39f7cf6c854d8fea24c7696fd07308d558e6906",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/52_gdd_heir_after_day.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "53_czc_government.png",
+    "sha256": "b05dd25b37af50351afba1838be3fdab7d6ebf6b67833748e678691e2f2794bb",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/53_czc_government.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "54_czc_adm49.png",
+    "sha256": "e83bce56c1eb34f32ef0712cf6d5635be63859fcc1996df9c3f36d518289dc2e",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/54_czc_adm49.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "55_czc_adm49_rejected.png",
+    "sha256": "6932d6f1f0fc8a2301e3a0bf9941dd9536e7e9c593566c331079d12c6fbf3dca",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/55_czc_adm49_rejected.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "56_czc_adm50_ready.png",
+    "sha256": "d91a95df181b4248124f778779179c994a19c56f8c099b1766a8fdae46035501",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/56_czc_adm50_ready.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "57_czc_exact50_paid.png",
+    "sha256": "dbae78f55bd8900af330df85cb27db64ff5d0cad4f748644652baa9c295398f7",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/57_czc_exact50_paid.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "58_czc_shared_cooldown.png",
+    "sha256": "342ff814ca017ea53724d627e80c93e1cdd242cbfaca319af14503e055b86c53",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/58_czc_shared_cooldown.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "59_czc_calendar_run.png",
+    "sha256": "18dae72dbe195a14d2b953505725ddb0b30747b0d349e30dd3d1513c00e52fdc",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/59_czc_calendar_run.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "60_czc_calendar_paused.png",
+    "sha256": "017c2ed18405d41f2d30e077386e5e68b23c0877647de83411a526d23f21fae5",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/60_czc_calendar_paused.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "61_clear_notice.png",
+    "sha256": "d5b1d6a15ea6ba615c198abf2faba2d9294c7e111f9275a4c8f23f2ab7d44f5c",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/61_clear_notice.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "62_clear_notice.png",
+    "sha256": "e76993b813fe8609b5468fb6f04054cd0dde3072e4ed869d843c8bd44cb5b9af",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/62_clear_notice.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "63_clear_notice.png",
+    "sha256": "0ea765f0a15c5a4b5afdd52e58613581e836db2acc9ec33c1f2c024b300502a7",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/63_clear_notice.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "64_clear_notice.png",
+    "sha256": "94a4f7fe9eb864590d5dda116eebc2bdabb1530f60ec3edf47135f03759bc103",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/64_clear_notice.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "65_czc_cooldown_expired.png",
+    "sha256": "731c987f48c88d855015d5bb2889876c1043b6d7fe9498d9ef484fae8449348f",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/65_czc_cooldown_expired.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "66_czc_left_after_expiry.png",
+    "sha256": "e8f71d0755d60610e8ad6c63399d6f730d72b06d12d699f7e573ca0828b54c5c",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/66_czc_left_after_expiry.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "67_after_czc_pause_menu.png",
+    "sha256": "3a8a223dc31681d0c396592ab6d422e3992be747a51e6eff427de9fa2cefe122",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/67_after_czc_pause_menu.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "68_czc_save_dialog.png",
+    "sha256": "598ec4e2cdd844a866549d95e1ddd25d007a777405cdcc384d9a602842ad7411",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/68_czc_save_dialog.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "69_czc_costs_saved.png",
+    "sha256": "c7c50ca94c9dcfe0753ec2ab05f7c73c2233ed095b1e115a6f2016555b246e0e",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/69_czc_costs_saved.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "70_load_cooldown_fixture.png",
+    "sha256": "ab3e648b643340cc837fdea783de40436d035d89efdd01e55248d987a5277297",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/70_load_cooldown_fixture.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "71_fixture_load_confirm.png",
+    "sha256": "342d69da6f2bfb2fe4483c9d231457d5659913b34abe744aa8491bd0da523dc6",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/71_fixture_load_confirm.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "72_fixture_loaded.png",
+    "sha256": "1561a1086511a5fd0afff4633856d97131f3729a0002dfb32477b09150b6747e",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/72_fixture_loaded.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "73_czc_day364_disabled.png",
+    "sha256": "1f87059d839dad3ea1eb55914bbabded3b209787843c54c9ae4722abee34e8b9",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/73_czc_day364_disabled.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "74_czc_one_day_console_pause.png",
+    "sha256": "acdd47e963a8d52137b0f322cb77ae9e273ad9ed08c63b86a8e5b761d1ae3381",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/74_czc_one_day_console_pause.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "75_console_date_hold_check.png",
+    "sha256": "26a3618535a0cd8bdb5bfd9cda88b62adae3880545b26808dec96e405fdfde78",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/75_console_date_hold_check.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "76_boundary_run_paused.png",
+    "sha256": "70306f920d1d7f1d8fec1d95fa9854a2fbb4e10b28f9c73cdbadb1f3080a97ec",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/76_boundary_run_paused.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "77_load_day365_point.png",
+    "sha256": "8ebd932232de547f057aca001553f785592ce4da42393caf528cc422f135aedd",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/77_load_day365_point.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "78_confirm_day365.png",
+    "sha256": "bd8f308f5a5dc32ff9e0e7d4a6237976b5a8f1b2b62c791c4ee0e66eb66d1b97",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/78_confirm_day365.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "79_day365_loaded.png",
+    "sha256": "e8b96096d9d508790fee610d97cd3e726c56261596c344a6faac86e30284a8f6",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/79_day365_loaded.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "80_czc_day365_enabled.png",
+    "sha256": "e943ea098e9dff2a21227a001a0cfbf5eb8047659908aa912bfb2ae6cd3d440f",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/80_czc_day365_enabled.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "81_czc_day365_payment.png",
+    "sha256": "a457f609ee64f3f4139be2aa05405eba5029ad6ec0e068e5f0eb2098d8362754",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/81_czc_day365_payment.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "82_enter_observer.png",
+    "sha256": "afcd41071f52c22c6c4032cb0024836638520f1f8e12bbfe683e164e87a04439",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/82_enter_observer.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "83_ai_batch_one.png",
+    "sha256": "248080988b7b5818c645f4ad6661c68b9eae9f8fb0678ef5d1ce10b02d18d0db",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/83_ai_batch_one.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "84_observer_resume_state.png",
+    "sha256": "ce46fcd4bee9f10f20c00f498c9e210b4d362df3ca00f0936ba7db4b6ec080af",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/84_observer_resume_state.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "85_ai_1448_checkpoint.png",
+    "sha256": "d6c9ab0d0e7c1a9462b57a4d95928377aa5bb275c9dbd1c5c3df83c66906d2bf",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/85_ai_1448_checkpoint.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "86_ai_next_batch.png",
+    "sha256": "140ac2b904b1e6b93ff2543adf0c58217ce46af2e80d2989fb5022d0f87620e1",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/86_ai_next_batch.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "87_ai_1449.png",
+    "sha256": "4cd3a04ef260bdf02a4d5cb04abcb3dbeb5b180883e24ab554e37587845b3637",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/87_ai_1449.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "88_ai_1450_checkpoint.png",
+    "sha256": "88f5520e795be6fa846e8f975377bafb6531d97fc154fe47644117d1bbdbafe6",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/88_ai_1450_checkpoint.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "89_ai_1451.png",
+    "sha256": "159c5f317b5d49aea31f1b6aa1cc57f9c231d4fe8263a3a230a0040306e83ffe",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/89_ai_1451.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "90_ai_1451.png",
+    "sha256": "4fbc297d0929821f6e8eedca5b8910323f6f1933ab4c95ea905aec133f097449",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/90_ai_1451.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "91_ai_1452.png",
+    "sha256": "d305a4641118052afa5aa9e7871e71dc059099b1ab7a6abc86f19fdd5789c990",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/91_ai_1452.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "92_ai_1453.png",
+    "sha256": "731a5d4d648da8383b3df2758105e567e058fefe35c01056d9d29db561a5740b",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/92_ai_1453.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "93_ai_1454.png",
+    "sha256": "bca8db68ca62981b86a6aef1a3169074cc28d8e56b4b76b0fc26e55ffe7e02cc",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/93_ai_1454.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "94_ai_1455_checkpoint.png",
+    "sha256": "1883b8f77403ebd4a79bba396bf0dea0763bd4af519d07185aeb3dd2dae32e6f",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/94_ai_1455_checkpoint.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "95_ai_1456.png",
+    "sha256": "8eb82f1940fa7f79cdbb6cf2f6eedee651a5788168c0fc9032c3018755f11f76",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/95_ai_1456.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "96_ai_1456.png",
+    "sha256": "78c83d7b4fdcb3f3cd1560b74ca2304ee34f8fd067310e1679f37875beb9a96b",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/96_ai_1456.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "97_ai_1457.png",
+    "sha256": "4f5e1195e6c0a256dd8caf4ead1fc6e3d33489f0cb04b0c2dd6cebc3e2d82b39",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/97_ai_1457.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "98_ai_1458.png",
+    "sha256": "40a6b657da829b32d20daf7410d1d27096be6c7717edd41f3feb3e2bfc7f7537",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/98_ai_1458.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "99_ai_1459.png",
+    "sha256": "89f455343fd125e2e811bc29b3893a20260deb9790317e8e912924c4f916c639",
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/raw_screenshots/99_ai_1459.png",
+    "retained_in_repo": false
+  },
+  {
+    "name": "525_final_ai_tick.png",
+    "sha256": "fa40074cbfa791cac3b0f615ba6068da131279d2d0e1458ae3943bf587df3a15",
+    "path": "/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/docs/gameplay/runtime_evidence/overnight_2026-09-06/525_final_ai_tick.png",
+    "retained_in_repo": true
+  },
+  {
+    "name": "526_final_ai_tick.png",
+    "sha256": "1300a8a1ced3e292d7188c0828ac029aae1e6d7397bcbdf2e252fb3fb07bf1f5",
+    "path": "/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/docs/gameplay/runtime_evidence/overnight_2026-09-06/526_final_ai_tick.png",
+    "retained_in_repo": true
+  },
+  {
+    "name": "527_final_ai_tick.png",
+    "sha256": "5416f2ca9393ac8574ca98e5f4353a47fcc08ca54528807748a3c94e0612f268",
+    "path": "/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/docs/gameplay/runtime_evidence/overnight_2026-09-06/527_final_ai_tick.png",
+    "retained_in_repo": true
+  },
+  {
+    "name": "528_final_yang_find.png",
+    "sha256": "015db00fce0c4c4cd7bba80169f95754af93146262687cd9a9ba2ec991b7c42b",
+    "path": "/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/docs/gameplay/runtime_evidence/overnight_2026-09-06/528_final_yang_find.png",
+    "retained_in_repo": true
+  },
+  {
+    "name": "529_yang_1480_government.png",
+    "sha256": "86276b26e4d84c4f734a67fc36bf42f4e8b2ad5a2c454ac0512f9022d3eab6fb",
+    "path": "/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/docs/gameplay/runtime_evidence/overnight_2026-09-06/529_yang_1480_government.png",
+    "retained_in_repo": true
+  },
+  {
+    "name": "530_final_save_dialog.png",
+    "sha256": "d2b688fd12252e8547561c4759679f2bd2f95ec2b315c9a159ca27fe85a8205e",
+    "path": "/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/docs/gameplay/runtime_evidence/overnight_2026-09-06/530_final_save_dialog.png",
+    "retained_in_repo": true
+  },
+  {
+    "name": "531_final_ai_saved.png",
+    "sha256": "136746beebed7f39ffd8424a3f3647f4d816c89c441fdb356552d7a3418f05a8",
+    "path": "/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/docs/gameplay/runtime_evidence/overnight_2026-09-06/531_final_ai_saved.png",
+    "retained_in_repo": true
+  },
+  {
+    "name": "532_final_reload_list.png",
+    "sha256": "6a3f0195165fe5245d7d7bd6c83df08eeb9c7085885755ead7735144f516cf83",
+    "path": "/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/docs/gameplay/runtime_evidence/overnight_2026-09-06/532_final_reload_list.png",
+    "retained_in_repo": true
+  },
+  {
+    "name": "533_final_reload_confirm.png",
+    "sha256": "ac18a10d49fc35b45dd05b617274f33ec0a07226c455c574b2ead2ed0278e10d",
+    "path": "/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/docs/gameplay/runtime_evidence/overnight_2026-09-06/533_final_reload_confirm.png",
+    "retained_in_repo": true
+  },
+  {
+    "name": "534_final_reloaded_paused.png",
+    "sha256": "143fce1ff1babaa880cb599c09c9c22b905b3f37cab247de898e993783b4cfa7",
+    "path": "/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/docs/gameplay/runtime_evidence/overnight_2026-09-06/534_final_reloaded_paused.png",
+    "retained_in_repo": true
+  },
+  {
+    "name": "535_0800_final_paused.png",
+    "sha256": "b182cf78ff8034463c1a1067ec955d42e55d4ce75d8d3b0308e5347cbeb60d64",
+    "path": "/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/docs/gameplay/runtime_evidence/overnight_2026-09-06/535_0800_final_paused.png",
+    "retained_in_repo": true
+  }
+]

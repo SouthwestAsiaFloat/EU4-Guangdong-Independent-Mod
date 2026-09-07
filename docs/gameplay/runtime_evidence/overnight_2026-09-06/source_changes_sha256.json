@@ -1,0 +1,22 @@
+{
+  "docs/gameplay/10_lingnan_nations.md": "624a6272b4ddd0b2304fe83d0cf7178a792b24e6efebca9807245fbd65e707f9",
+  "docs/gameplay/14_gongyi_yang_governments.md": "bae349f10213286ea943aca4dc9c55153e108a3ace7f7983bb259246d235fc6d",
+  "guangdong_independent_practice/common/powerprojection/zhx_merit_dignities.txt": "23911ca628f4b24b1055fa50a20d02de9255187896cdd1703e7b29b1ed57fbcb",
+  "guangdong_independent_practice/common/scripted_effects/zhx_merit_store_effects.txt": "1dd1a056d2c19a69cf0f0db3e5d06d658888317325dc01e2a927f901f98e387f",
+  "guangdong_independent_practice/events/gdd_heir_events.txt": "7659376525ded3ca14862d88d911fb1899da7bfdb873c9ec3af40694a54fc455",
+  "guangdong_independent_practice/events/zhx_gongyi_events.txt": "b188943b14074ac9bb25870f962a27d3d10c6e688168408aa92515ce88e9e354",
+  "guangdong_independent_practice/history/countries/CZH - Zhou.txt": "53450ddbc89fa198bd35a6340ed6ddad1a58203000998579cd9c073bed73935a",
+  "guangdong_independent_practice/history/countries/DAI - Dai Viet.txt": "712c8ef3e3d0f83cf95e8830814dba2e3845fa34d9810aec6978542fac0f6885",
+  "guangdong_independent_practice/history/countries/GDD - Guangdong.txt": "82088d9b8b9492fb613bd4716b1ee66712108f894b252b33e0929e04c9554b63",
+  "guangdong_independent_practice/history/countries/GUI - Guilin.txt": "adea2f00c8d0bc9d14fcce6a07d1b91c3c6bf33c45040522452f037fb1dd6c06",
+  "guangdong_independent_practice/history/countries/HLD - Helan.txt": "34d4abf61f4d20dfd284f2f5f8e91d3da673d3b068f6406bc1c20c1bbdcc558e",
+  "guangdong_independent_practice/history/countries/JIZ - Jizi Joseon.txt": "7497f83cecfac5f6a35f5ef3a48b28b86bcc035b291af518f84ba47c1ad84149",
+  "guangdong_independent_practice/history/countries/KOR - Korea.txt": "1d9bacbfdd7133460581c38853491e092ebe5707720c2bf95dc2511f90eaa3fd",
+  "guangdong_independent_practice/history/countries/LIL - Liliao.txt": "a3932c64801b6bf87a4f0c29667e2f509eaf5c79a3d355a03f6db20a053f13fe",
+  "guangdong_independent_practice/history/countries/NUN - Nong.txt": "20b8a7df0f9a249d76f8bb1ac2ab0171b9a21e7a289aee10cafba8316648bcd1",
+  "guangdong_independent_practice/history/countries/SNG - Song.txt": "2176700ddab1485c55e8df29387ce86b0a7bca637ba9025efe01c1daf6e3d7c9",
+  "guangdong_independent_practice/history/countries/TZZ - Tianzhou.txt": "9603a1108fd3f2878c34b4bf0377525030c64747a24a55e80fdb85b521020c2a",
+  "guangdong_independent_practice/history/countries/YAN - Yan.txt": "1a39194bd888ac2ebb4d5acb193a23f0936cd4ead56da153e5f8705b47258ef3",
+  "tools/apply_lingnan_nations.py": "3d7cdcfbe4ecac4cad654d2fb3730d9c911a87cf2b4793dff05d50ec8258526d",
+  "tools/map_pipeline/apply_b60_korea_polities.py": "96379e6121de2585048f9fb82404bb605f4378e38e25924515abae434c013a41"
+}

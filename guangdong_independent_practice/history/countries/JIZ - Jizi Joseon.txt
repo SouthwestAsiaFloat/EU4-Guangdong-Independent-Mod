@@ -21,6 +21,7 @@ fixed_capital = 1845
         monarch_name = "ÆQ"
         dynasty = "•r"
         birth_date = 1426.1.1
+        death_date = 1821.1.1
         claim = 80
         adm = 3
         dip = 3

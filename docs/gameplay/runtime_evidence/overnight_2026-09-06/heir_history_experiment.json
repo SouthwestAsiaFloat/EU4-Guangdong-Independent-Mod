@@ -1,0 +1,26 @@
+{
+  "GUI": {
+    "path": "guangdong_independent_practice/history/countries/GUI - Guilin.txt",
+    "backup": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/history_experiment/GUI - Guilin.txt",
+    "original_sha256": "0ab17db3f03ddc1f59fd6ffef0faa96f6f0ca66d94514f3ad48bc8a89375b3e8",
+    "change": "death_date only"
+  },
+  "NUN": {
+    "path": "guangdong_independent_practice/history/countries/NUN - Nong.txt",
+    "backup": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/history_experiment/NUN - Nong.txt",
+    "original_sha256": "818b5173ecd9e8db6973ad1101688c4b30d196154c3e61755e4589944ff8fbe2",
+    "change": "monarch_name only"
+  },
+  "TZZ": {
+    "path": "guangdong_independent_practice/history/countries/TZZ - Tianzhou.txt",
+    "backup": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/history_experiment/TZZ - Tianzhou.txt",
+    "original_sha256": "c3134c75f6f5ac8a9501e1da882d1d5f20f48247f5b8431fae90a697dac15e17",
+    "change": "both"
+  },
+  "LIL": {
+    "path": "guangdong_independent_practice/history/countries/LIL - Liliao.txt",
+    "backup": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/codex_overnight_20260906_preserved/history_experiment/LIL - Liliao.txt",
+    "original_sha256": "72bd398377a3e68b5c1abec0056cb50441ccf022a6f525f196b699d86f662e8e",
+    "change": "history block one day earlier"
+  }
+}

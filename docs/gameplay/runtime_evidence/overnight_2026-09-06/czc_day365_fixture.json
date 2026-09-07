@@ -1,0 +1,6 @@
+{
+  "source": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/save games/codex_night0906_czc_day364.eu4",
+  "fixture": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/save games/codex_night0906_czc_day365.eu4",
+  "sha256": "f93eedf4c5cef504530471050154189620b9f6271d72083c708f8f6f53b0bcc6",
+  "only_change": "cooldown date 1445.6.9 -> 1445.6.8; game date 1446.6.8. Exact elapsed365 point fixture, not a natural one-day transition."
+}

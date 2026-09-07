@@ -1,0 +1,2 @@
+# Test fixture: seed used-this-term flag only.
+GUI = { set_country_flag = zhx_feudatory_used_this_term }

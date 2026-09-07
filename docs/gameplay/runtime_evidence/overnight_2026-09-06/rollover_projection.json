@@ -1,0 +1,64 @@
+{
+  "1469": {
+    "YUE": [
+      "{\n\t\t\ttarget=\"YUE\"\n\t\t\tmodifier=\"zhx_merit_dignity_power_projection\"\n\t\t\tcurrent=10.000\n\t\t}"
+    ],
+    "CHC": [
+      "{\n\t\t\ttarget=\"CHC\"\n\t\t\tmodifier=\"zhx_merit_dignity_power_projection\"\n\t\t\tcurrent=10.000\n\t\t}"
+    ],
+    "WUU": [
+      "{\n\t\t\ttarget=\"WUU\"\n\t\t\tmodifier=\"zhx_merit_dignity_power_projection\"\n\t\t\tcurrent=10.000\n\t\t}"
+    ],
+    "YAN": [
+      "{\n\t\t\ttarget=\"YAN\"\n\t\t\tmodifier=\"zhx_merit_dignity_power_projection\"\n\t\t\tcurrent=20.000\n\t\t}"
+    ],
+    "QIN": [
+      "{\n\t\t\ttarget=\"QIN\"\n\t\t\tmodifier=\"zhx_merit_dignity_power_projection\"\n\t\t\tcurrent=10.000\n\t\t}"
+    ],
+    "ZHA": [
+      "{\n\t\t\ttarget=\"ZHA\"\n\t\t\tmodifier=\"zhx_merit_dignity_power_projection\"\n\t\t\tcurrent=10.000\n\t\t}"
+    ],
+    "WEI": [
+      "{\n\t\t\ttarget=\"WEI\"\n\t\t\tmodifier=\"zhx_merit_dignity_power_projection\"\n\t\t\tcurrent=10.000\n\t\t}"
+    ],
+    "GDD": [],
+    "DQU": [],
+    "CDE": [],
+    "JIZ": []
+  },
+  "1470": {
+    "YUE": [
+      "{\n\t\t\ttarget=\"YUE\"\n\t\t\tmodifier=\"zhx_merit_dignity_power_projection\"\n\t\t\tcurrent=10.000\n\t\t}"
+    ],
+    "CHC": [
+      "{\n\t\t\ttarget=\"CHC\"\n\t\t\tmodifier=\"zhx_merit_dignity_power_projection\"\n\t\t\tcurrent=20.000\n\t\t}"
+    ],
+    "WUU": [
+      "{\n\t\t\ttarget=\"WUU\"\n\t\t\tmodifier=\"zhx_merit_dignity_power_projection\"\n\t\t\tcurrent=10.000\n\t\t}"
+    ],
+    "YAN": [
+      "{\n\t\t\ttarget=\"YAN\"\n\t\t\tmodifier=\"zhx_merit_dignity_power_projection\"\n\t\t\tcurrent=20.000\n\t\t}"
+    ],
+    "QIN": [
+      "{\n\t\t\ttarget=\"QIN\"\n\t\t\tmodifier=\"zhx_merit_dignity_power_projection\"\n\t\t\tcurrent=20.000\n\t\t}"
+    ],
+    "ZHA": [
+      "{\n\t\t\ttarget=\"ZHA\"\n\t\t\tmodifier=\"zhx_merit_dignity_power_projection\"\n\t\t\tcurrent=10.000\n\t\t}"
+    ],
+    "WEI": [
+      "{\n\t\t\ttarget=\"WEI\"\n\t\t\tmodifier=\"zhx_merit_dignity_power_projection\"\n\t\t\tcurrent=10.000\n\t\t}"
+    ],
+    "GDD": [
+      "{\n\t\t\ttarget=\"GDD\"\n\t\t\tmodifier=\"zhx_merit_dignity_power_projection\"\n\t\t\tcurrent=10.000\n\t\t}"
+    ],
+    "DQU": [
+      "{\n\t\t\ttarget=\"DQU\"\n\t\t\tmodifier=\"zhx_merit_dignity_power_projection\"\n\t\t\tcurrent=10.000\n\t\t}"
+    ],
+    "CDE": [
+      "{\n\t\t\ttarget=\"CDE\"\n\t\t\tmodifier=\"zhx_merit_dignity_power_projection\"\n\t\t\tcurrent=10.000\n\t\t}"
+    ],
+    "JIZ": [
+      "{\n\t\t\ttarget=\"JIZ\"\n\t\t\tmodifier=\"zhx_merit_dignity_power_projection\"\n\t\t\tcurrent=10.000\n\t\t}"
+    ]
+  }
+}

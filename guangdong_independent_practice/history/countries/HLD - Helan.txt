@@ -21,6 +21,7 @@ capital = 732
         monarch_name = "EQ„U"
         dynasty = "¡e5gÌ‘"
         birth_date = 1428.1.1
+        death_date = 1821.1.1
         claim = 70
         adm = 2
         dip = 3

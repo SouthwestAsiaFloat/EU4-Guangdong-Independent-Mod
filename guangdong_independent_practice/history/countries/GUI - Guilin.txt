@@ -28,6 +28,7 @@ fixed_capital = 1840
         adm = 3
         dip = 1
         mil = 2
+        death_date = 1821.1.1
         claim = 65
         culture = gdd_gui
         religion = confucianism

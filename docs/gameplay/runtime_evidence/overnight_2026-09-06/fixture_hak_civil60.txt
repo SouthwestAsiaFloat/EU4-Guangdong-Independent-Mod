@@ -1,0 +1,2 @@
+# Native tradition input: exact civil restoration threshold.
+HAK = { add_republican_tradition = -100 add_republican_tradition = 60 }

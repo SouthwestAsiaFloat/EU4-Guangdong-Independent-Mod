@@ -1,0 +1,3 @@
+# Qualification negative:19 cities,200 development,200 current-term merit.
+GDD = { capital_scope = { set_base_tax = 14 } }
+5214 = { cede_province = HAK }

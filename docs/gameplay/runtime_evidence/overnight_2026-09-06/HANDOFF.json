@@ -1,0 +1,18 @@
+{
+  "deadline": "2026-09-07T08:00:00+08:00",
+  "phase": "COMPLETE at08:00 cutoff; no further game input",
+  "game": {
+    "checksum": "44f1",
+    "tag": "HYM",
+    "date": "1480.3.3",
+    "paused": true,
+    "ui": "pause menu after actual reload"
+  },
+  "latest_save": "扬1480_03_03_night0906_final44f1_paused.eu4",
+  "next_save": "codex_night0906_ai_final44f1_start.eu4",
+  "gap": "05:03–07:29 no runtime coverage, repeated network compaction failures",
+  "next": "User may resume game or review local uncommitted fixes. Do not restart testing automatically.",
+  "completed_at": "2026-09-07T08:01:00.558954+08:00",
+  "fixture_removed": true,
+  "report": "REPORT.md"
+}

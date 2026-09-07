@@ -1,0 +1,2 @@
+# Exact native opinion control: same religion25 + friendliness50 + gift25 - annex opinion1 =99.
+CZH = { add_opinion = { who = T00 modifier = opinion_friendliness } add_opinion = { who = T00 modifier = sent_gift } add_opinion = { who = T00 modifier = opinion_annex_vassal } }

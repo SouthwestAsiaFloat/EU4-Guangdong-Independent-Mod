@@ -49,9 +49,29 @@ country_event = {
     immediate = {
         clr_country_flag = gdd_liang_shouyi_designated_heir
         set_country_flag = gdd_liang_chengzuo_created
+        set_country_flag = gdd_liang_chengzuo_pending
 
-        # Normally these on-actions leave the heir slot empty. If another mod
-        # filled it immediately, replace that placeholder with the named heir.
+        # Capture eligibility before gdd_startup.6 clears the reigning flag,
+        # but let the native death/disinheritance/succession transaction finish.
+        # EU4 1.37.5 otherwise clears or replaces a synchronously defined heir.
+        country_event = { id = gdd_heir.3 days = 1 }
+    }
+}
+
+country_event = {
+    id = gdd_heir.3
+    hidden = yes
+    is_triggered_only = yes
+
+    trigger = {
+        tag = GDD
+        has_country_flag = gdd_liang_chengzuo_pending
+    }
+
+    immediate = {
+        clr_country_flag = gdd_liang_chengzuo_pending
+
+        # Replace any native placeholder only after its creation has finished.
         if = {
             limit = { has_heir = yes }
             kill_heir = { allow_new_heir = no }

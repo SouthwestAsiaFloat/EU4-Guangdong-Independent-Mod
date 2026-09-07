@@ -1,0 +1,41 @@
+{
+  "death": {
+    "date": "1446.1.15",
+    "heir_name": "承祚",
+    "heir_ref": "{\n\t\t\tid=13168\n\t\t\ttype=48\n\t\t}",
+    "stats": {
+      "ADM": 4,
+      "DIP": 3,
+      "MIL": 4
+    },
+    "pending": false,
+    "created": true,
+    "monarch_ref": "{\n\t\t\tid=3169\n\t\t\ttype=48\n\t\t}"
+  },
+  "disinherit": {
+    "date": "1446.1.14",
+    "heir_name": "承祚",
+    "heir_ref": "{\n\t\t\tid=13168\n\t\t\ttype=48\n\t\t}",
+    "stats": {
+      "ADM": 4,
+      "DIP": 4,
+      "MIL": 4
+    },
+    "pending": false,
+    "created": true,
+    "monarch_ref": "{\n\t\t\tid=3169\n\t\t\ttype=48\n\t\t}"
+  },
+  "succession": {
+    "date": "1446.1.15",
+    "heir_name": "承祚",
+    "heir_ref": "{\n\t\t\tid=13170\n\t\t\ttype=48\n\t\t}",
+    "stats": {
+      "ADM": 5,
+      "DIP": 2,
+      "MIL": 5
+    },
+    "pending": false,
+    "created": true,
+    "monarch_ref": "{\n\t\t\tid=3170\n\t\t\ttype=48\n\t\t}"
+  }
+}

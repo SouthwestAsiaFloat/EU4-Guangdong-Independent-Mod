@@ -20,6 +20,7 @@ capital = 735
         monarch_name = "Py"
         dynasty = "‹s"
         birth_date = 1427.1.1
+        death_date = 1821.1.1
         claim = 85
         adm = 3
         dip = 3

@@ -1,0 +1,2 @@
+# Native province transfer only; exercise normal ownership callback for public-city loss.
+4977 = { cede_province = T00 }

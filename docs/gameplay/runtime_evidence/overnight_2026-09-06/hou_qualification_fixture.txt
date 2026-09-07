@@ -1,0 +1,18 @@
+# Disposable new-opening fixture: GDD remains native opening hou;20cities,200dev,199term merit.
+2153 = { add_core = GDD cede_province = GDD }
+2157 = { add_core = GDD cede_province = GDD }
+4944 = { add_core = GDD cede_province = GDD }
+4948 = { add_core = GDD cede_province = GDD }
+4957 = { add_core = GDD cede_province = GDD }
+4995 = { add_core = GDD cede_province = GDD }
+5100 = { add_core = GDD cede_province = GDD }
+5214 = { add_core = GDD cede_province = GDD }
+GDD = {
+ every_owned_province = { set_base_tax = 4 set_base_production = 3 set_base_manpower = 3 }
+ set_variable = { which = zhx_merit_term value = 199 }
+ create_alliance = CZH
+ create_alliance = GUI
+ create_alliance = NUN
+ create_alliance = TZZ
+ create_alliance = LIL
+}
