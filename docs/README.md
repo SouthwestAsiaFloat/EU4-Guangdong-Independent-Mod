@@ -38,6 +38,7 @@
 9. [叙功行赏与二十五年诸侯改选](gameplay/08_zhou_merit_store.md)
 10. [周天下外交：边界合法性、天子执法与成员生命周期](gameplay/09_zhou_diplomacy.md)
 11. [岭南八国 1444 实装正典](gameplay/10_lingnan_nations.md)
+12. [周天子政府与天子禁卫](gameplay/15_tianzi_government.md)
 
 ### 地图设计
 

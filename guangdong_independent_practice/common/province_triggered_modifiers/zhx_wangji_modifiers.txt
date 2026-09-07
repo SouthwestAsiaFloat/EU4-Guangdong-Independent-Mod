@@ -1,0 +1,9 @@
+# Registered in the two royal-capital province histories. No monthly ownership cache.
+# Other owners retain normal province income, but never this additional tax bonus.
+zhx_wangji_tax = {
+    potential = {
+        OR = { province_id = 688 province_id = 1836 }
+    }
+    trigger = { owner = { zhx_tianzi_has_government = yes } }
+    local_tax_modifier = 0.50
+}

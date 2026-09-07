@@ -22,6 +22,10 @@ gdd_has_active_proxy_decree_trigger = {
 }
 
 gdd_proxy_decree_base_trigger = {
+    custom_trigger_tooltip = {
+        tooltip = zhx_tianzi_decrees_deferred_tt
+        NOT = { event_target:EmperorOfChina = { has_reform = zhx_tianzi_reform } }
+    }
     gdd_celestial_action_authorized_trigger = yes
     event_target:EmperorOfChina = {
         exists = yes

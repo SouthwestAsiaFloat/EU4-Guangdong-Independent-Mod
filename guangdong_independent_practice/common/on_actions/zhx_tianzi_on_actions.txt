@@ -1,0 +1,5 @@
+# No full-world or province scan: engine dispatches the guarded country event.
+on_startup = { events = { zhx_tianzi.1 } }
+on_monthly_pulse = { events = { zhx_tianzi.1 } }
+# Vanilla installs celestial_empire on mandate transfer; run after its transaction.
+on_mandate_of_heaven_gained = { country_event = { id = zhx_tianzi.1 days = 1 } }

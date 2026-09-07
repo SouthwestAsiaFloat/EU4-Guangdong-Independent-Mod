@@ -629,40 +629,48 @@ country_event = {
     }
 
     immediate = {
+        # Startup callbacks may be queued before the opening-school assignment.
+        # Recheck current authoritative state before clearing a now-valid doctrine.
         if = {
-            limit = { religion_group = eastern }
-            set_religious_school = {
-                group = eastern
-                school = zhx_no_doctrine_school
-            }
+            limit = { zhx_is_lijiao_country = yes zhx_has_any_doctrine_flag = yes }
+            country_event = { id = zhx_doctrine.91 }
         }
-        zhx_clear_doctrine_system = yes
-        if = {
-            limit = {
-                religion = confucianism
-                NOT = { zhx_can_adopt_lijiao = yes }
+        else = {
+            if = {
+                limit = { religion_group = eastern }
+                set_religious_school = {
+                    group = eastern
+                    school = zhx_no_doctrine_school
+                }
             }
+            zhx_clear_doctrine_system = yes
             if = {
                 limit = {
-                    capital_scope = { NOT = { religion = confucianism } }
+                    religion = confucianism
+                    NOT = { zhx_can_adopt_lijiao = yes }
                 }
-                change_religion = capital
+                if = {
+                    limit = {
+                        capital_scope = { NOT = { religion = confucianism } }
+                    }
+                    change_religion = capital
+                }
+                else = {
+                    # Absolute fallback for an ineligible state whose capital was
+                    # already converted too. This state is unreachable in the
+                    # supported 1444 setup, but it prevents a hard-coded peace or
+                    # subject conversion from creating a hollow Ritual Teaching.
+                    change_religion = animism
+                }
             }
-            else = {
-                # Absolute fallback for an ineligible state whose capital was
-                # already converted too. This state is unreachable in the
-                # supported 1444 setup, but it prevents a hard-coded peace or
-                # subject conversion from creating a hollow Ritual Teaching.
-                change_religion = animism
+            else_if = {
+                limit = {
+                    zhx_is_lijiao_country = yes
+                    NOT = { zhx_has_doctrine = yes }
+                    NOT = { has_country_modifier = zhx_doctrine_change_cooldown }
+                }
+                country_event = { id = zhx_doctrine.1 days = 1 }
             }
-        }
-        else_if = {
-            limit = {
-                zhx_is_lijiao_country = yes
-                NOT = { zhx_has_doctrine = yes }
-                NOT = { has_country_modifier = zhx_doctrine_change_cooldown }
-            }
-            country_event = { id = zhx_doctrine.1 days = 1 }
         }
     }
 

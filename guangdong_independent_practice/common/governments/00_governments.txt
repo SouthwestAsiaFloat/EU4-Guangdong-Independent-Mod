@@ -4,6 +4,7 @@ monarchy = {
 		feudalism_vs_autocracy = {
 			reforms = {
 				feudalism_reform
+				zhx_tianzi_reform
 				zhx_feudatory_bo_reform
 				zhx_feudatory_hou_reform
 				zhx_feudatory_gong_reform

@@ -1,0 +1,28 @@
+﻿l_english:
+ zhx_tianzi_reform:0 "hT)YPR6R"
+ zhx_tianzi_reform_desc:0 ")YPRNˆR—R™^ÿINcmyNy0ŒQSNø‹¯OlQ®‹ÿHNhT)YNJy6RqQIN0‹s²RåNckßu'`ôuûsN­ˆÕlßuÿMeœ^IrµuúVšRHN^ýV0\n\n,g6RïSÛbßRP–˜)YPRykSekuQÿVNSNP–HNmQâV0)YPRykSåNNg2OÁ‰•ÿÛbßR9(uNeˆXT¦^TnfekuQÿôu²b9Øš2Nb0VS0m3–„v‹suz6e RbÅN(W)YPRåb	göeuHe0"
+ zhx_tianzi_state:0 ")YPR‹sg"
+ zhx_tianzi_ruler:0 ")YPR"
+ zhx_tianzi_heir:0 "‹s8YPR"
+ zhx_tianzi_consort:0 "‹sM‘"
+ zhx_wangshi_training:0 ")YPRykS›Q6R"
+ desc_zhx_wangshi_training:0 ")YPRykSHN)YPRôv^S¾s•ekuQ0 RbÅNjO(uŽN)YPRykSâVÿnfekuQN×SqVÍT0"
+ zhx_wangshi_rules_tt:0 "VLeP–˜§Y)YPRykSekuQ§!ÿVNSNP–§Y6âV§!0)YPRykS„vkp›RN²QûQ2O³RTÐcØš§G50%§!ÿôu²b9ÐcØš§R20%§!ÿÛbßR9(u0ºN›Rˆmw0eˆXT¦^NnfekuQøvT0"
+ zhx_wangji_tax:0 "‹suKeQ"
+ desc_zhx_wangji_tax:0 "‹s²RÏu%„‹suÿåN0uK›O‰Qg÷^N)YPRykS0,gw0W¹ez6eÐcØš§G50%§!ÿÅN(WSVMR)YPRåb	gNÇ‘(uhT)YPR6RöeuHeÿvQÖNýV¶RHYÖSTNýw«N	gÙy˜˜Y6eÊv0"
+ zhx_tianzi_decrees_deferred_tt:0 "§YhT)YPR6R§!òTÇ‘(uckßu'`ÿ1Wèe„vHeœgN9(uYu…VÍ‘¾‹¡‹ÿSVMRNýwÑS^çe6R1Wèe0"
+ MUSKETEER_NAME:0 "$HOME$,r$NUM$$ORDER$)YPRykS"
+ MODIFIER_ALLOWED_MUSKETEER_FRACTION:0 ")YPRykSuQ˜Ôk‹O"
+ MODIFIER_LOCAL_HAS_MUSKETEER:0 ",gwAQ¸‹ÛbßR)YPRykSekuQ"
+ MUSKETEER_FORCELIMIT:0 "býVïSÛbßRgY§Y$LIMIT$§!âV)YPRykS0\n"
+ MUSKETEER_LIMIT_CULTURE:0 "$PROVINCE$Nán³)YPRykSekuQ„vÛbßRagöN0"
+ ADD_MUSKETEER_SUB_UNIT_EFFECT:0 "(W$WHERE|Y$·ƒ—V§G)YPRykS§!$UNIT$0"
+ MUSKETEER_DESC:0 ")YPRykS=f)YPRôv^S„v¾s•ekuQÿbÅbÝOkS‹suNIY‹TV¨‹„vLw10åb	ghT)YPR6RöeVLeÛbßRÿVNSP–˜mQâV0)YPRykS›Q6RÐcØšvQNg2ONôu²b9(uÿnfekuQN«N	gÙ›N Rb0"
+ REGCAT_musketeer:0 ")YPRykS"
+ MUSKETEER_REGIMENT:0 ")YPRykSâV\n$EFFECT$"
+ HAVE_LESS_MUSKETEER_THAN:0 "åb	g„v)YPRykSSŽN§Y$VALUE$§!âV0\n"
+ HAVE_AT_LEAST_MUSKETEER_THAN:0 "åb	góS§Y$VALUE$§!âV)YPRykS0\n"
+ MODIFIER_AMOUNT_OF_MUSKETEER:0 ")YPRykSuQ˜"
+ musketeers_modifier:0 ")YPRykS(WO"
+ ONLY_MUSKETEER_MODIFIER:0 "§YÅNqVÍT)YPRykSâV§!"
+ MODIFIER_HAS_MUSKETEER:0 "AQ¸‹ÛbßR)YPRykSekuQ"

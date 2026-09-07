@@ -1434,47 +1434,24 @@ def main() -> None:
         potential_source = named_block_body(potential_body, "FROM")
         school_code = school.removeprefix("zhx_").removesuffix("_school")
         require(
-            potential_body.count("zhx_guest_school_may_invite = yes") == 1
-            and potential_body.count(
-                f"NOT = {{ has_country_flag = {doctrine_flag} }}"
-            )
-            == 1
-            and potential_source.count(
-                f"zhx_guest_school_source_is_eligible_{school.removeprefix('zhx_').removesuffix('_school')} = yes"
-            )
-            == 1
-            and potential_body.count(
-                "knows_of_scholar_country_capital_trigger = yes"
-            )
-            == 1,
-            f"{school} discovery must delegate the shared inviter/source contract "
-            "and reject the current formal school",
-        )
-        require(
-            top_level_assignment_keys(potential_body)
-            == {"custom_trigger_tooltip", "hidden_trigger"}
-            and potential_body.count("custom_trigger_tooltip = {") == 3
-            and potential_body.count("hidden_trigger = {") == 1
-            and "tooltip = zhx_guest_school_inviter_requirements_tt"
-            in potential_body
-            and f"tooltip = zhx_guest_school_not_current_{school_code}_tt"
-            in potential_body
-            and f"tooltip = zhx_guest_school_source_{school_code}_requirements_tt"
-            in potential_body,
-            f"{school} discovery must expose three readable player conditions "
-            "and hide the AI-only gate",
-        )
-        require(
-            potential_body.count("limit = { ai = yes }") == 1
-            and potential_body.count("is_at_war = no") == 1
-            and potential_body.count("stability = 0") == 1
-            and potential_body.count("NOT = { num_of_loans = 1 }") == 1
-            and potential_body.count("dip_power = 125") == 1
-            and potential_body.count(
-                f"zhx_guest_school_ai_wants_{school.removeprefix('zhx_').removesuffix('_school')} = yes"
-            )
-            == 1,
-            f"{school} discovery must keep the conservative AI-only gate",
+            top_level_assignment_keys(potential_body) == {
+                "zhx_is_lijiao_country", "zhx_has_doctrine", "has_religious_school",
+                "knows_of_scholar_country_capital_trigger",
+            }
+            and potential_body.count("zhx_is_lijiao_country = yes") == 2
+            and "zhx_has_doctrine = yes" in potential_body
+            and "has_religious_school = yes" in potential_body
+            and f"NOT = {{ has_country_flag = {doctrine_flag} }}" in potential_body
+            and "knows_of_scholar_country_capital_trigger = yes" in potential_body
+            and top_level_assignment_keys(potential_source) == {
+                "exists", "zhx_is_lijiao_country", "has_country_flag", "religious_school",
+            }
+            and "exists = yes" in potential_source
+            and "NOT = { tag = ROOT }" in potential_source
+            and f"has_country_flag = {doctrine_flag}" in potential_source
+            and f"religious_school = {{ group = eastern school = {school} }}" in potential_source,
+            f"{school} discovery must only gate formal foreign-school visibility; "
+            "affordability, opinion, contracts and AI policy belong in availability",
         )
         can_body = named_block_body(school_body, "can_invite_scholar")
         can_source = named_block_body(can_body, "FROM")

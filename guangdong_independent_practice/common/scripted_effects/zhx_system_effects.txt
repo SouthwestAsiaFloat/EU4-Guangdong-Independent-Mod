@@ -6,6 +6,11 @@ zhx_set_tianzi = {
             has_country_flag = zhx_tianzi
         }
         clr_country_flag = zhx_tianzi
+        if = {
+            # PREV is the appointee scope even when the caller event belongs to another country.
+            limit = { NOT = { tag = PREV } }
+            zhx_tianzi_sync_government = yes
+        }
     }
     # If a future emperor was previously a normal member, remove it through
     # the common exit path first so the compact GUI roster and count cache do
@@ -23,6 +28,7 @@ zhx_set_tianzi = {
     clr_country_flag = zhx_ritual_tier_collapsed
     set_country_flag = zhx_tianzi
     save_global_event_target_as = zhx_tianzi
+    zhx_tianzi_sync_government = yes
     if = {
         limit = { has_global_flag = zhx_system_initialised_v8 }
         CZH = { gdd_refresh_authority_balance_effects = yes }

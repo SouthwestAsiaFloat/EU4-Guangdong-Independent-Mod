@@ -1,0 +1,9 @@
+# Country-held modifier routed ONLY to the native musketeer regiment category.
+# Vanilla musketeer_regiment already supplies +0.15 fire damage; total is +0.50.
+# No discipline, morale, manpower usage, recruitment cost or reinforcement changes.
+zhx_wangshi_training = {
+    is_musketeer_modifier = yes
+    fire_damage = 0.35
+    shock_damage = 0.50
+    land_maintenance_modifier = 0.20
+}

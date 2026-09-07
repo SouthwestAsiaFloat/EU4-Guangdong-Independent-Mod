@@ -1,0 +1,58 @@
+# The Tianxia authority owns this reform; rank alone never grants sovereignty.
+zhx_tianzi_reform = {
+    icon = "zhx_tianzi_mianliu"
+    allow_normal_conversion = no
+    lock_level_when_selected = yes
+    valid_for_nation_designer = no
+    potential = { zhx_tianzi_is_authority = yes }
+    fixed_rank = 3
+    maintain_dynasty = yes
+    allow_force_tributary = no
+    custom_attributes = { locked_government_type = yes }
+    modifiers = {
+        diplomatic_upkeep = 2
+        improve_relation_modifier = 0.20
+        nobles_loyalty_modifier = 0.10
+        nobles_influence_modifier = 0.05
+        prestige = 0.5
+        legitimacy = 0.5
+        has_musketeer = yes
+        amount_of_musketeers = 6
+    }
+    effect = {
+        custom_tooltip = zhx_wangshi_rules_tt
+        hidden_effect = { zhx_tianzi_apply_training = yes }
+    }
+    removed_effect = { remove_country_modifier = zhx_wangshi_training }
+    # Reserved growth hook: no unapproved reform nodes are attached yet.
+    conditional = {
+        allow = { check_variable = { which = zhx_wangshi_government_stage value = 1 } }
+        modifiers = { amount_of_musketeers = 2 }
+    }
+    # Reserved growth hook: no unapproved reform nodes are attached yet.
+    conditional = {
+        allow = { check_variable = { which = zhx_wangshi_government_stage value = 2 } }
+        modifiers = { amount_of_musketeers = 2 }
+    }
+    # Reserved growth hook: no unapproved reform nodes are attached yet.
+    conditional = {
+        allow = { check_variable = { which = zhx_wangshi_government_stage value = 3 } }
+        modifiers = { amount_of_musketeers = 2 }
+    }
+    # Reserved growth hook: no unapproved reform nodes are attached yet.
+    conditional = {
+        allow = { check_variable = { which = zhx_wangshi_council_stage value = 1 } }
+        modifiers = { amount_of_musketeers = 2 }
+    }
+    # Reserved growth hook: no unapproved reform nodes are attached yet.
+    conditional = {
+        allow = { check_variable = { which = zhx_wangshi_council_stage value = 2 } }
+        modifiers = { amount_of_musketeers = 2 }
+    }
+    # Reserved growth hook: no unapproved reform nodes are attached yet.
+    conditional = {
+        allow = { check_variable = { which = zhx_wangshi_council_stage value = 3 } }
+        modifiers = { amount_of_musketeers = 2 }
+    }
+    ai = { factor = 1000 }
+}

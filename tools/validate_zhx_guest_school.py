@@ -225,6 +225,32 @@ def check_generated_outputs(texts: dict[str, str]) -> None:
     )
 
 
+def validate_selector_visibility(body: str, native: str, doctrine: str) -> None:
+    # An exact structural allowlist prevents a payment, opinion, contract or AI
+    # condition (including a scripted wrapper) from hiding disabled candidates.
+    expected = f"""
+        zhx_is_lijiao_country = yes
+        zhx_has_doctrine = yes
+        has_religious_school = yes
+        NOT = {{ has_country_flag = {doctrine} }}
+        FROM = {{
+            exists = yes
+            NOT = {{ tag = ROOT }}
+            zhx_is_lijiao_country = yes
+            has_country_flag = {doctrine}
+            religious_school = {{ group = eastern school = {native} }}
+        }}
+        knows_of_scholar_country_capital_trigger = yes
+    """
+    def normalize(value: str) -> str:
+        return re.sub(r"\s+", "", re.sub(r"(?m)#.*$", "", value))
+    require(
+        normalize(body) == normalize(expected),
+        f"{native} visibility must only require a known, formal foreign school; "
+        "payment, opinion, loyalty, contracts and AI policy must not hide candidates",
+    )
+
+
 def validate_semantics(texts: dict[str, str]) -> None:
     triggers = texts["triggers"]
     effects = texts["effects"]
@@ -595,20 +621,21 @@ def validate_semantics(texts: dict[str, str]) -> None:
     schools_block = block(block(religion, "eastern"), "religious_schools")
     for event_index, (code, (native, doctrine, modifier)) in enumerate(SCHOOLS.items(), start=10):
         school = block(schools_block, native)
-        for phase in ("potential_invite_scholar", "can_invite_scholar"):
-            phase_body = block(school, phase)
-            require(phase_body.count("zhx_guest_school_may_invite = yes") == 1, f"{native} {phase} lacks shared gate")
-            require(phase_body.count(f"zhx_guest_school_source_is_eligible_{code} = yes") == 1, f"{native} {phase} lacks formal source gate")
-            require(
-                phase_body.count("custom_trigger_tooltip = {") == 3
-                and phase_body.count("hidden_trigger = {") == 1
-                and "tooltip = zhx_guest_school_inviter_requirements_tt" in phase_body
-                and f"tooltip = zhx_guest_school_not_current_{code}_tt" in phase_body
-                and f"tooltip = zhx_guest_school_source_{code}_requirements_tt" in phase_body,
-                f"{native} {phase} must collapse its player conditions and hide the AI gate",
-            )
-            for token in ("limit = { ai = yes }", "is_at_war = no", "stability = 0", "NOT = { num_of_loans = 1 }", "dip_power = 125", f"zhx_guest_school_ai_wants_{code} = yes"):
-                require(phase_body.count(token) == 1, f"{native} {phase} AI-only gate missing {token}")
+        validate_selector_visibility(block(school, "potential_invite_scholar"), native, doctrine)
+        phase = "can_invite_scholar"
+        phase_body = block(school, phase)
+        require(phase_body.count("zhx_guest_school_may_invite = yes") == 1, f"{native} {phase} lacks shared gate")
+        require(phase_body.count(f"zhx_guest_school_source_is_eligible_{code} = yes") == 1, f"{native} {phase} lacks formal source gate")
+        require(
+            phase_body.count("custom_trigger_tooltip = {") == 3
+            and phase_body.count("hidden_trigger = {") == 1
+            and "tooltip = zhx_guest_school_inviter_requirements_tt" in phase_body
+            and f"tooltip = zhx_guest_school_not_current_{code}_tt" in phase_body
+            and f"tooltip = zhx_guest_school_source_{code}_requirements_tt" in phase_body,
+            f"{native} {phase} must collapse its player conditions and hide the AI gate",
+        )
+        for token in ("limit = { ai = yes }", "is_at_war = no", "stability = 0", "NOT = { num_of_loans = 1 }", "dip_power = 125", f"zhx_guest_school_ai_wants_{code} = yes"):
+            require(phase_body.count(token) == 1, f"{native} {phase} AI-only gate missing {token}")
         on_body = block(school, "on_invite_scholar")
         for token in (
             "zhx_guest_school_may_invite = yes",
@@ -719,6 +746,20 @@ def run_mutation_tests(texts: dict[str, str]) -> None:
         ("reform window", "reform_triggers", "days = 5475", "days = 5474"),
         ("native dispatch", "religion", "id = zhx_guest_school.10", "id = zhx_guest_school.99"),
         ("weak benefit", "invited_modifiers", "advisor_cost = -0.025", "advisor_cost = -0.024"),
+    )
+    visibility_anchor = "zhx_is_lijiao_country = yes\n\t\t\t\tzhx_has_doctrine = yes"
+    mutations += tuple(
+        (f"selector visibility: {label}", "religion", visibility_anchor,
+         visibility_anchor + "\n\t\t\t\t" + condition)
+        for label, condition in (
+            ("payment", "dip_power = 75"),
+            ("cash", "years_of_income = 0.5"),
+            ("opinion", "FROM = { has_opinion = { who = ROOT value = 150 } }"),
+            ("loyalty", "FROM = { NOT = { liberty_desire = 50 } }"),
+            ("contract", "NOT = { has_country_flag = zhx_guest_school_contract_active }"),
+            ("shared eligibility wrapper", "zhx_guest_school_may_invite = yes"),
+            ("AI reserve", "if = { limit = { ai = yes } dip_power = 125 }"),
+        )
     )
     passed = 0
     for label, file_key, old, new in mutations:

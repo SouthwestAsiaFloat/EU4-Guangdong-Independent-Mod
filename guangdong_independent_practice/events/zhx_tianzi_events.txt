@@ -1,0 +1,18 @@
+namespace = zhx_tianzi
+country_event = {
+    id = zhx_tianzi.1
+    title = zhx_tianzi_reform
+    desc = zhx_tianzi_reform_desc
+    picture = DIPLOMACY_eventPicture
+    hidden = yes
+    is_triggered_only = yes
+    trigger = {
+        OR = {
+            zhx_tianzi_is_authority = yes
+            has_reform = zhx_tianzi_reform
+            has_country_modifier = zhx_wangshi_training
+        }
+    }
+    immediate = { zhx_tianzi_sync_government = yes }
+    option = { name = OK }
+}

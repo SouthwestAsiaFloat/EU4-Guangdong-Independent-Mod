@@ -1583,31 +1583,20 @@ eastern = {
 			# only chooses school and source; a separate confirmation event owns
 			# payment and the guarded twenty-year court contract.
 			potential_invite_scholar = {
-				custom_trigger_tooltip = {
-					tooltip = zhx_guest_school_inviter_requirements_tt
-					zhx_guest_school_may_invite = yes
+				# Visibility only: affordability, opinion, contract locks and AI
+				# policy belong in can_invite_scholar so failed gates stay visible.
+				zhx_is_lijiao_country = yes
+				zhx_has_doctrine = yes
+				has_religious_school = yes
+				NOT = { has_country_flag = zhx_doctrine_ru }
+				FROM = {
+					exists = yes
+					NOT = { tag = ROOT }
+					zhx_is_lijiao_country = yes
+					has_country_flag = zhx_doctrine_ru
+					religious_school = { group = eastern school = zhx_ru_school }
 				}
-				custom_trigger_tooltip = {
-					tooltip = zhx_guest_school_not_current_ru_tt
-					NOT = { has_country_flag = zhx_doctrine_ru }
-				}
-				custom_trigger_tooltip = {
-					tooltip = zhx_guest_school_source_ru_requirements_tt
-					FROM = {
-						zhx_guest_school_source_is_eligible_ru = yes
-					}
-					knows_of_scholar_country_capital_trigger = yes
-				}
-				hidden_trigger = {
-					if = {
-						limit = { ai = yes }
-						is_at_war = no
-						stability = 0
-						NOT = { num_of_loans = 1 }
-						dip_power = 125
-						zhx_guest_school_ai_wants_ru = yes
-					}
-				}
+				knows_of_scholar_country_capital_trigger = yes
 			}
 			can_invite_scholar = {
 				# Fail closed on the group-scoped eastern interface. Buddhist and
@@ -1673,31 +1662,20 @@ eastern = {
 			# only chooses school and source; a separate confirmation event owns
 			# payment and the guarded twenty-year court contract.
 			potential_invite_scholar = {
-				custom_trigger_tooltip = {
-					tooltip = zhx_guest_school_inviter_requirements_tt
-					zhx_guest_school_may_invite = yes
+				# Visibility only: affordability, opinion, contract locks and AI
+				# policy belong in can_invite_scholar so failed gates stay visible.
+				zhx_is_lijiao_country = yes
+				zhx_has_doctrine = yes
+				has_religious_school = yes
+				NOT = { has_country_flag = zhx_doctrine_fa }
+				FROM = {
+					exists = yes
+					NOT = { tag = ROOT }
+					zhx_is_lijiao_country = yes
+					has_country_flag = zhx_doctrine_fa
+					religious_school = { group = eastern school = zhx_fa_school }
 				}
-				custom_trigger_tooltip = {
-					tooltip = zhx_guest_school_not_current_fa_tt
-					NOT = { has_country_flag = zhx_doctrine_fa }
-				}
-				custom_trigger_tooltip = {
-					tooltip = zhx_guest_school_source_fa_requirements_tt
-					FROM = {
-						zhx_guest_school_source_is_eligible_fa = yes
-					}
-					knows_of_scholar_country_capital_trigger = yes
-				}
-				hidden_trigger = {
-					if = {
-						limit = { ai = yes }
-						is_at_war = no
-						stability = 0
-						NOT = { num_of_loans = 1 }
-						dip_power = 125
-						zhx_guest_school_ai_wants_fa = yes
-					}
-				}
+				knows_of_scholar_country_capital_trigger = yes
 			}
 			can_invite_scholar = {
 				# Fail closed on the group-scoped eastern interface. Buddhist and
@@ -1763,31 +1741,20 @@ eastern = {
 			# only chooses school and source; a separate confirmation event owns
 			# payment and the guarded twenty-year court contract.
 			potential_invite_scholar = {
-				custom_trigger_tooltip = {
-					tooltip = zhx_guest_school_inviter_requirements_tt
-					zhx_guest_school_may_invite = yes
+				# Visibility only: affordability, opinion, contract locks and AI
+				# policy belong in can_invite_scholar so failed gates stay visible.
+				zhx_is_lijiao_country = yes
+				zhx_has_doctrine = yes
+				has_religious_school = yes
+				NOT = { has_country_flag = zhx_doctrine_mo }
+				FROM = {
+					exists = yes
+					NOT = { tag = ROOT }
+					zhx_is_lijiao_country = yes
+					has_country_flag = zhx_doctrine_mo
+					religious_school = { group = eastern school = zhx_mo_school }
 				}
-				custom_trigger_tooltip = {
-					tooltip = zhx_guest_school_not_current_mo_tt
-					NOT = { has_country_flag = zhx_doctrine_mo }
-				}
-				custom_trigger_tooltip = {
-					tooltip = zhx_guest_school_source_mo_requirements_tt
-					FROM = {
-						zhx_guest_school_source_is_eligible_mo = yes
-					}
-					knows_of_scholar_country_capital_trigger = yes
-				}
-				hidden_trigger = {
-					if = {
-						limit = { ai = yes }
-						is_at_war = no
-						stability = 0
-						NOT = { num_of_loans = 1 }
-						dip_power = 125
-						zhx_guest_school_ai_wants_mo = yes
-					}
-				}
+				knows_of_scholar_country_capital_trigger = yes
 			}
 			can_invite_scholar = {
 				# Fail closed on the group-scoped eastern interface. Buddhist and
@@ -1853,31 +1820,20 @@ eastern = {
 			# only chooses school and source; a separate confirmation event owns
 			# payment and the guarded twenty-year court contract.
 			potential_invite_scholar = {
-				custom_trigger_tooltip = {
-					tooltip = zhx_guest_school_inviter_requirements_tt
-					zhx_guest_school_may_invite = yes
+				# Visibility only: affordability, opinion, contract locks and AI
+				# policy belong in can_invite_scholar so failed gates stay visible.
+				zhx_is_lijiao_country = yes
+				zhx_has_doctrine = yes
+				has_religious_school = yes
+				NOT = { has_country_flag = zhx_doctrine_dao }
+				FROM = {
+					exists = yes
+					NOT = { tag = ROOT }
+					zhx_is_lijiao_country = yes
+					has_country_flag = zhx_doctrine_dao
+					religious_school = { group = eastern school = zhx_dao_school }
 				}
-				custom_trigger_tooltip = {
-					tooltip = zhx_guest_school_not_current_dao_tt
-					NOT = { has_country_flag = zhx_doctrine_dao }
-				}
-				custom_trigger_tooltip = {
-					tooltip = zhx_guest_school_source_dao_requirements_tt
-					FROM = {
-						zhx_guest_school_source_is_eligible_dao = yes
-					}
-					knows_of_scholar_country_capital_trigger = yes
-				}
-				hidden_trigger = {
-					if = {
-						limit = { ai = yes }
-						is_at_war = no
-						stability = 0
-						NOT = { num_of_loans = 1 }
-						dip_power = 125
-						zhx_guest_school_ai_wants_dao = yes
-					}
-				}
+				knows_of_scholar_country_capital_trigger = yes
 			}
 			can_invite_scholar = {
 				# Fail closed on the group-scoped eastern interface. Buddhist and
@@ -1943,31 +1899,20 @@ eastern = {
 			# only chooses school and source; a separate confirmation event owns
 			# payment and the guarded twenty-year court contract.
 			potential_invite_scholar = {
-				custom_trigger_tooltip = {
-					tooltip = zhx_guest_school_inviter_requirements_tt
-					zhx_guest_school_may_invite = yes
+				# Visibility only: affordability, opinion, contract locks and AI
+				# policy belong in can_invite_scholar so failed gates stay visible.
+				zhx_is_lijiao_country = yes
+				zhx_has_doctrine = yes
+				has_religious_school = yes
+				NOT = { has_country_flag = zhx_doctrine_bing }
+				FROM = {
+					exists = yes
+					NOT = { tag = ROOT }
+					zhx_is_lijiao_country = yes
+					has_country_flag = zhx_doctrine_bing
+					religious_school = { group = eastern school = zhx_bing_school }
 				}
-				custom_trigger_tooltip = {
-					tooltip = zhx_guest_school_not_current_bing_tt
-					NOT = { has_country_flag = zhx_doctrine_bing }
-				}
-				custom_trigger_tooltip = {
-					tooltip = zhx_guest_school_source_bing_requirements_tt
-					FROM = {
-						zhx_guest_school_source_is_eligible_bing = yes
-					}
-					knows_of_scholar_country_capital_trigger = yes
-				}
-				hidden_trigger = {
-					if = {
-						limit = { ai = yes }
-						is_at_war = no
-						stability = 0
-						NOT = { num_of_loans = 1 }
-						dip_power = 125
-						zhx_guest_school_ai_wants_bing = yes
-					}
-				}
+				knows_of_scholar_country_capital_trigger = yes
 			}
 			can_invite_scholar = {
 				# Fail closed on the group-scoped eastern interface. Buddhist and
@@ -2033,31 +1978,20 @@ eastern = {
 			# only chooses school and source; a separate confirmation event owns
 			# payment and the guarded twenty-year court contract.
 			potential_invite_scholar = {
-				custom_trigger_tooltip = {
-					tooltip = zhx_guest_school_inviter_requirements_tt
-					zhx_guest_school_may_invite = yes
+				# Visibility only: affordability, opinion, contract locks and AI
+				# policy belong in can_invite_scholar so failed gates stay visible.
+				zhx_is_lijiao_country = yes
+				zhx_has_doctrine = yes
+				has_religious_school = yes
+				NOT = { has_country_flag = zhx_doctrine_zongheng }
+				FROM = {
+					exists = yes
+					NOT = { tag = ROOT }
+					zhx_is_lijiao_country = yes
+					has_country_flag = zhx_doctrine_zongheng
+					religious_school = { group = eastern school = zhx_zongheng_school }
 				}
-				custom_trigger_tooltip = {
-					tooltip = zhx_guest_school_not_current_zongheng_tt
-					NOT = { has_country_flag = zhx_doctrine_zongheng }
-				}
-				custom_trigger_tooltip = {
-					tooltip = zhx_guest_school_source_zongheng_requirements_tt
-					FROM = {
-						zhx_guest_school_source_is_eligible_zongheng = yes
-					}
-					knows_of_scholar_country_capital_trigger = yes
-				}
-				hidden_trigger = {
-					if = {
-						limit = { ai = yes }
-						is_at_war = no
-						stability = 0
-						NOT = { num_of_loans = 1 }
-						dip_power = 125
-						zhx_guest_school_ai_wants_zongheng = yes
-					}
-				}
+				knows_of_scholar_country_capital_trigger = yes
 			}
 			can_invite_scholar = {
 				# Fail closed on the group-scoped eastern interface. Buddhist and

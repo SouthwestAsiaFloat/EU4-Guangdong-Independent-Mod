@@ -1,0 +1,21 @@
+{
+  "generator": "built-in imagegen",
+  "conversion": "LANCZOS resize; uncompressed RGBA DDS",
+  "assets": {
+    "mianliu": {
+      "source": "tools/assets/tianzi_government/sources/mianliu.png",
+      "source_sha256": "61d815b6f10334ab3254eaa33533f672fcb5a6e354f05dc8b02705fe9317f596",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "texture": "guangdong_independent_practice/gfx/interface/zhx_tianzi/mianliu_57.dds",
+      "texture_sha256": "ba9371a29be3904dab0915d3579c0612e8ab4c22241beb4c94564060ea6b9fb1",
+      "texture_size": [
+        57,
+        57
+      ],
+      "frames": 1
+    }
+  }
+}

@@ -1,8 +1,9 @@
 government = monarchy
-add_government_reform = celestial_empire
+add_government_reform = zhx_tianzi_reform
 government_rank = 3
 technology_group = chinese
 religion = confucianism
+religious_school = zhx_ru_school
 primary_culture = gdd_zhongyuan
 capital = 688	# Kaifeng
 fixed_capital = 688

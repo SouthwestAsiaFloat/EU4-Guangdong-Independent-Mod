@@ -1,0 +1,10 @@
+zhx_tianzi_title = {
+    rank = { 3 = zhx_tianzi_state }
+    ruler_male = { 3 = zhx_tianzi_ruler }
+    ruler_female = { 3 = zhx_tianzi_ruler }
+    heir_male = { 3 = zhx_tianzi_heir }
+    heir_female = { 3 = zhx_tianzi_heir }
+    consort_male = { 3 = zhx_tianzi_consort }
+    consort_female = { 3 = zhx_tianzi_consort }
+    trigger = { government = monarchy has_reform = zhx_tianzi_reform }
+}

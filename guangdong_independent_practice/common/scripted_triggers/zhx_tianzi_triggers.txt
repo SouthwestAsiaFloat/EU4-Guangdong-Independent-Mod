@@ -1,0 +1,11 @@
+# The opening exception exists only until the existing Tianxia startup finishes.
+zhx_tianzi_is_authority = {
+    OR = {
+        zhx_is_tianzi = yes
+        AND = { tag = CZH NOT = { has_global_flag = zhx_system_initialised_v8 } }
+    }
+}
+zhx_tianzi_has_government = {
+    zhx_tianzi_is_authority = yes
+    has_reform = zhx_tianzi_reform
+}

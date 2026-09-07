@@ -1,0 +1,48 @@
+zhx_tianzi_apply_training = {
+    if = {
+        limit = { NOT = { has_country_modifier = zhx_wangshi_training } }
+        add_country_modifier = { name = zhx_wangshi_training duration = -1 }
+    }
+}
+zhx_tianzi_sync_government = {
+    if = {
+        limit = { zhx_tianzi_is_authority = yes }
+        if = { limit = { NOT = { government = monarchy } } change_government = monarchy }
+        if = {
+            limit = { NOT = { has_reform = zhx_tianzi_reform } }
+            # Direct first-tier replacement preserves ruler/heir and avoids an empty tier.
+            add_government_reform = zhx_tianzi_reform
+        }
+        set_government_rank = 3
+        zhx_tianzi_apply_training = yes
+    }
+    else = {
+        remove_country_modifier = zhx_wangshi_training
+        if = {
+            limit = { has_reform = zhx_tianzi_reform }
+            add_government_reform = feudalism_reform
+            set_government_rank = 2
+        }
+    }
+}
+# Future authored government/common-reform effects may call these once per award.
+# Three steps each: 6 opening + 6 government + 6 council = 18 maximum.
+# They intentionally have no decision or automatic trigger until nodes are designed.
+zhx_tianzi_expand_government_guard = {
+    if = {
+        limit = {
+            zhx_tianzi_has_government = yes
+            NOT = { check_variable = { which = zhx_wangshi_government_stage value = 3 } }
+        }
+        change_variable = { which = zhx_wangshi_government_stage value = 1 }
+    }
+}
+zhx_tianzi_expand_council_guard = {
+    if = {
+        limit = {
+            zhx_tianzi_has_government = yes
+            NOT = { check_variable = { which = zhx_wangshi_council_stage value = 3 } }
+        }
+        change_variable = { which = zhx_wangshi_council_stage value = 1 }
+    }
+}
