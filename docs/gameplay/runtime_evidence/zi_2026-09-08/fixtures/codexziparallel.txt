@@ -1,0 +1,12 @@
+# Simulate occupied council, second qualified applicant, then a new term.
+CZH = {
+ set_country_flag = zhx_council_phase_ballot_open
+ set_country_flag = zhx_council_pending_ritual_breakdown
+ set_variable = { which = zhx_council_yes value = 17 }
+ set_variable = { which = zhx_feudatory_term_serial value = 3 }
+}
+CAG = { set_variable = { which = zhx_merit_term value = 0 } }
+4966 = { cede_province = CAI add_core = CAI }
+5382 = { cede_province = CAI add_core = CAI }
+5055 = { cede_province = CAI add_core = CAI }
+CAI = { capital_scope = { add_base_tax = 40 } set_variable = { which = zhx_merit_term value = 50 } }

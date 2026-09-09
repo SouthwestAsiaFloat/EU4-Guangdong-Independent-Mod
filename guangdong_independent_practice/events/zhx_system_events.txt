@@ -129,22 +129,25 @@ country_event = {
     }
 }
 
-# 玩家可见的首次系统说明。这个事件不保存状态，只读取隐藏初始化器写入的旗标。
+# First-time dispatcher: the country story finishes before the guide directory.
 country_event = {
     id = zhx_system.2
     title = zhx_system.2.t
     desc = zhx_system.2.d
     picture = DIPLOMACY_eventPicture
+    hidden = yes
     is_triggered_only = yes
 
     trigger = {
         ai = no
         has_global_flag = zhx_system_initialised_v4
         NOT = { has_country_flag = zhx_startup_overview_seen }
+        NOT = { has_country_flag = zhx_opening_background_pending }
     }
 
     immediate = {
         set_country_flag = zhx_startup_overview_seen
+        zhx_open_mod_guide = yes
     }
 
     option = {
@@ -499,6 +502,7 @@ country_event = {
             has_country_flag = zhx_council_kind_ritual_breakdown
             has_country_flag = zhx_council_kind_debate
             has_country_flag = zhx_council_kind_promotion
+            has_country_flag = zhx_council_kind_chu
         }
     }
     immediate = {
@@ -514,6 +518,10 @@ country_event = {
         else_if = {
             limit = { has_country_flag = zhx_council_kind_promotion }
             zhx_feudatory_resolve_promotion = yes
+        }
+        else_if = {
+            limit = { has_country_flag = zhx_council_kind_chu }
+            zhx_chu_resolve_council = yes
         }
     }
     option = { name = OK }

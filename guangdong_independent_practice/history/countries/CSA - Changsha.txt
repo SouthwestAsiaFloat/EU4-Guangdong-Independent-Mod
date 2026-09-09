@@ -9,3 +9,18 @@ add_accepted_culture = gdd_gui
 add_accepted_culture = gdd_guangfu
 capital = 671 # Changsha
 fixed_capital = 671
+
+# ZHX_CHU_OPENING_RULER_BEGIN
+1444.11.11 = {
+    monarch = {
+        name = "¹eMr"
+        dynasty = "Šq"
+        birth_date = 1404.1.1
+        adm = 1
+        dip = 2
+        mil = 3
+        culture = gdd_chu
+        religion = confucianism
+    }
+}
+# ZHX_CHU_OPENING_RULER_END

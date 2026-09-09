@@ -1,0 +1,539 @@
+﻿l_english:
+ zhx_mod_guide_title:0 "!jÄuËNÍu"
+ zhx_mod_guide_desc:0 "åg–hT)YN0g÷^0JyYeNfR«R„vR‰sËNÍu0ïSÍSYSbVÿN±‚9Dn0"
+ zhx_mod_guide_open_tt:0 "SbVR‰sîvUVÿê1u	û‹0"
+ zhx_mod_guide_available_tt:0 "HQÓumgSVMRËNÍubVNSÌwofÿQÍ‘°eSbV0"
+ zhx_guide_close:0 "TwSÿåeTQû‹"
+ zhx_guide_home:0 "ÔÞVI`îvUV"
+ zhx_guide.1.t:0 "!jÄuËNÍu"
+ zhx_guide.1.d:0 "[Root.GetZhxGuideStatusAll]\n\n§YRýVeQè•§!\n• hT²RSXRÿRýVT	gLy7zÿø‹PRv^wÿ»lST	gNbRV0\n§YÛVÇr	û‹§!\n• §YhT)YN§!ÿqQTéy^0Y²Nb‰NNßvŸR0\n• §Yg÷^§!ÿ5r6RKfS0)YPRNyrŠkMeSO0\n• §Y—RYe§!ÿJyYe0mQ¶RõeSN¾RfR0\n• §YfR«R§!ÿ0W¹e6eÊv0`ó`.V›RNÁ™V0\n§Y–öeåg–§!\n• Í‘VeQãSÿ³Q®‹h ’! §Y!jÄuËNÍu§!0\n• Nb	gýV¶RGWïS–û‹ÿžRE–Lˆ¨RæS	gagöN0"
+ zhx_guide.1.o0:0 "hT)YNÿRýVNßv¦u"
+ zhx_guide.1.o1:0 "g÷^ÿ5r6RNMeSO"
+ zhx_guide.1.o2:0 "—RYeÿJyYeNŒv¶R"
+ zhx_guide.1.o3:0 "fR«Rÿ²‹-^N.Ob"
+ zhx_guide.2.t:0 "hT)YNÿqQˆRNýNßvfN"
+ zhx_guide.2.d:0 "[Root.GetZhxGuideStatusTianxia]\n\n§YRýVNqQTéy^§!\n• ø‹¯OT	g†uW0›Q–NMeäNÿqQTb²‹)YPR0gONßv“Š0\n• §YbXT«ŽýN§!NIrŽND–¸^sQûs0\n• TýVïSåNIYLˆNT„výV…QýVº‹0\n§Y	N8NNT„v‚iõV§!\n• §YJyPN§!ÿ)YNéy^„vÛvpˆ0\n• §YßvŸR§!ÿ,gýV!.sNŸR³R0\n• §Y)YNlQ®‹§!ÿYtRýVqQT®‹˜˜0\n§Yågw°s¶r§!\n• óSN¹e§YhT)YN§!eQãS0\n• TYeQãSÿ§YSbVhT)YNI`È‰§!³Q®‹0"
+ zhx_guide.2.o0:0 "bXTNJyPN"
+ zhx_guide.2.o1:0 "Y²NNb‰N"
+ zhx_guide.2.o2:0 "ßvŸRNN'Yø‹¯O"
+ zhx_guide.2.o3:0 "gO0lQ®‹N)YN'Y©"
+ zhx_guide.2.o4:0 "ÔÞVI`îvUV"
+ zhx_guide.3.t:0 "Œ(WhT)YNKN…Qÿ1/2	ÿ"
+ zhx_guide.3.d:0 "[Root.GetZhxGuideStatusTianxia]\n\n§YbXT«ŽýN§!\n• §Y)YPR§!N‰v°‹(WŒQ„v§Yø‹¯O§!ÄubhT)YN0\n• bXTNNšR=fD–¸^ÿqQŒTMeSOmNïSeQR0\n• HrþVeQãSÿ§YågwhT)YNHrþV§!³Q®‹„vwýNØš®N0\n\n§Y÷‹RhTMsÿhQèagöN§!\n• eQãSÿ)YPRY²Nu˜ ’! §Y÷‹RhTMs§!0\n• ,gýV‰˜HN§BìrËzýV¶R§!0\n• §RNNûNUOhT)YNýV¶R²Nb§!0\n• §R¡l	g¯rßv0yeQb3u÷‹·QtS§!0\n• ,gýVùR)YPR‹Ya§BóS150§!0\n• –™ýMOŽN§B-NýV!k'YF–§!ÿb§BNhT)YNýV¶R¥cäX§!0"
+ zhx_guide.3.o0:0 "NNu˜ÿÁˆïSNYýV"
+ zhx_guide.3.o1:0 "ÔÞVÿhT)YNÿqQˆRNýNßvfN"
+ zhx_guide.3.o2:0 "ÔÞVI`îvUV"
+ zhx_guide.43.t:0 "Œ(WhT)YNKN…Qÿ2/2	ÿ"
+ zhx_guide.43.d:0 "[Root.GetZhxGuideStatusTianxia]\n\n§YÁˆïSNYýV§!\n• ‡eS0—RYeNMeSONP–0\n• 1u)YPR¥c×Sb&T³QÿmÒbT§RASt^NýwQ3u÷‹§!0\n• †SòSø‹¯OìrËzYýVÿïSb`YbXT«ŽýN0\n• §RjOHND–¸^«ˆÊ‘LeÿNOê¨ReQR§!0"
+ zhx_guide.43.o0:0 "NNu˜"
+ zhx_guide.43.o1:0 "JyPN`7hqVÍTRýV"
+ zhx_guide.43.o2:0 "úQNY²NBlôc"
+ zhx_guide.43.o3:0 "ÔÞVÿhT)YNÿqQˆRNýNßvfN"
+ zhx_guide.43.o4:0 "ÔÞVI`îvUV"
+ zhx_guide.4.t:0 "JyPNÿ)YNqQ	g„vÛvpˆÿ1/3	ÿ"
+ zhx_guide.4.d:0 "[Root.GetZhxGuideStatusTianxia]\n\n§YJyPNJP§!\n• VNSHN§B0§!ÿƒôV§B-100ó100§!0\n• MeNS0gO0b‰NNlQ®‹ýO9eØSJyPN0\n• eQãSÿ§YhT)YNb—g§!ågw°sJPNSVgîOck0\n\n§YJyPNóS§!§B60§!§Y§!\n• z6eÿ§G+10%§!0\n• uµNHe‡sÿ§G+10%§!0\n\n§YJyPN§!§B20§!§YóN³§!§B60§!§Y§!\n• z6eÿ§G+5%§!0\n• uµNHe‡sÿ§G+5%§!0"
+ zhx_guide.4.o0:0 "NNu˜ÿJyPN-20óN³20"
+ zhx_guide.4.o1:0 "ÔÞVÿhT)YNÿqQˆRNýNßvfN"
+ zhx_guide.4.o2:0 "ÔÞVI`îvUV"
+ zhx_guide.44.t:0 "JyPNÿ)YNqQ	g„vÛvpˆÿ2/3	ÿ"
+ zhx_guide.44.d:0 "[Root.GetZhxGuideStatusTianxia]\n\n§YJyPN§!§B-20§!§YóN³§!§B20§!§Y§!\n• z6eÿ§G+2%§!0\n• uµNHe‡sÿ§G+2%§!0\n• ­‹Ãu¦^ÿ§G+1%§!0\n\n§YJyPN§!§B-60§!§YóN³§!§B-20§!§Y§!\n• z6eÿ§R-5%§!0\n• uµNHe‡sÿ§R-5%§!0\n• ­‹Ãu¦^ÿ§G+2.5%§!0\n• wýNb‰NRpe±‚9ÿ§G-7.5%§!0\n• ÛSqN¦^ÿ§R+1§!0\n• ÏkgRƒŸ^ÿ§R+0.10§!0"
+ zhx_guide.44.o0:0 "NNu˜ÿJyPNNOŽN-60"
+ zhx_guide.44.o1:0 "NNu˜"
+ zhx_guide.44.o2:0 "ÔÞVÿhT)YNÿqQˆRNýNßvfN"
+ zhx_guide.44.o3:0 "ÔÞVI`îvUV"
+ zhx_guide.45.t:0 "JyPNÿ)YNqQ	g„vÛvpˆÿ3/3	ÿ"
+ zhx_guide.45.d:0 "[Root.GetZhxGuideStatusTianxia]\n\n§YJyPNNOŽN§!§B-60§!§Y§!\n• z6eÿ§R-10%§!0\n• uµNHe‡sÿ§R-10%§!0\n• ­‹Ãu¦^ÿ§G+5%§!0\n• wýNb‰NRpe±‚9ÿ§G-15%§!0\n• ÛSqN¦^ÿ§R+2§!0\n• ÏkgRƒŸ^ÿ§R+0.15§!0\n\n§Yb‰NTœgæS—r§!\n• µOeuib.VN–Ù”Nch9eØS0\n• mp¯O„v˜YµOeuib.VNJyPNmc1YæSLˆ¡‹—r0"
+ zhx_guide.45.o0:0 "NNu˜"
+ zhx_guide.45.o1:0 "ÔÞVÿhT)YNÿqQˆRNýNßvfN"
+ zhx_guide.45.o2:0 "ÔÞVI`îvUV"
+ zhx_guide.5.t:0 "b‰Nÿ8hÃVN¯rßvÿ1/2	ÿ"
+ zhx_guide.5.d:0 "[Root.GetZhxGuideStatusTianxia]\n\n§YUOöe„gb¯rßv§!\n• ²Nb-NÖS—V)YPRbø‹¯O„vwýNÿN,gýV§R¡l	gå‹w8hÃV§!0\n• nf08lENNûN¡R±RðyÿGW§RNýwãNÿf8hÃV§!0\n• RVØ8hÃV0Ê‘LeýV¶R0Y²NteTIrTÕllûyæSLˆYt0\n\n§Y¯rßv„vTœg§!\n• §Y¯rßv§!cíu¦u§BASt^§!ÿQ¯r7R°egP–0\n• )YPRùR1ûNýV‹Yaÿ§RRËY-100§!0\n• NðsQûsé`ZÏkt^b`Y§B10§!0\n• )YPRïSÖS—V§YIYžOj§!b‰NPãS0\n• nf^—ÕlrR0WN˜Y	cÑSUS¦^ý RµOeuib.V0\n• ŸSHrŒT¦u„vµOeuib.VÍN6quHe0"
+ zhx_guide.5.o0:0 "NNu˜ÿmp¯ON1ûNRV^S"
+ zhx_guide.5.o1:0 "ÔÞVÿhT)YNÿqQˆRNýNßvfN"
+ zhx_guide.5.o2:0 "ÔÞVI`îvUV"
+ zhx_guide.46.t:0 "b‰Nÿ8hÃVN¯rßvÿ2/2	ÿ"
+ zhx_guide.46.d:0 "[Root.GetZhxGuideStatusTianxia]\n\n§Ymp¯ON1ûNRV^S§!\n• Ïkb‰Nmp¡NN8NbXTÿ˜Y§RúVšR5µOeuib.V§!0\n• å‹˜Yé`ZËe RÙuvQÖNTJhhT)YNýV¶R0\n• D–¸^NbHNÿ1u—RINýVbÅb1ûN0\n• ûNUO¹eVmp¡NN8NbXTÿ)YNJyPN§R-5§!0"
+ zhx_guide.46.o0:0 "NNu˜"
+ zhx_guide.46.o1:0 ")YPR¯rßvNßWYeQµO"
+ zhx_guide.46.o2:0 "ÔÞVÿhT)YNÿqQˆRNýNßvfN"
+ zhx_guide.46.o3:0 "ÔÞVI`îvUV"
+ zhx_guide.6.t:0 "úQ0JT%`NQe±`ÿ1/3	ÿ"
+ zhx_guide.6.d:0 "[Root.GetZhxGuideStatusTianxia]\n\n§Yê»ShTMsÿagöNNeQãS§!\n• eQãSÿ§Yê»ShTMs§!³Q®‹0\n• ‰˜HN§BìrËzø‹¯O§!0\n• ,gýV‰˜§BŒTs^§!0\n• ,gýV§RNýw=f)YPR§!0\n\n§YúQ„vãN÷N§!\n• Zgÿ§R-25§!0\n• )YPRùR,gýVÿ§RASt^-50‹Ya§!0\n• vQÖNbXTùR,gýVÿ§RASt^-25‹Ya§!0\n• §RŒNASt^…QNýw3u÷‹ÞVRV§!0\n• §RnzzßvŸRN,gJSDJh§!ÿNnd–òT	g¯rßv0"
+ zhx_guide.6.o0:0 "NNu˜ÿJT%`NQe±`"
+ zhx_guide.6.o1:0 "ÔÞVÿhT)YNÿqQˆRNýNßvfN"
+ zhx_guide.6.o2:0 "ÔÞVI`îvUV"
+ zhx_guide.47.t:0 "úQ0JT%`NQe±`ÿ2/3	ÿ"
+ zhx_guide.47.d:0 "[Root.GetZhxGuideStatusTianxia]\n\n§YJT%`NQe±`§!\n• §YJT%`§!ÿ×SßWYÛIe„vìrËz©s¶Rø‹¯OT)YPR÷‹Bl0\n• §YQe±`§!ÿ©s¶R)YPR(W×SIeûQø‹¯OY²Nu˜IN¨ReQôc0\n• JT%`‰˜1u)YPRTrYÿQe±`ôv¥cÂSb0\n• 2NwGW§GN6eDn§!0"
+ zhx_guide.47.o0:0 "NNu˜ÿeQôcagöN"
+ zhx_guide.47.o1:0 "NNu˜"
+ zhx_guide.47.o2:0 "ÔÞVÿhT)YNÿqQˆRNýNßvfN"
+ zhx_guide.47.o3:0 "ÔÞVI`îvUV"
+ zhx_guide.48.t:0 "úQ0JT%`NQe±`ÿ3/3	ÿ"
+ zhx_guide.48.d:0 "[Root.GetZhxGuideStatusTianxia]\n\n§YeQôcagöN§!\n• )YPR‰˜§BìrËz§!0\n• )YPR‰˜§BŒTs^§!0\n• îvh‰˜HN§BìrËzø‹¯O§!0\n• îvh‰˜HN§Bå‹HW2–¡Vb‰N†˜–ˆ§!0\n• ‰˜×S§BßWYb‰N†˜–ˆôv¥cÛIe§!0\n• §RNýwTöewSeQhT…QÛIe.b„v2–¡Vb§!0\n• ßWYÛIe¹e§RNýw=f)YPRßvËSb^SýV§!0\n\n§YeQôcƒôVN)YPR¯rßv§!\n• ·ƒÆQTÿ)YPR ReQîvh„v§YhQè2–¡Vb‰N§!0\n• )YPR,gºN¯rßvÿTgNybæScbJyPN§R3¹p§!0"
+ zhx_guide.48.o0:0 "NNu˜"
+ zhx_guide.48.o1:0 "ÔÞVÿhT)YNÿqQˆRNýNßvfN"
+ zhx_guide.48.o2:0 "ÔÞVI`îvUV"
+ zhx_guide.7.t:0 "ßvŸRÿ	N,gŸRMsÿ1/2	ÿ"
+ zhx_guide.7.d:0 "[Root.GetZhxGuideStatusTianxia]\n\n§Y	N,gŸRMs§!\n• eQãSÿhT)YNb—g ’! §YÙSŸRLˆO§!0\n• §YïS(ußvŸR§!ÿƒôV§B0ó100§!ÿ(uŽN÷‹†˜Ï‹äN0\n• §Y,gJSßvŸR§!ÿ(uŽN-^MO’cTNKf5rDJh0\n• §YÈu«ŽßvŸR§!ÿ,gJSTRöeÿ(uegÔkƒØšN0\n\n§Y·ƒ—V0ˆm9Nnt§!\n• ·ƒ—VßvŸR8^Töe°‹eQ	N&0\n• ˆm9ïS(ußvŸRÿ§GNcb,gJSŒTÈu«Žbéu§!0\n• ŒNAS”Nt^bcJSÿnzz,gJSbéuŒTIN¨R!.sDJh0\n• úQhT)YNÿ§R	N,g&hQènzz§!0"
+ zhx_guide.7.o0:0 "NNu˜ÿ2NÍy¹Rf÷mÆm„v(u"
+ zhx_guide.7.o1:0 "ÔÞVÿhT)YNÿqQˆRNýNßvfN"
+ zhx_guide.7.o2:0 "ÔÞVI`îvUV"
+ zhx_guide.49.t:0 "ßvŸRÿ	N,gŸRMsÿ2/2	ÿ"
+ zhx_guide.49.d:0 "[Root.GetZhxGuideStatusTianxia]\n\n§Y2NÍy¹Rf÷mÆm„v(u§!\n• Kf5rÀhåg§Y,gJSßvŸR§!ÿÐc²N3u÷‹§GNcbßvŸR§!0\n• ÷‹†˜Ï‹äNˆmw§YïS(ußvŸR§!0\n• N'Yø‹¯OØ‰˜§B,gJSóSN!kIN¨R!.s§!0\n• ÅN`—ÑSUS¦^ÖS—V„vúW,gßvŸRÿNýwˆcˆNeQ	DJh0"
+ zhx_guide.49.o0:0 "NNu˜"
+ zhx_guide.49.o1:0 "`7hËzŸRNeQ	"
+ zhx_guide.49.o2:0 "`7h÷‹†˜ASt^Ï‹äN"
+ zhx_guide.49.o3:0 "ÔÞVÿhT)YNÿqQˆRNýNßvfN"
+ zhx_guide.49.o4:0 "ÔÞVI`îvUV"
+ zhx_guide.8.t:0 "ËzŸRNŒNAS”Nt^9e	ÿ1/2	ÿ"
+ zhx_guide.8.d:0 "[Root.GetZhxGuideStatusTianxia]\n\n§Yt^¦^úW,gßvŸR§!\n• ÑSUS¦^§BN³100§!ÿßvŸR§G+1§!0\n• ÑSUS¦^§B100ó249§!ÿßvŸR§G+2§!0\n• ÑSUS¦^§B250ó499§!ÿßvŸR§G+3§!0\n• ÑSUS¦^§BóS500§!ÿßvŸR§G+4§!0\n\n§YIN¨R!.s§!\n• jOHNÜw¹eb‰N†˜–ˆûQ%ßWY†˜–ˆÿ§G10IN¨RßvŸR§!0\n• nfbXTÂSN'Y©•bhyÿÓu—röe—V§G10IN¨RßvŸR§!0\n• SVMRLffRïSýwæS RÄ‹÷NVY±R0"
+ zhx_guide.8.o0:0 "NNu˜ÿŒNAS”Nt^9e	"
+ zhx_guide.8.o1:0 "ÔÞVÿhT)YNÿqQˆRNýNßvfN"
+ zhx_guide.8.o2:0 "ÔÞVI`îvUV"
+ zhx_guide.50.t:0 "ËzŸRNŒNAS”Nt^9e	ÿ2/2	ÿ"
+ zhx_guide.50.d:0 "[Root.GetZhxGuideStatusTianxia]\n\n§YŒNAS”Nt^9e	§!\n• DJhÿ°sXRbXTÿ,gJS	gÇ§BIN¨R!.s§!0\n• ’cTHQÔk§Y,gJSßvŸR§!0\n• QÔk§YÈu«ŽßvŸR§!0\n• ÍNøvTRO!kÔkƒ§Y°sûNN'Yø‹¯O«ŽýN§!0§YZg§!0\n• MR§BNT§!eQ-^ÿ,r§BNT§!ŠQûN–™-^0\n• T˜ïSzzHÿ§RûNg…QNeˆ§!0\n\n§Y-^MO6eÊvNågweQãS§!\n• N'Yø‹¯Oÿ›RÏ‘•bS§G+10§!0\n• –™-^ø‹¯Oÿ˜Y›RÏ‘•bS§G+10§!0\n• ±‚9ïS(ußvŸR§GNqVÍT’cT§!0\n• béuÊS,rNTè•Ûiÿ§YhT)YNŸRMs§!0"
+ zhx_guide.50.o0:0 "NNu˜"
+ zhx_guide.50.o1:0 "ÔÞVÿhT)YNÿqQˆRNýNßvfN"
+ zhx_guide.50.o2:0 "ÔÞVI`îvUV"
+ zhx_guide.9.t:0 "ÙSŸRLˆOÿŠbŸR³R(uŽN»lýVÿ1/2	ÿ"
+ zhx_guide.9.d:0 "[Root.GetZhxGuideStatusTianxia]\n\n§Y÷‹†˜Ï‹äN§!\n• eQãSÿhT)YNb—gNJSè ’! §YÙSŸRLˆO§!0\n• ÏkSÏ‹äNˆmw§R50ïS(ußvŸR§!0\n• Ï‹äNcíu§BASt^§!0\n• T‰sÅNïSc	g§BNS§!ÿgYTöeåb	g§BÛV‰s§!0\n\n§YšbltMeÿ‹s‹THd`§!\n• hQýVÛSqN¦^ÿ§G-2§!0\n• 3zšR¦^±‚9ÿ§G-10%§!0\n\n§YšbltMeÿtel™T»l§!\n• Ïkgê»lÿ§G-0.05§!0\n• Ïkt^P%ÿ§G-0.10§!0"
+ zhx_guide.9.o0:0 "NNu˜ÿFURNÿßv^FU"
+ zhx_guide.9.o1:0 "ÔÞVÿhT)YNÿqQˆRNýNßvfN"
+ zhx_guide.9.o2:0 "ÔÞVI`îvUV"
+ zhx_guide.51.t:0 "ÙSŸRLˆOÿŠbŸR³R(uŽN»lýVÿ2/2	ÿ"
+ zhx_guide.51.d:0 "[Root.GetZhxGuideStatusTianxia]\n\n§YFURNÿßv^FU§!\n• 8fHe‡sÿ§G+10%§!0\n• hQNS8f›RÏ‘ÿ§G+10%§!0\n\n§YFURNÿRþ‹ŒvåT§!\n• ú^.±‚9ÿ§G-10%§!0\n• ÑSUSb,gÿ§G-5%§!0\n\n§YæS2N‰sÏ‹äN§!\n• §Yte›QˆR	W§!ÿ›Q–ëXlNºN›RÿbÎW2–NLe›Qmcw0\n• §Y‰ŸRîOßv§!ÿðX‰ŠNZgÿbsQûsNY²N˜R0\n• ŒRtepeJPÿ¬`jPùR”^Ï‹äN	c®”0\n• ppr‚¶r`Oô‹f§YŸRN³§!0§YT‰s`S(u§!b§Y«ŽýNN&r§!0"
+ zhx_guide.51.o0:0 "NNu˜"
+ zhx_guide.51.o1:0 "ÔÞVÿhT)YNÿqQˆRNýNßvfN"
+ zhx_guide.51.o2:0 "ÔÞVI`îvUV"
+ zhx_guide.10.t:0 "gON)YNlQ®‹ÿ1/3	ÿ"
+ zhx_guide.10.d:0 "[Root.GetZhxGuideStatusTianxia]\n\n§YìSVVS'YgO§!\n• eQãSÿ§YìSVVS'YgO§!³Q®‹ÿP–)YPR0\n• agöNÿ§BŒTs^§!0\n• agöNÿ3zšR¦^§BóS0§!0\n• ±‚9ÿ§R100Ñ‘±”§!0\n• ±‚9ÿ§R50Y²N¹p§!0\n• ÓuœgÿJyPN§G+10§!0\n• ·QtSÿ§B”Nt^§!0"
+ zhx_guide.10.o0:0 "NNu˜ÿÍ‘3ubhTßvfN"
+ zhx_guide.10.o1:0 "ÔÞVÿhT)YNÿqQˆRNýNßvfN"
+ zhx_guide.10.o2:0 "ÔÞVI`îvUV"
+ zhx_guide.52.t:0 "gON)YNlQ®‹ÿ2/3	ÿ"
+ zhx_guide.52.d:0 "[Root.GetZhxGuideStatusTianxia]\n\n§YÍ‘3ubhTßvfN§!\n• eQãSÿ§YÍ‘3ubhTßvfN§!³Q®‹ÿP–)YPR0\n• agöNÿ§BŒTs^§!0\n• agöNÿ3zšR¦^§BóS1§!0\n• agöNÿJyPN§BóS50§!0\n• ±‚9ÿ§R50JyPN§!ÿêSïSžRLˆ§BN!k§!0\n• hT)YNýV¶R8lENY²NðX‰Šÿ§G+1§!0\n• hT)YNýV¶R8lENÛSqN¦^ÿ§G-1§!0"
+ zhx_guide.52.o0:0 "NNu˜ÿ)YNlQ®‹"
+ zhx_guide.52.o1:0 "NNu˜"
+ zhx_guide.52.o2:0 "ÔÞVÿhT)YNÿqQˆRNýNßvfN"
+ zhx_guide.52.o3:0 "ÔÞVI`îvUV"
+ zhx_guide.53.t:0 "gON)YNlQ®‹ÿ3/3	ÿ"
+ zhx_guide.53.d:0 "[Root.GetZhxGuideStatusTianxia]\n\n§Y)YNlQ®‹§!\n• KfS0éy^‹NØS0'Y©§RNýwTöe`S(u®‹z§!0\n• ®‹º‹8^cíu§B365åe§!0\n• T®‹˜˜„vhyCgNÜwúQÄ‰RNT0\n• 'Y©„vxQƒ Rhy§RNýwWY(u0RKfS§!0"
+ zhx_guide.53.o0:0 "NNu˜"
+ zhx_guide.53.o1:0 ")YN'Y©ÿ`7hNfN"
+ zhx_guide.53.o2:0 "5r6RNKfS"
+ zhx_guide.53.o3:0 "ÔÞVÿhT)YNÿqQˆRNýNßvfN"
+ zhx_guide.53.o4:0 "ÔÞVI`îvUV"
+ zhx_guide.11.t:0 ")YN'Y©ÿHQ	g÷‹©fNÿ1/2	ÿ"
+ zhx_guide.11.d:0 "[Root.GetZhxGuideStatusTianxia]\n\n§YNfN÷‹©ÿhQèagöN§!\n• eQãSÿ§YNfN÷‹©§!³Q®‹0\n• ,gýV‰˜HN§BhT)YNJyYeýV§!0\n• ,gýVINfRLmõeS§BóS70§!0\n• TLmóS	g§B	N8NhT)YNJyYeýV¶R§!0\n• d–,gýVYÿæS	gTLmýV¶RõeS§BóS50§!0\n\n§YUOöeNýw÷‹©§!\n• §R^V°eº‹gô•NýwÐcúQ°e÷‹©§!0\n• §RLffRAS”Nt^ûNg…QNýw÷‹©§!0\n• §RòT	g)YN'Y©öeNýw÷‹©§!0"
+ zhx_guide.11.o0:0 "NNu˜ÿ÷‹©fNNV©"
+ zhx_guide.11.o1:0 "ÔÞVÿhT)YNÿqQˆRNýNßvfN"
+ zhx_guide.11.o2:0 "ÔÞVI`îvUV"
+ zhx_guide.54.t:0 ")YN'Y©ÿHQ	g÷‹©fNÿ2/2	ÿ"
+ zhx_guide.54.d:0 "[Root.GetZhxGuideStatusTianxia]\n\n§Y÷‹©fNNV©§!\n• ÏkLm÷‹©fN	gHe§B	Nt^§!0\n• êS	gNýNöeÿN`S(ulQ®‹®‹z0\n• óS§B2NýN	gHe÷‹©§!N§BlQ®‹zzò•§!ÿ)YPRMbïSV©0\n• p`‹Y2NýNÿôv¥ceQ-^0\n• 	NýNåNNÿ)YPRébÖS§B2NHh§!0\n\n§Yhˆ`Någw§!\n• vQYOýV¶RïS=ec§Y2uHh§!0§YYNHh§!b§YŒv¶Rv^Ëz§!0\n• °sLˆLffRNmQ¶RT¿Rÿ§Yågw)YNLffR§!³Q®‹0\n• 	gHe÷‹©¶r`ÿ§YhT)YNb—g§!0"
+ zhx_guide.54.o0:0 "NNu˜"
+ zhx_guide.54.o1:0 "hyCg0ÜwúQNLffRûNg"
+ zhx_guide.54.o2:0 "ÔÞVÿhT)YNÿqQˆRNýNßvfN"
+ zhx_guide.54.o3:0 "ÔÞVI`îvUV"
+ zhx_guide.12.t:0 "'Y©Óuœg`7h³QšRÿ1/2	ÿ"
+ zhx_guide.12.d:0 "[Root.GetZhxGuideStatusTianxia]\n\n§YhyCgNgP–§!\n• 'Y©®‹º‹§B365åe§!ÿTýVúWNx§BNhy§!0\n• xQƒ RhyagöNÿ§B•bÙu,gýVINfRLm§!0\n• xQƒ RhyagöNÿ•bhyöeõeS§BóS75§!0\n• 2Ny˜Töeán³ÿhyCg˜Y§G+1§!0\n• hyCg(W•bhyöeúVšRÿKNTõeSØSSNý9e0\n• IN¨R9ehyöeÿÍ‘°e8h—rhyCg0\n\n§Y`7hÜwúQ§!\n• N¶R‰˜§BTöe%NJh†˜HQæSN¶RNŒv¶Rv^Ëz§!0\n• ,rNTv^RÿN‹V§YŒv¶Rv^Ëz§!0\n• )YPR§R¡l	g4xs^Cg§!0"
+ zhx_guide.12.o0:0 "NNu˜ÿÓu—rVY±R"
+ zhx_guide.12.o1:0 "ÔÞVÿhT)YNÿqQˆRNýNßvfN"
+ zhx_guide.12.o2:0 "ÔÞVI`îvUV"
+ zhx_guide.55.t:0 "'Y©Óuœg`7h³QšRÿ2/2	ÿ"
+ zhx_guide.55.d:0 "[Root.GetZhxGuideStatusTianxia]\n\n§YÓu—rVY±R§!\n• nfbXTckV•bhyÿ§G10IN¨RßvŸR§!0\n• •b-NÜwúQLffRÿ˜YßvŸR§G+2§!0\n• •b-NÜwúQ„vŒv¶Rv^Ëzÿ˜YßvŸR§G+1§!0\n\n§YLffRûNg§!\n• Óuœgcíu§BAS”Nt^§!ÿgô•§RNÍ‘°e÷‹©§!0\n• êSŒteýVE–LˆHN„vJyPNNßvŸRÄ‹÷N0\n• NÿfbcýV…Q§YINfRLm§!0\n• N9eØSýV…Q§YõeS§!b§YwýN—RYe§!0"
+ zhx_guide.55.o0:0 "NNu˜"
+ zhx_guide.55.o1:0 "mQ¶RýVE–Ä‹÷N"
+ zhx_guide.55.o2:0 "ýV…QJyYeNINfRLm"
+ zhx_guide.55.o3:0 "ÔÞVÿhT)YNÿqQˆRNýNßvfN"
+ zhx_guide.55.o4:0 "ÔÞVI`îvUV"
+ zhx_guide.13.t:0 ")YNLffRÿTNb‹NÿNTÄ‹÷Nÿ1/4	ÿ"
+ zhx_guide.13.d:0 "[Root.GetZhxGuideStatusTianxia]\n\n§Y)YNLffR„výVE–Ä‹÷N§!\n• åNNØSSêS(W§YLffRûNg…Q§!uHe0\n• t^¦^ŒTs^ÿ…QbÄ‹÷NÿNùRYÜw)RÄ‹÷NR+R¡‹—r0\n• ùRY·ƒÜw„v§B10IN¨RßvŸR§!ÍNæS°‹0\n\n§YQ¶RLffR§!\n• ŒRhQŒTs^ÿÏkt^˜YJyPN§G+1§!0\n• ÑSu…QbÿÏkt^˜YJyPN§R-1§!0\n• ûQ%ßWY†˜–ˆÿJyPN§G+3§!0\n• ûQ%ßWY†˜–ˆÿ˜YßvŸR§G+2§!0"
+ zhx_guide.13.o0:0 "NNu˜ÿÕl¶RLffR"
+ zhx_guide.13.o1:0 "ÔÞVÿhT)YNÿqQˆRNýNßvfN"
+ zhx_guide.13.o2:0 "ÔÞVI`îvUV"
+ zhx_guide.56.t:0 ")YNLffRÿTNb‹NÿNTÄ‹÷Nÿ2/4	ÿ"
+ zhx_guide.56.d:0 "[Root.GetZhxGuideStatusTianxia]\n\n§YÕl¶RLffR§!\n• àe…QbÿÏkt^˜YJyPN§G+1§!0\n• óS	NHW…QbÿÏkt^˜YJyPN§R-2§!0\n• ûQ%ßWY†˜–ˆÿJyPN§G+5§!0\n• ûQ%ßWY†˜–ˆÿ˜YßvŸR§G+3§!0\n\n§Y¨X¶RLffR§!\n• ŒRhQŒTs^ÿÏkt^˜YJyPN§G+2§!0\n• ÑSu…QbÿÏkt^˜YJyPN§R-2§!0\n• ûQ%ßWY†˜–ˆÿJyPN§G+1§!0\n• ûQ%ßWY†˜–ˆÿ˜YßvŸR§B0§!0"
+ zhx_guide.56.o0:0 "NNu˜ÿS¶RLffR"
+ zhx_guide.56.o1:0 "NNu˜"
+ zhx_guide.56.o2:0 "ÔÞVÿhT)YNÿqQˆRNýNßvfN"
+ zhx_guide.56.o3:0 "ÔÞVI`îvUV"
+ zhx_guide.57.t:0 ")YNLffRÿTNb‹NÿNTÄ‹÷Nÿ3/4	ÿ"
+ zhx_guide.57.d:0 "[Root.GetZhxGuideStatusTianxia]\n\n§YS¶RLffR§!\n• ŒRhQŒTs^ÿÏkt^˜YJyPN§G+2§!0\n• ÑSu…QbÿÏkt^˜YJyPN§R-1§!0\n• ûQ%ßWY†˜–ˆÿJyPN§G+1§!0\n• ûQ%ßWY†˜–ˆÿ˜YßvŸR§G+1§!0\n\n§YuQ¶RLffR§!\n• àe…QbÿÏkt^˜YJyPN§G+1§!0\n• óS	NHW…QbÿÏkt^˜YJyPN§R-1§!0\n• ûQ%ßWY†˜–ˆÿJyPN§G+5§!0\n• ûQ%ßWY†˜–ˆÿ˜YßvŸR§G+4§!0"
+ zhx_guide.57.o0:0 "NNu˜ÿµu8j¶RLffR"
+ zhx_guide.57.o1:0 "NNu˜"
+ zhx_guide.57.o2:0 "ÔÞVÿhT)YNÿqQˆRNýNßvfN"
+ zhx_guide.57.o3:0 "ÔÞVI`îvUV"
+ zhx_guide.58.t:0 ")YNLffRÿTNb‹NÿNTÄ‹÷Nÿ4/4	ÿ"
+ zhx_guide.58.d:0 "[Root.GetZhxGuideStatusTianxia]\n\n§Yµu8j¶RLffR§!\n• àe…QbÿÏkt^˜YJyPN§G+1§!0\n• óS	NHW…QbÿÏkt^˜YJyPN§R-1§!0\n• ûQ%ßWY†˜–ˆÿJyPN§G+3§!0\n• ûQ%ßWY†˜–ˆÿ˜YßvŸR§G+2§!0\n\n§YŒv¶Rv^Ëz§!\n• NÇ‘(uÐgN¶R„vt^¦^ŒTs^ÿ…QbÄ‹÷N0\n• ûQ%ßWY†˜–ˆÿJyPN§G+2§!0\n• ûQ%ßWY†˜–ˆÿ˜YßvŸR§G+1§!0\n• LffRNˆcˆNùR”^ýV…Q6eÊvÿýV…QHeœgÍN1uINfRLmNõeS³QšR0"
+ zhx_guide.58.o0:0 "NNu˜"
+ zhx_guide.58.o1:0 "ÔÞVÿhT)YNÿqQˆRNýNßvfN"
+ zhx_guide.58.o2:0 "ÔÞVI`îvUV"
+ zhx_guide.14.t:0 "g÷^ÿTRNgbMeKNS"
+ zhx_guide.14.d:0 "[Root.GetZhxGuideStatusWorldcourt]\n\n§YTRN-^MO§!\n• §YPR0=O0¯O0lQ§!ÿnfø‹¯O5r6RÿqVÍTýV¶RIrµuN9ei—0\n• §Y)YPR§!ÿìrËz«ŽýNÿN^SŽNnfKfSÈu¹p0\n• §YN'Yø‹¯O0–™-^§!ÿßvŸR9e	„v-^MOÿNIrŽN5rMO0\n\n§Y5r6RKNY„vg÷^§!\n• §YlQ‘§!åNNÎWê»l0\n• §YFUßv§!åN^G•Ïu%„ýV¿R0\n• §YaN2®‹O0›QMeœ^§!T	gCg›RNçuûNÄ‰R0\n\n§Yågw,gýV6R¦^§!\n• eQãSÿ§YMeœ^u˜ ’! Nµu9ei—§!0\n• ,gÇr²‹KfS0)YPRNyrŠkMeSOÿ–û‹NOgbLˆ9ei—0"
+ zhx_guide.14.o0:0 "5r6RNKfS"
+ zhx_guide.14.o1:0 ")YPR«ŽýNN‹su"
+ zhx_guide.14.o2:0 "lQ‘IryrŠkMeSO"
+ zhx_guide.14.o3:0 "ÔÞVI`îvUV"
+ zhx_guide.15.t:0 "PR0=O0¯O0lQÿ`7h÷‹SKf5rÿ1/3	ÿ"
+ zhx_guide.15.d:0 "[Root.GetZhxGuideStatusFeudatory]\n\n§Y÷‹SKf5r§!\n• ï¿uÿ§YPR ’! =O ’! ¯O ’! lQ§!0\n• eQãSÿ)YPRY²Nu˜ ’! §YqVÍT ’! ÷‹SKf5r§!0\n\n§Y	Ny˜Töeán³ÿßvŸRÿÑSUS¦^ÿôv^SÎW^§!\n• PRGS=Oÿ§B50ÿ50ÿ5§!0\n• =OGS¯Oÿ§B100ÿ100ÿ10§!0\n• ¯OGSlQÿ§B200ÿ200ÿ20§!0\n\n§YRSNYËz§!\n• °ebXTÎNPRwekÿ)4lNê¨RM–5r0\n• YýVb`Ymp¡NMRçe5r0\n• IN¨RÌwßvLeVçe5rÿQeQßvÎNPRwek0"
+ zhx_guide.15.o0:0 "NNu˜ÿ3u÷‹P–6R"
+ zhx_guide.15.o1:0 "ÔÞVÿg÷^ÿTRNgbMeKNS"
+ zhx_guide.15.o2:0 "ÔÞVI`îvUV"
+ zhx_guide.59.t:0 "PR0=O0¯O0lQÿ`7h÷‹SKf5rÿ2/3	ÿ"
+ zhx_guide.59.d:0 "[Root.GetZhxGuideStatusFeudatory]\n\n§Y3u÷‹P–6R§!\n• ^SýVÎW^N8gŒRb–kl0W§RN¡‹eQè•Ûi§!0\n• §RNýwN)YPR²Nb§!ÿ8gÓuHhNïSÍ‘YÐc²N0\n• Ïk§BŒNAS”Nt^§!NJSÿÏkýVgY3u÷‹§BN!k§!0\n• ÒbÝu01Y%0bŸRGW`S(uHgOÿ§GNcbßvŸR§!0\n\n§Y5rMONýV¶RIrµu§!\n• PR0=O0¯OÿúVšR§BNµu§!ÿlQÿ§BŒNµu§!0\n• =O°ežXÿt^¦^Zg§G+1§!0Y²NsQûsNP–§G+1§!0\n• ¯O0lQçub=OýV…VGÿQ·ƒY²NðX‰Š§G+1§!0"
+ zhx_guide.59.o0:0 "NNu˜ÿnfø‹¯O„vqQT9ei—"
+ zhx_guide.59.o1:0 "NNu˜"
+ zhx_guide.59.o2:0 "ÔÞVÿg÷^ÿTRNgbMeKNS"
+ zhx_guide.59.o3:0 "ÔÞVI`îvUV"
+ zhx_guide.60.t:0 "PR0=O0¯O0lQÿ`7h÷‹SKf5rÿ3/3	ÿ"
+ zhx_guide.60.d:0 "[Root.GetZhxGuideStatusFeudatory]\n\n§Ynfø‹¯O„vqQT9ei—§!\n• 5ÏeàVÚ‹GWaˆÿ§G+108NŒvR¹p§!0\n• 5ÏeqVÍT›Rÿ§Y+58NŒvR¹p§!0\n• t^¦^ckßu'`ÿ§G+0.5§!0\n• 3zšR¦^±‚9ÿ§G-10%§!0"
+ zhx_guide.60.o0:0 "NNu˜"
+ zhx_guide.60.o1:0 ")YPRÁˆïSNø‹¯Ohˆ³Q"
+ zhx_guide.60.o2:0 "ÔÞVÿg÷^ÿTRNgbMeKNS"
+ zhx_guide.60.o3:0 "ÔÞVI`îvUV"
+ zhx_guide.16.t:0 "KfSz^ÿôv¥cÁˆïSNlQ®‹ÿ1/2	ÿ"
+ zhx_guide.16.d:0 "[Root.GetZhxGuideStatusFeudatory]\n\n§YPRGS=Oÿ)YPRôv¥cÁˆïS§!\n• )YPRybÆQT§GËzsSˆc5r§!ÿN²NRýVhˆ³Q0\n• ïSNck(WÛLˆ„v)YNlQ®‹§GTöeYt§!0\n\n§Y=OGS¯O0¯OGSlQÿ)YNlQ®‹§!\n• lQ®‹‰˜§Bzzò•§!ÿNàe…VYt‹s‹TqSHg0\n• )YPR×StThˆ³Q§B365åe§!ÿ×StöeNGS5r0\n• nfbXTT§BNhy§!ÿ+T3u÷‹ýVNqQŒTýV0\n• )YPR§RN˜Y•bhy§!ÿmN¡l	g‹NTŒN!k&T³QCg0\n• ^T‰˜§B%NJhYŽNÍSùR§!ÿ§Rs^hy1Y%§!0\n• ÇTôv¥cKfSÿNb	g3u÷‹GW`S,gJSN!kHgO0"
+ zhx_guide.16.o0:0 "NNu˜ÿbcJSN8gÓuHh3u÷‹"
+ zhx_guide.16.o1:0 "ÔÞVÿg÷^ÿTRNgbMeKNS"
+ zhx_guide.16.o2:0 "ÔÞVI`îvUV"
+ zhx_guide.61.t:0 "KfSz^ÿôv¥cÁˆïSNlQ®‹ÿ2/2	ÿ"
+ zhx_guide.61.d:0 "[Root.GetZhxGuideStatusFeudatory]\n\n§YbcJSN8gÓuHh3u÷‹§!\n• Ðc²NöeÝOXR,gJSbéuÿ›Oå‹!k3u÷‹O(u0\n• èJSNOÖSˆmS8gÓuHh„v3u÷‹0\n• §RçeHh8gÓuöeNýwÍ‘YNfN§!0\n• §YlQýV§!=fnfKfSÈu¹p0\n• SVMR§R¡l	g1ulQýV3u÷‹bHN)YPR„vï¿u§!0"
+ zhx_guide.61.o0:0 "NNu˜"
+ zhx_guide.61.o1:0 "ßvŸR	N,g&"
+ zhx_guide.61.o2:0 "ÔÞVÿg÷^ÿTRNgbMeKNS"
+ zhx_guide.61.o3:0 "ÔÞVI`îvUV"
+ zhx_guide.17.t:0 "hT)YPRÿ‹suIY‰QÿRýVqQSÿ1/2	ÿ"
+ zhx_guide.17.d:0 "[Root.GetZhxGuideStatusTianzi]\n\n§YhT)YPRMeœ^Hg6R§!\n• úVšR§B^ýVIrµu§!ÿN­ˆTINMeSOÿO(u§Yckßu'`§!0\n• )YPR«ŽýN§RN1unfKfSbN'Yø‹¯O’cTˆcˆN§!0\n\n§Y9ei—6eÊvNCg›R§!\n• Y²NsQûsÿ§G+2§!0\n• 9e„UsQûsÿ§G+20%§!0\n• 5ÏeàVÚ‹GWaˆÿ§G+108NŒvR¹p§!0\n• 5ÏeqVÍT›Rÿ§Y+58NŒvR¹p§!0\n• t^¦^Zgÿ§G+0.5§!0\n• t^¦^ckßu'`ÿ§G+0.5§!0"
+ zhx_guide.17.o0:0 "NNu˜ÿ)YPRykS"
+ zhx_guide.17.o1:0 "ÔÞVÿg÷^ÿTRNgbMeKNS"
+ zhx_guide.17.o2:0 "ÔÞVI`îvUV"
+ zhx_guide.62.t:0 "hT)YPRÿ‹suIY‰QÿRýVqQSÿ2/2	ÿ"
+ zhx_guide.62.d:0 "[Root.GetZhxGuideStatusTianzi]\n\n§Y)YPRykS§!\n• uQÍyÿ§YP–˜yrŠkekuQ§!ÿ(W§YF–›QLub—§!ÛbßR0\n• úWNxP–˜ÿ§BmQâV§!0\n• ôu²b9Ôknfè–ÿ§R+20%§!0\n• kp›R2O³Rÿ§G+50%§!0\n• ²QûQ2O³Rÿ§G+50%§!0\n• ‰˜=T(u§BDomination§!=ec„vyrŠkè–…Q¹R0\n\n§Y‹suNTíub•§!\n• ‹suÅNP–§YVS0m3–§!0\n• ‰˜1u§BÇ‘(uå‹9ei—„v)YPRc	g§!0\n• ‹su,g0Wz6eÿ§G+50%§!0\n• ÐcØšykSP–˜„vTíub•ï¿u§RS8gVLe§!0"
+ zhx_guide.62.o0:0 "NNu˜"
+ zhx_guide.62.o1:0 "gON)YN‹N¡R"
+ zhx_guide.62.o2:0 "ÔÞVÿg÷^ÿTRNgbMeKNS"
+ zhx_guide.62.o3:0 "ÔÞVI`îvUV"
+ zhx_guide.18.t:0 "yrŠkMeSOÿ5r6RKNY„vg÷^"
+ zhx_guide.18.d:0 "[Root.GetZhxGuideStatusWorldcourt]\n\n§YNT„vgbMe¹eV§!\n• §YlQ‘§!ÿNÎWê»l0\n• §YlbýVFUßv§!ÿÏu%„FUNNY²NQÜu0\n• §YnoÞTaN2®‹O§!ÿëXÅuNßu»lwRM‘Cg›R0\n• §Y¢R¶Ri—‹T›QMeœ^§!ÿLmûsNqQŒT.Oßu³QšR»ST0\n\n§YDJhNågweQãS§!\n• NðMeSOïS	ghT)YNbXT«ŽýN0\n• bXT«ŽýN§RNOê¨RˆcˆNnfTINKfSDJh§!0\n• SVMR6R¦^ÿ§YMeœ^u˜ ’! Nµu9ei—§!0\n• lQ‘	g3u÷‹eQãSÿvQÖNN^SMeSOæS	gýV¶RN9ei—DJh0\n• –û‹NORbc,gýV6R¦^0"
+ zhx_guide.18.o0:0 "lQ‘ÿ3u÷‹NNÎW¹Lu"
+ zhx_guide.18.o1:0 "lbýVFUßv"
+ zhx_guide.18.o2:0 "aN2®‹ONi—‹T›QMeœ^"
+ zhx_guide.18.o3:0 "ÔÞVÿg÷^ÿTRNgbMeKNS"
+ zhx_guide.18.o4:0 "ÔÞVI`îvUV"
+ zhx_guide.19.t:0 "lQ‘ÿNÎWê»l„vãN÷Nÿ1/3	ÿ"
+ zhx_guide.19.d:0 "[Root.GetZhxGuideStatusGongyi]\n\n§YlQ‘ê»l6R§!\n• ÅNýwc	g§BN8Nôv^SwýN§!0\n• ûNgÿ§BÛVt^	LN§!0\n• ïSÏu%„§Y8fTwßv§!N§Y8fÎW^§!0\n• ÑSUSb,gÿ§G-20%§!0\n• 8fHe‡sÿ§G+10%§!0\n• ‰^X2–¡Vÿ§G+20%§!0"
+ zhx_guide.19.o0:0 "NNu˜ÿ÷‹ˆclQ‘ÿhQèagöN"
+ zhx_guide.19.o1:0 "ÔÞVÿyrŠkMeSOÿ5r6RKNY„vg÷^"
+ zhx_guide.19.o2:0 "ÔÞVI`îvUV"
+ zhx_guide.63.t:0 "lQ‘ÿNÎWê»l„vãN÷Nÿ2/3	ÿ"
+ zhx_guide.63.d:0 "[Root.GetZhxGuideStatusGongyi]\n\n§Y÷‹ˆclQ‘ÿhQèagöN§!\n• eQãSÿ)YPRY²Nu˜ ’! §Y÷‹ˆclQ‘§!0\n• ‰˜HN§BìrËz„vNwqQŒTýV§!0\n• òT ReQ§BhT)YN§!0\n• ‰˜YŽN§BŒTs^§!0\n• )YPRùR,gýV‹Ya§BóS100§!0\n• lbýV§RNpdk3u÷‹eQãS§!0"
+ zhx_guide.63.o0:0 "NNu˜ÿÁˆïSN1YJh"
+ zhx_guide.63.o1:0 "NNu˜"
+ zhx_guide.63.o2:0 "ÔÞVÿyrŠkMeSOÿ5r6RKNY„vg÷^"
+ zhx_guide.63.o3:0 "ÔÞVI`îvUV"
+ zhx_guide.64.t:0 "lQ‘ÿNÎWê»l„vãN÷Nÿ3/3	ÿ"
+ zhx_guide.64.d:0 "[Root.GetZhxGuideStatusGongyi]\n\n§YÁˆïSN1YJh§!\n• 3u÷‹·QtS§BNt^§!ÿ)YPRôv¥cÁˆïSÿNÏu•bhy0\n• åb	g,rŒNwÿ§R1Y»SlQ‘9ei—ÿlHNnfqQŒTýV§!0\n• ÝOYu°sûNºNir0qQŒT.OßuN3zšR0\n• )ÞVNw§RNOê¨Rb`YlQ‘§!ÿ‰˜Í‘°e3u÷‹0\n• 8fTwßv0WMOÍN×SŸSuÄ‰R¦umg0"
+ zhx_guide.64.o0:0 "NNu˜"
+ zhx_guide.64.o1:0 "ÔÞVÿyrŠkMeSOÿ5r6RKNY„vg÷^"
+ zhx_guide.64.o2:0 "ÔÞVI`îvUV"
+ zhx_guide.20.t:0 "lbýVFUßvÿåN^G•ÄuÇuýV¿Rÿ1/2	ÿ"
+ zhx_guide.20.d:0 "[Root.GetZhxGuideStatusYang]\n\n§YlbýVFUßvqQŒT6R§!\n• FUNqQŒTýVÿ§BÛVt^	LN§!0\n• ïSåNÄuÇu§Y8fTwßv§!N§Y8fÎW^§!0\n\n§Y6eÊvNãN÷N§!\n• FUºNÿ§G+2§!0\n• Y²NðX‰Šÿ§G+1§!0\n• 9e„UsQûsÿ§G+20%§!0\n• Ç–cOuQ­‹Ãu¦^ÿ§G+5%§!0\n• »lt¹RÏ‘ÿ§R-80%§!0"
+ zhx_guide.20.o0:0 "NNu˜ÿ†˜WN8fÎW^"
+ zhx_guide.20.o1:0 "ÔÞVÿyrŠkMeSOÿ5r6RKNY„vg÷^"
+ zhx_guide.20.o2:0 "ÔÞVI`îvUV"
+ zhx_guide.65.t:0 "lbýVFUßvÿåN^G•ÄuÇuýV¿Rÿ2/2	ÿ"
+ zhx_guide.65.d:0 "[Root.GetZhxGuideStatusYang]\n\n§Y†˜WN8fÎW^§!\n• N×SlQ‘NwP–6RÿVNS	NwNàVdkS0\n• ib.VÍN‰˜bÅbNO»lt¹RÏ‘„vÅb0\n• 8fÎW^§RNýwÎN,gýV–™ýÊ‘Le§!0\n• TNTwßv(WTN‚‚¹p§RêSýwÊ‘LeN8N8fÎW^§!0\n• eQãSÿ§Y8fTwßvNwýNLub—§!0\n• bXT ReQ0úQŒT†˜–ˆØSôfÿ	cŸSuÄ‰RYt0"
+ zhx_guide.65.o0:0 "NNu˜"
+ zhx_guide.65.o1:0 "ÔÞVÿyrŠkMeSOÿ5r6RKNY„vg÷^"
+ zhx_guide.65.o2:0 "ÔÞVI`îvUV"
+ zhx_guide.21.t:0 "aN2®‹ON›Qœ^ÿCg›R‚YUOlûyÿ1/3	ÿ"
+ zhx_guide.21.d:0 "[Root.GetZhxGuideStatusRepublics]\n\n§YnoÞTaN2®‹O§!\n• §YÈu«ŽgbMew§!ÿŸSu®‹ONëXÅu—ßu»lwCg›Rag0\n• eQãSÿ§YMeœ^u˜ ’! ®‹Me§!0\n• Ïk!k±‚9§R50LˆMe¹p§!0\n• Ïk!k¨c¨RCg›Rag§B0.10§!0\n• 2N¹eTqQ«N§BNt^·QtS§!0\n• qQŒT.Oßu§B%NJhNOŽN20§!öeÿæ‰ÑS§Yðy‹s§!0"
+ zhx_guide.21.o0:0 "NNu˜ÿ¢R¶Ri—‹T›QMeœ^"
+ zhx_guide.21.o1:0 "ÔÞVÿyrŠkMeSOÿ5r6RKNY„vg÷^"
+ zhx_guide.21.o2:0 "ÔÞVI`îvUV"
+ zhx_guide.66.t:0 "aN2®‹ON›Qœ^ÿCg›R‚YUOlûyÿ2/3	ÿ"
+ zhx_guide.66.d:0 "[Root.GetZhxGuideStatusRepublics]\n\n§Y¢R¶Ri—‹T›QMeœ^§!\n• §YÈu«ŽgbMe0S†˜¥cís§!0\n• =ecaNLy±‚9ÿ§R10LˆMe¹p§!0\n• =ecaNLyÓuœgÿaNLyqVÍT›R§Y+10§!0\n• =ecåTFU±‚9ÿ§R10Y²N¹p§!0\n• =ecåTFUÓuœgÿåTFUqVÍT›R§Y+10§!0\n• =ec›Qœ^±‚9ÿ§R10›Q‹N¹p§!0\n• =ec›Qœ^Óuœgÿ›Qœ^qVÍT›R§Y+10§!0\n• b‰NÏkg˜YÐcØš›Qœ^qVÍT›R§Y0.20§!0\n• §YaNÇR¦uÕl§!SNðböežX•ÏQJS0"
+ zhx_guide.66.o0:0 "NNu˜ÿØMeNðy‹s"
+ zhx_guide.66.o1:0 "NNu˜"
+ zhx_guide.66.o2:0 "ÔÞVÿyrŠkMeSOÿ5r6RKNY„vg÷^"
+ zhx_guide.66.o3:0 "ÔÞVI`îvUV"
+ zhx_guide.67.t:0 "aN2®‹ON›Qœ^ÿCg›R‚YUOlûyÿ3/3	ÿ"
+ zhx_guide.67.d:0 "[Root.GetZhxGuideStatusRepublics]\n\n§YØMeNðy‹s§!\n• ØMeagöNÿ§BaNLy`SO§!0\n• ØMeagöNÿ§BŒTs^§!0\n• ØMeagöNÿqQŒT.Oßu§BóS60§!0\n• eQãSÿ§YMeœ^u˜bØMe³Q®‹§!0\n• ØMeTlHN§YaNLyqQŒTýV§!ÿ§BÛVt^	LN§!0\n• 2NÍy¢R¶RqQŒTýVÿ§B›Qœ^`SO§!N.Oßu§BNOŽN20§!ÿæ‰ÑS§Yðy‹s§!0"
+ zhx_guide.67.o0:0 "NNu˜"
+ zhx_guide.67.o1:0 "ÔÞVÿyrŠkMeSOÿ5r6RKNY„vg÷^"
+ zhx_guide.67.o2:0 "ÔÞVI`îvUV"
+ zhx_guide.22.t:0 "—RYeÿJyYeKNNÿŒv¶RTŠvQS"
+ zhx_guide.22.d:0 "[Root.GetZhxGuideStatusLijiao]\n\n§YJyYeNŒv¶R§!\n• §YJyYe§!=fTR0JyêNN»lýV1ûN„vqQTFh¶g0\n• Q0Õl0¨X0S0uQ0µu8jR+RÐcúQ»lýVï¿u0\n• mQ¶RN=fmQÍy—‰’Nøv.OYe„vwýN—RYe0\n§Y	NÍyNT„vXR(W§!\n• §YINfRLm§!ÿ³QšRýV…QõeSÆQRN6eÊv0\n• §Y,rŒNfRLm§!ÿ	ggP–„v¾RfRÿbôf.VT„vçefRYO¿R0\n• §YfR«R§!ÿMOŽNwýNN„v`ó`Hg„g0\n§Y)YNLffRN,gÇrƒôV§!\n• §Y)YNLffR§!1u'Y©³QšRÿêS9eØSýVE–Ä‹÷N0\n• ŒRte'Y©Ä‰R(W§YhT)YN§!Çr0\n• ,gÇrÍ‘¹pËNÍuJyYeÿvQYO—RYe¿l(uTêÄ‰R0"
+ zhx_guide.22.o0:0 "–™!kËzº‹NõeS"
+ zhx_guide.22.o1:0 "mQ¶RùRgqNæ‹ÆuÆQR"
+ zhx_guide.22.o2:0 ",rŒNfRLmÿö^÷‹NeS¦u"
+ zhx_guide.22.o3:0 "ôf.VýVº‹"
+ zhx_guide.22.o4:0 "ÔÞVI`îvUV"
+ zhx_guide.23.t:0 "õeSÿ©‹ýVº‹bHNžRMeÿ1/3	ÿ"
+ zhx_guide.23.d:0 "[Root.GetZhxGuideStatusLijiao]\n\n§Y–™!kËzº‹§!\n• eQãSÿ§YìSÆ–ø‹PRŒv¶R§!0\n• DJhÿJyYeýVÿ§BSàeINfRLm§!0\n• –™!kõeSÿ§B25§!0\n• –™!kÇ‘(uT§BASt^§!Nýwôf.V0\n• òT	gINfRLm§RNýwÍ‘p–™!keQãS§!0"
+ zhx_guide.23.o0:0 "NNu˜ÿõeSÛVch"
+ zhx_guide.23.o1:0 "ÔÞVÿ—RYeÿJyYeKNNÿŒv¶RTŠvQS"
+ zhx_guide.23.o2:0 "ÔÞVI`îvUV"
+ zhx_guide.68.t:0 "õeSÿ©‹ýVº‹bHNžRMeÿ2/3	ÿ"
+ zhx_guide.68.d:0 "[Root.GetZhxGuideStatusLijiao]\n\n§YõeSÛVch§!\n• ƒôV§B0ó100§!ÿ§BÏkt^§!	cžRE–ýVÅ`Óu—r0\n• §B0ó24§!ÿ§YTžR8goR§!ÿb×S,gLm§RÍSlV§!0\n• §B25ó49§!ÿ§YÕ‹Lˆ§!0\n• §B50ó74§!ÿ§YrLˆ§!0\n• §B75ó100§!ÿ§YbÕl§!0\n• Tch§RNàS R§!ÿ¾0R°echsSÿfbc0"
+ zhx_guide.68.o0:0 "NNu˜ÿ(WêTÌ‘ågagöN"
+ zhx_guide.68.o1:0 "NNu˜"
+ zhx_guide.68.o2:0 "ÔÞVÿ—RYeÿJyYeKNNÿŒv¶RTŠvQS"
+ zhx_guide.68.o3:0 "ÔÞVI`îvUV"
+ zhx_guide.69.t:0 "õeSÿ©‹ýVº‹bHNžRMeÿ3/3	ÿ"
+ zhx_guide.69.d:0 "[Root.GetZhxGuideStatusLijiao]\n\n§Y(WêTÌ‘ågagöN§!\n• ¹pûQ§Y—RYeu˜õeSpeWR§!ÿÆQRÊSNNchÝ»y0\n• ¬`jPpeWRÿ	c,ggýVÅ`„˜¡‹„vt^¦^žXÏQ0\n• TYeQãSÿ§YågwýVº‹NõeS§!³Q®‹0\n• g¦^„˜È‰§RN=fÏkg RR§!0\n• K„(W RÏQè•ÛiKNô•ÿNê¨R RRbcbR0"
+ zhx_guide.69.o0:0 "NNu˜"
+ zhx_guide.69.o1:0 "mQ¶Ræ‹ÆuÆQR"
+ zhx_guide.69.o2:0 ")YNLffRNýV…QýVº‹„vHS+R"
+ zhx_guide.69.o3:0 "ÔÞVÿ—RYeÿJyYeKNNÿŒv¶RTŠvQS"
+ zhx_guide.69.o4:0 "ÔÞVI`îvUV"
+ zhx_guide.24.t:0 "mQ¶RùRgqÿQ0Õl0¨X"
+ zhx_guide.24.d:0 "[Root.GetZhxGuideStatusLijiao]\n\n§YmQ¶RùRgqÿQ0Õl0¨X§!\n• §YQ¶R§!Í‘‰RšRNðXgÿ•ŽNŒ˜î•03zšRNY²N0\n• §YÕl¶R§!Í‘É^MeNµc6Rÿ•ŽNê»lN.8h0\n• §Y¨X¶R§!Í‘2–¡VN‰Åbÿ•ŽNÎW2–Nú^¾‹0\n§Y‚YUO	û‹§!\n• T¶Ræ‹Å`RR§Y6eÊv0ÍSlV0õeSžX R0õeScbÏQ§!0\n• ŒRteÛVch6eÊvÿ¬`jP§Y—RYeu˜fRLmËVàz§!0\n• ÷‹©‰BlõeS§B70§!ÿbÕl‰BlõeS§B75§!0\n• ¾0R§B70§!§RNOê¨RìSV'Y©§!0"
+ zhx_guide.24.o0:0 "Q¶R"
+ zhx_guide.24.o1:0 "Õl¶R"
+ zhx_guide.24.o2:0 "¨X¶R"
+ zhx_guide.24.o3:0 "NNu˜ÿS0uQ0µu8j"
+ zhx_guide.24.o4:0 "ÔÞVÿ—RYeÿJyYeKNNÿŒv¶RTŠvQS"
+ zhx_guide.25.t:0 "mQ¶RùRgqÿS0uQ0µu8j"
+ zhx_guide.25.d:0 "[Root.GetZhxGuideStatusLijiao]\n\n§YmQ¶RùRgqÿS0uQ0µu8j§!\n• §YS¶R§!Í‘O‰QNKQ6Rÿ•ŽN‰RšRNM–NOŒSb0\n• §YuQ¶R§!Í‘8^YN­‹Ãuÿ•ŽNºN›R0ëXlN­‹Ãu¦^0\n• §Yµu8j¶R§!Í‘ÓußvNáO‰Šÿ•ŽNsQûsNO‚‚QÜu0\n§Y	cýVÅ`õLˆ§!\n• õeSÀhågŒTs^0›Q–`SÔk0ºN›RIržRE–agöN0\n• Yy˜agöNR+R¡‹—rÿt^¦^T¡‹øv R0\n• àeÕlcíuõLˆÿïSýwÌeQ§RÍSlVch§!0\n• ckb—HeœgJSöe«ˆb—HeœgÿfãN0"
+ zhx_guide.25.o0:0 "S¶R"
+ zhx_guide.25.o1:0 "uQ¶R"
+ zhx_guide.25.o2:0 "µu8j¶R"
+ zhx_guide.25.o3:0 "NNu˜ÿQ0Õl0¨X"
+ zhx_guide.25.o4:0 "ÔÞVÿ—RYeÿJyYeKNNÿŒv¶RTŠvQS"
+ zhx_guide.26.t:0 "Q¶Rÿ6eÊvNõeSÿ1/2	ÿ"
+ zhx_guide.26.d:0 "[Root.GetZhxGuideStatusLijiao]\n\n§YbÕl6eÊvÿõeS§!§B75§!§Yó§!§B100§!§Y§!\n• Œ˜î•±‚9ÿ§G-10%§!0\n• 3zšR±‚9ÿ§G-10%§!0\n• Y²NðX‰Šÿ§G+1§!0\n• ÛSqN¦^ÿ§G-1§!0\n\n§YTžR8goRÿõeS§!§B0§!§Yó§!§B24§!§Y§!\n• ÛSqNÿ§R+2§!0\n• 3zšR±‚9ÿ§R+15%§!0\n• Y²NðX‰Šÿ§R-1§!0"
+ zhx_guide.26.o0:0 "NNu˜ÿt^¦^õeSžX R"
+ zhx_guide.26.o1:0 "ÔÞVÿmQ¶RùRgqÿQ0Õl0¨X"
+ zhx_guide.26.o2:0 "ÔÞVI`îvUV"
+ zhx_guide.70.t:0 "Q¶Rÿ6eÊvNõeSÿ2/2	ÿ"
+ zhx_guide.70.d:0 "[Root.GetZhxGuideStatusLijiao]\n\n§Yt^¦^õeSžX R§!\n• 3zšRóS§B1§!ÿ§G+2§!0\n• ZgóS§B25§!ÿ§G+1§!0\n• ŒSbNOŽN§B3§!ÿ§G+1§!0\n\n§Yt^¦^õeScbÏQ§!\n• 3zšRÿ§R-3§!0\n• ZgNOŽN§B-25§!ÿ§R-1§!0\n• ŒSbóS§B5§!ÿ§R-2§!0\n\n§YÓu—rNågw§!\n• Yy˜agöNR+R¡‹—rTøv R0\n• õeS§B25ó49050ó74§!„v6eÊvÿ¬`jP§Y,gLmËVàz§!0"
+ zhx_guide.70.o0:0 "NNu˜"
+ zhx_guide.70.o1:0 "ÔÞVÿmQ¶RùRgqÿQ0Õl0¨X"
+ zhx_guide.70.o2:0 "ÔÞVI`îvUV"
+ zhx_guide.27.t:0 "Õl¶Rÿ6eÊvNõeSÿ1/3	ÿ"
+ zhx_guide.27.d:0 "[Root.GetZhxGuideStatusLijiao]\n\n§YbÕl6eÊvÿõeS§!§B75§!§Yó§!§B100§!§Y§!\n• Ïkgê»lÿ§G-0.075§!0\n• .8h±‚9ÿ§G-10%§!0\n• Ïkt^P%ÿ§G-0.10§!0\n• ­‹Ãu¦^ÿ§G+2.5%§!0\n\n§YTžR8goRÿõeS§!§B0§!§Yó§!§B24§!§Y§!\n• Ïkgê»lÿ§R+0.10§!0\n• .8h±‚9ÿ§R+10%§!0\n• Ïkt^P%ÿ§R+0.10§!0"
+ zhx_guide.27.o0:0 "NNu˜ÿt^¦^õeSžX R"
+ zhx_guide.27.o1:0 "ÔÞVÿmQ¶RùRgqÿQ0Õl0¨X"
+ zhx_guide.27.o2:0 "ÔÞVI`îvUV"
+ zhx_guide.71.t:0 "Õl¶Rÿ6eÊvNõeSÿ2/3	ÿ"
+ zhx_guide.71.d:0 "[Root.GetZhxGuideStatusLijiao]\n\n§Yt^¦^õeSžX R§!\n• P%NOŽN§B2§!ÿ§G+2§!0\n• s^GW…gNOê»lNOŽN§B25§!ÿ§G+1§!0\n• ÇibNOŽN§B10%§!ÿ§G+1§!0\n\n§Yt^¦^õeScbÏQ§!\n• P%óS§B5§!ÿ§R-3§!0\n• s^GW…gNOê»lóS§B50§!ÿ§R-2§!0\n• ÇibóS§B25%§!ÿ§R-2§!0"
+ zhx_guide.71.o0:0 "NNu˜ÿÓu—rNågw"
+ zhx_guide.71.o1:0 "NNu˜"
+ zhx_guide.71.o2:0 "ÔÞVÿmQ¶RùRgqÿQ0Õl0¨X"
+ zhx_guide.71.o3:0 "ÔÞVI`îvUV"
+ zhx_guide.72.t:0 "Õl¶Rÿ6eÊvNõeSÿ3/3	ÿ"
+ zhx_guide.72.d:0 "[Root.GetZhxGuideStatusLijiao]\n\n§YÓu—rNågw§!\n• Yy˜agöNR+R¡‹—rTøv R0\n• õeS§B25ó49050ó74§!„v6eÊvÿ¬`jP§Y,gLmËVàz§!0\n• §Y…gNOê»l§!cØšŽNgNOê»lNP–„vs^GWîT˜0"
+ zhx_guide.72.o0:0 "NNu˜"
+ zhx_guide.72.o1:0 "ÔÞVÿmQ¶RùRgqÿQ0Õl0¨X"
+ zhx_guide.72.o2:0 "ÔÞVI`îvUV"
+ zhx_guide.28.t:0 "¨X¶Rÿ6eÊvNõeSÿ1/3	ÿ"
+ zhx_guide.28.d:0 "[Root.GetZhxGuideStatusLijiao]\n\n§YbÕl6eÊvÿõeS§!§B75§!§Yó§!§B100§!§Y§!\n• ‰^Xôu²bÿ§G-20%§!0\n• ‰^X2–¡Vÿ§G+20%§!0\n• Y²NðX‰Šÿ§G+1§!0\n• ÑSUSb,gÿ§G-5%§!0\n\n§YTžR8goRÿõeS§!§B0§!§Yó§!§B24§!§Y§!\n• ‰^Xôu²bÿ§R+25%§!0\n• ‰^X2–¡Vÿ§R-20%§!0\n• ÑSUSb,gÿ§R+10%§!0"
+ zhx_guide.28.o0:0 "NNu˜ÿt^¦^õeSžX R"
+ zhx_guide.28.o1:0 "ÔÞVÿmQ¶RùRgqÿQ0Õl0¨X"
+ zhx_guide.28.o2:0 "ÔÞVI`îvUV"
+ zhx_guide.73.t:0 "¨X¶Rÿ6eÊvNõeSÿ2/3	ÿ"
+ zhx_guide.73.d:0 "[Root.GetZhxGuideStatusLijiao]\n\n§Yt^¦^õeSžX R§!\n• jOHN2–¡Vb‰N†˜–ˆÿ§G+3§!0\n• &TRŒTs^ÿ§G+2§!0\n• àePLkÿ§G+1§!0\n• ŒSbNOŽN§B3§!ÿ§G+1§!0\n\n§Yt^¦^õeScbÏQ§!\n• jOHNÛIeb‰N†˜–ˆÿ§R-4§!0\n• PLkóS	Nrÿ§R-2§!0\n• ŒSbóS§B5§!ÿ§R-2§!0"
+ zhx_guide.73.o0:0 "NNu˜ÿÓu—rNågw"
+ zhx_guide.73.o1:0 "NNu˜"
+ zhx_guide.73.o2:0 "ÔÞVÿmQ¶RùRgqÿQ0Õl0¨X"
+ zhx_guide.73.o3:0 "ÔÞVI`îvUV"
+ zhx_guide.74.t:0 "¨X¶Rÿ6eÊvNõeSÿ3/3	ÿ"
+ zhx_guide.74.d:0 "[Root.GetZhxGuideStatusLijiao]\n\n§YÓu—rNågw§!\n• Yy˜agöNR+R¡‹—rTøv R0\n• õeS§B25ó49050ó74§!„v6eÊvÿ¬`jP§Y,gLmËVàz§!0"
+ zhx_guide.74.o0:0 "NNu˜"
+ zhx_guide.74.o1:0 "ÔÞVÿmQ¶RùRgqÿQ0Õl0¨X"
+ zhx_guide.74.o2:0 "ÔÞVI`îvUV"
+ zhx_guide.29.t:0 "S¶Rÿ6eÊvNõeSÿ1/2	ÿ"
+ zhx_guide.29.d:0 "[Root.GetZhxGuideStatusLijiao]\n\n§YbÕl6eÊvÿõeS§!§B75§!§Yó§!§B100§!§Y§!\n• ÛSqN¦^ÿ§G-2§!0\n• ÏkgŒSbÿ§G-0.03§!0\n• ÑSUSb,gÿ§G-5%§!0\n• 3zšR±‚9ÿ§G-5%§!0\n\n§YTžR8goRÿõeS§!§B0§!§Yó§!§B24§!§Y§!\n• ÛSqNÿ§R+2§!0\n• ÏkgŒSbÿ§R+0.03§!0\n• ÑSUSb,gÿ§R+10%§!0"
+ zhx_guide.29.o0:0 "NNu˜ÿt^¦^õeSžX R"
+ zhx_guide.29.o1:0 "ÔÞVÿmQ¶RùRgqÿS0uQ0µu8j"
+ zhx_guide.29.o2:0 "ÔÞVI`îvUV"
+ zhx_guide.75.t:0 "S¶Rÿ6eÊvNõeSÿ2/2	ÿ"
+ zhx_guide.75.d:0 "[Root.GetZhxGuideStatusLijiao]\n\n§Yt^¦^õeSžX R§!\n• ŒTs^ÿ§G+2§!0\n• ŒSbNOŽN§B2§!ÿ§G+1§!0\n• Ç¦^ib.VNOŽN§B5%§!ÿ§G+1§!0\n\n§Yt^¦^õeScbÏQ§!\n• ŒSbóS§B5§!ÿ§R-2§!0\n• Ç¦^ib.VóS§B25%§!ÿ§R-2§!0\n\n§YÓu—rNågw§!\n• Yy˜agöNR+R¡‹—rTøv R0\n• õeS§B25ó49050ó74§!„v6eÊvÿ¬`jP§Y,gLmËVàz§!0"
+ zhx_guide.75.o0:0 "NNu˜"
+ zhx_guide.75.o1:0 "ÔÞVÿmQ¶RùRgqÿS0uQ0µu8j"
+ zhx_guide.75.o2:0 "ÔÞVI`îvUV"
+ zhx_guide.30.t:0 "uQ¶Rÿ6eÊvNõeSÿ1/2	ÿ"
+ zhx_guide.30.d:0 "[Root.GetZhxGuideStatusLijiao]\n\n§YbÕl6eÊvÿõeS§!§B75§!§Yó§!§B100§!§Y§!\n• ºN›Rb`Yÿ§G+15%§!0\n• t^¦^F–›Q.OßupˆÏQÿ§G-18NŒvR¹p§!0\n• F–›QëXlÿ§G+10%§!0\n• ­‹Ãu¦^ÿ§G+2.5%§!0\n\n§YTžR8goRÿõeS§!§B0§!§Yó§!§B24§!§Y§!\n• ºN›Rb`Yÿ§R-20%§!0\n• t^¦^F–›Q.OßupˆÏQÿ§R+18NŒvR¹p§!0\n• F–›QëXlÿ§R-10%§!0"
+ zhx_guide.30.o0:0 "NNu˜ÿt^¦^õeSžX R"
+ zhx_guide.30.o1:0 "ÔÞVÿmQ¶RùRgqÿS0uQ0µu8j"
+ zhx_guide.30.o2:0 "ÔÞVI`îvUV"
+ zhx_guide.76.t:0 "uQ¶Rÿ6eÊvNõeSÿ2/2	ÿ"
+ zhx_guide.76.d:0 "[Root.GetZhxGuideStatusLijiao]\n\n§Yt^¦^õeSžX R§!\n• F–›Q¾0RNP–§B80%§!ÿ§G+2§!0\n• F–›Q.OßuóS§B40§!ÿ§G+1§!0\n• ºN›RóS§B50%§!ÿ§G+1§!0\n\n§Yt^¦^õeScbÏQ§!\n• F–›QNOŽNNP–§B50%§!ÿ§R-2§!0\n• F–›Q.OßuNOŽN§B20§!ÿ§R-2§!0\n• ºN›RNOŽN§B15%§!ÿ§R-2§!0\n\n§YÓu—rNågw§!\n• Yy˜agöNR+R¡‹—rTøv R0\n• õeS§B25ó49050ó74§!„v6eÊvÿ¬`jP§Y,gLmËVàz§!0"
+ zhx_guide.76.o0:0 "NNu˜"
+ zhx_guide.76.o1:0 "ÔÞVÿmQ¶RùRgqÿS0uQ0µu8j"
+ zhx_guide.76.o2:0 "ÔÞVI`îvUV"
+ zhx_guide.31.t:0 "µu8j¶Rÿ6eÊvNõeSÿ1/2	ÿ"
+ zhx_guide.31.d:0 "[Root.GetZhxGuideStatusLijiao]\n\n§YbÕl6eÊvÿõeS§!§B75§!§Yó§!§B100§!§Y§!\n• 9e„UsQûsÿ§G+25%§!0\n• Y²NðX‰Šÿ§G+1§!0\n• Y²NsQûsÿ§G+1§!0\n• Y²N˜Rÿ§G+1§!0\n\n§YTžR8goRÿõeS§!§B0§!§Yó§!§B24§!§Y§!\n• 9e„UsQûsÿ§R-25%§!0\n• Y²NðX‰Šÿ§R-1§!0\n• Y²NsQûsÿ§R-1§!0"
+ zhx_guide.31.o0:0 "NNu˜ÿt^¦^õeSžX R"
+ zhx_guide.31.o1:0 "ÔÞVÿmQ¶RùRgqÿS0uQ0µu8j"
+ zhx_guide.31.o2:0 "ÔÞVI`îvUV"
+ zhx_guide.77.t:0 "µu8j¶Rÿ6eÊvNõeSÿ2/2	ÿ"
+ zhx_guide.77.d:0 "[Root.GetZhxGuideStatusLijiao]\n\n§Yt^¦^õeSžX R§!\n• ßvËSóS2NýVÿ§G+2§!0\n• Y²NðX‰ŠóS§B1§!ÿ§G+1§!0\n• ZgóS§B25§!ÿ§G+1§!0\n\n§Yt^¦^õeScbÏQ§!\n• àeßvËSÿ§R-3§!0\n• Y²NðX‰ŠNOŽN§B0§!ÿ§R-2§!0\n• ZgNOŽN§B-25§!ÿ§R-1§!0\n\n§YÓu—rNågw§!\n• Yy˜agöNR+R¡‹—rTøv R0\n• õeS§B25ó49050ó74§!„v6eÊvÿ¬`jP§Y,gLmËVàz§!0"
+ zhx_guide.77.o0:0 "NNu˜"
+ zhx_guide.77.o1:0 "ÔÞVÿmQ¶RùRgqÿS0uQ0µu8j"
+ zhx_guide.77.o2:0 "ÔÞVI`îvUV"
+ zhx_guide.32.t:0 ",rŒNfRLmÿÎNŒ±Ì‘ö^÷‹ÿ1/2	ÿ"
+ zhx_guide.32.d:0 "[Root.GetZhxGuideStatusLijiao]\n\n§Yö^÷‹VLmfRw§!\n• eQãSÿ§Y—RYeu˜ ’! ÷‹ëX ’! ö^÷‹VLmfRw§!0\n• ,gýV‰˜§BIYLˆJyYe§!0\n• ,gýV‰˜§BòT	gINfRLm§!0\n• HQ	æSNfRLmÿQ	egnýVÿnx²‹TMbØNLk0\n• 9(uÿ§R75Y²N¹p§!0\n• 9(uÿøvSVŽN§RJSt^ýV¶R6eeQ§!„vÑ‘±”0"
+ zhx_guide.32.o0:0 "NNu˜ÿegnýVÿhQèagöN"
+ zhx_guide.32.o1:0 "ÔÞVÿ—RYeÿJyYeKNNÿŒv¶RTŠvQS"
+ zhx_guide.32.o2:0 "ÔÞVI`îvUV"
+ zhx_guide.78.t:0 ",rŒNfRLmÿÎNŒ±Ì‘ö^÷‹ÿ2/2	ÿ"
+ zhx_guide.78.d:0 "[Root.GetZhxGuideStatusLijiao]\n\n§YegnýVÿhQèagöN§!\n• ‰˜Šbå‹LmjOHN§BckVINfRLm§!0\n• vQ–™ýòT«ˆ`O§BÑS°s§!0\n• §YegnýVùR`O§!„v‹Ya§BóS150§!0\n• å‚HN,gýVD–¸^ÿê1uLPT‰˜§BNOŽN50%§!0\n• ×SŽ¾RfRNçefRYO¿R§RNýwlPÙu,r	NýV§!0\n\n§YHNUOŽ÷‹RhˆHNzz§!\n• N!kêSýw	g§BN¶R¾RfR§!0\n• §RòT	gQY¦u0ôf.V•šRb1YáOg§!OI–bk°eŽ÷‹0\n• b‰N03zšRN7Lkÿ,g«ŽNybk©s¶Rö^÷‹0\n• HQÀhågegnDJhÿQÀhågP–6RN=f&TØN—Vw9(u0"
+ zhx_guide.78.o0:0 "NNu˜"
+ zhx_guide.78.o1:0 "ŒNASt^QY¦uNÐcMR¢R"
+ zhx_guide.78.o2:0 "¾RfRNfR«RÝO²b"
+ zhx_guide.78.o3:0 "ÔÞVÿ—RYeÿJyYeKNNÿŒv¶RTŠvQS"
+ zhx_guide.78.o4:0 "ÔÞVI`îvUV"
+ zhx_guide.33.t:0 "¾RfRÿŒNASt^¦uN”Nt^èxTÿ1/3	ÿ"
+ zhx_guide.33.d:0 "[Root.GetZhxGuideStatusLijiao]\n\n§YŒNASt^QY¦u§!\n• ‰šYu¦u§BŒNASt^§!ÿÐc›Oå‹¶R§YÕ‹Lˆch§!…©R6eÊv0\n• ÝO²bƒX…QTLmfR«R0\n• NÿfbcINfRLmNõeS0\n• egnýVTeg9eLm0mp¡NbsQûsv`SÿNÖSˆm,gg0\n\n§YMR”Nt^èxT§!\n• hQýVÛSqN¦^ÿ§R+1§!0\n• 3zšR¦^±‚9ÿ§R+15%§!0\n• Œ˜î•±‚9ÿ§R+10%§!0\n• èxTÓumgTÿçuíueSLˆiRYOQY¦u0"
+ zhx_guide.33.o0:0 "NNu˜ÿgáníuXwbJy"
+ zhx_guide.33.o1:0 "ÔÞVÿ—RYeÿJyYeKNNÿŒv¶RTŠvQS"
+ zhx_guide.33.o2:0 "ÔÞVI`îvUV"
+ zhx_guide.79.t:0 "¾RfRÿŒNASt^¦uN”Nt^èxTÿ2/3	ÿ"
+ zhx_guide.79.d:0 "[Root.GetZhxGuideStatusLijiao]\n\n§YgáníuXwbJy§!\n• TLmíuXw‰˜Í‘°eán³egnDJh0\n• íuXw9(uÿ§R75Y²N¹p§!0\n• íuXw9(uÿ§RJSt^ýV¶R6eeQ§!0\n• TLmíuXw§GNÍ‘Y”Nt^èxT§!0\n• JyRVýV§GàeýV…Qé`Z§!0\n• ÍNXR(W„vegnýVùR,gýV‹Yaÿ§G+25§!0\n\n§YÐcMR¢R„vãN÷N§!\n• eQãSÿ§YÐcMR¢R§!ìrËznx²‹ÍdjO0\n• 3zšR¦^ÿ§R-1§!0\n• egnýVùR,gýVÿ§RASt^-100‹Ya§!0\n• ckVTLmJyYeýVùR,gýVÿ§RASt^-25‹Ya§!0"
+ zhx_guide.79.o0:0 "NNu˜ÿ1YáONvbck"
+ zhx_guide.79.o1:0 "NNu˜"
+ zhx_guide.79.o2:0 "ÔÞVÿ—RYeÿJyYeKNNÿŒv¶RTŠvQS"
+ zhx_guide.79.o3:0 "ÔÞVI`îvUV"
+ zhx_guide.80.t:0 "¾RfRÿŒNASt^¦uN”Nt^èxTÿ3/3	ÿ"
+ zhx_guide.80.d:0 "[Root.GetZhxGuideStatusLijiao]\n\n§Y1YáONvbck§!\n• §Y1YáOŽNø‹PR§!cíu§BASt^§!0\n• Y²NðX‰Šÿ§R-1§!0\n• 3zšR¦^±‚9ÿ§R+10%§!0\n• gô•§RNýwQö^÷‹fRLm§!0\n• ckVvbck¾RfR§GN	cÐcMR¢Ré`Z§!0"
+ zhx_guide.80.o0:0 "NNu˜"
+ zhx_guide.80.o1:0 "ÔÞVÿ—RYeÿJyYeKNNÿŒv¶RTŠvQS"
+ zhx_guide.80.o2:0 "ÔÞVI`îvUV"
+ zhx_guide.34.t:0 "ôf.VýVº‹ÿHQú^Ëz°efR9húWÿ1/2	ÿ"
+ zhx_guide.34.d:0 "[Root.GetZhxGuideStatusLijiao]\n\n§Yôf.VýVº‹ÿ=T¨RagöN§!\n• eQãSÿ§Yôf.VýVº‹§!³Q®‹0\n• ,gýV‰˜§BŒTs^§!0\n• 3zšR¦^§BóS0§!0\n• –™ý1u§B,gýVµc6R§!0\n• §R¡l	gÛLˆ-N„vôf.Vb·QtS§!0\n\n§Y°efR9húWÿ2NwóSvQN§!\n• ƒX…Q§B8gmfR„vTLmfR«R§!0\n• b§B	gHe„vTLm¾RfR§!0\n• òT	g¾RfRöeÿ§RêSýwåNå‹¶RHNôf.Vîvh§!0\n• ÅN`—¾RfRÿiRYO‰šYu‰˜§B…ÇŒRte”Nt^§!0\n• p`‹Y”Nt^‰˜HQíuXw0"
+ zhx_guide.34.o0:0 "NNu˜ÿ”Nt^ùWi"
+ zhx_guide.34.o1:0 "ÔÞVÿ—RYeÿJyYeKNNÿŒv¶RTŠvQS"
+ zhx_guide.34.o2:0 "ÔÞVI`îvUV"
+ zhx_guide.81.t:0 "ôf.VýVº‹ÿHQú^Ëz°efR9húWÿ2/2	ÿ"
+ zhx_guide.81.d:0 "[Root.GetZhxGuideStatusLijiao]\n\n§Y”Nt^ùWi§!\n• hQýVÛSqN¦^ÿ§R+1§!0\n• 3zšR¦^±‚9ÿ§R+15%§!0\n• Œ˜î•±‚9ÿ§R+15%§!0\n• gô•§RNýw°eŽ¾RfR§!0\n• gô•§RNýwÐcúQ°e÷‹©§!0\n\n§Y9húWNvbck§!\n• ùWigô•‰˜ÝOYu§BóSN8N	gHe9húW§!0\n• ¾RfR»y»SÿÍN	gTLmfR«RRïSçuíu0\n• 9húWhQè1Y»Sÿ§R9ei—1Y%§!0\n• ”Nt^T‰˜Ir§B)YNlQ®‹zzò•§!ÿQckVvbck0"
+ zhx_guide.81.o0:0 "NNu˜"
+ zhx_guide.81.o1:0 "vbck0Ç!nN1Y%Óu—r"
+ zhx_guide.81.o2:0 "ÔÞVÿ—RYeÿJyYeKNNÿŒv¶RTŠvQS"
+ zhx_guide.81.o3:0 "ÔÞVI`îvUV"
+ zhx_guide.35.t:0 "ôf.VåNTÿŠb°eº‹wck¨cLˆN»Sÿ1/3	ÿ"
+ zhx_guide.35.d:0 "[Root.GetZhxGuideStatusLijiao]\n\n§YckVvbck§!\n• 3zšR¦^ÿ§R-1§!0\n• Zgÿ§R-25§!0\n• °eLmõeSÍ‘nHN§B15§!0\n• çefRÝOYu,rŒNËVàz§BASt^§!0\n• çefRêSÝO²bTLmfR«Rÿ§RNÐc›O¾RfR6eÊv§!0\n\n§YASt^°eçeøvIe§!\n• hQýVÛSqN¦^ÿ§R+2§!0\n• 3zšR¦^±‚9ÿ§R+25%§!0\n• »lt¹RÏ‘ÿ§R-10%§!0\n• ýV¶Rz6eÿ§R-10%§!0\n• ºN›Rb`Yÿ§R-10%§!0"
+ zhx_guide.35.o0:0 "NNu˜ÿbŸRagöNÿ0RgTöeán³"
+ zhx_guide.35.o1:0 "ÔÞVÿ—RYeÿJyYeKNNÿŒv¶RTŠvQS"
+ zhx_guide.35.o2:0 "ÔÞVI`îvUV"
+ zhx_guide.82.t:0 "ôf.VåNTÿŠb°eº‹wck¨cLˆN»Sÿ2/3	ÿ"
+ zhx_guide.82.d:0 "[Root.GetZhxGuideStatusLijiao]\n\n§YbŸRagöNÿ0RgTöeán³§!\n• °eLmõeS§BóS50§!0\n• 3zšR¦^§BóS1§!0\n\n§YASt^°eMeâešR§!\n• hQýVÛSqN¦^ÿ§G-1§!0\n• 3zšR¦^±‚9ÿ§G-10%§!0\n• 9ei—Û¦^žX•ÿ§G+15%§!0\n• Œ˜î•±‚9ÿ§G-10%§!0"
+ zhx_guide.82.o0:0 "NNu˜ÿs^3zÓumgbHV¨c"
+ zhx_guide.82.o1:0 "NNu˜"
+ zhx_guide.82.o2:0 "ÔÞVÿ—RYeÿJyYeKNNÿŒv¶RTŠvQS"
+ zhx_guide.82.o3:0 "ÔÞVI`îvUV"
+ zhx_guide.83.t:0 "ôf.VåNTÿŠb°eº‹wck¨cLˆN»Sÿ3/3	ÿ"
+ zhx_guide.83.d:0 "[Root.GetZhxGuideStatusLijiao]\n\n§Ys^3zÓumgbHV¨c§!\n• õeS§BóS25§!FO8g¾bŸRagöNÿÓumgÿàe˜YVY±R0\n• õeS§BNOŽN25§!ÿïS±‚§R13zšR§!HV¨c§B”Nt^§!0\n• mNïSb`YçefRÿçeLmõeS¾‹HN§B25§!0\n\n§Yôf.V·QtS§!\n• b`YçefRÿ§RAS”Nt^·QtS§!ÿv^b×S§YgäNY9e§!é`Z0\n• ck8^Óumgÿ§RASt^ôf.V·QtS§!0"
+ zhx_guide.83.o0:0 "NNu˜"
+ zhx_guide.83.o1:0 "ÔÞVÿ—RYeÿJyYeKNNÿŒv¶RTŠvQS"
+ zhx_guide.83.o2:0 "ÔÞVI`îvUV"
+ zhx_guide.36.t:0 "fR«Rÿ)YNfRßuÿÄRŽNNÎW"
+ zhx_guide.36.d:0 "[Root.GetZhxGuideStatusAcademy]\n\n§YNµ^	gTWR„v`ó`Hg„g§!\n• §YfR«R§!	gúVšRNTNfRLmÿLfHyHNwýN8lENîOck0\n• àeº‹Œßu»lÿýÐc›O0W¹eYe²w6eÊv0\n• fINŒTÁ™VNŠbƒRØSbæSNÍywýN—RYe0\n§YJyYeýV¶R„v¡rtÖS‚§!\n• §YINfRLmfR«R§!ÿÐc›OýV¶ROST0\n• §Y8g×SÝO²b„vVLmfR«R§!ÿµNu`ó`.V›R0\n• §Y¹RÍV§!ÝOYu6eÊvÿTöeb×S.V›R0\n• §YfR§!	gýV…QãN÷N0Y²NÍS”^NÁ™VTœg0\n§Y(uÄ‰RNTUV§!\n• TUVêSR§B1444t^VNS‰š0W§!0\n• žRE–MOnÿågw§YwýNîOck§!N§YÁ™Våw§!0"
+ zhx_guide.36.o0:0 "0W¹e6eÊvNýV¶ROST"
+ zhx_guide.36.o1:0 "`ó`.V›R"
+ zhx_guide.36.o2:0 "fR0‡^²bNAmce"
+ zhx_guide.36.o3:0 "ASŒN«RVNSTUV"
+ zhx_guide.36.o4:0 "ÔÞVI`îvUV"
+ zhx_guide.37.t:0 "0W¹e6eÊvNýV¶ROSTÿ1/4	ÿ"
+ zhx_guide.37.d:0 "[Root.GetZhxGuideStatusAcademy]\n\n§YNb	gfR«R„v0W¹e6eÊv§!\n• ,g0WÑSUSb,gÿ§G-5%§!0\n• ,g0W`no.O­dÿ§G+15%§!0\n• Nð6eÊvN‰Blßu»lwIYLˆJyYe0\n\n§YmQ¶R„v0W¹eyrr‚§!\n• Q¶Rÿ,g0Wz6e§G+10%§!0\n• Õl¶Rÿ,g0W»ltb,g§G-10%§!0\n• ¨X¶Rÿ,g0Wú^.b,g§G-10%§!0\n• S¶Rÿ,g0WÛSqN¦^§G-1§!0\n• uQ¶Rÿ,g0WºN›R§G+15%§!0\n• µu8j¶Rÿ,g0W8f›RÏ‘§G+15%§!0"
+ zhx_guide.37.o0:0 "NNu˜ÿýV¶ROSTagöN"
+ zhx_guide.37.o1:0 "ÔÞVÿfR«Rÿ)YNfRßuÿÄRŽNNÎW"
+ zhx_guide.37.o2:0 "ÔÞVI`îvUV"
+ zhx_guide.84.t:0 "0W¹e6eÊvNýV¶ROSTÿ2/4	ÿ"
+ zhx_guide.84.d:0 "[Root.GetZhxGuideStatusAcademy]\n\n§YýV¶ROSTagöN§!\n• ,gýV‰˜HN§BJyYeýV§!0\n• óSc	g§BNµ^INfRLmfR«R§!0\n• TLmYµ^fR«R§RNàS RýV¶ROST§!0\n• ,rŒNfRLmêSÝO²bùR”^fR«Rÿ§RNæSˆcýV¶ROST§!0\n\n§YQ¶RýV¶ROST§!\n• Œ˜î•±‚9ÿ§G-2.5%§!0\n• 3zšR¦^±‚9ÿ§G-2.5%§!0\n\n§YÕl¶RýV¶ROST§!\n• Ïkgê»lÿ§G-0.025§!0\n• .8h±‚9ÿ§G-2.5%§!0"
+ zhx_guide.84.o0:0 "NNu˜ÿ¨X¶RýV¶ROST"
+ zhx_guide.84.o1:0 "NNu˜"
+ zhx_guide.84.o2:0 "ÔÞVÿfR«Rÿ)YNfRßuÿÄRŽNNÎW"
+ zhx_guide.84.o3:0 "ÔÞVI`îvUV"
+ zhx_guide.85.t:0 "0W¹e6eÊvNýV¶ROSTÿ3/4	ÿ"
+ zhx_guide.85.d:0 "[Root.GetZhxGuideStatusAcademy]\n\n§Y¨X¶RýV¶ROST§!\n• ‰^Xôu²b9ÿ§G-5%§!0\n• ‰^X2–¡Vÿ§G+5%§!0\n\n§YS¶RýV¶ROST§!\n• hQýVÛSqN¦^ÿ§G-0.5§!0\n• ÏkgŒSbÿ§G-0.01§!0\n\n§YuQ¶RýV¶ROST§!\n• ºN›Rb`Yÿ§G+5%§!0\n• F–›Q.OßupˆÏQÿ§G-0.58NŒvR¹p§!0"
+ zhx_guide.85.o0:0 "NNu˜ÿµu8j¶RýV¶ROST"
+ zhx_guide.85.o1:0 "NNu˜"
+ zhx_guide.85.o2:0 "ÔÞVÿfR«Rÿ)YNfRßuÿÄRŽNNÎW"
+ zhx_guide.85.o3:0 "ÔÞVI`îvUV"
+ zhx_guide.86.t:0 "0W¹e6eÊvNýV¶ROSTÿ4/4	ÿ"
+ zhx_guide.86.d:0 "[Root.GetZhxGuideStatusAcademy]\n\n§Yµu8j¶RýV¶ROST§!\n• 9e„UsQûsÿ§G+10%§!0\n• Y²NðX‰Šÿ§G+0.25§!0"
+ zhx_guide.86.o0:0 "NNu˜"
+ zhx_guide.86.o1:0 "ÔÞVÿfR«Rÿ)YNfRßuÿÄRŽNNÎW"
+ zhx_guide.86.o2:0 "ÔÞVI`îvUV"
+ zhx_guide.38.t:0 "`ó`.V›Rÿ	cfRLmÍy‰s¡‹peÿ1/3	ÿ"
+ zhx_guide.38.d:0 "[Root.GetZhxGuideStatusAcademy]\n\n§Y‚YUO¡‹—r`ó`.V›R§!\n• ÅNJyYeýV¶R¡‹—r§Y`ó`.V›R§!0\n• INfRLmŒT,rŒNfRLmÝO²bùR”^fR«R0\n• 8g×SÝO²b„vfR«R	c§BNTfRLmÍy‰s§!¡‹pe0\n• TNVLm	gYµ^fR«RÿmNêS—r§BNÍy§!0\n• eQãSÿ¬`jP§Y—RYeu˜.V›Rag§!ÿågw1ûNfR«R0\n\n§YNÍy8g×SÝO²bVLm§!\n• 3zšR¦^±‚9ÿ§R+15%§!0\n• hQýVÛSqN¦^ÿ§R+0.5§!0\n• »lt¹RÏ‘ÿ§R-5%§!0\n• R»yININÿ§R+2t^§!0"
+ zhx_guide.38.o0:0 "NNu˜ÿ2NÍy8g×SÝO²bVLm"
+ zhx_guide.38.o1:0 "ÔÞVÿfR«Rÿ)YNfRßuÿÄRŽNNÎW"
+ zhx_guide.38.o2:0 "ÔÞVI`îvUV"
+ zhx_guide.87.t:0 "`ó`.V›Rÿ	cfRLmÍy‰s¡‹peÿ2/3	ÿ"
+ zhx_guide.87.d:0 "[Root.GetZhxGuideStatusAcademy]\n\n§Y2NÍy8g×SÝO²bVLm§!\n• 3zšR¦^±‚9ÿ§R+30%§!0\n• hQýVÛSqN¦^ÿ§R+1.5§!0\n• »lt¹RÏ‘ÿ§R-10%§!0\n• R»yININÿ§R+5t^§!0\n\n§Y	NÍyÊSåNNÿ,r	NchSv˜§!\n• 3zšR¦^±‚9ÿ§R+50%§!0\n• hQýVÛSqN¦^ÿ§R+3§!0\n• »lt¹RÏ‘ÿ§R-20%§!0\n• R»yININÿ§R+10t^§!0"
+ zhx_guide.87.o0:0 "NNu˜ÿ‚YUO9eØS.V›R"
+ zhx_guide.87.o1:0 "NNu˜"
+ zhx_guide.87.o2:0 "ÔÞVÿfR«Rÿ)YNfRßuÿÄRŽNNÎW"
+ zhx_guide.87.o3:0 "ÔÞVI`îvUV"
+ zhx_guide.88.t:0 "`ó`.V›Rÿ	cfRLmÍy‰s¡‹peÿ3/3	ÿ"
+ zhx_guide.88.d:0 "[Root.GetZhxGuideStatusAcademy]\n\n§Y‚YUO9eØS.V›R§!\n• ¹RÍVÿÝOYu0W¹e6eÊvÿTöeb×S.V›R0\n• Ž÷‹ùR”^¾RfR09eIYå‹¶RbfR«RÁpÿO9eØS¡‹pe0\n• ^—JyYeýVÝOYu0W¹e6eÊvÿN¡‹—rýV¶ROSTN.V›R0"
+ zhx_guide.88.o0:0 "NNu˜"
+ zhx_guide.88.o1:0 "ö^÷‹,rŒNfRLm"
+ zhx_guide.88.o2:0 "ÔÞVÿfR«Rÿ)YNfRßuÿÄRŽNNÎW"
+ zhx_guide.88.o3:0 "ÔÞVI`îvUV"
+ zhx_guide.39.t:0 "fRÿHQØNãN÷NÿQIr	Nt^ÿ1/3	ÿ"
+ zhx_guide.39.d:0 "[Root.GetZhxGuideStatusAcademy]\n\n§YfRagöN§!\n• eQãSÿ§YYnVLmfR«R§!³Q®‹ÿ	éb8g×SÝO²bfR«R0\n• ,gýV‰˜§BŒTs^§!0\n• 3zšR¦^§BóS1§!0\n• LˆMe¹p§BóS30§!0\n• Ïk!kêSýw	§BNµ^fR«R§!0\n\n§Y˜äNãN÷N§!\n• LˆMe¹pÿ§R-30§!0\n• 3zšR¦^ÿ§R-1§!0\n• Zgÿ§R-5§!0"
+ zhx_guide.39.o0:0 "NNu˜ÿ	Nt^…QÿýV¶R‹S›R"
+ zhx_guide.39.o1:0 "ÔÞVÿfR«Rÿ)YNfRßuÿÄRŽNNÎW"
+ zhx_guide.39.o2:0 "ÔÞVI`îvUV"
+ zhx_guide.89.t:0 "fRÿHQØNãN÷NÿQIr	Nt^ÿ2/3	ÿ"
+ zhx_guide.89.d:0 "[Root.GetZhxGuideStatusAcademy]\n\n§Y	Nt^…QÿýV¶R‹S›R§!\n• hQýVÛSqN¦^ÿ§R+0.5§!0\n• 3zšR¦^±‚9ÿ§R+5%§!0\n\n§Y	Nt^…QÿîvhwýN‹S›R§!\n• ÛSqN¦^ÿ§R+3§!0\n• ÑSUSb,gÿ§R+5%§!0\n• `no.O­dÿ§R-10%§!0\n• z6eÿ§R-5%§!0\n• uµNÿ§R-5%§!0\n• ºN›Rÿ§R-5%§!0"
+ zhx_guide.89.o0:0 "NNu˜ÿY²NÍS”^"
+ zhx_guide.89.o1:0 "NNu˜"
+ zhx_guide.89.o2:0 "ÔÞVÿfR«Rÿ)YNfRßuÿÄRŽNNÎW"
+ zhx_guide.89.o3:0 "ÔÞVI`îvUV"
+ zhx_guide.90.t:0 "fRÿHQØNãN÷NÿQIr	Nt^ÿ3/3	ÿ"
+ zhx_guide.90.d:0 "[Root.GetZhxGuideStatusAcademy]\n\n§YY²NÍS”^§!\n• IYLˆbòTö^÷‹å‹Lm„vJyYeýVÿùRfRýV‹Ya§R-50§!0\n• NðýV¶RùRfRýVžX R§RúVšR10µOeuib.V§!0\n\n§Y0Rg0²däNN¹RÍV§!\n• 	Nt^0RgòT·ƒINfRb,rŒNfRLmÝO²bÿYu(WŸSNW0\n• ÍN8g×SÝO²bÿfR«R»yƒX0\n• §Y²d•fRäN§!ïSÐcMRÝOOOfR«R0\n• IN¨R²däNT§RASt^NýwQfR§!0\n• sQí•YnTŒQsSçuíu¹RÍVÿNê¨Rqš0"
+ zhx_guide.90.o0:0 "NNu˜"
+ zhx_guide.90.o1:0 "‡^²b0Á™VNWNW"
+ zhx_guide.90.o2:0 "ÔÞVÿfR«Rÿ)YNfRßuÿÄRŽNNÎW"
+ zhx_guide.90.o3:0 "ÔÞVI`îvUV"
+ zhx_guide.40.t:0 "ø‹uAmceÿfRßu8gÝuÿ1/2	ÿ"
+ zhx_guide.40.d:0 "[Root.GetZhxGuideStatusAcademy]\n\n§YûRŒb‡^²bwÿO!kwQ†§!\n• HQŒb§BTINfRLmýV¶R§!0\n• QŒb§BòTö^÷‹å‹Lm„výV¶R§!0\n• gTŒbùRfRýV‹Ya§BóS50§!„vvQÖNJyYeýV0\n• ×SŽýV¶RïS¥c×SbÒbÝu0\n\n§YÁeQÎW^ÿDJhNOHQµu§!\n• ÎW^§RNýw	gImÃfR«R0WNWbfR‹S6R§!0\n• OHQÑSUS¦^§BóS20§!0\n• vQ!kÑSUS¦^§BóS12§!0\n• gT	ébvQÖNTJhÎW^0"
+ zhx_guide.40.o0:0 "NNu˜ÿ°e‰š0WNçeNW"
+ zhx_guide.40.o1:0 "ÔÞVÿfR«Rÿ)YNfRßuÿÄRŽNNÎW"
+ zhx_guide.40.o2:0 "ÔÞVI`îvUV"
+ zhx_guide.91.t:0 "ø‹uAmceÿfRßu8gÝuÿ2/2	ÿ"
+ zhx_guide.91.d:0 "[Root.GetZhxGuideStatusAcademy]\n\n§Y°e‰š0WNçeNW§!\n• ÁeQTÝOYuŸS	g§YNTNfRLm§!0\n• ŸSNWYuN§YwQTWNW§!0\n• WNW`no.O­dÿ§G+5%§!0\n\n§YAmceNYtQ§!\n• ÒbÝubàeºN¥c³uÿÛeQ§YAmce§!ÿN.Rd–fRßu0\n• )YPRÏkt^	g§B10%‚i‡s§!Í‘Õ‹‡^²b0\n• XR(WTJhÎW^ÿmNNÝOÁ‹Ðgt^ÅVšRYtQ0\n• VNSTUVN–Á™Vôf°eÿåNžRE–§YwýNîOck§!HNÆQ0"
+ zhx_guide.91.o0:0 "NNu˜"
+ zhx_guide.91.o1:0 "ÔÞVÿfR«Rÿ)YNfRßuÿÄRŽNNÎW"
+ zhx_guide.91.o2:0 "ÔÞVI`îvUV"
+ zhx_guide.41.t:0 "ASŒN«RTUVÿQÕl¨X"
+ zhx_guide.41.d:0 "[Root.GetZhxGuideStatusAcademy]\n\n§Y§!§B1444§!§Yt^VNS‰š0W§!\n• §YTJyfR«R§!ÿ§YQ¶R§!	ÿ ’! §Yòf–§!\n• §Yf&OfR«R§!ÿ§YQ¶R§!	ÿ ’! §Ym3–§!\n• §YùXÕlfR«R§!ÿ§YÕl¶R§!	ÿ ’! §Y•‰R§!\n• §YªVTfR«R§!ÿ§YÕl¶R§!	ÿ ’! §Ybý§!\n• §YŠQ1rfR«R§!ÿ§Y¨X¶R§!	ÿ ’! §YRV·V§!\n• §YSTfR«R§!ÿ§Y¨X¶R§!	ÿ ’! §Y8ls^§!\n\n§YžRE–MOnåNbyVHNÆQ§!\n• fINÝOYuNTÿÁpTŸSNWYuNWNW0\n• ÷‹ågw§YwýNîOck§!b§YK„åw§!8hùRSVMRMOn0"
+ zhx_guide.41.o0:0 "NNu˜ÿSuQµu8j"
+ zhx_guide.41.o1:0 "ÔÞVÿfR«Rÿ)YNfRßuÿÄRŽNNÎW"
+ zhx_guide.41.o2:0 "ÔÞVI`îvUV"
+ zhx_guide.42.t:0 "ASŒN«RTUVÿSuQµu8j"
+ zhx_guide.42.d:0 "[Root.GetZhxGuideStatusAcademy]\n\n§Y§!§B1444§!§Yt^VNS‰š0W§!\n• §Y„sTfR«R§!ÿ§YS¶R§!	ÿ ’! §Y•™l§!\n• §Y±b4gfR«R§!ÿ§YS¶R§!	ÿ ’! §Y^áO§!\n• §Y™^—rfR«R§!ÿ§YuQ¶R§!	ÿ ’! §Y4NÄm§!\n• §Y6RÜwfR«R§!ÿ§YuQ¶R§!	ÿ ’! §YmlR§!\n• §Ymc–fR«R§!ÿ§Yµu8j¶R§!	ÿ ’! §YÝOšR§!\n• §YÞaˆfR«R§!ÿ§Yµu8j¶R§!	ÿ ’! §YfýV§!\n\n§YžRE–MOnåNbyVHNÆQ§!\n• fINÝOYuNTÿÁpTŸSNWYuNWNW0\n• ÷‹ågw§YwýNîOck§!b§YK„åw§!8hùRSVMRMOn0"
+ zhx_guide.42.o0:0 "NNu˜ÿQÕl¨X"
+ zhx_guide.42.o1:0 "ÔÞVÿfR«Rÿ)YNfRßuÿÄRŽNNÎW"
+ zhx_guide.42.o2:0 "ÔÞVI`îvUV"
+ zhx_guide.0.t:0 "!jÄuËNÍu"
+ zhx_guide.0.d:0 "[Root.GetZhxGuideStatusAll]\n\n§YRýVeQè•§!\n• hT²RSXRÿRýVT	gLy7zÿø‹PRv^wÿ»lST	gNbRV0\n§YÛVÇr	û‹§!\n• §YhT)YN§!ÿqQTéy^0Y²Nb‰NNßvŸR0\n• §Yg÷^§!ÿ5r6RKfS0)YPRNyrŠkMeSO0\n• §Y—RYe§!ÿJyYe0mQ¶RõeSN¾RfR0\n• §YfR«R§!ÿ0W¹e6eÊv0`ó`.V›RNÁ™V0\n§Y–öeåg–§!\n• Í‘VeQãSÿ³Q®‹h ’! §Y!jÄuËNÍu§!0\n• Nb	gýV¶RGWïS–û‹ÿžRE–Lˆ¨RæS	gagöN0"
+ zhx_guide.0.o0:0 "hT)YNÿRýVNßv¦u"
+ zhx_guide.0.o1:0 "g÷^ÿ5r6RNMeSO"
+ zhx_guide.0.o2:0 "—RYeÿJyYeNŒv¶R"
+ zhx_guide.0.o3:0 "fR«Rÿ²‹-^N.Ob"
+ zhx_guide_status_all_yes:0 "§Y,gýV(u§!ÿNb	gýV¶RGWïS–û‹ÿ,gŒQNgbLˆMe¡RÍdjO0"
+ zhx_guide_status_all_no:0 "§Y(uô‹f§!ÿNb	gýV¶RGWïS–û‹0"
+ zhx_guide_status_tianxia_yes:0 "§Y,gýV(u§!ÿ,gýV^SŽNhT)YNÿwQSOLˆ¨RÍN‰˜án³SVöeagöN0"
+ zhx_guide_status_tianxia_no:0 "§Y(uô‹f§!ÿ,gýVN^SŽNhT)YNÿïS–û‹Ä‰RÿeQRT¹e«NbXTCg)R0"
+ zhx_guide_status_worldcourt_yes:0 "§Y,gýV(u§!ÿ,gýV^SŽNhT)YNÿ(uMeSOåNMeœ^u˜SVMR9ei—HNÆQ0"
+ zhx_guide_status_worldcourt_no:0 "§Y(uô‹f§!ÿ,gýV(WhT)YNKNYÿåNN6R¦^ïS›O†Nã‰ÿNýwôv¥cWY(u0"
+ zhx_guide_status_feudatory_yes:0 "§Y,gýV(u§!ÿ,gýVÇ‘(unfø‹¯O5r6Rÿ÷‹SÍN‰˜án³ùR”^è•Ûi0"
+ zhx_guide_status_feudatory_no:0 "§Y(uô‹f§!ÿ,gýV8gÇ‘(unfPR0=O0¯O0lQ9ei—ÿ,gu˜KfSeQãS‚fN(u0"
+ zhx_guide_status_tianzi_yes:0 "§Y,gýV(u§!ÿ,gýVHNSVMR)YPRÿ9ei—6eÊv‰˜1užRE–Meœ^9ei—Ðc›O0"
+ zhx_guide_status_tianzi_no:0 "§Y(uô‹f§!ÿ,gýVN=fSVMR)YPRÿ,gu˜ËNÍu)YPRN^S6R¦^0"
+ zhx_guide_status_gongyi_yes:0 "§Y,gýV(u§!ÿ,gýVÇ‘(ulQ‘9ei—ÿ‰˜ˆRNw¹Lu0"
+ zhx_guide_status_gongyi_no:0 "§Y(uô‹f§!ÿ,gýV8gÇ‘(ulQ‘9ei—ÿ3u÷‹‰˜án³,gu˜hQèDJh0"
+ zhx_guide_status_yang_yes:0 "§Y,gýV(u§!ÿ,gýVÇ‘(ulbýVFUßv9ei—0"
+ zhx_guide_status_yang_no:0 "§Y(uô‹f§!ÿ,gýV8gÇ‘(ulbýVFUßv9ei—ÿåNNHNå‹N^SMeSOÄ‰R0"
+ zhx_guide_status_republics_yes:0 "§Y,gýV(u§!ÿ,gýVÇ‘(u,gu˜ËNÍu„vNÍyN^SqQŒTýV9ei—0"
+ zhx_guide_status_republics_no:0 "§Y(uô‹f§!ÿ,gýV8gÇ‘(uÙàQÍyN^SqQŒTýV9ei—ÿ…Q¹RïS›O†Nã‰0"
+ zhx_guide_status_lijiao_yes:0 "§Y,gýV(u§!ÿ,gýV(uJyYeHg6RÿTy˜ÍdjOæS	gDJhN·QtS0"
+ zhx_guide_status_lijiao_no:0 "§Y(uô‹f§!ÿ,gýVSVMRN(uJyYeýVº‹Hg6RÿÍNïSåg–hQèÄ‰R0"
+ zhx_guide_status_academy_yes:0 "§Y,gýV(u§!ÿ,gýVHNJyYeýVÿc	gfR«Röe¡‹—r0W¹e6eÊv0OSTN.V›R0"
+ zhx_guide_status_academy_no:0 "§Y(uô‹f§!ÿ,gýV^—JyYeýVÿc	gfR«RÍN	g0W¹e6eÊvÿàeJyYeOSTN.V›R0"

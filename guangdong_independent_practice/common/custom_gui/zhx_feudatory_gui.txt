@@ -1,4 +1,9 @@
 custom_text_box = {
+    name = zhx_feudatory_gui_zi
+    potential = { has_reform = zhx_feudatory_zi_reform }
+    tooltip = zhx_feudatory_rules_tt
+}
+custom_text_box = {
     name = zhx_feudatory_gui_bo
     potential = { has_reform = zhx_feudatory_bo_reform }
     tooltip = zhx_feudatory_rules_tt

@@ -1,0 +1,88 @@
+{
+  "version": 1,
+  "generator": "built-in image_gen",
+  "status": "Source art retained unchanged; per-image crop and DDS generation integrated into opening events. Static checks passed; runtime not tested.",
+  "images": [
+    {
+      "tag": "GDD",
+      "title": "南海·番禺旧帆",
+      "file": "tools/assets/event_pictures/lingnan_opening_v1/gdd_opening_source.png",
+      "dimensions": [
+        1983,
+        793
+      ],
+      "sha256": "364437eb1eb09cb89c249d3e8e9a32460cbe9ad09e004f6d3a0b889c0b94119d"
+    },
+    {
+      "tag": "GUI",
+      "title": "桂林·八桂残疆",
+      "file": "tools/assets/event_pictures/lingnan_opening_v1/gui_opening_source.png",
+      "dimensions": [
+        1774,
+        887
+      ],
+      "sha256": "3b306dff86dca83a5e8bce0e231aca016f1b4ffd6f2162e972f81d0921b918e0"
+    },
+    {
+      "tag": "CZC",
+      "title": "潮州·八邑共推",
+      "file": "tools/assets/event_pictures/lingnan_opening_v1/czc_opening_source.png",
+      "dimensions": [
+        1774,
+        887
+      ],
+      "sha256": "081b1aad30aa2620ff67729ad4719492040eede1fcc6c92a8658fe1ad8d8fee8"
+    },
+    {
+      "tag": "HAK",
+      "title": "客家·山中有国",
+      "file": "tools/assets/event_pictures/lingnan_opening_v1/hak_opening_source.png",
+      "dimensions": [
+        1774,
+        887
+      ],
+      "sha256": "db56c0a2772dee1155728dca55f4db39617691475f8887ff537f08ce08e2fed8"
+    },
+    {
+      "tag": "NUN",
+      "title": "侬国·众峒举火",
+      "file": "tools/assets/event_pictures/lingnan_opening_v1/nun_opening_source.png",
+      "dimensions": [
+        1774,
+        887
+      ],
+      "sha256": "58b47b0c64c52700c656601b1f7239ed554a6822bafafacd2598f400edfcc496"
+    },
+    {
+      "tag": "TZZ",
+      "title": "田州·桂娇遗约",
+      "file": "tools/assets/event_pictures/lingnan_opening_v1/tzz_opening_source.png",
+      "dimensions": [
+        1774,
+        887
+      ],
+      "sha256": "8d1b67c6fda453b9d53b3b6fedc2a9e024680db6bff3650e7ae8bd91ea3d4a23"
+    },
+    {
+      "tag": "LIL",
+      "title": "俚寮·高凉旧将",
+      "file": "tools/assets/event_pictures/lingnan_opening_v1/lil_opening_source.png",
+      "dimensions": [
+        1774,
+        887
+      ],
+      "sha256": "36f2ab767d2c1a1a38893fbf906b35de1b41e4c0c0fad61c6c0114d78be5f460"
+    },
+    {
+      "tag": "DAI",
+      "title": "安南·两重冠冕",
+      "file": "tools/assets/event_pictures/lingnan_opening_v1/dai_opening_source.png",
+      "dimensions": [
+        1774,
+        887
+      ],
+      "sha256": "203471ec6ce9e576998a39e83a41aa2b01169964bf7910aeb1c5d3db8f09b60b"
+    }
+  ],
+  "runtime_manifest": "planning/opening_backgrounds/lingnan_opening_manifest.json"
+}

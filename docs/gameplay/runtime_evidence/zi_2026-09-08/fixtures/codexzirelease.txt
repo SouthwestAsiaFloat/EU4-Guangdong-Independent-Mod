@@ -1,0 +1,3 @@
+# Only one core province may return; no rank/member flags written by fixture.
+5031 = { remove_core = CAG }
+CZH = { set_variable = { which = zhx_feudatory_term_serial value = 4 } release = CAG }

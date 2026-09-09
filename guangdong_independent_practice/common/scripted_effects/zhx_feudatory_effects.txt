@@ -1,12 +1,39 @@
-# The native reform ID owns dignity; no parallel dignity counter or flags.
+# Current dignity is owned by the native reform. Archive flags are only for
+# restoration after extinction and are never used for current rewards or gates.
+# Native scripted release can skip on_country_released. Reconcile only an
+# independently restored country with an existing archive, outside SetOwner.
+zhx_feudatory_recover_restored_member = {
+    if = {
+        limit = {
+            exists = yes
+            has_country_flag = zhx_feudatory_restore_pending
+            NOT = { has_country_flag = zhx_feudatory_forfeited }
+            NOT = { has_country_modifier = zhx_tianxia_rejoin_bar }
+            is_subject = no
+            NOT = { zhx_is_tianxia_polity = yes }
+        }
+        zhx_register_tianxia_member = yes
+    }
+}
 zhx_feudatory_sync_government = {
     if = {
         limit = { zhx_feudatory_is_eligible = yes }
+        zhx_feudatory_refresh_attempt_term = yes
         if = {
-            limit = { NOT = { zhx_feudatory_has_reform = yes } }
-            zhx_feudatory_clear_first_tier = yes
-            add_government_reform = zhx_feudatory_bo_reform
+            limit = { has_country_flag = zhx_feudatory_forfeited }
+            add_government_reform = zhx_feudatory_zi_reform
+            clr_country_flag = zhx_feudatory_forfeited
+            clr_country_flag = zhx_feudatory_restore_pending
         }
+        else_if = {
+            limit = { has_country_flag = zhx_feudatory_restore_pending }
+            zhx_feudatory_restore_dignity = yes
+        }
+        else_if = {
+            limit = { NOT = { zhx_feudatory_has_reform = yes } }
+            add_government_reform = zhx_feudatory_zi_reform
+        }
+        zhx_feudatory_remember_dignity = yes
         if = {
             limit = { has_reform = zhx_feudatory_gong_reform }
             if = { limit = { NOT = { government_rank = 2 } } set_government_rank = 2 }
@@ -20,6 +47,7 @@ zhx_feudatory_sync_government = {
         limit = { zhx_feudatory_has_reform = yes }
         # Departure or a scripted government change releases only this system's
         # own first-tier reform. No ruler, heir, upper reform or estate is reset.
+        remove_government_reform = zhx_feudatory_zi_reform
         remove_government_reform = zhx_feudatory_bo_reform
         remove_government_reform = zhx_feudatory_hou_reform
         remove_government_reform = zhx_feudatory_gong_reform
@@ -30,6 +58,7 @@ zhx_feudatory_initialise = {
     if = {
         limit = { NOT = { has_global_flag = zhx_feudatory_initialised } }
         set_global_flag = zhx_feudatory_initialised
+        CZH = { set_variable = { which = zhx_feudatory_term_serial value = 1 } }
         every_country = {
             limit = { OR = { zhx_feudatory_is_eligible = yes zhx_feudatory_has_reform = yes } }
             zhx_feudatory_sync_government = yes
@@ -38,6 +67,7 @@ zhx_feudatory_initialise = {
 }
 # Called inside the existing 25-year rollover, not by a second timer.
 zhx_feudatory_begin_new_term = {
+    CZH = { change_variable = { which = zhx_feudatory_term_serial value = 1 } }
     every_country = { limit = { has_country_flag = zhx_feudatory_used_this_term } clr_country_flag = zhx_feudatory_used_this_term }
 }
 # Actor country scope. Register synchronously before the Tianzi can delay the
@@ -45,28 +75,35 @@ zhx_feudatory_begin_new_term = {
 zhx_feudatory_submit_petition = {
     if = {
         limit = { zhx_feudatory_can_submit = yes }
-        set_country_flag = zhx_feudatory_used_this_term
-        set_country_flag = zhx_feudatory_request_pending
-        set_variable = { which = zhx_feudatory_submitted_merit which = zhx_merit_term }
-        clr_country_flag = zhx_feudatory_request_from_bo
-        clr_country_flag = zhx_feudatory_request_from_hou
         if = {
-            limit = { has_reform = zhx_feudatory_bo_reform }
-            set_country_flag = zhx_feudatory_request_from_bo
+            limit = { has_reform = zhx_feudatory_zi_reform }
+            zhx_feudatory_submit_zi_petition = yes
         }
-        else = { set_country_flag = zhx_feudatory_request_from_hou }
-        save_global_event_target_as = zhx_feudatory_applicant
-        save_event_target_as = zhx_feudatory_event_applicant
-        event_target:zhx_tianzi = {
-            save_global_event_target_as = zhx_feudatory_host
-            zhx_clear_tianxia_council_kind = yes
-            zhx_clear_tianxia_council_candidates = yes
-            zhx_clear_tianxia_council_results = yes
-            zhx_reset_tianxia_council_ballot = yes
-            zhx_clear_tianxia_council_phase = yes
-            set_country_flag = zhx_council_kind_promotion
-            set_country_flag = zhx_council_phase_preparing
-            country_event = { id = zhx_feudatory.10 }
+        else = {
+            zhx_feudatory_record_attempt = yes
+            set_country_flag = zhx_feudatory_request_pending
+            clr_country_flag = zhx_feudatory_request_invalid
+            set_variable = { which = zhx_feudatory_submitted_merit which = zhx_merit_term }
+            clr_country_flag = zhx_feudatory_request_from_bo
+            clr_country_flag = zhx_feudatory_request_from_hou
+            if = {
+                limit = { has_reform = zhx_feudatory_bo_reform }
+                set_country_flag = zhx_feudatory_request_from_bo
+            }
+            else = { set_country_flag = zhx_feudatory_request_from_hou }
+            save_global_event_target_as = zhx_feudatory_applicant
+            save_event_target_as = zhx_feudatory_event_applicant
+            event_target:zhx_tianzi = {
+                save_global_event_target_as = zhx_feudatory_host
+                zhx_clear_tianxia_council_kind = yes
+                zhx_clear_tianxia_council_candidates = yes
+                zhx_clear_tianxia_council_results = yes
+                zhx_reset_tianxia_council_ballot = yes
+                zhx_clear_tianxia_council_phase = yes
+                set_country_flag = zhx_council_kind_promotion
+                set_country_flag = zhx_council_phase_preparing
+                country_event = { id = zhx_feudatory.10 }
+            }
         }
     }
 }
@@ -133,6 +170,7 @@ zhx_feudatory_clear_petition = {
         limit = { has_saved_global_event_target = zhx_feudatory_applicant }
         event_target:zhx_feudatory_applicant = {
             clr_country_flag = zhx_feudatory_request_pending
+            clr_country_flag = zhx_feudatory_request_invalid
             clr_country_flag = zhx_feudatory_request_from_bo
             clr_country_flag = zhx_feudatory_request_from_hou
             set_variable = { which = zhx_feudatory_submitted_merit value = 0 }
@@ -172,6 +210,7 @@ zhx_feudatory_execute_promotion = {
                 clr_country_flag = zhx_feudatory_grant_gong
                 set_government_rank = 2
             }
+            zhx_feudatory_remember_dignity = yes
             country_event = { id = zhx_feudatory.21 }
         }
     }
@@ -347,4 +386,185 @@ zhx_feudatory_clear_first_tier = {
     if = { limit = { has_reform = austrian_absolute_monarchy } remove_government_reform = austrian_absolute_monarchy }
     if = { limit = { has_reform = merchant_aristocracy_reform } remove_government_reform = merchant_aristocracy_reform }
     if = { limit = { has_reform = gothic_monarchy_reform } remove_government_reform = gothic_monarchy_reform }
+}
+
+# Per-applicant direct investiture. Local event targets travel with each royal
+# event, while the country-owned pending marker prevents duplicate submission.
+zhx_feudatory_submit_zi_petition = {
+    zhx_feudatory_record_attempt = yes
+    set_country_flag = zhx_feudatory_request_pending
+    set_country_flag = zhx_feudatory_zi_pending
+    clr_country_flag = zhx_feudatory_request_invalid
+    set_variable = { which = zhx_feudatory_submitted_merit which = zhx_merit_term }
+    save_event_target_as = zhx_feudatory_zi_applicant
+    # Remove prior living-host authorizations before binding this request.
+    every_country = { PREV = { clr_country_flag = zhx_feudatory_zi_host_@PREV } }
+    event_target:zhx_tianzi = {
+        save_event_target_as = zhx_feudatory_zi_host
+        event_target:zhx_feudatory_zi_applicant = { set_country_flag = zhx_feudatory_zi_host_@PREV }
+        zhx_feudatory_dispatch_zi_petition = yes
+    }
+}
+# EU4 merges simultaneous windows with the same event ID. Keep independent
+# country-owned requests, but present only one royal document at a time.
+# The next document is delivered the day after the current window closes.
+zhx_feudatory_dispatch_zi_petition = {
+    if = {
+        limit = {
+            exists = yes
+            zhx_is_tianzi = yes
+            NOT = {
+                any_country = {
+                    has_country_flag = zhx_feudatory_zi_pending
+                    has_country_flag = zhx_feudatory_zi_presented
+                    has_country_flag = zhx_feudatory_zi_host_@PREV
+                }
+            }
+        }
+        save_event_target_as = zhx_feudatory_zi_host
+        random_country = {
+            limit = {
+                has_country_flag = zhx_feudatory_zi_pending
+                has_country_flag = zhx_feudatory_zi_host_@PREV
+            }
+            set_country_flag = zhx_feudatory_zi_presented
+            save_event_target_as = zhx_feudatory_zi_applicant
+            event_target:zhx_feudatory_zi_host = { country_event = { id = zhx_feudatory.50 } }
+        }
+    }
+}
+# Applicant scope. Shared council targets and council phase are never touched.
+zhx_feudatory_clear_zi_petition = {
+    clr_country_flag = zhx_feudatory_request_pending
+    clr_country_flag = zhx_feudatory_zi_pending
+    clr_country_flag = zhx_feudatory_zi_presented
+    clr_country_flag = zhx_feudatory_request_invalid
+    set_variable = { which = zhx_feudatory_submitted_merit value = 0 }
+    every_country = { PREV = { clr_country_flag = zhx_feudatory_zi_host_@PREV } }
+}
+# Royal event ROOT scope, including all final eligibility checks on click.
+zhx_feudatory_grant_bo = {
+    if = {
+        limit = { zhx_feudatory_zi_request_is_valid = yes }
+        event_target:zhx_feudatory_zi_applicant = {
+            set_country_flag = zhx_feudatory_grant_bo
+            add_government_reform = zhx_feudatory_bo_reform
+            clr_country_flag = zhx_feudatory_grant_bo
+            set_government_rank = 1
+            zhx_feudatory_remember_dignity = yes
+            zhx_feudatory_clear_zi_petition = yes
+            country_event = { id = zhx_feudatory.51 }
+        }
+    }
+}
+zhx_feudatory_refuse_zi_petition = {
+    if = {
+        limit = { zhx_feudatory_zi_event_matches_request = yes }
+        event_target:zhx_feudatory_zi_applicant = {
+            zhx_feudatory_clear_zi_petition = yes
+            if = { limit = { exists = yes } country_event = { id = zhx_feudatory.52 } }
+        }
+    }
+}
+# Ordinary country pulse, outside SetOwner/annexation. Invalidating the request
+# is sticky, so temporary loss of eligibility followed by restoration cannot
+# revive an old petition. The live royal popup can still dismiss it.
+zhx_feudatory_maintain_zi_petition = {
+    if = {
+        limit = { has_country_flag = zhx_feudatory_zi_pending }
+        if = {
+            limit = { NOT = { AND = { zhx_feudatory_is_eligible = yes has_reform = zhx_feudatory_zi_reform total_development = 50 num_of_cities = 5 } } }
+            set_country_flag = zhx_feudatory_request_invalid
+        }
+        if = {
+            limit = {
+                NOT = {
+                    any_country = {
+                        exists = yes
+                        zhx_is_tianzi = yes
+                        PREV = { has_country_flag = zhx_feudatory_zi_host_@PREV }
+                    }
+                }
+            }
+            zhx_feudatory_clear_zi_petition = yes
+            country_event = { id = zhx_feudatory.52 }
+        }
+    }
+}
+# Country-local archive. These flags remember the last actual dignity only;
+# active names, effects and promotion eligibility still read the reform ID.
+zhx_feudatory_forget_dignity = {
+    clr_country_flag = zhx_feudatory_remembered_zi
+    clr_country_flag = zhx_feudatory_remembered_bo
+    clr_country_flag = zhx_feudatory_remembered_hou
+    clr_country_flag = zhx_feudatory_remembered_gong
+    clr_country_flag = zhx_feudatory_restore_pending
+}
+zhx_feudatory_remember_dignity = {
+    if = {
+        limit = { zhx_feudatory_has_reform = yes NOT = { has_country_flag = zhx_feudatory_forfeited } }
+        zhx_feudatory_forget_dignity = yes
+        if = { limit = { has_reform = zhx_feudatory_zi_reform } set_country_flag = zhx_feudatory_remembered_zi }
+        if = { limit = { has_reform = zhx_feudatory_bo_reform } set_country_flag = zhx_feudatory_remembered_bo }
+        if = { limit = { has_reform = zhx_feudatory_hou_reform } set_country_flag = zhx_feudatory_remembered_hou }
+        if = { limit = { has_reform = zhx_feudatory_gong_reform } set_country_flag = zhx_feudatory_remembered_gong }
+    }
+}
+# Runs before membership is cleared by the existing annexation/integration
+# queue. Only country-local flags are written inside the engine transaction.
+zhx_feudatory_record_extinction = {
+    if = {
+        limit = { NOT = { has_country_flag = zhx_feudatory_forfeited } }
+        zhx_feudatory_remember_dignity = yes
+        set_country_flag = zhx_feudatory_restore_pending
+    }
+    if = { limit = { has_country_flag = zhx_feudatory_request_pending } set_country_flag = zhx_feudatory_request_invalid }
+}
+zhx_feudatory_forfeit_dignity = {
+    zhx_feudatory_forget_dignity = yes
+    set_country_flag = zhx_feudatory_forfeited
+    if = { limit = { has_country_flag = zhx_feudatory_request_pending } set_country_flag = zhx_feudatory_request_invalid }
+}
+# Only the restoration branch may bypass initial land size; it is not a new
+# promotion. Grant flags temporarily authorize native same-tier replacement.
+zhx_feudatory_restore_dignity = {
+    if = {
+        limit = { has_country_flag = zhx_feudatory_remembered_gong }
+        set_country_flag = zhx_feudatory_grant_gong
+        add_government_reform = zhx_feudatory_gong_reform
+        clr_country_flag = zhx_feudatory_grant_gong
+    }
+    else_if = {
+        limit = { has_country_flag = zhx_feudatory_remembered_hou }
+        set_country_flag = zhx_feudatory_grant_hou
+        add_government_reform = zhx_feudatory_hou_reform
+        clr_country_flag = zhx_feudatory_grant_hou
+    }
+    else_if = {
+        limit = { has_country_flag = zhx_feudatory_remembered_bo }
+        set_country_flag = zhx_feudatory_grant_bo
+        add_government_reform = zhx_feudatory_bo_reform
+        clr_country_flag = zhx_feudatory_grant_bo
+    }
+    else = { add_government_reform = zhx_feudatory_zi_reform }
+    clr_country_flag = zhx_feudatory_restore_pending
+}
+
+# The existing 25-year coordinator owns this serial even if a country is extinct
+# at rollover. Copy the same-named variable across the PREV country scope.
+# The serial is bookkeeping, not a second timer or a resource.
+zhx_feudatory_refresh_attempt_term = {
+    CZH = { PREV = { set_variable = { which = zhx_feudatory_term_serial which = PREV } } }
+    if = {
+        limit = {
+            has_country_flag = zhx_feudatory_used_this_term
+            NOT = { check_variable = { which = zhx_feudatory_submitted_term which = zhx_feudatory_term_serial } }
+        }
+        clr_country_flag = zhx_feudatory_used_this_term
+    }
+}
+zhx_feudatory_record_attempt = {
+    zhx_feudatory_refresh_attempt_term = yes
+    set_country_flag = zhx_feudatory_used_this_term
+    set_variable = { which = zhx_feudatory_submitted_term which = zhx_feudatory_term_serial }
 }

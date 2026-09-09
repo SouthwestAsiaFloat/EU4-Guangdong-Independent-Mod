@@ -99,7 +99,6 @@ country_event = {
             if = {
                 limit = {
                     OR = {
-                        tag = ACG
                         tag = CAG
                         tag = CHN
                         tag = CZC
@@ -108,11 +107,8 @@ country_event = {
                         tag = GDD
                         tag = GUI
                         tag = GUO
-                        tag = HNG
                         tag = JIZ
-                        tag = LCH
                         tag = LUU
-                        tag = NCH
                         tag = SUI
                         tag = WVG
                         tag = XU2
@@ -131,6 +127,7 @@ country_event = {
                         tag = WEI
                         tag = YUE
                         tag = ZNG
+                        tag = NCH
                     }
                 }
                 set_country_flag = zhx_doctrine_fa
@@ -148,7 +145,6 @@ country_event = {
                         tag = SNG
                         tag = WHU
                         tag = WUZ
-                        tag = ZHU
                     }
                 }
                 set_country_flag = zhx_doctrine_mo
@@ -166,6 +162,12 @@ country_event = {
                         tag = WDU
                         tag = WXG
                         tag = YPG
+                        tag = HNG
+                        tag = ZHU
+                        tag = QVN
+                        tag = ACG
+                        tag = EGU
+                        tag = LCH
                     }
                 }
                 set_country_flag = zhx_doctrine_dao
@@ -175,7 +177,6 @@ country_event = {
                     OR = {
                         tag = DAE
                         tag = DQU
-                        tag = EGU
                         tag = QIC
                         tag = QWO
                         tag = WUU
@@ -197,7 +198,6 @@ country_event = {
                         tag = LUO
                         tag = OUE
                         tag = QSH
-                        tag = QVN
                         tag = SHE
                         tag = ZHO
                         tag = ZSH

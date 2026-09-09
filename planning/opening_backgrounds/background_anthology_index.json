@@ -1,0 +1,225 @@
+{
+  "countries": 27,
+  "images": 27,
+  "entries": [
+    {
+      "tag": "GDD",
+      "name": "南海侯国",
+      "title": "番禺旧帆",
+      "manifest": "lingnan_opening_manifest.json",
+      "body_sha256": "00ffa7b694810b538329519a177a9d2cc623f10a55f26366979d4862575af81f",
+      "planned_page": 2
+    },
+    {
+      "tag": "GUI",
+      "name": "桂林伯国",
+      "title": "八桂残疆",
+      "manifest": "lingnan_opening_manifest.json",
+      "body_sha256": "3d360f96e5dfc659fdc8a28e35ff73f0ee5264bc05c3df67976aa425a7d5c6b1",
+      "planned_page": 3
+    },
+    {
+      "tag": "CZC",
+      "name": "潮州乡贤议会",
+      "title": "八邑共推",
+      "manifest": "lingnan_opening_manifest.json",
+      "body_sha256": "2034fc961feeed36127a83c6d9f831fd06937a22455b00a9c750ab2f3a000d29",
+      "planned_page": 4
+    },
+    {
+      "tag": "HAK",
+      "name": "客家共和国",
+      "title": "山中有国",
+      "manifest": "lingnan_opening_manifest.json",
+      "body_sha256": "304c900c5c4a61207ed44001317dd0a5b95d52ed290f397d96c7c3b6e336fd66",
+      "planned_page": 5
+    },
+    {
+      "tag": "NUN",
+      "name": "侬国",
+      "title": "众峒举火",
+      "manifest": "lingnan_opening_manifest.json",
+      "body_sha256": "b6c495f7ffb8b01ecd617016a0f0c87cd52b97bbe55395ae95456ab26283e015",
+      "planned_page": 6
+    },
+    {
+      "tag": "TZZ",
+      "name": "田州寮",
+      "title": "桂娇遗约",
+      "manifest": "lingnan_opening_manifest.json",
+      "body_sha256": "f10ab8406870fe635ace0dc0696cb0070e63e1c587ee8770f402b373ac532665",
+      "planned_page": 7
+    },
+    {
+      "tag": "LIL",
+      "name": "俚寮",
+      "title": "高凉旧将",
+      "manifest": "lingnan_opening_manifest.json",
+      "body_sha256": "1de6eff19caa78560d2075d48b5d36df459236863e96063c3cb0c5b62d26f8dd",
+      "planned_page": 8
+    },
+    {
+      "tag": "DAI",
+      "name": "安南伯国",
+      "title": "两重冠冕",
+      "manifest": "lingnan_opening_manifest.json",
+      "body_sha256": "9259e1dc16201e8754e810ca8dd4856533c3f6538e629b7a8c7fce56221713f0",
+      "planned_page": 9
+    },
+    {
+      "tag": "CDE",
+      "name": "常公邑",
+      "title": "一堤之众",
+      "manifest": "gongyi_opening_manifest.json",
+      "body_sha256": "b70ba9959efc60ac71557183f851d7df9b319cec427f3cefa102aa9ad8989bf8",
+      "planned_page": 10
+    },
+    {
+      "tag": "JJG",
+      "name": "九公邑",
+      "title": "江口公秤",
+      "manifest": "gongyi_opening_manifest.json",
+      "body_sha256": "a6726ac8a995bc198344ac3850bfceb97fd1b58d85fb2ec59e4e88e1399e4cc9",
+      "planned_page": 11
+    },
+    {
+      "tag": "HYA",
+      "name": "汉公邑",
+      "title": "留门待归",
+      "manifest": "gongyi_opening_manifest.json",
+      "body_sha256": "af20fe964ddfd10fc78a840644887c84758306e8d02b64390ce5a46bfe0a1bd1",
+      "planned_page": 12
+    },
+    {
+      "tag": "WHU",
+      "name": "芜公邑",
+      "title": "炉火照江",
+      "manifest": "gongyi_opening_manifest.json",
+      "body_sha256": "bdbf8bd6873fe5da082296ff442af9e61f611cf86116106f0a17237514391494",
+      "planned_page": 13
+    },
+    {
+      "tag": "ZHO",
+      "name": "舟公邑",
+      "title": "潮外有约",
+      "manifest": "gongyi_opening_manifest.json",
+      "body_sha256": "33c6c7ca25410db6c1d5409c2759ee47fcaa810af6643e74f1a47f2eeed3c956",
+      "planned_page": 14
+    },
+    {
+      "tag": "CHC",
+      "name": "楚大公国",
+      "title": "云梦旧冠",
+      "manifest": "chu_opening_manifest.json",
+      "body_sha256": "9dddb9aa35a9aaadbba76554e54813394b0cc7e5fadeb6d092ffc73576acc736",
+      "planned_page": 15
+    },
+    {
+      "tag": "CSA",
+      "name": "长沙伯国",
+      "title": "湘水分旌",
+      "manifest": "chu_opening_manifest.json",
+      "body_sha256": "36ef18d548e00224ca9985a2527dc6a5575f988536ba7f1a8cddd7cb22a10a29",
+      "planned_page": 16
+    },
+    {
+      "tag": "HNG",
+      "name": "衡伯国",
+      "title": "衡岳南军",
+      "manifest": "chu_opening_manifest.json",
+      "body_sha256": "d79d803d75117186abf4f10b63f325a6696b8b2431bd0249f3b3997e0a56fc57",
+      "planned_page": 17
+    },
+    {
+      "tag": "ZHU",
+      "name": "州伯国",
+      "title": "兴国留兵",
+      "manifest": "chu_opening_manifest.json",
+      "body_sha256": "c8abf25d688e45dd1f151d51d33d575a544a2c4a31d972fba38e33ba5762b4cc",
+      "planned_page": 18
+    },
+    {
+      "tag": "QVN",
+      "name": "权伯国",
+      "title": "荆门近阙",
+      "manifest": "chu_opening_manifest.json",
+      "body_sha256": "d3711af5410144896c3640df5b33538f604ad8e0113d4112255fc5b3820ff187",
+      "planned_page": 19
+    },
+    {
+      "tag": "ACG",
+      "name": "安成伯国",
+      "title": "江右称公",
+      "manifest": "chu_opening_manifest.json",
+      "body_sha256": "fd85beb9f42f3009266d9835b0f9bfbfcbf5fb8422bf9c81c926f20e18e2d104",
+      "planned_page": 20
+    },
+    {
+      "tag": "EGU",
+      "name": "鄂伯国",
+      "title": "楚长之囚",
+      "manifest": "chu_opening_manifest.json",
+      "body_sha256": "ab3bd3a3e42814b9e9f463ebd985b97fa7d3376e7a27a2f3bd8bce4707651fe8",
+      "planned_page": 21
+    },
+    {
+      "tag": "NCH",
+      "name": "南昌伯国",
+      "title": "赣水孤舟",
+      "manifest": "chu_opening_manifest.json",
+      "body_sha256": "5e11673f844eb0e978edc9247d75b256044de363fe3aede7f67e6d8ebb2ad3af",
+      "planned_page": 22
+    },
+    {
+      "tag": "LCH",
+      "name": "临川伯国",
+      "title": "失地无诏",
+      "manifest": "chu_opening_manifest.json",
+      "body_sha256": "9dfa889f184fca1abc7889c4f15cd171789299de27d8131c9edfb3a3166a4fb6",
+      "planned_page": 23
+    },
+    {
+      "tag": "TSF",
+      "name": "天师府辖地",
+      "title": "山门不语",
+      "manifest": "chu_opening_manifest.json",
+      "body_sha256": "d77ff8fc63a79eddc710a90a19e7db260ea57be730e3acce03b6c47f4a7e2ae2",
+      "planned_page": 24
+    },
+    {
+      "tag": "SUI",
+      "name": "随伯国",
+      "title": "汉东试锋",
+      "manifest": "huguang_four_plan.json",
+      "body_sha256": "673fe41212db2f86a3c5d8301b2aabb022e6a283f00fb55ceec72eaef4728472",
+      "planned_page": 25
+    },
+    {
+      "tag": "LUO",
+      "name": "罗伯国",
+      "title": "襄关敛锋",
+      "manifest": "huguang_four_plan.json",
+      "body_sha256": "a6249e2535940e12ea9251d3a1f910e1fa00a68cd0181fd79adea14c768ab737",
+      "planned_page": 26
+    },
+    {
+      "tag": "WLM",
+      "name": "武陵",
+      "title": "旧弓未封",
+      "manifest": "huguang_four_plan.json",
+      "body_sha256": "21a2572d1d8d68f3d03d71c2dcf0e1ec0d40c2a96781897f9494aae3adf6d8a5",
+      "planned_page": 27
+    },
+    {
+      "tag": "CZM",
+      "name": "辰州",
+      "title": "沅山余火",
+      "manifest": "huguang_four_plan.json",
+      "body_sha256": "fd7bd382a7719b36800e2d0cf3abbb24806368f8b9eb565a694bad69f4ab82ca",
+      "planned_page": 28
+    }
+  ],
+  "excluded": "七大诸侯开局背景事件_初稿.md entire file, per user clarification",
+  "docx": "/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/planning/opening_backgrounds/国家背景介绍汇编_27国.docx",
+  "sha256": "4e20d074b3f375d33ae414f051e155c89943c866b8ab86a2bf46be06618f96e0"
+}

@@ -1,0 +1,175 @@
+zhx_chu_count_subjects = {
+    set_variable = { which = zhx_chu_subject_count value = 0 }
+    every_subject_country = {
+        limit = { zhx_chu_is_counted_subject = yes }
+        event_target:zhx_chu_realm = { change_variable = { which = zhx_chu_subject_count value = 1 } }
+    }
+}
+zhx_chu_clear_penalties = {
+    remove_country_modifier = zhx_chu_divided_6
+    remove_country_modifier = zhx_chu_divided_5
+    remove_country_modifier = zhx_chu_divided_4
+}
+zhx_chu_refresh_penalties = {
+    zhx_chu_count_subjects = yes
+    if = {
+        limit = { has_country_flag = zhx_chu_active }
+        if = {
+            limit = { check_variable = { which = zhx_chu_subject_count value = 6 } }
+            if = { limit = { NOT = { has_country_modifier = zhx_chu_divided_6 } } zhx_chu_clear_penalties = yes add_country_modifier = { name = zhx_chu_divided_6 duration = -1 } }
+        }
+        else_if = {
+            limit = { check_variable = { which = zhx_chu_subject_count value = 5 } }
+            if = { limit = { NOT = { has_country_modifier = zhx_chu_divided_5 } } zhx_chu_clear_penalties = yes add_country_modifier = { name = zhx_chu_divided_5 duration = -1 } }
+        }
+        else_if = {
+            limit = { check_variable = { which = zhx_chu_subject_count value = 4 } }
+            if = { limit = { NOT = { has_country_modifier = zhx_chu_divided_4 } } zhx_chu_clear_penalties = yes add_country_modifier = { name = zhx_chu_divided_4 duration = -1 } }
+        }
+        else = { zhx_chu_clear_penalties = yes }
+    }
+    else = { zhx_chu_clear_penalties = yes }
+}
+zhx_chu_record_departure = {
+    if = {
+        limit = { has_country_flag = zhx_chu_active NOT = { has_country_flag = zhx_chu_departed } }
+        zhx_chu_count_subjects = yes
+        set_country_flag = zhx_chu_departed
+        set_variable = { which = zhx_chu_departure_count which = zhx_chu_subject_count }
+        if = {
+            limit = { check_variable = { which = zhx_chu_subject_count value = 4 } }
+            set_country_flag = zhx_chu_pending
+        }
+        else = { set_country_flag = zhx_chu_safe_pending }
+    }
+}
+zhx_chu_finish_crisis = {
+    clr_country_flag = zhx_chu_active
+    clr_country_flag = zhx_chu_pending
+    clr_country_flag = zhx_chu_safe_pending
+    clr_country_flag = zhx_chu_ballot
+    set_country_flag = zhx_chu_complete
+    zhx_chu_clear_penalties = yes
+}
+zhx_chu_try_open_council = {
+    if = {
+        limit = { zhx_chu_can_open = yes }
+        clr_country_flag = zhx_chu_pending
+        set_country_flag = zhx_chu_ballot
+        event_target:zhx_tianzi = {
+            save_global_event_target_as = zhx_chu_host
+            zhx_clear_tianxia_council_kind = yes
+            zhx_clear_tianxia_council_candidates = yes
+            set_country_flag = zhx_council_kind_chu
+            zhx_open_tianxia_council = yes
+        }
+    }
+}
+zhx_chu_choose_ai_vote = {
+    if = {
+        limit = { ai = yes zhx_chu_can_vote = yes }
+        if = {
+            limit = { tag = event_target:zhx_chu_realm }
+            zhx_cast_tianxia_council_vote_b = yes
+        }
+        else_if = {
+            limit = { zhx_chu_is_counted_subject = yes }
+            if = { limit = { liberty_desire = 50 } zhx_cast_tianxia_council_vote_a = yes }
+            else = { zhx_cast_tianxia_council_vote_b = yes }
+        }
+        else_if = {
+            limit = { OR = { is_rival = event_target:zhx_chu_realm event_target:zhx_chu_realm = { is_rival = PREV } } }
+            zhx_cast_tianxia_council_vote_a = yes
+        }
+        else_if = {
+            limit = { OR = { alliance_with = event_target:zhx_chu_realm has_opinion = { who = event_target:zhx_chu_realm value = 50 } } }
+            zhx_cast_tianxia_council_vote_b = yes
+        }
+        else_if = {
+            limit = { NOT = { has_opinion = { who = event_target:zhx_chu_realm value = 0 } } }
+            zhx_cast_tianxia_council_vote_a = yes
+        }
+        else = { zhx_cast_tianxia_council_vote_c = yes }
+    }
+}
+# Re-evaluate AI diplomacy monthly; never overwrite a human ballot.
+zhx_chu_refresh_ai_ballots = {
+    set_country_flag = zhx_council_batching_ai_votes
+    every_country = { limit = { ai = yes zhx_chu_can_vote = yes } zhx_chu_choose_ai_vote = yes }
+    clr_country_flag = zhx_council_batching_ai_votes
+    zhx_recount_tianxia_council_ballot = yes
+}
+zhx_chu_fill_missing_ai_ballots = {
+    set_country_flag = zhx_council_batching_ai_votes
+    every_country = {
+        limit = { ai = yes zhx_chu_can_vote = yes NOT = { OR = { has_country_flag = zhx_council_vote_a has_country_flag = zhx_council_vote_b has_country_flag = zhx_council_vote_c } } }
+        zhx_chu_choose_ai_vote = yes
+    }
+    clr_country_flag = zhx_council_batching_ai_votes
+    zhx_recount_tianxia_council_ballot = yes
+}
+# Executed exactly once by the shared original 365-day deadline, before any
+# result popup. No subject-count gate, accept button or second veto here.
+zhx_chu_resolve_council = {
+    if = {
+        limit = { has_country_flag = zhx_council_kind_chu has_country_flag = zhx_council_result_ready has_country_flag = zhx_council_phase_resolving }
+        if = {
+            limit = { event_target:zhx_chu_realm = { exists = yes } }
+            if = {
+                limit = { check_variable = { which = zhx_council_a_vs_b value = 1 } }
+                event_target:zhx_chu_realm = {
+                    zhx_chu_finish_crisis = yes
+                    every_subject_country = {
+                        limit = { zhx_chu_is_counted_subject = yes }
+                        grant_independence = yes
+                        set_country_flag = zhx_chu_notice_21
+                    }
+                    set_country_flag = zhx_chu_notice_20
+                }
+            }
+            else = {
+                event_target:zhx_chu_realm = {
+                    zhx_chu_finish_crisis = yes
+                    every_subject_country = {
+                        limit = { zhx_chu_is_counted_subject = yes }
+                        add_country_modifier = { name = zhx_chu_dispute_memory duration = 7300 }
+                        set_country_flag = zhx_chu_notice_23
+                    }
+                    set_country_flag = zhx_chu_notice_22
+                }
+            }
+        }
+        clear_global_event_target = zhx_chu_host
+        zhx_finish_tianxia_council = yes
+    }
+}
+zhx_chu_maintenance = {
+    if = {
+        limit = { has_country_flag = zhx_chu_active }
+        # Fallback catches scripted replacements which skip native callbacks.
+        if = { limit = { NOT = { has_ruler_flag = zhx_chu_opening_ruler } NOT = { has_country_flag = zhx_chu_departed } } zhx_chu_record_departure = yes }
+        zhx_chu_refresh_penalties = yes
+        if = {
+            limit = { has_country_flag = zhx_chu_safe_pending }
+            zhx_chu_finish_crisis = yes
+            if = { limit = { ai = no } country_event = { id = zhx_chu.24 } }
+        }
+        else_if = {
+            limit = { has_country_flag = zhx_chu_departed NOT = { has_country_flag = zhx_chu_departure_notice } }
+            set_country_flag = zhx_chu_departure_notice
+            if = { limit = { ai = no } country_event = { id = zhx_chu.3 days = 1 } }
+        }
+        # A lost host cannot leave the realm permanently pending. Preserve the
+        # locked incident, clear only the former Chu ballot and requeue it.
+        if = {
+            limit = { has_country_flag = zhx_chu_ballot NOT = { event_target:zhx_chu_host = { exists = yes zhx_is_tianzi = yes } } }
+            event_target:zhx_chu_host = {
+                if = { limit = { has_country_flag = zhx_council_kind_chu } zhx_clear_tianxia_council_phase = yes zhx_clear_tianxia_council_kind = yes clr_country_flag = zhx_council_deadline_scheduled clr_country_flag = zhx_council_result_ready }
+            }
+            clr_country_flag = zhx_chu_ballot
+            set_country_flag = zhx_chu_pending
+            clear_global_event_target = zhx_chu_host
+        }
+        zhx_chu_try_open_council = yes
+    }
+}

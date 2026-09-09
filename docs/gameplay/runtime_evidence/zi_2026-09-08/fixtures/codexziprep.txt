@@ -1,0 +1,8 @@
+# Disposable Zi runtime prerequisites; no promotion effects.
+687 = { cede_province = CAG add_core = CAG }
+5347 = { cede_province = CAG add_core = CAG }
+5348 = { cede_province = CAG add_core = CAG }
+CAG = {
+ capital_scope = { add_base_tax = 30 }
+ set_variable = { which = zhx_merit_term value = 50 }
+}

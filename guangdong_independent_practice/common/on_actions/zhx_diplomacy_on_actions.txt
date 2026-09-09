@@ -116,7 +116,9 @@ on_country_released = {
     if = {
         limit = {
             has_global_flag = zhx_system_initialised_v14
-            zhx_is_historic_tianxia_tag = yes
+            OR = { zhx_is_historic_tianxia_tag = yes has_country_flag = zhx_feudatory_restore_pending }
+            NOT = { has_country_flag = zhx_feudatory_forfeited }
+            NOT = { has_country_modifier = zhx_tianxia_rejoin_bar }
             is_subject = no
             NOT = { zhx_is_tianxia_polity = yes }
         }

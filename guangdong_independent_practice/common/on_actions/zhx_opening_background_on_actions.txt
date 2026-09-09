@@ -1,0 +1,29 @@
+# Generated. Native startup events, no timer or hidden dispatcher.
+on_startup = {
+    events = {
+        zhx_opening.101
+        zhx_opening.102
+        zhx_opening.103
+        zhx_opening.104
+        zhx_opening.105
+        zhx_opening.106
+        zhx_opening.107
+        zhx_opening.108
+        zhx_opening.201
+        zhx_opening.202
+        zhx_opening.203
+        zhx_opening.204
+        zhx_opening.205
+        zhx_opening.301
+        zhx_opening.302
+        zhx_opening.303
+        zhx_opening.304
+        zhx_opening.305
+        zhx_opening.306
+        zhx_opening.307
+        zhx_opening.308
+        zhx_opening.309
+        zhx_opening.310
+        zhx_guide.0
+    }
+}

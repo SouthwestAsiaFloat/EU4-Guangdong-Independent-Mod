@@ -1,0 +1,23 @@
+{
+  "date": "2026-09-07",
+  "runtime_tested": false,
+  "checks": {
+    "opening_stories": 13,
+    "startup_cases": 78,
+    "named_rulers": 5,
+    "guide_pages": 91,
+    "guide_transitions": 420,
+    "opening_school_countries": 67,
+    "localisation_roundtrip": "passed",
+    "draft_manifest_equality": "passed",
+    "previous_country_setup_preserved": "passed",
+    "native_dds_visual_review": "passed"
+  },
+  "art": {
+    "CDE": "aaaa4ccfa7b057b6831bbc523cdb40675b9895729ba7552b0aeb356756957b5a",
+    "JJG": "176a5aeeea90a1891e17bf789622bc0971cf70c88cab73c1cbe654af20cef767",
+    "HYA": "32bf47cc436b7d4603c391bd31f1e7f2dac6cf3774b26b8b2497c288696c709f",
+    "WHU": "cdc2dac332f59d683eaae96e09ada19d3eefb6c602eb49eee404acd6c5f805ed",
+    "ZHO": "db484086c4d43a656a68782478bbe9b53dd6c5a43bad4bec49f3be9bbcb0b174"
+  }
+}

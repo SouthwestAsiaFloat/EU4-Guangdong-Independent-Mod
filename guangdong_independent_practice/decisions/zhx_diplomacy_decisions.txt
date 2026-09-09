@@ -88,6 +88,7 @@ country_decisions = {
                         modifier = zhx_opinion_left_tianxia_member
                     }
                 }
+                zhx_feudatory_forfeit_dignity = yes
                 zhx_remove_tianxia_member = yes
                 add_prestige = -25
                 add_country_modifier = {

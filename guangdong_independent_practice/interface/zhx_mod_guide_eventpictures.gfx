@@ -1,0 +1,6 @@
+spriteTypes = {
+    spriteType = { name = "zhx_guide_tianxia_eventPicture" texturefile = "gfx/event_pictures/zhx_guide/zhx_guide_tianxia_eventPicture.dds" alwaystransparent = yes }
+    spriteType = { name = "zhx_guide_court_eventPicture" texturefile = "gfx/event_pictures/zhx_guide/zhx_guide_court_eventPicture.dds" alwaystransparent = yes }
+    spriteType = { name = "zhx_guide_lijiao_eventPicture" texturefile = "gfx/event_pictures/zhx_guide/zhx_guide_lijiao_eventPicture.dds" alwaystransparent = yes }
+    spriteType = { name = "zhx_guide_academy_eventPicture" texturefile = "gfx/event_pictures/zhx_guide/zhx_guide_academy_eventPicture.dds" alwaystransparent = yes }
+}

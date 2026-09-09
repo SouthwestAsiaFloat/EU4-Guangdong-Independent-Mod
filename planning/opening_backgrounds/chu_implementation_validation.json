@@ -1,0 +1,28 @@
+{
+  "date": "2026-09-07",
+  "runtime_verified": false,
+  "scope": "Chu/Huguang ten stories and opening scenario alignment",
+  "passed": {
+    "opening_story_country_count": 23,
+    "opening_date_order_scope_cases": 138,
+    "guide_pages": 91,
+    "guide_transitions": 420,
+    "opening_school_countries": 67,
+    "opening_monarchy_dignities": 58,
+    "feudatory_cases": 278,
+    "chu_story_count": 10,
+    "chu_vassal_count": 6,
+    "old_art_count_unchanged": 13,
+    "old_gongyi_rulers_unchanged": 5,
+    "art_sources_hash_verified": 10,
+    "native_dds_visually_reviewed": 10,
+    "localisation_roundtrip": "all registered outputs valid",
+    "builder_freshness": "both opening and Chu setup --check passed",
+    "git_diff_check": "passed"
+  },
+  "pending": [
+    "Fresh EU4 restart and 1444 new campaign: event rendering, historical heirs/queens, Heng vassal UI.",
+    "Geography discrepancy: ZHU in Jianli versus lore Xingguo; TSF Guangxin versus lore Yingtan. Province/capital changes deliberately deferred."
+  ],
+  "art_manifest": "tools/assets/event_pictures/chu_opening_v1/generation_manifest.json"
+}

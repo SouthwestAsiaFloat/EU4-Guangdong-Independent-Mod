@@ -1,3 +1,14 @@
+zhx_feudatory_zi_title = {
+    rank = { 1 = zhx_feudatory_zi_state 2 = zhx_feudatory_zi_state 3 = zhx_feudatory_zi_state }
+    ruler_male = { 1 = zhx_feudatory_zi_ruler 2 = zhx_feudatory_zi_ruler 3 = zhx_feudatory_zi_ruler }
+    ruler_female = { 1 = zhx_feudatory_zi_ruler 2 = zhx_feudatory_zi_ruler 3 = zhx_feudatory_zi_ruler }
+    heir_male = { 1 = zhx_feudatory_heir 2 = zhx_feudatory_heir 3 = zhx_feudatory_heir }
+    heir_female = { 1 = zhx_feudatory_heir 2 = zhx_feudatory_heir 3 = zhx_feudatory_heir }
+    consort_male = { 1 = zhx_feudatory_consort 2 = zhx_feudatory_consort 3 = zhx_feudatory_consort }
+    consort_female = { 1 = zhx_feudatory_consort 2 = zhx_feudatory_consort 3 = zhx_feudatory_consort }
+    trigger = { government = monarchy has_reform = zhx_feudatory_zi_reform }
+}
+
 zhx_feudatory_bo_title = {
     rank = { 1 = zhx_feudatory_bo_state 2 = zhx_feudatory_bo_state 3 = zhx_feudatory_bo_state }
     ruler_male = { 1 = zhx_feudatory_bo_ruler 2 = zhx_feudatory_bo_ruler 3 = zhx_feudatory_bo_ruler }

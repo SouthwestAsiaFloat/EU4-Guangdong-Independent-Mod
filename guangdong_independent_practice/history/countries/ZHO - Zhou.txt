@@ -7,3 +7,19 @@ religion = confucianism
 primary_culture = gdd_wu
 capital = 5004
 fixed_capital = 5004
+
+# ZHX_GONGYI_OPENING_RULER_BEGIN
+1444.11.11 = {
+    monarch = {
+        name = ".tS"
+        dynasty = "öS"
+        birth_date = 1400.1.1
+        adm = 3
+        dip = 3
+        mil = 3
+        female = yes
+        culture = gdd_wu
+        religion = confucianism
+    }
+}
+# ZHX_GONGYI_OPENING_RULER_END

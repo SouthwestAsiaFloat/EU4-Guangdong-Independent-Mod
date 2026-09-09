@@ -9,11 +9,11 @@ HERE = Path(__file__).resolve().parent
 ROOT = HERE.parents[2]
 DEST = ROOT / 'guangdong_independent_practice/gfx/interface/zhx_feudatories'
 PREVIEW = ROOT / 'planning/zhou_feudatories/government_icons_preview.png'
-ASSETS = [('investiture', '伯国 · 玉圭册命'), ('ritual_ding', '侯／公 · 礼鼎印玺')]
+ASSETS = [('investiture_document', '子国 · 册命文书'), ('investiture', '伯国 · 玉圭册命'), ('ritual_ding', '侯／公 · 礼鼎印玺')]
 
 def main():
     DEST.mkdir(parents=True, exist_ok=True)
-    board = Image.new('RGB', (820, 530), '#171f21')
+    board = Image.new('RGB', (1220, 530), '#171f21')
     draw = ImageDraw.Draw(board)
     font_path = str(next(p for p in [Path('/System/Library/Fonts/PingFang.ttc'), Path('/System/Library/Fonts/STHeiti Medium.ttc'), Path('/System/Library/Fonts/Supplemental/Arial Unicode.ttf')] if p.exists()))
     font = lambda n: ImageFont.truetype(font_path, n)
@@ -44,7 +44,7 @@ def main():
     PREVIEW.parent.mkdir(parents=True, exist_ok=True)
     board.save(PREVIEW)
     (HERE / 'manifest.json').write_text(json.dumps(manifest, indent=2) + '\n')
-    print('PASS: two 57x57 DDS textures decode pixel-exactly; manifest and preview exported')
+    print('PASS: three 57x57 DDS textures decode pixel-exactly; manifest and preview exported')
 
 if __name__ == '__main__':
     main()

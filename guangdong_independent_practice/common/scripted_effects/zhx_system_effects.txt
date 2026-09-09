@@ -618,7 +618,15 @@ zhx_register_tianxia_member = {
             }
             CZH = { gdd_recalculate_all_reform_votes_effect = yes }
         }
-        if = { limit = { has_global_flag = zhx_feudatory_initialised } zhx_feudatory_sync_government = yes }
+        if = {
+            limit = { has_global_flag = zhx_feudatory_initialised }
+            # A new member enters at Zi; an extinct member restores its archive.
+            if = {
+                limit = { NOT = { has_country_flag = zhx_feudatory_restore_pending } }
+                set_country_flag = zhx_feudatory_forfeited
+            }
+            zhx_feudatory_sync_government = yes
+        }
     }
 }
 
@@ -878,6 +886,7 @@ zhx_remove_tianxia_member = {
 # ballot state; all world scans and GUI/cache rebuilds are deferred to CZH's
 # next monthly country pulse.
 zhx_queue_tianxia_member_removal = {
+    zhx_feudatory_record_extinction = yes
     zhx_clear_current_tianxia_council_vote = yes
     zhx_clear_tianxia_council_ai_schedule = yes
     gdd_clear_all_reform_support_flags_effect = yes
@@ -975,7 +984,6 @@ zhx_migrate_tianxia_system_v2_to_v3 = {
             ai = no
         }
         clr_country_flag = zhx_startup_overview_seen
-        country_event = { id = zhx_system.2 }
     }
 }
 
@@ -1227,15 +1235,5 @@ zhx_initialise_tianxia_system = {
     clr_global_flag = zhx_system_initialised_v2
     set_global_flag = zhx_system_initialised_v3
 
-    # 每个人类玩家各收到一次开局总览；单人游戏中恰好只弹一次。
-    every_country = {
-        limit = {
-            exists = yes
-            ai = no
-            NOT = { has_country_flag = zhx_startup_overview_seen }
-        }
-        country_event = {
-            id = zhx_system.2
-        }
-    }
+    # Player introductions use their own deferred on_startup dispatcher.
 }

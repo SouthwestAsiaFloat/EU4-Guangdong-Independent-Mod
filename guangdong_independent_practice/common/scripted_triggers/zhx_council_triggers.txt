@@ -21,7 +21,7 @@ zhx_can_vote_in_tianxia_council = {
     }
     OR = {
         AND = {
-            event_target:zhx_tianzi = { OR = { has_country_flag = zhx_council_kind_ritual_breakdown has_country_flag = zhx_council_kind_promotion } }
+            event_target:zhx_tianzi = { OR = { has_country_flag = zhx_council_kind_ritual_breakdown has_country_flag = zhx_council_kind_promotion has_country_flag = zhx_council_kind_chu } }
             zhx_is_tianxia_member = yes
             NOT = { zhx_is_tianzi = yes }
         }

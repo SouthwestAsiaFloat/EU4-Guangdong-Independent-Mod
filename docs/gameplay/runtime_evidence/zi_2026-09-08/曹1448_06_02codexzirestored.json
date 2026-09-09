@@ -1,0 +1,1462 @@
+{
+  "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/save games/曹1448_06_02codexzirestored.eu4",
+  "sha256": "b11b9037a702067e0917a3bc866a5c341337801986cb5fcc58b230725dbed4a7",
+  "date": "1448.6.2",
+  "counts": {
+    "bo": 21,
+    "gong": 4,
+    "hou": 8,
+    "zi": 23
+  },
+  "countries": {
+    "DAI": {
+      "reform": [
+        "bo"
+      ],
+      "flags": [
+        "zhx_member",
+        "zhx_feudatory_remembered_bo"
+      ],
+      "variables": {
+        "zhx_feudatory_term_serial": "4.000",
+        "zhx_merit_lifetime": "18.000",
+        "zhx_merit_rank_cache": "3.000",
+        "zhx_merit_rank_prestige": "10.015",
+        "zhx_merit_term": "18.000"
+      },
+      "rank": "1",
+      "owned_provinces": [
+        610,
+        613,
+        616,
+        663,
+        1016,
+        1022,
+        2372,
+        2373,
+        4819,
+        4820,
+        4821,
+        4960,
+        5203
+      ]
+    },
+    "MNG": {
+      "reform": [
+        "gong"
+      ],
+      "flags": [
+        "zhx_member",
+        "zhx_feudatory_remembered_gong"
+      ],
+      "variables": {
+        "zhx_feudatory_term_serial": "4.000",
+        "zhx_merit_lifetime": "4.000",
+        "zhx_merit_rank_cache": "0.000",
+        "zhx_merit_rank_prestige": "46.742",
+        "zhx_merit_term": "4.000"
+      },
+      "rank": "2",
+      "owned_provinces": [
+        692
+      ]
+    },
+    "CZH": {
+      "reform": [],
+      "flags": [
+        "zhx_council_phase_ballot_open",
+        "zhx_council_pending_ritual_breakdown"
+      ],
+      "variables": {
+        "zhx_council_a_vs_b": "0.000",
+        "zhx_council_a_vs_c": "0.000",
+        "zhx_council_b_vs_a": "0.000",
+        "zhx_council_b_vs_c": "0.000",
+        "zhx_council_eligible_ai_count": "0.000",
+        "zhx_council_eligible_country_count": "0.000",
+        "zhx_council_unvoted_ai_count": "0.000",
+        "zhx_council_unvoted_country_count": "0.000",
+        "zhx_council_vote_a_count": "0.000",
+        "zhx_council_vote_b_count": "0.000",
+        "zhx_council_vote_c_count": "0.000",
+        "zhx_council_voted_ai_count": "0.000",
+        "zhx_council_voted_country_count": "0.000",
+        "zhx_council_yes": "17.000",
+        "zhx_feudatory_term_serial": "4.000",
+        "zhx_merit_rank_cache": "0.000",
+        "zhx_merit_rank_prestige": "5.935",
+        "zhx_merit_term_year": "4.000",
+        "zhx_merit_term_years_remaining": "21.000"
+      },
+      "rank": "3",
+      "owned_provinces": [
+        688,
+        1836,
+        5031,
+        5046,
+        5053
+      ]
+    },
+    "MIN": {
+      "reform": [
+        "bo"
+      ],
+      "flags": [
+        "zhx_member",
+        "zhx_feudatory_remembered_bo"
+      ],
+      "variables": {
+        "zhx_feudatory_term_serial": "4.000",
+        "zhx_merit_lifetime": "8.000",
+        "zhx_merit_rank_cache": "0.000",
+        "zhx_merit_rank_prestige": "15.868",
+        "zhx_merit_term": "8.000"
+      },
+      "rank": "1",
+      "owned_provinces": [
+        669,
+        1829,
+        2152,
+        2156,
+        4949,
+        4952,
+        4953,
+        4958,
+        5096,
+        5097,
+        5098,
+        5099,
+        5217
+      ]
+    },
+    "YUE": {
+      "reform": [
+        "gong"
+      ],
+      "flags": [
+        "zhx_member",
+        "zhx_major_feudatory",
+        "zhx_feudatory_remembered_gong"
+      ],
+      "variables": {
+        "zhx_feudatory_term_serial": "4.000",
+        "zhx_merit_lifetime": "8.000",
+        "zhx_merit_rank_cache": "0.000",
+        "zhx_merit_rank_prestige": "15.141",
+        "zhx_merit_term": "8.000"
+      },
+      "rank": "2",
+      "owned_provinces": [
+        684,
+        2148,
+        2149,
+        2150,
+        4950,
+        4956,
+        4976,
+        5002,
+        5003,
+        5005,
+        5006
+      ]
+    },
+    "SHU": {
+      "reform": [
+        "hou"
+      ],
+      "flags": [
+        "zhx_member",
+        "zhx_feudatory_remembered_hou"
+      ],
+      "variables": {
+        "zhx_feudatory_term_serial": "4.000",
+        "zhx_merit_lifetime": "8.000",
+        "zhx_merit_rank_cache": "0.000",
+        "zhx_merit_rank_prestige": "7.608",
+        "zhx_merit_term": "8.000"
+      },
+      "rank": "1",
+      "owned_provinces": [
+        679,
+        4212,
+        5075,
+        5076,
+        5077,
+        5078,
+        5079,
+        5080,
+        5083,
+        5084,
+        5085,
+        5331
+      ]
+    },
+    "CHC": {
+      "reform": [
+        "gong"
+      ],
+      "flags": [
+        "zhx_member",
+        "zhx_major_feudatory",
+        "zhx_feudatory_remembered_gong"
+      ],
+      "variables": {
+        "zhx_feudatory_term_serial": "4.000",
+        "zhx_merit_lifetime": "18.000",
+        "zhx_merit_rank_cache": "2.000",
+        "zhx_merit_rank_prestige": "-40.577",
+        "zhx_merit_term": "18.000"
+      },
+      "rank": "2",
+      "owned_provinces": [
+        681,
+        2172,
+        2173,
+        4197,
+        4982,
+        4992,
+        4994,
+        4999,
+        5008,
+        5011,
+        5012,
+        5014,
+        5314,
+        5315,
+        5320,
+        5341,
+        5345,
+        5346,
+        5383
+      ]
+    },
+    "WUU": {
+      "reform": [
+        "gong"
+      ],
+      "flags": [
+        "zhx_member",
+        "zhx_major_feudatory",
+        "zhx_feudatory_remembered_gong"
+      ],
+      "variables": {
+        "zhx_feudatory_term_serial": "4.000",
+        "zhx_merit_lifetime": "8.000",
+        "zhx_merit_rank_cache": "0.000",
+        "zhx_merit_rank_prestige": "7.807",
+        "zhx_merit_term": "8.000"
+      },
+      "rank": "2",
+      "owned_provinces": [
+        1821,
+        1822,
+        2145,
+        2146,
+        2147,
+        5022,
+        5023,
+        5024,
+        5025,
+        5057,
+        5068
+      ]
+    },
+    "QIC": {
+      "reform": [
+        "hou"
+      ],
+      "flags": [
+        "zhx_member",
+        "zhx_feudatory_remembered_hou"
+      ],
+      "variables": {
+        "zhx_feudatory_term_serial": "4.000",
+        "zhx_merit_lifetime": "8.000",
+        "zhx_merit_rank_cache": "0.000",
+        "zhx_merit_rank_prestige": "7.616",
+        "zhx_merit_term": "8.000"
+      },
+      "rank": "1",
+      "owned_provinces": [
+        690,
+        691,
+        695,
+        2138,
+        2139,
+        5101,
+        5102,
+        5103,
+        5104,
+        5105,
+        5106,
+        5107,
+        5222,
+        5223
+      ]
+    },
+    "YAN": {
+      "reform": [
+        "bo"
+      ],
+      "flags": [
+        "zhx_member",
+        "zhx_major_feudatory",
+        "zhx_feudatory_remembered_bo"
+      ],
+      "variables": {
+        "zhx_feudatory_term_serial": "4.000",
+        "zhx_merit_lifetime": "8.000",
+        "zhx_merit_rank_cache": "0.000",
+        "zhx_merit_rank_prestige": "-35.582",
+        "zhx_merit_term": "8.000"
+      },
+      "rank": "1",
+      "owned_provinces": [
+        703,
+        1816,
+        4672,
+        5113,
+        5114,
+        5115,
+        5116,
+        5206,
+        5207,
+        5212,
+        5213,
+        5353
+      ]
+    },
+    "QIN": {
+      "reform": [
+        "hou"
+      ],
+      "flags": [
+        "zhx_member",
+        "zhx_major_feudatory",
+        "zhx_feudatory_remembered_hou"
+      ],
+      "variables": {
+        "zhx_feudatory_term_serial": "4.000",
+        "zhx_merit_lifetime": "18.000",
+        "zhx_merit_rank_cache": "1.000",
+        "zhx_merit_rank_prestige": "17.829",
+        "zhx_merit_term": "18.000"
+      },
+      "rank": "1",
+      "owned_provinces": [
+        700,
+        2180,
+        2181,
+        4198,
+        5270,
+        5271,
+        5278,
+        5283,
+        5285,
+        5291,
+        5305,
+        5306,
+        5307
+      ]
+    },
+    "HUA": {
+      "reform": [
+        "bo"
+      ],
+      "flags": [
+        "zhx_member",
+        "zhx_feudatory_remembered_bo"
+      ],
+      "variables": {
+        "zhx_feudatory_term_serial": "4.000",
+        "zhx_merit_lifetime": "4.000",
+        "zhx_merit_rank_cache": "0.000",
+        "zhx_merit_rank_prestige": "-4.938",
+        "zhx_merit_term": "4.000"
+      },
+      "rank": "1",
+      "owned_provinces": [
+        1838,
+        2143,
+        5056,
+        5059,
+        5063,
+        5064
+      ]
+    },
+    "GDD": {
+      "reform": [
+        "hou"
+      ],
+      "flags": [
+        "zhx_member",
+        "zhx_feudatory_remembered_hou"
+      ],
+      "variables": {
+        "zhx_feudatory_term_serial": "4.000",
+        "zhx_merit_lifetime": "5.000",
+        "zhx_merit_rank_cache": "0.000",
+        "zhx_merit_rank_prestige": "26.235",
+        "zhx_merit_term": "5.000"
+      },
+      "rank": "1",
+      "owned_provinces": [
+        665,
+        667,
+        668,
+        1840,
+        2158,
+        2162,
+        2163,
+        2164,
+        4942,
+        4943,
+        4946,
+        4947,
+        4954,
+        5200,
+        5202
+      ]
+    },
+    "XU2": {
+      "reform": [
+        "hou"
+      ],
+      "flags": [
+        "zhx_member",
+        "zhx_feudatory_remembered_hou"
+      ],
+      "variables": {
+        "zhx_feudatory_term_serial": "4.000",
+        "zhx_merit_lifetime": "4.000",
+        "zhx_merit_rank_cache": "0.000",
+        "zhx_merit_rank_prestige": "7.367",
+        "zhx_merit_term": "4.000"
+      },
+      "rank": "1",
+      "owned_provinces": [
+        2141,
+        2142,
+        4196,
+        5018,
+        5020
+      ]
+    },
+    "SNG": {
+      "reform": [
+        "zi"
+      ],
+      "flags": [
+        "zhx_member",
+        "zhx_feudatory_remembered_zi"
+      ],
+      "variables": {
+        "zhx_feudatory_term_serial": "4.000",
+        "zhx_merit_lifetime": "4.000",
+        "zhx_merit_rank_cache": "0.000",
+        "zhx_merit_rank_prestige": "8.873",
+        "zhx_merit_term": "4.000"
+      },
+      "rank": "1",
+      "owned_provinces": [
+        2176,
+        5050,
+        5058,
+        5110
+      ]
+    },
+    "GUI": {
+      "reform": [
+        "bo"
+      ],
+      "flags": [
+        "zhx_member",
+        "zhx_feudatory_remembered_bo"
+      ],
+      "variables": {
+        "zhx_feudatory_term_serial": "4.000",
+        "zhx_merit_lifetime": "4.000",
+        "zhx_merit_rank_cache": "0.000",
+        "zhx_merit_rank_prestige": "-9.548",
+        "zhx_merit_term": "4.000"
+      },
+      "rank": "1",
+      "owned_provinces": [
+        5208
+      ]
+    },
+    "CSA": {
+      "reform": [
+        "bo"
+      ],
+      "flags": [
+        "zhx_member",
+        "zhx_feudatory_remembered_bo"
+      ],
+      "variables": {
+        "zhx_feudatory_term_serial": "4.000",
+        "zhx_merit_lifetime": "4.000",
+        "zhx_merit_rank_cache": "0.000",
+        "zhx_merit_rank_prestige": "-4.664",
+        "zhx_merit_term": "4.000"
+      },
+      "rank": "1",
+      "owned_provinces": [
+        671,
+        4997,
+        4998,
+        5321,
+        5322
+      ]
+    },
+    "DIA": {
+      "reform": [
+        "bo"
+      ],
+      "flags": [
+        "zhx_member",
+        "zhx_feudatory_remembered_bo"
+      ],
+      "variables": {
+        "zhx_feudatory_term_serial": "4.000",
+        "zhx_merit_lifetime": "4.000",
+        "zhx_merit_rank_cache": "0.000",
+        "zhx_merit_rank_prestige": "13.476",
+        "zhx_merit_term": "4.000"
+      },
+      "rank": "1",
+      "owned_provinces": [
+        662,
+        675,
+        5230,
+        5231,
+        5234,
+        5240,
+        5241
+      ]
+    },
+    "LCH": {
+      "reform": [
+        "bo"
+      ],
+      "flags": [
+        "zhx_member",
+        "zhx_feudatory_remembered_bo"
+      ],
+      "variables": {
+        "zhx_feudatory_term_serial": "4.000",
+        "zhx_merit_lifetime": "4.000",
+        "zhx_merit_rank_cache": "0.000",
+        "zhx_merit_rank_prestige": "12.048",
+        "zhx_merit_term": "4.000"
+      },
+      "rank": "1",
+      "owned_provinces": [
+        1833,
+        4980
+      ]
+    },
+    "NCH": {
+      "reform": [
+        "bo"
+      ],
+      "flags": [
+        "zhx_member",
+        "zhx_feudatory_remembered_bo"
+      ],
+      "variables": {
+        "zhx_feudatory_term_serial": "4.000",
+        "zhx_merit_lifetime": "4.000",
+        "zhx_merit_rank_cache": "0.000",
+        "zhx_merit_rank_prestige": "7.616",
+        "zhx_merit_term": "4.000"
+      },
+      "rank": "1",
+      "owned_provinces": [
+        683,
+        2151,
+        5323,
+        5324,
+        5325
+      ]
+    },
+    "GYA": {
+      "reform": [
+        "zi"
+      ],
+      "flags": [
+        "zhx_member",
+        "zhx_feudatory_remembered_zi"
+      ],
+      "variables": {
+        "zhx_feudatory_term_serial": "4.000",
+        "zhx_merit_lifetime": "4.000",
+        "zhx_merit_rank_cache": "0.000",
+        "zhx_merit_rank_prestige": "1.876",
+        "zhx_merit_term": "4.000"
+      },
+      "rank": "1",
+      "owned_provinces": [
+        674,
+        5071
+      ]
+    },
+    "QSH": {
+      "reform": [
+        "zi"
+      ],
+      "flags": [
+        "zhx_member",
+        "zhx_feudatory_remembered_zi"
+      ],
+      "variables": {
+        "zhx_feudatory_term_serial": "4.000",
+        "zhx_merit_lifetime": "4.000",
+        "zhx_merit_rank_cache": "0.000",
+        "zhx_merit_rank_prestige": "6.083",
+        "zhx_merit_term": "4.000"
+      },
+      "rank": "1",
+      "owned_provinces": [
+        686,
+        5065,
+        5067
+      ]
+    },
+    "CCH": {
+      "reform": [
+        "bo"
+      ],
+      "flags": [
+        "zhx_member",
+        "zhx_feudatory_remembered_bo"
+      ],
+      "variables": {
+        "zhx_feudatory_submitted_merit": "0.000",
+        "zhx_feudatory_submitted_term": "3.000",
+        "zhx_feudatory_term_serial": "4.000",
+        "zhx_merit_lifetime": "4.000",
+        "zhx_merit_rank_cache": "0.000",
+        "zhx_merit_rank_prestige": "6.963",
+        "zhx_merit_term": "54.000"
+      },
+      "rank": "1",
+      "owned_provinces": [
+        687,
+        5061,
+        5062,
+        5347,
+        5348
+      ]
+    },
+    "BAA": {
+      "reform": [
+        "hou"
+      ],
+      "flags": [
+        "zhx_member",
+        "zhx_feudatory_remembered_hou"
+      ],
+      "variables": {
+        "zhx_feudatory_term_serial": "4.000",
+        "zhx_merit_lifetime": "4.000",
+        "zhx_merit_rank_cache": "0.000",
+        "zhx_merit_rank_prestige": "7.616",
+        "zhx_merit_term": "4.000"
+      },
+      "rank": "1",
+      "owned_provinces": [
+        680,
+        2168,
+        2169,
+        4213,
+        5026,
+        5082,
+        5330,
+        5334,
+        5335
+      ]
+    },
+    "LUU": {
+      "reform": [
+        "zi"
+      ],
+      "flags": [
+        "zhx_member",
+        "zhx_feudatory_remembered_zi"
+      ],
+      "variables": {
+        "zhx_feudatory_term_serial": "4.000",
+        "zhx_merit_lifetime": "4.000",
+        "zhx_merit_rank_cache": "0.000",
+        "zhx_merit_rank_prestige": "14.778",
+        "zhx_merit_term": "4.000"
+      },
+      "rank": "1",
+      "owned_provinces": [
+        2140,
+        5108,
+        5109,
+        5112
+      ]
+    },
+    "CAG": {
+      "reform": [
+        "bo"
+      ],
+      "flags": [
+        "zhx_member",
+        "zhx_feudatory_remembered_bo"
+      ],
+      "variables": {
+        "zhx_council_vote_weight": "0.000",
+        "zhx_feudatory_submitted_merit": "0.000",
+        "zhx_feudatory_submitted_term": "2.000",
+        "zhx_feudatory_term_serial": "4.000",
+        "zhx_merit_lifetime": "0.000",
+        "zhx_merit_rank_cache": "0.000",
+        "zhx_merit_rank_prestige": "16.332",
+        "zhx_merit_term": "0.000"
+      },
+      "rank": "1",
+      "owned_provinces": [
+        5111
+      ]
+    },
+    "CAI": {
+      "reform": [
+        "bo"
+      ],
+      "flags": [
+        "zhx_member",
+        "zhx_feudatory_remembered_bo"
+      ],
+      "variables": {
+        "zhx_feudatory_submitted_merit": "0.000",
+        "zhx_feudatory_submitted_term": "3.000",
+        "zhx_feudatory_term_serial": "4.000",
+        "zhx_merit_lifetime": "4.000",
+        "zhx_merit_rank_cache": "0.000",
+        "zhx_merit_rank_prestige": "7.247",
+        "zhx_merit_term": "54.000"
+      },
+      "rank": "1",
+      "owned_provinces": [
+        4966,
+        5054,
+        5055,
+        5349,
+        5382
+      ]
+    },
+    "CHN": {
+      "reform": [
+        "zi"
+      ],
+      "flags": [
+        "zhx_member",
+        "zhx_feudatory_remembered_zi"
+      ],
+      "variables": {
+        "zhx_feudatory_term_serial": "4.000",
+        "zhx_merit_lifetime": "4.000",
+        "zhx_merit_rank_cache": "0.000",
+        "zhx_merit_rank_prestige": "4.297",
+        "zhx_merit_term": "4.000"
+      },
+      "rank": "1",
+      "owned_provinces": [
+        2144,
+        5051
+      ]
+    },
+    "GUN": {
+      "reform": [],
+      "flags": [
+        "zhx_feudatory_restore_pending",
+        "zhx_feudatory_remembered_zi"
+      ],
+      "variables": {
+        "zhx_council_vote_weight": "0.000",
+        "zhx_feudatory_term_serial": "1.000",
+        "zhx_merit_lifetime": "0.000",
+        "zhx_merit_rank_cache": "0.000",
+        "zhx_merit_term": "0.000"
+      },
+      "rank": "1"
+    },
+    "SUI": {
+      "reform": [
+        "bo"
+      ],
+      "flags": [
+        "zhx_member",
+        "zhx_feudatory_remembered_bo"
+      ],
+      "variables": {
+        "zhx_feudatory_term_serial": "4.000",
+        "zhx_merit_lifetime": "4.000",
+        "zhx_merit_rank_cache": "0.000",
+        "zhx_merit_rank_prestige": "7.616",
+        "zhx_merit_term": "4.000"
+      },
+      "rank": "1",
+      "owned_provinces": [
+        2175,
+        5009,
+        5350,
+        5384,
+        5385
+      ]
+    },
+    "LUO": {
+      "reform": [
+        "zi"
+      ],
+      "flags": [
+        "zhx_member",
+        "zhx_feudatory_remembered_zi"
+      ],
+      "variables": {
+        "zhx_feudatory_term_serial": "4.000",
+        "zhx_merit_lifetime": "4.000",
+        "zhx_merit_rank_cache": "0.000",
+        "zhx_merit_rank_prestige": "4.295",
+        "zhx_merit_term": "4.000"
+      },
+      "rank": "1",
+      "owned_provinces": [
+        2171,
+        5342
+      ]
+    },
+    "GON": {
+      "reform": [],
+      "flags": [
+        "zhx_feudatory_restore_pending",
+        "zhx_feudatory_remembered_zi"
+      ],
+      "variables": {
+        "zhx_council_vote_weight": "0.000",
+        "zhx_feudatory_term_serial": "1.000",
+        "zhx_merit_lifetime": "0.000",
+        "zhx_merit_rank_cache": "0.000",
+        "zhx_merit_term": "0.000"
+      },
+      "rank": "1"
+    },
+    "ZSH": {
+      "reform": [
+        "zi"
+      ],
+      "flags": [
+        "zhx_member",
+        "zhx_feudatory_remembered_zi"
+      ],
+      "variables": {
+        "zhx_feudatory_term_serial": "4.000",
+        "zhx_merit_lifetime": "4.000",
+        "zhx_merit_rank_cache": "0.000",
+        "zhx_merit_rank_prestige": "10.415",
+        "zhx_merit_term": "4.000"
+      },
+      "rank": "1",
+      "owned_provinces": [
+        696,
+        2136,
+        5218,
+        5351,
+        5352
+      ]
+    },
+    "ZHA": {
+      "reform": [
+        "hou"
+      ],
+      "flags": [
+        "zhx_member",
+        "zhx_major_feudatory",
+        "zhx_feudatory_remembered_hou"
+      ],
+      "variables": {
+        "zhx_feudatory_term_serial": "4.000",
+        "zhx_merit_lifetime": "4.000",
+        "zhx_merit_rank_cache": "0.000",
+        "zhx_merit_rank_prestige": "9.440",
+        "zhx_merit_term": "4.000"
+      },
+      "rank": "1",
+      "owned_provinces": [
+        693,
+        5048,
+        5221,
+        5245,
+        5246,
+        5247,
+        5248,
+        5251,
+        5255
+      ]
+    },
+    "WEI": {
+      "reform": [
+        "hou"
+      ],
+      "flags": [
+        "zhx_member",
+        "zhx_major_feudatory",
+        "zhx_feudatory_remembered_hou"
+      ],
+      "variables": {
+        "zhx_feudatory_term_serial": "4.000",
+        "zhx_merit_lifetime": "8.000",
+        "zhx_merit_rank_cache": "0.000",
+        "zhx_merit_rank_prestige": "-8.616",
+        "zhx_merit_term": "8.000"
+      },
+      "rank": "1",
+      "owned_provinces": [
+        694,
+        2178,
+        4195,
+        5219,
+        5249,
+        5252,
+        5253,
+        5254,
+        5256,
+        5269
+      ]
+    },
+    "DAE": {
+      "reform": [
+        "bo"
+      ],
+      "flags": [
+        "zhx_member",
+        "zhx_feudatory_remembered_bo"
+      ],
+      "variables": {
+        "zhx_feudatory_term_serial": "4.000",
+        "zhx_merit_lifetime": "4.000",
+        "zhx_merit_rank_cache": "0.000",
+        "zhx_merit_rank_prestige": "12.103",
+        "zhx_merit_term": "4.000"
+      },
+      "rank": "1",
+      "owned_provinces": [
+        697,
+        702,
+        2177,
+        5242,
+        5243,
+        5244
+      ]
+    },
+    "YOU": {
+      "reform": [
+        "zi"
+      ],
+      "flags": [
+        "zhx_member",
+        "zhx_feudatory_remembered_zi"
+      ],
+      "variables": {
+        "zhx_feudatory_term_serial": "4.000",
+        "zhx_merit_lifetime": "4.000",
+        "zhx_merit_rank_cache": "0.000",
+        "zhx_merit_rank_prestige": "13.343",
+        "zhx_merit_term": "4.000"
+      },
+      "rank": "1",
+      "owned_provinces": [
+        701,
+        2179,
+        5265,
+        5266,
+        5267,
+        5268
+      ]
+    },
+    "ZNG": {
+      "reform": [
+        "zi"
+      ],
+      "flags": [
+        "zhx_member",
+        "zhx_feudatory_remembered_zi"
+      ],
+      "variables": {
+        "zhx_feudatory_term_serial": "4.000",
+        "zhx_merit_lifetime": "4.000",
+        "zhx_merit_rank_cache": "0.000",
+        "zhx_merit_rank_prestige": "22.913",
+        "zhx_merit_term": "4.000"
+      },
+      "rank": "1",
+      "owned_provinces": [
+        5272,
+        5273
+      ]
+    },
+    "JUU": {
+      "reform": [
+        "zi"
+      ],
+      "flags": [
+        "zhx_member",
+        "zhx_feudatory_remembered_zi"
+      ],
+      "variables": {
+        "zhx_feudatory_term_serial": "4.000",
+        "zhx_merit_lifetime": "4.000",
+        "zhx_merit_rank_cache": "0.000",
+        "zhx_merit_rank_prestige": "4.428",
+        "zhx_merit_term": "4.000"
+      },
+      "rank": "1",
+      "owned_provinces": [
+        689,
+        5081,
+        5274,
+        5329
+      ]
+    },
+    "YPG": {
+      "reform": [
+        "zi"
+      ],
+      "flags": [
+        "zhx_member",
+        "zhx_feudatory_remembered_zi"
+      ],
+      "variables": {
+        "zhx_feudatory_term_serial": "4.000",
+        "zhx_merit_lifetime": "4.000",
+        "zhx_merit_rank_cache": "0.000",
+        "zhx_merit_rank_prestige": "-14.429",
+        "zhx_merit_term": "4.000"
+      },
+      "rank": "1",
+      "owned_provinces": [
+        5294
+      ]
+    },
+    "QWO": {
+      "reform": [
+        "zi"
+      ],
+      "flags": [
+        "zhx_member",
+        "zhx_feudatory_remembered_zi"
+      ],
+      "variables": {
+        "zhx_feudatory_term_serial": "4.000",
+        "zhx_merit_lifetime": "4.000",
+        "zhx_merit_rank_cache": "0.000",
+        "zhx_merit_rank_prestige": "-4.201",
+        "zhx_merit_term": "4.000"
+      },
+      "rank": "1",
+      "owned_provinces": [
+        5250
+      ]
+    },
+    "WVG": {
+      "reform": [
+        "zi"
+      ],
+      "flags": [
+        "zhx_member",
+        "zhx_feudatory_remembered_zi"
+      ],
+      "variables": {
+        "zhx_feudatory_term_serial": "4.000",
+        "zhx_merit_lifetime": "4.000",
+        "zhx_merit_rank_cache": "0.000",
+        "zhx_merit_rank_prestige": "8.415",
+        "zhx_merit_term": "4.000"
+      },
+      "rank": "1",
+      "owned_provinces": [
+        5047,
+        5049
+      ]
+    },
+    "GUO": {
+      "reform": [
+        "zi"
+      ],
+      "flags": [
+        "zhx_member",
+        "zhx_feudatory_remembered_zi"
+      ],
+      "variables": {
+        "zhx_feudatory_term_serial": "4.000",
+        "zhx_merit_lifetime": "4.000",
+        "zhx_merit_rank_cache": "0.000",
+        "zhx_merit_rank_prestige": "4.297",
+        "zhx_merit_term": "4.000"
+      },
+      "rank": "1",
+      "owned_provinces": [
+        5045,
+        5052
+      ]
+    },
+    "LIU": {
+      "reform": [
+        "zi"
+      ],
+      "flags": [
+        "zhx_member",
+        "zhx_feudatory_remembered_zi"
+      ],
+      "variables": {
+        "zhx_feudatory_term_serial": "4.000",
+        "zhx_merit_lifetime": "4.000",
+        "zhx_merit_rank_cache": "0.000",
+        "zhx_merit_rank_prestige": "13.806",
+        "zhx_merit_term": "4.000"
+      },
+      "rank": "1",
+      "owned_provinces": [
+        5060
+      ]
+    },
+    "ZHG": {
+      "reform": [
+        "zi"
+      ],
+      "flags": [
+        "zhx_member",
+        "zhx_feudatory_remembered_zi"
+      ],
+      "variables": {
+        "zhx_feudatory_term_serial": "4.000",
+        "zhx_merit_lifetime": "4.000",
+        "zhx_merit_rank_cache": "0.000",
+        "zhx_merit_rank_prestige": "4.398",
+        "zhx_merit_term": "4.000"
+      },
+      "rank": "1",
+      "owned_provinces": [
+        4967
+      ]
+    },
+    "SHE": {
+      "reform": [
+        "zi"
+      ],
+      "flags": [
+        "zhx_member",
+        "zhx_feudatory_remembered_zi"
+      ],
+      "variables": {
+        "zhx_feudatory_term_serial": "4.000",
+        "zhx_merit_lifetime": "4.000",
+        "zhx_merit_rank_cache": "0.000",
+        "zhx_merit_rank_prestige": "5.961",
+        "zhx_merit_term": "4.000"
+      },
+      "rank": "1",
+      "owned_provinces": [
+        5030,
+        5284
+      ]
+    },
+    "GUZ": {
+      "reform": [
+        "zi"
+      ],
+      "flags": [
+        "zhx_member",
+        "zhx_feudatory_remembered_zi"
+      ],
+      "variables": {
+        "zhx_feudatory_term_serial": "4.000",
+        "zhx_merit_lifetime": "4.000",
+        "zhx_merit_rank_cache": "0.000",
+        "zhx_merit_rank_prestige": "4.228",
+        "zhx_merit_term": "4.000"
+      },
+      "rank": "1",
+      "owned_provinces": [
+        4194,
+        5211
+      ]
+    },
+    "WUZ": {
+      "reform": [
+        "zi"
+      ],
+      "flags": [
+        "zhx_member",
+        "zhx_feudatory_remembered_zi"
+      ],
+      "variables": {
+        "zhx_feudatory_term_serial": "4.000",
+        "zhx_merit_lifetime": "4.000",
+        "zhx_merit_rank_cache": "0.000",
+        "zhx_merit_rank_prestige": "4.228",
+        "zhx_merit_term": "4.000"
+      },
+      "rank": "1",
+      "owned_provinces": [
+        704,
+        5209
+      ]
+    },
+    "HNG": {
+      "reform": [
+        "bo"
+      ],
+      "flags": [
+        "zhx_member",
+        "zhx_feudatory_remembered_bo"
+      ],
+      "variables": {
+        "zhx_feudatory_term_serial": "4.000",
+        "zhx_merit_lifetime": "4.000",
+        "zhx_merit_rank_cache": "0.000",
+        "zhx_merit_rank_prestige": "2.505",
+        "zhx_merit_term": "4.000"
+      },
+      "rank": "1",
+      "owned_provinces": [
+        2174,
+        4983,
+        5000,
+        5001,
+        5216,
+        5318,
+        5319
+      ]
+    },
+    "DQU": {
+      "reform": [
+        "zi"
+      ],
+      "flags": [
+        "zhx_member",
+        "zhx_feudatory_remembered_zi"
+      ],
+      "variables": {
+        "zhx_feudatory_term_serial": "4.000",
+        "zhx_merit_lifetime": "4.000",
+        "zhx_merit_rank_cache": "0.000",
+        "zhx_merit_rank_prestige": "5.965",
+        "zhx_merit_term": "4.000"
+      },
+      "rank": "1",
+      "owned_provinces": [
+        4211,
+        4987,
+        5332,
+        5333,
+        5339
+      ]
+    },
+    "XNG": {
+      "reform": [
+        "zi"
+      ],
+      "flags": [
+        "zhx_member",
+        "zhx_feudatory_remembered_zi"
+      ],
+      "variables": {
+        "zhx_feudatory_term_serial": "4.000",
+        "zhx_merit_lifetime": "4.000",
+        "zhx_merit_rank_cache": "0.000",
+        "zhx_merit_rank_prestige": "4.262",
+        "zhx_merit_term": "4.000"
+      },
+      "rank": "1",
+      "owned_provinces": [
+        5220
+      ]
+    },
+    "ACG": {
+      "reform": [
+        "bo"
+      ],
+      "flags": [
+        "zhx_member",
+        "zhx_feudatory_remembered_bo"
+      ],
+      "variables": {
+        "zhx_feudatory_term_serial": "4.000",
+        "zhx_merit_lifetime": "4.000",
+        "zhx_merit_rank_cache": "0.000",
+        "zhx_merit_rank_prestige": "-23.958",
+        "zhx_merit_term": "4.000"
+      },
+      "rank": "1",
+      "owned_provinces": [
+        5328
+      ]
+    },
+    "OUE": {
+      "reform": [
+        "zi"
+      ],
+      "flags": [
+        "zhx_member",
+        "zhx_feudatory_remembered_zi"
+      ],
+      "variables": {
+        "zhx_feudatory_term_serial": "4.000",
+        "zhx_merit_lifetime": "4.000",
+        "zhx_merit_rank_cache": "0.000",
+        "zhx_merit_rank_prestige": "-13.071",
+        "zhx_merit_term": "4.000"
+      },
+      "rank": "1",
+      "owned_provinces": [
+        1824,
+        4951,
+        5007
+      ]
+    },
+    "LIO": {
+      "reform": [
+        "bo"
+      ],
+      "flags": [
+        "zhx_member",
+        "zhx_feudatory_remembered_bo"
+      ],
+      "variables": {
+        "zhx_feudatory_term_serial": "4.000",
+        "zhx_merit_lifetime": "4.000",
+        "zhx_merit_rank_cache": "0.000",
+        "zhx_merit_rank_prestige": "6.493",
+        "zhx_merit_term": "4.000"
+      },
+      "rank": "1",
+      "owned_provinces": [
+        726,
+        2112,
+        2113,
+        2744,
+        4232,
+        4652,
+        5204,
+        5205,
+        5359
+      ]
+    },
+    "EGU": {
+      "reform": [
+        "bo"
+      ],
+      "flags": [
+        "zhx_member",
+        "zhx_feudatory_remembered_bo"
+      ],
+      "variables": {
+        "zhx_feudatory_term_serial": "4.000",
+        "zhx_merit_lifetime": "4.000",
+        "zhx_merit_rank_cache": "0.000",
+        "zhx_merit_rank_prestige": "9.354",
+        "zhx_merit_term": "4.000"
+      },
+      "rank": "1",
+      "owned_provinces": [
+        682,
+        5016
+      ]
+    },
+    "QVN": {
+      "reform": [
+        "bo"
+      ],
+      "flags": [
+        "zhx_member",
+        "zhx_feudatory_remembered_bo"
+      ],
+      "variables": {
+        "zhx_feudatory_term_serial": "4.000",
+        "zhx_merit_lifetime": "4.000",
+        "zhx_merit_rank_cache": "0.000",
+        "zhx_merit_rank_prestige": "-10.375",
+        "zhx_merit_term": "4.000"
+      },
+      "rank": "1",
+      "owned_provinces": [
+        5010,
+        5343
+      ]
+    },
+    "ZHU": {
+      "reform": [
+        "bo"
+      ],
+      "flags": [
+        "zhx_member",
+        "zhx_feudatory_remembered_bo"
+      ],
+      "variables": {
+        "zhx_feudatory_term_serial": "4.000",
+        "zhx_merit_lifetime": "4.000",
+        "zhx_merit_rank_cache": "0.000",
+        "zhx_merit_rank_prestige": "-0.180",
+        "zhx_merit_term": "4.000"
+      },
+      "rank": "1",
+      "owned_provinces": [
+        5015,
+        5344
+      ]
+    },
+    "JIZ": {
+      "reform": [
+        "bo"
+      ],
+      "flags": [
+        "zhx_member",
+        "zhx_feudatory_remembered_bo"
+      ],
+      "variables": {
+        "zhx_feudatory_term_serial": "4.000",
+        "zhx_merit_lifetime": "4.000",
+        "zhx_merit_rank_cache": "0.000",
+        "zhx_merit_rank_prestige": "7.616",
+        "zhx_merit_term": "4.000"
+      },
+      "rank": "1",
+      "owned_provinces": [
+        733,
+        1845,
+        4231,
+        5360,
+        5361,
+        5362,
+        5363,
+        5364
+      ]
+    },
+    "DMG": {
+      "reform": [
+        "zi"
+      ],
+      "flags": [
+        "zhx_member",
+        "zhx_feudatory_remembered_zi"
+      ],
+      "variables": {
+        "zhx_feudatory_term_serial": "4.000",
+        "zhx_merit_lifetime": "4.000",
+        "zhx_merit_rank_cache": "0.000",
+        "zhx_merit_rank_prestige": "4.297",
+        "zhx_merit_term": "4.000"
+      },
+      "rank": "1",
+      "owned_provinces": [
+        2137,
+        5381
+      ]
+    }
+  }
+}

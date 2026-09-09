@@ -1,0 +1,19 @@
+# A permanent, all-human-country reader; no faith, culture or discovery gate.
+country_decisions = {
+    zhx_mod_guide = {
+        major = yes
+        potential = { ai = no }
+        allow = {
+            custom_trigger_tooltip = {
+                tooltip = zhx_mod_guide_available_tt
+                NOT = { has_country_flag = zhx_mod_guide_open }
+                NOT = { has_country_flag = zhx_opening_background_pending }
+            }
+        }
+        effect = {
+            custom_tooltip = zhx_mod_guide_open_tt
+            hidden_effect = { zhx_open_mod_guide = yes }
+        }
+        ai_will_do = { factor = 0 }
+    }
+}

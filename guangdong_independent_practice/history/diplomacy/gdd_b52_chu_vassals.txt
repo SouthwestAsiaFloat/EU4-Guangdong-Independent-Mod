@@ -30,3 +30,11 @@ vassal = {
 	start_date = 1444.1.1
 	end_date = 1821.1.1
 }
+
+# Huguang setting: Heng is a Chu fief at the 1444 opening.
+vassal = {
+	first = CHC
+	second = HNG
+	start_date = 1444.1.1
+	end_date = 1821.1.1
+}

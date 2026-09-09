@@ -10,6 +10,7 @@ zhx_feudatory_is_eligible = {
 }
 zhx_feudatory_has_reform = {
     OR = {
+        has_reform = zhx_feudatory_zi_reform
         has_reform = zhx_feudatory_bo_reform
         has_reform = zhx_feudatory_hou_reform
         has_reform = zhx_feudatory_gong_reform
@@ -29,12 +30,14 @@ zhx_feudatory_can_use_reform = {
 }
 zhx_feudatory_has_land_threshold = {
     OR = {
+        AND = { has_reform = zhx_feudatory_zi_reform total_development = 50 num_of_cities = 5 }
         AND = { has_reform = zhx_feudatory_bo_reform total_development = 100 num_of_cities = 10 }
         AND = { has_reform = zhx_feudatory_hou_reform total_development = 200 num_of_cities = 20 }
     }
 }
 zhx_feudatory_has_merit_threshold = {
     OR = {
+        AND = { has_reform = zhx_feudatory_zi_reform check_variable = { which = zhx_merit_term value = 50 } }
         AND = { has_reform = zhx_feudatory_bo_reform check_variable = { which = zhx_merit_term value = 100 } }
         AND = { has_reform = zhx_feudatory_hou_reform check_variable = { which = zhx_merit_term value = 200 } }
     }
@@ -46,12 +49,18 @@ zhx_feudatory_can_submit = {
     zhx_feudatory_has_merit_threshold = yes
     NOT = { has_country_flag = zhx_feudatory_used_this_term }
     NOT = { has_country_flag = zhx_feudatory_request_pending }
-    NOT = { zhx_tianxia_council_is_busy = yes }
+    OR = {
+        has_reform = zhx_feudatory_zi_reform
+        AND = {
+            NOT = { zhx_tianxia_council_is_busy = yes }
+            NOT = { event_target:zhx_chu_realm = { has_country_flag = zhx_chu_pending } }
+            event_target:zhx_tianzi = { NOT = { has_country_flag = zhx_council_pending_ritual_breakdown } }
+        }
+    }
     has_saved_global_event_target = zhx_tianzi
     event_target:zhx_tianzi = {
         exists = yes
         zhx_is_tianzi = yes
-        NOT = { has_country_flag = zhx_council_pending_ritual_breakdown }
     }
     NOT = { war_with = event_target:zhx_tianzi }
 }
@@ -64,6 +73,7 @@ zhx_feudatory_request_is_valid = {
     event_target:zhx_feudatory_applicant = {
         zhx_feudatory_is_eligible = yes
         has_country_flag = zhx_feudatory_request_pending
+        NOT = { has_country_flag = zhx_feudatory_request_invalid }
         zhx_feudatory_has_land_threshold = yes
         NOT = { war_with = event_target:zhx_feudatory_host }
         OR = {
@@ -170,7 +180,6 @@ zhx_feudatory_is_opening_country = {
 
 zhx_feudatory_opening_hou = {
     OR = {
-        tag = ACG
         tag = BAA
         tag = GDD
         tag = QIC
@@ -188,5 +197,97 @@ zhx_feudatory_opening_gong = {
         tag = MNG
         tag = WUU
         tag = YUE
+    }
+}
+
+# Direct investiture: local event targets belong to each event chain, never to
+# the shared council singleton. ROOT is the recipient of the royal decision.
+zhx_feudatory_zi_event_matches_request = {
+    event_target:zhx_feudatory_zi_host = { tag = ROOT }
+    event_target:zhx_feudatory_zi_applicant = {
+        has_country_flag = zhx_feudatory_zi_pending
+        has_country_flag = zhx_feudatory_zi_presented
+        has_country_flag = zhx_feudatory_zi_host_@ROOT
+    }
+}
+zhx_feudatory_zi_request_is_valid = {
+    zhx_feudatory_zi_event_matches_request = yes
+    exists = yes
+    zhx_is_tianzi = yes
+    event_target:zhx_feudatory_zi_applicant = {
+        zhx_feudatory_is_eligible = yes
+        has_reform = zhx_feudatory_zi_reform
+        has_country_flag = zhx_feudatory_request_pending
+        NOT = { has_country_flag = zhx_feudatory_request_invalid }
+        total_development = 50
+        num_of_cities = 5
+        check_variable = { which = zhx_feudatory_submitted_merit value = 50 }
+        NOT = { war_with = ROOT }
+    }
+}
+zhx_feudatory_zi_ai_would_accept = {
+    zhx_feudatory_zi_request_is_valid = yes
+    NOT = { is_rival = event_target:zhx_feudatory_zi_applicant }
+    NOT = { event_target:zhx_feudatory_zi_applicant = { is_rival = PREV } }
+    OR = {
+        alliance_with = event_target:zhx_feudatory_zi_applicant
+        has_opinion = { who = event_target:zhx_feudatory_zi_applicant value = 50 }
+        event_target:zhx_feudatory_zi_applicant = { check_variable = { which = zhx_feudatory_submitted_merit value = 300 } }
+    }
+}
+
+zhx_feudatory_opening_zi = {
+    OR = {
+        tag = CAG
+        tag = CAI
+        tag = CCH
+        tag = CHN
+        tag = DMG
+        tag = DQU
+        tag = GON
+        tag = GUN
+        tag = GUO
+        tag = GUZ
+        tag = GYA
+        tag = JUU
+        tag = LIU
+        tag = LUO
+        tag = LUU
+        tag = OUE
+        tag = QSH
+        tag = QWO
+        tag = SHE
+        tag = SNG
+        tag = WUZ
+        tag = WVG
+        tag = XNG
+        tag = YOU
+        tag = YPG
+        tag = ZHG
+        tag = ZNG
+        tag = ZSH
+    }
+}
+
+zhx_feudatory_opening_bo = {
+    OR = {
+        tag = ACG
+        tag = CSA
+        tag = DAE
+        tag = DAI
+        tag = DIA
+        tag = EGU
+        tag = GUI
+        tag = HNG
+        tag = HUA
+        tag = JIZ
+        tag = LCH
+        tag = LIO
+        tag = MIN
+        tag = NCH
+        tag = QVN
+        tag = SUI
+        tag = YAN
+        tag = ZHU
     }
 }

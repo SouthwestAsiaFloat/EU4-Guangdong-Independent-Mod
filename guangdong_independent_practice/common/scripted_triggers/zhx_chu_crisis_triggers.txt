@@ -1,0 +1,21 @@
+# All current direct dependencies except tributaries. New subjects count too;
+# conversion to a march or a union must not bypass the opening crisis.
+zhx_chu_is_counted_subject = {
+    is_subject_of = event_target:zhx_chu_realm
+    NOT = { is_subject_of_type = tributary_state }
+}
+zhx_chu_can_vote = {
+    zhx_can_vote_in_tianxia_council = yes
+    event_target:zhx_tianzi = { has_country_flag = zhx_council_kind_chu }
+}
+zhx_chu_can_open = {
+    has_country_flag = zhx_chu_pending
+    exists = yes
+    has_saved_global_event_target = zhx_tianzi
+    event_target:zhx_tianzi = {
+        exists = yes
+        zhx_is_tianzi = yes
+        NOT = { has_country_flag = zhx_council_pending_ritual_breakdown }
+    }
+    NOT = { zhx_tianxia_council_is_busy = yes }
+}

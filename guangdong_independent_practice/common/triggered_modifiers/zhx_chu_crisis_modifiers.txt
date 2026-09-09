@@ -1,0 +1,5 @@
+zhx_chu_unquiet_feudatories = {
+    potential = { has_country_modifier = zhx_chu_dispute_memory }
+    trigger = { zhx_chu_is_counted_subject = yes }
+    liberty_desire = 50
+}

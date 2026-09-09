@@ -1,0 +1,121 @@
+namespace = zhx_chu
+
+country_event = {
+    id = zhx_chu.0
+    title = zhx_chu.1.t
+    desc = zhx_chu.1.d
+    picture = zhx_opening_chc_eventPicture
+    hidden = yes
+    is_triggered_only = yes
+    trigger = { tag = CHC start_date = 1444.11.11 NOT = { start_date = 1444.11.12 } NOT = { is_date = 1444.11.12 } NOT = { has_global_flag = zhx_chu_initialised } }
+    immediate = {
+        set_global_flag = zhx_chu_initialised
+        save_global_event_target_as = zhx_chu_realm
+        set_ruler_flag = zhx_chu_opening_ruler
+        set_country_flag = zhx_chu_active
+        zhx_chu_refresh_penalties = yes
+        if = { limit = { ai = no } country_event = { id = zhx_chu.1 days = 1 } }
+    }
+    option = { name = OK }
+}
+country_event = {
+    id = zhx_chu.1
+    title = zhx_chu.1.t
+    desc = zhx_chu.1.d
+    picture = zhx_opening_chc_eventPicture
+    is_triggered_only = yes
+    option = { name = zhx_chu.1.a custom_tooltip = zhx_chu_rules_tt }
+}
+country_event = {
+    id = zhx_chu.2
+    title = zhx_chu.1.t
+    desc = zhx_chu.1.d
+    picture = zhx_opening_chc_eventPicture
+    hidden = yes
+    is_triggered_only = yes
+    trigger = { has_country_flag = zhx_chu_active }
+    immediate = {
+        zhx_chu_maintenance = yes
+    }
+    option = { name = OK }
+}
+country_event = {
+    id = zhx_chu.3
+    title = zhx_chu.3.t
+    desc = zhx_chu.3.d
+    picture = zhx_opening_chc_eventPicture
+    is_triggered_only = yes
+    option = { name = zhx_chu.3.a custom_tooltip = zhx_chu_locked_tt }
+}
+country_event = {
+    id = zhx_chu.10
+    title = zhx_chu.10.t
+    desc = zhx_chu.10.d
+    picture = zhx_opening_chc_eventPicture
+    is_triggered_only = yes
+    trigger = { zhx_chu_can_vote = yes }
+    option = { name = zhx_chu.vote_yes custom_tooltip = zhx_chu_ballot_tt hidden_effect = { zhx_cast_tianxia_council_vote_a = yes } }
+    option = { name = zhx_chu.vote_no custom_tooltip = zhx_chu_ballot_tt hidden_effect = { zhx_cast_tianxia_council_vote_b = yes } }
+    option = { name = zhx_chu.vote_abstain custom_tooltip = zhx_chu_ballot_tt hidden_effect = { zhx_cast_tianxia_council_vote_c = yes } }
+}
+country_event = {
+    id = zhx_chu.11
+    title = zhx_chu.1.t
+    desc = zhx_chu.1.d
+    picture = zhx_opening_chc_eventPicture
+    hidden = yes
+    is_triggered_only = yes
+    trigger = { zhx_is_tianzi = yes has_country_flag = zhx_council_kind_chu has_country_flag = zhx_council_phase_ballot_open }
+    immediate = {
+        zhx_chu_refresh_ai_ballots = yes
+    }
+    option = { name = OK }
+}
+country_event = {
+    id = zhx_chu.20
+    title = zhx_chu.20.t
+    desc = zhx_chu.20.d
+    picture = zhx_opening_chc_eventPicture
+    is_triggered_only = yes
+    trigger = { has_country_flag = zhx_chu_notice_20 }
+    immediate = { clr_country_flag = zhx_chu_notice_20 }
+    option = { name = zhx_chu.20.a custom_tooltip = zhx_chu_independent_tt }
+}
+country_event = {
+    id = zhx_chu.21
+    title = zhx_chu.21.t
+    desc = zhx_chu.21.d
+    picture = zhx_opening_chc_eventPicture
+    is_triggered_only = yes
+    trigger = { has_country_flag = zhx_chu_notice_21 }
+    immediate = { clr_country_flag = zhx_chu_notice_21 }
+    option = { name = zhx_chu.21.a }
+}
+country_event = {
+    id = zhx_chu.22
+    title = zhx_chu.22.t
+    desc = zhx_chu.22.d
+    picture = zhx_opening_chc_eventPicture
+    is_triggered_only = yes
+    trigger = { has_country_flag = zhx_chu_notice_22 }
+    immediate = { clr_country_flag = zhx_chu_notice_22 }
+    option = { name = zhx_chu.22.a custom_tooltip = zhx_chu_retained_tt }
+}
+country_event = {
+    id = zhx_chu.23
+    title = zhx_chu.23.t
+    desc = zhx_chu.23.d
+    picture = zhx_opening_chc_eventPicture
+    is_triggered_only = yes
+    trigger = { has_country_flag = zhx_chu_notice_23 }
+    immediate = { clr_country_flag = zhx_chu_notice_23 }
+    option = { name = zhx_chu.23.a custom_tooltip = zhx_chu_memory_tt }
+}
+country_event = {
+    id = zhx_chu.24
+    title = zhx_chu.24.t
+    desc = zhx_chu.24.d
+    picture = zhx_opening_chc_eventPicture
+    is_triggered_only = yes
+    option = { name = zhx_chu.24.a custom_tooltip = zhx_chu_safe_tt }
+}

@@ -9,3 +9,18 @@ add_accepted_culture = gdd_gui
 add_accepted_culture = gdd_hakka
 capital = 2174
 fixed_capital = 2174
+
+# ZHX_CHU_OPENING_RULER_BEGIN
+1444.11.11 = {
+    monarch = {
+        name = "¹eHh"
+        dynasty = "Šq"
+        birth_date = 1406.1.1
+        adm = 2
+        dip = 1
+        mil = 4
+        culture = gdd_chu
+        religion = confucianism
+    }
+}
+# ZHX_CHU_OPENING_RULER_END

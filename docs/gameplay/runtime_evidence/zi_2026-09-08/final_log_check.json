@@ -1,0 +1,14 @@
+{
+  "checksum": "be44",
+  "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/logs/error.log",
+  "sha256": "85aafd4844918f895410c0e56699ac5e154e95869c190beac1d03ea06fcf5702",
+  "bytes": 490902,
+  "patterns": [
+    "zhx_feudatory",
+    "investiture_document",
+    "custom_text_zix"
+  ],
+  "matches": [],
+  "scope": "Only relevant names checked; unrelated engine/mod errors remain.",
+  "raw_earlier_logs": "/tmp/codexzi_runtime_raw_logs"
+}

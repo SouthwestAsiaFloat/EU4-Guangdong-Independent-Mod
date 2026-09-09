@@ -1,0 +1,39 @@
+# Generated. Fixed 1444 historical countries, independent of faith or membership.
+zhx_has_opening_background = {
+    OR = {
+        tag = GDD
+        tag = GUI
+        tag = CZC
+        tag = HAK
+        tag = NUN
+        tag = TZZ
+        tag = LIL
+        tag = DAI
+        tag = CDE
+        tag = JJG
+        tag = HYA
+        tag = WHU
+        tag = ZHO
+        tag = CHC
+        tag = CSA
+        tag = HNG
+        tag = ZHU
+        tag = QVN
+        tag = ACG
+        tag = EGU
+        tag = NCH
+        tag = LCH
+        tag = TSF
+    }
+}
+
+# Eligibility is independent of world initialization. Keep it separate from
+# the event's pending flag so menu/story exclusion works in either hook order.
+zhx_should_show_opening_background = {
+    zhx_has_opening_background = yes
+    start_date = 1444.11.11
+    NOT = { start_date = 1444.11.12 }
+    NOT = { is_date = 1444.11.14 }
+    NOT = { has_country_flag = zhx_opening_background_seen }
+    NOT = { has_country_flag = zhx_startup_overview_seen }
+}

@@ -1,0 +1,50 @@
+defined_text = {
+    name = GetZhxGuideStatusAll
+    text = { localisation_key = zhx_guide_status_all_yes trigger = { always = yes } }
+    text = { localisation_key = zhx_guide_status_all_no trigger = { always = yes } }
+}
+defined_text = {
+    name = GetZhxGuideStatusTianxia
+    text = { localisation_key = zhx_guide_status_tianxia_yes trigger = { zhx_is_tianxia_polity = yes } }
+    text = { localisation_key = zhx_guide_status_tianxia_no trigger = { always = yes } }
+}
+defined_text = {
+    name = GetZhxGuideStatusWorldcourt
+    text = { localisation_key = zhx_guide_status_worldcourt_yes trigger = { zhx_is_tianxia_polity = yes } }
+    text = { localisation_key = zhx_guide_status_worldcourt_no trigger = { always = yes } }
+}
+defined_text = {
+    name = GetZhxGuideStatusFeudatory
+    text = { localisation_key = zhx_guide_status_feudatory_yes trigger = { zhx_feudatory_has_reform = yes } }
+    text = { localisation_key = zhx_guide_status_feudatory_no trigger = { always = yes } }
+}
+defined_text = {
+    name = GetZhxGuideStatusTianzi
+    text = { localisation_key = zhx_guide_status_tianzi_yes trigger = { zhx_is_tianzi = yes } }
+    text = { localisation_key = zhx_guide_status_tianzi_no trigger = { always = yes } }
+}
+defined_text = {
+    name = GetZhxGuideStatusGongyi
+    text = { localisation_key = zhx_guide_status_gongyi_yes trigger = { has_reform = zhx_gongyi_reform } }
+    text = { localisation_key = zhx_guide_status_gongyi_no trigger = { always = yes } }
+}
+defined_text = {
+    name = GetZhxGuideStatusYang
+    text = { localisation_key = zhx_guide_status_yang_yes trigger = { has_reform = zhx_yang_trade_league_reform } }
+    text = { localisation_key = zhx_guide_status_yang_no trigger = { always = yes } }
+}
+defined_text = {
+    name = GetZhxGuideStatusRepublics
+    text = { localisation_key = zhx_guide_status_republics_yes trigger = { OR = { has_reform = gdd_czc_council_reform has_reform = gdd_hak_revolutionary_army_reform has_reform = gdd_hak_communal_republic_reform } } }
+    text = { localisation_key = zhx_guide_status_republics_no trigger = { always = yes } }
+}
+defined_text = {
+    name = GetZhxGuideStatusLijiao
+    text = { localisation_key = zhx_guide_status_lijiao_yes trigger = { zhx_is_lijiao_country = yes } }
+    text = { localisation_key = zhx_guide_status_lijiao_no trigger = { always = yes } }
+}
+defined_text = {
+    name = GetZhxGuideStatusAcademy
+    text = { localisation_key = zhx_guide_status_academy_yes trigger = { zhx_is_lijiao_country = yes } }
+    text = { localisation_key = zhx_guide_status_academy_no trigger = { always = yes } }
+}

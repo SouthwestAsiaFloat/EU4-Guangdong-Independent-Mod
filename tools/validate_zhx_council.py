@@ -57,6 +57,7 @@ KIND_FLAGS = (
     "zhx_council_kind_ritual_breakdown",
     "zhx_council_kind_debate",
     "zhx_council_kind_promotion",
+    "zhx_council_kind_chu",
 )
 VOTE_FLAGS = tuple(f"zhx_council_vote_{choice}" for choice in "abc")
 VOTE_COUNTS = tuple(f"zhx_council_vote_{choice}_count" for choice in "abc")

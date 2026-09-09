@@ -1607,8 +1607,15 @@ zhx_allocate_gui_roster_slot = {
 }
 
 zhx_build_gui_roster = {
-    # 旧周天下面板的二百枚盾徽已经退役；仅维护天命页仍在使用的
-    # 成员名册与七大诸侯名册，避免年度脉冲继续构建不可见缓存。
+    # The shield grid stays retired; the active ballot still needs a name cache.
+    zhx_clear_gui_roster = yes
+    if = {
+        limit = { event_target:zhx_tianzi = { has_country_flag = zhx_council_phase_ballot_open } }
+        every_country = {
+            limit = { zhx_can_vote_in_tianxia_council = yes NOT = { zhx_is_tianzi = yes } }
+            zhx_allocate_gui_roster_slot = yes
+        }
+    }
     set_global_flag = zhx_gui_roster_initialised
     gdd_build_eoc_member_roster = yes
     gdd_build_eoc_great_feudatory_roster = yes

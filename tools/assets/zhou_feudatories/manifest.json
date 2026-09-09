@@ -2,6 +2,21 @@
   "generator": "built-in imagegen",
   "conversion": "LANCZOS resize; uncompressed RGBA DDS",
   "assets": {
+    "investiture_document": {
+      "source": "tools/assets/zhou_feudatories/sources/investiture_document.png",
+      "source_sha256": "ccd2f480cf74cda73589784524e6f8dbec487e465ae094fb34fb247c01d947f9",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "texture": "guangdong_independent_practice/gfx/interface/zhx_feudatories/investiture_document_57.dds",
+      "texture_sha256": "e53f7dfa32f96a88efe141070f40b22b559b8f85040dd1064fec4e3d14738776",
+      "texture_size": [
+        57,
+        57
+      ],
+      "frames": 1
+    },
     "investiture": {
       "source": "tools/assets/zhou_feudatories/sources/investiture.png",
       "source_sha256": "6970035a922c188e8837b28856588bf78d0cdefc686991f95c087b65490c7ca3",

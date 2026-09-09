@@ -1,296 +1,644 @@
 {
   "campaign_start": "1444.11.11",
-  "scope": "Opening Zhou monarchies excluding TSF and Tianzi; no new historical promotions inferred from Seven status.",
+  "scope": "Opening Zhou monarchies; explicit dignities preserved, otherwise former Bo below 50 development or five cities enter as Zi.",
   "countries": {
     "ACG": {
       "history": "ACG - Ancheng.txt",
-      "dignity": "hou",
-      "basis": "explicit existing polity designation"
+      "dignity": "bo",
+      "basis": "Huguang source with user correction: all Chu subordinate polities are bo; self-styled grand duke is a narrative claim",
+      "pre_zi_dignity": "bo",
+      "opening_policy": "explicit",
+      "opening_size": {
+        "development": 4.0,
+        "cities": 1
+      }
     },
     "BAA": {
       "history": "BAA - Ba.txt",
       "dignity": "hou",
-      "basis": "existing opening rank 2"
+      "basis": "existing opening rank 2",
+      "pre_zi_dignity": "hou",
+      "opening_policy": "retained",
+      "opening_size": {
+        "development": 61.0,
+        "cities": 9
+      }
     },
     "CAG": {
       "history": "CAG - Cao.txt",
-      "dignity": "bo",
-      "basis": "existing opening rank 1"
+      "dignity": "zi",
+      "basis": "existing opening rank 1",
+      "pre_zi_dignity": "bo",
+      "opening_policy": "scale",
+      "opening_size": {
+        "development": 20.0,
+        "cities": 2
+      }
     },
     "CAI": {
       "history": "CAI - Cai.txt",
-      "dignity": "bo",
-      "basis": "existing opening rank 1"
+      "dignity": "zi",
+      "basis": "existing opening rank 1",
+      "pre_zi_dignity": "bo",
+      "opening_policy": "scale",
+      "opening_size": {
+        "development": 12.0,
+        "cities": 2
+      }
     },
     "CCH": {
       "history": "CCH - Chao.txt",
-      "dignity": "bo",
-      "basis": "existing opening rank 1"
+      "dignity": "zi",
+      "basis": "existing opening rank 1",
+      "pre_zi_dignity": "bo",
+      "opening_policy": "scale",
+      "opening_size": {
+        "development": 17.0,
+        "cities": 2
+      }
     },
     "CHC": {
       "history": "CHC - Chu.txt",
       "dignity": "gong",
-      "basis": "explicit existing polity designation"
+      "basis": "explicit existing polity designation",
+      "pre_zi_dignity": "gong",
+      "opening_policy": "explicit",
+      "opening_size": {
+        "development": 119.0,
+        "cities": 11
+      }
     },
     "CHN": {
       "history": "CHN - Chen.txt",
-      "dignity": "bo",
-      "basis": "existing opening rank 1"
+      "dignity": "zi",
+      "basis": "existing opening rank 1",
+      "pre_zi_dignity": "bo",
+      "opening_policy": "scale",
+      "opening_size": {
+        "development": 20.0,
+        "cities": 2
+      }
     },
     "CSA": {
       "history": "CSA - Changsha.txt",
       "dignity": "bo",
-      "basis": "existing opening rank 1"
+      "basis": "existing opening rank 1",
+      "pre_zi_dignity": "bo",
+      "opening_policy": "explicit",
+      "opening_size": {
+        "development": 39.0,
+        "cities": 5
+      }
     },
     "DAE": {
       "history": "DAE - Dai.txt",
       "dignity": "bo",
-      "basis": "existing opening rank 1"
+      "basis": "existing opening rank 1",
+      "pre_zi_dignity": "bo",
+      "opening_policy": "scale",
+      "opening_size": {
+        "development": 57.0,
+        "cities": 6
+      }
     },
     "DAI": {
       "history": "DAI - Dai Viet.txt",
       "dignity": "bo",
-      "basis": "explicit existing polity designation"
+      "basis": "explicit existing polity designation",
+      "pre_zi_dignity": "bo",
+      "opening_policy": "explicit",
+      "opening_size": {
+        "development": 111.0,
+        "cities": 9
+      }
     },
     "DIA": {
       "history": "DIA - Dian.txt",
       "dignity": "bo",
-      "basis": "existing opening rank 1"
+      "basis": "existing opening rank 1",
+      "pre_zi_dignity": "bo",
+      "opening_policy": "scale",
+      "opening_size": {
+        "development": 50.0,
+        "cities": 7
+      }
     },
     "DMG": {
       "history": "DMG - Bei.txt",
-      "dignity": "bo",
-      "basis": "existing opening rank 1"
+      "dignity": "zi",
+      "basis": "existing opening rank 1",
+      "pre_zi_dignity": "bo",
+      "opening_policy": "scale",
+      "opening_size": {
+        "development": 14.0,
+        "cities": 2
+      }
     },
     "DQU": {
       "history": "DQU - Dangqu.txt",
-      "dignity": "bo",
-      "basis": "existing opening rank 1"
+      "dignity": "zi",
+      "basis": "existing opening rank 1",
+      "pre_zi_dignity": "bo",
+      "opening_policy": "scale",
+      "opening_size": {
+        "development": 17.0,
+        "cities": 5
+      }
     },
     "EGU": {
       "history": "EGU - E.txt",
       "dignity": "bo",
-      "basis": "existing opening rank 1"
+      "basis": "existing opening rank 1",
+      "pre_zi_dignity": "bo",
+      "opening_policy": "explicit",
+      "opening_size": {
+        "development": 27.0,
+        "cities": 2
+      }
     },
     "GDD": {
       "history": "GDD - Guangdong.txt",
       "dignity": "hou",
-      "basis": "existing opening rank 2"
+      "basis": "existing opening rank 2",
+      "pre_zi_dignity": "hou",
+      "opening_policy": "retained",
+      "opening_size": {
+        "development": 91.0,
+        "cities": 12
+      }
     },
     "GON": {
       "history": "GON - Gong.txt",
-      "dignity": "bo",
-      "basis": "existing opening rank 1"
+      "dignity": "zi",
+      "basis": "existing opening rank 1",
+      "pre_zi_dignity": "bo",
+      "opening_policy": "scale",
+      "opening_size": {
+        "development": 25.0,
+        "cities": 4
+      }
     },
     "GUI": {
       "history": "GUI - Guilin.txt",
       "dignity": "bo",
-      "basis": "explicit existing polity designation"
+      "basis": "explicit existing polity designation",
+      "pre_zi_dignity": "bo",
+      "opening_policy": "explicit",
+      "opening_size": {
+        "development": 37.0,
+        "cities": 5
+      }
     },
     "GUN": {
       "history": "GUN - Guan.txt",
-      "dignity": "bo",
-      "basis": "existing opening rank 1"
+      "dignity": "zi",
+      "basis": "existing opening rank 1",
+      "pre_zi_dignity": "bo",
+      "opening_policy": "scale",
+      "opening_size": {
+        "development": 15.0,
+        "cities": 2
+      }
     },
     "GUO": {
       "history": "GUO - Guo.txt",
-      "dignity": "bo",
-      "basis": "existing opening rank 1"
+      "dignity": "zi",
+      "basis": "existing opening rank 1",
+      "pre_zi_dignity": "bo",
+      "opening_policy": "scale",
+      "opening_size": {
+        "development": 21.0,
+        "cities": 2
+      }
     },
     "GUZ": {
       "history": "GUZ - Guzhu.txt",
-      "dignity": "bo",
-      "basis": "existing opening rank 1"
+      "dignity": "zi",
+      "basis": "existing opening rank 1",
+      "pre_zi_dignity": "bo",
+      "opening_policy": "scale",
+      "opening_size": {
+        "development": 14.0,
+        "cities": 2
+      }
     },
     "GYA": {
       "history": "GYA - Guiyang.txt",
-      "dignity": "bo",
-      "basis": "existing opening rank 1"
+      "dignity": "zi",
+      "basis": "existing opening rank 1",
+      "pre_zi_dignity": "bo",
+      "opening_policy": "scale",
+      "opening_size": {
+        "development": 14.0,
+        "cities": 2
+      }
     },
     "HNG": {
       "history": "HNG - Heng.txt",
       "dignity": "bo",
-      "basis": "existing opening rank 1"
+      "basis": "existing opening rank 1",
+      "pre_zi_dignity": "bo",
+      "opening_policy": "explicit",
+      "opening_size": {
+        "development": 52.0,
+        "cities": 7
+      }
     },
     "HUA": {
       "history": "HUA - Huai.txt",
       "dignity": "bo",
-      "basis": "existing opening rank 1"
+      "basis": "existing opening rank 1",
+      "pre_zi_dignity": "bo",
+      "opening_policy": "scale",
+      "opening_size": {
+        "development": 51.0,
+        "cities": 6
+      }
     },
     "JIZ": {
       "history": "JIZ - Jizi Joseon.txt",
       "dignity": "bo",
-      "basis": "existing opening rank 1"
+      "basis": "existing opening rank 1",
+      "pre_zi_dignity": "bo",
+      "opening_policy": "scale",
+      "opening_size": {
+        "development": 83.0,
+        "cities": 8
+      }
     },
     "JUU": {
       "history": "JUU - Ju.txt",
-      "dignity": "bo",
-      "basis": "existing opening rank 1"
+      "dignity": "zi",
+      "basis": "existing opening rank 1",
+      "pre_zi_dignity": "bo",
+      "opening_policy": "scale",
+      "opening_size": {
+        "development": 28.0,
+        "cities": 4
+      }
     },
     "LCH": {
       "history": "LCH - Linchuan.txt",
       "dignity": "bo",
-      "basis": "existing opening rank 1"
+      "basis": "existing opening rank 1",
+      "pre_zi_dignity": "bo",
+      "opening_policy": "explicit",
+      "opening_size": {
+        "development": 36.0,
+        "cities": 2
+      }
     },
     "LIO": {
       "history": "LIO - Liao.txt",
       "dignity": "bo",
-      "basis": "existing opening rank 1"
+      "basis": "existing opening rank 1",
+      "pre_zi_dignity": "bo",
+      "opening_policy": "scale",
+      "opening_size": {
+        "development": 80.0,
+        "cities": 9
+      }
     },
     "LIU": {
       "history": "LIU - Liu.txt",
-      "dignity": "bo",
-      "basis": "existing opening rank 1"
+      "dignity": "zi",
+      "basis": "existing opening rank 1",
+      "pre_zi_dignity": "bo",
+      "opening_policy": "scale",
+      "opening_size": {
+        "development": 9.0,
+        "cities": 1
+      }
     },
     "LUO": {
       "history": "LUO - Luo.txt",
-      "dignity": "bo",
-      "basis": "existing opening rank 1"
+      "dignity": "zi",
+      "basis": "existing opening rank 1",
+      "pre_zi_dignity": "bo",
+      "opening_policy": "scale",
+      "opening_size": {
+        "development": 17.0,
+        "cities": 2
+      }
     },
     "LUU": {
       "history": "LUU - Lu.txt",
-      "dignity": "bo",
-      "basis": "existing opening rank 1"
+      "dignity": "zi",
+      "basis": "existing opening rank 1",
+      "pre_zi_dignity": "bo",
+      "opening_policy": "scale",
+      "opening_size": {
+        "development": 43.0,
+        "cities": 4
+      }
     },
     "MIN": {
       "history": "MIN - Min.txt",
       "dignity": "bo",
-      "basis": "existing opening rank 1"
+      "basis": "existing opening rank 1",
+      "pre_zi_dignity": "bo",
+      "opening_policy": "scale",
+      "opening_size": {
+        "development": 121.0,
+        "cities": 10
+      }
     },
     "MNG": {
       "history": "MNG - Ming.txt",
       "dignity": "gong",
-      "basis": "existing opening rank 3"
+      "basis": "existing opening rank 3",
+      "pre_zi_dignity": "gong",
+      "opening_policy": "retained",
+      "opening_size": {
+        "development": 8.0,
+        "cities": 1
+      }
     },
     "NCH": {
       "history": "NCH - Nanchang.txt",
       "dignity": "bo",
-      "basis": "existing opening rank 1"
+      "basis": "existing opening rank 1",
+      "pre_zi_dignity": "bo",
+      "opening_policy": "explicit",
+      "opening_size": {
+        "development": 45.0,
+        "cities": 5
+      }
     },
     "OUE": {
       "history": "OUE - Ou.txt",
-      "dignity": "bo",
-      "basis": "existing opening rank 1"
+      "dignity": "zi",
+      "basis": "existing opening rank 1",
+      "pre_zi_dignity": "bo",
+      "opening_policy": "scale",
+      "opening_size": {
+        "development": 27.0,
+        "cities": 3
+      }
     },
     "QIC": {
       "history": "QIC - Qi.txt",
       "dignity": "hou",
-      "basis": "existing opening rank 2"
+      "basis": "existing opening rank 2",
+      "pre_zi_dignity": "hou",
+      "opening_policy": "retained",
+      "opening_size": {
+        "development": 151.0,
+        "cities": 14
+      }
     },
     "QIN": {
       "history": "QIN - Qin.txt",
       "dignity": "hou",
-      "basis": "existing opening rank 2"
+      "basis": "existing opening rank 2",
+      "pre_zi_dignity": "hou",
+      "opening_policy": "retained",
+      "opening_size": {
+        "development": 100.0,
+        "cities": 13
+      }
     },
     "QSH": {
       "history": "QSH - Qunshu.txt",
-      "dignity": "bo",
-      "basis": "existing opening rank 1"
+      "dignity": "zi",
+      "basis": "existing opening rank 1",
+      "pre_zi_dignity": "bo",
+      "opening_policy": "scale",
+      "opening_size": {
+        "development": 30.0,
+        "cities": 3
+      }
     },
     "QVN": {
       "history": "QVN - Quan.txt",
       "dignity": "bo",
-      "basis": "existing opening rank 1"
+      "basis": "existing opening rank 1",
+      "pre_zi_dignity": "bo",
+      "opening_policy": "explicit",
+      "opening_size": {
+        "development": 8.0,
+        "cities": 2
+      }
     },
     "QWO": {
       "history": "QWO - Quwo.txt",
-      "dignity": "bo",
-      "basis": "existing opening rank 1"
+      "dignity": "zi",
+      "basis": "existing opening rank 1",
+      "pre_zi_dignity": "bo",
+      "opening_policy": "scale",
+      "opening_size": {
+        "development": 9.0,
+        "cities": 1
+      }
     },
     "SHE": {
       "history": "SHE - Shen.txt",
-      "dignity": "bo",
-      "basis": "existing opening rank 1"
+      "dignity": "zi",
+      "basis": "existing opening rank 1",
+      "pre_zi_dignity": "bo",
+      "opening_policy": "scale",
+      "opening_size": {
+        "development": 45.0,
+        "cities": 6
+      }
     },
     "SHU": {
       "history": "SHU - Shu.txt",
       "dignity": "hou",
-      "basis": "existing opening rank 2"
+      "basis": "existing opening rank 2",
+      "pre_zi_dignity": "hou",
+      "opening_policy": "retained",
+      "opening_size": {
+        "development": 134.0,
+        "cities": 12
+      }
     },
     "SNG": {
       "history": "SNG - Song.txt",
-      "dignity": "bo",
-      "basis": "existing opening rank 1"
+      "dignity": "zi",
+      "basis": "existing opening rank 1",
+      "pre_zi_dignity": "bo",
+      "opening_policy": "scale",
+      "opening_size": {
+        "development": 42.0,
+        "cities": 4
+      }
     },
     "SUI": {
       "history": "SUI - Sui.txt",
       "dignity": "bo",
-      "basis": "existing opening rank 1"
+      "basis": "existing opening rank 1",
+      "pre_zi_dignity": "bo",
+      "opening_policy": "scale",
+      "opening_size": {
+        "development": 50.0,
+        "cities": 5
+      }
     },
     "WEI": {
       "history": "WEI - Wei.txt",
       "dignity": "hou",
-      "basis": "existing opening rank 2"
+      "basis": "existing opening rank 2",
+      "pre_zi_dignity": "hou",
+      "opening_policy": "retained",
+      "opening_size": {
+        "development": 103.0,
+        "cities": 10
+      }
     },
     "WUU": {
       "history": "WUU - Wu.txt",
       "dignity": "gong",
-      "basis": "explicit existing polity designation"
+      "basis": "explicit existing polity designation",
+      "pre_zi_dignity": "gong",
+      "opening_policy": "explicit",
+      "opening_size": {
+        "development": 112.0,
+        "cities": 11
+      }
     },
     "WUZ": {
       "history": "WUZ - Wuzhong.txt",
-      "dignity": "bo",
-      "basis": "existing opening rank 1"
+      "dignity": "zi",
+      "basis": "existing opening rank 1",
+      "pre_zi_dignity": "bo",
+      "opening_policy": "scale",
+      "opening_size": {
+        "development": 18.0,
+        "cities": 2
+      }
     },
     "WVG": {
       "history": "WVG - Wei State.txt",
-      "dignity": "bo",
-      "basis": "existing opening rank 1"
+      "dignity": "zi",
+      "basis": "existing opening rank 1",
+      "pre_zi_dignity": "bo",
+      "opening_policy": "scale",
+      "opening_size": {
+        "development": 18.0,
+        "cities": 2
+      }
     },
     "XNG": {
       "history": "XNG - Xing.txt",
-      "dignity": "bo",
-      "basis": "existing opening rank 1"
+      "dignity": "zi",
+      "basis": "existing opening rank 1",
+      "pre_zi_dignity": "bo",
+      "opening_policy": "scale",
+      "opening_size": {
+        "development": 13.0,
+        "cities": 1
+      }
     },
     "XU2": {
       "history": "XU2 - Xu2.txt",
       "dignity": "hou",
-      "basis": "existing opening rank 2"
+      "basis": "existing opening rank 2",
+      "pre_zi_dignity": "hou",
+      "opening_policy": "retained",
+      "opening_size": {
+        "development": 59.0,
+        "cities": 5
+      }
     },
     "YAN": {
       "history": "YAN - Yan.txt",
       "dignity": "bo",
-      "basis": "existing opening rank 1"
+      "basis": "existing opening rank 1",
+      "pre_zi_dignity": "bo",
+      "opening_policy": "scale",
+      "opening_size": {
+        "development": 124.0,
+        "cities": 12
+      }
     },
     "YOU": {
       "history": "YOU - Yiqu.txt",
-      "dignity": "bo",
-      "basis": "existing opening rank 1"
+      "dignity": "zi",
+      "basis": "existing opening rank 1",
+      "pre_zi_dignity": "bo",
+      "opening_policy": "scale",
+      "opening_size": {
+        "development": 49.0,
+        "cities": 6
+      }
     },
     "YPG": {
       "history": "YPG - Yinping.txt",
-      "dignity": "bo",
-      "basis": "existing opening rank 1"
+      "dignity": "zi",
+      "basis": "existing opening rank 1",
+      "pre_zi_dignity": "bo",
+      "opening_policy": "scale",
+      "opening_size": {
+        "development": 7.0,
+        "cities": 1
+      }
     },
     "YUE": {
       "history": "YUE - Yue.txt",
       "dignity": "gong",
-      "basis": "explicit existing polity designation"
+      "basis": "explicit existing polity designation",
+      "pre_zi_dignity": "gong",
+      "opening_policy": "explicit",
+      "opening_size": {
+        "development": 119.0,
+        "cities": 11
+      }
     },
     "ZHA": {
       "history": "ZHA - Zhao.txt",
       "dignity": "hou",
-      "basis": "existing opening rank 2"
+      "basis": "existing opening rank 2",
+      "pre_zi_dignity": "hou",
+      "opening_policy": "retained",
+      "opening_size": {
+        "development": 95.0,
+        "cities": 9
+      }
     },
     "ZHG": {
       "history": "ZHG - Zhougong.txt",
-      "dignity": "bo",
-      "basis": "existing opening rank 1"
+      "dignity": "zi",
+      "basis": "existing opening rank 1",
+      "pre_zi_dignity": "bo",
+      "opening_policy": "scale",
+      "opening_size": {
+        "development": 8.0,
+        "cities": 1
+      }
     },
     "ZHU": {
       "history": "ZHU - Zhou.txt",
       "dignity": "bo",
-      "basis": "existing opening rank 1"
+      "basis": "existing opening rank 1",
+      "pre_zi_dignity": "bo",
+      "opening_policy": "explicit",
+      "opening_size": {
+        "development": 6.0,
+        "cities": 2
+      }
     },
     "ZNG": {
       "history": "ZNG - Zheng.txt",
-      "dignity": "bo",
-      "basis": "existing opening rank 1"
+      "dignity": "zi",
+      "basis": "existing opening rank 1",
+      "pre_zi_dignity": "bo",
+      "opening_policy": "scale",
+      "opening_size": {
+        "development": 18.0,
+        "cities": 2
+      }
     },
     "ZSH": {
       "history": "ZSH - Zhongshan.txt",
-      "dignity": "bo",
-      "basis": "existing opening rank 1"
+      "dignity": "zi",
+      "basis": "existing opening rank 1",
+      "pre_zi_dignity": "bo",
+      "opening_policy": "scale",
+      "opening_size": {
+        "development": 30.0,
+        "cities": 5
+      }
     }
   },
   "excluded": {

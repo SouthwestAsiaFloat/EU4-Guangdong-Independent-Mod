@@ -1,0 +1,42 @@
+{
+  "tool": "built-in imagegen",
+  "use_case": "historical-scene",
+  "date": "2026-09-07",
+  "assets": [
+    {
+      "tag": "cde",
+      "prompt": "Use case: historical-scene. Create one finished Europa Universalis IV event illustration, painterly historical oil painting, subtle canvas grain, muted ochre and deep teal, realistic Chinese medieval architecture and clothing, atmospheric and restrained, no fantasy, no modern objects, no text or frame or watermark. Ultra-wide landscape composition intended for 512x132 game banner; generate a wide panorama with all important storytelling within middle horizontal band, figures medium-small, avoid cropped heads. Alternate history China during 13th-century Mongol invasions.\nChangde: cooperative river embankment construction at the Yuan river, refugees and local villagers carrying baskets of earth and timbers, a plain-robed Mohist surveyor holding an unlettered plan supervises beside a granary, grain boats supplying resistance armies wait by the repaired dike, inundated fields and grey Chinese city walls beyond. Human solidarity and hard work, soft amber overcast light.",
+      "generated_path": "/Users/xinanyapiao/.codex/generated_images/01a07965-9899-7902-b942-8341a7713c2d/exec-e6e8cc2a-7945-4a23-b484-da808c5a69c2.png",
+      "workspace_path": "tools/assets/event_pictures/gongyi_opening_v1/cde_opening_source.png",
+      "sha256": "aaaa4ccfa7b057b6831bbc523cdb40675b9895729ba7552b0aeb356756957b5a"
+    },
+    {
+      "tag": "jjg",
+      "prompt": "Use case: historical-scene. Create one finished Europa Universalis IV event illustration, painterly historical oil painting, subtle canvas grain, muted ochre and deep teal, realistic Chinese medieval architecture and clothing, atmospheric and restrained, no fantasy, no modern objects, no text or frame or watermark. Ultra-wide landscape composition intended for 512x132 game banner; generate a wide panorama with all important storytelling within middle horizontal band, figures medium-small, avoid cropped heads. Alternate history China during 13th-century Mongol invasions.\nJiujiang: bustling wartime grain transshipment on a broad Yangtze wharf, merchants and porters weighing grain sacks on a prominent traditional steelyard balance, crews load provisions into wooden Chinese river cargo boats, an unlettered account book on a crate, distant Lushan silhouette and misty fleet. Cooperative logistics during resistance to Mongol invasion, warm morning haze.",
+      "generated_path": "/Users/xinanyapiao/.codex/generated_images/01a07965-9899-7902-b942-8341a7713c2d/exec-f3680fd0-4883-45b5-93ff-f717fe613b73.png",
+      "workspace_path": "tools/assets/event_pictures/gongyi_opening_v1/jjg_opening_source.png",
+      "sha256": "176a5aeeea90a1891e17bf789622bc0971cf70c88cab73c1cbe654af20cef767"
+    },
+    {
+      "tag": "hya",
+      "prompt": "Use case: historical-scene. Create one finished Europa Universalis IV event illustration, painterly historical oil painting, subtle canvas grain, muted ochre and deep teal, realistic Chinese medieval architecture and clothing, atmospheric and restrained, no fantasy, no modern objects, no text or frame or watermark. Ultra-wide landscape composition intended for 512x132 game banner; generate a wide panorama with all important storytelling within middle horizontal band, figures medium-small, avoid cropped heads. Alternate history China during 13th-century Mongol invasions.\nHanyang: Chinese civilians and shipwrights defending a fortified river gate during the Mongol invasion. Foreground a plain-clothed shipwright and armed townspeople raise wooden barricades along city battlements while a refugee ferry with families approaches the open water landing; a few mounted Mongol besiegers with horse-tail standards are tiny distant silhouettes across smoky river flats, not the main subject. Determined collective defense, dusk, no gore.",
+      "generated_path": "/Users/xinanyapiao/.codex/generated_images/01a07965-9899-7902-b942-8341a7713c2d/exec-b7290681-771d-4da1-a268-cee99920830d.png",
+      "workspace_path": "tools/assets/event_pictures/gongyi_opening_v1/hya_opening_source.png",
+      "sha256": "32bf47cc436b7d4603c391bd31f1e7f2dac6cf3774b26b8b2497c288696c709f"
+    },
+    {
+      "tag": "whu",
+      "prompt": "Use case: historical-scene. Create one finished Europa Universalis IV event illustration, painterly historical oil painting, subtle canvas grain, muted ochre and deep teal, realistic Chinese medieval architecture and clothing, atmospheric and restrained, no fantasy, no modern objects, no text or frame or watermark. Ultra-wide landscape composition intended for 512x132 game banner; generate a wide panorama with all important storytelling within middle horizontal band, figures medium-small, avoid cropped heads. Alternate history China during 13th-century Mongol invasions.\nWuhu: refugee Chinese blacksmiths in an open riverside forge manufacture spearheads, anchors and defensive iron fittings for resistance against the Mongol invasion. Foreground older master and young assistants hammer glowing iron, bellows and anvil, beyond open workshop grain and weapons crates loaded on Yangtze wooden boats. Molten warm orange furnace contrasts misty blue river, humane serious artisan scene.",
+      "generated_path": "/Users/xinanyapiao/.codex/generated_images/01a07965-9899-7902-b942-8341a7713c2d/exec-019a7c13-333d-4e1f-885e-5525e444424e.png",
+      "workspace_path": "tools/assets/event_pictures/gongyi_opening_v1/whu_opening_source.png",
+      "sha256": "cdc2dac332f59d683eaae96e09ada19d3eefb6c602eb49eee404acd6c5f805ed"
+    },
+    {
+      "tag": "zho",
+      "prompt": "Use case: historical-scene. Create one finished Europa Universalis IV event illustration, painterly historical oil painting, subtle canvas grain, muted ochre and deep teal, realistic Chinese medieval architecture and clothing, atmospheric and restrained, no fantasy, no modern objects, no text or frame or watermark. Ultra-wide landscape composition intended for 512x132 game banner; generate a wide panorama with all important storytelling within middle horizontal band, figures medium-small, avoid cropped heads. Alternate history China during 13th-century Mongol invasions.\nChangguo island public city: storm-worn Chinese wooden sailing vessels arriving at a protected rocky island harbor during Mongol invasions, island boatmen help refugee families disembark with bundles while other crews load grain provisions for coastal resistance. A plain-robed boat owner and local elders coordinate on quay, repaired cloth sails, rugged low island shore and small medieval Chinese port buildings. No western ships, no cannons, hopeful light breaking after coastal storm.",
+      "generated_path": "/Users/xinanyapiao/.codex/generated_images/01a07965-9899-7902-b942-8341a7713c2d/exec-a634b554-deee-4ecf-b5ae-bc7797345097.png",
+      "workspace_path": "tools/assets/event_pictures/gongyi_opening_v1/zho_opening_source.png",
+      "sha256": "db484086c4d43a656a68782478bbe9b53dd6c5a43bad4bec49f3be9bbcb0b174"
+    }
+  ]
+}

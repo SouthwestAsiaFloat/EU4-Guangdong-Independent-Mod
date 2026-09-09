@@ -1,0 +1,102 @@
+{
+  "date": "2026-09-08",
+  "runtime_tested": true,
+  "reason": "User subsequently requested and authorized in-game validation; see runtime report for coverage limits.",
+  "additional_passed": [
+    "Zhou diplomacy static contracts",
+    "CZC government static contracts",
+    "HAK government static contracts",
+    "Chu opening static contracts",
+    "Lingnan opening projection --check",
+    "Three reform icons: source/texture hashes, 57x57 DDS decode and visual preview"
+  ],
+  "initial_checks": [
+    {
+      "name": "爵制及388场景",
+      "exit_code": 0,
+      "output": "PASS: 58 opening monarchies; TSF, republics and Tianzi excluded; four fixed-rank reforms; 80 encoded keys and 6 native-root controls\nPASS: 388 source-driven threshold, snapshot, rollover, ballot, refusal, lifecycle and AI cases\nStatic contracts only. Native diplomacy, startup, rank locking, title precedence and GUI rendering require a fresh-game runtime pass.\n"
+    },
+    {
+      "name": "开局投影",
+      "exit_code": 0,
+      "output": "ZHOU_FEUDATORIES_VALID; countries=58; excluded=TSF,republics,Tianzi\n"
+    },
+    {
+      "name": "天下公议",
+      "exit_code": 0,
+      "output": "Shared Tianxia Council static contract: PASS\n  One phase family; one issue-kind family; one A/B/C ballot\n  Deadline: zhx_system.23 after 365 days\n  Public turnout: eligible/voted/unvoted countries and AI countries\n  Public counters are always mutated on event_target:zhx_tianzi\n  Debate candidate slots: 6 schools in A and 6 schools in B\n  GUI: current council on the left; orthodoxy on the right\n"
+    },
+    {
+      "name": "盟功换届",
+      "exit_code": 0,
+      "output": "Zhou merit store static contract: PASS\n  Three ledgers; 25-year term; active-contribution eligibility; seven-place ranking\n  Eight 50-merit / 10-year items in four mutually exclusive categories\n  Dynamic Principal and Seven identities reuse the existing Mandate-page roster\n  Former 200-shield Zhou roster is absent from the rendered panel and annual builder\n"
+    },
+    {
+      "name": "模组介绍",
+      "exit_code": 0,
+      "output": "PASS: 91 pages + native startup directory, 420 option transitions, root reachability, close/reopen/AI/pending/reload cases, read-only effects, source freshness, colour resets/line budgets/continuations, Chinese round-trip and four DDS.\n"
+    },
+    {
+      "name": "中文编码",
+      "exit_code": 0,
+      "output": ""
+    },
+    {
+      "name": "差异空白",
+      "exit_code": 0,
+      "output": ""
+    }
+  ],
+  "runtime_report": "docs/gameplay/zi_runtime_2026-09-08.md",
+  "runtime_checksum": "be44",
+  "checks": [
+    {
+      "command": "python3 tools/apply_zhou_feudatories.py --check",
+      "status": "fulfilled",
+      "exit_code": 0,
+      "output": "ZHOU_FEUDATORIES_VALID; countries=58; excluded=TSF,republics,Tianzi\n"
+    },
+    {
+      "command": "python3 tools/validate_zhou_feudatories.py",
+      "status": "fulfilled",
+      "exit_code": 0,
+      "output": "PASS: 58 opening monarchies; TSF, republics and Tianzi excluded; four fixed-rank reforms; 80 encoded keys and 6 native-root controls\nPASS: 401 source-driven threshold, snapshot, rollover, ballot, refusal, lifecycle and AI cases\nStatic contracts only. Native diplomacy, startup, rank locking, title precedence and GUI rendering require a fresh-game runtime pass.\n"
+    },
+    {
+      "command": "python3 tools/validate_zhx_council.py",
+      "status": "fulfilled",
+      "exit_code": 0,
+      "output": "Shared Tianxia Council static contract: PASS\n  One phase family; one issue-kind family; one A/B/C ballot\n  Deadline: zhx_system.23 after 365 days\n  Public turnout: eligible/voted/unvoted countries and AI countries\n  Public counters are always mutated on event_target:zhx_tianzi\n  Debate candidate slots: 6 schools in A and 6 schools in B\n  GUI: current council on the left; orthodoxy on the right\n"
+    },
+    {
+      "command": "python3 tools/validate_zhx_merit_store.py",
+      "status": "fulfilled",
+      "exit_code": 0,
+      "output": "Zhou merit store static contract: PASS\n  Three ledgers; 25-year term; active-contribution eligibility; seven-place ranking\n  Eight 50-merit / 10-year items in four mutually exclusive categories\n  Dynamic Principal and Seven identities reuse the existing Mandate-page roster\n  Former 200-shield Zhou roster is absent from the rendered panel and annual builder\n"
+    },
+    {
+      "command": "python3 tools/validate_zhx_diplomacy.py",
+      "status": "fulfilled",
+      "exit_code": 0,
+      "output": "PASS: Zhou diplomacy static contract\n  ordinary province cessions add no scripted AE; member extinction: +5\n  every member extinction queues a universal -5 ritual-authority loss\n  real peace uses a same-day presentation-only notice; punishments settle monthly\n  Tianzi receives an isolated 120-month punitive CB through a hidden monthly bridge\n  Tianzi may manually join an externally attacked member's defensive wars through a native diplomatic action\n  a player member may appeal to the Tianzi, with eligible AI recipients accepting by a single duty term\n  relief action has no CB, world scan, event/on-action bridge or custom wargoal\n  membership application, voluntary exit and historic restoration wired\n  this command performs static checks only; runtime evidence is documented separately\n"
+    },
+    {
+      "command": "/Users/xinanyapiao/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 tools/validate_mod_guide.py",
+      "status": "fulfilled",
+      "exit_code": 0,
+      "output": "PASS: 91 pages + native startup directory, 420 option transitions, root reachability, close/reopen/AI/pending/reload cases, read-only effects, source freshness, colour resets/line budgets/continuations, Chinese round-trip and four DDS.\n"
+    },
+    {
+      "command": "python3 tools/encode_eu4_chinese_localisation.py --check",
+      "status": "fulfilled",
+      "exit_code": 0,
+      "output": "Warning: truncated output (original token count: 911)\nTotal output lines: 78\n\nreplace/027_zhx_mod_guide_l_english.yml: valid\nreplace/026_zhx_opening_backgrounds_l_english.yml: valid\nreplace/025_zhx_tianzi_l_english.yml: valid\nreplace/024_gdd_b79_suizhu_xianhuang_l_english.yml: valid\nreplace/023_zhx_gongyi_l_english.yml: valid\nreplace/022_zhx_feudatory_l_english.yml: valid\nreplace/021_gdd_hak_government_l_english.yml: valid\ngdd_l_english.yml: valid\ngdd_b01_map_l_english.yml: valid\ngdd_p02_southeast_map_l_english.yml: valid\ngdd_b07_jiangxi_map_l_english.yml: valid\ngdd_b07_hunan_map_l_english.yml: valid\ngdd_b06_zhejiang_map_l_english.yml: valid\ngdd_b10_hubei_map_l_english.yml: valid\ngdd_b11_jiangsu_map_l_english.yml: valid\ngdd_b09_chongqing_map_l_english.yml: valid\ngdd_b03_wangji_map_l_english.yml: valid\ngdd_b14_henan_map_l_english.yml: valid\ngdd_b16_anhui_map_l_english.yml: valid\ngdd_b17_guizhou_map_l_english.yml: valid\ngdd_b18_sichuan_map_l_english.yml: valid\ngdd_b19_fujian_map_l_english.yml: valid\ngdd_b20_shandong_map_l_english.yml: valid\ngdd_b21_yandu_map_l_english.yml: valid\ngdd_b22_yunnan_map_l_english.yml: valid\ngdd_b23_shanxi_map_l_english.yml: valid\ngdd_b24_workshop_hebei_l_english.yml: valid\ngdd_b25_shaanxi_map_l_english.yml: valid\ngdd_b26_gansu_ningxia_map_l_english.yml: valid\ngdd_b26_qinshu_mountains_l_english.yml: valid\ngdd_b27_hainan_map_l_english.yml: valid\ngdd_b27_liaoning_refinement_l_english.yml: valid\ngdd_b28_guangxi_map_l_english.yml: valid\ngdd_b29_huizhou_map_l_english.yml: valid\ngdd_b30_yuebei_chaoshan_map_l_english.yml: valid\ngdd_b34_longyou_map_l_english.yml: valid\ngdd_b37_tianshui_refinement_l_english.yml: valid\ngdd_b45_hunan_jiangxi_refinement_l_english.yml: valid\ngdd_b46_chuandongbei_chongqing_refinement_l_english.yml: valid\ngdd_b47_jingxiang_yunan_refinement_l_english.yml: valid\nreplace/000_gdd_b41_culture_overhaul_l_engl…11 tokens truncated…name_overrides_l_english.yml: valid\nreplace/002_gdd_b44_worldview_toponyms_l_english.yml: valid\nreplace/003_gdd_b49_trade_node_overrides_l_english.yml: valid\nreplace/004_gdd_b50_eastern_polities_l_english.yml: valid\nreplace/005_gdd_b51_liao_polity_l_english.yml: valid\nreplace/006_gdd_b52_chu_vassals_l_english.yml: valid\nreplace/007_gdd_b54_changsha_public_cities_l_english.yml: valid\nreplace/008_gdd_b55_shanggu_refinement_l_english.yml: valid\nreplace/009_gdd_b56_hainan_austronesian_polity_l_english.yml: valid\nreplace/010_gdd_b57_east_china_landmarks_l_english.yml: valid\nreplace/011_gdd_b58_korea_refinement_l_english.yml: valid\nreplace/012_gdd_b59_korea_consolidation_l_english.yml: valid\nreplace/013_gdd_b60_korea_polities_l_english.yml: valid\nreplace/014_gdd_b73_korea_trade_l_english.yml: valid\nreplace/015_gdd_b74_lijiao_presentation_l_english.yml: valid\nreplace/016_gdd_b78_daming_refinement_l_english.yml: valid\nreplace/017_gdd_lingnan_nations_l_english.yml: valid\nreplace/019_gdd_czc_government_l_english.yml: valid\nreplace/020_gdd_czc_government_ui_l_english.yml: valid\nreplace/zzz_gdd_chunqiu_area_overrides_l_english.yml: valid\ngdd_yangtze_navigation_l_english.yml: valid\ngdd_huai_navigation_l_english.yml: valid\ngdd_hangou_navigation_l_english.yml: valid\ngdd_treaty_l_english.yml: valid\ngdd_characters_l_english.yml: valid\ngdd_liang_restoration_l_english.yml: valid\nzhx_system_l_english.yml: valid\nzhx_doctrine_l_english.yml: valid\nzhx_doctrine_expansion_l_english.yml: valid\nzhx_doctrine_reform_l_english.yml: valid\nzhx_guest_school_l_english.yml: valid\nzhx_native_schools_l_english.yml: valid\nzhx_tianxia_debate_l_english.yml: valid\nzhx_nestorian_l_english.yml: valid\nzhx_academies_l_english.yml: valid\nzhx_academy_lifecycle_l_english.yml: valid\nzhx_diplomacy_l_english.yml: valid\n"
+    },
+    {
+      "command": "git diff --check",
+      "status": "fulfilled",
+      "exit_code": 0,
+      "output": ""
+    }
+  ]
+}

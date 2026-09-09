@@ -6,3 +6,42 @@ religion = confucianism
 primary_culture = gdd_chu
 capital = 2172	#Jiangling
 fixed_capital = 2172
+
+# ZHX_CHU_OPENING_RULER_BEGIN
+1444.11.11 = {
+    monarch = {
+        name = "¹eVr"
+        dynasty = "Šq"
+        birth_date = 1402.1.1
+        adm = 2
+        dip = 5
+        mil = 2
+        culture = gdd_chu
+        religion = confucianism
+    }
+    heir = {
+        name = "Nmg"
+        dynasty = "Šq"
+        birth_date = 1424.1.1
+        death_date = 1821.1.1
+        adm = 2
+        dip = 1
+        mil = 4
+        claim = 70
+        culture = gdd_chu
+        religion = confucianism
+    }
+    queen = {
+        name = "h®Y"
+        dynasty = ")n"
+        birth_date = 1405.1.1
+        death_date = 1821.1.1
+        adm = 3
+        dip = 3
+        mil = 3
+        female = yes
+        culture = gdd_chu
+        religion = confucianism
+    }
+}
+# ZHX_CHU_OPENING_RULER_END

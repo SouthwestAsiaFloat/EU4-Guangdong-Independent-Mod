@@ -1,6 +1,6 @@
 # B71 one-province Xing polity.
 government = monarchy
-add_government_reform = zhx_feudatory_bo_reform
+add_government_reform = zhx_feudatory_zi_reform
 government_rank = 1
 technology_group = chinese
 religion = confucianism

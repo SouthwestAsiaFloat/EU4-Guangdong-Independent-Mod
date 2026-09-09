@@ -1,0 +1,1912 @@
+{
+  "schema_version": 2,
+  "texture_size": [
+    512,
+    132
+  ],
+  "art": {
+    "tianxia": {
+      "source_image": "tools/assets/event_pictures/mod_guide_v1/tianxia.png",
+      "crop_top": 260
+    },
+    "court": {
+      "source_image": "tools/assets/event_pictures/mod_guide_v1/court.png",
+      "crop_top": 230
+    },
+    "lijiao": {
+      "source_image": "tools/assets/event_pictures/mod_guide_v1/lijiao.png",
+      "crop_top": 220
+    },
+    "academy": {
+      "source_image": "tools/assets/event_pictures/mod_guide_v1/academy.png",
+      "crop_top": 140
+    }
+  },
+  "pages": [
+    {
+      "key": "home",
+      "title": "模组介绍",
+      "category": "tianxia",
+      "parent": null,
+      "body": "§Y列国入门§!\n• 周室尚存，列国各有社稷；诸子并起，治道各有所归。\n§Y四篇选读§!\n• §Y周天下§!：共同秩序、外交战争与盟功。\n• §Y朝廷§!：爵制晋封、天子与特殊政体。\n• §Y宗教§!：礼教、六家践履与宾学。\n• §Y学宫§!：地方收益、思想张力与迁徙。\n§Y随时查阅§!\n• 重开入口：决议栏 → §Y模组介绍§!。\n• 所有国家均可阅读；实际行动另有条件。",
+      "links": [
+        {
+          "label": "周天下：列国与盟约",
+          "target": "world"
+        },
+        {
+          "label": "朝廷：爵制与政体",
+          "target": "court"
+        },
+        {
+          "label": "宗教：礼教与百家",
+          "target": "religion"
+        },
+        {
+          "label": "学宫：讲席与传承",
+          "target": "academy"
+        }
+      ],
+      "status": "all",
+      "event_id": "zhx_guide.1",
+      "source_page": "home",
+      "part": 1,
+      "parts": 1
+    },
+    {
+      "key": "world",
+      "title": "周天下：共守一份盟书",
+      "category": "tianxia",
+      "parent": "home",
+      "body": "§Y列国与共同秩序§!\n• 诸侯各有疆土、军队与政令，共同承认天子、朝会与盟誓。\n• §Y成员身份§!不等于附庸关系。\n• 各国可以奉行不同的国内国论。\n§Y三个不同的概念§!\n• §Y礼乐§!：天下秩序的盛衰。\n• §Y盟功§!：本国贡献与功劳。\n• §Y天下公议§!：处理列国共同议题。\n§Y查看现状§!\n• 右下方§Y周天下§!入口。\n• 后备入口：§Y打开周天下总览§!决议。",
+      "links": [
+        {
+          "label": "成员与礼乐",
+          "target": "membership"
+        },
+        {
+          "label": "外交与战争",
+          "target": "war"
+        },
+        {
+          "label": "盟功与七大诸侯",
+          "target": "merit"
+        },
+        {
+          "label": "朝会、公议与天下大辩",
+          "target": "council"
+        }
+      ],
+      "status": "tianxia",
+      "event_id": "zhx_guide.2",
+      "source_page": "world",
+      "part": 1,
+      "parts": 1
+    },
+    {
+      "key": "membership",
+      "title": "谁在周天下之内（1/2）",
+      "category": "tianxia",
+      "parent": "world",
+      "body": "§Y成员身份§!\n• §Y天子§!与登记在册的§Y诸侯§!组成周天下。\n• 成员不一定是附庸，共和政体也可入列。\n• 版图入口：§Y查看周天下版图§!决议的省份高亮。\n\n§Y请列周籍：全部条件§!\n• 入口：天子外交页 → §Y请列周籍§!。\n• 本国须为§B独立国家§!。\n• §R不与任何周天下国家交战§!。\n• §R没有犯盟、禁入或申请冷却§!。\n• 本国对天子好感§B至少150§!。\n• 首都位于§B中国次大陆§!，或§B与周天下国家接壤§!。",
+      "links": [
+        {
+          "label": "下一页：裁可与复国",
+          "target": "membership_page2"
+        }
+      ],
+      "status": "tianxia",
+      "event_id": "zhx_guide.3",
+      "source_page": "membership",
+      "part": 1,
+      "parts": 2
+    },
+    {
+      "key": "membership_page2",
+      "title": "谁在周天下之内（2/2）",
+      "category": "tianxia",
+      "parent": "world",
+      "body": "§Y裁可与复国§!\n• 文化、宗教与政体不限。\n• 由天子接受或否决；遭拒后§R十年不能再申请§!。\n• 历史诸侯独立复国，可恢复成员身份。\n• §R作为附庸被释放，不会自动入列§!。",
+      "links": [
+        {
+          "label": "上一页",
+          "target": "membership"
+        },
+        {
+          "label": "礼乐怎样影响列国",
+          "target": "ritual"
+        },
+        {
+          "label": "退出与外交求援",
+          "target": "diplomacy"
+        }
+      ],
+      "status": "tianxia",
+      "event_id": "zhx_guide.43",
+      "source_page": "membership",
+      "part": 2,
+      "parts": 2
+    },
+    {
+      "key": "ritual",
+      "title": "礼乐：天下共有的盛衰（1/3）",
+      "category": "tianxia",
+      "parent": "world",
+      "body": "§Y礼乐值§!\n• 开局为§B0§!，范围§B-100至100§!。\n• 政局、朝会、战争与公议都会改变礼乐。\n• 入口：§Y周天下面板§!查看现值与当期修正。\n\n§Y礼乐至少§!§B60§!§Y§!\n• 税收：§G+10%§!。\n• 生产效率：§G+10%§!。\n\n§Y礼乐§!§B20§!§Y至不足§!§B60§!§Y§!\n• 税收：§G+5%§!。\n• 生产效率：§G+5%§!。",
+      "links": [
+        {
+          "label": "下一页：礼乐-20至不足20",
+          "target": "ritual_page2"
+        }
+      ],
+      "status": "tianxia",
+      "event_id": "zhx_guide.4",
+      "source_page": "ritual",
+      "part": 1,
+      "parts": 3
+    },
+    {
+      "key": "ritual_page2",
+      "title": "礼乐：天下共有的盛衰（2/3）",
+      "category": "tianxia",
+      "parent": "world",
+      "body": "§Y礼乐§!§B-20§!§Y至不足§!§B20§!§Y§!\n• 税收：§G+2%§!。\n• 生产效率：§G+2%§!。\n• 训练度：§G+1%§!。\n\n§Y礼乐§!§B-60§!§Y至不足§!§B-20§!§Y§!\n• 税收：§R-5%§!。\n• 生产效率：§R-5%§!。\n• 训练度：§G+2.5%§!。\n• 省份战争分数花费：§G-7.5%§!。\n• 叛乱度：§R+1§!。\n• 每月荒废：§R+0.10§!。",
+      "links": [
+        {
+          "label": "下一页：礼乐低于-60",
+          "target": "ritual_page3"
+        },
+        {
+          "label": "上一页",
+          "target": "ritual"
+        }
+      ],
+      "status": "tianxia",
+      "event_id": "zhx_guide.44",
+      "source_page": "ritual",
+      "part": 2,
+      "parts": 3
+    },
+    {
+      "key": "ritual_page3",
+      "title": "礼乐：天下共有的盛衰（3/3）",
+      "category": "tianxia",
+      "parent": "world",
+      "body": "§Y礼乐低于§!§B-60§!§Y§!\n• 税收：§R-10%§!。\n• 生产效率：§R-10%§!。\n• 训练度：§G+5%§!。\n• 省份战争分数花费：§G-15%§!。\n• 叛乱度：§R+2§!。\n• 每月荒废：§R+0.15§!。\n\n§Y战争后果另算§!\n• 侵略扩张不随这五档改变。\n• 灭侯的额外侵略扩张与礼乐损失另行计算。",
+      "links": [
+        {
+          "label": "上一页",
+          "target": "ritual_page2"
+        }
+      ],
+      "status": "tianxia",
+      "event_id": "zhx_guide.45",
+      "source_page": "ritual",
+      "part": 3,
+      "parts": 3
+    },
+    {
+      "key": "war",
+      "title": "战争：核心与犯盟（1/2）",
+      "category": "tianxia",
+      "parent": "world",
+      "body": "§Y何时构成犯盟§!\n• 交战中取得天子或诸侯的省份，且本国§R没有该省核心§!。\n• 普通、永久与任务宣称，均§R不能代替核心§!。\n• 归还核心、释放国家、外交整合等合法转移另行处理。\n\n§Y犯盟的后果§!\n• §Y犯盟§!持续约§B十年§!，再犯刷新期限。\n• 天子对责任国好感：§R初始-100§!。\n• 上述关系惩罚每年恢复§B10§!。\n• 天子可取得§Y奉辞伐罪§!战争借口。\n• 普通非法割地不额外按发展度追加侵略扩张。\n• 原版和约的侵略扩张仍然生效。",
+      "links": [
+        {
+          "label": "下一页：灭侯与责任归属",
+          "target": "war_page2"
+        }
+      ],
+      "status": "tianxia",
+      "event_id": "zhx_guide.5",
+      "source_page": "war",
+      "part": 1,
+      "parts": 2
+    },
+    {
+      "key": "war_page2",
+      "title": "战争：核心与犯盟（2/2）",
+      "category": "tianxia",
+      "parent": "world",
+      "body": "§Y灭侯与责任归属§!\n• 每战争灭亡一个成员：额外§R固定5侵略扩张§!。\n• 该额外惩罚施加给其他合格周天下国家。\n• 附庸所为，由宗主国承担责任。\n• 任何方式灭亡一个成员：天下礼乐§R-5§!。",
+      "links": [
+        {
+          "label": "上一页",
+          "target": "war"
+        },
+        {
+          "label": "天子犯盟与域外入侵",
+          "target": "diplomacy"
+        }
+      ],
+      "status": "tianxia",
+      "event_id": "zhx_guide.46",
+      "source_page": "war",
+      "part": 2,
+      "parts": 2
+    },
+    {
+      "key": "diplomacy",
+      "title": "退出、告急与救患（1/3）",
+      "category": "tianxia",
+      "parent": "world",
+      "body": "§Y自去周籍：条件与入口§!\n• 入口：§Y自去周籍§!决议。\n• 须为§B独立诸侯§!。\n• 本国须§B和平§!。\n• 本国§R不能是天子§!。\n\n§Y退出的代价§!\n• 威望：§R-25§!。\n• 天子对本国：§R十年-50好感§!。\n• 其他成员对本国：§R十年-25好感§!。\n• §R二十年内不能申请回归§!。\n• §R清空盟功与本届资格§!，不清除已有犯盟。",
+      "links": [
+        {
+          "label": "下一页：告急与救患",
+          "target": "diplomacy_page2"
+        }
+      ],
+      "status": "tianxia",
+      "event_id": "zhx_guide.6",
+      "source_page": "diplomacy",
+      "part": 1,
+      "parts": 3
+    },
+    {
+      "key": "diplomacy_page2",
+      "title": "退出、告急与救患（2/3）",
+      "category": "tianxia",
+      "parent": "world",
+      "body": "§Y告急与救患§!\n• §Y告急§!：受域外进攻的独立玩家诸侯向天子请求。\n• §Y救患§!：玩家天子在受攻击诸侯外交页主动入援。\n• 告急须由天子答复；救患直接参战。\n• 两者均§G不收资源§!。",
+      "links": [
+        {
+          "label": "下一页：入援条件",
+          "target": "diplomacy_page3"
+        },
+        {
+          "label": "上一页",
+          "target": "diplomacy"
+        }
+      ],
+      "status": "tianxia",
+      "event_id": "zhx_guide.47",
+      "source_page": "diplomacy",
+      "part": 2,
+      "parts": 3
+    },
+    {
+      "key": "diplomacy_page3",
+      "title": "退出、告急与救患（3/3）",
+      "category": "tianxia",
+      "parent": "world",
+      "body": "§Y入援条件§!\n• 天子须§B独立§!。\n• 天子须§B和平§!。\n• 目标须为§B独立诸侯§!。\n• 目标须为§B该场防御战争领袖§!。\n• 须受§B域外战争领袖直接进攻§!。\n• §R不能同时卷入周内进攻造成的防御战§!。\n• 域外进攻方§R不能是天子盟友或属国§!。\n\n§Y入援范围与天子犯盟§!\n• 获准后，天子加入目标的§Y全部防御战争§!。\n• 天子本人犯盟，同月一批另扣礼乐§R3点§!。",
+      "links": [
+        {
+          "label": "上一页",
+          "target": "diplomacy_page2"
+        }
+      ],
+      "status": "tianxia",
+      "event_id": "zhx_guide.48",
+      "source_page": "diplomacy",
+      "part": 3,
+      "parts": 3
+    },
+    {
+      "key": "merit",
+      "title": "盟功：三本功簿（1/2）",
+      "category": "tianxia",
+      "parent": "world",
+      "body": "§Y三本功簿§!\n• 入口：周天下面板 → §Y叙功行赏§!。\n• §Y可用盟功§!：范围§B0至100§!，用于请领诏令。\n• §Y本届盟功§!：用于席位排名与晋爵资格。\n• §Y终身盟功§!：本届同分时，用来比较高下。\n\n§Y获得、消费与清理§!\n• 获得盟功通常同时记入三账。\n• 消费可用盟功，§G不扣本届和终身成绩§!。\n• 二十五年换届：清空本届成绩和主动贡献资格。\n• 退出周天下：§R三本账全部清空§!。",
+      "links": [
+        {
+          "label": "下一页：两种容易混淆的用途",
+          "target": "merit_page2"
+        }
+      ],
+      "status": "tianxia",
+      "event_id": "zhx_guide.7",
+      "source_page": "merit",
+      "part": 1,
+      "parts": 2
+    },
+    {
+      "key": "merit_page2",
+      "title": "盟功：三本功簿（2/2）",
+      "category": "tianxia",
+      "parent": "world",
+      "body": "§Y两种容易混淆的用途§!\n• 晋爵检查§Y本届盟功§!，提交申请§G不扣盟功§!。\n• 请领诏令消耗§Y可用盟功§!。\n• 七大诸侯还须§B本届至少一次主动贡献§!。\n• 仅靠发展度取得的基本盟功，不能授予入选资格。",
+      "links": [
+        {
+          "label": "上一页",
+          "target": "merit"
+        },
+        {
+          "label": "怎样立功与入选",
+          "target": "ranking"
+        },
+        {
+          "label": "怎样请领十年诏令",
+          "target": "awards"
+        }
+      ],
+      "status": "tianxia",
+      "event_id": "zhx_guide.49",
+      "source_page": "merit",
+      "part": 2,
+      "parts": 2
+    },
+    {
+      "key": "ranking",
+      "title": "立功与二十五年改选（1/2）",
+      "category": "tianxia",
+      "parent": "world",
+      "body": "§Y年度基本盟功§!\n• 发展度§B不足100§!：盟功§G+1§!。\n• 发展度§B100至249§!：盟功§G+2§!。\n• 发展度§B250至499§!：盟功§G+3§!。\n• 发展度§B至少500§!：盟功§G+4§!。\n\n§Y主动贡献§!\n• 作为胜方战争领袖击败域外领袖：§G10主动盟功§!。\n• 普通成员参与大辩投票，结算时得§G10主动盟功§!。\n• 当前显学可能另加评价奖励。",
+      "links": [
+        {
+          "label": "下一页：二十五年改选",
+          "target": "ranking_page2"
+        }
+      ],
+      "status": "tianxia",
+      "event_id": "zhx_guide.8",
+      "source_page": "ranking",
+      "part": 1,
+      "parts": 2
+    },
+    {
+      "key": "ranking_page2",
+      "title": "立功与二十五年改选（2/2）",
+      "category": "tianxia",
+      "parent": "world",
+      "body": "§Y二十五年改选§!\n• 资格：现存成员，本届有过§B主动贡献§!。\n• 排名先比§Y本届盟功§!。\n• 再比§Y终身盟功§!。\n• 仍相同则依次比较§Y现任七大诸侯身份§!、§Y威望§!。\n• 前§B七名§!入席，第§B一名§!兼任首席。\n• 名额可空缺，§R任期内不递补§!。\n\n§Y席位收益与查看入口§!\n• 七大诸侯：力量投射§G+10§!。\n• 首席诸侯：额外力量投射§G+10§!。\n• 花费可用盟功§G不影响排名§!。\n• 成绩及第七名门槛：§Y周天下功簿§!。",
+      "links": [
+        {
+          "label": "上一页",
+          "target": "ranking"
+        }
+      ],
+      "status": "tianxia",
+      "event_id": "zhx_guide.50",
+      "source_page": "ranking",
+      "part": 2,
+      "parts": 2
+    },
+    {
+      "key": "awards",
+      "title": "叙功行赏：把功劳用于治国（1/2）",
+      "category": "tianxia",
+      "parent": "world",
+      "body": "§Y请领诏令§!\n• 入口：周天下面板下半部 → §Y叙功行赏§!。\n• 每道诏令消耗§R50可用盟功§!。\n• 诏令持续§B十年§!。\n• 同类仅可持有§B一道§!，最多同时拥有§B四类§!。\n\n§Y抚民理政：王命赈恤§!\n• 全国叛乱度：§G-2§!。\n• 稳定度花费：§G-10%§!。\n\n§Y抚民理政：整饬吏治§!\n• 每月自治：§G-0.05§!。\n• 每年腐败：§G-0.10§!。",
+      "links": [
+        {
+          "label": "下一页：通商劝业：盟市通商",
+          "target": "awards_page2"
+        }
+      ],
+      "status": "tianxia",
+      "event_id": "zhx_guide.9",
+      "source_page": "awards",
+      "part": 1,
+      "parts": 2
+    },
+    {
+      "key": "awards_page2",
+      "title": "叙功行赏：把功劳用于治国（2/2）",
+      "category": "tianxia",
+      "parent": "world",
+      "body": "§Y通商劝业：盟市通商§!\n• 贸易效率：§G+10%§!。\n• 全局贸易力量：§G+10%§!。\n\n§Y通商劝业：劝课百工§!\n• 建造花费：§G-10%§!。\n• 发展成本：§G-5%§!。\n\n§Y另两类诏令§!\n• §Y整军守圉§!：军队士气与人力，或城防与敌军损耗。\n• §Y褒功修盟§!：声誉与威望，或关系与外交官。\n• 完整数值：悬停对应诏令按钮。\n• 灰色状态会说明§Y功不足§!、§Y同类占用§!或§Y身份不符§!。",
+      "links": [
+        {
+          "label": "上一页",
+          "target": "awards"
+        }
+      ],
+      "status": "tianxia",
+      "event_id": "zhx_guide.51",
+      "source_page": "awards",
+      "part": 2,
+      "parts": 2
+    },
+    {
+      "key": "council",
+      "title": "朝会与天下公议（1/3）",
+      "category": "tianxia",
+      "parent": "world",
+      "body": "§Y召开开封大朝会§!\n• 入口：§Y召开开封大朝会§!决议，限天子。\n• 条件：§B和平§!。\n• 条件：稳定度§B至少0§!。\n• 花费：§R100金钱§!。\n• 花费：§R50外交点§!。\n• 结果：礼乐§G+10§!。\n• 冷却：§B五年§!。",
+      "links": [
+        {
+          "label": "下一页：重申成周盟书",
+          "target": "council_page2"
+        }
+      ],
+      "status": "tianxia",
+      "event_id": "zhx_guide.10",
+      "source_page": "council",
+      "part": 1,
+      "parts": 3
+    },
+    {
+      "key": "council_page2",
+      "title": "朝会与天下公议（2/3）",
+      "category": "tianxia",
+      "parent": "world",
+      "body": "§Y重申成周盟书§!\n• 入口：§Y重申成周盟书§!决议，限天子。\n• 条件：§B和平§!。\n• 条件：稳定度§B至少1§!。\n• 条件：礼乐§B至少50§!。\n• 花费：§R50礼乐§!，只可实行§B一次§!。\n• 周天下国家永久外交声誉：§G+1§!。\n• 周天下国家永久叛乱度：§G-1§!。",
+      "links": [
+        {
+          "label": "下一页：天下公议",
+          "target": "council_page3"
+        },
+        {
+          "label": "上一页",
+          "target": "council"
+        }
+      ],
+      "status": "tianxia",
+      "event_id": "zhx_guide.52",
+      "source_page": "council",
+      "part": 2,
+      "parts": 3
+    },
+    {
+      "key": "council_page3",
+      "title": "朝会与天下公议（3/3）",
+      "category": "tianxia",
+      "parent": "world",
+      "body": "§Y天下公议§!\n• 晋封、秩序事变、大辩§R不能同时占用议程§!。\n• 议论通常持续§B365日§!。\n• 各议题的票权与胜出规则不同。\n• 大辩的典范加票§R不能套用到晋封§!。",
+      "links": [
+        {
+          "label": "上一页",
+          "target": "council_page2"
+        },
+        {
+          "label": "天下大辩：怎样上书",
+          "target": "debate"
+        },
+        {
+          "label": "爵制与晋封",
+          "target": "promotion"
+        }
+      ],
+      "status": "tianxia",
+      "event_id": "zhx_guide.53",
+      "source_page": "council",
+      "part": 3,
+      "parts": 3
+    },
+    {
+      "key": "debate",
+      "title": "天下大辩：先有请辩书（1/2）",
+      "category": "tianxia",
+      "parent": "world",
+      "body": "§Y上书请辩：全部条件§!\n• 入口：§Y上书请辩§!决议。\n• 本国须为§B周天下礼教国§!。\n• 本国主学派践履§B至少70§!。\n• 同派至少有§B三个周天下礼教国家§!。\n• 除本国外，另有同派国家践履§B至少50§!。\n\n§Y何时不能请辩§!\n• §R广开新论期间不能提出新请辩§!。\n• §R显学十五年任期内不能请辩§!。\n• §R已有天下大辩时不能请辩§!。",
+      "links": [
+        {
+          "label": "下一页：请辩书与开辩",
+          "target": "debate_page2"
+        }
+      ],
+      "status": "tianxia",
+      "event_id": "zhx_guide.11",
+      "source_page": "debate",
+      "part": 1,
+      "parts": 2
+    },
+    {
+      "key": "debate_page2",
+      "title": "天下大辩：先有请辩书（2/2）",
+      "category": "tianxia",
+      "parent": "world",
+      "body": "§Y请辩书与开辩§!\n• 每派请辩书有效§B三年§!。\n• 只有一份时，不占用公议议程。\n• 至少§B两份有效请辩§!且§B公议空闲§!，天子才可开辩。\n• 恰好两份：直接入席。\n• 三份以上：天子择取§B两案§!。\n\n§Y表态与查看§!\n• 其余国家可支持§Y甲案§!、§Y乙案§!或§Y百家并立§!。\n• 现行显学与六家名势：§Y查看天下显学§!决议。\n• 有效请辩状态：§Y周天下面板§!。",
+      "links": [
+        {
+          "label": "上一页",
+          "target": "debate"
+        },
+        {
+          "label": "票权、胜出与显学任期",
+          "target": "debate_result"
+        }
+      ],
+      "status": "tianxia",
+      "event_id": "zhx_guide.54",
+      "source_page": "debate",
+      "part": 2,
+      "parts": 2
+    },
+    {
+      "key": "debate_result",
+      "title": "大辩结果怎样决定（1/2）",
+      "category": "tianxia",
+      "parent": "world",
+      "body": "§Y票权与期限§!\n• 大辩议论§B365日§!，各国基础§B一票§!。\n• 典范加票条件：§B投给本国主学派§!。\n• 典范加票条件：投票时践履§B至少75§!。\n• 两项同时满足：票权额外§G+1§!。\n• 票权在投票时固定；之后践履变化不追改。\n• 主动改票时，重新核算票权。\n\n§Y怎样胜出§!\n• 一家须§B同时严格领先另一家与百家并立§!。\n• 第一名并列：一律§Y百家并立§!。\n• 天子§R没有破平权§!。",
+      "links": [
+        {
+          "label": "下一页：结算奖励",
+          "target": "debate_result_page2"
+        }
+      ],
+      "status": "tianxia",
+      "event_id": "zhx_guide.12",
+      "source_page": "debate_result",
+      "part": 1,
+      "parts": 2
+    },
+    {
+      "key": "debate_result_page2",
+      "title": "大辩结果怎样决定（2/2）",
+      "category": "tianxia",
+      "parent": "world",
+      "body": "§Y结算奖励§!\n• 普通成员正式投票：§G10主动盟功§!。\n• 投中胜出显学：额外盟功§G+2§!。\n• 投中胜出的百家并立：额外盟功§G+1§!。\n\n§Y显学任期§!\n• 结果持续§B十五年§!，期间§R不重新请辩§!。\n• 只调整国际行为的礼乐与盟功评价。\n• 不替换国内§Y主学派§!。\n• 不改变国内§Y践履§!或§Y省份宗教§!。",
+      "links": [
+        {
+          "label": "上一页",
+          "target": "debate_result"
+        },
+        {
+          "label": "六家国际评价",
+          "target": "orthodoxy"
+        },
+        {
+          "label": "国内礼教与主学派",
+          "target": "religion"
+        }
+      ],
+      "status": "tianxia",
+      "event_id": "zhx_guide.55",
+      "source_page": "debate_result",
+      "part": 2,
+      "parts": 2
+    },
+    {
+      "key": "orthodoxy",
+      "title": "天下显学：同一战事，不同评价（1/4）",
+      "category": "tianxia",
+      "parent": "world",
+      "body": "§Y天下显学的国际评价§!\n• 以下变化只在§Y显学任期内§!生效。\n• 年度和平／内战评价，与对外胜利评价分别计算。\n• 对外获胜的§B10主动盟功§!仍另记。\n\n§Y儒家显学§!\n• 完全和平：每年额外礼乐§G+1§!。\n• 发生内战：每年额外礼乐§R-1§!。\n• 击败域外领袖：礼乐§G+3§!。\n• 击败域外领袖：额外盟功§G+2§!。",
+      "links": [
+        {
+          "label": "下一页：法家显学",
+          "target": "orthodoxy_page2"
+        }
+      ],
+      "status": "tianxia",
+      "event_id": "zhx_guide.13",
+      "source_page": "orthodoxy",
+      "part": 1,
+      "parts": 4
+    },
+    {
+      "key": "orthodoxy_page2",
+      "title": "天下显学：同一战事，不同评价（2/4）",
+      "category": "tianxia",
+      "parent": "world",
+      "body": "§Y法家显学§!\n• 无内战：每年额外礼乐§G+1§!。\n• 至少三场内战：每年额外礼乐§R-2§!。\n• 击败域外领袖：礼乐§G+5§!。\n• 击败域外领袖：额外盟功§G+3§!。\n\n§Y墨家显学§!\n• 完全和平：每年额外礼乐§G+2§!。\n• 发生内战：每年额外礼乐§R-2§!。\n• 击败域外领袖：礼乐§G+1§!。\n• 击败域外领袖：额外盟功§B0§!。",
+      "links": [
+        {
+          "label": "下一页：道家显学",
+          "target": "orthodoxy_page3"
+        },
+        {
+          "label": "上一页",
+          "target": "orthodoxy"
+        }
+      ],
+      "status": "tianxia",
+      "event_id": "zhx_guide.56",
+      "source_page": "orthodoxy",
+      "part": 2,
+      "parts": 4
+    },
+    {
+      "key": "orthodoxy_page3",
+      "title": "天下显学：同一战事，不同评价（3/4）",
+      "category": "tianxia",
+      "parent": "world",
+      "body": "§Y道家显学§!\n• 完全和平：每年额外礼乐§G+2§!。\n• 发生内战：每年额外礼乐§R-1§!。\n• 击败域外领袖：礼乐§G+1§!。\n• 击败域外领袖：额外盟功§G+1§!。\n\n§Y兵家显学§!\n• 无内战：每年额外礼乐§G+1§!。\n• 至少三场内战：每年额外礼乐§R-1§!。\n• 击败域外领袖：礼乐§G+5§!。\n• 击败域外领袖：额外盟功§G+4§!。",
+      "links": [
+        {
+          "label": "下一页：纵横家显学",
+          "target": "orthodoxy_page4"
+        },
+        {
+          "label": "上一页",
+          "target": "orthodoxy_page2"
+        }
+      ],
+      "status": "tianxia",
+      "event_id": "zhx_guide.57",
+      "source_page": "orthodoxy",
+      "part": 3,
+      "parts": 4
+    },
+    {
+      "key": "orthodoxy_page4",
+      "title": "天下显学：同一战事，不同评价（4/4）",
+      "category": "tianxia",
+      "parent": "world",
+      "body": "§Y纵横家显学§!\n• 无内战：每年额外礼乐§G+1§!。\n• 至少三场内战：每年额外礼乐§R-1§!。\n• 击败域外领袖：礼乐§G+3§!。\n• 击败域外领袖：额外盟功§G+2§!。\n\n§Y百家并立§!\n• 不采用某一家的年度和平／内战评价。\n• 击败域外领袖：礼乐§G+2§!。\n• 击败域外领袖：额外盟功§G+1§!。\n• 显学不授予对应国内收益；国内效果仍由主学派与践履决定。",
+      "links": [
+        {
+          "label": "上一页",
+          "target": "orthodoxy_page3"
+        }
+      ],
+      "status": "tianxia",
+      "event_id": "zhx_guide.58",
+      "source_page": "orthodoxy",
+      "part": 4,
+      "parts": 4
+    },
+    {
+      "key": "court",
+      "title": "朝廷：名分与执政之道",
+      "category": "court",
+      "parent": "home",
+      "body": "§Y名分与席位§!\n• §Y子、伯、侯、公§!：普通诸侯爵制，影响国家等级与改革。\n• §Y天子§!：独立身份，不属于普通晋封终点。\n• §Y七大诸侯、首席§!：盟功改选的席位，不等于爵位。\n\n§Y爵制之外的朝廷§!\n• §Y公邑§!以一城自治。\n• §Y商盟§!以市镇经营国势。\n• §Y乡贤议会、军政府§!各有权力与继任规则。\n\n§Y查看本国制度§!\n• 入口：§Y政府页 → 一级改革§!。\n• 本篇讲晋封、天子与特殊政体；阅读不会执行改革。",
+      "links": [
+        {
+          "label": "爵制与晋封",
+          "target": "promotion"
+        },
+        {
+          "label": "天子身份与王畿",
+          "target": "tianzi"
+        },
+        {
+          "label": "公邑等特殊政体",
+          "target": "special"
+        }
+      ],
+      "status": "worldcourt",
+      "event_id": "zhx_guide.14",
+      "source_page": "court",
+      "part": 1,
+      "parts": 1
+    },
+    {
+      "key": "promotion",
+      "title": "子、伯、侯、公：怎样请封晋爵（1/3）",
+      "category": "court",
+      "parent": "court",
+      "body": "§Y请封晋爵§!\n• 路线：§Y子 → 伯 → 侯 → 公§!。\n• 入口：天子外交页 → §Y影响 → 请封晋爵§!。\n\n§Y三项同时满足：盟功／发展度／直属城市§!\n• 子升伯：§B50／50／5§!。\n• 伯升侯：§B100／100／10§!。\n• 侯升公：§B200／200／20§!。\n\n§Y初封与复立§!\n• 新成员从子起步；缩水不自动降爵。\n• 复国恢复灭亡前旧爵。\n• 主动背盟放弃旧爵，再入盟从子起步。",
+      "links": [
+        {
+          "label": "下一页：申请限制",
+          "target": "promotion_page2"
+        }
+      ],
+      "status": "feudatory",
+      "event_id": "zhx_guide.15",
+      "source_page": "promotion",
+      "part": 1,
+      "parts": 3
+    },
+    {
+      "key": "promotion_page2",
+      "title": "子、伯、侯、公：怎样请封晋爵（2/3）",
+      "category": "court",
+      "parent": "court",
+      "body": "§Y申请限制§!\n• 属国城市与未完成殖民地§R不计入门槛§!。\n• §R不能与天子交战§!，未结案不可重复提交。\n• 每§B二十五年§!一届，每国最多申请§B一次§!。\n• 拒绝、失败、成功均占用机会，§G不扣盟功§!。\n\n§Y爵位与国家等级§!\n• 子、伯、侯：固定§B一级§!；公：§B二级§!。\n• 伯新增：年度威望§G+1§!、外交关系上限§G+1§!。\n• 侯、公继承伯国待遇，再获外交声誉§G+1§!。",
+      "links": [
+        {
+          "label": "下一页：普通诸侯的共同改革",
+          "target": "promotion_page3"
+        },
+        {
+          "label": "上一页",
+          "target": "promotion"
+        }
+      ],
+      "status": "feudatory",
+      "event_id": "zhx_guide.59",
+      "source_page": "promotion",
+      "part": 2,
+      "parts": 3
+    },
+    {
+      "key": "promotion_page3",
+      "title": "子、伯、侯、公：怎样请封晋爵（3/3）",
+      "category": "court",
+      "parent": "court",
+      "body": "§Y普通诸侯的共同改革§!\n• 贵族忠诚均衡：§G+10个百分点§!。\n• 贵族影响力：§Y+5个百分点§!。\n• 年度正统性：§G+0.5§!。\n• 稳定度花费：§G-10%§!。",
+      "links": [
+        {
+          "label": "上一页",
+          "target": "promotion_page2"
+        },
+        {
+          "label": "天子裁可与诸侯表决",
+          "target": "promotion_vote"
+        }
+      ],
+      "status": "feudatory",
+      "event_id": "zhx_guide.60",
+      "source_page": "promotion",
+      "part": 3,
+      "parts": 3
+    },
+    {
+      "key": "promotion_vote",
+      "title": "晋封程序：直接裁可与公议（1/2）",
+      "category": "court",
+      "parent": "court",
+      "body": "§Y子升伯：天子直接裁可§!\n• 天子批准后§G立即授爵§!，不交列国表决。\n• 可与正在进行的天下公议§G同时处理§!。\n\n§Y伯升侯、侯升公：天下公议§!\n• 公议须§B空闲§!，且无待处理王命危机。\n• 天子受理后表决§B365日§!，受理时不升爵。\n• 普通成员各§B一票§!，含申请国与共和国。\n• 天子§R不额外投票§!，也没有事后二次否决权。\n• 赞同须§B严格多于反对§!，§R平票失败§!。\n• 通过后直接晋封；所有申请均占本届一次机会。",
+      "links": [
+        {
+          "label": "下一页：换届与未结案申请",
+          "target": "promotion_vote_page2"
+        }
+      ],
+      "status": "feudatory",
+      "event_id": "zhx_guide.16",
+      "source_page": "promotion_vote",
+      "part": 1,
+      "parts": 2
+    },
+    {
+      "key": "promotion_vote_page2",
+      "title": "晋封程序：直接裁可与公议（2/2）",
+      "category": "court",
+      "parent": "court",
+      "body": "§Y换届与未结案申请§!\n• 提交时保存本届成绩，供该次申请使用。\n• 跨届不会取消尚未结案的申请。\n• §R旧案未结时不能重复上书§!。\n• §Y公国§!是普通晋封终点。\n• 当前§R没有由公国申请成为天子的路线§!。",
+      "links": [
+        {
+          "label": "上一页",
+          "target": "promotion_vote"
+        },
+        {
+          "label": "盟功三本账",
+          "target": "merit"
+        }
+      ],
+      "status": "feudatory",
+      "event_id": "zhx_guide.61",
+      "source_page": "promotion_vote",
+      "part": 2,
+      "parts": 2
+    },
+    {
+      "key": "tianzi",
+      "title": "周天子：王畿奉养，列国共尊（1/2）",
+      "category": "court",
+      "parent": "court",
+      "body": "§Y周天子政府机制§!\n• 固定§B帝国等级§!，世袭君主政体，使用§Y正统性§!。\n• 天子身份§R不由普通晋封或七大诸侯排名授予§!。\n\n§Y改革收益与权力§!\n• 外交关系：§G+2§!。\n• 改善关系：§G+20%§!。\n• 贵族忠诚均衡：§G+10个百分点§!。\n• 贵族影响力：§Y+5个百分点§!。\n• 年度威望：§G+0.5§!。\n• 年度正统性：§G+0.5§!。",
+      "links": [
+        {
+          "label": "下一页：天子禁卫",
+          "target": "tianzi_page2"
+        }
+      ],
+      "status": "tianzi",
+      "event_id": "zhx_guide.17",
+      "source_page": "tianzi",
+      "part": 1,
+      "parts": 2
+    },
+    {
+      "key": "tianzi_page2",
+      "title": "周天子：王畿奉养，列国共尊（2/2）",
+      "category": "court",
+      "parent": "court",
+      "body": "§Y天子禁卫§!\n• 兵种：§Y限额特殊步兵§!，在§Y陆军界面§!招募。\n• 基础限额：§B六团§!。\n• 维护费比普通部队：§R+20%§!。\n• 火力伤害：§G+50%§!。\n• 冲击伤害：§G+50%§!。\n• 须启用§BDomination§!支持的特殊部队内容。\n\n§Y王畿与后续成长§!\n• 王畿仅限§Y开封、洛阳§!。\n• 须由§B采用该改革的天子持有§!。\n• 王畿本地税收：§G+50%§!。\n• 提高禁卫限额的后续成长路线§R尚未开放§!。",
+      "links": [
+        {
+          "label": "上一页",
+          "target": "tianzi"
+        },
+        {
+          "label": "朝会与天下事务",
+          "target": "council"
+        }
+      ],
+      "status": "tianzi",
+      "event_id": "zhx_guide.62",
+      "source_page": "tianzi",
+      "part": 2,
+      "parts": 2
+    },
+    {
+      "key": "special",
+      "title": "特殊政体：爵制之外的朝廷",
+      "category": "court",
+      "parent": "court",
+      "body": "§Y不同的执政方式§!\n• §Y公邑§!：一城自治。\n• §Y扬国商盟§!：经营商业与外交网络。\n• §Y潮州乡贤议会§!：士绅与统治者分配权力。\n• §Y客家革命军政府§!：派系与共和传统决定去向。\n\n§Y资格与查看入口§!\n• 上述政体可有周天下成员身份。\n• 成员身份§R不会自动授予普通君主晋封资格§!。\n• 当前制度：§Y政府页 → 一级改革§!。\n• 公邑有申请入口；其他专属政体另有国家与改革资格。\n• 阅读不会切换本国制度。",
+      "links": [
+        {
+          "label": "公邑：申请与一城边界",
+          "target": "gongyi"
+        },
+        {
+          "label": "扬国商盟",
+          "target": "yang"
+        },
+        {
+          "label": "乡贤议会与革命军政府",
+          "target": "republics"
+        }
+      ],
+      "status": "worldcourt",
+      "event_id": "zhx_guide.18",
+      "source_page": "special",
+      "part": 1,
+      "parts": 1
+    },
+    {
+      "key": "gongyi",
+      "title": "公邑：一城自治的代价（1/3）",
+      "category": "court",
+      "parent": "special",
+      "body": "§Y公邑自治制§!\n• 仅能持有§B一个直属省份§!。\n• 任期：§B四年选举§!。\n• 可经营§Y贸易联盟§!与§Y贸易城市§!。\n• 发展成本：§G-20%§!。\n• 贸易效率：§G+10%§!。\n• 要塞防御：§G+20%§!。",
+      "links": [
+        {
+          "label": "下一页：请授公邑：全部条件",
+          "target": "gongyi_page2"
+        }
+      ],
+      "status": "gongyi",
+      "event_id": "zhx_guide.19",
+      "source_page": "gongyi",
+      "part": 1,
+      "parts": 3
+    },
+    {
+      "key": "gongyi_page2",
+      "title": "公邑：一城自治的代价（2/3）",
+      "category": "court",
+      "parent": "special",
+      "body": "§Y请授公邑：全部条件§!\n• 入口：天子外交页 → §Y请授公邑§!。\n• 须为§B独立的一省共和国§!。\n• 已加入§B周天下§!。\n• 须处于§B和平§!。\n• 天子对本国好感§B至少100§!。\n• 扬国§R不走此申请入口§!。",
+      "links": [
+        {
+          "label": "下一页：裁可与失格",
+          "target": "gongyi_page3"
+        },
+        {
+          "label": "上一页",
+          "target": "gongyi"
+        }
+      ],
+      "status": "gongyi",
+      "event_id": "zhx_guide.63",
+      "source_page": "gongyi",
+      "part": 2,
+      "parts": 3
+    },
+    {
+      "key": "gongyi_page3",
+      "title": "公邑：一城自治的代价（3/3）",
+      "category": "court",
+      "parent": "special",
+      "body": "§Y裁可与失格§!\n• 申请冷却§B一年§!，天子直接裁可，不经投票。\n• 拥有第二省：§R失去公邑改革，转为普通共和国§!。\n• 保留现任人物、共和传统与稳定。\n• 缩回一省§R不会自动恢复公邑§!，须重新申请。\n• 贸易联盟地位仍受原生规则约束。",
+      "links": [
+        {
+          "label": "上一页",
+          "target": "gongyi_page2"
+        }
+      ],
+      "status": "gongyi",
+      "event_id": "zhx_guide.64",
+      "source_page": "gongyi",
+      "part": 3,
+      "parts": 3
+    },
+    {
+      "key": "yang",
+      "title": "扬国商盟：以市镇组织国势（1/2）",
+      "category": "court",
+      "parent": "special",
+      "body": "§Y扬国商盟共和制§!\n• 商业共和国，§B四年选举§!。\n• 可以组织§Y贸易联盟§!与§Y贸易城市§!。\n\n§Y收益与代价§!\n• 商人：§G+2§!。\n• 外交声誉：§G+1§!。\n• 改善关系：§G+20%§!。\n• 雇佣兵训练度：§G+5%§!。\n• 治理容量：§R-80%§!。",
+      "links": [
+        {
+          "label": "下一页：领土与贸易城市",
+          "target": "yang_page2"
+        }
+      ],
+      "status": "yang",
+      "event_id": "zhx_guide.20",
+      "source_page": "yang",
+      "part": 1,
+      "parts": 2
+    },
+    {
+      "key": "yang_page2",
+      "title": "扬国商盟：以市镇组织国势（2/2）",
+      "category": "court",
+      "parent": "special",
+      "body": "§Y领土与贸易城市§!\n• 不受公邑一省限制，开局三省不因此退化。\n• 扩张仍须承担低治理容量的负担。\n• 贸易城市§R不能从本国首都释放§!。\n• 同一联盟在同一节点§R只能释放一个贸易城市§!。\n• 入口：§Y贸易联盟与省份界面§!。\n• 成员加入、退出和领袖变更，按原生规则处理。",
+      "links": [
+        {
+          "label": "上一页",
+          "target": "yang"
+        }
+      ],
+      "status": "yang",
+      "event_id": "zhx_guide.65",
+      "source_page": "yang",
+      "part": 2,
+      "parts": 2
+    },
+    {
+      "key": "republics",
+      "title": "乡贤议会与军府：权力如何转移（1/3）",
+      "category": "court",
+      "parent": "special",
+      "body": "§Y潮州乡贤议会§!\n• §Y终身执政者§!，原生议会与士绅—统治者权力条。\n• 入口：§Y政府页 → 议政§!。\n• 每次花费§R50行政点§!。\n• 每次推动权力条§B0.10§!。\n• 两方向共享§B一年冷却§!。\n• 共和传统§B严格低于20§!时，触发§Y称王§!。",
+      "links": [
+        {
+          "label": "下一页：客家革命军政府",
+          "target": "republics_page2"
+        }
+      ],
+      "status": "republics",
+      "event_id": "zhx_guide.21",
+      "source_page": "republics",
+      "part": 1,
+      "parts": 3
+    },
+    {
+      "key": "republics_page2",
+      "title": "乡贤议会与军府：权力如何转移（2/3）",
+      "category": "court",
+      "parent": "special",
+      "body": "§Y客家革命军政府§!\n• §Y终身执政、将领接班§!。\n• 支持乡社花费：§R10行政点§!。\n• 支持乡社结果：乡社影响力§Y+10§!。\n• 支持工商花费：§R10外交点§!。\n• 支持工商结果：工商影响力§Y+10§!。\n• 支持军府花费：§R10军事点§!。\n• 支持军府结果：军府影响力§Y+10§!。\n• 战争每月额外提高军府影响力§Y0.20§!。\n• §Y乡勇约法§!将上述战时增长减半。",
+      "links": [
+        {
+          "label": "下一页：还政与称王",
+          "target": "republics_page3"
+        },
+        {
+          "label": "上一页",
+          "target": "republics"
+        }
+      ],
+      "status": "republics",
+      "event_id": "zhx_guide.66",
+      "source_page": "republics",
+      "part": 2,
+      "parts": 3
+    },
+    {
+      "key": "republics_page3",
+      "title": "乡贤议会与军府：权力如何转移（3/3）",
+      "category": "court",
+      "parent": "special",
+      "body": "§Y还政与称王§!\n• 还政条件：§B乡社占优§!。\n• 还政条件：§B和平§!。\n• 还政条件：共和传统§B至少60§!。\n• 入口：§Y政府页或还政决议§!。\n• 还政后转为§Y乡社共和国§!，§B四年选举§!。\n• 两种客家共和国：§B军府占优§!且传统§B低于20§!，触发§Y称王§!。",
+      "links": [
+        {
+          "label": "上一页",
+          "target": "republics_page2"
+        }
+      ],
+      "status": "republics",
+      "event_id": "zhx_guide.67",
+      "source_page": "republics",
+      "part": 3,
+      "parts": 3
+    },
+    {
+      "key": "religion",
+      "title": "宗教：礼教之下，百家各言其道",
+      "category": "lijiao",
+      "parent": "home",
+      "body": "§Y礼教与百家§!\n• §Y礼教§!是名分、礼仪与治国责任的共同框架。\n• 儒、法、墨、道、兵、纵横分别提出治国路线。\n• 六家不是六种需要互相传教的省份宗教。\n§Y三种不同的存在§!\n• §Y主学派§!：决定国内践履准则与收益。\n• §Y第二学派§!：有期限的宾学，或更张后的旧学余势。\n• §Y学宫§!：位于省份上的思想机构。\n§Y天下显学与本篇范围§!\n• §Y天下显学§!由大辩决定，只改变国际评价。\n• 完整大辩规则在§Y周天下§!篇。\n• 本篇重点介绍礼教；其余宗教沿用各自规则。",
+      "links": [
+        {
+          "label": "首次立论与践履",
+          "target": "practice"
+        },
+        {
+          "label": "六家对照与详细准则",
+          "target": "schools_a"
+        },
+        {
+          "label": "第二学派：延请与履约",
+          "target": "guest"
+        },
+        {
+          "label": "更张国论",
+          "target": "reform"
+        }
+      ],
+      "status": "lijiao",
+      "event_id": "zhx_guide.22",
+      "source_page": "religion",
+      "part": 1,
+      "parts": 1
+    },
+    {
+      "key": "practice",
+      "title": "践履：让国论成为实政（1/3）",
+      "category": "lijiao",
+      "parent": "religion",
+      "body": "§Y首次立论§!\n• 入口：§Y召集诸子百家§!。\n• 资格：礼教国，§B尚无主学派§!。\n• 首次践履：§B25§!。\n• 首次采用后§B十年§!不能更张。\n• 已有主学派§R不能重走首次入口§!。",
+      "links": [
+        {
+          "label": "下一页：践履四档",
+          "target": "practice_page2"
+        }
+      ],
+      "status": "lijiao",
+      "event_id": "zhx_guide.23",
+      "source_page": "practice",
+      "part": 1,
+      "parts": 3
+    },
+    {
+      "key": "practice_page2",
+      "title": "践履：让国论成为实政（2/3）",
+      "category": "lijiao",
+      "parent": "religion",
+      "body": "§Y践履四档§!\n• 范围§B0至100§!，§B每年§!按实际国情结算。\n• §B0至24§!：§Y名实未副§!，承受本派§R反噬§!。\n• §B25至49§!：§Y试行§!。\n• §B50至74§!：§Y笃行§!。\n• §B75至100§!：§Y成法§!。\n• 各档§R不叠加§!，达到新档即替换。",
+      "links": [
+        {
+          "label": "下一页：在哪里查条件",
+          "target": "practice_page3"
+        },
+        {
+          "label": "上一页",
+          "target": "practice"
+        }
+      ],
+      "status": "lijiao",
+      "event_id": "zhx_guide.68",
+      "source_page": "practice",
+      "part": 2,
+      "parts": 3
+    },
+    {
+      "key": "practice_page3",
+      "title": "践履：让国论成为实政（3/3）",
+      "category": "lijiao",
+      "parent": "religion",
+      "body": "§Y在哪里查条件§!\n• 点击§Y宗教页践履数字§!：准则及下一档距离。\n• 悬停数字：按本月国情预计的年度增减。\n• 后备入口：§Y查看国论与践履§!决议。\n• 月度预览§R不是每月加分§!。\n• 落在加减门槛之间，不自动加分或扣分。",
+      "links": [
+        {
+          "label": "上一页",
+          "target": "practice_page2"
+        },
+        {
+          "label": "六家详细准则",
+          "target": "schools_a"
+        },
+        {
+          "label": "天下显学与国内国论的区别",
+          "target": "debate_result"
+        }
+      ],
+      "status": "lijiao",
+      "event_id": "zhx_guide.69",
+      "source_page": "practice",
+      "part": 3,
+      "parts": 3
+    },
+    {
+      "key": "schools_a",
+      "title": "六家对照：儒、法、墨",
+      "category": "lijiao",
+      "parent": "religion",
+      "body": "§Y六家对照：儒、法、墨§!\n• §Y儒家§!重安定与声望，长于顾问、稳定与外交。\n• §Y法家§!重廉政与控制，长于自治与造核。\n• §Y墨家§!重防御与轻负担，长于城防与建设。\n§Y如何选读§!\n• 各家详情分列§Y收益、反噬、践履增加、践履扣减§!。\n• 完整四档收益：悬停§Y宗教页学派徽章§!。\n• 请辩要求践履§B70§!；成法要求践履§B75§!。\n• 达到§B70§!§R不会自动召开大辩§!。",
+      "links": [
+        {
+          "label": "儒家",
+          "target": "ru"
+        },
+        {
+          "label": "法家",
+          "target": "fa"
+        },
+        {
+          "label": "墨家",
+          "target": "mo"
+        },
+        {
+          "label": "下一页：道、兵、纵横",
+          "target": "schools_b"
+        }
+      ],
+      "status": "lijiao",
+      "event_id": "zhx_guide.24",
+      "source_page": "schools_a",
+      "part": 1,
+      "parts": 1
+    },
+    {
+      "key": "schools_b",
+      "title": "六家对照：道、兵、纵横",
+      "category": "lijiao",
+      "parent": "religion",
+      "body": "§Y六家对照：道、兵、纵横§!\n• §Y道家§!重休养与克制，长于安定与降低厌战。\n• §Y兵家§!重常备与训练，长于人力、士气与训练度。\n• §Y纵横家§!重结盟与信誉，长于关系与使节网络。\n§Y按国情践行§!\n• 践履检查和平、军队占比、人力等实际条件。\n• 多项条件分别计算，年度合计相加。\n• 无法持续践行，可能跌入§R反噬档§!。\n• 正面效果届时被负面效果替代。",
+      "links": [
+        {
+          "label": "道家",
+          "target": "dao"
+        },
+        {
+          "label": "兵家",
+          "target": "bing"
+        },
+        {
+          "label": "纵横家",
+          "target": "zongheng"
+        },
+        {
+          "label": "上一页：儒、法、墨",
+          "target": "schools_a"
+        }
+      ],
+      "status": "lijiao",
+      "event_id": "zhx_guide.25",
+      "source_page": "schools_b",
+      "part": 1,
+      "parts": 1
+    },
+    {
+      "key": "ru",
+      "title": "儒家：收益与践履（1/2）",
+      "category": "lijiao",
+      "parent": "schools_a",
+      "body": "§Y成法收益：践履§!§B75§!§Y至§!§B100§!§Y§!\n• 顾问花费：§G-10%§!。\n• 稳定花费：§G-10%§!。\n• 外交声誉：§G+1§!。\n• 叛乱度：§G-1§!。\n\n§Y名实未副：践履§!§B0§!§Y至§!§B24§!§Y§!\n• 叛乱：§R+2§!。\n• 稳定花费：§R+15%§!。\n• 外交声誉：§R-1§!。",
+      "links": [
+        {
+          "label": "下一页：年度践履增加",
+          "target": "ru_page2"
+        }
+      ],
+      "status": "lijiao",
+      "event_id": "zhx_guide.26",
+      "source_page": "ru",
+      "part": 1,
+      "parts": 2
+    },
+    {
+      "key": "ru_page2",
+      "title": "儒家：收益与践履（2/2）",
+      "category": "lijiao",
+      "parent": "schools_a",
+      "body": "§Y年度践履增加§!\n• 稳定至少§B1§!：§G+2§!。\n• 威望至少§B25§!：§G+1§!。\n• 厌战低于§B3§!：§G+1§!。\n\n§Y年度践履扣减§!\n• 负稳定：§R-3§!。\n• 威望低于§B-25§!：§R-1§!。\n• 厌战至少§B5§!：§R-2§!。\n\n§Y结算与查看§!\n• 多项条件分别计算后相加。\n• 践履§B25至49、50至74§!的收益：悬停§Y本派徽章§!。",
+      "links": [
+        {
+          "label": "上一页",
+          "target": "ru"
+        }
+      ],
+      "status": "lijiao",
+      "event_id": "zhx_guide.70",
+      "source_page": "ru",
+      "part": 2,
+      "parts": 2
+    },
+    {
+      "key": "fa",
+      "title": "法家：收益与践履（1/3）",
+      "category": "lijiao",
+      "parent": "schools_a",
+      "body": "§Y成法收益：践履§!§B75§!§Y至§!§B100§!§Y§!\n• 每月自治：§G-0.075§!。\n• 造核花费：§G-10%§!。\n• 每年腐败：§G-0.10§!。\n• 训练度：§G+2.5%§!。\n\n§Y名实未副：践履§!§B0§!§Y至§!§B24§!§Y§!\n• 每月自治：§R+0.10§!。\n• 造核花费：§R+10%§!。\n• 每年腐败：§R+0.10§!。",
+      "links": [
+        {
+          "label": "下一页：年度践履增加",
+          "target": "fa_page2"
+        }
+      ],
+      "status": "lijiao",
+      "event_id": "zhx_guide.27",
+      "source_page": "fa",
+      "part": 1,
+      "parts": 3
+    },
+    {
+      "key": "fa_page2",
+      "title": "法家：收益与践履（2/3）",
+      "category": "lijiao",
+      "parent": "schools_a",
+      "body": "§Y年度践履增加§!\n• 腐败低于§B2§!：§G+2§!。\n• 平均超最低自治低于§B25§!：§G+1§!。\n• 过扩低于§B10%§!：§G+1§!。\n\n§Y年度践履扣减§!\n• 腐败至少§B5§!：§R-3§!。\n• 平均超最低自治至少§B50§!：§R-2§!。\n• 过扩至少§B25%§!：§R-2§!。",
+      "links": [
+        {
+          "label": "下一页：结算与查看",
+          "target": "fa_page3"
+        },
+        {
+          "label": "上一页",
+          "target": "fa"
+        }
+      ],
+      "status": "lijiao",
+      "event_id": "zhx_guide.71",
+      "source_page": "fa",
+      "part": 2,
+      "parts": 3
+    },
+    {
+      "key": "fa_page3",
+      "title": "法家：收益与践履（3/3）",
+      "category": "lijiao",
+      "parent": "schools_a",
+      "body": "§Y结算与查看§!\n• 多项条件分别计算后相加。\n• 践履§B25至49、50至74§!的收益：悬停§Y本派徽章§!。\n• §Y超最低自治§!指高于最低自治下限的平均差额。",
+      "links": [
+        {
+          "label": "上一页",
+          "target": "fa_page2"
+        }
+      ],
+      "status": "lijiao",
+      "event_id": "zhx_guide.72",
+      "source_page": "fa",
+      "part": 3,
+      "parts": 3
+    },
+    {
+      "key": "mo",
+      "title": "墨家：收益与践履（1/3）",
+      "category": "lijiao",
+      "parent": "schools_a",
+      "body": "§Y成法收益：践履§!§B75§!§Y至§!§B100§!§Y§!\n• 要塞维护：§G-20%§!。\n• 要塞防御：§G+20%§!。\n• 外交声誉：§G+1§!。\n• 发展成本：§G-5%§!。\n\n§Y名实未副：践履§!§B0§!§Y至§!§B24§!§Y§!\n• 要塞维护：§R+25%§!。\n• 要塞防御：§R-20%§!。\n• 发展成本：§R+10%§!。",
+      "links": [
+        {
+          "label": "下一页：年度践履增加",
+          "target": "mo_page2"
+        }
+      ],
+      "status": "lijiao",
+      "event_id": "zhx_guide.28",
+      "source_page": "mo",
+      "part": 1,
+      "parts": 3
+    },
+    {
+      "key": "mo_page2",
+      "title": "墨家：收益与践履（2/3）",
+      "category": "lijiao",
+      "parent": "schools_a",
+      "body": "§Y年度践履增加§!\n• 作为防御战争领袖：§G+3§!。\n• 否则和平：§G+2§!。\n• 无借款：§G+1§!。\n• 厌战低于§B3§!：§G+1§!。\n\n§Y年度践履扣减§!\n• 作为进攻战争领袖：§R-4§!。\n• 借款至少三笔：§R-2§!。\n• 厌战至少§B5§!：§R-2§!。",
+      "links": [
+        {
+          "label": "下一页：结算与查看",
+          "target": "mo_page3"
+        },
+        {
+          "label": "上一页",
+          "target": "mo"
+        }
+      ],
+      "status": "lijiao",
+      "event_id": "zhx_guide.73",
+      "source_page": "mo",
+      "part": 2,
+      "parts": 3
+    },
+    {
+      "key": "mo_page3",
+      "title": "墨家：收益与践履（3/3）",
+      "category": "lijiao",
+      "parent": "schools_a",
+      "body": "§Y结算与查看§!\n• 多项条件分别计算后相加。\n• 践履§B25至49、50至74§!的收益：悬停§Y本派徽章§!。",
+      "links": [
+        {
+          "label": "上一页",
+          "target": "mo_page2"
+        }
+      ],
+      "status": "lijiao",
+      "event_id": "zhx_guide.74",
+      "source_page": "mo",
+      "part": 3,
+      "parts": 3
+    },
+    {
+      "key": "dao",
+      "title": "道家：收益与践履（1/2）",
+      "category": "lijiao",
+      "parent": "schools_b",
+      "body": "§Y成法收益：践履§!§B75§!§Y至§!§B100§!§Y§!\n• 叛乱度：§G-2§!。\n• 每月厌战：§G-0.03§!。\n• 发展成本：§G-5%§!。\n• 稳定花费：§G-5%§!。\n\n§Y名实未副：践履§!§B0§!§Y至§!§B24§!§Y§!\n• 叛乱：§R+2§!。\n• 每月厌战：§R+0.03§!。\n• 发展成本：§R+10%§!。",
+      "links": [
+        {
+          "label": "下一页：年度践履增加",
+          "target": "dao_page2"
+        }
+      ],
+      "status": "lijiao",
+      "event_id": "zhx_guide.29",
+      "source_page": "dao",
+      "part": 1,
+      "parts": 2
+    },
+    {
+      "key": "dao_page2",
+      "title": "道家：收益与践履（2/2）",
+      "category": "lijiao",
+      "parent": "schools_b",
+      "body": "§Y年度践履增加§!\n• 和平：§G+2§!。\n• 厌战低于§B2§!：§G+1§!。\n• 过度扩张低于§B5%§!：§G+1§!。\n\n§Y年度践履扣减§!\n• 厌战至少§B5§!：§R-2§!。\n• 过度扩张至少§B25%§!：§R-2§!。\n\n§Y结算与查看§!\n• 多项条件分别计算后相加。\n• 践履§B25至49、50至74§!的收益：悬停§Y本派徽章§!。",
+      "links": [
+        {
+          "label": "上一页",
+          "target": "dao"
+        }
+      ],
+      "status": "lijiao",
+      "event_id": "zhx_guide.75",
+      "source_page": "dao",
+      "part": 2,
+      "parts": 2
+    },
+    {
+      "key": "bing",
+      "title": "兵家：收益与践履（1/2）",
+      "category": "lijiao",
+      "parent": "schools_b",
+      "body": "§Y成法收益：践履§!§B75§!§Y至§!§B100§!§Y§!\n• 人力恢复：§G+15%§!。\n• 年度陆军传统衰减：§G-1个百分点§!。\n• 陆军士气：§G+10%§!。\n• 训练度：§G+2.5%§!。\n\n§Y名实未副：践履§!§B0§!§Y至§!§B24§!§Y§!\n• 人力恢复：§R-20%§!。\n• 年度陆军传统衰减：§R+1个百分点§!。\n• 陆军士气：§R-10%§!。",
+      "links": [
+        {
+          "label": "下一页：年度践履增加",
+          "target": "bing_page2"
+        }
+      ],
+      "status": "lijiao",
+      "event_id": "zhx_guide.30",
+      "source_page": "bing",
+      "part": 1,
+      "parts": 2
+    },
+    {
+      "key": "bing_page2",
+      "title": "兵家：收益与践履（2/2）",
+      "category": "lijiao",
+      "parent": "schools_b",
+      "body": "§Y年度践履增加§!\n• 陆军达到上限§B80%§!：§G+2§!。\n• 陆军传统至少§B40§!：§G+1§!。\n• 人力至少§B50%§!：§G+1§!。\n\n§Y年度践履扣减§!\n• 陆军低于上限§B50%§!：§R-2§!。\n• 陆军传统低于§B20§!：§R-2§!。\n• 人力低于§B15%§!：§R-2§!。\n\n§Y结算与查看§!\n• 多项条件分别计算后相加。\n• 践履§B25至49、50至74§!的收益：悬停§Y本派徽章§!。",
+      "links": [
+        {
+          "label": "上一页",
+          "target": "bing"
+        }
+      ],
+      "status": "lijiao",
+      "event_id": "zhx_guide.76",
+      "source_page": "bing",
+      "part": 2,
+      "parts": 2
+    },
+    {
+      "key": "zongheng",
+      "title": "纵横家：收益与践履（1/2）",
+      "category": "lijiao",
+      "parent": "schools_b",
+      "body": "§Y成法收益：践履§!§B75§!§Y至§!§B100§!§Y§!\n• 改善关系：§G+25%§!。\n• 外交声誉：§G+1§!。\n• 外交关系：§G+1§!。\n• 外交官：§G+1§!。\n\n§Y名实未副：践履§!§B0§!§Y至§!§B24§!§Y§!\n• 改善关系：§R-25%§!。\n• 外交声誉：§R-1§!。\n• 外交关系：§R-1§!。",
+      "links": [
+        {
+          "label": "下一页：年度践履增加",
+          "target": "zongheng_page2"
+        }
+      ],
+      "status": "lijiao",
+      "event_id": "zhx_guide.31",
+      "source_page": "zongheng",
+      "part": 1,
+      "parts": 2
+    },
+    {
+      "key": "zongheng_page2",
+      "title": "纵横家：收益与践履（2/2）",
+      "category": "lijiao",
+      "parent": "schools_b",
+      "body": "§Y年度践履增加§!\n• 盟友至少两国：§G+2§!。\n• 外交声誉至少§B1§!：§G+1§!。\n• 威望至少§B25§!：§G+1§!。\n\n§Y年度践履扣减§!\n• 无盟友：§R-3§!。\n• 外交声誉低于§B0§!：§R-2§!。\n• 威望低于§B-25§!：§R-1§!。\n\n§Y结算与查看§!\n• 多项条件分别计算后相加。\n• 践履§B25至49、50至74§!的收益：悬停§Y本派徽章§!。",
+      "links": [
+        {
+          "label": "上一页",
+          "target": "zongheng"
+        }
+      ],
+      "status": "lijiao",
+      "event_id": "zhx_guide.77",
+      "source_page": "zongheng",
+      "part": 2,
+      "parts": 2
+    },
+    {
+      "key": "guest",
+      "title": "第二学派：从谁那里延请（1/2）",
+      "category": "lijiao",
+      "parent": "religion",
+      "body": "§Y延请异派学者§!\n• 入口：§Y宗教页 → 请士 → 延请异派学者§!。\n• 本国须§B奉行礼教§!。\n• 本国须§B已有主学派§!。\n• 先选另一学派，再选来源国，确认后才付款。\n• 费用：§R75外交点§!。\n• 费用：相当于§R半年国家收入§!的金钱。",
+      "links": [
+        {
+          "label": "下一页：来源国：全部条件",
+          "target": "guest_page2"
+        }
+      ],
+      "status": "lijiao",
+      "event_id": "zhx_guide.32",
+      "source_page": "guest",
+      "part": 1,
+      "parts": 2
+    },
+    {
+      "key": "guest_page2",
+      "title": "第二学派：从谁那里延请（2/2）",
+      "category": "lijiao",
+      "parent": "religion",
+      "body": "§Y来源国：全部条件§!\n• 须把该派作为§B正式主学派§!。\n• 其首都已被你§B发现§!。\n• §Y来源国对你§!的好感§B至少150§!。\n• 若为本国附庸，自由倾向须§B低于50%§!。\n• 受邀宾学与旧学余势§R不能转借给第三国§!。\n\n§Y为何邀请列表为空§!\n• 一次只能有§B一家宾学§!。\n• §R已有契约、更张锁定或失信期§!会阻止新邀请。\n• 战争、负稳定与贷款，本身不禁止玩家延请。\n• 先检查来源资格，再检查限制与是否付得起费用。",
+      "links": [
+        {
+          "label": "上一页",
+          "target": "guest"
+        },
+        {
+          "label": "二十年契约与提前逐客",
+          "target": "guest_contract"
+        },
+        {
+          "label": "宾学与学宫保护",
+          "target": "synergy"
+        }
+      ],
+      "status": "lijiao",
+      "event_id": "zhx_guide.78",
+      "source_page": "guest",
+      "part": 2,
+      "parts": 2
+    },
+    {
+      "key": "guest_contract",
+      "title": "宾学：二十年约与五年磨合（1/3）",
+      "category": "lijiao",
+      "parent": "religion",
+      "body": "§Y二十年契约§!\n• 驻留约§B二十年§!，提供该家§Y试行档§!辅助收益。\n• 保护境内同派学宫。\n• 不替换主学派与践履。\n• 来源国后来改派、灭亡或关系恶化，不取消本期。\n\n§Y前五年磨合§!\n• 全国叛乱度：§R+1§!。\n• 稳定度花费：§R+15%§!。\n• 顾问花费：§R+10%§!。\n• 磨合结束后，继续履行剩余契约。",
+      "links": [
+        {
+          "label": "下一页：期满续聘或礼送",
+          "target": "guest_contract_page2"
+        }
+      ],
+      "status": "lijiao",
+      "event_id": "zhx_guide.33",
+      "source_page": "guest_contract",
+      "part": 1,
+      "parts": 3
+    },
+    {
+      "key": "guest_contract_page2",
+      "title": "宾学：二十年约与五年磨合（2/3）",
+      "category": "lijiao",
+      "parent": "religion",
+      "body": "§Y期满续聘或礼送§!\n• 同派续聘须重新满足来源资格。\n• 续聘费用：§R75外交点§!。\n• 续聘费用：§R半年国家收入§!。\n• 同派续聘§G不重复五年磨合§!。\n• 礼送归国§G无国内惩罚§!。\n• 仍存在的来源国对本国好感：§G+25§!。\n\n§Y提前逐客的代价§!\n• 入口：§Y提前逐客§!独立确认操作。\n• 稳定度：§R-1§!。\n• 来源国对本国：§R十年-100好感§!。\n• 正式同派礼教国对本国：§R十年-25好感§!。",
+      "links": [
+        {
+          "label": "下一页：失信与扶正",
+          "target": "guest_contract_page3"
+        },
+        {
+          "label": "上一页",
+          "target": "guest_contract"
+        }
+      ],
+      "status": "lijiao",
+      "event_id": "zhx_guide.79",
+      "source_page": "guest_contract",
+      "part": 2,
+      "parts": 3
+    },
+    {
+      "key": "guest_contract_page3",
+      "title": "宾学：二十年约与五年磨合（3/3）",
+      "category": "lijiao",
+      "parent": "religion",
+      "body": "§Y失信与扶正§!\n• §Y失信于诸子§!持续§B十年§!。\n• 外交声誉：§R-1§!。\n• 稳定度花费：§R+10%§!。\n• 期间§R不能再延请学派§!。\n• 正式扶正宾学§G不按提前逐客惩罚§!。",
+      "links": [
+        {
+          "label": "上一页",
+          "target": "guest_contract_page2"
+        }
+      ],
+      "status": "lijiao",
+      "event_id": "zhx_guide.80",
+      "source_page": "guest_contract",
+      "part": 3,
+      "parts": 3
+    },
+    {
+      "key": "reform",
+      "title": "更张国论：先建立新学根基（1/2）",
+      "category": "lijiao",
+      "parent": "religion",
+      "body": "§Y更张国论：启动条件§!\n• 入口：§Y更张国论§!决议。\n• 本国须§B和平§!。\n• 稳定度§B至少0§!。\n• 首都由§B本国控制§!。\n• §R没有进行中的更张或冷却§!。\n\n§Y新学根基：两者至少其一§!\n• 境内§B未遭逐学的同派学宫§!。\n• 或§B有效的同派宾学§!。\n• 已有宾学时，§R只能以该家为更张目标§!。\n• 仅靠宾学，剩余驻留须§B超过完整五年§!。\n• 恰好五年须先续聘。",
+      "links": [
+        {
+          "label": "下一页：五年培植",
+          "target": "reform_page2"
+        }
+      ],
+      "status": "lijiao",
+      "event_id": "zhx_guide.34",
+      "source_page": "reform",
+      "part": 1,
+      "parts": 2
+    },
+    {
+      "key": "reform_page2",
+      "title": "更张国论：先建立新学根基（2/2）",
+      "category": "lijiao",
+      "parent": "religion",
+      "body": "§Y五年培植§!\n• 全国叛乱度：§R+1§!。\n• 稳定度花费：§R+15%§!。\n• 顾问花费：§R+15%§!。\n• 期间§R不能新邀宾学§!。\n• 期间§R不能提出新请辩§!。\n\n§Y根基与扶正§!\n• 培植期间须保留§B至少一个有效根基§!。\n• 宾学离去，仍有同派学宫则可继续。\n• 根基全部失去：§R改革失败§!。\n• 五年后须等§B天下公议空闲§!，再正式扶正。",
+      "links": [
+        {
+          "label": "上一页",
+          "target": "reform"
+        },
+        {
+          "label": "扶正、过渡与失败结算",
+          "target": "reform_result"
+        }
+      ],
+      "status": "lijiao",
+      "event_id": "zhx_guide.81",
+      "source_page": "reform",
+      "part": 2,
+      "parts": 2
+    },
+    {
+      "key": "reform_result",
+      "title": "更张以后：把新论真正推行下去（1/3）",
+      "category": "lijiao",
+      "parent": "religion",
+      "body": "§Y正式扶正§!\n• 稳定度：§R-1§!。\n• 威望：§R-25§!。\n• 新派践履重置为§B15§!。\n• 旧学保留第二徽章§B十年§!。\n• 旧学只保护同派学宫，§R不提供宾学收益§!。\n\n§Y十年新旧相攻§!\n• 全国叛乱度：§R+2§!。\n• 稳定度花费：§R+25%§!。\n• 治理容量：§R-10%§!。\n• 国家税收：§R-10%§!。\n• 人力恢复：§R-10%§!。",
+      "links": [
+        {
+          "label": "下一页：成功条件：到期同时满足",
+          "target": "reform_result_page2"
+        }
+      ],
+      "status": "lijiao",
+      "event_id": "zhx_guide.35",
+      "source_page": "reform_result",
+      "part": 1,
+      "parts": 3
+    },
+    {
+      "key": "reform_result_page2",
+      "title": "更张以后：把新论真正推行下去（2/3）",
+      "category": "lijiao",
+      "parent": "religion",
+      "body": "§Y成功条件：到期同时满足§!\n• 新派践履§B至少50§!。\n• 稳定度§B至少1§!。\n\n§Y十年新政既定§!\n• 全国叛乱度：§G-1§!。\n• 稳定度花费：§G-10%§!。\n• 改革进度增长：§G+15%§!。\n• 顾问花费：§G-10%§!。",
+      "links": [
+        {
+          "label": "下一页：平稳结束或强推",
+          "target": "reform_result_page3"
+        },
+        {
+          "label": "上一页",
+          "target": "reform_result"
+        }
+      ],
+      "status": "lijiao",
+      "event_id": "zhx_guide.82",
+      "source_page": "reform_result",
+      "part": 2,
+      "parts": 3
+    },
+    {
+      "key": "reform_result_page3",
+      "title": "更张以后：把新论真正推行下去（3/3）",
+      "category": "lijiao",
+      "parent": "religion",
+      "body": "§Y平稳结束或强推§!\n• 践履§B至少25§!但未达成功条件：结束，无额外奖励。\n• 践履§B低于25§!：可花§R1稳定§!强推§B五年§!。\n• 也可恢复旧学，旧派践履设为§B25§!。\n\n§Y更张冷却§!\n• 恢复旧学：§R十五年冷却§!，并承受§Y朝令夕改§!惩罚。\n• 正常结束：§R十年更张冷却§!。",
+      "links": [
+        {
+          "label": "上一页",
+          "target": "reform_result_page2"
+        }
+      ],
+      "status": "lijiao",
+      "event_id": "zhx_guide.83",
+      "source_page": "reform_result",
+      "part": 3,
+      "parts": 3
+    },
+    {
+      "key": "academy",
+      "title": "学宫：天下学统，寄于一城",
+      "category": "academy",
+      "parent": "home",
+      "body": "§Y一座有名字的思想机构§!\n• §Y学宫§!有固定专名与学派，显示为省份永久修正。\n• 无论谁统治，都提供地方教育收益。\n• 易主和迁徙不把它变成另一种省份宗教。\n§Y礼教国家的管理取舍§!\n• §Y主学派学宫§!：提供国家协同。\n• §Y未受保护的异派学宫§!：产生思想张力。\n• §Y容忍§!保留收益，同时承受张力。\n• §Y逐学§!有国内代价、外交反应与迁徙后果。\n§Y通用规则与名录§!\n• 名录只列§B1444年开局驻地§!。\n• 实际位置：查看§Y省份修正§!与§Y迁徙通知§!。",
+      "links": [
+        {
+          "label": "地方收益与国家协同",
+          "target": "synergy"
+        },
+        {
+          "label": "思想张力",
+          "target": "tension"
+        },
+        {
+          "label": "逐学、庇护与流散",
+          "target": "expulsion"
+        },
+        {
+          "label": "十二宫开局名录",
+          "target": "catalog_a"
+        }
+      ],
+      "status": "academy",
+      "event_id": "zhx_guide.36",
+      "source_page": "academy",
+      "part": 1,
+      "parts": 1
+    },
+    {
+      "key": "synergy",
+      "title": "地方收益与国家协同（1/4）",
+      "category": "academy",
+      "parent": "academy",
+      "body": "§Y所有学宫的地方收益§!\n• 本地发展成本：§G-5%§!。\n• 本地思潮传播：§G+15%§!。\n• 上述收益不要求统治者奉行礼教。\n\n§Y六家的地方特色§!\n• 儒家：本地税收§G+10%§!。\n• 法家：本地治理成本§G-10%§!。\n• 墨家：本地建造成本§G-10%§!。\n• 道家：本地叛乱度§G-1§!。\n• 兵家：本地人力§G+15%§!。\n• 纵横家：本地贸易力量§G+15%§!。",
+      "links": [
+        {
+          "label": "下一页：国家协同条件",
+          "target": "synergy_page2"
+        }
+      ],
+      "status": "academy",
+      "event_id": "zhx_guide.37",
+      "source_page": "synergy",
+      "part": 1,
+      "parts": 4
+    },
+    {
+      "key": "synergy_page2",
+      "title": "地方收益与国家协同（2/4）",
+      "category": "academy",
+      "parent": "academy",
+      "body": "§Y国家协同条件§!\n• 本国须为§B礼教国§!。\n• 至少持有§B一座主学派学宫§!。\n• 同派多座学宫§R不叠加国家协同§!。\n• 第二学派只保护对应学宫，§R不另授国家协同§!。\n\n§Y儒家国家协同§!\n• 顾问花费：§G-2.5%§!。\n• 稳定度花费：§G-2.5%§!。\n\n§Y法家国家协同§!\n• 每月自治：§G-0.025§!。\n• 造核花费：§G-2.5%§!。",
+      "links": [
+        {
+          "label": "下一页：墨家国家协同",
+          "target": "synergy_page3"
+        },
+        {
+          "label": "上一页",
+          "target": "synergy"
+        }
+      ],
+      "status": "academy",
+      "event_id": "zhx_guide.84",
+      "source_page": "synergy",
+      "part": 2,
+      "parts": 4
+    },
+    {
+      "key": "synergy_page3",
+      "title": "地方收益与国家协同（3/4）",
+      "category": "academy",
+      "parent": "academy",
+      "body": "§Y墨家国家协同§!\n• 要塞维护费：§G-5%§!。\n• 要塞防御：§G+5%§!。\n\n§Y道家国家协同§!\n• 全国叛乱度：§G-0.5§!。\n• 每月厌战：§G-0.01§!。\n\n§Y兵家国家协同§!\n• 人力恢复：§G+5%§!。\n• 陆军传统衰减：§G-0.5个百分点§!。",
+      "links": [
+        {
+          "label": "下一页：纵横家国家协同",
+          "target": "synergy_page4"
+        },
+        {
+          "label": "上一页",
+          "target": "synergy_page2"
+        }
+      ],
+      "status": "academy",
+      "event_id": "zhx_guide.85",
+      "source_page": "synergy",
+      "part": 3,
+      "parts": 4
+    },
+    {
+      "key": "synergy_page4",
+      "title": "地方收益与国家协同（4/4）",
+      "category": "academy",
+      "parent": "academy",
+      "body": "§Y纵横家国家协同§!\n• 改善关系：§G+10%§!。\n• 外交声誉：§G+0.25§!。",
+      "links": [
+        {
+          "label": "上一页",
+          "target": "synergy_page3"
+        }
+      ],
+      "status": "academy",
+      "event_id": "zhx_guide.86",
+      "source_page": "synergy",
+      "part": 4,
+      "parts": 4
+    },
+    {
+      "key": "tension",
+      "title": "思想张力：按学派种类计数（1/3）",
+      "category": "academy",
+      "parent": "academy",
+      "body": "§Y如何计算思想张力§!\n• 仅礼教国家计算§Y思想张力§!。\n• 主学派和第二学派保护对应学宫。\n• 未受保护的学宫按§B不同学派种类§!计数。\n• 同一异派有多座学宫，也只算§B一种§!。\n• 入口：悬停§Y宗教页张力条§!，查看责任学宫。\n\n§Y一种未受保护异派§!\n• 稳定度花费：§R+15%§!。\n• 全国叛乱度：§R+0.5§!。\n• 治理容量：§R-5%§!。\n• 分离主义：§R+2年§!。",
+      "links": [
+        {
+          "label": "下一页：两种未受保护异派",
+          "target": "tension_page2"
+        }
+      ],
+      "status": "academy",
+      "event_id": "zhx_guide.38",
+      "source_page": "tension",
+      "part": 1,
+      "parts": 3
+    },
+    {
+      "key": "tension_page2",
+      "title": "思想张力：按学派种类计数（2/3）",
+      "category": "academy",
+      "parent": "academy",
+      "body": "§Y两种未受保护异派§!\n• 稳定度花费：§R+30%§!。\n• 全国叛乱度：§R+1.5§!。\n• 治理容量：§R-10%§!。\n• 分离主义：§R+5年§!。\n\n§Y三种及以上：第三档封顶§!\n• 稳定度花费：§R+50%§!。\n• 全国叛乱度：§R+3§!。\n• 治理容量：§R-20%§!。\n• 分离主义：§R+10年§!。",
+      "links": [
+        {
+          "label": "下一页：如何改变张力",
+          "target": "tension_page3"
+        },
+        {
+          "label": "上一页",
+          "target": "tension"
+        }
+      ],
+      "status": "academy",
+      "event_id": "zhx_guide.87",
+      "source_page": "tension",
+      "part": 2,
+      "parts": 3
+    },
+    {
+      "key": "tension_page3",
+      "title": "思想张力：按学派种类计数（3/3）",
+      "category": "academy",
+      "parent": "academy",
+      "body": "§Y如何改变张力§!\n• 容忍：保留地方收益，同时承受张力。\n• 邀请对应宾学、改奉该家或学宫迁走，会改变计数。\n• 非礼教国保留地方收益，不计算国家协同与张力。",
+      "links": [
+        {
+          "label": "上一页",
+          "target": "tension_page2"
+        },
+        {
+          "label": "延请第二学派",
+          "target": "guest"
+        }
+      ],
+      "status": "academy",
+      "event_id": "zhx_guide.88",
+      "source_page": "tension",
+      "part": 3,
+      "parts": 3
+    },
+    {
+      "key": "expulsion",
+      "title": "逐学：先付代价，再等三年（1/3）",
+      "category": "academy",
+      "parent": "academy",
+      "body": "§Y逐学条件§!\n• 入口：§Y处置异派学宫§!决议，选择未受保护学宫。\n• 本国须§B和平§!。\n• 稳定度§B至少1§!。\n• 行政点§B至少30§!。\n• 每次只能选§B一座学宫§!。\n\n§Y颁令代价§!\n• 行政点：§R-30§!。\n• 稳定度：§R-1§!。\n• 威望：§R-5§!。",
+      "links": [
+        {
+          "label": "下一页：三年内：国家压力",
+          "target": "expulsion_page2"
+        }
+      ],
+      "status": "academy",
+      "event_id": "zhx_guide.39",
+      "source_page": "expulsion",
+      "part": 1,
+      "parts": 3
+    },
+    {
+      "key": "expulsion_page2",
+      "title": "逐学：先付代价，再等三年（2/3）",
+      "category": "academy",
+      "parent": "academy",
+      "body": "§Y三年内：国家压力§!\n• 全国叛乱度：§R+0.5§!。\n• 稳定度花费：§R+5%§!。\n\n§Y三年内：目标省份压力§!\n• 叛乱度：§R+3§!。\n• 发展成本：§R+5%§!。\n• 思潮传播：§R-10%§!。\n• 税收：§R-5%§!。\n• 生产：§R-5%§!。\n• 人力：§R-5%§!。",
+      "links": [
+        {
+          "label": "下一页：外交反应",
+          "target": "expulsion_page3"
+        },
+        {
+          "label": "上一页",
+          "target": "expulsion"
+        }
+      ],
+      "status": "academy",
+      "event_id": "zhx_guide.89",
+      "source_page": "expulsion",
+      "part": 2,
+      "parts": 3
+    },
+    {
+      "key": "expulsion_page3",
+      "title": "逐学：先付代价，再等三年（3/3）",
+      "category": "academy",
+      "parent": "academy",
+      "body": "§Y外交反应§!\n• 奉行或已延请该派的礼教国，对逐学国好感§R-50§!。\n• 上述国家对逐学国增加§R固定10侵略扩张§!。\n\n§Y到期、撤令与容忍§!\n• 三年到期已获主学或第二学派保护：留在原址。\n• 仍未受保护：学宫离境。\n• §Y撤销逐学令§!可提前保住学宫。\n• 主动撤令后§R十年不能再逐学§!。\n• 关闭处置名册即继续容忍，不自动驱逐。",
+      "links": [
+        {
+          "label": "上一页",
+          "target": "expulsion_page2"
+        },
+        {
+          "label": "庇护、迁徙与遗址",
+          "target": "refuge"
+        }
+      ],
+      "status": "academy",
+      "event_id": "zhx_guide.90",
+      "source_page": "expulsion",
+      "part": 3,
+      "parts": 3
+    },
+    {
+      "key": "refuge",
+      "title": "诸生流散，学统未绝（1/2）",
+      "category": "academy",
+      "parent": "academy",
+      "body": "§Y寻找庇护者：依次考虑§!\n• 先找§B同主学派国家§!。\n• 再找§B已延请该派的国家§!。\n• 最后找对逐学国好感§B至少50§!的其他礼教国。\n• 受邀国家可接受或拒绝。\n\n§Y迁入城市：资格与优先级§!\n• 城市§R不能有活跃学宫、遗址或逐学压制§!。\n• 优先发展度§B至少20§!。\n• 其次发展度§B至少12§!。\n• 最后选择其他合格城市。",
+      "links": [
+        {
+          "label": "下一页：新驻地与旧址",
+          "target": "refuge_page2"
+        }
+      ],
+      "status": "academy",
+      "event_id": "zhx_guide.40",
+      "source_page": "refuge",
+      "part": 1,
+      "parts": 2
+    },
+    {
+      "key": "refuge_page2",
+      "title": "诸生流散，学统未绝（2/2）",
+      "category": "academy",
+      "parent": "academy",
+      "body": "§Y新驻地与旧址§!\n• 迁入后保留原有§Y专名与学派§!。\n• 原址留下§Y具名遗址§!。\n• 遗址思潮传播：§G+5%§!。\n\n§Y流散与复兴§!\n• 拒绝或无人接纳：进入§Y流散§!，不删除学统。\n• 天子每年有§B10%概率§!重试庇护。\n• 存在合格城市，也不保证某年必定复兴。\n• 开局名录不随迁徙更新；以实际§Y省份修正§!为准。",
+      "links": [
+        {
+          "label": "上一页",
+          "target": "refuge"
+        }
+      ],
+      "status": "academy",
+      "event_id": "zhx_guide.91",
+      "source_page": "refuge",
+      "part": 2,
+      "parts": 2
+    },
+    {
+      "key": "catalog_a",
+      "title": "十二宫名录：儒法墨",
+      "category": "academy",
+      "parent": "academy",
+      "body": "§Y§!§B1444§!§Y年开局驻地§!\n• §Y崇礼学宫§!（§Y儒家§!） → §Y曲阜§!\n• §Y明伦学宫§!（§Y儒家§!） → §Y洛阳§!\n• §Y壹法学宫§!（§Y法家§!） → §Y长安§!\n• §Y循名学宫§!（§Y法家§!） → §Y成都§!\n• §Y兼爱学宫§!（§Y墨家§!） → §Y归德§!\n• §Y尚同学宫§!（§Y墨家§!） → §Y永平§!\n\n§Y实际位置以战役为准§!\n• 易主保留专名；迁走后原址留下遗址。\n• 请查看§Y省份修正§!或§Y落脚通知§!核对当前位置。",
+      "links": [
+        {
+          "label": "下一页：道兵纵横",
+          "target": "catalog_b"
+        }
+      ],
+      "status": "academy",
+      "event_id": "zhx_guide.41",
+      "source_page": "catalog_a",
+      "part": 1,
+      "parts": 1
+    },
+    {
+      "key": "catalog_b",
+      "title": "十二宫名录：道兵纵横",
+      "category": "academy",
+      "parent": "academy",
+      "body": "§Y§!§B1444§!§Y年开局驻地§!\n• §Y玄同学宫§!（§Y道家§!） → §Y长沙§!\n• §Y抱朴学宫§!（§Y道家§!） → §Y广信§!\n• §Y庙算学宫§!（§Y兵家§!） → §Y临淄§!\n• §Y制胜学宫§!（§Y兵家§!） → §Y江宁§!\n• §Y捭阖学宫§!（§Y纵横家§!） → §Y保定§!\n• §Y连衡学宫§!（§Y纵横家§!） → §Y昌国§!\n\n§Y实际位置以战役为准§!\n• 易主保留专名；迁走后原址留下遗址。\n• 请查看§Y省份修正§!或§Y落脚通知§!核对当前位置。",
+      "links": [
+        {
+          "label": "上一页：儒法墨",
+          "target": "catalog_a"
+        }
+      ],
+      "status": "academy",
+      "event_id": "zhx_guide.42",
+      "source_page": "catalog_b",
+      "part": 1,
+      "parts": 1
+    }
+  ],
+  "readability": {
+    "max_body_display_lines": 13,
+    "estimated_fullwidth_columns": 28,
+    "colors": {
+      "Y": "机制、入口、小标题；有取舍的制度变化",
+      "B": "门槛、期限与中性数值",
+      "G": "实际收益",
+      "R": "代价、反噬与禁止条件"
+    },
+    "one_effect_per_line": true
+  }
+}

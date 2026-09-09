@@ -1,0 +1,12 @@
+# Open from a player action without advancing the game date.
+zhx_open_mod_guide = {
+    if = {
+        limit = {
+            ai = no
+            NOT = { has_country_flag = zhx_mod_guide_open }
+            NOT = { has_country_flag = zhx_opening_background_pending }
+        }
+        set_country_flag = zhx_mod_guide_open
+        country_event = { id = zhx_guide.1 }
+    }
+}

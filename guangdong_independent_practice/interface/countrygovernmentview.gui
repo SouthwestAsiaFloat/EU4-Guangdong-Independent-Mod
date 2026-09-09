@@ -949,6 +949,16 @@ guiTypes = {
 
         # Zhou titles: direct children, mutually exclusive with republic overlays.
         instantTextBoxType = {
+            name = "zhx_feudatory_gui_zi"
+            position = { x = 24 y = 234 }
+            font = "vic_22"
+            text = ""
+            maxWidth = 335
+            maxHeight = 26
+            format = centre
+            scripted = yes
+        }
+        instantTextBoxType = {
             name = "zhx_feudatory_gui_bo"
             position = { x = 24 y = 234 }
             font = "vic_22"

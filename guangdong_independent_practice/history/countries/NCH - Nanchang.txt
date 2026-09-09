@@ -7,3 +7,43 @@ religion = confucianism
 primary_culture = gdd_gan
 capital = 683 # Nanchang
 fixed_capital = 683
+
+# ZHX_CHU_OPENING_RULER_BEGIN
+1444.11.11 = {
+    monarch = {
+        name = "¨X"
+        dynasty = "øSlš"
+        birth_date = 1398.1.1
+        adm = 2
+        dip = 3
+        mil = 4
+        culture = gdd_gan
+        religion = confucianism
+    }
+    heir = {
+        name = ")YœR"
+        dynasty = "øSlš"
+        birth_date = 1422.1.1
+        death_date = 1821.1.1
+        adm = 2
+        dip = 1
+        mil = 6
+        claim = 70
+        culture = gdd_gan
+        religion = confucianism
+    }
+    queen = {
+        name = "1r‰Q"
+        dynasty = "Šq"
+        birth_date = 1401.1.1
+        death_date = 1821.1.1
+        adm = 3
+        dip = 3
+        mil = 3
+        female = yes
+        country_of_origin = CHC
+        culture = gdd_gan
+        religion = confucianism
+    }
+}
+# ZHX_CHU_OPENING_RULER_END

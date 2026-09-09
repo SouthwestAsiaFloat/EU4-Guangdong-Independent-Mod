@@ -1,0 +1,112 @@
+[
+  {
+    "tag": "chc",
+    "prompt": "Use case: historical-scene. One standalone EU4 event painting. Traditional historical oil painting with visible fine brushwork and aged canvas texture, realistic medieval Chinese people and architecture, muted ochre, umber, deep blue-green, restrained cinematic light. China in alternate-history 1444 where Zhou and Chu feudal states survive. No fantasy effects, no modern objects, no western architecture, no text, no captions, no border or watermark. Wide landscape 3:1 panoramic composition, key faces and storytelling in central horizontal band so a 512x132 crop remains readable. Medium-small figures; environmental historical narrative, not a portrait.\nJingzhou Chu ducal audience hall. A young Chinese duke in dark ceremonial robes stands near an ancestral bronze vessel; empty ceremonial seats of powerful relatives face him, attendants bring rolled maps and sealed letters. Through open timber columns see misty marshes, river boats and distant tiled roofs. A once-mighty state fragmented among kin; solemn late-autumn daylight, dignity and restrained isolation. No imperial dragon throne.",
+    "source": "/Users/xinanyapiao/.codex/generated_images/01a07965-9899-7902-b942-8341a7713c2d/exec-146afe56-e095-4794-87f2-fb3ab62dc618.png",
+    "preserved_source": "tools/assets/event_pictures/chu_opening_v1/chc_opening_source.png",
+    "sha256": "c2f68eaaa0367ac40653ff1c988dd995489bbd2b18b23912dccef6ccdefad1ec",
+    "size": [
+      2172,
+      724
+    ]
+  },
+  {
+    "tag": "csa",
+    "prompt": "Use case: historical-scene. One standalone EU4 event painting. Traditional historical oil painting with visible fine brushwork and aged canvas texture, realistic medieval Chinese people and architecture, muted ochre, umber, deep blue-green, restrained cinematic light. China in alternate-history 1444 where Zhou and Chu feudal states survive. No fantasy effects, no modern objects, no western architecture, no text, no captions, no border or watermark. Wide landscape 3:1 panoramic composition, key faces and storytelling in central horizontal band so a 512x132 crop remains readable. Medium-small figures; environmental historical narrative, not a portrait.\nChangsha Xiang river camp. A young princely commander in practical lamellar armor over robes receives a court envoy with a tied scroll at an open riverside pavilion. Veteran soldiers and grain sacks in foreground, boats and cultivated southern hills beyond. The commander owes allegiance to his elder brother but commands his own army. Quiet formal negotiation, banner staffs without readable emblems, soft morning haze.",
+    "source": "/Users/xinanyapiao/.codex/generated_images/01a07965-9899-7902-b942-8341a7713c2d/exec-cf132d2a-ea32-407b-9067-e708ff8a1fb0.png",
+    "preserved_source": "tools/assets/event_pictures/chu_opening_v1/csa_opening_source.png",
+    "sha256": "2f2da990baf299f84bc26c2cd6938543c8b40d63dab6a85940cc689590d866d8",
+    "size": [
+      2172,
+      724
+    ]
+  },
+  {
+    "tag": "hng",
+    "prompt": "Use case: historical-scene. One standalone EU4 event painting. Traditional historical oil painting with visible fine brushwork and aged canvas texture, realistic medieval Chinese people and architecture, muted ochre, umber, deep blue-green, restrained cinematic light. China in alternate-history 1444 where Zhou and Chu feudal states survive. No fantasy effects, no modern objects, no western architecture, no text, no captions, no border or watermark. Wide landscape 3:1 panoramic composition, key faces and storytelling in central horizontal band so a 512x132 crop remains readable. Medium-small figures; environmental historical narrative, not a portrait.\nHengyang beneath distant Heng mountain ridges. Soldiers returned from southern campaigns cultivate fields beside an established Chinese military camp; a young commander and officer examine a northbound dispatch while packhorses and a mountain road suggest the southern frontier. Families and veterans turning a garrison into a home. Muted green valley, low autumn sun, reflective atmosphere.",
+    "source": "/Users/xinanyapiao/.codex/generated_images/01a07965-9899-7902-b942-8341a7713c2d/exec-99c36d60-300d-4773-bda4-a27fcb770737.png",
+    "preserved_source": "tools/assets/event_pictures/chu_opening_v1/hng_opening_source.png",
+    "sha256": "c4aa2289d90c6ad407167283b0eaa8609ad0137c3a5421b7bd99de407b4f9063",
+    "size": [
+      2172,
+      724
+    ]
+  },
+  {
+    "tag": "zhu",
+    "prompt": "Use case: historical-scene. One standalone EU4 event painting. Traditional historical oil painting with visible fine brushwork and aged canvas texture, realistic medieval Chinese people and architecture, muted ochre, umber, deep blue-green, restrained cinematic light. China in alternate-history 1444 where Zhou and Chu feudal states survive. No fantasy effects, no modern objects, no western architecture, no text, no captions, no border or watermark. Wide landscape 3:1 panoramic composition, key faces and storytelling in central horizontal band so a 512x132 crop remains readable. Medium-small figures; environmental historical narrative, not a portrait.\nXingguo newly established feudal county. Former expeditionary troops build timber homes beside weathered campaign tents; a plain-robed young lord and local elders compare land scrolls near a grain store, guards and farmers wait. The army that returned after the previous duke died is settling permanently. Yangtze-region Chinese hills, modest city gate distant, grounded civilian-military tension.",
+    "source": "/Users/xinanyapiao/.codex/generated_images/01a07965-9899-7902-b942-8341a7713c2d/exec-688f3325-4896-4e63-bc1a-7ba7ccd56f6f.png",
+    "preserved_source": "tools/assets/event_pictures/chu_opening_v1/zhu_opening_source.png",
+    "sha256": "834cc935b00647f791fd76f98269efd0880cb090955fad4bf26adb184870d23a",
+    "size": [
+      2172,
+      724
+    ]
+  },
+  {
+    "tag": "qvn",
+    "prompt": "Use case: historical-scene. One standalone EU4 event painting. Traditional historical oil painting with visible fine brushwork and aged canvas texture, realistic medieval Chinese people and architecture, muted ochre, umber, deep blue-green, restrained cinematic light. China in alternate-history 1444 where Zhou and Chu feudal states survive. No fantasy effects, no modern objects, no western architecture, no text, no captions, no border or watermark. Wide landscape 3:1 panoramic composition, key faces and storytelling in central horizontal band so a 512x132 crop remains readable. Medium-small figures; environmental historical narrative, not a portrait.\nJingmen fortified northern gateway near Jingzhou. A princely lord in dark robes observes a small ceremonial gift convoy leaving the gate toward his elder brother's capital, while an officer counts a formation of sentries atop the wall. Close diplomacy and mistrust among relatives. Chinese brick rampart and timber gate tower, broad southern plain, cold golden dawn, no active battle.",
+    "source": "/Users/xinanyapiao/.codex/generated_images/01a07965-9899-7902-b942-8341a7713c2d/exec-aa357c41-e85e-4aa6-b65a-4c3bccfabe51.png",
+    "preserved_source": "tools/assets/event_pictures/chu_opening_v1/qvn_opening_source.png",
+    "sha256": "5aa2641b5794d14420e32fce50153312dc2a38c371fd020f072f3c2f515e594c",
+    "size": [
+      2172,
+      724
+    ]
+  },
+  {
+    "tag": "acg",
+    "prompt": "Use case: historical-scene. One standalone EU4 event painting. Traditional historical oil painting with visible fine brushwork and aged canvas texture, realistic medieval Chinese people and architecture, muted ochre, umber, deep blue-green, restrained cinematic light. China in alternate-history 1444 where Zhou and Chu feudal states survive. No fantasy effects, no modern objects, no western architecture, no text, no captions, no border or watermark. Wide landscape 3:1 panoramic composition, key faces and storytelling in central horizontal band so a 512x132 crop remains readable. Medium-small figures; environmental historical narrative, not a portrait.\nAncheng in Jiangxi, newly conquered town. In a modest appropriated Chinese administrative hall an older ambitious lord, younger heir, and retainers receive obeisance around a map table. Beyond open door old local elders clutch land deeds and townspeople pass beneath a different garrison's plain banners. Uncle aspiring to grand-ducal authority in distant territory; rich dark robes but no emperor crown, oblique afternoon light.",
+    "source": "/Users/xinanyapiao/.codex/generated_images/01a07965-9899-7902-b942-8341a7713c2d/exec-b7f7b46b-1692-45da-b955-435c4747a628.png",
+    "preserved_source": "tools/assets/event_pictures/chu_opening_v1/acg_opening_source.png",
+    "sha256": "ae43a5ceeca72a3c450773513877699c9c6e9a9d048625a2d2fbc8638ca0500e",
+    "size": [
+      2172,
+      724
+    ]
+  },
+  {
+    "tag": "egu",
+    "prompt": "Use case: historical-scene. One standalone EU4 event painting. Traditional historical oil painting with visible fine brushwork and aged canvas texture, realistic medieval Chinese people and architecture, muted ochre, umber, deep blue-green, restrained cinematic light. China in alternate-history 1444 where Zhou and Chu feudal states survive. No fantasy effects, no modern objects, no western architecture, no text, no captions, no border or watermark. Wide landscape 3:1 panoramic composition, key faces and storytelling in central horizontal band so a 512x132 crop remains readable. Medium-small figures; environmental historical narrative, not a portrait.\nWuchang riverside ancestral court after failed rebellion. Young lord of ancient Ji clan stands formally beside ritual bronze vessels while a stern outside-appointed Chu minister sits at the working desk, guards at door; river and moored war boats beyond lattice openings. Ancient ceremonial honor and constrained political authority, tension in gestures, restrained dusk, no blood or assassination scene.",
+    "source": "/Users/xinanyapiao/.codex/generated_images/01a07965-9899-7902-b942-8341a7713c2d/exec-e1dd469a-ebb9-4b30-91bf-1f8ac1d76cc4.png",
+    "preserved_source": "tools/assets/event_pictures/chu_opening_v1/egu_opening_source.png",
+    "sha256": "f8c9dacd314b49ba496b6bc4beb015da7ba5bf09676c88f3dbb2df9fa7bfce06",
+    "size": [
+      2172,
+      724
+    ]
+  },
+  {
+    "tag": "nch",
+    "prompt": "Use case: historical-scene. One standalone EU4 event painting. Traditional historical oil painting with visible fine brushwork and aged canvas texture, realistic medieval Chinese people and architecture, muted ochre, umber, deep blue-green, restrained cinematic light. China in alternate-history 1444 where Zhou and Chu feudal states survive. No fantasy effects, no modern objects, no western architecture, no text, no captions, no border or watermark. Wide landscape 3:1 panoramic composition, key faces and storytelling in central horizontal band so a 512x132 crop remains readable. Medium-small figures; environmental historical narrative, not a portrait.\nNanchang on the Gan River in medieval China. A local lord and legal clerks on a timber riverside terrace study tied border reports as merchant cargo boats unload grain below. Wide Gan river, misty Jiangxi shoreline, city roofs and distant signal towers. A threatened but resourceful trading capital hemmed by neighboring powers, clear autumn light. Entirely Chinese setting.",
+    "source": "/Users/xinanyapiao/.codex/generated_images/01a07965-9899-7902-b942-8341a7713c2d/exec-5138c359-7317-43b5-a230-9db45db4a0aa.png",
+    "preserved_source": "tools/assets/event_pictures/chu_opening_v1/nch_opening_source.png",
+    "sha256": "470bceebf1a9e51c1216eb4068a3d9a713f9985b9b4cd4797d694144f87c12ce",
+    "size": [
+      2172,
+      724
+    ]
+  },
+  {
+    "tag": "lch",
+    "prompt": "Use case: historical-scene. One standalone EU4 event painting. Traditional historical oil painting with visible fine brushwork and aged canvas texture, realistic medieval Chinese people and architecture, muted ochre, umber, deep blue-green, restrained cinematic light. China in alternate-history 1444 where Zhou and Chu feudal states survive. No fantasy effects, no modern objects, no western architecture, no text, no captions, no border or watermark. Wide landscape 3:1 panoramic composition, key faces and storytelling in central horizontal band so a 512x132 crop remains readable. Medium-small figures; environmental historical narrative, not a portrait.\nLinchuan in Jiangxi. A weary ruler and returning envoy at a quiet official courtyard overlooking fields and rolling mountain foothills, unanswered petition scroll and old border map on a low wooden desk. Refugee carts pass the outer gate under discreet guards; lost Ancheng territory and silence from Zhou court. Thoughtful melancholy, late daylight, no burning city.",
+    "source": "/Users/xinanyapiao/.codex/generated_images/01a07965-9899-7902-b942-8341a7713c2d/exec-a1d4cc80-0e49-4ffd-8f1f-234d5f617eed.png",
+    "preserved_source": "tools/assets/event_pictures/chu_opening_v1/lch_opening_source.png",
+    "sha256": "10c1f6f65d37827b3b1f1f1992f0a878c5fa0e98d228726d2813985e513903f2",
+    "size": [
+      2172,
+      724
+    ]
+  },
+  {
+    "tag": "tsf",
+    "prompt": "Use case: historical-scene. One standalone EU4 event painting. Traditional historical oil painting with visible fine brushwork and aged canvas texture, realistic medieval Chinese people and architecture, muted ochre, umber, deep blue-green, restrained cinematic light. China in alternate-history 1444 where Zhou and Chu feudal states survive. No fantasy effects, no modern objects, no western architecture, no text, no captions, no border or watermark. Wide landscape 3:1 panoramic composition, key faces and storytelling in central horizontal band so a 512x132 crop remains readable. Medium-small figures; environmental historical narrative, not a portrait.\nLonghu Mountain Daoist court in Jiangxi. Imposing yet plausible medieval Chinese Daoist mountain monastery gate amid misty red sandstone peaks. White-haired master in sober Daoist robes stands within shadowed gate, armed temple guards and porters with tribute bundles wait on the stone steps. Small distant civilian attendants, no threatened children, no magic, no glowing effects, no literal supernatural beings. Incense haze and ambiguous solemn authority.",
+    "source": "/Users/xinanyapiao/.codex/generated_images/01a07965-9899-7902-b942-8341a7713c2d/exec-e928e1ab-8a1f-4afd-92ee-57692a09b21e.png",
+    "preserved_source": "tools/assets/event_pictures/chu_opening_v1/tsf_opening_source.png",
+    "sha256": "056f8ff6d7f43eac6dc19610c0d42d60c9e0abe9243639a2353db903c2a3f7e4",
+    "size": [
+      2172,
+      724
+    ]
+  }
+]

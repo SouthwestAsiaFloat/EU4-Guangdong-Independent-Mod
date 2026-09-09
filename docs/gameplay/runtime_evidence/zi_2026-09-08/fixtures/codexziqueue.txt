@@ -1,0 +1,4 @@
+687 = { cede_province = CCH add_core = CCH }
+5347 = { cede_province = CCH add_core = CCH }
+5348 = { cede_province = CCH add_core = CCH }
+CCH = { capital_scope = { add_base_tax = 40 } set_variable = { which = zhx_merit_term value = 50 } }

@@ -1,0 +1,18 @@
+zhx_chu_divided_6 = {
+    global_tax_modifier = -0.30
+    manpower_recovery_speed = -0.30
+    global_prov_trade_power_modifier = -0.30
+}
+zhx_chu_divided_5 = {
+    global_tax_modifier = -0.20
+    manpower_recovery_speed = -0.20
+    global_prov_trade_power_modifier = -0.20
+}
+zhx_chu_divided_4 = {
+    global_tax_modifier = -0.10
+    manpower_recovery_speed = -0.10
+    global_prov_trade_power_modifier = -0.10
+}
+# Native duration marker. The relation-gated triggered modifier below supplies
+# the actual liberty desire, so a later unrelated overlord is not penalised.
+zhx_chu_dispute_memory = { }

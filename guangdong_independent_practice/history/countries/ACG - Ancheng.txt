@@ -1,9 +1,48 @@
 # B72 one-province Ancheng polity, restored from the historical Ancheng marquisate prototype.
 government = monarchy
-add_government_reform = zhx_feudatory_hou_reform
+add_government_reform = zhx_feudatory_bo_reform
 government_rank = 1
 technology_group = chinese
 religion = confucianism
-primary_culture = gdd_gan
+primary_culture = gdd_chu
 capital = 5328
 fixed_capital = 5328
+
+# ZHX_CHU_OPENING_RULER_BEGIN
+1444.11.11 = {
+    monarch = {
+        name = "Ëz¯Q"
+        dynasty = "Šq"
+        birth_date = 1372.1.1
+        adm = 3
+        dip = 2
+        mil = 4
+        culture = gdd_chu
+        religion = confucianism
+    }
+    heir = {
+        name = "N%V"
+        dynasty = "Šq"
+        birth_date = 1408.1.1
+        death_date = 1821.1.1
+        adm = 2
+        dip = 4
+        mil = 2
+        claim = 70
+        culture = gdd_chu
+        religion = confucianism
+    }
+    queen = {
+        name = "ÕqŠk"
+        dynasty = "'k3–"
+        birth_date = 1378.1.1
+        death_date = 1821.1.1
+        adm = 3
+        dip = 3
+        mil = 3
+        female = yes
+        culture = gdd_chu
+        religion = confucianism
+    }
+}
+# ZHX_CHU_OPENING_RULER_END

@@ -1,0 +1,117 @@
+spriteTypes = {
+    spriteType = {
+        name = "zhx_opening_gdd_eventPicture"
+        texturefile = "gfx/event_pictures/zhx_opening/zhx_opening_gdd_eventPicture.dds"
+        alwaystransparent = yes
+    }
+    spriteType = {
+        name = "zhx_opening_gui_eventPicture"
+        texturefile = "gfx/event_pictures/zhx_opening/zhx_opening_gui_eventPicture.dds"
+        alwaystransparent = yes
+    }
+    spriteType = {
+        name = "zhx_opening_czc_eventPicture"
+        texturefile = "gfx/event_pictures/zhx_opening/zhx_opening_czc_eventPicture.dds"
+        alwaystransparent = yes
+    }
+    spriteType = {
+        name = "zhx_opening_hak_eventPicture"
+        texturefile = "gfx/event_pictures/zhx_opening/zhx_opening_hak_eventPicture.dds"
+        alwaystransparent = yes
+    }
+    spriteType = {
+        name = "zhx_opening_nun_eventPicture"
+        texturefile = "gfx/event_pictures/zhx_opening/zhx_opening_nun_eventPicture.dds"
+        alwaystransparent = yes
+    }
+    spriteType = {
+        name = "zhx_opening_tzz_eventPicture"
+        texturefile = "gfx/event_pictures/zhx_opening/zhx_opening_tzz_eventPicture.dds"
+        alwaystransparent = yes
+    }
+    spriteType = {
+        name = "zhx_opening_lil_eventPicture"
+        texturefile = "gfx/event_pictures/zhx_opening/zhx_opening_lil_eventPicture.dds"
+        alwaystransparent = yes
+    }
+    spriteType = {
+        name = "zhx_opening_dai_eventPicture"
+        texturefile = "gfx/event_pictures/zhx_opening/zhx_opening_dai_eventPicture.dds"
+        alwaystransparent = yes
+    }
+    spriteType = {
+        name = "zhx_opening_cde_eventPicture"
+        texturefile = "gfx/event_pictures/zhx_opening/zhx_opening_cde_eventPicture.dds"
+        alwaystransparent = yes
+    }
+    spriteType = {
+        name = "zhx_opening_jjg_eventPicture"
+        texturefile = "gfx/event_pictures/zhx_opening/zhx_opening_jjg_eventPicture.dds"
+        alwaystransparent = yes
+    }
+    spriteType = {
+        name = "zhx_opening_hya_eventPicture"
+        texturefile = "gfx/event_pictures/zhx_opening/zhx_opening_hya_eventPicture.dds"
+        alwaystransparent = yes
+    }
+    spriteType = {
+        name = "zhx_opening_whu_eventPicture"
+        texturefile = "gfx/event_pictures/zhx_opening/zhx_opening_whu_eventPicture.dds"
+        alwaystransparent = yes
+    }
+    spriteType = {
+        name = "zhx_opening_zho_eventPicture"
+        texturefile = "gfx/event_pictures/zhx_opening/zhx_opening_zho_eventPicture.dds"
+        alwaystransparent = yes
+    }
+    spriteType = {
+        name = "zhx_opening_chc_eventPicture"
+        texturefile = "gfx/event_pictures/zhx_opening/zhx_opening_chc_eventPicture.dds"
+        alwaystransparent = yes
+    }
+    spriteType = {
+        name = "zhx_opening_csa_eventPicture"
+        texturefile = "gfx/event_pictures/zhx_opening/zhx_opening_csa_eventPicture.dds"
+        alwaystransparent = yes
+    }
+    spriteType = {
+        name = "zhx_opening_hng_eventPicture"
+        texturefile = "gfx/event_pictures/zhx_opening/zhx_opening_hng_eventPicture.dds"
+        alwaystransparent = yes
+    }
+    spriteType = {
+        name = "zhx_opening_zhu_eventPicture"
+        texturefile = "gfx/event_pictures/zhx_opening/zhx_opening_zhu_eventPicture.dds"
+        alwaystransparent = yes
+    }
+    spriteType = {
+        name = "zhx_opening_qvn_eventPicture"
+        texturefile = "gfx/event_pictures/zhx_opening/zhx_opening_qvn_eventPicture.dds"
+        alwaystransparent = yes
+    }
+    spriteType = {
+        name = "zhx_opening_acg_eventPicture"
+        texturefile = "gfx/event_pictures/zhx_opening/zhx_opening_acg_eventPicture.dds"
+        alwaystransparent = yes
+    }
+    spriteType = {
+        name = "zhx_opening_egu_eventPicture"
+        texturefile = "gfx/event_pictures/zhx_opening/zhx_opening_egu_eventPicture.dds"
+        alwaystransparent = yes
+    }
+    spriteType = {
+        name = "zhx_opening_nch_eventPicture"
+        texturefile = "gfx/event_pictures/zhx_opening/zhx_opening_nch_eventPicture.dds"
+        alwaystransparent = yes
+    }
+    spriteType = {
+        name = "zhx_opening_lch_eventPicture"
+        texturefile = "gfx/event_pictures/zhx_opening/zhx_opening_lch_eventPicture.dds"
+        alwaystransparent = yes
+    }
+    spriteType = {
+        name = "zhx_opening_tsf_eventPicture"
+        texturefile = "gfx/event_pictures/zhx_opening/zhx_opening_tsf_eventPicture.dds"
+        alwaystransparent = yes
+    }
+}

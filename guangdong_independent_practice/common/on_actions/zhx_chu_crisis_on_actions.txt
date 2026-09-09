@@ -1,0 +1,13 @@
+on_startup = { events = { zhx_chu.0 } }
+on_monthly_pulse = { events = { zhx_chu.2 zhx_chu.11 zhx_chu.20 zhx_chu.21 zhx_chu.22 zhx_chu.23 } }
+# Store only country-local state during succession; presentation and cross-
+# country council operations run on the safe delayed event afterwards.
+on_monarch_death = {
+    if = { limit = { has_country_flag = zhx_chu_active NOT = { has_country_flag = zhx_chu_departed } } zhx_chu_record_departure = yes country_event = { id = zhx_chu.2 days = 1 } }
+}
+on_new_monarch = {
+    if = {
+        limit = { has_country_flag = zhx_chu_active NOT = { has_country_flag = zhx_chu_departed } NOT = { has_ruler_flag = zhx_chu_opening_ruler } }
+        zhx_chu_record_departure = yes country_event = { id = zhx_chu.2 days = 1 }
+    }
+}

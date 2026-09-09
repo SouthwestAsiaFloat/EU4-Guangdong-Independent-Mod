@@ -7,3 +7,18 @@ religion = confucianism
 primary_culture = gdd_chu
 capital = 5343
 fixed_capital = 5343
+
+# ZHX_CHU_OPENING_RULER_BEGIN
+1444.11.11 = {
+    monarch = {
+        name = "πetè"
+        dynasty = "äq"
+        birth_date = 1410.1.1
+        adm = 1
+        dip = 3
+        mil = 2
+        culture = gdd_chu
+        religion = confucianism
+    }
+}
+# ZHX_CHU_OPENING_RULER_END

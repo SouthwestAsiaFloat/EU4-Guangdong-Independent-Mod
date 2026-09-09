@@ -1,0 +1,6 @@
+# Generated. The native on_startup event list owns first display.
+# Clicking the story opens the reusable directory synchronously.
+zhx_finish_opening_introduction = {
+    clr_country_flag = zhx_opening_background_pending
+    zhx_open_mod_guide = yes
+}

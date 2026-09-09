@@ -20,12 +20,12 @@ COUNTRY_HISTORY = MOD / "history/countries"
 
 SCHOOL_ORDER = ("ru", "fa", "mo", "dao", "bing", "zongheng")
 SCHOOL_COUNTS = {
-    "ru": 18,
-    "fa": 7,
-    "mo": 11,
-    "dao": 10,
-    "bing": 10,
-    "zongheng": 11,
+    "ru": 14,
+    "fa": 8,
+    "mo": 10,
+    "dao": 16,
+    "bing": 9,
+    "zongheng": 10,
 }
 EXPECTED_TOTAL = 67
 SCHOOL_BINDINGS = {

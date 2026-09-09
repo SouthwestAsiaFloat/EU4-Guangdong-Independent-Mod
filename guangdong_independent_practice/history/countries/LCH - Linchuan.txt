@@ -7,3 +7,42 @@ religion = confucianism
 primary_culture = gdd_gan
 capital = 4980 # Linchuan
 fixed_capital = 4980
+
+# ZHX_CHU_OPENING_RULER_BEGIN
+1444.11.11 = {
+    monarch = {
+        name = "∂RZS"
+        dynasty = "dl"
+        birth_date = 1395.1.1
+        adm = 1
+        dip = 2
+        mil = 3
+        culture = gdd_gan
+        religion = confucianism
+    }
+    heir = {
+        name = "ÅhâR"
+        dynasty = "dl"
+        birth_date = 1421.1.1
+        death_date = 1821.1.1
+        adm = 6
+        dip = 3
+        mil = 1
+        claim = 70
+        culture = gdd_gan
+        religion = confucianism
+    }
+    queen = {
+        name = "pQáë"
+        dynasty = "Fz"
+        birth_date = 1398.1.1
+        death_date = 1821.1.1
+        adm = 3
+        dip = 3
+        mil = 3
+        female = yes
+        culture = gdd_gan
+        religion = confucianism
+    }
+}
+# ZHX_CHU_OPENING_RULER_END

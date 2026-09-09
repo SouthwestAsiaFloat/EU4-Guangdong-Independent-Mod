@@ -9,9 +9,8 @@
     "ru": {
       "flag": "zhx_doctrine_ru",
       "native_school": "zhx_ru_school",
-      "expected_count": 18,
+      "expected_count": 14,
       "tags": [
-        "ACG",
         "CAG",
         "CHN",
         "CZC",
@@ -20,11 +19,8 @@
         "GDD",
         "GUI",
         "GUO",
-        "HNG",
         "JIZ",
-        "LCH",
         "LUU",
-        "NCH",
         "SUI",
         "WVG",
         "XU2",
@@ -34,7 +30,7 @@
     "fa": {
       "flag": "zhx_doctrine_fa",
       "native_school": "zhx_fa_school",
-      "expected_count": 7,
+      "expected_count": 8,
       "tags": [
         "GUN",
         "DMG",
@@ -42,13 +38,14 @@
         "SHU",
         "WEI",
         "YUE",
-        "ZNG"
+        "ZNG",
+        "NCH"
       ]
     },
     "mo": {
       "flag": "zhx_doctrine_mo",
       "native_school": "zhx_mo_school",
-      "expected_count": 11,
+      "expected_count": 10,
       "tags": [
         "CCH",
         "CDE",
@@ -59,14 +56,13 @@
         "LIU",
         "SNG",
         "WHU",
-        "WUZ",
-        "ZHU"
+        "WUZ"
       ]
     },
     "dao": {
       "flag": "zhx_doctrine_dao",
       "native_school": "zhx_dao_school",
-      "expected_count": 10,
+      "expected_count": 16,
       "tags": [
         "BAA",
         "CHC",
@@ -77,17 +73,22 @@
         "TSF",
         "WDU",
         "WXG",
-        "YPG"
+        "YPG",
+        "HNG",
+        "ZHU",
+        "QVN",
+        "ACG",
+        "EGU",
+        "LCH"
       ]
     },
     "bing": {
       "flag": "zhx_doctrine_bing",
       "native_school": "zhx_bing_school",
-      "expected_count": 10,
+      "expected_count": 9,
       "tags": [
         "DAE",
         "DQU",
-        "EGU",
         "QIC",
         "QWO",
         "WUU",
@@ -100,7 +101,7 @@
     "zongheng": {
       "flag": "zhx_doctrine_zongheng",
       "native_school": "zhx_zongheng_school",
-      "expected_count": 11,
+      "expected_count": 10,
       "tags": [
         "CAI",
         "GON",
@@ -109,7 +110,6 @@
         "LUO",
         "OUE",
         "QSH",
-        "QVN",
         "SHE",
         "ZHO",
         "ZSH"

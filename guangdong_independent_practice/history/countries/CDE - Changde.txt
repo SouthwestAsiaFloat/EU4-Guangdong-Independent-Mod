@@ -7,3 +7,18 @@ religion = confucianism
 primary_culture = gdd_chu
 capital = 672
 fixed_capital = 672
+
+# ZHX_GONGYI_OPENING_RULER_BEGIN
+1444.11.11 = {
+    monarch = {
+        name = "ˆRb"
+        dynasty = "mV"
+        birth_date = 1400.1.1
+        adm = 3
+        dip = 3
+        mil = 3
+        culture = gdd_chu
+        religion = confucianism
+    }
+}
+# ZHX_GONGYI_OPENING_RULER_END

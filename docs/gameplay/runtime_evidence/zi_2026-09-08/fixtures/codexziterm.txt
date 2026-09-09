@@ -1,0 +1,2 @@
+CZH = { set_variable = { which = zhx_feudatory_term_serial value = 2 } }
+CAG = { set_variable = { which = zhx_merit_term value = 50 } }
