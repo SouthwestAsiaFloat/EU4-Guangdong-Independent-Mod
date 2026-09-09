@@ -1,6 +1,6 @@
 # Script-side replacements for the two hard-coded Empire of China actions.
 # Decrees keep their native ownership. Reforms are enacted by ROOT, while the
-# Mandate and stability cost remains attached to the current Emperor of China.
+# Mandate cost remains attached to the current Emperor of China.
 
 gdd_enact_proxy_decree_effect = {
     add_meritocracy = -20
@@ -12,8 +12,9 @@ gdd_enact_proxy_decree_effect = {
 
 gdd_enact_proxy_celestial_reform_effect = {
     event_target:EmperorOfChina = {
-        add_mandate = -70
-        add_stability = -1
+        # Mandate is bounded at zero, so subtracting its 100-point maximum
+        # reproduces the HRE reform behaviour of consuming the whole pool.
+        add_mandate = -100
     }
     hidden_effect = {
         set_global_flag = $which$
@@ -25,11 +26,43 @@ gdd_enact_proxy_celestial_reform_effect = {
     }
 }
 
-# Shared revoke interface. Active revocation calls this from the current
-# Emperor or principal feudatory. A future peace treaty can call the same
-# effect from any country after resolving the reform token.
+# Apply the public-opinion backlash before the executor flag is cleared.
+# ROOT is always the country responsible for the revocation. Active revocation
+# therefore calls this from the acting Emperor/principal feudatory; a future
+# peace term must call it from the victorious country proposing that term.
+gdd_apply_proxy_reform_revoke_backlash_effect = {
+    every_country = {
+        limit = {
+            exists = yes
+            NOT = { tag = ROOT }
+            OR = {
+                has_country_flag = $which$
+                zhx_is_tianxia_polity = yes
+            }
+        }
+        if = {
+            limit = { has_country_flag = $which$ }
+            # Five applications use the same capped modifier: -50 for the
+            # original executor, while preserving the shared -100 floor.
+            add_opinion = { who = ROOT modifier = gdd_opinion_revoked_tianxia_reform }
+            add_opinion = { who = ROOT modifier = gdd_opinion_revoked_tianxia_reform }
+            add_opinion = { who = ROOT modifier = gdd_opinion_revoked_tianxia_reform }
+            add_opinion = { who = ROOT modifier = gdd_opinion_revoked_tianxia_reform }
+            add_opinion = { who = ROOT modifier = gdd_opinion_revoked_tianxia_reform }
+        }
+        else_if = {
+            limit = { zhx_is_tianxia_polity = yes }
+            add_opinion = { who = ROOT modifier = gdd_opinion_revoked_tianxia_reform }
+        }
+    }
+}
+
+# Shared low-level revoke interface. The caller must leave the culpable country
+# in ROOT and pass the exact reform token; this keeps the future peace path and
+# active path on the same responsibility and backlash rules.
 gdd_revoke_proxy_celestial_reform_effect = {
     hidden_effect = {
+        gdd_apply_proxy_reform_revoke_backlash_effect = { which = $which$ }
         clr_global_flag = $which$
         every_country = {
             clr_country_flag = $which$
@@ -95,4 +128,16 @@ gdd_disable_decentralized_tianxia_interface_effect = {
     hidden_effect = {
         clr_global_flag = gdd_decentralized_tianxia_interface_enabled
     }
+}
+
+# Public wrappers for the two final reforms include their world-state cleanup.
+# Future peace terms should use these wrappers rather than the low-level effect.
+gdd_revoke_proxy_celestial_final_centralization_effect = {
+    gdd_revoke_proxy_celestial_reform_effect = { which = gdd_proxy_reform_vassalize_tributaries }
+    gdd_disable_centralized_tianxia_interface_effect = yes
+}
+
+gdd_revoke_proxy_celestial_final_decentralization_effect = {
+    gdd_revoke_proxy_celestial_reform_effect = { which = gdd_proxy_reform_new_world }
+    gdd_disable_decentralized_tianxia_interface_effect = yes
 }

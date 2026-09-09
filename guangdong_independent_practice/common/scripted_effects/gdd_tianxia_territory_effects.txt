@@ -1,0 +1,1119 @@
+# Province scope. Adds one eligible province and awards its one-time Mandate
+# grant: 0.1 per development, capped at 20 for this province.
+gdd_add_province_to_tianxia_effect = {
+    if = {
+        limit = {
+            NOT = { has_global_flag = zhx_tianxia_dismantled }
+            NOT = { has_province_flag = zhx_tianxia_province }
+            is_part_of_hre = no
+            is_owned_by_trade_company = no
+            owner = { zhx_is_tianxia_polity = yes }
+        }
+        set_province_flag = zhx_tianxia_province
+        if = {
+            limit = {
+                NOT = { has_province_flag = zhx_tianxia_admission_reward_paid }
+                any_country = { is_emperor_of_china = yes }
+            }
+            set_province_flag = zhx_tianxia_admission_reward_paid
+            owner = {
+                export_to_variable = {
+                    which = gdd_tianxia_province_mandate_amount
+                    value = development
+                    who = PREV
+                }
+                if = {
+                    limit = {
+                        check_variable = {
+                            which = gdd_tianxia_province_mandate_amount
+                            value = 200
+                        }
+                    }
+                    set_variable = {
+                        which = gdd_tianxia_province_mandate_amount
+                        value = 200
+                    }
+                }
+                while = {
+                    limit = {
+                        check_variable = {
+                            which = gdd_tianxia_province_mandate_amount
+                            value = 1
+                        }
+                    }
+                    every_country = {
+                        limit = { is_emperor_of_china = yes }
+                        add_mandate = 0.1
+                    }
+                    change_variable = {
+                        which = gdd_tianxia_province_mandate_amount
+                        value = -1
+                    }
+                }
+                set_variable = {
+                    which = gdd_tianxia_province_mandate_amount
+                    value = 0
+                }
+            }
+        }
+    }
+}
+
+# Province scope. Removes one province and charges 0.1 Mandate per development
+# (capped at 20 for this province). Opinion is applied from country scope by
+# the caller so the current Emperor always receives the correct opinion target.
+# The permanent reward-paid flag is intentionally retained.
+gdd_remove_province_from_tianxia_effect = {
+    if = {
+        limit = {
+            has_province_flag = zhx_tianxia_province
+            owner = {
+                exists = yes
+                NOT = { zhx_is_tianxia_polity = yes }
+            }
+            any_country = { is_emperor_of_china = yes }
+        }
+        owner = {
+            export_to_variable = {
+                which = gdd_tianxia_province_mandate_amount
+                value = development
+                who = PREV
+            }
+            if = {
+                limit = {
+                    check_variable = {
+                        which = gdd_tianxia_province_mandate_amount
+                        value = 200
+                    }
+                }
+                set_variable = {
+                    which = gdd_tianxia_province_mandate_amount
+                    value = 200
+                }
+            }
+            while = {
+                limit = {
+                    check_variable = {
+                        which = gdd_tianxia_province_mandate_amount
+                        value = 1
+                    }
+                }
+                every_country = {
+                    limit = { is_emperor_of_china = yes }
+                    add_mandate = -0.1
+                }
+                change_variable = {
+                    which = gdd_tianxia_province_mandate_amount
+                    value = -1
+                }
+            }
+            set_variable = {
+                which = gdd_tianxia_province_mandate_amount
+                value = 0
+            }
+        }
+        clr_province_flag = zhx_tianxia_province
+    }
+}
+
+# Country scope: the AI country responsible for removing the province. Preserve
+# that current country only for the duration of this same scripted effect, then
+# make the Emperor add the opinion from the correct direction. Human removals
+# use a still more explicit country-event path in gdd_tianxia_territory.2.
+gdd_apply_tianxia_removal_opinion_effect = {
+    save_event_target_as = gdd_tianxia_removal_offender
+    if = {
+        limit = {
+            event_target:EmperorOfChina = {
+                exists = yes
+                is_emperor_of_china = yes
+            }
+        }
+        event_target:EmperorOfChina = {
+            add_opinion = {
+                who = event_target:gdd_tianxia_removal_offender
+                modifier = gdd_opinion_removed_tianxia_province
+                years = 100
+            }
+        }
+    }
+    else_if = {
+        limit = { CZH = { exists = yes is_emperor_of_china = yes } }
+        CZH = {
+            add_opinion = {
+                who = event_target:gdd_tianxia_removal_offender
+                modifier = gdd_opinion_removed_tianxia_province
+                years = 100
+            }
+        }
+    }
+}
+
+# Country scope: consider this holder's eligible provinces. ROOT remains the
+# Emperor and owns the two comparison variables. Equal-development ties follow
+# the engine's stable province iteration.
+gdd_consider_unlawful_tianxia_provinces_for_holder_effect = {
+    every_owned_province = {
+        limit = {
+            gdd_is_unlawful_tianxia_province_for_country_trigger = {
+                who = PREV
+            }
+        }
+        ROOT = {
+            export_to_variable = {
+                which = gdd_tianxia_unlawful_candidate_development
+                value = development
+                who = PREV
+            }
+            if = {
+                limit = {
+                    check_variable = {
+                        which = gdd_tianxia_unlawful_candidate_development
+                        which = gdd_tianxia_unlawful_best_development
+                    }
+                }
+                set_variable = {
+                    which = gdd_tianxia_unlawful_best_development
+                    which = gdd_tianxia_unlawful_candidate_development
+                }
+                set_country_flag = gdd_tianxia_unlawful_province_selected
+                PREV = {
+                    save_event_target_as = gdd_tianxia_unlawful_province
+                    owner = {
+                        save_event_target_as = gdd_tianxia_unlawful_actual_owner
+                    }
+                }
+            }
+        }
+    }
+}
+
+# ROOT is the Emperor and $target$ is one actual province holder.
+gdd_select_highest_development_unlawful_tianxia_province_effect = {
+    clr_country_flag = gdd_tianxia_unlawful_province_selected
+    set_variable = {
+        which = gdd_tianxia_unlawful_best_development
+        value = -1
+    }
+    set_variable = {
+        which = gdd_tianxia_unlawful_candidate_development
+        value = 0
+    }
+    $target$ = { gdd_consider_unlawful_tianxia_provinces_for_holder_effect = yes }
+    set_variable = {
+        which = gdd_tianxia_unlawful_best_development
+        value = 0
+    }
+    set_variable = {
+        which = gdd_tianxia_unlawful_candidate_development
+        value = 0
+    }
+}
+
+# ROOT is the Emperor and $target$ is the sovereign diplomacy recipient. Search
+# the recipient first and then its direct subjects, retaining one deterministic
+# highest-development province across the whole sovereignty group.
+gdd_select_highest_development_unlawful_tianxia_province_for_addressee_effect = {
+    clr_country_flag = gdd_tianxia_unlawful_province_selected
+    set_variable = {
+        which = gdd_tianxia_unlawful_best_development
+        value = -1
+    }
+    set_variable = {
+        which = gdd_tianxia_unlawful_candidate_development
+        value = 0
+    }
+    $target$ = {
+        if = {
+            limit = {
+                gdd_can_receive_tianxia_unlawful_demand_trigger = {
+                    emperor = ROOT
+                }
+            }
+            gdd_consider_unlawful_tianxia_provinces_for_holder_effect = yes
+        }
+        every_subject_country = {
+            limit = {
+                gdd_can_receive_tianxia_unlawful_demand_trigger = {
+                    emperor = ROOT
+                }
+            }
+            gdd_consider_unlawful_tianxia_provinces_for_holder_effect = yes
+        }
+    }
+    set_variable = {
+        which = gdd_tianxia_unlawful_best_development
+        value = 0
+    }
+    set_variable = {
+        which = gdd_tianxia_unlawful_candidate_development
+        value = 0
+    }
+}
+
+# ROOT is the human Emperor and FROM is the native diplomatic recipient. Native
+# requests cannot store a province at send-time, so resolution re-selects and
+# revalidates the highest-development eligible province before applying either
+# outcome.
+gdd_prepare_native_tianxia_unlawful_context_effect = {
+    save_event_target_as = gdd_tianxia_unlawful_emperor
+    FROM = { save_event_target_as = gdd_tianxia_unlawful_addressee }
+    gdd_select_highest_development_unlawful_tianxia_province_for_addressee_effect = {
+        target = FROM
+    }
+}
+
+gdd_mark_native_tianxia_unlawful_demand_resolved_effect = {
+    event_target:gdd_tianxia_unlawful_actual_owner = {
+        clr_country_flag = gdd_tianxia_unlawful_demand_cooldown
+        set_country_flag = gdd_tianxia_unlawful_demand_cooldown
+    }
+}
+
+gdd_accept_native_tianxia_unlawful_demand_effect = {
+    gdd_prepare_native_tianxia_unlawful_context_effect = yes
+    if = {
+        limit = {
+            has_country_flag = gdd_tianxia_unlawful_province_selected
+            event_target:gdd_tianxia_unlawful_province = {
+                gdd_is_unlawful_tianxia_province_for_country_trigger = {
+                    who = event_target:gdd_tianxia_unlawful_actual_owner
+                }
+            }
+        }
+        gdd_mark_native_tianxia_unlawful_demand_resolved_effect = yes
+        gdd_accept_tianxia_unlawful_demand_effect = yes
+    }
+}
+
+gdd_refuse_native_tianxia_unlawful_demand_effect = {
+    gdd_prepare_native_tianxia_unlawful_context_effect = yes
+    if = {
+        limit = {
+            has_country_flag = gdd_tianxia_unlawful_province_selected
+            event_target:gdd_tianxia_unlawful_province = {
+                gdd_is_unlawful_tianxia_province_for_country_trigger = {
+                    who = event_target:gdd_tianxia_unlawful_actual_owner
+                }
+            }
+        }
+        gdd_mark_native_tianxia_unlawful_demand_resolved_effect = yes
+        gdd_refuse_tianxia_unlawful_demand_effect = yes
+    }
+}
+
+# Country scope: calculate the recipient AI's deterministic acceptance score.
+# Component flags exist only for the open confirmation/request event and drive
+# its readable reasons; the cleanup effect removes every scratch value.
+gdd_prepare_tianxia_unlawful_acceptance_effect = {
+    gdd_clear_tianxia_unlawful_acceptance_cache_effect = yes
+    set_variable = {
+        which = gdd_tianxia_unlawful_acceptance_score
+        value = 10
+    }
+
+    if = {
+        limit = {
+            event_target:gdd_tianxia_unlawful_actual_owner = {
+                is_subject_of = event_target:gdd_tianxia_unlawful_emperor
+            }
+        }
+        change_variable = {
+            which = gdd_tianxia_unlawful_acceptance_score
+            value = 100
+        }
+        set_country_flag = gdd_tianxia_unlawful_reason_emperor_subject
+    }
+
+    if = {
+        limit = {
+            event_target:gdd_tianxia_unlawful_emperor = {
+                army_strength = { who = ROOT value = 1.5 }
+            }
+        }
+        change_variable = {
+            which = gdd_tianxia_unlawful_acceptance_score
+            value = 40
+        }
+        set_country_flag = gdd_tianxia_unlawful_reason_emperor_much_stronger
+    }
+    else_if = {
+        limit = {
+            event_target:gdd_tianxia_unlawful_emperor = {
+                army_strength = { who = ROOT value = 1.1 }
+            }
+        }
+        change_variable = {
+            which = gdd_tianxia_unlawful_acceptance_score
+            value = 20
+        }
+        set_country_flag = gdd_tianxia_unlawful_reason_emperor_stronger
+    }
+    else_if = {
+        limit = {
+            army_strength = {
+                who = event_target:gdd_tianxia_unlawful_emperor
+                value = 1.5
+            }
+        }
+        change_variable = {
+            which = gdd_tianxia_unlawful_acceptance_score
+            value = -40
+        }
+        set_country_flag = gdd_tianxia_unlawful_reason_recipient_stronger
+    }
+
+    if = {
+        limit = {
+            has_opinion = {
+                who = event_target:gdd_tianxia_unlawful_emperor
+                value = 100
+            }
+        }
+        change_variable = {
+            which = gdd_tianxia_unlawful_acceptance_score
+            value = 20
+        }
+        set_country_flag = gdd_tianxia_unlawful_reason_opinion_very_high
+    }
+    else_if = {
+        limit = {
+            has_opinion = {
+                who = event_target:gdd_tianxia_unlawful_emperor
+                value = 50
+            }
+        }
+        change_variable = {
+            which = gdd_tianxia_unlawful_acceptance_score
+            value = 10
+        }
+        set_country_flag = gdd_tianxia_unlawful_reason_opinion_high
+    }
+    else_if = {
+        limit = {
+            NOT = {
+                has_opinion = {
+                    who = event_target:gdd_tianxia_unlawful_emperor
+                    value = -50
+                }
+            }
+        }
+        change_variable = {
+            which = gdd_tianxia_unlawful_acceptance_score
+            value = -25
+        }
+        set_country_flag = gdd_tianxia_unlawful_reason_opinion_very_low
+    }
+    else_if = {
+        limit = {
+            NOT = {
+                has_opinion = {
+                    who = event_target:gdd_tianxia_unlawful_emperor
+                    value = 0
+                }
+            }
+        }
+        change_variable = {
+            which = gdd_tianxia_unlawful_acceptance_score
+            value = -15
+        }
+        set_country_flag = gdd_tianxia_unlawful_reason_opinion_low
+    }
+
+    if = {
+        limit = {
+            trust = {
+                who = event_target:gdd_tianxia_unlawful_emperor
+                value = 80
+            }
+        }
+        change_variable = {
+            which = gdd_tianxia_unlawful_acceptance_score
+            value = 20
+        }
+        set_country_flag = gdd_tianxia_unlawful_reason_trust_very_high
+    }
+    else_if = {
+        limit = {
+            trust = {
+                who = event_target:gdd_tianxia_unlawful_emperor
+                value = 60
+            }
+        }
+        change_variable = {
+            which = gdd_tianxia_unlawful_acceptance_score
+            value = 10
+        }
+        set_country_flag = gdd_tianxia_unlawful_reason_trust_high
+    }
+    else_if = {
+        limit = {
+            NOT = {
+                trust = {
+                    who = event_target:gdd_tianxia_unlawful_emperor
+                    value = 40
+                }
+            }
+        }
+        change_variable = {
+            which = gdd_tianxia_unlawful_acceptance_score
+            value = -10
+        }
+        set_country_flag = gdd_tianxia_unlawful_reason_trust_low
+    }
+
+    if = {
+        limit = { alliance_with = event_target:gdd_tianxia_unlawful_emperor }
+        change_variable = {
+            which = gdd_tianxia_unlawful_acceptance_score
+            value = 15
+        }
+        set_country_flag = gdd_tianxia_unlawful_reason_allied
+    }
+    if = {
+        limit = {
+            OR = {
+                is_rival = event_target:gdd_tianxia_unlawful_emperor
+                ai_attitude = {
+                    who = event_target:gdd_tianxia_unlawful_emperor
+                    attitude = attitude_hostile
+                }
+            }
+        }
+        change_variable = {
+            which = gdd_tianxia_unlawful_acceptance_score
+            value = -35
+        }
+        set_country_flag = gdd_tianxia_unlawful_reason_hostile
+    }
+
+    if = {
+        limit = {
+            event_target:gdd_tianxia_unlawful_emperor = {
+                diplomatic_reputation = 5
+            }
+        }
+        change_variable = {
+            which = gdd_tianxia_unlawful_acceptance_score
+            value = 15
+        }
+        set_country_flag = gdd_tianxia_unlawful_reason_diprep_very_high
+    }
+    else_if = {
+        limit = {
+            event_target:gdd_tianxia_unlawful_emperor = {
+                diplomatic_reputation = 2
+            }
+        }
+        change_variable = {
+            which = gdd_tianxia_unlawful_acceptance_score
+            value = 8
+        }
+        set_country_flag = gdd_tianxia_unlawful_reason_diprep_high
+    }
+    else_if = {
+        limit = {
+            event_target:gdd_tianxia_unlawful_emperor = {
+                NOT = { diplomatic_reputation = 0 }
+            }
+        }
+        change_variable = {
+            which = gdd_tianxia_unlawful_acceptance_score
+            value = -10
+        }
+        set_country_flag = gdd_tianxia_unlawful_reason_diprep_low
+    }
+
+    if = {
+        limit = {
+            check_variable = {
+                which = gdd_tianxia_unlawful_acceptance_score
+                value = 0
+            }
+        }
+        set_country_flag = gdd_tianxia_unlawful_ai_will_accept
+    }
+}
+
+gdd_clear_tianxia_unlawful_acceptance_cache_effect = {
+    set_variable = {
+        which = gdd_tianxia_unlawful_acceptance_score
+        value = 0
+    }
+    clr_country_flag = gdd_tianxia_unlawful_ai_will_accept
+    clr_country_flag = gdd_tianxia_unlawful_reason_emperor_subject
+    clr_country_flag = gdd_tianxia_unlawful_reason_emperor_much_stronger
+    clr_country_flag = gdd_tianxia_unlawful_reason_emperor_stronger
+    clr_country_flag = gdd_tianxia_unlawful_reason_recipient_stronger
+    clr_country_flag = gdd_tianxia_unlawful_reason_opinion_very_high
+    clr_country_flag = gdd_tianxia_unlawful_reason_opinion_high
+    clr_country_flag = gdd_tianxia_unlawful_reason_opinion_low
+    clr_country_flag = gdd_tianxia_unlawful_reason_opinion_very_low
+    clr_country_flag = gdd_tianxia_unlawful_reason_trust_very_high
+    clr_country_flag = gdd_tianxia_unlawful_reason_trust_high
+    clr_country_flag = gdd_tianxia_unlawful_reason_trust_low
+    clr_country_flag = gdd_tianxia_unlawful_reason_allied
+    clr_country_flag = gdd_tianxia_unlawful_reason_hostile
+    clr_country_flag = gdd_tianxia_unlawful_reason_diprep_very_high
+    clr_country_flag = gdd_tianxia_unlawful_reason_diprep_high
+    clr_country_flag = gdd_tianxia_unlawful_reason_diprep_low
+}
+
+# ROOT is the Emperor. The local event targets were prepared by the
+# confirmation event and travel with the request to its addressee.
+gdd_dispatch_tianxia_unlawful_demand_effect = {
+    event_target:gdd_tianxia_unlawful_province = {
+        set_province_flag = gdd_tianxia_unlawful_request_pending
+    }
+    event_target:gdd_tianxia_unlawful_actual_owner = {
+        set_country_flag = gdd_tianxia_unlawful_request_pending
+        clr_country_flag = gdd_tianxia_unlawful_demand_cooldown
+        set_country_flag = gdd_tianxia_unlawful_demand_cooldown
+    }
+    event_target:gdd_tianxia_unlawful_addressee = {
+        set_country_flag = gdd_tianxia_unlawful_request_pending
+    }
+    if = {
+        # When the unlawful holder is the Emperor's own subject, sovereignty
+        # makes the Emperor the addressee. The confirmed demand is therefore
+        # enforced directly instead of sending an event back to its sender.
+        limit = {
+            event_target:gdd_tianxia_unlawful_addressee = {
+                is_emperor_of_china = yes
+            }
+        }
+        gdd_accept_tianxia_unlawful_demand_effect = yes
+    }
+    else = {
+        event_target:gdd_tianxia_unlawful_addressee = {
+            country_event = { id = gdd_tianxia_territory.11 }
+        }
+    }
+}
+
+# Any outcome, including a stale request, clears only the active lock. The
+# twelve-month cooldown of the actual holder is retained.
+gdd_clear_tianxia_unlawful_request_effect = {
+    event_target:gdd_tianxia_unlawful_emperor = {
+        clr_country_flag = gdd_tianxia_unlawful_province_selected
+    }
+    event_target:gdd_tianxia_unlawful_province = {
+        clr_province_flag = gdd_tianxia_unlawful_request_pending
+    }
+    event_target:gdd_tianxia_unlawful_actual_owner = {
+        clr_country_flag = gdd_tianxia_unlawful_request_pending
+    }
+    event_target:gdd_tianxia_unlawful_addressee = {
+        clr_country_flag = gdd_tianxia_unlawful_request_pending
+        gdd_clear_tianxia_unlawful_acceptance_cache_effect = yes
+    }
+}
+
+# Country scope within the province's core-country iterator. A marker on the
+# request's Emperor stops later candidates from replacing an earlier match.
+gdd_select_tianxia_returnee_candidate_effect = {
+    save_event_target_as = gdd_tianxia_unlawful_returnee
+    event_target:gdd_tianxia_unlawful_emperor = {
+        set_country_flag = gdd_tianxia_unlawful_returnee_selected
+    }
+}
+
+# Re-resolve against live cores immediately before restitution. Core-country
+# iteration includes extinct tags, unlike every_country. Priority: direct
+# previous lawful owner, other former lawful owners, then other lawful cores.
+gdd_select_lawful_tianxia_returnee_effect = {
+    event_target:gdd_tianxia_unlawful_emperor = {
+        clr_country_flag = gdd_tianxia_unlawful_returnee_selected
+    }
+    event_target:gdd_tianxia_unlawful_province = {
+        every_core_country = {
+            limit = {
+                gdd_is_lawful_tianxia_returnee_trigger = yes
+                event_target:gdd_tianxia_unlawful_province = { previous_owner = PREV }
+                event_target:gdd_tianxia_unlawful_emperor = {
+                    NOT = { has_country_flag = gdd_tianxia_unlawful_returnee_selected }
+                }
+            }
+            gdd_select_tianxia_returnee_candidate_effect = yes
+        }
+        every_core_country = {
+            limit = {
+                gdd_is_lawful_tianxia_returnee_trigger = yes
+                has_country_flag = gdd_tianxia_former_legal_owner
+                event_target:gdd_tianxia_unlawful_emperor = {
+                    NOT = { has_country_flag = gdd_tianxia_unlawful_returnee_selected }
+                }
+            }
+            gdd_select_tianxia_returnee_candidate_effect = yes
+        }
+        every_core_country = {
+            limit = {
+                gdd_is_lawful_tianxia_returnee_trigger = yes
+                event_target:gdd_tianxia_unlawful_emperor = {
+                    NOT = { has_country_flag = gdd_tianxia_unlawful_returnee_selected }
+                }
+            }
+            gdd_select_tianxia_returnee_candidate_effect = yes
+        }
+    }
+}
+
+# Country scope; shared by native diplomacy and the AI event path. Every
+# material mutation is guarded by the same core/ownership eligibility used by
+# the button, so stale requests cannot punish or transfer a now-lawful province.
+gdd_accept_tianxia_unlawful_demand_effect = {
+    if = {
+        limit = {
+            event_target:gdd_tianxia_unlawful_province = {
+                gdd_is_substantively_unlawful_tianxia_province_trigger = {
+                    who = event_target:gdd_tianxia_unlawful_actual_owner
+                }
+            }
+        }
+        gdd_select_lawful_tianxia_returnee_effect = yes
+        if = {
+            limit = {
+                event_target:gdd_tianxia_unlawful_emperor = {
+                    has_country_flag = gdd_tianxia_unlawful_returnee_selected
+                }
+            }
+            event_target:gdd_tianxia_unlawful_actual_owner = {
+                add_opinion = {
+                    who = event_target:gdd_tianxia_unlawful_emperor
+                    modifier = gdd_opinion_forced_tianxia_return
+                    years = 50
+                }
+            }
+            event_target:gdd_tianxia_unlawful_province = {
+                remove_claim = event_target:gdd_tianxia_unlawful_actual_owner
+                remove_province_modifier = gdd_tianxia_unlawful_refusal
+                # Cede exactly this province; release would transfer all of
+                # the extinct tag's cores owned by the current holder.
+                cede_province = event_target:gdd_tianxia_unlawful_returnee
+            }
+            event_target:gdd_tianxia_unlawful_returnee = {
+                # Registration restores only ordinary membership. It must not
+                # steal the Tianzi office or a great-feudatory seat.
+                if = {
+                    limit = {
+                        exists = yes
+                        NOT = { zhx_is_tianxia_polity = yes }
+                    }
+                    zhx_register_tianxia_member = yes
+                    country_event = { id = zhx_doctrine.92 }
+                }
+            }
+        }
+        event_target:gdd_tianxia_unlawful_emperor = {
+            clr_country_flag = gdd_tianxia_unlawful_returnee_selected
+        }
+    }
+    gdd_clear_tianxia_unlawful_request_effect = yes
+}
+
+# Country scope: the addressee refuses. Unlike an earlier draft, refusal does
+# not itself reduce Mandate. The province penalty, Zhou-wide opinion damage,
+# and five-year liberation CB are the complete consequences.
+gdd_refuse_tianxia_unlawful_demand_effect = {
+    if = {
+        limit = {
+            event_target:gdd_tianxia_unlawful_province = {
+                gdd_is_substantively_unlawful_tianxia_province_trigger = {
+                    who = event_target:gdd_tianxia_unlawful_actual_owner
+                }
+            }
+        }
+        event_target:gdd_tianxia_unlawful_province = {
+            add_province_modifier = {
+                name = gdd_tianxia_unlawful_refusal
+                duration = 3650
+            }
+        }
+        every_country = {
+            limit = {
+                exists = yes
+                zhx_is_tianxia_member = yes
+            }
+            add_opinion = {
+                who = event_target:gdd_tianxia_unlawful_addressee
+                modifier = gdd_opinion_refused_tianxia_unlawful_demand
+            }
+        }
+        event_target:gdd_tianxia_unlawful_emperor = {
+            add_casus_belli = {
+                target = event_target:gdd_tianxia_unlawful_addressee
+                type = gdd_cb_tianxia_liberation
+                months = 60
+            }
+        }
+        event_target:gdd_tianxia_unlawful_emperor = {
+            country_event = { id = gdd_tianxia_territory.13 }
+        }
+    }
+    gdd_clear_tianxia_unlawful_request_effect = yes
+}
+
+# Country scope. There is deliberately no batch Mandate cap: each eligible
+# province receives its own first-admission grant and its own 20-point ceiling.
+gdd_add_all_owned_provinces_to_tianxia_effect = {
+    every_owned_province = {
+        limit = {
+            gdd_can_add_province_to_tianxia_for_country_trigger = { who = PREV }
+        }
+        gdd_add_province_to_tianxia_effect = yes
+    }
+}
+
+# Country scope. Voluntary departure removes all directly owned Tianxia
+# provinces, but charges a single aggregate development loss capped at 20.
+gdd_leave_tianxia_territory_effect = {
+    set_variable = {
+        which = gdd_tianxia_exit_development
+        value = 0
+    }
+    every_owned_province = {
+        limit = { has_province_flag = zhx_tianxia_province }
+        PREV = {
+            export_to_variable = {
+                which = gdd_tianxia_exit_province_development
+                value = development
+                who = PREV
+            }
+            change_variable = {
+                which = gdd_tianxia_exit_development
+                which = gdd_tianxia_exit_province_development
+            }
+            set_variable = {
+                which = gdd_tianxia_exit_province_development
+                value = 0
+            }
+        }
+        clr_province_flag = zhx_tianxia_province
+    }
+    if = {
+        limit = {
+            check_variable = {
+                which = gdd_tianxia_exit_development
+                value = 200
+            }
+        }
+        set_variable = {
+            which = gdd_tianxia_exit_development
+            value = 200
+        }
+    }
+    while = {
+        limit = {
+            check_variable = {
+                which = gdd_tianxia_exit_development
+                value = 1
+            }
+        }
+        event_target:EmperorOfChina = { add_mandate = -0.1 }
+        change_variable = {
+            which = gdd_tianxia_exit_development
+            value = -1
+        }
+    }
+    set_variable = {
+        which = gdd_tianxia_exit_development
+        value = 0
+    }
+    event_target:EmperorOfChina = {
+        add_opinion = {
+            who = ROOT
+            modifier = gdd_opinion_left_tianxia
+            years = 50
+        }
+    }
+}
+
+# One-time v13 migration. Existing Zhou-owned, non-HRE provinces become
+# Tianxia territory without paying Mandate; marking the reward as consumed
+# prevents an old-save remove/re-add exploit.
+gdd_bootstrap_tianxia_provinces_effect = {
+    every_country = {
+        limit = {
+            exists = yes
+            zhx_is_tianxia_polity = yes
+        }
+        every_owned_province = {
+            limit = { is_part_of_hre = no }
+            set_province_flag = zhx_tianxia_province
+            set_province_flag = zhx_tianxia_admission_reward_paid
+        }
+    }
+}
+
+# Old saves may already contain a province marked as both Zhou Tianxia and HRE
+# territory. Tianxia status wins for that impossible legacy overlap; ordinary
+# future admissions still require leaving the HRE explicitly first.
+gdd_repair_tianxia_hre_exclusivity_effect = {
+    every_province = {
+        limit = {
+            has_province_flag = zhx_tianxia_province
+            is_part_of_hre = yes
+        }
+        set_in_empire = no
+    }
+}
+
+# Quarterly AI maintenance and mutual-exclusion repair. The AI Emperor considers
+# at most one unlawful-territory demand per quarterly tick; independent holder
+# cooldowns and pending-request locks provide the second layer of throttling.
+# Only a holder without a dispatched demand may then run the established
+# hostile/rival/low-opinion automatic removal rule.
+gdd_quarterly_tianxia_territory_maintenance_effect = {
+    event_target:EmperorOfChina = {
+        clr_country_flag = gdd_tianxia_unlawful_ai_demand_sent_this_tick
+    }
+    every_country = {
+        if = {
+            limit = {
+                exists = yes
+                event_target:EmperorOfChina = {
+                    ai = yes
+                    NOT = { has_country_flag = gdd_tianxia_unlawful_ai_demand_sent_this_tick }
+                }
+                gdd_can_receive_tianxia_unlawful_demand_trigger = {
+                    emperor = event_target:EmperorOfChina
+                }
+            }
+            set_country_flag = gdd_tianxia_unlawful_demand_considered_this_tick
+            save_event_target_as = gdd_tianxia_unlawful_selected_country
+            event_target:EmperorOfChina = {
+                set_country_flag = gdd_tianxia_unlawful_ai_demand_sent_this_tick
+                save_event_target_as = gdd_tianxia_unlawful_emperor
+                country_event = { id = gdd_tianxia_territory.10 }
+            }
+        }
+        if = {
+            limit = {
+                exists = yes
+                ai = yes
+                zhx_is_tianxia_polity = yes
+                is_at_war = no
+            }
+            every_owned_province = {
+                limit = {
+                    gdd_can_add_province_to_tianxia_for_country_trigger = { who = PREV }
+                }
+                gdd_add_province_to_tianxia_effect = yes
+            }
+        }
+        else_if = {
+            limit = {
+                exists = yes
+                ai = yes
+                NOT = { zhx_is_tianxia_polity = yes }
+                NOT = { has_country_flag = gdd_tianxia_unlawful_request_pending }
+                NOT = { has_country_flag = gdd_tianxia_unlawful_demand_considered_this_tick }
+                is_at_war = no
+                event_target:EmperorOfChina = { exists = yes }
+                OR = {
+                    is_rival = event_target:EmperorOfChina
+                    ai_attitude = {
+                        who = event_target:EmperorOfChina
+                        attitude = attitude_hostile
+                    }
+                    NOT = {
+                        has_opinion = {
+                            who = event_target:EmperorOfChina
+                            value = -50
+                        }
+                    }
+                }
+            }
+            every_owned_province = {
+                limit = {
+                    gdd_can_remove_province_from_tianxia_for_country_trigger = { who = PREV }
+                }
+                PREV = { gdd_apply_tianxia_removal_opinion_effect = yes }
+                gdd_remove_province_from_tianxia_effect = yes
+            }
+        }
+        every_owned_province = {
+            limit = {
+                has_province_flag = zhx_tianxia_province
+                is_part_of_hre = yes
+            }
+            set_in_empire = no
+        }
+        every_owned_province = {
+            limit = {
+                has_province_flag = zhx_tianxia_province
+                is_owned_by_trade_company = yes
+            }
+            # No scriptable remove-from-trade-company effect exists. Ordinary
+            # clicks are blocked by the opaque Zhou/HRE/TC shared-slot overlay;
+            # if automation bypasses it, trade-company status wins this safety
+            # repair so the province can never retain both memberships.
+            clr_province_flag = zhx_tianxia_province
+            clr_province_flag = gdd_tianxia_unlawful_request_pending
+            clr_province_flag = gdd_tianxia_unlawful_requested_this_owner
+            remove_province_modifier = gdd_tianxia_unlawful_refusal
+        }
+        clr_country_flag = gdd_tianxia_unlawful_demand_considered_this_tick
+    }
+    event_target:EmperorOfChina = {
+        clr_country_flag = gdd_tianxia_unlawful_ai_demand_sent_this_tick
+    }
+}
+
+# Country scope. Permanent, no-backlash teardown of only the Zhou political
+# layer; unrelated schools, academies and map/history content are untouched.
+gdd_dismantle_tianxia_effect = {
+    set_global_flag = zhx_tianxia_dismantled
+
+    gdd_disable_centralized_tianxia_interface_effect = yes
+    gdd_disable_decentralized_tianxia_interface_effect = yes
+
+    every_province = {
+        clr_province_flag = zhx_tianxia_province
+        clr_province_flag = gdd_tianxia_unlawful_request_pending
+        clr_province_flag = gdd_tianxia_unlawful_requested_this_owner
+        clr_province_flag = gdd_tianxia_liberated_this_owner
+        remove_province_modifier = gdd_tianxia_unlawful_refusal
+    }
+
+    every_country = {
+        gdd_clear_all_reform_support_flags_effect = yes
+        zhx_clear_current_tianxia_council_vote = yes
+        zhx_clear_tianxia_council_ai_schedule = yes
+        zhx_clear_ritual_order_modifier = yes
+        gdd_clear_authority_balance_effects = yes
+        remove_country_modifier = zhx_reaffirmed_covenant_modifier
+
+        remove_country_modifier = gdd_proxy_decree_expand_bureaucracy
+        remove_country_modifier = gdd_proxy_decree_improved_expand_bureaucracy
+        remove_country_modifier = gdd_proxy_decree_conduct_census
+        remove_country_modifier = gdd_proxy_decree_improved_conduct_census
+        remove_country_modifier = gdd_proxy_decree_promote_naval_officers
+        remove_country_modifier = gdd_proxy_decree_increase_tariff_control
+        remove_country_modifier = gdd_proxy_decree_improve_defence_effort
+        remove_country_modifier = gdd_proxy_decree_boost_officer_corps
+        remove_country_modifier = gdd_proxy_decree_fund_new_centers_of_education
+        remove_country_modifier = gdd_proxy_decree_proclaim_dynastic_name
+        remove_country_modifier = gdd_proxy_decree_issue_the_great_warnings
+        remove_country_modifier = gdd_proxy_decree_six_ordinances
+        remove_country_modifier = gdd_proxy_decree_sacred_edict_of_confucianism
+        remove_country_modifier = gdd_proxy_decree_promote_taoist_studies
+        remove_country_modifier = gdd_proxy_decree_appoint_entrusted_eunuchs
+        remove_country_modifier = gdd_proxy_decree_increase_trade_cooperation
+        remove_country_modifier = gdd_proxy_decree_reinforce_the_inner_guard
+        remove_country_modifier = gdd_proxy_decree_issue_bureaucratic_imperial_seal
+
+        clr_country_flag = zhx_member
+        clr_country_flag = zhx_major_feudatory
+        clr_country_flag = zhx_tianzi
+        clr_country_flag = zhx_ritual_tier_ordered
+        clr_country_flag = zhx_ritual_tier_stable
+        clr_country_flag = zhx_ritual_tier_balanced
+        clr_country_flag = zhx_ritual_tier_fractured
+        clr_country_flag = zhx_ritual_tier_collapsed
+        clr_country_flag = zhx_tianxia_orthodoxy_ru
+        clr_country_flag = zhx_tianxia_orthodoxy_fa
+        clr_country_flag = zhx_tianxia_orthodoxy_mo
+        clr_country_flag = zhx_tianxia_orthodoxy_dao
+        clr_country_flag = zhx_tianxia_orthodoxy_bing
+        clr_country_flag = zhx_tianxia_orthodoxy_zongheng
+        clr_country_flag = zhx_tianxia_orthodoxy_plural
+        clr_country_flag = gdd_tianxia_mandate_cache_ready
+        clr_country_flag = gdd_tianxia_unlawful_request_pending
+        clr_country_flag = gdd_tianxia_former_legal_owner
+        clr_country_flag = gdd_tianxia_historical_polity
+        clr_country_flag = gdd_tianxia_unlawful_demand_cooldown
+        clr_country_flag = gdd_tianxia_unlawful_demand_considered_this_tick
+        clr_country_flag = gdd_tianxia_actions_collapsed
+        gdd_clear_tianxia_unlawful_acceptance_cache_effect = yes
+
+        clr_country_flag = gdd_proxy_reform_establish_gaituguiliu
+        clr_country_flag = gdd_proxy_reform_seaban
+        clr_country_flag = gdd_proxy_reform_land_tax
+        clr_country_flag = gdd_proxy_reform_military_governors
+        clr_country_flag = gdd_proxy_reform_centralizing_government
+        clr_country_flag = gdd_proxy_reform_vassalize_tributaries
+        clr_country_flag = gdd_proxy_reform_single_whip
+        clr_country_flag = gdd_proxy_reform_reign_in_estates
+        clr_country_flag = gdd_proxy_reform_civil_registration
+        clr_country_flag = gdd_proxy_reform_silver_standard
+        clr_country_flag = gdd_proxy_reform_kanhe
+        clr_country_flag = gdd_proxy_reform_keju
+        clr_country_flag = gdd_proxy_reform_inclusive_monarchy
+        clr_country_flag = gdd_proxy_reform_bureaucratic_faction
+        clr_country_flag = gdd_proxy_reform_military_faction
+        clr_country_flag = gdd_proxy_reform_unified_market
+        clr_country_flag = gdd_proxy_reform_military_branch
+        clr_country_flag = gdd_proxy_reform_modernize_banners
+        clr_country_flag = gdd_proxy_reform_foreign_ship_designs
+        clr_country_flag = gdd_proxy_reform_tributary_embassies
+        clr_country_flag = gdd_proxy_reform_new_world
+        set_variable = { which = zhx_merit value = 0 }
+    }
+
+    event_target:zhx_tianzi = {
+        zhx_clear_tianxia_debate_petitions = yes
+        remove_country_modifier = zhx_tianxia_orthodoxy_term
+        zhx_reset_tianxia_council_ballot = yes
+        zhx_clear_tianxia_council_phase = yes
+        zhx_clear_tianxia_council_kind = yes
+        zhx_clear_tianxia_council_candidates = yes
+        zhx_clear_tianxia_council_results = yes
+        clr_country_flag = zhx_council_result_ready
+        clr_country_flag = zhx_council_deadline_scheduled
+        clr_country_flag = zhx_council_pending_ritual_breakdown
+        set_variable = { which = zhx_ritual_authority value = 0 }
+        set_variable = { which = zhx_member_count_cache value = 0 }
+    }
+
+    CZH = {
+        set_variable = { which = gdd_central_authority_balance value = 0 }
+        set_variable = { which = gdd_six_great_feudatory_count value = 0 }
+        gdd_recalculate_all_reform_votes_effect = yes
+    }
+
+    clr_global_flag = zhx_reform_reaffirmed_covenant
+    clr_global_flag = zhx_council_initialised_v1
+    clr_global_flag = gdd_celestial_reform_voting_initialised
+    clr_global_flag = eoc_vassalize_tributaries
+    clr_global_flag = gdd_decentralized_tianxia_interface_enabled
+
+    clr_global_flag = gdd_proxy_reform_establish_gaituguiliu
+    clr_global_flag = gdd_proxy_reform_seaban
+    clr_global_flag = gdd_proxy_reform_land_tax
+    clr_global_flag = gdd_proxy_reform_military_governors
+    clr_global_flag = gdd_proxy_reform_centralizing_government
+    clr_global_flag = gdd_proxy_reform_vassalize_tributaries
+    clr_global_flag = gdd_proxy_reform_single_whip
+    clr_global_flag = gdd_proxy_reform_reign_in_estates
+    clr_global_flag = gdd_proxy_reform_civil_registration
+    clr_global_flag = gdd_proxy_reform_silver_standard
+    clr_global_flag = gdd_proxy_reform_kanhe
+    clr_global_flag = gdd_proxy_reform_keju
+    clr_global_flag = gdd_proxy_reform_inclusive_monarchy
+    clr_global_flag = gdd_proxy_reform_bureaucratic_faction
+    clr_global_flag = gdd_proxy_reform_military_faction
+    clr_global_flag = gdd_proxy_reform_unified_market
+    clr_global_flag = gdd_proxy_reform_military_branch
+    clr_global_flag = gdd_proxy_reform_modernize_banners
+    clr_global_flag = gdd_proxy_reform_foreign_ship_designs
+    clr_global_flag = gdd_proxy_reform_tributary_embassies
+    clr_global_flag = gdd_proxy_reform_new_world
+
+    zhx_clear_gui_roster = yes
+    gdd_clear_eoc_member_roster = yes
+    gdd_clear_eoc_great_feudatory_roster = yes
+    if = {
+        limit = { has_saved_global_event_target = gdd_principal_vassal }
+        clear_global_event_target = gdd_principal_vassal
+    }
+
+    event_target:EmperorOfChina = {
+        dismantle_empire_of_china = yes
+    }
+    set_global_flag = empire_of_china_dismantled
+    if = {
+        limit = { has_saved_global_event_target = zhx_tianzi }
+        clear_global_event_target = zhx_tianzi
+    }
+}

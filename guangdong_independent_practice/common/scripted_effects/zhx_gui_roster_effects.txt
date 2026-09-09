@@ -2151,10 +2151,6 @@ gdd_allocate_eoc_member_roster_slot = {
 gdd_build_eoc_member_roster = {
     gdd_clear_eoc_member_roster = yes
     CZH = {
-        # Membership changes compact the entire roster from slot 01 onward.
-        # Return to page one so a country pulled forward from slot 49 is
-        # immediately visible in the final slot of the first page.
-        clr_country_flag = gdd_eoc_member_roster_page_2
         set_variable = {
             which = gdd_eoc_member_count_cache
             value = 0
@@ -2177,9 +2173,6 @@ gdd_build_eoc_member_roster = {
     set_global_flag = gdd_eoc_member_roster_initialised
 }
 
-# Six compact targets for the non-principal great-feudatory shields and the
-# removal test. Unlike the general member roster, these targets only contain
-# current holders of the dynamic zhx_major_feudatory dignity.
 gdd_clear_eoc_great_feudatory_roster = {
     if = {
         limit = { has_saved_global_event_target = gdd_eoc_great_feudatory_roster_01 }

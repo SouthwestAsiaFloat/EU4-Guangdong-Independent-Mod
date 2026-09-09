@@ -5,8 +5,8 @@ guiTypes = {
 	# centre, and the three reform groups remain on the right.
 	windowType = {
 		name = "celestial_window"
-		position = { x = -405 y = -430 }
-		size = { x = 870 y = 850 }
+		position = { x = -485 y = -430 }
+		size = { x = 1030 y = 850 }
 		moveable = 1
 		dontRender = ""
 		horizontalBorder = ""
@@ -35,29 +35,29 @@ guiTypes = {
 		}
 
 		# Native transparent-centre frames sit above the coloured group fills.
-		# The entire reform column remains 40 px farther right and otherwise
-		# retains the approved grouped layout.
+		# Match the fixed 220 px member column, with equal 18 px group gaps.
+		# Both side columns mirror around the existing feudatory ribbon at x=645.
 		guiButtonType = {
 			name = "gdd_eoc_ordinary_reform_frame"
 			quadTextureSprite = "GFX_gdd_eoc_reform_frame"
-			position = { x = 796 y = 108 }
-			size = { x = 242 y = 267 }
+			position = { x = 972 y = 108 }
+			size = { x = 220 y = 304 }
 			alwaystransparent = yes
 		}
 
 		guiButtonType = {
 			name = "gdd_eoc_centralizing_reform_frame"
 			quadTextureSprite = "GFX_gdd_eoc_reform_frame"
-			position = { x = 796 y = 386 }
-			size = { x = 242 y = 225 }
+			position = { x = 972 y = 430 }
+			size = { x = 220 y = 226 }
 			alwaystransparent = yes
 		}
 
 		guiButtonType = {
 			name = "gdd_eoc_decentralizing_reform_frame"
 			quadTextureSprite = "GFX_gdd_eoc_reform_frame"
-			position = { x = 796 y = 622 }
-			size = { x = 242 y = 225 }
+			position = { x = 972 y = 674 }
+			size = { x = 220 y = 226 }
 			alwaystransparent = yes
 		}
 
@@ -79,7 +79,7 @@ guiTypes = {
 			font = "vic_29"
 			borderSize = { x = 4 y = 4 }
 			text = "CELESTIAL_CELESTIAL"
-			maxWidth = 737
+			maxWidth = 897
 			maxHeight = 32
 		}
 
@@ -137,7 +137,7 @@ guiTypes = {
 		guiButtonType = {
 			name = "gdd_decree_expand_bureaucracy_button"
 			scripted = yes
-			position = { x = 123 y = 150 }
+			position = { x = 123 y = 162 }
 			quadTextureSprite = "GFX_gdd_eoc_decree_button_compact"
 			buttonText = "expand_bureaucracy_decree_title"
 			buttonFont = "vic_18_black"
@@ -151,7 +151,7 @@ guiTypes = {
 		guiButtonType = {
 			name = "gdd_decree_improved_expand_bureaucracy_button"
 			scripted = yes
-			position = { x = 123 y = 150 }
+			position = { x = 123 y = 162 }
 			quadTextureSprite = "GFX_gdd_eoc_decree_button_compact"
 			buttonText = "improved_expand_bureaucracy_decree_title"
 			buttonFont = "vic_18_black"
@@ -165,7 +165,7 @@ guiTypes = {
 		guiButtonType = {
 			name = "gdd_decree_conduct_census_button"
 			scripted = yes
-			position = { x = 123 y = 188 }
+			position = { x = 123 y = 202 }
 			quadTextureSprite = "GFX_gdd_eoc_decree_button_compact"
 			buttonText = "conduct_census_decree_title"
 			buttonFont = "vic_18_black"
@@ -179,7 +179,7 @@ guiTypes = {
 		guiButtonType = {
 			name = "gdd_decree_improved_conduct_census_button"
 			scripted = yes
-			position = { x = 123 y = 188 }
+			position = { x = 123 y = 202 }
 			quadTextureSprite = "GFX_gdd_eoc_decree_button_compact"
 			buttonText = "improved_conduct_census_decree_title"
 			buttonFont = "vic_18_black"
@@ -193,7 +193,7 @@ guiTypes = {
 		guiButtonType = {
 			name = "gdd_decree_promote_naval_officers_button"
 			scripted = yes
-			position = { x = 123 y = 226 }
+			position = { x = 123 y = 242 }
 			quadTextureSprite = "GFX_gdd_eoc_decree_button_compact"
 			buttonText = "promote_naval_officers_decree_title"
 			buttonFont = "vic_18_black"
@@ -207,7 +207,7 @@ guiTypes = {
 		guiButtonType = {
 			name = "gdd_decree_increase_tariff_control_button"
 			scripted = yes
-			position = { x = 123 y = 264 }
+			position = { x = 123 y = 282 }
 			quadTextureSprite = "GFX_gdd_eoc_decree_button_compact"
 			buttonText = "increase_tariff_control_decree_title"
 			buttonFont = "vic_18_black"
@@ -221,7 +221,7 @@ guiTypes = {
 		guiButtonType = {
 			name = "gdd_decree_improve_defence_effort_button"
 			scripted = yes
-			position = { x = 123 y = 302 }
+			position = { x = 123 y = 322 }
 			quadTextureSprite = "GFX_gdd_eoc_decree_button_compact"
 			buttonText = "improve_defence_effort_decree_title"
 			buttonFont = "vic_18_black"
@@ -235,7 +235,7 @@ guiTypes = {
 		guiButtonType = {
 			name = "gdd_decree_boost_officer_corps_button"
 			scripted = yes
-			position = { x = 123 y = 340 }
+			position = { x = 123 y = 362 }
 			quadTextureSprite = "GFX_gdd_eoc_decree_button_compact"
 			buttonText = "boost_officer_corps_decree_title"
 			buttonFont = "vic_18_black"
@@ -249,7 +249,7 @@ guiTypes = {
 		guiButtonType = {
 			name = "gdd_decree_fund_new_centers_of_education_button"
 			scripted = yes
-			position = { x = 123 y = 378 }
+			position = { x = 123 y = 402 }
 			quadTextureSprite = "GFX_gdd_eoc_decree_button_compact"
 			buttonText = "fund_new_centers_of_education_decree_title"
 			buttonFont = "vic_18_black"
@@ -263,7 +263,7 @@ guiTypes = {
 		guiButtonType = {
 			name = "gdd_decree_proclaim_dynastic_name_button"
 			scripted = yes
-			position = { x = 123 y = 416 }
+			position = { x = 123 y = 442 }
 			quadTextureSprite = "GFX_gdd_eoc_decree_button_compact"
 			buttonText = "proclaim_dynastic_name_decree_title"
 			buttonFont = "vic_18_black"
@@ -277,7 +277,7 @@ guiTypes = {
 		guiButtonType = {
 			name = "gdd_decree_issue_the_great_warnings_button"
 			scripted = yes
-			position = { x = 123 y = 454 }
+			position = { x = 123 y = 482 }
 			quadTextureSprite = "GFX_gdd_eoc_decree_button_compact"
 			buttonText = "issue_the_great_warnings_decree_title"
 			buttonFont = "vic_18_black"
@@ -291,7 +291,7 @@ guiTypes = {
 		guiButtonType = {
 			name = "gdd_decree_six_ordinances_button"
 			scripted = yes
-			position = { x = 123 y = 492 }
+			position = { x = 123 y = 522 }
 			quadTextureSprite = "GFX_gdd_eoc_decree_button_compact"
 			buttonText = "six_ordinances_decree_title"
 			buttonFont = "vic_18_black"
@@ -305,7 +305,7 @@ guiTypes = {
 		guiButtonType = {
 			name = "gdd_decree_sacred_edict_of_confucianism_button"
 			scripted = yes
-			position = { x = 123 y = 530 }
+			position = { x = 123 y = 562 }
 			quadTextureSprite = "GFX_gdd_eoc_decree_button_compact"
 			buttonText = "sacred_edict_of_confucianism_decree_title"
 			buttonFont = "vic_18_black"
@@ -319,7 +319,7 @@ guiTypes = {
 		guiButtonType = {
 			name = "gdd_decree_promote_taoist_studies_button"
 			scripted = yes
-			position = { x = 123 y = 568 }
+			position = { x = 123 y = 602 }
 			quadTextureSprite = "GFX_gdd_eoc_decree_button_compact"
 			buttonText = "promote_taoist_studies_decree_title"
 			buttonFont = "vic_18_black"
@@ -333,7 +333,7 @@ guiTypes = {
 		guiButtonType = {
 			name = "gdd_decree_appoint_entrusted_eunuchs_button"
 			scripted = yes
-			position = { x = 123 y = 150 }
+			position = { x = 123 y = 162 }
 			quadTextureSprite = "GFX_gdd_eoc_decree_button_compact"
 			buttonText = "appoint_entrusted_eunuchs_decree_title"
 			buttonFont = "vic_18_black"
@@ -347,7 +347,7 @@ guiTypes = {
 		guiButtonType = {
 			name = "gdd_decree_increase_trade_cooperation_button"
 			scripted = yes
-			position = { x = 123 y = 188 }
+			position = { x = 123 y = 202 }
 			quadTextureSprite = "GFX_gdd_eoc_decree_button_compact"
 			buttonText = "increase_trade_cooperation_decree_title"
 			buttonFont = "vic_18_black"
@@ -361,7 +361,7 @@ guiTypes = {
 		guiButtonType = {
 			name = "gdd_decree_reinforce_the_inner_guard_button"
 			scripted = yes
-			position = { x = 123 y = 226 }
+			position = { x = 123 y = 242 }
 			quadTextureSprite = "GFX_gdd_eoc_decree_button_compact"
 			buttonText = "reinforce_the_inner_guard_decree_title"
 			buttonFont = "vic_18_black"
@@ -375,7 +375,7 @@ guiTypes = {
 		guiButtonType = {
 			name = "gdd_decree_issue_bureaucratic_imperial_seal_button"
 			scripted = yes
-			position = { x = 123 y = 264 }
+			position = { x = 123 y = 282 }
 			quadTextureSprite = "GFX_gdd_eoc_decree_button_compact"
 			buttonText = "issue_bureaucratic_imperial_seal_title"
 			buttonFont = "vic_18_black"
@@ -535,7 +535,7 @@ guiTypes = {
 			scripted = yes
 			spriteType = "GFX_decree_button_check"
 			alwaystransparent = yes
-			position = { x = 285 y = 158 }
+			position = { x = 285 y = 170 }
 			scale = 0.55
 		}
 
@@ -544,7 +544,7 @@ guiTypes = {
 			scripted = yes
 			spriteType = "GFX_decree_button_check"
 			alwaystransparent = yes
-			position = { x = 285 y = 158 }
+			position = { x = 285 y = 170 }
 			scale = 0.55
 		}
 
@@ -553,7 +553,7 @@ guiTypes = {
 			scripted = yes
 			spriteType = "GFX_decree_button_check"
 			alwaystransparent = yes
-			position = { x = 285 y = 196 }
+			position = { x = 285 y = 210 }
 			scale = 0.55
 		}
 
@@ -562,7 +562,7 @@ guiTypes = {
 			scripted = yes
 			spriteType = "GFX_decree_button_check"
 			alwaystransparent = yes
-			position = { x = 285 y = 196 }
+			position = { x = 285 y = 210 }
 			scale = 0.55
 		}
 
@@ -571,7 +571,7 @@ guiTypes = {
 			scripted = yes
 			spriteType = "GFX_decree_button_check"
 			alwaystransparent = yes
-			position = { x = 285 y = 234 }
+			position = { x = 285 y = 250 }
 			scale = 0.55
 		}
 
@@ -580,7 +580,7 @@ guiTypes = {
 			scripted = yes
 			spriteType = "GFX_decree_button_check"
 			alwaystransparent = yes
-			position = { x = 285 y = 272 }
+			position = { x = 285 y = 290 }
 			scale = 0.55
 		}
 
@@ -589,7 +589,7 @@ guiTypes = {
 			scripted = yes
 			spriteType = "GFX_decree_button_check"
 			alwaystransparent = yes
-			position = { x = 285 y = 310 }
+			position = { x = 285 y = 330 }
 			scale = 0.55
 		}
 
@@ -598,7 +598,7 @@ guiTypes = {
 			scripted = yes
 			spriteType = "GFX_decree_button_check"
 			alwaystransparent = yes
-			position = { x = 285 y = 348 }
+			position = { x = 285 y = 370 }
 			scale = 0.55
 		}
 
@@ -607,7 +607,7 @@ guiTypes = {
 			scripted = yes
 			spriteType = "GFX_decree_button_check"
 			alwaystransparent = yes
-			position = { x = 285 y = 386 }
+			position = { x = 285 y = 410 }
 			scale = 0.55
 		}
 
@@ -616,7 +616,7 @@ guiTypes = {
 			scripted = yes
 			spriteType = "GFX_decree_button_check"
 			alwaystransparent = yes
-			position = { x = 285 y = 424 }
+			position = { x = 285 y = 450 }
 			scale = 0.55
 		}
 
@@ -625,7 +625,7 @@ guiTypes = {
 			scripted = yes
 			spriteType = "GFX_decree_button_check"
 			alwaystransparent = yes
-			position = { x = 285 y = 462 }
+			position = { x = 285 y = 490 }
 			scale = 0.55
 		}
 
@@ -634,7 +634,7 @@ guiTypes = {
 			scripted = yes
 			spriteType = "GFX_decree_button_check"
 			alwaystransparent = yes
-			position = { x = 285 y = 500 }
+			position = { x = 285 y = 530 }
 			scale = 0.55
 		}
 
@@ -643,7 +643,7 @@ guiTypes = {
 			scripted = yes
 			spriteType = "GFX_decree_button_check"
 			alwaystransparent = yes
-			position = { x = 285 y = 538 }
+			position = { x = 285 y = 570 }
 			scale = 0.55
 		}
 
@@ -652,7 +652,7 @@ guiTypes = {
 			scripted = yes
 			spriteType = "GFX_decree_button_check"
 			alwaystransparent = yes
-			position = { x = 285 y = 576 }
+			position = { x = 285 y = 610 }
 			scale = 0.55
 		}
 
@@ -661,7 +661,7 @@ guiTypes = {
 			scripted = yes
 			spriteType = "GFX_decree_button_check"
 			alwaystransparent = yes
-			position = { x = 285 y = 158 }
+			position = { x = 285 y = 170 }
 			scale = 0.55
 		}
 
@@ -670,7 +670,7 @@ guiTypes = {
 			scripted = yes
 			spriteType = "GFX_decree_button_check"
 			alwaystransparent = yes
-			position = { x = 285 y = 196 }
+			position = { x = 285 y = 210 }
 			scale = 0.55
 		}
 
@@ -679,7 +679,7 @@ guiTypes = {
 			scripted = yes
 			spriteType = "GFX_decree_button_check"
 			alwaystransparent = yes
-			position = { x = 285 y = 234 }
+			position = { x = 285 y = 250 }
 			scale = 0.55
 		}
 
@@ -688,7 +688,7 @@ guiTypes = {
 			scripted = yes
 			spriteType = "GFX_decree_button_check"
 			alwaystransparent = yes
-			position = { x = 285 y = 272 }
+			position = { x = 285 y = 290 }
 			scale = 0.55
 		}
 
@@ -697,8 +697,8 @@ guiTypes = {
 		guiButtonType = {
 			name = "gdd_eoc_decree_scroll_track"
 			quadTextureSprite = "GFX_scroll_track"
-			position = { x = 302 y = 172 }
-			size = { x = 12 y = 380 }
+			position = { x = 302 y = 184 }
+			size = { x = 12 y = 402 }
 			alwaystransparent = yes
 		}
 
@@ -706,7 +706,7 @@ guiTypes = {
 			name = "gdd_eoc_decree_scroll_thumb_page_1"
 			scripted = yes
 			spriteType = "GFX_scroll_drager"
-			position = { x = 300 y = 176 }
+			position = { x = 300 y = 188 }
 			alwaystransparent = yes
 		}
 
@@ -714,28 +714,28 @@ guiTypes = {
 			name = "gdd_eoc_decree_scroll_thumb_page_2"
 			scripted = yes
 			spriteType = "GFX_scroll_drager"
-			position = { x = 300 y = 526 }
+			position = { x = 300 y = 560 }
 			alwaystransparent = yes
 		}
 
 		guiButtonType = {
 			name = "gdd_eoc_decree_scroll_up_backdrop"
 			quadTextureSprite = "GFX_scroll_up"
-			position = { x = 300 y = 150 }
+			position = { x = 300 y = 162 }
 			alwaystransparent = yes
 		}
 
 		guiButtonType = {
 			name = "gdd_eoc_decree_scroll_down_backdrop"
 			quadTextureSprite = "GFX_scroll_down"
-			position = { x = 300 y = 568 }
+			position = { x = 300 y = 602 }
 			alwaystransparent = yes
 		}
 
 		guiButtonType = {
 			name = "gdd_eoc_decree_scroll_up"
 			quadTextureSprite = "GFX_scroll_up"
-			position = { x = 300 y = 150 }
+			position = { x = 300 y = 162 }
 			clicksound = click
 			scripted = yes
 		}
@@ -743,7 +743,7 @@ guiTypes = {
 		guiButtonType = {
 			name = "gdd_eoc_decree_scroll_down"
 			quadTextureSprite = "GFX_scroll_down"
-			position = { x = 300 y = 568 }
+			position = { x = 300 y = 602 }
 			clicksound = click
 			scripted = yes
 		}
@@ -752,7 +752,7 @@ guiTypes = {
 		guiButtonType = {
 			name = "emperor_shield"
 			quadTextureSprite = "GFX_shield_thin"
-			position = { x = 426 y = 136 }
+			position = { x = 506 y = 136 }
 			tooltip = ""
 			tooltipText = ""
 			delayedTooltipText = ""
@@ -763,20 +763,20 @@ guiTypes = {
 		iconType = {
 			name = "benefits_icon"
 			spriteType = "GFX_emperor_of_china_icon"
-			position = { x = 438 y = 217 }
+			position = { x = 518 y = 217 }
 			Orientation = "UPPER_LEFT"
 		}
 
 		iconType = {
 			name = "diplomatic_actions_icon"
 			spriteType = "GFX_celestial_more_dip_actions_icon"
-			position = { x = 483 y = 217 }
+			position = { x = 563 y = 217 }
 			Orientation = "UPPER_LEFT"
 		}
 
 		instantTextBoxType = {
 			name = "emperor_label"
-			position = { x = 352 y = 258 }
+			position = { x = 432 y = 258 }
 			textureFile = ""
 			font = "vic_22"
 			borderSize = { x = 0 y = 0 }
@@ -791,7 +791,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "gdd_eoc_authority_title"
-			position = { x = 445 y = 302 }
+			position = { x = 532 y = 302 }
 			textureFile = ""
 			font = "vic_22"
 			borderSize = { x = 4 y = 0 }
@@ -803,7 +803,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "gdd_eoc_feudatory_prestige_label"
-			position = { x = 451 y = 302 }
+			position = { x = 538 y = 302 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = { x = 2 y = 0 }
@@ -815,7 +815,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "gdd_eoc_central_authority_label"
-			position = { x = 565 y = 302 }
+			position = { x = 652 y = 302 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = { x = 2 y = 0 }
@@ -844,35 +844,35 @@ guiTypes = {
 		iconType = {
 			name = "gdd_eoc_authority_track_bg"
 			spriteType = "GFX_piety_bar_bg"
-			position = { x = 468 y = 328 }
+			position = { x = 555 y = 328 }
 			alwaystransparent = yes
 		}
 
 		iconType = {
 			name = "gdd_eoc_authority_track"
 			spriteType = "GFX_gdd_eoc_authority_track"
-			position = { x = 452 y = 328 }
+			position = { x = 539 y = 328 }
 			alwaystransparent = yes
 		}
 
 		iconType = {
 			name = "gdd_eoc_feudatory_prestige_icon"
 			spriteType = "GFX_gdd_eoc_feudatory_prestige_icon"
-			position = { x = 392 y = 293 }
+			position = { x = 479 y = 293 }
 			scripted = yes
 		}
 
 		iconType = {
 			name = "gdd_eoc_central_authority_icon"
 			spriteType = "GFX_gdd_eoc_central_authority_icon"
-			position = { x = 642 y = 293 }
+			position = { x = 729 y = 293 }
 			scripted = yes
 		}
 
 		iconType = {
 			name = "gdd_eoc_authority_bar_m100"
 			spriteType = "GFX_gdd_eoc_authority_marker"
-			position = { x = 468 y = 318 }
+			position = { x = 555 y = 318 }
 			scripted = yes
 			alwaystransparent = yes
 		}
@@ -880,7 +880,7 @@ guiTypes = {
 		iconType = {
 			name = "gdd_eoc_authority_bar_m090"
 			spriteType = "GFX_gdd_eoc_authority_marker"
-			position = { x = 474 y = 318 }
+			position = { x = 561 y = 318 }
 			scripted = yes
 			alwaystransparent = yes
 		}
@@ -888,7 +888,7 @@ guiTypes = {
 		iconType = {
 			name = "gdd_eoc_authority_bar_m080"
 			spriteType = "GFX_gdd_eoc_authority_marker"
-			position = { x = 481 y = 318 }
+			position = { x = 568 y = 318 }
 			scripted = yes
 			alwaystransparent = yes
 		}
@@ -896,7 +896,7 @@ guiTypes = {
 		iconType = {
 			name = "gdd_eoc_authority_bar_m070"
 			spriteType = "GFX_gdd_eoc_authority_marker"
-			position = { x = 487 y = 318 }
+			position = { x = 574 y = 318 }
 			scripted = yes
 			alwaystransparent = yes
 		}
@@ -904,7 +904,7 @@ guiTypes = {
 		iconType = {
 			name = "gdd_eoc_authority_bar_m060"
 			spriteType = "GFX_gdd_eoc_authority_marker"
-			position = { x = 494 y = 318 }
+			position = { x = 581 y = 318 }
 			scripted = yes
 			alwaystransparent = yes
 		}
@@ -912,7 +912,7 @@ guiTypes = {
 		iconType = {
 			name = "gdd_eoc_authority_bar_m050"
 			spriteType = "GFX_gdd_eoc_authority_marker"
-			position = { x = 500 y = 318 }
+			position = { x = 587 y = 318 }
 			scripted = yes
 			alwaystransparent = yes
 		}
@@ -920,7 +920,7 @@ guiTypes = {
 		iconType = {
 			name = "gdd_eoc_authority_bar_m040"
 			spriteType = "GFX_gdd_eoc_authority_marker"
-			position = { x = 506 y = 318 }
+			position = { x = 593 y = 318 }
 			scripted = yes
 			alwaystransparent = yes
 		}
@@ -928,7 +928,7 @@ guiTypes = {
 		iconType = {
 			name = "gdd_eoc_authority_bar_m030"
 			spriteType = "GFX_gdd_eoc_authority_marker"
-			position = { x = 513 y = 318 }
+			position = { x = 600 y = 318 }
 			scripted = yes
 			alwaystransparent = yes
 		}
@@ -936,7 +936,7 @@ guiTypes = {
 		iconType = {
 			name = "gdd_eoc_authority_bar_m020"
 			spriteType = "GFX_gdd_eoc_authority_marker"
-			position = { x = 519 y = 318 }
+			position = { x = 606 y = 318 }
 			scripted = yes
 			alwaystransparent = yes
 		}
@@ -944,7 +944,7 @@ guiTypes = {
 		iconType = {
 			name = "gdd_eoc_authority_bar_m010"
 			spriteType = "GFX_gdd_eoc_authority_marker"
-			position = { x = 526 y = 318 }
+			position = { x = 613 y = 318 }
 			scripted = yes
 			alwaystransparent = yes
 		}
@@ -952,7 +952,15 @@ guiTypes = {
 		iconType = {
 			name = "gdd_eoc_authority_bar_zero"
 			spriteType = "GFX_gdd_eoc_authority_marker"
-			position = { x = 532 y = 318 }
+			position = { x = 619 y = 318 }
+			scripted = yes
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "gdd_eoc_authority_bar_p000"
+			spriteType = "GFX_gdd_eoc_authority_marker"
+			position = { x = 619 y = 318 }
 			scripted = yes
 			alwaystransparent = yes
 		}
@@ -960,7 +968,7 @@ guiTypes = {
 		iconType = {
 			name = "gdd_eoc_authority_bar_p010"
 			spriteType = "GFX_gdd_eoc_authority_marker"
-			position = { x = 538 y = 318 }
+			position = { x = 625 y = 318 }
 			scripted = yes
 			alwaystransparent = yes
 		}
@@ -968,7 +976,7 @@ guiTypes = {
 		iconType = {
 			name = "gdd_eoc_authority_bar_p020"
 			spriteType = "GFX_gdd_eoc_authority_marker"
-			position = { x = 545 y = 318 }
+			position = { x = 632 y = 318 }
 			scripted = yes
 			alwaystransparent = yes
 		}
@@ -976,7 +984,7 @@ guiTypes = {
 		iconType = {
 			name = "gdd_eoc_authority_bar_p030"
 			spriteType = "GFX_gdd_eoc_authority_marker"
-			position = { x = 551 y = 318 }
+			position = { x = 638 y = 318 }
 			scripted = yes
 			alwaystransparent = yes
 		}
@@ -984,7 +992,7 @@ guiTypes = {
 		iconType = {
 			name = "gdd_eoc_authority_bar_p040"
 			spriteType = "GFX_gdd_eoc_authority_marker"
-			position = { x = 558 y = 318 }
+			position = { x = 645 y = 318 }
 			scripted = yes
 			alwaystransparent = yes
 		}
@@ -992,7 +1000,7 @@ guiTypes = {
 		iconType = {
 			name = "gdd_eoc_authority_bar_p050"
 			spriteType = "GFX_gdd_eoc_authority_marker"
-			position = { x = 564 y = 318 }
+			position = { x = 651 y = 318 }
 			scripted = yes
 			alwaystransparent = yes
 		}
@@ -1000,7 +1008,7 @@ guiTypes = {
 		iconType = {
 			name = "gdd_eoc_authority_bar_p060"
 			spriteType = "GFX_gdd_eoc_authority_marker"
-			position = { x = 570 y = 318 }
+			position = { x = 657 y = 318 }
 			scripted = yes
 			alwaystransparent = yes
 		}
@@ -1008,7 +1016,7 @@ guiTypes = {
 		iconType = {
 			name = "gdd_eoc_authority_bar_p070"
 			spriteType = "GFX_gdd_eoc_authority_marker"
-			position = { x = 577 y = 318 }
+			position = { x = 664 y = 318 }
 			scripted = yes
 			alwaystransparent = yes
 		}
@@ -1016,7 +1024,7 @@ guiTypes = {
 		iconType = {
 			name = "gdd_eoc_authority_bar_p080"
 			spriteType = "GFX_gdd_eoc_authority_marker"
-			position = { x = 583 y = 318 }
+			position = { x = 670 y = 318 }
 			scripted = yes
 			alwaystransparent = yes
 		}
@@ -1024,7 +1032,7 @@ guiTypes = {
 		iconType = {
 			name = "gdd_eoc_authority_bar_p090"
 			spriteType = "GFX_gdd_eoc_authority_marker"
-			position = { x = 590 y = 318 }
+			position = { x = 677 y = 318 }
 			scripted = yes
 			alwaystransparent = yes
 		}
@@ -1032,14 +1040,14 @@ guiTypes = {
 		iconType = {
 			name = "gdd_eoc_authority_bar_p100"
 			spriteType = "GFX_gdd_eoc_authority_marker"
-			position = { x = 596 y = 318 }
+			position = { x = 683 y = 318 }
 			scripted = yes
 			alwaystransparent = yes
 		}
 
 		instantTextBoxType = {
 			name = "gdd_eoc_authority_value_m100"
-			position = { x = 474 y = 322 }
+			position = { x = 561 y = 322 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = { x = 0 y = 0 }
@@ -1052,7 +1060,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "gdd_eoc_authority_value_m090"
-			position = { x = 480 y = 322 }
+			position = { x = 567 y = 322 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = { x = 0 y = 0 }
@@ -1065,7 +1073,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "gdd_eoc_authority_value_m080"
-			position = { x = 487 y = 322 }
+			position = { x = 574 y = 322 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = { x = 0 y = 0 }
@@ -1078,7 +1086,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "gdd_eoc_authority_value_m070"
-			position = { x = 493 y = 322 }
+			position = { x = 580 y = 322 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = { x = 0 y = 0 }
@@ -1091,7 +1099,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "gdd_eoc_authority_value_m060"
-			position = { x = 500 y = 322 }
+			position = { x = 587 y = 322 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = { x = 0 y = 0 }
@@ -1104,7 +1112,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "gdd_eoc_authority_value_m050"
-			position = { x = 506 y = 322 }
+			position = { x = 593 y = 322 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = { x = 0 y = 0 }
@@ -1117,7 +1125,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "gdd_eoc_authority_value_m040"
-			position = { x = 512 y = 322 }
+			position = { x = 599 y = 322 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = { x = 0 y = 0 }
@@ -1130,7 +1138,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "gdd_eoc_authority_value_m030"
-			position = { x = 519 y = 322 }
+			position = { x = 606 y = 322 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = { x = 0 y = 0 }
@@ -1143,7 +1151,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "gdd_eoc_authority_value_m020"
-			position = { x = 525 y = 322 }
+			position = { x = 612 y = 322 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = { x = 0 y = 0 }
@@ -1156,7 +1164,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "gdd_eoc_authority_value_m010"
-			position = { x = 532 y = 322 }
+			position = { x = 619 y = 322 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = { x = 0 y = 0 }
@@ -1169,7 +1177,20 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "gdd_eoc_authority_value_zero"
-			position = { x = 538 y = 322 }
+			position = { x = 625 y = 322 }
+			textureFile = ""
+			font = "vic_18"
+			borderSize = { x = 0 y = 0 }
+			text = ""
+			maxWidth = 40
+			maxHeight = 24
+			format = centre
+			scripted = yes
+		}
+
+		instantTextBoxType = {
+			name = "gdd_eoc_authority_value_p000"
+			position = { x = 625 y = 322 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = { x = 0 y = 0 }
@@ -1182,7 +1203,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "gdd_eoc_authority_value_p010"
-			position = { x = 544 y = 322 }
+			position = { x = 631 y = 322 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = { x = 0 y = 0 }
@@ -1195,7 +1216,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "gdd_eoc_authority_value_p020"
-			position = { x = 551 y = 322 }
+			position = { x = 638 y = 322 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = { x = 0 y = 0 }
@@ -1208,7 +1229,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "gdd_eoc_authority_value_p030"
-			position = { x = 557 y = 322 }
+			position = { x = 644 y = 322 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = { x = 0 y = 0 }
@@ -1221,7 +1242,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "gdd_eoc_authority_value_p040"
-			position = { x = 564 y = 322 }
+			position = { x = 651 y = 322 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = { x = 0 y = 0 }
@@ -1234,7 +1255,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "gdd_eoc_authority_value_p050"
-			position = { x = 570 y = 322 }
+			position = { x = 657 y = 322 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = { x = 0 y = 0 }
@@ -1247,7 +1268,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "gdd_eoc_authority_value_p060"
-			position = { x = 576 y = 322 }
+			position = { x = 663 y = 322 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = { x = 0 y = 0 }
@@ -1260,7 +1281,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "gdd_eoc_authority_value_p070"
-			position = { x = 583 y = 322 }
+			position = { x = 670 y = 322 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = { x = 0 y = 0 }
@@ -1273,7 +1294,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "gdd_eoc_authority_value_p080"
-			position = { x = 589 y = 322 }
+			position = { x = 676 y = 322 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = { x = 0 y = 0 }
@@ -1286,7 +1307,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "gdd_eoc_authority_value_p090"
-			position = { x = 596 y = 322 }
+			position = { x = 683 y = 322 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = { x = 0 y = 0 }
@@ -1299,7 +1320,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "gdd_eoc_authority_value_p100"
-			position = { x = 602 y = 322 }
+			position = { x = 689 y = 322 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = { x = 0 y = 0 }
@@ -1313,7 +1334,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "gdd_eoc_authority_tick_m100"
-			position = { x = 474 y = 375 }
+			position = { x = 561 y = 375 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = { x = 0 y = 0 }
@@ -1325,7 +1346,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "gdd_eoc_authority_tick_m25"
-			position = { x = 522 y = 375 }
+			position = { x = 609 y = 375 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = { x = 0 y = 0 }
@@ -1337,7 +1358,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "gdd_eoc_authority_tick_zero"
-			position = { x = 538 y = 375 }
+			position = { x = 625 y = 375 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = { x = 0 y = 0 }
@@ -1349,7 +1370,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "gdd_eoc_authority_tick_p25"
-			position = { x = 554 y = 375 }
+			position = { x = 641 y = 375 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = { x = 0 y = 0 }
@@ -1361,7 +1382,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "gdd_eoc_authority_tick_p100"
-			position = { x = 602 y = 375 }
+			position = { x = 689 y = 375 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = { x = 0 y = 0 }
@@ -1373,7 +1394,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "influence_label"
-			position = { x = 600 y = 91 }
+			position = { x = 680 y = 91 }
 			textureFile = ""
 			font = "vic_22"
 			borderSize = { x = 4 y = 0 }
@@ -1385,7 +1406,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "influence_value"
-			position = { x = 625 y = 128 }
+			position = { x = 705 y = 128 }
 			textureFile = ""
 			font = "vic_29"
 			borderSize = { x = 0 y = 0 }
@@ -1393,12 +1414,11 @@ guiTypes = {
 			maxWidth = 120
 			maxHeight = 32
 			format = centre
-			hint_tag = "hint_imperialauthority"
 		}
 
 		instantTextBoxType = {
 			name = "influence_growth"
-			position = { x = 625 y = 168 }
+			position = { x = 705 y = 168 }
 			textureFile = ""
 			font = "vic_22"
 			borderSize = { x = 0 y = 0 }
@@ -1406,7 +1426,34 @@ guiTypes = {
 			maxWidth = 120
 			maxHeight = 32
 			format = centre
-			hint_tag = "hint_imperialauthority"
+		}
+
+		# Invisible scripted hover surfaces. The native value and growth text above
+		# remain untouched, so their numbers continue to come from the engine.
+		instantTextBoxType = {
+			name = "gdd_eoc_mandate_value_tooltip"
+			position = { x = 705 y = 128 }
+			textureFile = ""
+			font = "vic_29"
+			borderSize = { x = 0 y = 0 }
+			text = ""
+			maxWidth = 120
+			maxHeight = 32
+			format = centre
+			scripted = yes
+		}
+
+		instantTextBoxType = {
+			name = "gdd_eoc_mandate_growth_tooltip"
+			position = { x = 705 y = 168 }
+			textureFile = ""
+			font = "vic_22"
+			borderSize = { x = 0 y = 0 }
+			text = ""
+			maxWidth = 120
+			maxHeight = 32
+			format = centre
+			scripted = yes
 		}
 
 		# Vassal hierarchy interface. The principal slot is bound to YAN; the six
@@ -1414,7 +1461,7 @@ guiTypes = {
 		# Together they form the seven great feudatories shown in the lower centre.
 		instantTextBoxType = {
 			name = "gdd_great_feudatories_label"
-			position = { x = 420 y = 688 }
+			position = { x = 500 y = 648 }
 			textureFile = ""
 			font = "vic_22"
 			borderSize = { x = 4 y = 0 }
@@ -1426,7 +1473,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "gdd_principal_vassal_label"
-			position = { x = 460 y = 722 }
+			position = { x = 548 y = 748 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = { x = 4 y = 0 }
@@ -1440,7 +1487,7 @@ guiTypes = {
 			name = "gdd_principal_vassal_slot"
 			scripted = yes
 			quadTextureSprite = "GFX_shield_medium"
-			position = { x = 525 y = 746 }
+			position = { x = 613 y = 684 }
 			size = { x = 64 y = 64 }
 			tooltip = ""
 			tooltipText = "GDD_CELESTIAL_PRINCIPAL_VASSAL_TT"
@@ -1456,7 +1503,7 @@ guiTypes = {
 		guiButtonType = {
 			name = "gdd_vassal_empty_slot_1"
 			quadTextureSprite = "GFX_shield_medium"
-			position = { x = 386 y = 820 }
+			position = { x = 458 y = 790 }
 			size = { x = 55 y = 55 }
 			tooltip = ""
 			tooltipText = "GDD_CELESTIAL_EMPTY_GREAT_FEUDATORY_SLOT_TT"
@@ -1469,7 +1516,7 @@ guiTypes = {
 		guiButtonType = {
 			name = "gdd_vassal_empty_slot_2"
 			quadTextureSprite = "GFX_shield_medium"
-			position = { x = 443 y = 820 }
+			position = { x = 522 y = 790 }
 			size = { x = 55 y = 55 }
 			tooltip = ""
 			tooltipText = "GDD_CELESTIAL_EMPTY_GREAT_FEUDATORY_SLOT_TT"
@@ -1482,7 +1529,7 @@ guiTypes = {
 		guiButtonType = {
 			name = "gdd_vassal_empty_slot_3"
 			quadTextureSprite = "GFX_shield_medium"
-			position = { x = 500 y = 820 }
+			position = { x = 586 y = 790 }
 			size = { x = 55 y = 55 }
 			tooltip = ""
 			tooltipText = "GDD_CELESTIAL_EMPTY_GREAT_FEUDATORY_SLOT_TT"
@@ -1495,7 +1542,7 @@ guiTypes = {
 		guiButtonType = {
 			name = "gdd_vassal_empty_slot_4"
 			quadTextureSprite = "GFX_shield_medium"
-			position = { x = 557 y = 820 }
+			position = { x = 650 y = 790 }
 			size = { x = 55 y = 55 }
 			tooltip = ""
 			tooltipText = "GDD_CELESTIAL_EMPTY_GREAT_FEUDATORY_SLOT_TT"
@@ -1508,7 +1555,7 @@ guiTypes = {
 		guiButtonType = {
 			name = "gdd_vassal_empty_slot_5"
 			quadTextureSprite = "GFX_shield_medium"
-			position = { x = 614 y = 820 }
+			position = { x = 714 y = 790 }
 			size = { x = 55 y = 55 }
 			tooltip = ""
 			tooltipText = "GDD_CELESTIAL_EMPTY_GREAT_FEUDATORY_SLOT_TT"
@@ -1521,7 +1568,7 @@ guiTypes = {
 		guiButtonType = {
 			name = "gdd_vassal_empty_slot_6"
 			quadTextureSprite = "GFX_shield_medium"
-			position = { x = 671 y = 820 }
+			position = { x = 778 y = 790 }
 			size = { x = 55 y = 55 }
 			tooltip = ""
 			tooltipText = "GDD_CELESTIAL_EMPTY_GREAT_FEUDATORY_SLOT_TT"
@@ -1535,7 +1582,7 @@ guiTypes = {
 			name = "gdd_vassal_slot_1"
 			scripted = yes
 			quadTextureSprite = "GFX_shield_medium"
-			position = { x = 386 y = 820 }
+			position = { x = 458 y = 790 }
 			size = { x = 55 y = 55 }
 			tooltip = ""
 			tooltipText = "GDD_CELESTIAL_GREAT_FEUDATORY_SLOT_TT"
@@ -1550,7 +1597,7 @@ guiTypes = {
 			name = "gdd_vassal_slot_2"
 			scripted = yes
 			quadTextureSprite = "GFX_shield_medium"
-			position = { x = 443 y = 820 }
+			position = { x = 522 y = 790 }
 			size = { x = 55 y = 55 }
 			tooltip = ""
 			tooltipText = "GDD_CELESTIAL_GREAT_FEUDATORY_SLOT_TT"
@@ -1565,7 +1612,7 @@ guiTypes = {
 			name = "gdd_vassal_slot_3"
 			scripted = yes
 			quadTextureSprite = "GFX_shield_medium"
-			position = { x = 500 y = 820 }
+			position = { x = 586 y = 790 }
 			size = { x = 55 y = 55 }
 			tooltip = ""
 			tooltipText = "GDD_CELESTIAL_GREAT_FEUDATORY_SLOT_TT"
@@ -1580,7 +1627,7 @@ guiTypes = {
 			name = "gdd_vassal_slot_4"
 			scripted = yes
 			quadTextureSprite = "GFX_shield_medium"
-			position = { x = 557 y = 820 }
+			position = { x = 650 y = 790 }
 			size = { x = 55 y = 55 }
 			tooltip = ""
 			tooltipText = "GDD_CELESTIAL_GREAT_FEUDATORY_SLOT_TT"
@@ -1595,7 +1642,7 @@ guiTypes = {
 			name = "gdd_vassal_slot_5"
 			scripted = yes
 			quadTextureSprite = "GFX_shield_medium"
-			position = { x = 614 y = 820 }
+			position = { x = 714 y = 790 }
 			size = { x = 55 y = 55 }
 			tooltip = ""
 			tooltipText = "GDD_CELESTIAL_GREAT_FEUDATORY_SLOT_TT"
@@ -1610,7 +1657,7 @@ guiTypes = {
 			name = "gdd_vassal_slot_6"
 			scripted = yes
 			quadTextureSprite = "GFX_shield_medium"
-			position = { x = 671 y = 820 }
+			position = { x = 778 y = 790 }
 			size = { x = 55 y = 55 }
 			tooltip = ""
 			tooltipText = "GDD_CELESTIAL_GREAT_FEUDATORY_SLOT_TT"
@@ -1619,6 +1666,48 @@ guiTypes = {
 			clicksound = click
 			scale = 0.85
 			Orientation = "UPPER_LEFT"
+		}
+
+		# Exact vanilla HRE button treatment: one 149x31 row using button_type_1.
+		# The feudatory block above is lifted by only 40 px, leaving this single
+		# action row inside the original 900 px vertical footprint.
+		guiButtonType = {
+			name = "gdd_leave_tianxia_button"
+			position = { x = 374 y = 869 }
+			quadTextureSprite = "button_type_1"
+			buttonText = "GDD_LEAVE_TIANXIA_BUTTON"
+			buttonFont = "vic_18"
+			tooltip = ""
+			tooltipText = ""
+			delayedTooltipText = ""
+			clicksound = click
+			scripted = yes
+		}
+
+		guiButtonType = {
+			name = "gdd_add_all_tianxia_provinces_button"
+			position = { x = 535 y = 869 }
+			quadTextureSprite = "GFX_gdd_eoc_button_type_1_220"
+			buttonText = "GDD_ADD_ALL_TIANXIA_PROVINCES_BUTTON"
+			buttonFont = "vic_18"
+			tooltip = ""
+			tooltipText = ""
+			delayedTooltipText = ""
+			clicksound = click
+			scripted = yes
+		}
+
+		guiButtonType = {
+			name = "gdd_dismantle_tianxia_button"
+			position = { x = 767 y = 869 }
+			quadTextureSprite = "button_type_1"
+			buttonText = "GDD_DISMANTLE_TIANXIA_BUTTON"
+			buttonFont = "vic_18"
+			tooltip = ""
+			tooltipText = ""
+			delayedTooltipText = ""
+			clicksound = click
+			scripted = yes
 		}
 
 		# Retain the hard-coded tributary controls off-screen, then show an
@@ -2312,48 +2401,48 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "decisions_label"
-			position = { x = 812 y = 91 }
+			position = { x = 982 y = 91 }
 			textureFile = ""
 			font = "vic_22"
 			borderSize = { x = 4 y = 0 }
 			text = "CELESTIAL_DECISIONS"
-			maxWidth = 210
+			maxWidth = 200
 			maxHeight = 32
 			format = centre
 		}
 
 		instantTextBoxType = {
 			name = "gdd_reform_ordinary_header"
-			position = { x = 812 y = 116 }
+			position = { x = 982 y = 116 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = { x = 4 y = 0 }
 			text = "GDD_CELESTIAL_REFORM_ORDINARY_HEADER"
-			maxWidth = 210
+			maxWidth = 200
 			maxHeight = 24
 			format = centre
 		}
 
 		instantTextBoxType = {
 			name = "gdd_reform_centralizing_header"
-			position = { x = 812 y = 394 }
+			position = { x = 982 y = 438 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = { x = 4 y = 0 }
 			text = "GDD_CELESTIAL_REFORM_CENTRALIZING_HEADER"
-			maxWidth = 210
+			maxWidth = 200
 			maxHeight = 24
 			format = centre
 		}
 
 		instantTextBoxType = {
 			name = "gdd_reform_decentralizing_header"
-			position = { x = 812 y = 630 }
+			position = { x = 982 y = 682 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = { x = 4 y = 0 }
 			text = "GDD_CELESTIAL_REFORM_DECENTRALIZING_HEADER"
-			maxWidth = 210
+			maxWidth = 200
 			maxHeight = 24
 			format = centre
 		}
@@ -2376,7 +2465,7 @@ guiTypes = {
 		guiButtonType = {
 			name = "gdd_reform_keju_button"
 			scripted = yes
-			position = { x = 821 y = 141 }
+			position = { x = 982 y = 149 }
 			quadTextureSprite = "GFX_reform_button"
 			buttonText = "GDD_REFORM_KEJU_TITLE"
 			buttonFont = "vic_18"
@@ -2392,14 +2481,14 @@ guiTypes = {
 			scripted = yes
 			spriteType = "GFX_enacted_reform_icon"
 			alwaystransparent = yes
-			position = { x = 827 y = 148 }
+			position = { x = 988 y = 156 }
 			scale = 0.75
 		}
 
 		guiButtonType = {
 			name = "gdd_reform_civil_registration_button"
 			scripted = yes
-			position = { x = 821 y = 170 }
+			position = { x = 982 y = 181 }
 			quadTextureSprite = "GFX_reform_button"
 			buttonText = "GDD_REFORM_CIVIL_REGISTRATION_TITLE"
 			buttonFont = "vic_18"
@@ -2415,14 +2504,14 @@ guiTypes = {
 			scripted = yes
 			spriteType = "GFX_enacted_reform_icon"
 			alwaystransparent = yes
-			position = { x = 827 y = 177 }
+			position = { x = 988 y = 188 }
 			scale = 0.75
 		}
 
 		guiButtonType = {
 			name = "gdd_reform_silver_standard_button"
 			scripted = yes
-			position = { x = 821 y = 199 }
+			position = { x = 982 y = 213 }
 			quadTextureSprite = "GFX_reform_button"
 			buttonText = "GDD_REFORM_SILVER_STANDARD_TITLE"
 			buttonFont = "vic_18"
@@ -2438,14 +2527,14 @@ guiTypes = {
 			scripted = yes
 			spriteType = "GFX_enacted_reform_icon"
 			alwaystransparent = yes
-			position = { x = 827 y = 206 }
+			position = { x = 988 y = 220 }
 			scale = 0.75
 		}
 
 		guiButtonType = {
 			name = "gdd_reform_kanhe_button"
 			scripted = yes
-			position = { x = 821 y = 228 }
+			position = { x = 982 y = 245 }
 			quadTextureSprite = "GFX_reform_button"
 			buttonText = "GDD_REFORM_KANHE_TITLE"
 			buttonFont = "vic_18"
@@ -2461,14 +2550,14 @@ guiTypes = {
 			scripted = yes
 			spriteType = "GFX_enacted_reform_icon"
 			alwaystransparent = yes
-			position = { x = 827 y = 235 }
+			position = { x = 988 y = 252 }
 			scale = 0.75
 		}
 
 		guiButtonType = {
 			name = "gdd_reform_unified_market_button"
 			scripted = yes
-			position = { x = 821 y = 257 }
+			position = { x = 982 y = 277 }
 			quadTextureSprite = "GFX_reform_button"
 			buttonText = "GDD_REFORM_UNIFIED_MARKET_TITLE"
 			buttonFont = "vic_18"
@@ -2484,14 +2573,14 @@ guiTypes = {
 			scripted = yes
 			spriteType = "GFX_enacted_reform_icon"
 			alwaystransparent = yes
-			position = { x = 827 y = 264 }
+			position = { x = 988 y = 284 }
 			scale = 0.75
 		}
 
 		guiButtonType = {
 			name = "gdd_reform_military_branch_button"
 			scripted = yes
-			position = { x = 821 y = 286 }
+			position = { x = 982 y = 309 }
 			quadTextureSprite = "GFX_reform_button"
 			buttonText = "GDD_REFORM_MILITARY_BRANCH_TITLE"
 			buttonFont = "vic_18"
@@ -2507,14 +2596,14 @@ guiTypes = {
 			scripted = yes
 			spriteType = "GFX_enacted_reform_icon"
 			alwaystransparent = yes
-			position = { x = 827 y = 293 }
+			position = { x = 988 y = 316 }
 			scale = 0.75
 		}
 
 		guiButtonType = {
 			name = "gdd_reform_foreign_ship_designs_button"
 			scripted = yes
-			position = { x = 821 y = 315 }
+			position = { x = 982 y = 341 }
 			quadTextureSprite = "GFX_reform_button"
 			buttonText = "GDD_REFORM_FOREIGN_SHIP_DESIGNS_TITLE"
 			buttonFont = "vic_18"
@@ -2530,14 +2619,14 @@ guiTypes = {
 			scripted = yes
 			spriteType = "GFX_enacted_reform_icon"
 			alwaystransparent = yes
-			position = { x = 827 y = 322 }
+			position = { x = 988 y = 348 }
 			scale = 0.75
 		}
 
 		guiButtonType = {
 			name = "gdd_reform_inclusive_monarchy_button"
 			scripted = yes
-			position = { x = 821 y = 344 }
+			position = { x = 982 y = 373 }
 			quadTextureSprite = "GFX_reform_button"
 			buttonText = "GDD_REFORM_INCLUSIVE_MONARCHY_TITLE"
 			buttonFont = "vic_18"
@@ -2553,14 +2642,14 @@ guiTypes = {
 			scripted = yes
 			spriteType = "GFX_enacted_reform_icon"
 			alwaystransparent = yes
-			position = { x = 827 y = 351 }
+			position = { x = 988 y = 380 }
 			scale = 0.75
 		}
 
 		guiButtonType = {
 			name = "gdd_reform_establish_gaituguiliu_button"
 			scripted = yes
-			position = { x = 821 y = 423 }
+			position = { x = 982 y = 467 }
 			quadTextureSprite = "GFX_reform_button"
 			buttonText = "GDD_REFORM_ESTABLISH_GAITUGUILIU_TITLE"
 			buttonFont = "vic_18"
@@ -2576,14 +2665,14 @@ guiTypes = {
 			scripted = yes
 			spriteType = "GFX_enacted_reform_icon"
 			alwaystransparent = yes
-			position = { x = 827 y = 430 }
+			position = { x = 988 y = 474 }
 			scale = 0.75
 		}
 
 		guiButtonType = {
 			name = "gdd_reform_land_tax_button"
 			scripted = yes
-			position = { x = 821 y = 452 }
+			position = { x = 982 y = 497 }
 			quadTextureSprite = "GFX_reform_button"
 			buttonText = "GDD_REFORM_LAND_TAX_TITLE"
 			buttonFont = "vic_18"
@@ -2599,14 +2688,14 @@ guiTypes = {
 			scripted = yes
 			spriteType = "GFX_enacted_reform_icon"
 			alwaystransparent = yes
-			position = { x = 827 y = 459 }
+			position = { x = 988 y = 504 }
 			scale = 0.75
 		}
 
 		guiButtonType = {
 			name = "gdd_reform_single_whip_button"
 			scripted = yes
-			position = { x = 821 y = 481 }
+			position = { x = 982 y = 527 }
 			quadTextureSprite = "GFX_reform_button"
 			buttonText = "GDD_REFORM_SINGLE_WHIP_TITLE"
 			buttonFont = "vic_18"
@@ -2622,14 +2711,14 @@ guiTypes = {
 			scripted = yes
 			spriteType = "GFX_enacted_reform_icon"
 			alwaystransparent = yes
-			position = { x = 827 y = 488 }
+			position = { x = 988 y = 534 }
 			scale = 0.75
 		}
 
 		guiButtonType = {
 			name = "gdd_reform_centralizing_government_button"
 			scripted = yes
-			position = { x = 821 y = 510 }
+			position = { x = 982 y = 557 }
 			quadTextureSprite = "GFX_reform_button"
 			buttonText = "GDD_REFORM_CENTRALIZING_GOVERNMENT_TITLE"
 			buttonFont = "vic_18"
@@ -2645,14 +2734,14 @@ guiTypes = {
 			scripted = yes
 			spriteType = "GFX_enacted_reform_icon"
 			alwaystransparent = yes
-			position = { x = 827 y = 517 }
+			position = { x = 988 y = 564 }
 			scale = 0.75
 		}
 
 		guiButtonType = {
 			name = "gdd_reform_reign_in_estates_button"
 			scripted = yes
-			position = { x = 821 y = 539 }
+			position = { x = 982 y = 587 }
 			quadTextureSprite = "GFX_reform_button"
 			buttonText = "GDD_REFORM_REIGN_IN_ESTATES_TITLE"
 			buttonFont = "vic_18"
@@ -2668,14 +2757,14 @@ guiTypes = {
 			scripted = yes
 			spriteType = "GFX_enacted_reform_icon"
 			alwaystransparent = yes
-			position = { x = 827 y = 546 }
+			position = { x = 988 y = 594 }
 			scale = 0.75
 		}
 
 		guiButtonType = {
 			name = "gdd_reform_vassalize_tributaries_button"
 			scripted = yes
-			position = { x = 821 y = 568 }
+			position = { x = 982 y = 617 }
 			quadTextureSprite = "GFX_reform_button"
 			buttonText = "GDD_REFORM_VASSALIZE_TRIBUTARIES_TITLE"
 			buttonFont = "vic_18"
@@ -2691,14 +2780,14 @@ guiTypes = {
 			scripted = yes
 			spriteType = "GFX_enacted_reform_icon"
 			alwaystransparent = yes
-			position = { x = 827 y = 575 }
+			position = { x = 988 y = 624 }
 			scale = 0.75
 		}
 
 		guiButtonType = {
 			name = "gdd_reform_seaban_button"
 			scripted = yes
-			position = { x = 821 y = 659 }
+			position = { x = 982 y = 711 }
 			quadTextureSprite = "GFX_reform_button"
 			buttonText = "GDD_REFORM_SEABAN_TITLE"
 			buttonFont = "vic_18"
@@ -2714,14 +2803,14 @@ guiTypes = {
 			scripted = yes
 			spriteType = "GFX_enacted_reform_icon"
 			alwaystransparent = yes
-			position = { x = 827 y = 666 }
+			position = { x = 988 y = 718 }
 			scale = 0.75
 		}
 
 		guiButtonType = {
 			name = "gdd_reform_military_governors_button"
 			scripted = yes
-			position = { x = 821 y = 688 }
+			position = { x = 982 y = 741 }
 			quadTextureSprite = "GFX_reform_button"
 			buttonText = "GDD_REFORM_MILITARY_GOVERNORS_TITLE"
 			buttonFont = "vic_18"
@@ -2737,14 +2826,14 @@ guiTypes = {
 			scripted = yes
 			spriteType = "GFX_enacted_reform_icon"
 			alwaystransparent = yes
-			position = { x = 827 y = 695 }
+			position = { x = 988 y = 748 }
 			scale = 0.75
 		}
 
 		guiButtonType = {
 			name = "gdd_reform_tributary_embassies_button"
 			scripted = yes
-			position = { x = 821 y = 717 }
+			position = { x = 982 y = 771 }
 			quadTextureSprite = "GFX_reform_button"
 			buttonText = "GDD_REFORM_TRIBUTARY_EMBASSIES_TITLE"
 			buttonFont = "vic_18"
@@ -2760,14 +2849,14 @@ guiTypes = {
 			scripted = yes
 			spriteType = "GFX_enacted_reform_icon"
 			alwaystransparent = yes
-			position = { x = 827 y = 724 }
+			position = { x = 988 y = 778 }
 			scale = 0.75
 		}
 
 		guiButtonType = {
 			name = "gdd_reform_modernize_banners_button"
 			scripted = yes
-			position = { x = 821 y = 746 }
+			position = { x = 982 y = 801 }
 			quadTextureSprite = "GFX_reform_button"
 			buttonText = "GDD_REFORM_MODERNIZE_BANNERS_TITLE"
 			buttonFont = "vic_18"
@@ -2783,14 +2872,14 @@ guiTypes = {
 			scripted = yes
 			spriteType = "GFX_enacted_reform_icon"
 			alwaystransparent = yes
-			position = { x = 827 y = 753 }
+			position = { x = 988 y = 808 }
 			scale = 0.75
 		}
 
 		guiButtonType = {
 			name = "gdd_reform_bureaucratic_faction_button"
 			scripted = yes
-			position = { x = 821 y = 775 }
+			position = { x = 982 y = 831 }
 			quadTextureSprite = "GFX_reform_button"
 			buttonText = "GDD_REFORM_BUREAUCRATIC_FACTION_TITLE"
 			buttonFont = "vic_18"
@@ -2806,14 +2895,14 @@ guiTypes = {
 			scripted = yes
 			spriteType = "GFX_enacted_reform_icon"
 			alwaystransparent = yes
-			position = { x = 827 y = 782 }
+			position = { x = 988 y = 838 }
 			scale = 0.75
 		}
 
 		guiButtonType = {
 			name = "gdd_reform_new_world_button"
 			scripted = yes
-			position = { x = 821 y = 804 }
+			position = { x = 982 y = 861 }
 			quadTextureSprite = "GFX_reform_button"
 			buttonText = "GDD_REFORM_NEW_WORLD_TITLE"
 			buttonFont = "vic_18"
@@ -2829,7 +2918,7 @@ guiTypes = {
 			scripted = yes
 			spriteType = "GFX_enacted_reform_icon"
 			alwaystransparent = yes
-			position = { x = 827 y = 811 }
+			position = { x = 988 y = 868 }
 			scale = 0.75
 		}
 
@@ -2839,7 +2928,7 @@ guiTypes = {
 		guiButtonType = {
 			name = "gdd_reform_vote_keju_button"
 			scripted = yes
-			position = { x = 1003 y = 146 }
+			position = { x = 1164 y = 154 }
 			quadTextureSprite = "GFX_checkbox_gold_32"
 			tooltip = ""
 			tooltipText = ""
@@ -2854,14 +2943,14 @@ guiTypes = {
 			spriteType = "GFX_checkbox_gold_32"
 			frame = 2
 			alwaystransparent = yes
-			position = { x = 1003 y = 146 }
+			position = { x = 1164 y = 154 }
 			scale = 0.65
 		}
 
 		guiButtonType = {
 			name = "gdd_reform_vote_civil_registration_button"
 			scripted = yes
-			position = { x = 1003 y = 175 }
+			position = { x = 1164 y = 186 }
 			quadTextureSprite = "GFX_checkbox_gold_32"
 			tooltip = ""
 			tooltipText = ""
@@ -2876,14 +2965,14 @@ guiTypes = {
 			spriteType = "GFX_checkbox_gold_32"
 			frame = 2
 			alwaystransparent = yes
-			position = { x = 1003 y = 175 }
+			position = { x = 1164 y = 186 }
 			scale = 0.65
 		}
 
 		guiButtonType = {
 			name = "gdd_reform_vote_silver_standard_button"
 			scripted = yes
-			position = { x = 1003 y = 204 }
+			position = { x = 1164 y = 218 }
 			quadTextureSprite = "GFX_checkbox_gold_32"
 			tooltip = ""
 			tooltipText = ""
@@ -2898,14 +2987,14 @@ guiTypes = {
 			spriteType = "GFX_checkbox_gold_32"
 			frame = 2
 			alwaystransparent = yes
-			position = { x = 1003 y = 204 }
+			position = { x = 1164 y = 218 }
 			scale = 0.65
 		}
 
 		guiButtonType = {
 			name = "gdd_reform_vote_kanhe_button"
 			scripted = yes
-			position = { x = 1003 y = 233 }
+			position = { x = 1164 y = 250 }
 			quadTextureSprite = "GFX_checkbox_gold_32"
 			tooltip = ""
 			tooltipText = ""
@@ -2920,14 +3009,14 @@ guiTypes = {
 			spriteType = "GFX_checkbox_gold_32"
 			frame = 2
 			alwaystransparent = yes
-			position = { x = 1003 y = 233 }
+			position = { x = 1164 y = 250 }
 			scale = 0.65
 		}
 
 		guiButtonType = {
 			name = "gdd_reform_vote_unified_market_button"
 			scripted = yes
-			position = { x = 1003 y = 262 }
+			position = { x = 1164 y = 282 }
 			quadTextureSprite = "GFX_checkbox_gold_32"
 			tooltip = ""
 			tooltipText = ""
@@ -2942,14 +3031,14 @@ guiTypes = {
 			spriteType = "GFX_checkbox_gold_32"
 			frame = 2
 			alwaystransparent = yes
-			position = { x = 1003 y = 262 }
+			position = { x = 1164 y = 282 }
 			scale = 0.65
 		}
 
 		guiButtonType = {
 			name = "gdd_reform_vote_military_branch_button"
 			scripted = yes
-			position = { x = 1003 y = 291 }
+			position = { x = 1164 y = 314 }
 			quadTextureSprite = "GFX_checkbox_gold_32"
 			tooltip = ""
 			tooltipText = ""
@@ -2964,14 +3053,14 @@ guiTypes = {
 			spriteType = "GFX_checkbox_gold_32"
 			frame = 2
 			alwaystransparent = yes
-			position = { x = 1003 y = 291 }
+			position = { x = 1164 y = 314 }
 			scale = 0.65
 		}
 
 		guiButtonType = {
 			name = "gdd_reform_vote_foreign_ship_designs_button"
 			scripted = yes
-			position = { x = 1003 y = 320 }
+			position = { x = 1164 y = 346 }
 			quadTextureSprite = "GFX_checkbox_gold_32"
 			tooltip = ""
 			tooltipText = ""
@@ -2986,14 +3075,14 @@ guiTypes = {
 			spriteType = "GFX_checkbox_gold_32"
 			frame = 2
 			alwaystransparent = yes
-			position = { x = 1003 y = 320 }
+			position = { x = 1164 y = 346 }
 			scale = 0.65
 		}
 
 		guiButtonType = {
 			name = "gdd_reform_vote_inclusive_monarchy_button"
 			scripted = yes
-			position = { x = 1003 y = 349 }
+			position = { x = 1164 y = 378 }
 			quadTextureSprite = "GFX_checkbox_gold_32"
 			tooltip = ""
 			tooltipText = ""
@@ -3008,14 +3097,14 @@ guiTypes = {
 			spriteType = "GFX_checkbox_gold_32"
 			frame = 2
 			alwaystransparent = yes
-			position = { x = 1003 y = 349 }
+			position = { x = 1164 y = 378 }
 			scale = 0.65
 		}
 
 		guiButtonType = {
 			name = "gdd_reform_vote_establish_gaituguiliu_button"
 			scripted = yes
-			position = { x = 1003 y = 428 }
+			position = { x = 1164 y = 472 }
 			quadTextureSprite = "GFX_checkbox_gold_32"
 			tooltip = ""
 			tooltipText = ""
@@ -3030,14 +3119,14 @@ guiTypes = {
 			spriteType = "GFX_checkbox_gold_32"
 			frame = 2
 			alwaystransparent = yes
-			position = { x = 1003 y = 428 }
+			position = { x = 1164 y = 472 }
 			scale = 0.65
 		}
 
 		guiButtonType = {
 			name = "gdd_reform_vote_land_tax_button"
 			scripted = yes
-			position = { x = 1003 y = 457 }
+			position = { x = 1164 y = 502 }
 			quadTextureSprite = "GFX_checkbox_gold_32"
 			tooltip = ""
 			tooltipText = ""
@@ -3052,14 +3141,14 @@ guiTypes = {
 			spriteType = "GFX_checkbox_gold_32"
 			frame = 2
 			alwaystransparent = yes
-			position = { x = 1003 y = 457 }
+			position = { x = 1164 y = 502 }
 			scale = 0.65
 		}
 
 		guiButtonType = {
 			name = "gdd_reform_vote_single_whip_button"
 			scripted = yes
-			position = { x = 1003 y = 486 }
+			position = { x = 1164 y = 532 }
 			quadTextureSprite = "GFX_checkbox_gold_32"
 			tooltip = ""
 			tooltipText = ""
@@ -3074,14 +3163,14 @@ guiTypes = {
 			spriteType = "GFX_checkbox_gold_32"
 			frame = 2
 			alwaystransparent = yes
-			position = { x = 1003 y = 486 }
+			position = { x = 1164 y = 532 }
 			scale = 0.65
 		}
 
 		guiButtonType = {
 			name = "gdd_reform_vote_centralizing_government_button"
 			scripted = yes
-			position = { x = 1003 y = 515 }
+			position = { x = 1164 y = 562 }
 			quadTextureSprite = "GFX_checkbox_gold_32"
 			tooltip = ""
 			tooltipText = ""
@@ -3096,14 +3185,14 @@ guiTypes = {
 			spriteType = "GFX_checkbox_gold_32"
 			frame = 2
 			alwaystransparent = yes
-			position = { x = 1003 y = 515 }
+			position = { x = 1164 y = 562 }
 			scale = 0.65
 		}
 
 		guiButtonType = {
 			name = "gdd_reform_vote_reign_in_estates_button"
 			scripted = yes
-			position = { x = 1003 y = 544 }
+			position = { x = 1164 y = 592 }
 			quadTextureSprite = "GFX_checkbox_gold_32"
 			tooltip = ""
 			tooltipText = ""
@@ -3118,14 +3207,14 @@ guiTypes = {
 			spriteType = "GFX_checkbox_gold_32"
 			frame = 2
 			alwaystransparent = yes
-			position = { x = 1003 y = 544 }
+			position = { x = 1164 y = 592 }
 			scale = 0.65
 		}
 
 		guiButtonType = {
 			name = "gdd_reform_vote_vassalize_tributaries_button"
 			scripted = yes
-			position = { x = 1003 y = 573 }
+			position = { x = 1164 y = 622 }
 			quadTextureSprite = "GFX_checkbox_gold_32"
 			tooltip = ""
 			tooltipText = ""
@@ -3140,14 +3229,14 @@ guiTypes = {
 			spriteType = "GFX_checkbox_gold_32"
 			frame = 2
 			alwaystransparent = yes
-			position = { x = 1003 y = 573 }
+			position = { x = 1164 y = 622 }
 			scale = 0.65
 		}
 
 		guiButtonType = {
 			name = "gdd_reform_vote_seaban_button"
 			scripted = yes
-			position = { x = 1003 y = 664 }
+			position = { x = 1164 y = 716 }
 			quadTextureSprite = "GFX_checkbox_gold_32"
 			tooltip = ""
 			tooltipText = ""
@@ -3162,14 +3251,14 @@ guiTypes = {
 			spriteType = "GFX_checkbox_gold_32"
 			frame = 2
 			alwaystransparent = yes
-			position = { x = 1003 y = 664 }
+			position = { x = 1164 y = 716 }
 			scale = 0.65
 		}
 
 		guiButtonType = {
 			name = "gdd_reform_vote_military_governors_button"
 			scripted = yes
-			position = { x = 1003 y = 693 }
+			position = { x = 1164 y = 746 }
 			quadTextureSprite = "GFX_checkbox_gold_32"
 			tooltip = ""
 			tooltipText = ""
@@ -3184,14 +3273,14 @@ guiTypes = {
 			spriteType = "GFX_checkbox_gold_32"
 			frame = 2
 			alwaystransparent = yes
-			position = { x = 1003 y = 693 }
+			position = { x = 1164 y = 746 }
 			scale = 0.65
 		}
 
 		guiButtonType = {
 			name = "gdd_reform_vote_tributary_embassies_button"
 			scripted = yes
-			position = { x = 1003 y = 722 }
+			position = { x = 1164 y = 776 }
 			quadTextureSprite = "GFX_checkbox_gold_32"
 			tooltip = ""
 			tooltipText = ""
@@ -3206,14 +3295,14 @@ guiTypes = {
 			spriteType = "GFX_checkbox_gold_32"
 			frame = 2
 			alwaystransparent = yes
-			position = { x = 1003 y = 722 }
+			position = { x = 1164 y = 776 }
 			scale = 0.65
 		}
 
 		guiButtonType = {
 			name = "gdd_reform_vote_modernize_banners_button"
 			scripted = yes
-			position = { x = 1003 y = 751 }
+			position = { x = 1164 y = 806 }
 			quadTextureSprite = "GFX_checkbox_gold_32"
 			tooltip = ""
 			tooltipText = ""
@@ -3228,14 +3317,14 @@ guiTypes = {
 			spriteType = "GFX_checkbox_gold_32"
 			frame = 2
 			alwaystransparent = yes
-			position = { x = 1003 y = 751 }
+			position = { x = 1164 y = 806 }
 			scale = 0.65
 		}
 
 		guiButtonType = {
 			name = "gdd_reform_vote_bureaucratic_faction_button"
 			scripted = yes
-			position = { x = 1003 y = 780 }
+			position = { x = 1164 y = 836 }
 			quadTextureSprite = "GFX_checkbox_gold_32"
 			tooltip = ""
 			tooltipText = ""
@@ -3250,14 +3339,14 @@ guiTypes = {
 			spriteType = "GFX_checkbox_gold_32"
 			frame = 2
 			alwaystransparent = yes
-			position = { x = 1003 y = 780 }
+			position = { x = 1164 y = 836 }
 			scale = 0.65
 		}
 
 		guiButtonType = {
 			name = "gdd_reform_vote_new_world_button"
 			scripted = yes
-			position = { x = 1003 y = 809 }
+			position = { x = 1164 y = 866 }
 			quadTextureSprite = "GFX_checkbox_gold_32"
 			tooltip = ""
 			tooltipText = ""
@@ -3272,7 +3361,7 @@ guiTypes = {
 			spriteType = "GFX_checkbox_gold_32"
 			frame = 2
 			alwaystransparent = yes
-			position = { x = 1003 y = 809 }
+			position = { x = 1164 y = 866 }
 			scale = 0.65
 		}
 
@@ -3281,7 +3370,7 @@ guiTypes = {
 			name = "gdd_central_final_conflict_mark"
 			spriteType = "GFX_mutualy_exclusive_reforms"
 			alwaystransparent = yes
-			position = { x = 817 y = 568 }
+			position = { x = 978 y = 617 }
 			scale = 0.9
 		}
 
@@ -3289,13 +3378,13 @@ guiTypes = {
 			name = "gdd_decentral_final_conflict_mark"
 			spriteType = "GFX_mutualy_exclusive_reforms"
 			alwaystransparent = yes
-			position = { x = 817 y = 804 }
+			position = { x = 978 y = 861 }
 			scale = 0.9
 		}
 
 		guiButtonType = {
 			name = "close_button"
-			position = { x = 1040 y = 60 }
+			position = { x = 1200 y = 60 }
 			quadTextureSprite = "GFX_closebutton2"
 			tooltip = ""
 			tooltipText = ""

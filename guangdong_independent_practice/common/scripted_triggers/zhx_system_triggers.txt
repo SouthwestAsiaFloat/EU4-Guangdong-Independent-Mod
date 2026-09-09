@@ -2,6 +2,7 @@
 # 不要在各处直接写死 CZH 或底层国家旗标。
 zhx_can_see_tianxia_gui = {
     # 未探知中国或远东的国家不应提前获知周天下的制度入口。
+    NOT = { has_global_flag = zhx_tianxia_dismantled }
     OR = {
         china_superregion = { has_discovered = ROOT }
         far_east_superregion = { has_discovered = ROOT }
@@ -10,11 +11,13 @@ zhx_can_see_tianxia_gui = {
 
 zhx_is_tianzi = {
     # 当前作用域国家是否为天子。
+    NOT = { has_global_flag = zhx_tianxia_dismantled }
     has_country_flag = zhx_tianzi
 }
 
 zhx_is_tianxia_member = {
     # 当前作用域国家是否为普通周天下成员。
+    NOT = { has_global_flag = zhx_tianxia_dismantled }
     has_country_flag = zhx_member
 }
 
@@ -33,8 +36,8 @@ zhx_is_seven_great_feudatory = {
 zhx_is_tianxia_polity = {
     # “周天下国家”包括天子本人和所有诸侯成员。
     OR = {
-        has_country_flag = zhx_tianzi
-        has_country_flag = zhx_member
+        zhx_is_tianzi = yes
+        zhx_is_tianxia_member = yes
     }
 }
 

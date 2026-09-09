@@ -1,0 +1,52 @@
+namespace = gdd_celestial_mandate
+
+# Startup and Mandate-transfer cache refresh. Hidden EU4 events still require
+# normal presentation fields to be accepted during database loading.
+country_event = {
+    id = gdd_celestial_mandate.1
+    title = gdd_celestial_mandate.1.t
+    desc = gdd_celestial_mandate.1.d
+    picture = DIPLOMACY_eventPicture
+    hidden = yes
+    is_triggered_only = yes
+
+    trigger = {
+        is_emperor_of_china = yes
+        has_global_flag = zhx_system_initialised_v8
+        NOT = { has_global_flag = zhx_tianxia_dismantled }
+    }
+
+    immediate = {
+        save_global_event_target_as = EmperorOfChina
+        gdd_refresh_tianxia_mandate_effect = yes
+    }
+
+    option = {
+        name = gdd_celestial_mandate.1.a
+    }
+}
+
+# Monthly maintenance is deliberately separate: unlike a cache refresh it may
+# charge occupation/refusal losses and move the authority balance.
+country_event = {
+    id = gdd_celestial_mandate.2
+    title = gdd_celestial_mandate.1.t
+    desc = gdd_celestial_mandate.1.d
+    picture = DIPLOMACY_eventPicture
+    hidden = yes
+    is_triggered_only = yes
+
+    trigger = {
+        is_emperor_of_china = yes
+        has_global_flag = zhx_system_initialised_v8
+        NOT = { has_global_flag = zhx_tianxia_dismantled }
+    }
+
+    immediate = {
+        gdd_monthly_tianxia_mandate_effect = yes
+    }
+
+    option = {
+        name = gdd_celestial_mandate.1.a
+    }
+}

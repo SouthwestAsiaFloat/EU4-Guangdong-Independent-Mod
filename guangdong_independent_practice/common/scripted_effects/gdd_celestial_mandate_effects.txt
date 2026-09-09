@@ -1,0 +1,160 @@
+# Non-mutating Mandate cache refresh. ROOT must be the current Emperor of
+# China. Startup, Mandate transfer and the monthly tick may all call this.
+gdd_refresh_tianxia_mandate_effect = {
+    # Seven great-feudatory seats are valid while occupied by an existing Zhou
+    # member that is independent or subject to another Zhou polity. External
+    # subjection invalidates the seat, matching the HRE elector penalty.
+    set_variable = {
+        which = gdd_valid_great_feudatory_count
+        value = 0
+    }
+    every_country = {
+        limit = {
+            exists = yes
+            zhx_is_seven_great_feudatory = yes
+            OR = {
+                is_subject = no
+                overlord = {
+                    zhx_is_tianxia_polity = yes
+                }
+            }
+        }
+        ROOT = {
+            change_variable = {
+                which = gdd_valid_great_feudatory_count
+                value = 1
+            }
+        }
+    }
+    # Missing Clausewitz variables read as zero. Gate all seat penalties until
+    # the first complete scan so database load cannot briefly mean seven empty
+    # seats and apply a false -0.35 Mandate modifier.
+    set_country_flag = gdd_tianxia_mandate_cache_ready
+}
+
+# Mutating monthly maintenance. Keeping this separate from the cache refresh
+# prevents startup and Mandate-transfer refreshes from charging monthly losses.
+gdd_monthly_tianxia_mandate_effect = {
+    gdd_refresh_tianxia_mandate_effect = yes
+
+    # HRE-style foreign occupation: each Zhou-owned province controlled by an
+    # outside country costs 0.005 Mandate per month. Rebel occupation does not
+    # count because it has no country controller.
+    set_variable = {
+        which = gdd_foreign_occupied_tianxia_province_count
+        value = 0
+    }
+    every_country = {
+        limit = {
+            exists = yes
+            zhx_is_tianxia_polity = yes
+        }
+        every_owned_province = {
+            limit = {
+                NOT = { controlled_by = owner }
+                controller = {
+                    exists = yes
+                    NOT = { zhx_is_tianxia_polity = yes }
+                }
+            }
+            ROOT = {
+                change_variable = {
+                    which = gdd_foreign_occupied_tianxia_province_count
+                    value = 1
+                }
+                add_mandate = -0.005
+            }
+        }
+    }
+    set_variable = {
+        which = gdd_foreign_occupation_mandate_loss_display
+        which = gdd_foreign_occupied_tianxia_province_count
+    }
+    multiply_variable = {
+        which = gdd_foreign_occupation_mandate_loss_display
+        value = 0.005
+    }
+
+    # EU4 exposes no generic equivalent of on_hre_non_defense. Detect the same
+    # institutional failure at the monthly boundary: a member is defending
+    # against an external belligerent while the Emperor is not fighting that
+    # belligerent. The member flag makes the -10 loss once per uninterrupted
+    # failure episode rather than once per month.
+    every_country = {
+        limit = {
+            exists = yes
+            zhx_is_tianxia_member = yes
+        }
+        if = {
+            limit = {
+                any_enemy_country = {
+                    NOT = { zhx_is_tianxia_polity = yes }
+                    offensive_war_with = PREV
+                    NOT = { war_with = ROOT }
+                }
+            }
+            if = {
+                limit = {
+                    NOT = { has_country_flag = gdd_tianxia_defense_refusal_paid }
+                }
+                set_country_flag = gdd_tianxia_defense_refusal_paid
+                ROOT = {
+                    gdd_apply_tianxia_defense_refusal_mandate_loss_effect = yes
+                }
+            }
+        }
+        else = {
+            clr_country_flag = gdd_tianxia_defense_refusal_paid
+        }
+    }
+
+    # A Zhou overlord shifts the shared authority axis five points toward
+    # feudatory prestige every month. Mandate itself is handled by the visible
+    # triggered modifier; this branch changes only the independent authority
+    # balance stored on the stable CZH anchor.
+    if = {
+        limit = {
+            is_subject_other_than_tributary_trigger = yes
+            overlord = { zhx_is_tianxia_polity = yes }
+        }
+        CZH = {
+            gdd_shift_authority_toward_feudatories_5_effect = yes
+        }
+    }
+}
+
+# Public hook for the automatic detector and any future call-to-arms system.
+# ROOT must be the current Emperor of China.
+gdd_apply_tianxia_defense_refusal_mandate_loss_effect = {
+    add_mandate = -10
+}
+
+# Public hook for annexation/integration on-actions. ROOT must be the external
+# annexer and FROM the Zhou member that is being completely removed.
+gdd_apply_external_tianxia_annexation_mandate_loss_effect = {
+    if = {
+        limit = {
+            NOT = { zhx_is_tianxia_polity = yes }
+            FROM = {
+                has_country_flag = zhx_member
+                NOT = { has_country_flag = gdd_external_annexation_mandate_paid }
+            }
+            CZH = { exists = yes }
+        }
+        FROM = { set_country_flag = gdd_external_annexation_mandate_paid }
+        CZH = { add_mandate = -10 }
+    }
+}
+
+# Public voluntary-exit path. ROOT must be the departing member. Only directly
+# owned Tianxia provinces count toward the aggregate 0.1-per-development loss,
+# which is capped at 20 Mandate for the whole country departure.
+gdd_leave_tianxia_with_mandate_penalty_effect = {
+    if = {
+        limit = {
+            gdd_can_leave_tianxia_trigger = yes
+        }
+        gdd_leave_tianxia_territory_effect = yes
+        zhx_remove_tianxia_member = yes
+    }
+}

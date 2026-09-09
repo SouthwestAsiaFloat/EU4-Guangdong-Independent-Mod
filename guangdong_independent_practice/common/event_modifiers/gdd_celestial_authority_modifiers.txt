@@ -2,11 +2,6 @@
 # Whole-number and tenth-point entries reproduce every supported value exactly
 # while avoiding hundreds of one-off modifier definitions.
 
-gdd_authority_balance_zero = {
-    trade_efficiency = 0.10
-    stability_cost_modifier = -0.10
-}
-
 gdd_central_authority_emperor_bit_001 = {
     land_forcelimit_modifier = 0.01
     global_tax_modifier = 0.005

@@ -1,0 +1,324 @@
+namespace = gdd_celestial_reform_revoke
+
+# Confirmation events keep active revocation deliberate. Each event names one
+# reform explicitly, so the confirmation cannot revoke a stale or wrong token.
+
+country_event = {
+    id = gdd_celestial_reform_revoke.1
+    title = gdd_celestial_reform_revoke.confirm.t
+    desc = gdd_celestial_reform_revoke.keju.d
+    picture = DIPLOMACY_eventPicture
+    is_triggered_only = yes
+    trigger = { gdd_reform_keju_passed = yes gdd_can_actively_revoke_proxy_celestial_reform_trigger = yes }
+    option = {
+        name = gdd_celestial_reform_revoke.confirm.a
+        custom_tooltip = gdd_celestial_reform_revoke_backlash_tt
+        hidden_effect = { gdd_revoke_proxy_celestial_reform_effect = { which = gdd_proxy_reform_keju } }
+        ai_chance = { factor = 1 }
+    }
+    option = { name = gdd_celestial_reform_revoke.cancel.a ai_chance = { factor = 0 } }
+}
+
+country_event = {
+    id = gdd_celestial_reform_revoke.2
+    title = gdd_celestial_reform_revoke.confirm.t
+    desc = gdd_celestial_reform_revoke.civil_registration.d
+    picture = DIPLOMACY_eventPicture
+    is_triggered_only = yes
+    trigger = { gdd_reform_civil_registration_passed = yes gdd_can_actively_revoke_proxy_celestial_reform_trigger = yes }
+    option = {
+        name = gdd_celestial_reform_revoke.confirm.a
+        custom_tooltip = gdd_celestial_reform_revoke_backlash_tt
+        hidden_effect = { gdd_revoke_proxy_celestial_reform_effect = { which = gdd_proxy_reform_civil_registration } }
+        ai_chance = { factor = 1 }
+    }
+    option = { name = gdd_celestial_reform_revoke.cancel.a ai_chance = { factor = 0 } }
+}
+
+country_event = {
+    id = gdd_celestial_reform_revoke.3
+    title = gdd_celestial_reform_revoke.confirm.t
+    desc = gdd_celestial_reform_revoke.silver_standard.d
+    picture = DIPLOMACY_eventPicture
+    is_triggered_only = yes
+    trigger = { gdd_reform_silver_standard_passed = yes gdd_can_actively_revoke_proxy_celestial_reform_trigger = yes }
+    option = {
+        name = gdd_celestial_reform_revoke.confirm.a
+        custom_tooltip = gdd_celestial_reform_revoke_backlash_tt
+        hidden_effect = { gdd_revoke_proxy_celestial_reform_effect = { which = gdd_proxy_reform_silver_standard } }
+        ai_chance = { factor = 1 }
+    }
+    option = { name = gdd_celestial_reform_revoke.cancel.a ai_chance = { factor = 0 } }
+}
+
+country_event = {
+    id = gdd_celestial_reform_revoke.4
+    title = gdd_celestial_reform_revoke.confirm.t
+    desc = gdd_celestial_reform_revoke.kanhe.d
+    picture = DIPLOMACY_eventPicture
+    is_triggered_only = yes
+    trigger = { gdd_reform_kanhe_passed = yes gdd_can_actively_revoke_proxy_celestial_reform_trigger = yes }
+    option = {
+        name = gdd_celestial_reform_revoke.confirm.a
+        custom_tooltip = gdd_celestial_reform_revoke_backlash_tt
+        hidden_effect = { gdd_revoke_proxy_celestial_reform_effect = { which = gdd_proxy_reform_kanhe } }
+        ai_chance = { factor = 1 }
+    }
+    option = { name = gdd_celestial_reform_revoke.cancel.a ai_chance = { factor = 0 } }
+}
+
+country_event = {
+    id = gdd_celestial_reform_revoke.5
+    title = gdd_celestial_reform_revoke.confirm.t
+    desc = gdd_celestial_reform_revoke.unified_market.d
+    picture = DIPLOMACY_eventPicture
+    is_triggered_only = yes
+    trigger = { gdd_reform_unified_market_passed = yes gdd_can_actively_revoke_proxy_celestial_reform_trigger = yes }
+    option = {
+        name = gdd_celestial_reform_revoke.confirm.a
+        custom_tooltip = gdd_celestial_reform_revoke_backlash_tt
+        hidden_effect = { gdd_revoke_proxy_celestial_reform_effect = { which = gdd_proxy_reform_unified_market } }
+        ai_chance = { factor = 1 }
+    }
+    option = { name = gdd_celestial_reform_revoke.cancel.a ai_chance = { factor = 0 } }
+}
+
+country_event = {
+    id = gdd_celestial_reform_revoke.6
+    title = gdd_celestial_reform_revoke.confirm.t
+    desc = gdd_celestial_reform_revoke.military_branch.d
+    picture = DIPLOMACY_eventPicture
+    is_triggered_only = yes
+    trigger = { gdd_reform_military_branch_passed = yes gdd_can_actively_revoke_proxy_celestial_reform_trigger = yes }
+    option = {
+        name = gdd_celestial_reform_revoke.confirm.a
+        custom_tooltip = gdd_celestial_reform_revoke_backlash_tt
+        hidden_effect = { gdd_revoke_proxy_celestial_reform_effect = { which = gdd_proxy_reform_military_branch } }
+        ai_chance = { factor = 1 }
+    }
+    option = { name = gdd_celestial_reform_revoke.cancel.a ai_chance = { factor = 0 } }
+}
+
+country_event = {
+    id = gdd_celestial_reform_revoke.7
+    title = gdd_celestial_reform_revoke.confirm.t
+    desc = gdd_celestial_reform_revoke.foreign_ship_designs.d
+    picture = DIPLOMACY_eventPicture
+    is_triggered_only = yes
+    trigger = { gdd_reform_foreign_ship_designs_passed = yes gdd_can_actively_revoke_proxy_celestial_reform_trigger = yes }
+    option = {
+        name = gdd_celestial_reform_revoke.confirm.a
+        custom_tooltip = gdd_celestial_reform_revoke_backlash_tt
+        hidden_effect = { gdd_revoke_proxy_celestial_reform_effect = { which = gdd_proxy_reform_foreign_ship_designs } }
+        ai_chance = { factor = 1 }
+    }
+    option = { name = gdd_celestial_reform_revoke.cancel.a ai_chance = { factor = 0 } }
+}
+
+country_event = {
+    id = gdd_celestial_reform_revoke.8
+    title = gdd_celestial_reform_revoke.confirm.t
+    desc = gdd_celestial_reform_revoke.inclusive_monarchy.d
+    picture = DIPLOMACY_eventPicture
+    is_triggered_only = yes
+    trigger = { gdd_reform_inclusive_monarchy_passed = yes gdd_can_actively_revoke_proxy_celestial_reform_trigger = yes }
+    option = {
+        name = gdd_celestial_reform_revoke.confirm.a
+        custom_tooltip = gdd_celestial_reform_revoke_backlash_tt
+        hidden_effect = { gdd_revoke_proxy_celestial_reform_effect = { which = gdd_proxy_reform_inclusive_monarchy } }
+        ai_chance = { factor = 1 }
+    }
+    option = { name = gdd_celestial_reform_revoke.cancel.a ai_chance = { factor = 0 } }
+}
+
+country_event = {
+    id = gdd_celestial_reform_revoke.9
+    title = gdd_celestial_reform_revoke.confirm.t
+    desc = gdd_celestial_reform_revoke.establish_gaituguiliu.d
+    picture = DIPLOMACY_eventPicture
+    is_triggered_only = yes
+    trigger = { gdd_reform_establish_gaituguiliu_passed = yes gdd_can_actively_revoke_proxy_celestial_reform_trigger = yes }
+    option = {
+        name = gdd_celestial_reform_revoke.confirm.a
+        custom_tooltip = gdd_celestial_reform_revoke_backlash_tt
+        hidden_effect = { gdd_revoke_proxy_celestial_reform_effect = { which = gdd_proxy_reform_establish_gaituguiliu } }
+        ai_chance = { factor = 1 }
+    }
+    option = { name = gdd_celestial_reform_revoke.cancel.a ai_chance = { factor = 0 } }
+}
+
+country_event = {
+    id = gdd_celestial_reform_revoke.10
+    title = gdd_celestial_reform_revoke.confirm.t
+    desc = gdd_celestial_reform_revoke.land_tax.d
+    picture = DIPLOMACY_eventPicture
+    is_triggered_only = yes
+    trigger = { gdd_reform_land_tax_passed = yes gdd_can_actively_revoke_proxy_celestial_reform_trigger = yes }
+    option = {
+        name = gdd_celestial_reform_revoke.confirm.a
+        custom_tooltip = gdd_celestial_reform_revoke_backlash_tt
+        hidden_effect = { gdd_revoke_proxy_celestial_reform_effect = { which = gdd_proxy_reform_land_tax } }
+        ai_chance = { factor = 1 }
+    }
+    option = { name = gdd_celestial_reform_revoke.cancel.a ai_chance = { factor = 0 } }
+}
+
+country_event = {
+    id = gdd_celestial_reform_revoke.11
+    title = gdd_celestial_reform_revoke.confirm.t
+    desc = gdd_celestial_reform_revoke.single_whip.d
+    picture = DIPLOMACY_eventPicture
+    is_triggered_only = yes
+    trigger = { gdd_reform_single_whip_passed = yes gdd_can_actively_revoke_proxy_celestial_reform_trigger = yes }
+    option = {
+        name = gdd_celestial_reform_revoke.confirm.a
+        custom_tooltip = gdd_celestial_reform_revoke_backlash_tt
+        hidden_effect = { gdd_revoke_proxy_celestial_reform_effect = { which = gdd_proxy_reform_single_whip } }
+        ai_chance = { factor = 1 }
+    }
+    option = { name = gdd_celestial_reform_revoke.cancel.a ai_chance = { factor = 0 } }
+}
+
+country_event = {
+    id = gdd_celestial_reform_revoke.12
+    title = gdd_celestial_reform_revoke.confirm.t
+    desc = gdd_celestial_reform_revoke.centralizing_government.d
+    picture = DIPLOMACY_eventPicture
+    is_triggered_only = yes
+    trigger = { gdd_reform_centralizing_government_passed = yes gdd_can_actively_revoke_proxy_celestial_reform_trigger = yes }
+    option = {
+        name = gdd_celestial_reform_revoke.confirm.a
+        custom_tooltip = gdd_celestial_reform_revoke_backlash_tt
+        hidden_effect = { gdd_revoke_proxy_celestial_reform_effect = { which = gdd_proxy_reform_centralizing_government } }
+        ai_chance = { factor = 1 }
+    }
+    option = { name = gdd_celestial_reform_revoke.cancel.a ai_chance = { factor = 0 } }
+}
+
+country_event = {
+    id = gdd_celestial_reform_revoke.13
+    title = gdd_celestial_reform_revoke.confirm.t
+    desc = gdd_celestial_reform_revoke.reign_in_estates.d
+    picture = DIPLOMACY_eventPicture
+    is_triggered_only = yes
+    trigger = { gdd_reform_reign_in_estates_passed = yes gdd_can_actively_revoke_proxy_celestial_reform_trigger = yes }
+    option = {
+        name = gdd_celestial_reform_revoke.confirm.a
+        custom_tooltip = gdd_celestial_reform_revoke_backlash_tt
+        hidden_effect = { gdd_revoke_proxy_celestial_reform_effect = { which = gdd_proxy_reform_reign_in_estates } }
+        ai_chance = { factor = 1 }
+    }
+    option = { name = gdd_celestial_reform_revoke.cancel.a ai_chance = { factor = 0 } }
+}
+
+country_event = {
+    id = gdd_celestial_reform_revoke.14
+    title = gdd_celestial_reform_revoke.confirm.t
+    desc = gdd_celestial_reform_revoke.vassalize_tributaries.d
+    picture = DIPLOMACY_eventPicture
+    is_triggered_only = yes
+    trigger = { gdd_reform_vassalize_tributaries_passed = yes gdd_can_actively_revoke_proxy_celestial_reform_trigger = yes }
+    option = {
+        name = gdd_celestial_reform_revoke.confirm.a
+        custom_tooltip = gdd_celestial_reform_revoke_backlash_tt
+        hidden_effect = { gdd_revoke_proxy_celestial_final_centralization_effect = yes }
+        ai_chance = { factor = 1 }
+    }
+    option = { name = gdd_celestial_reform_revoke.cancel.a ai_chance = { factor = 0 } }
+}
+
+country_event = {
+    id = gdd_celestial_reform_revoke.15
+    title = gdd_celestial_reform_revoke.confirm.t
+    desc = gdd_celestial_reform_revoke.seaban.d
+    picture = DIPLOMACY_eventPicture
+    is_triggered_only = yes
+    trigger = { gdd_reform_seaban_passed = yes gdd_can_actively_revoke_proxy_celestial_reform_trigger = yes }
+    option = {
+        name = gdd_celestial_reform_revoke.confirm.a
+        custom_tooltip = gdd_celestial_reform_revoke_backlash_tt
+        hidden_effect = { gdd_revoke_proxy_celestial_reform_effect = { which = gdd_proxy_reform_seaban } }
+        ai_chance = { factor = 1 }
+    }
+    option = { name = gdd_celestial_reform_revoke.cancel.a ai_chance = { factor = 0 } }
+}
+
+country_event = {
+    id = gdd_celestial_reform_revoke.16
+    title = gdd_celestial_reform_revoke.confirm.t
+    desc = gdd_celestial_reform_revoke.military_governors.d
+    picture = DIPLOMACY_eventPicture
+    is_triggered_only = yes
+    trigger = { gdd_reform_military_governors_passed = yes gdd_can_actively_revoke_proxy_celestial_reform_trigger = yes }
+    option = {
+        name = gdd_celestial_reform_revoke.confirm.a
+        custom_tooltip = gdd_celestial_reform_revoke_backlash_tt
+        hidden_effect = { gdd_revoke_proxy_celestial_reform_effect = { which = gdd_proxy_reform_military_governors } }
+        ai_chance = { factor = 1 }
+    }
+    option = { name = gdd_celestial_reform_revoke.cancel.a ai_chance = { factor = 0 } }
+}
+
+country_event = {
+    id = gdd_celestial_reform_revoke.17
+    title = gdd_celestial_reform_revoke.confirm.t
+    desc = gdd_celestial_reform_revoke.tributary_embassies.d
+    picture = DIPLOMACY_eventPicture
+    is_triggered_only = yes
+    trigger = { gdd_reform_tributary_embassies_passed = yes gdd_can_actively_revoke_proxy_celestial_reform_trigger = yes }
+    option = {
+        name = gdd_celestial_reform_revoke.confirm.a
+        custom_tooltip = gdd_celestial_reform_revoke_backlash_tt
+        hidden_effect = { gdd_revoke_proxy_celestial_reform_effect = { which = gdd_proxy_reform_tributary_embassies } }
+        ai_chance = { factor = 1 }
+    }
+    option = { name = gdd_celestial_reform_revoke.cancel.a ai_chance = { factor = 0 } }
+}
+
+country_event = {
+    id = gdd_celestial_reform_revoke.18
+    title = gdd_celestial_reform_revoke.confirm.t
+    desc = gdd_celestial_reform_revoke.modernize_banners.d
+    picture = DIPLOMACY_eventPicture
+    is_triggered_only = yes
+    trigger = { gdd_reform_modernize_banners_passed = yes gdd_can_actively_revoke_proxy_celestial_reform_trigger = yes }
+    option = {
+        name = gdd_celestial_reform_revoke.confirm.a
+        custom_tooltip = gdd_celestial_reform_revoke_backlash_tt
+        hidden_effect = { gdd_revoke_proxy_celestial_reform_effect = { which = gdd_proxy_reform_modernize_banners } }
+        ai_chance = { factor = 1 }
+    }
+    option = { name = gdd_celestial_reform_revoke.cancel.a ai_chance = { factor = 0 } }
+}
+
+country_event = {
+    id = gdd_celestial_reform_revoke.19
+    title = gdd_celestial_reform_revoke.confirm.t
+    desc = gdd_celestial_reform_revoke.bureaucratic_faction.d
+    picture = DIPLOMACY_eventPicture
+    is_triggered_only = yes
+    trigger = { gdd_reform_bureaucratic_faction_passed = yes gdd_can_actively_revoke_proxy_celestial_reform_trigger = yes }
+    option = {
+        name = gdd_celestial_reform_revoke.confirm.a
+        custom_tooltip = gdd_celestial_reform_revoke_backlash_tt
+        hidden_effect = { gdd_revoke_proxy_celestial_reform_effect = { which = gdd_proxy_reform_bureaucratic_faction } }
+        ai_chance = { factor = 1 }
+    }
+    option = { name = gdd_celestial_reform_revoke.cancel.a ai_chance = { factor = 0 } }
+}
+
+country_event = {
+    id = gdd_celestial_reform_revoke.20
+    title = gdd_celestial_reform_revoke.confirm.t
+    desc = gdd_celestial_reform_revoke.new_world.d
+    picture = DIPLOMACY_eventPicture
+    is_triggered_only = yes
+    trigger = { gdd_reform_new_world_passed = yes gdd_can_actively_revoke_proxy_celestial_reform_trigger = yes }
+    option = {
+        name = gdd_celestial_reform_revoke.confirm.a
+        custom_tooltip = gdd_celestial_reform_revoke_backlash_tt
+        hidden_effect = { gdd_revoke_proxy_celestial_final_decentralization_effect = yes }
+        ai_chance = { factor = 1 }
+    }
+    option = { name = gdd_celestial_reform_revoke.cancel.a ai_chance = { factor = 0 } }
+}

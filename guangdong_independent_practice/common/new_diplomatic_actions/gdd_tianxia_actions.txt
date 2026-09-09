@@ -1,0 +1,234 @@
+# Human-facing native diplomacy for the Zhou Tianxia. The engine currently
+# never lets AI actors send custom diplomatic actions, so AI Emperors retain
+# the quarterly event-backed path in gdd_tianxia_territory_events.txt.
+
+gdd_tianxia_demand_unlawful_territory = {
+    # Custom categories may be rendered through the engine's empty-category
+    # localisation key. Both the explicit and fallback keys are translated.
+    category = gdd_tianxia
+
+    # Reuse the vanilla unlawful-territory message icon. This is a messageicons
+    # frame and does not reserve or shift any topbar alert slot.
+    alert_index = 22
+    alert_tooltip = gdd_tianxia_demand_unlawful_territory_alert_tooltip
+
+    require_acceptance = yes
+
+    is_visible = {
+        ai = no
+        is_emperor_of_china = yes
+        has_global_flag = zhx_system_initialised_v13
+        NOT = { has_global_flag = zhx_tianxia_dismantled }
+        FROM = {
+            exists = yes
+            NOT = { tag = ROOT }
+        }
+    }
+
+    is_allowed = {
+        custom_trigger_tooltip = {
+            tooltip = gdd_tianxia_demand_unlawful_territory_sovereign
+            FROM = {
+                OR = {
+                    is_subject = no
+                    is_subject_of = ROOT
+                }
+            }
+        }
+        custom_trigger_tooltip = {
+            tooltip = gdd_tianxia_demand_unlawful_territory_not_at_war
+            NOT = { war_with = FROM }
+        }
+        custom_trigger_tooltip = {
+            tooltip = gdd_tianxia_demand_unlawful_territory_allowed
+            FROM = {
+                gdd_can_be_tianxia_unlawful_addressee_trigger = {
+                    emperor = ROOT
+                }
+            }
+        }
+    }
+
+    on_accept = {
+        gdd_accept_native_tianxia_unlawful_demand_effect = yes
+    }
+
+    on_decline = {
+        gdd_refuse_native_tianxia_unlawful_demand_effect = yes
+    }
+
+    # These entries reproduce the event-backed acceptance model for a native
+    # request. Positive totals accept; negative totals refuse.
+    ai_acceptance = {
+        add_entry = {
+            name = gdd_tianxia_ai_base
+            export_to_variable = {
+                variable_name = ai_value
+                value = 10
+            }
+        }
+        add_entry = {
+            name = gdd_tianxia_ai_emperor_subject
+            limit = { FROM = { is_subject_of = ROOT } }
+            export_to_variable = {
+                variable_name = ai_value
+                value = 100
+            }
+        }
+        add_entry = {
+            name = gdd_tianxia_ai_emperor_much_stronger
+            limit = { army_strength = { who = FROM value = 1.5 } }
+            export_to_variable = {
+                variable_name = ai_value
+                value = 40
+            }
+        }
+        add_entry = {
+            name = gdd_tianxia_ai_emperor_stronger
+            limit = {
+                army_strength = { who = FROM value = 1.1 }
+                NOT = { army_strength = { who = FROM value = 1.5 } }
+            }
+            export_to_variable = {
+                variable_name = ai_value
+                value = 20
+            }
+        }
+        add_entry = {
+            name = gdd_tianxia_ai_recipient_stronger
+            limit = {
+                NOT = { army_strength = { who = FROM value = 1.1 } }
+                FROM = { army_strength = { who = ROOT value = 1.5 } }
+            }
+            export_to_variable = {
+                variable_name = ai_value
+                value = -40
+            }
+        }
+        add_entry = {
+            name = gdd_tianxia_ai_opinion_very_high
+            limit = { FROM = { has_opinion = { who = ROOT value = 100 } } }
+            export_to_variable = {
+                variable_name = ai_value
+                value = 20
+            }
+        }
+        add_entry = {
+            name = gdd_tianxia_ai_opinion_high
+            limit = {
+                FROM = {
+                    has_opinion = { who = ROOT value = 50 }
+                    NOT = { has_opinion = { who = ROOT value = 100 } }
+                }
+            }
+            export_to_variable = {
+                variable_name = ai_value
+                value = 10
+            }
+        }
+        add_entry = {
+            name = gdd_tianxia_ai_opinion_low
+            limit = {
+                FROM = {
+                    has_opinion = { who = ROOT value = -50 }
+                    NOT = { has_opinion = { who = ROOT value = 0 } }
+                }
+            }
+            export_to_variable = {
+                variable_name = ai_value
+                value = -15
+            }
+        }
+        add_entry = {
+            name = gdd_tianxia_ai_opinion_very_low
+            limit = {
+                FROM = { NOT = { has_opinion = { who = ROOT value = -50 } } }
+            }
+            export_to_variable = {
+                variable_name = ai_value
+                value = -25
+            }
+        }
+        add_entry = {
+            name = gdd_tianxia_ai_trust_very_high
+            limit = { FROM = { trust = { who = ROOT value = 80 } } }
+            export_to_variable = {
+                variable_name = ai_value
+                value = 20
+            }
+        }
+        add_entry = {
+            name = gdd_tianxia_ai_trust_high
+            limit = {
+                FROM = {
+                    trust = { who = ROOT value = 60 }
+                    NOT = { trust = { who = ROOT value = 80 } }
+                }
+            }
+            export_to_variable = {
+                variable_name = ai_value
+                value = 10
+            }
+        }
+        add_entry = {
+            name = gdd_tianxia_ai_trust_low
+            limit = { FROM = { NOT = { trust = { who = ROOT value = 40 } } } }
+            export_to_variable = {
+                variable_name = ai_value
+                value = -10
+            }
+        }
+        add_entry = {
+            name = gdd_tianxia_ai_allied
+            limit = { alliance_with = FROM }
+            export_to_variable = {
+                variable_name = ai_value
+                value = 15
+            }
+        }
+        add_entry = {
+            name = gdd_tianxia_ai_hostile
+            limit = {
+                FROM = {
+                    OR = {
+                        is_rival = ROOT
+                        ai_attitude = { who = ROOT attitude = attitude_hostile }
+                    }
+                }
+            }
+            export_to_variable = {
+                variable_name = ai_value
+                value = -35
+            }
+        }
+        add_entry = {
+            name = gdd_tianxia_ai_diprep_very_high
+            limit = { diplomatic_reputation = 5 }
+            export_to_variable = {
+                variable_name = ai_value
+                value = 15
+            }
+        }
+        add_entry = {
+            name = gdd_tianxia_ai_diprep_high
+            limit = {
+                diplomatic_reputation = 2
+                NOT = { diplomatic_reputation = 5 }
+            }
+            export_to_variable = {
+                variable_name = ai_value
+                value = 8
+            }
+        }
+        add_entry = {
+            name = gdd_tianxia_ai_diprep_low
+            limit = { NOT = { diplomatic_reputation = 0 } }
+            export_to_variable = {
+                variable_name = ai_value
+                value = -10
+            }
+        }
+    }
+
+    ai_will_do = { always = no }
+}

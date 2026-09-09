@@ -1,0 +1,31 @@
+spriteTypes = {
+    textSpriteType = {
+        name = "GFX_gdd_tianxia_actions_expanded"
+        texturefile = "gfx/interface/gdd_tianxia_actions_expanded.tga"
+    }
+    textSpriteType = {
+        name = "GFX_gdd_tianxia_actions_collapsed"
+        texturefile = "gfx/interface/gdd_tianxia_actions_collapsed.tga"
+    }
+    spriteType = {
+        name = "GFX_gdd_tianxia_province_status"
+        texturefile = "gfx/interface/gdd_tianxia_province_status.tga"
+        effectFile = "gfx/FX/buttonstate.lua"
+        loadType = "INGAME"
+        noOfFrames = 4
+    }
+    spriteType = {
+        name = "GFX_gdd_tianxia_province_add"
+        texturefile = "gfx/interface/gdd_tianxia_province_add.tga"
+        effectFile = "gfx/FX/buttonstate.lua"
+        loadType = "INGAME"
+        noOfFrames = 4
+    }
+    spriteType = {
+        name = "GFX_gdd_tianxia_province_remove"
+        texturefile = "gfx/interface/gdd_tianxia_province_remove.tga"
+        effectFile = "gfx/FX/buttonstate.lua"
+        loadType = "INGAME"
+        noOfFrames = 4
+    }
+}

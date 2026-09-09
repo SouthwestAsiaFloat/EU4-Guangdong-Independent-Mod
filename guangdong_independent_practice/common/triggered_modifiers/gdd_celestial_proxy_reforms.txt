@@ -8,7 +8,10 @@ gdd_proxy_reform_keju_emperor = {
 }
 gdd_proxy_reform_keju_member = {
     potential = { has_global_flag = gdd_proxy_reform_keju }
-    trigger = { zhx_is_tianxia_polity = yes }
+    trigger = {
+        zhx_is_tianxia_polity = yes
+        NOT = { has_country_flag = gdd_proxy_reform_keju }
+    }
     advisor_cost = -0.025
 }
 
@@ -20,7 +23,10 @@ gdd_proxy_reform_civil_registration_emperor = {
 }
 gdd_proxy_reform_civil_registration_member = {
     potential = { has_global_flag = gdd_proxy_reform_civil_registration }
-    trigger = { zhx_is_tianxia_polity = yes }
+    trigger = {
+        zhx_is_tianxia_polity = yes
+        NOT = { has_country_flag = gdd_proxy_reform_civil_registration }
+    }
     global_tax_modifier = 0.05
 }
 
@@ -32,7 +38,10 @@ gdd_proxy_reform_silver_standard_emperor = {
 }
 gdd_proxy_reform_silver_standard_member = {
     potential = { has_global_flag = gdd_proxy_reform_silver_standard }
-    trigger = { zhx_is_tianxia_polity = yes }
+    trigger = {
+        zhx_is_tianxia_polity = yes
+        NOT = { has_country_flag = gdd_proxy_reform_silver_standard }
+    }
     inflation_reduction = 0.05
 }
 
@@ -44,7 +53,10 @@ gdd_proxy_reform_kanhe_emperor = {
 }
 gdd_proxy_reform_kanhe_member = {
     potential = { has_global_flag = gdd_proxy_reform_kanhe }
-    trigger = { zhx_is_tianxia_polity = yes }
+    trigger = {
+        zhx_is_tianxia_polity = yes
+        NOT = { has_country_flag = gdd_proxy_reform_kanhe }
+    }
     trade_efficiency = 0.025
 }
 
@@ -56,7 +68,10 @@ gdd_proxy_reform_unified_market_emperor = {
 }
 gdd_proxy_reform_unified_market_member = {
     potential = { has_global_flag = gdd_proxy_reform_unified_market }
-    trigger = { zhx_is_tianxia_polity = yes }
+    trigger = {
+        zhx_is_tianxia_polity = yes
+        NOT = { has_country_flag = gdd_proxy_reform_unified_market }
+    }
     global_trade_goods_size_modifier = 0.025
 }
 
@@ -68,7 +83,10 @@ gdd_proxy_reform_military_branch_emperor = {
 }
 gdd_proxy_reform_military_branch_member = {
     potential = { has_global_flag = gdd_proxy_reform_military_branch }
-    trigger = { zhx_is_tianxia_polity = yes }
+    trigger = {
+        zhx_is_tianxia_polity = yes
+        NOT = { has_country_flag = gdd_proxy_reform_military_branch }
+    }
     army_tradition = 0.25
 }
 
@@ -80,7 +98,10 @@ gdd_proxy_reform_foreign_ship_designs_emperor = {
 }
 gdd_proxy_reform_foreign_ship_designs_member = {
     potential = { has_global_flag = gdd_proxy_reform_foreign_ship_designs }
-    trigger = { zhx_is_tianxia_polity = yes }
+    trigger = {
+        zhx_is_tianxia_polity = yes
+        NOT = { has_country_flag = gdd_proxy_reform_foreign_ship_designs }
+    }
     global_ship_cost = -0.025
 }
 
@@ -92,7 +113,10 @@ gdd_proxy_reform_inclusive_monarchy_emperor = {
 }
 gdd_proxy_reform_inclusive_monarchy_member = {
     potential = { has_global_flag = gdd_proxy_reform_inclusive_monarchy }
-    trigger = { zhx_is_tianxia_polity = yes }
+    trigger = {
+        zhx_is_tianxia_polity = yes
+        NOT = { has_country_flag = gdd_proxy_reform_inclusive_monarchy }
+    }
     religious_unity = 0.05
 }
 

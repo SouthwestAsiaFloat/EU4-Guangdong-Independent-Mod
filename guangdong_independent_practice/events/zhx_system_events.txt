@@ -13,6 +13,7 @@ country_event = {
     trigger = {
         tag = CZH
         exists = yes
+        NOT = { has_global_flag = zhx_tianxia_dismantled }
         OR = {
             NOT = { has_global_flag = zhx_system_initialised_v3 }
             NOT = { has_global_flag = zhx_system_initialised_v4 }
@@ -24,6 +25,9 @@ country_event = {
             NOT = { has_global_flag = zhx_system_initialised_v10 }
             NOT = { has_global_flag = zhx_system_initialised_v11 }
             NOT = { has_global_flag = zhx_system_initialised_v12 }
+            NOT = { has_global_flag = zhx_system_initialised_v13 }
+            NOT = { has_global_flag = zhx_system_initialised_v14 }
+            NOT = { has_global_flag = zhx_system_initialised_v15 }
             NOT = { has_global_flag = zhx_gui_roster_initialised }
             NOT = { has_global_flag = gdd_eoc_member_roster_initialised }
             NOT = { has_global_flag = gdd_eoc_great_feudatory_roster_initialised }
@@ -99,6 +103,22 @@ country_event = {
         }
         if = {
             limit = {
+                NOT = { has_global_flag = zhx_system_initialised_v13 }
+            }
+            zhx_migrate_tianxia_system_v12_to_v13 = yes
+        }
+        if = {
+            limit = {
+                NOT = { has_global_flag = zhx_system_initialised_v14 }
+            }
+            zhx_migrate_tianxia_system_v13_to_v14 = yes
+        }
+        if = {
+            limit = { NOT = { has_global_flag = zhx_system_initialised_v15 } }
+            zhx_migrate_tianxia_system_v14_to_v15 = yes
+        }
+        if = {
+            limit = {
                 OR = {
                     NOT = { has_global_flag = zhx_gui_roster_initialised }
                     NOT = { has_global_flag = gdd_eoc_member_roster_initialised }
@@ -106,6 +126,16 @@ country_event = {
                 }
             }
             zhx_build_gui_roster = yes
+        }
+        # Initialise the current Emperor's seven-seat cache only after all
+        # membership and great-feudatory migrations have finished.
+        if = {
+            limit = {
+                event_target:EmperorOfChina = { exists = yes }
+            }
+            event_target:EmperorOfChina = {
+                gdd_refresh_tianxia_mandate_effect = yes
+            }
         }
     }
 
@@ -265,6 +295,7 @@ country_event = {
 
     trigger = {
         has_global_flag = zhx_system_initialised_v4
+        NOT = { has_global_flag = zhx_tianxia_dismantled }
         zhx_is_tianzi = yes
     }
 

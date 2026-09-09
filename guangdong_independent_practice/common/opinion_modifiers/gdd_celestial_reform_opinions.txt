@@ -1,0 +1,40 @@
+# Revoking a Tianxia reform repeatedly stacks this one opinion entry down to
+# -100. The engine scales its base yearly decay by the responsible country's
+# improve-relations modifier, as it does for vanilla AE and elector revocation.
+gdd_opinion_revoked_tianxia_reform = {
+    opinion = -10
+    months = 0
+    yearly_decay = 2
+    min = -100
+}
+
+# Each foreign-owned province removed from Tianxia applies one entry. Repeated
+# removals stack to -100 and then recover slowly. Scripted applications set
+# an explicit lifetime instead of relying on a zero-month definition.
+gdd_opinion_removed_tianxia_province = {
+    opinion = -25
+    yearly_decay = 1
+    min = -100
+}
+
+# A polity that leaves the realm receives the full diplomatic rupture at once.
+gdd_opinion_left_tianxia = {
+    opinion = -100
+    yearly_decay = 2
+    min = -100
+}
+
+# The former holder resents an enforced restitution to the Zhou realm.
+gdd_opinion_forced_tianxia_return = {
+    opinion = -100
+    yearly_decay = 2
+    min = -100
+}
+
+# Every Zhou member applies one independently stacking response to refusal.
+gdd_opinion_refused_tianxia_unlawful_demand = {
+    opinion = -25
+    months = 300
+    yearly_decay = 1
+    min = -100
+}

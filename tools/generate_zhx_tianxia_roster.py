@@ -13,6 +13,7 @@ EOC_CUSTOM_GUI = ROOT / "guangdong_independent_practice/common/custom_gui/gdd_ce
 
 SLOTS = 200
 EOC_SLOTS = 65
+GREAT_FEUDATORY_SLOTS = 6
 EOC_COLUMNS = 8
 EOC_ROWS = 6
 EOC_PAGE_SIZE = EOC_COLUMNS * EOC_ROWS
@@ -130,7 +131,7 @@ def eoc_binding_blocks() -> str:
                     "        }",
                     "    }",
                     "    trigger = { always = yes }",
-                    "    tooltip = GDD_EOC_MEMBER_SHIELD_TT",
+                    f"    tooltip = GDD_EOC_MEMBER_SHIELD_{index:02d}_TT",
                     f"    global_event_target = {target}",
                     "    open_country = yes",
                     "}",
@@ -181,6 +182,7 @@ def effect_file() -> str:
             "    }",
             "    set_global_flag = zhx_gui_roster_initialised",
             "    gdd_build_eoc_member_roster = yes",
+            "    gdd_build_eoc_great_feudatory_roster = yes",
             "}",
             "",
         ]
@@ -240,6 +242,53 @@ def effect_file() -> str:
             "        }",
             "    }",
             "    set_global_flag = gdd_eoc_member_roster_initialised",
+            "}",
+            "",
+        ]
+    )
+
+    # The principal feudatory has its own stable target. These six targets are
+    # the remaining great-feudatory seats displayed below it. Keep this cache
+    # in the generator: regenerating the 65-member grid must never erase the
+    # independent seven-seat presentation.
+    lines.extend(["gdd_clear_eoc_great_feudatory_roster = {"])
+    for index in range(1, GREAT_FEUDATORY_SLOTS + 1):
+        lines.extend(
+            [
+                "    if = {",
+                f"        limit = {{ has_saved_global_event_target = gdd_eoc_great_feudatory_roster_{index:02d} }}",
+                f"        clear_global_event_target = gdd_eoc_great_feudatory_roster_{index:02d}",
+                "    }",
+            ]
+        )
+    lines.extend(["}", "", "gdd_allocate_eoc_great_feudatory_roster_slot = {"])
+    for index in range(1, GREAT_FEUDATORY_SLOTS + 1):
+        keyword = "if" if index == 1 else "else_if"
+        lines.extend(
+            [
+                f"    {keyword} = {{",
+                f"        limit = {{ NOT = {{ has_saved_global_event_target = gdd_eoc_great_feudatory_roster_{index:02d} }} }}",
+                f"        save_global_event_target_as = gdd_eoc_great_feudatory_roster_{index:02d}",
+                "    }",
+            ]
+        )
+    lines.extend(
+        [
+            "}",
+            "",
+            "gdd_build_eoc_great_feudatory_roster = {",
+            "    gdd_clear_eoc_great_feudatory_roster = yes",
+            "    every_country = {",
+            "        limit = {",
+            "            exists = yes",
+            "            has_country_flag = zhx_member",
+            "            has_country_flag = zhx_major_feudatory",
+            "            NOT = { tag = YAN }",
+            "            NOT = { has_country_flag = zhx_tianzi }",
+            "        }",
+            "        gdd_allocate_eoc_great_feudatory_roster_slot = yes",
+            "    }",
+            "    set_global_flag = gdd_eoc_great_feudatory_roster_initialised",
             "}",
             "",
         ]

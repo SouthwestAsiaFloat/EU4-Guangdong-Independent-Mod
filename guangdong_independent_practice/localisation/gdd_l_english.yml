@@ -22,12 +22,12 @@
  GDD_PROXY_DECREE_BUTTON:0 "ãNLˆ1Wèe"
  GDD_PROXY_DECREE_BUTTON_TT:0 "SVMRCgZLfHyHN§Y-100ó-26§!öeÿÅN–™-^ø‹¯OïSåNÑS^1WèeÿLfHyHN§Y26ó100§!öeÿÅN-NNS‡v^ïSåNÑS^1WèeÿLfHyHN§Y-25ó25§!öeÌS¹eGWNïSÑS^0\ndkY—‰-NNS^ýVXR(W0)YPRóSåb	g§Y20§!2ýwJPÿNSVMR¡l	guHe-N„vŸSHrbêšRIN1Wèe0"
  GDD_PROXY_REFORM_BUTTON:0 "¨c¨R9ei—"
- GDD_PROXY_REFORM_BUTTON_TT:0 "SVMRCgZLfHyHN§Y-100ó-26§!öeÿÅN–™-^ø‹¯OïSåN¨c¨R9ei—ÿLfHyHN§Y26ó100§!öeÿÅN-NNS‡v^ïSåN¨c¨R9ei—ÿLfHyHN§Y-25ó25§!öeÌS¹eGWNïS¨c¨R0\ndkY—‰-NNS^ýVXR(WN)Y‹TóS¾0R§Y80§!0Ç9ei—Sˆmw§R70§!)Y‹TN§R1§!3zšR¦^0"
+ GDD_PROXY_REFORM_BUTTON_TT:0 "SVMRCgZLfHyHN§Y-100ó-26§!öeÿÅN–™-^ø‹¯OïSåN¨c¨R9ei—ÿLfHyHN§Y26ó100§!öeÿÅN-NNS‡v^ïSåN¨c¨R9ei—ÿLfHyHN§Y-25ó25§!öeÌS¹eGWNïS¨c¨R0\ndkY—‰-NNS^ýVXR(WN‹s‹TóS¾0R§Y50§!ÿå‚gbLˆw=fAIÿvQê«ŽÅV‰˜•bhy=ecå‹9ei—0Ç9ei—T‹s‹TRVö–ÿNˆmw3zšR¦^ÿ‹s‹TØšŽN50„vÏkN¹pýOÐcØšAIbXT„v=ecLPT0"
 
  gdd_test_central_authority_balance_title:0 "KmÕ‹-N.YCgZÛ¦^ag"
- gdd_test_central_authority_balance_desc:0 "SbVN8NN¾‹b,gN·QtS„vKmÕ‹‹NöNÿ1uÕqôv¥cŒte)Y‹TLub—-N„v-N.YCgZNø‹¯OZáOÛ¦^ag0"
+ gdd_test_central_authority_balance_desc:0 "SbVN8NN¾‹b,gN·QtS„vKmÕ‹‹NöNÿ1uÕqôv¥cŒte‹s‹TLub—-N„v-N.YCgZNø‹¯OZáOÛ¦^ag0"
  gdd_test_central_authority_balance_tianzi_title:0 "KmÕ‹-N.YCgZÛ¦^ag"
- gdd_test_central_authority_balance_tianzi_desc:0 "SbVN8NN¾‹b,gN·QtS„vKmÕ‹‹NöNÿ1uhT)YPRôv¥cŒte)Y‹TLub—-N„v-N.YCgZNø‹¯OZáOÛ¦^ag0"
+ gdd_test_central_authority_balance_tianzi_desc:0 "SbVN8NN¾‹b,gN·QtS„vKmÕ‹‹NöNÿ1uhT)YPRôv¥cŒte‹s‹TLub—-N„v-N.YCgZNø‹¯OZáOÛ¦^ag0"
  gdd_celestial_test.120.t:0 "-N.YCgZNø‹¯OZáOKmÕ‹"
  gdd_celestial_test.120.d:0 "	ébÛ¦^ag„vØS¨R¹eT0ckJPãNhˆ-N.YCgZžXHVÿJPãNhˆø‹¯OZáOžXHV0\n\nSVMRÛ¦^JPÿ§Y[CZH.gdd_central_authority_balance.GetValue]§!"
  gdd_celestial_test.120.a:0 "-N.YCgZNGSÿÛ¦^ag §G+10§!	ÿ"
@@ -37,7 +37,7 @@
  gdd_celestial_test.120.plus_fifty:0 "-N.YCgZ'YE^NGSÿÛ¦^ag §G+50§!	ÿ"
  gdd_celestial_test.120.minus_fifty:0 "ø‹¯OZáO'YE^NGSÿÛ¦^ag §R-50§!	ÿ"
  gdd_test_remove_tianxia_member_title:0 "KmÕ‹ÿúQhT)YNbXT"
- gdd_test_remove_tianxia_member_desc:0 "SbVSVMRhT)YNbXT„v¨R`TŒQ0	ébN8NýV¶RTÿå‹ýVOËzsSúQhT)YNÿv^7R°e)Y‹TLub—N¹e„vbXTýVþvËV0"
+ gdd_test_remove_tianxia_member_desc:0 "SbVSVMRhT)YNbXT„v¨R`TŒQ0	ébN8NýV¶RTÿå‹ýVOËzsSúQhT)YNÿv^7R°e‹s‹TLub—N¹e„vbXTýVþvËV0"
  gdd_celestial_test.121.t:0 "úQhT)YNbXT"
  gdd_celestial_test.121.d:0 "	ébN8NSVMR^SŽNhT)YN„výV¶RÿSvQÎNbXTTŒQ-NúQ0Õqê«ŽNhT)YPRNOúQ°s(WïS	y˜-N0"
  gdd_celestial_test.121.slot_01:0 "S§Y[gdd_eoc_member_roster_01.GetName]§!úQhT)YN"
@@ -198,7 +198,7 @@
  gdd_celestial_test.124.cancel:0 "‚fNŒQËz°e„v'Yø‹¯O"
 
 
- gdd_celestial_test.1.t:0 "ø‹¯Or^„˜)Y‹T"
+ gdd_celestial_test.1.t:0 "ø‹¯Or^„˜‹s‹T"
  gdd_celestial_test.1.d:0 "jOHNSVMRKmÕ‹(u„v–™-^ø‹¯OÿÕqïSåNSÕ‹ãN)YPRÑS^1Wèeÿb¨c¨RNy˜án³°sLˆagöN„v)Yg9ei—0"
  gdd_celestial_test.1.a:0 "ãNÑS1Wèe"
  gdd_celestial_test.1.b:0 "¨c¨R9ei—"
@@ -206,7 +206,7 @@
  gdd_celestial_test.2.t:0 "ãNÑS1Wèe"
  gdd_celestial_test.2.d:0 "	ébNy˜SVMRïS›O-NNS‡v^ÑS^„v1Wèe0	ébTS1uêšRIN,gcbd–202ýwJPÿv^T)YPRËe RNŸSHrøvT0cíuASt^„vHeœg0"
  gdd_celestial_test.3.t:0 "¨c¨R)Yg9ei—"
- gdd_celestial_test.3.d:0 "NR	y˜ÅNLfHyS8gÇ0N-NNS‡v^îvMRán³ŸSHragöN„v9ei—0	ébTScbd–70)Y‹TN13zšR¦^ÿv^°‹UVêšRIN9ei—¶r`0"
+ gdd_celestial_test.3.d:0 "NR	y˜ÅNLfHyS8gÇ0N-NNS‡v^îvMRán³agöN„v9ei—0	ébT‹s‹TRVö–ÿNˆmw3zšR¦^ÿv^°‹UVêšRIN9ei—¶r`0"
  gdd_celestial_test.return:0 "ÔÞV"
 
  gdd_proxy_decree_expand_bureaucracy:0 "1WèeÿžXnLw˜R"
@@ -522,8 +522,8 @@
  GDD_REFORM_TRIBUTARY_EMBASSIES_TITLE:0 "RýVXw"
  GDD_REFORM_NEW_WORLD_TITLE:0 "Oßv)YN"
 
- GDD_CELESTIAL_REFORM_ACTION_TT:0 "¨c¨Rdky˜)Yg9ei—0-NNS‡v^—åb	góS§Y80§!)Y‹TÿÇT-NNS‡v^ˆmw§R70§!)Y‹Tv^M–NO§R1§!¹p3zšR¦^ÿ9ei—HeœgRVžRE–gbLˆw0"
- GDD_CELESTIAL_REFORM_PASSED_TT:0 "9ei—òTÏuÇÿ·ƒ—VCgZˆcCgöeïS¹pûQIN¨R²d•0"
+ GDD_CELESTIAL_REFORM_ACTION_TT:0 "¨c¨Rdky˜)Yg9ei—0-NNS‡v^„v‹s‹T—óS¾0R§Y50§!ÿå‚gbLˆw=fAIÿvQê«ŽÅV‰˜•bhy=ec0ÇT‹s‹TRVö–0Nˆmw3zšR¦^ÿ9ei—HeœgRVžRE–gbLˆw0‹s‹TØšŽN50„vÏkN¹pOAIbXT=ecLPT§G+1§!0"
+ GDD_CELESTIAL_REFORM_PASSED_TT:0 "9ei—òTÏuÇÿ·ƒ—VCgZˆcCgöeïS¹pûQv^nx²‹IN¨R²d•0"
 
  # êšRIN)Yg9ei—	c®”Heœg
  GDD_REFORM_ESTABLISH_GAITUGUILIU_TT:0 "§YMRnÿ§!ûNa5y˜nf9ei—\n§YgbLˆwÿ§!8hÃVS±‚9§G-10.0%§!ÿg¦^ê»l¦^§G-0.05§!"
@@ -540,7 +540,7 @@
  GDD_REFORM_KEJU_TT:0 "§YgbLˆwÿ§!Œ˜î•`l§G+1§!ÿŒ˜î•±‚9§G-5.0%§!\n§YhT)YNÿ§!Œ˜î•±‚9§G-2.5%§!"
  GDD_REFORM_INCLUSIVE_MONARCHY_TT:0 "§YgbLˆwÿ§!VYe¹RÍV¦^§G+1§!ÿ—RYeßuN¦^§G+10.0%§!\n§YhT)YNÿ§!—RYeßuN¦^§G+5.0%§!"
  GDD_REFORM_BUREAUCRATIC_FACTION_TT:0 "§YMRnÿ§!RýVXw0RG•b¹\n§YgbLˆwÿ§!Y²NsQûs§G+2§!ÿ§YhT)YNÿ§!ÑSUSb,g§G-5.0%§!"
- GDD_REFORM_MILITARY_FACTION_TT:0 "§YËeLˆãN÷Nÿ§!§R-70§!)Y‹Tÿ§R-1§!3zšR¦^0\n§RN“T‡e‘bfk”’N¥e0§!\n\n§Y)YPRÿ§!\n5Ïe6–BSàVÚ‹GWaˆÿ§G+10.0%§!\nt^¦^F–›Q.Oßuÿ§G+0.50§!\n\n§Y)YgbXTÿ§!\n5Ïe6–BSàVÚ‹GWaˆÿ§G+5.0%§!"
+ GDD_REFORM_MILITARY_FACTION_TT:0 "§Rdk9ei—òTÎN°sLˆ)Yg9ei—SOûs-Nûyd–0§!"
  GDD_REFORM_UNIFIED_MARKET_TT:0 "§YgbLˆwÿ§!FUÁTµNúQ§G+5.0%§!ÿÑSUSb,g§G-5.0%§!\n§YhT)YNÿ§!FUÁTµNúQ§G+2.5%§!"
  GDD_REFORM_MILITARY_BRANCH_TT:0 "§YgbLˆwÿ§!t^¦^F–›Q.Oßu§G+0.50§!ÿÍdÃu¦^mc1Y§G-15.0%§!\n§YhT)YNÿ§!t^¦^F–›Q.Oßu§G+0.25§!"
  GDD_REFORM_MODERNIZE_BANNERS_TT:0 "§YMRnÿ§!Tw^FU\n§YgbLˆwÿ§!F–›QÄ‰!j§G+10.0%§!ÿ§YhT)YNÿ§!‰^X2–¡V§G+10.0%§!0ºN›Rb`Y§G+5.0%§!"
@@ -550,7 +550,7 @@
 
  # êšRIN	c®”N9ei—agöN,g0WS
  gdd_celestial_action_authorized_trigger:0 "SVMRýV¶RYŽNïSÍdjO)Yg‹N¡R„vCgZHSô•"
- gdd_proxy_celestial_reform_base_trigger:0 "SVMRýV¶R·ƒ—VCgZˆcCgÿ-NNS^ýVXR(Wÿ-NNS‡v^óSåb	g80)Y‹TN3zšR¦^NNOŽN-2"
+ gdd_proxy_celestial_reform_base_trigger:0 "SVMRýV¶R·ƒ—VCgZˆcCgÿ-NNS^ýVXR(Wÿ-NNS‡v^„v‹s‹TóS¾0R50"
  gdd_proxy_decree_base_trigger:0 "-NNS^ýVXR(Wÿ)YPRåb	góS202ýwJPNSVMR¡l	gck(WuHe„v1Wèe"
  gdd_has_active_proxy_decree_trigger:0 "òT	gêšRIN1Wèeck(WuHe"
  gdd_can_enact_proxy_establish_gaituguiliu_trigger:0 "òTÇûNa5y˜nf9ei—0S8gÇ9eWRVAmÿv^ÖS—V%NJhÑSUS¦^Ype=ec"
@@ -663,4 +663,50 @@
 
 
 
- GDD_CELESTIAL_REFORM_BUTTON_TRIGGER_TT:0 "—án³CgZHSô•09ei—MRn0)Y‹TN3zšR¦^‰Blÿv^ÖS—V%NJhÑSUS¦^YpeÿòTÇ„v9ei——·ƒ—VCgZˆcCg¹eïSIN¨R²d•0"
+ GDD_CELESTIAL_REFORM_BUTTON_TRIGGER_TT:0 "—án³CgZHSô•09ei—MRn0‹s‹TóS¾0R50ÿv^ÖS—V%NJhÑSUS¦^Ypeÿå‚9ei—gbLˆw=fAIÿvQê«ŽØÅV‰˜•bhy=ecå‹9ei—0òTÇ„v9ei——·ƒ—VCgZˆcCg¹eïSIN¨R²d•0"
+
+ # )Yg9ei—²d•nx²‹N‚º‹ÍS9V
+ gdd_opinion_revoked_tianxia_reform:0 "²d•)Yg9ei—"
+ gdd_celestial_reform_revoke.confirm.t:0 "²d•)Yg9ei—"
+ gdd_celestial_reform_revoke.confirm.a:0 "nx²‹²d•"
+ gdd_celestial_reform_revoke.cancel.a:0 "‚fN²d•"
+ gdd_celestial_reform_revoke_backlash_tt:0 "ŸS9ei—gbLˆwùR1ûNýV„v‹Ya¦^§R-50§!ÿvQYOhT)YNýV¶RùR1ûNýV„v‹Ya¦^§R-10§!0é`ZïS=t¡‹ó§R-100§!ÿv^–1ûNýV„v9e„UsQûsîOckê6qpˆÏQ0"
+ gdd_celestial_reform_revoke.keju.d:0 "nxšR²d•§Y9e6RÑyLN§!ÿ"
+ gdd_celestial_reform_revoke.civil_registration.d:0 "nxšR²d•§Y7bPŸl§!ÿ"
+ gdd_celestial_reform_revoke.silver_standard.d:0 "nxšR²d•§Y3zúVö”,g§!ÿ"
+ gdd_celestial_reform_revoke.kanhe.d:0 "nxšR²d•§YØRT&rQY§!ÿ"
+ gdd_celestial_reform_revoke.unified_market.d:0 "nxšR²d•§YßuN^Õl§!ÿ"
+ gdd_celestial_reform_revoke.military_branch.d:0 "nxšR²d•§YÏufkte›Q§!ÿ"
+ gdd_celestial_reform_revoke.foreign_ship_designs.d:0 "nxšR²d•§Yx.7Y9‚§!ÿ"
+ gdd_celestial_reform_revoke.inclusive_monarchy.d:0 "nxšR²d•§YÁN·VYeS§!ÿ"
+ gdd_celestial_reform_revoke.establish_gaituguiliu.d:0 "nxšR²d•§Y9eWRVAm§!ÿ"
+ gdd_celestial_reform_revoke.land_tax.d:0 "nxšR²d•§YÔYûNI`cw§!ÿ"
+ gdd_celestial_reform_revoke.single_whip.d:0 "nxšR²d•§Yag­—KyV§!ÿ"
+ gdd_celestial_reform_revoke.centralizing_government.d:0 "nxšR²d•§YÍ‘te˜R6R§!ÿ"
+ gdd_celestial_reform_revoke.reign_in_estates.d:0 "nxšR²d•§Yy0•gZQ§!ÿ"
+ gdd_celestial_reform_revoke.vassalize_tributaries.d:0 "nxšR²d•§Y)YNRVN§!ÿ"
+ gdd_celestial_reform_revoke.seaban.d:0 "nxšR²d•§YKfSYé…§!ÿ"
+ gdd_celestial_reform_revoke.military_governors.d:0 "nxšR²d•§YTw^FU§!ÿ"
+ gdd_celestial_reform_revoke.tributary_embassies.d:0 "nxšR²d•§YRýVXw§!ÿ"
+ gdd_celestial_reform_revoke.modernize_banners.d:0 "nxšR²d•§YRG•b¹§!ÿ"
+ gdd_celestial_reform_revoke.bureaucratic_faction.d:0 "nxšR²d•§YqQ®‹ýV=f§!ÿ"
+ gdd_celestial_reform_revoke.new_world.d:0 "nxšR²d•§YOßv)YN§!ÿ"
+
+ # ^yWV‹s‹T6e=e
+ gdd_tianxia_internal_peace_mandate:0 "hT)YN…QèŒTs^"
+ gdd_tianxia_settled_authority_mandate:0 "CgZOPŽNNïz"
+ gdd_tianxia_absolute_authority_mandate:0 "CgZŒRhQRVŽNNïz"
+ gdd_tianxia_deadlocked_authority_mandate:0 "CgZøvc"
+ gdd_tianxia_one_invalid_great_feudatory:0 "N'Yø‹¯O-^MONhQ"
+ gdd_tianxia_two_invalid_great_feudatories:0 "N'Yø‹¯O-^MONhQ"
+ gdd_tianxia_three_invalid_great_feudatories:0 "N'Yø‹¯O-^MONhQ"
+ gdd_tianxia_four_invalid_great_feudatories:0 "N'Yø‹¯O-^MONhQ"
+ gdd_tianxia_five_invalid_great_feudatories:0 "N'Yø‹¯O-^MONhQ"
+ gdd_tianxia_six_invalid_great_feudatories:0 "N'Yø‹¯O-^MONhQ"
+ gdd_tianxia_seven_invalid_great_feudatories:0 "N'Yø‹¯O-^MONhQ"
+ gdd_celestial_mandate.1.t:0 "hT)YN‹s‹TÓu—r"
+ gdd_celestial_mandate.1.d:0 "hT)YNck(WÓu—r,gg‹s‹T0"
+ gdd_celestial_mandate.1.a:0 "Óu—rŒRÕk"
+
+ gdd_tianxia_emperor_external_subject_mandate:0 "‡v^×S6RŽNY¦"
+ gdd_tianxia_emperor_internal_subject_mandate:0 "‡v^×S6RŽNhT)YNø‹¯O"

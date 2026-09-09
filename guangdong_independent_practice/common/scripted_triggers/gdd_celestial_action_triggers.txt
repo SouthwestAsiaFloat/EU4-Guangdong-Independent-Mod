@@ -2,6 +2,7 @@
 # Authority decides which country may act, but never restricts that country
 # to either the centralising or decentralising reform branch.
 gdd_celestial_action_authorized_trigger = {
+    NOT = { has_global_flag = zhx_tianxia_dismantled }
     custom_trigger_tooltip = {
         tooltip = GDD_CELESTIAL_ACTION_AUTHORIZED_TRIGGER_TT
         OR = {
@@ -31,67 +32,88 @@ gdd_celestial_action_authorized_trigger = {
 }
 
 # Every reform uses the same strict development-majority rule. The second
-# cached value excludes the principal feudatory when it is the executor.
+# cached value excludes the principal feudatory when it is the executor. An
+# AI executor must also cast its own support ballot, so a favorable majority
+# cannot compel an unwilling AI Emperor or principal feudatory to enact it.
+gdd_ai_reform_executor_support_trigger = {
+    OR = {
+        ai = no
+        has_country_flag = $support_flag$
+    }
+}
 
 # Eight independent ordinary reforms.
 gdd_can_enact_proxy_keju_trigger = {
     NOT = { gdd_reform_keju_passed = yes }
+    gdd_ai_reform_executor_support_trigger = { support_flag = gdd_support_reform_keju }
     CZH = { gdd_reform_vote_majority_trigger = { support_twice_variable = gdd_reform_vote_keju_twice principal_support_twice_variable = gdd_reform_vote_keju_without_principal_twice } }
 }
 gdd_can_enact_proxy_civil_registration_trigger = {
     NOT = { gdd_reform_civil_registration_passed = yes }
+    gdd_ai_reform_executor_support_trigger = { support_flag = gdd_support_reform_civil_registration }
     CZH = { gdd_reform_vote_majority_trigger = { support_twice_variable = gdd_reform_vote_civil_registration_twice principal_support_twice_variable = gdd_reform_vote_civil_registration_without_principal_twice } }
 }
 gdd_can_enact_proxy_silver_standard_trigger = {
     NOT = { gdd_reform_silver_standard_passed = yes }
+    gdd_ai_reform_executor_support_trigger = { support_flag = gdd_support_reform_silver_standard }
     CZH = { gdd_reform_vote_majority_trigger = { support_twice_variable = gdd_reform_vote_silver_standard_twice principal_support_twice_variable = gdd_reform_vote_silver_standard_without_principal_twice } }
 }
 gdd_can_enact_proxy_kanhe_trigger = {
     NOT = { gdd_reform_kanhe_passed = yes }
+    gdd_ai_reform_executor_support_trigger = { support_flag = gdd_support_reform_kanhe }
     CZH = { gdd_reform_vote_majority_trigger = { support_twice_variable = gdd_reform_vote_kanhe_twice principal_support_twice_variable = gdd_reform_vote_kanhe_without_principal_twice } }
 }
 gdd_can_enact_proxy_unified_market_trigger = {
     NOT = { gdd_reform_unified_market_passed = yes }
+    gdd_ai_reform_executor_support_trigger = { support_flag = gdd_support_reform_unified_market }
     CZH = { gdd_reform_vote_majority_trigger = { support_twice_variable = gdd_reform_vote_unified_market_twice principal_support_twice_variable = gdd_reform_vote_unified_market_without_principal_twice } }
 }
 gdd_can_enact_proxy_military_branch_trigger = {
     NOT = { gdd_reform_military_branch_passed = yes }
+    gdd_ai_reform_executor_support_trigger = { support_flag = gdd_support_reform_military_branch }
     CZH = { gdd_reform_vote_majority_trigger = { support_twice_variable = gdd_reform_vote_military_branch_twice principal_support_twice_variable = gdd_reform_vote_military_branch_without_principal_twice } }
 }
 gdd_can_enact_proxy_foreign_ship_designs_trigger = {
     NOT = { gdd_reform_foreign_ship_designs_passed = yes }
+    gdd_ai_reform_executor_support_trigger = { support_flag = gdd_support_reform_foreign_ship_designs }
     CZH = { gdd_reform_vote_majority_trigger = { support_twice_variable = gdd_reform_vote_foreign_ship_designs_twice principal_support_twice_variable = gdd_reform_vote_foreign_ship_designs_without_principal_twice } }
 }
 gdd_can_enact_proxy_inclusive_monarchy_trigger = {
     NOT = { gdd_reform_inclusive_monarchy_passed = yes }
+    gdd_ai_reform_executor_support_trigger = { support_flag = gdd_support_reform_inclusive_monarchy }
     CZH = { gdd_reform_vote_majority_trigger = { support_twice_variable = gdd_reform_vote_inclusive_monarchy_twice principal_support_twice_variable = gdd_reform_vote_inclusive_monarchy_without_principal_twice } }
 }
 
 # Six centralising reforms.
 gdd_can_enact_proxy_establish_gaituguiliu_trigger = {
     NOT = { gdd_reform_establish_gaituguiliu_passed = yes }
+    gdd_ai_reform_executor_support_trigger = { support_flag = gdd_support_reform_establish_gaituguiliu }
     gdd_five_ordinary_celestial_reforms_passed = yes
     CZH = { gdd_reform_vote_majority_trigger = { support_twice_variable = gdd_reform_vote_establish_gaituguiliu_twice principal_support_twice_variable = gdd_reform_vote_establish_gaituguiliu_without_principal_twice } }
 }
 gdd_can_enact_proxy_land_tax_trigger = {
     NOT = { gdd_reform_land_tax_passed = yes }
+    gdd_ai_reform_executor_support_trigger = { support_flag = gdd_support_reform_land_tax }
     gdd_five_ordinary_celestial_reforms_passed = yes
     CZH = { gdd_reform_vote_majority_trigger = { support_twice_variable = gdd_reform_vote_land_tax_twice principal_support_twice_variable = gdd_reform_vote_land_tax_without_principal_twice } }
 }
 gdd_can_enact_proxy_single_whip_trigger = {
     NOT = { gdd_reform_single_whip_passed = yes }
+    gdd_ai_reform_executor_support_trigger = { support_flag = gdd_support_reform_single_whip }
     gdd_five_ordinary_celestial_reforms_passed = yes
     gdd_reform_establish_gaituguiliu_passed = yes
     CZH = { gdd_reform_vote_majority_trigger = { support_twice_variable = gdd_reform_vote_single_whip_twice principal_support_twice_variable = gdd_reform_vote_single_whip_without_principal_twice } }
 }
 gdd_can_enact_proxy_centralizing_government_trigger = {
     NOT = { gdd_reform_centralizing_government_passed = yes }
+    gdd_ai_reform_executor_support_trigger = { support_flag = gdd_support_reform_centralizing_government }
     gdd_five_ordinary_celestial_reforms_passed = yes
     gdd_reform_land_tax_passed = yes
     CZH = { gdd_reform_vote_majority_trigger = { support_twice_variable = gdd_reform_vote_centralizing_government_twice principal_support_twice_variable = gdd_reform_vote_centralizing_government_without_principal_twice } }
 }
 gdd_can_enact_proxy_reign_in_estates_trigger = {
     NOT = { gdd_reform_reign_in_estates_passed = yes }
+    gdd_ai_reform_executor_support_trigger = { support_flag = gdd_support_reform_reign_in_estates }
     gdd_five_ordinary_celestial_reforms_passed = yes
     gdd_reform_single_whip_passed = yes
     gdd_reform_centralizing_government_passed = yes
@@ -99,6 +121,7 @@ gdd_can_enact_proxy_reign_in_estates_trigger = {
 }
 gdd_can_enact_proxy_vassalize_tributaries_trigger = {
     NOT = { gdd_reform_vassalize_tributaries_passed = yes }
+    gdd_ai_reform_executor_support_trigger = { support_flag = gdd_support_reform_vassalize_tributaries }
     NOT = { gdd_reform_new_world_passed = yes }
     gdd_five_ordinary_celestial_reforms_passed = yes
     gdd_reform_establish_gaituguiliu_passed = yes
@@ -112,28 +135,33 @@ gdd_can_enact_proxy_vassalize_tributaries_trigger = {
 # Six decentralising reforms.
 gdd_can_enact_proxy_seaban_trigger = {
     NOT = { gdd_reform_seaban_passed = yes }
+    gdd_ai_reform_executor_support_trigger = { support_flag = gdd_support_reform_seaban }
     gdd_five_ordinary_celestial_reforms_passed = yes
     CZH = { gdd_reform_vote_majority_trigger = { support_twice_variable = gdd_reform_vote_seaban_twice principal_support_twice_variable = gdd_reform_vote_seaban_without_principal_twice } }
 }
 gdd_can_enact_proxy_military_governors_trigger = {
     NOT = { gdd_reform_military_governors_passed = yes }
+    gdd_ai_reform_executor_support_trigger = { support_flag = gdd_support_reform_military_governors }
     gdd_five_ordinary_celestial_reforms_passed = yes
     CZH = { gdd_reform_vote_majority_trigger = { support_twice_variable = gdd_reform_vote_military_governors_twice principal_support_twice_variable = gdd_reform_vote_military_governors_without_principal_twice } }
 }
 gdd_can_enact_proxy_tributary_embassies_trigger = {
     NOT = { gdd_reform_tributary_embassies_passed = yes }
+    gdd_ai_reform_executor_support_trigger = { support_flag = gdd_support_reform_tributary_embassies }
     gdd_five_ordinary_celestial_reforms_passed = yes
     gdd_reform_seaban_passed = yes
     CZH = { gdd_reform_vote_majority_trigger = { support_twice_variable = gdd_reform_vote_tributary_embassies_twice principal_support_twice_variable = gdd_reform_vote_tributary_embassies_without_principal_twice } }
 }
 gdd_can_enact_proxy_modernize_banners_trigger = {
     NOT = { gdd_reform_modernize_banners_passed = yes }
+    gdd_ai_reform_executor_support_trigger = { support_flag = gdd_support_reform_modernize_banners }
     gdd_five_ordinary_celestial_reforms_passed = yes
     gdd_reform_military_governors_passed = yes
     CZH = { gdd_reform_vote_majority_trigger = { support_twice_variable = gdd_reform_vote_modernize_banners_twice principal_support_twice_variable = gdd_reform_vote_modernize_banners_without_principal_twice } }
 }
 gdd_can_enact_proxy_bureaucratic_faction_trigger = {
     NOT = { gdd_reform_bureaucratic_faction_passed = yes }
+    gdd_ai_reform_executor_support_trigger = { support_flag = gdd_support_reform_bureaucratic_faction }
     gdd_five_ordinary_celestial_reforms_passed = yes
     gdd_reform_tributary_embassies_passed = yes
     gdd_reform_modernize_banners_passed = yes
@@ -141,6 +169,7 @@ gdd_can_enact_proxy_bureaucratic_faction_trigger = {
 }
 gdd_can_enact_proxy_new_world_trigger = {
     NOT = { gdd_reform_new_world_passed = yes }
+    gdd_ai_reform_executor_support_trigger = { support_flag = gdd_support_reform_new_world }
     NOT = { gdd_reform_vassalize_tributaries_passed = yes }
     gdd_five_ordinary_celestial_reforms_passed = yes
     gdd_reform_seaban_passed = yes
@@ -193,13 +222,12 @@ gdd_proxy_celestial_reform_base_trigger = {
     event_target:EmperorOfChina = {
         exists = yes
         is_emperor_of_china = yes
-        imperial_mandate = 80
-        stability = -2
+        imperial_mandate = 50
     }
 }
 
 # Active revocation uses the same authority interval as enactment, but does
-# not require Mandate or stability. A future peace treaty can call the
+# not require Mandate. A future peace treaty can call the
 # matching scripted revoke effect directly.
 gdd_can_actively_revoke_proxy_celestial_reform_trigger = {
     gdd_celestial_action_authorized_trigger = yes

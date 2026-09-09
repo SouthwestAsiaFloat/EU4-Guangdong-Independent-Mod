@@ -37,3 +37,36 @@ gdd_recover_china_cores_wargoal = {
 
     war_name = GDD_PUNISH_GUANGDONG_WAR_NAME
 }
+
+gdd_tianxia_liberation_wargoal = {
+    type = take_province
+
+    attacker = {
+        # Mirror vanilla take_province_hre; only the province predicate and
+        # localisation are Tianxia-specific.
+        badboy_factor = 1
+        prestige_factor = 2
+        peace_cost_factor = 0.75
+
+        allowed_provinces = {
+            has_province_flag = zhx_tianxia_province
+            has_province_modifier = gdd_tianxia_unlawful_refusal
+        }
+        peace_options = {
+            po_release_vassals
+            po_release_annexed
+            po_return_cores
+            po_demand_provinces
+        }
+        prov_desc = GDD_TIANXIA_LIBERATION_PROV_DESC
+    }
+
+    defender = {
+        badboy_factor = 1
+        prestige_factor = 1
+        peace_cost_factor = 1
+        peace_options = { po_demand_provinces }
+    }
+
+    war_name = GDD_TIANXIA_LIBERATION_WAR_NAME
+}

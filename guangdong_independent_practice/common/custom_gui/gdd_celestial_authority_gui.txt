@@ -31,6 +31,26 @@ custom_text_box = {
     tooltip = GDD_EOC_AUTHORITY_BALANCE_TT
 }
 
+# Native Mandate numbers remain engine-owned. These two invisible scripted
+# text boxes sit over them and replace only the hard-coded vanilla hover.
+custom_text_box = {
+    name = gdd_eoc_mandate_value_tooltip
+    potential = {
+        has_global_flag = zhx_system_initialised_v8
+        event_target:EmperorOfChina = { exists = yes }
+    }
+    tooltip = GDD_EOC_MANDATE_MONTHLY_TT
+}
+
+custom_text_box = {
+    name = gdd_eoc_mandate_growth_tooltip
+    potential = {
+        has_global_flag = zhx_system_initialised_v8
+        event_target:EmperorOfChina = { exists = yes }
+    }
+    tooltip = GDD_EOC_MANDATE_MONTHLY_TT
+}
+
 custom_text_box = {
     name = gdd_eoc_authority_value_m100
     potential = {
@@ -247,9 +267,24 @@ custom_text_box = {
         has_global_flag = zhx_system_initialised_v7
         CZH = {
             exists = yes
-            check_variable = {
+            is_variable_equal = {
                 which = gdd_central_authority_balance
                 value = 0
+            }
+        }
+    }
+    tooltip = GDD_EOC_CURRENT_BALANCE_EFFECTS_TT
+}
+
+custom_text_box = {
+    name = gdd_eoc_authority_value_p000
+    potential = {
+        has_global_flag = zhx_system_initialised_v7
+        CZH = {
+            exists = yes
+            check_variable = {
+                which = gdd_central_authority_balance
+                value = 0.001
             }
             NOT = {
                 check_variable = {
@@ -259,7 +294,7 @@ custom_text_box = {
             }
         }
     }
-    tooltip = GDD_EOC_CURRENT_BALANCE_EFFECTS_TT
+    tooltip = GDD_EOC_CURRENT_CENTRAL_EFFECTS_TT
 }
 
 custom_text_box = {
@@ -683,9 +718,24 @@ custom_icon = {
         has_global_flag = zhx_system_initialised_v7
         CZH = {
             exists = yes
-            check_variable = {
+            is_variable_equal = {
                 which = gdd_central_authority_balance
                 value = 0
+            }
+        }
+    }
+    tooltip = GDD_EOC_CURRENT_BALANCE_EFFECTS_TT
+}
+
+custom_icon = {
+    name = gdd_eoc_authority_bar_p000
+    potential = {
+        has_global_flag = zhx_system_initialised_v7
+        CZH = {
+            exists = yes
+            check_variable = {
+                which = gdd_central_authority_balance
+                value = 0.001
             }
             NOT = {
                 check_variable = {
@@ -695,7 +745,7 @@ custom_icon = {
             }
         }
     }
-    tooltip = GDD_EOC_CURRENT_BALANCE_EFFECTS_TT
+    tooltip = GDD_EOC_CURRENT_CENTRAL_EFFECTS_TT
 }
 
 custom_icon = {

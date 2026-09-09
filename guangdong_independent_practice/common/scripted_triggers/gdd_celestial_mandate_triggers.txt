@@ -1,0 +1,17 @@
+# Mandate uses the HRE distinction between internal peace and foreign war.
+# External wars do not suspend the bonus; only a war whose two sides both
+# contain Zhou polities does so.  Use an explicit war relation here rather
+# than any_enemy_country, whose scope is broader than this contract.
+gdd_tianxia_has_internal_peace = {
+    NOT = {
+        any_country = {
+            exists = yes
+            zhx_is_tianxia_polity = yes
+            any_country = {
+                exists = yes
+                zhx_is_tianxia_polity = yes
+                war_with = PREV
+            }
+        }
+    }
+}

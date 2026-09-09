@@ -22,6 +22,7 @@ zhx_set_tianzi = {
     clr_country_flag = zhx_ritual_tier_fractured
     clr_country_flag = zhx_ritual_tier_collapsed
     set_country_flag = zhx_tianzi
+    set_country_flag = gdd_tianxia_historical_polity
     save_global_event_target_as = zhx_tianzi
     if = {
         limit = { has_global_flag = zhx_system_initialised_v8 }
@@ -562,10 +563,17 @@ zhx_register_tianxia_member = {
     if = {
         limit = {
             exists = yes
+            NOT = { has_global_flag = zhx_tianxia_dismantled }
             NOT = { has_country_flag = zhx_tianzi }
             NOT = { has_country_flag = zhx_member }
         }
+        # A revived or previously expelled country begins a fresh membership
+        # lifecycle; this flag only suppresses duplicate annexation on-actions
+        # for the same destruction.
+        clr_country_flag = gdd_external_annexation_mandate_paid
+        clr_country_flag = gdd_tianxia_defense_refusal_paid
         set_country_flag = zhx_member
+        set_country_flag = gdd_tianxia_historical_polity
         set_variable = {
             which = zhx_merit
             value = 0
@@ -605,6 +613,7 @@ zhx_register_major_feudatory = {
     if = {
         limit = {
             exists = yes
+            NOT = { has_global_flag = zhx_tianxia_dismantled }
             NOT = { has_country_flag = zhx_tianzi }
         }
         zhx_register_tianxia_member = yes
@@ -749,6 +758,10 @@ zhx_promote_six_great_feudatory = {
 
 zhx_remove_tianxia_member = {
     if = {
+        limit = { has_country_flag = zhx_member }
+        set_country_flag = gdd_tianxia_historical_polity
+    }
+    if = {
         limit = {
             OR = {
                 has_country_flag = zhx_council_vote_a
@@ -757,12 +770,6 @@ zhx_remove_tianxia_member = {
             }
         }
         zhx_clear_current_tianxia_council_vote = yes
-        event_target:zhx_tianzi = {
-            if = {
-                limit = { has_country_flag = zhx_council_phase_ballot_open }
-                zhx_recount_tianxia_council_ballot = yes
-            }
-        }
     }
     if = {
         limit = {
@@ -804,6 +811,14 @@ zhx_remove_tianxia_member = {
     gdd_clear_all_reform_support_flags_effect = yes
     clr_country_flag = zhx_member
     clr_country_flag = zhx_major_feudatory
+    # Recount after removing membership, including countries that never voted.
+    # Otherwise the departing country remains in the eligible/unvoted totals.
+    event_target:zhx_tianzi = {
+        if = {
+            limit = { has_country_flag = zhx_council_phase_ballot_open }
+            zhx_recount_tianxia_council_ballot = yes
+        }
+    }
     set_variable = {
         which = zhx_merit
         value = 0
@@ -1003,6 +1018,40 @@ zhx_migrate_tianxia_system_v11_to_v12 = {
         gdd_refresh_authority_balance_effects = yes
     }
     set_global_flag = zhx_system_initialised_v12
+}
+
+# v13 adds permanent province-level Tianxia territory. Existing Zhou-owned
+# non-HRE provinces are migrated without Mandate gain; future admissions use
+# the public province effect and retain their one-time reward ledger forever.
+zhx_migrate_tianxia_system_v12_to_v13 = {
+    if = {
+        limit = { NOT = { has_global_flag = zhx_tianxia_dismantled } }
+        gdd_bootstrap_tianxia_provinces_effect = yes
+    }
+    set_global_flag = zhx_system_initialised_v13
+}
+
+# v14 repairs impossible legacy overlaps that displayed the native HRE frame
+# underneath the transparent Zhou glyph. This does not auto-admit HRE land.
+zhx_migrate_tianxia_system_v13_to_v14 = {
+    if = {
+        limit = { NOT = { has_global_flag = zhx_tianxia_dismantled } }
+        gdd_repair_tianxia_hre_exclusivity_effect = yes
+    }
+    set_global_flag = zhx_system_initialised_v14
+}
+
+# Seed restoration history for live members and retire only the obsolete
+# province lock. Country cooldown dates and pending requests are preserved.
+zhx_migrate_tianxia_system_v14_to_v15 = {
+    every_country = {
+        limit = { zhx_is_tianxia_polity = yes }
+        set_country_flag = gdd_tianxia_historical_polity
+    }
+    every_province = {
+        clr_province_flag = gdd_tianxia_unlawful_requested_this_owner
+    }
+    set_global_flag = zhx_system_initialised_v15
 }
 
 # 第一版政治成员表使用明确 TAG 清单，避免文化转变、征服或政体改变悄悄重写天下秩序。

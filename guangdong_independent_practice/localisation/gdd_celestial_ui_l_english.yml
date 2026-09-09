@@ -1,0 +1,291 @@
+﻿l_english:
+ # ê6R‹s‹T¬`nmFh0peJP,g«ŽÍN1uVÎd¡‹—rÿ,gFhêS1ÆQnxã‰Ê‘òT‰v°‹egn0
+ gdd_eoc_mandate_value_tooltip:0 ""
+ gdd_eoc_mandate_growth_tooltip:0 ""
+ gdd_eoc_authority_value_p000:0 "§Y[CZH.gdd_authority_integer_display.GetValue]§!"
+ GDD_EOC_MANDATE_MONTHLY_TT:0 "qVÍTÏkg§Y‹s‹TžX•§!„vàV.tÿ[EmperorOfChina.GetGddEocMandateProsperityRow][EmperorOfChina.GetGddEocMandateInternalPeaceRow][EmperorOfChina.GetGddEocMandateAuthorityRow][EmperorOfChina.GetGddEocMandateBeijingRow][EmperorOfChina.GetGddEocMandateNanjingRow][EmperorOfChina.GetGddEocMandateCantonRow][EmperorOfChina.GetGddEocMandateSubjectRow][EmperorOfChina.GetGddEocMandateSeatRow][EmperorOfChina.GetGddEocMandateUnificationWarRow][EmperorOfChina.GetGddEocMandateDecreeRow][EmperorOfChina.GetGddEocMandateDisasterRow][EmperorOfChina.GetGddEocMandateOccupationRow]"
+ gdd_eoc_mandate_row_blank:0 ""
+ gdd_eoc_mandate_prosperity:0 "\nAucƒÞTÿ§GÏkÞT+0.003§!"
+ gdd_eoc_mandate_internal_peace:0 "\n…QèŒTs^ÿ§G+0.10§!"
+ gdd_eoc_mandate_authority_absolute:0 "\nCgZŒRhQRVŽNNïzÿ§Y-100§!b§Y100§!	ÿÿ§GÏkg‹s‹T+0.10§!"
+ gdd_eoc_mandate_authority_settled:0 "\nCgZOPŽNNïzÿ§Y-99ó-26§!b§Y26ó99§!	ÿÿ§GÏkg‹s‹T+0.05§!"
+ gdd_eoc_mandate_authority_deadlocked:0 "\nCgZøvcÿ§Y-25ó25§!	ÿÿ§RÏkg‹s‹T-0.10§!"
+ gdd_eoc_mandate_beijing_controlled:0 "\nhT)YNµc6RS¬Nÿ§G+0.05§!"
+ gdd_eoc_mandate_beijing_lost:0 "\nhT)YN1Y»SS¬Nÿ§R-0.05§!"
+ gdd_eoc_mandate_nanjing_controlled:0 "\nhT)YNµc6RWS¬Nÿ§G+0.05§!"
+ gdd_eoc_mandate_nanjing_lost:0 "\nhT)YN1Y»SWS¬Nÿ§R-0.05§!"
+ gdd_eoc_mandate_canton_controlled:0 "\nhT)YNµc6R^ÞTÿ§G+0.05§!"
+ gdd_eoc_mandate_canton_lost:0 "\nhT)YN1Y»S^ÞTÿ§R-0.05§!"
+ gdd_eoc_mandate_external_subject:0 "\n‡v^×S6RŽNßWYýV¶Rÿ§R-1.00§!"
+ gdd_eoc_mandate_internal_subject:0 "\n‡v^×S6RŽNhT)YNýV¶Rÿ§R-0.05§!"
+ gdd_eoc_mandate_invalid_seats_1:0 "\nN'Yø‹¯O-^MONhQÿ1-^	ÿÿ§R-0.05§!"
+ gdd_eoc_mandate_invalid_seats_2:0 "\nN'Yø‹¯O-^MONhQÿ2-^	ÿÿ§R-0.10§!"
+ gdd_eoc_mandate_invalid_seats_3:0 "\nN'Yø‹¯O-^MONhQÿ3-^	ÿÿ§R-0.15§!"
+ gdd_eoc_mandate_invalid_seats_4:0 "\nN'Yø‹¯O-^MONhQÿ4-^	ÿÿ§R-0.20§!"
+ gdd_eoc_mandate_invalid_seats_5:0 "\nN'Yø‹¯O-^MONhQÿ5-^	ÿÿ§R-0.25§!"
+ gdd_eoc_mandate_invalid_seats_6:0 "\nN'Yø‹¯O-^MONhQÿ6-^	ÿÿ§R-0.30§!"
+ gdd_eoc_mandate_invalid_seats_7:0 "\nN'Yø‹¯O-^MONhQÿ7-^	ÿÿ§R-0.35§!"
+ gdd_eoc_mandate_unification_war:0 "\nåNNßu-NNSHNTjObÿ§G+0.05§!"
+ gdd_eoc_mandate_dynastic_decree:0 "\n˜^ýV÷SÏ‹äNÿ§G+0.05§!"
+ gdd_eoc_mandate_culture_disaster:0 "\n-NNS^ýV‡eSqSHgÿ§R-0.30§!"
+ gdd_eoc_mandate_foreign_occupation:0 "\n\n§Y	cg˜YÓu—r§!\nYLe`S†˜hT)YNwýNÿ[Root.gdd_foreign_occupied_tianxia_province_count.GetValue]w	ÿÿ§R-[Root.gdd_foreign_occupation_mandate_loss_display.GetValue]§!"
+ # GDD_EOC_MEMBER_TOOLTIP_LOC_BEGIN
+ GDD_EOC_MEMBER_SHIELD_01_TT:0 "[gdd_eoc_member_roster_01.GetGddEocMemberShieldTooltip]"
+ GDD_EOC_MEMBER_SHIELD_02_TT:0 "[gdd_eoc_member_roster_02.GetGddEocMemberShieldTooltip]"
+ GDD_EOC_MEMBER_SHIELD_03_TT:0 "[gdd_eoc_member_roster_03.GetGddEocMemberShieldTooltip]"
+ GDD_EOC_MEMBER_SHIELD_04_TT:0 "[gdd_eoc_member_roster_04.GetGddEocMemberShieldTooltip]"
+ GDD_EOC_MEMBER_SHIELD_05_TT:0 "[gdd_eoc_member_roster_05.GetGddEocMemberShieldTooltip]"
+ GDD_EOC_MEMBER_SHIELD_06_TT:0 "[gdd_eoc_member_roster_06.GetGddEocMemberShieldTooltip]"
+ GDD_EOC_MEMBER_SHIELD_07_TT:0 "[gdd_eoc_member_roster_07.GetGddEocMemberShieldTooltip]"
+ GDD_EOC_MEMBER_SHIELD_08_TT:0 "[gdd_eoc_member_roster_08.GetGddEocMemberShieldTooltip]"
+ GDD_EOC_MEMBER_SHIELD_09_TT:0 "[gdd_eoc_member_roster_09.GetGddEocMemberShieldTooltip]"
+ GDD_EOC_MEMBER_SHIELD_10_TT:0 "[gdd_eoc_member_roster_10.GetGddEocMemberShieldTooltip]"
+ GDD_EOC_MEMBER_SHIELD_11_TT:0 "[gdd_eoc_member_roster_11.GetGddEocMemberShieldTooltip]"
+ GDD_EOC_MEMBER_SHIELD_12_TT:0 "[gdd_eoc_member_roster_12.GetGddEocMemberShieldTooltip]"
+ GDD_EOC_MEMBER_SHIELD_13_TT:0 "[gdd_eoc_member_roster_13.GetGddEocMemberShieldTooltip]"
+ GDD_EOC_MEMBER_SHIELD_14_TT:0 "[gdd_eoc_member_roster_14.GetGddEocMemberShieldTooltip]"
+ GDD_EOC_MEMBER_SHIELD_15_TT:0 "[gdd_eoc_member_roster_15.GetGddEocMemberShieldTooltip]"
+ GDD_EOC_MEMBER_SHIELD_16_TT:0 "[gdd_eoc_member_roster_16.GetGddEocMemberShieldTooltip]"
+ GDD_EOC_MEMBER_SHIELD_17_TT:0 "[gdd_eoc_member_roster_17.GetGddEocMemberShieldTooltip]"
+ GDD_EOC_MEMBER_SHIELD_18_TT:0 "[gdd_eoc_member_roster_18.GetGddEocMemberShieldTooltip]"
+ GDD_EOC_MEMBER_SHIELD_19_TT:0 "[gdd_eoc_member_roster_19.GetGddEocMemberShieldTooltip]"
+ GDD_EOC_MEMBER_SHIELD_20_TT:0 "[gdd_eoc_member_roster_20.GetGddEocMemberShieldTooltip]"
+ GDD_EOC_MEMBER_SHIELD_21_TT:0 "[gdd_eoc_member_roster_21.GetGddEocMemberShieldTooltip]"
+ GDD_EOC_MEMBER_SHIELD_22_TT:0 "[gdd_eoc_member_roster_22.GetGddEocMemberShieldTooltip]"
+ GDD_EOC_MEMBER_SHIELD_23_TT:0 "[gdd_eoc_member_roster_23.GetGddEocMemberShieldTooltip]"
+ GDD_EOC_MEMBER_SHIELD_24_TT:0 "[gdd_eoc_member_roster_24.GetGddEocMemberShieldTooltip]"
+ GDD_EOC_MEMBER_SHIELD_25_TT:0 "[gdd_eoc_member_roster_25.GetGddEocMemberShieldTooltip]"
+ GDD_EOC_MEMBER_SHIELD_26_TT:0 "[gdd_eoc_member_roster_26.GetGddEocMemberShieldTooltip]"
+ GDD_EOC_MEMBER_SHIELD_27_TT:0 "[gdd_eoc_member_roster_27.GetGddEocMemberShieldTooltip]"
+ GDD_EOC_MEMBER_SHIELD_28_TT:0 "[gdd_eoc_member_roster_28.GetGddEocMemberShieldTooltip]"
+ GDD_EOC_MEMBER_SHIELD_29_TT:0 "[gdd_eoc_member_roster_29.GetGddEocMemberShieldTooltip]"
+ GDD_EOC_MEMBER_SHIELD_30_TT:0 "[gdd_eoc_member_roster_30.GetGddEocMemberShieldTooltip]"
+ GDD_EOC_MEMBER_SHIELD_31_TT:0 "[gdd_eoc_member_roster_31.GetGddEocMemberShieldTooltip]"
+ GDD_EOC_MEMBER_SHIELD_32_TT:0 "[gdd_eoc_member_roster_32.GetGddEocMemberShieldTooltip]"
+ GDD_EOC_MEMBER_SHIELD_33_TT:0 "[gdd_eoc_member_roster_33.GetGddEocMemberShieldTooltip]"
+ GDD_EOC_MEMBER_SHIELD_34_TT:0 "[gdd_eoc_member_roster_34.GetGddEocMemberShieldTooltip]"
+ GDD_EOC_MEMBER_SHIELD_35_TT:0 "[gdd_eoc_member_roster_35.GetGddEocMemberShieldTooltip]"
+ GDD_EOC_MEMBER_SHIELD_36_TT:0 "[gdd_eoc_member_roster_36.GetGddEocMemberShieldTooltip]"
+ GDD_EOC_MEMBER_SHIELD_37_TT:0 "[gdd_eoc_member_roster_37.GetGddEocMemberShieldTooltip]"
+ GDD_EOC_MEMBER_SHIELD_38_TT:0 "[gdd_eoc_member_roster_38.GetGddEocMemberShieldTooltip]"
+ GDD_EOC_MEMBER_SHIELD_39_TT:0 "[gdd_eoc_member_roster_39.GetGddEocMemberShieldTooltip]"
+ GDD_EOC_MEMBER_SHIELD_40_TT:0 "[gdd_eoc_member_roster_40.GetGddEocMemberShieldTooltip]"
+ GDD_EOC_MEMBER_SHIELD_41_TT:0 "[gdd_eoc_member_roster_41.GetGddEocMemberShieldTooltip]"
+ GDD_EOC_MEMBER_SHIELD_42_TT:0 "[gdd_eoc_member_roster_42.GetGddEocMemberShieldTooltip]"
+ GDD_EOC_MEMBER_SHIELD_43_TT:0 "[gdd_eoc_member_roster_43.GetGddEocMemberShieldTooltip]"
+ GDD_EOC_MEMBER_SHIELD_44_TT:0 "[gdd_eoc_member_roster_44.GetGddEocMemberShieldTooltip]"
+ GDD_EOC_MEMBER_SHIELD_45_TT:0 "[gdd_eoc_member_roster_45.GetGddEocMemberShieldTooltip]"
+ GDD_EOC_MEMBER_SHIELD_46_TT:0 "[gdd_eoc_member_roster_46.GetGddEocMemberShieldTooltip]"
+ GDD_EOC_MEMBER_SHIELD_47_TT:0 "[gdd_eoc_member_roster_47.GetGddEocMemberShieldTooltip]"
+ GDD_EOC_MEMBER_SHIELD_48_TT:0 "[gdd_eoc_member_roster_48.GetGddEocMemberShieldTooltip]"
+ GDD_EOC_MEMBER_SHIELD_49_TT:0 "[gdd_eoc_member_roster_49.GetGddEocMemberShieldTooltip]"
+ GDD_EOC_MEMBER_SHIELD_50_TT:0 "[gdd_eoc_member_roster_50.GetGddEocMemberShieldTooltip]"
+ GDD_EOC_MEMBER_SHIELD_51_TT:0 "[gdd_eoc_member_roster_51.GetGddEocMemberShieldTooltip]"
+ GDD_EOC_MEMBER_SHIELD_52_TT:0 "[gdd_eoc_member_roster_52.GetGddEocMemberShieldTooltip]"
+ GDD_EOC_MEMBER_SHIELD_53_TT:0 "[gdd_eoc_member_roster_53.GetGddEocMemberShieldTooltip]"
+ GDD_EOC_MEMBER_SHIELD_54_TT:0 "[gdd_eoc_member_roster_54.GetGddEocMemberShieldTooltip]"
+ GDD_EOC_MEMBER_SHIELD_55_TT:0 "[gdd_eoc_member_roster_55.GetGddEocMemberShieldTooltip]"
+ GDD_EOC_MEMBER_SHIELD_56_TT:0 "[gdd_eoc_member_roster_56.GetGddEocMemberShieldTooltip]"
+ GDD_EOC_MEMBER_SHIELD_57_TT:0 "[gdd_eoc_member_roster_57.GetGddEocMemberShieldTooltip]"
+ GDD_EOC_MEMBER_SHIELD_58_TT:0 "[gdd_eoc_member_roster_58.GetGddEocMemberShieldTooltip]"
+ GDD_EOC_MEMBER_SHIELD_59_TT:0 "[gdd_eoc_member_roster_59.GetGddEocMemberShieldTooltip]"
+ GDD_EOC_MEMBER_SHIELD_60_TT:0 "[gdd_eoc_member_roster_60.GetGddEocMemberShieldTooltip]"
+ GDD_EOC_MEMBER_SHIELD_61_TT:0 "[gdd_eoc_member_roster_61.GetGddEocMemberShieldTooltip]"
+ GDD_EOC_MEMBER_SHIELD_62_TT:0 "[gdd_eoc_member_roster_62.GetGddEocMemberShieldTooltip]"
+ GDD_EOC_MEMBER_SHIELD_63_TT:0 "[gdd_eoc_member_roster_63.GetGddEocMemberShieldTooltip]"
+ GDD_EOC_MEMBER_SHIELD_64_TT:0 "[gdd_eoc_member_roster_64.GetGddEocMemberShieldTooltip]"
+ GDD_EOC_MEMBER_SHIELD_65_TT:0 "[gdd_eoc_member_roster_65.GetGddEocMemberShieldTooltip]"
+ gdd_eoc_member_tooltip_blank:0 ""
+ gdd_eoc_member_tooltip_ai_none:0 "§Y[Root.GetName]§!=fhT)YNbXTýV0¹pûQSbVå‹ýVY²Nu˜b—0\n------------\nÖNìNîvMRN=ecûNUOS8gÇ„v9ei—0"
+ gdd_eoc_member_tooltip_ai_supported:0 "§Y[Root.GetName]§!=fhT)YNbXTýV0¹pûQSbVå‹ýVY²Nu˜b—0\n------------[Root.GetGddEocMemberTop1Block][Root.GetGddEocMemberTop2Block][Root.GetGddEocMemberOtherSupportsBlock]"
+ gdd_eoc_reform_name_keju:0 "9e6RÑyLN"
+ gdd_eoc_member_other_support_keju_continued:0 "§Y9e6RÑyLN§!0"
+ gdd_eoc_member_other_support_keju_final:0 "§Y9e6RÑyLN§!9ei—"
+ gdd_eoc_reform_name_civil_registration:0 "7bPŸl"
+ gdd_eoc_member_other_support_civil_registration_continued:0 "§Y7bPŸl§!0"
+ gdd_eoc_member_other_support_civil_registration_final:0 "§Y7bPŸl§!9ei—"
+ gdd_eoc_reform_name_silver_standard:0 "3zúVö”,g"
+ gdd_eoc_member_other_support_silver_standard_continued:0 "§Y3zúVö”,g§!0"
+ gdd_eoc_member_other_support_silver_standard_final:0 "§Y3zúVö”,g§!9ei—"
+ gdd_eoc_reform_name_kanhe:0 "ØRT&rQY"
+ gdd_eoc_member_other_support_kanhe_continued:0 "§YØRT&rQY§!0"
+ gdd_eoc_member_other_support_kanhe_final:0 "§YØRT&rQY§!9ei—"
+ gdd_eoc_reform_name_unified_market:0 "ßuN^Õl"
+ gdd_eoc_member_other_support_unified_market_continued:0 "§YßuN^Õl§!0"
+ gdd_eoc_member_other_support_unified_market_final:0 "§YßuN^Õl§!9ei—"
+ gdd_eoc_reform_name_military_branch:0 "Ïufkte›Q"
+ gdd_eoc_member_other_support_military_branch_continued:0 "§YÏufkte›Q§!0"
+ gdd_eoc_member_other_support_military_branch_final:0 "§YÏufkte›Q§!9ei—"
+ gdd_eoc_reform_name_foreign_ship_designs:0 "x.7Y9‚"
+ gdd_eoc_member_other_support_foreign_ship_designs_continued:0 "§Yx.7Y9‚§!0"
+ gdd_eoc_member_other_support_foreign_ship_designs_final:0 "§Yx.7Y9‚§!9ei—"
+ gdd_eoc_reform_name_inclusive_monarchy:0 "ÁN·VYeS"
+ gdd_eoc_member_other_support_inclusive_monarchy_continued:0 "§YÁN·VYeS§!0"
+ gdd_eoc_member_other_support_inclusive_monarchy_final:0 "§YÁN·VYeS§!9ei—"
+ gdd_eoc_reform_name_establish_gaituguiliu:0 "9eWRVAm"
+ gdd_eoc_member_other_support_establish_gaituguiliu_continued:0 "§Y9eWRVAm§!0"
+ gdd_eoc_member_other_support_establish_gaituguiliu_final:0 "§Y9eWRVAm§!9ei—"
+ gdd_eoc_reform_name_land_tax:0 "ÔYûNI`cw"
+ gdd_eoc_member_other_support_land_tax_continued:0 "§YÔYûNI`cw§!0"
+ gdd_eoc_member_other_support_land_tax_final:0 "§YÔYûNI`cw§!9ei—"
+ gdd_eoc_reform_name_single_whip:0 "ag­—KyV"
+ gdd_eoc_member_other_support_single_whip_continued:0 "§Yag­—KyV§!0"
+ gdd_eoc_member_other_support_single_whip_final:0 "§Yag­—KyV§!9ei—"
+ gdd_eoc_reform_name_centralizing_government:0 "Í‘te˜R6R"
+ gdd_eoc_member_other_support_centralizing_government_continued:0 "§YÍ‘te˜R6R§!0"
+ gdd_eoc_member_other_support_centralizing_government_final:0 "§YÍ‘te˜R6R§!9ei—"
+ gdd_eoc_reform_name_reign_in_estates:0 "y0•gZQ"
+ gdd_eoc_member_other_support_reign_in_estates_continued:0 "§Yy0•gZQ§!0"
+ gdd_eoc_member_other_support_reign_in_estates_final:0 "§Yy0•gZQ§!9ei—"
+ gdd_eoc_reform_name_vassalize_tributaries:0 ")YNRVN"
+ gdd_eoc_member_other_support_vassalize_tributaries_continued:0 "§Y)YNRVN§!0"
+ gdd_eoc_member_other_support_vassalize_tributaries_final:0 "§Y)YNRVN§!9ei—"
+ gdd_eoc_reform_name_seaban:0 "KfSYé…"
+ gdd_eoc_member_other_support_seaban_continued:0 "§YKfSYé…§!0"
+ gdd_eoc_member_other_support_seaban_final:0 "§YKfSYé…§!9ei—"
+ gdd_eoc_reform_name_military_governors:0 "Tw^FU"
+ gdd_eoc_member_other_support_military_governors_continued:0 "§YTw^FU§!0"
+ gdd_eoc_member_other_support_military_governors_final:0 "§YTw^FU§!9ei—"
+ gdd_eoc_reform_name_tributary_embassies:0 "RýVXw"
+ gdd_eoc_member_other_support_tributary_embassies_continued:0 "§YRýVXw§!0"
+ gdd_eoc_member_other_support_tributary_embassies_final:0 "§YRýVXw§!9ei—"
+ gdd_eoc_reform_name_modernize_banners:0 "RG•b¹"
+ gdd_eoc_member_other_support_modernize_banners_continued:0 "§YRG•b¹§!0"
+ gdd_eoc_member_other_support_modernize_banners_final:0 "§YRG•b¹§!9ei—"
+ gdd_eoc_reform_name_bureaucratic_faction:0 "qQ®‹ýV=f"
+ gdd_eoc_member_other_support_bureaucratic_faction_continued:0 "§YqQ®‹ýV=f§!0"
+ gdd_eoc_member_other_support_bureaucratic_faction_final:0 "§YqQ®‹ýV=f§!9ei—"
+ gdd_eoc_reform_name_new_world:0 "Oßv)YN"
+ gdd_eoc_member_other_support_new_world_continued:0 "§YOßv)YN§!0"
+ gdd_eoc_member_other_support_new_world_final:0 "§YOßv)YN§!9ei—"
+ gdd_eoc_member_top_1_block:0 "\nÖNìN=ec§Y[Root.GetGddEocMemberTop1Name]§!9ei—ÿ§G+[Root.gdd_reform_tooltip_top_1_score.GetValue]§!	ÿÿŸSàV=fÿ[Root.GetGddEocMemberTop1SponsorReason][Root.GetGddEocMemberTop1PolicyReason][Root.GetGddEocMemberTop1OverlordReason][Root.GetGddEocMemberTop1MandateReason]"
+ gdd_eoc_member_top_1_sponsor_positive:0 "\nùR9ei—gbLˆw„v`¦^ÿ§G+[Root.gdd_reform_tooltip_top_1_sponsor.GetValue]§!"
+ gdd_eoc_member_top_1_sponsor_negative:0 "\nùR9ei—gbLˆw„v`¦^ÿ§R[Root.gdd_reform_tooltip_top_1_sponsor.GetValue]§!"
+ gdd_eoc_member_top_1_policy_positive:0 "\n9ei—6eÊvN,gýVýVÅ`ÿ§G+[Root.gdd_reform_tooltip_top_1_policy.GetValue]§!"
+ gdd_eoc_member_top_1_policy_negative:0 "\n9ei—6eÊvN,gýVýVÅ`ÿ§R[Root.gdd_reform_tooltip_top_1_policy.GetValue]§!"
+ gdd_eoc_member_top_1_overlord_positive:0 "\n—RINýVËzHWÿ§G+[Root.gdd_reform_tooltip_top_1_overlord.GetValue]§!"
+ gdd_eoc_member_top_1_overlord_negative:0 "\n—RINýVËzHWÿ§R[Root.gdd_reform_tooltip_top_1_overlord.GetValue]§!"
+ gdd_eoc_member_top_1_mandate_positive:0 "\n‹s‹TØšŽN9ei—è•Ûiÿ§G+[Root.gdd_reform_tooltip_top_1_mandate.GetValue]§!"
+ gdd_eoc_member_top_2_block:0 "\nÖNìNØ=ec§Y[Root.GetGddEocMemberTop2Name]§!9ei—ÿ§G+[Root.gdd_reform_tooltip_top_2_score.GetValue]§!	ÿÿŸSàV=fÿ[Root.GetGddEocMemberTop2SponsorReason][Root.GetGddEocMemberTop2PolicyReason][Root.GetGddEocMemberTop2OverlordReason][Root.GetGddEocMemberTop2MandateReason]"
+ gdd_eoc_member_top_2_sponsor_positive:0 "\nùR9ei—gbLˆw„v`¦^ÿ§G+[Root.gdd_reform_tooltip_top_2_sponsor.GetValue]§!"
+ gdd_eoc_member_top_2_sponsor_negative:0 "\nùR9ei—gbLˆw„v`¦^ÿ§R[Root.gdd_reform_tooltip_top_2_sponsor.GetValue]§!"
+ gdd_eoc_member_top_2_policy_positive:0 "\n9ei—6eÊvN,gýVýVÅ`ÿ§G+[Root.gdd_reform_tooltip_top_2_policy.GetValue]§!"
+ gdd_eoc_member_top_2_policy_negative:0 "\n9ei—6eÊvN,gýVýVÅ`ÿ§R[Root.gdd_reform_tooltip_top_2_policy.GetValue]§!"
+ gdd_eoc_member_top_2_overlord_positive:0 "\n—RINýVËzHWÿ§G+[Root.gdd_reform_tooltip_top_2_overlord.GetValue]§!"
+ gdd_eoc_member_top_2_overlord_negative:0 "\n—RINýVËzHWÿ§R[Root.gdd_reform_tooltip_top_2_overlord.GetValue]§!"
+ gdd_eoc_member_top_2_mandate_positive:0 "\n‹s‹TØšŽN9ei—è•Ûiÿ§G+[Root.gdd_reform_tooltip_top_2_mandate.GetValue]§!"
+ gdd_eoc_member_other_supports_block:0 "\næS=ec[Root.GetGddEocMemberOtherSupport01][Root.GetGddEocMemberOtherSupport02][Root.GetGddEocMemberOtherSupport03][Root.GetGddEocMemberOtherSupport04][Root.GetGddEocMemberOtherSupport05][Root.GetGddEocMemberOtherSupport06][Root.GetGddEocMemberOtherSupport07][Root.GetGddEocMemberOtherSupport08][Root.GetGddEocMemberOtherSupport09][Root.GetGddEocMemberOtherSupport10][Root.GetGddEocMemberOtherSupport11][Root.GetGddEocMemberOtherSupport12][Root.GetGddEocMemberOtherSupport13][Root.GetGddEocMemberOtherSupport14][Root.GetGddEocMemberOtherSupport15][Root.GetGddEocMemberOtherSupport16][Root.GetGddEocMemberOtherSupport17][Root.GetGddEocMemberOtherSupport18][Root.GetGddEocMemberOtherSupport19][Root.GetGddEocMemberOtherSupport20]"
+ # GDD_EOC_MEMBER_TOOLTIP_LOC_END
+
+ GDD_LEAVE_TIANXIA_BUTTON:0 "1»yhT)YN"
+ GDD_ADD_ALL_TIANXIA_PROVINCES_BUTTON:0 "SNb	g0WWW ReQhT)YN"
+ GDD_DISMANTLE_TIANXIA_BUTTON:0 "ã‰cehT)YN"
+
+ GDD_TIANXIA_PROVINCE_MEMBER_STATUS_TT:0 "§Y[Root.GetName]§!^SŽNhT)YN0"
+ GDD_TIANXIA_PROVINCE_ADD_TT:0 "§YS[Root.GetName] ReQhT)YN§!\n------------\njOHNhT)YNbXTÿbìNïSåNSŒTs^µc6RN„vôv^SŒRte8hÃV0WWW³ueQ)YN‚Ms0\n–™!k³ueQöeÿÏk¹pÑSUS¦^ÙuˆN-NNS‡v^§G0.1§!‹s‹TÿUS8N0WWWgYÙuˆN§G20§!‹s‹T0"
+ GDD_TIANXIA_PROVINCE_REMOVE_TT:0 "§YO[Root.GetName]1»yhT)YN§!\n------------\njOHNhT)YNKNY„výV¶RÿbìNïSåN(WŒTs^µc6Rå‹0WWWöe²d»ShT)YNËV°‹0dkLNSM–NO-NNS‡v^„v‹s‹Tÿv^O-NNS‡v^ùRbýV„v‹Yav`S0\nûyd–Tÿå‹ËV°‹NOQ!kLfHyÿôvóbýV ReQhT)YN0"
+ GDD_LEAVE_TIANXIA_BUTTON_TT:0 "§Y1»yhT)YN§!\nnfbXTýVïS(WŒTs^öegúQ0býVôv¥cåb	g„vhQèhT)YN0WWWONv^ûyd–ÿÏk¹pøvsQÑSUS¦^cbd–§R0.1§!‹s‹TÿI`¡‹gYcbd–§R20§!‹s‹Tÿ-NNS‡v^ùRbýV„v‹YaSM–NO§R100§!0\n)YPRN-NNS‡v^NýwO(udk	c®”0"
+ GDD_ADD_ALL_TIANXIA_PROVINCES_BUTTON_TT:0 "§YSNb	g0WWW ReQhT)YN§!\nŠbbýVôv¥cåb	g0µc6RNwQ	gŒRte8hÃV„vhQèTJh0WWW³ueQhT)YN0^y1WWlš^ýV0WWWÅV‰˜HQúQ^yW0\nÏk8N0WWWÅN(W–™!k ReQöe	cÑSUS¦^ÙuˆN‹s‹TÿUS8N0WWWNP–HN§G20§!ÿteybÍdjO¡l	gI`NP–0"
+ GDD_DISMANTLE_TIANXIA_BUTTON_TT:0 "§Yã‰cehT)YN§!\n^—bXT²NbýVÅV‰˜²Nêµc6R-NNS‡v^0)YPRŒTNb	g°sXRN'Yø‹¯O„v–™ý0\nã‰ce=f8lEN„vÿbXT00WWW09ei—0•bhy0lQ®‹0CgZHeœgNhT)YNyrŠkã^SsQûsýO«ˆnd–ÿ-NNS^ýVHg6RmNO–KNã‰ce0"
+
+ gdd_opinion_removed_tianxia_province:0 "O0WWW1»yhT)YN"
+ gdd_opinion_left_tianxia:0 "1»yhT)YN"
+ gdd_opinion_forced_tianxia_return:0 "«ˆëRVØhT)YN†˜W"
+ gdd_opinion_refused_tianxia_unlawful_demand:0 "ÒbÝuRVØhT)YN†˜W"
+
+ gdd_tianxia_territory.1.t:0 "hT)YN0WWWôu²b"
+ gdd_tianxia_territory.1.d:0 "hT)YN0WWW¶r`òTÏu7R°e0"
+ gdd_tianxia_territory.2.t:0 "O0WWW1»yhT)YNÿ"
+ gdd_tianxia_territory.2.d:0 "dk0W‹†ÍNRŽNhT)YN‚Msÿ‚YÊNtSòTRVbNb	g0å‚²d»ShT)YNËV°‹ÿ¿O=flQV&T²‹-NNS‡v^ùRdk0W„vTRÿv^Sdk0WnŽN)YNJy6RKNY0bìN=f&T”^SV˜äNd–Tÿ"
+ gdd_tianxia_territory.2.a:0 "OvQ1»yhT)YN"
+ GDD_TIANXIA_PROVINCE_REMOVE_OPTION_TT:0 "§Y[gdd_tianxia_province_action.GetName]§!S1»yhT)YN0\n-NNS‡v^1Y»S§R[Root.gdd_tianxia_removal_mandate_cost.GetValue]§!‹s‹T0\n-NNS‡v^ùRbýV„v‹YaM–NO§R25§!0"
+ gdd_tianxia_territory.3.t:0 "1»yhT)YNÿ"
+ gdd_tianxia_territory.3.d:0 "hT)YNåNgO0ßv“ŠNqQT‚Msôuûsø‹¯OTR0å‚býVckVúQÿôv^S†uWSNv^ÎN)YN‚Msd–Tÿ-NNS‡v^mNÅVSÆ‰dkLNHNùRJy6RNvQCgZ„vlQVÌwV0"
+ gdd_tianxia_territory.3.a:0 "ckV1»yhT)YN"
+ gdd_tianxia_territory.4.t:0 "ã‰cehT)YNÿ"
+ gdd_tianxia_territory.4.d:0 "dkLNS8lENã‰cehT)YNÊS-NNS^ýVÿNb	gbXT«ŽýN0hT)YN0WWW09ei—0lQ®‹0•bhy0CgZHeœgŒTyrŠkã^SsQûsýO«ˆnd–ÿNNýwÍ‘°eRËYS0"
+ gdd_tianxia_territory.4.a:0 ")YNòTN³XR"
+ gdd_tianxia_territory.cancel:0 "‚fNjOb"
+
+ GDD_TIANXIA_ACTIONS:0 "hT)YNLˆ¨R"
+ GDD_TIANXIA_ACTIONS_COLLAPSE_TT:0 "6ew§YhT)YNLˆ¨R§!0"
+ GDD_TIANXIA_ACTIONS_EXPAND_TT:0 "USV§YhT)YNLˆ¨R§!0"
+ gdd_tianxia_actions:0 "hT)YNLˆ¨R"
+ DIPLOMACYACTION_CATEGORY_gdd_tianxia_actions:0 "hT)YNLˆ¨R"
+ gdd_tianxia:0 "hT)YNLˆ¨R"
+ DIPLOMACYACTION_CATEGORY_gdd_tianxia:0 "hT)YNLˆ¨R"
+ gdd_tianxia_demand_unlawful_territory_title:0 "0tØ^—Õl†˜W"
+ gdd_tianxia_demand_unlawful_territory_desc:0 "‰Bl§Y[From.GetName]§!RVØ,gýVbôv–^SýVàe8hÃV`S	g„vhT)YN0WWW0Ïk!k0tØTJh0WWW-NÑSUS¦^gØšwÿc	gwòT	g8hÃVb¡l	gTÕlRVØùRaŒöeNýw0tØ0^SýV`S0W1u—RINýVTrYÿt^¦^·QtS	cžRE–c	gýVR+R¡‹—r0"
+ gdd_tianxia_demand_unlawful_territory_tooltip:0 "‰Blå‹ýVRVØ^—Õl`S	g„vhT)YN0WWW0"
+ gdd_tianxia_demand_unlawful_territory_dialog:0 "§Y[This.GetName]§!åN-NNS‡v^KNTÿ‰Bl§Y[Root.GetName]§!RVØ,gýVbôv–^SýVàe8hÃV`S	g„vhT)YN0WWW0¥c×ST²NØTÕl8hÃVc	gwÿÅV‰öeOvQYýVÿÒbÝuSÛbô^—Õl†˜Wé`ZNhT)YNã‰Leb‰N0"
+ gdd_tianxia_demand_unlawful_territory_alert_tooltip:0 "-NNS‡v^‰BlbìNRVØhT)YN^—Õl†˜W0"
+ gdd_tianxia_demand_unlawful_territory_allowed:0 "å‹ýVbvQôv–^SýVc	gàe8hÃV`S	g0N	gTÕlRVØùRaŒ„vhT)YN0WWWÿžRE–c	gýVòTÓumgNt^·QtSÿN¡l	gS…VTrY„v0tØ0vQÖNýV¶R„v·QtSNqVÍTdky˜‰Bl0"
+ gdd_tianxia_ai_base:0 "ôu²bhT)YNTR"
+ gdd_tianxia_ai_emperor_subject:0 "-NNS‡v^„v^SýV"
+ gdd_tianxia_ai_emperor_much_stronger:0 "-NNS‡v^›Q›RÜHVŽNb¹e"
+ gdd_tianxia_ai_emperor_stronger:0 "-NNS‡v^›Q›RHVŽNb¹e"
+ gdd_tianxia_ai_recipient_stronger:0 "b¹e›Q›RÜHVŽN-NNS‡v^"
+ gdd_tianxia_ai_opinion_very_high:0 "ùR-NNS‡v^‹YagØš"
+ gdd_tianxia_ai_opinion_high:0 "ùR-NNS‡v^‹YaƒØš"
+ gdd_tianxia_ai_opinion_low:0 "ùR-NNS‡v^‹YaƒNO"
+ gdd_tianxia_ai_opinion_very_low:0 "ùR-NNS‡v^‹YagNO"
+ gdd_tianxia_ai_trust_very_high:0 "Øš¦^áOûN-NNS‡v^"
+ gdd_tianxia_ai_trust_high:0 "áOûN-NNS‡v^"
+ gdd_tianxia_ai_trust_low:0 "NáOûN-NNS‡v^"
+ gdd_tianxia_ai_allied:0 "N-NNS‡v^Óußv"
+ gdd_tianxia_ai_hostile:0 "LeÆ‰-NNS‡v^"
+ gdd_tianxia_ai_diprep_very_high:0 "-NNS‡v^Y²NðX‰ŠgØš"
+ gdd_tianxia_ai_diprep_high:0 "-NNS‡v^Y²NðX‰ŠƒØš"
+ gdd_tianxia_ai_diprep_low:0 "-NNS‡v^Y²NðX‰ŠNsO"
+ GDD_TIANXIA_DEMAND_UNLAWFUL_TERRITORY:0 "0tØ^—Õl†˜W"
+ GDD_TIANXIA_DEMAND_UNLAWFUL_TERRITORY_TT:0 "§Y0tØ^—Õl†˜W§!\nhT)YN0WWWêS	g(Wc	gw¡l	g8hÃV0v^NXR(WTÕlRVØùRaŒöeMbïS0tØ0Ïk!k	ÖSTJh0WWW-NÑSUS¦^gØšwÿ^SýV`S0W÷‹(W—RINýVY²Nu˜ÐcúQÿ1u—RINýVTrY0\nÏk8NžRE–c	gýVìrËz¡‹—rNt^·QtSÿ0RgTïSQ!k0tØÍN^S^—Õl„vTN0WWWÿvQÖNýV¶RÊST—RIN„vvQÖN^SýVNqQ(u·QtS0"
+ gdd_tianxia_territory.10.t:0 "0tØhT)YN^—Õl†˜Wÿ"
+ gdd_tianxia_territory.10.d:0 "§Y[gdd_tianxia_unlawful_province.GetName]§!ÍNRŽNhT)YN‚Msÿ§Y[gdd_tianxia_unlawful_actual_owner.GetName]§!ùRdk0W„v`S	gtSNT)YNTR0bìNïSåNôfN§Y[gdd_tianxia_unlawful_addressee.GetName]§!ÿ‰BlvQSdk0W²NØÙuT„vhT)YNýV¶R0"
+ gdd_tianxia_territory.10.a:0 "˜Ï‹0tØdk0W"
+ GDD_TIANXIA_UNLAWFUL_SEND_TT:0 "T§Y[gdd_tianxia_unlawful_addressee.GetName]§!0tØ§Y[gdd_tianxia_unlawful_province.GetName]§!0\nå‚ùR¹e¥c×Sÿ0WWWSOHQRVØÍN	g8hÃV„vôv¥cMRûNTÕlc	gwÿQwQ†vQÖNMRûNTÕlc	gwNTÕl8hÃVýV¶RÿTÕlŸSINmp¡NöeïSOvQYýV0¡l	gTÕlùRaŒöeNýw0tØ0\n\n§YAIÞV”^„˜Km§!ÿ [gdd_tianxia_unlawful_addressee.GetGddTianxiaUnlawfulOutcome]\n¥c×SaMaÿ§Y[gdd_tianxia_unlawful_addressee.gdd_tianxia_unlawful_acceptance_score.GetValue]§!ÿ§Y0§!bôfØšöe¥c×S	ÿ\núWNxaMaÿ§G+10§![gdd_tianxia_unlawful_addressee.GetGddTianxiaUnlawfulSubjectReason][gdd_tianxia_unlawful_addressee.GetGddTianxiaUnlawfulStrengthReason][gdd_tianxia_unlawful_addressee.GetGddTianxiaUnlawfulOpinionReason][gdd_tianxia_unlawful_addressee.GetGddTianxiaUnlawfulTrustReason][gdd_tianxia_unlawful_addressee.GetGddTianxiaUnlawfulAllianceReason][gdd_tianxia_unlawful_addressee.GetGddTianxiaUnlawfulHostilityReason][gdd_tianxia_unlawful_addressee.GetGddTianxiaUnlawfulDipRepReason]"
+
+ gdd_tianxia_territory.11.t:0 "-NNS‡v^0tØ^—Õl†˜W"
+ gdd_tianxia_territory.11.d:0 "-NNS‡v^òTÑSegÏ‹fNÿðy§Y[gdd_tianxia_unlawful_actual_owner.GetName]§!`S	g§Y[gdd_tianxia_unlawful_province.GetName]§!	gÝhT)YN‚MsNJy6Rÿ‰Blb¹eSvQ²NØÙuT„vhT)YNýV¶R0"
+ gdd_tianxia_territory.11.a:0 "uÏ‹RVØ"
+ gdd_tianxia_territory.11.b:0 "ÒbÝudky˜‰Bl"
+ gdd_tianxia_territory.11.c:0 "dk‹NòTàeÎNŒw"
+ GDD_TIANXIA_UNLAWFUL_ACCEPT_TT:0 "§Y[gdd_tianxia_unlawful_province.GetName]§!SOHQRVØÍN	g8hÃV„vôv¥cMRûNTÕlc	gwÿQwQ†vQÖNMRûNTÕlc	gwNTÕl8hÃVýV¶Rÿmp¡N„vTÕlýV¶RSYýVv^ ReQhT)YN0¡l	gTÕlRVØùRaŒöeNl²NW0WÿmNNHN‡v^ûm R8hÃV0\nžRE–†˜Wc	gw§Y[gdd_tianxia_unlawful_actual_owner.GetName]§!ùR-NNS‡v^„v‹YaM–NO§R100§!ÿv^åNÏkt^§Y2§!¹p„v¦^b`Y0"
+ GDD_TIANXIA_UNLAWFUL_REFUSE_TT:0 "§Y[gdd_tianxia_unlawful_province.GetName]§!S(W§Y10t^§!…Q·ƒ—Vÿ\n,g0WºN›RîOckÿ§R-50%§!\n,g0WÛSqN¦^ÿ§R+10§!\n,g0Wz6eîOckÿ§R-33%§!\ng¦^ê»l¦^ØSSÿ§R+0.10§!\n\nNb	ghT)YNbXTùRb¹e„v‹YaM–NO§R25§!ÿcíu§Y25t^§!v^Ïkt^b`Y§Y1§!ÿ-NNS‡v^·ƒ—VùRb¹ecíu§Y5t^§!„v§YhT)YNã‰Le§!±Rbt1u0\nÒbÝu,g«ŽNOO-NNS‡v^1Y»S‹s‹T0"
+
+ gdd_tianxia_territory.13.t:0 "^—Õl†˜W0tØmÒb"
+ gdd_tianxia_territory.13.d:0 "§Y[gdd_tianxia_unlawful_addressee.GetName]§!ÒbÝuRVØ§Y[gdd_tianxia_unlawful_province.GetName]§!0dkLNòTÀo`hT)YNø‹ýVÿbìNmN·ƒ—V†NåNfk›Rã‰Leå‹0W„vt1u0"
+ GDD_TIANXIA_UNLAWFUL_REFUSAL_CONFIRM_TT:0 "·ƒ—VùR§Y[gdd_tianxia_unlawful_addressee.GetName]§!„v§Y‘hT)YNã‰Le’§!±RbPãS0"
+ gdd_tianxia_unlawful_outcome_accept:0 "§G¥c×S§!"
+ gdd_tianxia_unlawful_outcome_refuse:0 "§RÒbÝu§!"
+ gdd_tianxia_unlawful_reason_emperor_subject:0 "\n-NNS‡v^„v^SýVÿ§G+100§!"
+ gdd_tianxia_unlawful_reason_emperor_much_stronger:0 "\n-NNS‡v^uQ›RÜHVŽNb¹eÿ§G+40§!"
+ gdd_tianxia_unlawful_reason_emperor_stronger:0 "\n-NNS‡v^uQ›RHVŽNb¹eÿ§G+20§!"
+ gdd_tianxia_unlawful_reason_recipient_stronger:0 "\nb¹euQ›RÜHVŽN-NNS‡v^ÿ§R-40§!"
+ gdd_tianxia_unlawful_reason_opinion_very_high:0 "\nùR-NNS‡v^‹YagØšÿ§G+20§!"
+ gdd_tianxia_unlawful_reason_opinion_high:0 "\nùR-NNS‡v^‹YaƒØšÿ§G+10§!"
+ gdd_tianxia_unlawful_reason_opinion_low:0 "\nùR-NNS‡v^‹YaƒNOÿ§R-15§!"
+ gdd_tianxia_unlawful_reason_opinion_very_low:0 "\nùR-NNS‡v^‹YagNOÿ§R-25§!"
+ gdd_tianxia_unlawful_reason_trust_very_high:0 "\nØš¦^áOûN-NNS‡v^ÿ§G+20§!"
+ gdd_tianxia_unlawful_reason_trust_high:0 "\náOûN-NNS‡v^ÿ§G+10§!"
+ gdd_tianxia_unlawful_reason_trust_low:0 "\nNáOûN-NNS‡v^ÿ§R-10§!"
+ gdd_tianxia_unlawful_reason_allied:0 "\nN-NNS‡v^Óußvÿ§G+15§!"
+ gdd_tianxia_unlawful_reason_hostile:0 "\nLeÆ‰b¿RLe-NNS‡v^ÿ§R-35§!"
+ gdd_tianxia_unlawful_reason_diprep_very_high:0 "\n-NNS‡v^Y²NðX‰ŠgØšÿ§G+15§!"
+ gdd_tianxia_unlawful_reason_diprep_high:0 "\n-NNS‡v^Y²NðX‰ŠƒØšÿ§G+8§!"
+ gdd_tianxia_unlawful_reason_diprep_low:0 "\n-NNS‡v^Y²NðX‰ŠHNÿ§R-10§!"
+ gdd_tianxia_unlawful_reason_blank:0 ""
+
+ gdd_tianxia_unlawful_refusal:0 "ÒbØhT)YN^—Õl†˜W"
+ desc_gdd_tianxia_unlawful_refusal:0 "å‹0W„vc	gwÒbÝu†N-NNS‡v^„vRVØ‰Blÿ0W¹eéy^NTÕl'`àVdkcíuv`S0"
+ gdd_cb_tianxia_liberation:0 "hT)YNã‰Le"
+ gdd_cb_tianxia_liberation_desc:0 "ùR¹eÒbÝuRVØ^—Õl`S	g„vhT)YN0WWWÿ-NNS‡v^ïSåNúQuQôu²b)YN‚Ms0"
+ gdd_tianxia_liberation_wargoal:0 "ã‰LehT)YN†˜W"
+ gdd_tianxia_liberation_wargoal_desc:0 "b‰Nîvh=fHYÖSàVÒbÝu-NNS‡v^RVØ‰Blw«ˆ^—Õl`S	g„vhT)YN0WWW0"
+ GDD_TIANXIA_LIBERATION_PROV_DESC:0 "àVÒbÝuRVØw«ˆ^—Õl`S	g„vhT)YN0WWW"
+ GDD_TIANXIA_LIBERATION_WAR_NAME:0 "$ORDER$$FIRST$ã‰Le$SECOND$hT)YN†˜WKNb"
+
+ gdd_tianxia_demand_unlawful_territory_sovereign:0 "TìrËzýVb‡v^ôv^S^SýVÐcúQÿvQÖN^SýV`S0Wÿ÷‹MRŽVvQ—RINýVY²Nu˜0tØ0"
+
+ gdd_tianxia_demand_unlawful_territory_not_at_war:0 "bìN8gNîvhýV²NbÿÌS¹eTêÂSNvQÖNb‰NN¨Yx0tØ0"
+
+ DIPLOMACYACTION_CATEGORY_:0 "hT)YNLˆ¨R"

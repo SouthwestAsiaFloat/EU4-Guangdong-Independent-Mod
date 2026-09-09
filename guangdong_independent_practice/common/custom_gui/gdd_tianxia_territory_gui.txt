@@ -1,0 +1,102 @@
+# Province-window controls. ROOT is the selected province and FROM is the
+# clicking country. All three occupy the native HRE indicator slot; strict
+# mutual exclusion ensures only one imperial emblem can be actionable there.
+custom_button = {
+    name = gdd_tianxia_province_member_status_button
+    potential = {
+        has_global_flag = zhx_system_initialised_v13
+        NOT = { has_global_flag = zhx_tianxia_dismantled }
+        has_province_flag = zhx_tianxia_province
+        is_part_of_hre = no
+        owner = { zhx_is_tianxia_polity = yes }
+    }
+    trigger = { hidden_trigger = { always = yes } }
+    effect = { }
+    tooltip = GDD_TIANXIA_PROVINCE_MEMBER_STATUS_TT
+}
+
+custom_button = {
+    name = gdd_tianxia_province_add_button
+    potential = {
+        has_global_flag = zhx_system_initialised_v13
+        NOT = { has_global_flag = zhx_tianxia_dismantled }
+        NOT = { has_province_flag = zhx_tianxia_province }
+        is_part_of_hre = no
+        owner = {
+            exists = yes
+            zhx_is_tianxia_polity = yes
+        }
+    }
+    trigger = { hidden_trigger = {
+        gdd_can_add_province_to_tianxia_for_country_trigger = { who = FROM }
+    } }
+    effect = {
+        hidden_effect = { gdd_add_province_to_tianxia_effect = yes }
+    }
+    tooltip = GDD_TIANXIA_PROVINCE_ADD_TT
+}
+
+custom_button = {
+    name = gdd_tianxia_province_remove_button
+    potential = {
+        has_global_flag = zhx_system_initialised_v13
+        NOT = { has_global_flag = zhx_tianxia_dismantled }
+        has_province_flag = zhx_tianxia_province
+        is_part_of_hre = no
+        owner = {
+            exists = yes
+            NOT = { zhx_is_tianxia_polity = yes }
+        }
+    }
+    trigger = { hidden_trigger = {
+        gdd_can_remove_province_from_tianxia_for_country_trigger = { who = FROM }
+    } }
+    effect = {
+        hidden_effect = {
+            save_event_target_as = gdd_tianxia_province_action
+            FROM = { country_event = { id = gdd_tianxia_territory.2 } }
+        }
+    }
+    tooltip = GDD_TIANXIA_PROVINCE_REMOVE_TT
+}
+
+# Empire-of-China-window controls. ROOT and FROM are both the clicking country.
+custom_button = {
+    name = gdd_leave_tianxia_button
+    potential = {
+        has_global_flag = zhx_system_initialised_v13
+        NOT = { has_global_flag = zhx_tianxia_dismantled }
+        event_target:EmperorOfChina = { exists = yes }
+    }
+    trigger = { hidden_trigger = { gdd_can_leave_tianxia_trigger = yes } }
+    effect = { country_event = { id = gdd_tianxia_territory.3 } }
+    tooltip = GDD_LEAVE_TIANXIA_BUTTON_TT
+}
+
+custom_button = {
+    name = gdd_add_all_tianxia_provinces_button
+    potential = {
+        has_global_flag = zhx_system_initialised_v13
+        NOT = { has_global_flag = zhx_tianxia_dismantled }
+        event_target:EmperorOfChina = { exists = yes }
+    }
+    trigger = { hidden_trigger = {
+        gdd_can_add_all_owned_provinces_to_tianxia_trigger = yes
+    } }
+    effect = {
+        hidden_effect = { gdd_add_all_owned_provinces_to_tianxia_effect = yes }
+    }
+    tooltip = GDD_ADD_ALL_TIANXIA_PROVINCES_BUTTON_TT
+}
+
+custom_button = {
+    name = gdd_dismantle_tianxia_button
+    potential = {
+        has_global_flag = zhx_system_initialised_v13
+        NOT = { has_global_flag = zhx_tianxia_dismantled }
+        event_target:EmperorOfChina = { exists = yes }
+    }
+    trigger = { hidden_trigger = { gdd_can_dismantle_tianxia_trigger = yes } }
+    effect = { country_event = { id = gdd_tianxia_territory.4 } }
+    tooltip = GDD_DISMANTLE_TIANXIA_BUTTON_TT
+}
