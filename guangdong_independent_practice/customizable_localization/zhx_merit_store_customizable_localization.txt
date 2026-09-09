@@ -1,0 +1,145 @@
+# The merit-store status row is backed by one always-present scripted textbox
+# per column. Conditional wording belongs here so inactive alternatives never
+# leave an interface object without a custom_gui binding.
+
+defined_text = {
+    name = GetZhxMeritStoreRankStatus
+    random = no
+
+    text = {
+        localisation_key = zhx_merit_store_rank_nonmember
+        trigger = { zhx_is_tianxia_member = no }
+    }
+    text = {
+        localisation_key = zhx_merit_store_rank_unqualified
+        trigger = {
+            zhx_is_tianxia_member = yes
+            NOT = { has_country_flag = zhx_merit_active_contribution_this_term }
+        }
+    }
+    text = {
+        localisation_key = zhx_merit_store_rank_member
+        trigger = {
+            zhx_is_tianxia_member = yes
+            check_variable = { which = zhx_merit_rank_cache value = 1 }
+        }
+    }
+    text = {
+        localisation_key = zhx_merit_store_rank_outside
+        trigger = { always = yes }
+    }
+}
+
+defined_text = {
+    name = GetZhxMeritStoreCutoffStatus
+    random = no
+
+    text = {
+        localisation_key = zhx_merit_store_cutoff_value
+        trigger = { has_saved_global_event_target = zhx_merit_rank_07 }
+    }
+    text = {
+        localisation_key = zhx_merit_store_cutoff_vacant
+        trigger = { always = yes }
+    }
+}
+
+defined_text = {
+    name = GetZhxMeritStoreQualificationStatus
+    random = no
+
+    text = {
+        localisation_key = zhx_merit_store_qualification_nonmember
+        trigger = { zhx_is_tianxia_member = no }
+    }
+    text = {
+        localisation_key = zhx_merit_store_qualification_active
+        trigger = { has_country_flag = zhx_merit_active_contribution_this_term }
+    }
+    text = {
+        localisation_key = zhx_merit_store_qualification_inactive
+        trigger = { always = yes }
+    }
+}
+
+# Each folio keeps its two decrees visible.  The short state seal explains why
+# a button is available or greyed without exposing the internal trigger tree.
+defined_text = {
+    name = GetZhxMeritStoreReliefStatus
+    random = no
+    text = { localisation_key = zhx_merit_store_item_status_nonmember trigger = { zhx_is_tianxia_member = no } }
+    text = { localisation_key = zhx_merit_store_item_status_active trigger = { has_country_modifier = zhx_merit_store_relief } }
+    text = { localisation_key = zhx_merit_store_item_status_locked trigger = { has_country_modifier = zhx_merit_store_governance } }
+    text = { localisation_key = zhx_merit_store_item_status_available trigger = { check_variable = { which = zhx_merit value = 50 } } }
+    text = { localisation_key = zhx_merit_store_item_status_insufficient trigger = { always = yes } }
+}
+
+defined_text = {
+    name = GetZhxMeritStoreGovernanceStatus
+    random = no
+    text = { localisation_key = zhx_merit_store_item_status_nonmember trigger = { zhx_is_tianxia_member = no } }
+    text = { localisation_key = zhx_merit_store_item_status_active trigger = { has_country_modifier = zhx_merit_store_governance } }
+    text = { localisation_key = zhx_merit_store_item_status_locked trigger = { has_country_modifier = zhx_merit_store_relief } }
+    text = { localisation_key = zhx_merit_store_item_status_available trigger = { check_variable = { which = zhx_merit value = 50 } } }
+    text = { localisation_key = zhx_merit_store_item_status_insufficient trigger = { always = yes } }
+}
+
+defined_text = {
+    name = GetZhxMeritStoreTradeStatus
+    random = no
+    text = { localisation_key = zhx_merit_store_item_status_nonmember trigger = { zhx_is_tianxia_member = no } }
+    text = { localisation_key = zhx_merit_store_item_status_active trigger = { has_country_modifier = zhx_merit_store_trade } }
+    text = { localisation_key = zhx_merit_store_item_status_locked trigger = { has_country_modifier = zhx_merit_store_industry } }
+    text = { localisation_key = zhx_merit_store_item_status_available trigger = { check_variable = { which = zhx_merit value = 50 } } }
+    text = { localisation_key = zhx_merit_store_item_status_insufficient trigger = { always = yes } }
+}
+
+defined_text = {
+    name = GetZhxMeritStoreIndustryStatus
+    random = no
+    text = { localisation_key = zhx_merit_store_item_status_nonmember trigger = { zhx_is_tianxia_member = no } }
+    text = { localisation_key = zhx_merit_store_item_status_active trigger = { has_country_modifier = zhx_merit_store_industry } }
+    text = { localisation_key = zhx_merit_store_item_status_locked trigger = { has_country_modifier = zhx_merit_store_trade } }
+    text = { localisation_key = zhx_merit_store_item_status_available trigger = { check_variable = { which = zhx_merit value = 50 } } }
+    text = { localisation_key = zhx_merit_store_item_status_insufficient trigger = { always = yes } }
+}
+
+defined_text = {
+    name = GetZhxMeritStoreArmyStatus
+    random = no
+    text = { localisation_key = zhx_merit_store_item_status_nonmember trigger = { zhx_is_tianxia_member = no } }
+    text = { localisation_key = zhx_merit_store_item_status_active trigger = { has_country_modifier = zhx_merit_store_army } }
+    text = { localisation_key = zhx_merit_store_item_status_locked trigger = { has_country_modifier = zhx_merit_store_fortification } }
+    text = { localisation_key = zhx_merit_store_item_status_available trigger = { check_variable = { which = zhx_merit value = 50 } } }
+    text = { localisation_key = zhx_merit_store_item_status_insufficient trigger = { always = yes } }
+}
+
+defined_text = {
+    name = GetZhxMeritStoreFortificationStatus
+    random = no
+    text = { localisation_key = zhx_merit_store_item_status_nonmember trigger = { zhx_is_tianxia_member = no } }
+    text = { localisation_key = zhx_merit_store_item_status_active trigger = { has_country_modifier = zhx_merit_store_fortification } }
+    text = { localisation_key = zhx_merit_store_item_status_locked trigger = { has_country_modifier = zhx_merit_store_army } }
+    text = { localisation_key = zhx_merit_store_item_status_available trigger = { check_variable = { which = zhx_merit value = 50 } } }
+    text = { localisation_key = zhx_merit_store_item_status_insufficient trigger = { always = yes } }
+}
+
+defined_text = {
+    name = GetZhxMeritStoreHonourStatus
+    random = no
+    text = { localisation_key = zhx_merit_store_item_status_nonmember trigger = { zhx_is_tianxia_member = no } }
+    text = { localisation_key = zhx_merit_store_item_status_active trigger = { has_country_modifier = zhx_merit_store_honour } }
+    text = { localisation_key = zhx_merit_store_item_status_locked trigger = { has_country_modifier = zhx_merit_store_diplomacy } }
+    text = { localisation_key = zhx_merit_store_item_status_available trigger = { check_variable = { which = zhx_merit value = 50 } } }
+    text = { localisation_key = zhx_merit_store_item_status_insufficient trigger = { always = yes } }
+}
+
+defined_text = {
+    name = GetZhxMeritStoreDiplomacyStatus
+    random = no
+    text = { localisation_key = zhx_merit_store_item_status_nonmember trigger = { zhx_is_tianxia_member = no } }
+    text = { localisation_key = zhx_merit_store_item_status_active trigger = { has_country_modifier = zhx_merit_store_diplomacy } }
+    text = { localisation_key = zhx_merit_store_item_status_locked trigger = { has_country_modifier = zhx_merit_store_honour } }
+    text = { localisation_key = zhx_merit_store_item_status_available trigger = { check_variable = { which = zhx_merit value = 50 } } }
+    text = { localisation_key = zhx_merit_store_item_status_insufficient trigger = { always = yes } }
+}

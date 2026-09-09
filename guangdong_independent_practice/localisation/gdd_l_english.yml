@@ -1,10 +1,5 @@
 ﻿l_english:
- GDD:0 "WSwm"
- GDD_ADJ:0 "WSwm"
  estate_gdd_clans:0 "—RÏe"
- GDD_ideas:0 "WSwmtõV"
- GDD_ideas_start:0 "—RÏe—gËz"
- GDD_ideas_bonus:0 "FUºN–"
 
  # Celestial-vassal UI: the principal-vassal identity follows a saved target.
  GDD_CELESTIAL_PRINCIPAL_VASSAL:0 "–™-^ø‹¯O"
@@ -272,20 +267,8 @@
  XU2:0 "V"
  XU2_ADJ:0 "V"
  XU2_ideas:0 "VtõV"
- CZC:0 "noÞT"
- CZC_ADJ:0 "noÞT"
- LIL:0 "ÚOîR"
- LIL_ADJ:0 "ÚOîR"
- NUN:0 "¬O"
- NUN_ADJ:0 "¬O"
- HAK:0 "¢R¶R"
- HAK_ADJ:0 "¢R¶R"
- GUI:0 "Bh—g"
- GUI_ADJ:0 "Bh—g"
  CSA:0 "•™l"
  CSA_ADJ:0 "•™l"
- TZZ:0 "0uÞT"
- TZZ_ADJ:0 "0uÞT"
  DIA:0 "Çn"
  DIA_ADJ:0 "Çn"
  YEL:0 "YÎ"
@@ -397,8 +380,8 @@
  WUZ:0 "àeÈu"
  WUZ_ADJ:0 "àeÈu"
 
- GDD_BOOKMARK_NAME:0 "­SWSêËz"
- GDD_BOOKMARK_DESC:0 "hlDQVòTµc6R^N'Yèÿv^Nf÷^¾b”Nt^jPb0Ù8N°eu„v­SWSMeCgÅV‰˜te˜…Qè0ÑSUSwm8ÿTöeÆQYb—ùRfg„vNN!kËe‹S0"
+ GDD_BOOKMARK_NAME:0 "WSwm-NtQ"
+ GDD_BOOKMARK_DESC:0 "hˆR&ŒòTHYÖSjuºyÿÍ‘ú^hT²RçeSWSwm¯OýVÿv^Nf÷^ôuc”Nt^jPb0¢R¶RqQŒTýVNnoÞTaN2®‹ORnc­SNÿBh—gø‹¯OŒTîX—Oø‹ýV‰Naˆ‰mlN8nÿÙ8NpˆK„Œvt^„v­SWSçe¦ÅV‰˜teT—RÏelâV0b`Ywm8ÿv^(WhT)YN„véy^-NÍ‘HYWS¹e8—Cg0"
 
  gdd_guangzhou_trade_hub:0 "^ÞT8f¢gËu"
  desc_gdd_guangzhou_trade_hub:0 "^ÞTŠbˆRàsmlãSÿGlZw­SWS…QF–0¿lwmNWSmFUï0åb	gÙµ^ÎW^„výV¶RïSåNP©RvQbŸq„vFUºNQÜuÿÐcØšhQýV8fHe‡s0"
@@ -431,8 +414,7 @@
  gdd_wild_flavours:0 "`OmNœU0kÎ‘sTT"
  gdd_wild_flavours_desc:0 "­SWSåb	g0NÌR„vqS—g0³lAmNwmmDnÿ^NºNmN„UŽN)R(uT‰s0W¹eirµN06ƒöS0™™™e0ŠœÐv0oƒPg0v–÷tåNÊSqSwmµNÁTN­eÛeQ^ÞT„v^HW0Y7hS„vuµNŒTImÃ„vAmSOûsÿHN^N&^eg†N3zšRw0NšS„v0ÌR0"
  GDD_BOOKMARK_EMPTY:0 ""
- string_start_title_gdd:0 "­SWSêËz"
- string_start_gdd:0 "ckßuRt^ÿ^NKz0wm2–N0W¹e»l‰RåeÊvOVkSNb0—RÏeŒTFUºNôuc01443t^+gÿg÷^teƒwkSNbv^ýågFUzNzzÿVÑS0W¹e¿R›RÍS9V0hˆR&Œ(WëXÅu0—RÏefkÅˆŒTàsml4l^=ecNµc6R^ÞTÿÈSåNÛbšbN›Q‹NG•‹Sv^(u„v¹eVÿOd–noÞTY„v^NTœ^HQTRVz˜0\n\nf÷^–sSLm›QWSVÿtS«ˆhˆRÅk)R(u­SWS0WbVN4l^O¿RûQ%0hlDQV‹†ÖS—V'YÜwÿtSñmåw^NàeÕl•gb×SfgcíuV¨‹ÿàVdkIN¨R®‹ŒT0ÖNìNLeVËzsSHYÖSnoÞTÿb²‹f^„v—RIN0WMOv^bHNf÷^„vD–¸^ýVÿf÷^R‚fjPWSVÿˆcˆNhˆR&Œ­SWS‹sðy÷SÿØž¸‹†NhlùR^NvQYO0WHS„vßu»l0\n\n‹†b‹NòTˆmÿFOf÷^ÍNÝOYuùR^N„vINCgðX0tÿ^NmN¡l	gLeVnoÞT0^‰0'YŠŒTWSmø‹ýVÿý(WÂ‰ßRÙ8N°eu„v­SWSMeCg0"
+ string_start_title_gdd:0 "WSwm-NtQ"
 
  gdd_government_reformer:0 "Me¡R9ei—¶R"
  gdd_government_reformer_desc:0 "Ÿq‰`Me¡RÐjON6R¦^¿li—ÿýwYOS©Rg÷^tel™T»lv^ÐcØšLˆMeHe‡s0"
@@ -450,14 +432,14 @@
  gdd_tactician_desc:0 "Åd•Rg0WbV05–bVNLe›Q¨RTÿýwYLfW„9e„UF–›Q„v4N5–b=g0"
 
  estate_nobles_gdd_clan_autonomy_charter:0 "—RÏeê»lyr¸‹"
- estate_nobles_gdd_clan_autonomy_charter_desc:0 "hlDQVŒTSV0WT8N—RÏe„vØžQYag¦u0"
+ estate_nobles_gdd_clan_autonomy_charter_desc:0 "hˆR&ŒNSV0WT8N—RÏe¢‹Ëz„vØžQYag¦u0"
  gdd_clan_autonomy_charter_locked_tt:0 "—‰HQŒRbùR”^ûN¡RÿMbýw²d•§Y—RÏeê»lyr¸‹§!0"
  gdd_clan_autonomy_charter_province_effect_tt:0 "êS‰å‹yrCguHeÿNb	g§Y²s§!0§Y¢R¶R§!b§Yý•Š§!‡eS„vôv^SwýNS·ƒ—V§G+50.0%§!,g0WºN›RîOckŒT§R+10.0%§!gNOê»l¦^0"
  gdd_clan_autonomy_charter_province_modifier:0 "—RÏeê»lyr¸‹"
  desc_gdd_clan_autonomy_charter_province_modifier:0 "SV0W—RÏeOncg÷^ˆcˆN„vê»lyr¸‹¡rtaNÌ‘ÿv^1VßRNôuc0W¹efkÅˆ0"
 
  estate_burghers_gdd_southern_trade_charter:0 "WS²s„v8fyr¸‹"
- estate_burghers_gdd_southern_trade_charter_desc:0 "hlDQVŒTFUºN„v¥YOSagLk0"
+ estate_burghers_gdd_southern_trade_charter_desc:0 "hˆR&ŒN­SWSFUºN¢‹Ëz„v¥YOSagLk0"
  gdd_southern_trade_charter_locked_tt:0 "—‰HQŒRbùR”^ûN¡RÿMbýw²d•§YWS²s„v8fyr¸‹§!0"
 
  gdd_mass_conscription_title:0 "'YÄ‰!jVuQ"

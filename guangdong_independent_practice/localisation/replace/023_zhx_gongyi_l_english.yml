@@ -1,0 +1,40 @@
+﻿l_english:
+ zhx_gongyi_reform:0 "lQ‘ê»l6R"
+ zhx_gongyi_reform_desc:0 ")YPRb²‹„vê»lFU‘ÿ1u^l¨cLNgbMeÿåNNÎWKNÌRÂSNRýV8f0lQ‘ïSåNÄuÇub ReQ8fTwßvÿåb	g,rŒN8NwýNsS1Y»SlQ‘«ŽýNÿlHNnfqQŒTýV0Í‘°ebHNNwýV¶RTÿ‰˜T)YPR÷‹ˆclQ‘0"
+ zhx_yang_trade_league_reform:0 "lbýVFUßvqQŒT6R"
+ zhx_yang_trade_league_reform_desc:0 "lbýVåNFUïTwÓuê»lÎW^ÿåNÇ–cO›Q²bkSßv^0ôv–LˆMe¹RÏ‘×S0R%NJhP–6RÿFUºNŒTY²NQÜuR.^©RqQŒTýVÏu%„^Ûl„vFUßv0ïSåNÎNwýNLub—Ê‘Le8fÎW^ÿOvQôv¥cÖS—VlQ‘«ŽýN0"
+ zhx_gongyi_ordinary_reform:0 "nfqQŒT6R"
+ zhx_gongyi_ordinary_reform_desc:0 "qQŒTýVòTLeVNwlQ‘«ŽýNÿÝOYuÛVt^	LNÿFONQ«N	glQ‘N^S6eÊvÿmNNýwRú^b†˜üR8fTwßv0Í‘°eán³agöNTÿïSÇY²NLˆ¨RT)YPR3u÷‹b`YlQ‘«ŽýN0"
+ zhx_gongyi_state:0 "lQ‘"
+ zhx_gongyi_ruler:0 "gbMe"
+ zhx_yang_state:0 "FUßvqQŒTýV"
+ zhx_yang_ruler:0 "I`gbMe"
+ zhx_gongyi_petition:0 "÷‹ˆclQ‘"
+ zhx_gongyi_petition_title:0 "÷‹ˆclQ‘"
+ zhx_gongyi_petition_desc:0 "÷‹)YPRb²‹býV„vlQ‘ê»l«ŽýN0–™!k3u÷‹N1YJhb`YO(uTNAmz0‰˜HNŒTs^-N„vhT)YNìrËzNwqQŒTýVÿN)YPRùRbýV‹YaóSHN1000Ïkt^êSýw3u÷‹N!k0"
+ zhx_gongyi_petition_tooltip:0 "÷‹Bl)YPRˆcˆNlQ‘«ŽýN0"
+ zhx_gongyi_petition_dialog:0 "T)YPR÷‹BlˆcˆNlQ‘«ŽýNÿ"
+ zhx_gongyi_petition_sent_tt:0 "OY÷‹SŽN!kåe¾)YPRÿ1u)YPRybÆQbÒbÝuÿàe‰˜)YN‹NØS•bhy0Ïkt^êSýw3u÷‹N!k0"
+ zhx_gongyi_one_province:0 "p`‹Yåb	gN8NwýN"
+ zhx_gongyi_eligible_polity:0 "=fhT)YN„vìrËzNwqQŒTýVÿlbýVd–Y	ÿ"
+ zhx_gongyi_request_requirements:0 "YŽNŒTs^N)YPRùRbýV‹YaóSHN100"
+ zhx_gongyi_can_request:0 "án³÷‹ˆcagöNÿN¡l	g…V³Q3u÷‹bNt^…Q„vÍ‘Y3u÷‹"
+ zhx_gongyi_charter:0 "åb	glQ‘ŒQ‹T"
+ zhx_gongyi_lost_charter:0 "òT1Y»SlQ‘«ŽýN"
+ zhx_gongyi_request_pending:0 "lQ‘OY÷‹ck(WIr…V)YPRÁˆïS"
+ zhx_gongyi_request_cooldown:0 "Ý»yN!klQ‘OY÷‹N³Nt^"
+ zhx_gongyi.10.t:0 "÷‹ˆclQ‘"
+ zhx_gongyi.10.d:0 "[zhx_gongyi_applicant.GetName]OY÷‹b²‹HNlQ‘0å‚ˆNŒQ‹Tÿå‹ýVSžRLˆê»lqQŒT6R¦^0ÂSNFUßvÿv^uˆRNwP–6R0dk‹N1u)YPRÁˆïSÿàe‰˜ìSV)YN‹NØSlQ®‹0"
+ zhx_gongyi.10.a:0 "ÆQvQê»lÿˆcˆNlQ‘0"
+ zhx_gongyi.10.b:0 "dk!kOY÷‹NˆNybÆQ0"
+ zhx_gongyi.11.t:0 "lQ‘ŒQ‹T·ƒÆQ"
+ zhx_gongyi.11.d:0 ")YPRòTÏuybÆQOY÷‹ÿbýVckVÖS—VlQ‘«ŽýN0bìNïSåNêIN	ébFUßvÿmNïSåNÛb•VÎW^æSÄuTwßvÿŸS	g„vçeTwßvNOê¨Rb`Y0"
+ zhx_gongyi.11.a:0 "(ŒˆRê»lKN¦u0"
+ zhx_gongyi.12.t:0 "lQ‘OY÷‹8g·ƒybÆQ"
+ zhx_gongyi.12.d:0 "dk!kOY÷‹8g·ƒ)YPRybÆQ0…VagöNwQYNN!k3u÷‹ánNt^TÿïSåNQ!kOY÷‹0"
+ zhx_gongyi.12.a:0 "egåeQ®‹0"
+ zhx_gongyi.20.t:0 "lQ‘«ŽýN1YHe"
+ zhx_gongyi.20.d:0 "býVòTÏu…úQlQ‘„vNwP–6RÿlHNnfqQŒTýVÿ1Y»SlQ‘N^S6eÊvNÄuú^0†˜üRFUßv„vDJh0ÛVt^	LNçuíužRLˆÿdk!kl6RN˜Ymc1Y3zšR¦^bqQŒT.Oßu0"
+ zhx_gongyi.20.a:0 "qQŒTýVSpN°e„vSï0"
+ zhx_gongyi_no_pending_tt:0 "¡l	gIr…V)YPRÁˆïS„vlQ‘OY÷‹"
+ zhx_gongyi_cooldown_ready_tt:0 "ÎN8gOY÷‹ÿbÝ»yN!kOY÷‹òTánNt^"

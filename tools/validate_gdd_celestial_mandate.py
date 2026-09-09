@@ -6,6 +6,7 @@ from __future__ import annotations
 import json
 import re
 from pathlib import Path
+from generate_zhx_tianxia_roster import EOC_SLOTS
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -365,7 +366,9 @@ def main() -> None:
             "main GUI roster rebuild does not refresh the six great-feudatory shields")
     great_build = block(roster_effects, "gdd_build_eoc_great_feudatory_roster")
     require("has_country_flag = zhx_major_feudatory" in great_build
-            and "NOT = { tag = YAN }" in great_build
+            and "has_saved_global_event_target = gdd_principal_vassal" in great_build
+            and "NOT = { tag = event_target:gdd_principal_vassal }" in great_build
+            and "NOT = { tag = YAN }" not in great_build
             and "set_global_flag = gdd_eoc_great_feudatory_roster_initialised" in great_build,
             "six-seat great-feudatory cache has lost its authoritative membership contract")
     require(roster_effects.count(
@@ -389,7 +392,7 @@ def main() -> None:
     require("gdd_refresh_tianxia_mandate_effect = yes"
             in block(texts["system_events"], "country_event"),
             "system initialization does not refresh seats after migrations")
-    for hook in ("on_integrate", "on_annexed"):
+    for hook in ("on_diplomatic_annex", "on_integrate", "on_annexed"):
         hook_body = block(on_actions, hook)
         require(hook_body.count("gdd_apply_external_tianxia_annexation_mandate_loss_effect") == 1,
                 f"{hook} lacks the once-only external annexation penalty")
@@ -504,10 +507,10 @@ def main() -> None:
     require("localisation_key = gdd_eoc_member_tooltip_blank" in top_level_member
             and "trigger = { ai = no }" in top_level_member,
             "player-controlled members do not resolve to a blank hover")
-    require(texts["ui_loc"].count("GDD_EOC_MEMBER_SHIELD_") == 65,
-            "member tooltip localisation does not cover all 65 shield slots")
-    require(texts["member_gui"].count("tooltip = GDD_EOC_MEMBER_SHIELD_") == 65,
-            "member GUI does not bind all 65 unique shield tooltips")
+    require(texts["ui_loc"].count("GDD_EOC_MEMBER_SHIELD_") == EOC_SLOTS,
+            f"member tooltip localisation does not cover all {EOC_SLOTS} shield slots")
+    require(texts["member_gui"].count("tooltip = GDD_EOC_MEMBER_SHIELD_") == EOC_SLOTS,
+            f"member GUI does not bind all {EOC_SLOTS} unique shield tooltips")
     rank_calls = re.findall(
         r"gdd_consider_ai_reform_tooltip_rank_effect = \{ "
         r"support_flag = (gdd_support_reform_[a-z_]+) reform_id = (\d+) \}",

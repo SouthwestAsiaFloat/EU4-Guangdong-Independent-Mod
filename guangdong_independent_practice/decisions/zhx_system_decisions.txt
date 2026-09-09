@@ -12,10 +12,13 @@ country_decisions = {
         }
 
         effect = {
-            # 这是右下角顶栏按钮以外的备用入口；这里只切换显示状态，
-            # 不占用原版中华帝国、神罗、教廷等硬编码界面。
-            set_country_flag = zhx_tianxia_gui_visible
-            zhx_build_gui_roster = yes
+            custom_tooltip = zhx_open_tianxia_overview_tt
+            hidden_effect = {
+                # 这是右下角顶栏按钮以外的备用入口；这里只切换显示状态，
+                # 不占用原版中华帝国、神罗、教廷等硬编码界面。
+                set_country_flag = zhx_tianxia_gui_visible
+                zhx_build_gui_roster = yes
+            }
         }
 
         ai_will_do = { factor = 0 }
@@ -71,19 +74,22 @@ country_decisions = {
         }
 
         effect = {
-            add_treasury = -100
-            add_dip_power = -50
-            change_variable = {
-                which = zhx_ritual_authority
-                value = 10
+            custom_tooltip = zhx_convene_grand_court_effect_tt
+            hidden_effect = {
+                add_treasury = -100
+                add_dip_power = -50
+                change_variable = {
+                    which = zhx_ritual_authority
+                    value = 10
+                }
+                zhx_clamp_ritual_authority = yes
+                zhx_refresh_ritual_order = yes
+                add_country_modifier = {
+                    name = zhx_grand_court_cooldown
+                    duration = 1825
+                }
+                country_event = { id = zhx_system.4 }
             }
-            zhx_clamp_ritual_authority = yes
-            zhx_refresh_ritual_order = yes
-            add_country_modifier = {
-                name = zhx_grand_court_cooldown
-                duration = 1825
-            }
-            country_event = { id = zhx_system.4 }
         }
 
         ai_will_do = {
@@ -103,30 +109,36 @@ country_decisions = {
         }
 
         allow = {
-            check_variable = {
-                which = zhx_ritual_authority
-                value = 50
+            custom_trigger_tooltip = {
+                tooltip = zhx_reaffirm_the_covenant_authority_tt
+                check_variable = {
+                    which = zhx_ritual_authority
+                    value = 50
+                }
             }
             stability = 1
             is_at_war = no
         }
 
         effect = {
-            change_variable = {
-                which = zhx_ritual_authority
-                value = -50
-            }
-            set_global_flag = zhx_reform_reaffirmed_covenant
-            every_country = {
-                limit = { zhx_is_tianxia_polity = yes }
-                add_country_modifier = {
-                    name = zhx_reaffirmed_covenant_modifier
-                    duration = -1
+            custom_tooltip = zhx_reaffirm_the_covenant_effect_tt
+            hidden_effect = {
+                change_variable = {
+                    which = zhx_ritual_authority
+                    value = -50
                 }
+                set_global_flag = zhx_reform_reaffirmed_covenant
+                every_country = {
+                    limit = { zhx_is_tianxia_polity = yes }
+                    add_country_modifier = {
+                        name = zhx_reaffirmed_covenant_modifier
+                        duration = -1
+                    }
+                }
+                zhx_clamp_ritual_authority = yes
+                zhx_refresh_ritual_order = yes
+                country_event = { id = zhx_system.5 }
             }
-            zhx_clamp_ritual_authority = yes
-            zhx_refresh_ritual_order = yes
-            country_event = { id = zhx_system.5 }
         }
 
         ai_will_do = {

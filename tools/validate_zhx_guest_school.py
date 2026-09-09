@@ -495,6 +495,15 @@ def validate_semantics(texts: dict[str, str]) -> None:
         == {"10", "11", "12", "13", "14", "15", "20", "21", "22", "30", "31", "40", "50"},
         "guest-school event ID contract changed",
     )
+    require(
+        events.count("tooltip = zhx_guest_school_confirmation_requirements_tt") == 6
+        and events.count("custom_trigger_tooltip = {") == 7,
+        "all six confirmation options and the renewal option must hide internal eligibility trees",
+    )
+    require(
+        events.count("tooltip = zhx_guest_school_renew_requirements_tt") == 1,
+        "renewal option must expose one readable eligibility line",
+    )
 
     ai_renew = block(triggers, "zhx_guest_school_ai_may_renew")
     for token in (
@@ -575,7 +584,8 @@ def validate_semantics(texts: dict[str, str]) -> None:
     decision_body = block(block(decisions, "country_decisions"), "zhx_expel_guest_school")
     require(
         decision_body.count("ai = no") == 1
-        and decision_body.count("zhx_guest_school_has_active_contract = yes") == 2
+        and decision_body.count("zhx_guest_school_has_active_contract = yes") == 1
+        and decision_body.count("allow = { always = yes }") == 1
         and decision_body.count("country_event = { id = zhx_guest_school.50 }") == 1
         and decision_body.count("factor = 0") == 1,
         "early expulsion must remain a player-only separately confirmed decision",
@@ -589,6 +599,14 @@ def validate_semantics(texts: dict[str, str]) -> None:
             phase_body = block(school, phase)
             require(phase_body.count("zhx_guest_school_may_invite = yes") == 1, f"{native} {phase} lacks shared gate")
             require(phase_body.count(f"zhx_guest_school_source_is_eligible_{code} = yes") == 1, f"{native} {phase} lacks formal source gate")
+            require(
+                phase_body.count("custom_trigger_tooltip = {") == 3
+                and phase_body.count("hidden_trigger = {") == 1
+                and "tooltip = zhx_guest_school_inviter_requirements_tt" in phase_body
+                and f"tooltip = zhx_guest_school_not_current_{code}_tt" in phase_body
+                and f"tooltip = zhx_guest_school_source_{code}_requirements_tt" in phase_body,
+                f"{native} {phase} must collapse its player conditions and hide the AI gate",
+            )
             for token in ("limit = { ai = yes }", "is_at_war = no", "stability = 0", "NOT = { num_of_loans = 1 }", "dip_power = 125", f"zhx_guest_school_ai_wants_{code} = yes"):
                 require(phase_body.count(token) == 1, f"{native} {phase} AI-only gate missing {token}")
         on_body = block(school, "on_invite_scholar")
@@ -648,6 +666,8 @@ def validate_localisation(texts: dict[str, str]) -> None:
         "zhx_guest_school_dishonour",
         "zhx_guest_school_dishonour_desc",
         "zhx_guest_school_contract_cost_tt",
+        "zhx_guest_school_confirmation_requirements_tt",
+        "zhx_guest_school_renew_requirements_tt",
         "zhx_guest_school_renew_cost_tt",
         "zhx_guest_school_send_home_tt",
         "zhx_guest_school_expel_cost_tt",

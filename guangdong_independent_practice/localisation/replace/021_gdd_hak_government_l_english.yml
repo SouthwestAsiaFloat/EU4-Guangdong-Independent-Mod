@@ -1,0 +1,69 @@
+﻿l_english:
+ gdd_hak_revolutionary_army_reform:0 "¢R¶Ri—‹T›QMeœ^"
+ gdd_hak_revolutionary_army_reform_desc:0 "aNLyœQlNåTFUSlåbËzi—‹T›Qÿ‚fåN›Qœ^ßu†˜qQŒTýV0°sûN›QºNI`•Èu«ŽgbMeÿS†˜¥cís0aNLy0åTFU0›Qœ^	NLm‰NÖSMeVrINüRCgÿœQlCgÊvÇ6–BSyrCgK„žR0›Qœ^`SOcíumcwqQŒT.OßuÿNOŽN20öe°sûNwðy‹s0aNLy`SO0.OßuóS60NYŽNŒTs^öeÿïSIN¨RØMe0"
+ gdd_hak_communal_republic_reform:0 "¢R¶RaNLyqQŒTýV"
+ gdd_hak_communal_republic_reform_desc:0 "i—‹T›QSMeCg²NØaNLyÿœQlINüR0åTFUÂSN„vqQŒTýVÏkÛVt^LNLˆ	LN0	NLmÞz‰NNœQlCgÊvçuíuXR(Wÿ›Qœ^Q!k`SONqQŒT.OßuNOŽN20öeÿÍNïSýwpT‹sCg0"
+ gdd_hak_civil_president:0 "aNLyI`•"
+ estate_gdd_hak_peasants:0 "aNLyœQl"
+ estate_gdd_hak_peasants_desc:0 "êwœQ0COœQNQgLyqQT„gb¢R¶RqQŒTýV„vLyOúWNx0ÖNìN‰BlÝOœ–wjONaNLy¨cLNCgÿv^åN¦uÕl¦umgVÑS0"
+ gdd_hak_peasants_loyalty_modifier:0 "aNLyœQlàVÚ‹GWaˆJP"
+ gdd_hak_peasants_influence_modifier:0 "aNLyœQlqVÍT›R"
+ gdd_hak_peasants_privilege_slots:0 "aNLyœQlg'YyrCgpe"
+ gdd_hak_peasant_foundation:0 "œQlINüR„vqQŒTýV"
+ gdd_hak_freehold_charter:0 "êw0uÝOœ–"
+ gdd_hak_freehold_charter_desc:0 "b²‹aNLyœQl„vwjOCgÿèbúQW0WýN˜ÝOœ–êwu¡‹ÿœQlW0WŠYÿ¦uÕl&^eg„vz6eNuµN6eÊvŠØš0"
+ gdd_hak_freehold_charter_tt:0 "ˆcˆNaNLyœQl§Y10%§!W0WýN˜ÿ˜Yz6eNuµN6eÊv–vQW0W`SÔkØSS0žRE–W0Wlûy1u6–BSûsßuÓu—r0"
+ gdd_hak_village_franchise:0 "aNLy¨cLNCg"
+ gdd_hak_village_franchise_desc:0 "ÝOœ–TaN¨cLNãNhˆ0ÂSNlQ®‹„vCg)R0¨cLNCgÃOÛqQŒT9ei—ÿv^(WqQŒTýVgô•ÏkgžX RaNLyLmqVÍT›R0ckVØMeÍN‰˜æSLˆ	ébMeœ^9ei—0"
+ gdd_hak_village_franchise_tt:0 "(W2NÍy¢R¶RqQŒTýVMeSONÿÏkg˜YžX R§Y0.10§!aNLyLmqVÍT›R0dkyrCg,g«ŽNOÿfbcgbMewb9eØSûNg0"
+ gdd_hak_militia_covenant:0 "aNÇR¦uÕl"
+ gdd_hak_militia_covenant_desc:0 "aNÇR1uTaN	c¦uÃuÿÝOYuaNLyÑvcw00W¹e¨RXTÐc›OôfYuQXTv^M–NO›Q9ÿFO­‹ÃuNô'`ƒ1V0¦uÕlÏQb‰NùR›Qœ^Me»l¿R›R„vHVS0"
+ gdd_hak_militia_covenant_tt:0 "böe›Qœ^LmÏkg˜YžX•1u§Y0.20§!ÏQHN§Y0.10§!0ŒTs^öeNµNuå‹y˜žX•0"
+ gdd_hak_restore_civil_rule_title:0 "ØMeŽNl"
+ gdd_hak_restore_civil_rule_desc:0 "(WaNLy=ecNqQŒT.Oßub`YTÓumgS†˜¥císÿlHNÛVt^	LN„vaNLyqQŒTýV0ÝOYu	NLm0œQl6–BSNòTˆcyrCg0"
+ gdd_hak_restore_button:0 "ØMeŽNl"
+ gdd_hak_restore_conditions_tt:0 "—‰i—‹T›QMeœ^0§YaNLyLm`SO§!0qQŒT.OßuóS§Y60§!ÿv^YŽN§YŒTs^§!09eLˆÛVt^	LNÿÝOYu	NLmNœQlCgÊvÿ›Qœ^`SON.OßuNOŽN20öeÍNOðy‹s0"
+ gdd_hak_rules_tt:0 "§Y¢R¶RqQŒT¦uÕl§!\n›QMeœ^1uS†˜¥císÿØMeTÏkÛVt^	LN0\nb‰NÏkg˜YžX R0.20›Qœ^qVÍT›RÿaNÇR¦uÕlSvQÏQHN0.10ÿŒTs^êSjPbkÙN˜YžX•0\n›Qœ^`SOöeqQŒT.OßuÏkt^˜Yÿ2ÿ¡‹eQqQŒTýVúWNxb`YT8^ÀQÿ10\nêS	g›Qœ^`SON.OßuNOŽN20öeMbðy‹s0\nœQlCgÊvïS(W6–BSLub—ˆcˆNb²d•ÿŸSuLmûsLub—ïSågw¾snxqVÍT›R0"
+ gdd_hak_government.10.t:0 "ØMeŽNl"
+ gdd_hak_government.10.d:0 "TaNãNhˆNåTFUSlÍ‘3uVýV¦uÕl0›Qœ^²NØgØšCg›RÿS†˜NQSV6q¥císÿÊNT1ušRg	LN³QšRqQŒTýV„vgbMew0aNLyN›Q–„vsQûsÍN—cíuôuûsÿòTÏu‰N—V„vCgÊvmN—‰ˆR²b0"
+ gdd_hak_government.10.a:0 "qQŒTKNCgÿRVŽNO®‹0"
+ gdd_hak_government.20.t:0 "›Qœ^ðy‹s"
+ gdd_hak_government.20.d:0 "qQŒT.OßupˆízÿŒcácO¿R„v›Qœ^òTNQ¥c×SO®‹¦umg0°sûNgbMew±R^ðy‹sÿÓumgqQŒT0°e‹s‚föeb²‹aNLyœQlÊSòTˆc¦uÕlÿåNŒŒTœQlNvQÖNLyO¿R›Rÿú^Ëz°e„vßu»léy^0"
+ gdd_hak_government.20.a:0 "‹sCgòTËzÿ¦uÕl‚fXR0"
+ gdd_hak_farmers:0 "aNLyLm"
+ gdd_hak_farmers_influence:0 "aNLyLmqVÍT›R"
+ gdd_hak_farmers_FACTION_DESC:0 "åNaNLyœQlHNINSOÿôu²bêwu¡‹NlQ®‹Cg)R0\n\nuµNHe‡sÿ10%ÿqQŒT.Oßuÿ0.5ÿt^ÿœQlàVÚ‹GWaˆÿ10%ÿýV¶RºN›RNP–ÿ10%0"
+ support_gdd_hak_farmers_title:0 "=ecaNLyLm"
+ support_gdd_hak_farmers_desc:0 "=ecå‹Lm‰NÖSMeVrINüRCg0"
+ gdd_hak_farmers_label:0 "aNLyLm"
+ gdd_hak_farmers_tt:0 "åNaNLyœQlHNINSOÿôu²bêwu¡‹NlQ®‹Cg)R0\nuµNHe‡sÿ10%ÿqQŒT.Oßuÿ0.5ÿt^ÿœQlàVÚ‹GWaˆÿ10%ÿýV¶RºN›RNP–ÿ10%0"
+ gdd_hak_support_farmers_button:0 "=ecaNLy"
+ gdd_hak_support_farmers_tt:0 "ˆmw§Y10§!LˆMe¹pÿžX R§Y10§!aNLyLmqVÍT›R0àe˜Y·QtS0"
+ gdd_hak_dominant_farmers:0 "SVMR`SOÿ§YaNLyLm§!"
+ gdd_hak_burghers:0 "åTFULm"
+ gdd_hak_burghers_influence:0 "åTFULmqVÍT›R"
+ gdd_hak_burghers_FACTION_DESC:0 "KbåTNwNSFUºNIN.V^HWéy^0åTFU’N©RŒT0Meú^¾‹0\n\n8fHe‡sÿ10%ÿú^Qr±‚9ÿ10%ÿ^làVÚ‹GWaˆÿ10%ÿF–›QëXlÿ5%0"
+ support_gdd_hak_burghers_title:0 "=ecåTFULm"
+ support_gdd_hak_burghers_desc:0 "=ecå‹Lm‰NÖSMeVrINüRCg0"
+ gdd_hak_burghers_label:0 "åTFULm"
+ gdd_hak_burghers_tt:0 "KbåTNwNSFUºNIN.V^HWéy^0åTFU’N©RŒT0Meú^¾‹0\n8fHe‡sÿ10%ÿú^Qr±‚9ÿ10%ÿ^làVÚ‹GWaˆÿ10%ÿF–›QëXlÿ5%0"
+ gdd_hak_support_burghers_button:0 "=ecåTFU"
+ gdd_hak_support_burghers_tt:0 "ˆmw§Y10§!Y²N¹pÿžX R§Y10§!åTFULmqVÍT›R0àe˜Y·QtS0"
+ gdd_hak_dominant_burghers:0 "SVMR`SOÿ§YåTFULm§!"
+ gdd_hak_army:0 "›Qœ^Lm"
+ gdd_hak_army_influence:0 "›Qœ^LmqVÍT›R"
+ gdd_hak_army_FACTION_DESC:0 "i—‹T›QS†˜IN.VÆ–-Nc%c0OHQ›Q¡R0cíu`SOOµOŽ†qQŒT.Oßu0\n\nF–›QëXlÿ10%ÿºN›Rb`Yÿ15%ÿqQŒT.Oßuÿ2ÿt^ÿœQlàVÚ‹GWaˆÿ10%0"
+ support_gdd_hak_army_title:0 "=ec›Qœ^Lm"
+ support_gdd_hak_army_desc:0 "=ecå‹Lm‰NÖSMeVrINüRCg0"
+ gdd_hak_army_label:0 "›Qœ^Lm"
+ gdd_hak_army_tt:0 "i—‹T›QS†˜IN.VÆ–-Nc%c0OHQ›Q¡R0cíu`SOOµOŽ†qQŒT.Oßu0\nF–›QëXlÿ10%ÿºN›Rb`Yÿ15%ÿqQŒT.Oßuÿ2ÿt^ÿœQlàVÚ‹GWaˆÿ10%0"
+ gdd_hak_support_army_button:0 "=ec›Qœ^"
+ gdd_hak_support_army_tt:0 "ˆmw§Y10§!›Q‹N¹pÿžX R§Y10§!›Qœ^LmqVÍT›R0àe˜Y·QtS0"
+ gdd_hak_dominant_army:0 "SVMR`SOÿ§Y›Qœ^Lm§!"
+
+ estate_gdd_hak_peasants_ownership:0 "aNLyœQlW0W"
+ gdd_hak_farmers_estate_loyalty:0 "aNLyLmSVCg"
+ gdd_hak_burghers_estate_loyalty:0 "FUâVLmSVCg"
+ gdd_hak_army_estate_loyalty:0 "›Qœ^‹S6RaNLy"
+ gdd_hak_peasants_influence_modifier:0 "aNLyœQlqVÍT›R"
+ gdd_hak_peasants_privilege_slots:0 "aNLyœQlyrCgNP–"

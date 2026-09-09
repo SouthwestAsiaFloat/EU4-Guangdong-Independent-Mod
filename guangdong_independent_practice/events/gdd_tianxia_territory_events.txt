@@ -338,6 +338,7 @@ country_event = {
 
     option = {
         name = gdd_tianxia_territory.3.a
+        custom_tooltip = zhx_leave_tianxia_effect_tt
         hidden_effect = {
             if = {
                 limit = { gdd_can_leave_tianxia_trigger = yes }

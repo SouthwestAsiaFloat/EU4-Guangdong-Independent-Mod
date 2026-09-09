@@ -36,7 +36,9 @@ def replace_first_value(text: str, key: str, value: str) -> str:
 
 
 def province_path(province_id: int) -> Path:
-    matches = sorted(PROVINCES.glob(f"{province_id} - *.txt"))
+    # Historical files are not fully normalized: 2153 is named
+    # "2153 -Tingzhou.txt" while most files include a space after the dash.
+    matches = sorted(PROVINCES.glob(f"{province_id} -*.txt"))
     if len(matches) != 1:
         raise ValueError(f"province {province_id} has {len(matches)} local histories")
     return matches[0]

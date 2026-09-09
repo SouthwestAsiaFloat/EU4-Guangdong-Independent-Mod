@@ -1,0 +1,14 @@
+spriteTypes = {
+    spriteType = {
+        name = "government_reform_zhx_gongyi_autonomy"
+        texturefile = "gfx/interface/zhx_gongyi_yang/gongyi_57.dds"
+        noOfFrames = 1
+        loadType = "INGAME"
+    }
+    spriteType = {
+        name = "government_reform_zhx_yang_trade_league"
+        texturefile = "gfx/interface/zhx_gongyi_yang/yang_57.dds"
+        noOfFrames = 1
+        loadType = "INGAME"
+    }
+}

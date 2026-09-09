@@ -1,0 +1,8 @@
+# 七大诸侯与首席诸侯共用一个不衰减的动态力量投射来源。
+# 换届或失位时以负数写回同一来源，不会留下永久残值。
+zhx_merit_dignity_power_projection = {
+    max = 20
+    min = 0
+    power = 1
+    decay = no
+}

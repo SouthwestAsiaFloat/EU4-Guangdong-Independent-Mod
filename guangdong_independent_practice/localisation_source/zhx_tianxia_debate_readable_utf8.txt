@@ -1,4 +1,5 @@
 l_english:
+ zhx_file_tianxia_debate_petition_requirements_tt:0 "本国国论践履至少为§Y70§!；当前没有生效中的天下显学或正在进行的天下大辩，且天子尚未收到本派请辩书。"
  ZHX_GUI_DEBATE_HEADER:0 "天下显学"
  ZHX_GUI_DEBATE_REVIEW_BUTTON:0 "查看准则"
  ZHX_GUI_DEBATE_CONVENE_BUTTON:0 "召开大辩"
@@ -314,6 +315,7 @@ l_english:
  zhx_debate.41.d:0 "践履达到70只是本国上书的门槛。正式请辩还需要本派至少有三个周天下礼教国家采用，并有另一同派国家践履达到50。"
  zhx_debate.41.a:0 "根基已备，正式上书"
  zhx_debate.41.b:0 "同道未集，暂缓上书"
+ zhx_debate_petition_social_basis_tt:0 "本派至少有§Y三个§!周天下礼教国家采用，且另有一个同派国家的践履达到§Y50§!。"
  zhx_debate.90.t:0 "天下大辩年度检查"
  zhx_debate.90.d:0 "天下大辩的请辩书、候选状态与十五年任期已经检查。"
 

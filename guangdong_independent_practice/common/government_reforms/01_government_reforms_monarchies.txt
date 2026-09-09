@@ -523,7 +523,6 @@ celestial_empire = {
 
 	custom_attributes = {
 		locked_government_type = yes
-		has_unify_china_cb = yes
 	}
 
 	conditional = {
@@ -650,9 +649,6 @@ chinese_warlord = {
 		factor = 1000
 	}
 
-	custom_attributes = {
-		has_unify_china_cb = yes
-	}
 }
 
 kalmar_union = {

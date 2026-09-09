@@ -416,14 +416,25 @@ def validate_hooks(academies: list[dict[str, object]]) -> None:
             f"{academy['modifier']}: owner-change hook missing or duplicated",
         )
     require(
-        owner_change.count("zhx_refresh_academy_country_effects = yes") == 2,
-        "owner-change hook must refresh both owners",
+        "zhx_refresh_academy_country_effects = yes" not in owner_change,
+        "owner-change hook must defer derived-state refresh until SetOwner completes",
     )
     require(
-        owner_change.count("zhx_academy_cancel_expulsion_on_owner_change = yes") == 1
-        and owner_change.index("zhx_academy_cancel_expulsion_on_owner_change = yes")
-        < owner_change.index("zhx_refresh_academy_country_effects = yes"),
-        "owner-change lifecycle cancellation must run once before both refreshes",
+        owner_change.count("set_country_flag = zhx_academy_ownership_dirty") == 2,
+        "owner-change hook must mark both owners for deferred refresh",
+    )
+    require(
+        owner_change.count("zhx_academy_cancel_expulsion_on_owner_change = yes") == 1,
+        "owner-change lifecycle cancellation must run exactly once",
+    )
+    monthly = block_body(on_actions, "on_monthly_pulse")
+    require(
+        "has_country_flag = zhx_academy_ownership_dirty" in monthly
+        and monthly.count("clr_country_flag = zhx_academy_ownership_dirty") == 1
+        and monthly.count("zhx_refresh_academy_country_effects = yes") == 1
+        and monthly.index("clr_country_flag = zhx_academy_ownership_dirty")
+        < monthly.index("zhx_refresh_academy_country_effects = yes"),
+        "monthly hook must consume the academy ownership marker before refreshing derived state",
     )
 
     opening = OPENING_EVENTS.read_text(encoding="utf-8")
@@ -499,6 +510,22 @@ def validate_tension_presentation(academies: list[dict[str, object]]) -> None:
         "zhx_thought_tension_tooltip_button",
     )
     native_value = gui.index('name = "current_harmony_value"')
+    first_native_modal_match = re.search(
+        r'name\s*=\s*"countryreligionview_convert"', gui
+    )
+    scholar_modal_match = re.search(
+        r'name\s*=\s*"invite_scholar_selection_screen"', gui
+    )
+    require(
+        first_native_modal_match is not None and scholar_modal_match is not None,
+        "native religion modal windows are missing",
+    )
+    first_native_modal = first_native_modal_match.start()
+    scholar_modal = scholar_modal_match.start()
+    require(
+        native_value < first_native_modal < scholar_modal,
+        "native religion modal-window order changed unexpectedly",
+    )
     for control in controls:
         require(
             gui.count(f'name = "{control}"') == 1,
@@ -507,6 +534,11 @@ def validate_tension_presentation(academies: list[dict[str, object]]) -> None:
         require(
             gui.index(f'name = "{control}"') > native_value,
             f"thought-tension control is not late-drawn over harmony: {control}",
+        )
+        require(
+            gui.index(f'name = "{control}"') < first_native_modal,
+            "thought-tension control must remain below native religion modal "
+            f"screens: {control}",
         )
         require(
             len(re.findall(rf"(?m)^\s*name\s*=\s*{re.escape(control)}\s*$", custom_gui))

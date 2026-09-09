@@ -220,6 +220,7 @@ gdd_can_dismantle_tianxia_trigger = {
 gdd_is_opening_tianxia_core_tag_trigger = {
     OR = {
         tag = CZH
+        tag = DMG
         tag = BAA
         tag = CAG
         tag = CAI

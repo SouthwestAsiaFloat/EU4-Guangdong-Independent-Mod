@@ -127,6 +127,7 @@ country_event = {
             }
             zhx_build_gui_roster = yes
         }
+        zhx_feudatory_initialise = yes
         # Initialise the current Emperor's seven-seat cache only after all
         # membership and great-feudatory migrations have finished.
         if = {
@@ -302,6 +303,10 @@ country_event = {
     immediate = {
         zhx_yearly_ritual_authority_tick = yes
         if = {
+            limit = { has_global_flag = zhx_system_initialised_v13 }
+            zhx_yearly_merit_tick = yes
+        }
+        if = {
             limit = { has_global_flag = zhx_system_initialised_v8 }
             gdd_refresh_authority_balance_effects = yes
         }
@@ -444,45 +449,51 @@ country_event = {
     option = {
         name = zhx_system.22.a
         trigger = {
-            check_variable = {
-                which = zhx_council_a_vs_b
-                value = 1
-            }
-        }
-        add_prestige = 10
-        change_variable = {
-            which = zhx_ritual_authority
-            value = 10
-        }
-        hidden_effect = {
-            add_country_modifier = { name = zhx_ritual_breakdown_incident_cooldown duration = 1825 }
-            zhx_finish_tianxia_council = yes
-        }
-        zhx_clamp_ritual_authority = yes
-        zhx_refresh_ritual_order = yes
-    }
-
-    option = {
-        name = zhx_system.22.b
-        trigger = {
-            NOT = {
+            hidden_trigger = {
                 check_variable = {
                     which = zhx_council_a_vs_b
                     value = 1
                 }
             }
         }
-        add_prestige = -10
-        change_variable = {
-            which = zhx_ritual_authority
-            value = -5
-        }
+        custom_tooltip = zhx_system.22.a.tt
         hidden_effect = {
+            add_prestige = 10
+            change_variable = {
+                which = zhx_ritual_authority
+                value = 10
+            }
             add_country_modifier = { name = zhx_ritual_breakdown_incident_cooldown duration = 1825 }
             zhx_finish_tianxia_council = yes
+            zhx_clamp_ritual_authority = yes
+            zhx_refresh_ritual_order = yes
         }
-        zhx_clamp_ritual_authority = yes
-        zhx_refresh_ritual_order = yes
+    }
+
+    option = {
+        name = zhx_system.22.b
+        trigger = {
+            hidden_trigger = {
+                NOT = {
+                    check_variable = {
+                        which = zhx_council_a_vs_b
+                        value = 1
+                    }
+                }
+            }
+        }
+        custom_tooltip = zhx_system.22.b.tt
+        hidden_effect = {
+            add_prestige = -10
+            change_variable = {
+                which = zhx_ritual_authority
+                value = -5
+            }
+            add_country_modifier = { name = zhx_ritual_breakdown_incident_cooldown duration = 1825 }
+            zhx_finish_tianxia_council = yes
+            zhx_clamp_ritual_authority = yes
+            zhx_refresh_ritual_order = yes
+        }
     }
 }
 
@@ -499,9 +510,12 @@ country_event = {
         zhx_is_tianzi = yes
         has_country_flag = zhx_council_phase_ballot_open
         has_country_flag = zhx_council_deadline_scheduled
+        # A callback from a cancelled council cannot close a newer ballot.
+        had_country_flag = { flag = zhx_council_phase_ballot_open days = 365 }
         OR = {
             has_country_flag = zhx_council_kind_ritual_breakdown
             has_country_flag = zhx_council_kind_debate
+            has_country_flag = zhx_council_kind_promotion
         }
     }
     immediate = {
@@ -513,6 +527,10 @@ country_event = {
         else_if = {
             limit = { has_country_flag = zhx_council_kind_debate }
             country_event = { id = zhx_debate.20 days = 1 }
+        }
+        else_if = {
+            limit = { has_country_flag = zhx_council_kind_promotion }
+            zhx_feudatory_resolve_promotion = yes
         }
     }
     option = { name = OK }

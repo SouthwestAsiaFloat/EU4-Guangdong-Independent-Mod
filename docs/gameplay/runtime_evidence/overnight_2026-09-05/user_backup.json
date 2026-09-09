@@ -1,0 +1,32 @@
+[
+  {
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/settings.txt",
+    "backup": "/tmp/eu4_overnight_20260905/user_backup/settings.txt",
+    "sha256": "5550f06ef6e4511b1dd501fcad94d3e0616a673e2a95342d7f8c1a75426cb6b2"
+  },
+  {
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/dlc_load.json",
+    "backup": "/tmp/eu4_overnight_20260905/user_backup/dlc_load.json",
+    "sha256": "a574877e8f706b2dabdc80f65fd03520c0da212412a1da9f1ba8aa20bd06d440"
+  },
+  {
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/save games/autosave.eu4",
+    "backup": "/tmp/eu4_overnight_20260905/user_backup/autosave.eu4",
+    "sha256": "5d47d75e345e3d76bac6638ad005e56c182aa2b840e8695d9127c61e44172373"
+  },
+  {
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/save games/old_autosave.eu4",
+    "backup": "/tmp/eu4_overnight_20260905/user_backup/old_autosave.eu4",
+    "sha256": "b23dbc42729bd905e1dcbae8089edc77631ac4f0be5751b5c220f0811b78a2f6"
+  },
+  {
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/save games/older_autosave.eu4",
+    "backup": "/tmp/eu4_overnight_20260905/user_backup/older_autosave.eu4",
+    "sha256": "3ed57f9be99473bb88fa66001d3110ec827e6d078d1104bc9ce9165810694932"
+  },
+  {
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/save games/CZC_1444_ready.eu4",
+    "backup": "/tmp/eu4_overnight_20260905/user_backup/CZC_1444_ready.eu4",
+    "sha256": "a5b5f378bc9db2d0cfd8abe22f3af91ad76d68de7a323cfadafb916e8d10cc04"
+  }
+]

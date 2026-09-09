@@ -1,6 +1,6 @@
 # B43 Chunqiu polity history.
 government = republic
-add_government_reform = oligarchy_reform
+add_government_reform = zhx_gongyi_reform
 government_rank = 1
 technology_group = chinese
 religion = confucianism

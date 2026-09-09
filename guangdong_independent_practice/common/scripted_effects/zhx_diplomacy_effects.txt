@@ -1,0 +1,101 @@
+# 周天下外交底座。省份易主回调只留一个“非法夺土”布尔标记；
+# 不记省份档位、不追加逐省 AE，也不在 SetOwner 中触发事件或世界扫描。
+
+zhx_diplomacy_clear_illegal_batch = {
+    clr_country_flag = zhx_diplomacy_illegal_cession_queued
+    clr_country_flag = zhx_diplomacy_illegal_notice_shown
+}
+
+# 队列效果只写国家旗标或单一计数，保证 SetOwner/on_annexed
+# 事务中不进入事件、AE、关系或世界循环。
+zhx_diplomacy_queue_illegal_cession = {
+    set_country_flag = zhx_diplomacy_illegal_cession_queued
+}
+
+zhx_diplomacy_queue_member_extinction = {
+    set_country_flag = zhx_diplomacy_extinction_ae_queued
+    change_variable = {
+        which = zhx_diplomacy_member_extinction_count
+        value = 1
+    }
+}
+
+# ROOT 必须是仍存在的责任国。不产生割地账单或逐省 AE；
+# 只结算犯盟身份和天子关系反应。灭国固定 AE 使用独立队列，
+# 避免最后一省易主与 on_annexed 的引擎回调顺序互相依赖。
+zhx_diplomacy_settle_illegal_cession = {
+    clr_country_flag = zhx_diplomacy_illegal_cession_queued
+    remove_country_modifier = zhx_covenant_breaker
+    add_country_modifier = {
+        name = zhx_covenant_breaker
+        duration = 3650
+    }
+
+    if = {
+        limit = { zhx_is_tianzi = yes }
+        change_variable = { which = zhx_ritual_authority value = -3 }
+        zhx_clamp_ritual_authority = yes
+        zhx_refresh_ritual_order = yes
+    }
+    zhx_diplomacy_clear_illegal_batch = yes
+}
+
+# ROOT 必须是仍存在的灭国责任国（附庸灭国时为其宗主）。
+# 灭国回调只写计数；固定 AE 在这里脱离和谈事务独立月结。
+zhx_diplomacy_settle_extinction_ae = {
+    while = {
+        limit = {
+            check_variable = {
+                which = zhx_diplomacy_member_extinction_count
+                value = 1
+            }
+        }
+        every_country = {
+            limit = {
+                exists = yes
+                zhx_is_tianxia_polity = yes
+                NOT = { tag = ROOT }
+                NOT = { is_subject_of = ROOT }
+            }
+            add_aggressive_expansion = { who = ROOT value = 5 apply_calc = no }
+        }
+        subtract_variable = {
+            which = zhx_diplomacy_member_extinction_count
+            value = 1
+        }
+    }
+    set_variable = { which = zhx_diplomacy_member_extinction_count value = 0 }
+    clr_country_flag = zhx_diplomacy_extinction_ae_queued
+}
+
+# 天子国家作用域。任何诸侯被战争灭国或外交整合都累计
+# 一次“天下失一国”；月度脉冲一次扣除 5 礼乐，避免在灭国事务内重算。
+zhx_diplomacy_settle_extinction_ritual_loss = {
+    while = {
+        limit = {
+            check_variable = {
+                which = zhx_tianxia_extinction_penalty_count
+                value = 1
+            }
+        }
+        change_variable = { which = zhx_ritual_authority value = -5 }
+        subtract_variable = { which = zhx_tianxia_extinction_penalty_count value = 1 }
+    }
+    set_variable = { which = zhx_tianxia_extinction_penalty_count value = 0 }
+    zhx_clamp_ritual_authority = yes
+    zhx_refresh_ritual_order = yes
+}
+
+# v14 启用外交底座并清理瞬时标记。
+zhx_migrate_tianxia_system_v13_to_v14 = {
+    every_country = {
+        limit = { exists = yes }
+        zhx_diplomacy_clear_illegal_batch = yes
+        clr_country_flag = zhx_diplomacy_lawful_transfer
+        clr_country_flag = zhx_diplomacy_extinction_ae_queued
+        clr_country_flag = zhx_tianxia_extinction_penalty_recorded
+        set_variable = { which = zhx_diplomacy_member_extinction_count value = 0 }
+    }
+    CZH = { set_variable = { which = zhx_tianxia_extinction_penalty_count value = 0 } }
+    set_global_flag = zhx_system_initialised_v14
+}

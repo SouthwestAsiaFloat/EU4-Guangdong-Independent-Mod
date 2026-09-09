@@ -1,0 +1,4 @@
+# 空修正是有意为之：只承担存档安全的期限令牌，不额外处罚经济或军队。
+zhx_covenant_breaker = { }
+zhx_tianxia_application_cooldown = { }
+zhx_tianxia_rejoin_bar = { }

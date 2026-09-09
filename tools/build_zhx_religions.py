@@ -230,36 +230,58 @@ def build_school_block() -> str:
 \t\t\t# only chooses school and source; a separate confirmation event owns
 \t\t\t# payment and the guarded twenty-year court contract.
 \t\t\tpotential_invite_scholar = {{
-\t\t\t\tzhx_guest_school_may_invite = yes
-\t\t\t\tNOT = {{ has_country_flag = {doctrine_flag} }}
-\t\t\t\tFROM = {{
-\t\t\t\t\tzhx_guest_school_source_is_eligible_{doctrine_flag.removeprefix("zhx_doctrine_")} = yes
+\t\t\t\tcustom_trigger_tooltip = {{
+\t\t\t\t\ttooltip = zhx_guest_school_inviter_requirements_tt
+\t\t\t\t\tzhx_guest_school_may_invite = yes
 \t\t\t\t}}
-\t\t\t\tknows_of_scholar_country_capital_trigger = yes
-\t\t\t\tif = {{
-\t\t\t\t\tlimit = {{ ai = yes }}
-\t\t\t\t\tis_at_war = no
-\t\t\t\t\tstability = 0
-\t\t\t\t\tNOT = {{ num_of_loans = 1 }}
-\t\t\t\t\tdip_power = 125
-\t\t\t\t\tzhx_guest_school_ai_wants_{doctrine_flag.removeprefix("zhx_doctrine_")} = yes
+\t\t\t\tcustom_trigger_tooltip = {{
+\t\t\t\t\ttooltip = zhx_guest_school_not_current_{doctrine_flag.removeprefix("zhx_doctrine_")}_tt
+\t\t\t\t\tNOT = {{ has_country_flag = {doctrine_flag} }}
+\t\t\t\t}}
+\t\t\t\tcustom_trigger_tooltip = {{
+\t\t\t\t\ttooltip = zhx_guest_school_source_{doctrine_flag.removeprefix("zhx_doctrine_")}_requirements_tt
+\t\t\t\t\tFROM = {{
+\t\t\t\t\t\tzhx_guest_school_source_is_eligible_{doctrine_flag.removeprefix("zhx_doctrine_")} = yes
+\t\t\t\t\t}}
+\t\t\t\t\tknows_of_scholar_country_capital_trigger = yes
+\t\t\t\t}}
+\t\t\t\thidden_trigger = {{
+\t\t\t\t\tif = {{
+\t\t\t\t\t\tlimit = {{ ai = yes }}
+\t\t\t\t\t\tis_at_war = no
+\t\t\t\t\t\tstability = 0
+\t\t\t\t\t\tNOT = {{ num_of_loans = 1 }}
+\t\t\t\t\t\tdip_power = 125
+\t\t\t\t\t\tzhx_guest_school_ai_wants_{doctrine_flag.removeprefix("zhx_doctrine_")} = yes
+\t\t\t\t\t}}
 \t\t\t\t}}
 \t\t\t}}
 \t\t\tcan_invite_scholar = {{
 \t\t\t\t# Fail closed on the group-scoped eastern interface. Buddhist and
 \t\t\t\t# Shinto countries can never pass this Ritual Teaching gate.
-\t\t\t\tzhx_guest_school_may_invite = yes
-\t\t\t\tNOT = {{ has_country_flag = {doctrine_flag} }}
-\t\t\t\tFROM = {{
-\t\t\t\t\tzhx_guest_school_source_is_eligible_{doctrine_flag.removeprefix("zhx_doctrine_")} = yes
+\t\t\t\tcustom_trigger_tooltip = {{
+\t\t\t\t\ttooltip = zhx_guest_school_inviter_requirements_tt
+\t\t\t\t\tzhx_guest_school_may_invite = yes
 \t\t\t\t}}
-\t\t\t\tif = {{
-\t\t\t\t\tlimit = {{ ai = yes }}
-\t\t\t\t\tis_at_war = no
-\t\t\t\t\tstability = 0
-\t\t\t\t\tNOT = {{ num_of_loans = 1 }}
-\t\t\t\t\tdip_power = 125
-\t\t\t\t\tzhx_guest_school_ai_wants_{doctrine_flag.removeprefix("zhx_doctrine_")} = yes
+\t\t\t\tcustom_trigger_tooltip = {{
+\t\t\t\t\ttooltip = zhx_guest_school_not_current_{doctrine_flag.removeprefix("zhx_doctrine_")}_tt
+\t\t\t\t\tNOT = {{ has_country_flag = {doctrine_flag} }}
+\t\t\t\t}}
+\t\t\t\tcustom_trigger_tooltip = {{
+\t\t\t\t\ttooltip = zhx_guest_school_source_{doctrine_flag.removeprefix("zhx_doctrine_")}_requirements_tt
+\t\t\t\t\tFROM = {{
+\t\t\t\t\t\tzhx_guest_school_source_is_eligible_{doctrine_flag.removeprefix("zhx_doctrine_")} = yes
+\t\t\t\t\t}}
+\t\t\t\t}}
+\t\t\t\thidden_trigger = {{
+\t\t\t\t\tif = {{
+\t\t\t\t\t\tlimit = {{ ai = yes }}
+\t\t\t\t\t\tis_at_war = no
+\t\t\t\t\t\tstability = 0
+\t\t\t\t\t\tNOT = {{ num_of_loans = 1 }}
+\t\t\t\t\t\tdip_power = 125
+\t\t\t\t\t\tzhx_guest_school_ai_wants_{doctrine_flag.removeprefix("zhx_doctrine_")} = yes
+\t\t\t\t\t}}
 \t\t\t\t}}
 \t\t\t}}
 \t\t\ton_invite_scholar = {{

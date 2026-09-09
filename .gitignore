@@ -13,3 +13,6 @@ __pycache__/
 *.lnk
 /欧陆风云_广东.docx
 /EU4mod制作说明书.pdf
+
+# Local EU4 console input history from runtime tests.
+/console_history.txt

@@ -1,0 +1,156 @@
+# 诸夏王会下半区的叙功行赏。界面只读变量并调用公共购买效果，
+# 七大诸侯身份仍由天命页既有旗标与事件目标呈现。
+
+custom_text_box = {
+    name = zhx_gui_merit_store_header
+    potential = { always = yes }
+    tooltip = zhx_gui_merit_store_header_tt
+}
+
+custom_text_box = {
+    name = zhx_gui_merit_store_available
+    potential = { always = yes }
+    tooltip = zhx_gui_merit_store_status_tt
+}
+
+custom_text_box = {
+    name = zhx_gui_merit_store_rank
+    potential = { always = yes }
+    tooltip = zhx_gui_merit_store_status_tt
+}
+
+custom_text_box = {
+    name = zhx_gui_merit_store_lifetime
+    potential = { always = yes }
+    tooltip = zhx_gui_merit_store_status_tt
+}
+
+custom_text_box = {
+    name = zhx_gui_merit_store_cutoff
+    potential = { always = yes }
+    tooltip = zhx_gui_merit_store_status_tt
+}
+
+custom_text_box = {
+    name = zhx_gui_merit_store_years
+    potential = { always = yes }
+    tooltip = zhx_gui_merit_store_status_tt
+}
+
+custom_text_box = {
+    name = zhx_gui_merit_store_qualification
+    potential = { always = yes }
+    tooltip = zhx_gui_merit_store_status_tt
+}
+
+custom_text_box = {
+    name = zhx_gui_merit_store_relief_status
+    potential = { always = yes }
+    tooltip = zhx_gui_merit_store_relief_tt
+}
+
+custom_text_box = {
+    name = zhx_gui_merit_store_governance_status
+    potential = { always = yes }
+    tooltip = zhx_gui_merit_store_governance_tt
+}
+
+custom_text_box = {
+    name = zhx_gui_merit_store_trade_status
+    potential = { always = yes }
+    tooltip = zhx_gui_merit_store_trade_tt
+}
+
+custom_text_box = {
+    name = zhx_gui_merit_store_industry_status
+    potential = { always = yes }
+    tooltip = zhx_gui_merit_store_industry_tt
+}
+
+custom_text_box = {
+    name = zhx_gui_merit_store_army_status
+    potential = { always = yes }
+    tooltip = zhx_gui_merit_store_army_tt
+}
+
+custom_text_box = {
+    name = zhx_gui_merit_store_fortification_status
+    potential = { always = yes }
+    tooltip = zhx_gui_merit_store_fortification_tt
+}
+
+custom_text_box = {
+    name = zhx_gui_merit_store_honour_status
+    potential = { always = yes }
+    tooltip = zhx_gui_merit_store_honour_tt
+}
+
+custom_text_box = {
+    name = zhx_gui_merit_store_diplomacy_status
+    potential = { always = yes }
+    tooltip = zhx_gui_merit_store_diplomacy_tt
+}
+
+custom_button = {
+    name = zhx_gui_merit_store_relief_button
+    potential = { has_global_flag = zhx_system_initialised_v13 }
+    trigger = { hidden_trigger = { zhx_can_buy_merit_store_governance = yes } }
+    effect = { hidden_effect = { zhx_buy_merit_store_relief = yes } }
+    tooltip = zhx_gui_merit_store_relief_tt
+}
+
+custom_button = {
+    name = zhx_gui_merit_store_governance_button
+    potential = { has_global_flag = zhx_system_initialised_v13 }
+    trigger = { hidden_trigger = { zhx_can_buy_merit_store_governance = yes } }
+    effect = { hidden_effect = { zhx_buy_merit_store_governance = yes } }
+    tooltip = zhx_gui_merit_store_governance_tt
+}
+
+custom_button = {
+    name = zhx_gui_merit_store_trade_button
+    potential = { has_global_flag = zhx_system_initialised_v13 }
+    trigger = { hidden_trigger = { zhx_can_buy_merit_store_economy = yes } }
+    effect = { hidden_effect = { zhx_buy_merit_store_trade = yes } }
+    tooltip = zhx_gui_merit_store_trade_tt
+}
+
+custom_button = {
+    name = zhx_gui_merit_store_industry_button
+    potential = { has_global_flag = zhx_system_initialised_v13 }
+    trigger = { hidden_trigger = { zhx_can_buy_merit_store_economy = yes } }
+    effect = { hidden_effect = { zhx_buy_merit_store_industry = yes } }
+    tooltip = zhx_gui_merit_store_industry_tt
+}
+
+custom_button = {
+    name = zhx_gui_merit_store_army_button
+    potential = { has_global_flag = zhx_system_initialised_v13 }
+    trigger = { hidden_trigger = { zhx_can_buy_merit_store_military = yes } }
+    effect = { hidden_effect = { zhx_buy_merit_store_army = yes } }
+    tooltip = zhx_gui_merit_store_army_tt
+}
+
+custom_button = {
+    name = zhx_gui_merit_store_fortification_button
+    potential = { has_global_flag = zhx_system_initialised_v13 }
+    trigger = { hidden_trigger = { zhx_can_buy_merit_store_military = yes } }
+    effect = { hidden_effect = { zhx_buy_merit_store_fortification = yes } }
+    tooltip = zhx_gui_merit_store_fortification_tt
+}
+
+custom_button = {
+    name = zhx_gui_merit_store_honour_button
+    potential = { has_global_flag = zhx_system_initialised_v13 }
+    trigger = { hidden_trigger = { zhx_can_buy_merit_store_diplomacy = yes } }
+    effect = { hidden_effect = { zhx_buy_merit_store_honour = yes } }
+    tooltip = zhx_gui_merit_store_honour_tt
+}
+
+custom_button = {
+    name = zhx_gui_merit_store_diplomacy_button
+    potential = { has_global_flag = zhx_system_initialised_v13 }
+    trigger = { hidden_trigger = { zhx_can_buy_merit_store_diplomacy = yes } }
+    effect = { hidden_effect = { zhx_buy_merit_store_diplomacy = yes } }
+    tooltip = zhx_gui_merit_store_diplomacy_tt
+}

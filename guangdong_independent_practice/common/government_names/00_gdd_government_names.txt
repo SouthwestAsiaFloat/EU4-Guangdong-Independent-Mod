@@ -1,43 +1,148 @@
-gdd_liang_shouqian_lingnan_title = {
+# Specific Lingnan titles load before the vanilla culture-based title table.
+
+gdd_dynastic_feudatory_title = {
     rank = {
-        1 = DUCHY
-        2 = KINGDOM
+        1 = GDD_DYNASTIC_FEUDATORY
+        2 = GDD_DYNASTIC_FEUDATORY
     }
-
     ruler_male = {
-        1 = GDD_LINGNAN_KING
-        2 = GDD_LINGNAN_KING
+        1 = GDD_EARL
+        2 = GDD_EARL
     }
-
     ruler_female = {
-        1 = DUCHESS
-        2 = QUEEN
+        1 = GDD_COUNTESS
+        2 = GDD_COUNTESS
     }
-
     consort_male = {
-        1 = CONSORT
-        2 = PRINCE_CONSORT
+        1 = GDD_CONSORT
+        2 = GDD_CONSORT
     }
-
     consort_female = {
-        1 = CONSORT
-        2 = QUEEN_CONSORT
+        1 = GDD_CONSORT
+        2 = GDD_CONSORT
     }
-
     heir_male = {
-        1 = HEIR
-        2 = HEIR
+        1 = GDD_HEIR
+        2 = GDD_HEIR
     }
-
     heir_female = {
-        1 = HEIR_fem
-        2 = HEIR_fem
+        1 = GDD_HEIR
+        2 = GDD_HEIR
     }
-
     trigger = {
-        tag = GDD
         government = monarchy
-        has_country_flag = gdd_liang_shouqian_reigning
+        OR = {
+            tag = GDD
+            tag = GUI
+            tag = DAI
+        }
+        NOT = { government_rank = 3 }
+    }
+}
+
+gdd_chaozhou_elder_council_title = {
+    rank = {
+        1 = CZC_ELDER_COUNCIL
+        2 = CZC_ELDER_COUNCIL
+    }
+    ruler_male = {
+        1 = CZC_RAOPING_EARL
+        2 = CZC_RAOPING_EARL
+    }
+    ruler_female = {
+        1 = CZC_COUNCIL_ELDER
+        2 = CZC_COUNCIL_ELDER
+    }
+    trigger = {
+        tag = CZC
+        government = republic
+        NOT = { government_rank = 3 }
+    }
+}
+
+gdd_hakka_communal_republic_title = {
+    rank = { 1 = HAK_REPUBLIC 2 = HAK_REPUBLIC 3 = HAK_REPUBLIC }
+    ruler_male = { 1 = gdd_hak_civil_president 2 = gdd_hak_civil_president 3 = gdd_hak_civil_president }
+    ruler_female = { 1 = gdd_hak_civil_president 2 = gdd_hak_civil_president 3 = gdd_hak_civil_president }
+    trigger = { tag = HAK has_reform = gdd_hak_communal_republic_reform }
+}
+
+gdd_hakka_republic_title = {
+    rank = {
+        1 = HAK_REPUBLIC
+        2 = HAK_REPUBLIC
+    }
+    ruler_male = {
+        1 = HAK_PRESIDENT_GENERAL
+        2 = HAK_PRESIDENT_GENERAL
+    }
+    ruler_female = {
+        1 = HAK_PRESIDENT_GENERAL
+        2 = HAK_PRESIDENT_GENERAL
+    }
+    trigger = {
+        tag = HAK
+        NOT = { has_reform = gdd_hak_communal_republic_reform }
+        government = republic
+        NOT = { government_rank = 3 }
+    }
+}
+
+gdd_nong_tribal_kingdom_title = {
+    rank = {
+        1 = NUN_TRIBAL_KINGDOM
+        2 = NUN_TRIBAL_KINGDOM
+    }
+    ruler_male = {
+        1 = NUN_GREAT_CAVE_LORD
+        2 = NUN_GREAT_CAVE_LORD
+    }
+    ruler_female = {
+        1 = NUN_GREAT_CAVE_LORD
+        2 = NUN_GREAT_CAVE_LORD
+    }
+    heir_male = {
+        1 = GDD_HEIR
+        2 = GDD_HEIR
+    }
+    heir_female = {
+        1 = GDD_HEIR
+        2 = GDD_HEIR
+    }
+    trigger = {
+        tag = NUN
+        government = tribal
+        NOT = { government_rank = 3 }
+    }
+}
+
+gdd_zhuang_cave_polity_title = {
+    rank = {
+        1 = GDD_CAVE_POLITY
+        2 = GDD_CAVE_POLITY
+    }
+    ruler_male = {
+        1 = GDD_CAVE_LORD
+        2 = GDD_CAVE_LORD
+    }
+    ruler_female = {
+        1 = GDD_CAVE_LORD
+        2 = GDD_CAVE_LORD
+    }
+    heir_male = {
+        1 = GDD_HEIR
+        2 = GDD_HEIR
+    }
+    heir_female = {
+        1 = GDD_HEIR
+        2 = GDD_HEIR
+    }
+    trigger = {
+        government = tribal
+        OR = {
+            tag = TZZ
+            tag = LIL
+        }
         NOT = { government_rank = 3 }
     }
 }

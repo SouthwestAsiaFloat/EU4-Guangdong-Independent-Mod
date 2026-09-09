@@ -1,0 +1,49 @@
+zhx_gongyi_grant_charter = {
+    set_country_flag = zhx_gongyi_charter
+    clr_country_flag = zhx_gongyi_lost_charter
+    clr_country_flag = zhx_gongyi_request_pending
+    add_government_reform = zhx_gongyi_reform
+    if = { limit = { has_saved_global_event_target = zhx_tianzi } zhx_register_tianxia_member = yes }
+}
+
+zhx_gongyi_revoke_charter = {
+    set_country_flag = zhx_gongyi_lost_charter
+    clr_country_flag = zhx_gongyi_charter
+    clr_country_flag = zhx_gongyi_request_pending
+    add_government_reform = zhx_gongyi_ordinary_reform
+    if = { limit = { ai = no } country_event = { id = zhx_gongyi.20 } }
+}
+
+zhx_gongyi_sync = {
+    if = {
+        limit = { has_country_flag = zhx_gongyi_request_pending had_country_flag = { flag = zhx_gongyi_request_pending days = 365 } }
+        clr_country_flag = zhx_gongyi_request_pending
+    }
+    if = {
+        limit = { has_reform = zhx_gongyi_reform }
+        if = {
+            limit = { NOT = { zhx_gongyi_one_province = yes } }
+            zhx_gongyi_revoke_charter = yes
+        }
+        else = {
+            set_country_flag = zhx_gongyi_charter
+            if = { limit = { has_saved_global_event_target = zhx_tianzi } zhx_register_tianxia_member = yes }
+        }
+    }
+    else_if = {
+        limit = { has_country_flag = zhx_gongyi_charter }
+        # Native trading-city fallback may run before the monthly callback.
+        clr_country_flag = zhx_gongyi_charter
+        set_country_flag = zhx_gongyi_lost_charter
+    }
+}
+
+zhx_gongyi_submit_request = {
+    if = {
+        limit = { zhx_gongyi_can_request = yes }
+        set_country_flag = zhx_gongyi_request_pending
+        set_country_flag = zhx_gongyi_request_cooldown
+        save_event_target_as = zhx_gongyi_applicant
+        event_target:zhx_tianzi = { country_event = { id = zhx_gongyi.10 days = 1 } }
+    }
+}

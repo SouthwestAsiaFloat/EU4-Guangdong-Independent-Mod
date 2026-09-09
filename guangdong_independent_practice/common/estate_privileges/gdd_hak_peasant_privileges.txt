@@ -1,0 +1,49 @@
+gdd_hak_freehold_charter = {
+    icon = gdd_hak_privilege_farmers
+    max_absolutism = -10
+    loyalty = 0.10
+    influence = 0.10
+    land_share = 10
+    cooldown_years = 10
+    is_valid = { gdd_hak_has_peasant_rights_trigger = yes }
+    can_select = { gdd_hak_has_peasant_rights_trigger = yes }
+    can_revoke = { always = yes }
+    benefits = { production_efficiency = 0.05 }
+    modifier_by_land_ownership = { global_tax_modifier = 0.15 production_efficiency = 0.15 }
+    on_granted = { custom_tooltip = gdd_hak_freehold_charter_tt }
+    ai_will_do = { factor = 10 }
+}
+
+gdd_hak_village_franchise = {
+    icon = gdd_hak_privilege_burghers
+    max_absolutism = -10
+    loyalty = 0.15
+    influence = 0.10
+    cooldown_years = 10
+    is_valid = { gdd_hak_has_peasant_rights_trigger = yes }
+    can_select = { gdd_hak_has_peasant_rights_trigger = yes }
+    can_revoke = { always = yes }
+    benefits = { reform_progress_growth = 0.10 }
+
+    on_granted = { custom_tooltip = gdd_hak_village_franchise_tt }
+    ai_will_do = { factor = 10 }
+}
+
+gdd_hak_militia_covenant = {
+    icon = gdd_hak_privilege_army
+    max_absolutism = -5
+    loyalty = 0.05
+    influence = 0.05
+    cooldown_years = 10
+    is_valid = { gdd_hak_has_peasant_rights_trigger = yes }
+    can_select = { gdd_hak_has_peasant_rights_trigger = yes }
+    can_revoke = { always = yes }
+    benefits = {
+        global_manpower_modifier = 0.15
+        land_maintenance_modifier = -0.05
+        discipline = -0.025
+    }
+
+    on_granted = { custom_tooltip = gdd_hak_militia_covenant_tt }
+    ai_will_do = { factor = 10 }
+}

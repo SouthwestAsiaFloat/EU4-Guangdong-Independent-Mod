@@ -202,7 +202,7 @@ def main() -> None:
     require("tooltip =" not in member_count_match.group(0),
             "member-count ribbon still exposes explanatory text")
 
-    for index in range(1, 66):
+    for index in range(1, 67):
         name = f"gdd_eoc_member_shield_{index:02d}"
         item = parsed.get(name)
         require(item is not None, f"missing member shield {index:02d}")
@@ -219,7 +219,7 @@ def main() -> None:
     bindings = custom_text.split("# GDD_EOC_MEMBER_BINDINGS_BEGIN", 1)[1].split(
         "# GDD_EOC_MEMBER_BINDINGS_END", 1
     )[0]
-    require(bindings.count("gdd_eoc_member_roster_page_2") == 65,
+    require(bindings.count("gdd_eoc_member_roster_page_2") == 66,
             "every member shield must have one page condition")
 
     require(parsed["gdd_eoc_member_frame"] == {
@@ -514,7 +514,7 @@ def main() -> None:
         require(alpha == 0, f"overlay still covers transparent {label} area")
     print("Integrated Mandate / Zhou-member layout: PASS")
     print("  Centred decrees fill the extended functional 12 + 4 page viewport")
-    print("  Short member panel uses a functional 48 + 17 page scrollbar")
+    print("  Short member panel uses a functional 48 + 18 page scrollbar")
     print("  Emperor and Mandate share the top row; authority track is tucked below")
     print("  Equal 220px side columns share the existing seven-feudatory centre axis")
     print("  Three native HRE buttons have equal gaps and align with the panel bottoms")

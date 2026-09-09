@@ -18,12 +18,12 @@ country_event = {
         if = {
             limit = { has_heir = no }
             define_heir = {
-                name = "àR≈k"
-                monarch_name = "àR≈k"
+                name = "Áu±W"
+                monarch_name = "Áu±W"
                 dynasty = "Åh"
                 birth_date = 1404.6.18
-                adm = 2
-                dip = 3
+                adm = 4
+                dip = 2
                 mil = 5
                 claim = 70
             }
@@ -31,7 +31,7 @@ country_event = {
     }
 }
 
-# If Shouyi succeeds Shouqian, dies first, or is disinherited first, Chengzuo
+# If Jiyuan succeeds Shouqian, dies first, or is disinherited first, Chengzuo
 # becomes the next heir. This event is called before gdd_startup.6 clears the
 # Shouqian-reigning flag on succession.
 country_event = {

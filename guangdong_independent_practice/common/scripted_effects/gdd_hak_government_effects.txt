@@ -1,0 +1,108 @@
+# Country scope. Engine faction influence is authoritative; no mirror variables.
+gdd_hak_initialize_effect = {
+    if = {
+        limit = {
+            gdd_hak_is_republic_trigger = yes
+            NOT = { has_country_flag = gdd_hak_initialized }
+        }
+        set_country_flag = gdd_hak_initialized
+        add_republican_tradition = -100
+        add_republican_tradition = 50
+        # Fresh native factions begin balanced; establish military ascendancy.
+        add_faction_influence = { faction = gdd_hak_army influence = 40 }
+    }
+    # Estate activation can follow government activation in startup ordering.
+    if = {
+        limit = {
+            gdd_hak_is_republic_trigger = yes
+            has_estate = estate_gdd_hak_peasants
+            NOT = { has_country_flag = gdd_hak_estate_initialized }
+        }
+        set_country_flag = gdd_hak_estate_initialized
+        change_estate_land_share = { estate = estate_gdd_hak_peasants share = 15 }
+    }
+}
+gdd_hak_check_crown_effect = {
+    if = {
+        limit = { gdd_hak_should_crown_trigger = yes }
+        country_event = { id = gdd_hak_government.20 }
+    }
+}
+gdd_hak_proclaim_king_effect = {
+    if = {
+        limit = { gdd_hak_should_crown_trigger = yes }
+        # Guard before callbacks. Keep the sitting ruler and peasant privileges.
+        set_country_flag = gdd_hak_crowned
+        change_government = monarchy
+        add_government_reform = autocracy_reform
+        set_government_rank = 2
+        # Also clear a surviving native faction entry if the engine retained it.
+        if = { limit = { has_faction = gdd_hak_farmers } remove_faction = gdd_hak_farmers }
+        if = { limit = { has_faction = gdd_hak_burghers } remove_faction = gdd_hak_burghers }
+        if = { limit = { has_faction = gdd_hak_army } remove_faction = gdd_hak_army }
+    }
+}
+gdd_hak_restore_civil_rule_effect = {
+    if = {
+        limit = { gdd_hak_can_restore_civil_rule_trigger = yes }
+        # Native addition replaces tier one directly. Removing the old reform
+        # first transiently disables estates and destroys their privileges.
+        add_government_reform = gdd_hak_communal_republic_reform
+        set_country_flag = gdd_hak_civil_rule_restored
+        country_event = { id = gdd_hak_government.10 }
+    }
+}
+gdd_hak_monthly_effect = {
+    if = {
+        limit = { gdd_hak_is_republic_trigger = yes }
+        gdd_hak_initialize_effect = yes
+        if = {
+            limit = { is_at_war = yes }
+            # One pulse per country, not one effect per concurrent war.
+            if = {
+                limit = { has_estate_privilege = gdd_hak_militia_covenant }
+                add_faction_influence = { faction = gdd_hak_army influence = 0.10 }
+            }
+            else = {
+                add_faction_influence = { faction = gdd_hak_army influence = 0.20 }
+            }
+        }
+        if = {
+            limit = { has_estate_privilege = gdd_hak_village_franchise }
+            add_faction_influence = { faction = gdd_hak_farmers influence = 0.10 }
+        }
+        gdd_hak_check_crown_effect = yes
+        # A republican AI can pursue the same civil exit once eligible.
+        if = {
+            limit = { ai = yes gdd_hak_can_restore_civil_rule_trigger = yes }
+            gdd_hak_restore_civil_rule_effect = yes
+        }
+    }
+}
+
+gdd_hak_support_farmers_effect = {
+    if = {
+        limit = { gdd_hak_is_republic_trigger = yes adm_power = 10 }
+        add_adm_power = -10
+        add_faction_influence = { faction = gdd_hak_farmers influence = 10 }
+        gdd_hak_check_crown_effect = yes
+    }
+}
+
+gdd_hak_support_burghers_effect = {
+    if = {
+        limit = { gdd_hak_is_republic_trigger = yes dip_power = 10 }
+        add_dip_power = -10
+        add_faction_influence = { faction = gdd_hak_burghers influence = 10 }
+        gdd_hak_check_crown_effect = yes
+    }
+}
+
+gdd_hak_support_army_effect = {
+    if = {
+        limit = { gdd_hak_is_republic_trigger = yes mil_power = 10 }
+        add_mil_power = -10
+        add_faction_influence = { faction = gdd_hak_army influence = 10 }
+        gdd_hak_check_crown_effect = yes
+    }
+}

@@ -76,6 +76,7 @@ AREA_NAMES = {
     "dong_hebei_area": "孤竹",
     "yandu_area": "燕都",
     "south_hebei_area": "赵地",
+    "daming_area": "大名",
     "luxi_area": "东郡",
     "qizhou_area": "临淄",
     "denglai_area": "东莱",
@@ -104,6 +105,15 @@ AREA_NAMES = {
     "huaiyang_tongtai_area": "淮扬",
     "huaiying_area": "淮颍",
     "jianghuai_area": "江淮",
+    # B47 Jingxiang-Yunan refinement areas retained by the authoritative
+    # override layer; keep them in this generator so later runs cannot erase
+    # the already-approved names.
+    "hanshang_area": "鄢庸",
+    "yunmeng_jingmen_area": "江汉",
+    "jingyi_area": "荆郢",
+    "yigui_area": "夷陵",
+    "wandeng_area": "申邓",
+    "rucai_area": "汝蔡",
 }
 if (ROOT / "planning/chuandongbei_chongqing_b46/batch_manifest.json").exists():
     AREA_NAMES["chuanbei_area"] = "苴阆"
@@ -115,6 +125,15 @@ OWNER_HINTS = {
     "hebei_area": "gdd_b24_workshop_hebei_utf8.txt",
 }
 
+# These B47 families intentionally live only in the final replace layer.  They
+# predate this generator's source-owner bookkeeping and must not be copied into
+# an unrelated readable source merely because the authoritative layer is being
+# regenerated for B78.
+AUTHORITATIVE_ONLY_AREAS = {
+    "hanshang_area", "yunmeng_jingmen_area", "jingyi_area",
+    "yigui_area", "wandeng_area", "rucai_area", "daming_area",
+}
+
 LINE_RE = re.compile(r'^(\s*)([A-Za-z0-9_]+):0\s+".*"\s*$')
 
 
@@ -123,7 +142,7 @@ def family(area: str) -> tuple[str, str, str]:
 
 
 def main() -> None:
-    assert len(AREA_NAMES) == 85
+    assert len(AREA_NAMES) == 92
     assert all(len(name) == 2 for name in AREA_NAMES.values())
 
     paths = sorted(path for path in SOURCE_DIR.glob("*.txt") if path != AUTHORITATIVE_SOURCE)
@@ -149,6 +168,8 @@ def main() -> None:
     missing_by_path: dict[Path, list[str]] = {}
     for area, name in AREA_NAMES.items():
         owner = owners.get(area)
+        if owner is None and area in AUTHORITATIVE_ONLY_AREAS:
+            continue
         if owner is None:
             owner = SOURCE_DIR / OWNER_HINTS[area]
         for key in family(area):
@@ -184,8 +205,12 @@ def main() -> None:
         )
     override_text = "\n".join(override_lines) + "\n"
     previous = AUTHORITATIVE_SOURCE.read_text(encoding="utf-8-sig") if AUTHORITATIVE_SOURCE.exists() else None
-    if previous != override_text:
-        AUTHORITATIVE_SOURCE.write_text(override_text, encoding="utf-8", newline="\n")
+    missing_bom = (
+        AUTHORITATIVE_SOURCE.exists()
+        and not AUTHORITATIVE_SOURCE.read_bytes().startswith(b"\xef\xbb\xbf")
+    )
+    if previous != override_text or missing_bom:
+        AUTHORITATIVE_SOURCE.write_text(override_text, encoding="utf-8-sig", newline="\n")
         changed.append(AUTHORITATIVE_SOURCE.name)
 
     print(f"Applied {len(AREA_NAMES)} area names; changed {len(changed)} source files")

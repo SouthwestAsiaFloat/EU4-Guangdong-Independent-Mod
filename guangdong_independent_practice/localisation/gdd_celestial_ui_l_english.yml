@@ -95,6 +95,7 @@
  GDD_EOC_MEMBER_SHIELD_63_TT:0 "[gdd_eoc_member_roster_63.GetGddEocMemberShieldTooltip]"
  GDD_EOC_MEMBER_SHIELD_64_TT:0 "[gdd_eoc_member_roster_64.GetGddEocMemberShieldTooltip]"
  GDD_EOC_MEMBER_SHIELD_65_TT:0 "[gdd_eoc_member_roster_65.GetGddEocMemberShieldTooltip]"
+ GDD_EOC_MEMBER_SHIELD_66_TT:0 "[gdd_eoc_member_roster_66.GetGddEocMemberShieldTooltip]"
  gdd_eoc_member_tooltip_blank:0 ""
  gdd_eoc_member_tooltip_ai_none:0 "§Y[Root.GetName]§!=fhT)YNbXTýV0¹pûQSbVå‹ýVY²Nu˜b—0\n------------\nÖNìNîvMRN=ecûNUOS8gÇ„v9ei—0"
  gdd_eoc_member_tooltip_ai_supported:0 "§Y[Root.GetName]§!=fhT)YNbXTýV0¹pûQSbVå‹ýVY²Nu˜b—0\n------------[Root.GetGddEocMemberTop1Block][Root.GetGddEocMemberTop2Block][Root.GetGddEocMemberOtherSupportsBlock]"
@@ -184,7 +185,7 @@
  GDD_TIANXIA_PROVINCE_MEMBER_STATUS_TT:0 "§Y[Root.GetName]§!^SŽNhT)YN0"
  GDD_TIANXIA_PROVINCE_ADD_TT:0 "§YS[Root.GetName] ReQhT)YN§!\n------------\njOHNhT)YNbXTÿbìNïSåNSŒTs^µc6RN„vôv^SŒRte8hÃV0WWW³ueQ)YN‚Ms0\n–™!k³ueQöeÿÏk¹pÑSUS¦^ÙuˆN-NNS‡v^§G0.1§!‹s‹TÿUS8N0WWWgYÙuˆN§G20§!‹s‹T0"
  GDD_TIANXIA_PROVINCE_REMOVE_TT:0 "§YO[Root.GetName]1»yhT)YN§!\n------------\njOHNhT)YNKNY„výV¶RÿbìNïSåN(WŒTs^µc6Rå‹0WWWöe²d»ShT)YNËV°‹0dkLNSM–NO-NNS‡v^„v‹s‹Tÿv^O-NNS‡v^ùRbýV„v‹Yav`S0\nûyd–Tÿå‹ËV°‹NOQ!kLfHyÿôvóbýV ReQhT)YN0"
- GDD_LEAVE_TIANXIA_BUTTON_TT:0 "§Y1»yhT)YN§!\nnfbXTýVïS(WŒTs^öegúQ0býVôv¥cåb	g„vhQèhT)YN0WWWONv^ûyd–ÿÏk¹pøvsQÑSUS¦^cbd–§R0.1§!‹s‹TÿI`¡‹gYcbd–§R20§!‹s‹Tÿ-NNS‡v^ùRbýV„v‹YaSM–NO§R100§!0\n)YPRN-NNS‡v^NýwO(udk	c®”0"
+ GDD_LEAVE_TIANXIA_BUTTON_TT:0 "§Y1»yhT)YN§!\nnfbXTýVïS(WŒTs^öegúQ0býVôv¥cåb	g„vhQèhT)YN0WWWONv^ûyd–ÿÏk¹pøvsQÑSUS¦^cbd–§R0.1§!‹s‹TÿI`¡‹gYcbd–§R20§!‹s‹Tÿ-NNS‡v^ùRbýV„v‹YaSM–NO§R100§!0\nmc1Y§R25§!ZgÿvQÖNnfbXTùRbýV·ƒ—VASt^§R-25§!‹YaÿŒNASt^…QN—VÍ‘°e3u÷‹0å‚)YPRN-NNS‡v^v^^—TNýVÿ)YPRæS·ƒ—VASt^§R-50§!‹Ya0\n)YPRN-NNS‡v^NýwO(udk	c®”0"
  GDD_ADD_ALL_TIANXIA_PROVINCES_BUTTON_TT:0 "§YSNb	g0WWW ReQhT)YN§!\nŠbbýVôv¥cåb	g0µc6RNwQ	gŒRte8hÃV„vhQèTJh0WWW³ueQhT)YN0^y1WWlš^ýV0WWWÅV‰˜HQúQ^yW0\nÏk8N0WWWÅN(W–™!k ReQöe	cÑSUS¦^ÙuˆN‹s‹TÿUS8N0WWWNP–HN§G20§!ÿteybÍdjO¡l	gI`NP–0"
  GDD_DISMANTLE_TIANXIA_BUTTON_TT:0 "§Yã‰cehT)YN§!\n^—bXT²NbýVÅV‰˜²Nêµc6R-NNS‡v^0)YPRŒTNb	g°sXRN'Yø‹¯O„v–™ý0\nã‰ce=f8lEN„vÿbXT00WWW09ei—0•bhy0lQ®‹0CgZHeœgNhT)YNyrŠkã^SsQûsýO«ˆnd–ÿ-NNS^ýVHg6RmNO–KNã‰ce0"
 
@@ -200,7 +201,7 @@
  gdd_tianxia_territory.2.a:0 "OvQ1»yhT)YN"
  GDD_TIANXIA_PROVINCE_REMOVE_OPTION_TT:0 "§Y[gdd_tianxia_province_action.GetName]§!S1»yhT)YN0\n-NNS‡v^1Y»S§R[Root.gdd_tianxia_removal_mandate_cost.GetValue]§!‹s‹T0\n-NNS‡v^ùRbýV„v‹YaM–NO§R25§!0"
  gdd_tianxia_territory.3.t:0 "1»yhT)YNÿ"
- gdd_tianxia_territory.3.d:0 "hT)YNåNgO0ßv“ŠNqQT‚Msôuûsø‹¯OTR0å‚býVckVúQÿôv^S†uWSNv^ÎN)YN‚Msd–Tÿ-NNS‡v^mNÅVSÆ‰dkLNHNùRJy6RNvQCgZ„vlQVÌwV0"
+ gdd_tianxia_territory.3.d:0 "hT)YNåNgO0ßv“ŠNqQT‚Msôuûsø‹¯OTR0å‚býVckVúQÿôv^S†uWSNv^ÎN)YN‚Msd–Tÿ-NNS‡v^mNÅVSÆ‰dkLNHNùRJy6RNvQCgZ„vlQVÌwV0dkLNSmcÊSbýVðXgNø‹¯OÅ`ŒÿObìN(WdkTNµkSg…Q¾–åNÍ‘RVßvMsÿâe	g„v¯rßvKN1mNNO–KNˆmce0"
  gdd_tianxia_territory.3.a:0 "ckV1»yhT)YN"
  gdd_tianxia_territory.4.t:0 "ã‰cehT)YNÿ"
  gdd_tianxia_territory.4.d:0 "dkLNS8lENã‰cehT)YNÊS-NNS^ýVÿNb	gbXT«ŽýN0hT)YN0WWW09ei—0lQ®‹0•bhy0CgZHeœgŒTyrŠkã^SsQûsýO«ˆnd–ÿNNýwÍ‘°eRËYS0"

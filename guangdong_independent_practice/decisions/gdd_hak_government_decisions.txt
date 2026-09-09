@@ -1,0 +1,12 @@
+country_decisions = {
+    gdd_hak_restore_civil_rule = {
+        major = yes
+        potential = {
+            gdd_hak_is_republic_trigger = yes
+            has_reform = gdd_hak_revolutionary_army_reform
+        }
+        allow = { gdd_hak_can_restore_civil_rule_trigger = yes }
+        effect = { gdd_hak_restore_civil_rule_effect = yes }
+        ai_will_do = { factor = 1 }
+    }
+}

@@ -1,0 +1,678 @@
+{
+  "source": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/save games/\u660e1445_01_02_overnight_mng_fixed_0345.eu4",
+  "date": "1445.1.2",
+  "sha256": "8ec6c9b5ceca7d6f5f79baf06f671577788f52ae42c60a95a7dd13d714328b54",
+  "note": "Actual entirely new campaign after government-order fix and two monthly updates.",
+  "rows": [
+    {
+      "tag": "ACG",
+      "rank": 1,
+      "reforms": [
+        "monarchy_mechanic",
+        "zhx_feudatory_hou_reform"
+      ],
+      "expected": "zhx_feudatory_hou_reform",
+      "pass": true
+    },
+    {
+      "tag": "BAA",
+      "rank": 1,
+      "reforms": [
+        "monarchy_mechanic",
+        "zhx_feudatory_hou_reform"
+      ],
+      "expected": "zhx_feudatory_hou_reform",
+      "pass": true
+    },
+    {
+      "tag": "CAG",
+      "rank": 1,
+      "reforms": [
+        "monarchy_mechanic",
+        "zhx_feudatory_bo_reform"
+      ],
+      "expected": "zhx_feudatory_bo_reform",
+      "pass": true
+    },
+    {
+      "tag": "CAI",
+      "rank": 1,
+      "reforms": [
+        "monarchy_mechanic",
+        "zhx_feudatory_bo_reform"
+      ],
+      "expected": "zhx_feudatory_bo_reform",
+      "pass": true
+    },
+    {
+      "tag": "CCH",
+      "rank": 1,
+      "reforms": [
+        "monarchy_mechanic",
+        "zhx_feudatory_bo_reform"
+      ],
+      "expected": "zhx_feudatory_bo_reform",
+      "pass": true
+    },
+    {
+      "tag": "CHC",
+      "rank": 2,
+      "reforms": [
+        "monarchy_mechanic",
+        "zhx_feudatory_gong_reform"
+      ],
+      "expected": "zhx_feudatory_gong_reform",
+      "pass": true
+    },
+    {
+      "tag": "CHN",
+      "rank": 1,
+      "reforms": [
+        "monarchy_mechanic",
+        "zhx_feudatory_bo_reform"
+      ],
+      "expected": "zhx_feudatory_bo_reform",
+      "pass": true
+    },
+    {
+      "tag": "CSA",
+      "rank": 1,
+      "reforms": [
+        "monarchy_mechanic",
+        "zhx_feudatory_bo_reform"
+      ],
+      "expected": "zhx_feudatory_bo_reform",
+      "pass": true
+    },
+    {
+      "tag": "DAE",
+      "rank": 1,
+      "reforms": [
+        "monarchy_mechanic",
+        "zhx_feudatory_bo_reform"
+      ],
+      "expected": "zhx_feudatory_bo_reform",
+      "pass": true
+    },
+    {
+      "tag": "DAI",
+      "rank": 1,
+      "reforms": [
+        "monarchy_mechanic",
+        "zhx_feudatory_bo_reform"
+      ],
+      "expected": "zhx_feudatory_bo_reform",
+      "pass": true
+    },
+    {
+      "tag": "DIA",
+      "rank": 1,
+      "reforms": [
+        "monarchy_mechanic",
+        "zhx_feudatory_bo_reform"
+      ],
+      "expected": "zhx_feudatory_bo_reform",
+      "pass": true
+    },
+    {
+      "tag": "DMG",
+      "rank": 1,
+      "reforms": [
+        "monarchy_mechanic",
+        "zhx_feudatory_bo_reform"
+      ],
+      "expected": "zhx_feudatory_bo_reform",
+      "pass": true
+    },
+    {
+      "tag": "DQU",
+      "rank": 1,
+      "reforms": [
+        "monarchy_mechanic",
+        "zhx_feudatory_bo_reform"
+      ],
+      "expected": "zhx_feudatory_bo_reform",
+      "pass": true
+    },
+    {
+      "tag": "EGU",
+      "rank": 1,
+      "reforms": [
+        "monarchy_mechanic",
+        "zhx_feudatory_bo_reform"
+      ],
+      "expected": "zhx_feudatory_bo_reform",
+      "pass": true
+    },
+    {
+      "tag": "GDD",
+      "rank": 1,
+      "reforms": [
+        "monarchy_mechanic",
+        "zhx_feudatory_hou_reform"
+      ],
+      "expected": "zhx_feudatory_hou_reform",
+      "pass": true
+    },
+    {
+      "tag": "GON",
+      "rank": 1,
+      "reforms": [
+        "monarchy_mechanic",
+        "zhx_feudatory_bo_reform"
+      ],
+      "expected": "zhx_feudatory_bo_reform",
+      "pass": true
+    },
+    {
+      "tag": "GUI",
+      "rank": 1,
+      "reforms": [
+        "monarchy_mechanic",
+        "zhx_feudatory_bo_reform"
+      ],
+      "expected": "zhx_feudatory_bo_reform",
+      "pass": true
+    },
+    {
+      "tag": "GUN",
+      "rank": 1,
+      "reforms": [
+        "monarchy_mechanic",
+        "zhx_feudatory_bo_reform"
+      ],
+      "expected": "zhx_feudatory_bo_reform",
+      "pass": true
+    },
+    {
+      "tag": "GUO",
+      "rank": 1,
+      "reforms": [
+        "monarchy_mechanic",
+        "zhx_feudatory_bo_reform"
+      ],
+      "expected": "zhx_feudatory_bo_reform",
+      "pass": true
+    },
+    {
+      "tag": "GUZ",
+      "rank": 1,
+      "reforms": [
+        "monarchy_mechanic",
+        "zhx_feudatory_bo_reform"
+      ],
+      "expected": "zhx_feudatory_bo_reform",
+      "pass": true
+    },
+    {
+      "tag": "GYA",
+      "rank": 1,
+      "reforms": [
+        "monarchy_mechanic",
+        "zhx_feudatory_bo_reform"
+      ],
+      "expected": "zhx_feudatory_bo_reform",
+      "pass": true
+    },
+    {
+      "tag": "HNG",
+      "rank": 1,
+      "reforms": [
+        "monarchy_mechanic",
+        "zhx_feudatory_bo_reform"
+      ],
+      "expected": "zhx_feudatory_bo_reform",
+      "pass": true
+    },
+    {
+      "tag": "HUA",
+      "rank": 1,
+      "reforms": [
+        "monarchy_mechanic",
+        "zhx_feudatory_bo_reform"
+      ],
+      "expected": "zhx_feudatory_bo_reform",
+      "pass": true
+    },
+    {
+      "tag": "JIZ",
+      "rank": 1,
+      "reforms": [
+        "monarchy_mechanic",
+        "zhx_feudatory_bo_reform"
+      ],
+      "expected": "zhx_feudatory_bo_reform",
+      "pass": true
+    },
+    {
+      "tag": "JUU",
+      "rank": 1,
+      "reforms": [
+        "monarchy_mechanic",
+        "zhx_feudatory_bo_reform"
+      ],
+      "expected": "zhx_feudatory_bo_reform",
+      "pass": true
+    },
+    {
+      "tag": "LCH",
+      "rank": 1,
+      "reforms": [
+        "monarchy_mechanic",
+        "zhx_feudatory_bo_reform"
+      ],
+      "expected": "zhx_feudatory_bo_reform",
+      "pass": true
+    },
+    {
+      "tag": "LIO",
+      "rank": 1,
+      "reforms": [
+        "monarchy_mechanic",
+        "zhx_feudatory_bo_reform"
+      ],
+      "expected": "zhx_feudatory_bo_reform",
+      "pass": true
+    },
+    {
+      "tag": "LIU",
+      "rank": 1,
+      "reforms": [
+        "monarchy_mechanic",
+        "zhx_feudatory_bo_reform"
+      ],
+      "expected": "zhx_feudatory_bo_reform",
+      "pass": true
+    },
+    {
+      "tag": "LUO",
+      "rank": 1,
+      "reforms": [
+        "monarchy_mechanic",
+        "zhx_feudatory_bo_reform"
+      ],
+      "expected": "zhx_feudatory_bo_reform",
+      "pass": true
+    },
+    {
+      "tag": "LUU",
+      "rank": 1,
+      "reforms": [
+        "monarchy_mechanic",
+        "zhx_feudatory_bo_reform"
+      ],
+      "expected": "zhx_feudatory_bo_reform",
+      "pass": true
+    },
+    {
+      "tag": "MIN",
+      "rank": 1,
+      "reforms": [
+        "monarchy_mechanic",
+        "zhx_feudatory_bo_reform"
+      ],
+      "expected": "zhx_feudatory_bo_reform",
+      "pass": true
+    },
+    {
+      "tag": "MNG",
+      "rank": 2,
+      "reforms": [
+        "monarchy_mechanic",
+        "zhx_feudatory_gong_reform"
+      ],
+      "expected": "zhx_feudatory_gong_reform",
+      "pass": true
+    },
+    {
+      "tag": "NCH",
+      "rank": 1,
+      "reforms": [
+        "monarchy_mechanic",
+        "zhx_feudatory_bo_reform"
+      ],
+      "expected": "zhx_feudatory_bo_reform",
+      "pass": true
+    },
+    {
+      "tag": "OUE",
+      "rank": 1,
+      "reforms": [
+        "monarchy_mechanic",
+        "zhx_feudatory_bo_reform"
+      ],
+      "expected": "zhx_feudatory_bo_reform",
+      "pass": true
+    },
+    {
+      "tag": "QIC",
+      "rank": 1,
+      "reforms": [
+        "monarchy_mechanic",
+        "zhx_feudatory_hou_reform"
+      ],
+      "expected": "zhx_feudatory_hou_reform",
+      "pass": true
+    },
+    {
+      "tag": "QIN",
+      "rank": 1,
+      "reforms": [
+        "monarchy_mechanic",
+        "zhx_feudatory_hou_reform"
+      ],
+      "expected": "zhx_feudatory_hou_reform",
+      "pass": true
+    },
+    {
+      "tag": "QSH",
+      "rank": 1,
+      "reforms": [
+        "monarchy_mechanic",
+        "zhx_feudatory_bo_reform"
+      ],
+      "expected": "zhx_feudatory_bo_reform",
+      "pass": true
+    },
+    {
+      "tag": "QVN",
+      "rank": 1,
+      "reforms": [
+        "monarchy_mechanic",
+        "zhx_feudatory_bo_reform"
+      ],
+      "expected": "zhx_feudatory_bo_reform",
+      "pass": true
+    },
+    {
+      "tag": "QWO",
+      "rank": 1,
+      "reforms": [
+        "monarchy_mechanic",
+        "zhx_feudatory_bo_reform"
+      ],
+      "expected": "zhx_feudatory_bo_reform",
+      "pass": true
+    },
+    {
+      "tag": "SHE",
+      "rank": 1,
+      "reforms": [
+        "monarchy_mechanic",
+        "zhx_feudatory_bo_reform"
+      ],
+      "expected": "zhx_feudatory_bo_reform",
+      "pass": true
+    },
+    {
+      "tag": "SHU",
+      "rank": 1,
+      "reforms": [
+        "monarchy_mechanic",
+        "zhx_feudatory_hou_reform"
+      ],
+      "expected": "zhx_feudatory_hou_reform",
+      "pass": true
+    },
+    {
+      "tag": "SNG",
+      "rank": 1,
+      "reforms": [
+        "monarchy_mechanic",
+        "zhx_feudatory_bo_reform"
+      ],
+      "expected": "zhx_feudatory_bo_reform",
+      "pass": true
+    },
+    {
+      "tag": "SUI",
+      "rank": 1,
+      "reforms": [
+        "monarchy_mechanic",
+        "zhx_feudatory_bo_reform"
+      ],
+      "expected": "zhx_feudatory_bo_reform",
+      "pass": true
+    },
+    {
+      "tag": "WEI",
+      "rank": 1,
+      "reforms": [
+        "monarchy_mechanic",
+        "zhx_feudatory_hou_reform"
+      ],
+      "expected": "zhx_feudatory_hou_reform",
+      "pass": true
+    },
+    {
+      "tag": "WUU",
+      "rank": 2,
+      "reforms": [
+        "monarchy_mechanic",
+        "zhx_feudatory_gong_reform"
+      ],
+      "expected": "zhx_feudatory_gong_reform",
+      "pass": true
+    },
+    {
+      "tag": "WUZ",
+      "rank": 1,
+      "reforms": [
+        "monarchy_mechanic",
+        "zhx_feudatory_bo_reform"
+      ],
+      "expected": "zhx_feudatory_bo_reform",
+      "pass": true
+    },
+    {
+      "tag": "WVG",
+      "rank": 1,
+      "reforms": [
+        "monarchy_mechanic",
+        "zhx_feudatory_bo_reform"
+      ],
+      "expected": "zhx_feudatory_bo_reform",
+      "pass": true
+    },
+    {
+      "tag": "XNG",
+      "rank": 1,
+      "reforms": [
+        "monarchy_mechanic",
+        "zhx_feudatory_bo_reform"
+      ],
+      "expected": "zhx_feudatory_bo_reform",
+      "pass": true
+    },
+    {
+      "tag": "XU2",
+      "rank": 1,
+      "reforms": [
+        "monarchy_mechanic",
+        "zhx_feudatory_hou_reform"
+      ],
+      "expected": "zhx_feudatory_hou_reform",
+      "pass": true
+    },
+    {
+      "tag": "YAN",
+      "rank": 1,
+      "reforms": [
+        "monarchy_mechanic",
+        "zhx_feudatory_bo_reform"
+      ],
+      "expected": "zhx_feudatory_bo_reform",
+      "pass": true
+    },
+    {
+      "tag": "YOU",
+      "rank": 1,
+      "reforms": [
+        "monarchy_mechanic",
+        "zhx_feudatory_bo_reform"
+      ],
+      "expected": "zhx_feudatory_bo_reform",
+      "pass": true
+    },
+    {
+      "tag": "YPG",
+      "rank": 1,
+      "reforms": [
+        "monarchy_mechanic",
+        "zhx_feudatory_bo_reform"
+      ],
+      "expected": "zhx_feudatory_bo_reform",
+      "pass": true
+    },
+    {
+      "tag": "YUE",
+      "rank": 2,
+      "reforms": [
+        "monarchy_mechanic",
+        "zhx_feudatory_gong_reform"
+      ],
+      "expected": "zhx_feudatory_gong_reform",
+      "pass": true
+    },
+    {
+      "tag": "ZHA",
+      "rank": 1,
+      "reforms": [
+        "monarchy_mechanic",
+        "zhx_feudatory_hou_reform"
+      ],
+      "expected": "zhx_feudatory_hou_reform",
+      "pass": true
+    },
+    {
+      "tag": "ZHG",
+      "rank": 1,
+      "reforms": [
+        "monarchy_mechanic",
+        "zhx_feudatory_bo_reform"
+      ],
+      "expected": "zhx_feudatory_bo_reform",
+      "pass": true
+    },
+    {
+      "tag": "ZHU",
+      "rank": 1,
+      "reforms": [
+        "monarchy_mechanic",
+        "zhx_feudatory_bo_reform"
+      ],
+      "expected": "zhx_feudatory_bo_reform",
+      "pass": true
+    },
+    {
+      "tag": "ZNG",
+      "rank": 1,
+      "reforms": [
+        "monarchy_mechanic",
+        "zhx_feudatory_bo_reform"
+      ],
+      "expected": "zhx_feudatory_bo_reform",
+      "pass": true
+    },
+    {
+      "tag": "ZSH",
+      "rank": 1,
+      "reforms": [
+        "monarchy_mechanic",
+        "zhx_feudatory_bo_reform"
+      ],
+      "expected": "zhx_feudatory_bo_reform",
+      "pass": true
+    },
+    {
+      "tag": "CDE",
+      "rank": 1,
+      "reforms": [
+        "republic_mechanic",
+        "oligarchy_reform"
+      ],
+      "expected": null,
+      "pass": true
+    },
+    {
+      "tag": "CZC",
+      "rank": 2,
+      "reforms": [
+        "republic_mechanic",
+        "gdd_czc_council_reform"
+      ],
+      "expected": null,
+      "pass": true
+    },
+    {
+      "tag": "HAK",
+      "rank": 2,
+      "reforms": [
+        "republic_mechanic",
+        "gdd_hak_revolutionary_army_reform"
+      ],
+      "expected": null,
+      "pass": true
+    },
+    {
+      "tag": "HYA",
+      "rank": 1,
+      "reforms": [
+        "republic_mechanic",
+        "oligarchy_reform"
+      ],
+      "expected": null,
+      "pass": true
+    },
+    {
+      "tag": "HYM",
+      "rank": 1,
+      "reforms": [
+        "republic_mechanic",
+        "oligarchy_reform"
+      ],
+      "expected": null,
+      "pass": true
+    },
+    {
+      "tag": "JJG",
+      "rank": 1,
+      "reforms": [
+        "republic_mechanic",
+        "oligarchy_reform"
+      ],
+      "expected": null,
+      "pass": true
+    },
+    {
+      "tag": "TSF",
+      "rank": 1,
+      "reforms": [
+        "monarchy_mechanic",
+        "feudalism_reform"
+      ],
+      "expected": null,
+      "pass": true
+    },
+    {
+      "tag": "WHU",
+      "rank": 1,
+      "reforms": [
+        "republic_mechanic",
+        "oligarchy_reform"
+      ],
+      "expected": null,
+      "pass": true
+    },
+    {
+      "tag": "ZHO",
+      "rank": 1,
+      "reforms": [
+        "republic_mechanic",
+        "oligarchy_reform"
+      ],
+      "expected": null,
+      "pass": true
+    }
+  ]
+}

@@ -1607,14 +1607,8 @@ zhx_allocate_gui_roster_slot = {
 }
 
 zhx_build_gui_roster = {
+    # Retired Council grid: clear legacy save targets without rebuilding it.
     zhx_clear_gui_roster = yes
-    every_country = {
-        limit = {
-            exists = yes
-            has_country_flag = zhx_member
-        }
-        zhx_allocate_gui_roster_slot = yes
-    }
     set_global_flag = zhx_gui_roster_initialised
     gdd_build_eoc_member_roster = yes
     gdd_build_eoc_great_feudatory_roster = yes
@@ -1883,6 +1877,10 @@ gdd_clear_eoc_member_roster = {
         limit = { has_saved_global_event_target = gdd_eoc_member_roster_65 }
         clear_global_event_target = gdd_eoc_member_roster_65
     }
+    if = {
+        limit = { has_saved_global_event_target = gdd_eoc_member_roster_66 }
+        clear_global_event_target = gdd_eoc_member_roster_66
+    }
 }
 
 gdd_allocate_eoc_member_roster_slot = {
@@ -2146,11 +2144,19 @@ gdd_allocate_eoc_member_roster_slot = {
         limit = { NOT = { has_saved_global_event_target = gdd_eoc_member_roster_65 } }
         save_global_event_target_as = gdd_eoc_member_roster_65
     }
+    else_if = {
+        limit = { NOT = { has_saved_global_event_target = gdd_eoc_member_roster_66 } }
+        save_global_event_target_as = gdd_eoc_member_roster_66
+    }
 }
 
 gdd_build_eoc_member_roster = {
     gdd_clear_eoc_member_roster = yes
     CZH = {
+        # Membership changes compact the entire roster from slot 01 onward.
+        # Return to page one so a country pulled forward from slot 49 is
+        # immediately visible in the final slot of the first page.
+        clr_country_flag = gdd_eoc_member_roster_page_2
         set_variable = {
             which = gdd_eoc_member_count_cache
             value = 0
@@ -2234,7 +2240,10 @@ gdd_build_eoc_great_feudatory_roster = {
             exists = yes
             has_country_flag = zhx_member
             has_country_flag = zhx_major_feudatory
-            NOT = { tag = YAN }
+            OR = {
+                NOT = { has_saved_global_event_target = gdd_principal_vassal }
+                NOT = { tag = event_target:gdd_principal_vassal }
+            }
             NOT = { has_country_flag = zhx_tianzi }
         }
         gdd_allocate_eoc_great_feudatory_roster_slot = yes

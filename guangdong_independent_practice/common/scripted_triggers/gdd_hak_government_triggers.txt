@@ -1,0 +1,28 @@
+gdd_hak_is_republic_trigger = {
+    tag = HAK
+    government = republic
+    NOT = { has_country_flag = gdd_hak_crowned }
+    OR = {
+        has_reform = gdd_hak_revolutionary_army_reform
+        has_reform = gdd_hak_communal_republic_reform
+    }
+}
+gdd_hak_has_peasant_rights_trigger = {
+    tag = HAK
+    OR = {
+        gdd_hak_is_republic_trigger = yes
+        AND = { government = monarchy has_country_flag = gdd_hak_crowned }
+    }
+}
+gdd_hak_should_crown_trigger = {
+    gdd_hak_is_republic_trigger = yes
+    faction_in_power = gdd_hak_army
+    NOT = { republican_tradition = 20 }
+}
+gdd_hak_can_restore_civil_rule_trigger = {
+    gdd_hak_is_republic_trigger = yes
+    has_reform = gdd_hak_revolutionary_army_reform
+    faction_in_power = gdd_hak_farmers
+    republican_tradition = 60
+    is_at_war = no
+}

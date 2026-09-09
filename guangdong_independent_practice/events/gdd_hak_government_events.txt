@@ -1,0 +1,46 @@
+namespace = gdd_hak_government
+
+country_event = {
+    id = gdd_hak_government.1
+    title = gdd_hak_government.10.t
+    desc = gdd_hak_government.10.d
+    picture = GOOD_WITH_MONARCH_eventPicture
+    hidden = yes
+    is_triggered_only = yes
+    trigger = { gdd_hak_is_republic_trigger = yes }
+    immediate = { gdd_hak_initialize_effect = yes
+        gdd_hak_check_crown_effect = yes }
+    option = { name = gdd_hak_government.10.a }
+}
+
+country_event = {
+    id = gdd_hak_government.2
+    title = gdd_hak_government.10.t
+    desc = gdd_hak_government.10.d
+    picture = GOOD_WITH_MONARCH_eventPicture
+    hidden = yes
+    is_triggered_only = yes
+    trigger = { gdd_hak_is_republic_trigger = yes }
+    immediate = { gdd_hak_monthly_effect = yes }
+    option = { name = gdd_hak_government.10.a }
+}
+
+country_event = {
+    id = gdd_hak_government.10
+    title = gdd_hak_government.10.t
+    desc = gdd_hak_government.10.d
+    picture = GOOD_WITH_MONARCH_eventPicture
+    is_triggered_only = yes
+    option = { name = gdd_hak_government.10.a }
+}
+
+country_event = {
+    id = gdd_hak_government.20
+    title = gdd_hak_government.20.t
+    desc = gdd_hak_government.20.d
+    picture = GOOD_WITH_MONARCH_eventPicture
+    is_triggered_only = yes
+    trigger = { gdd_hak_should_crown_trigger = yes }
+    immediate = { gdd_hak_proclaim_king_effect = yes }
+    option = { name = gdd_hak_government.20.a }
+}

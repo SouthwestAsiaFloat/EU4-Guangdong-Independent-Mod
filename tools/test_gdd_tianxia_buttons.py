@@ -12,6 +12,7 @@ import re
 import unittest
 
 from test_gdd_tianxia_territory import MOD, Province, Scripts, parse
+from validate_gdd_tianxia_territory import named_block
 
 
 LEAVE = "gdd_leave_tianxia_button"
@@ -70,11 +71,18 @@ class ButtonWorld(Scripts):
         self.events = {dict(v)["id"]: v for k, v in entries(
             MOD / "events/gdd_tianxia_territory_events.txt") if k == "country_event"}
         self.opinions = dict(entries(MOD / "common/opinion_modifiers/gdd_celestial_reform_opinions.txt"))
+        self.opinions.update(entries(MOD / "common/opinion_modifiers/zhx_diplomacy_opinions.txt"))
+        self.decisions = dict(dict(entries(MOD / "decisions/zhx_diplomacy_decisions.txt"))["country_decisions"])
         self.emperor = "CZH"
         self.countries["LUU"].flags["zhx_member"] = 0
         for country in self.countries.values():
             country.variables = {}
             country.modifiers = set()
+            country.modifier_durations = {}
+            country.reforms = set()
+            country.prestige = Decimal(0)
+            country.power_projection = {}
+            country.government = "monarchy"
             country.opinions = {}
             country.ai = False
             country.subject_type = None
@@ -145,6 +153,10 @@ class ButtonWorld(Scripts):
                 ok = self.ref(value, stack).tag in current.state_cores
             elif key in ("has_country_modifier", "has_province_modifier"):
                 ok = value in current.modifiers
+            elif key == "has_reform":
+                ok = value in current.reforms
+            elif key == "government":
+                ok = current.government == value
             elif key == "always":
                 ok = value == "yes"
             else:
@@ -224,6 +236,21 @@ class ButtonWorld(Scripts):
                 self.global_flags.discard(value)
             elif key in ("remove_country_modifier", "remove_province_modifier"):
                 current.modifiers.discard(value)
+                if hasattr(current, "modifier_durations"):
+                    current.modifier_durations.pop(value, None)
+            elif key == "add_country_modifier":
+                d = dict(value)
+                current.modifiers.add(d["name"])
+                current.modifier_durations[d["name"]] = int(d["duration"])
+            elif key == "add_prestige":
+                current.prestige = max(Decimal(-100), min(Decimal(100), current.prestige + Decimal(value)))
+            elif key == "add_power_projection":
+                d = dict(value)
+                current.power_projection[d["type"]] = current.power_projection.get(d["type"], Decimal(0)) + Decimal(d["amount"])
+            elif key == "remove_government_reform":
+                current.reforms.discard(value)
+            elif key == "add_government_reform":
+                current.reforms.add(value)
             elif key == "add_mandate":
                 assert current.tag == self.emperor, "Mandate was applied to a non-Emperor"
                 current.mandate = max(Decimal(0), min(Decimal(100), current.mandate + Decimal(value)))
@@ -325,7 +352,9 @@ class TianxiaButtons(unittest.TestCase):
         self.assertIn(TERRITORY, subject.flags)
         self.assertNotIn("zhx_member", self.w.root.flags)
         self.assertNotIn("gdd_support_reform_keju", self.w.root.flags)
-        self.assertFalse(self.w.root.modifiers)
+        self.assertEqual(self.w.root.modifiers, {"zhx_tianxia_rejoin_bar"})
+        self.assertEqual(self.w.root.modifier_durations["zhx_tianxia_rejoin_bar"], 7300)
+        self.assertEqual(self.w.root.prestige, -25)
         emperor = self.w.countries["CZH"]
         self.assertEqual(emperor.mandate, Decimal(46))
         self.assertEqual(emperor.variables["zhx_member_count_cache"], 1)
@@ -358,7 +387,94 @@ class TianxiaButtons(unittest.TestCase):
                 change(w)
                 w.choose("gdd_tianxia_territory.3")
                 self.assertIn(TERRITORY, p.flags)
-                self.assertEqual(w.countries["CZH"].mandate, Decimal(50))
+        self.assertEqual(w.countries["CZH"].mandate, Decimal(50))
+
+    def test_decision_and_button_have_identical_exit_effects(self):
+        worlds = [ButtonWorld(), ButtonWorld()]
+        for w in worlds:
+            w.province(development=32)
+            w.root.modifiers.add("zhx_tianxia_covenant_breaker")
+        worlds[0].choose("gdd_tianxia_territory.3")
+        decision = dict(worlds[1].decisions["zhx_leave_tianxia"])
+        self.assertTrue(worlds[1].evaluate(decision["allow"], [worlds[1].root]))
+        worlds[1].execute(decision["effect"], [worlds[1].root])
+        for tag in worlds[0].countries:
+            self.assertEqual(vars(worlds[0].countries[tag]), vars(worlds[1].countries[tag]))
+        self.assertEqual(vars(worlds[0].provinces[0]), vars(worlds[1].provinces[0]))
+        self.assertIn("zhx_tianxia_covenant_breaker", worlds[1].root.modifiers)
+
+    def test_exit_opinions_do_not_stack_on_emperor(self):
+        self.w.choose("gdd_tianxia_territory.3")
+        self.assertEqual(self.w.countries["CZH"].opinions,
+                         {("YAN", "gdd_opinion_left_tianxia"): (Decimal(-100), "50")})
+        self.assertEqual(self.w.countries["LUU"].opinions,
+                         {("YAN", "zhx_opinion_left_tianxia_member"): (Decimal(-25), "10")})
+        self.assertFalse(self.w.root.opinions)
+
+    def test_exit_charges_separate_tianzi(self):
+        self.w.countries["CZH"].flags.pop("zhx_tianzi")
+        self.w.countries["LUU"].flags["zhx_tianzi"] = 0
+        self.w.targets["zhx_tianzi"] = self.w.countries["LUU"]
+        self.w.choose("gdd_tianxia_territory.3")
+        self.assertEqual(self.w.countries["LUU"].opinions,
+                         {("YAN", "zhx_opinion_left_tianxia_tianzi"): (Decimal(-50), "10")})
+
+    def test_decision_effect_rechecks_eligibility_and_cannot_charge_twice(self):
+        for situation in ("emperor", "war", "already_left"):
+            with self.subTest(situation=situation):
+                w = ButtonWorld()
+                if situation == "emperor":
+                    w.actor("CZH")
+                elif situation == "war":
+                    w.root.enemies.add("KRC")
+                else:
+                    w.choose("gdd_tianxia_territory.3")
+                before = deepcopy(vars(w.root))
+                decision = dict(w.decisions["zhx_leave_tianxia"])
+                self.assertFalse(w.evaluate(decision["allow"], [w.root]))
+                w.execute(decision["effect"], [w.root])
+                self.assertEqual(before, vars(w.root))
+
+    def test_exit_cleans_new_dignity_reform_and_projection(self):
+        self.w.root.flags["zhx_major_feudatory"] = 0
+        self.w.targets["gdd_principal_vassal"] = self.w.root
+        self.w.root.power_projection["zhx_merit_dignity_power_projection"] = Decimal(20)
+        self.w.root.reforms.update({"zhx_feudatory_gong_reform", "unrelated_upper_reform"})
+        self.w.choose("gdd_tianxia_territory.3")
+        self.assertEqual(self.w.root.power_projection["zhx_merit_dignity_power_projection"], 0)
+        self.assertEqual(self.w.root.reforms, {"feudalism_reform", "unrelated_upper_reform"})
+        self.assertNotIn("gdd_principal_vassal", self.w.targets)
+
+    def test_dynamic_principal_is_excluded_from_six_seats_instead_of_yan(self):
+        self.w.root.flags["zhx_major_feudatory"] = 0
+        self.w.countries["LUU"].flags["zhx_major_feudatory"] = 0
+        self.w.targets["gdd_principal_vassal"] = self.w.countries["LUU"]
+        self.w.execute(self.w.effects["gdd_build_eoc_great_feudatory_roster"], [self.w.countries["CZH"]])
+        seats = [v.tag for k, v in self.w.targets.items() if k.startswith("gdd_eoc_great_feudatory_roster_")]
+        self.assertEqual(seats, ["YAN"])
+
+    def test_annexation_hooks_preserve_mandate_and_queue_ritual_once(self):
+        source = (MOD / "common/on_actions/zhx_system_on_actions.txt").read_text(encoding="utf-8-sig")
+        hooks = {name: parse(named_block(source, name))[name]
+                 for name in ("on_diplomatic_annex", "on_integrate", "on_annexed")}
+        for hook in ("on_diplomatic_annex", "on_integrate", "on_annexed"):
+            for actor in ("KRC", "LUU"):
+                with self.subTest(hook=hook, actor=actor):
+                    w = ButtonWorld()
+                    w.global_flags.add("zhx_system_initialised_v14")
+                    w.actor(actor)
+                    w.recipient = w.countries["YAN"]
+                    w.execute(hooks[hook], [w.root])
+                    # A second notification must not charge the same extinction.
+                    w.execute(hooks[hook], [w.root])
+                    self.assertEqual(w.countries["CZH"].mandate, 40 if actor == "KRC" else 50)
+                    self.assertEqual(w.countries["CZH"].variables["zhx_tianxia_extinction_penalty_count"], 1)
+                    self.assertNotIn("zhx_member", w.recipient.flags)
+                    self.assertIn("zhx_tianxia_membership_dirty", w.countries["CZH"].flags)
+                    self.assertNotIn("zhx_build_gui_roster", w.calls)
+                    self.assertNotIn("zhx_recount_tianxia_council_ballot", w.calls)
+                    if hook == "on_annexed":
+                        self.assertEqual(w.root.variables["zhx_diplomacy_member_extinction_count"], 1)
 
     def test_leave_after_voting_recounts_only_remaining_members(self):
         emperor = self.w.countries["CZH"]

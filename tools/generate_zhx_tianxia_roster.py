@@ -12,7 +12,7 @@ EOC_GUI = ROOT / "guangdong_independent_practice/interface/celestialempireview.g
 EOC_CUSTOM_GUI = ROOT / "guangdong_independent_practice/common/custom_gui/gdd_celestial_vassal_shields.txt"
 
 SLOTS = 200
-EOC_SLOTS = 65
+EOC_SLOTS = 66
 GREAT_FEUDATORY_SLOTS = 6
 EOC_COLUMNS = 8
 EOC_ROWS = 6
@@ -23,8 +23,12 @@ EOC_COLUMN_STEP = 23
 EOC_ROW_STEP = 30
 
 
-def replace_generated_block(path: Path, begin: str, end: str, body: str) -> None:
+def replace_generated_block(path: Path, begin: str, end: str, body: str, *, retired_ok: bool = False) -> None:
     text = path.read_text(encoding="utf-8")
+    # The merit-store redesign retired the Council's old 200-shield panel.
+    # Keep legacy cache cleanup, but do not recreate removed UI controls.
+    if retired_ok and begin not in text and end not in text:
+        return
     before, remainder = text.split(begin, maxsplit=1)
     _, after = remainder.split(end, maxsplit=1)
     path.write_text(f"{before}{begin}\n{body}\n{end}{after}", encoding="utf-8")
@@ -172,14 +176,8 @@ def effect_file() -> str:
             "}",
             "",
             "zhx_build_gui_roster = {",
+            "    # Retired Council grid: clear legacy save targets without rebuilding it.",
             "    zhx_clear_gui_roster = yes",
-            "    every_country = {",
-            "        limit = {",
-            "            exists = yes",
-            "            has_country_flag = zhx_member",
-            "        }",
-            "        zhx_allocate_gui_roster_slot = yes",
-            "    }",
             "    set_global_flag = zhx_gui_roster_initialised",
             "    gdd_build_eoc_member_roster = yes",
             "    gdd_build_eoc_great_feudatory_roster = yes",
@@ -222,6 +220,10 @@ def effect_file() -> str:
             "gdd_build_eoc_member_roster = {",
             "    gdd_clear_eoc_member_roster = yes",
             "    CZH = {",
+            "        # Membership changes compact the entire roster from slot 01 onward.",
+            "        # Return to page one so a country pulled forward from slot 49 is",
+            "        # immediately visible in the final slot of the first page.",
+            "        clr_country_flag = gdd_eoc_member_roster_page_2",
             "        set_variable = {",
             "            which = gdd_eoc_member_count_cache",
             "            value = 0",
@@ -249,7 +251,7 @@ def effect_file() -> str:
 
     # The principal feudatory has its own stable target. These six targets are
     # the remaining great-feudatory seats displayed below it. Keep this cache
-    # in the generator: regenerating the 65-member grid must never erase the
+    # in the generator: regenerating the member grid must never erase the
     # independent seven-seat presentation.
     lines.extend(["gdd_clear_eoc_great_feudatory_roster = {"])
     for index in range(1, GREAT_FEUDATORY_SLOTS + 1):
@@ -283,7 +285,10 @@ def effect_file() -> str:
             "            exists = yes",
             "            has_country_flag = zhx_member",
             "            has_country_flag = zhx_major_feudatory",
-            "            NOT = { tag = YAN }",
+            "            OR = {",
+            "                NOT = { has_saved_global_event_target = gdd_principal_vassal }",
+            "                NOT = { tag = event_target:gdd_principal_vassal }",
+            "            }",
             "            NOT = { has_country_flag = zhx_tianzi }",
             "        }",
             "        gdd_allocate_eoc_great_feudatory_roster_slot = yes",
@@ -302,12 +307,14 @@ def main() -> None:
         "\t\t\t# ZHX_ROSTER_SHIELDS_BEGIN",
         "\t\t\t# ZHX_ROSTER_SHIELDS_END",
         gui_blocks(),
+        retired_ok=True,
     )
     replace_generated_block(
         CUSTOM_GUI,
         "# ZHX_ROSTER_BINDINGS_BEGIN",
         "# ZHX_ROSTER_BINDINGS_END",
         binding_blocks(),
+        retired_ok=True,
     )
     replace_generated_block(
         EOC_GUI,
@@ -323,7 +330,7 @@ def main() -> None:
     )
     EFFECTS.write_text(effect_file(), encoding="utf-8")
     print(
-        f"generated {SLOTS} Zhou Council slots and "
+        f"generated cleanup for {SLOTS} legacy Zhou Council slots and "
         f"{EOC_SLOTS} Mandate-window member slots"
     )
 

@@ -1,6 +1,8 @@
 # test 与当前本地功能的合并指南
 
-本次只读取远端并在 `codex_preview/merge-test-audit-20260909` 预演逐文件三方合并，没有 fetch 到当前 Git 数据库、切换分支、提交、修改 mod 或 push。
+更新：用户已执行合并，本次已在 `codex/merge-test-20260909` 解决工作区中的七个冲突文件及功能衔接问题，尚未暂存、提交或推送。请按 [合并修复记录](merge_resolution_2026-09-09.md) 的收尾命令操作；下文保留为执行合并前的审查记录，无须再次创建分支或重新 merge。
+
+原审查只读取远端并在 `codex_preview/merge-test-audit-20260909` 预演逐文件三方合并。
 
 ## 已核实状态
 

@@ -1,0 +1,108 @@
+# 盟功商店与二十五年大诸侯改选的公共判断接口。
+
+zhx_merit_rank_is_eligible = {
+    exists = yes
+    zhx_is_tianxia_member = yes
+    has_country_flag = zhx_merit_active_contribution_this_term
+    NOT = { has_country_flag = zhx_merit_rank_selected }
+    NOT = { has_country_flag = zhx_tianzi }
+}
+
+# 当前作用域国家与两个临时事件目标比较。变量的第二个 which 可以指向
+# 另一作用域，并读取该作用域中的同名变量；这是原生的跨作用域排序接口。
+zhx_merit_rank_candidate_is_better = {
+    OR = {
+        # 本届盟功严格更高。
+        AND = {
+            check_variable = { which = zhx_merit_term which = event_target:zhx_merit_rank_best }
+            event_target:zhx_merit_rank_best = {
+                NOT = { check_variable = { which = zhx_merit_term which = event_target:zhx_merit_rank_current } }
+            }
+        }
+        # 本届盟功相等，终身盟功严格更高。
+        AND = {
+            check_variable = { which = zhx_merit_term which = event_target:zhx_merit_rank_best }
+            event_target:zhx_merit_rank_best = {
+                check_variable = { which = zhx_merit_term which = event_target:zhx_merit_rank_current }
+            }
+            check_variable = { which = zhx_merit_lifetime which = event_target:zhx_merit_rank_best }
+            event_target:zhx_merit_rank_best = {
+                NOT = { check_variable = { which = zhx_merit_lifetime which = event_target:zhx_merit_rank_current } }
+            }
+        }
+        # 两本账都相等时，现任七大诸侯优先留任。
+        AND = {
+            check_variable = { which = zhx_merit_term which = event_target:zhx_merit_rank_best }
+            event_target:zhx_merit_rank_best = {
+                check_variable = { which = zhx_merit_term which = event_target:zhx_merit_rank_current }
+            }
+            check_variable = { which = zhx_merit_lifetime which = event_target:zhx_merit_rank_best }
+            event_target:zhx_merit_rank_best = {
+                check_variable = { which = zhx_merit_lifetime which = event_target:zhx_merit_rank_current }
+                NOT = { has_country_flag = zhx_major_feudatory }
+            }
+            has_country_flag = zhx_major_feudatory
+        }
+        # 仍然相等时，以威望严格更高者优先。
+        AND = {
+            check_variable = { which = zhx_merit_term which = event_target:zhx_merit_rank_best }
+            event_target:zhx_merit_rank_best = {
+                check_variable = { which = zhx_merit_term which = event_target:zhx_merit_rank_current }
+            }
+            check_variable = { which = zhx_merit_lifetime which = event_target:zhx_merit_rank_best }
+            event_target:zhx_merit_rank_best = {
+                check_variable = { which = zhx_merit_lifetime which = event_target:zhx_merit_rank_current }
+                has_country_flag = zhx_major_feudatory
+            }
+            has_country_flag = zhx_major_feudatory
+            check_variable = { which = zhx_merit_rank_prestige which = event_target:zhx_merit_rank_best }
+            event_target:zhx_merit_rank_best = {
+                NOT = { check_variable = { which = zhx_merit_rank_prestige which = event_target:zhx_merit_rank_current } }
+            }
+        }
+        AND = {
+            check_variable = { which = zhx_merit_term which = event_target:zhx_merit_rank_best }
+            event_target:zhx_merit_rank_best = {
+                check_variable = { which = zhx_merit_term which = event_target:zhx_merit_rank_current }
+            }
+            check_variable = { which = zhx_merit_lifetime which = event_target:zhx_merit_rank_best }
+            event_target:zhx_merit_rank_best = {
+                check_variable = { which = zhx_merit_lifetime which = event_target:zhx_merit_rank_current }
+                NOT = { has_country_flag = zhx_major_feudatory }
+            }
+            NOT = { has_country_flag = zhx_major_feudatory }
+            check_variable = { which = zhx_merit_rank_prestige which = event_target:zhx_merit_rank_best }
+            event_target:zhx_merit_rank_best = {
+                NOT = { check_variable = { which = zhx_merit_rank_prestige which = event_target:zhx_merit_rank_current } }
+            }
+        }
+    }
+}
+
+zhx_can_buy_merit_store_governance = {
+    zhx_is_tianxia_member = yes
+    check_variable = { which = zhx_merit value = 50 }
+    NOT = { has_country_modifier = zhx_merit_store_relief }
+    NOT = { has_country_modifier = zhx_merit_store_governance }
+}
+
+zhx_can_buy_merit_store_economy = {
+    zhx_is_tianxia_member = yes
+    check_variable = { which = zhx_merit value = 50 }
+    NOT = { has_country_modifier = zhx_merit_store_trade }
+    NOT = { has_country_modifier = zhx_merit_store_industry }
+}
+
+zhx_can_buy_merit_store_military = {
+    zhx_is_tianxia_member = yes
+    check_variable = { which = zhx_merit value = 50 }
+    NOT = { has_country_modifier = zhx_merit_store_army }
+    NOT = { has_country_modifier = zhx_merit_store_fortification }
+}
+
+zhx_can_buy_merit_store_diplomacy = {
+    zhx_is_tianxia_member = yes
+    check_variable = { which = zhx_merit value = 50 }
+    NOT = { has_country_modifier = zhx_merit_store_honour }
+    NOT = { has_country_modifier = zhx_merit_store_diplomacy }
+}

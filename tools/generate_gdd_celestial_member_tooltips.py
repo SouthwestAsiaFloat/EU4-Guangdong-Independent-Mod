@@ -2,6 +2,7 @@
 """Generate explainable AI reform-support tooltips for the EoC member grid."""
 
 from pathlib import Path
+from generate_zhx_tianxia_roster import EOC_SLOTS
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -189,7 +190,7 @@ def build_customizable() -> str:
 
 def build_localisation_block() -> str:
     lines = []
-    for index in range(1, 66):
+    for index in range(1, EOC_SLOTS + 1):
         lines.append(
             f' GDD_EOC_MEMBER_SHIELD_{index:02d}_TT:0 "[gdd_eoc_member_roster_{index:02d}.GetGddEocMemberShieldTooltip]"'
         )
@@ -256,7 +257,7 @@ def replace_localisation_block(body: str) -> None:
 def main() -> None:
     CUSTOMIZABLE.write_text(build_customizable(), encoding="utf-8")
     replace_localisation_block(build_localisation_block())
-    print("generated 65 EoC member tooltip bindings and 20 reform accessors")
+    print(f"generated {EOC_SLOTS} EoC member tooltip bindings and 20 reform accessors")
 
 
 if __name__ == "__main__":

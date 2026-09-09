@@ -1,0 +1,454 @@
+{
+  "schema_version": 1,
+  "updated_utc": "2026-09-05T05:24:47.455550+00:00",
+  "task": "CZC council government runtime sample",
+  "game_version": "1.37.5.0",
+  "save_extraction": {
+    "method": "Inside the top-level countries table, select the exact one-tab CZC country root, then brace-balanced block extraction; resolve current monarch pointer against country history by ID.",
+    "large_saves_copied_into_repository": false,
+    "chinese_name_decoder": "tools/encode_eu4_chinese_localisation.py::from_escaped_bytes",
+    "dynasty_caveat": "Random republic rulers store surname in the name string in these saves; no explicit dynasty field exists. original_dynasty is historical Zheng and must not be mistaken for current dynasty."
+  },
+  "snapshots": {
+    "right_before": {
+      "file": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/save games/潮州1444_11_11rightbefore.eu4",
+      "file_size_bytes": 42049376,
+      "sha256": "aee93b2a5391d4f07ac027a6ce53ade8253e98a1677b2be1c280c1f6d943333f",
+      "country_block_sha256": "08bd001f01a1fa76e5a76c7dc9e37f8ac11e8a77e88cb91df19036f0698ac952",
+      "country_block_selector": "countries -> (?m)^\\tCZC=\\{",
+      "date": "1444.11.11",
+      "player": "CZC",
+      "government": "republic",
+      "reforms": [
+        "republic_mechanic",
+        "gdd_czc_council_reform"
+      ],
+      "government_rank": 2,
+      "republican_tradition": 50.0,
+      "native_power_field": "statists_vs_monarchists",
+      "native_power": 1.0,
+      "last_election": "1444.11.11",
+      "original_dynasty": "郑",
+      "current_monarch": {
+        "name": "启恩 谢",
+        "dynasty": null,
+        "country": "CZC",
+        "culture": "gdd_min",
+        "religion": "confucianism",
+        "birth_date": "1400.11.11",
+        "ADM": "4",
+        "DIP": "1",
+        "MIL": "2",
+        "id": 12679,
+        "display_name_surname_token": "谢"
+      },
+      "council_flags": {
+        "gdd_czc_council_initialized": "1444.11.11"
+      }
+    },
+    "right_after": {
+      "file": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/save games/潮州1444_12_04rightafter.eu4",
+      "file_size_bytes": 43813446,
+      "sha256": "e6aefd460d4fcabbe1e49bb5b9a6afa8ebdecbbd638f6186aec97a6e4ca233ff",
+      "country_block_sha256": "158162eb71cb002098e4d696773ede696d0d29c0f3cab2dfa6bd425cf6b21e39",
+      "country_block_selector": "countries -> (?m)^\\tCZC=\\{",
+      "date": "1444.12.4",
+      "player": "CZC",
+      "government": "republic",
+      "reforms": [
+        "republic_mechanic",
+        "gdd_czc_council_reform"
+      ],
+      "government_rank": 2,
+      "republican_tradition": 50.0,
+      "native_power_field": "statists_vs_monarchists",
+      "native_power": 1.0,
+      "last_election": "1444.11.11",
+      "original_dynasty": "郑",
+      "current_monarch": {
+        "name": "允恭 谢",
+        "dynasty": null,
+        "country": "CZC",
+        "culture": "gdd_min",
+        "religion": "confucianism",
+        "birth_date": "1401.12.4",
+        "ADM": "4",
+        "DIP": "5",
+        "MIL": "2",
+        "id": 12763,
+        "display_name_surname_token": "谢"
+      },
+      "council_flags": {
+        "gdd_czc_council_initialized": "1444.11.11"
+      }
+    },
+    "left_lifetime": {
+      "file": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/save games/潮州1452_02_01leftlifetime.eu4",
+      "file_size_bytes": 50108938,
+      "sha256": "b56abb80fd6472d9ae06bdf3d89499783e074f39d33f5dfc57880899e0779b36",
+      "country_block_sha256": "21d10f56199cac6fc22e0876409c2fafaf3b0f29b7a46aabd95d7f2120c1f6d7",
+      "country_block_selector": "countries -> (?m)^\\tCZC=\\{",
+      "date": "1452.2.1",
+      "player": "CZC",
+      "government": "republic",
+      "reforms": [
+        "republic_mechanic",
+        "gdd_czc_council_reform"
+      ],
+      "government_rank": 2,
+      "republican_tradition": 58.0,
+      "native_power_field": "statists_vs_monarchists",
+      "native_power": -1.0,
+      "last_election": "1444.11.11",
+      "original_dynasty": "郑",
+      "current_monarch": {
+        "name": "允恭 谢",
+        "dynasty": null,
+        "country": "CZC",
+        "culture": "gdd_min",
+        "religion": "confucianism",
+        "birth_date": "1401.12.4",
+        "ADM": "4",
+        "DIP": "5",
+        "MIL": "2",
+        "id": 12763,
+        "display_name_surname_token": "谢"
+      },
+      "council_flags": {
+        "gdd_czc_council_initialized": "1444.11.11"
+      }
+    },
+    "left_death_rt20": {
+      "file": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/save games/潮州1452_02_01leftdeathrt20.eu4",
+      "file_size_bytes": 50130599,
+      "sha256": "5f1fab63f3972d2202a77029793cfe3a817b38cf6084f1414750c751c34c5bf8",
+      "country_block_sha256": "f089ad7efc35b32dd01d941e297994016c5e823dd31225b326e78f815287c0f5",
+      "country_block_selector": "countries -> (?m)^\\tCZC=\\{",
+      "date": "1452.2.1",
+      "player": "CZC",
+      "government": "republic",
+      "reforms": [
+        "republic_mechanic",
+        "gdd_czc_council_reform"
+      ],
+      "government_rank": 2,
+      "republican_tradition": 20.0,
+      "native_power_field": "statists_vs_monarchists",
+      "native_power": -1.0,
+      "last_election": "1444.11.11",
+      "original_dynasty": "郑",
+      "current_monarch": {
+        "name": "德昌 叶",
+        "dynasty": null,
+        "country": "CZC",
+        "culture": "gdd_min",
+        "religion": "confucianism",
+        "birth_date": "1407.2.1",
+        "ADM": "4",
+        "DIP": "3",
+        "MIL": "1",
+        "id": 13651,
+        "display_name_surname_token": "叶"
+      },
+      "council_flags": {
+        "gdd_czc_council_initialized": "1444.11.11"
+      }
+    },
+    "crowned_rt19": {
+      "file": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/save games/潮州1452_02_01crowned.eu4",
+      "file_size_bytes": 50130696,
+      "sha256": "bac8f31aed55110a0e8c52588175645bde1c17d45d2cd93a9aa3f477d4d1f285",
+      "country_block_sha256": "5d19ba3d1e570dee410329a836e036ae73a3bb153269162f3fe8fd48c9f8511b",
+      "country_block_selector": "countries -> (?m)^\\tCZC=\\{",
+      "date": "1452.2.1",
+      "player": "CZC",
+      "government": "monarchy",
+      "reforms": [
+        "monarchy_mechanic",
+        "autocracy_reform"
+      ],
+      "government_rank": 2,
+      "republican_tradition": 19.0,
+      "native_power_field": "statists_vs_monarchists",
+      "native_power": -1.0,
+      "last_election": "1444.11.11",
+      "original_dynasty": "郑",
+      "current_monarch": {
+        "name": "德昌 叶",
+        "dynasty": "叶",
+        "country": "CZC",
+        "culture": "gdd_min",
+        "religion": "confucianism",
+        "birth_date": "1407.2.1",
+        "ADM": "4",
+        "DIP": "3",
+        "MIL": "1",
+        "id": 13651,
+        "display_name_surname_token": "叶"
+      },
+      "council_flags": {
+        "gdd_czc_council_initialized": "1444.11.11",
+        "gdd_czc_crowned": "1452.2.1"
+      }
+    },
+    "right_yearly": {
+      "file": "/tmp/czc_government_runtime_20260905/old_autosave.eu4",
+      "file_size_bytes": 50613068,
+      "sha256": "b23dbc42729bd905e1dcbae8089edc77631ac4f0be5751b5c220f0811b78a2f6",
+      "country_block_sha256": "9cbb7f298b8b87fbb01a670578775568268e5476951b4de0e69a506bfcb3ad32",
+      "country_block_selector": "countries -> (?m)^\\tCZC=\\{",
+      "date": "1453.1.1",
+      "player": "CZC",
+      "government": "republic",
+      "reforms": [
+        "republic_mechanic",
+        "gdd_czc_council_reform"
+      ],
+      "government_rank": 2,
+      "republican_tradition": 49.0,
+      "native_power_field": "statists_vs_monarchists",
+      "native_power": 1.0,
+      "last_election": "1444.11.11",
+      "original_dynasty": "郑",
+      "current_monarch": {
+        "name": "德昌 叶",
+        "dynasty": "叶",
+        "country": "CZC",
+        "culture": "gdd_min",
+        "religion": "confucianism",
+        "birth_date": "1407.2.1",
+        "ADM": "4",
+        "DIP": "3",
+        "MIL": "1",
+        "id": 13651,
+        "display_name_surname_token": "叶"
+      },
+      "council_flags": {
+        "gdd_czc_council_initialized": "1452.2.1"
+      },
+      "original_autosave_path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/save games/autosave.eu4"
+    },
+    "right_second_year": {
+      "file": "/tmp/czc_government_runtime_20260905/autosave.eu4",
+      "file_size_bytes": 51056676,
+      "sha256": "5d47d75e345e3d76bac6638ad005e56c182aa2b840e8695d9127c61e44172373",
+      "country_block_sha256": "0b5f9c8e74df4fa561c7592ee42844dddda737d513d1b7dd98efcaf5f4ae4d9d",
+      "country_block_selector": "countries -> (?m)^\\tCZC=\\{",
+      "date": "1454.1.1",
+      "player": "CZC",
+      "government": "republic",
+      "reforms": [
+        "republic_mechanic",
+        "gdd_czc_council_reform"
+      ],
+      "government_rank": 2,
+      "republican_tradition": 48.0,
+      "native_power_field": "statists_vs_monarchists",
+      "native_power": 0.9,
+      "last_election": "1444.11.11",
+      "original_dynasty": "郑",
+      "current_monarch": {
+        "name": "德昌 叶",
+        "dynasty": "叶",
+        "country": "CZC",
+        "culture": "gdd_min",
+        "religion": "confucianism",
+        "birth_date": "1407.2.1",
+        "ADM": "4",
+        "DIP": "3",
+        "MIL": "1",
+        "id": 13651,
+        "display_name_surname_token": "叶"
+      },
+      "council_flags": {
+        "gdd_czc_council_initialized": "1452.2.1",
+        "gdd_czc_last_council_action": "1453.1.11"
+      }
+    },
+    "initial_1444_baseline": {
+      "file": "/tmp/czc_government_runtime_20260905/czc-baseline.eu4",
+      "file_size_bytes": 41940726,
+      "sha256": "a5b5f378bc9db2d0cfd8abe22f3af91ad76d68de7a323cfadafb916e8d10cc04",
+      "country_block_sha256": "318295512a810d28da07a480fae93a1ecf51a1c07ad908c4aee0319f975ad378",
+      "country_block_selector": "countries -> (?m)^\\tCZC=\\{",
+      "date": "1444.11.11",
+      "player": "CZC",
+      "government": "republic",
+      "reforms": [
+        "republic_mechanic",
+        "gdd_czc_council_reform"
+      ],
+      "government_rank": 2,
+      "republican_tradition": 50.0,
+      "native_power_field": "statists_vs_monarchists",
+      "native_power": null,
+      "last_election": "1444.11.11",
+      "original_dynasty": "郑",
+      "current_monarch": {
+        "name": "万民",
+        "dynasty": "郑",
+        "country": "CZC",
+        "culture": "gdd_min",
+        "religion": "confucianism",
+        "birth_date": "1405.1.1",
+        "ADM": "5",
+        "DIP": "6",
+        "MIL": "6",
+        "id": 2330,
+        "display_name_surname_token": null
+      },
+      "council_flags": {
+        "gdd_czc_council_initialized": "1444.11.11"
+      }
+    }
+  },
+  "observations": {
+    "right_succession": {
+      "status": "passed_observed_case",
+      "save_facts": {
+        "monarch_id_changed": true,
+        "same_display_surname_token": true,
+        "native_power_before": 1.0,
+        "native_power_after": 1.0,
+        "government_before": "republic",
+        "government_after": "republic",
+        "last_election_unchanged": true
+      },
+      "root_cua_observation": "谢启恩 died via diagnostic ruler-death event; 谢允恭 succeeded without an election prompt.",
+      "limitation": "One observed right-side succession with surname continuity; saves do not expose an explicit dynasty field for either random republic ruler."
+    },
+    "right_tradition": {
+      "status": "passed",
+      "fixture": "At 1452.2.1 root executed diagnostic .900 to reset RT50, then .902 to force right100.",
+      "before_republican_tradition": 50,
+      "after_republican_tradition": 49.0,
+      "delta": -1,
+      "save_date": "1453.1.1",
+      "native_power": 1.0,
+      "root_cua_observation": "At 1453.1.11 UI showed RT49 and incumbent 叶德昌 still in office.",
+      "settlement": "Native republican tradition is settled at the year boundary in this test; November-to-December RT50 remaining unchanged was not a bug.",
+      "snapshot_caveat": "The 1453 and 1454 autosaves were copied to the session /tmp evidence directory before restoring the normal campaign. No large copy is stored in the repository.",
+      "second_year_republican_tradition": 48,
+      "second_year_save_date": "1454.1.1"
+    },
+    "government_ui": {
+      "status": "passed_root_cua_observation",
+      "detail": "Final overlay was visually clean with no exposed native strip. Both directions moved the pointer correctly.",
+      "tooltip_status": "passed",
+      "tooltip_detail": "The left button showed only Chinese movement of 10 and shared one-year cooldown; no gdd_* identifiers or internal requirements."
+    },
+    "left_lifelong_term": {
+      "status": "passed_observed_case",
+      "start_date": "1444.12.4",
+      "end_date": "1452.2.1",
+      "unchanged_monarch_id": 12763,
+      "last_election": "1444.11.11",
+      "root_cua_observation": "Forced left side; advanced from 1444 to 1452. 谢允恭 remained in office, age advanced from 42 to 50, and no native election appeared.",
+      "left_tradition_before": 50.0,
+      "left_tradition_after": 58.0,
+      "native_power_after": -1.0
+    },
+    "left_succession": {
+      "status": "passed_observed_case",
+      "previous_monarch_id": 12763,
+      "next_monarch_id": 13651,
+      "previous_name": "允恭 谢",
+      "next_name": "德昌 叶",
+      "root_cua_observation": "Diagnostic ruler death on the left side produced 叶德昌 without retaining the 谢 surname."
+    },
+    "coronation_threshold": {
+      "status": "passed",
+      "at_20_government": "republic",
+      "at_19_government": "monarchy",
+      "post_coronation_reforms": [
+        "monarchy_mechanic",
+        "autocracy_reform"
+      ],
+      "post_coronation_rank": 2,
+      "incumbent_id_unchanged": true,
+      "post_coronation_flags": {
+        "gdd_czc_council_initialized": "1444.11.11",
+        "gdd_czc_crowned": "1452.2.1"
+      },
+      "root_cua_observation": "RT20 remained republican. Setting RT19 immediately converted to monarchy, displayed the Chinese coronation event, and hid all CZC bar/actions in government view."
+    },
+    "button_cooldown": {
+      "status": "passed_root_cua_observation_and_save",
+      "first_direction": "Right action moved 0 -> 10 and activated shared cooldown.",
+      "second_direction": "At 1453.1.11 left action moved 100 -> 90; both buttons greyed, clicking right again had no effect. The 1454.1.1 autosave retains native power 0.900 and the action flag dated 1453.1.11.",
+      "expiry": "At 1454.3.16, 430 days after the action, UI returned to ready and both buttons were gold/enabled.",
+      "expiry_exact_365_day_boundary_tested": false
+    },
+    "country_skin_isolation": {
+      "status": "passed_root_cua_observation",
+      "detail": "Switched to HAK: its government view had no CZC artwork or buttons. Returning to CZC restored the dedicated controls.",
+      "native_dutch_republic_runtime_tested": false,
+      "native_dutch_republic_static_preservation_passed": true
+    },
+    "initial_1444_and_restore": {
+      "status": "passed_save_and_root_cua",
+      "fixture_type": "Fresh 1444 campaign with the new CZC reform already in history; not a legacy oligarchy migration fixture.",
+      "save_current_monarch": {
+        "name": "万民",
+        "dynasty": "郑",
+        "country": "CZC",
+        "culture": "gdd_min",
+        "religion": "confucianism",
+        "birth_date": "1405.1.1",
+        "ADM": "5",
+        "DIP": "6",
+        "MIL": "6",
+        "id": 2330,
+        "display_name_surname_token": null
+      },
+      "save_initial_republican_tradition": 50.0,
+      "save_initialization_flag": "1444.11.11",
+      "native_power_note": "Zero native power is omitted from this baseline save; root directly observed a centred pointer in game.",
+      "restored_file": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/save games/CZC_1444_ready.eu4",
+      "restored_file_sha256": "a5b5f378bc9db2d0cfd8abe22f3af91ad76d68de7a323cfadafb916e8d10cc04",
+      "matches_baseline_bytes": true,
+      "root_cua_observation": "Loaded CZC_1444_ready.eu4. Paused at 1444.11.11, original 郑万民 age39, RT50, pointer centred, both buttons enabled and government view visually clean."
+    }
+  },
+  "error_log": {
+    "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/logs/error.log",
+    "captured_utc": "2026-09-05T05:21:27.617611+00:00",
+    "size_bytes": 566308,
+    "sha256": "bf73a04631b5b8f56cf0ec5ae6939f3999cfed7184f89e095f83f3d7e7f61538",
+    "feature_identifier_matches": 0,
+    "wrong_scope_matches": 318,
+    "scope_error_tokens": {
+      "privateer_power": 188,
+      "economic_ideas": 130
+    },
+    "council_scope_error_tokens": {
+      "tag": 0,
+      "is_statists_in_power": 0,
+      "statists_vs_orangists": 0
+    },
+    "note": "The final-reload session includes unrelated privateer_power/economic_ideas errors during year advancement; no claim that all pre-existing mod errors are fixed."
+  },
+  "pending_runtime_cases": [
+    "dedicated four-year right-side term duration",
+    "old oligarchy save migration",
+    "minimum resolution and non-100-percent UI scale",
+    "native Dutch Republic visual runtime regression"
+  ],
+  "code_sha256": {
+    "common/government_reforms/zzz_gdd_czc_government_reforms.txt": "4b52a2b3b388eddb9cfb330ed40e62d607bdf99b3e63794bd1935cefc1540125",
+    "common/scripted_triggers/gdd_czc_government_triggers.txt": "e3ffc0aa2c6cf619ee6536f96149d0aa434dbeff750deaa9b29b3f9fb00bc5e3",
+    "common/scripted_effects/gdd_czc_government_effects.txt": "886f13c1525e7c481a1e0b286b9ffaac4be14b18304a0637fa9ea6d871d539a7",
+    "common/on_actions/gdd_czc_government_on_actions.txt": "412cfa36ab479d16c6377ca4e1aea5465f2fb0a14683c2ade2455655e4d92456",
+    "events/gdd_czc_government_events.txt": "f2a1065b32d680487055df211c5bbbd251774a9f8662cfcaca3374bf2fd25149",
+    "interface/countrygovernmentview.gui": "a9bc30dd94990c7bf4684828309609ae80f7bc9495ed1a8511e5e573709689d1",
+    "common/custom_gui/gdd_czc_government_gui.txt": "8003427a3ddca51a43970b8d0924f59047a13c869cd4e6fd6ba6e1adc38f0b4e",
+    "interface/gdd_czc_government.gfx": "6216e24866a6855ba7a846787f3d24daeeaf897a1afe5b821a3285a561f34098"
+  },
+  "static_validation": {
+    "captured_utc": "2026-09-05T05:21:27.625271+00:00",
+    "validate_czc_government": "PASS: 27 localisation keys, 10 controls, 5 DDS textures; native GUI and Dutch reform preserved",
+    "apply_lingnan_nations_check": "PASS: 8 countries, 6 idea groups, 2 dependencies",
+    "encode_eu4_chinese_localisation_check": "PASS: all registered localisation files"
+  },
+  "test_fixture_note": "right_before was saved during an earlier scope-error iteration, then loaded after the final explicit-CZC-scope restart. Later runtime observations apply to the final restart; final code hashes identify the delivered files, not historical bytes of each earlier fixture."
+}

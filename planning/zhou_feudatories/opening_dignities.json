@@ -1,0 +1,307 @@
+{
+  "campaign_start": "1444.11.11",
+  "scope": "Opening Zhou monarchies excluding TSF and Tianzi; no new historical promotions inferred from Seven status.",
+  "countries": {
+    "ACG": {
+      "history": "ACG - Ancheng.txt",
+      "dignity": "hou",
+      "basis": "explicit existing polity designation"
+    },
+    "BAA": {
+      "history": "BAA - Ba.txt",
+      "dignity": "hou",
+      "basis": "existing opening rank 2"
+    },
+    "CAG": {
+      "history": "CAG - Cao.txt",
+      "dignity": "bo",
+      "basis": "existing opening rank 1"
+    },
+    "CAI": {
+      "history": "CAI - Cai.txt",
+      "dignity": "bo",
+      "basis": "existing opening rank 1"
+    },
+    "CCH": {
+      "history": "CCH - Chao.txt",
+      "dignity": "bo",
+      "basis": "existing opening rank 1"
+    },
+    "CHC": {
+      "history": "CHC - Chu.txt",
+      "dignity": "gong",
+      "basis": "explicit existing polity designation"
+    },
+    "CHN": {
+      "history": "CHN - Chen.txt",
+      "dignity": "bo",
+      "basis": "existing opening rank 1"
+    },
+    "CSA": {
+      "history": "CSA - Changsha.txt",
+      "dignity": "bo",
+      "basis": "existing opening rank 1"
+    },
+    "DAE": {
+      "history": "DAE - Dai.txt",
+      "dignity": "bo",
+      "basis": "existing opening rank 1"
+    },
+    "DAI": {
+      "history": "DAI - Dai Viet.txt",
+      "dignity": "bo",
+      "basis": "explicit existing polity designation"
+    },
+    "DIA": {
+      "history": "DIA - Dian.txt",
+      "dignity": "bo",
+      "basis": "existing opening rank 1"
+    },
+    "DMG": {
+      "history": "DMG - Bei.txt",
+      "dignity": "bo",
+      "basis": "existing opening rank 1"
+    },
+    "DQU": {
+      "history": "DQU - Dangqu.txt",
+      "dignity": "bo",
+      "basis": "existing opening rank 1"
+    },
+    "EGU": {
+      "history": "EGU - E.txt",
+      "dignity": "bo",
+      "basis": "existing opening rank 1"
+    },
+    "GDD": {
+      "history": "GDD - Guangdong.txt",
+      "dignity": "hou",
+      "basis": "existing opening rank 2"
+    },
+    "GON": {
+      "history": "GON - Gong.txt",
+      "dignity": "bo",
+      "basis": "existing opening rank 1"
+    },
+    "GUI": {
+      "history": "GUI - Guilin.txt",
+      "dignity": "bo",
+      "basis": "explicit existing polity designation"
+    },
+    "GUN": {
+      "history": "GUN - Guan.txt",
+      "dignity": "bo",
+      "basis": "existing opening rank 1"
+    },
+    "GUO": {
+      "history": "GUO - Guo.txt",
+      "dignity": "bo",
+      "basis": "existing opening rank 1"
+    },
+    "GUZ": {
+      "history": "GUZ - Guzhu.txt",
+      "dignity": "bo",
+      "basis": "existing opening rank 1"
+    },
+    "GYA": {
+      "history": "GYA - Guiyang.txt",
+      "dignity": "bo",
+      "basis": "existing opening rank 1"
+    },
+    "HNG": {
+      "history": "HNG - Heng.txt",
+      "dignity": "bo",
+      "basis": "existing opening rank 1"
+    },
+    "HUA": {
+      "history": "HUA - Huai.txt",
+      "dignity": "bo",
+      "basis": "existing opening rank 1"
+    },
+    "JIZ": {
+      "history": "JIZ - Jizi Joseon.txt",
+      "dignity": "bo",
+      "basis": "existing opening rank 1"
+    },
+    "JUU": {
+      "history": "JUU - Ju.txt",
+      "dignity": "bo",
+      "basis": "existing opening rank 1"
+    },
+    "LCH": {
+      "history": "LCH - Linchuan.txt",
+      "dignity": "bo",
+      "basis": "existing opening rank 1"
+    },
+    "LIO": {
+      "history": "LIO - Liao.txt",
+      "dignity": "bo",
+      "basis": "existing opening rank 1"
+    },
+    "LIU": {
+      "history": "LIU - Liu.txt",
+      "dignity": "bo",
+      "basis": "existing opening rank 1"
+    },
+    "LUO": {
+      "history": "LUO - Luo.txt",
+      "dignity": "bo",
+      "basis": "existing opening rank 1"
+    },
+    "LUU": {
+      "history": "LUU - Lu.txt",
+      "dignity": "bo",
+      "basis": "existing opening rank 1"
+    },
+    "MIN": {
+      "history": "MIN - Min.txt",
+      "dignity": "bo",
+      "basis": "existing opening rank 1"
+    },
+    "MNG": {
+      "history": "MNG - Ming.txt",
+      "dignity": "gong",
+      "basis": "existing opening rank 3"
+    },
+    "NCH": {
+      "history": "NCH - Nanchang.txt",
+      "dignity": "bo",
+      "basis": "existing opening rank 1"
+    },
+    "OUE": {
+      "history": "OUE - Ou.txt",
+      "dignity": "bo",
+      "basis": "existing opening rank 1"
+    },
+    "QIC": {
+      "history": "QIC - Qi.txt",
+      "dignity": "hou",
+      "basis": "existing opening rank 2"
+    },
+    "QIN": {
+      "history": "QIN - Qin.txt",
+      "dignity": "hou",
+      "basis": "existing opening rank 2"
+    },
+    "QSH": {
+      "history": "QSH - Qunshu.txt",
+      "dignity": "bo",
+      "basis": "existing opening rank 1"
+    },
+    "QVN": {
+      "history": "QVN - Quan.txt",
+      "dignity": "bo",
+      "basis": "existing opening rank 1"
+    },
+    "QWO": {
+      "history": "QWO - Quwo.txt",
+      "dignity": "bo",
+      "basis": "existing opening rank 1"
+    },
+    "SHE": {
+      "history": "SHE - Shen.txt",
+      "dignity": "bo",
+      "basis": "existing opening rank 1"
+    },
+    "SHU": {
+      "history": "SHU - Shu.txt",
+      "dignity": "hou",
+      "basis": "existing opening rank 2"
+    },
+    "SNG": {
+      "history": "SNG - Song.txt",
+      "dignity": "bo",
+      "basis": "existing opening rank 1"
+    },
+    "SUI": {
+      "history": "SUI - Sui.txt",
+      "dignity": "bo",
+      "basis": "existing opening rank 1"
+    },
+    "WEI": {
+      "history": "WEI - Wei.txt",
+      "dignity": "hou",
+      "basis": "existing opening rank 2"
+    },
+    "WUU": {
+      "history": "WUU - Wu.txt",
+      "dignity": "gong",
+      "basis": "explicit existing polity designation"
+    },
+    "WUZ": {
+      "history": "WUZ - Wuzhong.txt",
+      "dignity": "bo",
+      "basis": "existing opening rank 1"
+    },
+    "WVG": {
+      "history": "WVG - Wei State.txt",
+      "dignity": "bo",
+      "basis": "existing opening rank 1"
+    },
+    "XNG": {
+      "history": "XNG - Xing.txt",
+      "dignity": "bo",
+      "basis": "existing opening rank 1"
+    },
+    "XU2": {
+      "history": "XU2 - Xu2.txt",
+      "dignity": "hou",
+      "basis": "existing opening rank 2"
+    },
+    "YAN": {
+      "history": "YAN - Yan.txt",
+      "dignity": "bo",
+      "basis": "existing opening rank 1"
+    },
+    "YOU": {
+      "history": "YOU - Yiqu.txt",
+      "dignity": "bo",
+      "basis": "existing opening rank 1"
+    },
+    "YPG": {
+      "history": "YPG - Yinping.txt",
+      "dignity": "bo",
+      "basis": "existing opening rank 1"
+    },
+    "YUE": {
+      "history": "YUE - Yue.txt",
+      "dignity": "gong",
+      "basis": "explicit existing polity designation"
+    },
+    "ZHA": {
+      "history": "ZHA - Zhao.txt",
+      "dignity": "hou",
+      "basis": "existing opening rank 2"
+    },
+    "ZHG": {
+      "history": "ZHG - Zhougong.txt",
+      "dignity": "bo",
+      "basis": "existing opening rank 1"
+    },
+    "ZHU": {
+      "history": "ZHU - Zhou.txt",
+      "dignity": "bo",
+      "basis": "existing opening rank 1"
+    },
+    "ZNG": {
+      "history": "ZNG - Zheng.txt",
+      "dignity": "bo",
+      "basis": "existing opening rank 1"
+    },
+    "ZSH": {
+      "history": "ZSH - Zhongshan.txt",
+      "dignity": "bo",
+      "basis": "existing opening rank 1"
+    }
+  },
+  "excluded": {
+    "CDE": "republic",
+    "CZC": "republic",
+    "HAK": "republic",
+    "HYA": "republic",
+    "HYM": "republic",
+    "JJG": "republic",
+    "TSF": "monarchy",
+    "WHU": "republic",
+    "ZHO": "republic"
+  }
+}

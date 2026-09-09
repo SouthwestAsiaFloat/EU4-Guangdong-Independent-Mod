@@ -155,6 +155,41 @@ gdd_leave_tianxia_with_mandate_penalty_effect = {
             gdd_can_leave_tianxia_trigger = yes
         }
         gdd_leave_tianxia_territory_effect = yes
+        # Both the Mandate button and the diplomacy decision use this path.
+        # The Emperor already receives the local -100 opinion penalty above;
+        # apply the separate Tianzi penalty only when the offices differ.
+        event_target:zhx_tianzi = {
+            if = {
+                limit = {
+                    exists = yes
+                    NOT = { is_emperor_of_china = yes }
+                }
+                add_opinion = {
+                    who = ROOT
+                    modifier = zhx_opinion_left_tianxia_tianzi
+                    years = 10
+                }
+            }
+        }
+        every_country = {
+            limit = {
+                exists = yes
+                zhx_is_tianxia_member = yes
+                NOT = { tag = ROOT }
+                NOT = { zhx_is_tianzi = yes }
+                NOT = { is_emperor_of_china = yes }
+            }
+            add_opinion = {
+                who = ROOT
+                modifier = zhx_opinion_left_tianxia_member
+                years = 10
+            }
+        }
         zhx_remove_tianxia_member = yes
+        add_prestige = -25
+        add_country_modifier = {
+            name = zhx_tianxia_rejoin_bar
+            duration = 7300
+        }
     }
 }
