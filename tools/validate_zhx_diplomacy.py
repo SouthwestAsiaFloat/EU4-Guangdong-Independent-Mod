@@ -25,6 +25,7 @@ PATHS = {
     "system_on_actions": MOD / "common/on_actions/zhx_system_on_actions.txt",
     "ritual_modifiers": MOD / "common/event_modifiers/zhx_system_modifiers.txt",
     "system_effects": MOD / "common/scripted_effects/zhx_system_effects.txt",
+    "mandate_effects": MOD / "common/scripted_effects/gdd_celestial_mandate_effects.txt",
     "loc_source": MOD / "localisation_source/zhx_diplomacy_readable_utf8.txt",
     "loc_encoded": MOD / "localisation/zhx_diplomacy_l_english.yml",
     "encoder": ROOT / "tools/encode_eu4_chinese_localisation.py",
@@ -443,7 +444,7 @@ def validate() -> None:
         "relief appeal must reject attacking participants allied to or subject to the Tianzi",
     )
 
-    appeal_accept = block(appeal_action, "on_accept")
+    appeal_accept = block(appeal_action, "on_accept") + (MOD / "common/scripted_triggers/zhx_appeal_triggers.txt").read_text()
     for token, message in (
         ("if =", "accepted relief appeal must revalidate its delayed request"),
         ("has_global_flag = zhx_system_initialised_v14", "delayed relief acceptance must require the live system"),
@@ -465,10 +466,8 @@ def validate() -> None:
     require(appeal_accept.count("any_war_enemy_country") >= 3, "delayed relief acceptance must recheck direct, internal and allied attackers")
     require(masked_appeal_action.count("join_all_defensive_wars_of") == 1, "relief appeal must join defensive wars exactly once")
     appeal_decline = block(appeal_action, "on_decline")
-    require(
-        re.fullmatch(r"\s*on_decline\s*=\s*\{\s*\}\s*", masked_clausewitz(appeal_decline), re.S) is not None,
-        "declining a relief appeal must have no scripted side effects",
-    )
+    require("zhx_appeal_still_valid = yes" in appeal_decline, "refusal must revalidate request")
+    require("who = FROM modifier = zhx_opinion_refused_valid_appeal years = 100" in appeal_decline, "refusal opinion direction/lifetime")
     appeal_ai_sender = block(appeal_action, "ai_will_do")
     require(
         re.fullmatch(r"\s*ai_will_do\s*=\s*\{\s*always\s*=\s*no\s*\}\s*", masked_clausewitz(appeal_ai_sender), re.S)
@@ -494,7 +493,6 @@ def validate() -> None:
         "country_event",
         "province_event",
         "on_war_started",
-        "add_opinion",
         "add_country_modifier",
     ):
         require(forbidden not in appeal_action, f"relief appeal must remain a direct native request with no side channel: {forbidden}")
@@ -532,8 +530,7 @@ def validate() -> None:
             "add_aggressive_expansion",
             "add_casus_belli",
             "reverse_add_casus_belli",
-            "add_opinion",
-            "change_variable",
+                "change_variable",
             "every_country",
             "zhx_diplomacy_settle_illegal_cession",
         ):
@@ -602,7 +599,6 @@ def validate() -> None:
         "hidden_effect =",
         "add_aggressive_expansion",
         "add_casus_belli",
-        "add_opinion",
         "change_variable",
         "every_country",
         "set_country_flag",
@@ -655,9 +651,14 @@ def validate() -> None:
     require("zhx_can_apply_for_tianxia_membership = yes" in apply_decision, "membership application must use common eligibility trigger")
     require("factor = 0.01" in apply_decision, "AI membership application must remain low-frequency")
     leave_decision = block(decisions, "zhx_leave_tianxia")
-    require("add_prestige = -25" in leave_decision, "leaving must cost 25 prestige")
-    require("duration = 7300" in leave_decision, "rejoin bar must last twenty years")
-    require("zhx_remove_tianxia_member = yes" in leave_decision, "leaving must use authoritative member removal")
+    require("gdd_can_leave_tianxia_trigger = yes" in leave_decision, "decision must respect common exit eligibility")
+    require("gdd_leave_tianxia_with_mandate_penalty_effect = yes" in leave_decision, "decision must use the same exit path as the Mandate button")
+    leave_effect = block(texts["mandate_effects"], "gdd_leave_tianxia_with_mandate_penalty_effect")
+    require("gdd_can_leave_tianxia_trigger = yes" in leave_effect, "exit effect must recheck eligibility")
+    require("gdd_leave_tianxia_territory_effect = yes" in leave_effect, "exit must remove territory and apply Mandate/opinion costs")
+    require("add_prestige = -25" in leave_effect, "leaving must cost 25 prestige")
+    require("duration = 7300" in leave_effect, "rejoin bar must last twenty years")
+    require("zhx_remove_tianxia_member = yes" in leave_effect, "leaving must use authoritative member removal")
     require("zhx_ritual_tier_collapsed" in leave_decision, "AI exit must require collapsed order")
 
     triggers = texts["triggers"]
@@ -677,7 +678,9 @@ def validate() -> None:
 
     require("zhx_system_initialised_v14" in texts["system_events"], "startup event must gate diplomacy v14")
     require("zhx_migrate_tianxia_system_v13_to_v14 = yes" in texts["system_events"], "startup event must invoke v14 migration")
-    require("set_global_flag = zhx_system_initialised_v14" in effects, "v14 migration must set global flag")
+    v14 = block(texts["system_effects"], "zhx_migrate_tianxia_system_v13_to_v14")
+    require("set_global_flag = zhx_system_initialised_v14" in v14, "central v14 migration must set global flag")
+    require("zhx_initialise_diplomacy_effect = yes" in v14, "central v14 migration must initialize diplomacy")
     require("ae_impact" not in block(texts["ritual_modifiers"], "zhx_ritual_order_ordered"), "ordered ritual tier still modifies global AE")
     require("ae_impact" not in block(texts["ritual_modifiers"], "zhx_ritual_order_stable"), "stable ritual tier still modifies global AE")
     require("ae_impact" not in block(texts["ritual_modifiers"], "zhx_ritual_order_balanced"), "balanced ritual tier still modifies global AE")

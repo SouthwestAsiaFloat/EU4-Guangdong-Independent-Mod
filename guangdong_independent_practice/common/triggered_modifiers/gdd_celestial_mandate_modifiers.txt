@@ -1,0 +1,220 @@
+# The Emperor receives the HRE-style internal-peace gain even while Zhou
+# countries fight external wars. An internal war suspends this gain; it does
+# not add a separate loss.
+gdd_tianxia_internal_peace_mandate = {
+    potential = {
+        has_reform = celestial_empire
+        has_dlc = "Mandate of Heaven"
+    }
+    trigger = {
+        is_emperor_of_china = yes
+        has_global_flag = zhx_system_initialised_v8
+        gdd_tianxia_has_internal_peace = yes
+    }
+    imperial_mandate = 0.10
+}
+
+# A balance leaning toward either side gives a small gain; complete dominance
+# at exactly -100 or 100 doubles it. The deadlocked middle interval uses the
+# same displayed integer boundaries as reform authorization.
+gdd_tianxia_settled_authority_mandate = {
+    potential = {
+        has_reform = celestial_empire
+        has_dlc = "Mandate of Heaven"
+    }
+    trigger = {
+        is_emperor_of_china = yes
+        has_global_flag = zhx_system_initialised_v8
+        CZH = {
+            exists = yes
+            OR = {
+                AND = {
+                    check_variable = {
+                        which = gdd_authority_integer_display
+                        value = -99
+                    }
+                    NOT = {
+                        check_variable = {
+                            which = gdd_authority_integer_display
+                            value = -25
+                        }
+                    }
+                }
+                AND = {
+                    check_variable = {
+                        which = gdd_authority_integer_display
+                        value = 26
+                    }
+                    NOT = {
+                        check_variable = {
+                            which = gdd_authority_integer_display
+                            value = 100
+                        }
+                    }
+                }
+            }
+        }
+    }
+    imperial_mandate = 0.05
+}
+
+gdd_tianxia_absolute_authority_mandate = {
+    potential = {
+        has_reform = celestial_empire
+        has_dlc = "Mandate of Heaven"
+    }
+    trigger = {
+        is_emperor_of_china = yes
+        has_global_flag = zhx_system_initialised_v8
+        CZH = {
+            exists = yes
+            OR = {
+                NOT = {
+                    check_variable = {
+                        which = gdd_authority_integer_display
+                        value = -99
+                    }
+                }
+                check_variable = {
+                    which = gdd_authority_integer_display
+                    value = 100
+                }
+            }
+        }
+    }
+    imperial_mandate = 0.10
+}
+
+gdd_tianxia_deadlocked_authority_mandate = {
+    potential = {
+        has_reform = celestial_empire
+        has_dlc = "Mandate of Heaven"
+    }
+    trigger = {
+        is_emperor_of_china = yes
+        has_global_flag = zhx_system_initialised_v8
+        CZH = {
+            exists = yes
+            check_variable = {
+                which = gdd_authority_integer_display
+                value = -25
+            }
+            NOT = {
+                check_variable = {
+                    which = gdd_authority_integer_display
+                    value = 26
+                }
+            }
+        }
+    }
+    imperial_mandate = -0.10
+}
+
+# Subject penalties are mutually exclusive by the immediate overlord's Zhou
+# identity. The shared trigger excludes tributaries and cultural-sphere states
+# but includes every real subject type that has lost independent diplomacy.
+gdd_tianxia_emperor_external_subject_mandate = {
+    potential = {
+        has_reform = celestial_empire
+        has_dlc = "Mandate of Heaven"
+    }
+    trigger = {
+        is_emperor_of_china = yes
+        has_global_flag = zhx_system_initialised_v8
+        is_subject_other_than_tributary_trigger = yes
+        overlord = { NOT = { zhx_is_tianxia_polity = yes } }
+    }
+    imperial_mandate = -1
+}
+
+gdd_tianxia_emperor_internal_subject_mandate = {
+    potential = {
+        has_reform = celestial_empire
+        has_dlc = "Mandate of Heaven"
+    }
+    trigger = {
+        is_emperor_of_china = yes
+        has_global_flag = zhx_system_initialised_v8
+        is_subject_other_than_tributary_trigger = yes
+        overlord = { zhx_is_tianxia_polity = yes }
+    }
+    imperial_mandate = -0.05
+}
+
+# Exactly one of these tiers can be active. Each missing, empty or externally
+# subject great-feudatory seat costs 0.05 Mandate per month.
+gdd_tianxia_one_invalid_great_feudatory = {
+    potential = { has_reform = celestial_empire has_dlc = "Mandate of Heaven" }
+    trigger = {
+        is_emperor_of_china = yes
+        has_country_flag = gdd_tianxia_mandate_cache_ready
+        check_variable = { which = gdd_valid_great_feudatory_count value = 6 }
+        NOT = { check_variable = { which = gdd_valid_great_feudatory_count value = 7 } }
+    }
+    imperial_mandate = -0.05
+}
+
+gdd_tianxia_two_invalid_great_feudatories = {
+    potential = { has_reform = celestial_empire has_dlc = "Mandate of Heaven" }
+    trigger = {
+        is_emperor_of_china = yes
+        has_country_flag = gdd_tianxia_mandate_cache_ready
+        check_variable = { which = gdd_valid_great_feudatory_count value = 5 }
+        NOT = { check_variable = { which = gdd_valid_great_feudatory_count value = 6 } }
+    }
+    imperial_mandate = -0.10
+}
+
+gdd_tianxia_three_invalid_great_feudatories = {
+    potential = { has_reform = celestial_empire has_dlc = "Mandate of Heaven" }
+    trigger = {
+        is_emperor_of_china = yes
+        has_country_flag = gdd_tianxia_mandate_cache_ready
+        check_variable = { which = gdd_valid_great_feudatory_count value = 4 }
+        NOT = { check_variable = { which = gdd_valid_great_feudatory_count value = 5 } }
+    }
+    imperial_mandate = -0.15
+}
+
+gdd_tianxia_four_invalid_great_feudatories = {
+    potential = { has_reform = celestial_empire has_dlc = "Mandate of Heaven" }
+    trigger = {
+        is_emperor_of_china = yes
+        has_country_flag = gdd_tianxia_mandate_cache_ready
+        check_variable = { which = gdd_valid_great_feudatory_count value = 3 }
+        NOT = { check_variable = { which = gdd_valid_great_feudatory_count value = 4 } }
+    }
+    imperial_mandate = -0.20
+}
+
+gdd_tianxia_five_invalid_great_feudatories = {
+    potential = { has_reform = celestial_empire has_dlc = "Mandate of Heaven" }
+    trigger = {
+        is_emperor_of_china = yes
+        has_country_flag = gdd_tianxia_mandate_cache_ready
+        check_variable = { which = gdd_valid_great_feudatory_count value = 2 }
+        NOT = { check_variable = { which = gdd_valid_great_feudatory_count value = 3 } }
+    }
+    imperial_mandate = -0.25
+}
+
+gdd_tianxia_six_invalid_great_feudatories = {
+    potential = { has_reform = celestial_empire has_dlc = "Mandate of Heaven" }
+    trigger = {
+        is_emperor_of_china = yes
+        has_country_flag = gdd_tianxia_mandate_cache_ready
+        check_variable = { which = gdd_valid_great_feudatory_count value = 1 }
+        NOT = { check_variable = { which = gdd_valid_great_feudatory_count value = 2 } }
+    }
+    imperial_mandate = -0.30
+}
+
+gdd_tianxia_seven_invalid_great_feudatories = {
+    potential = { has_reform = celestial_empire has_dlc = "Mandate of Heaven" }
+    trigger = {
+        is_emperor_of_china = yes
+        has_country_flag = gdd_tianxia_mandate_cache_ready
+        NOT = { check_variable = { which = gdd_valid_great_feudatory_count value = 1 } }
+    }
+    imperial_mandate = -0.35
+}

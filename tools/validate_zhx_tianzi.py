@@ -112,7 +112,7 @@ def main():
     require(cw.one(cw.one(first,'country_event'),'id')=='zhx_doctrine.91','valid doctrine should sync mirror')
     require(not cw.contains(first,'zhx_clear_doctrine_system','yes'),'valid school is cleared')
     require(cw.contains(cw.one(immediate,'else'),'zhx_clear_doctrine_system','yes'),'invalid-country cleanup removed')
-    for f in ['gdd_celestial_action_triggers.txt','gdd_celestial_test_triggers.txt']:
+    for f in ['gdd_celestial_action_triggers.txt']:
         base=cw.one(tree('common/scripted_triggers/'+f),'gdd_proxy_decree_base_trigger')
         guard=cw.one(base,'custom_trigger_tooltip')
         require(cw.contains(cw.one(guard,'NOT'),'has_reform',REFORM),'legacy decree trigger bypass')

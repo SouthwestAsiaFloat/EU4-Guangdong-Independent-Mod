@@ -28,6 +28,7 @@ zhx_clear_ritual_warscore = {
 zhx_refresh_province_ritual_warscore = {
     if = {
         limit = {
+            zhx_is_tianxia_province = yes
             owner = { zhx_is_tianxia_polity = yes }
             has_saved_global_event_target = zhx_tianzi
             event_target:zhx_tianzi = { exists = yes zhx_is_tianzi = yes }

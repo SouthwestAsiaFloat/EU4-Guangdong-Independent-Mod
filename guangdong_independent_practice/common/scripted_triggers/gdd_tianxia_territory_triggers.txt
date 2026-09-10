@@ -1,0 +1,312 @@
+# Province registration and country membership are independent authoritative states.
+zhx_is_tianxia_province = {
+    NOT = { has_global_flag = zhx_tianxia_dismantled }
+    has_province_flag = zhx_tianxia_province
+}
+
+# Province-territory rules for the Zhou Tianxia.  Province flags are the
+# authoritative territorial state and deliberately survive conquest.
+
+# Province scope. $who$ is the country attempting to add the province.
+gdd_can_add_province_to_tianxia_for_country_trigger = {
+    NOT = { has_global_flag = zhx_tianxia_dismantled }
+    NOT = { has_province_flag = zhx_tianxia_province }
+    is_part_of_hre = no
+    is_owned_by_trade_company = no
+    owned_by = $who$
+    controlled_by = $who$
+    is_state_core = $who$
+    $who$ = {
+        exists = yes
+        zhx_is_tianxia_polity = yes
+        is_at_war = no
+    }
+}
+
+# Province scope. $who$ is the non-member owner attempting to remove it.
+gdd_can_remove_province_from_tianxia_for_country_trigger = {
+    NOT = { has_global_flag = zhx_tianxia_dismantled }
+    has_province_flag = zhx_tianxia_province
+    NOT = { has_province_flag = gdd_tianxia_unlawful_request_pending }
+    NOT = { has_province_modifier = gdd_tianxia_unlawful_refusal }
+    owned_by = $who$
+    controlled_by = $who$
+    $who$ = {
+        exists = yes
+        NOT = { zhx_is_tianxia_polity = yes }
+        is_at_war = no
+    }
+}
+
+# Country scope, entered from the disputed province. A living recipient must
+# still belong to Tianxia. Extinct historical polities can be restored, but a
+# living country that left the realm cannot acquire land through this action.
+gdd_is_lawful_tianxia_returnee_trigger = {
+    NOT = { has_country_modifier = zhx_tianxia_rejoin_bar }
+    OR = {
+        AND = {
+            exists = yes
+            zhx_is_tianxia_polity = yes
+        }
+        AND = {
+            exists = no
+            NOT = { has_country_flag = zhx_feudatory_forfeited }
+            OR = {
+                has_country_flag = gdd_tianxia_historical_polity
+                has_country_flag = gdd_tianxia_former_legal_owner
+                gdd_is_opening_tianxia_core_tag_trigger = yes
+            }
+        }
+    }
+}
+
+# Province scope. Core ownership exempts both members and outside countries.
+# The sender must also be able to identify a legitimate existing core holder;
+# no fallback is allowed to manufacture an Emperor core or annex unclaimed land.
+gdd_tianxia_province_has_lawful_returnee_trigger = {
+    any_core_country = {
+        gdd_is_lawful_tianxia_returnee_trigger = yes
+    }
+}
+
+# Requests and their resolution share these substantive rules. Pending-request
+# bookkeeping is intentionally separate so a queued request can be rechecked.
+gdd_is_substantively_unlawful_tianxia_province_trigger = {
+    NOT = { has_global_flag = zhx_tianxia_dismantled }
+    has_province_flag = zhx_tianxia_province
+    NOT = { has_province_flag = gdd_tianxia_liberated_this_owner }
+    owned_by = $who$
+    NOT = { is_core = $who$ }
+    $who$ = {
+        exists = yes
+        zhx_is_tianxia_member = yes
+        OR = { is_subject = no overlord = { zhx_is_tianxia_polity = yes } }
+        NOT = { zhx_is_tianzi = yes }
+    }
+    gdd_tianxia_province_has_lawful_returnee_trigger = yes
+}
+
+# The annual lock belongs only to the actual holder, never to the Emperor or
+# the province. A refused province becomes requestable again after that year.
+gdd_is_unlawful_tianxia_province_for_country_trigger = {
+    gdd_is_substantively_unlawful_tianxia_province_trigger = { who = $who$ }
+    NOT = { has_province_flag = gdd_tianxia_unlawful_request_pending }
+}
+
+# Country scope. $emperor$ is the actor. Subjects may hold an unlawful
+# province, but the request is addressed to their overlord; both parties must
+# be free of another pending request and neither may be at war with the actor.
+gdd_can_receive_tianxia_unlawful_demand_trigger = {
+    exists = yes
+    zhx_is_tianxia_member = yes
+    NOT = { zhx_is_tianzi = yes }
+    OR = {
+        NOT = { has_country_flag = gdd_tianxia_unlawful_demand_cooldown }
+        had_country_flag = {
+            flag = gdd_tianxia_unlawful_demand_cooldown
+            days = 365
+        }
+    }
+    NOT = { has_country_flag = gdd_tianxia_unlawful_request_pending }
+    NOT = { war_with = $emperor$ }
+    any_owned_province = {
+        # PREV is the receiver country. ROOT may be the Emperor when this
+        # scripted trigger is evaluated from an event or topbar alert.
+        gdd_is_unlawful_tianxia_province_for_country_trigger = { who = PREV }
+    }
+    OR = {
+        is_subject = no
+        AND = {
+            is_subject = yes
+            overlord = {
+                zhx_is_tianxia_polity = yes
+                exists = yes
+                NOT = { has_country_flag = gdd_tianxia_unlawful_request_pending }
+                NOT = { war_with = $emperor$ }
+            }
+        }
+    }
+    $emperor$ = {
+        exists = yes
+        zhx_is_tianzi = yes
+        # PREV remains the receiver country after entering Emperor scope.
+        NOT = { war_with = PREV }
+    }
+}
+
+# Country scope. Native diplomatic actions target the sovereign addressee.
+# Independent countries answer for both their own land and their direct
+# subjects' land; an Emperor's own subject may be addressed directly because
+# the Emperor cannot open diplomacy with himself as the recipient.
+gdd_can_be_tianxia_unlawful_addressee_trigger = {
+    exists = yes
+    zhx_is_tianxia_member = yes
+    NOT = { zhx_is_tianzi = yes }
+    NOT = { has_country_flag = gdd_tianxia_unlawful_request_pending }
+    NOT = { war_with = $emperor$ }
+    OR = {
+        AND = {
+            is_subject = no
+            OR = {
+                gdd_can_receive_tianxia_unlawful_demand_trigger = {
+                    emperor = $emperor$
+                }
+                any_subject_country = {
+                    gdd_can_receive_tianxia_unlawful_demand_trigger = {
+                        emperor = $emperor$
+                    }
+                }
+            }
+        }
+        AND = {
+            is_subject_of = $emperor$
+            gdd_can_receive_tianxia_unlawful_demand_trigger = {
+                emperor = $emperor$
+            }
+        }
+    }
+}
+
+# Province scope. An owner change, completed core or lost lawful returnee
+# invalidates a queued request. $owner$ is the holder recorded at dispatch.
+gdd_tianxia_unlawful_context_valid_trigger = {
+    gdd_is_substantively_unlawful_tianxia_province_trigger = { who = $owner$ }
+    event_target:gdd_tianxia_unlawful_addressee = {
+        exists = yes
+        zhx_is_tianxia_member = yes
+        NOT = { war_with = event_target:gdd_tianxia_unlawful_emperor }
+    }
+    $owner$ = {
+        OR = {
+            AND = { tag = event_target:gdd_tianxia_unlawful_addressee is_subject = no }
+            AND = { tag = event_target:gdd_tianxia_unlawful_addressee is_subject_of = event_target:gdd_tianxia_unlawful_emperor }
+            overlord = { tag = event_target:gdd_tianxia_unlawful_addressee }
+        }
+    }
+    event_target:gdd_tianxia_unlawful_emperor = {
+        exists = yes
+        zhx_is_tianzi = yes
+        NOT = { war_with = $owner$ }
+    }
+}
+
+# Country-scope controls used by the three HRE-style buttons.
+gdd_can_leave_tianxia_trigger = {
+    NOT = { has_global_flag = zhx_tianxia_dismantled }
+    zhx_is_tianxia_member = yes
+    NOT = { zhx_is_tianzi = yes }
+    is_at_war = no
+    is_subject = no
+}
+
+gdd_can_add_all_owned_provinces_to_tianxia_trigger = {
+    NOT = { has_global_flag = zhx_tianxia_dismantled }
+    zhx_is_tianxia_polity = yes
+    is_at_war = no
+    any_owned_province = {
+        gdd_can_add_province_to_tianxia_for_country_trigger = { who = PREV }
+    }
+}
+
+# Dismantling follows the HRE model: an outside belligerent must personally
+# occupy the capitals of the Emperor, Tianzi and every surviving great
+# feudatory.  Duplicate offices naturally collapse to the same capital check.
+gdd_can_dismantle_tianxia_trigger = {
+    NOT = { has_global_flag = zhx_tianxia_dismantled }
+    NOT = { zhx_is_tianxia_polity = yes }
+    NOT = { zhx_is_tianzi = yes }
+    is_at_war = yes
+    event_target:zhx_tianzi = {
+        exists = yes
+        capital_scope = { controlled_by = ROOT }
+    }
+    NOT = {
+        any_country = {
+            exists = yes
+            zhx_is_seven_great_feudatory = yes
+            capital_scope = {
+                NOT = { controlled_by = ROOT }
+            }
+        }
+    }
+}
+
+# Opening member catalogue, including extinct core holders in pre-v15 saves.
+# Checked against zhx_initialise_tianxia_system by the territory validator.
+gdd_is_opening_tianxia_core_tag_trigger = {
+    OR = {
+        tag = CZH
+        tag = DMG
+        tag = BAA
+        tag = CAG
+        tag = CAI
+        tag = CCH
+        tag = CDE
+        tag = CHC
+        tag = CHN
+        tag = CSA
+        tag = CZC
+        tag = DAE
+        tag = DAI
+        tag = DIA
+        tag = DQU
+        tag = EGU
+        tag = GDD
+        tag = GON
+        tag = GUI
+        tag = GUN
+        tag = GUO
+        tag = GUZ
+        tag = GYA
+        tag = HAK
+        tag = HNG
+        tag = HUA
+        tag = HYA
+        tag = HYM
+        tag = JJG
+        tag = JIZ
+        tag = JUU
+        tag = LCH
+        tag = LIO
+        tag = LIU
+        tag = LUO
+        tag = LUU
+        tag = MIN
+        tag = MNG
+        tag = NCH
+        tag = OUE
+        tag = QIC
+        tag = QIN
+        tag = QSH
+        tag = QVN
+        tag = QWO
+        tag = SHE
+        tag = SHU
+        tag = SNG
+        tag = SUI
+        tag = TSF
+        tag = WEI
+        tag = WHU
+        tag = WUU
+        tag = WUZ
+        tag = WVG
+        tag = XU2
+        tag = XNG
+        tag = ACG
+        tag = YAN
+        tag = YOU
+        tag = YPG
+        tag = YUE
+        tag = ZHA
+        tag = ZHG
+        tag = ZHO
+        tag = ZHU
+        tag = ZNG
+        tag = ZSH
+    }
+}
+
+gdd_tianxia_unlawful_request_still_valid_trigger = {
+    has_province_flag = gdd_tianxia_unlawful_request_pending
+    gdd_tianxia_unlawful_context_valid_trigger = { owner = $owner$ }
+}

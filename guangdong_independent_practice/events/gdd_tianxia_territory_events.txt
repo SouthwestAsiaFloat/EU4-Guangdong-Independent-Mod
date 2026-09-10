@@ -1,0 +1,378 @@
+namespace = gdd_tianxia_territory
+
+# Quarterly, CZH-anchored maintenance for AI admission/removal and the HRE
+# mutual-exclusion safety net.
+country_event = {
+    id = gdd_tianxia_territory.1
+    title = gdd_tianxia_territory.1.t
+    desc = gdd_tianxia_territory.1.d
+    picture = DIPLOMACY_eventPicture
+    hidden = yes
+    is_triggered_only = yes
+
+    trigger = {
+        tag = CZH
+        has_global_flag = zhx_system_initialised_v13
+        NOT = { has_global_flag = zhx_tianxia_dismantled }
+        OR = {
+            NOT = { is_month = 1 }
+            AND = { is_month = 3 NOT = { is_month = 4 } }
+            AND = { is_month = 6 NOT = { is_month = 7 } }
+            AND = { is_month = 9 NOT = { is_month = 10 } }
+        }
+    }
+
+    immediate = { gdd_quarterly_tianxia_territory_maintenance_effect = yes }
+    option = { name = OK }
+}
+
+# Province-removal confirmation. ROOT is the owner and the selected province
+# is retained as a local event target from the scripted province button.
+country_event = {
+    id = gdd_tianxia_territory.2
+    title = gdd_tianxia_territory.2.t
+    desc = gdd_tianxia_territory.2.d
+    picture = DIPLOMACY_eventPicture
+    is_triggered_only = yes
+
+    immediate = {
+        hidden_effect = {
+            export_to_variable = {
+                which = gdd_tianxia_removal_mandate_cost
+                value = development
+                who = event_target:gdd_tianxia_province_action
+            }
+            if = {
+                limit = {
+                    check_variable = {
+                        which = gdd_tianxia_removal_mandate_cost
+                        value = 200
+                    }
+                }
+                set_variable = {
+                    which = gdd_tianxia_removal_mandate_cost
+                    value = 200
+                }
+            }
+            divide_variable = {
+                which = gdd_tianxia_removal_mandate_cost
+                value = 10
+            }
+        }
+    }
+
+    trigger = {
+        event_target:gdd_tianxia_province_action = {
+            gdd_can_remove_province_from_tianxia_for_country_trigger = { who = ROOT }
+        }
+    }
+
+    option = {
+        name = gdd_tianxia_territory.2.a
+        custom_tooltip = GDD_TIANXIA_PROVINCE_REMOVE_OPTION_TT
+        hidden_effect = {
+            if = {
+                limit = {
+                    event_target:gdd_tianxia_province_action = {
+                        gdd_can_remove_province_from_tianxia_for_country_trigger = { who = ROOT }
+                    }
+                }
+                # This country event is rooted in the removing country. Apply
+                # the Emperor's opinion directly from the Emperor scope before
+                # entering the selected province; reverse/nested effects did
+                # not persist in real saves.
+                if = {
+                    # The opening Emperor is CZH. Prefer the literal tag here
+                    # so the observed opening-write path has no event-target
+                    # dependency at all.
+                    limit = { CZH = { exists = yes is_emperor_of_china = yes } }
+                    CZH = {
+                        add_opinion = {
+                            who = ROOT
+                            modifier = gdd_opinion_removed_tianxia_province
+                            years = 100
+                        }
+                    }
+                }
+                else_if = {
+                    limit = {
+                        event_target:EmperorOfChina = {
+                            exists = yes
+                            is_emperor_of_china = yes
+                        }
+                    }
+                    event_target:EmperorOfChina = {
+                        add_opinion = {
+                            who = ROOT
+                            modifier = gdd_opinion_removed_tianxia_province
+                            years = 100
+                        }
+                    }
+                }
+                event_target:gdd_tianxia_province_action = {
+                    gdd_remove_province_from_tianxia_effect = yes
+                }
+            }
+            set_variable = {
+                which = gdd_tianxia_removal_mandate_cost
+                value = 0
+            }
+        }
+        ai_chance = { factor = 1 }
+    }
+    option = {
+        name = gdd_tianxia_territory.cancel
+        hidden_effect = {
+            set_variable = {
+                which = gdd_tianxia_removal_mandate_cost
+                value = 0
+            }
+        }
+        ai_chance = { factor = 0 }
+    }
+}
+
+# AI-Emperor confirmation. Human Emperors use the native diplomatic action;
+# the event path remains because the engine does not let AI send custom actions.
+country_event = {
+    id = gdd_tianxia_territory.10
+    title = gdd_tianxia_territory.10.t
+    desc = gdd_tianxia_territory.10.d
+    picture = DIPLOMACY_eventPicture
+    is_triggered_only = yes
+
+    trigger = {
+        zhx_is_tianzi = yes
+        NOT = { has_global_flag = zhx_tianxia_dismantled }
+    }
+
+    immediate = {
+        hidden_effect = {
+            save_event_target_as = gdd_tianxia_unlawful_emperor
+            event_target:gdd_tianxia_unlawful_selected_country = {
+                save_event_target_as = gdd_tianxia_unlawful_actual_owner
+            }
+            gdd_select_highest_development_unlawful_tianxia_province_effect = {
+                target = event_target:gdd_tianxia_unlawful_selected_country
+            }
+            event_target:gdd_tianxia_unlawful_selected_country = {
+                if = {
+                    limit = { is_subject = yes NOT = { is_subject_of = event_target:gdd_tianxia_unlawful_emperor } }
+                    overlord = {
+                        save_event_target_as = gdd_tianxia_unlawful_addressee
+                    }
+                }
+                else = {
+                    save_event_target_as = gdd_tianxia_unlawful_addressee
+                }
+            }
+            event_target:gdd_tianxia_unlawful_addressee = {
+                gdd_prepare_tianxia_unlawful_acceptance_effect = yes
+            }
+        }
+    }
+
+    option = {
+        name = gdd_tianxia_territory.10.a
+        trigger = {
+            event_target:gdd_tianxia_unlawful_actual_owner = {
+                gdd_can_receive_tianxia_unlawful_demand_trigger = {
+                    emperor = event_target:gdd_tianxia_unlawful_emperor
+                }
+            }
+            event_target:gdd_tianxia_unlawful_province = {
+                gdd_is_unlawful_tianxia_province_for_country_trigger = {
+                    who = event_target:gdd_tianxia_unlawful_actual_owner
+                }
+            }
+        }
+        custom_tooltip = GDD_TIANXIA_UNLAWFUL_SEND_TT
+        hidden_effect = {
+            gdd_dispatch_tianxia_unlawful_demand_effect = yes
+        }
+        ai_chance = {
+            factor = 80
+            modifier = {
+                factor = 2
+                event_target:gdd_tianxia_unlawful_selected_country = {
+                    is_rival = ROOT
+                }
+            }
+            modifier = {
+                factor = 1.5
+                event_target:gdd_tianxia_unlawful_selected_country = {
+                    ai_attitude = { who = ROOT attitude = attitude_hostile }
+                }
+            }
+            modifier = {
+                factor = 2
+                NOT = {
+                    has_opinion = {
+                        who = event_target:gdd_tianxia_unlawful_selected_country
+                        value = -50
+                    }
+                }
+            }
+            modifier = {
+                factor = 0.35
+                alliance_with = event_target:gdd_tianxia_unlawful_selected_country
+            }
+            modifier = {
+                factor = 0.5
+                has_opinion = {
+                    who = event_target:gdd_tianxia_unlawful_selected_country
+                    value = 100
+                }
+            }
+            modifier = {
+                factor = 0.5
+                trust = {
+                    who = event_target:gdd_tianxia_unlawful_selected_country
+                    value = 80
+                }
+            }
+        }
+    }
+    option = {
+        name = gdd_tianxia_territory.cancel
+        hidden_effect = {
+            event_target:gdd_tianxia_unlawful_addressee = {
+                gdd_clear_tianxia_unlawful_acceptance_cache_effect = yes
+            }
+        }
+        ai_chance = { factor = 20 }
+    }
+}
+
+# The actual holder receives the request directly unless it is a subject, in
+# which case this event is sent to its overlord. Core completion, loss of all
+# lawful returnees or an owner change invalidates the queued request.
+country_event = {
+    id = gdd_tianxia_territory.11
+    title = gdd_tianxia_territory.11.t
+    desc = gdd_tianxia_territory.11.d
+    picture = DIPLOMACY_eventPicture
+    is_triggered_only = yes
+
+    option = {
+        name = gdd_tianxia_territory.11.a
+        trigger = {
+            event_target:gdd_tianxia_unlawful_province = {
+                gdd_tianxia_unlawful_request_still_valid_trigger = {
+                    owner = event_target:gdd_tianxia_unlawful_actual_owner
+                }
+            }
+        }
+        custom_tooltip = GDD_TIANXIA_UNLAWFUL_ACCEPT_TT
+        hidden_effect = {
+            gdd_accept_tianxia_unlawful_demand_effect = yes
+        }
+        ai_chance = {
+            factor = 1
+            modifier = {
+                factor = 0
+                NOT = { has_country_flag = gdd_tianxia_unlawful_ai_will_accept }
+            }
+        }
+    }
+    option = {
+        name = gdd_tianxia_territory.11.b
+        trigger = {
+            event_target:gdd_tianxia_unlawful_province = {
+                gdd_tianxia_unlawful_request_still_valid_trigger = {
+                    owner = event_target:gdd_tianxia_unlawful_actual_owner
+                }
+            }
+        }
+        custom_tooltip = GDD_TIANXIA_UNLAWFUL_REFUSE_TT
+        hidden_effect = {
+            gdd_refuse_tianxia_unlawful_demand_effect = yes
+        }
+        ai_chance = {
+            factor = 1
+            modifier = {
+                factor = 0
+                has_country_flag = gdd_tianxia_unlawful_ai_will_accept
+            }
+        }
+    }
+    option = {
+        name = gdd_tianxia_territory.11.c
+        trigger = {
+            NOT = {
+                event_target:gdd_tianxia_unlawful_province = {
+                    gdd_tianxia_unlawful_request_still_valid_trigger = {
+                        owner = event_target:gdd_tianxia_unlawful_actual_owner
+                    }
+                }
+            }
+        }
+        hidden_effect = {
+            gdd_clear_tianxia_unlawful_request_effect = yes
+        }
+        ai_chance = { factor = 1 }
+    }
+}
+
+country_event = {
+    id = gdd_tianxia_territory.13
+    title = gdd_tianxia_territory.13.t
+    desc = gdd_tianxia_territory.13.d
+    picture = DIPLOMACY_eventPicture
+    is_triggered_only = yes
+    option = {
+        name = OK
+        custom_tooltip = GDD_TIANXIA_UNLAWFUL_REFUSAL_CONFIRM_TT
+    }
+}
+
+country_event = {
+    id = gdd_tianxia_territory.3
+    title = gdd_tianxia_territory.3.t
+    desc = gdd_tianxia_territory.3.d
+    picture = DIPLOMACY_eventPicture
+    is_triggered_only = yes
+
+    trigger = { gdd_can_leave_tianxia_trigger = yes }
+
+    option = {
+        name = gdd_tianxia_territory.3.a
+        custom_tooltip = zhx_leave_tianxia_effect_tt
+        hidden_effect = {
+            if = {
+                limit = { gdd_can_leave_tianxia_trigger = yes }
+                gdd_leave_tianxia_with_mandate_penalty_effect = yes
+            }
+        }
+        ai_chance = { factor = 0 }
+    }
+    option = {
+        name = gdd_tianxia_territory.cancel
+        ai_chance = { factor = 1 }
+    }
+}
+
+country_event = {
+    id = gdd_tianxia_territory.4
+    title = gdd_tianxia_territory.4.t
+    desc = gdd_tianxia_territory.4.d
+    picture = DIPLOMACY_eventPicture
+    is_triggered_only = yes
+
+    trigger = { gdd_can_dismantle_tianxia_trigger = yes }
+
+    option = {
+        name = gdd_tianxia_territory.4.a
+        hidden_effect = {
+            if = {
+                limit = { gdd_can_dismantle_tianxia_trigger = yes }
+                gdd_dismantle_tianxia_effect = yes
+            }
+        }
+        ai_chance = { factor = 0 }
+    }
+    option = {
+        name = gdd_tianxia_territory.cancel
+        ai_chance = { factor = 1 }
+    }
+}

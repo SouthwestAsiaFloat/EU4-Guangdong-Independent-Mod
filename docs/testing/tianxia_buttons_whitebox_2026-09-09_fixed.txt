@@ -1,0 +1,53 @@
+test_add_eligibility_requires_member_peace_and_candidate (test_gdd_tianxia_buttons.TianxiaButtons.test_add_eligibility_requires_member_peace_and_candidate) ... ok
+test_add_filters_noncores_occupation_hre_trade_company_and_other_owners (test_gdd_tianxia_buttons.TianxiaButtons.test_add_filters_noncores_occupation_hre_trade_company_and_other_owners) ... ok
+test_add_per_province_cap_and_no_batch_cap (test_gdd_tianxia_buttons.TianxiaButtons.test_add_per_province_cap_and_no_batch_cap) ... ok
+test_add_repeat_and_remove_readd_cannot_farm_reward (test_gdd_tianxia_buttons.TianxiaButtons.test_add_repeat_and_remove_readd_cannot_farm_reward) ... ok
+test_characterize_leave_retains_reform_executor_bonus (test_gdd_tianxia_buttons.TianxiaButtons.test_characterize_leave_retains_reform_executor_bonus) ... ok
+test_characterize_leave_retains_special_vassal_relation (test_gdd_tianxia_buttons.TianxiaButtons.test_characterize_leave_retains_special_vassal_relation) ... ok
+test_dismantle_cancel_and_changed_capital_are_safe (test_gdd_tianxia_buttons.TianxiaButtons.test_dismantle_cancel_and_changed_capital_are_safe) ... ok
+test_dismantle_cannot_restart_initialisation_or_reuse_rosters (test_gdd_tianxia_buttons.TianxiaButtons.test_dismantle_cannot_restart_initialisation_or_reuse_rosters) ... ok
+test_dismantle_checks_all_seven_dynamic_seats (test_gdd_tianxia_buttons.TianxiaButtons.test_dismantle_checks_all_seven_dynamic_seats) ... ok
+test_dismantle_checks_tianzi_separately_from_emperor (test_gdd_tianxia_buttons.TianxiaButtons.test_dismantle_checks_tianzi_separately_from_emperor) ... ok
+test_dismantle_cleans_political_state_and_only_special_subjects (test_gdd_tianxia_buttons.TianxiaButtons.test_dismantle_cleans_political_state_and_only_special_subjects) ... ok
+test_dismantle_requires_personal_occupation_of_each_living_office (test_gdd_tianxia_buttons.TianxiaButtons.test_dismantle_requires_personal_occupation_of_each_living_office) ... ok
+test_dismantle_requires_war_and_outside_membership (test_gdd_tianxia_buttons.TianxiaButtons.test_dismantle_requires_war_and_outside_membership) ... ok
+test_emperor_can_add_own_land (test_gdd_tianxia_buttons.TianxiaButtons.test_emperor_can_add_own_land) ... ok
+test_leave_after_voting_recounts_only_remaining_members (test_gdd_tianxia_buttons.TianxiaButtons.test_leave_after_voting_recounts_only_remaining_members) ... ok
+test_leave_before_voting_recounts_only_remaining_members (test_gdd_tianxia_buttons.TianxiaButtons.test_leave_before_voting_recounts_only_remaining_members) ... ok
+test_leave_cleans_direct_land_and_membership_with_correct_opinion (test_gdd_tianxia_buttons.TianxiaButtons.test_leave_cleans_direct_land_and_membership_with_correct_opinion) ... ok
+test_leave_confirm_rechecks_war_membership_and_office (test_gdd_tianxia_buttons.TianxiaButtons.test_leave_confirm_rechecks_war_membership_and_office) ... ok
+test_leave_confirmation_and_cancel_change_nothing (test_gdd_tianxia_buttons.TianxiaButtons.test_leave_confirmation_and_cancel_change_nothing) ... ok
+test_leave_during_debate_recounts_country_and_ai_totals (test_gdd_tianxia_buttons.TianxiaButtons.test_leave_during_debate_recounts_country_and_ai_totals) ... ok
+test_leave_eligibility (test_gdd_tianxia_buttons.TianxiaButtons.test_leave_eligibility) ... ok
+test_leave_no_tianxia_land_has_no_mandate_charge (test_gdd_tianxia_buttons.TianxiaButtons.test_leave_no_tianxia_land_has_no_mandate_charge) ... ok
+test_leave_penalty_caps_at_20_and_cannot_repeat (test_gdd_tianxia_buttons.TianxiaButtons.test_leave_penalty_caps_at_20_and_cannot_repeat) ... ok
+test_leave_refreshes_initialized_rosters_and_reform_vote_totals (test_gdd_tianxia_buttons.TianxiaButtons.test_leave_refreshes_initialized_rosters_and_reform_vote_totals) ... ok
+test_leave_without_open_ballot_preserves_closed_results (test_gdd_tianxia_buttons.TianxiaButtons.test_leave_without_open_ballot_preserves_closed_results) ... ok
+test_visibility_requires_initialisation_and_emperor (test_gdd_tianxia_buttons.TianxiaButtons.test_visibility_requires_initialisation_and_emperor) ... ok
+
+----------------------------------------------------------------------
+Ran 26 tests in 0.713s
+
+OK
+
+Observed snapshots:
+[
+  {
+    "voted_before_exit": true,
+    "remaining_members": [
+      "LUU"
+    ],
+    "eligible": "1",
+    "unvoted": "1",
+    "votes_a": "0"
+  },
+  {
+    "voted_before_exit": false,
+    "remaining_members": [
+      "LUU"
+    ],
+    "eligible": "1",
+    "unvoted": "1",
+    "votes_a": "0"
+  }
+]

@@ -14,7 +14,10 @@ from PIL import Image
 ROOT = Path(__file__).resolve().parents[1]
 MOD = ROOT / "guangdong_independent_practice"
 GUI = MOD / "interface/celestialempireview.gui"
+PROVINCE_GUI = MOD / "interface/provinceview.gui"
+TIANXIA_GFX = MOD / "interface/gdd_tianxia_territory.gfx"
 CUSTOM_GUI = MOD / "common/custom_gui/gdd_celestial_vassal_shields.txt"
+TIANXIA_CUSTOM_GUI = MOD / "common/custom_gui/gdd_tianxia_territory_gui.txt"
 LOCALISATION = MOD / "localisation_source/gdd_l_english_readable_utf8.txt"
 REFORM_ACTIONS = MOD / "common/scripted_triggers/gdd_celestial_action_triggers.txt"
 REFORM_VOTE_TRIGGERS = MOD / "common/scripted_triggers/gdd_celestial_reform_vote_triggers.txt"
@@ -22,6 +25,7 @@ REFORM_VOTE_EFFECTS = MOD / "common/scripted_effects/gdd_celestial_reform_vote_e
 REFORM_EFFECTS = MOD / "common/scripted_effects/gdd_celestial_proxy_effects.txt"
 REFORM_MODIFIERS = MOD / "common/triggered_modifiers/gdd_celestial_proxy_reforms.txt"
 TIANXIA_SUBJECTS = MOD / "common/subject_types/gdd_tianxia_subjects.txt"
+LONG_ACTION_BUTTON = MOD / "gfx/interface/gdd_eoc_button_type_1_220.tga"
 
 
 def controls(text: str) -> dict[str, dict[str, float | int]]:
@@ -119,7 +123,8 @@ def main() -> None:
     parsed = controls(gui_text)
 
     for path in (
-        GUI, CUSTOM_GUI, REFORM_ACTIONS, REFORM_VOTE_TRIGGERS,
+        GUI, PROVINCE_GUI, TIANXIA_GFX, CUSTOM_GUI, TIANXIA_CUSTOM_GUI,
+        REFORM_ACTIONS, REFORM_VOTE_TRIGGERS,
         REFORM_VOTE_EFFECTS, REFORM_EFFECTS, REFORM_MODIFIERS,
         TIANXIA_SUBJECTS,
     ):
@@ -134,7 +139,7 @@ def main() -> None:
         for name in parsed
         if name.startswith("gdd_decree_") and name.endswith("_button")
     ]
-    expected_decree_rows = {150 + 38 * row for row in range(12)}
+    expected_decree_rows = {162 + 40 * row for row in range(12)}
     require(len(decree_names) == 18, "expected 18 decree controls")
     require(
         {int(parsed[name]["y"]) for name in decree_names} == expected_decree_rows,
@@ -229,18 +234,78 @@ def main() -> None:
     require("gdd_eoc_decree_frame" not in parsed, "decree gold frame must stay removed")
     require(parsed["gdd_eoc_decree_scroll_track"]["x"] == 302,
             "decree scrollbar is not on the right edge")
-    require(parsed["gdd_eoc_decree_scroll_track"]["height"] == 380,
+    require(parsed["gdd_eoc_decree_scroll_track"]["height"] == 402,
             "decree scrollbar does not span the extended decree column")
     require(parsed["gdd_eoc_member_scroll_track"]["x"] == 300,
             "member scrollbar is not on the right edge")
-    require(parsed["gdd_principal_vassal_slot"]["y"] == 746, "principal feudatory not lowered")
+    require(parsed["gdd_principal_vassal_slot"]["y"] == 684,
+            "principal feudatory is not below the existing ribbon")
     for index in range(1, 7):
-        require(parsed[f"gdd_vassal_slot_{index}"]["y"] == 820, "great feudatory row not lowered")
+        require(parsed[f"gdd_vassal_slot_{index}"]["y"] == 790,
+                "great-feudatory row is not above the bottom actions")
     require(parsed["gdd_eoc_authority_track"]["y"] == 328, "authority track is not tucked under the nameplate")
     require(parsed["emperor_label"]["y"] == 258, "emperor label is not centred on the extended nameplate")
-    require(parsed["decisions_label"]["x"] == 812
+    require(parsed["decisions_label"]["x"] == 982
             and parsed["decisions_label"]["y"] == 91,
             "Celestial Reforms title moved off its original green ribbon")
+
+    require(re.search(
+        r'name = "celestial_window"\s+position = \{ x = -485 y = -430 \}\s+'
+        r'size = \{ x = 1030 y = 850 \}',
+        gui_text,
+    ) is not None, "final widened window geometry drifted")
+    for name, x, sprite in (
+        ("gdd_leave_tianxia_button", 374, "button_type_1"),
+        (
+            "gdd_add_all_tianxia_provinces_button",
+            535,
+            "GFX_gdd_eoc_button_type_1_220",
+        ),
+        ("gdd_dismantle_tianxia_button", 767, "button_type_1"),
+    ):
+        require(parsed.get(name) == {"x": x, "y": 869},
+                f"Tianxia action row drifted: {name}")
+        control = gui_control_block(gui_text, name)
+        require(f'quadTextureSprite = "{sprite}"' in control
+                and 'buttonFont = "vic_18"' in control,
+                f"Tianxia action does not reuse the approved native HRE style: {name}")
+        custom_block(TIANXIA_CUSTOM_GUI.read_text(encoding="utf-8"), name)
+    require(318 < 374 and 535 + 220 < 767 and 767 + 149 < 972,
+            "Tianxia action row overlaps the member or reform frame")
+    require(Image.open(LONG_ACTION_BUTTON).size == (220, 31),
+            "long Tianxia action button is not 220x31")
+
+    province_gui = PROVINCE_GUI.read_text(encoding="utf-8")
+    tianxia_gfx = TIANXIA_GFX.read_text(encoding="utf-8")
+    territory_custom = TIANXIA_CUSTOM_GUI.read_text(encoding="utf-8")
+    for name, sprite, sprite_field in (
+        (
+            "gdd_tianxia_province_member_status_button",
+            "GFX_gdd_tianxia_province_status",
+            "quadTextureSprite",
+        ),
+        ("gdd_tianxia_province_add_button", "GFX_gdd_tianxia_province_add", "quadTextureSprite"),
+        ("gdd_tianxia_province_remove_button", "GFX_gdd_tianxia_province_remove", "quadTextureSprite"),
+    ):
+        require(re.search(
+            rf'name = "{name}".*?{sprite_field} = "{sprite}".*?'
+            rf'position = \{{ x = 20 y = 328 \}}',
+            province_gui,
+            re.S,
+        ) is not None, f"province Tianxia indicator left the native HRE slot: {name}")
+        custom_block(territory_custom, name)
+        require(f'name = "{sprite}"' in tianxia_gfx,
+                f"missing province indicator sprite: {sprite}")
+    require(province_gui.index('name ="hre_button"')
+            < province_gui.index('name = "gdd_tianxia_province_member_status_button"'),
+            "Tianxia indicator no longer overlays the hard-coded HRE button")
+    for filename in (
+        "gdd_tianxia_province_status.tga",
+        "gdd_tianxia_province_add.tga",
+        "gdd_tianxia_province_remove.tga",
+    ):
+        require(Image.open(MOD / "gfx/interface" / filename).size == (216, 42),
+                f"{filename} is not a four-frame 54px button strip")
 
     ordinary_reforms = [
         "keju", "civil_registration", "silver_standard", "kanhe",
@@ -257,9 +322,9 @@ def main() -> None:
         "modernize_banners", "bureaucratic_faction", "new_world",
     ]
     reform_rows = {
-        **dict(zip(ordinary_reforms, range(141, 345, 29))),
-        **dict(zip(centralising_reforms, range(423, 569, 29))),
-        **dict(zip(decentralising_reforms, range(659, 805, 29))),
+        **dict(zip(ordinary_reforms, range(149, 374, 32))),
+        **dict(zip(centralising_reforms, range(467, 618, 30))),
+        **dict(zip(decentralising_reforms, range(711, 862, 30))),
     }
     require(len(reform_rows) == 20, "expected an 8/6/6 set of twenty reforms")
     for stem, y in reform_rows.items():
@@ -267,13 +332,13 @@ def main() -> None:
         passed = f"gdd_reform_{stem}_passed"
         vote = f"gdd_reform_vote_{stem}_button"
         checked = f"gdd_reform_vote_{stem}_checked"
-        require(parsed.get(button) == {"x": 821, "y": y, "scale": 0.9},
+        require(parsed.get(button) == {"x": 982, "y": y, "scale": 0.9},
                 f"reform row drifted: {stem}")
-        require(parsed.get(passed) == {"x": 827, "y": y + 7, "scale": 0.75},
+        require(parsed.get(passed) == {"x": 988, "y": y + 7, "scale": 0.75},
                 f"passed overlay drifted: {stem}")
-        require(parsed.get(vote) == {"x": 1003, "y": y + 5, "scale": 0.65},
+        require(parsed.get(vote) == {"x": 1164, "y": y + 5, "scale": 0.65},
                 f"vote checkbox drifted: {stem}")
-        require(parsed.get(checked) == {"x": 1003, "y": y + 5, "scale": 0.65},
+        require(parsed.get(checked) == {"x": 1164, "y": y + 5, "scale": 0.65},
                 f"vote checkmark drifted: {stem}")
         require('quadTextureSprite = "GFX_reform_button"'
                 in gui_control_block(gui_text, button),
@@ -287,27 +352,81 @@ def main() -> None:
         custom_block(custom_text, checked)
 
     require(parsed["gdd_eoc_ordinary_reform_frame"] == {
-        "x": 796, "y": 108, "width": 242, "height": 267,
+        "x": 972, "y": 108, "width": 220, "height": 304,
     }, "ordinary reform frame geometry drifted")
     require(parsed["gdd_eoc_centralizing_reform_frame"] == {
-        "x": 796, "y": 386, "width": 242, "height": 225,
+        "x": 972, "y": 430, "width": 220, "height": 226,
     }, "centralising reform frame geometry drifted")
     require(parsed["gdd_eoc_decentralizing_reform_frame"] == {
-        "x": 796, "y": 622, "width": 242, "height": 225,
+        "x": 972, "y": 674, "width": 220, "height": 226,
     }, "decentralising reform frame geometry drifted")
     require(parsed["gdd_reform_ordinary_header"]["y"] == 116
-            and parsed["gdd_reform_centralizing_header"]["y"] == 394
-            and parsed["gdd_reform_decentralizing_header"]["y"] == 630,
+            and parsed["gdd_reform_centralizing_header"]["y"] == 438
+            and parsed["gdd_reform_decentralizing_header"]["y"] == 682,
             "reform group headers are not lowered into their frames")
     require("gdd_reform_military_faction_button" not in gui_text
             and "gdd_reform_military_faction_button" not in custom_text,
             "removed twenty-first reform is still exposed")
-    require(parsed["gdd_central_final_conflict_mark"]["y"] == 568
-            and parsed["gdd_decentral_final_conflict_mark"]["y"] == 804,
+    require(parsed["gdd_central_final_conflict_mark"]["y"] == 617
+            and parsed["gdd_decentral_final_conflict_mark"]["y"] == 861,
             "final-reform mutual-exclusion marks drifted")
     require("gdd_bureaucratic_faction_conflict_mark" not in gui_text
             and "gdd_military_faction_conflict_mark" not in gui_text,
             "obsolete faction mutual-exclusion marks remain")
+
+    # Check relationships as well as coordinates: keep hitboxes separated,
+    # state overlays attached, and the reserved central area unobstructed.
+    member_frame = parsed["gdd_eoc_member_frame"]
+    frame_names = [f"gdd_eoc_{group}_reform_frame" for group in
+                   ("ordinary", "centralizing", "decentralizing")]
+    frames = [parsed[name] for name in frame_names]
+    axis = 645
+    require(all(frame["width"] == member_frame["width"] for frame in frames),
+            "side columns no longer have equal widths")
+    require(member_frame["x"] + member_frame["width"] + frames[0]["x"] == 2 * axis,
+            "side columns are not mirrored around the feudatory ribbon")
+    require(all(b["y"] - a["y"] - a["height"] == 18
+                for a, b in zip(frames, frames[1:])),
+            "reform group spacing is uneven")
+    require(frames[-1]["y"] + frames[-1]["height"]
+            == member_frame["y"] + member_frame["height"]
+            == parsed["gdd_leave_tianxia_button"]["y"] + 31,
+            "member, reform and action bottoms are not aligned")
+    left = parsed["gdd_leave_tianxia_button"]["x"]
+    middle = parsed["gdd_add_all_tianxia_provinces_button"]["x"]
+    right = parsed["gdd_dismantle_tianxia_button"]["x"]
+    require(middle - left - 149 == right - middle - 220 == 12
+            and left + right + 149 == 2 * axis,
+            "action buttons lost their equal gaps or centre alignment")
+    for index in range(1, 7):
+        require(parsed[f"gdd_vassal_slot_{index}"]
+                == parsed[f"gdd_vassal_empty_slot_{index}"],
+                "live and empty feudatory shield layers are misaligned")
+    for name in decree_names:
+        active = parsed[name.removesuffix("_button") + "_active"]
+        require(active["x"] - parsed[name]["x"] == 162
+                and active["y"] - parsed[name]["y"] == 8,
+                f"decree active mark left its button: {name}")
+    for stems, frame in zip(
+        (ordinary_reforms, centralising_reforms, decentralising_reforms), frames
+    ):
+        rows = [parsed[f"gdd_reform_{stem}_button"] for stem in stems]
+        for row, stem in zip(rows, stems):
+            # Vanilla reform_button.dds is 198x33; checkbox frames are 32x32.
+            vote = parsed[f"gdd_reform_vote_{stem}_button"]
+            require(frame["x"] < row["x"]
+                    and row["x"] + 198 * row["scale"] < vote["x"]
+                    and vote["x"] + 32 * vote["scale"] < frame["x"] + frame["width"]
+                    and frame["y"] < row["y"]
+                    and row["y"] + 33 * row["scale"] < frame["y"] + frame["height"],
+                    f"reform row overflows its frame or vote checkbox: {stem}")
+        require(all(a["y"] + 33 * a["scale"] <= b["y"]
+                    for a, b in zip(rows, rows[1:])),
+                "reform button hitboxes overlap vertically")
+    for name, item in parsed.items():
+        require(not (318 < item.get("x", -1) < 972
+                     and 393 <= item.get("y", -1) < 644),
+                f"control intrudes into the reserved central area: {name}")
 
     actions = REFORM_ACTIONS.read_text(encoding="utf-8")
     vote_triggers = REFORM_VOTE_TRIGGERS.read_text(encoding="utf-8")
@@ -345,10 +464,11 @@ def main() -> None:
             and "max_government_rank = 0" in subjects,
             "Tianxia vassal does not support no-slot unrestricted-rank subjects")
 
-    require(parsed["influence_label"]["y"] == 91
-            and parsed["influence_value"]["x"] == 625
+    require(parsed["influence_label"]["x"] == 680
+            and parsed["influence_label"]["y"] == 91
+            and parsed["influence_value"]["x"] == 705
             and parsed["influence_value"]["y"] == 128
-            and parsed["influence_growth"]["x"] == 625
+            and parsed["influence_growth"]["x"] == 705
             and parsed["influence_growth"]["y"] == 168,
             "Mandate label and values are not aligned as one block")
 
@@ -361,28 +481,44 @@ def main() -> None:
     sys.path.insert(0, str(ROOT / "tools"))
     import generate_gdd_eoc_reform_groups as groups
     import generate_gdd_eoc_wide_background as background
+    import generate_gdd_eoc_final_wide_layout as final_layout
 
     require(background.OUTPUT.read_bytes() == background.render(), "stale Mandate background")
     require(groups.OUTPUT.read_bytes() == groups.render(), "stale grouped-panel overlay")
     require(groups.DECREE_OUTPUT.read_bytes() == groups.render_compact_decree_button(),
             "stale compact decree scroll")
+    require(final_layout.BACKGROUND_OUTPUT.read_bytes() == final_layout.render_background(),
+            "stale final 1180px Mandate background")
+    require(final_layout.OVERLAY_OUTPUT.read_bytes() == final_layout.render_overlay(),
+            "stale final 1180px grouped-panel overlay")
+    require(background.FEUDATORY_HEADER_TARGET == (314, 626, 684, 658),
+            "seven-feudatory green scroll is not aligned with its GUI label")
+    mandate_right = (
+        background.MANDATE_COUNTER_TARGET[0]
+        + background.MANDATE_COUNTER[2]
+        - background.MANDATE_COUNTER[0]
+    )
+    require(final_layout.TITLE_SECOND_CUT
+            - final_layout.TITLE_BRIDGE_SAMPLE_WIDTH // 2 >= mandate_right,
+            "title widening sample crosses and stretches the Mandate frame edge")
 
-    overlay = Image.open(BytesIO(groups.render())).convert("RGBA")
+    overlay = Image.open(BytesIO(final_layout.render_overlay())).convert("RGBA")
     for gui_x, gui_y, label in (
-        (900, 200, "ordinary"),
-        (900, 500, "centralising"),
-        (900, 780, "decentralising"),
-        (900, 95, "Celestial Reforms ribbon"),
+        (1060, 200, "ordinary"),
+        (1060, 500, "centralising"),
+        (1060, 780, "decentralising"),
+        (1060, 95, "Celestial Reforms ribbon"),
     ):
         alpha = overlay.getpixel((gui_x - groups.BACKGROUND_X,
                                   gui_y - groups.BACKGROUND_Y))[3]
         require(alpha == 0, f"overlay still covers transparent {label} area")
     print("Integrated Mandate / Zhou-member layout: PASS")
     print("  Centred decrees fill the extended functional 12 + 4 page viewport")
-    print("  Short member panel uses a functional 48 + 17 page scrollbar")
+    print("  Short member panel uses a functional 48 + 18 page scrollbar")
     print("  Emperor and Mandate share the top row; authority track is tucked below")
-    print("  Principal plus six great feudatories occupy the lower centre")
-    print("  Celestial reforms use the original-height 8 / 6 / 6 vanilla-button layout")
+    print("  Equal 220px side columns share the existing seven-feudatory centre axis")
+    print("  Three native HRE buttons have equal gaps and align with the panel bottoms")
+    print("  Reforms retain their native art, scales and 8 / 6 / 6 grouping")
 
 
 if __name__ == "__main__":

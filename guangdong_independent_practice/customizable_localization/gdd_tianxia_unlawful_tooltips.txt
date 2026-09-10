@@ -1,0 +1,150 @@
+# Visible, deterministic reasons for the scripted Zhou Tianxia unlawful-
+# territory request. ROOT is the recipient of the demand.
+
+defined_text = {
+    name = GetGddTianxiaUnlawfulOutcome
+    random = no
+
+    text = {
+        localisation_key = gdd_tianxia_unlawful_outcome_accept
+        trigger = { has_country_flag = gdd_tianxia_unlawful_ai_will_accept }
+    }
+    text = {
+        localisation_key = gdd_tianxia_unlawful_outcome_refuse
+        trigger = { always = yes }
+    }
+}
+
+defined_text = {
+    name = GetGddTianxiaUnlawfulSubjectReason
+    random = no
+
+    text = {
+        localisation_key = gdd_tianxia_unlawful_reason_emperor_subject
+        trigger = { has_country_flag = gdd_tianxia_unlawful_reason_emperor_subject }
+    }
+    text = {
+        localisation_key = gdd_tianxia_unlawful_reason_blank
+        trigger = { always = yes }
+    }
+}
+
+defined_text = {
+    name = GetGddTianxiaUnlawfulStrengthReason
+    random = no
+
+    text = {
+        localisation_key = gdd_tianxia_unlawful_reason_emperor_much_stronger
+        trigger = { has_country_flag = gdd_tianxia_unlawful_reason_emperor_much_stronger }
+    }
+    text = {
+        localisation_key = gdd_tianxia_unlawful_reason_emperor_stronger
+        trigger = { has_country_flag = gdd_tianxia_unlawful_reason_emperor_stronger }
+    }
+    text = {
+        localisation_key = gdd_tianxia_unlawful_reason_recipient_stronger
+        trigger = { has_country_flag = gdd_tianxia_unlawful_reason_recipient_stronger }
+    }
+    text = {
+        localisation_key = gdd_tianxia_unlawful_reason_blank
+        trigger = { always = yes }
+    }
+}
+
+defined_text = {
+    name = GetGddTianxiaUnlawfulOpinionReason
+    random = no
+
+    text = {
+        localisation_key = gdd_tianxia_unlawful_reason_opinion_very_high
+        trigger = { has_country_flag = gdd_tianxia_unlawful_reason_opinion_very_high }
+    }
+    text = {
+        localisation_key = gdd_tianxia_unlawful_reason_opinion_high
+        trigger = { has_country_flag = gdd_tianxia_unlawful_reason_opinion_high }
+    }
+    text = {
+        localisation_key = gdd_tianxia_unlawful_reason_opinion_low
+        trigger = { has_country_flag = gdd_tianxia_unlawful_reason_opinion_low }
+    }
+    text = {
+        localisation_key = gdd_tianxia_unlawful_reason_opinion_very_low
+        trigger = { has_country_flag = gdd_tianxia_unlawful_reason_opinion_very_low }
+    }
+    text = {
+        localisation_key = gdd_tianxia_unlawful_reason_blank
+        trigger = { always = yes }
+    }
+}
+
+defined_text = {
+    name = GetGddTianxiaUnlawfulTrustReason
+    random = no
+
+    text = {
+        localisation_key = gdd_tianxia_unlawful_reason_trust_very_high
+        trigger = { has_country_flag = gdd_tianxia_unlawful_reason_trust_very_high }
+    }
+    text = {
+        localisation_key = gdd_tianxia_unlawful_reason_trust_high
+        trigger = { has_country_flag = gdd_tianxia_unlawful_reason_trust_high }
+    }
+    text = {
+        localisation_key = gdd_tianxia_unlawful_reason_trust_low
+        trigger = { has_country_flag = gdd_tianxia_unlawful_reason_trust_low }
+    }
+    text = {
+        localisation_key = gdd_tianxia_unlawful_reason_blank
+        trigger = { always = yes }
+    }
+}
+
+defined_text = {
+    name = GetGddTianxiaUnlawfulAllianceReason
+    random = no
+
+    text = {
+        localisation_key = gdd_tianxia_unlawful_reason_allied
+        trigger = { has_country_flag = gdd_tianxia_unlawful_reason_allied }
+    }
+    text = {
+        localisation_key = gdd_tianxia_unlawful_reason_blank
+        trigger = { always = yes }
+    }
+}
+
+defined_text = {
+    name = GetGddTianxiaUnlawfulHostilityReason
+    random = no
+
+    text = {
+        localisation_key = gdd_tianxia_unlawful_reason_hostile
+        trigger = { has_country_flag = gdd_tianxia_unlawful_reason_hostile }
+    }
+    text = {
+        localisation_key = gdd_tianxia_unlawful_reason_blank
+        trigger = { always = yes }
+    }
+}
+
+defined_text = {
+    name = GetGddTianxiaUnlawfulDipRepReason
+    random = no
+
+    text = {
+        localisation_key = gdd_tianxia_unlawful_reason_diprep_very_high
+        trigger = { has_country_flag = gdd_tianxia_unlawful_reason_diprep_very_high }
+    }
+    text = {
+        localisation_key = gdd_tianxia_unlawful_reason_diprep_high
+        trigger = { has_country_flag = gdd_tianxia_unlawful_reason_diprep_high }
+    }
+    text = {
+        localisation_key = gdd_tianxia_unlawful_reason_diprep_low
+        trigger = { has_country_flag = gdd_tianxia_unlawful_reason_diprep_low }
+    }
+    text = {
+        localisation_key = gdd_tianxia_unlawful_reason_blank
+        trigger = { always = yes }
+    }
+}

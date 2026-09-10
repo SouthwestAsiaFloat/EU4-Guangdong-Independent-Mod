@@ -14,7 +14,8 @@ country_event = {
     trigger = {
         tag = CZH
         has_global_flag = zhx_system_initialised_v8
-        event_target:EmperorOfChina = { exists = yes }
+        NOT = { has_global_flag = zhx_tianxia_dismantled }
+        event_target:zhx_tianzi = { exists = yes }
     }
 
     immediate = {
@@ -41,7 +42,8 @@ country_event = {
     trigger = {
         tag = CZH
         has_global_flag = zhx_system_initialised_v8
-        event_target:EmperorOfChina = { exists = yes }
+        NOT = { has_global_flag = zhx_tianxia_dismantled }
+        event_target:zhx_tianzi = { exists = yes }
         OR = {
             NOT = { is_month = 1 }
             AND = { is_month = 3 NOT = { is_month = 4 } }

@@ -206,7 +206,8 @@ def run(dependency_root: Path, check: bool) -> None:
         TARGET.write_text(output, encoding="utf-8")
     print(
         f"{'checked' if check else 'built'} Chinese 1.37 diplomacy view; "
-        "school/name gutter=6px; school-tooltip hit targets=6"
+        "school/name gutter=6px; school-tooltip hit targets=6; "
+        "Tianxia actions use the native diplomatic-action list"
     )
 
 

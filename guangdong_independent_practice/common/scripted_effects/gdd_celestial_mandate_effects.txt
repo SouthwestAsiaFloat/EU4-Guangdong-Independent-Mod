@@ -1,0 +1,148 @@
+# Non-mutating Mandate cache refresh. ROOT must be the current Emperor of
+# China. Startup, Mandate transfer and the monthly tick may all call this.
+gdd_refresh_tianxia_mandate_effect = {
+    # Seven great-feudatory seats are valid while occupied by an existing Zhou
+    # member that is independent or subject to another Zhou polity. External
+    # subjection invalidates the seat, matching the HRE elector penalty.
+    set_variable = {
+        which = gdd_valid_great_feudatory_count
+        value = 0
+    }
+    every_country = {
+        limit = {
+            exists = yes
+            zhx_is_seven_great_feudatory = yes
+            OR = {
+                is_subject = no
+                overlord = {
+                    zhx_is_tianxia_polity = yes
+                }
+            }
+        }
+        ROOT = {
+            change_variable = {
+                which = gdd_valid_great_feudatory_count
+                value = 1
+            }
+        }
+    }
+    # Missing Clausewitz variables read as zero. Gate all seat penalties until
+    # the first complete scan so database load cannot briefly mean seven empty
+    # seats and apply a false -0.35 Mandate modifier.
+    set_country_flag = gdd_tianxia_mandate_cache_ready
+}
+
+# Mutating monthly maintenance. Keeping this separate from the cache refresh
+# prevents startup and Mandate-transfer refreshes from charging monthly losses.
+gdd_monthly_tianxia_mandate_effect = {
+    gdd_refresh_tianxia_mandate_effect = yes
+
+    # HRE-style foreign occupation: each Zhou-owned province controlled by an
+    # outside country costs 0.005 Mandate per month. Rebel occupation does not
+    # count because it has no country controller.
+    set_variable = {
+        which = gdd_foreign_occupied_tianxia_province_count
+        value = 0
+    }
+    every_country = {
+        limit = {
+            exists = yes
+            zhx_is_tianxia_polity = yes
+        }
+        every_owned_province = {
+            limit = {
+                zhx_is_tianxia_province = yes
+                NOT = { controlled_by = owner }
+                controller = {
+                    exists = yes
+                    NOT = { zhx_is_tianxia_polity = yes }
+                }
+            }
+            ROOT = {
+                change_variable = {
+                    which = gdd_foreign_occupied_tianxia_province_count
+                    value = 1
+                }
+                add_mandate = -0.005
+            }
+        }
+    }
+    set_variable = {
+        which = gdd_foreign_occupation_mandate_loss_display
+        which = gdd_foreign_occupied_tianxia_province_count
+    }
+    multiply_variable = {
+        which = gdd_foreign_occupation_mandate_loss_display
+        value = 0.005
+    }
+
+}
+
+# Public hook for annexation/integration on-actions. ROOT must be the external
+# annexer and FROM the Zhou member that is being completely removed.
+gdd_apply_external_tianxia_annexation_mandate_loss_effect = {
+    if = {
+        limit = {
+            NOT = { has_global_flag = zhx_tianxia_dismantled }
+            NOT = { zhx_is_tianxia_polity = yes }
+            war_with = FROM
+            FROM = {
+                has_country_flag = zhx_member
+                NOT = { has_country_flag = gdd_external_annexation_mandate_paid }
+            }
+            event_target:EmperorOfChina = { exists = yes is_emperor_of_china = yes }
+        }
+        FROM = { set_country_flag = gdd_external_annexation_mandate_paid }
+        event_target:EmperorOfChina = { change_variable = { which = zhx_external_extinction_mandate_queued value = 10 } }
+    }
+}
+
+# Public voluntary-exit path. ROOT must be the departing member. Only directly
+# owned Tianxia provinces count toward the aggregate 0.1-per-development loss,
+# which is capped at 20 Mandate for the whole country departure.
+gdd_leave_tianxia_with_mandate_penalty_effect = {
+    if = {
+        limit = {
+            gdd_can_leave_tianxia_trigger = yes
+        }
+        zhx_feudatory_forfeit_dignity = yes
+        zhx_cancel_member_pending_actions = yes
+        gdd_leave_tianxia_territory_effect = yes
+        # Both the Mandate button and the diplomacy decision use this path.
+        # The Emperor already receives the local -100 opinion penalty above;
+        # apply the separate Tianzi penalty only when the offices differ.
+        event_target:zhx_tianzi = {
+            if = {
+                limit = {
+                    exists = yes
+                    NOT = { is_emperor_of_china = yes }
+                }
+                add_opinion = {
+                    who = ROOT
+                    modifier = zhx_opinion_left_tianxia_tianzi
+                    years = 10
+                }
+            }
+        }
+        every_country = {
+            limit = {
+                exists = yes
+                zhx_is_tianxia_member = yes
+                NOT = { tag = ROOT }
+                NOT = { zhx_is_tianzi = yes }
+                NOT = { is_emperor_of_china = yes }
+            }
+            add_opinion = {
+                who = ROOT
+                modifier = zhx_opinion_left_tianxia_member
+                years = 10
+            }
+        }
+        zhx_remove_tianxia_member = yes
+        add_prestige = -25
+        add_country_modifier = {
+            name = zhx_tianxia_rejoin_bar
+            duration = 7300
+        }
+    }
+}

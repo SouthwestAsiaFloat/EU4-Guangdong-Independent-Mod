@@ -167,7 +167,7 @@ assert "gdd_refresh_authority_balance_effects = yes" in effects
 assert "ZHX_ROSTER_SHIELDS_BEGIN" not in topbar
 assert "zhx_gui_member_shield_01" not in topbar
 assert "ZHX_ROSTER_BINDINGS_BEGIN" not in read(MOD / "common/custom_gui/zhx_tianxia_gui.txt")
-assert "zhx_allocate_gui_roster_slot = yes" not in re.search(
+assert "has_country_flag = zhx_council_phase_ballot_open" in re.search(
     r"zhx_build_gui_roster\s*=\s*\{(.*?)\n\}", roster, re.S
 ).group(1)
 

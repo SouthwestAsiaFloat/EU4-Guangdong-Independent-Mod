@@ -1,0 +1,45 @@
+# ROOT is the applicant; FROM is the Tianzi answering the native diplomatic request.
+zhx_appeal_still_valid = {
+                has_global_flag = zhx_system_initialised_v14
+                is_subject = no
+                zhx_is_tianxia_member = yes
+                NOT = { zhx_is_tianzi = yes }
+                is_at_war = yes
+                NOT = { war_with = FROM }
+                FROM = {
+                    exists = yes
+                    is_subject = no
+                    zhx_is_tianzi = yes
+                    is_at_war = no
+                }
+                any_war_enemy_country = {
+                    exists = yes
+                    NOT = { zhx_is_tianxia_polity = yes }
+                    offensive_war_with = ROOT
+                    is_in_war = {
+                        attacker_leader = THIS
+                        defender_leader = ROOT
+                    }
+                }
+                NOT = {
+                    any_war_enemy_country = {
+                        zhx_is_tianxia_polity = yes
+                        offensive_war_with = ROOT
+                    }
+                }
+                NOT = {
+                    any_war_enemy_country = {
+                        offensive_war_with = ROOT
+                        OR = {
+                            alliance_with = FROM
+                            is_subject_of = FROM
+                        }
+                    }
+                }
+                NOT = {
+                    is_in_war = {
+                        defenders = FROM
+                        defender_leader = THIS
+                    }
+                }
+            }

@@ -234,7 +234,10 @@ def presentation():
    req(im.size==(int(size),int(size)) and im.getchannel('A').getextrema()==(0,255),'DDS dimensions and alpha')
    req(hashlib.sha256(p.read_bytes()).hexdigest()==item2['sha256'],'DDS hash')
  for name,item in asset['estate_atlases'].items():
-  before=Image.open(item['source']).convert('RGBA');after=Image.open(R/item['path']).convert('RGBA')
+  source=Path(item['source'])
+  if not source.is_file():source=v.effective('gfx/interface/'+source.name,False)
+  req(hashlib.sha256(source.read_bytes()).hexdigest()==item['source_sha256'],'upstream estate atlas hash')
+  before=Image.open(source).convert('RGBA');after=Image.open(R/item['path']).convert('RGBA')
   req(after.crop((0,0,*before.size)).tobytes()==before.tobytes(),'original estate pixels must survive atlas extension')
   scalar(sprites['GFX_'+name],'noOfFrames','16')
  req(not any('EDG_' in str(x) or 'anb_' in str(x) for tree in T.values() for _,_,x in walk(tree) if isinstance(x,str)),'no runtime dependency on reference mods')

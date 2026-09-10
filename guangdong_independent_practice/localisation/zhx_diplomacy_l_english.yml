@@ -1,6 +1,6 @@
 ﻿l_english:
  zhx_covenant_breaker:0 "¯rßv"
- zhx_covenant_breaker_desc:0 "å‹ýV^—ÕlŠQv^hT)YNW0WÿASt^…QN—V3u÷‹ ReQhT)YNÿ)YPRmNO•gÆ‰vQHN¯rßvwÿv^(W¯rßvwN=f)YPRöeÖS—V“IYžOj”b‰Nt1u0dk¶r`,g«ŽNæS RÏuNmb›Q–é`Z0"
+ zhx_covenant_breaker_desc:0 "å‹ýV(Wb‰N-Nàe8hÃVµOHYhT)YNbXTc	g„v‰v°‹hTWÿASt^…QN—V3u÷‹ ReQhT)YNÿ)YPRmNO•gÆ‰vQHN¯rßvwÿv^(W¯rßvwN=f)YPRöeÖS—V“IYžOj”b‰Nt1u0dk¶r`,g«ŽNæS RÏuNmb›Q–é`Z0"
  zhx_tianxia_application_cooldown:0 "eQhT3u÷‹«ˆ&T"
  zhx_tianxia_application_cooldown_desc:0 "ASt^…QNýwQ!k3u÷‹ReQhT)YNTŒQ0"
  zhx_tianxia_rejoin_bar:0 "ê»ShTMs"
@@ -24,7 +24,7 @@
 
  zhx_appeal_to_tianzi_for_relief:0 "JT%`"
  zhx_appeal_to_tianzi_for_relief_title:0 "JT%`"
- zhx_appeal_to_tianzi_for_relief_desc:0 "TSVMRhT)YPR§Y[From.GetName]§!JT%`ÿ÷‹vQ ReQbýVSVMRÂS R„vhQè2–¡Vb‰N0)YPRïSåN¥c×SbÒbÝuÿå‹Lˆ¨RNú^ËzTßvÿmNNO©‹)YPRê¨RÂS RbýVÊNT„vb‰N0"
+ zhx_appeal_to_tianzi_for_relief_desc:0 "TSVMRhT)YPR§Y[From.GetName]§!JT%`ÿ÷‹vQ ReQbýVSVMRÂS R„vhQè2–¡Vb‰N0)YPRÏk!kžRE–ÒbÝu	gHe÷‹BlÿObýVùRvQ‹Ya§R-50§!ÿdky˜=t¡‹gNO§R-200§!ÿÏkt^b`Y§G5§!ÿ8gÑSJT%`NYZ0å‹Lˆ¨RNú^ËzTßvÿmNNO©‹)YPRê¨RÂS RbýVÊNT„vb‰N0"
  zhx_appeal_to_tianzi_for_relief_tooltip:0 "÷‹BlSVMRhT)YPR ReQbýVSVMRÂS R„vhQè2–¡Vb‰N0"
  zhx_appeal_to_tianzi_for_relief_alert_tooltip:0 "NMOhT)YNø‹¯O÷‹BlbìNeSLˆQe±`KN10"
  zhx_appeal_to_tianzi_for_relief_dialog:0 "§Y[This.GetName]§!ckmßWYýV¶RÛIeÿ÷‹BlbìNeSLˆ)YPRQe±`KN1ÿ ReQvQSVMRÂS R„vhQè2–¡Vb‰N0"
@@ -43,7 +43,7 @@
  zhx_diplomacy.30.a:0 "¸‹vQRMs0"
  zhx_diplomacy.30.b:0 "sšÞVNb÷‹0"
  zhx_diplomacy_admission_still_valid_tt:0 "3u÷‹ýVÍN6qìrËz0¡l	g¯rßvb·QtS08gNhT)YNýV¶R²Nb0ùR)YPR‹YaóS150ÿv^án³–™ýMOŽN-NýV!k'YF–bN°s	gbXT¥cäX0"
- zhx_diplomacy_accept_admission_tt:0 "3u÷‹ýVReQhT)YNTŒQÿÝOYuìrËzY²Nv^·ƒ—VSVMRhT)YNqQTîOck0"
+ zhx_diplomacy_accept_admission_tt:0 "3u÷‹ýVReQhT)YNTŒQÿÝOYuìrËzY²Nv^·ƒ—VSVMRhT)YNqQTîOckÿwýN‰˜æSLˆžRteQMs0"
  zhx_diplomacy_reject_admission_tt:0 "sšÞV3u÷‹ÿå‹ýVASt^…QNýwQ!k÷‹RhTMs0"
 
  zhx_apply_to_join_tianxia_title:0 "÷‹RhTMs"
@@ -52,4 +52,6 @@
  zhx_apply_to_join_tianxia_effect_tt:0 "T)YPR²NeQhT3u÷‹0)YPR¥c×STÿbýVbHNåb	gìrËzY²NCg„vhT)YNø‹¯Oÿå‚«ˆ&T³QÿASt^…QNýwQ!k3u÷‹0"
  zhx_leave_tianxia_title:0 "ê»ShTMs"
  zhx_leave_tianxia_desc:0 "ìrËzNYŽNŒTs^„vø‹¯OïSåNIN¨RúQhT)YN0)YPRNýw«ˆÙN³Q®‹úQÿ)YPRmNNýwUS¹eb—qšvQÖNbXT0"
- zhx_leave_tianxia_effect_tt:0 "1Y»ShT)YNbXT«ŽýNNqQTîOckÿmc1Y§R25§!Zgÿ)YPRùRbýV·ƒ—VASt^§R-50§!‹YaÿvQÖNbXT·ƒ—VASt^§R-25§!‹YaÿŒNASt^…QN—VÍ‘°e3u÷‹0IN¨RÌwßvTöeLeVçe5rÿQeQßvÎNPRýVwek0úQ,g«ŽNµNuµOeuib.Vÿâe	g¯rßv¶r`NO«ˆnd–0"
+ zhx_leave_tianxia_effect_tt:0 "1Y»SbXT«ŽýN0hT6R5rMONqQTîOckÿôv^S‰v°‹hTWhQèMsÿ^SýVN–—RINúQ0)Y‹T	cMsW0WÏkÑSUS¦^cb§R0.1§!0T¡‹gY§R20§!0mc1Y§R25§!ZgÿŒNASt^yeQÿYýVNýwÕuÇyeQbb`YV5rÿgánck8^QeQßvÎNPRýVVËY0)Y‹Tc	gwùRbýVM–NO§R100§!‹Yaÿå‚)YPRNvQNTýVÿ)YPRæS·ƒ—VASt^§R-50§!‹YaÿvQÖNnfbXT·ƒ—VASt^§R-25§!‹Ya0âe	g¯rßvTœgÝOYu0"
+
+ zhx_opinion_refused_valid_appeal:0 "ÒbÝu	gHeJT%`"

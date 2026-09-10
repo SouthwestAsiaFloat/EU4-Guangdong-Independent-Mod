@@ -1,0 +1,17 @@
+l_english:
+ # 覆盖原版王命名称与说明。放在 localisation/replace 中，确保不会被原版后加载内容夺回。
+ CELESTIAL_MANDATE:0 "王命"
+ mandate:0 "王命"
+ MANDATE_LESS_THAN:0 "王命低于"
+ MANDATE_AT_LEAST:0 "王命至少为"
+ MANDATE_GROWTH_MODIFIERS:0 "影响每月§Y王命增长§!的因素："
+ MODIFIER_IMPERIAL_MANDATE:1 "王命增长修正"
+ ADD_MANDATE_DESC:0 "$DIRECTION$ $MANDATECHANGE|Y$王命。\n"
+ SET_MANDATE_DESC:0 "将王命设为$MANDATEVALUE|Y$。\n"
+ IMPERIAL_MANDATE_MODIFIER_DESC:0 "王命提供以下比例修正：\n$MODIFIERDESC$"
+ IMPERIAL_MANDATE_DESC:0 "原生天命暂作为共同改革的资源。至少§Y50§!天命方可推行，通过后清空天命，不扣稳定。政治执行权由周天子与首席诸侯按权力分配掌握，不随天命转移。"
+ IMPERIAL_MANDATE_CURRENT_DESC:0 ""
+ IMPERIAL_MANDATE_BONUS_DESC:0 ""
+ IMPERIAL_MANDATE_PENALTY_DESC:0 ""
+ IMPERIAL_MANDATE_GAIN_DESC:0 "获取于：\n -拥有繁荣州。\n -周天下维持内部和平。\n -周天下控制北京、南京与广州。\n -以一统中华为名作战。\n -颁布昭告国号圣旨。"
+ IMPERIAL_MANDATE_LOSS_DESC:1 "损失于：\n -皇帝受制于其他国家。\n -七大诸侯席位空缺或受外部控制。\n -周天下领土遭外敌占领。\n -周天下失去北京、南京或广州。\n -中华帝国文化危机持续。\n -成员遭外敌吞并、未获保护或主动退出周天下。"

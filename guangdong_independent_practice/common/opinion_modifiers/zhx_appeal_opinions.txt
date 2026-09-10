@@ -1,0 +1,6 @@
+# One bilateral aggregate entry; repeats add -50 down to -200.
+zhx_opinion_refused_valid_appeal = {
+    opinion = -50
+    min = -200
+    yearly_decay = 5
+}

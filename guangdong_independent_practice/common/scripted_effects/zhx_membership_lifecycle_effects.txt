@@ -1,0 +1,52 @@
+# Country-local cancellation. Ordinary withdrawal never closes another member's campaign.
+zhx_cancel_member_pending_actions = {
+    if = {
+        limit = { has_saved_global_event_target = zhx_feudatory_applicant tag = event_target:zhx_feudatory_applicant }
+        event_target:zhx_tianzi = {
+            if = {
+                limit = { has_country_flag = zhx_council_kind_promotion }
+                zhx_reset_tianxia_council_ballot = yes
+                zhx_clear_tianxia_council_phase = yes
+                zhx_clear_tianxia_council_kind = yes
+                zhx_clear_tianxia_council_candidates = yes
+                zhx_clear_tianxia_council_results = yes
+                clr_country_flag = zhx_council_deadline_scheduled
+            }
+        }
+        zhx_feudatory_clear_petition = yes
+    }
+    if = { limit = { has_country_flag = zhx_feudatory_zi_pending } zhx_feudatory_clear_zi_petition = yes }
+    clr_country_flag = zhx_feudatory_request_pending
+    clr_country_flag = zhx_feudatory_request_from_bo
+    clr_country_flag = zhx_feudatory_request_from_hou
+    clr_country_flag = zhx_wm_tribute_pending
+    set_variable = { which = zhx_wm_tribute_due value = 0 }
+    clr_country_flag = zhx_qn_pending
+    clr_country_flag = zhx_qn_joining
+    clr_country_flag = zhx_qn_sent
+    clr_country_flag = gdd_tianxia_unlawful_request_pending
+    gdd_clear_tianxia_unlawful_acceptance_cache_effect = yes
+    every_owned_province = {
+        clr_province_flag = gdd_tianxia_unlawful_request_pending
+        remove_province_modifier = gdd_tianxia_unlawful_refusal
+    }
+}
+
+# Province-local safety repair; the flagged province is the sole pending request.
+zhx_cancel_owned_province_request = {
+    if = {
+        limit = { has_province_flag = gdd_tianxia_unlawful_request_pending }
+        owner = {
+            clr_country_flag = gdd_tianxia_unlawful_request_pending
+            gdd_clear_tianxia_unlawful_acceptance_cache_effect = yes
+            if = {
+                limit = { is_subject = yes }
+                overlord = {
+                    clr_country_flag = gdd_tianxia_unlawful_request_pending
+                    gdd_clear_tianxia_unlawful_acceptance_cache_effect = yes
+                }
+            }
+        }
+        clr_province_flag = gdd_tianxia_unlawful_request_pending
+    }
+}

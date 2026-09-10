@@ -11,13 +11,13 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_gdd_eoc_bg_authority"
-		texturefile = "gfx/interface/gdd_eoc_bg_authority_wide.tga"
+		texturefile = "gfx/interface/gdd_eoc_bg_authority_wide_v2.tga"
 		transparencecheck = no
 		loadType = "INGAME"
 	}
 	spriteType = {
 		name = "GFX_gdd_eoc_reform_groups"
-		texturefile = "gfx/interface/gdd_eoc_reform_groups.tga"
+		texturefile = "gfx/interface/gdd_eoc_reform_groups_wide.tga"
 		transparencecheck = no
 		loadType = "INGAME"
 	}
@@ -46,5 +46,10 @@ spriteTypes = {
 		name = "GFX_gdd_eoc_central_authority_icon"
 		texturefile = "gfx/interface/gdd_eoc_central_authority_icon.tga"
 		loadType = "INGAME"
+	}
+	textSpriteType = {
+		name = "GFX_gdd_eoc_button_type_1_220"
+		texturefile = "gfx/interface/gdd_eoc_button_type_1_220.tga"
+		clicksound = click
 	}
 }

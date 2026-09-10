@@ -7,6 +7,7 @@ on_province_owner_change = {
     if = {
         limit = {
             has_global_flag = zhx_system_initialised_v14
+            zhx_is_tianxia_province = yes
             FROM = {
                 exists = yes
                 zhx_is_tianxia_polity = yes
@@ -65,6 +66,20 @@ on_peace_recipient = {
 # 所有犯盟与灭侯后果只在月度国家作用域结算，最多延迟一个月。
 # 真实和谈的 SetOwner/on_annexed 调用栈内因此没有 AE、关系、事件或世界扫描。
 on_monthly_pulse = {
+    # Political authority follows the Tianzi even when native Mandate is absent.
+    if = {
+        limit = {
+            zhx_is_tianzi = yes
+            is_subject_other_than_tributary_trigger = yes
+            overlord = { zhx_is_tianxia_polity = yes }
+        }
+        CZH = { gdd_shift_authority_toward_feudatories_5_effect = yes }
+    }
+    while = {
+        limit = { check_variable = { which = zhx_external_extinction_mandate_queued value = 1 } }
+        if = { limit = { is_emperor_of_china = yes NOT = { has_global_flag = zhx_tianxia_dismantled } } add_mandate = -1 }
+        change_variable = { which = zhx_external_extinction_mandate_queued value = -1 }
+    }
     # 罕见的非和约首脑归责国收不到 post-peace 回调，在此补发通知。
     if = {
         limit = {

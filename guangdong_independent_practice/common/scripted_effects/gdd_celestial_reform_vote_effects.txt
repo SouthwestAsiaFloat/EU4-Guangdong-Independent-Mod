@@ -536,33 +536,33 @@ gdd_prepare_ai_reform_sponsor_score_effect = {
     }
     else = {
         if = {
-            limit = { has_opinion = { who = event_target:EmperorOfChina value = 100 } }
+            limit = { has_opinion = { who = event_target:zhx_tianzi value = 100 } }
             change_variable = { which = gdd_ai_reform_sponsor_score value = 3 }
         }
         else_if = {
-            limit = { has_opinion = { who = event_target:EmperorOfChina value = 50 } }
+            limit = { has_opinion = { who = event_target:zhx_tianzi value = 50 } }
             change_variable = { which = gdd_ai_reform_sponsor_score value = 2 }
         }
         else_if = {
-            limit = { has_opinion = { who = event_target:EmperorOfChina value = 0 } }
+            limit = { has_opinion = { who = event_target:zhx_tianzi value = 0 } }
             change_variable = { which = gdd_ai_reform_sponsor_score value = 1 }
         }
         else = {
             change_variable = { which = gdd_ai_reform_sponsor_score value = -2 }
         }
         if = {
-            limit = { alliance_with = event_target:EmperorOfChina }
+            limit = { alliance_with = event_target:zhx_tianzi }
             change_variable = { which = gdd_ai_reform_sponsor_score value = 2 }
         }
         if = {
-            limit = { is_subject_of = event_target:EmperorOfChina }
+            limit = { is_subject_of = event_target:zhx_tianzi }
             change_variable = { which = gdd_ai_reform_sponsor_score value = 2 }
         }
         if = {
             limit = {
                 OR = {
-                    is_rival = event_target:EmperorOfChina
-                    war_with = event_target:EmperorOfChina
+                    is_rival = event_target:zhx_tianzi
+                    war_with = event_target:zhx_tianzi
                 }
             }
             set_variable = { which = gdd_ai_reform_sponsor_score value = -100 }
@@ -575,9 +575,29 @@ gdd_begin_ai_reform_vote_effect = {
         which = gdd_ai_reform_vote_score
         which = gdd_ai_reform_sponsor_score
     }
+    set_variable = {
+        which = gdd_ai_reform_sponsor_component
+        which = gdd_ai_reform_sponsor_score
+    }
+    multiply_variable = { which = gdd_ai_reform_sponsor_component value = 10 }
+    set_variable = { which = gdd_ai_reform_policy_component value = 0 }
+    set_variable = { which = gdd_ai_reform_overlord_component value = 0 }
+    set_variable = { which = gdd_ai_reform_mandate_component value = 0 }
 }
 
 gdd_apply_ai_reform_vote_effect = {
+    # Preserve the policy-specific part separately from the shared sponsor
+    # score so the shield tooltip can explain the final ballot.
+    set_variable = {
+        which = gdd_ai_reform_policy_component
+        which = gdd_ai_reform_vote_score
+    }
+    subtract_variable = {
+        which = gdd_ai_reform_policy_component
+        which = gdd_ai_reform_sponsor_score
+    }
+    multiply_variable = { which = gdd_ai_reform_policy_component value = 10 }
+
     # HRE-style subject influence: a member subject keeps its own score, while
     # a Zhou overlord's current ballot contributes a strong but non-absolute
     # +2/-2.  A foreign overlord cannot cast a Zhou ballot and instead gives a
@@ -592,30 +612,129 @@ gdd_apply_ai_reform_vote_effect = {
                 overlord = { has_country_flag = $support_flag$ }
             }
             change_variable = { which = gdd_ai_reform_vote_score value = 2 }
+            set_variable = { which = gdd_ai_reform_overlord_component value = 20 }
         }
         else = {
             change_variable = { which = gdd_ai_reform_vote_score value = -2 }
+            set_variable = { which = gdd_ai_reform_overlord_component value = -20 }
         }
     }
     else_if = {
         limit = { is_subject = yes }
         change_variable = { which = gdd_ai_reform_vote_score value = -1 }
+        set_variable = { which = gdd_ai_reform_overlord_component value = -10 }
+    }
+
+    # Preserve the existing relative weights at ten times their former scale,
+    # then reproduce the HRE rule exactly: each point of Mandate above the
+    # 50-point enactment cost contributes one additional support point.
+    multiply_variable = { which = gdd_ai_reform_vote_score value = 10 }
+    if = {
+        limit = { event_target:EmperorOfChina = { exists = yes } }
+        export_to_variable = {
+            which = gdd_ai_reform_mandate_support_score
+            value = trigger_value:imperial_mandate
+            who = event_target:EmperorOfChina
+        }
+        subtract_variable = { which = gdd_ai_reform_mandate_support_score value = 50 }
+        if = {
+            limit = { check_variable = { which = gdd_ai_reform_mandate_support_score value = 0 } }
+            set_variable = {
+                which = gdd_ai_reform_mandate_component
+                which = gdd_ai_reform_mandate_support_score
+            }
+            change_variable = {
+                which = gdd_ai_reform_vote_score
+                which = gdd_ai_reform_mandate_support_score
+            }
+        }
     }
     if = {
-        limit = { check_variable = { which = gdd_ai_reform_vote_score value = 3 } }
+        limit = { check_variable = { which = gdd_ai_reform_vote_score value = 30 } }
         set_country_flag = $support_flag$
     }
     else = {
         clr_country_flag = $support_flag$
     }
+    set_variable = { which = gdd_ai_reform_mandate_support_score value = 0 }
+}
+
+# Presentation ranking is derived from the authoritative score that just cast
+# the ballot. A composite sort key preserves the real score while breaking ties
+# by the visible 8/6/6 button order (smaller reform_id wins).
+gdd_clear_ai_reform_tooltip_ranking_effect = {
+    set_variable = { which = gdd_reform_tooltip_supported_count value = 0 }
+    set_variable = { which = gdd_reform_tooltip_top_1_id value = 0 }
+    set_variable = { which = gdd_reform_tooltip_top_2_id value = 0 }
+    set_variable = { which = gdd_reform_tooltip_top_1_sort value = -100000 }
+    set_variable = { which = gdd_reform_tooltip_top_2_sort value = -100000 }
+    set_variable = { which = gdd_reform_tooltip_top_1_score value = 0 }
+    set_variable = { which = gdd_reform_tooltip_top_2_score value = 0 }
+    set_variable = { which = gdd_reform_tooltip_top_1_sponsor value = 0 }
+    set_variable = { which = gdd_reform_tooltip_top_2_sponsor value = 0 }
+    set_variable = { which = gdd_reform_tooltip_top_1_policy value = 0 }
+    set_variable = { which = gdd_reform_tooltip_top_2_policy value = 0 }
+    set_variable = { which = gdd_reform_tooltip_top_1_overlord value = 0 }
+    set_variable = { which = gdd_reform_tooltip_top_2_overlord value = 0 }
+    set_variable = { which = gdd_reform_tooltip_top_1_mandate value = 0 }
+    set_variable = { which = gdd_reform_tooltip_top_2_mandate value = 0 }
+}
+
+gdd_consider_ai_reform_tooltip_rank_effect = {
+    if = {
+        limit = { has_country_flag = $support_flag$ }
+        change_variable = { which = gdd_reform_tooltip_supported_count value = 1 }
+        set_variable = {
+            which = gdd_reform_tooltip_current_sort
+            which = gdd_ai_reform_vote_score
+        }
+        multiply_variable = { which = gdd_reform_tooltip_current_sort value = 100 }
+        subtract_variable = { which = gdd_reform_tooltip_current_sort value = $reform_id$ }
+
+        if = {
+            limit = {
+                check_variable = { which = gdd_reform_tooltip_current_sort which = gdd_reform_tooltip_top_1_sort }
+                NOT = { check_variable = { which = gdd_reform_tooltip_top_1_sort which = gdd_reform_tooltip_current_sort } }
+            }
+            set_variable = { which = gdd_reform_tooltip_top_2_id which = gdd_reform_tooltip_top_1_id }
+            set_variable = { which = gdd_reform_tooltip_top_2_sort which = gdd_reform_tooltip_top_1_sort }
+            set_variable = { which = gdd_reform_tooltip_top_2_score which = gdd_reform_tooltip_top_1_score }
+            set_variable = { which = gdd_reform_tooltip_top_2_sponsor which = gdd_reform_tooltip_top_1_sponsor }
+            set_variable = { which = gdd_reform_tooltip_top_2_policy which = gdd_reform_tooltip_top_1_policy }
+            set_variable = { which = gdd_reform_tooltip_top_2_overlord which = gdd_reform_tooltip_top_1_overlord }
+            set_variable = { which = gdd_reform_tooltip_top_2_mandate which = gdd_reform_tooltip_top_1_mandate }
+
+            set_variable = { which = gdd_reform_tooltip_top_1_id value = $reform_id$ }
+            set_variable = { which = gdd_reform_tooltip_top_1_sort which = gdd_reform_tooltip_current_sort }
+            set_variable = { which = gdd_reform_tooltip_top_1_score which = gdd_ai_reform_vote_score }
+            set_variable = { which = gdd_reform_tooltip_top_1_sponsor which = gdd_ai_reform_sponsor_component }
+            set_variable = { which = gdd_reform_tooltip_top_1_policy which = gdd_ai_reform_policy_component }
+            set_variable = { which = gdd_reform_tooltip_top_1_overlord which = gdd_ai_reform_overlord_component }
+            set_variable = { which = gdd_reform_tooltip_top_1_mandate which = gdd_ai_reform_mandate_component }
+        }
+        else_if = {
+            limit = {
+                check_variable = { which = gdd_reform_tooltip_current_sort which = gdd_reform_tooltip_top_2_sort }
+                NOT = { check_variable = { which = gdd_reform_tooltip_top_2_sort which = gdd_reform_tooltip_current_sort } }
+            }
+            set_variable = { which = gdd_reform_tooltip_top_2_id value = $reform_id$ }
+            set_variable = { which = gdd_reform_tooltip_top_2_sort which = gdd_reform_tooltip_current_sort }
+            set_variable = { which = gdd_reform_tooltip_top_2_score which = gdd_ai_reform_vote_score }
+            set_variable = { which = gdd_reform_tooltip_top_2_sponsor which = gdd_ai_reform_sponsor_component }
+            set_variable = { which = gdd_reform_tooltip_top_2_policy which = gdd_ai_reform_policy_component }
+            set_variable = { which = gdd_reform_tooltip_top_2_overlord which = gdd_ai_reform_overlord_component }
+            set_variable = { which = gdd_reform_tooltip_top_2_mandate which = gdd_ai_reform_mandate_component }
+        }
+    }
 }
 
 # AI ballots are deterministic and therefore explainable: sponsor relations
 # establish the base score, a universal member benefit and policy match add
-# points, and subject ballots are influenced by the overlord.  Three points
-# are required for support.
+# points, subject ballots are influenced by the overlord, and surplus Mandate
+# adds HRE-style support. Thirty points are required on the scaled score.
 gdd_ai_evaluate_all_reform_votes_effect = {
     gdd_prepare_ai_reform_sponsor_score_effect = yes
+    gdd_clear_ai_reform_tooltip_ranking_effect = yes
 
     if = {
         limit = { NOT = { gdd_reform_establish_gaituguiliu_passed = yes } }
@@ -626,6 +745,7 @@ gdd_ai_evaluate_all_reform_votes_effect = {
             change_variable = { which = gdd_ai_reform_vote_score value = 1 }
         }
         gdd_apply_ai_reform_vote_effect = { support_flag = gdd_support_reform_establish_gaituguiliu }
+        gdd_consider_ai_reform_tooltip_rank_effect = { support_flag = gdd_support_reform_establish_gaituguiliu reform_id = 9 }
     }
     if = {
         limit = { NOT = { gdd_reform_seaban_passed = yes } }
@@ -635,6 +755,7 @@ gdd_ai_evaluate_all_reform_votes_effect = {
             change_variable = { which = gdd_ai_reform_vote_score value = 1 }
         }
         gdd_apply_ai_reform_vote_effect = { support_flag = gdd_support_reform_seaban }
+        gdd_consider_ai_reform_tooltip_rank_effect = { support_flag = gdd_support_reform_seaban reform_id = 15 }
     }
     if = {
         limit = { NOT = { gdd_reform_land_tax_passed = yes } }
@@ -645,6 +766,7 @@ gdd_ai_evaluate_all_reform_votes_effect = {
             change_variable = { which = gdd_ai_reform_vote_score value = 1 }
         }
         gdd_apply_ai_reform_vote_effect = { support_flag = gdd_support_reform_land_tax }
+        gdd_consider_ai_reform_tooltip_rank_effect = { support_flag = gdd_support_reform_land_tax reform_id = 10 }
     }
     if = {
         limit = { NOT = { gdd_reform_military_governors_passed = yes } }
@@ -655,6 +777,7 @@ gdd_ai_evaluate_all_reform_votes_effect = {
             change_variable = { which = gdd_ai_reform_vote_score value = 1 }
         }
         gdd_apply_ai_reform_vote_effect = { support_flag = gdd_support_reform_military_governors }
+        gdd_consider_ai_reform_tooltip_rank_effect = { support_flag = gdd_support_reform_military_governors reform_id = 16 }
     }
     if = {
         limit = { NOT = { gdd_reform_centralizing_government_passed = yes } }
@@ -669,6 +792,7 @@ gdd_ai_evaluate_all_reform_votes_effect = {
             change_variable = { which = gdd_ai_reform_vote_score value = -1 }
         }
         gdd_apply_ai_reform_vote_effect = { support_flag = gdd_support_reform_centralizing_government }
+        gdd_consider_ai_reform_tooltip_rank_effect = { support_flag = gdd_support_reform_centralizing_government reform_id = 12 }
     }
     if = {
         limit = { NOT = { gdd_reform_vassalize_tributaries_passed = yes } }
@@ -682,6 +806,7 @@ gdd_ai_evaluate_all_reform_votes_effect = {
             change_variable = { which = gdd_ai_reform_vote_score value = -1 }
         }
         gdd_apply_ai_reform_vote_effect = { support_flag = gdd_support_reform_vassalize_tributaries }
+        gdd_consider_ai_reform_tooltip_rank_effect = { support_flag = gdd_support_reform_vassalize_tributaries reform_id = 14 }
     }
     if = {
         limit = { NOT = { gdd_reform_single_whip_passed = yes } }
@@ -692,6 +817,7 @@ gdd_ai_evaluate_all_reform_votes_effect = {
             change_variable = { which = gdd_ai_reform_vote_score value = 1 }
         }
         gdd_apply_ai_reform_vote_effect = { support_flag = gdd_support_reform_single_whip }
+        gdd_consider_ai_reform_tooltip_rank_effect = { support_flag = gdd_support_reform_single_whip reform_id = 11 }
     }
     if = {
         limit = { NOT = { gdd_reform_reign_in_estates_passed = yes } }
@@ -702,6 +828,7 @@ gdd_ai_evaluate_all_reform_votes_effect = {
             change_variable = { which = gdd_ai_reform_vote_score value = 1 }
         }
         gdd_apply_ai_reform_vote_effect = { support_flag = gdd_support_reform_reign_in_estates }
+        gdd_consider_ai_reform_tooltip_rank_effect = { support_flag = gdd_support_reform_reign_in_estates reform_id = 13 }
     }
     if = {
         limit = { NOT = { gdd_reform_civil_registration_passed = yes } }
@@ -712,6 +839,7 @@ gdd_ai_evaluate_all_reform_votes_effect = {
             change_variable = { which = gdd_ai_reform_vote_score value = 1 }
         }
         gdd_apply_ai_reform_vote_effect = { support_flag = gdd_support_reform_civil_registration }
+        gdd_consider_ai_reform_tooltip_rank_effect = { support_flag = gdd_support_reform_civil_registration reform_id = 2 }
     }
     if = {
         limit = { NOT = { gdd_reform_silver_standard_passed = yes } }
@@ -722,6 +850,7 @@ gdd_ai_evaluate_all_reform_votes_effect = {
             change_variable = { which = gdd_ai_reform_vote_score value = 1 }
         }
         gdd_apply_ai_reform_vote_effect = { support_flag = gdd_support_reform_silver_standard }
+        gdd_consider_ai_reform_tooltip_rank_effect = { support_flag = gdd_support_reform_silver_standard reform_id = 3 }
     }
     if = {
         limit = { NOT = { gdd_reform_kanhe_passed = yes } }
@@ -732,6 +861,7 @@ gdd_ai_evaluate_all_reform_votes_effect = {
             change_variable = { which = gdd_ai_reform_vote_score value = 1 }
         }
         gdd_apply_ai_reform_vote_effect = { support_flag = gdd_support_reform_kanhe }
+        gdd_consider_ai_reform_tooltip_rank_effect = { support_flag = gdd_support_reform_kanhe reform_id = 4 }
     }
     if = {
         limit = { NOT = { gdd_reform_keju_passed = yes } }
@@ -742,6 +872,7 @@ gdd_ai_evaluate_all_reform_votes_effect = {
             change_variable = { which = gdd_ai_reform_vote_score value = 1 }
         }
         gdd_apply_ai_reform_vote_effect = { support_flag = gdd_support_reform_keju }
+        gdd_consider_ai_reform_tooltip_rank_effect = { support_flag = gdd_support_reform_keju reform_id = 1 }
     }
     if = {
         limit = { NOT = { gdd_reform_inclusive_monarchy_passed = yes } }
@@ -752,6 +883,7 @@ gdd_ai_evaluate_all_reform_votes_effect = {
             change_variable = { which = gdd_ai_reform_vote_score value = 1 }
         }
         gdd_apply_ai_reform_vote_effect = { support_flag = gdd_support_reform_inclusive_monarchy }
+        gdd_consider_ai_reform_tooltip_rank_effect = { support_flag = gdd_support_reform_inclusive_monarchy reform_id = 8 }
     }
     if = {
         limit = { NOT = { gdd_reform_bureaucratic_faction_passed = yes } }
@@ -766,6 +898,7 @@ gdd_ai_evaluate_all_reform_votes_effect = {
             change_variable = { which = gdd_ai_reform_vote_score value = -1 }
         }
         gdd_apply_ai_reform_vote_effect = { support_flag = gdd_support_reform_bureaucratic_faction }
+        gdd_consider_ai_reform_tooltip_rank_effect = { support_flag = gdd_support_reform_bureaucratic_faction reform_id = 19 }
     }
     if = {
         limit = { NOT = { gdd_reform_military_faction_passed = yes } }
@@ -794,6 +927,7 @@ gdd_ai_evaluate_all_reform_votes_effect = {
             change_variable = { which = gdd_ai_reform_vote_score value = 1 }
         }
         gdd_apply_ai_reform_vote_effect = { support_flag = gdd_support_reform_unified_market }
+        gdd_consider_ai_reform_tooltip_rank_effect = { support_flag = gdd_support_reform_unified_market reform_id = 5 }
     }
     if = {
         limit = { NOT = { gdd_reform_military_branch_passed = yes } }
@@ -813,6 +947,7 @@ gdd_ai_evaluate_all_reform_votes_effect = {
             change_variable = { which = gdd_ai_reform_vote_score value = 1 }
         }
         gdd_apply_ai_reform_vote_effect = { support_flag = gdd_support_reform_military_branch }
+        gdd_consider_ai_reform_tooltip_rank_effect = { support_flag = gdd_support_reform_military_branch reform_id = 6 }
     }
     if = {
         limit = { NOT = { gdd_reform_modernize_banners_passed = yes } }
@@ -829,6 +964,7 @@ gdd_ai_evaluate_all_reform_votes_effect = {
             change_variable = { which = gdd_ai_reform_vote_score value = 1 }
         }
         gdd_apply_ai_reform_vote_effect = { support_flag = gdd_support_reform_modernize_banners }
+        gdd_consider_ai_reform_tooltip_rank_effect = { support_flag = gdd_support_reform_modernize_banners reform_id = 18 }
     }
     if = {
         limit = { NOT = { gdd_reform_foreign_ship_designs_passed = yes } }
@@ -839,6 +975,7 @@ gdd_ai_evaluate_all_reform_votes_effect = {
             change_variable = { which = gdd_ai_reform_vote_score value = 1 }
         }
         gdd_apply_ai_reform_vote_effect = { support_flag = gdd_support_reform_foreign_ship_designs }
+        gdd_consider_ai_reform_tooltip_rank_effect = { support_flag = gdd_support_reform_foreign_ship_designs reform_id = 7 }
     }
     if = {
         limit = { NOT = { gdd_reform_tributary_embassies_passed = yes } }
@@ -849,6 +986,7 @@ gdd_ai_evaluate_all_reform_votes_effect = {
             change_variable = { which = gdd_ai_reform_vote_score value = 1 }
         }
         gdd_apply_ai_reform_vote_effect = { support_flag = gdd_support_reform_tributary_embassies }
+        gdd_consider_ai_reform_tooltip_rank_effect = { support_flag = gdd_support_reform_tributary_embassies reform_id = 17 }
     }
     if = {
         limit = { NOT = { gdd_reform_new_world_passed = yes } }
@@ -859,5 +997,6 @@ gdd_ai_evaluate_all_reform_votes_effect = {
             change_variable = { which = gdd_ai_reform_vote_score value = 1 }
         }
         gdd_apply_ai_reform_vote_effect = { support_flag = gdd_support_reform_new_world }
+        gdd_consider_ai_reform_tooltip_rank_effect = { support_flag = gdd_support_reform_new_world reform_id = 20 }
     }
 }

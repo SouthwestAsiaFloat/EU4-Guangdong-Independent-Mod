@@ -4,6 +4,7 @@ on_startup = {
         zhx_opening_school.1
         zhx_debate.1
         gdd_celestial_reform_vote.1
+        gdd_celestial_mandate.1
         # Fresh 1444 custom nations are not part of the manifest-declared school
         # catalogue. The shared lifecycle gives eligible Ritual Teaching
         # designs the ordinary six-school foundation route and rejects an
@@ -58,6 +59,8 @@ on_country_released = {
 on_monthly_pulse = {
     events = {
         gdd_celestial_reform_vote.2
+        gdd_celestial_mandate.2
+        gdd_tianxia_territory.1
     }
     # Province ownership callbacks only set these lightweight dirty markers.
     # Reconcile derived state here, after the engine has completed SetOwner.
@@ -174,7 +177,88 @@ on_transfer_development = {
     }
 }
 
+# Province scope; FROM is the country that clicked the hard-coded control.
+# Ordinary player clicks are consumed by the opaque Zhou/HRE/TC shared-slot
+# overlay. EU4 exposes no scriptable remove-from-trade-company effect, so if an
+# automation or hotkey bypasses that overlay, trade-company status wins and the
+# Zhou territorial marker is cleared to preserve strict mutual exclusion.
+on_added_to_trade_company = {
+    if = {
+        limit = { has_province_flag = zhx_tianxia_province }
+        zhx_cancel_owned_province_request = yes
+        clr_province_flag = zhx_tianxia_province
+        zhx_refresh_province_ritual_warscore = yes
+        clr_province_flag = gdd_tianxia_unlawful_request_pending
+        clr_province_flag = gdd_tianxia_unlawful_requested_this_owner
+        remove_province_modifier = gdd_tianxia_unlawful_refusal
+    }
+}
+
 on_province_owner_change = {
+    # Never let the hard-coded HRE emblem survive underneath a Tianxia mark.
+    # A newly conquered HRE-only province is untouched and must still be
+    # removed from the HRE before it can be admitted to Tianxia.
+    if = {
+        limit = {
+            has_province_flag = zhx_tianxia_province
+            is_part_of_hre = yes
+        }
+        set_in_empire = no
+    }
+
+    # Unlawful-territory locks are per ownership tenure. A transfer cancels a
+    # pending request, clears the ten-year refusal target, and allows the new
+    # holder to be evaluated afresh. The former overlord is also unlocked when
+    # a subject had been the actual holder.
+    clr_province_flag = gdd_tianxia_unlawful_requested_this_owner
+    clr_province_flag = gdd_tianxia_liberated_this_owner
+    remove_province_modifier = gdd_tianxia_unlawful_refusal
+    if = {
+        limit = { has_province_flag = gdd_tianxia_unlawful_request_pending FROM = { exists = yes } }
+        FROM = {
+            clr_country_flag = gdd_tianxia_unlawful_request_pending
+            if = {
+                limit = { is_subject = yes }
+                overlord = {
+                    clr_country_flag = gdd_tianxia_unlawful_request_pending
+                    gdd_clear_tianxia_unlawful_acceptance_cache_effect = yes
+                }
+            }
+            gdd_clear_tianxia_unlawful_acceptance_cache_effect = yes
+        }
+    }
+
+    clr_province_flag = gdd_tianxia_unlawful_request_pending
+
+    # Remember a surviving lawful Zhou core holder as the preferred recipient
+    # for a later restitution. The country marker is intentionally reusable:
+    # province-core validation is repeated when a demand is accepted.
+    if = {
+        limit = {
+            has_province_flag = zhx_tianxia_province
+            FROM = {
+                exists = yes
+                zhx_is_tianxia_member = yes
+            }
+            is_core = FROM
+        }
+        FROM = { set_country_flag = gdd_tianxia_former_legal_owner }
+    }
+
+    # A Zhou polity recovering Tianxia land from an outside owner is a
+    # liberation, not unlawful occupation, for this ownership tenure.
+    if = {
+        limit = {
+            has_province_flag = zhx_tianxia_province
+            owner = { zhx_is_tianxia_polity = yes }
+            FROM = {
+                exists = yes
+                NOT = { zhx_is_tianxia_polity = yes }
+            }
+        }
+        set_province_flag = gdd_tianxia_liberated_this_owner
+    }
+
     # THIS is the transferred province and FROM is its former owner. Only the
     # twelve named academy provinces need reconciliation, so ordinary conquest
     # pays no academy scan cost. Derived country effects refresh on the next
@@ -243,16 +327,19 @@ on_war_ended = {
 # Reassign the authority effects immediately if the native Mandate changes
 # hands.  The yearly refresh remains as a low-frequency safety net.
 on_mandate_of_heaven_gained = {
+    save_global_event_target_as = EmperorOfChina
     if = {
         limit = {
             has_global_flag = zhx_system_initialised_v8
             CZH = { exists = yes }
         }
         CZH = { gdd_refresh_authority_balance_effects = yes }
+        ROOT = { gdd_refresh_tianxia_mandate_effect = yes }
     }
 }
 
 on_mandate_of_heaven_lost = {
+    clr_country_flag = gdd_tianxia_mandate_cache_ready
     if = {
         limit = {
             has_global_flag = zhx_system_initialised_v8
@@ -318,6 +405,7 @@ on_integrate = {
 }
 
 on_annexed = {
+    gdd_apply_external_tianxia_annexation_mandate_loss_effect = yes
     # Every extinguished member costs the realm five ritual-authority points,
     # regardless of who destroyed it. Only a counter is written here; CZH
     # applies the loss and refreshes derived modifiers on its monthly pulse.

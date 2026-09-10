@@ -206,50 +206,7 @@ zhx_appeal_to_tianzi_for_relief = {
         # 外交请求可以被玩家天子搁置；接受瞬间重新核验，避免旧战争
         # 已结束或天子已经易位后仍加入告急国后来发生的其他战争。
         if = {
-            limit = {
-                has_global_flag = zhx_system_initialised_v14
-                is_subject = no
-                zhx_is_tianxia_member = yes
-                NOT = { zhx_is_tianzi = yes }
-                is_at_war = yes
-                NOT = { war_with = FROM }
-                FROM = {
-                    exists = yes
-                    is_subject = no
-                    zhx_is_tianzi = yes
-                    is_at_war = no
-                }
-                any_war_enemy_country = {
-                    exists = yes
-                    NOT = { zhx_is_tianxia_polity = yes }
-                    offensive_war_with = ROOT
-                    is_in_war = {
-                        attacker_leader = THIS
-                        defender_leader = ROOT
-                    }
-                }
-                NOT = {
-                    any_war_enemy_country = {
-                        zhx_is_tianxia_polity = yes
-                        offensive_war_with = ROOT
-                    }
-                }
-                NOT = {
-                    any_war_enemy_country = {
-                        offensive_war_with = ROOT
-                        OR = {
-                            alliance_with = FROM
-                            is_subject_of = FROM
-                        }
-                    }
-                }
-                NOT = {
-                    is_in_war = {
-                        defenders = FROM
-                        defender_leader = THIS
-                    }
-                }
-            }
+            limit = { zhx_appeal_still_valid = yes }
             FROM = {
                 join_all_defensive_wars_of = ROOT
             }
@@ -257,6 +214,10 @@ zhx_appeal_to_tianzi_for_relief = {
     }
 
     on_decline = {
+        if = {
+            limit = { zhx_appeal_still_valid = yes }
+            add_opinion = { who = FROM modifier = zhx_opinion_refused_valid_appeal years = 100 }
+        }
     }
 
     # 首版不让 AI 诸侯主动发送请求，避免外交消息轰炸。

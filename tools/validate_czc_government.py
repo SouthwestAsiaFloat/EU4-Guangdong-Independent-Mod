@@ -11,6 +11,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 from pathlib import Path
 import re
 import struct
@@ -21,7 +22,7 @@ from encode_eu4_chinese_localisation import FILES, verify_file
 
 ROOT = Path(__file__).resolve().parents[1]
 MOD = ROOT / "guangdong_independent_practice"
-STEAM = Path.home() / "Library/Application Support/Steam/steamapps"
+STEAM = Path(os.environ.get("EU4_STEAMAPPS", str(Path.home() / "Library/Application Support/Steam/steamapps")))
 VANILLA = STEAM / "common/Europa Universalis IV"
 DEPENDENCIES = [STEAM / "workshop/content/236850" / item for item in ("2976470733", "1999055990")]
 REFORM = "gdd_czc_council_reform"

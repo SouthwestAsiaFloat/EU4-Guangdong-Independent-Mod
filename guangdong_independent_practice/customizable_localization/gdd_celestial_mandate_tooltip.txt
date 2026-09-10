@@ -1,0 +1,146 @@
+# Dynamic rows for the custom Mandate hover. ROOT is the current Emperor of
+# China because the tooltip calls these accessors through EmperorOfChina.
+
+defined_text = {
+    name = GetGddEocMandateProsperityRow
+    random = no
+    text = { localisation_key = gdd_eoc_mandate_prosperity trigger = { always = yes } }
+}
+
+defined_text = {
+    name = GetGddEocMandateInternalPeaceRow
+    random = no
+    text = { localisation_key = gdd_eoc_mandate_internal_peace trigger = { gdd_tianxia_has_internal_peace = yes } }
+    text = { localisation_key = gdd_eoc_mandate_row_blank trigger = { always = yes } }
+}
+
+defined_text = {
+    name = GetGddEocMandateAuthorityRow
+    random = no
+    text = {
+        localisation_key = gdd_eoc_mandate_authority_absolute
+        trigger = {
+            has_global_flag = zhx_system_initialised_v8
+            CZH = {
+                exists = yes
+                OR = {
+                    NOT = { check_variable = { which = gdd_authority_integer_display value = -99 } }
+                    check_variable = { which = gdd_authority_integer_display value = 100 }
+                }
+            }
+        }
+    }
+    text = {
+        localisation_key = gdd_eoc_mandate_authority_deadlocked
+        trigger = {
+            has_global_flag = zhx_system_initialised_v8
+            CZH = {
+                exists = yes
+                check_variable = { which = gdd_authority_integer_display value = -25 }
+                NOT = { check_variable = { which = gdd_authority_integer_display value = 26 } }
+            }
+        }
+    }
+    text = {
+        localisation_key = gdd_eoc_mandate_authority_settled
+        trigger = {
+            has_global_flag = zhx_system_initialised_v8
+            CZH = {
+                exists = yes
+                OR = {
+                    AND = {
+                        check_variable = { which = gdd_authority_integer_display value = -99 }
+                        NOT = { check_variable = { which = gdd_authority_integer_display value = -25 } }
+                    }
+                    AND = {
+                        check_variable = { which = gdd_authority_integer_display value = 26 }
+                        NOT = { check_variable = { which = gdd_authority_integer_display value = 100 } }
+                    }
+                }
+            }
+        }
+    }
+    text = { localisation_key = gdd_eoc_mandate_row_blank trigger = { always = yes } }
+}
+
+defined_text = {
+    name = GetGddEocMandateBeijingRow
+    random = no
+    text = { localisation_key = gdd_eoc_mandate_beijing_controlled trigger = { 1816 = { controller = { zhx_is_tianxia_city_controller = yes } } } }
+    text = { localisation_key = gdd_eoc_mandate_beijing_lost trigger = { always = yes } }
+}
+
+defined_text = {
+    name = GetGddEocMandateNanjingRow
+    random = no
+    text = { localisation_key = gdd_eoc_mandate_nanjing_controlled trigger = { 1821 = { controller = { zhx_is_tianxia_city_controller = yes } } } }
+    text = { localisation_key = gdd_eoc_mandate_nanjing_lost trigger = { always = yes } }
+}
+
+defined_text = {
+    name = GetGddEocMandateCantonRow
+    random = no
+    text = { localisation_key = gdd_eoc_mandate_canton_controlled trigger = { 667 = { controller = { zhx_is_tianxia_city_controller = yes } } } }
+    text = { localisation_key = gdd_eoc_mandate_canton_lost trigger = { always = yes } }
+}
+
+defined_text = {
+    name = GetGddEocMandateSubjectRow
+    random = no
+    text = {
+        localisation_key = gdd_eoc_mandate_external_subject
+        trigger = { is_subject_other_than_tributary_trigger = yes overlord = { NOT = { zhx_is_tianxia_polity = yes } } }
+    }
+    text = {
+        localisation_key = gdd_eoc_mandate_internal_subject
+        trigger = { is_subject_other_than_tributary_trigger = yes overlord = { zhx_is_tianxia_polity = yes } }
+    }
+    text = { localisation_key = gdd_eoc_mandate_row_blank trigger = { always = yes } }
+}
+
+defined_text = {
+    name = GetGddEocMandateSeatRow
+    random = no
+    text = { localisation_key = gdd_eoc_mandate_invalid_seats_1 trigger = { has_country_flag = gdd_tianxia_mandate_cache_ready check_variable = { which = gdd_valid_great_feudatory_count value = 6 } NOT = { check_variable = { which = gdd_valid_great_feudatory_count value = 7 } } } }
+    text = { localisation_key = gdd_eoc_mandate_invalid_seats_2 trigger = { has_country_flag = gdd_tianxia_mandate_cache_ready check_variable = { which = gdd_valid_great_feudatory_count value = 5 } NOT = { check_variable = { which = gdd_valid_great_feudatory_count value = 6 } } } }
+    text = { localisation_key = gdd_eoc_mandate_invalid_seats_3 trigger = { has_country_flag = gdd_tianxia_mandate_cache_ready check_variable = { which = gdd_valid_great_feudatory_count value = 4 } NOT = { check_variable = { which = gdd_valid_great_feudatory_count value = 5 } } } }
+    text = { localisation_key = gdd_eoc_mandate_invalid_seats_4 trigger = { has_country_flag = gdd_tianxia_mandate_cache_ready check_variable = { which = gdd_valid_great_feudatory_count value = 3 } NOT = { check_variable = { which = gdd_valid_great_feudatory_count value = 4 } } } }
+    text = { localisation_key = gdd_eoc_mandate_invalid_seats_5 trigger = { has_country_flag = gdd_tianxia_mandate_cache_ready check_variable = { which = gdd_valid_great_feudatory_count value = 2 } NOT = { check_variable = { which = gdd_valid_great_feudatory_count value = 3 } } } }
+    text = { localisation_key = gdd_eoc_mandate_invalid_seats_6 trigger = { has_country_flag = gdd_tianxia_mandate_cache_ready check_variable = { which = gdd_valid_great_feudatory_count value = 1 } NOT = { check_variable = { which = gdd_valid_great_feudatory_count value = 2 } } } }
+    text = { localisation_key = gdd_eoc_mandate_invalid_seats_7 trigger = { has_country_flag = gdd_tianxia_mandate_cache_ready NOT = { check_variable = { which = gdd_valid_great_feudatory_count value = 1 } } } }
+    text = { localisation_key = gdd_eoc_mandate_row_blank trigger = { always = yes } }
+}
+
+defined_text = {
+    name = GetGddEocMandateUnificationWarRow
+    random = no
+    text = {
+        localisation_key = gdd_eoc_mandate_unification_war
+        trigger = { is_in_war = { attacker_leader = root casus_belli = cb_chinese_unification } }
+    }
+    text = { localisation_key = gdd_eoc_mandate_row_blank trigger = { always = yes } }
+}
+
+defined_text = {
+    name = GetGddEocMandateDecreeRow
+    random = no
+    text = { localisation_key = gdd_eoc_mandate_dynastic_decree trigger = { has_country_modifier = gdd_proxy_decree_proclaim_dynastic_name } }
+    text = { localisation_key = gdd_eoc_mandate_row_blank trigger = { always = yes } }
+}
+
+defined_text = {
+    name = GetGddEocMandateDisasterRow
+    random = no
+    text = { localisation_key = gdd_eoc_mandate_culture_disaster trigger = { has_disaster = empire_of_china_culture } }
+    text = { localisation_key = gdd_eoc_mandate_row_blank trigger = { always = yes } }
+}
+
+defined_text = {
+    name = GetGddEocMandateOccupationRow
+    random = no
+    text = {
+        localisation_key = gdd_eoc_mandate_foreign_occupation
+        trigger = { check_variable = { which = gdd_foreign_occupied_tianxia_province_count value = 1 } }
+    }
+    text = { localisation_key = gdd_eoc_mandate_row_blank trigger = { always = yes } }
+}

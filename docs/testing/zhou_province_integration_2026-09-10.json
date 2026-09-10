@@ -1,0 +1,93 @@
+{
+  "local_baseline": "c7afd9d8c17b12eeff73e4a325d31c25d7ee8718",
+  "upstream_baseline": "6f68e6e8ff940f854e52847cdb629b1a92468bc6",
+  "runtime_tested": false,
+  "checks": [
+    {
+      "script": "tools/test_gdd_tianxia_territory.py",
+      "status": "passed",
+      "output": "test_extinct_previous_owner_preferred_to_living_core (__main__.TerritoryRules.test_extinct_previous_owner_preferred_to_living_core) ... ok\ntest_foreign_holder_cannot_be_asked (__main__.TerritoryRules.test_foreign_holder_cannot_be_asked) ... ok\ntest_foreign_overlord_blocks_member_subject (__main__.TerritoryRules.test_foreign_overlord_blocks_member_subject) ... ok\ntest_forfeited_or_barred_dead_tag_cannot_be_restored (__main__.TerritoryRules.test_forfeited_or_barred_dead_tag_cannot_be_restored) ... ok\ntest_future_member_can_be_restored_but_dead_foreigner_cannot (__main__.TerritoryRules.test_future_member_can_be_restored_but_dead_foreigner_cannot) ... ok\ntest_korchin_cooldown_does_not_block_mongolia (__main__.TerritoryRules.test_korchin_cooldown_does_not_block_mongolia) ... ok\ntest_liberation_and_unregistered_land_are_exempt (__main__.TerritoryRules.test_liberation_and_unregistered_land_are_exempt) ... ok\ntest_living_former_member_is_not_a_lawful_returnee (__main__.TerritoryRules.test_living_former_member_is_not_a_lawful_returnee) ... ok\ntest_mandate_transfer_does_not_transfer_jurisdiction (__main__.TerritoryRules.test_mandate_transfer_does_not_transfer_jurisdiction) ... ok\ntest_member_and_outsider_cores_both_exempt (__main__.TerritoryRules.test_member_and_outsider_cores_both_exempt) ... ok\ntest_mongolia_subject_must_be_addressed_via_oirat (__main__.TerritoryRules.test_mongolia_subject_must_be_addressed_via_oirat) ... ok\ntest_no_lawful_core_means_no_emperor_fallback (__main__.TerritoryRules.test_no_lawful_core_means_no_emperor_fallback) ... ok\ntest_pending_is_local_to_recipient (__main__.TerritoryRules.test_pending_is_local_to_recipient) ... ok\ntest_queued_request_is_invalid_after_core_completion (__main__.TerritoryRules.test_queued_request_is_invalid_after_core_completion) ... ok\ntest_queued_request_is_invalid_after_transfer_or_loss_of_returnee (__main__.TerritoryRules.test_queued_request_is_invalid_after_transfer_or_loss_of_returnee) ... ok\ntest_queued_request_is_invalid_after_war_or_loss_of_emperor (__main__.TerritoryRules.test_queued_request_is_invalid_after_war_or_loss_of_emperor) ... ok\ntest_request_invalid_after_overlord_becomes_foreign (__main__.TerritoryRules.test_request_invalid_after_overlord_becomes_foreign) ... ok\ntest_resolver_does_not_reuse_last_request_recipient (__main__.TerritoryRules.test_resolver_does_not_reuse_last_request_recipient) ... ok\ntest_same_province_becomes_eligible_at_365_days (__main__.TerritoryRules.test_same_province_becomes_eligible_at_365_days) ... ok\ntest_subjects_and_overlord_do_not_share_cooldown (__main__.TerritoryRules.test_subjects_and_overlord_do_not_share_cooldown) ... ok\ntest_third_party_war_is_allowed_but_emperor_war_is_not (__main__.TerritoryRules.test_third_party_war_is_allowed_but_emperor_war_is_not) ... ok\ntest_tianzi_own_subject_is_direct_addressee (__main__.TerritoryRules.test_tianzi_own_subject_is_direct_addressee) ... ok\n\n----------------------------------------------------------------------\nRan 22 tests in 0.066s\n\nOK"
+    },
+    {
+      "script": "tools/test_gdd_tianxia_buttons.py",
+      "status": "passed",
+      "output": "test_add_eligibility_requires_member_peace_and_candidate (__main__.TianxiaButtons.test_add_eligibility_requires_member_peace_and_candidate) ... ok\ntest_add_filters_noncores_occupation_hre_trade_company_and_other_owners (__main__.TianxiaButtons.test_add_filters_noncores_occupation_hre_trade_company_and_other_owners) ... ok\ntest_add_per_province_cap_and_no_batch_cap (__main__.TianxiaButtons.test_add_per_province_cap_and_no_batch_cap) ... ok\ntest_add_repeat_and_remove_readd_cannot_farm_reward (__main__.TianxiaButtons.test_add_repeat_and_remove_readd_cannot_farm_reward) ... ok\ntest_annexation_hooks_preserve_mandate_and_queue_ritual_once (__main__.TianxiaButtons.test_annexation_hooks_preserve_mandate_and_queue_ritual_once) ... ok\ntest_characterize_leave_retains_reform_executor_bonus (__main__.TianxiaButtons.test_characterize_leave_retains_reform_executor_bonus) ... ok\ntest_decision_and_button_have_identical_exit_effects (__main__.TianxiaButtons.test_decision_and_button_have_identical_exit_effects) ... ok\ntest_decision_effect_rechecks_eligibility_and_cannot_charge_twice (__main__.TianxiaButtons.test_decision_effect_rechecks_eligibility_and_cannot_charge_twice) ... ok\ntest_dismantle_cancel_and_changed_capital_are_safe (__main__.TianxiaButtons.test_dismantle_cancel_and_changed_capital_are_safe) ... ok\ntest_dismantle_cannot_restart_initialisation_or_reuse_rosters (__main__.TianxiaButtons.test_dismantle_cannot_restart_initialisation_or_reuse_rosters) ... ok\ntest_dismantle_checks_all_seven_dynamic_seats (__main__.TianxiaButtons.test_dismantle_checks_all_seven_dynamic_seats) ... ok\ntest_dismantle_checks_tianzi_separately_from_emperor (__main__.TianxiaButtons.test_dismantle_checks_tianzi_separately_from_emperor) ... ok\ntest_dismantle_cleans_political_state_and_only_special_subjects (__main__.TianxiaButtons.test_dismantle_cleans_political_state_and_only_special_subjects) ... ok\ntest_dismantle_requires_personal_occupation_of_each_living_office (__main__.TianxiaButtons.test_dismantle_requires_personal_occupation_of_each_living_office) ... ok\ntest_dismantle_requires_war_and_outside_membership (__main__.TianxiaButtons.test_dismantle_requires_war_and_outside_membership) ... ok\ntest_dynamic_principal_is_excluded_from_six_seats_instead_of_yan (__main__.TianxiaButtons.test_dynamic_principal_is_excluded_from_six_seats_instead_of_yan) ... ok\ntest_emperor_can_add_own_land (__main__.TianxiaButtons.test_emperor_can_add_own_land) ... ok\ntest_exit_charges_separate_tianzi (__main__.TianxiaButtons.test_exit_charges_separate_tianzi) ... ok\ntest_exit_cleans_new_dignity_reform_and_projection (__main__.TianxiaButtons.test_exit_cleans_new_dignity_reform_and_projection) ... ok\ntest_exit_opinions_do_not_stack_on_emperor (__main__.TianxiaButtons.test_exit_opinions_do_not_stack_on_emperor) ... ok\ntest_leave_after_voting_recounts_only_remaining_members (__main__.TianxiaButtons.test_leave_after_voting_recounts_only_remaining_members) ... ok\ntest_leave_before_voting_recounts_only_remaining_members (__main__.TianxiaButtons.test_leave_before_voting_recounts_only_remaining_members) ... ok\ntest_leave_cleans_direct_land_and_membership_with_correct_opinion (__main__.TianxiaButtons.test_leave_cleans_direct_land_and_membership_with_correct_opinion) ... ok\ntest_leave_confirm_rechecks_war_membership_and_office (__main__.TianxiaButtons.test_leave_confirm_rechecks_war_membership_and_office) ... ok\ntest_leave_confirmation_and_cancel_change_nothing (__main__.TianxiaButtons.test_leave_confirmation_and_cancel_change_nothing) ... ok\ntest_leave_during_debate_recounts_country_and_ai_totals (__main__.TianxiaButtons.test_leave_during_debate_recounts_country_and_ai_totals) ... ok\ntest_leave_eligibility (__main__.TianxiaButtons.test_leave_eligibility) ... ok\ntest_leave_no_tianxia_land_has_no_mandate_charge (__main__.TianxiaButtons.test_leave_no_tianxia_land_has_no_mandate_charge) ... ok\ntest_leave_penalty_caps_at_20_and_cannot_repeat (__main__.TianxiaButtons.test_leave_penalty_caps_at_20_and_cannot_repeat) ... ok\ntest_leave_refreshes_initialized_rosters_and_reform_vote_totals (__main__.TianxiaButtons.test_leave_refreshes_initialized_rosters_and_reform_vote_totals) ... ok\ntest_leave_without_open_ballot_preserves_closed_results (__main__.TianxiaButtons.test_leave_without_open_ballot_preserves_closed_results) ... ok\ntest_subject_cannot_leave_from_button_or_stale_confirmation (__main__.TianxiaButtons.test_subject_cannot_leave_from_button_or_stale_confirmation) ... ok\ntest_visibility_requires_initialisation_and_tianzi (__main__.TianxiaButtons.test_visibility_requires_initialisation_and_tianzi) ... ok\n\n----------------------------------------------------------------------\nRan 33 tests in 0.543s\n\nOK"
+    },
+    {
+      "script": "tools/test_zhx_startup_lifecycle.py",
+      "status": "passed",
+      "output": "test_all_effect_and_trigger_names_are_unique (__main__.StartupLifecycle.test_all_effect_and_trigger_names_are_unique) ... ok\ntest_blank_opening_registers_every_member_owned_province (__main__.StartupLifecycle.test_blank_opening_registers_every_member_owned_province) ... ok\ntest_dismantled_world_cannot_be_bootstrapped_or_migrated (__main__.StartupLifecycle.test_dismantled_world_cannot_be_bootstrapped_or_migrated) ... ok\ntest_dismantling_removes_new_dignity_and_petition_state (__main__.StartupLifecycle.test_dismantling_removes_new_dignity_and_petition_state) ... ok\ntest_external_annexation_charges_current_emperor_after_transfer (__main__.StartupLifecycle.test_external_annexation_charges_current_emperor_after_transfer) ... ok\ntest_legacy_admission_ledger_prevents_readmission_of_removed_land (__main__.StartupLifecycle.test_legacy_admission_ledger_prevents_readmission_of_removed_land) ... ok\ntest_legacy_missing_land_is_repaired_without_resetting_merit_or_queues (__main__.StartupLifecycle.test_legacy_missing_land_is_repaired_without_resetting_merit_or_queues) ... ok\ntest_v13_runs_both_territory_and_merit_initialisation (__main__.StartupLifecycle.test_v13_runs_both_territory_and_merit_initialisation) ... ok\ntest_v14_initializes_diplomacy_and_repairs_hre_overlap (__main__.StartupLifecycle.test_v14_initializes_diplomacy_and_repairs_hre_overlap) ... ok\n\n----------------------------------------------------------------------\nRan 9 tests in 1.221s\n\nOK\nOpening history: 326 provinces; 68 Zhou polities; 7 dignities"
+    },
+    {
+      "script": "tools/test_zhou_province_integration.py",
+      "status": "passed",
+      "output": "test_admission_without_mandate_consumes_first_reward (__main__.Integration.test_admission_without_mandate_consumes_first_reward) ... ok\ntest_authority_follows_tianzi_not_mandate (__main__.Integration.test_authority_follows_tianzi_not_mandate) ... ok\ntest_dismantle_ignores_foreign_mandate_capital (__main__.Integration.test_dismantle_ignores_foreign_mandate_capital) ... ok\ntest_exit_without_mandate_cancels_pending_and_forfeits_dignity (__main__.Integration.test_exit_without_mandate_cancels_pending_and_forfeits_dignity) ... ok\ntest_foreign_removal_without_mandate (__main__.Integration.test_foreign_removal_without_mandate) ... ok\ntest_member_without_registered_land_retains_politics (__main__.Integration.test_member_without_registered_land_retains_politics) ... ok\ntest_peaceful_foreign_annexation_does_not_queue_mandate (__main__.Integration.test_peaceful_foreign_annexation_does_not_queue_mandate) ... ok\ntest_refusal_opinion_and_reform_cost_contracts (__main__.Integration.test_refusal_opinion_and_reform_cost_contracts) ... ok\ntest_stale_request_cannot_unlock_new_request_elsewhere (__main__.Integration.test_stale_request_cannot_unlock_new_request_elsewhere) ... ok\n\n----------------------------------------------------------------------\nRan 9 tests in 0.114s\n\nOK"
+    },
+    {
+      "script": "tools/validate_gdd_tianxia_territory.py",
+      "status": "passed",
+      "output": "PASS: Zhou Tianxia territory white-box validation"
+    },
+    {
+      "script": "tools/validate_gdd_celestial_mandate.py",
+      "status": "passed",
+      "output": "PASS: Zhou Mandate white-box contracts\n  stability, tributary, devastation, loan, corruption and bankruptcy Mandate effects: neutral\n  internal peace: +0.10/month; invalid seats: -0.05 each/month\n  authority: -25..25 gives -0.10/month; 26..99 and -99..-26 give +0.05/month; endpoints give +0.10/month\n  AI reform executors must cast their own support ballot\n  Emperor subject: external -1/month; Zhou -0.05/month and authority -5/month\n  seat penalties are gated until the post-migration cache is ready\n  foreign occupation: -0.005/province/month\n  external wartime annexation: queued -10; no automatic defence penalty\n  voluntary exit: -0.1/development, capped at -20\n  reform enactment: requires caller threshold and consumes the Mandate pool\n  revocation opinion: ROOT-scoped, stacks to -100, natural yearly decay"
+    },
+    {
+      "script": "tools/validate_gdd_eoc_layout.py",
+      "status": "passed",
+      "output": "Integrated Mandate / Zhou-member layout: PASS\n  Centred decrees fill the extended functional 12 + 4 page viewport\n  Short member panel uses a functional 48 + 18 page scrollbar\n  Emperor and Mandate share the top row; authority track is tucked below\n  Equal 220px side columns share the existing seven-feudatory centre axis\n  Three native HRE buttons have equal gaps and align with the panel bottoms\n  Reforms retain their native art, scales and 8 / 6 / 6 grouping"
+    },
+    {
+      "script": "tools/validate_zhx_ritual_warscore.py",
+      "status": "passed",
+      "output": "PASS: 20 tiers; 810 ascending/descending half-point cases; idempotence, exit and dead-authority cleanup; lifecycle hooks; Chinese encoding. Static/model checks only; engine numerical/ownership testing pending."
+    },
+    {
+      "script": "tools/validate_zhx_ritual_tooltip.py",
+      "status": "passed",
+      "output": "PASS: 10752 annual scenarios; forecast is pure/idempotent; settlement shares calculation; open/monthly refresh; dynamic strings, signs and encoded localisation. Runtime hover not tested."
+    },
+    {
+      "script": "tools/validate_zhx_diplomacy.py",
+      "status": "passed",
+      "output": "PASS: Zhou diplomacy static contract\n  ordinary province cessions add no scripted AE; member extinction: +5\n  every member extinction queues a universal -5 ritual-authority loss\n  real peace uses a same-day presentation-only notice; punishments settle monthly\n  Tianzi receives an isolated 120-month punitive CB through a hidden monthly bridge\n  Tianzi may manually join an externally attacked member's defensive wars through a native diplomatic action\n  a player member may appeal to the Tianzi, with eligible AI recipients accepting by a single duty term\n  relief action has no CB, world scan, event/on-action bridge or custom wargoal\n  membership application, voluntary exit and historic restoration wired\n  this command performs static checks only; runtime evidence is documented separately"
+    },
+    {
+      "script": "tools/validate_zhx_wangming.py",
+      "status": "passed",
+      "output": "PASS: 9360 development-capacity cases, transfer boundaries, native pulse queue/recheck/expiry, term flags, GUI, DDS, localisation. Runtime remains untested."
+    },
+    {
+      "script": "tools/validate_zhx_qinwang.py",
+      "status": "passed",
+      "output": "Qinwang static/source-model validation passed: 3456 score combinations; scope, stale requests, double-war, separate-peace, repeat, AI/human, failed/delayed joins. Engine runtime NOT tested."
+    },
+    {
+      "script": "tools/validate_zhx_merit_store.py",
+      "status": "passed",
+      "output": "Zhou merit store static contract: PASS\n  Three ledgers; 25-year term; active-contribution eligibility; seven-place ranking\n  Eight 50-merit / 10-year items in four mutually exclusive categories\n  Dynamic Principal and Seven identities reuse the existing Mandate-page roster\n  Former 200-shield Zhou roster is absent from the rendered panel and annual builder"
+    },
+    {
+      "script": "tools/validate_zhx_tianzi.py",
+      "status": "passed",
+      "output": "PASS: Tianzi reform, two royal capitals, infantry-only training, 169 eligibility/tax/cap boundaries, Ru startup guard, decree gates, localisation/icon references\nStatic source contracts only; combat, UI, recruit queues, finances and save/reload require runtime testing."
+    },
+    {
+      "script": "tools/validate_zhx_council.py",
+      "status": "passed",
+      "output": "Shared Tianxia Council static contract: PASS\n  One phase family; one issue-kind family; one A/B/C ballot\n  Deadline: zhx_system.23 after 365 days\n  Public turnout: eligible/voted/unvoted countries and AI countries\n  Public counters are always mutated on event_target:zhx_tianzi\n  Debate candidate slots: 6 schools in A and 6 schools in B\n  GUI: current council on the left; orthodoxy on the right"
+    }
+  ],
+  "contract_audit": {
+    "coverage": "Only known PREVPREV and scripted-trigger-export hazards. No findings does not certify syntax, scope, numeric safety or engine support.",
+    "findings": [
+      {
+        "file": "guangdong_independent_practice/common/scripted_effects/gdd_celestial_reform_vote_effects.txt",
+        "line": 636,
+        "severity": "REVIEW",
+        "reason": "Confirm native export support, value type and scope for imperial_mandate; name lookup alone is insufficient."
+      }
+    ]
+  }
+}

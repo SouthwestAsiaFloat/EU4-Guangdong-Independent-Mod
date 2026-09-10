@@ -1,6 +1,6 @@
 l_english:
  zhx_covenant_breaker:0 "犯盟"
- zhx_covenant_breaker_desc:0 "该国非法兼并周天下土地，十年内不得申请加入周天下；天子也会长期视其为犯盟者，并在犯盟者不是天子时取得“奉辞伐罪”战争理由。此状态本身不另加经济或军队惩罚。"
+ zhx_covenant_breaker_desc:0 "该国在战争中无核心侵夺周天下成员持有的登记周土，十年内不得申请加入周天下；天子也会长期视其为犯盟者，并在犯盟者不是天子时取得“奉辞伐罪”战争理由。此状态本身不另加经济或军队惩罚。"
  zhx_tianxia_application_cooldown:0 "入周申请被否"
  zhx_tianxia_application_cooldown_desc:0 "十年内不能再次申请列入周天下名册。"
  zhx_tianxia_rejoin_bar:0 "自去周籍"
@@ -24,7 +24,7 @@ l_english:
 
  zhx_appeal_to_tianzi_for_relief:0 "告急"
  zhx_appeal_to_tianzi_for_relief_title:0 "告急"
- zhx_appeal_to_tianzi_for_relief_desc:0 "向当前周天子§Y[From.GetName]§!告急，请其加入我国当前参加的全部防御战争。天子可以接受或拒绝；该行动不建立同盟，也不会让天子自动参加我国今后的战争。"
+ zhx_appeal_to_tianzi_for_relief_desc:0 "向当前周天子§Y[From.GetName]§!告急，请其加入我国当前参加的全部防御战争。天子每次实际拒绝有效请求，使我国对其好感§R-50§!，此项累计最低§R-200§!，每年恢复§G5§!；未发告急不处罚。该行动不建立同盟，也不会让天子自动参加我国今后的战争。"
  zhx_appeal_to_tianzi_for_relief_tooltip:0 "请求当前周天子加入我国当前参加的全部防御战争。"
  zhx_appeal_to_tianzi_for_relief_alert_tooltip:0 "一位周天下诸侯请求我们履行救患之责。"
  zhx_appeal_to_tianzi_for_relief_dialog:0 "§Y[This.GetName]§!正遭域外国家进攻，请求我们履行天子救患之责，加入其当前参加的全部防御战争。"
@@ -43,7 +43,7 @@ l_english:
  zhx_diplomacy.30.a:0 "许其列籍。"
  zhx_diplomacy.30.b:0 "驳回所请。"
  zhx_diplomacy_admission_still_valid_tt:0 "申请国仍然独立、没有犯盟或冷却、未与周天下国家交战、对天子好感至少150，并满足首都位于中国次大陆或与现有成员接壤。"
- zhx_diplomacy_accept_admission_tt:0 "申请国列入周天下名册，保留独立外交并获得当前周天下共同修正。"
+ zhx_diplomacy_accept_admission_tt:0 "申请国列入周天下名册，保留独立外交并获得当前周天下共同修正；省份须另行办理入籍。"
  zhx_diplomacy_reject_admission_tt:0 "驳回申请；该国十年内不能再次请列周籍。"
 
  zhx_apply_to_join_tianxia_title:0 "请列周籍"
@@ -52,4 +52,6 @@ l_english:
  zhx_apply_to_join_tianxia_effect_tt:0 "向天子递交入周申请。天子接受后，我国成为拥有独立外交权的周天下诸侯；若被否决，十年内不能再次申请。"
  zhx_leave_tianxia_title:0 "自去周籍"
  zhx_leave_tianxia_desc:0 "独立且处于和平的诸侯可以主动退出周天下。天子不能被这一决议逐出，天子也不能单方面驱逐其他成员。"
- zhx_leave_tianxia_effect_tt:0 "失去周天下成员身份与共同修正，损失§R25§!威望；天子对我国获得十年§R-50§!好感，其他成员获得十年§R-25§!好感；二十年内不得重新申请。主动背盟同时放弃旧爵，再入盟从子国起步。退出本身不产生侵略扩张；既有犯盟状态不会被清除。"
+ zhx_leave_tianxia_effect_tt:0 "失去成员身份、周制爵位与共同修正；直属登记周土全部退籍，属国不随宗主退出。天命按退籍土地每发展度扣§R0.1§!、合计最多§R20§!。损失§R25§!威望，二十年禁入；复国不能绕过禁入或恢复弃爵，期满正常再入盟从子国开始。天命持有者对我国降低§R100§!好感；若天子与其不同国，天子另获得十年§R-50§!好感，其他普通成员获得十年§R-25§!好感。既有犯盟后果保留。"
+
+ zhx_opinion_refused_valid_appeal:0 "拒绝有效告急"

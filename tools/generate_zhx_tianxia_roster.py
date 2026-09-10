@@ -13,6 +13,7 @@ EOC_CUSTOM_GUI = ROOT / "guangdong_independent_practice/common/custom_gui/gdd_ce
 
 SLOTS = 200
 EOC_SLOTS = 66
+GREAT_FEUDATORY_SLOTS = 6
 EOC_COLUMNS = 8
 EOC_ROWS = 6
 EOC_PAGE_SIZE = EOC_COLUMNS * EOC_ROWS
@@ -22,8 +23,12 @@ EOC_COLUMN_STEP = 23
 EOC_ROW_STEP = 30
 
 
-def replace_generated_block(path: Path, begin: str, end: str, body: str) -> None:
+def replace_generated_block(path: Path, begin: str, end: str, body: str, *, retired_ok: bool = False) -> None:
     text = path.read_text(encoding="utf-8")
+    # The merit-store redesign retired the Council's old 200-shield panel.
+    # Keep legacy cache cleanup, but do not recreate removed UI controls.
+    if retired_ok and begin not in text and end not in text:
+        return
     before, remainder = text.split(begin, maxsplit=1)
     _, after = remainder.split(end, maxsplit=1)
     path.write_text(f"{before}{begin}\n{body}\n{end}{after}", encoding="utf-8")
@@ -130,7 +135,7 @@ def eoc_binding_blocks() -> str:
                     "        }",
                     "    }",
                     "    trigger = { always = yes }",
-                    "    tooltip = GDD_EOC_MEMBER_SHIELD_TT",
+                    f"    tooltip = GDD_EOC_MEMBER_SHIELD_{index:02d}_TT",
                     f"    global_event_target = {target}",
                     "    open_country = yes",
                     "}",
@@ -175,7 +180,7 @@ def effect_file() -> str:
             '    # The shield grid stays retired; the active ballot still needs a name cache.',
             '    zhx_clear_gui_roster = yes',
             '    if = {',
-            '        limit = { event_target:zhx_tianzi = { has_country_flag = zhx_council_phase_ballot_open } }',
+            '        limit = { NOT = { has_global_flag = zhx_tianxia_dismantled } event_target:zhx_tianzi = { has_country_flag = zhx_council_phase_ballot_open } }',
             '        every_country = {',
             '            limit = { zhx_can_vote_in_tianxia_council = yes NOT = { zhx_is_tianzi = yes } }',
             '            zhx_allocate_gui_roster_slot = yes',
@@ -251,16 +256,57 @@ def effect_file() -> str:
             "",
         ]
     )
-    generated = "\n".join(lines)
-    # The great-feudatory cache is a hand-maintained extension below the
-    # generated ordinary-member cache. Preserve it when the member slot count
-    # changes so roster regeneration cannot silently delete live mechanics.
-    extension_marker = "# Six compact targets for the non-principal great-feudatory shields"
-    if EFFECTS.exists():
-        current = EFFECTS.read_text(encoding="utf-8")
-        if extension_marker in current:
-            generated += "\n\n" + current[current.index(extension_marker):].rstrip() + "\n"
-    return generated
+
+    # The principal feudatory has its own stable target. These six targets are
+    # the remaining great-feudatory seats displayed below it. Keep this cache
+    # in the generator: regenerating the member grid must never erase the
+    # independent seven-seat presentation.
+    lines.extend(["gdd_clear_eoc_great_feudatory_roster = {"])
+    for index in range(1, GREAT_FEUDATORY_SLOTS + 1):
+        lines.extend(
+            [
+                "    if = {",
+                f"        limit = {{ has_saved_global_event_target = gdd_eoc_great_feudatory_roster_{index:02d} }}",
+                f"        clear_global_event_target = gdd_eoc_great_feudatory_roster_{index:02d}",
+                "    }",
+            ]
+        )
+    lines.extend(["}", "", "gdd_allocate_eoc_great_feudatory_roster_slot = {"])
+    for index in range(1, GREAT_FEUDATORY_SLOTS + 1):
+        keyword = "if" if index == 1 else "else_if"
+        lines.extend(
+            [
+                f"    {keyword} = {{",
+                f"        limit = {{ NOT = {{ has_saved_global_event_target = gdd_eoc_great_feudatory_roster_{index:02d} }} }}",
+                f"        save_global_event_target_as = gdd_eoc_great_feudatory_roster_{index:02d}",
+                "    }",
+            ]
+        )
+    lines.extend(
+        [
+            "}",
+            "",
+            "gdd_build_eoc_great_feudatory_roster = {",
+            "    gdd_clear_eoc_great_feudatory_roster = yes",
+            "    every_country = {",
+            "        limit = {",
+            "            exists = yes",
+            "            has_country_flag = zhx_member",
+            "            has_country_flag = zhx_major_feudatory",
+            "            OR = {",
+            "                NOT = { has_saved_global_event_target = gdd_principal_vassal }",
+            "                NOT = { tag = event_target:gdd_principal_vassal }",
+            "            }",
+            "            NOT = { has_country_flag = zhx_tianzi }",
+            "        }",
+            "        gdd_allocate_eoc_great_feudatory_roster_slot = yes",
+            "    }",
+            "    set_global_flag = gdd_eoc_great_feudatory_roster_initialised",
+            "}",
+            "",
+        ]
+    )
+    return "\n".join(lines)
 
 
 def main() -> None:
@@ -269,12 +315,14 @@ def main() -> None:
         "\t\t\t# ZHX_ROSTER_SHIELDS_BEGIN",
         "\t\t\t# ZHX_ROSTER_SHIELDS_END",
         gui_blocks(),
+        retired_ok=True,
     )
     replace_generated_block(
         CUSTOM_GUI,
         "# ZHX_ROSTER_BINDINGS_BEGIN",
         "# ZHX_ROSTER_BINDINGS_END",
         binding_blocks(),
+        retired_ok=True,
     )
     replace_generated_block(
         EOC_GUI,
@@ -290,7 +338,7 @@ def main() -> None:
     )
     EFFECTS.write_text(effect_file(), encoding="utf-8")
     print(
-        f"generated {SLOTS} Zhou Council slots and "
+        f"generated cleanup for {SLOTS} legacy Zhou Council slots and "
         f"{EOC_SLOTS} Mandate-window member slots"
     )
 

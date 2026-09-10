@@ -5,3 +5,32 @@ gdd_cb_punish_guangdong_secession = {
     months = 240
     war_goal = gdd_recover_china_cores_wargoal
 }
+
+gdd_cb_tianxia_liberation = {
+    valid_for_subject = no
+    is_triggered_only = yes
+    months = 60
+
+    prerequisites_self = {
+        zhx_is_tianzi = yes
+        NOT = { has_global_flag = zhx_tianxia_dismantled }
+    }
+    prerequisites = {
+        FROM = {
+            OR = {
+                any_owned_province = {
+                    has_province_flag = zhx_tianxia_province
+                    has_province_modifier = gdd_tianxia_unlawful_refusal
+                }
+                any_subject_country = {
+                    any_owned_province = {
+                        has_province_flag = zhx_tianxia_province
+                        has_province_modifier = gdd_tianxia_unlawful_refusal
+                    }
+                }
+            }
+        }
+    }
+
+    war_goal = gdd_tianxia_liberation_wargoal
+}

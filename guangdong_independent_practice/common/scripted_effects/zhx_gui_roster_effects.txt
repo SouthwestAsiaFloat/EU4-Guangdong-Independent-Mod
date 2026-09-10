@@ -1611,7 +1611,7 @@ zhx_build_gui_roster = {
     # The shield grid stays retired; the active ballot still needs a name cache.
     zhx_clear_gui_roster = yes
     if = {
-        limit = { event_target:zhx_tianzi = { has_country_flag = zhx_council_phase_ballot_open } }
+        limit = { NOT = { has_global_flag = zhx_tianxia_dismantled } event_target:zhx_tianzi = { has_country_flag = zhx_council_phase_ballot_open } }
         every_country = {
             limit = { zhx_can_vote_in_tianxia_council = yes NOT = { zhx_is_tianzi = yes } }
             zhx_allocate_gui_roster_slot = yes
@@ -2187,10 +2187,6 @@ gdd_build_eoc_member_roster = {
     set_global_flag = gdd_eoc_member_roster_initialised
 }
 
-
-# Six compact targets for the non-principal great-feudatory shields and the
-# removal test. Unlike the general member roster, these targets only contain
-# current holders of the dynamic zhx_major_feudatory dignity.
 gdd_clear_eoc_great_feudatory_roster = {
     if = {
         limit = { has_saved_global_event_target = gdd_eoc_great_feudatory_roster_01 }

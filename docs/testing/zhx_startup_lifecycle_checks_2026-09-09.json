@@ -1,0 +1,115 @@
+{
+  "test_zhx_startup_lifecycle": {
+    "exit_code": 0,
+    "tail": [
+      "test_legacy_missing_land_is_repaired_without_resetting_merit_or_queues (__main__.StartupLifecycle.test_legacy_missing_land_is_repaired_without_resetting_merit_or_queues) ... ok",
+      "test_v13_runs_both_territory_and_merit_initialisation (__main__.StartupLifecycle.test_v13_runs_both_territory_and_merit_initialisation) ... ok",
+      "test_v14_initializes_diplomacy_and_repairs_hre_overlap (__main__.StartupLifecycle.test_v14_initializes_diplomacy_and_repairs_hre_overlap) ... ok",
+      "",
+      "----------------------------------------------------------------------",
+      "Ran 9 tests in 3.418s",
+      "",
+      "OK"
+    ]
+  },
+  "test_gdd_tianxia_buttons": {
+    "exit_code": 0,
+    "tail": [
+      "test_leave_refreshes_initialized_rosters_and_reform_vote_totals (__main__.TianxiaButtons.test_leave_refreshes_initialized_rosters_and_reform_vote_totals) ... ok",
+      "test_leave_without_open_ballot_preserves_closed_results (__main__.TianxiaButtons.test_leave_without_open_ballot_preserves_closed_results) ... ok",
+      "test_visibility_requires_initialisation_and_emperor (__main__.TianxiaButtons.test_visibility_requires_initialisation_and_emperor) ... ok",
+      "",
+      "----------------------------------------------------------------------",
+      "Ran 33 tests in 1.284s",
+      "",
+      "OK"
+    ]
+  },
+  "test_gdd_tianxia_territory": {
+    "exit_code": 0,
+    "tail": [
+      "test_same_province_becomes_eligible_at_365_days (__main__.TerritoryRules.test_same_province_becomes_eligible_at_365_days) ... ok",
+      "test_subjects_and_overlord_do_not_share_cooldown (__main__.TerritoryRules.test_subjects_and_overlord_do_not_share_cooldown) ... ok",
+      "test_third_party_war_is_allowed_but_emperor_war_is_not (__main__.TerritoryRules.test_third_party_war_is_allowed_but_emperor_war_is_not) ... ok",
+      "",
+      "----------------------------------------------------------------------",
+      "Ran 15 tests in 0.046s",
+      "",
+      "OK"
+    ]
+  },
+  "validate_gdd_celestial_mandate": {
+    "exit_code": 0,
+    "tail": [
+      "  AI reform executors must cast their own support ballot",
+      "  Emperor subject: external -1/month; Zhou -0.05/month and authority -5/month",
+      "  seat penalties are gated until the post-migration cache is ready",
+      "  foreign occupation: -0.005/province/month",
+      "  external full annexation and defense refusal: -10 once",
+      "  voluntary exit: -0.1/development, capped at -20",
+      "  reform enactment: requires caller threshold and consumes the Mandate pool",
+      "  revocation opinion: ROOT-scoped, stacks to -100, natural yearly decay"
+    ]
+  },
+  "validate_gdd_tianxia_territory": {
+    "exit_code": 0,
+    "tail": [
+      "PASS: Zhou Tianxia territory white-box validation"
+    ]
+  },
+  "validate_zhx_merit_store": {
+    "exit_code": 0,
+    "tail": [
+      "Zhou merit store static contract: PASS",
+      "  Three ledgers; 25-year term; active-contribution eligibility; seven-place ranking",
+      "  Eight 50-merit / 10-year items in four mutually exclusive categories",
+      "  Dynamic Principal and Seven identities reuse the existing Mandate-page roster",
+      "  Former 200-shield Zhou roster is absent from the rendered panel and annual builder"
+    ]
+  },
+  "validate_zhx_diplomacy": {
+    "exit_code": 0,
+    "tail": [
+      "  every member extinction queues a universal -5 ritual-authority loss",
+      "  real peace uses a same-day presentation-only notice; punishments settle monthly",
+      "  Tianzi receives an isolated 120-month punitive CB through a hidden monthly bridge",
+      "  Tianzi may manually join an externally attacked member's defensive wars through a native diplomatic action",
+      "  a player member may appeal to the Tianzi, with eligible AI recipients accepting by a single duty term",
+      "  relief action has no CB, world scan, event/on-action bridge or custom wargoal",
+      "  membership application, voluntary exit and historic restoration wired",
+      "  this command performs static checks only; runtime evidence is documented separately"
+    ]
+  },
+  "validate_zhou_feudatories": {
+    "exit_code": 0,
+    "tail": [
+      "PASS: 58 opening monarchies; TSF, republics and Tianzi excluded; three fixed-rank reforms; 67 encoded keys and 5 native-root controls",
+      "PASS: 278 source-driven threshold, snapshot, rollover, ballot, refusal, lifecycle and AI cases",
+      "Static contracts only. Native diplomacy, startup, rank locking, title precedence and GUI rendering require a fresh-game runtime pass."
+    ]
+  },
+  "validate_zhx_council": {
+    "exit_code": 0,
+    "tail": [
+      "Shared Tianxia Council static contract: PASS",
+      "  One phase family; one issue-kind family; one A/B/C ballot",
+      "  Deadline: zhx_system.23 after 365 days",
+      "  Public turnout: eligible/voted/unvoted countries and AI countries",
+      "  Public counters are always mutated on event_target:zhx_tianzi",
+      "  Debate candidate slots: 6 schools in A and 6 schools in B",
+      "  GUI: current council on the left; orthodoxy on the right"
+    ]
+  },
+  "validate_gdd_eoc_layout": {
+    "exit_code": 0,
+    "tail": [
+      "Integrated Mandate / Zhou-member layout: PASS",
+      "  Centred decrees fill the extended functional 12 + 4 page viewport",
+      "  Short member panel uses a functional 48 + 18 page scrollbar",
+      "  Emperor and Mandate share the top row; authority track is tucked below",
+      "  Equal 220px side columns share the existing seven-feudatory centre axis",
+      "  Three native HRE buttons have equal gaps and align with the panel bottoms",
+      "  Reforms retain their native art, scales and 8 / 6 / 6 grouping"
+    ]
+  }
+}

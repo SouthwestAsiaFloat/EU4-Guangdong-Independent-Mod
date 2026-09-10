@@ -16,6 +16,7 @@ def condition(tree, state):
     for key, _, value in tree:
         if key == 'NOT': result = not condition(value, state)
         elif key in ('owner', 'event_target:zhx_tianzi'): result = condition(value, state)
+        elif key == 'zhx_is_tianxia_province': result = state['registered']
         elif key == 'zhx_is_tianxia_polity': result = state['member']
         elif key in ('has_saved_global_event_target', 'exists', 'zhx_is_tianzi'): result = state['authority']
         elif key == 'check_variable': result = state['ritual'] >= float(fields(value)['value'])
@@ -51,7 +52,7 @@ def main():
         definition = fields(modifiers[f'zhx_ritual_warscore_{p:03d}'])
         require(set(definition) == {'local_warscore_cost_modifier'}, 'defender protection must not add attacker-side costs or unrelated effects')
         require(float(definition['local_warscore_cost_modifier']) == p / 100, 'wrong modifier magnitude')
-    state = dict(member=True, authority=True, ritual=50, modifiers={'unrelated_modifier'}, flags=set())
+    state = dict(member=True, registered=True, authority=True, ritual=50, modifiers={'unrelated_modifier'}, flags=set())
     # Ascending and descending sweeps exercise every boundary and replacement.
     values = [i / 2 for i in range(-202, 203)]
     for r in values + values[::-1]:
@@ -62,8 +63,8 @@ def main():
         require(state['modifiers'] == expected, f'wrong tier/stack at {r}')
         execute(FX['zhx_refresh_province_ritual_warscore'], state)
         require(state['modifiers'] == expected, 'refresh is not idempotent')
-    for cause in ('member', 'authority'):
-        state.update(member=True, authority=True, ritual=50)
+    for cause in ('member', 'registered', 'authority'):
+        state.update(member=True, registered=True, authority=True, ritual=50)
         execute(FX['zhx_refresh_province_ritual_warscore'], state)
         state[cause] = False
         execute(FX['zhx_refresh_province_ritual_warscore'], state)

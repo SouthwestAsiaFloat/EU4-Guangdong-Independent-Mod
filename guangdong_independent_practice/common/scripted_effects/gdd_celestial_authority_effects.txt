@@ -53,10 +53,20 @@ gdd_clamp_central_authority_balance = {
     }
 }
 
+# Public fixed monthly shift used when the current Emperor is subject to a
+# Zhou polity. ROOT must be the CZH authority anchor.
+gdd_shift_authority_toward_feudatories_5_effect = {
+    change_variable = {
+        which = gdd_central_authority_balance
+        value = -5
+    }
+    gdd_clamp_central_authority_balance = yes
+    gdd_refresh_authority_balance_effects = yes
+}
+
 # Country-scope cleanup.  A recipient flag lets the global refresh find former
 # members or former Mandate holders and remove stale effects safely.
 gdd_clear_authority_balance_effects = {
-    remove_country_modifier = gdd_authority_balance_zero
     remove_country_modifier = gdd_central_authority_emperor_bit_001
     remove_country_modifier = gdd_central_authority_emperor_bit_002
     remove_country_modifier = gdd_central_authority_emperor_bit_004
@@ -117,28 +127,17 @@ gdd_clear_authority_balance_effects = {
 
 # Country-scope application.  Existing zhx identity flags remain the authority
 # for the member distinction; a dedicated trigger identifies the seven great
-# feudatories.  The native Mandate identifies the emperor so the penalties and
-# bonuses transfer when the Mandate changes hands.
+# feudatories.  The Zhou Tianzi owns political authority bonuses independently of
+# the native Mandate holder.
 gdd_apply_authority_balance_effects = {
     gdd_clear_authority_balance_effects = yes
 
     if = {
         limit = {
-            CZH = { has_country_flag = gdd_authority_balance_zero_active }
-            zhx_is_tianxia_polity = yes
-        }
-        add_country_modifier = {
-            name = gdd_authority_balance_zero
-            duration = -1
-        }
-        set_country_flag = gdd_authority_balance_effect_recipient
-    }
-    else_if = {
-        limit = {
             CZH = { has_country_flag = gdd_central_authority_active }
         }
         if = {
-            limit = { is_emperor_of_china = yes }
+            limit = { zhx_is_tianzi = yes }
             if = {
                 limit = { CZH = { has_country_flag = gdd_authority_balance_bit_001 } }
                 add_country_modifier = {
@@ -305,7 +304,7 @@ gdd_apply_authority_balance_effects = {
             CZH = { has_country_flag = gdd_feudatory_prestige_active }
         }
         if = {
-            limit = { is_emperor_of_china = yes }
+            limit = { zhx_is_tianzi = yes }
             if = {
                 limit = { CZH = { has_country_flag = gdd_authority_balance_bit_001 } }
                 add_country_modifier = {
@@ -557,7 +556,6 @@ gdd_refresh_authority_balance_effects = {
 
     clr_country_flag = gdd_central_authority_active
     clr_country_flag = gdd_feudatory_prestige_active
-    clr_country_flag = gdd_authority_balance_zero_active
     clr_country_flag = gdd_authority_balance_bit_001
     clr_country_flag = gdd_authority_balance_bit_002
     clr_country_flag = gdd_authority_balance_bit_004
@@ -581,18 +579,15 @@ gdd_refresh_authority_balance_effects = {
 
     if = {
         limit = {
-            is_variable_equal = {
-                which = gdd_central_authority_balance
-                value = 0
-            }
-        }
-        set_country_flag = gdd_authority_balance_zero_active
-    }
-    else_if = {
-        limit = {
             check_variable = {
                 which = gdd_central_authority_balance
                 value = 0
+            }
+            NOT = {
+                is_variable_equal = {
+                    which = gdd_central_authority_balance
+                    value = 0
+                }
             }
         }
         set_country_flag = gdd_central_authority_active
@@ -605,7 +600,15 @@ gdd_refresh_authority_balance_effects = {
             which = gdd_central_authority_balance
         }
     }
-    else = {
+    else_if = {
+        limit = {
+            NOT = {
+                check_variable = {
+                    which = gdd_central_authority_balance
+                    value = 0
+                }
+            }
+        }
         set_country_flag = gdd_feudatory_prestige_active
         set_variable = {
             which = gdd_feudatory_prestige_display
@@ -852,7 +855,7 @@ gdd_refresh_authority_balance_effects = {
     every_country = {
         limit = {
             OR = {
-                is_emperor_of_china = yes
+                zhx_is_tianzi = yes
                 zhx_is_tianxia_polity = yes
                 has_country_flag = gdd_authority_balance_effect_recipient
             }

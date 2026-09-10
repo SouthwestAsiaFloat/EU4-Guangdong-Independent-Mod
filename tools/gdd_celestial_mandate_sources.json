@@ -1,0 +1,141 @@
+{
+  "description": "Single registry for every Zhou Mandate source shown by the custom monthly tooltip or deliberately excluded from it.",
+  "continuous": [
+    {
+      "id": "prosperous_states",
+      "file": "common/defines/zz_gdd_mandate.lua",
+      "token": "Prosperous states retain their vanilla gain.",
+      "tooltip_accessor": "GetGddEocMandateProsperityRow"
+    },
+    {
+      "id": "internal_peace",
+      "file": "common/triggered_modifiers/gdd_celestial_mandate_modifiers.txt",
+      "token": "gdd_tianxia_internal_peace_mandate = {",
+      "tooltip_accessor": "GetGddEocMandateInternalPeaceRow"
+    },
+    {
+      "id": "settled_authority",
+      "file": "common/triggered_modifiers/gdd_celestial_mandate_modifiers.txt",
+      "token": "gdd_tianxia_settled_authority_mandate = {",
+      "tooltip_accessor": "GetGddEocMandateAuthorityRow"
+    },
+    {
+      "id": "absolute_authority",
+      "file": "common/triggered_modifiers/gdd_celestial_mandate_modifiers.txt",
+      "token": "gdd_tianxia_absolute_authority_mandate = {",
+      "tooltip_accessor": "GetGddEocMandateAuthorityRow"
+    },
+    {
+      "id": "deadlocked_authority",
+      "file": "common/triggered_modifiers/gdd_celestial_mandate_modifiers.txt",
+      "token": "gdd_tianxia_deadlocked_authority_mandate = {",
+      "tooltip_accessor": "GetGddEocMandateAuthorityRow"
+    },
+    {
+      "id": "beijing_control",
+      "file": "common/triggered_modifiers/00_triggered_modifiers.txt",
+      "token": "gdd_tianxia_control_of_beijing = {",
+      "tooltip_accessor": "GetGddEocMandateBeijingRow"
+    },
+    {
+      "id": "nanjing_control",
+      "file": "common/triggered_modifiers/00_triggered_modifiers.txt",
+      "token": "gdd_tianxia_control_of_nanjing = {",
+      "tooltip_accessor": "GetGddEocMandateNanjingRow"
+    },
+    {
+      "id": "canton_control",
+      "file": "common/triggered_modifiers/00_triggered_modifiers.txt",
+      "token": "gdd_tianxia_control_of_canton = {",
+      "tooltip_accessor": "GetGddEocMandateCantonRow"
+    },
+    {
+      "id": "external_subject",
+      "file": "common/triggered_modifiers/gdd_celestial_mandate_modifiers.txt",
+      "token": "gdd_tianxia_emperor_external_subject_mandate = {",
+      "tooltip_accessor": "GetGddEocMandateSubjectRow"
+    },
+    {
+      "id": "internal_subject",
+      "file": "common/triggered_modifiers/gdd_celestial_mandate_modifiers.txt",
+      "token": "gdd_tianxia_emperor_internal_subject_mandate = {",
+      "tooltip_accessor": "GetGddEocMandateSubjectRow"
+    },
+    {
+      "id": "invalid_great_feudatory_seats",
+      "file": "common/triggered_modifiers/gdd_celestial_mandate_modifiers.txt",
+      "token": "gdd_tianxia_one_invalid_great_feudatory = {",
+      "tooltip_accessor": "GetGddEocMandateSeatRow"
+    },
+    {
+      "id": "chinese_unification_war",
+      "file": "common/triggered_modifiers/00_triggered_modifiers.txt",
+      "token": "waging_war_for_china = {",
+      "tooltip_accessor": "GetGddEocMandateUnificationWarRow"
+    },
+    {
+      "id": "dynastic_name_decree",
+      "file": "common/event_modifiers/gdd_celestial_proxy_decrees.txt",
+      "token": "gdd_proxy_decree_proclaim_dynastic_name = {",
+      "tooltip_accessor": "GetGddEocMandateDecreeRow"
+    },
+    {
+      "id": "empire_of_china_culture_disaster",
+      "file": "common/disasters/empire_of_china_culture.txt",
+      "token": "imperial_mandate = -0.3",
+      "tooltip_accessor": "GetGddEocMandateDisasterRow"
+    }
+  ],
+  "monthly_scripted": [
+    {
+      "id": "foreign_occupation",
+      "file": "common/scripted_effects/gdd_celestial_mandate_effects.txt",
+      "token": "add_mandate = -0.005",
+      "tooltip_accessor": "GetGddEocMandateOccupationRow"
+    }
+  ],
+  "neutralized_vanilla": [
+    {
+      "id": "stability",
+      "file": "common/defines/zz_gdd_mandate.lua",
+      "token": "CELESTIAL_EMPIRE_MANDATE_PER_STABILITY = 0"
+    },
+    {
+      "id": "tributary_development",
+      "file": "common/defines/zz_gdd_mandate.lua",
+      "token": "CELESTIAL_EMPIRE_MANDATE_PER_HUNDRED_TRIBUTARY_DEV = 0"
+    },
+    {
+      "id": "devastation",
+      "file": "common/defines/zz_gdd_mandate.lua",
+      "token": "CELESTIAL_EMPIRE_MANDATE_PER_HUNDRED_DEVASTATION = 0"
+    },
+    {
+      "id": "loans",
+      "file": "common/defines/zz_gdd_mandate.lua",
+      "token": "CELESTIAL_EMPIRE_MANDATE_PER_5_LOANS = 0"
+    },
+    {
+      "id": "corruption",
+      "file": "common/static_modifiers/zz_gdd_neutral_mandate.txt",
+      "token": "corruption = {"
+    },
+    {
+      "id": "bankruptcy",
+      "file": "common/static_modifiers/zz_gdd_neutral_mandate.txt",
+      "token": "bankruptcy = {"
+    }
+  ],
+  "one_time_not_monthly": [
+    {
+      "id": "external_full_annexation",
+      "file": "common/scripted_effects/gdd_celestial_mandate_effects.txt",
+      "token": "gdd_apply_external_tianxia_annexation_mandate_loss_effect = {"
+    },
+    {
+      "id": "voluntary_member_exit",
+      "file": "common/scripted_effects/gdd_celestial_mandate_effects.txt",
+      "token": "gdd_leave_tianxia_with_mandate_penalty_effect = {"
+    }
+  ]
+}

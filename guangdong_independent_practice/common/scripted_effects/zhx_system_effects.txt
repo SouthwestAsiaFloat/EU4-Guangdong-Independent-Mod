@@ -2,45 +2,50 @@
 # 天子身份只由周天下系统管理，刻意不依赖任何属国类型。
 zhx_set_tianzi = {
     if = {
-        limit = {
-            has_saved_global_event_target = zhx_tianzi
-            NOT = { tag = event_target:zhx_tianzi }
-        }
-        set_variable = { which = zhx_merit_term_year which = event_target:zhx_tianzi }
-        set_variable = { which = zhx_merit_term_years_remaining which = event_target:zhx_tianzi }
-    }
-    every_country = {
-        limit = {
-            has_country_flag = zhx_tianzi
-        }
-        clr_country_flag = zhx_tianzi
+        limit = { NOT = { has_global_flag = zhx_tianxia_dismantled } }
+
         if = {
-            # PREV is the appointee scope even when the caller event belongs to another country.
-            limit = { NOT = { tag = PREV } }
-            zhx_tianzi_sync_government = yes
+            limit = {
+                has_saved_global_event_target = zhx_tianzi
+                NOT = { tag = event_target:zhx_tianzi }
+            }
+            set_variable = { which = zhx_merit_term_year which = event_target:zhx_tianzi }
+            set_variable = { which = zhx_merit_term_years_remaining which = event_target:zhx_tianzi }
         }
-    }
-    # If a future emperor was previously a normal member, remove it through
-    # the common exit path first so the compact GUI roster and count cache do
-    # not retain its former slot.
-    if = {
-        limit = { has_country_flag = zhx_member }
-        zhx_remove_tianxia_member = yes
-    }
-    clr_country_flag = zhx_member
-    clr_country_flag = zhx_major_feudatory
-    clr_country_flag = zhx_ritual_tier_ordered
-    clr_country_flag = zhx_ritual_tier_stable
-    clr_country_flag = zhx_ritual_tier_balanced
-    clr_country_flag = zhx_ritual_tier_fractured
-    clr_country_flag = zhx_ritual_tier_collapsed
-    set_country_flag = zhx_tianzi
-    save_global_event_target_as = zhx_tianzi
-    zhx_refresh_all_ritual_warscore = yes
-    zhx_tianzi_sync_government = yes
-    if = {
-        limit = { has_global_flag = zhx_system_initialised_v8 }
-        CZH = { gdd_refresh_authority_balance_effects = yes }
+        every_country = {
+            limit = {
+                has_country_flag = zhx_tianzi
+            }
+            clr_country_flag = zhx_tianzi
+            if = {
+                # PREV is the appointee scope even when the caller event belongs to another country.
+                limit = { NOT = { tag = PREV } }
+                zhx_tianzi_sync_government = yes
+            }
+        }
+        # If a future emperor was previously a normal member, remove it through
+        # the common exit path first so the compact GUI roster and count cache do
+        # not retain its former slot.
+        if = {
+            limit = { has_country_flag = zhx_member }
+            zhx_remove_tianxia_member = yes
+        }
+        clr_country_flag = zhx_member
+        clr_country_flag = zhx_major_feudatory
+        clr_country_flag = zhx_ritual_tier_ordered
+        clr_country_flag = zhx_ritual_tier_stable
+        clr_country_flag = zhx_ritual_tier_balanced
+        clr_country_flag = zhx_ritual_tier_fractured
+        clr_country_flag = zhx_ritual_tier_collapsed
+        set_country_flag = zhx_tianzi
+        set_country_flag = gdd_tianxia_historical_polity
+        save_global_event_target_as = zhx_tianzi
+        zhx_refresh_all_ritual_warscore = yes
+        zhx_tianzi_sync_government = yes
+        if = {
+            limit = { has_global_flag = zhx_system_initialised_v8 }
+            CZH = { gdd_refresh_authority_balance_effects = yes }
+        }
     }
 }
 
@@ -463,12 +468,20 @@ zhx_yearly_ritual_authority_tick = {
 zhx_register_tianxia_member = {
     if = {
         limit = {
+            NOT = { has_country_modifier = zhx_tianxia_rejoin_bar }
             exists = yes
+            NOT = { has_global_flag = zhx_tianxia_dismantled }
             NOT = { has_country_flag = zhx_tianzi }
             NOT = { has_country_flag = zhx_member }
         }
+        # A revived or previously expelled country begins a fresh membership
+        # lifecycle; this flag only suppresses duplicate annexation on-actions
+        # for the same destruction.
+        clr_country_flag = gdd_external_annexation_mandate_paid
+        clr_country_flag = gdd_tianxia_defense_refusal_paid
         set_country_flag = zhx_member
         zhx_refresh_country_ritual_warscore = yes
+        set_country_flag = gdd_tianxia_historical_polity
         # A restored polity may have been extinguished earlier in the same
         # campaign. Its next destruction must count as a new loss of statehood.
         clr_country_flag = zhx_tianxia_extinction_penalty_recorded
@@ -501,7 +514,7 @@ zhx_register_tianxia_member = {
             if = {
                 limit = {
                     ai = yes
-                    event_target:EmperorOfChina = { exists = yes }
+                    event_target:zhx_tianzi = { exists = yes }
                 }
                 gdd_ai_evaluate_all_reform_votes_effect = yes
             }
@@ -523,6 +536,7 @@ zhx_register_major_feudatory = {
     if = {
         limit = {
             exists = yes
+            NOT = { has_global_flag = zhx_tianxia_dismantled }
             NOT = { has_country_flag = zhx_tianzi }
         }
         zhx_register_tianxia_member = yes
@@ -535,7 +549,7 @@ zhx_register_major_feudatory = {
                 limit = {
                     has_global_flag = gdd_celestial_reform_voting_initialised
                     ai = yes
-                    event_target:EmperorOfChina = { exists = yes }
+                    event_target:zhx_tianzi = { exists = yes }
                 }
                 gdd_ai_evaluate_all_reform_votes_effect = yes
                 CZH = { gdd_recalculate_all_reform_votes_effect = yes }
@@ -623,7 +637,7 @@ zhx_remove_major_feudatory = {
                 limit = {
                     has_global_flag = gdd_celestial_reform_voting_initialised
                     ai = yes
-                    event_target:EmperorOfChina = { exists = yes }
+                    event_target:zhx_tianzi = { exists = yes }
                 }
             gdd_ai_evaluate_all_reform_votes_effect = yes
             CZH = { gdd_recalculate_all_reform_votes_effect = yes }
@@ -670,6 +684,10 @@ zhx_promote_six_great_feudatory = {
 
 zhx_remove_tianxia_member = {
     if = {
+        limit = { has_country_flag = zhx_member }
+        set_country_flag = gdd_tianxia_historical_polity
+    }
+    if = {
         limit = {
             OR = {
                 has_country_flag = zhx_council_vote_a
@@ -678,12 +696,6 @@ zhx_remove_tianxia_member = {
             }
         }
         zhx_clear_current_tianxia_council_vote = yes
-        event_target:zhx_tianzi = {
-            if = {
-                limit = { has_country_flag = zhx_council_phase_ballot_open }
-                zhx_recount_tianxia_council_ballot = yes
-            }
-        }
     }
     if = {
         limit = {
@@ -743,6 +755,14 @@ zhx_remove_tianxia_member = {
     clr_country_flag = zhx_member
     zhx_refresh_country_ritual_warscore = yes
     clr_country_flag = zhx_major_feudatory
+    # Recount after removing membership, including countries that never voted.
+    # Otherwise the departing country remains in the eligible/unvoted totals.
+    event_target:zhx_tianzi = {
+        if = {
+            limit = { has_country_flag = zhx_council_phase_ballot_open }
+            zhx_recount_tianxia_council_ballot = yes
+        }
+    }
     if = {
         limit = { has_global_flag = zhx_system_initialised_v13 }
         CZH = { zhx_rebuild_six_great_feudatory_cache = yes }
@@ -1007,123 +1027,194 @@ zhx_migrate_tianxia_system_v11_to_v12 = {
     set_global_flag = zhx_system_initialised_v12
 }
 
+# v13 adds permanent province-level Tianxia territory. Existing Zhou-owned
+# non-HRE provinces are migrated without Mandate gain; future admissions use
+# the public province effect and retain their one-time reward ledger forever.
+zhx_migrate_tianxia_system_v12_to_v13 = {
+    if = {
+        limit = { NOT = { has_global_flag = zhx_tianxia_dismantled } }
+        gdd_bootstrap_tianxia_provinces_effect = yes
+        zhx_initialise_merit_store_effect = yes
+    }
+    set_global_flag = zhx_system_initialised_v13
+}
+
+# v14 repairs impossible legacy overlaps that displayed the native HRE frame
+# underneath the transparent Zhou glyph. This does not auto-admit HRE land.
+zhx_migrate_tianxia_system_v13_to_v14 = {
+    if = {
+        limit = { NOT = { has_global_flag = zhx_tianxia_dismantled } }
+        gdd_repair_tianxia_hre_exclusivity_effect = yes
+        zhx_initialise_diplomacy_effect = yes
+    }
+    set_global_flag = zhx_system_initialised_v14
+}
+
+# Seed restoration history for live members and retire only the obsolete
+# province lock. Country cooldown dates and pending requests are preserved.
+zhx_migrate_tianxia_system_v14_to_v15 = {
+    every_country = {
+        limit = { zhx_is_tianxia_polity = yes }
+        set_country_flag = gdd_tianxia_historical_polity
+    }
+    every_province = {
+        clr_province_flag = gdd_tianxia_unlawful_requested_this_owner
+    }
+    set_global_flag = zhx_system_initialised_v15
+}
+
+# Repair saves produced by the conflicting v13/v14 definitions. Version flags
+# alone could not tell which half had actually executed. A permanent admission
+# ledger distinguishes a wholly missing territorial baseline from an existing
+# world whose borders have since changed; never re-admit removed land on load.
+zhx_migrate_tianxia_system_v15_to_v16 = {
+    if = {
+        limit = { NOT = { has_global_flag = zhx_tianxia_dismantled } }
+        if = {
+            limit = { NOT = { has_global_flag = gdd_tianxia_territory_initialised } }
+            if = {
+                limit = {
+                    NOT = {
+                        any_province = {
+                            OR = {
+                                has_province_flag = zhx_tianxia_province
+                                has_province_flag = zhx_tianxia_admission_reward_paid
+                            }
+                        }
+                    }
+                }
+                gdd_bootstrap_tianxia_provinces_effect = yes
+            }
+            set_global_flag = gdd_tianxia_territory_initialised
+        }
+        zhx_initialise_merit_store_effect = yes
+        zhx_initialise_diplomacy_effect = yes
+        gdd_repair_tianxia_hre_exclusivity_effect = yes
+        set_global_flag = zhx_system_initialised_v16
+    }
+}
+
 # 第一版政治成员表使用明确 TAG 清单，避免文化转变、征服或政体改变悄悄重写天下秩序。
 # 名单包含 1444 年所有非少数民族诸夏国家、安南、辽、箕子朝鲜，
 # 以及明确纳入的延安义渠（YOU）。南部高丽（KOR）仍是周天下之外的本土政权。
 # 甘州（GZH）与其他被排除的少数民族政权不会进入周天下。
 zhx_initialise_tianxia_system = {
-    CZH = {
-        zhx_set_tianzi = yes
-        set_variable = {
-            which = zhx_ritual_authority
-            value = 50
-        }
-        set_variable = {
-            which = zhx_member_count_cache
-            value = 0
-        }
-        set_variable = { which = zhx_council_vote_a_count value = 0 }
-        set_variable = { which = zhx_council_vote_b_count value = 0 }
-        set_variable = { which = zhx_council_vote_c_count value = 0 }
-    }
+    if = {
+        limit = { NOT = { has_global_flag = zhx_tianxia_dismantled } }
 
-    # 这是最小内核唯一的一次全世界扫描：只在开局执行，随后把身份保存为各国旗标。
-    every_country = {
-        limit = {
-            OR = {
-                tag = BAA
-                tag = CAG
-                tag = CAI
-                tag = CCH
-                tag = CDE
-                tag = CHC
-                tag = CHN
-                tag = CSA
-                tag = CZC
-                tag = DAE
-                tag = DAI
-                tag = DIA
-                tag = DQU
-                tag = EGU
-                tag = GDD
-                tag = GON
-                tag = GUI
-                tag = GUN
-                tag = DMG
-                tag = GUO
-                tag = GUZ
-                tag = GYA
-                tag = HAK
-                tag = HNG
-                tag = HUA
-                tag = HYA
-                tag = HYM
-                tag = JJG
-                tag = JIZ
-                tag = JUU
-                tag = LCH
-                tag = LIO
-                tag = LIU
-                tag = LUO
-                tag = LUU
-                tag = MIN
-                tag = MNG
-                tag = NCH
-                tag = OUE
-                tag = QIC
-                tag = QIN
-                tag = QSH
-                tag = QVN
-                tag = QWO
-                tag = SHE
-                tag = SHU
-                tag = SNG
-                tag = SUI
-                tag = TSF
-                tag = WEI
-                tag = WHU
-                tag = WUU
-                tag = WUZ
-                tag = WVG
-                tag = XU2
-                tag = XNG
-                tag = ACG
-                tag = YAN
-                tag = YOU
-                tag = YPG
-                tag = YUE
-                tag = ZHA
-                tag = ZHG
-                tag = ZHO
-                tag = ZHU
-                tag = ZNG
-                tag = ZSH
+        CZH = {
+            zhx_set_tianzi = yes
+            set_variable = {
+                which = zhx_ritual_authority
+                value = 50
             }
+            set_variable = {
+                which = zhx_member_count_cache
+                value = 0
+            }
+            set_variable = { which = zhx_council_vote_a_count value = 0 }
+            set_variable = { which = zhx_council_vote_b_count value = 0 }
+            set_variable = { which = zhx_council_vote_c_count value = 0 }
         }
-        if = {
+
+        # 这是最小内核唯一的一次全世界扫描：只在开局执行，随后把身份保存为各国旗标。
+        every_country = {
             limit = {
                 OR = {
-                    tag = QIN
-                    tag = YAN
-                    tag = ZHA
-                    tag = WEI
+                    tag = BAA
+                    tag = CAG
+                    tag = CAI
+                    tag = CCH
+                    tag = CDE
                     tag = CHC
+                    tag = CHN
+                    tag = CSA
+                    tag = CZC
+                    tag = DAE
+                    tag = DAI
+                    tag = DIA
+                    tag = DQU
+                    tag = EGU
+                    tag = GDD
+                    tag = GON
+                    tag = GUI
+                    tag = GUN
+                    tag = DMG
+                    tag = GUO
+                    tag = GUZ
+                    tag = GYA
+                    tag = HAK
+                    tag = HNG
+                    tag = HUA
+                    tag = HYA
+                    tag = HYM
+                    tag = JJG
+                    tag = JIZ
+                    tag = JUU
+                    tag = LCH
+                    tag = LIO
+                    tag = LIU
+                    tag = LUO
+                    tag = LUU
+                    tag = MIN
+                    tag = MNG
+                    tag = NCH
+                    tag = OUE
+                    tag = QIC
+                    tag = QIN
+                    tag = QSH
+                    tag = QVN
+                    tag = QWO
+                    tag = SHE
+                    tag = SHU
+                    tag = SNG
+                    tag = SUI
+                    tag = TSF
+                    tag = WEI
+                    tag = WHU
                     tag = WUU
+                    tag = WUZ
+                    tag = WVG
+                    tag = XU2
+                    tag = XNG
+                    tag = ACG
+                    tag = YAN
+                    tag = YOU
+                    tag = YPG
                     tag = YUE
+                    tag = ZHA
+                    tag = ZHG
+                    tag = ZHO
+                    tag = ZHU
+                    tag = ZNG
+                    tag = ZSH
                 }
             }
-            zhx_register_major_feudatory = yes
+            if = {
+                limit = {
+                    OR = {
+                        tag = QIN
+                        tag = YAN
+                        tag = ZHA
+                        tag = WEI
+                        tag = CHC
+                        tag = WUU
+                        tag = YUE
+                    }
+                }
+                zhx_register_major_feudatory = yes
+            }
+            else = {
+                zhx_register_tianxia_member = yes
+            }
         }
-        else = {
-            zhx_register_tianxia_member = yes
-        }
+
+        zhx_rebuild_tianxia_member_cache = yes
+        CZH = { zhx_refresh_ritual_order = yes }
+        clr_global_flag = zhx_system_initialised_v1
+        clr_global_flag = zhx_system_initialised_v2
+        set_global_flag = zhx_system_initialised_v3
+
+        # Player introductions use their own deferred on_startup dispatcher.
     }
-
-    zhx_rebuild_tianxia_member_cache = yes
-    CZH = { zhx_refresh_ritual_order = yes }
-    clr_global_flag = zhx_system_initialised_v1
-    clr_global_flag = zhx_system_initialised_v2
-    set_global_flag = zhx_system_initialised_v3
-
-    # Player introductions use their own deferred on_startup dispatcher.
 }
