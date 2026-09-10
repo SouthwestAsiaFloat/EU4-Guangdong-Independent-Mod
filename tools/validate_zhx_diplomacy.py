@@ -682,7 +682,9 @@ def validate() -> None:
 
     require("zhx_system_initialised_v14" in texts["system_events"], "startup event must gate diplomacy v14")
     require("zhx_migrate_tianxia_system_v13_to_v14 = yes" in texts["system_events"], "startup event must invoke v14 migration")
-    require("set_global_flag = zhx_system_initialised_v14" in effects, "v14 migration must set global flag")
+    v14 = block(texts["system_effects"], "zhx_migrate_tianxia_system_v13_to_v14")
+    require("set_global_flag = zhx_system_initialised_v14" in v14, "central v14 migration must set global flag")
+    require("zhx_initialise_diplomacy_effect = yes" in v14, "central v14 migration must initialize diplomacy")
     require("ae_impact" not in block(texts["ritual_modifiers"], "zhx_ritual_order_ordered"), "ordered ritual tier still modifies global AE")
     require("ae_impact" not in block(texts["ritual_modifiers"], "zhx_ritual_order_stable"), "stable ritual tier still modifies global AE")
     require("ae_impact" not in block(texts["ritual_modifiers"], "zhx_ritual_order_balanced"), "balanced ritual tier still modifies global AE")

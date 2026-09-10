@@ -832,16 +832,23 @@ gdd_leave_tianxia_territory_effect = {
 # Tianxia territory without paying Mandate; marking the reward as consumed
 # prevents an old-save remove/re-add exploit.
 gdd_bootstrap_tianxia_provinces_effect = {
-    every_country = {
+    if = {
         limit = {
-            exists = yes
-            zhx_is_tianxia_polity = yes
+            NOT = { has_global_flag = gdd_tianxia_territory_initialised }
+            NOT = { has_global_flag = zhx_tianxia_dismantled }
         }
-        every_owned_province = {
-            limit = { is_part_of_hre = no }
-            set_province_flag = zhx_tianxia_province
-            set_province_flag = zhx_tianxia_admission_reward_paid
+        every_country = {
+            limit = {
+                exists = yes
+                zhx_is_tianxia_polity = yes
+            }
+            every_owned_province = {
+                limit = { is_part_of_hre = no }
+                set_province_flag = zhx_tianxia_province
+                set_province_flag = zhx_tianxia_admission_reward_paid
+            }
         }
+        set_global_flag = gdd_tianxia_territory_initialised
     }
 }
 
@@ -964,6 +971,9 @@ gdd_quarterly_tianxia_territory_maintenance_effect = {
 # layer; unrelated schools, academies and map/history content are untouched.
 gdd_dismantle_tianxia_effect = {
     set_global_flag = zhx_tianxia_dismantled
+    # Cancel the new merit/promotion state before discarding its office targets.
+    zhx_feudatory_clear_petition = yes
+    zhx_clear_merit_rank_targets = yes
 
     gdd_disable_centralized_tianxia_interface_effect = yes
     gdd_disable_decentralized_tianxia_interface_effect = yes
@@ -1003,9 +1013,24 @@ gdd_dismantle_tianxia_effect = {
         remove_country_modifier = gdd_proxy_decree_reinforce_the_inner_guard
         remove_country_modifier = gdd_proxy_decree_issue_bureaucratic_imperial_seal
 
+        if = {
+            limit = {
+                has_country_flag = zhx_major_feudatory
+                has_global_flag = zhx_system_initialised_v13
+            }
+            zhx_remove_merit_dignity_projection = yes
+        }
         clr_country_flag = zhx_member
         clr_country_flag = zhx_major_feudatory
         clr_country_flag = zhx_tianzi
+        if = { limit = { zhx_feudatory_has_reform = yes } zhx_feudatory_sync_government = yes }
+        set_variable = { which = zhx_merit_term value = 0 }
+        set_variable = { which = zhx_merit_lifetime value = 0 }
+        set_variable = { which = zhx_merit_rank_cache value = 0 }
+        clr_country_flag = zhx_merit_active_contribution_this_term
+        clr_country_flag = zhx_feudatory_request_pending
+        clr_country_flag = zhx_feudatory_request_from_bo
+        clr_country_flag = zhx_feudatory_request_from_hou
         clr_country_flag = zhx_ritual_tier_ordered
         clr_country_flag = zhx_ritual_tier_stable
         clr_country_flag = zhx_ritual_tier_balanced

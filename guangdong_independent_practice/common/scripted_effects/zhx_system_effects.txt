@@ -1125,6 +1125,7 @@ zhx_migrate_tianxia_system_v12_to_v13 = {
     if = {
         limit = { NOT = { has_global_flag = zhx_tianxia_dismantled } }
         gdd_bootstrap_tianxia_provinces_effect = yes
+        zhx_initialise_merit_store_effect = yes
     }
     set_global_flag = zhx_system_initialised_v13
 }
@@ -1135,6 +1136,7 @@ zhx_migrate_tianxia_system_v13_to_v14 = {
     if = {
         limit = { NOT = { has_global_flag = zhx_tianxia_dismantled } }
         gdd_repair_tianxia_hre_exclusivity_effect = yes
+        zhx_initialise_diplomacy_effect = yes
     }
     set_global_flag = zhx_system_initialised_v14
 }
@@ -1150,6 +1152,37 @@ zhx_migrate_tianxia_system_v14_to_v15 = {
         clr_province_flag = gdd_tianxia_unlawful_requested_this_owner
     }
     set_global_flag = zhx_system_initialised_v15
+}
+
+# Repair saves produced by the conflicting v13/v14 definitions. Version flags
+# alone could not tell which half had actually executed. A permanent admission
+# ledger distinguishes a wholly missing territorial baseline from an existing
+# world whose borders have since changed; never re-admit removed land on load.
+zhx_migrate_tianxia_system_v15_to_v16 = {
+    if = {
+        limit = { NOT = { has_global_flag = zhx_tianxia_dismantled } }
+        if = {
+            limit = { NOT = { has_global_flag = gdd_tianxia_territory_initialised } }
+            if = {
+                limit = {
+                    NOT = {
+                        any_province = {
+                            OR = {
+                                has_province_flag = zhx_tianxia_province
+                                has_province_flag = zhx_tianxia_admission_reward_paid
+                            }
+                        }
+                    }
+                }
+                gdd_bootstrap_tianxia_provinces_effect = yes
+            }
+            set_global_flag = gdd_tianxia_territory_initialised
+        }
+        zhx_initialise_merit_store_effect = yes
+        zhx_initialise_diplomacy_effect = yes
+        gdd_repair_tianxia_hre_exclusivity_effect = yes
+        set_global_flag = zhx_system_initialised_v16
+    }
 }
 
 # 第一版政治成员表使用明确 TAG 清单，避免文化转变、征服或政体改变悄悄重写天下秩序。

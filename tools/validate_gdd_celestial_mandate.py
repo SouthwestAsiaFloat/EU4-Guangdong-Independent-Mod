@@ -204,7 +204,7 @@ def main() -> None:
     annex = block(effects, "gdd_apply_external_tianxia_annexation_mandate_loss_effect")
     require("NOT = { zhx_is_tianxia_polity = yes }" in annex,
             "internal annexation incorrectly pays the external penalty")
-    require("CZH = { add_mandate = -10 }" in annex,
+    require("event_target:EmperorOfChina = { add_mandate = -10 }" in annex,
             "external full annexation is not exactly -10 Mandate")
     leave = block(effects, "gdd_leave_tianxia_with_mandate_penalty_effect")
     for token in ("gdd_can_leave_tianxia_trigger = yes",

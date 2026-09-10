@@ -275,32 +275,45 @@ zhx_ai_buy_merit_store_item = {
     }
 }
 
-zhx_migrate_tianxia_system_v12_to_v13 = {
-    CZH = {
-        set_variable = { which = zhx_merit_term_year value = 0 }
-        set_variable = { which = zhx_merit_term_years_remaining value = 25 }
-    }
-    every_country = {
-        limit = { zhx_is_tianxia_member = yes }
-        set_variable = { which = zhx_merit_term value = 0 }
-        set_variable = { which = zhx_merit_lifetime value = 0 }
-        set_variable = { which = zhx_merit_rank_cache value = 0 }
-    }
-    # 沿用团队既有的开局七大诸侯和首席诸侯，不在迁移时抢先改选。
-    every_country = {
-        limit = { has_country_flag = zhx_major_feudatory }
-        add_power_projection = { type = zhx_merit_dignity_power_projection amount = 10 }
-    }
+zhx_initialise_merit_store_effect = {
     if = {
         limit = {
-            has_saved_global_event_target = gdd_principal_vassal
-            event_target:gdd_principal_vassal = { exists = yes has_country_flag = zhx_major_feudatory }
+            NOT = { has_global_flag = zhx_merit_store_initialised }
+            NOT = { has_global_flag = zhx_tianxia_dismantled }
         }
-        event_target:gdd_principal_vassal = {
-            add_power_projection = { type = zhx_merit_dignity_power_projection amount = 10 }
+        # A save from the former test branch can already have an active term.
+        # Preserve its ledgers, countdown and dignity rewards during migration.
+        if = {
+            limit = {
+                NOT = { CZH = { check_variable = { which = zhx_merit_term_years_remaining value = 1 } } }
+            }
+            CZH = {
+                set_variable = { which = zhx_merit_term_year value = 0 }
+                set_variable = { which = zhx_merit_term_years_remaining value = 25 }
+            }
+            every_country = {
+                limit = { zhx_is_tianxia_member = yes }
+                set_variable = { which = zhx_merit_term value = 0 }
+                set_variable = { which = zhx_merit_lifetime value = 0 }
+                set_variable = { which = zhx_merit_rank_cache value = 0 }
+            }
+            # 沿用团队既有的开局七大诸侯和首席诸侯，不在迁移时抢先改选。
+            every_country = {
+                limit = { has_country_flag = zhx_major_feudatory }
+                add_power_projection = { type = zhx_merit_dignity_power_projection amount = 10 }
+            }
+            if = {
+                limit = {
+                    has_saved_global_event_target = gdd_principal_vassal
+                    event_target:gdd_principal_vassal = { exists = yes has_country_flag = zhx_major_feudatory }
+                }
+                event_target:gdd_principal_vassal = {
+                    add_power_projection = { type = zhx_merit_dignity_power_projection amount = 10 }
+                }
+            }
+            zhx_rebuild_six_great_feudatory_cache = yes
+            gdd_build_eoc_great_feudatory_roster = yes
         }
+        set_global_flag = zhx_merit_store_initialised
     }
-    zhx_rebuild_six_great_feudatory_cache = yes
-    gdd_build_eoc_great_feudatory_roster = yes
-    set_global_flag = zhx_system_initialised_v13
 }

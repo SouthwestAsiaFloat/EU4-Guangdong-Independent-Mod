@@ -40,6 +40,7 @@ class LazyDefinitions(dict):
                 # identifiers/operators remain ASCII. No files are rewritten.
                 text = raw.decode("latin-1")
             for match in re.finditer(r"(?m)^(\w+)\s*=\s*\{", text):
+                assert match[1] not in self.sources, f"duplicate definition {match[1]} in {path}"
                 self.sources[match[1]] = (text, match.start())
 
     def __contains__(self, key):
@@ -83,6 +84,7 @@ class ButtonWorld(Scripts):
             country.prestige = Decimal(0)
             country.power_projection = {}
             country.government = "monarchy"
+            country.government_rank = 1
             country.opinions = {}
             country.ai = False
             country.subject_type = None
@@ -121,7 +123,7 @@ class ButtonWorld(Scripts):
         return super().ref(key, stack)
 
     def iterator(self, key, current):
-        if key == "every_province":
+        if key in ("every_province", "any_province"):
             return list(self.provinces)
         return super().iterator(key, current)
 
@@ -133,9 +135,10 @@ class ButtonWorld(Scripts):
             if key in ("hidden_trigger", "AND", "OR", "NOT"):
                 checks = (self.evaluate([(k, v)], stack) for k, v in value)
                 ok = any(checks) if key == "OR" else not any(checks) if key == "NOT" else all(checks)
-            elif key == "check_variable":
+            elif key in ("check_variable", "is_variable_equal"):
                 name, amount = self.variable_operands(value, stack)
-                ok = current.variables.get(name, Decimal(0)) >= amount
+                actual = current.variables.get(name, Decimal(0))
+                ok = actual == amount if key == "is_variable_equal" else actual >= amount
             elif key == "has_saved_global_event_target":
                 ok = value in self.targets
             elif key in ("is_at_war", "ai", "is_emperor_of_china", "is_part_of_hre", "is_owned_by_trade_company"):
@@ -157,6 +160,8 @@ class ButtonWorld(Scripts):
                 ok = value in current.reforms
             elif key == "government":
                 ok = current.government == value
+            elif key == "government_rank":
+                ok = current.government_rank >= int(value)
             elif key == "always":
                 ok = value == "yes"
             else:
@@ -251,6 +256,10 @@ class ButtonWorld(Scripts):
                 current.reforms.discard(value)
             elif key == "add_government_reform":
                 current.reforms.add(value)
+            elif key == "set_government_rank":
+                current.government_rank = int(value)
+            elif key == "set_in_empire":
+                current.hre = value == "yes"
             elif key == "add_mandate":
                 assert current.tag == self.emperor, "Mandate was applied to a non-Emperor"
                 current.mandate = max(Decimal(0), min(Decimal(100), current.mandate + Decimal(value)))

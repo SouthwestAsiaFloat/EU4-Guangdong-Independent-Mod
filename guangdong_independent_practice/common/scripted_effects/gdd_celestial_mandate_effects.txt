@@ -139,10 +139,10 @@ gdd_apply_external_tianxia_annexation_mandate_loss_effect = {
                 has_country_flag = zhx_member
                 NOT = { has_country_flag = gdd_external_annexation_mandate_paid }
             }
-            CZH = { exists = yes }
+            event_target:EmperorOfChina = { exists = yes is_emperor_of_china = yes }
         }
         FROM = { set_country_flag = gdd_external_annexation_mandate_paid }
-        CZH = { add_mandate = -10 }
+        event_target:EmperorOfChina = { add_mandate = -10 }
     }
 }
 
