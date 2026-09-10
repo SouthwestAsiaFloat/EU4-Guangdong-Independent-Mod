@@ -1,0 +1,1 @@
+CHC = { export_to_variable = { variable_name = zq_op value = opinion with = CZH } export_to_variable = { variable_name = zq_tr value = trust with = CZH } log = "ZQNUM op=[This.zq_op.GetValue] trust=[This.zq_tr.GetValue]" }

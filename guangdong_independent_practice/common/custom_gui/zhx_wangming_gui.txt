@@ -1,0 +1,36 @@
+custom_icon = { name = zhx_wm_banner potential = { zhx_tianzi_has_government = yes } }
+custom_text_box = { name = zhx_wm_title potential = { zhx_tianzi_has_government = yes } tooltip = zhx_wm_common_tt }
+custom_text_box = { name = zhx_wm_term potential = { zhx_tianzi_has_government = yes } tooltip = zhx_wm_common_tt }
+custom_text_box = { name = zhx_wm_tribute_label potential = { zhx_tianzi_has_government = yes } tooltip = zhx_wm_tribute_tt }
+custom_text_box = { name = zhx_wm_tribute_status potential = { zhx_tianzi_has_government = yes } tooltip = zhx_wm_tribute_tt }
+custom_button = {
+    name = zhx_wm_tribute_button
+    potential = { zhx_tianzi_has_government = yes }
+    trigger = { hidden_trigger = { zhx_wm_can_tribute = yes } }
+    effect = { hidden_effect = { zhx_wm_queue_tribute = yes } }
+    tooltip = zhx_wm_tribute_tt
+    frame = { number = 2 trigger = { NOT = { zhx_wm_can_tribute = yes } } }
+    frame = { number = 1 trigger = { always = yes } }
+}
+custom_text_box = { name = zhx_wm_migration_label potential = { zhx_tianzi_has_government = yes } tooltip = zhx_wm_migration_tt }
+custom_text_box = { name = zhx_wm_migration_status potential = { zhx_tianzi_has_government = yes } tooltip = zhx_wm_migration_tt }
+custom_button = {
+    name = zhx_wm_migration_button
+    potential = { zhx_tianzi_has_government = yes }
+    trigger = { hidden_trigger = { zhx_wm_can_migrate = yes } }
+    effect = { hidden_effect = { zhx_wm_queue_migration = yes } }
+    tooltip = zhx_wm_migration_tt
+    frame = { number = 2 trigger = { NOT = { zhx_wm_can_migrate = yes } } }
+    frame = { number = 1 trigger = { always = yes } }
+}
+custom_text_box = { name = zhx_wm_levy_label potential = { zhx_tianzi_has_government = yes } tooltip = zhx_wm_levy_tt }
+custom_text_box = { name = zhx_wm_levy_status potential = { zhx_tianzi_has_government = yes } tooltip = zhx_wm_levy_tt }
+custom_button = {
+    name = zhx_wm_levy_button
+    potential = { zhx_tianzi_has_government = yes }
+    trigger = { hidden_trigger = { zhx_wm_can_levy = yes } }
+    effect = { hidden_effect = { zhx_wm_queue_levy = yes } }
+    tooltip = zhx_wm_levy_tt
+    frame = { number = 2 trigger = { NOT = { zhx_wm_can_levy = yes } } }
+    frame = { number = 1 trigger = { always = yes } }
+}

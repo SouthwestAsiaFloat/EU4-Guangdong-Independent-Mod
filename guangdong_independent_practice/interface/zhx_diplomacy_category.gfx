@@ -1,0 +1,9 @@
+# Native category token is "is_emperor_of_china", used here only as a grouping key.
+# No mandate/HRE mechanics or existing native diplomacy categories are overridden.
+spriteTypes = {
+    spriteType = {
+        name = "GFX_diplomacy_action_is_emperor_of_china"
+        texturefile = "gfx/interface/icon_diplomacy_HRE.dds"
+        alwaystransparent = yes
+    }
+}

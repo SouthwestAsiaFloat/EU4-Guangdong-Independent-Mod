@@ -1,0 +1,5 @@
+CHC = { if = { limit = { NOT = { has_country_flag = zhx_qn_pending } has_country_flag = zhx_qn_sent is_at_war = no check_variable = { which = zhx_merit value = 10 } NOT = { check_variable = { which = zhx_merit value = 11 } } owes_favors = { who = CZH value = 75 } } log = "ZQAUDIT human_refuse_no_cost PASS" } else = { log = "ZQAUDIT human_refuse_no_cost FAIL" }
+event_target:zhx_tianzi = { save_event_target_as = zhx_qn_inviter }
+set_country_flag = zhx_qn_pending
+country_event = { id = zhx_qinwang.10 days = 1 }
+}

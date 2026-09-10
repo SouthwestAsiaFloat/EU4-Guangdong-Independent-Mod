@@ -1,0 +1,2 @@
+if = { limit = { CHC = { is_at_war = no has_country_flag = zhx_qn_sent } CZH = { war_with = FRA zhx_qn_original_war = yes } } log = "ZQAUDIT prince_separate_peace PASS" } else = { log = "ZQAUDIT prince_separate_peace FAIL" }
+if = { limit = { CHC = { is_variable_equal = { which = zhx_merit value = 10 } owes_favors = { who = CZH value = 75 } NOT = { owes_favors = { who = CZH value = 76 } } } } log = "ZQAUDIT reward_retained PASS" } else = { log = "ZQAUDIT reward_retained FAIL" }

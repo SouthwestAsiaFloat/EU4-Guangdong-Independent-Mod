@@ -1,0 +1,350 @@
+defined_text = {
+    name = GetQinwangResponse
+    text = { localisation_key = zhx_qn_ui_player trigger = { ai = no } }
+    text = { localisation_key = zhx_qn_ui_accept trigger = { zhx_qn_ai_positive = yes } }
+    text = { localisation_key = zhx_qn_ui_reject trigger = { always = yes } }
+}
+defined_text = {
+    name = GetQinwangAvailability
+    text = { localisation_key = zhx_qn_ui_ready trigger = { zhx_qn_can_send = yes } }
+    text = { localisation_key = zhx_qn_ui_blocked trigger = { always = yes } }
+}
+defined_text = {
+    name = GetQinwangThreshold
+    text = { localisation_key = zhx_qn_ui_threshold_player trigger = { ai = no } }
+    text = { localisation_key = zhx_qn_ui_threshold trigger = { always = yes } }
+}
+defined_text = {
+    name = GetQinwangPositive10
+    text = { localisation_key = zhx_qn_ui_empty trigger = { NOT = { zhx_qn_ui_positive_10_shown = yes } } }
+    text = { localisation_key = zhx_qn_ui_digit_9 trigger = { zhx_qn_ui_positive_10_digit = { value = 9 } } }
+    text = { localisation_key = zhx_qn_ui_digit_8 trigger = { zhx_qn_ui_positive_10_digit = { value = 8 } } }
+    text = { localisation_key = zhx_qn_ui_digit_7 trigger = { zhx_qn_ui_positive_10_digit = { value = 7 } } }
+    text = { localisation_key = zhx_qn_ui_digit_6 trigger = { zhx_qn_ui_positive_10_digit = { value = 6 } } }
+    text = { localisation_key = zhx_qn_ui_digit_5 trigger = { zhx_qn_ui_positive_10_digit = { value = 5 } } }
+    text = { localisation_key = zhx_qn_ui_digit_4 trigger = { zhx_qn_ui_positive_10_digit = { value = 4 } } }
+    text = { localisation_key = zhx_qn_ui_digit_3 trigger = { zhx_qn_ui_positive_10_digit = { value = 3 } } }
+    text = { localisation_key = zhx_qn_ui_digit_2 trigger = { zhx_qn_ui_positive_10_digit = { value = 2 } } }
+    text = { localisation_key = zhx_qn_ui_digit_1 trigger = { zhx_qn_ui_positive_10_digit = { value = 1 } } }
+    text = { localisation_key = zhx_qn_ui_digit_0 trigger = { zhx_qn_ui_positive_10_digit = { value = 0 } } }
+}
+defined_text = {
+    name = GetQinwangPositive1
+    text = { localisation_key = zhx_qn_ui_digit_9 trigger = { zhx_qn_ui_positive_1_digit = { value = 9 } } }
+    text = { localisation_key = zhx_qn_ui_digit_8 trigger = { zhx_qn_ui_positive_1_digit = { value = 8 } } }
+    text = { localisation_key = zhx_qn_ui_digit_7 trigger = { zhx_qn_ui_positive_1_digit = { value = 7 } } }
+    text = { localisation_key = zhx_qn_ui_digit_6 trigger = { zhx_qn_ui_positive_1_digit = { value = 6 } } }
+    text = { localisation_key = zhx_qn_ui_digit_5 trigger = { zhx_qn_ui_positive_1_digit = { value = 5 } } }
+    text = { localisation_key = zhx_qn_ui_digit_4 trigger = { zhx_qn_ui_positive_1_digit = { value = 4 } } }
+    text = { localisation_key = zhx_qn_ui_digit_3 trigger = { zhx_qn_ui_positive_1_digit = { value = 3 } } }
+    text = { localisation_key = zhx_qn_ui_digit_2 trigger = { zhx_qn_ui_positive_1_digit = { value = 2 } } }
+    text = { localisation_key = zhx_qn_ui_digit_1 trigger = { zhx_qn_ui_positive_1_digit = { value = 1 } } }
+    text = { localisation_key = zhx_qn_ui_digit_0 trigger = { zhx_qn_ui_positive_1_digit = { value = 0 } } }
+}
+defined_text = {
+    name = GetQinwangNegative1000
+    text = { localisation_key = zhx_qn_ui_empty trigger = { NOT = { zhx_qn_ui_negative_1000_shown = yes } } }
+    text = { localisation_key = zhx_qn_ui_digit_9 trigger = { zhx_qn_ui_negative_1000_digit = { value = 9 } } }
+    text = { localisation_key = zhx_qn_ui_digit_8 trigger = { zhx_qn_ui_negative_1000_digit = { value = 8 } } }
+    text = { localisation_key = zhx_qn_ui_digit_7 trigger = { zhx_qn_ui_negative_1000_digit = { value = 7 } } }
+    text = { localisation_key = zhx_qn_ui_digit_6 trigger = { zhx_qn_ui_negative_1000_digit = { value = 6 } } }
+    text = { localisation_key = zhx_qn_ui_digit_5 trigger = { zhx_qn_ui_negative_1000_digit = { value = 5 } } }
+    text = { localisation_key = zhx_qn_ui_digit_4 trigger = { zhx_qn_ui_negative_1000_digit = { value = 4 } } }
+    text = { localisation_key = zhx_qn_ui_digit_3 trigger = { zhx_qn_ui_negative_1000_digit = { value = 3 } } }
+    text = { localisation_key = zhx_qn_ui_digit_2 trigger = { zhx_qn_ui_negative_1000_digit = { value = 2 } } }
+    text = { localisation_key = zhx_qn_ui_digit_1 trigger = { zhx_qn_ui_negative_1000_digit = { value = 1 } } }
+    text = { localisation_key = zhx_qn_ui_digit_0 trigger = { zhx_qn_ui_negative_1000_digit = { value = 0 } } }
+}
+defined_text = {
+    name = GetQinwangNegative100
+    text = { localisation_key = zhx_qn_ui_empty trigger = { NOT = { zhx_qn_ui_negative_100_shown = yes } } }
+    text = { localisation_key = zhx_qn_ui_digit_9 trigger = { zhx_qn_ui_negative_100_digit = { value = 9 } } }
+    text = { localisation_key = zhx_qn_ui_digit_8 trigger = { zhx_qn_ui_negative_100_digit = { value = 8 } } }
+    text = { localisation_key = zhx_qn_ui_digit_7 trigger = { zhx_qn_ui_negative_100_digit = { value = 7 } } }
+    text = { localisation_key = zhx_qn_ui_digit_6 trigger = { zhx_qn_ui_negative_100_digit = { value = 6 } } }
+    text = { localisation_key = zhx_qn_ui_digit_5 trigger = { zhx_qn_ui_negative_100_digit = { value = 5 } } }
+    text = { localisation_key = zhx_qn_ui_digit_4 trigger = { zhx_qn_ui_negative_100_digit = { value = 4 } } }
+    text = { localisation_key = zhx_qn_ui_digit_3 trigger = { zhx_qn_ui_negative_100_digit = { value = 3 } } }
+    text = { localisation_key = zhx_qn_ui_digit_2 trigger = { zhx_qn_ui_negative_100_digit = { value = 2 } } }
+    text = { localisation_key = zhx_qn_ui_digit_1 trigger = { zhx_qn_ui_negative_100_digit = { value = 1 } } }
+    text = { localisation_key = zhx_qn_ui_digit_0 trigger = { zhx_qn_ui_negative_100_digit = { value = 0 } } }
+}
+defined_text = {
+    name = GetQinwangNegative10
+    text = { localisation_key = zhx_qn_ui_empty trigger = { NOT = { zhx_qn_ui_negative_10_shown = yes } } }
+    text = { localisation_key = zhx_qn_ui_digit_9 trigger = { zhx_qn_ui_negative_10_digit = { value = 9 } } }
+    text = { localisation_key = zhx_qn_ui_digit_8 trigger = { zhx_qn_ui_negative_10_digit = { value = 8 } } }
+    text = { localisation_key = zhx_qn_ui_digit_7 trigger = { zhx_qn_ui_negative_10_digit = { value = 7 } } }
+    text = { localisation_key = zhx_qn_ui_digit_6 trigger = { zhx_qn_ui_negative_10_digit = { value = 6 } } }
+    text = { localisation_key = zhx_qn_ui_digit_5 trigger = { zhx_qn_ui_negative_10_digit = { value = 5 } } }
+    text = { localisation_key = zhx_qn_ui_digit_4 trigger = { zhx_qn_ui_negative_10_digit = { value = 4 } } }
+    text = { localisation_key = zhx_qn_ui_digit_3 trigger = { zhx_qn_ui_negative_10_digit = { value = 3 } } }
+    text = { localisation_key = zhx_qn_ui_digit_2 trigger = { zhx_qn_ui_negative_10_digit = { value = 2 } } }
+    text = { localisation_key = zhx_qn_ui_digit_1 trigger = { zhx_qn_ui_negative_10_digit = { value = 1 } } }
+    text = { localisation_key = zhx_qn_ui_digit_0 trigger = { zhx_qn_ui_negative_10_digit = { value = 0 } } }
+}
+defined_text = {
+    name = GetQinwangNegative1
+    text = { localisation_key = zhx_qn_ui_digit_9 trigger = { zhx_qn_ui_negative_1_digit = { value = 9 } } }
+    text = { localisation_key = zhx_qn_ui_digit_8 trigger = { zhx_qn_ui_negative_1_digit = { value = 8 } } }
+    text = { localisation_key = zhx_qn_ui_digit_7 trigger = { zhx_qn_ui_negative_1_digit = { value = 7 } } }
+    text = { localisation_key = zhx_qn_ui_digit_6 trigger = { zhx_qn_ui_negative_1_digit = { value = 6 } } }
+    text = { localisation_key = zhx_qn_ui_digit_5 trigger = { zhx_qn_ui_negative_1_digit = { value = 5 } } }
+    text = { localisation_key = zhx_qn_ui_digit_4 trigger = { zhx_qn_ui_negative_1_digit = { value = 4 } } }
+    text = { localisation_key = zhx_qn_ui_digit_3 trigger = { zhx_qn_ui_negative_1_digit = { value = 3 } } }
+    text = { localisation_key = zhx_qn_ui_digit_2 trigger = { zhx_qn_ui_negative_1_digit = { value = 2 } } }
+    text = { localisation_key = zhx_qn_ui_digit_1 trigger = { zhx_qn_ui_negative_1_digit = { value = 1 } } }
+    text = { localisation_key = zhx_qn_ui_digit_0 trigger = { zhx_qn_ui_negative_1_digit = { value = 0 } } }
+}
+defined_text = {
+    name = GetQinwangNet1000
+    text = { localisation_key = zhx_qn_ui_empty trigger = { NOT = { zhx_qn_ui_net_1000_shown = yes } } }
+    text = { localisation_key = zhx_qn_ui_digit_9 trigger = { zhx_qn_ui_net_1000_digit = { value = 9 } } }
+    text = { localisation_key = zhx_qn_ui_digit_8 trigger = { zhx_qn_ui_net_1000_digit = { value = 8 } } }
+    text = { localisation_key = zhx_qn_ui_digit_7 trigger = { zhx_qn_ui_net_1000_digit = { value = 7 } } }
+    text = { localisation_key = zhx_qn_ui_digit_6 trigger = { zhx_qn_ui_net_1000_digit = { value = 6 } } }
+    text = { localisation_key = zhx_qn_ui_digit_5 trigger = { zhx_qn_ui_net_1000_digit = { value = 5 } } }
+    text = { localisation_key = zhx_qn_ui_digit_4 trigger = { zhx_qn_ui_net_1000_digit = { value = 4 } } }
+    text = { localisation_key = zhx_qn_ui_digit_3 trigger = { zhx_qn_ui_net_1000_digit = { value = 3 } } }
+    text = { localisation_key = zhx_qn_ui_digit_2 trigger = { zhx_qn_ui_net_1000_digit = { value = 2 } } }
+    text = { localisation_key = zhx_qn_ui_digit_1 trigger = { zhx_qn_ui_net_1000_digit = { value = 1 } } }
+    text = { localisation_key = zhx_qn_ui_digit_0 trigger = { zhx_qn_ui_net_1000_digit = { value = 0 } } }
+}
+defined_text = {
+    name = GetQinwangNet100
+    text = { localisation_key = zhx_qn_ui_empty trigger = { NOT = { zhx_qn_ui_net_100_shown = yes } } }
+    text = { localisation_key = zhx_qn_ui_digit_9 trigger = { zhx_qn_ui_net_100_digit = { value = 9 } } }
+    text = { localisation_key = zhx_qn_ui_digit_8 trigger = { zhx_qn_ui_net_100_digit = { value = 8 } } }
+    text = { localisation_key = zhx_qn_ui_digit_7 trigger = { zhx_qn_ui_net_100_digit = { value = 7 } } }
+    text = { localisation_key = zhx_qn_ui_digit_6 trigger = { zhx_qn_ui_net_100_digit = { value = 6 } } }
+    text = { localisation_key = zhx_qn_ui_digit_5 trigger = { zhx_qn_ui_net_100_digit = { value = 5 } } }
+    text = { localisation_key = zhx_qn_ui_digit_4 trigger = { zhx_qn_ui_net_100_digit = { value = 4 } } }
+    text = { localisation_key = zhx_qn_ui_digit_3 trigger = { zhx_qn_ui_net_100_digit = { value = 3 } } }
+    text = { localisation_key = zhx_qn_ui_digit_2 trigger = { zhx_qn_ui_net_100_digit = { value = 2 } } }
+    text = { localisation_key = zhx_qn_ui_digit_1 trigger = { zhx_qn_ui_net_100_digit = { value = 1 } } }
+    text = { localisation_key = zhx_qn_ui_digit_0 trigger = { zhx_qn_ui_net_100_digit = { value = 0 } } }
+}
+defined_text = {
+    name = GetQinwangNet10
+    text = { localisation_key = zhx_qn_ui_empty trigger = { NOT = { zhx_qn_ui_net_10_shown = yes } } }
+    text = { localisation_key = zhx_qn_ui_digit_9 trigger = { zhx_qn_ui_net_10_digit = { value = 9 } } }
+    text = { localisation_key = zhx_qn_ui_digit_8 trigger = { zhx_qn_ui_net_10_digit = { value = 8 } } }
+    text = { localisation_key = zhx_qn_ui_digit_7 trigger = { zhx_qn_ui_net_10_digit = { value = 7 } } }
+    text = { localisation_key = zhx_qn_ui_digit_6 trigger = { zhx_qn_ui_net_10_digit = { value = 6 } } }
+    text = { localisation_key = zhx_qn_ui_digit_5 trigger = { zhx_qn_ui_net_10_digit = { value = 5 } } }
+    text = { localisation_key = zhx_qn_ui_digit_4 trigger = { zhx_qn_ui_net_10_digit = { value = 4 } } }
+    text = { localisation_key = zhx_qn_ui_digit_3 trigger = { zhx_qn_ui_net_10_digit = { value = 3 } } }
+    text = { localisation_key = zhx_qn_ui_digit_2 trigger = { zhx_qn_ui_net_10_digit = { value = 2 } } }
+    text = { localisation_key = zhx_qn_ui_digit_1 trigger = { zhx_qn_ui_net_10_digit = { value = 1 } } }
+    text = { localisation_key = zhx_qn_ui_digit_0 trigger = { zhx_qn_ui_net_10_digit = { value = 0 } } }
+}
+defined_text = {
+    name = GetQinwangNet1
+    text = { localisation_key = zhx_qn_ui_digit_9 trigger = { zhx_qn_ui_net_1_digit = { value = 9 } } }
+    text = { localisation_key = zhx_qn_ui_digit_8 trigger = { zhx_qn_ui_net_1_digit = { value = 8 } } }
+    text = { localisation_key = zhx_qn_ui_digit_7 trigger = { zhx_qn_ui_net_1_digit = { value = 7 } } }
+    text = { localisation_key = zhx_qn_ui_digit_6 trigger = { zhx_qn_ui_net_1_digit = { value = 6 } } }
+    text = { localisation_key = zhx_qn_ui_digit_5 trigger = { zhx_qn_ui_net_1_digit = { value = 5 } } }
+    text = { localisation_key = zhx_qn_ui_digit_4 trigger = { zhx_qn_ui_net_1_digit = { value = 4 } } }
+    text = { localisation_key = zhx_qn_ui_digit_3 trigger = { zhx_qn_ui_net_1_digit = { value = 3 } } }
+    text = { localisation_key = zhx_qn_ui_digit_2 trigger = { zhx_qn_ui_net_1_digit = { value = 2 } } }
+    text = { localisation_key = zhx_qn_ui_digit_1 trigger = { zhx_qn_ui_net_1_digit = { value = 1 } } }
+    text = { localisation_key = zhx_qn_ui_digit_0 trigger = { zhx_qn_ui_net_1_digit = { value = 0 } } }
+}
+defined_text = {
+    name = GetQinwangNetPrefix
+    text = { localisation_key = zhx_qn_ui_empty trigger = { NOT = { zhx_qn_ui_net_1_shown = yes } } }
+    text = { localisation_key = zhx_qn_ui_plus trigger = { zhx_qn_ai_positive = yes } }
+    text = { localisation_key = zhx_qn_ui_minus trigger = { always = yes } }
+}
+defined_text = {
+    name = GetQinwangLineBase
+    text = { localisation_key = zhx_qn_ui_line_base trigger = { always = yes } }
+    text = { localisation_key = zhx_qn_ui_empty trigger = { always = yes } }
+}
+defined_text = {
+    name = GetQinwangLineDefensive
+    text = { localisation_key = zhx_qn_ui_line_defensive trigger = { zhx_qn_score_defensive = yes } }
+    text = { localisation_key = zhx_qn_ui_empty trigger = { always = yes } }
+}
+defined_text = {
+    name = GetQinwangLineManpowerLow
+    text = { localisation_key = zhx_qn_ui_line_manpower_low trigger = { zhx_qn_score_manpower_low = yes } }
+    text = { localisation_key = zhx_qn_ui_empty trigger = { always = yes } }
+}
+defined_text = {
+    name = GetQinwangLineManpowerMid
+    text = { localisation_key = zhx_qn_ui_line_manpower_mid trigger = { zhx_qn_score_manpower_mid = yes } }
+    text = { localisation_key = zhx_qn_ui_empty trigger = { always = yes } }
+}
+defined_text = {
+    name = GetQinwangLineLoansLow
+    text = { localisation_key = zhx_qn_ui_line_loans_low trigger = { zhx_qn_score_loans_low = yes } }
+    text = { localisation_key = zhx_qn_ui_empty trigger = { always = yes } }
+}
+defined_text = {
+    name = GetQinwangLineLoansHigh
+    text = { localisation_key = zhx_qn_ui_line_loans_high trigger = { zhx_qn_score_loans_high = yes } }
+    text = { localisation_key = zhx_qn_ui_empty trigger = { always = yes } }
+}
+defined_text = {
+    name = GetQinwangLineWarBurden
+    text = { localisation_key = zhx_qn_ui_line_war_burden trigger = { zhx_qn_score_war_burden = yes } }
+    text = { localisation_key = zhx_qn_ui_empty trigger = { always = yes } }
+}
+defined_text = {
+    name = GetQinwangLineTruce
+    text = { localisation_key = zhx_qn_ui_line_truce trigger = { zhx_qn_score_truce = yes } }
+    text = { localisation_key = zhx_qn_ui_empty trigger = { always = yes } }
+}
+defined_text = {
+    name = GetQinwangLineAlliance
+    text = { localisation_key = zhx_qn_ui_line_alliance trigger = { zhx_qn_score_alliance = yes } }
+    text = { localisation_key = zhx_qn_ui_empty trigger = { always = yes } }
+}
+defined_text = {
+    name = GetQinwangOpinionPositive
+    text = { localisation_key = zhx_qn_ui_line_opinion_p40 trigger = { zhx_qn_ui_opinion_at_least = { value = 40 } } }
+    text = { localisation_key = zhx_qn_ui_line_opinion_p39 trigger = { zhx_qn_ui_opinion_at_least = { value = 39 } } }
+    text = { localisation_key = zhx_qn_ui_line_opinion_p38 trigger = { zhx_qn_ui_opinion_at_least = { value = 38 } } }
+    text = { localisation_key = zhx_qn_ui_line_opinion_p37 trigger = { zhx_qn_ui_opinion_at_least = { value = 37 } } }
+    text = { localisation_key = zhx_qn_ui_line_opinion_p36 trigger = { zhx_qn_ui_opinion_at_least = { value = 36 } } }
+    text = { localisation_key = zhx_qn_ui_line_opinion_p35 trigger = { zhx_qn_ui_opinion_at_least = { value = 35 } } }
+    text = { localisation_key = zhx_qn_ui_line_opinion_p34 trigger = { zhx_qn_ui_opinion_at_least = { value = 34 } } }
+    text = { localisation_key = zhx_qn_ui_line_opinion_p33 trigger = { zhx_qn_ui_opinion_at_least = { value = 33 } } }
+    text = { localisation_key = zhx_qn_ui_line_opinion_p32 trigger = { zhx_qn_ui_opinion_at_least = { value = 32 } } }
+    text = { localisation_key = zhx_qn_ui_line_opinion_p31 trigger = { zhx_qn_ui_opinion_at_least = { value = 31 } } }
+    text = { localisation_key = zhx_qn_ui_line_opinion_p30 trigger = { zhx_qn_ui_opinion_at_least = { value = 30 } } }
+    text = { localisation_key = zhx_qn_ui_line_opinion_p29 trigger = { zhx_qn_ui_opinion_at_least = { value = 29 } } }
+    text = { localisation_key = zhx_qn_ui_line_opinion_p28 trigger = { zhx_qn_ui_opinion_at_least = { value = 28 } } }
+    text = { localisation_key = zhx_qn_ui_line_opinion_p27 trigger = { zhx_qn_ui_opinion_at_least = { value = 27 } } }
+    text = { localisation_key = zhx_qn_ui_line_opinion_p26 trigger = { zhx_qn_ui_opinion_at_least = { value = 26 } } }
+    text = { localisation_key = zhx_qn_ui_line_opinion_p25 trigger = { zhx_qn_ui_opinion_at_least = { value = 25 } } }
+    text = { localisation_key = zhx_qn_ui_line_opinion_p24 trigger = { zhx_qn_ui_opinion_at_least = { value = 24 } } }
+    text = { localisation_key = zhx_qn_ui_line_opinion_p23 trigger = { zhx_qn_ui_opinion_at_least = { value = 23 } } }
+    text = { localisation_key = zhx_qn_ui_line_opinion_p22 trigger = { zhx_qn_ui_opinion_at_least = { value = 22 } } }
+    text = { localisation_key = zhx_qn_ui_line_opinion_p21 trigger = { zhx_qn_ui_opinion_at_least = { value = 21 } } }
+    text = { localisation_key = zhx_qn_ui_line_opinion_p20 trigger = { zhx_qn_ui_opinion_at_least = { value = 20 } } }
+    text = { localisation_key = zhx_qn_ui_line_opinion_p19 trigger = { zhx_qn_ui_opinion_at_least = { value = 19 } } }
+    text = { localisation_key = zhx_qn_ui_line_opinion_p18 trigger = { zhx_qn_ui_opinion_at_least = { value = 18 } } }
+    text = { localisation_key = zhx_qn_ui_line_opinion_p17 trigger = { zhx_qn_ui_opinion_at_least = { value = 17 } } }
+    text = { localisation_key = zhx_qn_ui_line_opinion_p16 trigger = { zhx_qn_ui_opinion_at_least = { value = 16 } } }
+    text = { localisation_key = zhx_qn_ui_line_opinion_p15 trigger = { zhx_qn_ui_opinion_at_least = { value = 15 } } }
+    text = { localisation_key = zhx_qn_ui_line_opinion_p14 trigger = { zhx_qn_ui_opinion_at_least = { value = 14 } } }
+    text = { localisation_key = zhx_qn_ui_line_opinion_p13 trigger = { zhx_qn_ui_opinion_at_least = { value = 13 } } }
+    text = { localisation_key = zhx_qn_ui_line_opinion_p12 trigger = { zhx_qn_ui_opinion_at_least = { value = 12 } } }
+    text = { localisation_key = zhx_qn_ui_line_opinion_p11 trigger = { zhx_qn_ui_opinion_at_least = { value = 11 } } }
+    text = { localisation_key = zhx_qn_ui_line_opinion_p10 trigger = { zhx_qn_ui_opinion_at_least = { value = 10 } } }
+    text = { localisation_key = zhx_qn_ui_line_opinion_p9 trigger = { zhx_qn_ui_opinion_at_least = { value = 9 } } }
+    text = { localisation_key = zhx_qn_ui_line_opinion_p8 trigger = { zhx_qn_ui_opinion_at_least = { value = 8 } } }
+    text = { localisation_key = zhx_qn_ui_line_opinion_p7 trigger = { zhx_qn_ui_opinion_at_least = { value = 7 } } }
+    text = { localisation_key = zhx_qn_ui_line_opinion_p6 trigger = { zhx_qn_ui_opinion_at_least = { value = 6 } } }
+    text = { localisation_key = zhx_qn_ui_line_opinion_p5 trigger = { zhx_qn_ui_opinion_at_least = { value = 5 } } }
+    text = { localisation_key = zhx_qn_ui_line_opinion_p4 trigger = { zhx_qn_ui_opinion_at_least = { value = 4 } } }
+    text = { localisation_key = zhx_qn_ui_line_opinion_p3 trigger = { zhx_qn_ui_opinion_at_least = { value = 3 } } }
+    text = { localisation_key = zhx_qn_ui_line_opinion_p2 trigger = { zhx_qn_ui_opinion_at_least = { value = 2 } } }
+    text = { localisation_key = zhx_qn_ui_line_opinion_p1 trigger = { zhx_qn_ui_opinion_at_least = { value = 1 } } }
+    text = { localisation_key = zhx_qn_ui_empty trigger = { always = yes } }
+}
+defined_text = {
+    name = GetQinwangOpinionNegative
+    text = { localisation_key = zhx_qn_ui_line_opinion_n40 trigger = { NOT = { zhx_qn_ui_opinion_at_least = { value = -39 } } } }
+    text = { localisation_key = zhx_qn_ui_line_opinion_n39 trigger = { NOT = { zhx_qn_ui_opinion_at_least = { value = -38 } } } }
+    text = { localisation_key = zhx_qn_ui_line_opinion_n38 trigger = { NOT = { zhx_qn_ui_opinion_at_least = { value = -37 } } } }
+    text = { localisation_key = zhx_qn_ui_line_opinion_n37 trigger = { NOT = { zhx_qn_ui_opinion_at_least = { value = -36 } } } }
+    text = { localisation_key = zhx_qn_ui_line_opinion_n36 trigger = { NOT = { zhx_qn_ui_opinion_at_least = { value = -35 } } } }
+    text = { localisation_key = zhx_qn_ui_line_opinion_n35 trigger = { NOT = { zhx_qn_ui_opinion_at_least = { value = -34 } } } }
+    text = { localisation_key = zhx_qn_ui_line_opinion_n34 trigger = { NOT = { zhx_qn_ui_opinion_at_least = { value = -33 } } } }
+    text = { localisation_key = zhx_qn_ui_line_opinion_n33 trigger = { NOT = { zhx_qn_ui_opinion_at_least = { value = -32 } } } }
+    text = { localisation_key = zhx_qn_ui_line_opinion_n32 trigger = { NOT = { zhx_qn_ui_opinion_at_least = { value = -31 } } } }
+    text = { localisation_key = zhx_qn_ui_line_opinion_n31 trigger = { NOT = { zhx_qn_ui_opinion_at_least = { value = -30 } } } }
+    text = { localisation_key = zhx_qn_ui_line_opinion_n30 trigger = { NOT = { zhx_qn_ui_opinion_at_least = { value = -29 } } } }
+    text = { localisation_key = zhx_qn_ui_line_opinion_n29 trigger = { NOT = { zhx_qn_ui_opinion_at_least = { value = -28 } } } }
+    text = { localisation_key = zhx_qn_ui_line_opinion_n28 trigger = { NOT = { zhx_qn_ui_opinion_at_least = { value = -27 } } } }
+    text = { localisation_key = zhx_qn_ui_line_opinion_n27 trigger = { NOT = { zhx_qn_ui_opinion_at_least = { value = -26 } } } }
+    text = { localisation_key = zhx_qn_ui_line_opinion_n26 trigger = { NOT = { zhx_qn_ui_opinion_at_least = { value = -25 } } } }
+    text = { localisation_key = zhx_qn_ui_line_opinion_n25 trigger = { NOT = { zhx_qn_ui_opinion_at_least = { value = -24 } } } }
+    text = { localisation_key = zhx_qn_ui_line_opinion_n24 trigger = { NOT = { zhx_qn_ui_opinion_at_least = { value = -23 } } } }
+    text = { localisation_key = zhx_qn_ui_line_opinion_n23 trigger = { NOT = { zhx_qn_ui_opinion_at_least = { value = -22 } } } }
+    text = { localisation_key = zhx_qn_ui_line_opinion_n22 trigger = { NOT = { zhx_qn_ui_opinion_at_least = { value = -21 } } } }
+    text = { localisation_key = zhx_qn_ui_line_opinion_n21 trigger = { NOT = { zhx_qn_ui_opinion_at_least = { value = -20 } } } }
+    text = { localisation_key = zhx_qn_ui_line_opinion_n20 trigger = { NOT = { zhx_qn_ui_opinion_at_least = { value = -19 } } } }
+    text = { localisation_key = zhx_qn_ui_line_opinion_n19 trigger = { NOT = { zhx_qn_ui_opinion_at_least = { value = -18 } } } }
+    text = { localisation_key = zhx_qn_ui_line_opinion_n18 trigger = { NOT = { zhx_qn_ui_opinion_at_least = { value = -17 } } } }
+    text = { localisation_key = zhx_qn_ui_line_opinion_n17 trigger = { NOT = { zhx_qn_ui_opinion_at_least = { value = -16 } } } }
+    text = { localisation_key = zhx_qn_ui_line_opinion_n16 trigger = { NOT = { zhx_qn_ui_opinion_at_least = { value = -15 } } } }
+    text = { localisation_key = zhx_qn_ui_line_opinion_n15 trigger = { NOT = { zhx_qn_ui_opinion_at_least = { value = -14 } } } }
+    text = { localisation_key = zhx_qn_ui_line_opinion_n14 trigger = { NOT = { zhx_qn_ui_opinion_at_least = { value = -13 } } } }
+    text = { localisation_key = zhx_qn_ui_line_opinion_n13 trigger = { NOT = { zhx_qn_ui_opinion_at_least = { value = -12 } } } }
+    text = { localisation_key = zhx_qn_ui_line_opinion_n12 trigger = { NOT = { zhx_qn_ui_opinion_at_least = { value = -11 } } } }
+    text = { localisation_key = zhx_qn_ui_line_opinion_n11 trigger = { NOT = { zhx_qn_ui_opinion_at_least = { value = -10 } } } }
+    text = { localisation_key = zhx_qn_ui_line_opinion_n10 trigger = { NOT = { zhx_qn_ui_opinion_at_least = { value = -9 } } } }
+    text = { localisation_key = zhx_qn_ui_line_opinion_n9 trigger = { NOT = { zhx_qn_ui_opinion_at_least = { value = -8 } } } }
+    text = { localisation_key = zhx_qn_ui_line_opinion_n8 trigger = { NOT = { zhx_qn_ui_opinion_at_least = { value = -7 } } } }
+    text = { localisation_key = zhx_qn_ui_line_opinion_n7 trigger = { NOT = { zhx_qn_ui_opinion_at_least = { value = -6 } } } }
+    text = { localisation_key = zhx_qn_ui_line_opinion_n6 trigger = { NOT = { zhx_qn_ui_opinion_at_least = { value = -5 } } } }
+    text = { localisation_key = zhx_qn_ui_line_opinion_n5 trigger = { NOT = { zhx_qn_ui_opinion_at_least = { value = -4 } } } }
+    text = { localisation_key = zhx_qn_ui_line_opinion_n4 trigger = { NOT = { zhx_qn_ui_opinion_at_least = { value = -3 } } } }
+    text = { localisation_key = zhx_qn_ui_line_opinion_n3 trigger = { NOT = { zhx_qn_ui_opinion_at_least = { value = -2 } } } }
+    text = { localisation_key = zhx_qn_ui_line_opinion_n2 trigger = { NOT = { zhx_qn_ui_opinion_at_least = { value = -1 } } } }
+    text = { localisation_key = zhx_qn_ui_line_opinion_n1 trigger = { NOT = { zhx_qn_ui_opinion_at_least = { value = 0 } } } }
+    text = { localisation_key = zhx_qn_ui_empty trigger = { always = yes } }
+}
+defined_text = {
+    name = GetQinwangTrustPositive
+    text = { localisation_key = zhx_qn_ui_line_trust_p25 trigger = { zhx_qn_ui_trust_at_least = { value = 25 } } }
+    text = { localisation_key = zhx_qn_ui_line_trust_p24 trigger = { zhx_qn_ui_trust_at_least = { value = 24 } } }
+    text = { localisation_key = zhx_qn_ui_line_trust_p23 trigger = { zhx_qn_ui_trust_at_least = { value = 23 } } }
+    text = { localisation_key = zhx_qn_ui_line_trust_p22 trigger = { zhx_qn_ui_trust_at_least = { value = 22 } } }
+    text = { localisation_key = zhx_qn_ui_line_trust_p21 trigger = { zhx_qn_ui_trust_at_least = { value = 21 } } }
+    text = { localisation_key = zhx_qn_ui_line_trust_p20 trigger = { zhx_qn_ui_trust_at_least = { value = 20 } } }
+    text = { localisation_key = zhx_qn_ui_line_trust_p19 trigger = { zhx_qn_ui_trust_at_least = { value = 19 } } }
+    text = { localisation_key = zhx_qn_ui_line_trust_p18 trigger = { zhx_qn_ui_trust_at_least = { value = 18 } } }
+    text = { localisation_key = zhx_qn_ui_line_trust_p17 trigger = { zhx_qn_ui_trust_at_least = { value = 17 } } }
+    text = { localisation_key = zhx_qn_ui_line_trust_p16 trigger = { zhx_qn_ui_trust_at_least = { value = 16 } } }
+    text = { localisation_key = zhx_qn_ui_line_trust_p15 trigger = { zhx_qn_ui_trust_at_least = { value = 15 } } }
+    text = { localisation_key = zhx_qn_ui_line_trust_p14 trigger = { zhx_qn_ui_trust_at_least = { value = 14 } } }
+    text = { localisation_key = zhx_qn_ui_line_trust_p13 trigger = { zhx_qn_ui_trust_at_least = { value = 13 } } }
+    text = { localisation_key = zhx_qn_ui_line_trust_p12 trigger = { zhx_qn_ui_trust_at_least = { value = 12 } } }
+    text = { localisation_key = zhx_qn_ui_line_trust_p11 trigger = { zhx_qn_ui_trust_at_least = { value = 11 } } }
+    text = { localisation_key = zhx_qn_ui_line_trust_p10 trigger = { zhx_qn_ui_trust_at_least = { value = 10 } } }
+    text = { localisation_key = zhx_qn_ui_line_trust_p9 trigger = { zhx_qn_ui_trust_at_least = { value = 9 } } }
+    text = { localisation_key = zhx_qn_ui_line_trust_p8 trigger = { zhx_qn_ui_trust_at_least = { value = 8 } } }
+    text = { localisation_key = zhx_qn_ui_line_trust_p7 trigger = { zhx_qn_ui_trust_at_least = { value = 7 } } }
+    text = { localisation_key = zhx_qn_ui_line_trust_p6 trigger = { zhx_qn_ui_trust_at_least = { value = 6 } } }
+    text = { localisation_key = zhx_qn_ui_line_trust_p5 trigger = { zhx_qn_ui_trust_at_least = { value = 5 } } }
+    text = { localisation_key = zhx_qn_ui_line_trust_p4 trigger = { zhx_qn_ui_trust_at_least = { value = 4 } } }
+    text = { localisation_key = zhx_qn_ui_line_trust_p3 trigger = { zhx_qn_ui_trust_at_least = { value = 3 } } }
+    text = { localisation_key = zhx_qn_ui_line_trust_p2 trigger = { zhx_qn_ui_trust_at_least = { value = 2 } } }
+    text = { localisation_key = zhx_qn_ui_line_trust_p1 trigger = { zhx_qn_ui_trust_at_least = { value = 1 } } }
+    text = { localisation_key = zhx_qn_ui_empty trigger = { always = yes } }
+}
+defined_text = {
+    name = GetQinwangTrustNegative
+    text = { localisation_key = zhx_qn_ui_line_trust_n25 trigger = { NOT = { zhx_qn_ui_trust_at_least = { value = -24 } } } }
+    text = { localisation_key = zhx_qn_ui_line_trust_n24 trigger = { NOT = { zhx_qn_ui_trust_at_least = { value = -23 } } } }
+    text = { localisation_key = zhx_qn_ui_line_trust_n23 trigger = { NOT = { zhx_qn_ui_trust_at_least = { value = -22 } } } }
+    text = { localisation_key = zhx_qn_ui_line_trust_n22 trigger = { NOT = { zhx_qn_ui_trust_at_least = { value = -21 } } } }
+    text = { localisation_key = zhx_qn_ui_line_trust_n21 trigger = { NOT = { zhx_qn_ui_trust_at_least = { value = -20 } } } }
+    text = { localisation_key = zhx_qn_ui_line_trust_n20 trigger = { NOT = { zhx_qn_ui_trust_at_least = { value = -19 } } } }
+    text = { localisation_key = zhx_qn_ui_line_trust_n19 trigger = { NOT = { zhx_qn_ui_trust_at_least = { value = -18 } } } }
+    text = { localisation_key = zhx_qn_ui_line_trust_n18 trigger = { NOT = { zhx_qn_ui_trust_at_least = { value = -17 } } } }
+    text = { localisation_key = zhx_qn_ui_line_trust_n17 trigger = { NOT = { zhx_qn_ui_trust_at_least = { value = -16 } } } }
+    text = { localisation_key = zhx_qn_ui_line_trust_n16 trigger = { NOT = { zhx_qn_ui_trust_at_least = { value = -15 } } } }
+    text = { localisation_key = zhx_qn_ui_line_trust_n15 trigger = { NOT = { zhx_qn_ui_trust_at_least = { value = -14 } } } }
+    text = { localisation_key = zhx_qn_ui_line_trust_n14 trigger = { NOT = { zhx_qn_ui_trust_at_least = { value = -13 } } } }
+    text = { localisation_key = zhx_qn_ui_line_trust_n13 trigger = { NOT = { zhx_qn_ui_trust_at_least = { value = -12 } } } }
+    text = { localisation_key = zhx_qn_ui_line_trust_n12 trigger = { NOT = { zhx_qn_ui_trust_at_least = { value = -11 } } } }
+    text = { localisation_key = zhx_qn_ui_line_trust_n11 trigger = { NOT = { zhx_qn_ui_trust_at_least = { value = -10 } } } }
+    text = { localisation_key = zhx_qn_ui_line_trust_n10 trigger = { NOT = { zhx_qn_ui_trust_at_least = { value = -9 } } } }
+    text = { localisation_key = zhx_qn_ui_line_trust_n9 trigger = { NOT = { zhx_qn_ui_trust_at_least = { value = -8 } } } }
+    text = { localisation_key = zhx_qn_ui_line_trust_n8 trigger = { NOT = { zhx_qn_ui_trust_at_least = { value = -7 } } } }
+    text = { localisation_key = zhx_qn_ui_line_trust_n7 trigger = { NOT = { zhx_qn_ui_trust_at_least = { value = -6 } } } }
+    text = { localisation_key = zhx_qn_ui_line_trust_n6 trigger = { NOT = { zhx_qn_ui_trust_at_least = { value = -5 } } } }
+    text = { localisation_key = zhx_qn_ui_line_trust_n5 trigger = { NOT = { zhx_qn_ui_trust_at_least = { value = -4 } } } }
+    text = { localisation_key = zhx_qn_ui_line_trust_n4 trigger = { NOT = { zhx_qn_ui_trust_at_least = { value = -3 } } } }
+    text = { localisation_key = zhx_qn_ui_line_trust_n3 trigger = { NOT = { zhx_qn_ui_trust_at_least = { value = -2 } } } }
+    text = { localisation_key = zhx_qn_ui_line_trust_n2 trigger = { NOT = { zhx_qn_ui_trust_at_least = { value = -1 } } } }
+    text = { localisation_key = zhx_qn_ui_line_trust_n1 trigger = { NOT = { zhx_qn_ui_trust_at_least = { value = 0 } } } }
+    text = { localisation_key = zhx_qn_ui_empty trigger = { always = yes } }
+}

@@ -227,11 +227,11 @@ def validate() -> None:
     diplomatic_actions = texts["diplomatic_actions"]
     relief_action = block(diplomatic_actions, "zhx_relieve_tianxia_member")
     masked_relief_action = masked_clausewitz(relief_action)
-    require("category = influence" in relief_action, "relief action must use the native influence category")
+    require("category = is_emperor_of_china" in relief_action, "relief action must use the Zhou Tianxia category")
     require("require_acceptance = no" in relief_action, "relief action must join immediately without recipient acceptance")
 
     relief_visible = block(relief_action, "is_visible")
-    masked_relief_visible = masked_clausewitz(relief_visible)
+    masked_relief_visible = masked_clausewitz(relief_visible + block(relief_action, "is_allowed"))
     require("zhx_is_tianzi = yes" in relief_visible, "only the Tianzi may see the relief action")
     require(
         re.search(
@@ -334,7 +334,7 @@ def validate() -> None:
     appeal_action = block(diplomatic_actions, "zhx_appeal_to_tianzi_for_relief")
     masked_appeal_action = masked_clausewitz(appeal_action)
     for token, message in (
-        ("category = influence", "relief appeal must use the native influence category"),
+        ("category = is_emperor_of_china", "relief appeal must use the Zhou Tianxia category"),
         ("alert_index = 10", "relief appeal must reuse the native call-to-arms message icon"),
         (
             "alert_tooltip = zhx_appeal_to_tianzi_for_relief_alert_tooltip",
@@ -345,7 +345,8 @@ def validate() -> None:
         require(token in appeal_action, message)
 
     appeal_visible = block(appeal_action, "is_visible")
-    masked_appeal_visible = masked_clausewitz(appeal_visible)
+    appeal_eligibility = appeal_visible + block(appeal_action, "is_allowed")
+    masked_appeal_visible = masked_clausewitz(appeal_eligibility)
     for token, message in (
         ("has_global_flag = zhx_system_initialised_v14", "relief appeal must require the active diplomacy system"),
         ("is_subject = no", "relief appeal actor must be independent"),
@@ -353,7 +354,7 @@ def validate() -> None:
         ("NOT = { zhx_is_tianzi = yes }", "the Tianzi must not appeal to itself"),
         ("is_at_war = yes", "relief appeal actor must currently be at war"),
     ):
-        require(token in appeal_visible, message)
+        require(token in appeal_eligibility, message)
     require(
         re.search(
             r"FROM\s*=\s*\{[^{}]*"
@@ -389,7 +390,7 @@ def validate() -> None:
             re.S,
         )
         is not None,
-        "relief appeal must disappear after the Tianzi has joined the member's defensive side",
+        "relief appeal must be disabled after the Tianzi has joined the member's defensive side",
     )
 
     appeal_allowed = block(appeal_action, "is_allowed")

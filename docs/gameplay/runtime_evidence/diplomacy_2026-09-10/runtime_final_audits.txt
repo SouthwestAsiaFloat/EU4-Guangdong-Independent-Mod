@@ -1,0 +1,4 @@
+Loaded checksum 6a21; UI observed formal dispatch popup on paused 1445-04-26.
+[effectimplementation.cpp:25375]: EVENT [1445.04.09]:ZQAUDIT reload_human_defense PASS
+[effectimplementation.cpp:25375]: EVENT [1445.04.09]:ZQAUDIT reload_original_record PASS
+[effectimplementation.cpp:25375]: EVENT [1445.04.26]:ZQAUDIT isolated_human_refuse PASS

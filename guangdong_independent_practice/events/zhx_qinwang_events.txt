@@ -1,0 +1,39 @@
+namespace = zhx_qinwang
+country_event = {
+    id = zhx_qinwang.1
+    hidden = yes
+    is_triggered_only = yes
+    trigger = { has_global_flag = zhx_system_initialised_v14 zhx_is_tianzi = yes }
+    immediate = { zhx_qn_maintain = yes }
+}
+country_event = {
+    id = zhx_qinwang.10
+    title = zhx_qinwang.10.t
+    desc = zhx_qinwang.10.d
+    picture = DIPLOMACY_eventPicture
+    is_triggered_only = yes
+    option = {
+        name = zhx_qinwang.10.a
+        custom_tooltip = zhx_qn_accept_tt
+        hidden_effect = { zhx_qn_accept = yes }
+    }
+    option = {
+        name = zhx_qinwang.10.b
+        custom_tooltip = zhx_qn_decline_tt
+        hidden_effect = { clr_country_flag = zhx_qn_pending }
+    }
+}
+country_event = {
+    id = zhx_qinwang.11
+    hidden = yes
+    is_triggered_only = yes
+    immediate = { if = { limit = { has_country_flag = zhx_qn_joining } zhx_qn_settle = yes } }
+}
+country_event = {
+    id = zhx_qinwang.12
+    title = zhx_qinwang.12.t
+    desc = zhx_qinwang.12.d
+    picture = DIPLOMACY_eventPicture
+    is_triggered_only = yes
+    option = { name = OK }
+}

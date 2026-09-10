@@ -1,0 +1,324 @@
+(lldb) target create "/Users/xinanyapiao/Library/Application Support/Steam/steamapps/common/Europa Universalis IV/eu4.app/Contents/MacOS/eu4"
+Current executable set to '/Users/xinanyapiao/Library/Application Support/Steam/steamapps/common/Europa Universalis IV/eu4.app/Contents/MacOS/eu4' (x86_64).
+(lldb) disassemble -n "CClickCustomButtonCommand::ExecuteDerived() const"
+eu4`CClickCustomButtonCommand::ExecuteDerived:
+eu4[0x1001fada2] <+0>:   pushq  %rbp
+eu4[0x1001fada3] <+1>:   movq   %rsp, %rbp
+eu4[0x1001fada6] <+4>:   pushq  %r15
+eu4[0x1001fada8] <+6>:   pushq  %r14
+eu4[0x1001fadaa] <+8>:   pushq  %r12
+eu4[0x1001fadac] <+10>:  pushq  %rbx
+eu4[0x1001fadad] <+11>:  subq   $0x1c0, %rsp              ; imm = 0x1C0
+eu4[0x1001fadb4] <+18>:  movq   %rdi, %rbx
+eu4[0x1001fadb7] <+21>:  movq   0x40(%rdi), %r14
+eu4[0x1001fadbb] <+25>:  testb  $0x1, 0x48(%rdi)
+eu4[0x1001fadbf] <+29>:  je     0x1001fadc7               ; <+37>
+eu4[0x1001fadc1] <+31>:  movq   0x58(%rbx), %rsi
+eu4[0x1001fadc5] <+35>:  jmp    0x1001fadcb               ; <+41>
+eu4[0x1001fadc7] <+37>:  leaq   0x49(%rbx), %rsi
+eu4[0x1001fadcb] <+41>:  leaq   -0x38(%rbp), %rdi
+eu4[0x1001fadcf] <+45>:  callq  0x1001fc33a               ; std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>>::basic_string<std::nullptr_t>(char const*)
+eu4[0x1001fadd4] <+50>:  movq   0x60(%rbx), %r12
+eu4[0x1001fadd8] <+54>:  movl   0x68(%rbx), %r15d
+eu4[0x1001faddc] <+58>:  leaq   -0x108(%rbp), %rdi
+eu4[0x1001fade3] <+65>:  movl   $0x2d2d2d, %esi           ; imm = 0x2D2D2D
+eu4[0x1001fade8] <+70>:  xorl   %edx, %edx
+eu4[0x1001fadea] <+72>:  xorl   %ecx, %ecx
+eu4[0x1001fadec] <+74>:  callq  0x1001a90e0               ; CEventScope::CEventScope(CCountryTag, int, int)
+eu4[0x1001fadf1] <+79>:  leaq   -0x1d8(%rbp), %rbx
+eu4[0x1001fadf8] <+86>:  movq   %rbx, %rdi
+eu4[0x1001fadfb] <+89>:  movq   %r14, %rsi
+eu4[0x1001fadfe] <+92>:  xorl   %edx, %edx
+eu4[0x1001fae00] <+94>:  xorl   %ecx, %ecx
+eu4[0x1001fae02] <+96>:  callq  0x1001a90e0               ; CEventScope::CEventScope(CCountryTag, int, int)
+eu4[0x1001fae07] <+101>: leaq   -0x50(%rbp), %r14
+eu4[0x1001fae0b] <+105>: movq   %rbx, -0xa0(%r14)
+eu4[0x1001fae12] <+112>: movq   %r14, %rdi
+eu4[0x1001fae15] <+115>: callq  0x1001fc298               ; std::__1::unique_ptr<CEventScope, std::__1::default_delete<CEventScope>>::reset(CEventScope*)
+eu4[0x1001fae1a] <+120>: movq   %r12, %rax
+eu4[0x1001fae1d] <+123>: shrq   $0x38, %rax
+eu4[0x1001fae21] <+127>: jne    0x1001fae39               ; <+151>
+eu4[0x1001fae23] <+129>: testl  %r15d, %r15d
+eu4[0x1001fae26] <+132>: js     0x1001fae7e               ; <+220>
+eu4[0x1001fae28] <+134>: leaq   -0x108(%rbp), %rdi
+eu4[0x1001fae2f] <+141>: movl   %r15d, %esi
+eu4[0x1001fae32] <+144>: callq  0x100601bd0               ; CEventScope::SetProvince(int)
+eu4[0x1001fae37] <+149>: jmp    0x1001fae48               ; <+166>
+eu4[0x1001fae39] <+151>: leaq   -0x108(%rbp), %rdi
+eu4[0x1001fae40] <+158>: movq   %r12, %rsi
+eu4[0x1001fae43] <+161>: callq  0x100601be2               ; CEventScope::SetCountryTag(CCountryTag)
+eu4[0x1001fae48] <+166>: callq  0x100c29b08               ; CCustomGuiDatabase::GetInstance()
+eu4[0x1001fae4d] <+171>: leaq   -0x38(%rbp), %rsi
+eu4[0x1001fae51] <+175>: movq   %rax, %rdi
+eu4[0x1001fae54] <+178>: movl   $0x1, %edx
+eu4[0x1001fae59] <+183>: callq  0x100c294ec               ; CCustomGuiDatabase::GetButtonByName(CString const&, bool) const
+eu4[0x1001fae5e] <+188>: movq   %rax, %rdi
+eu4[0x1001fae61] <+191>: addq   $0x160, %rdi              ; imm = 0x160
+eu4[0x1001fae68] <+198>: movq   0x160(%rax), %rax
+eu4[0x1001fae6f] <+205>: leaq   -0x108(%rbp), %rsi
+eu4[0x1001fae76] <+212>: xorl   %edx, %edx
+eu4[0x1001fae78] <+214>: callq  *0x80(%rax)
+eu4[0x1001fae7e] <+220>: leaq   0x1aafb4b(%rip), %rbx     ; vtable for CEventScope
+eu4[0x1001fae85] <+227>: addq   $0x10, %rbx
+eu4[0x1001fae89] <+231>: leaq   -0x118(%rbp), %rdi
+eu4[0x1001fae90] <+238>: movq   %rbx, -0xc0(%rdi)
+eu4[0x1001fae97] <+245>: callq  0x1001fc298               ; std::__1::unique_ptr<CEventScope, std::__1::default_delete<CEventScope>>::reset(CEventScope*)
+eu4[0x1001fae9c] <+250>: leaq   -0x120(%rbp), %rdi
+eu4[0x1001faea3] <+257>: callq  0x1001fc298               ; std::__1::unique_ptr<CEventScope, std::__1::default_delete<CEventScope>>::reset(CEventScope*)
+eu4[0x1001faea8] <+262>: leaq   -0x128(%rbp), %r15
+eu4[0x1001faeaf] <+269>: movq   %r15, %rdi
+eu4[0x1001faeb2] <+272>: callq  0x1001fc298               ; std::__1::unique_ptr<CEventScope, std::__1::default_delete<CEventScope>>::reset(CEventScope*)
+eu4[0x1001faeb7] <+277>: movq   -0x18(%r15), %rdi
+eu4[0x1001faebb] <+281>: testq  %rdi, %rdi
+eu4[0x1001faebe] <+284>: je     0x1001faecc               ; <+298>
+eu4[0x1001faec0] <+286>: movq   %rdi, -0x138(%rbp)
+eu4[0x1001faec7] <+293>: callq  0x1018cc85a               ; symbol stub for: operator delete(void*)
+eu4[0x1001faecc] <+298>: movq   -0x158(%rbp), %rdi
+eu4[0x1001faed3] <+305>: testq  %rdi, %rdi
+eu4[0x1001faed6] <+308>: je     0x1001faee4               ; <+322>
+eu4[0x1001faed8] <+310>: movq   %rdi, -0x150(%rbp)
+eu4[0x1001faedf] <+317>: callq  0x1018cc85a               ; symbol stub for: operator delete(void*)
+eu4[0x1001faee4] <+322>: movq   -0x170(%rbp), %rdi
+eu4[0x1001faeeb] <+329>: testq  %rdi, %rdi
+eu4[0x1001faeee] <+332>: je     0x1001faefc               ; <+346>
+eu4[0x1001faef0] <+334>: movq   %rdi, -0x168(%rbp)
+eu4[0x1001faef7] <+341>: callq  0x1018cc85a               ; symbol stub for: operator delete(void*)
+eu4[0x1001faefc] <+346>: leaq   -0x48(%rbp), %rdi
+eu4[0x1001faf00] <+350>: movq   %rbx, -0xc0(%rdi)
+eu4[0x1001faf07] <+357>: callq  0x1001fc298               ; std::__1::unique_ptr<CEventScope, std::__1::default_delete<CEventScope>>::reset(CEventScope*)
+eu4[0x1001faf0c] <+362>: movq   %r14, %rdi
+eu4[0x1001faf0f] <+365>: callq  0x1001fc298               ; std::__1::unique_ptr<CEventScope, std::__1::default_delete<CEventScope>>::reset(CEventScope*)
+eu4[0x1001faf14] <+370>: leaq   -0x58(%rbp), %rbx
+eu4[0x1001faf18] <+374>: movq   %rbx, %rdi
+eu4[0x1001faf1b] <+377>: callq  0x1001fc298               ; std::__1::unique_ptr<CEventScope, std::__1::default_delete<CEventScope>>::reset(CEventScope*)
+eu4[0x1001faf20] <+382>: movq   -0x18(%rbx), %rdi
+eu4[0x1001faf24] <+386>: testq  %rdi, %rdi
+eu4[0x1001faf27] <+389>: je     0x1001faf32               ; <+400>
+eu4[0x1001faf29] <+391>: movq   %rdi, -0x68(%rbp)
+eu4[0x1001faf2d] <+395>: callq  0x1018cc85a               ; symbol stub for: operator delete(void*)
+eu4[0x1001faf32] <+400>: movq   -0x88(%rbp), %rdi
+eu4[0x1001faf39] <+407>: testq  %rdi, %rdi
+eu4[0x1001faf3c] <+410>: je     0x1001faf47               ; <+421>
+eu4[0x1001faf3e] <+412>: movq   %rdi, -0x80(%rbp)
+eu4[0x1001faf42] <+416>: callq  0x1018cc85a               ; symbol stub for: operator delete(void*)
+eu4[0x1001faf47] <+421>: movq   -0xa0(%rbp), %rdi
+eu4[0x1001faf4e] <+428>: testq  %rdi, %rdi
+eu4[0x1001faf51] <+431>: je     0x1001faf5f               ; <+445>
+eu4[0x1001faf53] <+433>: movq   %rdi, -0x98(%rbp)
+eu4[0x1001faf5a] <+440>: callq  0x1018cc85a               ; symbol stub for: operator delete(void*)
+eu4[0x1001faf5f] <+445>: testb  $0x1, -0x38(%rbp)
+eu4[0x1001faf63] <+449>: je     0x1001faf6e               ; <+460>
+eu4[0x1001faf65] <+451>: movq   -0x28(%rbp), %rdi
+eu4[0x1001faf69] <+455>: callq  0x1018cc85a               ; symbol stub for: operator delete(void*)
+eu4[0x1001faf6e] <+460>: addq   $0x1c0, %rsp              ; imm = 0x1C0
+eu4[0x1001faf75] <+467>: popq   %rbx
+eu4[0x1001faf76] <+468>: popq   %r12
+eu4[0x1001faf78] <+470>: popq   %r14
+eu4[0x1001faf7a] <+472>: popq   %r15
+eu4[0x1001faf7c] <+474>: popq   %rbp
+eu4[0x1001faf7d] <+475>: retq
+eu4[0x1001faf7e] <+476>: movq   %rax, %r14
+eu4[0x1001faf81] <+479>: jmp    0x1001fb00f               ; <+621>
+eu4[0x1001faf86] <+484>: movq   %rax, %r14
+eu4[0x1001faf89] <+487>: jmp    0x1001fb07e               ; <+732>
+eu4[0x1001faf8e] <+492>: movq   %rax, %r14
+eu4[0x1001faf91] <+495>: leaq   0x1aafa38(%rip), %rax     ; vtable for CEventScope
+eu4[0x1001faf98] <+502>: addq   $0x10, %rax
+eu4[0x1001faf9c] <+506>: leaq   -0x118(%rbp), %rdi
+eu4[0x1001fafa3] <+513>: movq   %rax, -0xc0(%rdi)
+eu4[0x1001fafaa] <+520>: callq  0x1001fc298               ; std::__1::unique_ptr<CEventScope, std::__1::default_delete<CEventScope>>::reset(CEventScope*)
+eu4[0x1001fafaf] <+525>: leaq   -0x120(%rbp), %rdi
+eu4[0x1001fafb6] <+532>: callq  0x1001fc298               ; std::__1::unique_ptr<CEventScope, std::__1::default_delete<CEventScope>>::reset(CEventScope*)
+eu4[0x1001fafbb] <+537>: leaq   -0x128(%rbp), %rbx
+eu4[0x1001fafc2] <+544>: movq   %rbx, %rdi
+eu4[0x1001fafc5] <+547>: callq  0x1001fc298               ; std::__1::unique_ptr<CEventScope, std::__1::default_delete<CEventScope>>::reset(CEventScope*)
+eu4[0x1001fafca] <+552>: movq   -0x18(%rbx), %rdi
+eu4[0x1001fafce] <+556>: testq  %rdi, %rdi
+eu4[0x1001fafd1] <+559>: je     0x1001fafdf               ; <+573>
+eu4[0x1001fafd3] <+561>: movq   %rdi, -0x138(%rbp)
+eu4[0x1001fafda] <+568>: callq  0x1018cc85a               ; symbol stub for: operator delete(void*)
+eu4[0x1001fafdf] <+573>: movq   -0x158(%rbp), %rdi
+eu4[0x1001fafe6] <+580>: testq  %rdi, %rdi
+eu4[0x1001fafe9] <+583>: je     0x1001faff7               ; <+597>
+eu4[0x1001fafeb] <+585>: movq   %rdi, -0x150(%rbp)
+eu4[0x1001faff2] <+592>: callq  0x1018cc85a               ; symbol stub for: operator delete(void*)
+eu4[0x1001faff7] <+597>: movq   -0x170(%rbp), %rdi
+eu4[0x1001faffe] <+604>: testq  %rdi, %rdi
+eu4[0x1001fb001] <+607>: je     0x1001fb00f               ; <+621>
+eu4[0x1001fb003] <+609>: movq   %rdi, -0x168(%rbp)
+eu4[0x1001fb00a] <+616>: callq  0x1018cc85a               ; symbol stub for: operator delete(void*)
+eu4[0x1001fb00f] <+621>: leaq   0x1aaf9ba(%rip), %rax     ; vtable for CEventScope
+eu4[0x1001fb016] <+628>: addq   $0x10, %rax
+eu4[0x1001fb01a] <+632>: leaq   -0x48(%rbp), %rdi
+eu4[0x1001fb01e] <+636>: movq   %rax, -0xc0(%rdi)
+eu4[0x1001fb025] <+643>: callq  0x1001fc298               ; std::__1::unique_ptr<CEventScope, std::__1::default_delete<CEventScope>>::reset(CEventScope*)
+eu4[0x1001fb02a] <+648>: leaq   -0x50(%rbp), %rdi
+eu4[0x1001fb02e] <+652>: callq  0x1001fc298               ; std::__1::unique_ptr<CEventScope, std::__1::default_delete<CEventScope>>::reset(CEventScope*)
+eu4[0x1001fb033] <+657>: leaq   -0x58(%rbp), %rbx
+eu4[0x1001fb037] <+661>: movq   %rbx, %rdi
+eu4[0x1001fb03a] <+664>: callq  0x1001fc298               ; std::__1::unique_ptr<CEventScope, std::__1::default_delete<CEventScope>>::reset(CEventScope*)
+eu4[0x1001fb03f] <+669>: movq   -0x18(%rbx), %rdi
+eu4[0x1001fb043] <+673>: testq  %rdi, %rdi
+eu4[0x1001fb046] <+676>: je     0x1001fb051               ; <+687>
+eu4[0x1001fb048] <+678>: movq   %rdi, -0x68(%rbp)
+eu4[0x1001fb04c] <+682>: callq  0x1018cc85a               ; symbol stub for: operator delete(void*)
+eu4[0x1001fb051] <+687>: movq   -0x88(%rbp), %rdi
+eu4[0x1001fb058] <+694>: testq  %rdi, %rdi
+eu4[0x1001fb05b] <+697>: je     0x1001fb066               ; <+708>
+eu4[0x1001fb05d] <+699>: movq   %rdi, -0x80(%rbp)
+eu4[0x1001fb061] <+703>: callq  0x1018cc85a               ; symbol stub for: operator delete(void*)
+eu4[0x1001fb066] <+708>: movq   -0xa0(%rbp), %rdi
+eu4[0x1001fb06d] <+715>: testq  %rdi, %rdi
+eu4[0x1001fb070] <+718>: je     0x1001fb07e               ; <+732>
+eu4[0x1001fb072] <+720>: movq   %rdi, -0x98(%rbp)
+eu4[0x1001fb079] <+727>: callq  0x1018cc85a               ; symbol stub for: operator delete(void*)
+eu4[0x1001fb07e] <+732>: testb  $0x1, -0x38(%rbp)
+eu4[0x1001fb082] <+736>: je     0x1001fb08d               ; <+747>
+eu4[0x1001fb084] <+738>: movq   -0x28(%rbp), %rdi
+eu4[0x1001fb088] <+742>: callq  0x1018cc85a               ; symbol stub for: operator delete(void*)
+eu4[0x1001fb08d] <+747>: movq   %r14, %rdi
+eu4[0x1001fb090] <+750>: callq  0x1018cc47c               ; symbol stub for: _Unwind_Resume
+eu4[0x1001fb095] <+755>: ud2
+eu4[0x1001fb097] <+757>: nop
+(lldb) disassemble -n "CRandomCountryEffect::Execute(CEventScope&, int) const"
+eu4`CRandomCountryEffect::Execute:
+eu4[0x1005580f4] <+0>:   pushq  %rbp
+eu4[0x1005580f5] <+1>:   movq   %rsp, %rbp
+eu4[0x1005580f8] <+4>:   pushq  %r15
+eu4[0x1005580fa] <+6>:   pushq  %r14
+eu4[0x1005580fc] <+8>:   pushq  %r13
+eu4[0x1005580fe] <+10>:  pushq  %r12
+eu4[0x100558100] <+12>:  pushq  %rbx
+eu4[0x100558101] <+13>:  subq   $0xf8, %rsp
+eu4[0x100558108] <+20>:  movl   %edx, %r14d
+eu4[0x10055810b] <+23>:  movq   %rsi, %rbx
+eu4[0x10055810e] <+26>:  movq   %rdi, %r15
+eu4[0x100558111] <+29>:  movq   0x16fff60(%rip), %r13     ; (void *)0x0000000101d1d540: vtable for CPdxArray<CCountryTag, int>
+eu4[0x100558118] <+36>:  addq   $0x10, %r13
+eu4[0x10055811c] <+40>:  leaq   -0x40(%rbp), %rdx
+eu4[0x100558120] <+44>:  movq   %r13, (%rdx)
+eu4[0x100558123] <+47>:  xorl   %eax, %eax
+eu4[0x100558125] <+49>:  movq   %rax, 0x8(%rdx)
+eu4[0x100558129] <+53>:  movq   %rax, 0x10(%rdx)
+eu4[0x10055812d] <+57>:  callq  0x100558318               ; CRandomCountryEffect::BuildList(CEventScope&, CPdxArray<CCountryTag, int>&) const
+eu4[0x100558132] <+62>:  cmpl   $0x0, -0x2c(%rbp)
+eu4[0x100558136] <+66>:  jle    0x100558235               ; <+321>
+eu4[0x10055813c] <+72>:  cmpl   $0x0, 0xb4(%r15)
+eu4[0x100558144] <+80>:  je     0x100558154               ; <+96>
+eu4[0x100558146] <+82>:  cmpl   $0x1, 0xb0(%r15)
+eu4[0x10055814e] <+90>:  jne    0x100558223               ; <+303>
+eu4[0x100558154] <+96>:  movl   %r14d, -0x44(%rbp)
+eu4[0x100558158] <+100>: leaq   0x3c(%rbx), %rdi
+eu4[0x10055815c] <+104>: callq  0x10186b562               ; CCrudeRandom::GetInteger()
+eu4[0x100558161] <+109>: movl   %eax, %r12d
+eu4[0x100558164] <+112>: movl   -0x2c(%rbp), %r14d
+eu4[0x100558168] <+116>: leaq   -0x118(%rbp), %rdi
+eu4[0x10055816f] <+123>: xorl   %esi, %esi
+eu4[0x100558171] <+125>: movq   %rbx, %rdx
+eu4[0x100558174] <+128>: callq  0x100601382               ; CEventScope::CEventScope(ESubScopeType, CEventScope&)
+eu4[0x100558179] <+133>: movl   %r12d, %eax
+eu4[0x10055817c] <+136>: cltd
+eu4[0x10055817d] <+137>: idivl  %r14d
+eu4[0x100558180] <+140>: movq   -0x38(%rbp), %rax
+eu4[0x100558184] <+144>: movslq %edx, %rcx
+eu4[0x100558187] <+147>: movq   (%rax,%rcx,8), %rsi
+eu4[0x10055818b] <+151>: leaq   -0x118(%rbp), %rdi
+eu4[0x100558192] <+158>: callq  0x100601be2               ; CEventScope::SetCountryTag(CCountryTag)
+eu4[0x100558197] <+163>: leaq   -0x118(%rbp), %rsi
+eu4[0x10055819e] <+170>: movq   %r15, %rdi
+eu4[0x1005581a1] <+173>: movl   -0x44(%rbp), %edx
+eu4[0x1005581a4] <+176>: callq  0x1005122b0               ; CEffect::Execute(CEventScope&, int) const
+eu4[0x1005581a9] <+181>: leaq   0x1752820(%rip), %rax     ; vtable for CEventScope
+eu4[0x1005581b0] <+188>: addq   $0x10, %rax
+eu4[0x1005581b4] <+192>: leaq   -0x58(%rbp), %rdi
+eu4[0x1005581b8] <+196>: movq   %rax, -0xc0(%rdi)
+eu4[0x1005581bf] <+203>: xorl   %esi, %esi
+eu4[0x1005581c1] <+205>: callq  0x1005de2ec               ; std::__1::unique_ptr<CEventScope, std::__1::default_delete<CEventScope>>::reset(CEventScope*)
+eu4[0x1005581c6] <+210>: leaq   -0x60(%rbp), %rdi
+eu4[0x1005581ca] <+214>: xorl   %esi, %esi
+eu4[0x1005581cc] <+216>: callq  0x1005de2ec               ; std::__1::unique_ptr<CEventScope, std::__1::default_delete<CEventScope>>::reset(CEventScope*)
+eu4[0x1005581d1] <+221>: leaq   -0x68(%rbp), %rbx
+eu4[0x1005581d5] <+225>: movq   %rbx, %rdi
+eu4[0x1005581d8] <+228>: xorl   %esi, %esi
+eu4[0x1005581da] <+230>: callq  0x1005de2ec               ; std::__1::unique_ptr<CEventScope, std::__1::default_delete<CEventScope>>::reset(CEventScope*)
+eu4[0x1005581df] <+235>: movq   -0x18(%rbx), %rdi
+eu4[0x1005581e3] <+239>: testq  %rdi, %rdi
+eu4[0x1005581e6] <+242>: je     0x1005581f1               ; <+253>
+eu4[0x1005581e8] <+244>: movq   %rdi, -0x78(%rbp)
+eu4[0x1005581ec] <+248>: callq  0x1018cc85a               ; symbol stub for: operator delete(void*)
+eu4[0x1005581f1] <+253>: movq   -0x98(%rbp), %rdi
+eu4[0x1005581f8] <+260>: testq  %rdi, %rdi
+eu4[0x1005581fb] <+263>: je     0x100558209               ; <+277>
+eu4[0x1005581fd] <+265>: movq   %rdi, -0x90(%rbp)
+eu4[0x100558204] <+272>: callq  0x1018cc85a               ; symbol stub for: operator delete(void*)
+eu4[0x100558209] <+277>: movq   -0xb0(%rbp), %rdi
+eu4[0x100558210] <+284>: testq  %rdi, %rdi
+eu4[0x100558213] <+287>: je     0x100558235               ; <+321>
+eu4[0x100558215] <+289>: movq   %rdi, -0xa8(%rbp)
+eu4[0x10055821c] <+296>: callq  0x1018cc85a               ; symbol stub for: operator delete(void*)
+eu4[0x100558221] <+301>: jmp    0x100558235               ; <+321>
+eu4[0x100558223] <+303>: leaq   -0x40(%rbp), %rdx
+eu4[0x100558227] <+307>: movq   %r15, %rdi
+eu4[0x10055822a] <+310>: movq   %rbx, %rsi
+eu4[0x10055822d] <+313>: movl   %r14d, %ecx
+eu4[0x100558230] <+316>: callq  0x100c36470               ; CMultipleTargetEffect::ExecuteMultipleRandom(CEventScope&, CPdxArray<CCountryTag, int>&, int) const
+eu4[0x100558235] <+321>: movq   %r13, -0x40(%rbp)
+eu4[0x100558239] <+325>: movl   $0x0, -0x2c(%rbp)
+eu4[0x100558240] <+332>: movq   -0x38(%rbp), %rdi
+eu4[0x100558244] <+336>: testq  %rdi, %rdi
+eu4[0x100558247] <+339>: je     0x100558256               ; <+354>
+eu4[0x100558249] <+341>: callq  0x1018cc854               ; symbol stub for: operator delete[](void*)
+eu4[0x10055824e] <+346>: movq   $0x0, -0x38(%rbp)
+eu4[0x100558256] <+354>: addq   $0xf8, %rsp
+eu4[0x10055825d] <+361>: popq   %rbx
+eu4[0x10055825e] <+362>: popq   %r12
+eu4[0x100558260] <+364>: popq   %r13
+eu4[0x100558262] <+366>: popq   %r14
+eu4[0x100558264] <+368>: popq   %r15
+eu4[0x100558266] <+370>: popq   %rbp
+eu4[0x100558267] <+371>: retq
+eu4[0x100558268] <+372>: jmp    0x1005582e9               ; <+501>
+eu4[0x10055826a] <+374>: jmp    0x1005582e9               ; <+501>
+eu4[0x10055826c] <+376>: movq   %rax, %rbx
+eu4[0x10055826f] <+379>: leaq   0x175275a(%rip), %rax     ; vtable for CEventScope
+eu4[0x100558276] <+386>: addq   $0x10, %rax
+eu4[0x10055827a] <+390>: leaq   -0x58(%rbp), %rdi
+eu4[0x10055827e] <+394>: movq   %rax, -0xc0(%rdi)
+eu4[0x100558285] <+401>: xorl   %esi, %esi
+eu4[0x100558287] <+403>: callq  0x1005de2ec               ; std::__1::unique_ptr<CEventScope, std::__1::default_delete<CEventScope>>::reset(CEventScope*)
+eu4[0x10055828c] <+408>: leaq   -0x60(%rbp), %rdi
+eu4[0x100558290] <+412>: xorl   %esi, %esi
+eu4[0x100558292] <+414>: callq  0x1005de2ec               ; std::__1::unique_ptr<CEventScope, std::__1::default_delete<CEventScope>>::reset(CEventScope*)
+eu4[0x100558297] <+419>: leaq   -0x68(%rbp), %r14
+eu4[0x10055829b] <+423>: movq   %r14, %rdi
+eu4[0x10055829e] <+426>: xorl   %esi, %esi
+eu4[0x1005582a0] <+428>: callq  0x1005de2ec               ; std::__1::unique_ptr<CEventScope, std::__1::default_delete<CEventScope>>::reset(CEventScope*)
+eu4[0x1005582a5] <+433>: movq   -0x18(%r14), %rdi
+eu4[0x1005582a9] <+437>: testq  %rdi, %rdi
+eu4[0x1005582ac] <+440>: je     0x1005582b7               ; <+451>
+eu4[0x1005582ae] <+442>: movq   %rdi, -0x78(%rbp)
+eu4[0x1005582b2] <+446>: callq  0x1018cc85a               ; symbol stub for: operator delete(void*)
+eu4[0x1005582b7] <+451>: movq   -0x98(%rbp), %rdi
+eu4[0x1005582be] <+458>: testq  %rdi, %rdi
+eu4[0x1005582c1] <+461>: je     0x1005582cf               ; <+475>
+eu4[0x1005582c3] <+463>: movq   %rdi, -0x90(%rbp)
+eu4[0x1005582ca] <+470>: callq  0x1018cc85a               ; symbol stub for: operator delete(void*)
+eu4[0x1005582cf] <+475>: movq   -0xb0(%rbp), %rdi
+eu4[0x1005582d6] <+482>: testq  %rdi, %rdi
+eu4[0x1005582d9] <+485>: je     0x1005582ec               ; <+504>
+eu4[0x1005582db] <+487>: movq   %rdi, -0xa8(%rbp)
+eu4[0x1005582e2] <+494>: callq  0x1018cc85a               ; symbol stub for: operator delete(void*)
+eu4[0x1005582e7] <+499>: jmp    0x1005582ec               ; <+504>
+eu4[0x1005582e9] <+501>: movq   %rax, %rbx
+eu4[0x1005582ec] <+504>: movq   %r13, -0x40(%rbp)
+eu4[0x1005582f0] <+508>: movl   $0x0, -0x2c(%rbp)
+eu4[0x1005582f7] <+515>: movq   -0x38(%rbp), %rdi
+eu4[0x1005582fb] <+519>: testq  %rdi, %rdi
+eu4[0x1005582fe] <+522>: je     0x10055830d               ; <+537>
+eu4[0x100558300] <+524>: callq  0x1018cc854               ; symbol stub for: operator delete[](void*)
+eu4[0x100558305] <+529>: movq   $0x0, -0x38(%rbp)
+eu4[0x10055830d] <+537>: movq   %rbx, %rdi
+eu4[0x100558310] <+540>: callq  0x1018cc47c               ; symbol stub for: _Unwind_Resume
+eu4[0x100558315] <+545>: ud2
+eu4[0x100558317] <+547>: nop
+(lldb) quit

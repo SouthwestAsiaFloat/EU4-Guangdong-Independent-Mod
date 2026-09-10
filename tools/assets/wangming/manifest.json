@@ -1,0 +1,62 @@
+{
+  "source": "tools/assets/wangming/sources/wangming_atlas_v1.png",
+  "source_sha256": "256443639ecc1a6c75d863e8ba2bbd6eb3bc738a4db857848125e08910bac0b8",
+  "assets": {
+    "tribute": {
+      "crop": [
+        12,
+        36,
+        509,
+        526
+      ],
+      "size": [
+        144,
+        72
+      ],
+      "frames": 2,
+      "sha256": "38e230d4d938de133b2116a889b3521470949099bdf5f4849e3dd96686d1c2cf"
+    },
+    "migration": {
+      "crop": [
+        510,
+        36,
+        1014,
+        526
+      ],
+      "size": [
+        144,
+        72
+      ],
+      "frames": 2,
+      "sha256": "0d3da3b03237e6652f38265588dbd7e6778258a83f9da53481044d05f613417e"
+    },
+    "levy": {
+      "crop": [
+        1016,
+        36,
+        1518,
+        526
+      ],
+      "size": [
+        144,
+        72
+      ],
+      "frames": 2,
+      "sha256": "29d4b4377402f4c086961f7c2c5238e0a6756a10d5c81136e8bb96baeafd40f3"
+    },
+    "banner": {
+      "crop": [
+        40,
+        592,
+        1496,
+        938
+      ],
+      "size": [
+        344,
+        93
+      ],
+      "frames": 1,
+      "sha256": "9cd62f369004b6b265ce5c3c544265490261392fe0fd4190ac273af6eeeb6a05"
+    }
+  }
+}

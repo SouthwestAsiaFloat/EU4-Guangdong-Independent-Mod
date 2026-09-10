@@ -1,0 +1,1 @@
+on_monthly_pulse = { events = { zhx_wangming.1 } }

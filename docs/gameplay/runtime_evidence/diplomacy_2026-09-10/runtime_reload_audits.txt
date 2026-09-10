@@ -1,0 +1,15 @@
+[effectimplementation.cpp:25375]: EVENT [1445.04.09]:ZQAUDIT reload_human_defense PASS
+[effectimplementation.cpp:25375]: EVENT [1445.04.09]:ZQAUDIT reload_original_record PASS
+[effectimplementation.cpp:25375]: EVENT [1445.04.15]:ZQAUDIT player_country PASS
+[effectimplementation.cpp:25375]: EVENT [1445.04.15]:ZQAUDIT human_pending YES
+[effectimplementation.cpp:25375]: EVENT [1445.04.15]:ZQBRANCH human_else
+[effectimplementation.cpp:25375]: EVENT [1445.04.24]:ZQBRANCH explicit_human
+[effectimplementation.cpp:25375]: EVENT [1445.05.01]:ZQAUDIT isolated_human_refuse PASS
+[effectimplementation.cpp:25375]: EVENT [1445.05.11]:ZQAUDIT stale_no_wrong_join_or_cost PASS
+[effectimplementation.cpp:25375]: EVENT [1445.05.11]:ZQAUDIT net_zero_declines FAIL
+[effectimplementation.cpp:25375]: EVENT [1445.05.11]:ZQAUDIT net_one_accepts FAIL
+[effectimplementation.cpp:25375]: EVENT [1445.05.11]:ZQAUDIT negative_declines PASS
+[effectimplementation.cpp:25375]: EVENT [1445.05.11]:ZQNUM op=25 trust=82
+[effectimplementation.cpp:25375]: EVENT [1445.05.11]:ZQAUDIT net_zero_declines PASS
+[effectimplementation.cpp:25375]: EVENT [1445.05.11]:ZQAUDIT net_one_accepts PASS
+[effectimplementation.cpp:25375]: EVENT [1445.05.11]:ZQAUDIT negative_declines PASS

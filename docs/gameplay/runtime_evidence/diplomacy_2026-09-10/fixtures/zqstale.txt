@@ -1,0 +1,3 @@
+CHC = { set_country_flag = zhx_qn_pending event_target:zhx_tianzi = { save_event_target_as = zhx_qn_inviter } country_event = { id = zhx_qinwang.10 days = 1 } }
+CZH = { white_peace = SCO zhx_qn_maintain = yes }
+CAS = { declare_war_with_cb = { who = CZH casus_belli = cb_insult } }

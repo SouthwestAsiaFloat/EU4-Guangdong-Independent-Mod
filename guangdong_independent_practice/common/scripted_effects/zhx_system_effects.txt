@@ -1,6 +1,14 @@
 # 将 ROOT 设为唯一的天子，并刷新供后续规则与 GUI 使用的全局事件目标。
 # 天子身份只由周天下系统管理，刻意不依赖任何属国类型。
 zhx_set_tianzi = {
+    if = {
+        limit = {
+            has_saved_global_event_target = zhx_tianzi
+            NOT = { tag = event_target:zhx_tianzi }
+        }
+        set_variable = { which = zhx_merit_term_year which = event_target:zhx_tianzi }
+        set_variable = { which = zhx_merit_term_years_remaining which = event_target:zhx_tianzi }
+    }
     every_country = {
         limit = {
             has_country_flag = zhx_tianzi

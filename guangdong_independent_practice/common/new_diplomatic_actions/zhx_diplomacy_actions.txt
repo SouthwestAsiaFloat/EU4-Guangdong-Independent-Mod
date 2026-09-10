@@ -4,7 +4,7 @@
 # EU4 1.37.5 只能一次加入目标国的全部防御战争，不能从脚本外交行动中
 # 选择其中一场。首版因此要求天子处于和平，并在提示中明确这一原生边界。
 zhx_relieve_tianxia_member = {
-    category = influence
+    category = is_emperor_of_china
 
     require_acceptance = no
 
@@ -17,31 +17,46 @@ zhx_relieve_tianxia_member = {
             is_subject = no
             zhx_is_tianxia_polity = yes
             NOT = { zhx_is_tianzi = yes }
-            is_at_war = yes
-
-            # 只在本国是防御战争领袖，且域外战争领袖正在进攻本国时显示。
-            # 诸侯内战以及仅作为盟友参加的防御战争均不开放“救患”。
-            any_war_enemy_country = {
-                exists = yes
-                NOT = { zhx_is_tianxia_polity = yes }
-                offensive_war_with = PREV
-                is_in_war = {
-                    attacker_leader = THIS
-                    defender_leader = PREV
-                }
-            }
-
-            # 已经在该诸侯统领的防御阵营时不再显示重复入口。
-            NOT = {
-                is_in_war = {
-                    defenders = ROOT
-                    defender_leader = THIS
-                }
-            }
         }
     }
 
     is_allowed = {
+        # Former visibility conditions now explain a disabled action.
+        custom_trigger_tooltip = {
+            tooltip = zhx_diplo_relief_available_tt
+            has_global_flag = zhx_system_initialised_v14
+            zhx_is_tianzi = yes
+            is_subject = no
+            FROM = {
+                exists = yes
+                is_subject = no
+                zhx_is_tianxia_polity = yes
+                NOT = { zhx_is_tianzi = yes }
+                is_at_war = yes
+
+                # 本国是防御战争领袖，且域外战争领袖正在进攻本国时才可执行。
+                # 诸侯内战以及仅作为盟友参加的防御战争均不开放“救患”。
+                any_war_enemy_country = {
+                    exists = yes
+                    NOT = { zhx_is_tianxia_polity = yes }
+                    offensive_war_with = PREV
+                    is_in_war = {
+                        attacker_leader = THIS
+                        defender_leader = PREV
+                    }
+                }
+
+                # 已经在该诸侯统领的防御阵营时禁用重复入口。
+                NOT = {
+                    is_in_war = {
+                        defenders = ROOT
+                        defender_leader = THIS
+                    }
+                }
+            }
+
+        }
+
         if = {
             limit = { is_at_war = yes }
             custom_trigger_tooltip = {
@@ -98,7 +113,7 @@ zhx_relieve_tianxia_member = {
 # 周天下诸侯可以从相反方向向当前天子“告急”。
 # ROOT = 发起请求的诸侯，FROM = 接收请求的周天子。
 zhx_appeal_to_tianzi_for_relief = {
-    category = influence
+    category = is_emperor_of_china
 
     # 复用原版“召集盟友”的消息图标；玩家天子仍可自行拒绝。
     alert_index = 10
@@ -111,34 +126,45 @@ zhx_appeal_to_tianzi_for_relief = {
         is_subject = no
         zhx_is_tianxia_member = yes
         NOT = { zhx_is_tianzi = yes }
-        is_at_war = yes
-        FROM = {
-            exists = yes
-            is_subject = no
-            zhx_is_tianzi = yes
-        }
-
-        # 告急国必须是正被域外战争领袖直接进攻的防御方领袖。
-        any_war_enemy_country = {
-            exists = yes
-            NOT = { zhx_is_tianxia_polity = yes }
-            offensive_war_with = ROOT
-            is_in_war = {
-                attacker_leader = THIS
-                defender_leader = ROOT
-            }
-        }
-
-        # 天子已经在本国统领的防御阵营时，不再显示重复请求。
-        NOT = {
-            is_in_war = {
-                defenders = FROM
-                defender_leader = THIS
-            }
-        }
+        FROM = { exists = yes is_subject = no zhx_is_tianzi = yes }
     }
 
     is_allowed = {
+        # Former visibility conditions now explain a disabled action.
+        custom_trigger_tooltip = {
+            tooltip = zhx_diplo_appeal_available_tt
+            has_global_flag = zhx_system_initialised_v14
+            is_subject = no
+            zhx_is_tianxia_member = yes
+            NOT = { zhx_is_tianzi = yes }
+            is_at_war = yes
+            FROM = {
+                exists = yes
+                is_subject = no
+                zhx_is_tianzi = yes
+            }
+
+            # 告急国必须是正被域外战争领袖直接进攻的防御方领袖。
+            any_war_enemy_country = {
+                exists = yes
+                NOT = { zhx_is_tianxia_polity = yes }
+                offensive_war_with = ROOT
+                is_in_war = {
+                    attacker_leader = THIS
+                    defender_leader = ROOT
+                }
+            }
+
+            # 天子已经在本国统领的防御阵营时，禁用重复请求。
+            NOT = {
+                is_in_war = {
+                    defenders = FROM
+                    defender_leader = THIS
+                }
+            }
+
+        }
+
         if = {
             limit = { FROM = { is_at_war = yes } }
             custom_trigger_tooltip = {

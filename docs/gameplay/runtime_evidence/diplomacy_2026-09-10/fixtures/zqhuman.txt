@@ -1,0 +1,4 @@
+CZH = { white_peace = POR }
+CHC = { white_peace = POR }
+GUN = { declare_war_with_cb = { who = CZH casus_belli = cb_insult } }
+CHC = { if = { limit = { zhx_qn_can_send = yes } log = "ZQAUDIT human_internal_defensive_eligible PASS" } else = { log = "ZQAUDIT human_internal_defensive_eligible FAIL" } zhx_qn_dispatch = yes }

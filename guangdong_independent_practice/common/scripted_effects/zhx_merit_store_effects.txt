@@ -12,15 +12,6 @@ zhx_add_active_merit = {
     zhx_add_merit = { amount = $amount$ }
 }
 
-# 供后续勤王战争/事件链调用的稳定接口。勤王是否正当由战争层判断，
-# 本效果只负责把已经确认的胜利写入三本盟功账。
-zhx_reward_qinwang_victory = {
-    if = {
-        limit = { zhx_is_tianxia_member = yes }
-        zhx_add_active_merit = { amount = 10 }
-    }
-}
-
 zhx_buy_merit_store_relief = {
     change_variable = { which = zhx_merit value = -50 }
     zhx_clamp_merit = yes
@@ -186,6 +177,7 @@ zhx_settle_merit_term = {
     }
     zhx_clear_merit_rank_targets = yes
     zhx_feudatory_begin_new_term = yes
+    zhx_wm_new_term = yes
 
     zhx_rebuild_six_great_feudatory_cache = yes
     gdd_build_eoc_great_feudatory_roster = yes

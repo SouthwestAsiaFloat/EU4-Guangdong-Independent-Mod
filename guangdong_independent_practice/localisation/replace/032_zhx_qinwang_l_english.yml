@@ -1,0 +1,36 @@
+﻿l_english:
+ zhx_invite_qinwang:0 "Ž÷‹äR‹s"
+ zhx_invite_qinwang_title:0 "Ž÷‹äR‹s"
+ zhx_invite_qinwang_desc:0 "Ž÷‹å‹ø‹¯O ReQ)YPR†˜üR„vSVMRb‰Nÿàe—Tßv0žRE–ÂSbˆmw)YPRùRå‹ýV„v§Y25ºNÅ`§!ÿø‹¯OËzsS·ƒ—V§G10IN¨RßvŸR§!0ÏkýVÏkbêSŽ÷‹N!kÿÒbÝuàeé`Z0"
+ zhx_invite_qinwang_tooltip:0 "[From.GetQinwangResponse]\n^bÿ§G[From.GetQinwangPositive10][From.GetQinwangPositive1]§!\nÍSùRÿ§R-[From.GetQinwangNegative1000][From.GetQinwangNegative100][From.GetQinwangNegative10][From.GetQinwangNegative1]§!\n\n[From.GetQinwangThreshold]SVMRÀQaMaÿ§Y[From.GetQinwangNetPrefix][From.GetQinwangNet1000][From.GetQinwangNet100][From.GetQinwangNet10][From.GetQinwangNet1]§!0\n[From.GetQinwangLineDefensive][From.GetQinwangOpinionPositive][From.GetQinwangTrustPositive]\n[From.GetQinwangLineBase][From.GetQinwangOpinionNegative][From.GetQinwangTrustNegative][From.GetQinwangLineManpowerLow][From.GetQinwangLineManpowerMid][From.GetQinwangLineLoansLow][From.GetQinwangLineLoansHigh][From.GetQinwangLineWarBurden][From.GetQinwangLineTruce][From.GetQinwangLineAlliance]\n\n[From.GetQinwangAvailability]\nžRE–ÂSbÿQQ°s§Y25ºNÅ`§!ÿø‹¯O·ƒ—V§G10IN¨RßvŸR§!0"
+ zhx_qinwang_willingness:0 "äR‹saMa"
+ zhx_qinwang_willingness_title:0 "äR‹saMa"
+ zhx_qinwang_willingness_desc:0 "dky˜êSUSHyå‹ø‹¯OSVMR„väR‹saMa0¬`jP¥c×S¦^þVhïSågwŸSHry˜Ä‹RÿžRE–ÑS÷‹O(u“Ž÷‹äR‹s”0‹YaNáOûNRJP	cŸSHrÄ‰Ry˜‚»SSpeÿI`R‰˜'YŽN00"
+ zhx_qinwang_willingness_tooltip:0 "¬`jP¥c×S¦^þVhågw^b0ÍSùRŸSàV0dky˜NýwÑSÿŽ÷‹÷‹O(u“Ž÷‹äR‹s”0"
+ zhx_qn_assessment_tt:0 "Ù=faMafÆuÿ÷‹O(u“Ž÷‹äR‹s”ÑS÷‹Bl0"
+ zhx_qn_single_war_tt:0 ")YPR‰˜ÅNÂSNNHWb‰Nÿv^ÅbûN,g¹e†˜–ˆ0"
+ zhx_qn_peace_tt:0 "ø‹¯O‰˜ìrËzNYŽNŒTs^0"
+ zhx_qn_favors_tt:0 ")YPRùRå‹ýV„vºNÅ`N³250"
+ zhx_qn_once_tt:0 ",gHWòTŽ÷‹å‹ýVÿbS	g8gYt„vçeŽ÷‹0"
+ zhx_qn_campaign_tt:0 "ŸSäR‹sb‰N°‹UVS8gÓumgÿ‚fNýwŽ÷‹0"
+ zhx_qn_positive_tt:0 "ùR¹e„v^bRÅV‰˜'YŽNÍSùRR0"
+ zhx_qn_sent_tt:0 "°‹UV,gHWb‰Nv^úQŽ÷‹0AIø‹¯O	cSVMRaMa”^ìSÿ©s¶Rø‹¯OïS¥c×SbÒbÝu0žRE–ÂSbTˆmw25ºNÅ`ÿv^VY±Rø‹¯O10IN¨RßvŸR0"
+ zhx_qn_accept_tt:0 "Í‘°e8hŒšŸSb‰N0)YPR«ŽýN0USbNŒTs^DJhÊS25ºNÅ`0&rTagöNR ReQ)YPRN¹eÿžRE–ÂSbsS·ƒ—V10IN¨RßvŸRÿDJh1YHeRÖSˆmÿNcbºNÅ`0NÑSVY±R0"
+ zhx_qn_decline_tt:0 "ÒbÝu,g!kŽ÷‹ÿNmc1YsQûsNºNÅ`ÿN·ƒ—VßvŸR0,gHWb‰NNQÍ‘YŽ÷‹0"
+ zhx_qinwang.10.t:0 ")YPRìS÷‹äR‹s"
+ zhx_qinwang.10.d:0 "[zhx_qn_inviter.GetName]„v)YPRcOìS÷‹býVäR‹s0”^ìSTÿbýVS ReQ)YPR†˜üR„vÙHWb‰N0\n\nžRE–ÂSbsS·ƒ§G10IN¨RßvŸR§!ÿTöeQQ°s)YPRùRbýV„v§Y25ºNÅ`§!ÿàe—TßvÿmNNÅVIr0R·ƒÜwMb†˜VY0ïSOnfÂSbýVÄ‰RUSìr®‹ŒTÿNb—VßvŸRNýÞV0TNHWb‰NêSýw×SŽN!k0\n\nbýVïSêLˆÒbÝuÿN×SsQûsbºNÅ`é`Z0"
+ zhx_qinwang.10.a:0 "”^ìSäR‹s"
+ zhx_qinwang.10.b:0 "IZÒb)YPR"
+ zhx_qinwang.12.t:0 "äR‹sŽ÷‹8gýwuHe"
+ zhx_qinwang.12.d:0 "ÙýNäR‹sŽ÷‹òTàeÕl	cŸSagöNgbLˆÿbS8gnx²‹ ReQŸSb‰N0,g!k¡l	gcbd–ºNÅ`ÿmN¡l	gÑSLeßvŸR0ŸSŽ÷‹NOl(uŽN°e„vb‰N0"
+ zhx_qn_reason_opinion:0 "ø‹¯OùR)YPR‹Ya / 5"
+ zhx_qn_reason_trust:0 "ÿø‹¯OùR)YPRáOûN - 50	ÿ/ 2"
+ zhx_qn_reason_base:0 "úWNxaMa"
+ zhx_qn_reason_defensive:0 ")YPR†˜üR2–¡Vb‰N"
+ zhx_qn_reason_manpower_low:0 "ºN›RN³ÛVRKNN"
+ zhx_qn_reason_manpower_mid:0 "ºN›RN³NJS"
+ zhx_qn_reason_loans_low:0 "NóÛVr7Lk"
+ zhx_qn_reason_loans_high:0 "óS”Nr7Lk"
+ zhx_qn_reason_war_burden:0 ")YPRY¿ujObbø‹¯OòTÏu(Wb"
+ zhx_qn_reason_truce:0 "NLe¹eb‰N†˜–ˆ	gjPb"
+ zhx_qn_reason_alliance:0 "NLe¹eb‰N†˜–ˆÓußv"

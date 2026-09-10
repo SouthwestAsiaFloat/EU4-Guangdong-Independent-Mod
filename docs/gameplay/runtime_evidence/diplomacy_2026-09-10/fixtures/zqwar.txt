@@ -1,0 +1,9 @@
+CZH = {
+ declare_war_with_cb = { who = FRA casus_belli = cb_insult }
+ add_favors = { who = CHC amount = 100 }
+}
+CHC = {
+ add_manpower = 100
+ add_treasury = 500
+ add_trust = { who = CZH value = 50 mutual = no }
+}

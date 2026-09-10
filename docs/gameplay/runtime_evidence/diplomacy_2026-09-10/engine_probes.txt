@@ -1,0 +1,2 @@
+[effectimplementation.cpp:25375]: EVENT [1444.11.25]:ZQTEST new singlewar TRUE
+[effectimplementation.cpp:25375]: EVENT [1444.11.25]:ZQTEST new truce FALSE

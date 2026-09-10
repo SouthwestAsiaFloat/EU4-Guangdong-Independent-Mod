@@ -1,0 +1,193 @@
+# Country scopes; the authority is the existing global Tianzi target.
+zhx_wm_member = {
+    exists = yes
+    zhx_is_tianxia_member = yes
+    NOT = { zhx_is_tianzi = yes }
+    has_saved_global_event_target = zhx_tianzi
+    NOT = { war_with = event_target:zhx_tianzi }
+}
+zhx_wm_can_tribute = {
+    zhx_tianzi_has_government = yes
+    has_global_flag = zhx_system_initialised_v13
+    NOT = { has_global_flag = zhx_wm_tribute_used }
+    NOT = { has_global_flag = zhx_wm_tribute_queued }
+    any_country = { zhx_wm_member = yes }
+}
+zhx_wm_can_pay = {
+    variable_arithmetic_trigger = {
+        export_to_variable = { variable_name = zhx_wm_cash value = treasury }
+        check_variable = { which = zhx_wm_cash which = zhx_wm_tribute_due }
+    }
+}
+zhx_wm_tribute_valid = {
+    has_country_flag = zhx_wm_tribute_pending
+    zhx_wm_member = yes
+    has_saved_event_target = zhx_wm_sender
+    event_target:zhx_wm_sender = { exists = yes zhx_tianzi_has_government = yes }
+    NOT = { war_with = event_target:zhx_wm_sender }
+}
+zhx_wm_spare_1 = {
+    OR = {
+        AND = {
+            num_of_owned_provinces_with = { value = 1 is_city = yes base_tax = 2 }
+        }
+    }
+    OR = {
+        AND = {
+            num_of_owned_provinces_with = { value = 1 is_city = yes base_production = 2 }
+        }
+    }
+    OR = {
+        AND = {
+            num_of_owned_provinces_with = { value = 1 is_city = yes base_manpower = 2 }
+        }
+    }
+}
+zhx_wm_spare_2 = {
+    OR = {
+        AND = {
+            num_of_owned_provinces_with = { value = 1 is_city = yes base_tax = 3 }
+        }
+        AND = {
+            num_of_owned_provinces_with = { value = 2 is_city = yes base_tax = 2 }
+        }
+    }
+    OR = {
+        AND = {
+            num_of_owned_provinces_with = { value = 1 is_city = yes base_production = 3 }
+        }
+        AND = {
+            num_of_owned_provinces_with = { value = 2 is_city = yes base_production = 2 }
+        }
+    }
+    OR = {
+        AND = {
+            num_of_owned_provinces_with = { value = 1 is_city = yes base_manpower = 3 }
+        }
+        AND = {
+            num_of_owned_provinces_with = { value = 2 is_city = yes base_manpower = 2 }
+        }
+    }
+}
+zhx_wm_spare_3 = {
+    OR = {
+        AND = {
+            num_of_owned_provinces_with = { value = 1 is_city = yes base_tax = 4 }
+        }
+        AND = {
+            num_of_owned_provinces_with = { value = 1 is_city = yes base_tax = 3 }
+            num_of_owned_provinces_with = { value = 2 is_city = yes base_tax = 2 }
+        }
+        AND = {
+            num_of_owned_provinces_with = { value = 3 is_city = yes base_tax = 2 }
+        }
+    }
+    OR = {
+        AND = {
+            num_of_owned_provinces_with = { value = 1 is_city = yes base_production = 4 }
+        }
+        AND = {
+            num_of_owned_provinces_with = { value = 1 is_city = yes base_production = 3 }
+            num_of_owned_provinces_with = { value = 2 is_city = yes base_production = 2 }
+        }
+        AND = {
+            num_of_owned_provinces_with = { value = 3 is_city = yes base_production = 2 }
+        }
+    }
+    OR = {
+        AND = {
+            num_of_owned_provinces_with = { value = 1 is_city = yes base_manpower = 4 }
+        }
+        AND = {
+            num_of_owned_provinces_with = { value = 1 is_city = yes base_manpower = 3 }
+            num_of_owned_provinces_with = { value = 2 is_city = yes base_manpower = 2 }
+        }
+        AND = {
+            num_of_owned_provinces_with = { value = 3 is_city = yes base_manpower = 2 }
+        }
+    }
+}
+zhx_wm_spare_4 = {
+    OR = {
+        AND = {
+            num_of_owned_provinces_with = { value = 1 is_city = yes base_tax = 5 }
+        }
+        AND = {
+            num_of_owned_provinces_with = { value = 1 is_city = yes base_tax = 4 }
+            num_of_owned_provinces_with = { value = 2 is_city = yes base_tax = 2 }
+        }
+        AND = {
+            num_of_owned_provinces_with = { value = 2 is_city = yes base_tax = 3 }
+        }
+        AND = {
+            num_of_owned_provinces_with = { value = 1 is_city = yes base_tax = 3 }
+            num_of_owned_provinces_with = { value = 3 is_city = yes base_tax = 2 }
+        }
+        AND = {
+            num_of_owned_provinces_with = { value = 4 is_city = yes base_tax = 2 }
+        }
+    }
+    OR = {
+        AND = {
+            num_of_owned_provinces_with = { value = 1 is_city = yes base_production = 5 }
+        }
+        AND = {
+            num_of_owned_provinces_with = { value = 1 is_city = yes base_production = 4 }
+            num_of_owned_provinces_with = { value = 2 is_city = yes base_production = 2 }
+        }
+        AND = {
+            num_of_owned_provinces_with = { value = 2 is_city = yes base_production = 3 }
+        }
+        AND = {
+            num_of_owned_provinces_with = { value = 1 is_city = yes base_production = 3 }
+            num_of_owned_provinces_with = { value = 3 is_city = yes base_production = 2 }
+        }
+        AND = {
+            num_of_owned_provinces_with = { value = 4 is_city = yes base_production = 2 }
+        }
+    }
+    OR = {
+        AND = {
+            num_of_owned_provinces_with = { value = 1 is_city = yes base_manpower = 5 }
+        }
+        AND = {
+            num_of_owned_provinces_with = { value = 1 is_city = yes base_manpower = 4 }
+            num_of_owned_provinces_with = { value = 2 is_city = yes base_manpower = 2 }
+        }
+        AND = {
+            num_of_owned_provinces_with = { value = 2 is_city = yes base_manpower = 3 }
+        }
+        AND = {
+            num_of_owned_provinces_with = { value = 1 is_city = yes base_manpower = 3 }
+            num_of_owned_provinces_with = { value = 3 is_city = yes base_manpower = 2 }
+        }
+        AND = {
+            num_of_owned_provinces_with = { value = 4 is_city = yes base_manpower = 2 }
+        }
+    }
+}
+zhx_wm_migration_target = {
+    zhx_wm_member = yes
+    total_development = 30
+    OR = {
+        AND = { NOT = { total_development = 100 } zhx_wm_spare_1 = yes }
+        AND = { total_development = 100 NOT = { total_development = 200 } zhx_wm_spare_2 = yes }
+        AND = { total_development = 200 NOT = { total_development = 300 } zhx_wm_spare_3 = yes }
+        AND = { total_development = 300 zhx_wm_spare_4 = yes }
+    }
+}
+zhx_wm_can_migrate = {
+    zhx_tianzi_has_government = yes
+    has_global_flag = zhx_system_initialised_v13
+    NOT = { has_global_flag = zhx_wm_migration_used }
+    NOT = { has_global_flag = zhx_wm_migration_queued }
+    any_owned_province = { is_in_capital_area = yes is_city = yes }
+    any_country = { zhx_wm_migration_target = yes }
+}
+zhx_wm_can_levy = {
+    zhx_tianzi_has_government = yes
+    has_global_flag = zhx_system_initialised_v13
+    NOT = { has_global_flag = zhx_wm_levy_used }
+    NOT = { has_global_flag = zhx_wm_levy_queued }
+    any_country = { zhx_wm_member = yes }
+}

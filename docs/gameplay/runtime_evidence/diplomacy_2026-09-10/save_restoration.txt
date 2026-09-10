@@ -1,0 +1,4 @@
+autosave.eu4 restored SHA256 33d25d7f8c6ff6d5faa36b8683981c1cf09e9a643b919d255c5c9ef2ad506309
+old_autosave.eu4 restored SHA256 6956649ca17539d17bd14b8694bb2c0ab8bf0790eaef12ea31a3bfbe9525e2b1
+older_autosave.eu4 restored SHA256 d61ca369a40ae055263ca20156f5bc71b5ed7e7e508188d89c9e99da98a2684a
+Original backups retained. Generated autosaves retained separately.

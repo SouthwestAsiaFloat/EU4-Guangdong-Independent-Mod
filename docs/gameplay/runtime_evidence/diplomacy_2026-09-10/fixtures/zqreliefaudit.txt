@@ -1,0 +1,4 @@
+CZH = {
+ if = { limit = { is_in_war = { attacker_leader = LIT defender_leader = CHC defenders = THIS } NOT = { alliance_with = CHC } } log = "ZQAUDIT relief_joined_defense_no_alliance PASS" } else = { log = "ZQAUDIT relief_joined_defense_no_alliance FAIL" }
+ white_peace = LIT
+}
