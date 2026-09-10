@@ -1,0 +1,95 @@
+namespace = zhx_wangming
+country_event = {
+    id = zhx_wangming.10
+    title = zhx_wm_tribute_title
+    desc = zhx_wm_tribute_desc
+    picture = DIPLOMACY_eventPicture
+    is_triggered_only = yes
+    trigger = { zhx_wm_tribute_valid = yes }
+    immediate = {
+        if = { limit = { ai = yes } zhx_wm_ai_tribute = yes }
+    }
+    option = {
+        name = zhx_wm_pay
+        trigger = { ai = no zhx_wm_tribute_valid = yes zhx_wm_can_pay = yes }
+        hidden_effect = { zhx_wm_pay_tribute = yes }
+        custom_tooltip = zhx_wm_pay_tt
+    }
+    option = {
+        name = zhx_wm_refuse
+        trigger = { ai = no zhx_wm_tribute_valid = yes }
+        hidden_effect = { zhx_wm_refuse_tribute = yes }
+        custom_tooltip = zhx_wm_refuse_tt
+    }
+    option = {
+        name = OK
+        trigger = { OR = { ai = yes NOT = { zhx_wm_tribute_valid = yes } } }
+        hidden_effect = { clr_country_flag = zhx_wm_tribute_pending }
+    }
+}
+country_event = {
+    id = zhx_wangming.20
+    title = zhx_wm_migration_title
+    desc = zhx_wm_migration_desc
+    picture = DIPLOMACY_eventPicture
+    is_triggered_only = yes
+    option = { name = zhx_wm_obey }
+}
+country_event = {
+    id = zhx_wangming.21
+    title = zhx_wm_migration_title
+    desc = zhx_wm_migration_receipt
+    picture = DIPLOMACY_eventPicture
+    is_triggered_only = yes
+    option = { name = OK }
+}
+country_event = {
+    id = zhx_wangming.30
+    title = zhx_wm_levy_title
+    desc = zhx_wm_levy_desc
+    picture = DIPLOMACY_eventPicture
+    is_triggered_only = yes
+    option = { name = zhx_wm_obey }
+}
+country_event = {
+    id = zhx_wangming.31
+    title = zhx_wm_levy_title
+    desc = zhx_wm_levy_receipt
+    picture = DIPLOMACY_eventPicture
+    is_triggered_only = yes
+    option = { name = zhx_wm_obey }
+}
+
+# Registered only on the native monthly pulse, which supplies its own game seed.
+# A GUI-triggered country_event (even delayed) would inherit the fixed GUI seed.
+country_event = {
+    id = zhx_wangming.1
+    hidden = yes
+    is_triggered_only = yes
+    trigger = {
+        zhx_tianzi_has_government = yes
+        has_global_flag = zhx_system_initialised_v13
+        OR = {
+            has_global_flag = zhx_wm_tribute_queued
+            has_global_flag = zhx_wm_migration_queued
+            has_global_flag = zhx_wm_levy_queued
+        }
+    }
+    immediate = {
+        if = {
+            limit = { has_global_flag = zhx_wm_tribute_queued }
+            clr_global_flag = zhx_wm_tribute_queued
+            zhx_wm_issue_tribute = yes
+        }
+        if = {
+            limit = { has_global_flag = zhx_wm_migration_queued }
+            clr_global_flag = zhx_wm_migration_queued
+            zhx_wm_issue_migration = yes
+        }
+        if = {
+            limit = { has_global_flag = zhx_wm_levy_queued }
+            clr_global_flag = zhx_wm_levy_queued
+            zhx_wm_issue_levy = yes
+        }
+    }
+}

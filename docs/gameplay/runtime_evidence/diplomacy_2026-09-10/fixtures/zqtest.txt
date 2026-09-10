@@ -1,0 +1,4 @@
+CZH = { if = { limit = { is_at_war = yes
+ OR = { is_in_war = { attacker_leader = THIS } is_in_war = { defender_leader = THIS } }
+ NOT = { any_war_enemy_country = { zhx_qn_enemy_leader = { host = event_target:zhx_tianzi } any_country = { NOT = { tag = PREV } war_with = event_target:zhx_tianzi zhx_qn_enemy_leader = { host = event_target:zhx_tianzi } } } } } log = "ZQTEST new singlewar TRUE" } else = { log = "ZQTEST new singlewar FALSE" } }
+CHC = { if = { limit = { any_country = { war_with = event_target:zhx_tianzi zhx_qn_enemy_leader = { host = event_target:zhx_tianzi } truce_with = PREV } } log = "ZQTEST new truce TRUE" } else = { log = "ZQTEST new truce FALSE" } }

@@ -1,0 +1,48 @@
+(lldb) target create "/Users/xinanyapiao/Library/Application Support/Steam/steamapps/common/Europa Universalis IV/eu4.app/Contents/MacOS/eu4"
+Current executable set to '/Users/xinanyapiao/Library/Application Support/Steam/steamapps/common/Europa Universalis IV/eu4.app/Contents/MacOS/eu4' (x86_64).
+(lldb) disassemble -n "CEventScope::CEventScope(CCountryTag, int, int)"
+eu4`CEventScope::CEventScope:
+eu4[0x1001a90e0] <+0>:   pushq  %rbp
+eu4[0x1001a90e1] <+1>:   movq   %rsp, %rbp
+eu4[0x1001a90e4] <+4>:   pushq  %rbx
+eu4[0x1001a90e5] <+5>:   pushq  %rax
+eu4[0x1001a90e6] <+6>:   movq   %rdi, %rbx
+eu4[0x1001a90e9] <+9>:   movl   $0x165, 0x8(%rdi)         ; imm = 0x165 
+eu4[0x1001a90f0] <+16>:  leaq   0x1b018d9(%rip), %rax     ; vtable for CEventScope
+eu4[0x1001a90f7] <+23>:  addq   $0x10, %rax
+eu4[0x1001a90fb] <+27>:  movq   %rax, (%rdi)
+eu4[0x1001a90fe] <+30>:  movq   %rdi, 0x10(%rdi)
+eu4[0x1001a9102] <+34>:  movq   %rdi, 0x18(%rdi)
+eu4[0x1001a9106] <+38>:  movq   %rdi, 0x20(%rdi)
+eu4[0x1001a910a] <+42>:  movl   %edx, 0x28(%rdi)
+eu4[0x1001a910d] <+45>:  movq   %rsi, 0x2c(%rdi)
+eu4[0x1001a9111] <+49>:  movl   $0x1, 0x34(%rdi)
+eu4[0x1001a9118] <+56>:  movl   %ecx, 0x38(%rdi)
+eu4[0x1001a911b] <+59>:  addq   $0x3c, %rdi
+eu4[0x1001a911f] <+63>:  callq  0x10186b4e4               ; CCrudeRandom::CCrudeRandom()
+eu4[0x1001a9124] <+68>:  movq   $0x2d2d2d, 0x44(%rbx)     ; imm = 0x2D2D2D 
+eu4[0x1001a912c] <+76>:  xorl   %eax, %eax
+eu4[0x1001a912e] <+78>:  movq   %rax, 0x4c(%rbx)
+eu4[0x1001a9132] <+82>:  movq   %rax, 0x54(%rbx)
+eu4[0x1001a9136] <+86>:  movq   %rax, 0x5c(%rbx)
+eu4[0x1001a913a] <+90>:  movq   %rax, 0x68(%rbx)
+eu4[0x1001a913e] <+94>:  movq   %rax, 0x70(%rbx)
+eu4[0x1001a9142] <+98>:  movq   %rax, 0x78(%rbx)
+eu4[0x1001a9146] <+102>: movq   %rax, 0x80(%rbx)
+eu4[0x1001a914d] <+109>: movq   %rax, 0x88(%rbx)
+eu4[0x1001a9154] <+116>: movq   %rax, 0x90(%rbx)
+eu4[0x1001a915b] <+123>: movq   %rax, 0x98(%rbx)
+eu4[0x1001a9162] <+130>: movq   %rax, 0xa0(%rbx)
+eu4[0x1001a9169] <+137>: movq   %rax, 0xa8(%rbx)
+eu4[0x1001a9170] <+144>: movq   %rax, 0xb0(%rbx)
+eu4[0x1001a9177] <+151>: movq   %rax, 0xb8(%rbx)
+eu4[0x1001a917e] <+158>: movq   %rax, 0xc0(%rbx)
+eu4[0x1001a9185] <+165>: movq   %rax, 0xc8(%rbx)
+eu4[0x1001a918c] <+172>: movl   0x38(%rbx), %eax
+eu4[0x1001a918f] <+175>: movl   %eax, 0x3c(%rbx)
+eu4[0x1001a9192] <+178>: movl   %eax, 0x40(%rbx)
+eu4[0x1001a9195] <+181>: addq   $0x8, %rsp
+eu4[0x1001a9199] <+185>: popq   %rbx
+eu4[0x1001a919a] <+186>: popq   %rbp
+eu4[0x1001a919b] <+187>: retq   
+(lldb) quit

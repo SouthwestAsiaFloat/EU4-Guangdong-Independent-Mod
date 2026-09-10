@@ -1,0 +1,6 @@
+spriteTypes = {
+    spriteType = { name = "GFX_zhx_wm_banner" texturefile = "gfx/interface/zhx_wangming/banner.dds" }
+    spriteType = { name = "GFX_zhx_wm_tribute" texturefile = "gfx/interface/zhx_wangming/tribute.dds" noOfFrames = 2 }
+    spriteType = { name = "GFX_zhx_wm_migration" texturefile = "gfx/interface/zhx_wangming/migration.dds" noOfFrames = 2 }
+    spriteType = { name = "GFX_zhx_wm_levy" texturefile = "gfx/interface/zhx_wangming/levy.dds" noOfFrames = 2 }
+}

@@ -1,0 +1,1 @@
+if = { limit = { CZH = { is_at_war = no } NOT = { has_global_flag = zhx_qn_active } CHC = { NOT = { has_country_flag = zhx_qn_sent } is_variable_equal = { which = zhx_merit value = 10 } } } log = "ZQAUDIT full_war_cleanup PASS" } else = { log = "ZQAUDIT full_war_cleanup FAIL" }

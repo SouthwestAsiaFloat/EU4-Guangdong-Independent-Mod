@@ -1,7 +1,7 @@
 # ROOT = petitioner; FROM = Tianzi. Immediate submission allows snapshotting
 # merit at SEND time. The separately delivered .10 event provides consent.
 zhx_feudatory_petition = {
-    category = influence
+    category = is_emperor_of_china
     require_acceptance = no
     is_visible = {
         zhx_feudatory_is_eligible = yes

@@ -288,6 +288,7 @@ country_event = {
         if = {
             limit = { has_global_flag = zhx_system_initialised_v13 }
             zhx_yearly_merit_tick = yes
+            zhx_wm_yearly_ai = yes
         }
         if = {
             limit = { has_global_flag = zhx_system_initialised_v8 }

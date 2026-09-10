@@ -1,0 +1,1 @@
+LIT = { declare_war_with_cb = { who = CHC casus_belli = cb_insult } }

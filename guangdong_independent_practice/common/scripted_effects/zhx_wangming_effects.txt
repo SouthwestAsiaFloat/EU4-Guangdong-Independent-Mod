@@ -1,0 +1,355 @@
+# Called ONLY by the existing 25-year rollover. Global usage survives authority changes.
+zhx_wm_new_term = {
+    clr_global_flag = zhx_wm_tribute_used
+    clr_global_flag = zhx_wm_tribute_queued
+    clr_global_flag = zhx_wm_migration_used
+    clr_global_flag = zhx_wm_migration_queued
+    clr_global_flag = zhx_wm_levy_used
+    clr_global_flag = zhx_wm_levy_queued
+}
+zhx_wm_issue_tribute = {
+    if = {
+        limit = { zhx_wm_can_tribute = yes }
+        set_global_flag = zhx_wm_tribute_used
+        save_event_target_as = zhx_wm_sender
+        every_country = {
+            limit = { zhx_wm_member = yes }
+            export_to_variable = { which = zhx_wm_tribute_due value = monthly_income }
+            if = {
+                limit = { NOT = { check_variable = { which = zhx_wm_tribute_due value = 0 } } }
+                set_variable = { which = zhx_wm_tribute_due value = 0 }
+            }
+            set_country_flag = zhx_wm_tribute_pending
+            country_event = { id = zhx_wangming.10 }
+        }
+    }
+}
+zhx_wm_refuse_tribute = {
+    if = {
+        limit = { zhx_wm_tribute_valid = yes }
+        add_country_modifier = { name = zhx_wm_refused_tribute duration = 1825 }
+        event_target:zhx_wm_sender = {
+            add_opinion = { who = PREV modifier = zhx_wm_refused_tribute_opinion }
+        }
+    }
+    clr_country_flag = zhx_wm_tribute_pending
+}
+zhx_wm_pay_tribute = {
+    if = {
+        limit = { zhx_wm_tribute_valid = yes }
+        if = {
+            limit = { zhx_wm_can_pay = yes }
+            zhx_wm_transfer_tribute = yes
+            clr_country_flag = zhx_wm_tribute_pending
+        }
+        else = { zhx_wm_refuse_tribute = yes }
+    }
+    else = { clr_country_flag = zhx_wm_tribute_pending }
+}
+# AI uses a literal probability; unlike weighted event options this preserves 20/60/90%.
+zhx_wm_ai_tribute = {
+    if = {
+        limit = {
+            zhx_wm_tribute_valid = yes
+            zhx_wm_can_pay = yes
+            NOT = { is_rival = event_target:zhx_wm_sender }
+            NOT = { event_target:zhx_wm_sender = { is_rival = PREV } }
+        }
+        if = {
+            limit = { has_opinion = { who = event_target:zhx_wm_sender value = 100 } }
+            if = {
+                limit = { num_of_loans = 1 }
+                random_list = {
+                    45 = { zhx_wm_pay_tribute = yes }
+                    55 = { zhx_wm_refuse_tribute = yes }
+                }
+            }
+            else_if = {
+                limit = { always = yes }
+                random_list = {
+                    90 = { zhx_wm_pay_tribute = yes }
+                    10 = { zhx_wm_refuse_tribute = yes }
+                }
+            }
+        }
+        else_if = {
+            limit = { has_opinion = { who = event_target:zhx_wm_sender value = 0 } }
+            if = {
+                limit = { num_of_loans = 1 }
+                random_list = {
+                    30 = { zhx_wm_pay_tribute = yes }
+                    70 = { zhx_wm_refuse_tribute = yes }
+                }
+            }
+            else_if = {
+                limit = { always = yes }
+                random_list = {
+                    60 = { zhx_wm_pay_tribute = yes }
+                    40 = { zhx_wm_refuse_tribute = yes }
+                }
+            }
+        }
+        else_if = {
+            limit = { always = yes }
+            if = {
+                limit = { num_of_loans = 1 }
+                random_list = {
+                    10 = { zhx_wm_pay_tribute = yes }
+                    90 = { zhx_wm_refuse_tribute = yes }
+                }
+            }
+            else_if = {
+                limit = { always = yes }
+                random_list = {
+                    20 = { zhx_wm_pay_tribute = yes }
+                    80 = { zhx_wm_refuse_tribute = yes }
+                }
+            }
+        }
+    }
+    else = { zhx_wm_refuse_tribute = yes }
+}
+# Execute in the selected donor. Literal bounded repeat count prevents scope/count drift.
+zhx_wm_move_points = {
+    set_variable = { which = zhx_wm_points_remaining value = $amount$ }
+    while = {
+        limit = { check_variable = { which = zhx_wm_points_remaining value = 1 } }
+        random_owned_province = {
+            limit = { is_city = yes base_tax = 2 }
+            add_base_tax = -1
+        }
+        subtract_variable = { which = zhx_wm_points_remaining value = 1 }
+    }
+    event_target:zhx_wm_sender = {
+        distribute_development = { type = tax amount = $amount$ limit = "is_in_capital_area = yes is_city = yes" }
+    }
+    set_variable = { which = zhx_wm_points_remaining value = $amount$ }
+    while = {
+        limit = { check_variable = { which = zhx_wm_points_remaining value = 1 } }
+        random_owned_province = {
+            limit = { is_city = yes base_production = 2 }
+            add_base_production = -1
+        }
+        subtract_variable = { which = zhx_wm_points_remaining value = 1 }
+    }
+    event_target:zhx_wm_sender = {
+        distribute_development = { type = production amount = $amount$ limit = "is_in_capital_area = yes is_city = yes" }
+    }
+    set_variable = { which = zhx_wm_points_remaining value = $amount$ }
+    while = {
+        limit = { check_variable = { which = zhx_wm_points_remaining value = 1 } }
+        random_owned_province = {
+            limit = { is_city = yes base_manpower = 2 }
+            add_base_manpower = -1
+        }
+        subtract_variable = { which = zhx_wm_points_remaining value = 1 }
+    }
+    event_target:zhx_wm_sender = {
+        distribute_development = { type = manpower amount = $amount$ limit = "is_in_capital_area = yes is_city = yes" }
+    }
+    add_opinion = { who = event_target:zhx_wm_sender modifier = $opinion$ }
+}
+zhx_wm_issue_migration = {
+    if = {
+        limit = { zhx_wm_can_migrate = yes }
+        save_event_target_as = zhx_wm_sender
+        random_country = {
+            limit = { zhx_wm_migration_target = yes }
+            save_event_target_as = zhx_wm_donor
+            # Lock globally only after a valid donor was obtained.
+            set_global_flag = zhx_wm_migration_used
+            if = {
+                limit = { total_development = 300 }
+                set_variable = { which = zhx_wm_moved value = 12 }
+                zhx_wm_move_points = { amount = 4 opinion = zhx_wm_migration_4 }
+            }
+            else_if = {
+                limit = { total_development = 200 }
+                set_variable = { which = zhx_wm_moved value = 9 }
+                zhx_wm_move_points = { amount = 3 opinion = zhx_wm_migration_3 }
+            }
+            else_if = {
+                limit = { total_development = 100 }
+                set_variable = { which = zhx_wm_moved value = 6 }
+                zhx_wm_move_points = { amount = 2 opinion = zhx_wm_migration_2 }
+            }
+            else_if = {
+                limit = { total_development = 30 }
+                set_variable = { which = zhx_wm_moved value = 3 }
+                zhx_wm_move_points = { amount = 1 opinion = zhx_wm_migration_1 }
+            }
+            log = "[ZHX_WM] migration donor=[This.GetName] receiver=[zhx_wm_sender.GetName] development=[This.zhx_wm_moved.GetValue]"
+            country_event = { id = zhx_wangming.20 }
+        }
+        country_event = { id = zhx_wangming.21 }
+    }
+}
+zhx_wm_yearly_ai = {
+    if = {
+        limit = { ai = yes zhx_tianzi_has_government = yes }
+        zhx_wm_issue_tribute = yes
+        zhx_wm_issue_migration = yes
+        if = { limit = { NOT = { manpower_percentage = 0.5 } } zhx_wm_issue_levy = yes }
+    }
+}
+
+# Country manpower variables and add_manpower use thousands of men.
+# Snapshot ordinary national replenishment capacity, before reinforcement expenses.
+zhx_wm_calculate_levy = {
+    export_to_variable = { which = zhx_wm_monthly_mp value = max_manpower }
+    export_to_variable = { which = zhx_wm_recovery value = modifier:manpower_recovery_speed }
+    if = {
+        limit = { NOT = { check_variable = { which = zhx_wm_recovery value = -0.99 } } }
+        set_variable = { which = zhx_wm_recovery value = -0.99 }
+    }
+    change_variable = { which = zhx_wm_recovery value = 1 }
+    multiply_variable = { which = zhx_wm_monthly_mp which = zhx_wm_recovery }
+    divide_variable = { which = zhx_wm_monthly_mp value = 120 }
+    if = {
+        limit = { NOT = { check_variable = { which = zhx_wm_monthly_mp value = 0.1 } } }
+        set_variable = { which = zhx_wm_monthly_mp value = 0.1 }
+    }
+    set_variable = { which = zhx_wm_levy_amount which = zhx_wm_monthly_mp }
+    multiply_variable = { which = zhx_wm_levy_amount value = 24 }
+    set_variable = { which = zhx_wm_levy_people which = zhx_wm_levy_amount }
+    multiply_variable = { which = zhx_wm_levy_people value = 1000 }
+}
+# Literal denomination adapter: add_manpower cannot accept a variable.
+# At most 10 iterations per decimal place below the largest denomination.
+# Native SetManpower clamps at zero, without restricting the recipient to donor stock.
+zhx_wm_apply_levy = {
+    set_variable = { which = zhx_wm_levy_remaining which = zhx_wm_levy_amount }
+    while = {
+        limit = { check_variable = { which = zhx_wm_levy_remaining value = 1000 } }
+        add_manpower = -1000
+        event_target:zhx_wm_sender = { add_manpower = 1000 }
+        subtract_variable = { which = zhx_wm_levy_remaining value = 1000 }
+    }
+    while = {
+        limit = { check_variable = { which = zhx_wm_levy_remaining value = 100 } }
+        add_manpower = -100
+        event_target:zhx_wm_sender = { add_manpower = 100 }
+        subtract_variable = { which = zhx_wm_levy_remaining value = 100 }
+    }
+    while = {
+        limit = { check_variable = { which = zhx_wm_levy_remaining value = 10 } }
+        add_manpower = -10
+        event_target:zhx_wm_sender = { add_manpower = 10 }
+        subtract_variable = { which = zhx_wm_levy_remaining value = 10 }
+    }
+    while = {
+        limit = { check_variable = { which = zhx_wm_levy_remaining value = 1 } }
+        add_manpower = -1
+        event_target:zhx_wm_sender = { add_manpower = 1 }
+        subtract_variable = { which = zhx_wm_levy_remaining value = 1 }
+    }
+    while = {
+        limit = { check_variable = { which = zhx_wm_levy_remaining value = 0.1 } }
+        add_manpower = -0.1
+        event_target:zhx_wm_sender = { add_manpower = 0.1 }
+        subtract_variable = { which = zhx_wm_levy_remaining value = 0.1 }
+    }
+    while = {
+        limit = { check_variable = { which = zhx_wm_levy_remaining value = 0.01 } }
+        add_manpower = -0.01
+        event_target:zhx_wm_sender = { add_manpower = 0.01 }
+        subtract_variable = { which = zhx_wm_levy_remaining value = 0.01 }
+    }
+    while = {
+        limit = { check_variable = { which = zhx_wm_levy_remaining value = 0.001 } }
+        add_manpower = -0.001
+        event_target:zhx_wm_sender = { add_manpower = 0.001 }
+        subtract_variable = { which = zhx_wm_levy_remaining value = 0.001 }
+    }
+}
+zhx_wm_issue_levy = {
+    if = {
+        limit = { zhx_wm_can_levy = yes }
+        save_event_target_as = zhx_wm_sender
+        random_country = {
+            limit = { zhx_wm_member = yes }
+            save_event_target_as = zhx_wm_donor
+            set_global_flag = zhx_wm_levy_used
+            zhx_wm_calculate_levy = yes
+            zhx_wm_apply_levy = yes
+            add_opinion = { who = event_target:zhx_wm_sender modifier = zhx_wm_levied_troops }
+            log = "[ZHX_WM] levy donor=[This.GetName] receiver=[zhx_wm_sender.GetName] people=[This.zhx_wm_levy_people.GetValue]"
+            country_event = { id = zhx_wangming.30 }
+        }
+        country_event = { id = zhx_wangming.31 }
+    }
+}
+
+# Preserve the billed snapshot and transfer exactly, including fractional ducats.
+zhx_wm_transfer_tribute = {
+    set_variable = { which = zhx_wm_money_remaining which = zhx_wm_tribute_due }
+    while = {
+        limit = { check_variable = { which = zhx_wm_money_remaining value = 1000 } }
+        add_treasury = -1000
+        event_target:zhx_wm_sender = { add_treasury = 1000 }
+        subtract_variable = { which = zhx_wm_money_remaining value = 1000 }
+    }
+    while = {
+        limit = { check_variable = { which = zhx_wm_money_remaining value = 100 } }
+        add_treasury = -100
+        event_target:zhx_wm_sender = { add_treasury = 100 }
+        subtract_variable = { which = zhx_wm_money_remaining value = 100 }
+    }
+    while = {
+        limit = { check_variable = { which = zhx_wm_money_remaining value = 10 } }
+        add_treasury = -10
+        event_target:zhx_wm_sender = { add_treasury = 10 }
+        subtract_variable = { which = zhx_wm_money_remaining value = 10 }
+    }
+    while = {
+        limit = { check_variable = { which = zhx_wm_money_remaining value = 1 } }
+        add_treasury = -1
+        event_target:zhx_wm_sender = { add_treasury = 1 }
+        subtract_variable = { which = zhx_wm_money_remaining value = 1 }
+    }
+    while = {
+        limit = { check_variable = { which = zhx_wm_money_remaining value = 0.1 } }
+        add_treasury = -0.1
+        event_target:zhx_wm_sender = { add_treasury = 0.1 }
+        subtract_variable = { which = zhx_wm_money_remaining value = 0.1 }
+    }
+    while = {
+        limit = { check_variable = { which = zhx_wm_money_remaining value = 0.01 } }
+        add_treasury = -0.01
+        event_target:zhx_wm_sender = { add_treasury = 0.01 }
+        subtract_variable = { which = zhx_wm_money_remaining value = 0.01 }
+    }
+    while = {
+        limit = { check_variable = { which = zhx_wm_money_remaining value = 0.001 } }
+        add_treasury = -0.001
+        event_target:zhx_wm_sender = { add_treasury = 0.001 }
+        subtract_variable = { which = zhx_wm_money_remaining value = 0.001 }
+    }
+}
+
+# The GUI's event scope has a fixed zero seed on macOS 1.37.5.
+# Queue only; never invoke the random effect (or a chained event) from the GUI.
+zhx_wm_queue_tribute = {
+    if = {
+        limit = { zhx_wm_can_tribute = yes }
+        set_global_flag = zhx_wm_tribute_queued
+    }
+}
+
+# The GUI's event scope has a fixed zero seed on macOS 1.37.5.
+# Queue only; never invoke the random effect (or a chained event) from the GUI.
+zhx_wm_queue_migration = {
+    if = {
+        limit = { zhx_wm_can_migrate = yes }
+        set_global_flag = zhx_wm_migration_queued
+    }
+}
+
+# The GUI's event scope has a fixed zero seed on macOS 1.37.5.
+# Queue only; never invoke the random effect (or a chained event) from the GUI.
+zhx_wm_queue_levy = {
+    if = {
+        limit = { zhx_wm_can_levy = yes }
+        set_global_flag = zhx_wm_levy_queued
+    }
+}

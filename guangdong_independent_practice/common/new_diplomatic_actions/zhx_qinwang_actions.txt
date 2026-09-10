@@ -1,0 +1,80 @@
+# ROOT = Tianzi, FROM = recipient. Immediate submission captures the campaign
+# BEFORE player consent (event .10); the native action itself is the invitation.
+# Live customizable localization presents the score directly on this row.
+# Keep immediate dispatch: enabling native consent would lose send-time snapshots.
+zhx_invite_qinwang = {
+    category = is_emperor_of_china
+    require_acceptance = no
+    is_visible = {
+        has_global_flag = zhx_system_initialised_v14
+        zhx_is_tianzi = yes
+        is_subject = no
+        FROM = { is_subject = no zhx_is_tianxia_member = yes NOT = { zhx_is_tianzi = yes } }
+    }
+    is_allowed = {
+        # Show only unmet hard requirements; live score breakdown is in _tooltip.
+        if = {
+            limit = { NOT = { zhx_qn_single_war = yes } }
+            custom_trigger_tooltip = { tooltip = zhx_qn_single_war_tt zhx_qn_single_war = yes }
+        }
+        if = {
+            limit = { NOT = { FROM = { is_at_war = no is_subject = no } } }
+            custom_trigger_tooltip = { tooltip = zhx_qn_peace_tt FROM = { is_at_war = no is_subject = no } }
+        }
+        if = {
+            limit = { NOT = { FROM = { owes_favors = { who = ROOT value = 25 } } } }
+            custom_trigger_tooltip = { tooltip = zhx_qn_favors_tt FROM = { owes_favors = { who = ROOT value = 25 } } }
+        }
+        if = {
+            limit = { NOT = { FROM = { NOT = { has_country_flag = zhx_qn_sent } NOT = { has_country_flag = zhx_qn_pending } NOT = { has_country_flag = zhx_qn_joining } } } }
+            custom_trigger_tooltip = { tooltip = zhx_qn_once_tt FROM = { NOT = { has_country_flag = zhx_qn_sent } NOT = { has_country_flag = zhx_qn_pending } NOT = { has_country_flag = zhx_qn_joining } } }
+        }
+        if = {
+            limit = { NOT = { OR = { NOT = { has_global_flag = zhx_qn_active } zhx_qn_original_war = yes } } }
+            custom_trigger_tooltip = { tooltip = zhx_qn_campaign_tt OR = { NOT = { has_global_flag = zhx_qn_active } zhx_qn_original_war = yes } }
+        }
+        if = {
+            limit = { NOT = { FROM = { OR = { ai = no zhx_qn_ai_positive = yes } } } }
+            custom_trigger_tooltip = { tooltip = zhx_qn_positive_tt FROM = { OR = { ai = no zhx_qn_ai_positive = yes } } }
+        }
+    }
+    on_accept = {
+        custom_tooltip = zhx_qn_sent_tt
+        hidden_effect = { if = { limit = { zhx_is_tianzi = yes } FROM = { zhx_qn_dispatch = yes } } }
+    }
+    on_decline = { }
+    ai_will_do = { always = no }
+}
+# Hidden legacy definition retained as a native arithmetic regression reference.
+# Never show a second score row to the player.
+zhx_qinwang_willingness = {
+    category = is_emperor_of_china
+    require_acceptance = yes
+    is_visible = { always = no }
+    is_allowed = { custom_trigger_tooltip = { tooltip = zhx_qn_assessment_tt always = no } }
+    on_accept = { }
+    on_decline = { }
+    ai_will_do = { always = no }
+    ai_acceptance = {
+    add_entry = { name = zhx_qn_reason_base  export_to_variable = { variable_name = ai_value value = trigger_value:num_of_cities } set_variable = { which = ai_value value = -20 } }
+    add_entry = { name = zhx_qn_reason_defensive limit = { FROM = { zhx_qn_score_defensive = yes } } export_to_variable = { variable_name = ai_value value = trigger_value:num_of_cities } set_variable = { which = ai_value value = 30 } }
+    add_entry = { name = zhx_qn_reason_manpower_low limit = { FROM = { zhx_qn_score_manpower_low = yes } } export_to_variable = { variable_name = ai_value value = trigger_value:num_of_cities } set_variable = { which = ai_value value = -30 } }
+    add_entry = { name = zhx_qn_reason_manpower_mid limit = { FROM = { zhx_qn_score_manpower_mid = yes } } export_to_variable = { variable_name = ai_value value = trigger_value:num_of_cities } set_variable = { which = ai_value value = -15 } }
+    add_entry = { name = zhx_qn_reason_loans_low limit = { FROM = { zhx_qn_score_loans_low = yes } } export_to_variable = { variable_name = ai_value value = trigger_value:num_of_cities } set_variable = { which = ai_value value = -10 } }
+    add_entry = { name = zhx_qn_reason_loans_high limit = { FROM = { zhx_qn_score_loans_high = yes } } export_to_variable = { variable_name = ai_value value = trigger_value:num_of_cities } set_variable = { which = ai_value value = -30 } }
+    add_entry = { name = zhx_qn_reason_war_burden limit = { FROM = { zhx_qn_score_war_burden = yes } } export_to_variable = { variable_name = ai_value value = trigger_value:num_of_cities } set_variable = { which = ai_value value = -1000 } }
+    add_entry = { name = zhx_qn_reason_truce limit = { FROM = { zhx_qn_score_truce = yes } } export_to_variable = { variable_name = ai_value value = trigger_value:num_of_cities } set_variable = { which = ai_value value = -1000 } }
+    add_entry = { name = zhx_qn_reason_alliance limit = { FROM = { zhx_qn_score_alliance = yes } } export_to_variable = { variable_name = ai_value value = trigger_value:num_of_cities } set_variable = { which = ai_value value = -1000 } }
+    add_entry = {
+        name = zhx_qn_reason_opinion
+        export_to_variable = { variable_name = ai_value value = opinion who = FROM with = event_target:zhx_tianzi }
+        divide_variable = { which = ai_value value = 5 }
+    }
+    add_entry = {
+        name = zhx_qn_reason_trust
+        export_to_variable = { variable_name = ai_value value = trust who = FROM with = event_target:zhx_tianzi }
+        subtract_variable = { which = ai_value value = 50 }
+        divide_variable = { which = ai_value value = 2 }
+    }
+    }
+}

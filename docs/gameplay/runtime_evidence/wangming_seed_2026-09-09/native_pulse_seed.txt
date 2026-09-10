@@ -1,0 +1,1011 @@
+(lldb) target create "/Users/xinanyapiao/Library/Application Support/Steam/steamapps/common/Europa Universalis IV/eu4.app/Contents/MacOS/eu4"
+Current executable set to '/Users/xinanyapiao/Library/Application Support/Steam/steamapps/common/Europa Universalis IV/eu4.app/Contents/MacOS/eu4' (x86_64).
+(lldb) disassemble -n "CCountry::UpdateEventPulses(int*)"
+eu4`CCountry::UpdateEventPulses:
+eu4[0x1002389c6] <+0>:    pushq  %rbp
+eu4[0x1002389c7] <+1>:    movq   %rsp, %rbp
+eu4[0x1002389ca] <+4>:    pushq  %r15
+eu4[0x1002389cc] <+6>:    pushq  %r14
+eu4[0x1002389ce] <+8>:    pushq  %r13
+eu4[0x1002389d0] <+10>:   pushq  %r12
+eu4[0x1002389d2] <+12>:   pushq  %rbx
+eu4[0x1002389d3] <+13>:   subq   $0x528, %rsp              ; imm = 0x528 
+eu4[0x1002389da] <+20>:   movq   %rsi, -0x68(%rbp)
+eu4[0x1002389de] <+24>:   movq   %rdi, %rbx
+eu4[0x1002389e1] <+27>:   movl   $0x0, 0x8da4(%rdi)
+eu4[0x1002389eb] <+37>:   leaq   -0x538(%rbp), %rax
+eu4[0x1002389f2] <+44>:   movq   $0x0, -0x8(%rax)
+eu4[0x1002389fa] <+52>:   movq   0x1a1d717(%rip), %rcx     ; (void *)0x0000000101c7e2a0: vtable for CPdxHybridArray<COnActionList const*, 128u, int>
+eu4[0x100238a01] <+59>:   addq   $0x10, %rcx
+eu4[0x100238a05] <+63>:   movq   %rcx, -0x40(%rbp)
+eu4[0x100238a09] <+67>:   movq   %rcx, -0x18(%rax)
+eu4[0x100238a0d] <+71>:   movq   %rax, -0x10(%rax)
+eu4[0x100238a11] <+75>:   movl   $0x80, -0x8(%rax)
+eu4[0x100238a18] <+82>:   cmpl   $0x0, 0x12d4(%rdi)
+eu4[0x100238a1f] <+89>:   movq   %rdi, -0x38(%rbp)
+eu4[0x100238a23] <+93>:   jne    0x100238a2b               ; <+101>
+eu4[0x100238a25] <+95>:   cmpb   $0x7, 0x22(%rbx)
+eu4[0x100238a29] <+99>:   jne    0x100238a54               ; <+142>
+eu4[0x100238a2b] <+101>:  movq   0x1c(%rbx), %r15
+eu4[0x100238a2f] <+105>:  movq   %r15, %rax
+eu4[0x100238a32] <+108>:  shrq   $0x38, %rax
+eu4[0x100238a36] <+112>:  je     0x100238a54               ; <+142>
+eu4[0x100238a38] <+114>:  leaq   0x2019781(%rip), %rax     ; CCurrentGameState::_pInstance
+eu4[0x100238a3f] <+121>:  movq   (%rax), %rax
+eu4[0x100238a42] <+124>:  testq  %rax, %rax
+eu4[0x100238a45] <+127>:  je     0x100238a54               ; <+142>
+eu4[0x100238a47] <+129>:  cmpb   $0x0, 0x7313(%rax)
+eu4[0x100238a4e] <+136>:  je     0x100238c1d               ; <+599>
+eu4[0x100238a54] <+142>:  callq  0x100818476               ; COnActionDataBase::AccessInstance()
+eu4[0x100238a59] <+147>:  movq   %rax, -0x60(%rbp)
+eu4[0x100238a5d] <+151>:  movslq 0x8da4(%rbx), %rax
+eu4[0x100238a64] <+158>:  movq   %rax, -0x48(%rbp)
+eu4[0x100238a68] <+162>:  testq  %rax, %rax
+eu4[0x100238a6b] <+165>:  je     0x100238bce               ; <+520>
+eu4[0x100238a71] <+171>:  movq   -0x38(%rbp), %rax
+eu4[0x100238a75] <+175>:  movq   0x8d98(%rax), %rcx
+eu4[0x100238a7c] <+182>:  movq   %rcx, -0x58(%rbp)
+eu4[0x100238a80] <+186>:  addq   $0x8da8, %rax             ; imm = 0x8DA8 
+eu4[0x100238a86] <+192>:  movq   %rax, -0x50(%rbp)
+eu4[0x100238a8a] <+196>:  shlq   $0x3, -0x48(%rbp)
+eu4[0x100238a8f] <+201>:  xorl   %r13d, %r13d
+eu4[0x100238a92] <+204>:  leaq   -0x138(%rbp), %r14
+eu4[0x100238a99] <+211>:  leaq   0x1a71f30(%rip), %rbx     ; vtable for CEventScope
+eu4[0x100238aa0] <+218>:  addq   $0x10, %rbx
+eu4[0x100238aa4] <+222>:  movq   -0x38(%rbp), %r15
+eu4[0x100238aa8] <+226>:  movq   -0x58(%rbp), %rax
+eu4[0x100238aac] <+230>:  movq   (%rax,%r13), %r12
+eu4[0x100238ab0] <+234>:  movswl 0x20(%r15), %eax
+eu4[0x100238ab5] <+239>:  movl   %eax, %ecx
+eu4[0x100238ab7] <+241>:  addl   $0xcdae, %ecx             ; imm = 0xCDAE 
+eu4[0x100238abd] <+247>:  movslq %ecx, %rcx
+eu4[0x100238ac0] <+250>:  imulq  $0x10624dd3, %rcx, %rcx   ; imm = 0x10624DD3 
+eu4[0x100238ac7] <+257>:  movq   %rcx, %rdx
+eu4[0x100238aca] <+260>:  shrq   $0x3f, %rdx
+eu4[0x100238ace] <+264>:  sarq   $0x26, %rcx
+eu4[0x100238ad2] <+268>:  addl   %edx, %ecx
+eu4[0x100238ad4] <+270>:  imull  $0x3e8, %ecx, %ecx        ; imm = 0x3E8 
+eu4[0x100238ada] <+276>:  negl   %ecx
+eu4[0x100238adc] <+278>:  leal   0xcdae(%rax,%rcx), %eax
+eu4[0x100238ae3] <+285>:  cltq   
+eu4[0x100238ae5] <+287>:  movq   -0x68(%rbp), %rcx
+eu4[0x100238ae9] <+291>:  movl   (%rcx,%rax,4), %ecx
+eu4[0x100238aec] <+294>:  movl   $0x2d2d2d, %esi           ; imm = 0x2D2D2D 
+eu4[0x100238af1] <+299>:  movq   %r14, %rdi
+eu4[0x100238af4] <+302>:  xorl   %edx, %edx
+eu4[0x100238af6] <+304>:  callq  0x1001a90e0               ; CEventScope::CEventScope(CCountryTag, int, int)
+eu4[0x100238afb] <+309>:  movq   0x1c(%r15), %rsi
+eu4[0x100238aff] <+313>:  movq   %r14, %rdi
+eu4[0x100238b02] <+316>:  callq  0x100601be2               ; CEventScope::SetCountryTag(CCountryTag)
+eu4[0x100238b07] <+321>:  leaq   -0xfc(%rbp), %rdi
+eu4[0x100238b0e] <+328>:  callq  0x10186b562               ; CCrudeRandom::GetInteger()
+eu4[0x100238b13] <+333>:  movq   -0x60(%rbp), %rdi
+eu4[0x100238b17] <+337>:  movq   %r12, %rsi
+eu4[0x100238b1a] <+340>:  movq   %r14, %rdx
+eu4[0x100238b1d] <+343>:  movq   -0x50(%rbp), %rcx
+eu4[0x100238b21] <+347>:  movl   %eax, %r8d
+eu4[0x100238b24] <+350>:  callq  0x100818b4a               ; COnActionDataBase::FindEventsToFire(COnActionList const*, CEventScope&, CPdxArray<CEvent const*, int>&, int)
+eu4[0x100238b29] <+355>:  movq   %rbx, -0x138(%rbp)
+eu4[0x100238b30] <+362>:  movq   -0x78(%rbp), %rdi
+eu4[0x100238b34] <+366>:  movq   $0x0, -0x78(%rbp)
+eu4[0x100238b3c] <+374>:  testq  %rdi, %rdi
+eu4[0x100238b3f] <+377>:  je     0x100238b46               ; <+384>
+eu4[0x100238b41] <+379>:  callq  0x10034a808               ; std::__1::default_delete<CEventScope>::operator()(CEventScope*) const
+eu4[0x100238b46] <+384>:  movq   -0x80(%rbp), %rdi
+eu4[0x100238b4a] <+388>:  movq   $0x0, -0x80(%rbp)
+eu4[0x100238b52] <+396>:  testq  %rdi, %rdi
+eu4[0x100238b55] <+399>:  je     0x100238b5c               ; <+406>
+eu4[0x100238b57] <+401>:  callq  0x10034a808               ; std::__1::default_delete<CEventScope>::operator()(CEventScope*) const
+eu4[0x100238b5c] <+406>:  movq   -0x88(%rbp), %rdi
+eu4[0x100238b63] <+413>:  movq   $0x0, -0x88(%rbp)
+eu4[0x100238b6e] <+424>:  testq  %rdi, %rdi
+eu4[0x100238b71] <+427>:  je     0x100238b78               ; <+434>
+eu4[0x100238b73] <+429>:  callq  0x10034a808               ; std::__1::default_delete<CEventScope>::operator()(CEventScope*) const
+eu4[0x100238b78] <+434>:  movq   -0xa0(%rbp), %rdi
+eu4[0x100238b7f] <+441>:  testq  %rdi, %rdi
+eu4[0x100238b82] <+444>:  je     0x100238b90               ; <+458>
+eu4[0x100238b84] <+446>:  movq   %rdi, -0x98(%rbp)
+eu4[0x100238b8b] <+453>:  callq  0x1018cc85a               ; symbol stub for: operator delete(void*)
+eu4[0x100238b90] <+458>:  movq   -0xb8(%rbp), %rdi
+eu4[0x100238b97] <+465>:  testq  %rdi, %rdi
+eu4[0x100238b9a] <+468>:  je     0x100238ba8               ; <+482>
+eu4[0x100238b9c] <+470>:  movq   %rdi, -0xb0(%rbp)
+eu4[0x100238ba3] <+477>:  callq  0x1018cc85a               ; symbol stub for: operator delete(void*)
+eu4[0x100238ba8] <+482>:  movq   -0xd0(%rbp), %rdi
+eu4[0x100238baf] <+489>:  testq  %rdi, %rdi
+eu4[0x100238bb2] <+492>:  je     0x100238bc0               ; <+506>
+eu4[0x100238bb4] <+494>:  movq   %rdi, -0xc8(%rbp)
+eu4[0x100238bbb] <+501>:  callq  0x1018cc85a               ; symbol stub for: operator delete(void*)
+eu4[0x100238bc0] <+506>:  addq   $0x8, %r13
+eu4[0x100238bc4] <+510>:  cmpq   %r13, -0x48(%rbp)
+eu4[0x100238bc8] <+514>:  jne    0x100238aa8               ; <+226>
+eu4[0x100238bce] <+520>:  movq   -0x40(%rbp), %rax
+eu4[0x100238bd2] <+524>:  movq   %rax, -0x550(%rbp)
+eu4[0x100238bd9] <+531>:  movl   $0x0, -0x53c(%rbp)
+eu4[0x100238be3] <+541>:  movq   -0x548(%rbp), %rdi
+eu4[0x100238bea] <+548>:  leaq   -0x538(%rbp), %rax
+eu4[0x100238bf1] <+555>:  cmpq   %rax, %rdi
+eu4[0x100238bf4] <+558>:  je     0x100238c0b               ; <+581>
+eu4[0x100238bf6] <+560>:  testq  %rdi, %rdi
+eu4[0x100238bf9] <+563>:  je     0x100238c0b               ; <+581>
+eu4[0x100238bfb] <+565>:  callq  0x1018cc854               ; symbol stub for: operator delete[](void*)
+eu4[0x100238c00] <+570>:  movq   $0x0, -0x548(%rbp)
+eu4[0x100238c0b] <+581>:  addq   $0x528, %rsp              ; imm = 0x528 
+eu4[0x100238c12] <+588>:  popq   %rbx
+eu4[0x100238c13] <+589>:  popq   %r12
+eu4[0x100238c15] <+591>:  popq   %r13
+eu4[0x100238c17] <+593>:  popq   %r14
+eu4[0x100238c19] <+595>:  popq   %r15
+eu4[0x100238c1b] <+597>:  popq   %rbp
+eu4[0x100238c1c] <+598>:  retq   
+eu4[0x100238c1d] <+599>:  cmpb   $0x0, 0x7314(%rax)
+eu4[0x100238c24] <+606>:  je     0x100238a54               ; <+142>
+eu4[0x100238c2a] <+612>:  movl   0x1d18(%rax), %eax
+eu4[0x100238c30] <+618>:  leaq   -0x30(%rbp), %rdi
+eu4[0x100238c34] <+622>:  movl   %eax, (%rdi)
+eu4[0x100238c36] <+624>:  callq  0x1013f9c3a               ; CGregorianDate::GetMonthOfYear() const
+eu4[0x100238c3b] <+629>:  movl   %eax, %ebx
+eu4[0x100238c3d] <+631>:  callq  0x100818476               ; COnActionDataBase::AccessInstance()
+eu4[0x100238c42] <+636>:  movq   %rax, %r13
+eu4[0x100238c45] <+639>:  movq   -0x38(%rbp), %rax
+eu4[0x100238c49] <+643>:  leaq   0x8d90(%rax), %r14
+eu4[0x100238c50] <+650>:  shrq   $0x10, %r15
+eu4[0x100238c54] <+654>:  sarl   $0x10, %r15d
+eu4[0x100238c58] <+658>:  movslq %ebx, %rcx
+eu4[0x100238c5b] <+661>:  movq   0x1a2079e(%rip), %rsi     ; (void *)0x0000000101a2a3e0: CGregorianDate::GetMonthSize(int) const::DayOfMonthTable
+eu4[0x100238c62] <+668>:  movl   %r15d, %eax
+eu4[0x100238c65] <+671>:  cltd   
+eu4[0x100238c66] <+672>:  idivl  (%rsi,%rcx,4)
+eu4[0x100238c69] <+675>:  movl   %edx, %ebx
+eu4[0x100238c6b] <+677>:  leaq   -0x30(%rbp), %rdi
+eu4[0x100238c6f] <+681>:  callq  0x1013fa2ac               ; CGregorianDate::GetDayOfMonth() const
+eu4[0x100238c74] <+686>:  cmpl   %ebx, %eax
+eu4[0x100238c76] <+688>:  jne    0x100238c91               ; <+715>
+eu4[0x100238c78] <+690>:  movq   0x508(%r13), %rax
+eu4[0x100238c7f] <+697>:  leaq   -0x138(%rbp), %rsi
+eu4[0x100238c86] <+704>:  movq   %rax, (%rsi)
+eu4[0x100238c89] <+707>:  movq   %r14, %rdi
+eu4[0x100238c8c] <+710>:  callq  0x100025e34               ; CPdxArray<CArmy*, int>::Append(CArmy*&&)
+eu4[0x100238c91] <+715>:  movl   -0x30(%rbp), %esi
+eu4[0x100238c94] <+718>:  leal   -0x29c55c0(%rsi), %ecx
+eu4[0x100238c9a] <+724>:  xorl   %eax, %eax
+eu4[0x100238c9c] <+726>:  movl   $0x0, %edx
+eu4[0x100238ca1] <+731>:  cmpl   $0x29c55bf, %esi          ; imm = 0x29C55BF 
+eu4[0x100238ca7] <+737>:  jg     0x100238cc5               ; <+767>
+eu4[0x100238ca9] <+739>:  imull  $0xaaaaaaab, %ecx, %esi   ; imm = 0xAAAAAAAB 
+eu4[0x100238caf] <+745>:  addl   $0x2aaaaaa8, %esi         ; imm = 0x2AAAAAA8 
+eu4[0x100238cb5] <+751>:  rorl   $0x3, %esi
+eu4[0x100238cb8] <+754>:  xorl   %edx, %edx
+eu4[0x100238cba] <+756>:  cmpl   $0xaaaaaaa, %esi          ; imm = 0xAAAAAAA 
+eu4[0x100238cc0] <+762>:  seta   %dl
+eu4[0x100238cc3] <+765>:  negl   %edx
+eu4[0x100238cc5] <+767>:  movslq %ecx, %rcx
+eu4[0x100238cc8] <+770>:  imulq  $0x2aaaaaab, %rcx, %rcx   ; imm = 0x2AAAAAAB 
+eu4[0x100238ccf] <+777>:  movq   %rcx, %rsi
+eu4[0x100238cd2] <+780>:  shrq   $0x3f, %rsi
+eu4[0x100238cd6] <+784>:  sarq   $0x22, %rcx
+eu4[0x100238cda] <+788>:  addl   %esi, %ecx
+eu4[0x100238cdc] <+790>:  addl   %edx, %ecx
+eu4[0x100238cde] <+792>:  jns    0x100238cf9               ; <+819>
+eu4[0x100238ce0] <+794>:  imull  $0xf4c73065, %ecx, %edx   ; imm = 0xF4C73065 
+eu4[0x100238ce6] <+800>:  addl   $0x59c67c, %edx           ; imm = 0x59C67C 
+eu4[0x100238cec] <+806>:  xorl   %eax, %eax
+eu4[0x100238cee] <+808>:  cmpl   $0xb38cf8, %edx           ; imm = 0xB38CF8 
+eu4[0x100238cf4] <+814>:  seta   %al
+eu4[0x100238cf7] <+817>:  negl   %eax
+eu4[0x100238cf9] <+819>:  movslq %ecx, %rdx
+eu4[0x100238cfc] <+822>:  imulq  $-0x4c73064f, %rdx, %rbx  ; imm = 0xB38CF9B1 
+eu4[0x100238d03] <+829>:  shrq   $0x20, %rbx
+eu4[0x100238d07] <+833>:  addl   %ecx, %ebx
+eu4[0x100238d09] <+835>:  movl   %ebx, %ecx
+eu4[0x100238d0b] <+837>:  shrl   $0x1f, %ecx
+eu4[0x100238d0e] <+840>:  sarl   $0x8, %ebx
+eu4[0x100238d11] <+843>:  addl   %ecx, %ebx
+eu4[0x100238d13] <+845>:  addl   %r15d, %ebx
+eu4[0x100238d16] <+848>:  addl   %eax, %ebx
+eu4[0x100238d18] <+850>:  leaq   -0x30(%rbp), %rdi
+eu4[0x100238d1c] <+854>:  callq  0x1000e63a0               ; CGregorianDate::GetDayOfYear() const
+eu4[0x100238d21] <+859>:  movslq %eax, %r12
+eu4[0x100238d24] <+862>:  imulq  $-0x4c73064f, %r12, %rax  ; imm = 0xB38CF9B1 
+eu4[0x100238d2b] <+869>:  shrq   $0x20, %rax
+eu4[0x100238d2f] <+873>:  addl   %r12d, %eax
+eu4[0x100238d32] <+876>:  movl   %eax, %ecx
+eu4[0x100238d34] <+878>:  shrl   $0x1f, %ecx
+eu4[0x100238d37] <+881>:  sarl   $0x8, %eax
+eu4[0x100238d3a] <+884>:  addl   %ecx, %eax
+eu4[0x100238d3c] <+886>:  imull  $0x16d, %eax, %eax        ; imm = 0x16D 
+eu4[0x100238d42] <+892>:  subl   %eax, %r12d
+eu4[0x100238d45] <+895>:  movslq %ebx, %rax
+eu4[0x100238d48] <+898>:  imulq  $-0x4c73064f, %rax, %rcx  ; imm = 0xB38CF9B1 
+eu4[0x100238d4f] <+905>:  shrq   $0x20, %rcx
+eu4[0x100238d53] <+909>:  addl   %ebx, %ecx
+eu4[0x100238d55] <+911>:  movl   %ecx, %edx
+eu4[0x100238d57] <+913>:  shrl   $0x1f, %edx
+eu4[0x100238d5a] <+916>:  sarl   $0x8, %ecx
+eu4[0x100238d5d] <+919>:  addl   %edx, %ecx
+eu4[0x100238d5f] <+921>:  imull  $0x16d, %ecx, %ecx        ; imm = 0x16D 
+eu4[0x100238d65] <+927>:  subl   %ecx, %eax
+eu4[0x100238d67] <+929>:  cmpl   %eax, %r12d
+eu4[0x100238d6a] <+932>:  jne    0x100238d85               ; <+959>
+eu4[0x100238d6c] <+934>:  movq   0x518(%r13), %rax
+eu4[0x100238d73] <+941>:  leaq   -0x138(%rbp), %rsi
+eu4[0x100238d7a] <+948>:  movq   %rax, (%rsi)
+eu4[0x100238d7d] <+951>:  movq   %r14, %rdi
+eu4[0x100238d80] <+954>:  callq  0x100025e34               ; CPdxArray<CArmy*, int>::Append(CArmy*&&)
+eu4[0x100238d85] <+959>:  leal   0x1e(%rbx), %eax
+eu4[0x100238d88] <+962>:  cltq   
+eu4[0x100238d8a] <+964>:  imulq  $-0x4c73064f, %rax, %rcx  ; imm = 0xB38CF9B1 
+eu4[0x100238d91] <+971>:  shrq   $0x20, %rcx
+eu4[0x100238d95] <+975>:  leal   0x1e(%rcx,%rbx), %ecx
+eu4[0x100238d99] <+979>:  movl   %ecx, %edx
+eu4[0x100238d9b] <+981>:  shrl   $0x1f, %edx
+eu4[0x100238d9e] <+984>:  sarl   $0x8, %ecx
+eu4[0x100238da1] <+987>:  addl   %edx, %ecx
+eu4[0x100238da3] <+989>:  imull  $0x16d, %ecx, %ecx        ; imm = 0x16D 
+eu4[0x100238da9] <+995>:  subl   %ecx, %eax
+eu4[0x100238dab] <+997>:  cmpl   %eax, %r12d
+eu4[0x100238dae] <+1000>: jne    0x100238dc9               ; <+1027>
+eu4[0x100238db0] <+1002>: movq   0x528(%r13), %rax
+eu4[0x100238db7] <+1009>: leaq   -0x138(%rbp), %rsi
+eu4[0x100238dbe] <+1016>: movq   %rax, (%rsi)
+eu4[0x100238dc1] <+1019>: movq   %r14, %rdi
+eu4[0x100238dc4] <+1022>: callq  0x100025e34               ; CPdxArray<CArmy*, int>::Append(CArmy*&&)
+eu4[0x100238dc9] <+1027>: leal   0x3c(%rbx), %eax
+eu4[0x100238dcc] <+1030>: cltq   
+eu4[0x100238dce] <+1032>: imulq  $-0x4c73064f, %rax, %rcx  ; imm = 0xB38CF9B1 
+eu4[0x100238dd5] <+1039>: shrq   $0x20, %rcx
+eu4[0x100238dd9] <+1043>: leal   0x3c(%rcx,%rbx), %ecx
+eu4[0x100238ddd] <+1047>: movl   %ecx, %edx
+eu4[0x100238ddf] <+1049>: shrl   $0x1f, %edx
+eu4[0x100238de2] <+1052>: sarl   $0x8, %ecx
+eu4[0x100238de5] <+1055>: addl   %edx, %ecx
+eu4[0x100238de7] <+1057>: imull  $0x16d, %ecx, %ecx        ; imm = 0x16D 
+eu4[0x100238ded] <+1063>: subl   %ecx, %eax
+eu4[0x100238def] <+1065>: cmpl   %eax, %r12d
+eu4[0x100238df2] <+1068>: jne    0x100238e0d               ; <+1095>
+eu4[0x100238df4] <+1070>: movq   0x538(%r13), %rax
+eu4[0x100238dfb] <+1077>: leaq   -0x138(%rbp), %rsi
+eu4[0x100238e02] <+1084>: movq   %rax, (%rsi)
+eu4[0x100238e05] <+1087>: movq   %r14, %rdi
+eu4[0x100238e08] <+1090>: callq  0x100025e34               ; CPdxArray<CArmy*, int>::Append(CArmy*&&)
+eu4[0x100238e0d] <+1095>: leal   0x5a(%rbx), %eax
+eu4[0x100238e10] <+1098>: cltq   
+eu4[0x100238e12] <+1100>: imulq  $-0x4c73064f, %rax, %rcx  ; imm = 0xB38CF9B1 
+eu4[0x100238e19] <+1107>: shrq   $0x20, %rcx
+eu4[0x100238e1d] <+1111>: leal   0x5a(%rcx,%rbx), %ecx
+eu4[0x100238e21] <+1115>: movl   %ecx, %edx
+eu4[0x100238e23] <+1117>: shrl   $0x1f, %edx
+eu4[0x100238e26] <+1120>: sarl   $0x8, %ecx
+eu4[0x100238e29] <+1123>: addl   %edx, %ecx
+eu4[0x100238e2b] <+1125>: imull  $0x16d, %ecx, %ecx        ; imm = 0x16D 
+eu4[0x100238e31] <+1131>: subl   %ecx, %eax
+eu4[0x100238e33] <+1133>: cmpl   %eax, %r12d
+eu4[0x100238e36] <+1136>: jne    0x100238e51               ; <+1163>
+eu4[0x100238e38] <+1138>: movq   0x548(%r13), %rax
+eu4[0x100238e3f] <+1145>: leaq   -0x138(%rbp), %rsi
+eu4[0x100238e46] <+1152>: movq   %rax, (%rsi)
+eu4[0x100238e49] <+1155>: movq   %r14, %rdi
+eu4[0x100238e4c] <+1158>: callq  0x100025e34               ; CPdxArray<CArmy*, int>::Append(CArmy*&&)
+eu4[0x100238e51] <+1163>: movl   %ebx, %eax
+eu4[0x100238e53] <+1165>: addl   $0x78, %eax
+eu4[0x100238e56] <+1168>: cltq   
+eu4[0x100238e58] <+1170>: imulq  $-0x4c73064f, %rax, %rcx  ; imm = 0xB38CF9B1 
+eu4[0x100238e5f] <+1177>: shrq   $0x20, %rcx
+eu4[0x100238e63] <+1181>: leal   0x78(%rcx,%rbx), %ecx
+eu4[0x100238e67] <+1185>: movl   %ecx, %edx
+eu4[0x100238e69] <+1187>: shrl   $0x1f, %edx
+eu4[0x100238e6c] <+1190>: sarl   $0x8, %ecx
+eu4[0x100238e6f] <+1193>: addl   %edx, %ecx
+eu4[0x100238e71] <+1195>: imull  $0x16d, %ecx, %ecx        ; imm = 0x16D 
+eu4[0x100238e77] <+1201>: subl   %ecx, %eax
+eu4[0x100238e79] <+1203>: cmpl   %eax, %r12d
+eu4[0x100238e7c] <+1206>: jne    0x100238e97               ; <+1233>
+eu4[0x100238e7e] <+1208>: movq   0x558(%r13), %rax
+eu4[0x100238e85] <+1215>: leaq   -0x138(%rbp), %rsi
+eu4[0x100238e8c] <+1222>: movq   %rax, (%rsi)
+eu4[0x100238e8f] <+1225>: movq   %r14, %rdi
+eu4[0x100238e92] <+1228>: callq  0x100025e34               ; CPdxArray<CArmy*, int>::Append(CArmy*&&)
+eu4[0x100238e97] <+1233>: movl   -0x30(%rbp), %eax
+eu4[0x100238e9a] <+1236>: leal   -0x29c55c0(%rax), %ecx
+eu4[0x100238ea0] <+1242>: xorl   %esi, %esi
+eu4[0x100238ea2] <+1244>: movl   $0x0, %edi
+eu4[0x100238ea7] <+1249>: cmpl   $0x29c55bf, %eax          ; imm = 0x29C55BF 
+eu4[0x100238eac] <+1254>: jg     0x100238ecb               ; <+1285>
+eu4[0x100238eae] <+1256>: imull  $0xaaaaaaab, %ecx, %edx   ; imm = 0xAAAAAAAB 
+eu4[0x100238eb4] <+1262>: addl   $0x2aaaaaa8, %edx         ; imm = 0x2AAAAAA8 
+eu4[0x100238eba] <+1268>: rorl   $0x3, %edx
+eu4[0x100238ebd] <+1271>: xorl   %edi, %edi
+eu4[0x100238ebf] <+1273>: cmpl   $0xaaaaaaa, %edx          ; imm = 0xAAAAAAA 
+eu4[0x100238ec5] <+1279>: seta   %dil
+eu4[0x100238ec9] <+1283>: negl   %edi
+eu4[0x100238ecb] <+1285>: movslq %ecx, %rdx
+eu4[0x100238ece] <+1288>: imulq  $0x2aaaaaab, %rdx, %rbx   ; imm = 0x2AAAAAAB 
+eu4[0x100238ed5] <+1295>: movq   %rbx, %rdx
+eu4[0x100238ed8] <+1298>: shrq   $0x3f, %rdx
+eu4[0x100238edc] <+1302>: sarq   $0x22, %rbx
+eu4[0x100238ee0] <+1306>: addl   %edx, %ebx
+eu4[0x100238ee2] <+1308>: addl   %ebx, %edi
+eu4[0x100238ee4] <+1310>: jns    0x100238efe               ; <+1336>
+eu4[0x100238ee6] <+1312>: imull  $0xf4c73065, %edi, %edx   ; imm = 0xF4C73065 
+eu4[0x100238eec] <+1318>: addl   $0x59c67c, %edx           ; imm = 0x59C67C 
+eu4[0x100238ef2] <+1324>: xorl   %esi, %esi
+eu4[0x100238ef4] <+1326>: cmpl   $0xb38cf8, %edx           ; imm = 0xB38CF8 
+eu4[0x100238efa] <+1332>: seta   %sil
+eu4[0x100238efe] <+1336>: movslq %edi, %rdx
+eu4[0x100238f01] <+1339>: imulq  $-0x4c73064f, %rdx, %rdx  ; imm = 0xB38CF9B1 
+eu4[0x100238f08] <+1346>: shrq   $0x20, %rdx
+eu4[0x100238f0c] <+1350>: addl   %edi, %edx
+eu4[0x100238f0e] <+1352>: movl   %edx, %edi
+eu4[0x100238f10] <+1354>: shrl   $0x1f, %edi
+eu4[0x100238f13] <+1357>: shrl   $0x8, %edx
+eu4[0x100238f16] <+1360>: addl   %edi, %edx
+eu4[0x100238f18] <+1362>: addl   %esi, %edx
+eu4[0x100238f1a] <+1364>: testb  $0x1, %dl
+eu4[0x100238f1d] <+1367>: jne    0x1002390cf               ; <+1801>
+eu4[0x100238f23] <+1373>: leal   (,%rbx,8), %edx
+eu4[0x100238f2a] <+1380>: leal   (%rdx,%rdx,2), %edx
+eu4[0x100238f2d] <+1383>: subl   %edx, %ecx
+eu4[0x100238f2f] <+1385>: negl   %ecx
+eu4[0x100238f31] <+1387>: sbbl   %esi, %esi
+eu4[0x100238f33] <+1389>: xorl   %ecx, %ecx
+eu4[0x100238f35] <+1391>: cmpl   $0x29c55c0, %eax          ; imm = 0x29C55C0 
+eu4[0x100238f3a] <+1396>: cmovgel %ecx, %esi
+eu4[0x100238f3d] <+1399>: addl   %ebx, %esi
+eu4[0x100238f3f] <+1401>: jns    0x100238f58               ; <+1426>
+eu4[0x100238f41] <+1403>: imull  $0xf4c73065, %esi, %eax   ; imm = 0xF4C73065 
+eu4[0x100238f47] <+1409>: addl   $0x59c67c, %eax           ; imm = 0x59C67C 
+eu4[0x100238f4c] <+1414>: xorl   %ecx, %ecx
+eu4[0x100238f4e] <+1416>: cmpl   $0xb38cf8, %eax           ; imm = 0xB38CF8 
+eu4[0x100238f53] <+1421>: seta   %cl
+eu4[0x100238f56] <+1424>: negl   %ecx
+eu4[0x100238f58] <+1426>: movslq %esi, %rax
+eu4[0x100238f5b] <+1429>: imulq  $-0x4c73064f, %rax, %rax  ; imm = 0xB38CF9B1 
+eu4[0x100238f62] <+1436>: shrq   $0x20, %rax
+eu4[0x100238f66] <+1440>: addl   %esi, %eax
+eu4[0x100238f68] <+1442>: movl   %eax, %edx
+eu4[0x100238f6a] <+1444>: shrl   $0x1f, %edx
+eu4[0x100238f6d] <+1447>: sarl   $0x8, %eax
+eu4[0x100238f70] <+1450>: addl   %edx, %eax
+eu4[0x100238f72] <+1452>: addl   %r15d, %eax
+eu4[0x100238f75] <+1455>: leal   0x45(%rcx,%rax), %ebx
+eu4[0x100238f79] <+1459>: addl   %ecx, %eax
+eu4[0x100238f7b] <+1461>: movslq %ebx, %rcx
+eu4[0x100238f7e] <+1464>: imulq  $-0x4c73064f, %rcx, %rdx  ; imm = 0xB38CF9B1 
+eu4[0x100238f85] <+1471>: shrq   $0x20, %rdx
+eu4[0x100238f89] <+1475>: leal   0x45(%rdx,%rax), %eax
+eu4[0x100238f8d] <+1479>: movl   %eax, %edx
+eu4[0x100238f8f] <+1481>: shrl   $0x1f, %edx
+eu4[0x100238f92] <+1484>: sarl   $0x8, %eax
+eu4[0x100238f95] <+1487>: addl   %edx, %eax
+eu4[0x100238f97] <+1489>: imull  $0x16d, %eax, %eax        ; imm = 0x16D 
+eu4[0x100238f9d] <+1495>: subl   %eax, %ecx
+eu4[0x100238f9f] <+1497>: cmpl   %ecx, %r12d
+eu4[0x100238fa2] <+1500>: jne    0x100238fbd               ; <+1527>
+eu4[0x100238fa4] <+1502>: movq   0x568(%r13), %rax
+eu4[0x100238fab] <+1509>: leaq   -0x138(%rbp), %rsi
+eu4[0x100238fb2] <+1516>: movq   %rax, (%rsi)
+eu4[0x100238fb5] <+1519>: movq   %r14, %rdi
+eu4[0x100238fb8] <+1522>: callq  0x100025e34               ; CPdxArray<CArmy*, int>::Append(CArmy*&&)
+eu4[0x100238fbd] <+1527>: leal   0x1e(%rbx), %eax
+eu4[0x100238fc0] <+1530>: cltq   
+eu4[0x100238fc2] <+1532>: imulq  $-0x4c73064f, %rax, %rcx  ; imm = 0xB38CF9B1 
+eu4[0x100238fc9] <+1539>: shrq   $0x20, %rcx
+eu4[0x100238fcd] <+1543>: leal   0x1e(%rcx,%rbx), %ecx
+eu4[0x100238fd1] <+1547>: movl   %ecx, %edx
+eu4[0x100238fd3] <+1549>: shrl   $0x1f, %edx
+eu4[0x100238fd6] <+1552>: sarl   $0x8, %ecx
+eu4[0x100238fd9] <+1555>: addl   %edx, %ecx
+eu4[0x100238fdb] <+1557>: imull  $0x16d, %ecx, %ecx        ; imm = 0x16D 
+eu4[0x100238fe1] <+1563>: subl   %ecx, %eax
+eu4[0x100238fe3] <+1565>: cmpl   %eax, %r12d
+eu4[0x100238fe6] <+1568>: jne    0x100239001               ; <+1595>
+eu4[0x100238fe8] <+1570>: movq   0x578(%r13), %rax
+eu4[0x100238fef] <+1577>: leaq   -0x138(%rbp), %rsi
+eu4[0x100238ff6] <+1584>: movq   %rax, (%rsi)
+eu4[0x100238ff9] <+1587>: movq   %r14, %rdi
+eu4[0x100238ffc] <+1590>: callq  0x100025e34               ; CPdxArray<CArmy*, int>::Append(CArmy*&&)
+eu4[0x100239001] <+1595>: leal   0x3c(%rbx), %eax
+eu4[0x100239004] <+1598>: cltq   
+eu4[0x100239006] <+1600>: imulq  $-0x4c73064f, %rax, %rcx  ; imm = 0xB38CF9B1 
+eu4[0x10023900d] <+1607>: shrq   $0x20, %rcx
+eu4[0x100239011] <+1611>: leal   0x3c(%rcx,%rbx), %ecx
+eu4[0x100239015] <+1615>: movl   %ecx, %edx
+eu4[0x100239017] <+1617>: shrl   $0x1f, %edx
+eu4[0x10023901a] <+1620>: sarl   $0x8, %ecx
+eu4[0x10023901d] <+1623>: addl   %edx, %ecx
+eu4[0x10023901f] <+1625>: imull  $0x16d, %ecx, %ecx        ; imm = 0x16D 
+eu4[0x100239025] <+1631>: subl   %ecx, %eax
+eu4[0x100239027] <+1633>: cmpl   %eax, %r12d
+eu4[0x10023902a] <+1636>: jne    0x100239045               ; <+1663>
+eu4[0x10023902c] <+1638>: movq   0x588(%r13), %rax
+eu4[0x100239033] <+1645>: leaq   -0x138(%rbp), %rsi
+eu4[0x10023903a] <+1652>: movq   %rax, (%rsi)
+eu4[0x10023903d] <+1655>: movq   %r14, %rdi
+eu4[0x100239040] <+1658>: callq  0x100025e34               ; CPdxArray<CArmy*, int>::Append(CArmy*&&)
+eu4[0x100239045] <+1663>: leal   0x5a(%rbx), %eax
+eu4[0x100239048] <+1666>: cltq   
+eu4[0x10023904a] <+1668>: imulq  $-0x4c73064f, %rax, %rcx  ; imm = 0xB38CF9B1 
+eu4[0x100239051] <+1675>: shrq   $0x20, %rcx
+eu4[0x100239055] <+1679>: leal   0x5a(%rcx,%rbx), %ecx
+eu4[0x100239059] <+1683>: movl   %ecx, %edx
+eu4[0x10023905b] <+1685>: shrl   $0x1f, %edx
+eu4[0x10023905e] <+1688>: sarl   $0x8, %ecx
+eu4[0x100239061] <+1691>: addl   %edx, %ecx
+eu4[0x100239063] <+1693>: imull  $0x16d, %ecx, %ecx        ; imm = 0x16D 
+eu4[0x100239069] <+1699>: subl   %ecx, %eax
+eu4[0x10023906b] <+1701>: cmpl   %eax, %r12d
+eu4[0x10023906e] <+1704>: jne    0x100239089               ; <+1731>
+eu4[0x100239070] <+1706>: movq   0x598(%r13), %rax
+eu4[0x100239077] <+1713>: leaq   -0x138(%rbp), %rsi
+eu4[0x10023907e] <+1720>: movq   %rax, (%rsi)
+eu4[0x100239081] <+1723>: movq   %r14, %rdi
+eu4[0x100239084] <+1726>: callq  0x100025e34               ; CPdxArray<CArmy*, int>::Append(CArmy*&&)
+eu4[0x100239089] <+1731>: movl   %ebx, %eax
+eu4[0x10023908b] <+1733>: addl   $0x78, %eax
+eu4[0x10023908e] <+1736>: cltq   
+eu4[0x100239090] <+1738>: imulq  $-0x4c73064f, %rax, %rcx  ; imm = 0xB38CF9B1 
+eu4[0x100239097] <+1745>: shrq   $0x20, %rcx
+eu4[0x10023909b] <+1749>: leal   0x78(%rcx,%rbx), %ecx
+eu4[0x10023909f] <+1753>: movl   %ecx, %edx
+eu4[0x1002390a1] <+1755>: shrl   $0x1f, %edx
+eu4[0x1002390a4] <+1758>: sarl   $0x8, %ecx
+eu4[0x1002390a7] <+1761>: addl   %edx, %ecx
+eu4[0x1002390a9] <+1763>: imull  $0x16d, %ecx, %ecx        ; imm = 0x16D 
+eu4[0x1002390af] <+1769>: subl   %ecx, %eax
+eu4[0x1002390b1] <+1771>: cmpl   %eax, %r12d
+eu4[0x1002390b4] <+1774>: jne    0x1002390cf               ; <+1801>
+eu4[0x1002390b6] <+1776>: movq   0x5a8(%r13), %rax
+eu4[0x1002390bd] <+1783>: leaq   -0x138(%rbp), %rsi
+eu4[0x1002390c4] <+1790>: movq   %rax, (%rsi)
+eu4[0x1002390c7] <+1793>: movq   %r14, %rdi
+eu4[0x1002390ca] <+1796>: callq  0x100025e34               ; CPdxArray<CArmy*, int>::Append(CArmy*&&)
+eu4[0x1002390cf] <+1801>: movl   -0x30(%rbp), %eax
+eu4[0x1002390d2] <+1804>: leal   -0x29c55c0(%rax), %ecx
+eu4[0x1002390d8] <+1810>: xorl   %esi, %esi
+eu4[0x1002390da] <+1812>: movl   $0x0, %edi
+eu4[0x1002390df] <+1817>: cmpl   $0x29c55bf, %eax          ; imm = 0x29C55BF 
+eu4[0x1002390e4] <+1822>: jg     0x100239103               ; <+1853>
+eu4[0x1002390e6] <+1824>: imull  $0xaaaaaaab, %ecx, %edx   ; imm = 0xAAAAAAAB 
+eu4[0x1002390ec] <+1830>: addl   $0x2aaaaaa8, %edx         ; imm = 0x2AAAAAA8 
+eu4[0x1002390f2] <+1836>: rorl   $0x3, %edx
+eu4[0x1002390f5] <+1839>: xorl   %edi, %edi
+eu4[0x1002390f7] <+1841>: cmpl   $0xaaaaaaa, %edx          ; imm = 0xAAAAAAA 
+eu4[0x1002390fd] <+1847>: seta   %dil
+eu4[0x100239101] <+1851>: negl   %edi
+eu4[0x100239103] <+1853>: movslq %ecx, %rdx
+eu4[0x100239106] <+1856>: imulq  $0x2aaaaaab, %rdx, %rbx   ; imm = 0x2AAAAAAB 
+eu4[0x10023910d] <+1863>: movq   %rbx, %rdx
+eu4[0x100239110] <+1866>: shrq   $0x3f, %rdx
+eu4[0x100239114] <+1870>: sarq   $0x22, %rbx
+eu4[0x100239118] <+1874>: addl   %edx, %ebx
+eu4[0x10023911a] <+1876>: addl   %ebx, %edi
+eu4[0x10023911c] <+1878>: jns    0x100239138               ; <+1906>
+eu4[0x10023911e] <+1880>: imull  $0xf4c73065, %edi, %edx   ; imm = 0xF4C73065 
+eu4[0x100239124] <+1886>: addl   $0x59c67c, %edx           ; imm = 0x59C67C 
+eu4[0x10023912a] <+1892>: xorl   %esi, %esi
+eu4[0x10023912c] <+1894>: cmpl   $0xb38cf8, %edx           ; imm = 0xB38CF8 
+eu4[0x100239132] <+1900>: seta   %sil
+eu4[0x100239136] <+1904>: negl   %esi
+eu4[0x100239138] <+1906>: movslq %edi, %rdx
+eu4[0x10023913b] <+1909>: imulq  $-0x4c73064f, %rdx, %rdx  ; imm = 0xB38CF9B1 
+eu4[0x100239142] <+1916>: shrq   $0x20, %rdx
+eu4[0x100239146] <+1920>: addl   %edi, %edx
+eu4[0x100239148] <+1922>: movl   %edx, %edi
+eu4[0x10023914a] <+1924>: shrl   $0x1f, %edi
+eu4[0x10023914d] <+1927>: sarl   $0x8, %edx
+eu4[0x100239150] <+1930>: addl   %edi, %edx
+eu4[0x100239152] <+1932>: addl   %esi, %edx
+eu4[0x100239154] <+1934>: imull  $0xaaaaaaab, %edx, %edx   ; imm = 0xAAAAAAAB 
+eu4[0x10023915a] <+1940>: addl   $0x2aaaaaaa, %edx         ; imm = 0x2AAAAAAA 
+eu4[0x100239160] <+1946>: cmpl   $0x55555554, %edx         ; imm = 0x55555554 
+eu4[0x100239166] <+1952>: ja     0x1002392d4               ; <+2318>
+eu4[0x10023916c] <+1958>: leal   (,%rbx,8), %edx
+eu4[0x100239173] <+1965>: leal   (%rdx,%rdx,2), %edx
+eu4[0x100239176] <+1968>: subl   %edx, %ecx
+eu4[0x100239178] <+1970>: negl   %ecx
+eu4[0x10023917a] <+1972>: sbbl   %esi, %esi
+eu4[0x10023917c] <+1974>: xorl   %ecx, %ecx
+eu4[0x10023917e] <+1976>: cmpl   $0x29c55c0, %eax          ; imm = 0x29C55C0 
+eu4[0x100239183] <+1981>: cmovgel %ecx, %esi
+eu4[0x100239186] <+1984>: addl   %ebx, %esi
+eu4[0x100239188] <+1986>: jns    0x1002391a1               ; <+2011>
+eu4[0x10023918a] <+1988>: imull  $0xf4c73065, %esi, %eax   ; imm = 0xF4C73065 
+eu4[0x100239190] <+1994>: addl   $0x59c67c, %eax           ; imm = 0x59C67C 
+eu4[0x100239195] <+1999>: xorl   %ecx, %ecx
+eu4[0x100239197] <+2001>: cmpl   $0xb38cf8, %eax           ; imm = 0xB38CF8 
+eu4[0x10023919c] <+2006>: seta   %cl
+eu4[0x10023919f] <+2009>: negl   %ecx
+eu4[0x1002391a1] <+2011>: movslq %esi, %rax
+eu4[0x1002391a4] <+2014>: imulq  $-0x4c73064f, %rax, %rax  ; imm = 0xB38CF9B1 
+eu4[0x1002391ab] <+2021>: shrq   $0x20, %rax
+eu4[0x1002391af] <+2025>: addl   %esi, %eax
+eu4[0x1002391b1] <+2027>: movl   %eax, %edx
+eu4[0x1002391b3] <+2029>: shrl   $0x1f, %edx
+eu4[0x1002391b6] <+2032>: sarl   $0x8, %eax
+eu4[0x1002391b9] <+2035>: addl   %edx, %eax
+eu4[0x1002391bb] <+2037>: addl   %r15d, %eax
+eu4[0x1002391be] <+2040>: leal   0x5e(%rcx,%rax), %ebx
+eu4[0x1002391c2] <+2044>: addl   %ecx, %eax
+eu4[0x1002391c4] <+2046>: movslq %ebx, %rcx
+eu4[0x1002391c7] <+2049>: imulq  $-0x4c73064f, %rcx, %rdx  ; imm = 0xB38CF9B1 
+eu4[0x1002391ce] <+2056>: shrq   $0x20, %rdx
+eu4[0x1002391d2] <+2060>: leal   0x5e(%rdx,%rax), %eax
+eu4[0x1002391d6] <+2064>: movl   %eax, %edx
+eu4[0x1002391d8] <+2066>: shrl   $0x1f, %edx
+eu4[0x1002391db] <+2069>: sarl   $0x8, %eax
+eu4[0x1002391de] <+2072>: addl   %edx, %eax
+eu4[0x1002391e0] <+2074>: imull  $0x16d, %eax, %eax        ; imm = 0x16D 
+eu4[0x1002391e6] <+2080>: subl   %eax, %ecx
+eu4[0x1002391e8] <+2082>: cmpl   %ecx, %r12d
+eu4[0x1002391eb] <+2085>: jne    0x100239206               ; <+2112>
+eu4[0x1002391ed] <+2087>: movq   0x5b8(%r13), %rax
+eu4[0x1002391f4] <+2094>: leaq   -0x138(%rbp), %rsi
+eu4[0x1002391fb] <+2101>: movq   %rax, (%rsi)
+eu4[0x1002391fe] <+2104>: movq   %r14, %rdi
+eu4[0x100239201] <+2107>: callq  0x100025e34               ; CPdxArray<CArmy*, int>::Append(CArmy*&&)
+eu4[0x100239206] <+2112>: leal   0x1e(%rbx), %eax
+eu4[0x100239209] <+2115>: cltq   
+eu4[0x10023920b] <+2117>: imulq  $-0x4c73064f, %rax, %rcx  ; imm = 0xB38CF9B1 
+eu4[0x100239212] <+2124>: shrq   $0x20, %rcx
+eu4[0x100239216] <+2128>: leal   0x1e(%rcx,%rbx), %ecx
+eu4[0x10023921a] <+2132>: movl   %ecx, %edx
+eu4[0x10023921c] <+2134>: shrl   $0x1f, %edx
+eu4[0x10023921f] <+2137>: sarl   $0x8, %ecx
+eu4[0x100239222] <+2140>: addl   %edx, %ecx
+eu4[0x100239224] <+2142>: imull  $0x16d, %ecx, %ecx        ; imm = 0x16D 
+eu4[0x10023922a] <+2148>: subl   %ecx, %eax
+eu4[0x10023922c] <+2150>: cmpl   %eax, %r12d
+eu4[0x10023922f] <+2153>: jne    0x10023924a               ; <+2180>
+eu4[0x100239231] <+2155>: movq   0x5c8(%r13), %rax
+eu4[0x100239238] <+2162>: leaq   -0x138(%rbp), %rsi
+eu4[0x10023923f] <+2169>: movq   %rax, (%rsi)
+eu4[0x100239242] <+2172>: movq   %r14, %rdi
+eu4[0x100239245] <+2175>: callq  0x100025e34               ; CPdxArray<CArmy*, int>::Append(CArmy*&&)
+eu4[0x10023924a] <+2180>: leal   0x3c(%rbx), %eax
+eu4[0x10023924d] <+2183>: cltq   
+eu4[0x10023924f] <+2185>: imulq  $-0x4c73064f, %rax, %rcx  ; imm = 0xB38CF9B1 
+eu4[0x100239256] <+2192>: shrq   $0x20, %rcx
+eu4[0x10023925a] <+2196>: leal   0x3c(%rcx,%rbx), %ecx
+eu4[0x10023925e] <+2200>: movl   %ecx, %edx
+eu4[0x100239260] <+2202>: shrl   $0x1f, %edx
+eu4[0x100239263] <+2205>: sarl   $0x8, %ecx
+eu4[0x100239266] <+2208>: addl   %edx, %ecx
+eu4[0x100239268] <+2210>: imull  $0x16d, %ecx, %ecx        ; imm = 0x16D 
+eu4[0x10023926e] <+2216>: subl   %ecx, %eax
+eu4[0x100239270] <+2218>: cmpl   %eax, %r12d
+eu4[0x100239273] <+2221>: jne    0x10023928e               ; <+2248>
+eu4[0x100239275] <+2223>: movq   0x5d8(%r13), %rax
+eu4[0x10023927c] <+2230>: leaq   -0x138(%rbp), %rsi
+eu4[0x100239283] <+2237>: movq   %rax, (%rsi)
+eu4[0x100239286] <+2240>: movq   %r14, %rdi
+eu4[0x100239289] <+2243>: callq  0x100025e34               ; CPdxArray<CArmy*, int>::Append(CArmy*&&)
+eu4[0x10023928e] <+2248>: movl   %ebx, %eax
+eu4[0x100239290] <+2250>: addl   $0x5a, %eax
+eu4[0x100239293] <+2253>: cltq   
+eu4[0x100239295] <+2255>: imulq  $-0x4c73064f, %rax, %rcx  ; imm = 0xB38CF9B1 
+eu4[0x10023929c] <+2262>: shrq   $0x20, %rcx
+eu4[0x1002392a0] <+2266>: leal   0x5a(%rcx,%rbx), %ecx
+eu4[0x1002392a4] <+2270>: movl   %ecx, %edx
+eu4[0x1002392a6] <+2272>: shrl   $0x1f, %edx
+eu4[0x1002392a9] <+2275>: sarl   $0x8, %ecx
+eu4[0x1002392ac] <+2278>: addl   %edx, %ecx
+eu4[0x1002392ae] <+2280>: imull  $0x16d, %ecx, %ecx        ; imm = 0x16D 
+eu4[0x1002392b4] <+2286>: subl   %ecx, %eax
+eu4[0x1002392b6] <+2288>: cmpl   %eax, %r12d
+eu4[0x1002392b9] <+2291>: jne    0x1002392d4               ; <+2318>
+eu4[0x1002392bb] <+2293>: movq   0x5e8(%r13), %rax
+eu4[0x1002392c2] <+2300>: leaq   -0x138(%rbp), %rsi
+eu4[0x1002392c9] <+2307>: movq   %rax, (%rsi)
+eu4[0x1002392cc] <+2310>: movq   %r14, %rdi
+eu4[0x1002392cf] <+2313>: callq  0x100025e34               ; CPdxArray<CArmy*, int>::Append(CArmy*&&)
+eu4[0x1002392d4] <+2318>: movl   -0x30(%rbp), %eax
+eu4[0x1002392d7] <+2321>: leal   -0x29c55c0(%rax), %ecx
+eu4[0x1002392dd] <+2327>: xorl   %esi, %esi
+eu4[0x1002392df] <+2329>: movl   $0x0, %edi
+eu4[0x1002392e4] <+2334>: cmpl   $0x29c55bf, %eax          ; imm = 0x29C55BF 
+eu4[0x1002392e9] <+2339>: jg     0x100239308               ; <+2370>
+eu4[0x1002392eb] <+2341>: imull  $0xaaaaaaab, %ecx, %edx   ; imm = 0xAAAAAAAB 
+eu4[0x1002392f1] <+2347>: addl   $0x2aaaaaa8, %edx         ; imm = 0x2AAAAAA8 
+eu4[0x1002392f7] <+2353>: rorl   $0x3, %edx
+eu4[0x1002392fa] <+2356>: xorl   %edi, %edi
+eu4[0x1002392fc] <+2358>: cmpl   $0xaaaaaaa, %edx          ; imm = 0xAAAAAAA 
+eu4[0x100239302] <+2364>: seta   %dil
+eu4[0x100239306] <+2368>: negl   %edi
+eu4[0x100239308] <+2370>: movslq %ecx, %rdx
+eu4[0x10023930b] <+2373>: imulq  $0x2aaaaaab, %rdx, %rbx   ; imm = 0x2AAAAAAB 
+eu4[0x100239312] <+2380>: movq   %rbx, %rdx
+eu4[0x100239315] <+2383>: shrq   $0x3f, %rdx
+eu4[0x100239319] <+2387>: sarq   $0x22, %rbx
+eu4[0x10023931d] <+2391>: addl   %edx, %ebx
+eu4[0x10023931f] <+2393>: addl   %ebx, %edi
+eu4[0x100239321] <+2395>: jns    0x10023933d               ; <+2423>
+eu4[0x100239323] <+2397>: imull  $0xf4c73065, %edi, %edx   ; imm = 0xF4C73065 
+eu4[0x100239329] <+2403>: addl   $0x59c67c, %edx           ; imm = 0x59C67C 
+eu4[0x10023932f] <+2409>: xorl   %esi, %esi
+eu4[0x100239331] <+2411>: cmpl   $0xb38cf8, %edx           ; imm = 0xB38CF8 
+eu4[0x100239337] <+2417>: seta   %sil
+eu4[0x10023933b] <+2421>: negl   %esi
+eu4[0x10023933d] <+2423>: movslq %edi, %rdx
+eu4[0x100239340] <+2426>: imulq  $-0x4c73064f, %rdx, %rdx  ; imm = 0xB38CF9B1 
+eu4[0x100239347] <+2433>: shrq   $0x20, %rdx
+eu4[0x10023934b] <+2437>: addl   %edi, %edx
+eu4[0x10023934d] <+2439>: movl   %edx, %edi
+eu4[0x10023934f] <+2441>: shrl   $0x1f, %edi
+eu4[0x100239352] <+2444>: sarl   $0x8, %edx
+eu4[0x100239355] <+2447>: addl   %edi, %edx
+eu4[0x100239357] <+2449>: addl   %esi, %edx
+eu4[0x100239359] <+2451>: movd   %edx, %xmm0
+eu4[0x10023935d] <+2455>: pinsrd $0x1, %r15d, %xmm0
+eu4[0x100239364] <+2462>: movdqa %xmm0, %xmm1
+eu4[0x100239368] <+2466>: psrad  $0x1f, %xmm1
+eu4[0x10023936d] <+2471>: psrld  $0x1e, %xmm1
+eu4[0x100239372] <+2476>: paddd  %xmm0, %xmm1
+eu4[0x100239376] <+2480>: pand   0x17f7242(%rip), %xmm1    ; typeinfo name for CPdxArray<CCountry*, int> + 84
+eu4[0x10023937e] <+2488>: psubd  %xmm1, %xmm0
+eu4[0x100239382] <+2492>: pshufd $0xe5, %xmm0, %xmm1       ; xmm1 = xmm0[1,1,2,3] 
+eu4[0x100239387] <+2497>: pcmpeqd %xmm0, %xmm1
+eu4[0x10023938b] <+2501>: movd   %xmm1, %edx
+eu4[0x10023938f] <+2505>: testb  $0x1, %dl
+eu4[0x100239392] <+2508>: je     0x100239506               ; <+2880>
+eu4[0x100239398] <+2514>: leal   (,%rbx,8), %edx
+eu4[0x10023939f] <+2521>: leal   (%rdx,%rdx,2), %edx
+eu4[0x1002393a2] <+2524>: subl   %edx, %ecx
+eu4[0x1002393a4] <+2526>: negl   %ecx
+eu4[0x1002393a6] <+2528>: sbbl   %esi, %esi
+eu4[0x1002393a8] <+2530>: xorl   %ecx, %ecx
+eu4[0x1002393aa] <+2532>: cmpl   $0x29c55c0, %eax          ; imm = 0x29C55C0 
+eu4[0x1002393af] <+2537>: cmovgel %ecx, %esi
+eu4[0x1002393b2] <+2540>: addl   %ebx, %esi
+eu4[0x1002393b4] <+2542>: jns    0x1002393cd               ; <+2567>
+eu4[0x1002393b6] <+2544>: imull  $0xf4c73065, %esi, %eax   ; imm = 0xF4C73065 
+eu4[0x1002393bc] <+2550>: addl   $0x59c67c, %eax           ; imm = 0x59C67C 
+eu4[0x1002393c1] <+2555>: xorl   %ecx, %ecx
+eu4[0x1002393c3] <+2557>: cmpl   $0xb38cf8, %eax           ; imm = 0xB38CF8 
+eu4[0x1002393c8] <+2562>: seta   %cl
+eu4[0x1002393cb] <+2565>: negl   %ecx
+eu4[0x1002393cd] <+2567>: movslq %esi, %rax
+eu4[0x1002393d0] <+2570>: imulq  $-0x4c73064f, %rax, %rax  ; imm = 0xB38CF9B1 
+eu4[0x1002393d7] <+2577>: shrq   $0x20, %rax
+eu4[0x1002393db] <+2581>: addl   %esi, %eax
+eu4[0x1002393dd] <+2583>: movl   %eax, %edx
+eu4[0x1002393df] <+2585>: shrl   $0x1f, %edx
+eu4[0x1002393e2] <+2588>: sarl   $0x8, %eax
+eu4[0x1002393e5] <+2591>: addl   %edx, %eax
+eu4[0x1002393e7] <+2593>: addl   %r15d, %eax
+eu4[0x1002393ea] <+2596>: leal   0x82(%rcx,%rax), %ebx
+eu4[0x1002393f1] <+2603>: addl   %ecx, %eax
+eu4[0x1002393f3] <+2605>: movslq %ebx, %rcx
+eu4[0x1002393f6] <+2608>: imulq  $-0x4c73064f, %rcx, %rdx  ; imm = 0xB38CF9B1 
+eu4[0x1002393fd] <+2615>: shrq   $0x20, %rdx
+eu4[0x100239401] <+2619>: leal   0x82(%rdx,%rax), %eax
+eu4[0x100239408] <+2626>: movl   %eax, %edx
+eu4[0x10023940a] <+2628>: shrl   $0x1f, %edx
+eu4[0x10023940d] <+2631>: sarl   $0x8, %eax
+eu4[0x100239410] <+2634>: addl   %edx, %eax
+eu4[0x100239412] <+2636>: imull  $0x16d, %eax, %eax        ; imm = 0x16D 
+eu4[0x100239418] <+2642>: subl   %eax, %ecx
+eu4[0x10023941a] <+2644>: cmpl   %ecx, %r12d
+eu4[0x10023941d] <+2647>: jne    0x100239438               ; <+2674>
+eu4[0x10023941f] <+2649>: movq   0x5f8(%r13), %rax
+eu4[0x100239426] <+2656>: leaq   -0x138(%rbp), %rsi
+eu4[0x10023942d] <+2663>: movq   %rax, (%rsi)
+eu4[0x100239430] <+2666>: movq   %r14, %rdi
+eu4[0x100239433] <+2669>: callq  0x100025e34               ; CPdxArray<CArmy*, int>::Append(CArmy*&&)
+eu4[0x100239438] <+2674>: leal   0x1e(%rbx), %eax
+eu4[0x10023943b] <+2677>: cltq   
+eu4[0x10023943d] <+2679>: imulq  $-0x4c73064f, %rax, %rcx  ; imm = 0xB38CF9B1 
+eu4[0x100239444] <+2686>: shrq   $0x20, %rcx
+eu4[0x100239448] <+2690>: leal   0x1e(%rcx,%rbx), %ecx
+eu4[0x10023944c] <+2694>: movl   %ecx, %edx
+eu4[0x10023944e] <+2696>: shrl   $0x1f, %edx
+eu4[0x100239451] <+2699>: sarl   $0x8, %ecx
+eu4[0x100239454] <+2702>: addl   %edx, %ecx
+eu4[0x100239456] <+2704>: imull  $0x16d, %ecx, %ecx        ; imm = 0x16D 
+eu4[0x10023945c] <+2710>: subl   %ecx, %eax
+eu4[0x10023945e] <+2712>: cmpl   %eax, %r12d
+eu4[0x100239461] <+2715>: jne    0x10023947c               ; <+2742>
+eu4[0x100239463] <+2717>: movq   0x608(%r13), %rax
+eu4[0x10023946a] <+2724>: leaq   -0x138(%rbp), %rsi
+eu4[0x100239471] <+2731>: movq   %rax, (%rsi)
+eu4[0x100239474] <+2734>: movq   %r14, %rdi
+eu4[0x100239477] <+2737>: callq  0x100025e34               ; CPdxArray<CArmy*, int>::Append(CArmy*&&)
+eu4[0x10023947c] <+2742>: leal   0x3c(%rbx), %eax
+eu4[0x10023947f] <+2745>: cltq   
+eu4[0x100239481] <+2747>: imulq  $-0x4c73064f, %rax, %rcx  ; imm = 0xB38CF9B1 
+eu4[0x100239488] <+2754>: shrq   $0x20, %rcx
+eu4[0x10023948c] <+2758>: leal   0x3c(%rcx,%rbx), %ecx
+eu4[0x100239490] <+2762>: movl   %ecx, %edx
+eu4[0x100239492] <+2764>: shrl   $0x1f, %edx
+eu4[0x100239495] <+2767>: sarl   $0x8, %ecx
+eu4[0x100239498] <+2770>: addl   %edx, %ecx
+eu4[0x10023949a] <+2772>: imull  $0x16d, %ecx, %ecx        ; imm = 0x16D 
+eu4[0x1002394a0] <+2778>: subl   %ecx, %eax
+eu4[0x1002394a2] <+2780>: cmpl   %eax, %r12d
+eu4[0x1002394a5] <+2783>: jne    0x1002394c0               ; <+2810>
+eu4[0x1002394a7] <+2785>: movq   0x618(%r13), %rax
+eu4[0x1002394ae] <+2792>: leaq   -0x138(%rbp), %rsi
+eu4[0x1002394b5] <+2799>: movq   %rax, (%rsi)
+eu4[0x1002394b8] <+2802>: movq   %r14, %rdi
+eu4[0x1002394bb] <+2805>: callq  0x100025e34               ; CPdxArray<CArmy*, int>::Append(CArmy*&&)
+eu4[0x1002394c0] <+2810>: movl   %ebx, %eax
+eu4[0x1002394c2] <+2812>: addl   $0x5a, %eax
+eu4[0x1002394c5] <+2815>: cltq   
+eu4[0x1002394c7] <+2817>: imulq  $-0x4c73064f, %rax, %rcx  ; imm = 0xB38CF9B1 
+eu4[0x1002394ce] <+2824>: shrq   $0x20, %rcx
+eu4[0x1002394d2] <+2828>: leal   0x5a(%rcx,%rbx), %ecx
+eu4[0x1002394d6] <+2832>: movl   %ecx, %edx
+eu4[0x1002394d8] <+2834>: shrl   $0x1f, %edx
+eu4[0x1002394db] <+2837>: sarl   $0x8, %ecx
+eu4[0x1002394de] <+2840>: addl   %edx, %ecx
+eu4[0x1002394e0] <+2842>: imull  $0x16d, %ecx, %ecx        ; imm = 0x16D 
+eu4[0x1002394e6] <+2848>: subl   %ecx, %eax
+eu4[0x1002394e8] <+2850>: cmpl   %eax, %r12d
+eu4[0x1002394eb] <+2853>: jne    0x100239506               ; <+2880>
+eu4[0x1002394ed] <+2855>: movq   0x628(%r13), %rax
+eu4[0x1002394f4] <+2862>: leaq   -0x138(%rbp), %rsi
+eu4[0x1002394fb] <+2869>: movq   %rax, (%rsi)
+eu4[0x1002394fe] <+2872>: movq   %r14, %rdi
+eu4[0x100239501] <+2875>: callq  0x100025e34               ; CPdxArray<CArmy*, int>::Append(CArmy*&&)
+eu4[0x100239506] <+2880>: movl   -0x30(%rbp), %eax
+eu4[0x100239509] <+2883>: leal   -0x29c55c0(%rax), %ecx
+eu4[0x10023950f] <+2889>: xorl   %esi, %esi
+eu4[0x100239511] <+2891>: movl   $0x0, %edi
+eu4[0x100239516] <+2896>: cmpl   $0x29c55bf, %eax          ; imm = 0x29C55BF 
+eu4[0x10023951b] <+2901>: jg     0x10023953a               ; <+2932>
+eu4[0x10023951d] <+2903>: imull  $0xaaaaaaab, %ecx, %edx   ; imm = 0xAAAAAAAB 
+eu4[0x100239523] <+2909>: addl   $0x2aaaaaa8, %edx         ; imm = 0x2AAAAAA8 
+eu4[0x100239529] <+2915>: rorl   $0x3, %edx
+eu4[0x10023952c] <+2918>: xorl   %edi, %edi
+eu4[0x10023952e] <+2920>: cmpl   $0xaaaaaaa, %edx          ; imm = 0xAAAAAAA 
+eu4[0x100239534] <+2926>: seta   %dil
+eu4[0x100239538] <+2930>: negl   %edi
+eu4[0x10023953a] <+2932>: movslq %ecx, %rdx
+eu4[0x10023953d] <+2935>: imulq  $0x2aaaaaab, %rdx, %rbx   ; imm = 0x2AAAAAAB 
+eu4[0x100239544] <+2942>: movq   %rbx, %rdx
+eu4[0x100239547] <+2945>: shrq   $0x3f, %rdx
+eu4[0x10023954b] <+2949>: sarq   $0x22, %rbx
+eu4[0x10023954f] <+2953>: addl   %edx, %ebx
+eu4[0x100239551] <+2955>: addl   %ebx, %edi
+eu4[0x100239553] <+2957>: jns    0x10023956f               ; <+2985>
+eu4[0x100239555] <+2959>: imull  $0xf4c73065, %edi, %edx   ; imm = 0xF4C73065 
+eu4[0x10023955b] <+2965>: addl   $0x59c67c, %edx           ; imm = 0x59C67C 
+eu4[0x100239561] <+2971>: xorl   %esi, %esi
+eu4[0x100239563] <+2973>: cmpl   $0xb38cf8, %edx           ; imm = 0xB38CF8 
+eu4[0x100239569] <+2979>: seta   %sil
+eu4[0x10023956d] <+2983>: negl   %esi
+eu4[0x10023956f] <+2985>: movslq %edi, %rdx
+eu4[0x100239572] <+2988>: imulq  $-0x4c73064f, %rdx, %rdx  ; imm = 0xB38CF9B1 
+eu4[0x100239579] <+2995>: shrq   $0x20, %rdx
+eu4[0x10023957d] <+2999>: addl   %edi, %edx
+eu4[0x10023957f] <+3001>: movl   %edx, %edi
+eu4[0x100239581] <+3003>: shrl   $0x1f, %edi
+eu4[0x100239584] <+3006>: sarl   $0x8, %edx
+eu4[0x100239587] <+3009>: addl   %edi, %edx
+eu4[0x100239589] <+3011>: addl   %esi, %edx
+eu4[0x10023958b] <+3013>: movslq %edx, %rdx
+eu4[0x10023958e] <+3016>: imulq  $0x66666667, %rdx, %rsi   ; imm = 0x66666667 
+eu4[0x100239595] <+3023>: movq   %rsi, %rdi
+eu4[0x100239598] <+3026>: shrq   $0x3f, %rdi
+eu4[0x10023959c] <+3030>: sarq   $0x21, %rsi
+eu4[0x1002395a0] <+3034>: addl   %edi, %esi
+eu4[0x1002395a2] <+3036>: leal   (%rsi,%rsi,4), %esi
+eu4[0x1002395a5] <+3039>: subl   %esi, %edx
+eu4[0x1002395a7] <+3041>: movslq %r15d, %rsi
+eu4[0x1002395aa] <+3044>: imulq  $0x66666667, %rsi, %rsi   ; imm = 0x66666667 
+eu4[0x1002395b1] <+3051>: movq   %rsi, %rdi
+eu4[0x1002395b4] <+3054>: shrq   $0x3f, %rdi
+eu4[0x1002395b8] <+3058>: sarq   $0x21, %rsi
+eu4[0x1002395bc] <+3062>: addl   %edi, %esi
+eu4[0x1002395be] <+3064>: leal   (%rsi,%rsi,4), %esi
+eu4[0x1002395c1] <+3067>: movl   %r15d, %edi
+eu4[0x1002395c4] <+3070>: subl   %esi, %edi
+eu4[0x1002395c6] <+3072>: cmpl   %edi, %edx
+eu4[0x1002395c8] <+3074>: jne    0x10023973c               ; <+3446>
+eu4[0x1002395ce] <+3080>: leal   (,%rbx,8), %edx
+eu4[0x1002395d5] <+3087>: leal   (%rdx,%rdx,2), %edx
+eu4[0x1002395d8] <+3090>: subl   %edx, %ecx
+eu4[0x1002395da] <+3092>: negl   %ecx
+eu4[0x1002395dc] <+3094>: sbbl   %esi, %esi
+eu4[0x1002395de] <+3096>: xorl   %ecx, %ecx
+eu4[0x1002395e0] <+3098>: cmpl   $0x29c55c0, %eax          ; imm = 0x29C55C0 
+eu4[0x1002395e5] <+3103>: cmovgel %ecx, %esi
+eu4[0x1002395e8] <+3106>: addl   %ebx, %esi
+eu4[0x1002395ea] <+3108>: jns    0x100239603               ; <+3133>
+eu4[0x1002395ec] <+3110>: imull  $0xf4c73065, %esi, %eax   ; imm = 0xF4C73065 
+eu4[0x1002395f2] <+3116>: addl   $0x59c67c, %eax           ; imm = 0x59C67C 
+eu4[0x1002395f7] <+3121>: xorl   %ecx, %ecx
+eu4[0x1002395f9] <+3123>: cmpl   $0xb38cf8, %eax           ; imm = 0xB38CF8 
+eu4[0x1002395fe] <+3128>: seta   %cl
+eu4[0x100239601] <+3131>: negl   %ecx
+eu4[0x100239603] <+3133>: movslq %esi, %rax
+eu4[0x100239606] <+3136>: imulq  $-0x4c73064f, %rax, %rax  ; imm = 0xB38CF9B1 
+eu4[0x10023960d] <+3143>: shrq   $0x20, %rax
+eu4[0x100239611] <+3147>: addl   %esi, %eax
+eu4[0x100239613] <+3149>: movl   %eax, %edx
+eu4[0x100239615] <+3151>: shrl   $0x1f, %edx
+eu4[0x100239618] <+3154>: sarl   $0x8, %eax
+eu4[0x10023961b] <+3157>: addl   %edx, %eax
+eu4[0x10023961d] <+3159>: addl   %r15d, %eax
+eu4[0x100239620] <+3162>: leal   0xa7(%rcx,%rax), %ebx
+eu4[0x100239627] <+3169>: addl   %ecx, %eax
+eu4[0x100239629] <+3171>: movslq %ebx, %rcx
+eu4[0x10023962c] <+3174>: imulq  $-0x4c73064f, %rcx, %rdx  ; imm = 0xB38CF9B1 
+eu4[0x100239633] <+3181>: shrq   $0x20, %rdx
+eu4[0x100239637] <+3185>: leal   0xa7(%rdx,%rax), %eax
+eu4[0x10023963e] <+3192>: movl   %eax, %edx
+eu4[0x100239640] <+3194>: shrl   $0x1f, %edx
+eu4[0x100239643] <+3197>: sarl   $0x8, %eax
+eu4[0x100239646] <+3200>: addl   %edx, %eax
+eu4[0x100239648] <+3202>: imull  $0x16d, %eax, %eax        ; imm = 0x16D 
+eu4[0x10023964e] <+3208>: subl   %eax, %ecx
+eu4[0x100239650] <+3210>: cmpl   %ecx, %r12d
+eu4[0x100239653] <+3213>: jne    0x10023966e               ; <+3240>
+eu4[0x100239655] <+3215>: movq   0x638(%r13), %rax
+eu4[0x10023965c] <+3222>: leaq   -0x138(%rbp), %rsi
+eu4[0x100239663] <+3229>: movq   %rax, (%rsi)
+eu4[0x100239666] <+3232>: movq   %r14, %rdi
+eu4[0x100239669] <+3235>: callq  0x100025e34               ; CPdxArray<CArmy*, int>::Append(CArmy*&&)
+eu4[0x10023966e] <+3240>: leal   0x1e(%rbx), %eax
+eu4[0x100239671] <+3243>: cltq   
+eu4[0x100239673] <+3245>: imulq  $-0x4c73064f, %rax, %rcx  ; imm = 0xB38CF9B1 
+eu4[0x10023967a] <+3252>: shrq   $0x20, %rcx
+eu4[0x10023967e] <+3256>: leal   0x1e(%rcx,%rbx), %ecx
+eu4[0x100239682] <+3260>: movl   %ecx, %edx
+eu4[0x100239684] <+3262>: shrl   $0x1f, %edx
+eu4[0x100239687] <+3265>: sarl   $0x8, %ecx
+eu4[0x10023968a] <+3268>: addl   %edx, %ecx
+eu4[0x10023968c] <+3270>: imull  $0x16d, %ecx, %ecx        ; imm = 0x16D 
+eu4[0x100239692] <+3276>: subl   %ecx, %eax
+eu4[0x100239694] <+3278>: cmpl   %eax, %r12d
+eu4[0x100239697] <+3281>: jne    0x1002396b2               ; <+3308>
+eu4[0x100239699] <+3283>: movq   0x648(%r13), %rax
+eu4[0x1002396a0] <+3290>: leaq   -0x138(%rbp), %rsi
+eu4[0x1002396a7] <+3297>: movq   %rax, (%rsi)
+eu4[0x1002396aa] <+3300>: movq   %r14, %rdi
+eu4[0x1002396ad] <+3303>: callq  0x100025e34               ; CPdxArray<CArmy*, int>::Append(CArmy*&&)
+eu4[0x1002396b2] <+3308>: leal   0x3c(%rbx), %eax
+eu4[0x1002396b5] <+3311>: cltq   
+eu4[0x1002396b7] <+3313>: imulq  $-0x4c73064f, %rax, %rcx  ; imm = 0xB38CF9B1 
+eu4[0x1002396be] <+3320>: shrq   $0x20, %rcx
+eu4[0x1002396c2] <+3324>: leal   0x3c(%rcx,%rbx), %ecx
+eu4[0x1002396c6] <+3328>: movl   %ecx, %edx
+eu4[0x1002396c8] <+3330>: shrl   $0x1f, %edx
+eu4[0x1002396cb] <+3333>: sarl   $0x8, %ecx
+eu4[0x1002396ce] <+3336>: addl   %edx, %ecx
+eu4[0x1002396d0] <+3338>: imull  $0x16d, %ecx, %ecx        ; imm = 0x16D 
+eu4[0x1002396d6] <+3344>: subl   %ecx, %eax
+eu4[0x1002396d8] <+3346>: cmpl   %eax, %r12d
+eu4[0x1002396db] <+3349>: jne    0x1002396f6               ; <+3376>
+eu4[0x1002396dd] <+3351>: movq   0x658(%r13), %rax
+eu4[0x1002396e4] <+3358>: leaq   -0x138(%rbp), %rsi
+eu4[0x1002396eb] <+3365>: movq   %rax, (%rsi)
+eu4[0x1002396ee] <+3368>: movq   %r14, %rdi
+eu4[0x1002396f1] <+3371>: callq  0x100025e34               ; CPdxArray<CArmy*, int>::Append(CArmy*&&)
+eu4[0x1002396f6] <+3376>: movl   %ebx, %eax
+eu4[0x1002396f8] <+3378>: addl   $0x5a, %eax
+eu4[0x1002396fb] <+3381>: cltq   
+eu4[0x1002396fd] <+3383>: imulq  $-0x4c73064f, %rax, %rcx  ; imm = 0xB38CF9B1 
+eu4[0x100239704] <+3390>: shrq   $0x20, %rcx
+eu4[0x100239708] <+3394>: leal   0x5a(%rcx,%rbx), %ecx
+eu4[0x10023970c] <+3398>: movl   %ecx, %edx
+eu4[0x10023970e] <+3400>: shrl   $0x1f, %edx
+eu4[0x100239711] <+3403>: sarl   $0x8, %ecx
+eu4[0x100239714] <+3406>: addl   %edx, %ecx
+eu4[0x100239716] <+3408>: imull  $0x16d, %ecx, %ecx        ; imm = 0x16D 
+eu4[0x10023971c] <+3414>: subl   %ecx, %eax
+eu4[0x10023971e] <+3416>: cmpl   %eax, %r12d
+eu4[0x100239721] <+3419>: jne    0x10023973c               ; <+3446>
+eu4[0x100239723] <+3421>: movq   0x668(%r13), %rax
+eu4[0x10023972a] <+3428>: leaq   -0x138(%rbp), %rsi
+eu4[0x100239731] <+3435>: movq   %rax, (%rsi)
+eu4[0x100239734] <+3438>: movq   %r14, %rdi
+eu4[0x100239737] <+3441>: callq  0x100025e34               ; CPdxArray<CArmy*, int>::Append(CArmy*&&)
+eu4[0x10023973c] <+3446>: movq   -0x38(%rbp), %rbx
+eu4[0x100239740] <+3450>: movl   0xe00(%rbx), %eax
+eu4[0x100239746] <+3456>: leaq   0x2015543(%rip), %rcx     ; NDefines::NDiplomacy::OVEREXTENSION_THRESHOLD
+eu4[0x10023974d] <+3463>: subl   (%rcx), %eax
+eu4[0x10023974f] <+3465>: jle    0x100238a54               ; <+142>
+eu4[0x100239755] <+3471>: leaq   0x2015538(%rip), %rcx     ; NDefines::NDiplomacy::OVEREXTENSTION_POLL_BASE
+eu4[0x10023975c] <+3478>: movslq (%rcx), %rcx
+eu4[0x10023975f] <+3481>: movslq %eax, %rdx
+eu4[0x100239762] <+3484>: leaq   0x201552f(%rip), %rax     ; NDefines::NDiplomacy::OVEREXTENSTION_POLL_CHANGE
+eu4[0x100239769] <+3491>: movslq (%rax), %rax
+eu4[0x10023976c] <+3494>: imulq  %rdx, %rax
+eu4[0x100239770] <+3498>: movabsq $0x20c49ba5e353f7cf, %rdx ; imm = 0x20C49BA5E353F7CF 
+eu4[0x10023977a] <+3508>: imulq  %rdx
+eu4[0x10023977d] <+3511>: movq   %rdx, %rax
+eu4[0x100239780] <+3514>: shrq   $0x3f, %rax
+eu4[0x100239784] <+3518>: shrq   $0x7, %rdx
+eu4[0x100239788] <+3522>: addl   %eax, %edx
+eu4[0x10023978a] <+3524>: movslq %edx, %rax
+eu4[0x10023978d] <+3527>: imulq  %rcx, %rax
+eu4[0x100239791] <+3531>: movabsq $-0x20c49ba5e353f7cf, %rdx ; imm = 0xDF3B645A1CAC0831 
+eu4[0x10023979b] <+3541>: imulq  %rdx
+eu4[0x10023979e] <+3544>: movq   %rdx, %rax
+eu4[0x1002397a1] <+3547>: shrq   $0x3f, %rax
+eu4[0x1002397a5] <+3551>: shrq   $0x7, %rdx
+eu4[0x1002397a9] <+3555>: addl   %eax, %edx
+eu4[0x1002397ab] <+3557>: addl   0xce8(%rbx), %r15d
+eu4[0x1002397b2] <+3564>: addl   %ecx, %edx
+eu4[0x1002397b4] <+3566>: addl   0x258(%rbx), %r15d
+eu4[0x1002397bb] <+3573>: movslq %edx, %rax
+eu4[0x1002397be] <+3576>: imulq  $0x10624dd3, %rax, %rax   ; imm = 0x10624DD3 
+eu4[0x1002397c5] <+3583>: movq   %rax, %rcx
+eu4[0x1002397c8] <+3586>: shrq   $0x3f, %rcx
+eu4[0x1002397cc] <+3590>: sarq   $0x26, %rax
+eu4[0x1002397d0] <+3594>: addl   %ecx, %eax
+eu4[0x1002397d2] <+3596>: cmpl   $0x1d, %eax
+eu4[0x1002397d5] <+3599>: movl   $0x1e, %ecx
+eu4[0x1002397da] <+3604>: cmovgl %eax, %ecx
+eu4[0x1002397dd] <+3607>: cmpl   $0x16e, %ecx              ; imm = 0x16E 
+eu4[0x1002397e3] <+3613>: movl   $0x16d, %ebx              ; imm = 0x16D 
+eu4[0x1002397e8] <+3618>: cmovll %ecx, %ebx
+eu4[0x1002397eb] <+3621>: leaq   -0x30(%rbp), %rdi
+eu4[0x1002397ef] <+3625>: callq  0x10003d5c0               ; CGregorianDate::GetTotalDays() const
+eu4[0x1002397f4] <+3630>: cltd   
+eu4[0x1002397f5] <+3631>: idivl  %ebx
+eu4[0x1002397f7] <+3633>: movl   %edx, %ecx
+eu4[0x1002397f9] <+3635>: movl   %r15d, %eax
+eu4[0x1002397fc] <+3638>: cltd   
+eu4[0x1002397fd] <+3639>: idivl  %ebx
+eu4[0x1002397ff] <+3641>: movq   -0x38(%rbp), %rbx
+eu4[0x100239803] <+3645>: cmpl   %edx, %ecx
+eu4[0x100239805] <+3647>: jne    0x100238a54               ; <+142>
+eu4[0x10023980b] <+3653>: movq   0x4d8(%r13), %rax
+eu4[0x100239812] <+3660>: leaq   -0x138(%rbp), %rsi
+eu4[0x100239819] <+3667>: movq   %rax, (%rsi)
+eu4[0x10023981c] <+3670>: movq   %r14, %rdi
+eu4[0x10023981f] <+3673>: callq  0x100025e34               ; CPdxArray<CArmy*, int>::Append(CArmy*&&)
+eu4[0x100239824] <+3678>: movq   -0x38(%rbp), %rbx
+eu4[0x100239828] <+3682>: jmp    0x100238a54               ; <+142>
+eu4[0x10023982d] <+3687>: jmp    0x100239831               ; <+3691>
+eu4[0x10023982f] <+3689>: jmp    0x100239831               ; <+3691>
+eu4[0x100239831] <+3691>: movq   %rax, %r14
+eu4[0x100239834] <+3694>: jmp    0x1002398d3               ; <+3853>
+eu4[0x100239839] <+3699>: movq   %rax, %r14
+eu4[0x10023983c] <+3702>: movq   %rbx, -0x138(%rbp)
+eu4[0x100239843] <+3709>: movq   -0x78(%rbp), %rdi
+eu4[0x100239847] <+3713>: movq   $0x0, -0x78(%rbp)
+eu4[0x10023984f] <+3721>: testq  %rdi, %rdi
+eu4[0x100239852] <+3724>: je     0x100239859               ; <+3731>
+eu4[0x100239854] <+3726>: callq  0x10034a808               ; std::__1::default_delete<CEventScope>::operator()(CEventScope*) const
+eu4[0x100239859] <+3731>: movq   -0x80(%rbp), %rdi
+eu4[0x10023985d] <+3735>: movq   $0x0, -0x80(%rbp)
+eu4[0x100239865] <+3743>: testq  %rdi, %rdi
+eu4[0x100239868] <+3746>: je     0x10023986f               ; <+3753>
+eu4[0x10023986a] <+3748>: callq  0x10034a808               ; std::__1::default_delete<CEventScope>::operator()(CEventScope*) const
+eu4[0x10023986f] <+3753>: movq   -0x88(%rbp), %rdi
+eu4[0x100239876] <+3760>: movq   $0x0, -0x88(%rbp)
+eu4[0x100239881] <+3771>: testq  %rdi, %rdi
+eu4[0x100239884] <+3774>: je     0x10023988b               ; <+3781>
+eu4[0x100239886] <+3776>: callq  0x10034a808               ; std::__1::default_delete<CEventScope>::operator()(CEventScope*) const
+eu4[0x10023988b] <+3781>: movq   -0xa0(%rbp), %rdi
+eu4[0x100239892] <+3788>: testq  %rdi, %rdi
+eu4[0x100239895] <+3791>: je     0x1002398a3               ; <+3805>
+eu4[0x100239897] <+3793>: movq   %rdi, -0x98(%rbp)
+eu4[0x10023989e] <+3800>: callq  0x1018cc85a               ; symbol stub for: operator delete(void*)
+eu4[0x1002398a3] <+3805>: movq   -0xb8(%rbp), %rdi
+eu4[0x1002398aa] <+3812>: testq  %rdi, %rdi
+eu4[0x1002398ad] <+3815>: je     0x1002398bb               ; <+3829>
+eu4[0x1002398af] <+3817>: movq   %rdi, -0xb0(%rbp)
+eu4[0x1002398b6] <+3824>: callq  0x1018cc85a               ; symbol stub for: operator delete(void*)
+eu4[0x1002398bb] <+3829>: movq   -0xd0(%rbp), %rdi
+eu4[0x1002398c2] <+3836>: testq  %rdi, %rdi
+eu4[0x1002398c5] <+3839>: je     0x1002398d3               ; <+3853>
+eu4[0x1002398c7] <+3841>: movq   %rdi, -0xc8(%rbp)
+eu4[0x1002398ce] <+3848>: callq  0x1018cc85a               ; symbol stub for: operator delete(void*)
+eu4[0x1002398d3] <+3853>: movq   -0x40(%rbp), %rax
+eu4[0x1002398d7] <+3857>: movq   %rax, -0x550(%rbp)
+eu4[0x1002398de] <+3864>: movl   $0x0, -0x53c(%rbp)
+eu4[0x1002398e8] <+3874>: movq   -0x548(%rbp), %rdi
+eu4[0x1002398ef] <+3881>: leaq   -0x538(%rbp), %rax
+eu4[0x1002398f6] <+3888>: cmpq   %rax, %rdi
+eu4[0x1002398f9] <+3891>: je     0x100239910               ; <+3914>
+eu4[0x1002398fb] <+3893>: testq  %rdi, %rdi
+eu4[0x1002398fe] <+3896>: je     0x100239910               ; <+3914>
+eu4[0x100239900] <+3898>: callq  0x1018cc854               ; symbol stub for: operator delete[](void*)
+eu4[0x100239905] <+3903>: movq   $0x0, -0x548(%rbp)
+eu4[0x100239910] <+3914>: movq   %r14, %rdi
+eu4[0x100239913] <+3917>: callq  0x1018cc47c               ; symbol stub for: _Unwind_Resume
+eu4[0x100239918] <+3922>: ud2    
+(lldb) quit

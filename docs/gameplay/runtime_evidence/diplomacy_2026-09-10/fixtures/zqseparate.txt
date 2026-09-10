@@ -1,0 +1,4 @@
+CZH = {
+ if = { limit = { NOT = { zhx_qn_single_war = yes } zhx_qn_original_war = yes } log = "ZQAUDIT second_war_preserves_original PASS" } else = { log = "ZQAUDIT second_war_preserves_original FAIL" }
+}
+CHC = { white_peace = FRA }

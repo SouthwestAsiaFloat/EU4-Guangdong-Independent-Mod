@@ -1,0 +1,15 @@
+on_monthly_pulse = { events = { zhx_qinwang.1 } }
+# Only the registered TWO LEADERS close the record. A prince's separate peace
+# must not clear the sent ledger. Scripted removal / leadership changes need runtime QA.
+on_war_ended = {
+    if = {
+        limit = {
+            has_global_flag = zhx_qn_active
+            OR = {
+                AND = { tag = event_target:zhx_qn_host FROM = { tag = event_target:zhx_qn_enemy } }
+                AND = { tag = event_target:zhx_qn_enemy FROM = { tag = event_target:zhx_qn_host } }
+            }
+        }
+        zhx_qn_close_campaign = yes
+    }
+}

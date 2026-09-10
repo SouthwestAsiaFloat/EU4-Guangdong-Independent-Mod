@@ -1,0 +1,2 @@
+CZH = { add_favors = { who = CHC amount = 100 } }
+CHC = { set_variable = { which = zhx_merit value = 0 } set_variable = { which = zhx_merit_term value = 0 } set_variable = { which = zhx_merit_lifetime value = 0 } }

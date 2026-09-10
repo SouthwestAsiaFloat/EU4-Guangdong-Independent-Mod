@@ -1,0 +1,88 @@
+# Called in Tianzi scope once, before a request is delivered.
+zhx_qn_open_campaign = {
+    if = {
+        limit = { NOT = { has_global_flag = zhx_qn_active } zhx_qn_single_war = yes }
+        change_variable = { which = zhx_qn_campaign_counter value = 1 }
+        set_variable = { which = zhx_qn_serial which = zhx_qn_campaign_counter }
+        save_global_event_target_as = zhx_qn_host
+        set_global_flag = zhx_qn_active
+        clr_global_flag = zhx_qn_offensive
+        if = { limit = { is_in_war = { attacker_leader = THIS } } set_global_flag = zhx_qn_offensive }
+        # Exactly one matching leader; no RNG is needed here.
+        every_country = {
+            limit = { war_with = PREV zhx_qn_enemy_leader = { host = PREV } }
+            save_global_event_target_as = zhx_qn_enemy
+        }
+    }
+}
+# Do NOT call this when a prince leaves or the host temporarily has two wars.
+zhx_qn_close_campaign = {
+    clr_global_flag = zhx_qn_active
+    clr_global_flag = zhx_qn_offensive
+    every_country = {
+        limit = { has_country_flag = zhx_qn_sent }
+        clr_country_flag = zhx_qn_sent
+    }
+    # Preserve pending/joining and their serial until the old response is consumed.
+    if = { limit = { has_saved_global_event_target = zhx_qn_host } clear_global_event_target = zhx_qn_host }
+    if = { limit = { has_saved_global_event_target = zhx_qn_enemy } clear_global_event_target = zhx_qn_enemy }
+}
+# Recipient scope; shared by diplomacy and the monthly AI host.
+zhx_qn_dispatch = {
+    if = {
+        limit = { zhx_qn_can_send = yes }
+        event_target:zhx_tianzi = {
+            zhx_qn_open_campaign = yes
+            save_event_target_as = zhx_qn_inviter
+        }
+        set_variable = { which = zhx_qn_serial which = event_target:zhx_qn_host }
+        set_country_flag = zhx_qn_sent
+        set_country_flag = zhx_qn_pending
+        # Use separate explicit branches. The human event inside an else
+        # branch failed to deliver in the 1.37.5 runtime probe.
+        if = { limit = { ai = no } country_event = { id = zhx_qinwang.10 days = 1 } }
+        if = { limit = { ai = yes } zhx_qn_accept = yes }
+    }
+}
+zhx_qn_accept = {
+    if = {
+        limit = { zhx_qn_can_accept = yes }
+        clr_country_flag = zhx_qn_pending
+        set_country_flag = zhx_qn_joining
+        if = { limit = { has_global_flag = zhx_qn_offensive } join_all_offensive_wars_of = event_target:zhx_qn_host }
+        else = { join_all_defensive_wars_of = event_target:zhx_qn_host }
+        # Native joins may be commands. Settle synchronously if visible, otherwise
+        # verify once after the next daily update. Never award merely for clicking.
+        if = { limit = { zhx_qn_joined_original = yes } zhx_qn_settle = yes }
+        else = { country_event = { id = zhx_qinwang.11 days = 1 } }
+    }
+    else = {
+        clr_country_flag = zhx_qn_pending
+        if = { limit = { ai = no } country_event = { id = zhx_qinwang.12 } }
+    }
+}
+zhx_qn_settle = {
+    if = {
+        limit = { has_country_flag = zhx_qn_joining zhx_qn_joined_original = yes }
+        event_target:zhx_qn_inviter = { add_favors = { who = PREV amount = -25 } }
+        zhx_add_active_merit = { amount = 10 }
+    }
+    else_if = { limit = { ai = no } country_event = { id = zhx_qinwang.12 } }
+    clr_country_flag = zhx_qn_joining
+}
+zhx_qn_maintain = {
+    if = {
+        limit = {
+            has_global_flag = zhx_qn_active
+            OR = {
+                NOT = { has_saved_global_event_target = zhx_qn_host }
+                event_target:zhx_qn_host = { OR = { NOT = { exists = yes } is_at_war = no NOT = { zhx_is_tianzi = yes } } }
+            }
+        }
+        zhx_qn_close_campaign = yes
+    }
+    if = {
+        limit = { ai = yes zhx_is_tianzi = yes zhx_qn_single_war = yes }
+        every_country = { limit = { zhx_qn_can_send = yes } zhx_qn_dispatch = yes }
+    }
+}

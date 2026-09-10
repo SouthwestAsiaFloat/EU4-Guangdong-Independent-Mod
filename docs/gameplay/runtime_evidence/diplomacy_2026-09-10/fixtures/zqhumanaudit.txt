@@ -1,0 +1,1 @@
+CHC = { if = { limit = { ai = no } log = "ZQAUDIT player_country PASS" } else = { log = "ZQAUDIT player_country FAIL" } if = { limit = { has_country_flag = zhx_qn_pending } log = "ZQAUDIT human_pending YES" } else = { log = "ZQAUDIT human_pending NO" } }

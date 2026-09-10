@@ -947,6 +947,117 @@ guiTypes = {
         }
 
 
+
+        # Zhou royal commands: flat scripted descendants of the native government root.
+        iconType = {
+            name = "zhx_wm_banner"
+            spriteType = "GFX_zhx_wm_banner"
+            position = { x = 18 y = 234 }
+            scripted = yes
+            alwaystransparent = yes
+        }
+        instantTextBoxType = {
+            name = "zhx_wm_title"
+            position = { x = 18 y = 215 }
+            font = "vic_18"
+            text = ""
+            maxWidth = 344
+            maxHeight = 18
+            format = centre
+            scripted = yes
+        }
+        instantTextBoxType = {
+            name = "zhx_wm_term"
+            position = { x = 18 y = 344 }
+            font = "vic_18"
+            text = ""
+            maxWidth = 344
+            maxHeight = 18
+            format = centre
+            scripted = yes
+        }
+        guiButtonType = {
+            name = "zhx_wm_tribute_button"
+            position = { x = 42 y = 236 }
+            quadTextureSprite = "GFX_zhx_wm_tribute"
+            scripted = yes
+            clicksound = decision
+        }
+        instantTextBoxType = {
+            name = "zhx_wm_tribute_label"
+            position = { x = 28 y = 309 }
+            font = "vic_18"
+            text = ""
+            maxWidth = 100
+            maxHeight = 18
+            format = centre
+            scripted = yes
+        }
+        instantTextBoxType = {
+            name = "zhx_wm_tribute_status"
+            position = { x = 28 y = 328 }
+            font = "vic_18"
+            text = ""
+            maxWidth = 100
+            maxHeight = 18
+            format = centre
+            scripted = yes
+        }
+        guiButtonType = {
+            name = "zhx_wm_migration_button"
+            position = { x = 154 y = 236 }
+            quadTextureSprite = "GFX_zhx_wm_migration"
+            scripted = yes
+            clicksound = decision
+        }
+        instantTextBoxType = {
+            name = "zhx_wm_migration_label"
+            position = { x = 140 y = 309 }
+            font = "vic_18"
+            text = ""
+            maxWidth = 100
+            maxHeight = 18
+            format = centre
+            scripted = yes
+        }
+        instantTextBoxType = {
+            name = "zhx_wm_migration_status"
+            position = { x = 140 y = 328 }
+            font = "vic_18"
+            text = ""
+            maxWidth = 100
+            maxHeight = 18
+            format = centre
+            scripted = yes
+        }
+        guiButtonType = {
+            name = "zhx_wm_levy_button"
+            position = { x = 266 y = 236 }
+            quadTextureSprite = "GFX_zhx_wm_levy"
+            scripted = yes
+            clicksound = decision
+        }
+        instantTextBoxType = {
+            name = "zhx_wm_levy_label"
+            position = { x = 252 y = 309 }
+            font = "vic_18"
+            text = ""
+            maxWidth = 100
+            maxHeight = 18
+            format = centre
+            scripted = yes
+        }
+        instantTextBoxType = {
+            name = "zhx_wm_levy_status"
+            position = { x = 252 y = 328 }
+            font = "vic_18"
+            text = ""
+            maxWidth = 100
+            maxHeight = 18
+            format = centre
+            scripted = yes
+        }
+
         # Zhou titles: direct children, mutually exclusive with republic overlays.
         instantTextBoxType = {
             name = "zhx_feudatory_gui_bo"

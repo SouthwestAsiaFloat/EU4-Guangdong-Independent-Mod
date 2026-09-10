@@ -1,0 +1,1 @@
+CHC = { if = { limit = { NOT = { has_country_flag = zhx_qn_pending } is_at_war = no is_variable_equal = { which = zhx_merit value = 0 } owes_favors = { who = CZH value = 100 } CZH = { war_with = CAS } } log = "ZQAUDIT stale_no_wrong_join_or_cost PASS" } else = { log = "ZQAUDIT stale_no_wrong_join_or_cost FAIL" } }

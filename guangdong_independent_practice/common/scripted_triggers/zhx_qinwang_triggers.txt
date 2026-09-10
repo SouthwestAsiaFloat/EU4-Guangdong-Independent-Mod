@@ -1,0 +1,88 @@
+# Country scope throughout. Actor is always the current global Tianzi.
+# Count distinct opposing leaders, NOT lifetime num_of_wars (a vanilla scripted trigger).
+zhx_qn_enemy_leader = {
+    OR = {
+        is_in_war = { attacker_leader = THIS defenders = $host$ }
+        is_in_war = { defender_leader = THIS attackers = $host$ }
+    }
+}
+zhx_qn_single_war = {
+    is_at_war = yes
+    OR = {
+        is_in_war = { attacker_leader = THIS }
+        is_in_war = { defender_leader = THIS }
+    }
+    NOT = {
+        any_war_enemy_country = {
+            zhx_qn_enemy_leader = { host = event_target:zhx_tianzi }
+            any_country = {
+                NOT = { tag = PREV }
+                war_with = event_target:zhx_tianzi
+                zhx_qn_enemy_leader = { host = event_target:zhx_tianzi }
+            }
+        }
+    }
+}
+zhx_qn_original_war = {
+    has_global_flag = zhx_qn_active
+    has_saved_global_event_target = zhx_qn_host
+    has_saved_global_event_target = zhx_qn_enemy
+    event_target:zhx_qn_host = {
+        exists = yes
+        zhx_is_tianzi = yes
+        OR = {
+            AND = {
+                has_global_flag = zhx_qn_offensive
+                is_in_war = { attacker_leader = THIS defender_leader = event_target:zhx_qn_enemy }
+            }
+            AND = {
+                NOT = { has_global_flag = zhx_qn_offensive }
+                is_in_war = { defender_leader = THIS attacker_leader = event_target:zhx_qn_enemy }
+            }
+        }
+    }
+}
+zhx_qn_eligible = {
+    exists = yes
+    is_subject = no
+    zhx_is_tianxia_member = yes
+    NOT = { zhx_is_tianzi = yes }
+    is_at_war = no
+    has_saved_global_event_target = zhx_tianzi
+    event_target:zhx_tianzi = { exists = yes is_subject = no zhx_qn_single_war = yes }
+    owes_favors = { who = event_target:zhx_tianzi value = 25 }
+}
+zhx_qn_can_send = {
+    zhx_qn_eligible = yes
+    NOT = { has_country_flag = zhx_qn_pending }
+    NOT = { has_country_flag = zhx_qn_joining }
+    NOT = { has_country_flag = zhx_qn_sent }
+    OR = { NOT = { has_global_flag = zhx_qn_active } zhx_qn_original_war = yes }
+    OR = { ai = no zhx_qn_ai_positive = yes }
+}
+# Saved local targets travel with the popup/one-shot follow-up, not mutable UI state.
+zhx_qn_request_matches = {
+    zhx_qn_original_war = yes
+    has_saved_event_target = zhx_qn_inviter
+    event_target:zhx_qn_inviter = { tag = event_target:zhx_qn_host }
+    is_variable_equal = { which = zhx_qn_serial which = event_target:zhx_qn_host }
+}
+zhx_qn_can_accept = {
+    has_country_flag = zhx_qn_pending
+    zhx_qn_request_matches = yes
+    zhx_qn_eligible = yes
+    OR = { ai = no zhx_qn_ai_positive = yes }
+}
+zhx_qn_joined_original = {
+    zhx_qn_request_matches = yes
+    OR = {
+        AND = {
+            has_global_flag = zhx_qn_offensive
+            is_in_war = { attackers = THIS attacker_leader = event_target:zhx_qn_host defender_leader = event_target:zhx_qn_enemy }
+        }
+        AND = {
+            NOT = { has_global_flag = zhx_qn_offensive }
+            is_in_war = { defenders = THIS defender_leader = event_target:zhx_qn_host attacker_leader = event_target:zhx_qn_enemy }
+        }
+    }
+}

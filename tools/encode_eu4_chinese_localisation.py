@@ -19,6 +19,10 @@ ROOT = Path(__file__).resolve().parents[1]
 MOD = ROOT / "guangdong_independent_practice"
 
 FILES = {
+    "034_zhx_qinwang_tooltip_readable_utf8.txt": "replace/034_zhx_qinwang_tooltip_l_english.yml",
+    "033_zhx_diplomacy_category_readable_utf8.txt": "replace/033_zhx_diplomacy_category_l_english.yml",
+    "032_zhx_qinwang_readable_utf8.txt": "replace/032_zhx_qinwang_l_english.yml",
+    "031_zhx_wangming_readable_utf8.txt": "replace/031_zhx_wangming_l_english.yml",
     "025_zhx_tianzi_readable_utf8.txt": "replace/025_zhx_tianzi_l_english.yml",
     "024_gdd_b79_suizhu_xianhuang_readable_utf8.txt": "replace/024_gdd_b79_suizhu_xianhuang_l_english.yml",
     "023_zhx_gongyi_readable_utf8.txt": "replace/023_zhx_gongyi_l_english.yml",

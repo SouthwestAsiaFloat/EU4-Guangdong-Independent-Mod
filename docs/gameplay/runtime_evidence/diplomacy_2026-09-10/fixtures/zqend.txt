@@ -1,0 +1,1 @@
+CZH = { white_peace = FRA white_peace = ENG }

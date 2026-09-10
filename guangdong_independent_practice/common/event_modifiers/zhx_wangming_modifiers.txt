@@ -1,0 +1,1 @@
+zhx_wm_refused_tribute = { diplomatic_reputation = -1 }

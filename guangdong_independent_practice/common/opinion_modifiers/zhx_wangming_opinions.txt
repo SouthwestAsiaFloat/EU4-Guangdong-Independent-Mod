@@ -1,0 +1,6 @@
+zhx_wm_refused_tribute_opinion = { opinion = -25 yearly_decay = 5 }
+zhx_wm_levied_troops = { opinion = -50 yearly_decay = 5 }
+zhx_wm_migration_1 = { opinion = -15 yearly_decay = 3 }
+zhx_wm_migration_2 = { opinion = -30 yearly_decay = 3 }
+zhx_wm_migration_3 = { opinion = -45 yearly_decay = 3 }
+zhx_wm_migration_4 = { opinion = -60 yearly_decay = 3 }

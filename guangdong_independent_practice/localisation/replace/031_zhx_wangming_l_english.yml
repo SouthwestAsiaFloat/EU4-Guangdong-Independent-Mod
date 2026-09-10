@@ -1,0 +1,39 @@
+﻿l_english:
+ zhx_wm_title:0 "§Y‹s‹T§!"
+ zhx_wm_term:0 "ÝNJSÿ§Y[Root.zhx_merit_term_years_remaining.GetValue]§!t^"
+ zhx_wm_common_tt:0 "ÏkJSTïSO(uN!kÿàe˜Y9(u0¹pûQT…VN!kg¦^Óu—rgbLˆÿgY¦uN8NgÿIr…Vgô•NýwÍ‘YÑSäNÿgbLˆöeÍ‘°eÀhågDJhÿJSán8ggbLˆRÖSˆm0!kpe–)YPRLwMOÝOYuÿTINôfÿfb)YPRfMON7R°eÿ8g(u!kpeN=tïy0ck(WN)YPR²Nb„vø‹¯ONÂSN0"
+ zhx_wm_queued:0 "§Y…VgbLˆ§!"
+ zhx_wm_ready:0 "§G,gJSïS(u§!"
+ zhx_wm_used:0 "§g,gJSòT(u§!"
+ zhx_wm_no_target:0 "§g‚fàeîvh§!"
+ zhx_wm_starting:0 "§gck(W®‹šRJS!k§!"
+ zhx_wm_tribute_label:0 "§bVìS!K§!"
+ zhx_wm_migration_label:0 "§b™VlžRu§!"
+ zhx_wm_levy_label:0 "§bVŒ›QO§!"
+ zhx_wm_tribute_status:0 "[Root.GetZhouWangmingTributeStatus]"
+ zhx_wm_migration_status:0 "[Root.GetZhouWangmingMigrationStatus]"
+ zhx_wm_levy_status:0 "[Root.GetZhouWangmingLevyStatus]"
+ zhx_wm_tribute_tt:0 "§YVìS!K§!\nThQSOTDJhø‹¯OV6eTê§YN8Ng6eeQ§!„vÑ‘^ÿåNgbLˆöecbd–=eúQMR„vg6eeQ¡‹—r0\n\nø‹¯OïSÒbÝuÿýV“^N³öeêSýwÒbÝuÿNHVëP70Òb!ýVY²NðX‰Š§R-1§!ÿcíu§Y5t^§!ÿ)YPRùRvQ‹Ya§R-25§!ÿÏkt^b`Y§G5§!0\n\nÏkJSTïSO(uN!kÿàe˜Y9(u0¹pûQT…VN!kg¦^Óu—rgbLˆÿgY¦uN8NgÿIr…Vgô•NýwÍ‘YÑSäNÿgbLˆöeÍ‘°eÀhågDJhÿJSán8ggbLˆRÖSˆm0!kpe–)YPRLwMOÝOYuÿTINôfÿfb)YPRfMON7R°eÿ8g(u!kpeN=tïy0ck(WN)YPR²Nb„vø‹¯ONÂSN0\n\nSVMR¶r`ÿ[Root.GetZhouWangmingTributeStatus]\nÝNJSÿ§Y[Root.zhx_merit_term_years_remaining.GetValue]§!t^0"
+ zhx_wm_migration_tt:0 "§Y™VlžRu§!\ngbLˆöe–Hg	N8Nø‹¯Oÿ	cI`ÑSUS¦^VŒÿ\n§Y30-99§!ÿlûy§Y3§!¹pÿ§Y100-199§!ÿ§Y6§!¹pÿ\n§Y200-299§!ÿ§Y9§!¹pÿ§Y300ÊSåNN§!ÿ§Y12§!¹p0\nz6e0uµN0ºN›RT`S	NRKNNÿÎNTDJhwýN¹p–Hgcbd–ÿTy˜gNOÝOYu§Y1§!ÿN³30ÑSUS¦^bNýwcb³„výV¶RNÂSN0\n\n)YPR§GIrÏ‘·ƒ—V§!ÑSUS¦^ÿ–HgRM‘óêñTåb	g„v–™ýHSßWwýN0ø‹¯ONýwÒbÝuÿùR)YPR‹YaR+R§R-15/-30/-45/-60§!ÿÏkt^b`Y§G3§!0\n\nÏkJSTïSO(uN!kÿàe˜Y9(u0¹pûQT…VN!kg¦^Óu—rgbLˆÿgY¦uN8NgÿIr…Vgô•NýwÍ‘YÑSäNÿgbLˆöeÍ‘°eÀhågDJhÿJSán8ggbLˆRÖSˆm0!kpe–)YPRLwMOÝOYuÿTINôfÿfb)YPRfMON7R°eÿ8g(u!kpeN=tïy0ck(WN)YPR²Nb„vø‹¯ONÂSN0\n\nSVMR¶r`ÿ[Root.GetZhouWangmingMigrationStatus]\nÝNJSÿ§Y[Root.zhx_merit_term_years_remaining.GetValue]§!t^0"
+ zhx_wm_levy_tt:0 "§YVŒ›QO§!\ngbLˆöe–Hg	ébN8NTDJhø‹¯OÿVŒvQ§Y248Ng§!8^Ä‰ºN›ReˆEQÏ‘ÿgNO§Y2400ºN§!0åNgbLˆöehQýVºN›RNP–ŒTºN›Rb`Y¦^¡‹—rÿNcbd–›Q–eˆXTV=e0\n\nø‹¯OºN›RN³öecbIQÿ)YPRÍN·ƒ—V§GŒRteVŒ˜§!0×SVø‹¯ONýwÒbÝuÿùR)YPR‹Ya§R-50§!ÿÏkt^b`Y§G5§!0\n\nÏkJSTïSO(uN!kÿàe˜Y9(u0¹pûQT…VN!kg¦^Óu—rgbLˆÿgY¦uN8NgÿIr…Vgô•NýwÍ‘YÑSäNÿgbLˆöeÍ‘°eÀhågDJhÿJSán8ggbLˆRÖSˆm0!kpe–)YPRLwMOÝOYuÿTINôfÿfb)YPRfMON7R°eÿ8g(u!kpeN=tïy0ck(WN)YPR²Nb„vø‹¯ONÂSN0\n\nSVMR¶r`ÿ[Root.GetZhouWangmingLevyStatus]\nÝNJSÿ§Y[Root.zhx_merit_term_years_remaining.GetValue]§!t^0"
+ zhx_wm_tribute_title:0 "‹s‹TV!"
+ zhx_wm_tribute_desc:0 "[zhx_wm_sender.GetName]IY‹s‹TVìS,gJS!KÿbýV”^4³u§Y[Root.zhx_wm_tribute_due.GetValue]§!Ñ‘^ÿøvSVŽNgbLˆöeN8Ng„v6eeQ0\n\nïS²N³ubÒbÝu0ýV“^N³öeNýw²N³uÿÒb!Omc³RbýVY²NðX‰ŠN)YPRùRbýV„v‹Ya0‹s‹T1YHeöeÿ,g!kV!ÖSˆm0"
+ zhx_wm_pay:0 "OJyÛ!"
+ zhx_wm_pay_tt:0 "²N³u§Y[Root.zhx_wm_tribute_due.GetValue]§!Ñ‘^ÿ)YPRIrÏ‘6e0R!Ñ‘0"
+ zhx_wm_refuse:0 "ÒbÝuÛ!"
+ zhx_wm_refuse_tt:0 "býVY²NðX‰Š§R-1§!ÿcíu§Y5t^§!0)YPRùRbýV‹Ya§R-25§!ÿÏkt^b`Y§G5§!0"
+ zhx_wm_refused_tribute:0 "Òb³u‹s!"
+ desc_zhx_wm_refused_tribute:0 ",gýVÒbÝu†N)YPR,gJSV!ÿY²NðX‰Š‚föe×Smc0"
+ zhx_wm_refused_tribute_opinion:0 "Òb³u,gJS!K"
+ zhx_wm_levied_troops:0 "HVV,gýV›QO"
+ zhx_wm_migration_title:0 "™VlžRu"
+ zhx_wm_migration_desc:0 "‹s‹TòTóÿ[zhx_wm_sender.GetName]ÎNbýVVŒ§Y[Root.zhx_wm_moved.GetValue]§!¹pÑSUS¦^ÿEQžRvQ–™ýHSßW0z6e0uµN0ºN›RGWRÿÁûyòTÏuŒRb0býVùR)YPR„v‹YaàVdk×Smc0"
+ zhx_wm_migration_receipt:0 "[zhx_wm_donor.GetName]„vÁlòTµb¾‹su0vQ§Y[zhx_wm_donor.zhx_wm_moved.GetValue]§!¹pÑSUS¦^òTIrÏ‘ÁeQbýV–™ýHSßW0å‹ýVùRbýV„vNánS–t^Snˆm0"
+ zhx_wm_levy_title:0 "‹s‹TVŒ›QO"
+ zhx_wm_levy_desc:0 "[zhx_wm_sender.GetName]VŒbýV›QOÿqQ§Y[Root.zhx_wm_levy_people.GetValue]ºN§!0,gýVòTcbd–øv”^ºN›RÿN³Rcbóö–ÿ‹s²R·ƒ—VŒRteVŒ˜0\n\nbýVùR)YPR‹Ya§R-50§!ÿÏkt^b`Y§G5§!0"
+ zhx_wm_levy_receipt:0 "[zhx_wm_donor.GetName]IY‹T“›QOÿ‹s²R·ƒ—V§G[zhx_wm_donor.zhx_wm_levy_people.GetValue]ºN§!ÿòT ReQºN›R¨PY0\n\nå‹ýVùRbýV‹Ya§R-50§!ÿÏkt^b`Y§G5§!0"
+ zhx_wm_obey:0 "åw‰`‹s‹T"
+ zhx_wm_migration_1:0 "HV™V,gýVl7b"
+ zhx_wm_migration_2:0 "HV™V,gýVl7b"
+ zhx_wm_migration_3:0 "HV™V,gýVl7b"
+ zhx_wm_migration_4:0 "HV™V,gýVl7b"

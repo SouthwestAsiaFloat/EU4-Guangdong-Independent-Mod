@@ -1,5 +1,5 @@
 zhx_gongyi_petition = {
-    category = influence
+    category = is_emperor_of_china
     require_acceptance = no
     is_visible = {
         government = republic

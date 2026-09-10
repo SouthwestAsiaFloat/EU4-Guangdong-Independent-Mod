@@ -1,0 +1,6 @@
+CHC = { if = { limit = { war_with = GUN has_country_flag = zhx_qn_sent NOT = { has_country_flag = zhx_qn_pending } is_variable_equal = { which = zhx_merit value = 40 } } log = "ZQAUDIT reload_human_defense PASS" } else = { log = "ZQAUDIT reload_human_defense FAIL" } }
+CZH = { if = { limit = { zhx_qn_original_war = yes } log = "ZQAUDIT reload_original_record PASS" } else = { log = "ZQAUDIT reload_original_record FAIL" } }
+CHC = { white_peace = GUN }
+CZH = { white_peace = GUN zhx_qn_maintain = yes add_favors = { who = CHC amount = 100 } }
+SCO = { declare_war_with_cb = { who = CZH casus_belli = cb_insult } }
+CHC = { set_variable = { which = zhx_merit value = 0 } set_variable = { which = zhx_merit_term value = 0 } set_variable = { which = zhx_merit_lifetime value = 0 } zhx_qn_dispatch = yes }

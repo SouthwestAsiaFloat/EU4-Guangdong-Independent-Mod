@@ -1,0 +1,9 @@
+CHC = {
+add_trust = { who = CZH value = -62 mutual = no }
+if = { limit = { zhx_qn_sum_signed = { divisor = 1 modulus = 10000 threshold = 0 } NOT = { zhx_qn_ai_positive = yes } } log = "ZQAUDIT net_zero_declines PASS" } else = { log = "ZQAUDIT net_zero_declines FAIL" }
+add_trust = { who = CZH value = 2 mutual = no }
+if = { limit = { zhx_qn_ai_positive = yes NOT = { zhx_qn_sum_signed = { divisor = 1 modulus = 10000 threshold = 2 } } } log = "ZQAUDIT net_one_accepts PASS" } else = { log = "ZQAUDIT net_one_accepts FAIL" }
+add_trust = { who = CZH value = -4 mutual = no }
+if = { limit = { NOT = { zhx_qn_ai_positive = yes } } log = "ZQAUDIT negative_declines PASS" } else = { log = "ZQAUDIT negative_declines FAIL" }
+add_trust = { who = CZH value = 82 mutual = no }
+}

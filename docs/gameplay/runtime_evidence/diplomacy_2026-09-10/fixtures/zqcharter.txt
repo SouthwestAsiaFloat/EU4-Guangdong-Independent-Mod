@@ -1,0 +1,7 @@
+WHU = {
+ add_government_reform = zhx_gongyi_ordinary_reform
+ clr_country_flag = zhx_gongyi_charter
+ clr_country_flag = zhx_gongyi_request_pending
+ clr_country_flag = zhx_gongyi_request_cooldown
+}
+CZH = { add_opinion = { who = WHU modifier = released_us_freely } }

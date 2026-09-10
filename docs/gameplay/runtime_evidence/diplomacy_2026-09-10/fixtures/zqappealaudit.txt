@@ -1,0 +1,5 @@
+if = { limit = { CZH = { war_with = LIT } } log = "ZQAPPEAL host_war_lit TRUE" } else = { log = "ZQAPPEAL host_war_lit FALSE" }
+if = { limit = { CZH = { is_at_war = no } } log = "ZQAPPEAL host_peace TRUE" } else = { log = "ZQAPPEAL host_peace FALSE" }
+if = { limit = { CZH = { truce_with = LIT } } log = "ZQAPPEAL host_truce_lit TRUE" } else = { log = "ZQAPPEAL host_truce_lit FALSE" }
+if = { limit = { CHC = { is_in_war = { attacker_leader = LIT defender_leader = CHC } } } log = "ZQAPPEAL prince_def_leader TRUE" } else = { log = "ZQAPPEAL prince_def_leader FALSE" }
+if = { limit = { CZH = { NOT = { alliance_with = CHC } } } log = "ZQAPPEAL host_no_alliance TRUE" } else = { log = "ZQAPPEAL host_no_alliance FALSE" }

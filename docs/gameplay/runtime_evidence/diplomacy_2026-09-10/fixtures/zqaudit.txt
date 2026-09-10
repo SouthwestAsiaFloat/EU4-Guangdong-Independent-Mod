@@ -1,0 +1,10 @@
+CHC = {
+if = { limit = { is_in_war = { attacker_leader = CZH defender_leader = FRA attackers = CHC } } log = "ZQAUDIT joined_original PASS" } else = { log = "ZQAUDIT joined_original FAIL" }
+if = { limit = { owes_favors = { who = CZH value = 75 } NOT = { owes_favors = { who = CZH value = 76 } } } log = "ZQAUDIT favors_75 PASS" } else = { log = "ZQAUDIT favors_75 FAIL" }
+if = { limit = { is_variable_equal = { which = zhx_merit value = 10 } } log = "ZQAUDIT merit_10 PASS" } else = { log = "ZQAUDIT merit_10 FAIL" }
+if = { limit = { is_variable_equal = { which = zhx_merit_term value = 10 } } log = "ZQAUDIT merit_term_10 PASS" } else = { log = "ZQAUDIT merit_term_10 FAIL" }
+if = { limit = { is_variable_equal = { which = zhx_merit_lifetime value = 10 } } log = "ZQAUDIT merit_lifetime_10 PASS" } else = { log = "ZQAUDIT merit_lifetime_10 FAIL" }
+if = { limit = { has_country_flag = zhx_qn_sent } log = "ZQAUDIT sent_retained PASS" } else = { log = "ZQAUDIT sent_retained FAIL" }
+if = { limit = { NOT = { has_country_flag = zhx_qn_pending } NOT = { has_country_flag = zhx_qn_joining } } log = "ZQAUDIT pending_cleared PASS" } else = { log = "ZQAUDIT pending_cleared FAIL" }
+if = { limit = { NOT = { alliance_with = CZH } } log = "ZQAUDIT no_alliance PASS" } else = { log = "ZQAUDIT no_alliance FAIL" }
+}

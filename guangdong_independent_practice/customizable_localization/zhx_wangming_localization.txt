@@ -1,0 +1,24 @@
+defined_text = {
+    name = GetZhouWangmingTributeStatus
+    text = { localisation_key = zhx_wm_used trigger = { has_global_flag = zhx_wm_tribute_used } }
+    text = { localisation_key = zhx_wm_queued trigger = { has_global_flag = zhx_wm_tribute_queued } }
+    text = { localisation_key = zhx_wm_starting trigger = { NOT = { has_global_flag = zhx_system_initialised_v13 } } }
+    text = { localisation_key = zhx_wm_ready trigger = { zhx_wm_can_tribute = yes } }
+    text = { localisation_key = zhx_wm_no_target trigger = { always = yes } }
+}
+defined_text = {
+    name = GetZhouWangmingMigrationStatus
+    text = { localisation_key = zhx_wm_used trigger = { has_global_flag = zhx_wm_migration_used } }
+    text = { localisation_key = zhx_wm_queued trigger = { has_global_flag = zhx_wm_migration_queued } }
+    text = { localisation_key = zhx_wm_starting trigger = { NOT = { has_global_flag = zhx_system_initialised_v13 } } }
+    text = { localisation_key = zhx_wm_ready trigger = { zhx_wm_can_migrate = yes } }
+    text = { localisation_key = zhx_wm_no_target trigger = { always = yes } }
+}
+defined_text = {
+    name = GetZhouWangmingLevyStatus
+    text = { localisation_key = zhx_wm_used trigger = { has_global_flag = zhx_wm_levy_used } }
+    text = { localisation_key = zhx_wm_queued trigger = { has_global_flag = zhx_wm_levy_queued } }
+    text = { localisation_key = zhx_wm_starting trigger = { NOT = { has_global_flag = zhx_system_initialised_v13 } } }
+    text = { localisation_key = zhx_wm_ready trigger = { zhx_wm_can_levy = yes } }
+    text = { localisation_key = zhx_wm_no_target trigger = { always = yes } }
+}

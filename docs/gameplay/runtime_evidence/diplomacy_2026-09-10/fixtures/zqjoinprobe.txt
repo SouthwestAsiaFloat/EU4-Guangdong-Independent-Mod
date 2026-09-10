@@ -1,0 +1,1 @@
+CZH = { join_all_defensive_wars_of = CHC }

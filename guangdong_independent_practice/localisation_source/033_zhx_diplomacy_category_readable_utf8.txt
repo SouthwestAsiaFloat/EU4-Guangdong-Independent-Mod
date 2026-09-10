@@ -1,0 +1,4 @@
+l_english:
+ DIPLOMACYACTION_CATEGORY_is_emperor_of_china:0 "周天下"
+ zhx_diplo_relief_available_tt:0 "该诸侯正作为防御战争领袖抵御域外进攻，且天子尚未加入其防御阵营。和平时暂不能救患。"
+ zhx_diplo_appeal_available_tt:0 "我国正作为防御战争领袖抵御域外进攻，且天子尚未加入我国的防御阵营。和平时暂不能告急。"

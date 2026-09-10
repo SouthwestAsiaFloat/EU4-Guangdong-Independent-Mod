@@ -323,7 +323,7 @@ def strip_custom(tree: list) -> list:
     for name, operation, value in tree:
         if isinstance(value, list):
             names = values(value, "name")
-            if names and names[0].startswith((PREFIX, "gdd_hak_", "zhx_feudatory_")):
+            if names and names[0].startswith((PREFIX, "gdd_hak_", "zhx_feudatory_", "zhx_wm_")):
                 continue
             value = strip_custom(value)
         result.append((name, operation, value))
