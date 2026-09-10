@@ -1,0 +1,238 @@
+# Province scope. No country scans or event dispatch inside ownership callbacks.
+# floor((ritual + 100) / 10) * 5 percent, clamped to 0..100.
+
+zhx_clear_ritual_warscore = {
+    remove_province_modifier = zhx_ritual_warscore_005
+    remove_province_modifier = zhx_ritual_warscore_010
+    remove_province_modifier = zhx_ritual_warscore_015
+    remove_province_modifier = zhx_ritual_warscore_020
+    remove_province_modifier = zhx_ritual_warscore_025
+    remove_province_modifier = zhx_ritual_warscore_030
+    remove_province_modifier = zhx_ritual_warscore_035
+    remove_province_modifier = zhx_ritual_warscore_040
+    remove_province_modifier = zhx_ritual_warscore_045
+    remove_province_modifier = zhx_ritual_warscore_050
+    remove_province_modifier = zhx_ritual_warscore_055
+    remove_province_modifier = zhx_ritual_warscore_060
+    remove_province_modifier = zhx_ritual_warscore_065
+    remove_province_modifier = zhx_ritual_warscore_070
+    remove_province_modifier = zhx_ritual_warscore_075
+    remove_province_modifier = zhx_ritual_warscore_080
+    remove_province_modifier = zhx_ritual_warscore_085
+    remove_province_modifier = zhx_ritual_warscore_090
+    remove_province_modifier = zhx_ritual_warscore_095
+    remove_province_modifier = zhx_ritual_warscore_100
+    clr_province_flag = zhx_ritual_warscore_active
+}
+
+zhx_refresh_province_ritual_warscore = {
+    if = {
+        limit = {
+            owner = { zhx_is_tianxia_polity = yes }
+            has_saved_global_event_target = zhx_tianzi
+            event_target:zhx_tianzi = { exists = yes zhx_is_tianzi = yes }
+        }
+        if = {
+            limit = { event_target:zhx_tianzi = { check_variable = { which = zhx_ritual_authority value = 100 } } }
+            if = {
+                limit = { NOT = { has_province_modifier = zhx_ritual_warscore_100 } }
+                zhx_clear_ritual_warscore = yes
+                add_province_modifier = { name = zhx_ritual_warscore_100 duration = -1 }
+                set_province_flag = zhx_ritual_warscore_active
+            }
+        }
+        else_if = {
+            limit = { event_target:zhx_tianzi = { check_variable = { which = zhx_ritual_authority value = 90 } } }
+            if = {
+                limit = { NOT = { has_province_modifier = zhx_ritual_warscore_095 } }
+                zhx_clear_ritual_warscore = yes
+                add_province_modifier = { name = zhx_ritual_warscore_095 duration = -1 }
+                set_province_flag = zhx_ritual_warscore_active
+            }
+        }
+        else_if = {
+            limit = { event_target:zhx_tianzi = { check_variable = { which = zhx_ritual_authority value = 80 } } }
+            if = {
+                limit = { NOT = { has_province_modifier = zhx_ritual_warscore_090 } }
+                zhx_clear_ritual_warscore = yes
+                add_province_modifier = { name = zhx_ritual_warscore_090 duration = -1 }
+                set_province_flag = zhx_ritual_warscore_active
+            }
+        }
+        else_if = {
+            limit = { event_target:zhx_tianzi = { check_variable = { which = zhx_ritual_authority value = 70 } } }
+            if = {
+                limit = { NOT = { has_province_modifier = zhx_ritual_warscore_085 } }
+                zhx_clear_ritual_warscore = yes
+                add_province_modifier = { name = zhx_ritual_warscore_085 duration = -1 }
+                set_province_flag = zhx_ritual_warscore_active
+            }
+        }
+        else_if = {
+            limit = { event_target:zhx_tianzi = { check_variable = { which = zhx_ritual_authority value = 60 } } }
+            if = {
+                limit = { NOT = { has_province_modifier = zhx_ritual_warscore_080 } }
+                zhx_clear_ritual_warscore = yes
+                add_province_modifier = { name = zhx_ritual_warscore_080 duration = -1 }
+                set_province_flag = zhx_ritual_warscore_active
+            }
+        }
+        else_if = {
+            limit = { event_target:zhx_tianzi = { check_variable = { which = zhx_ritual_authority value = 50 } } }
+            if = {
+                limit = { NOT = { has_province_modifier = zhx_ritual_warscore_075 } }
+                zhx_clear_ritual_warscore = yes
+                add_province_modifier = { name = zhx_ritual_warscore_075 duration = -1 }
+                set_province_flag = zhx_ritual_warscore_active
+            }
+        }
+        else_if = {
+            limit = { event_target:zhx_tianzi = { check_variable = { which = zhx_ritual_authority value = 40 } } }
+            if = {
+                limit = { NOT = { has_province_modifier = zhx_ritual_warscore_070 } }
+                zhx_clear_ritual_warscore = yes
+                add_province_modifier = { name = zhx_ritual_warscore_070 duration = -1 }
+                set_province_flag = zhx_ritual_warscore_active
+            }
+        }
+        else_if = {
+            limit = { event_target:zhx_tianzi = { check_variable = { which = zhx_ritual_authority value = 30 } } }
+            if = {
+                limit = { NOT = { has_province_modifier = zhx_ritual_warscore_065 } }
+                zhx_clear_ritual_warscore = yes
+                add_province_modifier = { name = zhx_ritual_warscore_065 duration = -1 }
+                set_province_flag = zhx_ritual_warscore_active
+            }
+        }
+        else_if = {
+            limit = { event_target:zhx_tianzi = { check_variable = { which = zhx_ritual_authority value = 20 } } }
+            if = {
+                limit = { NOT = { has_province_modifier = zhx_ritual_warscore_060 } }
+                zhx_clear_ritual_warscore = yes
+                add_province_modifier = { name = zhx_ritual_warscore_060 duration = -1 }
+                set_province_flag = zhx_ritual_warscore_active
+            }
+        }
+        else_if = {
+            limit = { event_target:zhx_tianzi = { check_variable = { which = zhx_ritual_authority value = 10 } } }
+            if = {
+                limit = { NOT = { has_province_modifier = zhx_ritual_warscore_055 } }
+                zhx_clear_ritual_warscore = yes
+                add_province_modifier = { name = zhx_ritual_warscore_055 duration = -1 }
+                set_province_flag = zhx_ritual_warscore_active
+            }
+        }
+        else_if = {
+            limit = { event_target:zhx_tianzi = { check_variable = { which = zhx_ritual_authority value = 0 } } }
+            if = {
+                limit = { NOT = { has_province_modifier = zhx_ritual_warscore_050 } }
+                zhx_clear_ritual_warscore = yes
+                add_province_modifier = { name = zhx_ritual_warscore_050 duration = -1 }
+                set_province_flag = zhx_ritual_warscore_active
+            }
+        }
+        else_if = {
+            limit = { event_target:zhx_tianzi = { check_variable = { which = zhx_ritual_authority value = -10 } } }
+            if = {
+                limit = { NOT = { has_province_modifier = zhx_ritual_warscore_045 } }
+                zhx_clear_ritual_warscore = yes
+                add_province_modifier = { name = zhx_ritual_warscore_045 duration = -1 }
+                set_province_flag = zhx_ritual_warscore_active
+            }
+        }
+        else_if = {
+            limit = { event_target:zhx_tianzi = { check_variable = { which = zhx_ritual_authority value = -20 } } }
+            if = {
+                limit = { NOT = { has_province_modifier = zhx_ritual_warscore_040 } }
+                zhx_clear_ritual_warscore = yes
+                add_province_modifier = { name = zhx_ritual_warscore_040 duration = -1 }
+                set_province_flag = zhx_ritual_warscore_active
+            }
+        }
+        else_if = {
+            limit = { event_target:zhx_tianzi = { check_variable = { which = zhx_ritual_authority value = -30 } } }
+            if = {
+                limit = { NOT = { has_province_modifier = zhx_ritual_warscore_035 } }
+                zhx_clear_ritual_warscore = yes
+                add_province_modifier = { name = zhx_ritual_warscore_035 duration = -1 }
+                set_province_flag = zhx_ritual_warscore_active
+            }
+        }
+        else_if = {
+            limit = { event_target:zhx_tianzi = { check_variable = { which = zhx_ritual_authority value = -40 } } }
+            if = {
+                limit = { NOT = { has_province_modifier = zhx_ritual_warscore_030 } }
+                zhx_clear_ritual_warscore = yes
+                add_province_modifier = { name = zhx_ritual_warscore_030 duration = -1 }
+                set_province_flag = zhx_ritual_warscore_active
+            }
+        }
+        else_if = {
+            limit = { event_target:zhx_tianzi = { check_variable = { which = zhx_ritual_authority value = -50 } } }
+            if = {
+                limit = { NOT = { has_province_modifier = zhx_ritual_warscore_025 } }
+                zhx_clear_ritual_warscore = yes
+                add_province_modifier = { name = zhx_ritual_warscore_025 duration = -1 }
+                set_province_flag = zhx_ritual_warscore_active
+            }
+        }
+        else_if = {
+            limit = { event_target:zhx_tianzi = { check_variable = { which = zhx_ritual_authority value = -60 } } }
+            if = {
+                limit = { NOT = { has_province_modifier = zhx_ritual_warscore_020 } }
+                zhx_clear_ritual_warscore = yes
+                add_province_modifier = { name = zhx_ritual_warscore_020 duration = -1 }
+                set_province_flag = zhx_ritual_warscore_active
+            }
+        }
+        else_if = {
+            limit = { event_target:zhx_tianzi = { check_variable = { which = zhx_ritual_authority value = -70 } } }
+            if = {
+                limit = { NOT = { has_province_modifier = zhx_ritual_warscore_015 } }
+                zhx_clear_ritual_warscore = yes
+                add_province_modifier = { name = zhx_ritual_warscore_015 duration = -1 }
+                set_province_flag = zhx_ritual_warscore_active
+            }
+        }
+        else_if = {
+            limit = { event_target:zhx_tianzi = { check_variable = { which = zhx_ritual_authority value = -80 } } }
+            if = {
+                limit = { NOT = { has_province_modifier = zhx_ritual_warscore_010 } }
+                zhx_clear_ritual_warscore = yes
+                add_province_modifier = { name = zhx_ritual_warscore_010 duration = -1 }
+                set_province_flag = zhx_ritual_warscore_active
+            }
+        }
+        else_if = {
+            limit = { event_target:zhx_tianzi = { check_variable = { which = zhx_ritual_authority value = -90 } } }
+            if = {
+                limit = { NOT = { has_province_modifier = zhx_ritual_warscore_005 } }
+                zhx_clear_ritual_warscore = yes
+                add_province_modifier = { name = zhx_ritual_warscore_005 duration = -1 }
+                set_province_flag = zhx_ritual_warscore_active
+            }
+        }
+        else = { zhx_clear_ritual_warscore = yes }
+    }
+    else_if = {
+        limit = { has_province_flag = zhx_ritual_warscore_active }
+        zhx_clear_ritual_warscore = yes
+    }
+}
+
+# Country scope; includes human and AI owners without a viewer/ROOT-country filter.
+# Also clears former members. Monthly repair handles engine modifier removal.
+zhx_refresh_country_ritual_warscore = {
+    every_owned_province = {
+        limit = { OR = { owner = { zhx_is_tianxia_polity = yes } has_province_flag = zhx_ritual_warscore_active } }
+        zhx_refresh_province_ritual_warscore = yes
+    }
+}
+
+# Called by the existing authority refresh, independently of its five country tiers.
+zhx_refresh_all_ritual_warscore = {
+    every_country = {
+        limit = { exists = yes }
+        zhx_refresh_country_ritual_warscore = yes
+    }
+}

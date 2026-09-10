@@ -36,6 +36,7 @@ zhx_set_tianzi = {
     clr_country_flag = zhx_ritual_tier_collapsed
     set_country_flag = zhx_tianzi
     save_global_event_target_as = zhx_tianzi
+    zhx_refresh_all_ritual_warscore = yes
     zhx_tianzi_sync_government = yes
     if = {
         limit = { has_global_flag = zhx_system_initialised_v8 }
@@ -153,6 +154,7 @@ zhx_apply_current_ritual_order_modifier = {
 # 只在礼乐值跨越档位边界时重建成员修正，避免每年无意义地遍历所有国家。
 # 礼乐值本身连续取值 -100 到 100；静态玩法修正以 -60/-20/20/60 为界分成五档。
 zhx_refresh_ritual_order = {
+    zhx_refresh_all_ritual_warscore = yes
     if = {
         limit = {
             check_variable = {
@@ -420,130 +422,8 @@ zhx_reward_external_war_victory = {
 # 礼乐值的低频年度结算，只在天子作用域中每年执行一次。
 # 第一版使用少量、整数且便于玩家理解的因素；专属战争目标暂不产生额外影响。
 zhx_yearly_ritual_authority_tick = {
-    # 时间流逝会缓慢恢复礼制：固定每年 +1。
-    change_variable = { which = zhx_ritual_authority value = 1 }
-
-    # 每年重算一次内战数量，不建立每日或每月轮询。
-    zhx_refresh_internal_war_count = yes
-
-    # 第一版“天下无战事”包括对外战争：所有周天下国家都未参战时额外 +2。
-    if = {
-        limit = { zhx_tianxia_is_at_peace = yes }
-        change_variable = { which = zhx_ritual_authority value = 2 }
-    }
-
-    # 诸侯内战按规模分档：1—2场 -1，3—5场 -2，6场及以上 -3。
-    # Clausewitz 的 check_variable 是“至少达到该值”，所以必须从最高档向下判断。
-    if = {
-        limit = {
-            check_variable = {
-                which = zhx_internal_war_count_cache
-                value = 6
-            }
-        }
-        change_variable = { which = zhx_ritual_authority value = -3 }
-    }
-    else_if = {
-        limit = {
-            check_variable = {
-                which = zhx_internal_war_count_cache
-                value = 3
-            }
-        }
-        change_variable = { which = zhx_ritual_authority value = -2 }
-    }
-    else_if = {
-        limit = {
-            check_variable = {
-                which = zhx_internal_war_count_cache
-                value = 1
-            }
-        }
-        change_variable = { which = zhx_ritual_authority value = -1 }
-    }
-
-    # The current fifteen-year international orthodoxy changes how the same
-    # world state is judged. These are international norms, not domestic buffs.
-    if = {
-        limit = {
-            has_country_modifier = zhx_tianxia_orthodoxy_term
-            zhx_tianxia_has_active_orthodoxy = yes
-        }
-        if = {
-            limit = { has_country_flag = zhx_tianxia_orthodoxy_ru }
-            if = { limit = { zhx_tianxia_is_at_peace = yes } change_variable = { which = zhx_ritual_authority value = 1 } }
-            if = { limit = { check_variable = { which = zhx_internal_war_count_cache value = 1 } } change_variable = { which = zhx_ritual_authority value = -1 } }
-        }
-        else_if = {
-            limit = { has_country_flag = zhx_tianxia_orthodoxy_fa }
-            if = {
-                limit = { NOT = { check_variable = { which = zhx_internal_war_count_cache value = 1 } } }
-                change_variable = { which = zhx_ritual_authority value = 1 }
-            }
-            else_if = {
-                limit = { check_variable = { which = zhx_internal_war_count_cache value = 3 } }
-                change_variable = { which = zhx_ritual_authority value = -2 }
-            }
-        }
-        else_if = {
-            limit = { has_country_flag = zhx_tianxia_orthodoxy_mo }
-            if = { limit = { zhx_tianxia_is_at_peace = yes } change_variable = { which = zhx_ritual_authority value = 2 } }
-            if = { limit = { check_variable = { which = zhx_internal_war_count_cache value = 1 } } change_variable = { which = zhx_ritual_authority value = -2 } }
-        }
-        else_if = {
-            limit = { has_country_flag = zhx_tianxia_orthodoxy_dao }
-            if = { limit = { zhx_tianxia_is_at_peace = yes } change_variable = { which = zhx_ritual_authority value = 2 } }
-            if = { limit = { check_variable = { which = zhx_internal_war_count_cache value = 1 } } change_variable = { which = zhx_ritual_authority value = -1 } }
-        }
-        else_if = {
-            limit = { has_country_flag = zhx_tianxia_orthodoxy_bing }
-            if = { limit = { NOT = { check_variable = { which = zhx_internal_war_count_cache value = 1 } } } change_variable = { which = zhx_ritual_authority value = 1 } }
-            if = { limit = { check_variable = { which = zhx_internal_war_count_cache value = 3 } } change_variable = { which = zhx_ritual_authority value = -1 } }
-        }
-        else_if = {
-            limit = { has_country_flag = zhx_tianxia_orthodoxy_zongheng }
-            if = { limit = { NOT = { check_variable = { which = zhx_internal_war_count_cache value = 1 } } } change_variable = { which = zhx_ritual_authority value = 1 } }
-            if = { limit = { check_variable = { which = zhx_internal_war_count_cache value = 3 } } change_variable = { which = zhx_ritual_authority value = -1 } }
-        }
-    }
-
-    # Clausewitz 的数值触发器是下限判断：stability = 1 表示稳定度 >= 1。
-    # NOT = { stability = 0 } 因而表示稳定度 < 0。
-    if = {
-        limit = { stability = 1 }
-        change_variable = { which = zhx_ritual_authority value = 1 }
-    }
-    else_if = {
-        limit = { NOT = { stability = 0 } }
-        change_variable = { which = zhx_ritual_authority value = -2 }
-    }
-
-    # 同理，prestige = 50 表示威望 >= 50；NOT prestige = -25 表示威望 < -25。
-    if = {
-        limit = { prestige = 50 }
-        change_variable = { which = zhx_ritual_authority value = 1 }
-    }
-    else_if = {
-        limit = { NOT = { prestige = -25 } }
-        change_variable = { which = zhx_ritual_authority value = -1 }
-    }
-
-    # 天子的厌战度达到 5 时，每年额外 -1。
-    if = {
-        limit = { war_exhaustion = 5 }
-        change_variable = { which = zhx_ritual_authority value = -1 }
-    }
-
-    # 进入 capital_scope 后当前作用域变为首都省份，但 ROOT 仍指向外层的天子国家。
-    # 首都不受天子本人控制时，每年额外 -5。
-    if = {
-        limit = {
-            capital_scope = {
-                NOT = { controlled_by = ROOT }
-            }
-        }
-        change_variable = { which = zhx_ritual_authority value = -5 }
-    }
+    zhx_compute_ritual_yearly_forecast = yes
+    change_variable = { which = zhx_ritual_authority which = zhx_ritual_yearly_total }
 
     # 先把礼乐值钳制在 -100..100，再根据最终数值刷新档位旗标、成员修正和 GUI 状态。
     zhx_clamp_ritual_authority = yes
@@ -588,6 +468,7 @@ zhx_register_tianxia_member = {
             NOT = { has_country_flag = zhx_member }
         }
         set_country_flag = zhx_member
+        zhx_refresh_country_ritual_warscore = yes
         # A restored polity may have been extinguished earlier in the same
         # campaign. Its next destruction must count as a new loss of statehood.
         clr_country_flag = zhx_tianxia_extinction_penalty_recorded
@@ -860,6 +741,7 @@ zhx_remove_tianxia_member = {
     }
     gdd_clear_all_reform_support_flags_effect = yes
     clr_country_flag = zhx_member
+    zhx_refresh_country_ritual_warscore = yes
     clr_country_flag = zhx_major_feudatory
     if = {
         limit = { has_global_flag = zhx_system_initialised_v13 }

@@ -1,0 +1,9 @@
+# Province scope; only updates the transferred province, with no world scan.
+on_province_owner_change = {
+    zhx_refresh_province_ritual_warscore = yes
+}
+
+# Country scope. Repairs ownership/identity changes that bypass public helpers.
+on_monthly_pulse = {
+    zhx_refresh_country_ritual_warscore = yes
+}

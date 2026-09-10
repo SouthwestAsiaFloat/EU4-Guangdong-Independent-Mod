@@ -1,0 +1,11 @@
+# Recompute once on the Tianzi monthly pulse, only while a human has this panel open.
+on_monthly_pulse = {
+    if = {
+        limit = {
+            tag = CZH
+            zhx_is_tianzi = yes
+            any_country = { ai = no has_country_flag = zhx_tianxia_gui_visible }
+        }
+        zhx_compute_ritual_yearly_forecast = yes
+    }
+}

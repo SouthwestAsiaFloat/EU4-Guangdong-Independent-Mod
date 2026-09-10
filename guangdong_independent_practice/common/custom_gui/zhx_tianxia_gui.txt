@@ -564,50 +564,10 @@ custom_icon = {
     tooltip = zhx_gui_order_tt
 }
 
-custom_text_box = {
-    name = zhx_gui_effect_ordered
-    potential = {
-        has_global_flag = zhx_system_initialised_v4
-        CZH = { has_country_flag = zhx_ritual_tier_ordered }
-    }
-    tooltip = zhx_gui_order_tt
-}
 
-custom_text_box = {
-    name = zhx_gui_effect_stable
-    potential = {
-        has_global_flag = zhx_system_initialised_v4
-        CZH = { has_country_flag = zhx_ritual_tier_stable }
-    }
-    tooltip = zhx_gui_order_tt
-}
 
-custom_text_box = {
-    name = zhx_gui_effect_balanced
-    potential = {
-        has_global_flag = zhx_system_initialised_v4
-        CZH = { has_country_flag = zhx_ritual_tier_balanced }
-    }
-    tooltip = zhx_gui_order_tt
-}
 
-custom_text_box = {
-    name = zhx_gui_effect_fractured
-    potential = {
-        has_global_flag = zhx_system_initialised_v4
-        CZH = { has_country_flag = zhx_ritual_tier_fractured }
-    }
-    tooltip = zhx_gui_order_tt
-}
 
-custom_text_box = {
-    name = zhx_gui_effect_collapsed
-    potential = {
-        has_global_flag = zhx_system_initialised_v4
-        CZH = { has_country_flag = zhx_ritual_tier_collapsed }
-    }
-    tooltip = zhx_gui_order_tt
-}
 
 custom_text_box = {
     name = zhx_gui_council_ritual

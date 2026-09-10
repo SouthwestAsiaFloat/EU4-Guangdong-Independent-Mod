@@ -1076,65 +1076,10 @@ guiTypes = {
 
 			# The bar above has 21 visual buckets; this explanatory sentence stays
 			# tied to the five gameplay tiers so visual precision does not multiply effects.
-			instantTextBoxType = {
-				name = "zhx_gui_effect_ordered"
-				position = { x = 354 y = 236 }
-				font = "vic_18"
-				text = ""
-				maxWidth = 272
-				maxHeight = 36
-				format = centre
-				fixedsize = yes
-				scripted = yes
-			}
 
-			instantTextBoxType = {
-				name = "zhx_gui_effect_stable"
-				position = { x = 354 y = 236 }
-				font = "vic_18"
-				text = ""
-				maxWidth = 272
-				maxHeight = 36
-				format = centre
-				fixedsize = yes
-				scripted = yes
-			}
 
-			instantTextBoxType = {
-				name = "zhx_gui_effect_balanced"
-				position = { x = 354 y = 236 }
-				font = "vic_18"
-				text = ""
-				maxWidth = 272
-				maxHeight = 36
-				format = centre
-				fixedsize = yes
-				scripted = yes
-			}
 
-			instantTextBoxType = {
-				name = "zhx_gui_effect_fractured"
-				position = { x = 354 y = 236 }
-				font = "vic_18"
-				text = ""
-				maxWidth = 272
-				maxHeight = 36
-				format = centre
-				fixedsize = yes
-				scripted = yes
-			}
 
-			instantTextBoxType = {
-				name = "zhx_gui_effect_collapsed"
-				position = { x = 354 y = 236 }
-				font = "vic_18"
-				text = ""
-				maxWidth = 272
-				maxHeight = 36
-				format = centre
-				fixedsize = yes
-				scripted = yes
-			}
 
 			# Upper-right panel: member count and the current viewer's role.
 			instantTextBoxType = {

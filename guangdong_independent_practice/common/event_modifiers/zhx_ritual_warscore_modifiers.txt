@@ -1,0 +1,63 @@
+# Province modifiers: positive values raise the price other countries pay for this land.
+# This is the defender-side effect, including player-owned member provinces.
+# province_warscore_cost is a country attacker-side cost and must not be added here.
+zhx_ritual_warscore_005 = {
+    local_warscore_cost_modifier = 0.05
+}
+zhx_ritual_warscore_010 = {
+    local_warscore_cost_modifier = 0.10
+}
+zhx_ritual_warscore_015 = {
+    local_warscore_cost_modifier = 0.15
+}
+zhx_ritual_warscore_020 = {
+    local_warscore_cost_modifier = 0.20
+}
+zhx_ritual_warscore_025 = {
+    local_warscore_cost_modifier = 0.25
+}
+zhx_ritual_warscore_030 = {
+    local_warscore_cost_modifier = 0.30
+}
+zhx_ritual_warscore_035 = {
+    local_warscore_cost_modifier = 0.35
+}
+zhx_ritual_warscore_040 = {
+    local_warscore_cost_modifier = 0.40
+}
+zhx_ritual_warscore_045 = {
+    local_warscore_cost_modifier = 0.45
+}
+zhx_ritual_warscore_050 = {
+    local_warscore_cost_modifier = 0.50
+}
+zhx_ritual_warscore_055 = {
+    local_warscore_cost_modifier = 0.55
+}
+zhx_ritual_warscore_060 = {
+    local_warscore_cost_modifier = 0.60
+}
+zhx_ritual_warscore_065 = {
+    local_warscore_cost_modifier = 0.65
+}
+zhx_ritual_warscore_070 = {
+    local_warscore_cost_modifier = 0.70
+}
+zhx_ritual_warscore_075 = {
+    local_warscore_cost_modifier = 0.75
+}
+zhx_ritual_warscore_080 = {
+    local_warscore_cost_modifier = 0.80
+}
+zhx_ritual_warscore_085 = {
+    local_warscore_cost_modifier = 0.85
+}
+zhx_ritual_warscore_090 = {
+    local_warscore_cost_modifier = 0.90
+}
+zhx_ritual_warscore_095 = {
+    local_warscore_cost_modifier = 0.95
+}
+zhx_ritual_warscore_100 = {
+    local_warscore_cost_modifier = 1.00
+}

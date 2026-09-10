@@ -1,0 +1,96 @@
+# Selectors read the existing Tianzi anchor; zero annual factors are omitted.
+defined_text = {
+    name = GetZhxRitualOrderTooltip
+    text = { localisation_key = zhx_ritual_hover_body trigger = { CZH = { exists = yes zhx_is_tianzi = yes } } }
+    text = { localisation_key = zhx_ritual_hover_unavailable trigger = { always = yes } }
+}
+
+defined_text = {
+    name = GetZhxRitualCurrentBuffs
+    text = { localisation_key = zhx_ritual_hover_ordered trigger = { check_variable = { which = zhx_ritual_authority value = 60 } } }
+    text = { localisation_key = zhx_ritual_hover_stable trigger = { check_variable = { which = zhx_ritual_authority value = 20 } } }
+    text = { localisation_key = zhx_ritual_hover_balanced trigger = { check_variable = { which = zhx_ritual_authority value = -20 } } }
+    text = { localisation_key = zhx_ritual_hover_fractured trigger = { check_variable = { which = zhx_ritual_authority value = -60 } } }
+    text = { localisation_key = zhx_ritual_hover_collapsed trigger = { always = yes } }
+}
+
+defined_text = {
+    name = GetZhxRitualProtectionCost
+    text = { localisation_key = zhx_ritual_hover_cost_100 trigger = { check_variable = { which = zhx_ritual_authority value = 100 } } }
+    text = { localisation_key = zhx_ritual_hover_cost_95 trigger = { check_variable = { which = zhx_ritual_authority value = 90 } } }
+    text = { localisation_key = zhx_ritual_hover_cost_90 trigger = { check_variable = { which = zhx_ritual_authority value = 80 } } }
+    text = { localisation_key = zhx_ritual_hover_cost_85 trigger = { check_variable = { which = zhx_ritual_authority value = 70 } } }
+    text = { localisation_key = zhx_ritual_hover_cost_80 trigger = { check_variable = { which = zhx_ritual_authority value = 60 } } }
+    text = { localisation_key = zhx_ritual_hover_cost_75 trigger = { check_variable = { which = zhx_ritual_authority value = 50 } } }
+    text = { localisation_key = zhx_ritual_hover_cost_70 trigger = { check_variable = { which = zhx_ritual_authority value = 40 } } }
+    text = { localisation_key = zhx_ritual_hover_cost_65 trigger = { check_variable = { which = zhx_ritual_authority value = 30 } } }
+    text = { localisation_key = zhx_ritual_hover_cost_60 trigger = { check_variable = { which = zhx_ritual_authority value = 20 } } }
+    text = { localisation_key = zhx_ritual_hover_cost_55 trigger = { check_variable = { which = zhx_ritual_authority value = 10 } } }
+    text = { localisation_key = zhx_ritual_hover_cost_50 trigger = { check_variable = { which = zhx_ritual_authority value = 0 } } }
+    text = { localisation_key = zhx_ritual_hover_cost_45 trigger = { check_variable = { which = zhx_ritual_authority value = -10 } } }
+    text = { localisation_key = zhx_ritual_hover_cost_40 trigger = { check_variable = { which = zhx_ritual_authority value = -20 } } }
+    text = { localisation_key = zhx_ritual_hover_cost_35 trigger = { check_variable = { which = zhx_ritual_authority value = -30 } } }
+    text = { localisation_key = zhx_ritual_hover_cost_30 trigger = { check_variable = { which = zhx_ritual_authority value = -40 } } }
+    text = { localisation_key = zhx_ritual_hover_cost_25 trigger = { check_variable = { which = zhx_ritual_authority value = -50 } } }
+    text = { localisation_key = zhx_ritual_hover_cost_20 trigger = { check_variable = { which = zhx_ritual_authority value = -60 } } }
+    text = { localisation_key = zhx_ritual_hover_cost_15 trigger = { check_variable = { which = zhx_ritual_authority value = -70 } } }
+    text = { localisation_key = zhx_ritual_hover_cost_10 trigger = { check_variable = { which = zhx_ritual_authority value = -80 } } }
+    text = { localisation_key = zhx_ritual_hover_cost_5 trigger = { check_variable = { which = zhx_ritual_authority value = -90 } } }
+    text = { localisation_key = zhx_ritual_hover_cost_0 trigger = { always = yes } }
+}
+
+defined_text = {
+    name = GetZhxRitualYearlyTotal
+    text = { localisation_key = zhx_ritual_hover_total_pos trigger = { check_variable = { which = zhx_ritual_yearly_total value = 1 } } }
+    text = { localisation_key = zhx_ritual_hover_total_neg trigger = { NOT = { check_variable = { which = zhx_ritual_yearly_total value = 0 } } } }
+    text = { localisation_key = zhx_ritual_hover_total_zero trigger = { always = yes } }
+}
+
+defined_text = {
+    name = GetZhxRitualYearlyPeace
+    text = { localisation_key = zhx_ritual_hover_peace_pos trigger = { check_variable = { which = zhx_ritual_yearly_peace value = 1 } } }
+    text = { localisation_key = zhx_ritual_hover_peace_neg trigger = { NOT = { check_variable = { which = zhx_ritual_yearly_peace value = 0 } } } }
+    text = { localisation_key = zhx_ritual_hover_empty trigger = { always = yes } }
+}
+
+defined_text = {
+    name = GetZhxRitualYearlyWars
+    text = { localisation_key = zhx_ritual_hover_wars_pos trigger = { check_variable = { which = zhx_ritual_yearly_wars value = 1 } } }
+    text = { localisation_key = zhx_ritual_hover_wars_neg trigger = { NOT = { check_variable = { which = zhx_ritual_yearly_wars value = 0 } } } }
+    text = { localisation_key = zhx_ritual_hover_empty trigger = { always = yes } }
+}
+
+defined_text = {
+    name = GetZhxRitualYearlyOrthodoxy
+    text = { localisation_key = zhx_ritual_hover_orthodoxy_pos trigger = { check_variable = { which = zhx_ritual_yearly_orthodoxy value = 1 } } }
+    text = { localisation_key = zhx_ritual_hover_orthodoxy_neg trigger = { NOT = { check_variable = { which = zhx_ritual_yearly_orthodoxy value = 0 } } } }
+    text = { localisation_key = zhx_ritual_hover_empty trigger = { always = yes } }
+}
+
+defined_text = {
+    name = GetZhxRitualYearlyStability
+    text = { localisation_key = zhx_ritual_hover_stability_pos trigger = { check_variable = { which = zhx_ritual_yearly_stability value = 1 } } }
+    text = { localisation_key = zhx_ritual_hover_stability_neg trigger = { NOT = { check_variable = { which = zhx_ritual_yearly_stability value = 0 } } } }
+    text = { localisation_key = zhx_ritual_hover_empty trigger = { always = yes } }
+}
+
+defined_text = {
+    name = GetZhxRitualYearlyPrestige
+    text = { localisation_key = zhx_ritual_hover_prestige_pos trigger = { check_variable = { which = zhx_ritual_yearly_prestige value = 1 } } }
+    text = { localisation_key = zhx_ritual_hover_prestige_neg trigger = { NOT = { check_variable = { which = zhx_ritual_yearly_prestige value = 0 } } } }
+    text = { localisation_key = zhx_ritual_hover_empty trigger = { always = yes } }
+}
+
+defined_text = {
+    name = GetZhxRitualYearlyExhaustion
+    text = { localisation_key = zhx_ritual_hover_exhaustion_pos trigger = { check_variable = { which = zhx_ritual_yearly_exhaustion value = 1 } } }
+    text = { localisation_key = zhx_ritual_hover_exhaustion_neg trigger = { NOT = { check_variable = { which = zhx_ritual_yearly_exhaustion value = 0 } } } }
+    text = { localisation_key = zhx_ritual_hover_empty trigger = { always = yes } }
+}
+
+defined_text = {
+    name = GetZhxRitualYearlyCapital
+    text = { localisation_key = zhx_ritual_hover_capital_pos trigger = { check_variable = { which = zhx_ritual_yearly_capital value = 1 } } }
+    text = { localisation_key = zhx_ritual_hover_capital_neg trigger = { NOT = { check_variable = { which = zhx_ritual_yearly_capital value = 0 } } } }
+    text = { localisation_key = zhx_ritual_hover_empty trigger = { always = yes } }
+}

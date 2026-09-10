@@ -171,6 +171,7 @@ def effect_file() -> str:
             "}",
             "",
             'zhx_build_gui_roster = {',
+            '    zhx_prepare_ritual_order_tooltip = yes',
             '    # The shield grid stays retired; the active ballot still needs a name cache.',
             '    zhx_clear_gui_roster = yes',
             '    if = {',

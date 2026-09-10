@@ -1,0 +1,153 @@
+# Country scope: the Tianzi. Derived variables only; never changes ritual authority.
+zhx_compute_ritual_yearly_forecast = {
+    set_variable = { which = zhx_ritual_yearly_base value = 0 }
+    set_variable = { which = zhx_ritual_yearly_peace value = 0 }
+    set_variable = { which = zhx_ritual_yearly_wars value = 0 }
+    set_variable = { which = zhx_ritual_yearly_orthodoxy value = 0 }
+    set_variable = { which = zhx_ritual_yearly_stability value = 0 }
+    set_variable = { which = zhx_ritual_yearly_prestige value = 0 }
+    set_variable = { which = zhx_ritual_yearly_exhaustion value = 0 }
+    set_variable = { which = zhx_ritual_yearly_capital value = 0 }
+    set_variable = { which = zhx_ritual_yearly_total value = 0 }
+    # 时间流逝会缓慢恢复礼制：固定每年 +1。
+    change_variable = { which = zhx_ritual_yearly_base value = 1 }
+
+    # Refresh the same internal-war count for settlement and on-open/monthly forecasts.
+    zhx_refresh_internal_war_count = yes
+
+    # 第一版“天下无战事”包括对外战争：所有周天下国家都未参战时额外 +2。
+    if = {
+        limit = { zhx_tianxia_is_at_peace = yes }
+        change_variable = { which = zhx_ritual_yearly_peace value = 2 }
+    }
+
+    # 诸侯内战按规模分档：1—2场 -1，3—5场 -2，6场及以上 -3。
+    # Clausewitz 的 check_variable 是“至少达到该值”，所以必须从最高档向下判断。
+    if = {
+        limit = {
+            check_variable = {
+                which = zhx_internal_war_count_cache
+                value = 6
+            }
+        }
+        change_variable = { which = zhx_ritual_yearly_wars value = -3 }
+    }
+    else_if = {
+        limit = {
+            check_variable = {
+                which = zhx_internal_war_count_cache
+                value = 3
+            }
+        }
+        change_variable = { which = zhx_ritual_yearly_wars value = -2 }
+    }
+    else_if = {
+        limit = {
+            check_variable = {
+                which = zhx_internal_war_count_cache
+                value = 1
+            }
+        }
+        change_variable = { which = zhx_ritual_yearly_wars value = -1 }
+    }
+
+    # The current fifteen-year international orthodoxy changes how the same
+    # world state is judged. These are international norms, not domestic buffs.
+    if = {
+        limit = {
+            has_country_modifier = zhx_tianxia_orthodoxy_term
+            zhx_tianxia_has_active_orthodoxy = yes
+        }
+        if = {
+            limit = { has_country_flag = zhx_tianxia_orthodoxy_ru }
+            if = { limit = { zhx_tianxia_is_at_peace = yes } change_variable = { which = zhx_ritual_yearly_orthodoxy value = 1 } }
+            if = { limit = { check_variable = { which = zhx_internal_war_count_cache value = 1 } } change_variable = { which = zhx_ritual_yearly_orthodoxy value = -1 } }
+        }
+        else_if = {
+            limit = { has_country_flag = zhx_tianxia_orthodoxy_fa }
+            if = {
+                limit = { NOT = { check_variable = { which = zhx_internal_war_count_cache value = 1 } } }
+                change_variable = { which = zhx_ritual_yearly_orthodoxy value = 1 }
+            }
+            else_if = {
+                limit = { check_variable = { which = zhx_internal_war_count_cache value = 3 } }
+                change_variable = { which = zhx_ritual_yearly_orthodoxy value = -2 }
+            }
+        }
+        else_if = {
+            limit = { has_country_flag = zhx_tianxia_orthodoxy_mo }
+            if = { limit = { zhx_tianxia_is_at_peace = yes } change_variable = { which = zhx_ritual_yearly_orthodoxy value = 2 } }
+            if = { limit = { check_variable = { which = zhx_internal_war_count_cache value = 1 } } change_variable = { which = zhx_ritual_yearly_orthodoxy value = -2 } }
+        }
+        else_if = {
+            limit = { has_country_flag = zhx_tianxia_orthodoxy_dao }
+            if = { limit = { zhx_tianxia_is_at_peace = yes } change_variable = { which = zhx_ritual_yearly_orthodoxy value = 2 } }
+            if = { limit = { check_variable = { which = zhx_internal_war_count_cache value = 1 } } change_variable = { which = zhx_ritual_yearly_orthodoxy value = -1 } }
+        }
+        else_if = {
+            limit = { has_country_flag = zhx_tianxia_orthodoxy_bing }
+            if = { limit = { NOT = { check_variable = { which = zhx_internal_war_count_cache value = 1 } } } change_variable = { which = zhx_ritual_yearly_orthodoxy value = 1 } }
+            if = { limit = { check_variable = { which = zhx_internal_war_count_cache value = 3 } } change_variable = { which = zhx_ritual_yearly_orthodoxy value = -1 } }
+        }
+        else_if = {
+            limit = { has_country_flag = zhx_tianxia_orthodoxy_zongheng }
+            if = { limit = { NOT = { check_variable = { which = zhx_internal_war_count_cache value = 1 } } } change_variable = { which = zhx_ritual_yearly_orthodoxy value = 1 } }
+            if = { limit = { check_variable = { which = zhx_internal_war_count_cache value = 3 } } change_variable = { which = zhx_ritual_yearly_orthodoxy value = -1 } }
+        }
+    }
+
+    # Clausewitz 的数值触发器是下限判断：stability = 1 表示稳定度 >= 1。
+    # NOT = { stability = 0 } 因而表示稳定度 < 0。
+    if = {
+        limit = { stability = 1 }
+        change_variable = { which = zhx_ritual_yearly_stability value = 1 }
+    }
+    else_if = {
+        limit = { NOT = { stability = 0 } }
+        change_variable = { which = zhx_ritual_yearly_stability value = -2 }
+    }
+
+    # 同理，prestige = 50 表示威望 >= 50；NOT prestige = -25 表示威望 < -25。
+    if = {
+        limit = { prestige = 50 }
+        change_variable = { which = zhx_ritual_yearly_prestige value = 1 }
+    }
+    else_if = {
+        limit = { NOT = { prestige = -25 } }
+        change_variable = { which = zhx_ritual_yearly_prestige value = -1 }
+    }
+
+    # 天子的厌战度达到 5 时，每年额外 -1。
+    if = {
+        limit = { war_exhaustion = 5 }
+        change_variable = { which = zhx_ritual_yearly_exhaustion value = -1 }
+    }
+
+    # PREV is the scoped Tianzi; ROOT may instead be the human opening the panel.
+    # 首都不受天子本人控制时，每年额外 -5。
+    if = {
+        limit = {
+            capital_scope = {
+                NOT = { controlled_by = PREV }
+            }
+        }
+        change_variable = { which = zhx_ritual_yearly_capital value = -5 }
+    }
+
+    change_variable = { which = zhx_ritual_yearly_total which = zhx_ritual_yearly_base }
+    change_variable = { which = zhx_ritual_yearly_total which = zhx_ritual_yearly_peace }
+    change_variable = { which = zhx_ritual_yearly_total which = zhx_ritual_yearly_wars }
+    change_variable = { which = zhx_ritual_yearly_total which = zhx_ritual_yearly_orthodoxy }
+    change_variable = { which = zhx_ritual_yearly_total which = zhx_ritual_yearly_stability }
+    change_variable = { which = zhx_ritual_yearly_total which = zhx_ritual_yearly_prestige }
+    change_variable = { which = zhx_ritual_yearly_total which = zhx_ritual_yearly_exhaustion }
+    change_variable = { which = zhx_ritual_yearly_total which = zhx_ritual_yearly_capital }
+}
+
+# The existing panel reads CZH. Keep this adapter separate from the country-scope calculation.
+zhx_prepare_ritual_order_tooltip = {
+    if = {
+        limit = { CZH = { exists = yes zhx_is_tianzi = yes } }
+        CZH = { zhx_compute_ritual_yearly_forecast = yes }
+    }
+}
