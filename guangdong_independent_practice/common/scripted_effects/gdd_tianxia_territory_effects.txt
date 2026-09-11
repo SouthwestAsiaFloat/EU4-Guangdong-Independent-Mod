@@ -493,19 +493,23 @@ gdd_dispatch_tianxia_unlawful_demand_effect = {
         }
         gdd_accept_tianxia_unlawful_demand_effect = yes
     }
-    else = {
+    if = {
+        limit = { event_target:gdd_tianxia_unlawful_addressee = { NOT = { zhx_is_tianzi = yes } } }
         event_target:gdd_tianxia_unlawful_addressee = {
             if = {
                 limit = { ai = no }
                 country_event = { id = gdd_tianxia_territory.11 days = 1 }
             }
+            # Explicit branches keep deferred event dispatch out of the
+            # failing nested else path observed on this macOS engine build.
+            # Refusal first: either outcome clears the cached acceptance flag.
             if = {
-                limit = { ai = yes }
-                if = {
-                    limit = { has_country_flag = gdd_tianxia_unlawful_ai_will_accept }
-                    gdd_accept_tianxia_unlawful_demand_effect = yes
-                }
-                else = { gdd_refuse_tianxia_unlawful_demand_effect = yes }
+                limit = { ai = yes NOT = { has_country_flag = gdd_tianxia_unlawful_ai_will_accept } }
+                gdd_refuse_tianxia_unlawful_demand_effect = yes
+            }
+            if = {
+                limit = { ai = yes has_country_flag = gdd_tianxia_unlawful_ai_will_accept }
+                gdd_accept_tianxia_unlawful_demand_effect = yes
             }
         }
     }
@@ -646,31 +650,15 @@ gdd_refuse_tianxia_unlawful_demand_effect = {
                 }
             }
         }
+        # Current country is the addressee in both AI dispatch and event .11.
+        # Schedule before entering any province/world iterator; the receiving
+        # event owns ROOT and country consequences without tooltip traversal.
+        country_event = { id = gdd_tianxia_territory.24 days = 1 }
         event_target:gdd_tianxia_unlawful_province = {
             add_province_modifier = {
                 name = gdd_tianxia_unlawful_refusal
                 duration = 3650
             }
-        }
-        every_country = {
-            limit = {
-                exists = yes
-                zhx_is_tianxia_member = yes
-            }
-            add_opinion = {
-                who = event_target:gdd_tianxia_unlawful_addressee
-                modifier = gdd_opinion_refused_tianxia_unlawful_demand
-            }
-        }
-        event_target:gdd_tianxia_unlawful_emperor = {
-            add_casus_belli = {
-                target = event_target:gdd_tianxia_unlawful_addressee
-                type = gdd_cb_tianxia_liberation
-                months = 60
-            }
-        }
-        event_target:gdd_tianxia_unlawful_emperor = {
-            country_event = { id = gdd_tianxia_territory.13 }
         }
     }
     gdd_clear_tianxia_unlawful_request_effect = yes

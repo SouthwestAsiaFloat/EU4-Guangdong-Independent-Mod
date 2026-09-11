@@ -1,0 +1,8 @@
+{
+  "save": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/save games/zminrefused.eu4",
+  "sha256": "c4254820b9028a7eb5b97abd3f75486a4693924f990c8b85ab20a455208cee7a",
+  "date": "1444.11.11",
+  "refusal_modifier_in_save": true,
+  "liberation_cb_in_save": false,
+  "scope": "first patched build 8afc; synchronous CB bridge incomplete"
+}

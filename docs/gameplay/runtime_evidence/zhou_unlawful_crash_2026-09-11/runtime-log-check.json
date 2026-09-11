@@ -1,0 +1,26 @@
+{
+  "checked_at": "2026-09-11T15:50:43.035356+08:00",
+  "source": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/logs/error.log",
+  "sha256": "8cc744ca6b9384e270493fb3a698c398bf3f7051351c136082e5ff7e2c2a2545",
+  "filter": "gdd_tianxia_territory|gdd_cb_tianxia_liberation|gdd_tianxia_unlawful",
+  "matching_lines": [],
+  "crash_directories": [
+    "eu4_20260818_082047",
+    "eu4_20260818_194344",
+    "eu4_20260902_204321",
+    "eu4_20260903_051748",
+    "eu4_20260903_082400",
+    "eu4_20260903_155844",
+    "eu4_20260903_192337",
+    "eu4_20260903_192746",
+    "eu4_20260903_210601",
+    "eu4_20260903_225336",
+    "eu4_20260903_231317",
+    "eu4_20260904_102522",
+    "eu4_20260906_042408",
+    "eu4_20260909_232913",
+    "eu4_20260910_223701",
+    "eu4_20260911_134035",
+    "eu4_20260911_143308"
+  ]
+}

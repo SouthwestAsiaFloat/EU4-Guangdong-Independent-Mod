@@ -1,0 +1,87 @@
+{
+  "save": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/save games/zminfixedrefuse.eu4",
+  "sha256": "fe71af6b93d2840036b284ba0a363349066ad30191f4811696d58d6b6a4a3a70",
+  "date": "1445.4.15",
+  "countries": {
+    "CZH": {
+      "owned_provinces": [
+        688,
+        1836,
+        5046,
+        5053
+      ],
+      "relevant_flags": {
+        "zhx_tianzi": "1444.11.11"
+      },
+      "government": "government=\"monarchy\"\n\t\t\treform_stack={\n\t\t\t\treforms={\n\t\t\t\t\t\"monarchy_mechanic\"\n\t\t\t\t\t\"zhx_tianzi_reform\"\n\t\t\t\t}\n\t\t\t\thistory={\n\t\t\t\t\t\"zhx_tianzi_reform\"\n\t\t\t\t}\n\t\t\t}",
+      "refusal_opinion_count": 0
+    },
+    "MIN": {
+      "owned_provinces": [
+        669,
+        1829,
+        2152,
+        4952,
+        4953,
+        4958,
+        5096,
+        5097,
+        5098,
+        5099,
+        4951,
+        5007,
+        1824
+      ],
+      "relevant_flags": {
+        "zhx_member": "1444.11.11",
+        "gdd_tianxia_unlawful_demand_cooldown": "1445.4.3"
+      },
+      "government": "government=\"monarchy\"\n\t\t\treform_stack={\n\t\t\t\treforms={\n\t\t\t\t\t\"monarchy_mechanic\"\n\t\t\t\t\t\"zhx_feudatory_bo_reform\"\n\t\t\t\t}\n\t\t\t\thistory={\n\t\t\t\t\t\"zhx_feudatory_bo_reform\"\n\t\t\t\t}\n\t\t\t}",
+      "refusal_opinion_count": 0
+    },
+    "OUE": {
+      "owned_provinces": [],
+      "relevant_flags": {},
+      "government": "government=\"monarchy\"\n\t\t\treform_stack={\n\t\t\t\treforms={\n\t\t\t\t\t\"monarchy_mechanic\"\n\t\t\t\t\t\"\"\n\t\t\t\t}\n\t\t\t\thistory={\n\t\t\t\t\t\"zhx_feudatory_zi_reform\"\n\t\t\t\t}\n\t\t\t}",
+      "refusal_opinion_count": 0
+    }
+  },
+  "provinces": {
+    "1824": {
+      "owner": "MIN",
+      "relevant_flags": {
+        "zhx_tianxia_province": "1444.11.11"
+      },
+      "refusal_modifiers": [
+        "\t\tmodifier={\n\t\t\tmodifier=\"gdd_tianxia_unlawful_refusal\"\n\t\t\tdate=1455.4.3\n\t\t}"
+      ]
+    },
+    "4951": {
+      "owner": "MIN",
+      "relevant_flags": {
+        "zhx_tianxia_province": "1444.11.11"
+      },
+      "refusal_modifiers": []
+    },
+    "5007": {
+      "owner": "MIN",
+      "relevant_flags": {
+        "zhx_tianxia_province": "1444.11.11"
+      },
+      "refusal_modifiers": []
+    }
+  },
+  "liberation_cb": [
+    "casus_belli={\n\t\ttype=\"gdd_cb_tianxia_liberation\"\n\t\tfirst=\"CZH\"\n\t\tsecond=\"MIN\"\n\t\tend_date=1450.4.4\n\t\tstart_date=1445.4.4\n\t}"
+  ],
+  "opinion_samples": {
+    "YAN_toward_MIN": [
+      "opinion={\n\t\t\t\t\tmodifier=\"gdd_opinion_refused_tianxia_unlawful_demand\"\n\t\t\t\t\tdate=1470.4.4\n\t\t\t\t\tcurrent_opinion=-25.000\n\t\t\t\t\texpiry_date=no\n\t\t\t\t}"
+    ],
+    "KRC_toward_MIN": [],
+    "GDD_toward_MIN": [
+      "opinion={\n\t\t\t\t\tmodifier=\"gdd_opinion_refused_tianxia_unlawful_demand\"\n\t\t\t\t\tdate=1470.4.4\n\t\t\t\t\tcurrent_opinion=-25.000\n\t\t\t\t\texpiry_date=no\n\t\t\t\t}"
+    ]
+  },
+  "total_refusal_opinions": 65
+}

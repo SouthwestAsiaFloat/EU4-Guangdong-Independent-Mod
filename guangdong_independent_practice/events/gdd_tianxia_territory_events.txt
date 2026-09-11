@@ -615,3 +615,44 @@ country_event = {
     immediate = { gdd_close_tianxia_unlawful_picker_effect = yes }
     option = { name = OK }
 }
+
+# Execution-only refusal CB bridge. EU4 1.37.5/macOS crashed in
+# CCasusBelliEffect::GetDesc while previewing the confirmation option's AI
+# refusal branch, even inside hidden_effect. Match the existing diplomacy.12
+# bridge: ROOT is the living addressee; the grant runs only in immediate.
+country_event = {
+    id = gdd_tianxia_territory.24
+    title = gdd_tianxia_territory.13.t
+    desc = gdd_tianxia_territory.13.d
+    picture = DIPLOMACY_eventPicture
+    hidden = yes
+    is_triggered_only = yes
+    immediate = {
+        if = {
+            limit = {
+                exists = yes
+                event_target:gdd_tianxia_unlawful_emperor = {
+                    exists = yes
+                    zhx_is_tianzi = yes
+                    NOT = { tag = ROOT }
+                }
+            }
+            event_target:gdd_tianxia_unlawful_emperor = {
+                add_casus_belli = {
+                    target = ROOT
+                    type = gdd_cb_tianxia_liberation
+                    months = 60
+                }
+                country_event = { id = gdd_tianxia_territory.13 days = 1 }
+            }
+            every_country = {
+                limit = { exists = yes zhx_is_tianxia_member = yes }
+                add_opinion = {
+                    who = ROOT
+                    modifier = gdd_opinion_refused_tianxia_unlawful_demand
+                }
+            }
+        }
+    }
+    option = { name = OK }
+}

@@ -322,11 +322,12 @@ def main() -> None:
     refuse_effect = named_block(effects, "gdd_refuse_tianxia_unlawful_demand_effect")
     for token in (
         "duration = 3650",
-        "months = 60",
-        "gdd_opinion_refused_tianxia_unlawful_demand",
-        "country_event = { id = gdd_tianxia_territory.13 }",
+        "country_event = { id = gdd_tianxia_territory.24 days = 1 }",
     ):
         require(token in refuse_effect, f"refusal consequence missing: {token}")
+    refusal_bridge = events[events.index("    id = gdd_tianxia_territory.24"):]
+    for token in ("months = 60", "target = ROOT", "who = ROOT", "gdd_opinion_refused_tianxia_unlawful_demand", "gdd_tianxia_territory.13 days = 1"):
+        require(token in refusal_bridge, f"refusal bridge consequence missing: {token}")
     require("add_mandate" not in refuse_effect,
             "refusal still changes Mandate despite the approved design")
     quarterly = named_block(effects, "gdd_quarterly_tianxia_territory_maintenance_effect")

@@ -1,0 +1,38 @@
+# Disposable CZH/MIN runtime fixture: army balance only, never run on a real campaign.
+if = {
+ limit = { tag = CZH }
+ MIN = { clr_country_flag = gdd_tianxia_unlawful_demand_cooldown }
+ 1824 = { remove_province_modifier = gdd_tianxia_unlawful_refusal }
+ capital_scope = {
+  infantry = ROOT
+  infantry = ROOT
+  infantry = ROOT
+  infantry = ROOT
+  infantry = ROOT
+  infantry = ROOT
+  infantry = ROOT
+  infantry = ROOT
+  infantry = ROOT
+  infantry = ROOT
+  infantry = ROOT
+  infantry = ROOT
+  infantry = ROOT
+  infantry = ROOT
+  infantry = ROOT
+  infantry = ROOT
+  infantry = ROOT
+  infantry = ROOT
+  infantry = ROOT
+  infantry = ROOT
+  infantry = ROOT
+  infantry = ROOT
+  infantry = ROOT
+  infantry = ROOT
+  infantry = ROOT
+  infantry = ROOT
+  infantry = ROOT
+  infantry = ROOT
+  infantry = ROOT
+  infantry = ROOT
+ }
+}

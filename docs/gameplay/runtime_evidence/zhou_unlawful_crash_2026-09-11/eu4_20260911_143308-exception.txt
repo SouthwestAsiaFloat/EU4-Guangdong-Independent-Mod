@@ -1,0 +1,79 @@
+Application: EUIV
+Version: EU4 v1.37.5.0 Inca
+Date/Time: 2026-09-11 14:33:08
+
+Caught signal 11 (SIGSEGV)
+
+Original Stack Trace:
+  2   ???                                 0x0000000000000000 0x0 + 0
+  3   eu4                                 0x000000010053f059 _ZNK17CCasusBelliEffect7GetDescER11CEventScope7CStringib + 49
+  4   eu4                                 0x0000000100512a52 _ZNK7CEffect15GetCompleteDescER11CEventScopei7CStringib + 218
+  5   eu4                                 0x0000000100c34ec4 _ZNK14CContextEffect15GetCompleteDescER11CEventScopei7CStringib + 464
+  6   eu4                                 0x0000000100512b25 _ZNK7CEffect15GetCompleteDescER11CEventScopei7CStringib + 429
+  7   eu4                                 0x0000000100c37599 _ZNK9CIfEffect15GetCompleteDescER11CEventScopei7CStringib + 411
+  8   eu4                                 0x0000000100512b25 _ZNK7CEffect15GetCompleteDescER11CEventScopei7CStringib + 429
+  9   eu4                                 0x0000000100512b25 _ZNK7CEffect15GetCompleteDescER11CEventScopei7CStringib + 429
+  10  eu4                                 0x0000000100c37599 _ZNK9CIfEffect15GetCompleteDescER11CEventScopei7CStringib + 411
+  11  eu4                                 0x0000000100c3760f _ZNK9CIfEffect15GetCompleteDescER11CEventScopei7CStringib + 529
+  12  eu4                                 0x0000000100512b25 _ZNK7CEffect15GetCompleteDescER11CEventScopei7CStringib + 429
+  13  eu4                                 0x0000000100c37599 _ZNK9CIfEffect15GetCompleteDescER11CEventScopei7CStringib + 411
+  14  eu4                                 0x0000000100c34ec4 _ZNK14CContextEffect15GetCompleteDescER11CEventScopei7CStringib + 464
+  15  eu4                                 0x0000000100512b25 _ZNK7CEffect15GetCompleteDescER11CEventScopei7CStringib + 429
+  16  eu4                                 0x0000000100c37599 _ZNK9CIfEffect15GetCompleteDescER11CEventScopei7CStringib + 411
+  17  eu4                                 0x0000000100c3760f _ZNK9CIfEffect15GetCompleteDescER11CEventScopei7CStringib + 529
+  18  eu4                                 0x0000000100512b25 _ZNK7CEffect15GetCompleteDescER11CEventScopei7CStringib + 429
+  19  eu4                                 0x0000000100512b25 _ZNK7CEffect15GetCompleteDescER11CEventScopei7CStringib + 429
+  20  eu4                                 0x0000000100c37599 _ZNK9CIfEffect15GetCompleteDescER11CEventScopei7CStringib + 411
+  21  eu4                                 0x0000000100512b25 _ZNK7CEffect15GetCompleteDescER11CEventScopei7CStringib + 429
+  22  eu4                                 0x0000000100513e03 _ZNK13CHiddenEffect15GetCompleteDescER11CEventScopei7CStringib + 99
+  23  eu4                                 0x0000000100512b25 _ZNK7CEffect15GetCompleteDescER11CEventScopei7CStringib + 429
+  24  eu4                                 0x0000000100600aec _ZNK12CEventOption7GetDescER11CEventScopei + 82
+  25  eu4                                 0x00000001005f895f _ZNK6CEvent20GetEffectDescriptionER11CEventScopei + 75
+  26  eu4                                 0x0000000100eeb9b8 _ZN12CEventWindow21GetOptionEffectStringERK6CEventR11CEventScopei + 790
+  27  eu4                                 0x0000000100eeb546 _ZN12CEventWindow22GetOptionEffectTooltipEP10CGuiObject + 130
+  28  eu4                                 0x0000000100a411ab _ZNK12CInGameIdler19GetInterfaceToolTipEP10CGuiObject + 24909
+  29  eu4                                 0x00000001007171b6 _ZN12CInGameIdler17GetCurrentTooltipERK8CVector2IfEP10CGuiObject + 176
+  30  eu4                                 0x00000001011e35f6 _ZN22CTooltipViewController13ShowTooltipAtERK6CPointIiE + 286
+  31  eu4                                 0x00000001011e33f0 _ZN22CTooltipViewController6UpdateEf + 466
+  32  eu4                                 0x000000010070ab98 _ZN12CInGameIdler4IdleEb + 9956
+  33  eu4                                 0x00000001013ca2a0 _ZN12CApplication14UpdateOneFrameEb + 288
+  34  eu4                                 0x00000001013ca74a _ZN12CApplication3RunEv + 48
+  35  eu4                                 0x0000000100755aea main + 10944
+  36  dyld                                0x0000000203204bb8 start + 3240
+
+Demangled Stack Trace:
+  2   ???                                 0x0000000000000000 0x0 + 0
+  3   eu4                                 0x000000010053f059 CCasusBelliEffect::GetDesc(CEventScope&, CString, int, bool) const + 49
+  4   eu4                                 0x0000000100512a52 CEffect::GetCompleteDesc(CEventScope&, int, CString, int, bool) const + 218
+  5   eu4                                 0x0000000100c34ec4 CContextEffect::GetCompleteDesc(CEventScope&, int, CString, int, bool) const + 464
+  6   eu4                                 0x0000000100512b25 CEffect::GetCompleteDesc(CEventScope&, int, CString, int, bool) const + 429
+  7   eu4                                 0x0000000100c37599 CIfEffect::GetCompleteDesc(CEventScope&, int, CString, int, bool) const + 411
+  8   eu4                                 0x0000000100512b25 CEffect::GetCompleteDesc(CEventScope&, int, CString, int, bool) const + 429
+  9   eu4                                 0x0000000100512b25 CEffect::GetCompleteDesc(CEventScope&, int, CString, int, bool) const + 429
+  10  eu4                                 0x0000000100c37599 CIfEffect::GetCompleteDesc(CEventScope&, int, CString, int, bool) const + 411
+  11  eu4                                 0x0000000100c3760f CIfEffect::GetCompleteDesc(CEventScope&, int, CString, int, bool) const + 529
+  12  eu4                                 0x0000000100512b25 CEffect::GetCompleteDesc(CEventScope&, int, CString, int, bool) const + 429
+  13  eu4                                 0x0000000100c37599 CIfEffect::GetCompleteDesc(CEventScope&, int, CString, int, bool) const + 411
+  14  eu4                                 0x0000000100c34ec4 CContextEffect::GetCompleteDesc(CEventScope&, int, CString, int, bool) const + 464
+  15  eu4                                 0x0000000100512b25 CEffect::GetCompleteDesc(CEventScope&, int, CString, int, bool) const + 429
+  16  eu4                                 0x0000000100c37599 CIfEffect::GetCompleteDesc(CEventScope&, int, CString, int, bool) const + 411
+  17  eu4                                 0x0000000100c3760f CIfEffect::GetCompleteDesc(CEventScope&, int, CString, int, bool) const + 529
+  18  eu4                                 0x0000000100512b25 CEffect::GetCompleteDesc(CEventScope&, int, CString, int, bool) const + 429
+  19  eu4                                 0x0000000100512b25 CEffect::GetCompleteDesc(CEventScope&, int, CString, int, bool) const + 429
+  20  eu4                                 0x0000000100c37599 CIfEffect::GetCompleteDesc(CEventScope&, int, CString, int, bool) const + 411
+  21  eu4                                 0x0000000100512b25 CEffect::GetCompleteDesc(CEventScope&, int, CString, int, bool) const + 429
+  22  eu4                                 0x0000000100513e03 CHiddenEffect::GetCompleteDesc(CEventScope&, int, CString, int, bool) const + 99
+  23  eu4                                 0x0000000100512b25 CEffect::GetCompleteDesc(CEventScope&, int, CString, int, bool) const + 429
+  24  eu4                                 0x0000000100600aec CEventOption::GetDesc(CEventScope&, int) const + 82
+  25  eu4                                 0x00000001005f895f CEvent::GetEffectDescription(CEventScope&, int) const + 75
+  26  eu4                                 0x0000000100eeb9b8 CEventWindow::GetOptionEffectString(CEvent const&, CEventScope&, int) + 790
+  27  eu4                                 0x0000000100eeb546 CEventWindow::GetOptionEffectTooltip(CGuiObject*) + 130
+  28  eu4                                 0x0000000100a411ab CInGameIdler::GetInterfaceToolTip(CGuiObject*) const + 24909
+  29  eu4                                 0x00000001007171b6 CInGameIdler::GetCurrentTooltip(CVector2<float> const&, CGuiObject*) + 176
+  30  eu4                                 0x00000001011e35f6 CTooltipViewController::ShowTooltipAt(CPoint<int> const&) + 286
+  31  eu4                                 0x00000001011e33f0 CTooltipViewController::Update(float)    + 466
+  32  eu4                                 0x000000010070ab98 CInGameIdler::Idle(bool)                 + 9956
+  33  eu4                                 0x00000001013ca2a0 CApplication::UpdateOneFrame(bool)       + 288
+  34  eu4                                 0x00000001013ca74a CApplication::Run()                      + 48
+  35  eu4                                 0x0000000100755aea main + 10944
+  36  dyld                                0x0000000203204bb8 start + 3240

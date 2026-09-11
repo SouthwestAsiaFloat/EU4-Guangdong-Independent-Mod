@@ -502,5 +502,46 @@ class ManualPickerRules(unittest.TestCase):
         self.assertIs(page[1], self.s.provinces[0])
 
 
+class RefusalTooltipSafety(unittest.TestCase):
+    def test_refusal_cb_is_behind_an_execution_only_event(self):
+        effects = Scripts().effects
+        events = {dict(body)['id']: body for key, body in parse('file = {\n' +
+            (MOD / 'events/gdd_tianxia_territory_events.txt').read_text() + '\n}')['file'] if key == 'country_event'}
+        # Model the dangerous description reachability, including hidden_effect
+        # and BOTH branches. Event scheduling is an execution boundary.
+        def reachable(body, seen=frozenset()):
+            for key, value in body:
+                yield key
+                if key == 'country_event':
+                    continue
+                if isinstance(value, list):
+                    yield from reachable(value, seen)
+                elif key in effects and key not in seen:
+                    yield from reachable(effects[key], seen | {key})
+        for eid in (10, 11, 21):
+            for key, body in events[f'gdd_tianxia_territory.{eid}']:
+                if key == 'option':
+                    self.assertNotIn('add_casus_belli', set(reachable(body)))
+        dispatch = effects['gdd_dispatch_tianxia_unlawful_demand_effect']
+        # A delayed CB event called below nested else was not queued in the
+        # real save. Reject those dispatch branches without banning other else.
+        def keys(body):
+            for key, value in body:
+                yield key
+                if isinstance(value, list):
+                    yield from keys(value)
+        self.assertNotIn('else', set(keys(dispatch)))
+        branches = str(dispatch)
+        self.assertLess(branches.index('gdd_refuse_tianxia_unlawful_demand_effect'),
+                        branches.rindex('gdd_accept_tianxia_unlawful_demand_effect'))
+        bridge = dict(events['gdd_tianxia_territory.24'])
+        self.assertEqual(bridge['hidden'], 'yes')
+        self.assertIn('add_casus_belli', set(reachable(bridge['immediate'])))
+        self.assertNotIn('add_casus_belli', set(reachable(bridge['option'])))
+        self.assertIn("('target', 'ROOT')", str(bridge['immediate']))
+        self.assertIn("('months', '60')", str(bridge['immediate']))
+
+
+
 if __name__ == "__main__":
     unittest.main(verbosity=2)

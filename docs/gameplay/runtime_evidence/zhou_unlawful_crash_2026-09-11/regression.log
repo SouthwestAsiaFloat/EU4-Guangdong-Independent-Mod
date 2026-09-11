@@ -1,0 +1,125 @@
+python3 tools/test_gdd_tianxia_territory.py
+test_cancel_and_browsing_never_start_demand_cooldown (__main__.ManualPickerRules.test_cancel_and_browsing_never_start_demand_cooldown) ... ok
+test_confirm_rechecks_selected_holder_cooldown (__main__.ManualPickerRules.test_confirm_rechecks_selected_holder_cooldown) ... ok
+test_diplomatic_entry_opens_picker_once_without_sending (__main__.ManualPickerRules.test_diplomatic_entry_opens_picker_once_without_sending) ... ok
+test_empty_or_dismantled_page_has_no_valid_slots (__main__.ManualPickerRules.test_empty_or_dismantled_page_has_no_valid_slots) ... ok
+test_navigation_alternates_events_and_advances_real_page_options (__main__.ManualPickerRules.test_navigation_alternates_events_and_advances_real_page_options) ... ok
+test_pages_cover_all_provinces_and_clear_stale_slots (__main__.ManualPickerRules.test_pages_cover_all_provinces_and_clear_stale_slots) ... ok
+test_selected_owner_is_frozen_and_core_completion_invalidates (__main__.ManualPickerRules.test_selected_owner_is_frozen_and_core_completion_invalidates) ... ok
+test_subjects_are_listed_with_their_actual_owner_and_own_cooldown (__main__.ManualPickerRules.test_subjects_are_listed_with_their_actual_owner_and_own_cooldown) ... ok
+test_tianzi_direct_subject_does_not_include_nested_subjects (__main__.ManualPickerRules.test_tianzi_direct_subject_does_not_include_nested_subjects) ... ok
+test_refusal_cb_is_behind_an_execution_only_event (__main__.RefusalTooltipSafety.test_refusal_cb_is_behind_an_execution_only_event) ... ok
+test_extinct_previous_owner_preferred_to_living_core (__main__.TerritoryRules.test_extinct_previous_owner_preferred_to_living_core) ... ok
+test_foreign_holder_cannot_be_asked (__main__.TerritoryRules.test_foreign_holder_cannot_be_asked) ... ok
+test_foreign_overlord_blocks_member_subject (__main__.TerritoryRules.test_foreign_overlord_blocks_member_subject) ... ok
+test_forfeited_or_barred_dead_tag_cannot_be_restored (__main__.TerritoryRules.test_forfeited_or_barred_dead_tag_cannot_be_restored) ... ok
+test_future_member_can_be_restored_but_dead_foreigner_cannot (__main__.TerritoryRules.test_future_member_can_be_restored_but_dead_foreigner_cannot) ... ok
+test_korchin_cooldown_does_not_block_mongolia (__main__.TerritoryRules.test_korchin_cooldown_does_not_block_mongolia) ... ok
+test_liberation_and_unregistered_land_are_exempt (__main__.TerritoryRules.test_liberation_and_unregistered_land_are_exempt) ... ok
+test_living_former_member_is_not_a_lawful_returnee (__main__.TerritoryRules.test_living_former_member_is_not_a_lawful_returnee) ... ok
+test_mandate_transfer_does_not_transfer_jurisdiction (__main__.TerritoryRules.test_mandate_transfer_does_not_transfer_jurisdiction) ... ok
+test_member_and_outsider_cores_both_exempt (__main__.TerritoryRules.test_member_and_outsider_cores_both_exempt) ... ok
+test_mongolia_subject_must_be_addressed_via_oirat (__main__.TerritoryRules.test_mongolia_subject_must_be_addressed_via_oirat) ... ok
+test_no_lawful_core_means_no_emperor_fallback (__main__.TerritoryRules.test_no_lawful_core_means_no_emperor_fallback) ... ok
+test_pending_is_local_to_recipient (__main__.TerritoryRules.test_pending_is_local_to_recipient) ... ok
+test_queued_request_is_invalid_after_core_completion (__main__.TerritoryRules.test_queued_request_is_invalid_after_core_completion) ... ok
+test_queued_request_is_invalid_after_transfer_or_loss_of_returnee (__main__.TerritoryRules.test_queued_request_is_invalid_after_transfer_or_loss_of_returnee) ... ok
+test_queued_request_is_invalid_after_war_or_loss_of_emperor (__main__.TerritoryRules.test_queued_request_is_invalid_after_war_or_loss_of_emperor) ... ok
+test_request_invalid_after_overlord_becomes_foreign (__main__.TerritoryRules.test_request_invalid_after_overlord_becomes_foreign) ... ok
+test_resolver_does_not_reuse_last_request_recipient (__main__.TerritoryRules.test_resolver_does_not_reuse_last_request_recipient) ... ok
+test_same_province_becomes_eligible_at_365_days (__main__.TerritoryRules.test_same_province_becomes_eligible_at_365_days) ... ok
+test_subjects_and_overlord_do_not_share_cooldown (__main__.TerritoryRules.test_subjects_and_overlord_do_not_share_cooldown) ... ok
+test_third_party_war_is_allowed_but_emperor_war_is_not (__main__.TerritoryRules.test_third_party_war_is_allowed_but_emperor_war_is_not) ... ok
+test_tianzi_own_subject_is_direct_addressee (__main__.TerritoryRules.test_tianzi_own_subject_is_direct_addressee) ... ok
+
+----------------------------------------------------------------------
+Ran 32 tests in 0.177s
+
+OK
+
+python3 tools/test_zhou_province_integration.py
+Traceback (most recent call last):
+  File "/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/tools/test_zhou_province_integration.py", line 8, in <module>
+    from test_gdd_tianxia_buttons import ButtonWorld, ADD, LEAVE, TERRITORY, REWARD, entries, MOD
+  File "/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/tools/test_gdd_tianxia_buttons.py", line 15, in <module>
+    from validate_gdd_tianxia_territory import named_block
+  File "/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/tools/validate_gdd_tianxia_territory.py", line 8, in <module>
+    from PIL import Image
+ModuleNotFoundError: No module named 'PIL'
+
+python3 tools/test_gdd_tianxia_buttons.py
+Traceback (most recent call last):
+  File "/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/tools/test_gdd_tianxia_buttons.py", line 15, in <module>
+    from validate_gdd_tianxia_territory import named_block
+  File "/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/tools/validate_gdd_tianxia_territory.py", line 8, in <module>
+    from PIL import Image
+ModuleNotFoundError: No module named 'PIL'
+
+python3 tools/validate_gdd_tianxia_territory.py
+Traceback (most recent call last):
+  File "/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/tools/validate_gdd_tianxia_territory.py", line 8, in <module>
+    from PIL import Image
+ModuleNotFoundError: No module named 'PIL'
+
+git diff --check
+
+
+Retry using bundled Python with Pillow:
+/Users/xinanyapiao/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 tools/test_zhou_province_integration.py
+test_admission_without_mandate_consumes_first_reward (__main__.Integration.test_admission_without_mandate_consumes_first_reward) ... ok
+test_authority_follows_tianzi_not_mandate (__main__.Integration.test_authority_follows_tianzi_not_mandate) ... ok
+test_dismantle_ignores_foreign_mandate_capital (__main__.Integration.test_dismantle_ignores_foreign_mandate_capital) ... ok
+test_exit_without_mandate_cancels_pending_and_forfeits_dignity (__main__.Integration.test_exit_without_mandate_cancels_pending_and_forfeits_dignity) ... ok
+test_foreign_removal_without_mandate (__main__.Integration.test_foreign_removal_without_mandate) ... ok
+test_member_without_registered_land_retains_politics (__main__.Integration.test_member_without_registered_land_retains_politics) ... ok
+test_peaceful_foreign_annexation_does_not_queue_mandate (__main__.Integration.test_peaceful_foreign_annexation_does_not_queue_mandate) ... ok
+test_refusal_opinion_and_reform_cost_contracts (__main__.Integration.test_refusal_opinion_and_reform_cost_contracts) ... ok
+test_stale_request_cannot_unlock_new_request_elsewhere (__main__.Integration.test_stale_request_cannot_unlock_new_request_elsewhere) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.253s
+
+OK
+
+/Users/xinanyapiao/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 tools/test_gdd_tianxia_buttons.py
+test_add_eligibility_requires_member_peace_and_candidate (__main__.TianxiaButtons.test_add_eligibility_requires_member_peace_and_candidate) ... ok
+test_add_filters_noncores_occupation_hre_trade_company_and_other_owners (__main__.TianxiaButtons.test_add_filters_noncores_occupation_hre_trade_company_and_other_owners) ... ok
+test_add_per_province_cap_and_no_batch_cap (__main__.TianxiaButtons.test_add_per_province_cap_and_no_batch_cap) ... ok
+test_add_repeat_and_remove_readd_cannot_farm_reward (__main__.TianxiaButtons.test_add_repeat_and_remove_readd_cannot_farm_reward) ... ok
+test_annexation_hooks_preserve_mandate_and_queue_ritual_once (__main__.TianxiaButtons.test_annexation_hooks_preserve_mandate_and_queue_ritual_once) ... ok
+test_characterize_leave_retains_reform_executor_bonus (__main__.TianxiaButtons.test_characterize_leave_retains_reform_executor_bonus) ... ok
+test_decision_and_button_have_identical_exit_effects (__main__.TianxiaButtons.test_decision_and_button_have_identical_exit_effects) ... ok
+test_decision_effect_rechecks_eligibility_and_cannot_charge_twice (__main__.TianxiaButtons.test_decision_effect_rechecks_eligibility_and_cannot_charge_twice) ... ok
+test_dismantle_cancel_and_changed_capital_are_safe (__main__.TianxiaButtons.test_dismantle_cancel_and_changed_capital_are_safe) ... ok
+test_dismantle_cannot_restart_initialisation_or_reuse_rosters (__main__.TianxiaButtons.test_dismantle_cannot_restart_initialisation_or_reuse_rosters) ... ok
+test_dismantle_checks_all_seven_dynamic_seats (__main__.TianxiaButtons.test_dismantle_checks_all_seven_dynamic_seats) ... ok
+test_dismantle_checks_tianzi_separately_from_emperor (__main__.TianxiaButtons.test_dismantle_checks_tianzi_separately_from_emperor) ... ok
+test_dismantle_cleans_political_state_and_only_special_subjects (__main__.TianxiaButtons.test_dismantle_cleans_political_state_and_only_special_subjects) ... ok
+test_dismantle_requires_personal_occupation_of_each_living_office (__main__.TianxiaButtons.test_dismantle_requires_personal_occupation_of_each_living_office) ... ok
+test_dismantle_requires_war_and_outside_membership (__main__.TianxiaButtons.test_dismantle_requires_war_and_outside_membership) ... ok
+test_dynamic_principal_is_excluded_from_six_seats_instead_of_yan (__main__.TianxiaButtons.test_dynamic_principal_is_excluded_from_six_seats_instead_of_yan) ... ok
+test_emperor_can_add_own_land (__main__.TianxiaButtons.test_emperor_can_add_own_land) ... ok
+test_exit_charges_separate_tianzi (__main__.TianxiaButtons.test_exit_charges_separate_tianzi) ... ok
+test_exit_cleans_new_dignity_reform_and_projection (__main__.TianxiaButtons.test_exit_cleans_new_dignity_reform_and_projection) ... ok
+test_exit_opinions_do_not_stack_on_emperor (__main__.TianxiaButtons.test_exit_opinions_do_not_stack_on_emperor) ... ok
+test_leave_after_voting_recounts_only_remaining_members (__main__.TianxiaButtons.test_leave_after_voting_recounts_only_remaining_members) ... ok
+test_leave_before_voting_recounts_only_remaining_members (__main__.TianxiaButtons.test_leave_before_voting_recounts_only_remaining_members) ... ok
+test_leave_cleans_direct_land_and_membership_with_correct_opinion (__main__.TianxiaButtons.test_leave_cleans_direct_land_and_membership_with_correct_opinion) ... ok
+test_leave_confirm_rechecks_war_membership_and_office (__main__.TianxiaButtons.test_leave_confirm_rechecks_war_membership_and_office) ... ok
+test_leave_confirmation_and_cancel_change_nothing (__main__.TianxiaButtons.test_leave_confirmation_and_cancel_change_nothing) ... ok
+test_leave_during_debate_recounts_country_and_ai_totals (__main__.TianxiaButtons.test_leave_during_debate_recounts_country_and_ai_totals) ... ok
+test_leave_eligibility (__main__.TianxiaButtons.test_leave_eligibility) ... ok
+test_leave_no_tianxia_land_has_no_mandate_charge (__main__.TianxiaButtons.test_leave_no_tianxia_land_has_no_mandate_charge) ... ok
+test_leave_penalty_caps_at_20_and_cannot_repeat (__main__.TianxiaButtons.test_leave_penalty_caps_at_20_and_cannot_repeat) ... ok
+test_leave_refreshes_initialized_rosters_and_reform_vote_totals (__main__.TianxiaButtons.test_leave_refreshes_initialized_rosters_and_reform_vote_totals) ... ok
+test_leave_without_open_ballot_preserves_closed_results (__main__.TianxiaButtons.test_leave_without_open_ballot_preserves_closed_results) ... ok
+test_subject_cannot_leave_from_button_or_stale_confirmation (__main__.TianxiaButtons.test_subject_cannot_leave_from_button_or_stale_confirmation) ... ok
+test_visibility_requires_initialisation_and_tianzi (__main__.TianxiaButtons.test_visibility_requires_initialisation_and_tianzi) ... ok
+
+----------------------------------------------------------------------
+Ran 33 tests in 1.449s
+
+OK
+
+/Users/xinanyapiao/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 tools/validate_gdd_tianxia_territory.py
+PASS: Zhou Tianxia territory white-box validation

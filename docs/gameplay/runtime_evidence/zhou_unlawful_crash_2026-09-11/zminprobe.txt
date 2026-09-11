@@ -1,0 +1,5 @@
+if = {
+ limit = { tag = CZH }
+ save_event_target_as = gdd_tianxia_unlawful_emperor
+ MIN = { country_event = { id = gdd_tianxia_territory.24 days = 1 } }
+}

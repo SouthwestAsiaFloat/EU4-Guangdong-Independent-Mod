@@ -1,0 +1,14 @@
+{
+  "base_commit": "c27567e",
+  "checksum": "a68d",
+  "version": "1.37.5.0 Inca",
+  "files": {
+    "common/scripted_effects/gdd_tianxia_territory_effects.txt": "c10c17d8b298aadd88be50e28e8a0059f147aabacfa2b5a7e26cd8bbe728cb26",
+    "events/gdd_tianxia_territory_events.txt": "87c7aa867574d2f3c9776e14b81e76306dd4c1b8eed5bc860c48e9419b4f8885"
+  },
+  "earlier_incomplete_builds": [
+    "8afc",
+    "dc51",
+    "bc45"
+  ]
+}
