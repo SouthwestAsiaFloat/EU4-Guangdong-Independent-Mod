@@ -1,0 +1,12 @@
+PASS: Zhou Mandate white-box contracts
+  stability, tributary, devastation, loan, corruption and bankruptcy Mandate effects: neutral
+  internal peace: +0.10/month; invalid seats: -0.05 each/month
+  authority: -25..25 gives -0.10/month; 26..99 and -99..-26 give +0.05/month; endpoints give +0.10/month
+  AI reform executors must cast their own support ballot
+  Emperor subject: external -1/month; Zhou -0.05/month and authority -5/month
+  seat penalties are gated until the post-migration cache is ready
+  foreign occupation: -0.005/province/month
+  external wartime annexation: queued -10; no automatic defence penalty
+  voluntary exit: -0.1/development, capped at -20
+  reform enactment: requires caller threshold and consumes the Mandate pool
+  revocation opinion: ROOT-scoped, stacks to -100, natural yearly decay

@@ -211,100 +211,6 @@ gdd_select_highest_development_unlawful_tianxia_province_effect = {
     }
 }
 
-# ROOT is the Emperor and $target$ is the sovereign diplomacy recipient. Search
-# the recipient first and then its direct subjects, retaining one deterministic
-# highest-development province across the whole sovereignty group.
-gdd_select_highest_development_unlawful_tianxia_province_for_addressee_effect = {
-    clr_country_flag = gdd_tianxia_unlawful_province_selected
-    set_variable = {
-        which = gdd_tianxia_unlawful_best_development
-        value = -1
-    }
-    set_variable = {
-        which = gdd_tianxia_unlawful_candidate_development
-        value = 0
-    }
-    $target$ = {
-        if = {
-            limit = {
-                gdd_can_receive_tianxia_unlawful_demand_trigger = {
-                    emperor = ROOT
-                }
-            }
-            gdd_consider_unlawful_tianxia_provinces_for_holder_effect = yes
-        }
-        every_subject_country = {
-            limit = {
-                gdd_can_receive_tianxia_unlawful_demand_trigger = {
-                    emperor = ROOT
-                }
-            }
-            gdd_consider_unlawful_tianxia_provinces_for_holder_effect = yes
-        }
-    }
-    set_variable = {
-        which = gdd_tianxia_unlawful_best_development
-        value = 0
-    }
-    set_variable = {
-        which = gdd_tianxia_unlawful_candidate_development
-        value = 0
-    }
-}
-
-# ROOT is the human Emperor and FROM is the native diplomatic recipient. Native
-# requests cannot store a province at send-time, so resolution re-selects and
-# revalidates the highest-development eligible province before applying either
-# outcome.
-gdd_prepare_native_tianxia_unlawful_context_effect = {
-    save_event_target_as = gdd_tianxia_unlawful_emperor
-    FROM = { save_event_target_as = gdd_tianxia_unlawful_addressee }
-    gdd_select_highest_development_unlawful_tianxia_province_for_addressee_effect = {
-        target = FROM
-    }
-}
-
-gdd_mark_native_tianxia_unlawful_demand_resolved_effect = {
-    event_target:gdd_tianxia_unlawful_actual_owner = {
-        clr_country_flag = gdd_tianxia_unlawful_demand_cooldown
-        set_country_flag = gdd_tianxia_unlawful_demand_cooldown
-    }
-}
-
-gdd_accept_native_tianxia_unlawful_demand_effect = {
-    gdd_prepare_native_tianxia_unlawful_context_effect = yes
-    if = {
-        limit = {
-            zhx_is_tianzi = yes
-            has_country_flag = gdd_tianxia_unlawful_province_selected
-            event_target:gdd_tianxia_unlawful_province = {
-                gdd_is_unlawful_tianxia_province_for_country_trigger = {
-                    who = event_target:gdd_tianxia_unlawful_actual_owner
-                }
-            }
-        }
-        gdd_mark_native_tianxia_unlawful_demand_resolved_effect = yes
-        gdd_accept_tianxia_unlawful_demand_effect = yes
-    }
-}
-
-gdd_refuse_native_tianxia_unlawful_demand_effect = {
-    gdd_prepare_native_tianxia_unlawful_context_effect = yes
-    if = {
-        limit = {
-            zhx_is_tianzi = yes
-            has_country_flag = gdd_tianxia_unlawful_province_selected
-            event_target:gdd_tianxia_unlawful_province = {
-                gdd_is_unlawful_tianxia_province_for_country_trigger = {
-                    who = event_target:gdd_tianxia_unlawful_actual_owner
-                }
-            }
-        }
-        gdd_mark_native_tianxia_unlawful_demand_resolved_effect = yes
-        gdd_refuse_tianxia_unlawful_demand_effect = yes
-    }
-}
-
 # Country scope: calculate the recipient AI's deterministic acceptance score.
 # Component flags exist only for the open confirmation/request event and drive
 # its readable reasons; the cleanup effect removes every scratch value.
@@ -589,7 +495,18 @@ gdd_dispatch_tianxia_unlawful_demand_effect = {
     }
     else = {
         event_target:gdd_tianxia_unlawful_addressee = {
-            country_event = { id = gdd_tianxia_territory.11 }
+            if = {
+                limit = { ai = no }
+                country_event = { id = gdd_tianxia_territory.11 days = 1 }
+            }
+            if = {
+                limit = { ai = yes }
+                if = {
+                    limit = { has_country_flag = gdd_tianxia_unlawful_ai_will_accept }
+                    gdd_accept_tianxia_unlawful_demand_effect = yes
+                }
+                else = { gdd_refuse_tianxia_unlawful_demand_effect = yes }
+            }
         }
     }
 }
@@ -1069,6 +986,7 @@ gdd_dismantle_tianxia_effect = {
         clr_country_flag = gdd_tianxia_unlawful_demand_considered_this_tick
         clr_country_flag = gdd_tianxia_actions_collapsed
         gdd_clear_tianxia_unlawful_acceptance_cache_effect = yes
+        gdd_close_tianxia_unlawful_picker_effect = yes
 
         clr_country_flag = gdd_proxy_reform_establish_gaituguiliu
         clr_country_flag = gdd_proxy_reform_seaban

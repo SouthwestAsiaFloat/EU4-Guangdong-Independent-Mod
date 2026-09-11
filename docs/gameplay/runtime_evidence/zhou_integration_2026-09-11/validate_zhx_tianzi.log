@@ -1,0 +1,2 @@
+PASS: Tianzi reform, two royal capitals, infantry-only training, 169 eligibility/tax/cap boundaries, Ru startup guard, decree gates, localisation/icon references
+Static source contracts only; combat, UI, recruit queues, finances and save/reload require runtime testing.

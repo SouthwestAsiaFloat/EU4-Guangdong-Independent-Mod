@@ -1,0 +1,7 @@
+Shared Tianxia Council static contract: PASS
+  One phase family; one issue-kind family; one A/B/C ballot
+  Deadline: zhx_system.23 after 365 days
+  Public turnout: eligible/voted/unvoted countries and AI countries
+  Public counters are always mutated on event_target:zhx_tianzi
+  Debate candidate slots: 6 schools in A and 6 schools in B
+  GUI: current council on the left; orthodoxy on the right

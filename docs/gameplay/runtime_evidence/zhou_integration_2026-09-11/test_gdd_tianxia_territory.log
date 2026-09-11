@@ -1,0 +1,36 @@
+test_cancel_and_browsing_never_start_demand_cooldown (__main__.ManualPickerRules.test_cancel_and_browsing_never_start_demand_cooldown) ... ok
+test_confirm_rechecks_selected_holder_cooldown (__main__.ManualPickerRules.test_confirm_rechecks_selected_holder_cooldown) ... ok
+test_diplomatic_entry_opens_picker_once_without_sending (__main__.ManualPickerRules.test_diplomatic_entry_opens_picker_once_without_sending) ... ok
+test_empty_or_dismantled_page_has_no_valid_slots (__main__.ManualPickerRules.test_empty_or_dismantled_page_has_no_valid_slots) ... ok
+test_navigation_alternates_events_and_advances_real_page_options (__main__.ManualPickerRules.test_navigation_alternates_events_and_advances_real_page_options) ... ok
+test_pages_cover_all_provinces_and_clear_stale_slots (__main__.ManualPickerRules.test_pages_cover_all_provinces_and_clear_stale_slots) ... ok
+test_selected_owner_is_frozen_and_core_completion_invalidates (__main__.ManualPickerRules.test_selected_owner_is_frozen_and_core_completion_invalidates) ... ok
+test_subjects_are_listed_with_their_actual_owner_and_own_cooldown (__main__.ManualPickerRules.test_subjects_are_listed_with_their_actual_owner_and_own_cooldown) ... ok
+test_tianzi_direct_subject_does_not_include_nested_subjects (__main__.ManualPickerRules.test_tianzi_direct_subject_does_not_include_nested_subjects) ... ok
+test_extinct_previous_owner_preferred_to_living_core (__main__.TerritoryRules.test_extinct_previous_owner_preferred_to_living_core) ... ok
+test_foreign_holder_cannot_be_asked (__main__.TerritoryRules.test_foreign_holder_cannot_be_asked) ... ok
+test_foreign_overlord_blocks_member_subject (__main__.TerritoryRules.test_foreign_overlord_blocks_member_subject) ... ok
+test_forfeited_or_barred_dead_tag_cannot_be_restored (__main__.TerritoryRules.test_forfeited_or_barred_dead_tag_cannot_be_restored) ... ok
+test_future_member_can_be_restored_but_dead_foreigner_cannot (__main__.TerritoryRules.test_future_member_can_be_restored_but_dead_foreigner_cannot) ... ok
+test_korchin_cooldown_does_not_block_mongolia (__main__.TerritoryRules.test_korchin_cooldown_does_not_block_mongolia) ... ok
+test_liberation_and_unregistered_land_are_exempt (__main__.TerritoryRules.test_liberation_and_unregistered_land_are_exempt) ... ok
+test_living_former_member_is_not_a_lawful_returnee (__main__.TerritoryRules.test_living_former_member_is_not_a_lawful_returnee) ... ok
+test_mandate_transfer_does_not_transfer_jurisdiction (__main__.TerritoryRules.test_mandate_transfer_does_not_transfer_jurisdiction) ... ok
+test_member_and_outsider_cores_both_exempt (__main__.TerritoryRules.test_member_and_outsider_cores_both_exempt) ... ok
+test_mongolia_subject_must_be_addressed_via_oirat (__main__.TerritoryRules.test_mongolia_subject_must_be_addressed_via_oirat) ... ok
+test_no_lawful_core_means_no_emperor_fallback (__main__.TerritoryRules.test_no_lawful_core_means_no_emperor_fallback) ... ok
+test_pending_is_local_to_recipient (__main__.TerritoryRules.test_pending_is_local_to_recipient) ... ok
+test_queued_request_is_invalid_after_core_completion (__main__.TerritoryRules.test_queued_request_is_invalid_after_core_completion) ... ok
+test_queued_request_is_invalid_after_transfer_or_loss_of_returnee (__main__.TerritoryRules.test_queued_request_is_invalid_after_transfer_or_loss_of_returnee) ... ok
+test_queued_request_is_invalid_after_war_or_loss_of_emperor (__main__.TerritoryRules.test_queued_request_is_invalid_after_war_or_loss_of_emperor) ... ok
+test_request_invalid_after_overlord_becomes_foreign (__main__.TerritoryRules.test_request_invalid_after_overlord_becomes_foreign) ... ok
+test_resolver_does_not_reuse_last_request_recipient (__main__.TerritoryRules.test_resolver_does_not_reuse_last_request_recipient) ... ok
+test_same_province_becomes_eligible_at_365_days (__main__.TerritoryRules.test_same_province_becomes_eligible_at_365_days) ... ok
+test_subjects_and_overlord_do_not_share_cooldown (__main__.TerritoryRules.test_subjects_and_overlord_do_not_share_cooldown) ... ok
+test_third_party_war_is_allowed_but_emperor_war_is_not (__main__.TerritoryRules.test_third_party_war_is_allowed_but_emperor_war_is_not) ... ok
+test_tianzi_own_subject_is_direct_addressee (__main__.TerritoryRules.test_tianzi_own_subject_is_direct_addressee) ... ok
+
+----------------------------------------------------------------------
+Ran 31 tests in 0.066s
+
+OK

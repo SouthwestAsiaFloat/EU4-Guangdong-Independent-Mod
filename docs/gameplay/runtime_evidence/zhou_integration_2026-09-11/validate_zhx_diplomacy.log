@@ -1,0 +1,10 @@
+PASS: Zhou diplomacy static contract
+  ordinary province cessions add no scripted AE; member extinction: +5
+  every member extinction queues a universal -5 ritual-authority loss
+  real peace uses a same-day presentation-only notice; punishments settle monthly
+  Tianzi receives an isolated 120-month punitive CB through a hidden monthly bridge
+  Tianzi may manually join an externally attacked member's defensive wars through a native diplomatic action
+  a player member may appeal to the Tianzi, with eligible AI recipients accepting by a single duty term
+  relief action has no CB, world scan, event/on-action bridge or custom wargoal
+  membership application, voluntary exit and historic restoration wired
+  this command performs static checks only; runtime evidence is documented separately

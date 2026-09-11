@@ -1,0 +1,15 @@
+test_all_effect_and_trigger_names_are_unique (__main__.StartupLifecycle.test_all_effect_and_trigger_names_are_unique) ... ok
+test_blank_opening_registers_every_member_owned_province (__main__.StartupLifecycle.test_blank_opening_registers_every_member_owned_province) ... ok
+test_dismantled_world_cannot_be_bootstrapped_or_migrated (__main__.StartupLifecycle.test_dismantled_world_cannot_be_bootstrapped_or_migrated) ... ok
+test_dismantling_removes_new_dignity_and_petition_state (__main__.StartupLifecycle.test_dismantling_removes_new_dignity_and_petition_state) ... ok
+test_external_annexation_charges_current_emperor_after_transfer (__main__.StartupLifecycle.test_external_annexation_charges_current_emperor_after_transfer) ... ok
+test_legacy_admission_ledger_prevents_readmission_of_removed_land (__main__.StartupLifecycle.test_legacy_admission_ledger_prevents_readmission_of_removed_land) ... ok
+test_legacy_missing_land_is_repaired_without_resetting_merit_or_queues (__main__.StartupLifecycle.test_legacy_missing_land_is_repaired_without_resetting_merit_or_queues) ... ok
+test_v13_runs_both_territory_and_merit_initialisation (__main__.StartupLifecycle.test_v13_runs_both_territory_and_merit_initialisation) ... ok
+test_v14_initializes_diplomacy_and_repairs_hre_overlap (__main__.StartupLifecycle.test_v14_initializes_diplomacy_and_repairs_hre_overlap) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 2.250s
+
+OK
+Opening history: 326 provinces; 68 Zhou polities; 7 dignities

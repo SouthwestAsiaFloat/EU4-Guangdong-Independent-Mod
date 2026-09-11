@@ -1,0 +1,1 @@
+PASS: 10752 annual scenarios; forecast is pure/idempotent; settlement shares calculation; open/monthly refresh; dynamic strings, signs and encoded localisation. Runtime hover not tested.

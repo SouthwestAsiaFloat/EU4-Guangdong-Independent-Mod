@@ -1,0 +1,64 @@
+{
+  "path": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/save games/zppafter.eu4",
+  "sha256": "0071babe568c2b69908c70eecb27d1ce2c4e01670279044d63df0057ce1cd8ab",
+  "countries": {
+    "CZH": {
+      "gdd_tianxia_picker_open": false,
+      "gdd_tianxia_unlawful_request_pending": false,
+      "gdd_tianxia_unlawful_demand_cooldown": false,
+      "picker_values": [
+        "gdd_tianxia_picker_count=0.000",
+        "gdd_tianxia_picker_offset=0.000",
+        "gdd_tianxia_picker_slot=0.000"
+      ]
+    },
+    "KRC": {
+      "gdd_tianxia_picker_open": false,
+      "gdd_tianxia_unlawful_request_pending": false,
+      "gdd_tianxia_unlawful_demand_cooldown": true,
+      "picker_values": []
+    }
+  },
+  "provinces": {
+    "703": {
+      "owner": "KRC",
+      "pending": false
+    },
+    "4672": {
+      "owner": "KRC",
+      "pending": false
+    },
+    "5113": {
+      "owner": "KRC",
+      "pending": false
+    },
+    "5114": {
+      "owner": "KRC",
+      "pending": false
+    },
+    "5115": {
+      "owner": "KRC",
+      "pending": false
+    },
+    "5116": {
+      "owner": "KRC",
+      "pending": false
+    },
+    "5206": {
+      "owner": "KRC",
+      "pending": false
+    },
+    "5207": {
+      "owner": "KRC",
+      "pending": false
+    },
+    "5212": {
+      "owner": "KRC",
+      "pending": false
+    },
+    "5213": {
+      "owner": "YAN",
+      "pending": false
+    }
+  }
+}

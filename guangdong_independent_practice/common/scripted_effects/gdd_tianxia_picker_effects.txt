@@ -1,0 +1,109 @@
+# Human picker. ROOT is the acting Tianzi; FROM is the diplomacy recipient
+# only in the entry callback. All subsequent events use local saved targets.
+gdd_open_tianxia_unlawful_picker_effect = {
+    if = {
+        limit = {
+            NOT = { has_country_flag = gdd_tianxia_picker_open }
+            FROM = { gdd_can_be_tianxia_unlawful_addressee_trigger = { emperor = ROOT } }
+        }
+        save_event_target_as = gdd_tianxia_unlawful_emperor
+        FROM = { save_event_target_as = gdd_tianxia_unlawful_addressee }
+        set_country_flag = gdd_tianxia_picker_open
+        set_variable = { which = gdd_tianxia_picker_offset value = 0 }
+        country_event = { id = gdd_tianxia_territory.20 }
+    }
+}
+
+gdd_close_tianxia_unlawful_picker_effect = {
+    clr_country_flag = gdd_tianxia_picker_open
+    set_variable = { which = gdd_tianxia_picker_offset value = 0 }
+    set_variable = { which = gdd_tianxia_picker_count value = 0 }
+    set_variable = { which = gdd_tianxia_picker_slot value = 0 }
+    clr_country_flag = gdd_tianxia_picker_has_next
+}
+
+# Country scope: enumerate one eligible holder. ROOT is always the Tianzi.
+gdd_collect_tianxia_unlawful_picker_holder_effect = {
+    if = {
+        limit = { gdd_can_receive_tianxia_unlawful_demand_trigger = { emperor = ROOT } }
+        every_owned_province = {
+            limit = { gdd_is_unlawful_tianxia_province_for_country_trigger = { who = PREV } }
+            ROOT = {
+                if = {
+                    limit = { check_variable = { which = gdd_tianxia_picker_count which = gdd_tianxia_picker_offset } }
+                    change_variable = { which = gdd_tianxia_picker_slot value = 1 }
+                    if = {
+                        limit = { is_variable_equal = { which = gdd_tianxia_picker_slot value = 1 } }
+                        PREV = {
+                            save_event_target_as = gdd_tianxia_picker_province_1
+                            owner = { save_event_target_as = gdd_tianxia_picker_owner_1 }
+                        }
+                    }
+                    if = {
+                        limit = { is_variable_equal = { which = gdd_tianxia_picker_slot value = 2 } }
+                        PREV = {
+                            save_event_target_as = gdd_tianxia_picker_province_2
+                            owner = { save_event_target_as = gdd_tianxia_picker_owner_2 }
+                        }
+                    }
+                    if = {
+                        limit = { is_variable_equal = { which = gdd_tianxia_picker_slot value = 3 } }
+                        PREV = {
+                            save_event_target_as = gdd_tianxia_picker_province_3
+                            owner = { save_event_target_as = gdd_tianxia_picker_owner_3 }
+                        }
+                    }
+                    if = {
+                        limit = { is_variable_equal = { which = gdd_tianxia_picker_slot value = 4 } }
+                        PREV = {
+                            save_event_target_as = gdd_tianxia_picker_province_4
+                            owner = { save_event_target_as = gdd_tianxia_picker_owner_4 }
+                        }
+                    }
+                    if = {
+                        limit = { check_variable = { which = gdd_tianxia_picker_slot value = 5 } }
+                        set_country_flag = gdd_tianxia_picker_has_next
+                    }
+                }
+                change_variable = { which = gdd_tianxia_picker_count value = 1 }
+            }
+        }
+    }
+}
+
+gdd_build_tianxia_unlawful_picker_page_effect = {
+    set_variable = { which = gdd_tianxia_picker_count value = 0 }
+    set_variable = { which = gdd_tianxia_picker_slot value = 0 }
+    clr_country_flag = gdd_tianxia_picker_has_next
+    # Empty slots point to the Tianzi's capital and cannot pass the holder gate.
+    # Local event targets have no documented clear effect; overwrite on each page.
+    capital_scope = {
+        save_event_target_as = gdd_tianxia_picker_province_1
+        save_event_target_as = gdd_tianxia_picker_province_2
+        save_event_target_as = gdd_tianxia_picker_province_3
+        save_event_target_as = gdd_tianxia_picker_province_4
+    }
+    save_event_target_as = gdd_tianxia_picker_owner_1
+    save_event_target_as = gdd_tianxia_picker_owner_2
+    save_event_target_as = gdd_tianxia_picker_owner_3
+    save_event_target_as = gdd_tianxia_picker_owner_4
+    if = {
+        limit = {
+            zhx_is_tianzi = yes
+            NOT = { has_global_flag = zhx_tianxia_dismantled }
+            event_target:gdd_tianxia_unlawful_addressee = {
+                gdd_can_be_tianxia_unlawful_addressee_trigger = { emperor = ROOT }
+            }
+        }
+        event_target:gdd_tianxia_unlawful_addressee = {
+            gdd_collect_tianxia_unlawful_picker_holder_effect = yes
+            # The Tianzi's own subject is addressed for its own land only.
+            if = {
+                limit = { is_subject = no }
+                every_subject_country = {
+                    gdd_collect_tianxia_unlawful_picker_holder_effect = yes
+                }
+            }
+        }
+    }
+}

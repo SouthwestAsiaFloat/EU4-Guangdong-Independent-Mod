@@ -1,0 +1,18 @@
+{
+  "baseline": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/save games/zppbaseline.eu4",
+  "sha256": "af0abe80e704d2ae2f53dcd86fc352a9db88b67e8927e1b9f46b417e09523cec",
+  "provinces": [
+    703,
+    4672,
+    5113,
+    5114,
+    5115,
+    5116,
+    5206,
+    5207,
+    5212,
+    5213
+  ],
+  "autosave_backup": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/save games/zhou-picker-runtime-20260910-backup",
+  "status": "Completed real diplomacy pagination, cancel/reload, confirmation back and AI restitution; see README.md"
+}

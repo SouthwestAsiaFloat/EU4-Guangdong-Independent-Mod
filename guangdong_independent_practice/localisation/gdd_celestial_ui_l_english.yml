@@ -208,17 +208,10 @@
  gdd_tianxia_territory.4.a:0 ")YNòTN³XR"
  gdd_tianxia_territory.cancel:0 "‚fNjOb"
 
- GDD_TIANXIA_ACTIONS:0 "hT)YNLˆ¨R"
- GDD_TIANXIA_ACTIONS_COLLAPSE_TT:0 "6ew§YhT)YNLˆ¨R§!0"
- GDD_TIANXIA_ACTIONS_EXPAND_TT:0 "USV§YhT)YNLˆ¨R§!0"
- gdd_tianxia_actions:0 "hT)YNLˆ¨R"
- DIPLOMACYACTION_CATEGORY_gdd_tianxia_actions:0 "hT)YNLˆ¨R"
- gdd_tianxia:0 "hT)YNLˆ¨R"
- DIPLOMACYACTION_CATEGORY_gdd_tianxia:0 "hT)YNLˆ¨R"
  gdd_tianxia_demand_unlawful_territory_title:0 "0tØ^—Õl†˜W"
- gdd_tianxia_demand_unlawful_territory_desc:0 "‰Bl§Y[From.GetName]§!RVØ,gýVbôv–^SýVàe8hÃV`S	g„vhT)YN0WWW0Ïk!k0tØTJh0WWW-NÑSUS¦^gØšwÿc	gwòT	g8hÃVb¡l	gTÕlRVØùRaŒöeNýw0tØ0^SýV`S0W1u—RINýVTrYÿt^¦^·QtS	cžRE–c	gýVR+R¡‹—r0"
- gdd_tianxia_demand_unlawful_territory_tooltip:0 "‰Blå‹ýVRVØ^—Õl`S	g„vhT)YN0WWW0"
- gdd_tianxia_demand_unlawful_territory_dialog:0 "§Y[This.GetName]§!åNhT)YPRKNTÿ‰Bl§Y[Root.GetName]§!RVØ,gýVbôv–^SýVàe8hÃV`S	g„vhT)YN0WWW0¥c×ST²NØTÕl8hÃVc	gwÿÅV‰öeOvQYýVÿÒbÝuSÛbô^—Õl†˜Wé`ZNhT)YNã‰Leb‰N0"
+ gdd_tianxia_demand_unlawful_territory_desc:0 "‰Bl§Y[From.GetName]§!RVØ,gýVbôv–^SýVàe8hÃV`S	g„vhT)YN0WWW0¹pûQTÎNTJhwýNRhˆ-N	ébNWWÿQnx²‹ÑSÿc	gwòT	g8hÃVb¡l	gTÕlRVØùRaŒöeNýw0tØ0^SýV`S0W1u—RINýVTrYÿt^¦^·QtS	cžRE–c	gýVR+R¡‹—r0"
+ gdd_tianxia_demand_unlawful_territory_tooltip:0 "	ébNWWå‹ýVbvQôv^SbXT^SýV^—Õl`S	g„vhT)YNwýNÿnx²‹TÐcúQ0tØ0"
+ gdd_tianxia_demand_unlawful_territory_dialog:0 "SbV§Y[From.GetName]§!„vTJhwýNRhˆ0	ébwýNv^nx²‹TMbOÑSúQ0tØ‰BlÿÖSˆm	ébNµNut^¦^·QtS0"
  gdd_tianxia_demand_unlawful_territory_alert_tooltip:0 "hT)YPR‰BlbìNRVØhT)YN^—Õl†˜W0"
  gdd_tianxia_demand_unlawful_territory_allowed:0 "žRE–c	gw‰˜HNhT)YNbXTÿìrËzb¶–^ShT)YN—RINÿàe,gýV8hÃV0àe,gûNã‰LeAŒMQÿN	gN(WyeQg08gV5r„vTÕl8hÃV¥c6eýV0žRE–c	gýV‰˜ÓumgNt^·QtSNàe…VTrY0tØ0"
  gdd_tianxia_ai_base:0 "ôu²bhT)YNTR"
@@ -239,7 +232,7 @@
  gdd_tianxia_ai_diprep_high:0 "hT)YPRY²NðX‰ŠƒØš"
  gdd_tianxia_ai_diprep_low:0 "hT)YPRY²NðX‰ŠNsO"
  GDD_TIANXIA_DEMAND_UNLAWFUL_TERRITORY:0 "0tØ^—Õl†˜W"
- GDD_TIANXIA_DEMAND_UNLAWFUL_TERRITORY_TT:0 "§Y0tØ^—Õl†˜W§!\nhT)YN0WWWêS	g(Wc	gw¡l	g8hÃV0v^NXR(WTÕlRVØùRaŒöeMbïS0tØ0Ïk!k	ÖSTJh0WWW-NÑSUS¦^gØšwÿ^SýV`S0W÷‹(W—RINýVY²Nu˜ÐcúQÿ1u—RINýVTrY0\nÏk8NžRE–c	gýVìrËz¡‹—rNt^·QtSÿ0RgTïSQ!k0tØÍN^S^—Õl„vTN0WWWÿvQÖNýV¶RÊST—RIN„vvQÖN^SýVNqQ(u·QtS0"
+ GDD_TIANXIA_DEMAND_UNLAWFUL_TERRITORY_TT:0 "§Y0tØ^—Õl†˜W§!\nhT)YN0WWWêS	g(Wc	gw¡l	g8hÃV0v^NXR(WTÕlRVØùRaŒöeMbïS0tØ0¹pûQY²NLˆ¨RTïSÎNRhˆ-N	ébNWWwýNÿnx²‹TÑSÿ^SýV`S0W÷‹(W—RINýVY²Nu˜ÐcúQÿ)YPRôv^S^SýVïSôv¥cTrY0\nÏk8NžRE–c	gýVìrËz¡‹—rNt^·QtSÿ0RgTïSQ!k0tØÍN^S^—Õl„vTN0WWWÿvQÖNýV¶RÊST—RIN„vvQÖN^SýVNqQ(u·QtS0"
  gdd_tianxia_territory.10.t:0 "0tØhT)YN^—Õl†˜Wÿ"
  gdd_tianxia_territory.10.d:0 "§Y[gdd_tianxia_unlawful_province.GetName]§!ÍNRŽNhT)YN‚Msÿ§Y[gdd_tianxia_unlawful_actual_owner.GetName]§!ùRdk0W„v`S	gtSNT)YNTR0bìNïSåNôfN§Y[gdd_tianxia_unlawful_addressee.GetName]§!ÿ‰BlvQSdk0W²NØÙuT„vhT)YNýV¶R0"
  gdd_tianxia_territory.10.a:0 "˜Ï‹0tØdk0W"
@@ -289,4 +282,13 @@
 
  gdd_tianxia_demand_unlawful_territory_not_at_war:0 "bìN8gNîvhýV²NbÿÌS¹eTêÂSNvQÖNb‰NN¨Yx0tØ0"
 
- DIPLOMACYACTION_CATEGORY_:0 "hT)YNLˆ¨R"
+ gdd_tianxia_picker_already_open_tt:0 "÷‹HQŒRbbÖSˆmSVMR„v0tØwýN	éb0"
+ gdd_tianxia_territory.20.t:0 "	éb0tØ„vwýN"
+ gdd_tianxia_territory.20.d:0 "÷‹	ébT§Y[gdd_tianxia_unlawful_addressee.GetName]§!0tØ„vwýN0RhˆSìbå‹ýVNvQôv^SbXT^SýV„vTJh0WWWÿÏk!k0tØNWW0wýNƒYöeïSûu˜ÿ	ébTïSågwÞV”^„˜KmÿQnx²‹ÑS0\n\n‚YRhˆàVfIN0ŒRb8hÃVbY²NsQûsØSSw1YHeÿïSÔÞVNNu˜bÖSˆmTÍ‘°eSbV0"
+ gdd_tianxia_picker_previous:0 "NNu˜"
+ gdd_tianxia_picker_next:0 "NNu˜"
+ gdd_tianxia_picker_back:0 "ÔÞVwýNRhˆ"
+ gdd_tianxia_picker_province_1_option:0 "[gdd_tianxia_picker_province_1.GetName]ÿ[gdd_tianxia_picker_owner_1.GetName]	ÿ"
+ gdd_tianxia_picker_province_2_option:0 "[gdd_tianxia_picker_province_2.GetName]ÿ[gdd_tianxia_picker_owner_2.GetName]	ÿ"
+ gdd_tianxia_picker_province_3_option:0 "[gdd_tianxia_picker_province_3.GetName]ÿ[gdd_tianxia_picker_owner_3.GetName]	ÿ"
+ gdd_tianxia_picker_province_4_option:0 "[gdd_tianxia_picker_province_4.GetName]ÿ[gdd_tianxia_picker_owner_4.GetName]	ÿ"

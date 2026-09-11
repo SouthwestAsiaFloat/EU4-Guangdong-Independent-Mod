@@ -310,3 +310,14 @@ gdd_tianxia_unlawful_request_still_valid_trigger = {
     has_province_flag = gdd_tianxia_unlawful_request_pending
     gdd_tianxia_unlawful_context_valid_trigger = { owner = $owner$ }
 }
+
+# Province scope, before dispatch: validate the exact province and saved holder,
+# including sovereignty changes while the picker or confirmation is open.
+gdd_tianxia_unlawful_selection_valid_trigger = {
+    NOT = { has_global_flag = zhx_tianxia_dismantled }
+    gdd_is_unlawful_tianxia_province_for_country_trigger = { who = $holder$ }
+    gdd_tianxia_unlawful_context_valid_trigger = { owner = $holder$ }
+    $holder$ = {
+        gdd_can_receive_tianxia_unlawful_demand_trigger = { emperor = event_target:gdd_tianxia_unlawful_emperor }
+    }
+}

@@ -1,0 +1,14 @@
+test_admission_without_mandate_consumes_first_reward (__main__.Integration.test_admission_without_mandate_consumes_first_reward) ... ok
+test_authority_follows_tianzi_not_mandate (__main__.Integration.test_authority_follows_tianzi_not_mandate) ... ok
+test_dismantle_ignores_foreign_mandate_capital (__main__.Integration.test_dismantle_ignores_foreign_mandate_capital) ... ok
+test_exit_without_mandate_cancels_pending_and_forfeits_dignity (__main__.Integration.test_exit_without_mandate_cancels_pending_and_forfeits_dignity) ... ok
+test_foreign_removal_without_mandate (__main__.Integration.test_foreign_removal_without_mandate) ... ok
+test_member_without_registered_land_retains_politics (__main__.Integration.test_member_without_registered_land_retains_politics) ... ok
+test_peaceful_foreign_annexation_does_not_queue_mandate (__main__.Integration.test_peaceful_foreign_annexation_does_not_queue_mandate) ... ok
+test_refusal_opinion_and_reform_cost_contracts (__main__.Integration.test_refusal_opinion_and_reform_cost_contracts) ... ok
+test_stale_request_cannot_unlock_new_request_elsewhere (__main__.Integration.test_stale_request_cannot_unlock_new_request_elsewhere) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.122s
+
+OK

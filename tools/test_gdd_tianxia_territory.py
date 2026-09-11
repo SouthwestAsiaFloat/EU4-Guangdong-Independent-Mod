@@ -43,6 +43,7 @@ class Country:
     overlord: str | None = None
     enemies: set = field(default_factory=set)
     modifiers: set = field(default_factory=set)
+    variables: dict = field(default_factory=dict)
 
 
 @dataclass
@@ -59,6 +60,7 @@ class Scripts:
         for name in ("gdd_tianxia_territory_triggers.txt", "zhx_system_triggers.txt"):
             self.triggers.update(parse((MOD / "common/scripted_triggers" / name).read_text(encoding="utf-8-sig")))
         self.effects = parse((MOD / "common/scripted_effects/gdd_tianxia_territory_effects.txt").read_text(encoding="utf-8-sig"))
+        self.effects.update(parse((MOD / "common/scripted_effects/gdd_tianxia_picker_effects.txt").read_text()))
         self.countries = {tag: Country(tag) for tag in ("CZH", "YAN", "KRC", "KHA", "OIR", "OTH", "LUU", "ZZZ")}
         self.countries["CZH"].flags["zhx_tianzi"] = 0
         self.countries["YAN"].flags["zhx_member"] = 0
@@ -69,6 +71,7 @@ class Scripts:
         self.root = self.countries["CZH"]
         self.recipient = self.countries["KRC"]
         self.day = 364
+        self.events = []
 
     def ref(self, key, stack):
         if key == "ROOT":
@@ -81,6 +84,10 @@ class Scripts:
             return stack[-1]
         if key.startswith("event_target:"):
             return self.targets.get(key.split(":", 1)[1])
+        if key == "capital_scope":
+            return next((p for p in self.provinces if p.owner == stack[-1].tag), None)
+        if key == "owner":
+            return self.countries[stack[-1].owner]
         if key == "overlord":
             return self.countries.get(stack[-1].overlord)
         return self.countries.get(key)
@@ -115,6 +122,11 @@ class Scripts:
                 return self.evaluate(self.triggers[key], stack, arguments)
             if key.startswith("any_"):
                 return any(self.evaluate(value, stack + [obj], params) for obj in self.iterator(key, current))
+            if key in ("check_variable", "is_variable_equal"):
+                which = [v for k, v in value if k == "which"]
+                actual = current.variables.get(which[0], 0)
+                expected = current.variables.get(which[1], 0) if len(which) == 2 else float(dict(value)["value"])
+                return actual >= expected if key == "check_variable" else actual == expected
             if isinstance(value, list) and key != "had_country_flag":
                 obj = self.ref(key, stack)
                 if obj is None:
@@ -158,19 +170,30 @@ class Scripts:
         for key, value in entries:
             if key in self.effects:
                 self.execute(self.effects[key], stack)
-            elif key == "every_core_country":
+            elif key == "if":
+                limit = next((v for k, v in value if k == "limit"), [])
+                if self.evaluate(limit, stack):
+                    self.execute([(k, v) for k, v in value if k != "limit"], stack)
+            elif key in ("set_variable", "change_variable", "subtract_variable"):
+                data = dict(value)
+                amount = float(data["value"])
+                name = data["which"]
+                current.variables[name] = amount if key == "set_variable" else current.variables.get(name, 0) + (amount if key == "change_variable" else -amount)
+            elif key.startswith("every_"):
                 limit = next((v for k, v in value if k == "limit"), [])
                 body = [(k, v) for k, v in value if k != "limit"]
                 for obj in self.iterator(key, current):
                     if self.evaluate(limit, stack + [obj]):
                         self.execute(body, stack + [obj])
+            elif key == "country_event":
+                self.events.append((dict(value)["id"], current, self.targets.copy()))
             elif key == "set_country_flag":
                 current.flags[value] = self.day
             elif key == "clr_country_flag":
                 current.flags.pop(value, None)
             elif key == "save_event_target_as":
                 self.targets[value] = current
-            elif key.startswith("event_target:"):
+            elif key.startswith("event_target:") or key in ("ROOT", "PREV", "FROM", "capital_scope", "owner"):
                 self.execute(value, stack + [self.ref(key, stack)])
             else:
                 raise AssertionError(f"unsupported resolver effect {key}")
@@ -346,6 +369,137 @@ class TerritoryRules(unittest.TestCase):
         p = self.s.provinces[0]
         p.flags["gdd_tianxia_unlawful_request_pending"] = 0
         self.assertFalse(self.s.test("gdd_tianxia_unlawful_request_still_valid_trigger", p, owner="KRC"))
+
+
+class ManualPickerRules(unittest.TestCase):
+    def setUp(self):
+        self.s = Scripts()
+        for tag in ("KRC", "KHA", "OIR"):
+            self.s.countries[tag].flags["zhx_member"] = 0
+        self.s.provinces = [Province("CZH", {"CZH"})] + [Province("KRC", {"YAN"}) for _ in range(10)]
+        self.s.targets["gdd_tianxia_unlawful_addressee"] = self.s.countries["KRC"]
+        self.s.root.flags["gdd_tianxia_picker_open"] = 0
+
+    def page(self, offset):
+        self.s.root.variables["gdd_tianxia_picker_offset"] = offset
+        self.s.execute(self.s.effects["gdd_build_tianxia_unlawful_picker_page_effect"], [self.s.root])
+        return [self.s.targets[f"gdd_tianxia_picker_province_{i}"] for i in range(1, 5)]
+
+    def valid(self, province, holder="KRC"):
+        return self.s.test("gdd_tianxia_unlawful_selection_valid_trigger", province, holder=holder)
+
+    def test_diplomatic_entry_opens_picker_once_without_sending(self):
+        self.s.root.flags.pop("gdd_tianxia_picker_open")
+        action = parse((MOD / "common/new_diplomatic_actions/gdd_tianxia_actions.txt").read_text())["gdd_tianxia_demand_unlawful_territory"]
+        self.assertEqual(dict(action)["require_acceptance"], "no")
+        callback = dict(action)["on_accept"]
+        self.s.execute(callback, [self.s.root])
+        self.assertEqual(len(self.s.events), 1)
+        event, country, targets = self.s.events[0]
+        self.assertEqual(event, "gdd_tianxia_territory.20")
+        self.assertIs(country, self.s.root)
+        self.assertIs(targets["gdd_tianxia_unlawful_addressee"], self.s.recipient)
+        self.s.recipient = self.s.countries["KHA"]
+        self.s.execute(callback, [self.s.root])
+        self.assertEqual(len(self.s.events), 1)
+        for c in self.s.countries.values():
+            self.assertNotIn("gdd_tianxia_unlawful_request_pending", c.flags)
+
+    def test_navigation_alternates_events_and_advances_real_page_options(self):
+        # Preserve repeated country_event roots in the parser, then execute the
+        # actual navigation options. This guards self-reentry without claiming
+        # to model EU4's popup scheduler.
+        source = (MOD / "events/gdd_tianxia_territory_events.txt").read_text()
+        serial = iter(range(1000))
+        source = re.sub(r"(?m)^country_event =", lambda _: f"event_{next(serial)} =", source)
+        events = {dict(body)["id"]: body for body in parse(source).values() if isinstance(body, list)}
+        def navigate(event_id, option_name):
+            body = events[event_id]
+            option = next(v for k, v in body if k == "option" and dict(v)["name"] == option_name)
+            self.assertTrue(self.s.evaluate(dict(option)["trigger"], [self.s.root]))
+            self.s.execute(dict(option)["hidden_effect"], [self.s.root])
+            next_id = self.s.events[-1][0]
+            self.assertNotEqual(next_id, event_id, "Page option must not reopen its still-active event")
+            self.assertIn(next_id, events)
+            immediate = dict(dict(events[next_id])["immediate"])["hidden_effect"]
+            self.s.execute(immediate, [self.s.root])
+            return next_id
+
+        self.page(0)
+        event = "gdd_tianxia_territory.20"
+        for offset in (4, 8):
+            event = navigate(event, "gdd_tianxia_picker_next")
+            self.assertEqual(self.s.root.variables["gdd_tianxia_picker_offset"], offset)
+            self.assertIs(self.s.targets["gdd_tianxia_picker_province_1"], self.s.provinces[offset + 1])
+        for offset in (4, 0):
+            event = navigate(event, "gdd_tianxia_picker_previous")
+            self.assertEqual(self.s.root.variables["gdd_tianxia_picker_offset"], offset)
+            self.assertIs(self.s.targets["gdd_tianxia_picker_province_1"], self.s.provinces[offset + 1])
+
+    def test_pages_cover_all_provinces_and_clear_stale_slots(self):
+        first = self.page(0)
+        self.assertEqual([id(p) for p in first], [id(p) for p in self.s.provinces[1:5]])
+        self.assertIn("gdd_tianxia_picker_has_next", self.s.root.flags)
+        self.assertEqual([id(p) for p in self.page(4)], [id(p) for p in self.s.provinces[5:9]])
+        last = self.page(8)
+        self.assertEqual([id(p) for p in last[:2]], [id(p) for p in self.s.provinces[9:]])
+        self.assertIs(last[2], self.s.provinces[0])
+        self.assertFalse(self.valid(last[2], "CZH"))
+        self.assertNotIn("gdd_tianxia_picker_has_next", self.s.root.flags)
+        self.assertEqual([id(p) for p in self.page(0)], [id(p) for p in first])
+
+    def test_cancel_and_browsing_never_start_demand_cooldown(self):
+        self.page(0)
+        self.s.execute(self.s.effects["gdd_close_tianxia_unlawful_picker_effect"], [self.s.root])
+        self.assertNotIn("gdd_tianxia_picker_open", self.s.root.flags)
+        self.assertEqual(self.s.root.variables["gdd_tianxia_picker_offset"], 0)
+        for c in self.s.countries.values():
+            self.assertNotIn("gdd_tianxia_unlawful_demand_cooldown", c.flags)
+            self.assertNotIn("gdd_tianxia_unlawful_request_pending", c.flags)
+
+    def test_selected_owner_is_frozen_and_core_completion_invalidates(self):
+        selected = self.page(0)[2]
+        self.assertTrue(self.valid(selected))
+        selected.owner = "KHA"
+        self.assertFalse(self.valid(selected))
+        selected.owner = "KRC"
+        selected.cores.add("KRC")
+        self.assertFalse(self.valid(selected))
+        # The other displayed province stays eligible; do not fall back to it.
+        self.assertTrue(self.valid(self.s.targets["gdd_tianxia_picker_province_1"]))
+
+    def test_subjects_are_listed_with_their_actual_owner_and_own_cooldown(self):
+        self.s.countries["KRC"].overlord = "OIR"
+        self.s.countries["KHA"].overlord = "OIR"
+        self.s.targets["gdd_tianxia_unlawful_addressee"] = self.s.countries["OIR"]
+        self.s.countries["KRC"].flags["gdd_tianxia_unlawful_demand_cooldown"] = 0
+        self.s.provinces.append(Province("KHA", {"YAN"}))
+        page = self.page(0)
+        self.assertIs(page[0], self.s.provinces[-1])
+        self.assertEqual(self.s.targets["gdd_tianxia_picker_owner_1"].tag, "KHA")
+        self.assertTrue(self.valid(page[0], "KHA"))
+        self.s.countries["KHA"].overlord = "OTH"
+        self.assertFalse(self.valid(page[0], "KHA"))
+
+    def test_empty_or_dismantled_page_has_no_valid_slots(self):
+        self.s.global_flags.add("zhx_tianxia_dismantled")
+        self.assertTrue(all(not self.valid(p, "CZH") for p in self.page(0)))
+        self.assertNotIn("gdd_tianxia_picker_has_next", self.s.root.flags)
+
+    def test_confirm_rechecks_selected_holder_cooldown(self):
+        selected = self.page(0)[0]
+        self.s.countries["KRC"].flags["gdd_tianxia_unlawful_demand_cooldown"] = 0
+        self.assertFalse(self.valid(selected))
+        self.s.day = 365
+        self.assertTrue(self.valid(selected))
+
+    def test_tianzi_direct_subject_does_not_include_nested_subjects(self):
+        self.s.countries["KRC"].overlord = "CZH"
+        self.s.countries["KHA"].overlord = "KRC"
+        self.s.provinces = [self.s.provinces[0], self.s.provinces[1], Province("KHA", {"YAN"})]
+        page = self.page(0)
+        self.assertIs(page[0], self.s.provinces[1])
+        self.assertIs(page[1], self.s.provinces[0])
 
 
 if __name__ == "__main__":

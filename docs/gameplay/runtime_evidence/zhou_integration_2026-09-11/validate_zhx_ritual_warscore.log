@@ -1,0 +1,1 @@
+PASS: 20 tiers; 810 ascending/descending half-point cases; idempotence, exit and dead-authority cleanup; lifecycle hooks; Chinese encoding. Static/model checks only; engine numerical/ownership testing pending.

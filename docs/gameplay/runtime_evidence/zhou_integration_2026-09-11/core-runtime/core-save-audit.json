@@ -1,0 +1,48 @@
+[
+  {
+    "save": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/save games/zcorebefore.eu4",
+    "sha256": "924835385435c185fa100ccaf10ca3dd7242bcdc9a09b5ae21a6aa37da400bee",
+    "province": 688,
+    "registered": false,
+    "reward_paid": false,
+    "ritual_active": true,
+    "ritual_modifiers": [
+      "zhx_ritual_warscore_045"
+    ],
+    "mandate": "85.100"
+  },
+  {
+    "save": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/save games/zcoreadmit.eu4",
+    "sha256": "924835385435c185fa100ccaf10ca3dd7242bcdc9a09b5ae21a6aa37da400bee",
+    "province": 688,
+    "registered": false,
+    "reward_paid": false,
+    "ritual_active": true,
+    "ritual_modifiers": [
+      "zhx_ritual_warscore_045"
+    ],
+    "mandate": "85.100"
+  },
+  {
+    "save": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/save games/zcoreadmitted.eu4",
+    "sha256": "a7df5c33f23cc99ca7e55c5039b0356ad5cd4fe6f77f3291585535b821586d97",
+    "province": 688,
+    "registered": true,
+    "reward_paid": true,
+    "ritual_active": true,
+    "ritual_modifiers": [
+      "zhx_ritual_warscore_045"
+    ],
+    "mandate": "87.000"
+  },
+  {
+    "save": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/save games/zcoreremoved.eu4",
+    "sha256": "18178b439a3171d9a6e34817ca1aa2a6cb62f2d367d50f53d3059abeff0164a5",
+    "province": 688,
+    "registered": false,
+    "reward_paid": true,
+    "ritual_active": false,
+    "ritual_modifiers": [],
+    "mandate": "85.100"
+  }
+]

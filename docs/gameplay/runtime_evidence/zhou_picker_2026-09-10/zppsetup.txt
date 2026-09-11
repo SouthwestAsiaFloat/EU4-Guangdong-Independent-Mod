@@ -1,0 +1,92 @@
+# Disposable test-save prerequisites only. Run as CZH; never on a live campaign.
+if = {
+    limit = { tag = CZH }
+    gdd_close_tianxia_unlawful_picker_effect = yes
+    create_subject = { subject_type = vassal subject = KRC }
+    KRC = {
+        set_country_flag = zhx_member
+        clr_country_flag = gdd_tianxia_unlawful_request_pending
+        clr_country_flag = gdd_tianxia_unlawful_demand_cooldown
+        every_owned_province = { add_core = KRC }
+    }
+    703 = {
+        cede_province = KRC
+        remove_core = KRC
+        add_core = YAN
+        set_province_flag = zhx_tianxia_province
+        clr_province_flag = gdd_tianxia_liberated_this_owner
+        clr_province_flag = gdd_tianxia_unlawful_request_pending
+    }
+    4672 = {
+        cede_province = KRC
+        remove_core = KRC
+        add_core = YAN
+        set_province_flag = zhx_tianxia_province
+        clr_province_flag = gdd_tianxia_liberated_this_owner
+        clr_province_flag = gdd_tianxia_unlawful_request_pending
+    }
+    5113 = {
+        cede_province = KRC
+        remove_core = KRC
+        add_core = YAN
+        set_province_flag = zhx_tianxia_province
+        clr_province_flag = gdd_tianxia_liberated_this_owner
+        clr_province_flag = gdd_tianxia_unlawful_request_pending
+    }
+    5114 = {
+        cede_province = KRC
+        remove_core = KRC
+        add_core = YAN
+        set_province_flag = zhx_tianxia_province
+        clr_province_flag = gdd_tianxia_liberated_this_owner
+        clr_province_flag = gdd_tianxia_unlawful_request_pending
+    }
+    5115 = {
+        cede_province = KRC
+        remove_core = KRC
+        add_core = YAN
+        set_province_flag = zhx_tianxia_province
+        clr_province_flag = gdd_tianxia_liberated_this_owner
+        clr_province_flag = gdd_tianxia_unlawful_request_pending
+    }
+    5116 = {
+        cede_province = KRC
+        remove_core = KRC
+        add_core = YAN
+        set_province_flag = zhx_tianxia_province
+        clr_province_flag = gdd_tianxia_liberated_this_owner
+        clr_province_flag = gdd_tianxia_unlawful_request_pending
+    }
+    5206 = {
+        cede_province = KRC
+        remove_core = KRC
+        add_core = YAN
+        set_province_flag = zhx_tianxia_province
+        clr_province_flag = gdd_tianxia_liberated_this_owner
+        clr_province_flag = gdd_tianxia_unlawful_request_pending
+    }
+    5207 = {
+        cede_province = KRC
+        remove_core = KRC
+        add_core = YAN
+        set_province_flag = zhx_tianxia_province
+        clr_province_flag = gdd_tianxia_liberated_this_owner
+        clr_province_flag = gdd_tianxia_unlawful_request_pending
+    }
+    5212 = {
+        cede_province = KRC
+        remove_core = KRC
+        add_core = YAN
+        set_province_flag = zhx_tianxia_province
+        clr_province_flag = gdd_tianxia_liberated_this_owner
+        clr_province_flag = gdd_tianxia_unlawful_request_pending
+    }
+    5213 = {
+        cede_province = KRC
+        remove_core = KRC
+        add_core = YAN
+        set_province_flag = zhx_tianxia_province
+        clr_province_flag = gdd_tianxia_liberated_this_owner
+        clr_province_flag = gdd_tianxia_unlawful_request_pending
+    }
+}

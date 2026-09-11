@@ -1,0 +1,22 @@
+{
+  "python": "/Users/xinanyapiao/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+  "results": [
+    {
+      "check": "test_gdd_tianxia_territory",
+      "exit_code": 0
+    },
+    {
+      "check": "test_gdd_tianxia_buttons",
+      "exit_code": 0
+    },
+    {
+      "check": "validate_gdd_tianxia_territory",
+      "exit_code": 0
+    },
+    {
+      "check": "validate_zhx_diplomacy_category",
+      "exit_code": 0
+    }
+  ],
+  "note": "System python lacked Pillow; rerun with bundled runtime."
+}

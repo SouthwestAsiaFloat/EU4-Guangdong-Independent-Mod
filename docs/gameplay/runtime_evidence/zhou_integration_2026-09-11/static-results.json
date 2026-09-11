@@ -1,0 +1,62 @@
+[
+  {
+    "test": "test_gdd_tianxia_territory",
+    "exit_code": 0
+  },
+  {
+    "test": "test_gdd_tianxia_buttons",
+    "exit_code": 0
+  },
+  {
+    "test": "test_zhx_startup_lifecycle",
+    "exit_code": 0
+  },
+  {
+    "test": "test_zhou_province_integration",
+    "exit_code": 0
+  },
+  {
+    "test": "validate_gdd_tianxia_territory",
+    "exit_code": 0
+  },
+  {
+    "test": "validate_gdd_celestial_mandate",
+    "exit_code": 0
+  },
+  {
+    "test": "validate_gdd_eoc_layout",
+    "exit_code": 0
+  },
+  {
+    "test": "validate_zhx_ritual_warscore",
+    "exit_code": 0
+  },
+  {
+    "test": "validate_zhx_ritual_tooltip",
+    "exit_code": 0
+  },
+  {
+    "test": "validate_zhx_diplomacy",
+    "exit_code": 0
+  },
+  {
+    "test": "validate_zhx_wangming",
+    "exit_code": 0
+  },
+  {
+    "test": "validate_zhx_qinwang",
+    "exit_code": 0
+  },
+  {
+    "test": "validate_zhx_merit_store",
+    "exit_code": 0
+  },
+  {
+    "test": "validate_zhx_tianzi",
+    "exit_code": 0
+  },
+  {
+    "test": "validate_zhx_council",
+    "exit_code": 0
+  }
+]

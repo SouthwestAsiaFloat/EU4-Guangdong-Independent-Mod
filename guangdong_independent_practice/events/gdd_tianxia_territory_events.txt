@@ -132,8 +132,8 @@ country_event = {
     }
 }
 
-# AI-Emperor confirmation. Human Emperors use the native diplomatic action;
-# the event path remains because the engine does not let AI send custom actions.
+# AI-Emperor confirmation, retaining automatic highest-development selection.
+# Human Emperors enter the manual .20/.21 picker through native diplomacy.
 country_event = {
     id = gdd_tianxia_territory.10
     title = gdd_tianxia_territory.10.t
@@ -375,4 +375,243 @@ country_event = {
         name = gdd_tianxia_territory.cancel
         ai_chance = { factor = 1 }
     }
+}
+
+# Native diplomacy opens a paginated event picker, not a recipient request.
+# Local targets freeze each displayed province and owner until the next page.
+country_event = {
+    id = gdd_tianxia_territory.20
+    title = gdd_tianxia_territory.20.t
+    desc = gdd_tianxia_territory.20.d
+    picture = DIPLOMACY_eventPicture
+    is_triggered_only = yes
+    immediate = { hidden_effect = { gdd_build_tianxia_unlawful_picker_page_effect = yes } }
+    option = {
+        name = gdd_tianxia_picker_province_1_option
+        trigger = {
+            has_country_flag = gdd_tianxia_picker_open
+            event_target:gdd_tianxia_picker_province_1 = {
+                gdd_tianxia_unlawful_selection_valid_trigger = { holder = event_target:gdd_tianxia_picker_owner_1 }
+            }
+        }
+        hidden_effect = {
+            event_target:gdd_tianxia_picker_province_1 = { save_event_target_as = gdd_tianxia_unlawful_province }
+            event_target:gdd_tianxia_picker_owner_1 = { save_event_target_as = gdd_tianxia_unlawful_actual_owner }
+            country_event = { id = gdd_tianxia_territory.21 }
+        }
+    }
+    option = {
+        name = gdd_tianxia_picker_province_2_option
+        trigger = {
+            has_country_flag = gdd_tianxia_picker_open
+            event_target:gdd_tianxia_picker_province_2 = {
+                gdd_tianxia_unlawful_selection_valid_trigger = { holder = event_target:gdd_tianxia_picker_owner_2 }
+            }
+        }
+        hidden_effect = {
+            event_target:gdd_tianxia_picker_province_2 = { save_event_target_as = gdd_tianxia_unlawful_province }
+            event_target:gdd_tianxia_picker_owner_2 = { save_event_target_as = gdd_tianxia_unlawful_actual_owner }
+            country_event = { id = gdd_tianxia_territory.21 }
+        }
+    }
+    option = {
+        name = gdd_tianxia_picker_province_3_option
+        trigger = {
+            has_country_flag = gdd_tianxia_picker_open
+            event_target:gdd_tianxia_picker_province_3 = {
+                gdd_tianxia_unlawful_selection_valid_trigger = { holder = event_target:gdd_tianxia_picker_owner_3 }
+            }
+        }
+        hidden_effect = {
+            event_target:gdd_tianxia_picker_province_3 = { save_event_target_as = gdd_tianxia_unlawful_province }
+            event_target:gdd_tianxia_picker_owner_3 = { save_event_target_as = gdd_tianxia_unlawful_actual_owner }
+            country_event = { id = gdd_tianxia_territory.21 }
+        }
+    }
+    option = {
+        name = gdd_tianxia_picker_province_4_option
+        trigger = {
+            has_country_flag = gdd_tianxia_picker_open
+            event_target:gdd_tianxia_picker_province_4 = {
+                gdd_tianxia_unlawful_selection_valid_trigger = { holder = event_target:gdd_tianxia_picker_owner_4 }
+            }
+        }
+        hidden_effect = {
+            event_target:gdd_tianxia_picker_province_4 = { save_event_target_as = gdd_tianxia_unlawful_province }
+            event_target:gdd_tianxia_picker_owner_4 = { save_event_target_as = gdd_tianxia_unlawful_actual_owner }
+            country_event = { id = gdd_tianxia_territory.21 }
+        }
+    }
+    option = {
+        name = gdd_tianxia_picker_previous
+        trigger = { check_variable = { which = gdd_tianxia_picker_offset value = 4 } }
+        hidden_effect = {
+            subtract_variable = { which = gdd_tianxia_picker_offset value = 4 }
+            country_event = { id = gdd_tianxia_territory.22 }
+        }
+    }
+    option = {
+        name = gdd_tianxia_picker_next
+        trigger = { has_country_flag = gdd_tianxia_picker_has_next }
+        hidden_effect = {
+            change_variable = { which = gdd_tianxia_picker_offset value = 4 }
+            country_event = { id = gdd_tianxia_territory.22 }
+        }
+    }
+    option = {
+        name = gdd_tianxia_territory.cancel
+        hidden_effect = { gdd_close_tianxia_unlawful_picker_effect = yes }
+    }
+}
+
+country_event = {
+    id = gdd_tianxia_territory.21
+    title = gdd_tianxia_territory.10.t
+    desc = gdd_tianxia_territory.10.d
+    picture = DIPLOMACY_eventPicture
+    is_triggered_only = yes
+    immediate = {
+        hidden_effect = {
+            event_target:gdd_tianxia_unlawful_addressee = { gdd_prepare_tianxia_unlawful_acceptance_effect = yes }
+        }
+    }
+    option = {
+        name = gdd_tianxia_territory.10.a
+        trigger = {
+            has_country_flag = gdd_tianxia_picker_open
+            event_target:gdd_tianxia_unlawful_province = {
+                gdd_tianxia_unlawful_selection_valid_trigger = { holder = event_target:gdd_tianxia_unlawful_actual_owner }
+            }
+        }
+        custom_tooltip = GDD_TIANXIA_UNLAWFUL_SEND_TT
+        hidden_effect = {
+            if = {
+                limit = {
+                    has_country_flag = gdd_tianxia_picker_open
+                    event_target:gdd_tianxia_unlawful_province = {
+                        gdd_tianxia_unlawful_selection_valid_trigger = { holder = event_target:gdd_tianxia_unlawful_actual_owner }
+                    }
+                }
+                event_target:gdd_tianxia_unlawful_addressee = { gdd_prepare_tianxia_unlawful_acceptance_effect = yes }
+                gdd_dispatch_tianxia_unlawful_demand_effect = yes
+            }
+            gdd_close_tianxia_unlawful_picker_effect = yes
+        }
+    }
+    option = {
+        name = gdd_tianxia_picker_back
+        trigger = { has_country_flag = gdd_tianxia_picker_open }
+        hidden_effect = {
+            event_target:gdd_tianxia_unlawful_addressee = { gdd_clear_tianxia_unlawful_acceptance_cache_effect = yes }
+            country_event = { id = gdd_tianxia_territory.20 }
+        }
+    }
+    option = {
+        name = gdd_tianxia_territory.cancel
+        hidden_effect = {
+            event_target:gdd_tianxia_unlawful_addressee = { gdd_clear_tianxia_unlawful_acceptance_cache_effect = yes }
+            gdd_close_tianxia_unlawful_picker_effect = yes
+        }
+    }
+}
+
+# Alternate presentation of the same picker. Never synchronously reopen the
+# currently displayed event ID; .20 and .22 alternate for both page directions.
+country_event = {
+    id = gdd_tianxia_territory.22
+    title = gdd_tianxia_territory.20.t
+    desc = gdd_tianxia_territory.20.d
+    picture = DIPLOMACY_eventPicture
+    is_triggered_only = yes
+    immediate = { hidden_effect = { gdd_build_tianxia_unlawful_picker_page_effect = yes } }
+    option = {
+        name = gdd_tianxia_picker_province_1_option
+        trigger = {
+            has_country_flag = gdd_tianxia_picker_open
+            event_target:gdd_tianxia_picker_province_1 = {
+                gdd_tianxia_unlawful_selection_valid_trigger = { holder = event_target:gdd_tianxia_picker_owner_1 }
+            }
+        }
+        hidden_effect = {
+            event_target:gdd_tianxia_picker_province_1 = { save_event_target_as = gdd_tianxia_unlawful_province }
+            event_target:gdd_tianxia_picker_owner_1 = { save_event_target_as = gdd_tianxia_unlawful_actual_owner }
+            country_event = { id = gdd_tianxia_territory.21 }
+        }
+    }
+    option = {
+        name = gdd_tianxia_picker_province_2_option
+        trigger = {
+            has_country_flag = gdd_tianxia_picker_open
+            event_target:gdd_tianxia_picker_province_2 = {
+                gdd_tianxia_unlawful_selection_valid_trigger = { holder = event_target:gdd_tianxia_picker_owner_2 }
+            }
+        }
+        hidden_effect = {
+            event_target:gdd_tianxia_picker_province_2 = { save_event_target_as = gdd_tianxia_unlawful_province }
+            event_target:gdd_tianxia_picker_owner_2 = { save_event_target_as = gdd_tianxia_unlawful_actual_owner }
+            country_event = { id = gdd_tianxia_territory.21 }
+        }
+    }
+    option = {
+        name = gdd_tianxia_picker_province_3_option
+        trigger = {
+            has_country_flag = gdd_tianxia_picker_open
+            event_target:gdd_tianxia_picker_province_3 = {
+                gdd_tianxia_unlawful_selection_valid_trigger = { holder = event_target:gdd_tianxia_picker_owner_3 }
+            }
+        }
+        hidden_effect = {
+            event_target:gdd_tianxia_picker_province_3 = { save_event_target_as = gdd_tianxia_unlawful_province }
+            event_target:gdd_tianxia_picker_owner_3 = { save_event_target_as = gdd_tianxia_unlawful_actual_owner }
+            country_event = { id = gdd_tianxia_territory.21 }
+        }
+    }
+    option = {
+        name = gdd_tianxia_picker_province_4_option
+        trigger = {
+            has_country_flag = gdd_tianxia_picker_open
+            event_target:gdd_tianxia_picker_province_4 = {
+                gdd_tianxia_unlawful_selection_valid_trigger = { holder = event_target:gdd_tianxia_picker_owner_4 }
+            }
+        }
+        hidden_effect = {
+            event_target:gdd_tianxia_picker_province_4 = { save_event_target_as = gdd_tianxia_unlawful_province }
+            event_target:gdd_tianxia_picker_owner_4 = { save_event_target_as = gdd_tianxia_unlawful_actual_owner }
+            country_event = { id = gdd_tianxia_territory.21 }
+        }
+    }
+    option = {
+        name = gdd_tianxia_picker_previous
+        trigger = { check_variable = { which = gdd_tianxia_picker_offset value = 4 } }
+        hidden_effect = {
+            subtract_variable = { which = gdd_tianxia_picker_offset value = 4 }
+            country_event = { id = gdd_tianxia_territory.20 }
+        }
+    }
+    option = {
+        name = gdd_tianxia_picker_next
+        trigger = { has_country_flag = gdd_tianxia_picker_has_next }
+        hidden_effect = {
+            change_variable = { which = gdd_tianxia_picker_offset value = 4 }
+            country_event = { id = gdd_tianxia_territory.20 }
+        }
+    }
+    option = {
+        name = gdd_tianxia_territory.cancel
+        hidden_effect = { gdd_close_tianxia_unlawful_picker_effect = yes }
+    }
+}
+
+# Manual recovery only for the previous self-reopening picker disappearing.
+# Console: event gdd_tianxia_territory.23 (run as the affected human Tianzi).
+# Does not clear any already-dispatched request or its yearly cooldown.
+country_event = {
+    id = gdd_tianxia_territory.23
+    title = gdd_tianxia_territory.20.t
+    desc = gdd_tianxia_territory.20.d
+    picture = DIPLOMACY_eventPicture
+    hidden = yes
+    is_triggered_only = yes
+    immediate = { gdd_close_tianxia_unlawful_picker_effect = yes }
+    option = { name = OK }
 }

@@ -1,0 +1,38 @@
+test_add_eligibility_requires_member_peace_and_candidate (__main__.TianxiaButtons.test_add_eligibility_requires_member_peace_and_candidate) ... ok
+test_add_filters_noncores_occupation_hre_trade_company_and_other_owners (__main__.TianxiaButtons.test_add_filters_noncores_occupation_hre_trade_company_and_other_owners) ... ok
+test_add_per_province_cap_and_no_batch_cap (__main__.TianxiaButtons.test_add_per_province_cap_and_no_batch_cap) ... ok
+test_add_repeat_and_remove_readd_cannot_farm_reward (__main__.TianxiaButtons.test_add_repeat_and_remove_readd_cannot_farm_reward) ... ok
+test_annexation_hooks_preserve_mandate_and_queue_ritual_once (__main__.TianxiaButtons.test_annexation_hooks_preserve_mandate_and_queue_ritual_once) ... ok
+test_characterize_leave_retains_reform_executor_bonus (__main__.TianxiaButtons.test_characterize_leave_retains_reform_executor_bonus) ... ok
+test_decision_and_button_have_identical_exit_effects (__main__.TianxiaButtons.test_decision_and_button_have_identical_exit_effects) ... ok
+test_decision_effect_rechecks_eligibility_and_cannot_charge_twice (__main__.TianxiaButtons.test_decision_effect_rechecks_eligibility_and_cannot_charge_twice) ... ok
+test_dismantle_cancel_and_changed_capital_are_safe (__main__.TianxiaButtons.test_dismantle_cancel_and_changed_capital_are_safe) ... ok
+test_dismantle_cannot_restart_initialisation_or_reuse_rosters (__main__.TianxiaButtons.test_dismantle_cannot_restart_initialisation_or_reuse_rosters) ... ok
+test_dismantle_checks_all_seven_dynamic_seats (__main__.TianxiaButtons.test_dismantle_checks_all_seven_dynamic_seats) ... ok
+test_dismantle_checks_tianzi_separately_from_emperor (__main__.TianxiaButtons.test_dismantle_checks_tianzi_separately_from_emperor) ... ok
+test_dismantle_cleans_political_state_and_only_special_subjects (__main__.TianxiaButtons.test_dismantle_cleans_political_state_and_only_special_subjects) ... ok
+test_dismantle_requires_personal_occupation_of_each_living_office (__main__.TianxiaButtons.test_dismantle_requires_personal_occupation_of_each_living_office) ... ok
+test_dismantle_requires_war_and_outside_membership (__main__.TianxiaButtons.test_dismantle_requires_war_and_outside_membership) ... ok
+test_dynamic_principal_is_excluded_from_six_seats_instead_of_yan (__main__.TianxiaButtons.test_dynamic_principal_is_excluded_from_six_seats_instead_of_yan) ... ok
+test_emperor_can_add_own_land (__main__.TianxiaButtons.test_emperor_can_add_own_land) ... ok
+test_exit_charges_separate_tianzi (__main__.TianxiaButtons.test_exit_charges_separate_tianzi) ... ok
+test_exit_cleans_new_dignity_reform_and_projection (__main__.TianxiaButtons.test_exit_cleans_new_dignity_reform_and_projection) ... ok
+test_exit_opinions_do_not_stack_on_emperor (__main__.TianxiaButtons.test_exit_opinions_do_not_stack_on_emperor) ... ok
+test_leave_after_voting_recounts_only_remaining_members (__main__.TianxiaButtons.test_leave_after_voting_recounts_only_remaining_members) ... ok
+test_leave_before_voting_recounts_only_remaining_members (__main__.TianxiaButtons.test_leave_before_voting_recounts_only_remaining_members) ... ok
+test_leave_cleans_direct_land_and_membership_with_correct_opinion (__main__.TianxiaButtons.test_leave_cleans_direct_land_and_membership_with_correct_opinion) ... ok
+test_leave_confirm_rechecks_war_membership_and_office (__main__.TianxiaButtons.test_leave_confirm_rechecks_war_membership_and_office) ... ok
+test_leave_confirmation_and_cancel_change_nothing (__main__.TianxiaButtons.test_leave_confirmation_and_cancel_change_nothing) ... ok
+test_leave_during_debate_recounts_country_and_ai_totals (__main__.TianxiaButtons.test_leave_during_debate_recounts_country_and_ai_totals) ... ok
+test_leave_eligibility (__main__.TianxiaButtons.test_leave_eligibility) ... ok
+test_leave_no_tianxia_land_has_no_mandate_charge (__main__.TianxiaButtons.test_leave_no_tianxia_land_has_no_mandate_charge) ... ok
+test_leave_penalty_caps_at_20_and_cannot_repeat (__main__.TianxiaButtons.test_leave_penalty_caps_at_20_and_cannot_repeat) ... ok
+test_leave_refreshes_initialized_rosters_and_reform_vote_totals (__main__.TianxiaButtons.test_leave_refreshes_initialized_rosters_and_reform_vote_totals) ... ok
+test_leave_without_open_ballot_preserves_closed_results (__main__.TianxiaButtons.test_leave_without_open_ballot_preserves_closed_results) ... ok
+test_subject_cannot_leave_from_button_or_stale_confirmation (__main__.TianxiaButtons.test_subject_cannot_leave_from_button_or_stale_confirmation) ... ok
+test_visibility_requires_initialisation_and_tianzi (__main__.TianxiaButtons.test_visibility_requires_initialisation_and_tianzi) ... ok
+
+----------------------------------------------------------------------
+Ran 33 tests in 0.806s
+
+OK

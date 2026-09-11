@@ -1,0 +1,1 @@
+if = { limit = { tag = CZH } capital_scope = { clr_province_flag = zhx_tianxia_province clr_province_flag = zhx_tianxia_admission_reward_paid } }

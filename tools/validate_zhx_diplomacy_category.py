@@ -4,12 +4,14 @@ from validate_czc_government import MOD, one, values, walk, read_tree, contains
 from encode_eu4_chinese_localisation import verify_file
 from build_zhx_qinwang_score import generated
 expected = {
+    'gdd_tianxia_demand_unlawful_territory',
     'zhx_feudatory_petition', 'zhx_gongyi_petition',
     'zhx_relieve_tianxia_member', 'zhx_appeal_to_tianzi_for_relief',
     'zhx_invite_qinwang', 'zhx_qinwang_willingness',
 }
 actions={}
-for path in (MOD/'common/new_diplomatic_actions').glob('zhx*.txt'):
+for path in [*(MOD/'common/new_diplomatic_actions').glob('zhx*.txt'),
+             MOD/'common/new_diplomatic_actions/gdd_tianxia_actions.txt']:
     for name,_,body in read_tree(path):
         assert name not in actions, 'Duplicate action'
         actions[name]=body

@@ -142,6 +142,7 @@ def main() -> None:
     clausewitz_files = (
         TRIGGERS,
         EFFECTS,
+        MOD / "common/scripted_effects/gdd_tianxia_picker_effects.txt",
         CUSTOM_GUI,
         NATIVE_ACTIONS,
         EVENTS,
@@ -488,24 +489,40 @@ def main() -> None:
         native_actions, "gdd_tianxia_demand_unlawful_territory"
     )
     for token in (
-        "category = gdd_tianxia",
+        "category = is_emperor_of_china",
         "alert_index = 22",
-        "require_acceptance = yes",
+        "require_acceptance = no",
         "gdd_can_be_tianxia_unlawful_addressee_trigger",
-        "gdd_accept_native_tianxia_unlawful_demand_effect = yes",
-        "gdd_refuse_native_tianxia_unlawful_demand_effect = yes",
-        "ai_acceptance = {",
+        "gdd_open_tianxia_unlawful_picker_effect = yes",
         "ai_will_do = { always = no }",
     ):
         require(token in native_action, f"native diplomacy action is incomplete: {token}")
     require("ai = no" in native_action,
             "native action is not restricted to the human Emperor")
-    for effect_name in (
-        "gdd_prepare_native_tianxia_unlawful_context_effect",
-        "gdd_accept_native_tianxia_unlawful_demand_effect",
-        "gdd_refuse_native_tianxia_unlawful_demand_effect",
-    ):
-        require(effect_name in effects, f"missing native action bridge: {effect_name}")
+    picker_effects = read(MOD / "common/scripted_effects/gdd_tianxia_picker_effects.txt")
+    for name in ("gdd_open_tianxia_unlawful_picker_effect", "gdd_build_tianxia_unlawful_picker_page_effect", "gdd_close_tianxia_unlawful_picker_effect"):
+        require(name in picker_effects, f"missing province picker effect: {name}")
+    require("gdd_select_highest_development" not in picker_effects,
+            "manual picker must not replace the selected province automatically")
+    require("gdd_close_tianxia_unlawful_picker_effect = yes" in named_block(effects, "gdd_dismantle_tianxia_effect"),
+            "dismantling must clear the picker lock")
+    for slot in range(1, 5):
+        require(f"gdd_tianxia_picker_province_{slot}_option" in events,
+                f"missing picker option {slot}")
+    require("id = gdd_tianxia_territory.21" in events,
+            "manual picker has no confirmation event")
+    pages = {}
+    for event_id in (20, 22):
+        start = events.index(f"    id = gdd_tianxia_territory.{event_id}\n")
+        end = events.find("\ncountry_event = {", start)
+        pages[event_id] = events[start:end if end >= 0 else len(events)].strip()
+        # Strip trailing comments belonging to the next top-level declaration.
+        pages[event_id] = pages[event_id][:pages[event_id].rfind("}") + 1]
+        require(f"country_event = {{ id = gdd_tianxia_territory.{event_id} }}" not in pages[event_id],
+                "picker page synchronously reopens its own active event")
+    require(pages[20].replace("id = gdd_tianxia_territory.20\n", "id = gdd_tianxia_territory.22\n", 1)
+            .replace("country_event = { id = gdd_tianxia_territory.22 }", "country_event = { id = gdd_tianxia_territory.20 }") == pages[22],
+            "alternating picker pages have drifted apart")
     event10 = re.search(
         r"country_event\s*=\s*\{\s*id\s*=\s*gdd_tianxia_territory\.10(.*?)"
         r"(?=\n\s*country_event\s*=|\Z)",
@@ -627,12 +644,6 @@ def main() -> None:
             "add-all button does not use the approved 220px native-style sprite")
 
     required_loc_keys = (
-        "GDD_TIANXIA_ACTIONS",
-        "gdd_tianxia_actions",
-        "DIPLOMACYACTION_CATEGORY_gdd_tianxia_actions",
-        "gdd_tianxia",
-        "DIPLOMACYACTION_CATEGORY_gdd_tianxia",
-        "DIPLOMACYACTION_CATEGORY_",
         "gdd_tianxia_demand_unlawful_territory_sovereign",
         "gdd_tianxia_demand_unlawful_territory_not_at_war",
         "gdd_tianxia_demand_unlawful_territory_title",
