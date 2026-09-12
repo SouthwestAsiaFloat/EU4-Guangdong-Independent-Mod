@@ -69,7 +69,7 @@ country_decisions = {
 				#		dominant_culture = gdd_zhuang
 				#	}
 				#}
-				is_emperor_of_china = yes
+				gdd_gameplay_emperor_of_china = yes
 			}
 			if = {
 				limit = {

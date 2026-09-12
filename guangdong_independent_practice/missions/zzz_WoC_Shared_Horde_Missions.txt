@@ -544,9 +544,9 @@ woc_hordes_1_confucian = {
 		effect = {  
 			if = {
 				limit = {
-					is_emperor_of_china = yes
+					gdd_gameplay_emperor_of_china = yes
 				}
-				add_mandate = 10
+				gdd_retired_mandate_change = yes
 			}
 			
 			if = {

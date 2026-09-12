@@ -1364,7 +1364,6 @@ custom_button = {
         }
         else = {
             gdd_enact_proxy_celestial_reform_effect = { which = gdd_proxy_reform_vassalize_tributaries }
-            gdd_unify_tianxia_under_reform_executor_effect = yes
         }
     }
     tooltip = GDD_REFORM_VASSALIZE_TRIBUTARIES_TT
@@ -1611,7 +1610,6 @@ custom_button = {
         }
         else = {
             gdd_enact_proxy_celestial_reform_effect = { which = gdd_proxy_reform_new_world }
-            gdd_enable_decentralized_tianxia_interface_effect = yes
         }
     }
     tooltip = GDD_REFORM_NEW_WORLD_TT

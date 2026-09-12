@@ -40,7 +40,10 @@ class LazyDefinitions(dict):
                 # identifiers/operators remain ASCII. No files are rewritten.
                 text = raw.decode("latin-1")
             for match in re.finditer(r"(?m)^(\w+)\s*=\s*\{", text):
-                assert match[1] not in self.sources, f"duplicate definition {match[1]} in {path}"
+                if match[1].startswith(("gdd_", "zhx_")):
+                    assert match[1] not in self.sources, f"duplicate definition {match[1]} in {path}"
+                # Inherited vanilla may repeat helper definitions; mirror its
+                # last-definition resolution, while enforcing authored names.
                 self.sources[match[1]] = (text, match.start())
 
     def __contains__(self, key):
@@ -184,7 +187,7 @@ class ButtonWorld(Scripts):
         def replace(v):
             if isinstance(v, list):
                 return [(replace(k), replace(x)) for k, x in v]
-            return params.get(v.strip("$"), v) if v.startswith("$") else v
+            return re.sub(r"\$(\w+)\$", lambda m: str(params.get(m[1], m[0])), v)
         return replace(body)
 
     def variable_operands(self, body, stack):
@@ -380,19 +383,19 @@ class TianxiaButtons(unittest.TestCase):
         self.assertEqual(self.w.root.modifier_durations["zhx_tianxia_rejoin_bar"], 7300)
         self.assertEqual(self.w.root.prestige, -25)
         emperor = self.w.countries["CZH"]
-        self.assertEqual(emperor.mandate, Decimal(46))
+        self.assertEqual(emperor.mandate, Decimal(50))
         self.assertEqual(emperor.variables["zhx_member_count_cache"], 1)
         self.assertEqual(emperor.opinions[("YAN", "gdd_opinion_left_tianxia")], (Decimal(-100), "50"))
         self.assertFalse(self.w.root.opinions)
 
-    def test_leave_penalty_caps_at_20_and_cannot_repeat(self):
+    def test_leave_never_charges_mandate_and_cannot_repeat(self):
         self.w.province(development=180)
         self.w.province(development=70)
         self.w.choose("gdd_tianxia_territory.3")
-        self.assertEqual(self.w.countries["CZH"].mandate, Decimal(30))
+        self.assertEqual(self.w.countries["CZH"].mandate, Decimal(50))
         self.assertFalse(self.w.enabled(LEAVE))
         self.w.choose("gdd_tianxia_territory.3")
-        self.assertEqual(self.w.countries["CZH"].mandate, Decimal(30))
+        self.assertEqual(self.w.countries["CZH"].mandate, Decimal(50))
 
     def test_leave_no_tianxia_land_has_no_mandate_charge(self):
         self.w.province(member=False)
@@ -435,13 +438,13 @@ class TianxiaButtons(unittest.TestCase):
                          {("YAN", "zhx_opinion_left_tianxia_member"): (Decimal(-25), "10")})
         self.assertFalse(self.w.root.opinions)
 
-    def test_exit_charges_separate_tianzi(self):
+    def test_exit_opinion_follows_political_tianzi_not_carrier(self):
         self.w.countries["CZH"].flags.pop("zhx_tianzi")
         self.w.countries["LUU"].flags["zhx_tianzi"] = 0
         self.w.targets["zhx_tianzi"] = self.w.countries["LUU"]
         self.w.choose("gdd_tianxia_territory.3")
         self.assertEqual(self.w.countries["LUU"].opinions,
-                         {("YAN", "zhx_opinion_left_tianxia_tianzi"): (Decimal(-50), "10")})
+                         {("YAN", "gdd_opinion_left_tianxia"): (Decimal(-100), "50")})
 
     def test_decision_effect_rechecks_eligibility_and_cannot_charge_twice(self):
         for situation in ("emperor", "war", "already_left"):
@@ -493,7 +496,7 @@ class TianxiaButtons(unittest.TestCase):
                     # A second notification must not charge the same extinction.
                     w.execute(hooks[hook], [w.root])
                     self.assertEqual(w.countries["CZH"].mandate, 50)
-                    self.assertEqual(w.countries["CZH"].variables.get("zhx_external_extinction_mandate_queued", 0), 10 if actor == "KRC" and hook == "on_annexed" else 0)
+                    self.assertEqual(w.countries["CZH"].variables.get("zhx_external_extinction_mandate_queued", 0), 0)
                     self.assertEqual(w.countries["CZH"].variables["zhx_tianxia_extinction_penalty_count"], 1)
                     self.assertNotIn("zhx_member", w.recipient.flags)
                     self.assertIn("zhx_tianxia_membership_dirty", w.countries["CZH"].flags)
@@ -602,15 +605,15 @@ class TianxiaButtons(unittest.TestCase):
         self.assertIn(TERRITORY, eligible.flags)
         for p in excluded:
             self.assertNotIn(TERRITORY, p.flags)
-        self.assertEqual(self.w.countries["CZH"].mandate, Decimal(51))
+        self.assertEqual(self.w.countries["CZH"].mandate, Decimal(50))
         self.assertFalse(self.w.queued_events)
 
-    def test_add_per_province_cap_and_no_batch_cap(self):
+    def test_add_large_and_small_provinces_never_awards_mandate(self):
         self.w.province(member=False, development=300)
         self.w.province(member=False, development=80)
         self.w.click(ADD)
-        self.assertEqual(self.w.countries["CZH"].mandate, Decimal(78))
-        self.assertEqual(self.w.root.variables["gdd_tianxia_province_mandate_amount"], 0)
+        self.assertEqual(self.w.countries["CZH"].mandate, Decimal(50))
+        self.assertEqual(self.w.root.variables.get("gdd_tianxia_province_mandate_amount", 0), 0)
 
     def test_add_repeat_and_remove_readd_cannot_farm_reward(self):
         p = self.w.province(member=False, development=20)
@@ -620,14 +623,14 @@ class TianxiaButtons(unittest.TestCase):
         p.flags.pop(TERRITORY)
         self.w.click(ADD)
         self.assertIn(TERRITORY, p.flags)
-        self.assertEqual(self.w.countries["CZH"].mandate, Decimal(52))
+        self.assertEqual(self.w.countries["CZH"].mandate, Decimal(50))
 
     def test_emperor_can_add_own_land(self):
         self.w.actor("CZH")
         p = self.w.province(owner="CZH", member=False, development=15)
         self.w.click(ADD)
         self.assertIn(TERRITORY, p.flags)
-        self.assertEqual(self.w.root.mandate, Decimal("51.5"))
+        self.assertEqual(self.w.root.mandate, Decimal(50))
 
     def test_dismantle_requires_personal_occupation_of_each_living_office(self):
         self.w.ready_to_dismantle()

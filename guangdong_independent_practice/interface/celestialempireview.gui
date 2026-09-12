@@ -763,14 +763,14 @@ guiTypes = {
 		iconType = {
 			name = "benefits_icon"
 			spriteType = "GFX_emperor_of_china_icon"
-			position = { x = 518 y = 217 }
+			position = { x = -10000 y = -10000 }
 			Orientation = "UPPER_LEFT"
 		}
 
 		iconType = {
 			name = "diplomatic_actions_icon"
 			spriteType = "GFX_celestial_more_dip_actions_icon"
-			position = { x = 563 y = 217 }
+			position = { x = -10000 y = -10000 }
 			Orientation = "UPPER_LEFT"
 		}
 
@@ -1394,7 +1394,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "influence_label"
-			position = { x = 680 y = 91 }
+			position = { x = -10000 y = -10000 }
 			textureFile = ""
 			font = "vic_22"
 			borderSize = { x = 4 y = 0 }
@@ -1406,7 +1406,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "influence_value"
-			position = { x = 705 y = 128 }
+			position = { x = -10000 y = -10000 }
 			textureFile = ""
 			font = "vic_29"
 			borderSize = { x = 0 y = 0 }
@@ -1418,7 +1418,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "influence_growth"
-			position = { x = 705 y = 168 }
+			position = { x = -10000 y = -10000 }
 			textureFile = ""
 			font = "vic_22"
 			borderSize = { x = 0 y = 0 }
@@ -1432,7 +1432,7 @@ guiTypes = {
 		# remain untouched, so their numbers continue to come from the engine.
 		instantTextBoxType = {
 			name = "gdd_eoc_mandate_value_tooltip"
-			position = { x = 705 y = 128 }
+			position = { x = -10000 y = -10000 }
 			textureFile = ""
 			font = "vic_29"
 			borderSize = { x = 0 y = 0 }
@@ -1445,7 +1445,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "gdd_eoc_mandate_growth_tooltip"
-			position = { x = 705 y = 168 }
+			position = { x = -10000 y = -10000 }
 			textureFile = ""
 			font = "vic_22"
 			borderSize = { x = 0 y = 0 }

@@ -2219,7 +2219,7 @@ country_event = {
 			}
 			modifier = { 
 				factor = 0
-				is_emperor_of_china = yes 
+				gdd_gameplay_emperor_of_china = yes
 				NOT = { imperial_mandate = 45 }
 			}
 		}
@@ -5421,7 +5421,7 @@ country_event = {
 	option = {
 		name = "EVTOPTA710"
 		trigger = {
-			is_emperor_of_china = no
+			gdd_gameplay_emperor_of_china = no
 			is_lesser_in_union = no
 			NOT = { government = republic }
 		}
@@ -5448,7 +5448,7 @@ country_event = {
 		trigger = {
 			OR = { 
 				government = republic
-				is_emperor_of_china = yes
+				gdd_gameplay_emperor_of_china = yes
 				is_lesser_in_union = yes
 			}
 		}

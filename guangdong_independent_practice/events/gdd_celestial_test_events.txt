@@ -3654,7 +3654,6 @@ country_event = {
 
     trigger = {
         ai = yes
-        is_emperor_of_china = yes
         gdd_proxy_celestial_reform_base_trigger = yes
     }
 
@@ -3684,7 +3683,7 @@ country_event = {
             10 = {
                 trigger = { gdd_can_enact_proxy_vassalize_tributaries_trigger = yes }
                 gdd_enact_proxy_celestial_reform_effect = { which = gdd_proxy_reform_vassalize_tributaries }
-                set_global_flag = eoc_vassalize_tributaries
+
             }
             10 = {
                 trigger = { gdd_can_enact_proxy_single_whip_trigger = yes }
@@ -3764,7 +3763,7 @@ country_event = {
         name = establish_gaituguiliu_decision_title
         trigger = {
             gdd_proxy_celestial_reform_base_trigger = yes
-            event_target:EmperorOfChina = {
+            ROOT = {
                 NOT = { gdd_reform_establish_gaituguiliu_passed = yes }
                 if = {
                     limit = { has_estate = estate_eunuchs }
@@ -3781,7 +3780,7 @@ country_event = {
                 }
             }
         }
-        event_target:EmperorOfChina = {
+        ROOT = {
             gdd_enact_proxy_celestial_reform_effect = { which = gdd_proxy_reform_establish_gaituguiliu }
         }
     }
@@ -3790,11 +3789,11 @@ country_event = {
         name = seaban_decision_title
         trigger = {
             gdd_proxy_celestial_reform_base_trigger = yes
-            event_target:EmperorOfChina = {
+            ROOT = {
                 NOT = { gdd_reform_seaban_passed = yes }
             }
         }
-        event_target:EmperorOfChina = {
+        ROOT = {
             gdd_enact_proxy_celestial_reform_effect = { which = gdd_proxy_reform_seaban }
         }
     }
@@ -3803,7 +3802,7 @@ country_event = {
         name = reform_land_tax_decision_title
         trigger = {
             gdd_proxy_celestial_reform_base_trigger = yes
-            event_target:EmperorOfChina = {
+            ROOT = {
                 NOT = { gdd_reform_land_tax_passed = yes }
                 OR = {
                     crown_land_share = 35
@@ -3815,7 +3814,7 @@ country_event = {
                 }
             }
         }
-        event_target:EmperorOfChina = {
+        ROOT = {
             gdd_enact_proxy_celestial_reform_effect = { which = gdd_proxy_reform_land_tax }
         }
     }
@@ -3824,7 +3823,7 @@ country_event = {
         name = military_governors_decision_title
         trigger = {
             gdd_proxy_celestial_reform_base_trigger = yes
-            event_target:EmperorOfChina = {
+            ROOT = {
                 NOT = { gdd_reform_military_governors_passed = yes }
                 OR = {
                     monthly_mil = 10
@@ -3833,7 +3832,7 @@ country_event = {
                 }
             }
         }
-        event_target:EmperorOfChina = {
+        ROOT = {
             gdd_enact_proxy_celestial_reform_effect = { which = gdd_proxy_reform_military_governors }
         }
     }
@@ -3842,12 +3841,12 @@ country_event = {
         name = centralizing_top_government_decision_title
         trigger = {
             gdd_proxy_celestial_reform_base_trigger = yes
-            event_target:EmperorOfChina = {
+            ROOT = {
                 NOT = { gdd_reform_centralizing_government_passed = yes }
                 crown_land_share = 65
             }
         }
-        event_target:EmperorOfChina = {
+        ROOT = {
             gdd_enact_proxy_celestial_reform_effect = { which = gdd_proxy_reform_centralizing_government }
         }
     }
@@ -3856,14 +3855,14 @@ country_event = {
         name = vassalize_tributaries_decision_title
         trigger = {
             gdd_proxy_celestial_reform_base_trigger = yes
-            event_target:EmperorOfChina = {
+            ROOT = {
                 NOT = { gdd_reform_vassalize_tributaries_passed = yes }
                 gdd_eight_celestial_reforms_passed = yes
             }
         }
-        event_target:EmperorOfChina = {
+        ROOT = {
             gdd_enact_proxy_celestial_reform_effect = { which = gdd_proxy_reform_vassalize_tributaries }
-            set_global_flag = eoc_vassalize_tributaries
+
         }
     }
 
@@ -3871,7 +3870,7 @@ country_event = {
         name = codify_single_whip_law_decision_title
         trigger = {
             gdd_proxy_celestial_reform_base_trigger = yes
-            event_target:EmperorOfChina = {
+            ROOT = {
                 NOT = { gdd_reform_single_whip_passed = yes }
                 gdd_reform_land_tax_passed = yes
                 OR = {
@@ -3881,7 +3880,7 @@ country_event = {
                 }
             }
         }
-        event_target:EmperorOfChina = {
+        ROOT = {
             gdd_enact_proxy_celestial_reform_effect = { which = gdd_proxy_reform_single_whip }
         }
     }
@@ -3890,7 +3889,7 @@ country_event = {
         name = reign_in_estates_decision_title
         trigger = {
             gdd_proxy_celestial_reform_base_trigger = yes
-            event_target:EmperorOfChina = {
+            ROOT = {
                 NOT = { gdd_reform_reign_in_estates_passed = yes }
                 OR = {
                     crown_land_share = 90
@@ -3898,7 +3897,7 @@ country_event = {
                 }
             }
         }
-        event_target:EmperorOfChina = {
+        ROOT = {
             gdd_enact_proxy_celestial_reform_effect = { which = gdd_proxy_reform_reign_in_estates }
         }
     }
@@ -3907,11 +3906,11 @@ country_event = {
         name = reform_civil_registration_decision_title
         trigger = {
             gdd_proxy_celestial_reform_base_trigger = yes
-            event_target:EmperorOfChina = {
+            ROOT = {
                 NOT = { gdd_reform_civil_registration_passed = yes }
             }
         }
-        event_target:EmperorOfChina = {
+        ROOT = {
             gdd_enact_proxy_celestial_reform_effect = { which = gdd_proxy_reform_civil_registration }
         }
     }
@@ -3920,7 +3919,7 @@ country_event = {
         name = establish_silver_standard_decision_title
         trigger = {
             gdd_proxy_celestial_reform_base_trigger = yes
-            event_target:EmperorOfChina = {
+            ROOT = {
                 NOT = { gdd_reform_silver_standard_passed = yes }
                 NOT = { inflation = 1 }
                 OR = {
@@ -3932,7 +3931,7 @@ country_event = {
                 gdd_reform_single_whip_passed = yes
             }
         }
-        event_target:EmperorOfChina = {
+        ROOT = {
             gdd_enact_proxy_celestial_reform_effect = { which = gdd_proxy_reform_silver_standard }
         }
     }
@@ -3941,7 +3940,7 @@ country_event = {
         name = kanhe_certificate_decision_title
         trigger = {
             gdd_proxy_celestial_reform_base_trigger = yes
-            event_target:EmperorOfChina = {
+            ROOT = {
                 NOT = { gdd_reform_kanhe_passed = yes }
                 OR = {
                     full_idea_group = trade_ideas
@@ -3951,7 +3950,7 @@ country_event = {
                 }
             }
         }
-        event_target:EmperorOfChina = {
+        ROOT = {
             gdd_enact_proxy_celestial_reform_effect = { which = gdd_proxy_reform_kanhe }
         }
     }
@@ -3960,7 +3959,7 @@ country_event = {
         name = new_keju_formats_decision_title
         trigger = {
             gdd_proxy_celestial_reform_base_trigger = yes
-            event_target:EmperorOfChina = {
+            ROOT = {
                 NOT = { gdd_reform_keju_passed = yes }
                 OR = {
                     has_reform = examination_system_reform
@@ -3972,7 +3971,7 @@ country_event = {
                 }
             }
         }
-        event_target:EmperorOfChina = {
+        ROOT = {
             gdd_enact_proxy_celestial_reform_effect = { which = gdd_proxy_reform_keju }
         }
     }
@@ -3981,7 +3980,7 @@ country_event = {
         name = inclusive_monarchy_decision_title
         trigger = {
             gdd_proxy_celestial_reform_base_trigger = yes
-            event_target:EmperorOfChina = {
+            ROOT = {
                 NOT = { gdd_reform_inclusive_monarchy_passed = yes }
                 OR = {
                     full_idea_group = humanist_ideas
@@ -3991,7 +3990,7 @@ country_event = {
                 stability = 1
             }
         }
-        event_target:EmperorOfChina = {
+        ROOT = {
             gdd_enact_proxy_celestial_reform_effect = { which = gdd_proxy_reform_inclusive_monarchy }
         }
     }
@@ -4000,12 +3999,12 @@ country_event = {
         name = promote_bureaucratic_faction_decision_title
         trigger = {
             gdd_proxy_celestial_reform_base_trigger = yes
-            event_target:EmperorOfChina = {
+            ROOT = {
                 NOT = { gdd_reform_bureaucratic_faction_passed = yes }
                 NOT = { gdd_reform_military_faction_passed = yes }
             }
         }
-        event_target:EmperorOfChina = {
+        ROOT = {
             gdd_enact_proxy_celestial_reform_effect = { which = gdd_proxy_reform_bureaucratic_faction }
         }
     }
@@ -4014,12 +4013,12 @@ country_event = {
         name = promote_military_faction_decision_title
         trigger = {
             gdd_proxy_celestial_reform_base_trigger = yes
-            event_target:EmperorOfChina = {
+            ROOT = {
                 NOT = { gdd_reform_military_faction_passed = yes }
                 NOT = { gdd_reform_bureaucratic_faction_passed = yes }
             }
         }
-        event_target:EmperorOfChina = {
+        ROOT = {
             gdd_enact_proxy_celestial_reform_effect = { which = gdd_proxy_reform_military_faction }
         }
     }
@@ -4028,7 +4027,7 @@ country_event = {
         name = unifed_trade_market_decision_title
         trigger = {
             gdd_proxy_celestial_reform_base_trigger = yes
-            event_target:EmperorOfChina = {
+            ROOT = {
                 NOT = { gdd_reform_unified_market_passed = yes }
                 gdd_reform_seaban_passed = yes
                 gdd_reform_kanhe_passed = yes
@@ -4048,7 +4047,7 @@ country_event = {
                 }
             }
         }
-        event_target:EmperorOfChina = {
+        ROOT = {
             gdd_enact_proxy_celestial_reform_effect = { which = gdd_proxy_reform_unified_market }
         }
     }
@@ -4057,7 +4056,7 @@ country_event = {
         name = reform_the_military_branch_decision_title
         trigger = {
             gdd_proxy_celestial_reform_base_trigger = yes
-            event_target:EmperorOfChina = {
+            ROOT = {
                 NOT = { gdd_reform_military_branch_passed = yes }
                 if = {
                     limit = { has_dlc = "Cradle of Civilization" }
@@ -4072,7 +4071,7 @@ country_event = {
                 monthly_mil = 10
             }
         }
-        event_target:EmperorOfChina = {
+        ROOT = {
             gdd_enact_proxy_celestial_reform_effect = { which = gdd_proxy_reform_military_branch }
         }
     }
@@ -4081,7 +4080,7 @@ country_event = {
         name = modernize_the_banners_decision_title
         trigger = {
             gdd_proxy_celestial_reform_base_trigger = yes
-            event_target:EmperorOfChina = {
+            ROOT = {
                 NOT = { gdd_reform_modernize_banners_passed = yes }
                 OR = {
                     num_of_banners = 25
@@ -4092,7 +4091,7 @@ country_event = {
                 }
             }
         }
-        event_target:EmperorOfChina = {
+        ROOT = {
             gdd_enact_proxy_celestial_reform_effect = { which = gdd_proxy_reform_modernize_banners }
         }
     }
@@ -4101,7 +4100,7 @@ country_event = {
         name = study_foreign_ship_designs_decision_title
         trigger = {
             gdd_proxy_celestial_reform_base_trigger = yes
-            event_target:EmperorOfChina = {
+            ROOT = {
                 NOT = { gdd_reform_foreign_ship_designs_passed = yes }
                 navy_tradition = 50
                 OR = {
@@ -4111,7 +4110,7 @@ country_event = {
                 }
             }
         }
-        event_target:EmperorOfChina = {
+        ROOT = {
             gdd_enact_proxy_celestial_reform_effect = { which = gdd_proxy_reform_foreign_ship_designs }
         }
     }
@@ -4120,7 +4119,7 @@ country_event = {
         name = tributary_embassies_decision_title
         trigger = {
             gdd_proxy_celestial_reform_base_trigger = yes
-            event_target:EmperorOfChina = {
+            ROOT = {
                 NOT = { gdd_reform_tributary_embassies_passed = yes }
                 calc_true_if = {
                     NOT = {
@@ -4139,7 +4138,7 @@ country_event = {
                 }
             }
         }
-        event_target:EmperorOfChina = {
+        ROOT = {
             gdd_enact_proxy_celestial_reform_effect = { which = gdd_proxy_reform_tributary_embassies }
         }
     }
@@ -4148,13 +4147,13 @@ country_event = {
         name = new_world_discovery_decision_title
         trigger = {
             gdd_proxy_celestial_reform_base_trigger = yes
-            event_target:EmperorOfChina = {
+            ROOT = {
                 NOT = { gdd_reform_new_world_passed = yes }
                 num_of_explorers = 1
                 num_of_light_ship = 50
             }
         }
-        event_target:EmperorOfChina = {
+        ROOT = {
             gdd_enact_proxy_celestial_reform_effect = { which = gdd_proxy_reform_new_world }
         }
     }

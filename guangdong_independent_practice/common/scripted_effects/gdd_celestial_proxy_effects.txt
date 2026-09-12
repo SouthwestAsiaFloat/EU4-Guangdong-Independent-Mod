@@ -1,6 +1,6 @@
 # Script-side replacements for the two hard-coded Empire of China actions.
-# Decrees keep their native ownership. Reforms are enacted by ROOT, while the
-# Mandate cost remains attached to the current Emperor of China.
+# Decrees keep their existing ownership and costs. Reform transactions use
+# ROOT as executor and spend the actor's side of the Zhou authority balance.
 
 gdd_enact_proxy_decree_effect = {
     # Recheck at execution, including events opened before a government change.
@@ -16,16 +16,13 @@ gdd_enact_proxy_decree_effect = {
 
 gdd_enact_proxy_celestial_reform_effect = {
     if = {
-        limit = { gdd_proxy_celestial_reform_base_trigger = yes NOT = { has_global_flag = $which$ } }
+        limit = { gdd_proxy_celestial_reform_base_trigger = yes $which$_can_enact = yes NOT = { has_global_flag = $which$ } }
 
-        event_target:EmperorOfChina = {
-            # Mandate is bounded at zero, so subtracting its 100-point maximum
-            # reproduces the HRE reform behaviour of consuming the whole pool.
-            add_mandate = -100
-        }
+        gdd_pay_reform_authority_cost = yes
         hidden_effect = {
             set_global_flag = $which$
             set_country_flag = $which$
+            $which$_on_pass = yes
             CZH = {
                 gdd_clear_passed_reform_support_effect = yes
                 gdd_recalculate_all_reform_votes_effect = yes
@@ -153,3 +150,81 @@ gdd_revoke_proxy_celestial_final_decentralization_effect = {
     gdd_revoke_proxy_celestial_reform_effect = { which = gdd_proxy_reform_new_world }
     gdd_disable_decentralized_tianxia_interface_effect = yes
 }
+
+
+# ROOT is the authorized actor. Payment stays on CZH, the existing balance
+# anchor, and never moves through zero. Shared by enactment and active repeal.
+gdd_pay_reform_authority_cost = {
+    if = {
+        limit = { gdd_proxy_celestial_reform_base_trigger = yes }
+        CZH = {
+            if = {
+                limit = { check_variable = { which = gdd_central_authority_balance value = 60 } }
+                change_variable = { which = gdd_central_authority_balance value = -60 }
+            }
+            else = {
+                change_variable = { which = gdd_central_authority_balance value = 60 }
+            }
+            gdd_clamp_central_authority_balance = yes
+            gdd_refresh_authority_balance_effects = yes
+        }
+    }
+}
+
+# Deliberate paid repeal. The lower-level clear effect remains available for
+# system teardown; it cannot be reached by an unpaid player/AI action.
+gdd_actively_revoke_proxy_celestial_reform_effect = {
+    if = {
+        limit = {
+            gdd_can_actively_revoke_proxy_celestial_reform_trigger = yes
+            has_global_flag = $which$
+        }
+        gdd_pay_reform_authority_cost = yes
+        gdd_revoke_proxy_celestial_reform_effect = { which = $which$ }
+        $which$_on_revoke = yes
+    }
+}
+
+# Transaction-local side effects for the selected reform.
+gdd_proxy_reform_keju_on_pass = {  }
+gdd_proxy_reform_keju_on_revoke = {  }
+gdd_proxy_reform_civil_registration_on_pass = {  }
+gdd_proxy_reform_civil_registration_on_revoke = {  }
+gdd_proxy_reform_silver_standard_on_pass = {  }
+gdd_proxy_reform_silver_standard_on_revoke = {  }
+gdd_proxy_reform_kanhe_on_pass = {  }
+gdd_proxy_reform_kanhe_on_revoke = {  }
+gdd_proxy_reform_unified_market_on_pass = {  }
+gdd_proxy_reform_unified_market_on_revoke = {  }
+gdd_proxy_reform_military_branch_on_pass = {  }
+gdd_proxy_reform_military_branch_on_revoke = {  }
+gdd_proxy_reform_foreign_ship_designs_on_pass = {  }
+gdd_proxy_reform_foreign_ship_designs_on_revoke = {  }
+gdd_proxy_reform_inclusive_monarchy_on_pass = {  }
+gdd_proxy_reform_inclusive_monarchy_on_revoke = {  }
+gdd_proxy_reform_establish_gaituguiliu_on_pass = {  }
+gdd_proxy_reform_establish_gaituguiliu_on_revoke = {  }
+gdd_proxy_reform_land_tax_on_pass = {  }
+gdd_proxy_reform_land_tax_on_revoke = {  }
+gdd_proxy_reform_single_whip_on_pass = {  }
+gdd_proxy_reform_single_whip_on_revoke = {  }
+gdd_proxy_reform_centralizing_government_on_pass = {  }
+gdd_proxy_reform_centralizing_government_on_revoke = {  }
+gdd_proxy_reform_reign_in_estates_on_pass = {  }
+gdd_proxy_reform_reign_in_estates_on_revoke = {  }
+gdd_proxy_reform_vassalize_tributaries_on_pass = { gdd_unify_tianxia_under_reform_executor_effect = yes }
+gdd_proxy_reform_vassalize_tributaries_on_revoke = { gdd_disable_centralized_tianxia_interface_effect = yes }
+gdd_proxy_reform_seaban_on_pass = {  }
+gdd_proxy_reform_seaban_on_revoke = {  }
+gdd_proxy_reform_military_governors_on_pass = {  }
+gdd_proxy_reform_military_governors_on_revoke = {  }
+gdd_proxy_reform_tributary_embassies_on_pass = {  }
+gdd_proxy_reform_tributary_embassies_on_revoke = {  }
+gdd_proxy_reform_modernize_banners_on_pass = {  }
+gdd_proxy_reform_modernize_banners_on_revoke = {  }
+gdd_proxy_reform_bureaucratic_faction_on_pass = {  }
+gdd_proxy_reform_bureaucratic_faction_on_revoke = {  }
+gdd_proxy_reform_new_world_on_pass = { gdd_enable_decentralized_tianxia_interface_effect = yes }
+gdd_proxy_reform_new_world_on_revoke = { gdd_disable_decentralized_tianxia_interface_effect = yes }
+gdd_proxy_reform_military_faction_on_pass = {  }
+gdd_proxy_reform_military_faction_on_revoke = {  }

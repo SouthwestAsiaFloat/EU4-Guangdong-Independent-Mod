@@ -9,9 +9,9 @@
  ADD_MANDATE_DESC:0 "$DIRECTION$ $MANDATECHANGE|Y$‹s‹T0\n"
  SET_MANDATE_DESC:0 "S‹s‹T¾‹HN$MANDATEVALUE|Y$0\n"
  IMPERIAL_MANDATE_MODIFIER_DESC:0 "‹s‹TÐc›OåNNÔk‹OîOckÿ\n$MODIFIERDESC$"
- IMPERIAL_MANDATE_DESC:0 "ŸSu)Y‹T‚fjOHNqQT9ei—„vDn0óS§Y50§!)Y‹T¹eïS¨cLˆÿÇTnzz)Y‹TÿNcb3zšR0Me»lgbLˆCg1uhT)YPRN–™-^ø‹¯O	cCg›RRM‘ŒcácÿN–)Y‹Tlûy0"
+ IMPERIAL_MANDATE_DESC:0 "qQT9ei—1uhT)YPRN–™-^ø‹¯O	cCgZRM‘¨c¨RÿÏky˜ˆmw,g¹e§R60§!CgZÿ‰˜ÖS—Vø‹¯O=ec0IN¨R²d•T7hˆmw§R60§!CgZÿïSUS¹eb—gbLˆ0"
  IMPERIAL_MANDATE_CURRENT_DESC:0 ""
  IMPERIAL_MANDATE_BONUS_DESC:0 ""
  IMPERIAL_MANDATE_PENALTY_DESC:0 ""
- IMPERIAL_MANDATE_GAIN_DESC:0 "·ƒÖSŽNÿ\n -åb	gAucƒÞT0\n -hT)YNôuc…QèŒTs^0\n -hT)YNµc6RS¬N0WS¬NN^ÞT0\n -åNNßu-NNSHNTjOb0\n -˜^-fJTýV÷S1Wèe0"
- IMPERIAL_MANDATE_LOSS_DESC:1 "mc1YŽNÿ\n -‡v^×S6RŽNvQÖNýV¶R0\n -N'Yø‹¯O-^MOzzHb×SYèµc6R0\n -hT)YN†˜WmYLe`S†˜0\n -hT)YN1Y»SS¬N0WS¬Nb^ÞT0\n --NNS^ýV‡eSqSHgcíu0\n -bXTmYLeTv^08g·ƒÝO²bbIN¨RúQhT)YN0"
+ IMPERIAL_MANDATE_GAIN_DESC:0 ""
+ IMPERIAL_MANDATE_LOSS_DESC:0 ""

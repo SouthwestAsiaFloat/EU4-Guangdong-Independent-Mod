@@ -1,4 +1,4 @@
-gdd_military_missions_1 = {
+﻿gdd_military_missions_1 = {
 	slot = 1
 	generic = no
 	ai = yes
@@ -253,7 +253,7 @@ gdd_economic_missions_5 = {
 
 		effect = {
 			if = {
-				limit = { is_emperor_of_china = yes }
+				limit = { gdd_gameplay_emperor_of_china = yes }
 				add_country_modifier = {
 					name = gdd_stable_court_meritocracy_modifier
 					duration = 9125
@@ -294,9 +294,9 @@ gdd_economic_missions_5 = {
 
 		effect = {
 			if = {
-				limit = { is_emperor_of_china = yes }
+				limit = { gdd_gameplay_emperor_of_china = yes }
 				add_meritocracy = 10
-				add_mandate = 15
+				gdd_retired_mandate_change = yes
 			}
 			else = {
 				add_legitimacy = 25

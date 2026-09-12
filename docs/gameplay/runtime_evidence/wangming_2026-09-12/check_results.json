@@ -1,0 +1,145 @@
+[
+  {
+    "cmd": "python3 -m unittest discover -s tools -p 'test_wangming_authority.py'",
+    "status": "fulfilled",
+    "value": {
+      "chunk_id": "257807",
+      "wall_time_seconds": 0.000001084,
+      "exit_code": 1,
+      "original_token_count": 354,
+      "output": "E\n======================================================================\nERROR: test_wangming_authority (unittest.loader._FailedTest.test_wangming_authority)\n----------------------------------------------------------------------\nImportError: Failed to import test module: test_wangming_authority\nTraceback (most recent call last):\n  File \"/opt/homebrew/Cellar/python@3.13/3.13.3_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/unittest/loader.py\", line 396, in _find_test_path\n    module = self._get_module_from_name(name)\n  File \"/opt/homebrew/Cellar/python@3.13/3.13.3_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/unittest/loader.py\", line 339, in _get_module_from_name\n    __import__(name)\n    ~~~~~~~~~~^^^^^^\n  File \"/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/tools/test_wangming_authority.py\", line 9, in <module>\n    from test_gdd_tianxia_buttons import ButtonWorld, MOD, entries\n  File \"/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/tools/test_gdd_tianxia_buttons.py\", line 15, in <module>\n    from validate_gdd_tianxia_territory import named_block\n  File \"/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/tools/validate_gdd_tianxia_territory.py\", line 8, in <module>\n    from PIL import Image\nModuleNotFoundError: No module named 'PIL'\n\n\n----------------------------------------------------------------------\nRan 1 test in 0.000s\n\nFAILED (errors=1)\n"
+    }
+  },
+  {
+    "cmd": "python3 -m unittest discover -s tools -p 'test_gdd_tianxia_buttons.py'",
+    "status": "fulfilled",
+    "value": {
+      "chunk_id": "2d13ee",
+      "wall_time_seconds": 0.000006417,
+      "exit_code": 1,
+      "original_token_count": 308,
+      "output": "E\n======================================================================\nERROR: test_gdd_tianxia_buttons (unittest.loader._FailedTest.test_gdd_tianxia_buttons)\n----------------------------------------------------------------------\nImportError: Failed to import test module: test_gdd_tianxia_buttons\nTraceback (most recent call last):\n  File \"/opt/homebrew/Cellar/python@3.13/3.13.3_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/unittest/loader.py\", line 396, in _find_test_path\n    module = self._get_module_from_name(name)\n  File \"/opt/homebrew/Cellar/python@3.13/3.13.3_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/unittest/loader.py\", line 339, in _get_module_from_name\n    __import__(name)\n    ~~~~~~~~~~^^^^^^\n  File \"/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/tools/test_gdd_tianxia_buttons.py\", line 15, in <module>\n    from validate_gdd_tianxia_territory import named_block\n  File \"/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/tools/validate_gdd_tianxia_territory.py\", line 8, in <module>\n    from PIL import Image\nModuleNotFoundError: No module named 'PIL'\n\n\n----------------------------------------------------------------------\nRan 1 test in 0.000s\n\nFAILED (errors=1)\n"
+    }
+  },
+  {
+    "cmd": "python3 -m unittest discover -s tools -p 'test_gdd_tianxia_territory.py'",
+    "status": "fulfilled",
+    "value": {
+      "chunk_id": "ae84e2",
+      "wall_time_seconds": 0.050221167,
+      "exit_code": 0,
+      "original_token_count": 33,
+      "output": "................................\n----------------------------------------------------------------------\nRan 32 tests in 0.154s\n\nOK\n"
+    }
+  },
+  {
+    "cmd": "python3 -m unittest discover -s tools -p 'test_zhou_province_integration.py'",
+    "status": "fulfilled",
+    "value": {
+      "chunk_id": "8ce20e",
+      "wall_time_seconds": 0.000004292,
+      "exit_code": 1,
+      "original_token_count": 368,
+      "output": "E\n======================================================================\nERROR: test_zhou_province_integration (unittest.loader._FailedTest.test_zhou_province_integration)\n----------------------------------------------------------------------\nImportError: Failed to import test module: test_zhou_province_integration\nTraceback (most recent call last):\n  File \"/opt/homebrew/Cellar/python@3.13/3.13.3_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/unittest/loader.py\", line 396, in _find_test_path\n    module = self._get_module_from_name(name)\n  File \"/opt/homebrew/Cellar/python@3.13/3.13.3_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/unittest/loader.py\", line 339, in _get_module_from_name\n    __import__(name)\n    ~~~~~~~~~~^^^^^^\n  File \"/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/tools/test_zhou_province_integration.py\", line 8, in <module>\n    from test_gdd_tianxia_buttons import ButtonWorld, ADD, LEAVE, TERRITORY, REWARD, entries, MOD\n  File \"/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/tools/test_gdd_tianxia_buttons.py\", line 15, in <module>\n    from validate_gdd_tianxia_territory import named_block\n  File \"/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/tools/validate_gdd_tianxia_territory.py\", line 8, in <module>\n    from PIL import Image\nModuleNotFoundError: No module named 'PIL'\n\n\n----------------------------------------------------------------------\nRan 1 test in 0.000s\n\nFAILED (errors=1)\n"
+    }
+  },
+  {
+    "cmd": "python3 tools/validate_gdd_celestial_mandate.py",
+    "status": "fulfilled",
+    "value": {
+      "chunk_id": "85ef0e",
+      "wall_time_seconds": 1.349472916,
+      "exit_code": 0,
+      "original_token_count": 46,
+      "output": "PASS: native window carrier and authority transactions; 85 inherited/script override files checked\nRuntime/hard-coded diplomatic neutrality is not established by this source check.\n"
+    }
+  },
+  {
+    "cmd": "python3 tools/validate_gdd_eoc_layout.py",
+    "status": "fulfilled",
+    "value": {
+      "chunk_id": "c6510d",
+      "wall_time_seconds": 0.00000275,
+      "exit_code": 1,
+      "original_token_count": 56,
+      "output": "Traceback (most recent call last):\n  File \"/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/tools/validate_gdd_eoc_layout.py\", line 11, in <module>\n    from PIL import Image\nModuleNotFoundError: No module named 'PIL'\n"
+    }
+  },
+  {
+    "cmd": "python3 tools/validate_gdd_tianxia_territory.py",
+    "status": "fulfilled",
+    "value": {
+      "chunk_id": "9224e5",
+      "wall_time_seconds": 0.0000025,
+      "exit_code": 1,
+      "original_token_count": 58,
+      "output": "Traceback (most recent call last):\n  File \"/Users/xinanyapiao/eu4mod/EU4-Guangdong-Independent-Mod/tools/validate_gdd_tianxia_territory.py\", line 8, in <module>\n    from PIL import Image\nModuleNotFoundError: No module named 'PIL'\n"
+    }
+  },
+  {
+    "cmd": "git diff --check",
+    "status": "fulfilled",
+    "value": {
+      "chunk_id": "9dc4d7",
+      "wall_time_seconds": 0.000003125,
+      "exit_code": 2,
+      "original_token_count": 3580,
+      "output": "Warning: truncated output (original token count: 3580)\nTotal output lines: 210\n\nguangdong_independent_practice/events/RandomEvents.txt:2222: trailing whitespace.\n+\t\t\t\tgdd_gameplay_emperor_of_china = yes \nguangdong_independent_practice/missions/DOM_Chinese_Missions.txt:405: trailing whitespace.\n+\t\t\t\tlimit = { gdd_gameplay_emperor_of_china = yes } \nguangdong_independent_practice/missions/DOM_Chinese_Missions.txt:406: trailing whitespace.\n+\t\t\t\tgdd_retired_mandate_change = yes \nguangdong_independent_practice/missions/DOM_Chinese_Missions.txt:615: trailing whitespace.\n+\t\t\t\t\tgdd_retired_mandate_change = yes \nguangdong_independent_practice/missions/DOM_Chinese_Missions.txt:625: trailing whitespace.\n+\t\t\t\t\tgdd_retired_mandate_change = yes \nguangdong_independent_practice/missions/DOM_Chinese_Missions.txt:641: trailing whitespace.\n+\t\tgdd_gameplay_emperor_of_china = yes \nguangdong_independent_practice/missions/DOM_Chinese_Missions.txt:724: trailing whitespace.\n+\t\t\t\t\t\tgdd_gameplay_emperor_of_china = yes \nguangdong_independent_practice/missions/DOM_Chinese_Missions.txt:745: trailing whitespace.\n+\t\t\t\t\t\tgdd_gameplay_emperor_of_china = yes \nguangdong_independent_practice/missions/DOM_Chinese_Missions.txt:805: trailing whitespace.\n+\t\t\t\tlimit = { gdd_gameplay_emperor_of_china = yes } \nguangdong_independent_practice/missions/DOM_Chinese_Missions.txt:810: trailing whitespace.\n+\t\t\t\tlimit = { gdd_gameplay_emperor_of_china = yes } \nguangdong_independent_practice/missions/DOM_Chinese_Missions.txt:852: trailing whitespace.\n+\t\tgdd_gameplay_emperor_of_china = yes \nguangdong_independent_practice/missions/DOM_Chinese_Missions.txt:939: trailing whitespace.\n+\t\t\t\tlimit = { gdd_gameplay_emperor_of_china = yes } \nguangdong_independent_practice/missions/DOM_Chinese_Missions.txt:940: trailing whitespace.\n+\t\t\t\tgdd_retired_mandate_change = yes \nguangdong_independent_practice/missions/DOM_Chinese_Missions.txt:1048: trailing whitespace.\n+\t\t\t\tlimit = { gdd_gameplay_emperor_of_china = yes } \nguangdong_independent_practice/missions/DOM_Chinese_Missions.txt:1530: trailing whitespace.\n+\t\t\towner = { gdd_gameplay_emperor_of_china = yes } \nguangdong_independent_practice/missions/DOM_Chinese_Missions.txt:1536: trailing whitespace.\n+\t\t\t\t\t\tgdd_gameplay_emperor_of_china = yes \nguangdong_independent_practice/missions/DOM_Chinese_Missions.txt:1541: trailing whitespace.\n+\t\t\t\t\tgdd_gameplay_emperor_of_china = yes \nguangdong_independent_practice/missions/DOM_Chinese_Missions.txt:1613: trailing whitespace.\n+\t\t\t\t\tgdd_gameplay_emperor_of_china = yes \nguangdong_independent_practice/missions/DOM_Chinese_Missions.txt:1793: trailing whitespace.\n+\t\t\t\t\t\t\toverlord = { gdd_retired_mandate_change = yes } \nguangdong_independent_practice/missions/DOM_Chinese_Missions.txt:1815: trailing whitespace.\n+\t\t\t\t\t\t\toverlord = { gdd_retired_mandate_change = yes } \nguangdong_independent_practice/missions/DOM_Chinese_Missions.txt:1846: trailing whitespace.\n+\t\tgdd_gameplay_emperor_of_china = yes \nguangdong_independent_practice/missions/DOM_Chinese_Missions.txt:1893: trailing whitespace.\n+\t\t\t\t\tgdd_gameplay_empe…2080 tokens truncated…imit = { gdd_gameplay_emperor_of_china = yes } \nguangdong_independent_practice/missions/Korean_Missions.txt:1796: trailing whitespace.\n+\t\t\t\tlimit = { gdd_gameplay_emperor_of_china = yes } \nguangdong_independent_practice/missions/Korean_Missions.txt:1827: trailing whitespace.\n+\t\tgdd_gameplay_emperor_of_china = yes \nguangdong_independent_practice/missions/Korean_Missions.txt:1841: trailing whitespace.\n+\t\t\t\t\tgdd_gameplay_emperor_of_china = yes \nguangdong_independent_practice/missions/Korean_Missions.txt:2094: trailing whitespace.\n+\t\t\t\t\tgdd_gameplay_emperor_of_china = yes \nguangdong_independent_practice/missions/Korean_Missions.txt:2171: trailing whitespace.\n+\t\t\t\t\t\t\tROOT = { gdd_retired_mandate_change = yes } \nguangdong_independent_practice/missions/Korean_Missions.txt:2208: trailing whitespace.\n+\t\tgdd_gameplay_emperor_of_china = yes \nguangdong_independent_practice/missions/Korean_Missions.txt:2398: trailing whitespace.\n+\t\t\t\t\tgdd_gameplay_emperor_of_china = yes \nguangdong_independent_practice/missions/Korean_Missions.txt:2509: trailing whitespace.\n+\t\tgdd_gameplay_emperor_of_china = yes \nguangdong_independent_practice/missions/Korean_Missions.txt:2728: trailing whitespace.\n+\t\t\t\t\tgdd_gameplay_emperor_of_china = yes \nguangdong_independent_practice/missions/Korean_Missions.txt:2812: trailing whitespace.\n+\t\tgdd_gameplay_emperor_of_china = yes \nguangdong_independent_practice/missions/Korean_Missions.txt:2969: trailing whitespace.\n+\t\t\t\t\tgdd_retired_mandate_change = yes \nguangdong_independent_practice/missions/Korean_Missions.txt:2973: trailing whitespace.\n+\t\t\t\t\tgdd_retired_mandate_change = yes \nguangdong_independent_practice/missions/Korean_Missions.txt:2996: trailing whitespace.\n+\t\t\t\t\tgdd_retired_mandate_change = yes \nguangdong_independent_practice/missions/Korean_Missions.txt:3014: trailing whitespace.\n+\t\t\t\t\t\tgdd_retired_mandate_change = yes \nguangdong_independent_practice/missions/Korean_Missions.txt:3043: trailing whitespace.\n+\t\t\t\t\t\tgdd_retired_mandate_change = yes \nguangdong_independent_practice/missions/zzzz_WoC_EoC_Yuan_Missions.txt:88: trailing whitespace.\n+\t\t\t\t\t\t\tgdd_gameplay_emperor_of_china = yes \nguangdong_independent_practice/missions/zzzz_WoC_EoC_Yuan_Missions.txt:219: trailing whitespace.\n+\t\t\t\tlimit = { gdd_gameplay_emperor_of_china = yes } \nguangdong_independent_practice/missions/zzzz_WoC_EoC_Yuan_Missions.txt:224: trailing whitespace.\n+\t\t\t\tlimit = { gdd_gameplay_emperor_of_china = yes } \nguangdong_independent_practice/missions/zzzz_WoC_EoC_Yuan_Missions.txt:290: trailing whitespace.\n+\t\t\t\t\tgdd_gameplay_emperor_of_china = yes \nguangdong_independent_practice/missions/zzzz_WoC_EoC_Yuan_Missions.txt:673: trailing whitespace.\n+\t\t\t\t\t\t\tgdd_gameplay_emperor_of_china = yes \nguangdong_independent_practice/missions/zzzz_WoC_EoC_Yuan_Missions.txt:804: trailing whitespace.\n+\t\t\t\t\tgdd_gameplay_emperor_of_china = yes \nguangdong_independent_practice/missions/zzzz_WoC_EoC_Yuan_Missions.txt:1161: trailing whitespace.\n+\t\t\t\t\tgdd_gameplay_emperor_of_china = yes \n"
+    }
+  },
+  {
+    "cmd": "/Users/xinanyapiao/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 -m unittest discover -s tools -p 'test_wangming_authority.py'",
+    "status": "fulfilled",
+    "value": {
+      "chunk_id": "d90317",
+      "wall_time_seconds": 0.724448292,
+      "exit_code": 0,
+      "original_token_count": 27,
+      "output": "........\n----------------------------------------------------------------------\nRan 8 tests in 0.726s\n\nOK\n"
+    }
+  },
+  {
+    "cmd": "/Users/xinanyapiao/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 -m unittest discover -s tools -p 'test_gdd_tianxia_buttons.py'",
+    "status": "fulfilled",
+    "value": {
+      "chunk_id": "c39255",
+      "wall_time_seconds": 2.0830513330000002,
+      "exit_code": 0,
+      "original_token_count": 33,
+      "output": ".................................\n----------------------------------------------------------------------\nRan 33 tests in 2.107s\n\nOK\n"
+    }
+  },
+  {
+    "cmd": "/Users/xinanyapiao/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 -m unittest discover -s tools -p 'test_zhou_province_integration.py'",
+    "status": "fulfilled",
+    "value": {
+      "chunk_id": "650ea8",
+      "wall_time_seconds": 0.36494675,
+      "exit_code": 0,
+      "original_token_count": 27,
+      "output": ".........\n----------------------------------------------------------------------\nRan 9 tests in 0.336s\n\nOK\n"
+    }
+  },
+  {
+    "cmd": "/Users/xinanyapiao/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 tools/validate_gdd_eoc_layout.py",
+    "status": "fulfilled",
+    "value": {
+      "chunk_id": "1dc5cf",
+      "wall_time_seconds": 0.724413,
+      "exit_code": 0,
+      "original_token_count": 118,
+      "output": "Integrated Mandate / Zhou-member layout: PASS\n  Centred decrees fill the extended functional 12 + 4 page viewport\n  Short member panel uses a functional 48 + 18 page scrollbar\n  Original entry and window retained; retired Mandate controls are off canvas\n  Equal 220px side columns share the existing seven-feudatory centre axis\n  Three native HRE buttons have equal gaps and align with the panel bottoms\n  Reforms retain their native art, scales and 8 / 6 / 6 grouping\n"
+    }
+  },
+  {
+    "cmd": "/Users/xinanyapiao/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 tools/validate_gdd_tianxia_territory.py",
+    "status": "fulfilled",
+    "value": {
+      "chunk_id": "46d03b",
+      "wall_time_seconds": 0.109063041,
+      "exit_code": 0,
+      "original_token_count": 13,
+      "output": "PASS: Zhou Tianxia territory white-box validation\n"
+    }
+  }
+]

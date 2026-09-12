@@ -85,7 +85,7 @@ country_event = {
                     # The opening Emperor is CZH. Prefer the literal tag here
                     # so the observed opening-write path has no event-target
                     # dependency at all.
-                    limit = { CZH = { exists = yes is_emperor_of_china = yes } }
+                    limit = { CZH = { exists = yes zhx_is_tianzi = yes } }
                     CZH = {
                         add_opinion = {
                             who = ROOT
@@ -96,12 +96,12 @@ country_event = {
                 }
                 else_if = {
                     limit = {
-                        event_target:EmperorOfChina = {
+                        event_target:zhx_tianzi = {
                             exists = yes
-                            is_emperor_of_china = yes
+                            zhx_is_tianzi = yes
                         }
                     }
-                    event_target:EmperorOfChina = {
+                    event_target:zhx_tianzi = {
                         add_opinion = {
                             who = ROOT
                             modifier = gdd_opinion_removed_tianxia_province

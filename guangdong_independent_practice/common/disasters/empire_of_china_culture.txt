@@ -2,7 +2,7 @@
 empire_of_china_in_name = {
 	potential = {
 		NOT = { has_country_flag = had_empire_of_china_culture_disaster }
-		is_emperor_of_china = yes
+		gdd_gameplay_emperor_of_china = yes
 		has_dlc = "Mandate of Heaven"
 		NOT = { culture_group = east_asian }
 	}
@@ -133,7 +133,7 @@ empire_of_china_in_name = {
 	
 	can_end = {
 		OR = {
-			is_emperor_of_china = no
+			gdd_gameplay_emperor_of_china = no
 			custom_trigger_tooltip = {
 				tooltip = atleast_two_chinese_cultures_accepted_tooltip
 				calc_true_if = {
@@ -167,7 +167,7 @@ empire_of_china_in_name = {
 	
 
 	modifier = {
-		imperial_mandate = -0.3
+
 		years_of_nationalism = 5
 		technology_cost = 0.2
 	}	

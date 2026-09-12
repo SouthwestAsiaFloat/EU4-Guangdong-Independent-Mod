@@ -1,8 +1,3 @@
-# Yuan remains the historical holder before the Zhou restoration.
-1260.5.5 = { celestial_emperor = KHA }
-
-# Replace the vanilla Ming mandate era with the Zhou Son of Heaven.
-1368.1.23 = { celestial_emperor = CZH }
-
-# Preserve the vanilla Qing historical bookmark record.
-1644.10.30 = { celestial_emperor = QNG }
+# Native EOC identity is a UI carrier, never a historical succession system.
+# The existing window entry remains available; political rights use zhx_tianzi.
+1.1.1 = { celestial_emperor = CZH }

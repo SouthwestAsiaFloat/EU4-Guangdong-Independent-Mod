@@ -470,7 +470,7 @@ celestial_empire = {
 			limit = {
 				has_dlc = "Mandate of Heaven"
 			}
-			is_emperor_of_china = yes
+			gdd_gameplay_emperor_of_china = yes
 		}
 		else = {
 			OR = {

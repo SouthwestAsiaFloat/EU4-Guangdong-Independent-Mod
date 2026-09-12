@@ -1,4 +1,4 @@
-# Triggered modifiers are here.
+﻿# Triggered modifiers are here.
 # these are checked for each countries once/month and then applied.
 #
 # Effects are fully scriptable here.
@@ -560,6 +560,7 @@ pentarchy_mod = {
 ##################################################
 the_mandate_of_heaven = {
 	potential = {
+        always = no
 		has_reform = celestial_empire
 		NOT = { has_dlc = "Mandate of Heaven" }
 	}
@@ -576,6 +577,7 @@ the_mandate_of_heaven = {
 
 the_mandate_of_heaven_lost = {
 	potential = {
+        always = no
 		has_reform = celestial_empire
 		NOT = { has_dlc = "Mandate of Heaven" }
 	}
@@ -637,7 +639,6 @@ lost_control_of_beijing = {
 		factor = -1000 # Do what you can to avoid this modifier
 	}
 
-	imperial_mandate = -0.05
 }
 
 gdd_tianxia_control_of_beijing = {
@@ -658,7 +659,6 @@ gdd_tianxia_control_of_beijing = {
 		factor = 100
 	}
 
-	imperial_mandate = 0.05
 }
 
 lost_control_of_nanjing = {
@@ -681,7 +681,6 @@ lost_control_of_nanjing = {
 		factor = -1000 # Do what you can to avoid this modifier
 	}
 
-	imperial_mandate = -0.05
 }
 
 gdd_tianxia_control_of_nanjing = {
@@ -702,7 +701,6 @@ gdd_tianxia_control_of_nanjing = {
 		factor = 100
 	}
 
-	imperial_mandate = 0.05
 }
 
 lost_control_of_canton = {
@@ -725,7 +723,6 @@ lost_control_of_canton = {
 		factor = -1000 # Do what you can to avoid this modifier
 	}
 
-	imperial_mandate = -0.05
 }
 
 gdd_tianxia_control_of_canton = {
@@ -746,7 +743,6 @@ gdd_tianxia_control_of_canton = {
 		factor = 100
 	}
 
-	imperial_mandate = 0.05
 }
 
 waging_war_for_china = {
@@ -762,7 +758,6 @@ waging_war_for_china = {
 		}
 	}
 
-	imperial_mandate = 0.05
 }
 
 ##################################################

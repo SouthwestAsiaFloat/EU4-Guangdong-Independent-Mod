@@ -625,30 +625,9 @@ gdd_apply_ai_reform_vote_effect = {
         set_variable = { which = gdd_ai_reform_overlord_component value = -10 }
     }
 
-    # Preserve the existing relative weights at ten times their former scale,
-    # then reproduce the HRE rule exactly: each point of Mandate above the
-    # 50-point enactment cost contributes one additional support point.
+    # Keep political AI weights; retired Mandate contributes no support.
     multiply_variable = { which = gdd_ai_reform_vote_score value = 10 }
-    if = {
-        limit = { event_target:EmperorOfChina = { exists = yes } }
-        export_to_variable = {
-            which = gdd_ai_reform_mandate_support_score
-            value = trigger_value:imperial_mandate
-            who = event_target:EmperorOfChina
-        }
-        subtract_variable = { which = gdd_ai_reform_mandate_support_score value = 50 }
-        if = {
-            limit = { check_variable = { which = gdd_ai_reform_mandate_support_score value = 0 } }
-            set_variable = {
-                which = gdd_ai_reform_mandate_component
-                which = gdd_ai_reform_mandate_support_score
-            }
-            change_variable = {
-                which = gdd_ai_reform_vote_score
-                which = gdd_ai_reform_mandate_support_score
-            }
-        }
-    }
+    set_variable = { which = gdd_ai_reform_mandate_component value = 0 }
     if = {
         limit = { check_variable = { which = gdd_ai_reform_vote_score value = 30 } }
         set_country_flag = $support_flag$

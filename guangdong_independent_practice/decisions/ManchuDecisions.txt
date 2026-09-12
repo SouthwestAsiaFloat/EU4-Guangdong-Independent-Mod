@@ -237,10 +237,10 @@ country_decisions = {
 				limit = {
 					has_dlc = "Mandate of Heaven"
 					any_country = {
-						is_emperor_of_china = yes
+						gdd_gameplay_emperor_of_china = yes
 					}
 				}
-				is_emperor_of_china = yes
+				gdd_gameplay_emperor_of_china = yes
 			}
 			else_if = {
 				limit = {

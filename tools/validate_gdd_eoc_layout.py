@@ -444,8 +444,8 @@ def main() -> None:
             and "gdd_reform_vote_total_without_principal_dev" in vote_effects,
             "executor-excluded strict-majority cache is incomplete")
     require("set_country_flag = $which$" in effects
-            and "event_target:EmperorOfChina = {" in effects,
-            "reform ownership or Emperor cost routing is missing")
+            and "gdd_pay_reform_authority_cost = yes" in effects,
+            "reform ownership or authority cost routing is missing")
     require("subject_type = gdd_tianxia_vassal" in effects
             and "zhx_is_tianxia_polity = yes" in effects,
             "central final does not target Zhou polities with its special subject")
@@ -464,13 +464,12 @@ def main() -> None:
             and "max_government_rank = 0" in subjects,
             "Tianxia vassal does not support no-slot unrestricted-rank subjects")
 
-    require(parsed["influence_label"]["x"] == 680
-            and parsed["influence_label"]["y"] == 91
-            and parsed["influence_value"]["x"] == 705
-            and parsed["influence_value"]["y"] == 128
-            and parsed["influence_growth"]["x"] == 705
-            and parsed["influence_growth"]["y"] == 168,
-            "Mandate label and values are not aligned as one block")
+    for name in ("influence_label", "influence_value", "influence_growth",
+                 "gdd_eoc_mandate_value_tooltip", "gdd_eoc_mandate_growth_tooltip",
+                 "benefits_icon", "diplomatic_actions_icon"):
+        require(parsed[name]["x"] == -10000 and parsed[name]["y"] == -10000,
+                f"retired native Mandate UI remains visible: {name}")
+
 
     localisation = LOCALISATION.read_text(encoding="utf-8-sig")
     require(
@@ -515,7 +514,7 @@ def main() -> None:
     print("Integrated Mandate / Zhou-member layout: PASS")
     print("  Centred decrees fill the extended functional 12 + 4 page viewport")
     print("  Short member panel uses a functional 48 + 18 page scrollbar")
-    print("  Emperor and Mandate share the top row; authority track is tucked below")
+    print("  Original entry and window retained; retired Mandate controls are off canvas")
     print("  Equal 220px side columns share the existing seven-feudatory centre axis")
     print("  Three native HRE buttons have equal gaps and align with the panel bottoms")
     print("  Reforms retain their native art, scales and 8 / 6 / 6 grouping")

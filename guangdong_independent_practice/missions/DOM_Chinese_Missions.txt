@@ -402,8 +402,8 @@ DOM_Qing_Related_Missions_1 = {
 			}
 			add_prestige_or_monarch_power = { amount = 20 } 
 			if = { 
-				limit = { is_emperor_of_china = yes } 
-				add_mandate = 10 
+				limit = { gdd_gameplay_emperor_of_china = yes }
+				gdd_retired_mandate_change = yes
 			}
 			if = { 
 				limit = { has_country_modifier = mjz_dominance_of_the_horselords_modifier } 
@@ -576,7 +576,7 @@ chinese_kingdoms_1 = {
 					who = event_target:EmperorOfChina 
 					value = 90
 				}
-				is_emperor_of_china = yes
+				gdd_gameplay_emperor_of_china = yes
 			}
 			custom_trigger_tooltip = {
 				tooltip = chi_strongest_warlord_tt
@@ -611,8 +611,8 @@ chinese_kingdoms_1 = {
 			tooltip = {
 				if = {
 					limit = { has_dlc = "Mandate of Heaven" } 
-					set_emperor_of_china = ROOT 
-					add_mandate = 50 
+					# Native title transfer retired: window carrier only.
+					gdd_retired_mandate_change = yes
 				}
 				else = {
 					add_prestige_or_monarch_power = { amount = 100 }
@@ -621,8 +621,8 @@ chinese_kingdoms_1 = {
 			hidden_effect = {
 				if = {
 					limit = { has_dlc = "Mandate of Heaven" } 
-					set_emperor_of_china = ROOT 
-					add_mandate = 50 
+					# Native title transfer retired: window carrier only.
+					gdd_retired_mandate_change = yes
 				}
 				else = {
 					add_prestige_or_monarch_power = { amount = 100 }
@@ -638,7 +638,7 @@ ming_missions_1_b = {
 	ai = yes
 	potential = {
 		has_dlc = "Domination"
-		is_emperor_of_china = yes 
+		gdd_gameplay_emperor_of_china = yes
 		#OR = { 
 		#	culture_group = east_asian
 		#	has_country_flag = enable_emperor_of_china_missions_flag
@@ -721,7 +721,7 @@ ming_missions_1_b = {
 				if = {
 					limit = { 
 						has_dlc = "Mandate of Heaven" 
-						is_emperor_of_china = yes 
+						gdd_gameplay_emperor_of_china = yes
 					} 
 					custom_tooltip = mng_palace_bureaucracy_benefits_tt
 				}
@@ -742,7 +742,7 @@ ming_missions_1_b = {
 						has_mil_advisor = yes 
 						crown_land_share = 40
 						has_dlc = "Mandate of Heaven" 
-						is_emperor_of_china = yes 
+						gdd_gameplay_emperor_of_china = yes
 					}
 					clr_country_flag = mng_kept_restrictions_flag 
 					set_country_flag = mng_expanded_palace_bureaucracy_flag 
@@ -802,12 +802,12 @@ ming_missions_1_b = {
 		
 		trigger = { 
 			if = { 
-				limit = { is_emperor_of_china = yes } 
+				limit = { gdd_gameplay_emperor_of_china = yes }
 				meritocracy = 90 
 			}
 			else = { legitimacy_equivalent = 90 } 
 			if = {
-				limit = { is_emperor_of_china = yes } 
+				limit = { gdd_gameplay_emperor_of_china = yes }
 				OR = {
 					empire_of_china_has_active_decree = issue_the_great_warnings_decree
 					AND = {
@@ -849,7 +849,7 @@ ming_missions_1_c = {
 	ai = yes
 	potential = {
 		has_dlc = "Domination"
-		is_emperor_of_china = yes 
+		gdd_gameplay_emperor_of_china = yes
 		tag = MNG
 	}
 	has_country_shield = yes 
@@ -936,8 +936,8 @@ DOM_Qing_Missions_1_b_formable = {
 				add_devastation = -10 
 			}
 			if = { 
-				limit = { is_emperor_of_china = yes } 
-				add_mandate = 20 
+				limit = { gdd_gameplay_emperor_of_china = yes }
+				gdd_retired_mandate_change = yes
 			}
 			else = { add_legitimacy = 25 }
 			hidden_effect = {
@@ -991,7 +991,7 @@ DOM_Qing_Missions_1_b_formable = {
 			}
 			else = { num_of_cavalry = 50 } 
 			if = {
-				limit = { is_emperor_of_china = yes }
+				limit = { gdd_gameplay_emperor_of_china = yes }
 				empire_of_china_reform_passed = modernize_the_banners_decision
 			}
 			else = { full_idea_group = aristocracy_ideas }
@@ -1045,8 +1045,8 @@ DOM_Qing_Missions_1_b_formable = {
 				add_base_manpower = 3
 			}
 			if = { 
-				limit = { is_emperor_of_china = yes } 
-				add_mandate = 20
+				limit = { gdd_gameplay_emperor_of_china = yes }
+				gdd_retired_mandate_change = yes
 			}
 			else = { add_stability_or_adm_power = yes }
 		}
@@ -1527,18 +1527,18 @@ DOM_Qing_Missions_2 = {
 		position = 3
 		provinces_to_highlight = {
 			is_capital = yes 
-			owner = { is_emperor_of_china = yes } 
+			owner = { gdd_gameplay_emperor_of_china = yes }
 		}
 		trigger = {
 			if = { 
 				limit = { 
 					any_country = {
-						is_emperor_of_china = yes 
+						gdd_gameplay_emperor_of_china = yes
 						NOT = { tag = ROOT } 
 					}
 				}
 				any_country = { 
-					is_emperor_of_china = yes 
+					gdd_gameplay_emperor_of_china = yes
 					OR = { 
 						has_opinion_modifier = {
 							who = ROOT  
@@ -1610,9 +1610,9 @@ DOM_Qing_Missions_2 = {
 			if = { 
 				limit = { 
 					has_dlc = "Mandate of Heaven" 
-					is_emperor_of_china = yes 
+					gdd_gameplay_emperor_of_china = yes
 				}
-				add_mandate = 20
+				gdd_retired_mandate_change = yes
 				add_country_modifier = { 
 					name = qng_new_heavenly_era_modifier
 					duration = 7300 
@@ -1764,7 +1764,7 @@ chinese_kingdoms_2 = {
 			if = { 
 				limit = { 
 					has_dlc = "Mandate of Heaven" 
-					is_emperor_of_china = yes
+					gdd_gameplay_emperor_of_china = yes
 				}
 				custom_tooltip = chi_subject_reward_tt
 			}
@@ -1788,9 +1788,9 @@ chinese_kingdoms_2 = {
 				if = {
 					limit = { has_dlc = "Mandate of Heaven" num_of_subjects = 8 }
 					if = {
-						limit = { is_emperor_of_china = yes }
+						limit = { gdd_gameplay_emperor_of_china = yes }
 						every_subject_country = { 
-							overlord = { add_mandate = 10 } 
+							overlord = { gdd_retired_mandate_change = yes }
 						}
 					}
 					else = {
@@ -1810,9 +1810,9 @@ chinese_kingdoms_2 = {
 						num_of_subjects = 4 
 					}
 					if = {
-						limit = { is_emperor_of_china = yes }
+						limit = { gdd_gameplay_emperor_of_china = yes }
 						every_subject_country = { 
-							overlord = { add_mandate = 10 } 
+							overlord = { gdd_retired_mandate_change = yes }
 						}
 					}
 					else = {
@@ -1843,7 +1843,7 @@ ming_missions_2_b = {
 	ai = yes
 	potential = {
 		has_dlc = "Domination"
-		is_emperor_of_china = yes 
+		gdd_gameplay_emperor_of_china = yes
 		#OR = {
 		#	culture_group = east_asian
 		#	has_country_flag = enable_emperor_of_china_missions_flag
@@ -1890,7 +1890,7 @@ ming_missions_2_b = {
 		trigger = {
 			if = {
 				limit = {
-					is_emperor_of_china = yes 
+					gdd_gameplay_emperor_of_china = yes
 					has_dlc = "Mandate of Heaven" 
 				}
 				OR = { 
@@ -2155,7 +2155,7 @@ ming_missions_2_b = {
 			if = { 
 				limit = {
 					has_dlc = "Mandate of Heaven" 
-					is_emperor_of_china = yes 
+					gdd_gameplay_emperor_of_china = yes
 				}
 				custom_tooltip = mng_5_mandate_per_ally_tt
 			}
@@ -2232,7 +2232,7 @@ ming_missions_2_b = {
 									}
 								}
 							}
-							ROOT = { add_mandate = 5 } 
+							ROOT = { gdd_retired_mandate_change = yes }
 						}
 					}
 					else = { 
@@ -2290,7 +2290,7 @@ DOM_Qing_Missions_2_b = {
 			NOT = { average_autonomy_above_min = 10 } 
 			NOT = { average_unrest = 1 } 
 			if = {
-				limit = { is_emperor_of_china = yes } 
+				limit = { gdd_gameplay_emperor_of_china = yes }
 				meritocracy = 85 
 			}
 			else = { prestige = 50 }
@@ -2303,7 +2303,7 @@ DOM_Qing_Missions_2_b = {
 				duration = 9125 
 			}
 			if = {
-				limit = { is_emperor_of_china = yes has_dlc = "Mandate of Heaven" }
+				limit = { gdd_gameplay_emperor_of_china = yes has_dlc = "Mandate of Heaven" }
 				set_country_flag = qng_passing_decree_reduces_autonomy_everywhere_by_5_flag
 				custom_tooltip = qng_passing_decree_reduces_autonomy_everywhere_by_5_tt
 			}
@@ -2324,9 +2324,9 @@ DOM_Qing_Missions_2_b = {
 			if = {
 				limit = {
 					has_dlc = "Mandate of Heaven"
-					is_emperor_of_china = yes
+					gdd_gameplay_emperor_of_china = yes
 				}
-				add_mandate = 20
+				gdd_retired_mandate_change = yes
 			}
 			else = {
 				add_legitimacy = 25
@@ -2588,8 +2588,8 @@ chinese_kingdoms_3 = {
 				add_permanent_claim = ROOT 
 			}
 			if = {
-				limit = { is_emperor_of_china = yes } 
-				add_mandate = 25 
+				limit = { gdd_gameplay_emperor_of_china = yes }
+				gdd_retired_mandate_change = yes
 			}
 			else = {
 				add_stability_or_adm_power = yes 
@@ -2631,7 +2631,7 @@ chinese_kingdoms_3 = {
 				OR = { 
 					in_golden_age = yes 
 					monthly_income = 150 
-					is_emperor_of_china = yes 
+					gdd_gameplay_emperor_of_china = yes
 				}
 			}
 			else = { monthly_income = 150 }
@@ -2639,7 +2639,7 @@ chinese_kingdoms_3 = {
 		}
 		effect = {
 			if = {
-				limit = { is_emperor_of_china = yes } 
+				limit = { gdd_gameplay_emperor_of_china = yes }
 				add_country_modifier = {
 					name = chi_rising_dynasty_modifier
 					duration = -1
@@ -3087,7 +3087,7 @@ ming_missions_3 = {
 			tooltip = {
 				if = { 
 					limit = { has_dlc = "Mandate of Heaven" } 
-					add_mandate = 5 
+					gdd_retired_mandate_change = yes
 				}
 				else = { add_prestige_or_monarch_power = { amount = 35 } } 
 				add_country_modifier = {
@@ -3128,7 +3128,7 @@ ming_missions_3 = {
 				}
 				if = { 
 					limit = { has_dlc = "Mandate of Heaven" } 
-					add_mandate = 5 
+					gdd_retired_mandate_change = yes
 				}
 				else = { add_prestige_or_monarch_power = { amount = 35 } } 
 			}
@@ -3182,7 +3182,7 @@ ming_missions_3 = {
 					stability = 2 
 					NOT = { num_of_rebel_controlled_provinces = 1 } 
 					if = { 
-						limit = { is_emperor_of_china = yes } 
+						limit = { gdd_gameplay_emperor_of_china = yes }
 						imperial_mandate = 80 
 					}
 				}
@@ -3302,7 +3302,7 @@ ming_missions_3 = {
 		effect = {
 			
 			if = { 
-				limit = { is_emperor_of_china = yes } 
+				limit = { gdd_gameplay_emperor_of_china = yes }
 				custom_tooltip = mng_trib_cb_every_nation_applicable_tt
 				tooltip = {
 					every_country = {
@@ -3800,7 +3800,7 @@ ming_missions_3_b = {
 	ai = yes
 	potential = {
 		has_dlc = "Domination"
-		is_emperor_of_china = yes 
+		gdd_gameplay_emperor_of_china = yes
 		#OR = {
 		#	culture_group = east_asian
 		#	has_country_flag = enable_emperor_of_china_missions_flag
@@ -4028,7 +4028,7 @@ ming_missions_3_b = {
 			if = {
 				limit = { 
 					has_dlc = "Mandate of Heaven" 
-					is_emperor_of_china = yes 
+					gdd_gameplay_emperor_of_china = yes
 				}
 				empire_of_china_num_reforms_passed = 10
 				imperial_mandate = 95 
@@ -4230,8 +4230,8 @@ DOM_Qing_Missions_3_b = {
 		}
 		effect = {
 			if = { 
-				limit = { is_emperor_of_china = yes } 
-				add_mandate = 20 
+				limit = { gdd_gameplay_emperor_of_china = yes }
+				gdd_retired_mandate_change = yes
 			}
 			if = {
 				limit = {
@@ -4328,7 +4328,7 @@ DOM_Qing_Missions_3_b = {
 				limit = { 
 					has_dlc = "Rights of Man" 
 					NOT = { num_of_ruler_traits = { amount = 3 } }
-					is_emperor_of_china = yes 
+					gdd_gameplay_emperor_of_china = yes
 				}
 				add_ruler_personality = benevolent_personality
 			}
@@ -4378,7 +4378,7 @@ DOM_Qing_Missions_3_b = {
 		trigger = {
 			has_final_tier_reforms_trigger = yes
 			if = { 
-				limit = { is_emperor_of_china = yes }
+				limit = { gdd_gameplay_emperor_of_china = yes }
 				imperial_mandate = 90 
 			}
 			else = { legitimacy = 90 }
@@ -4496,8 +4496,8 @@ chinese_kingdoms_4 = {
 				add_permanent_claim = ROOT 
 			}
 			if = {
-				limit = { is_emperor_of_china = yes } 
-				add_mandate = 25 
+				limit = { gdd_gameplay_emperor_of_china = yes }
+				gdd_retired_mandate_change = yes
 			}
 			else = {
 				add_stability_or_adm_power = yes 
@@ -4758,7 +4758,7 @@ ming_missions_4_generic = {
 				}
 				if = { 
 					limit = { 
-						is_emperor_of_china = yes 
+						gdd_gameplay_emperor_of_china = yes
 						has_dlc = "Mandate of Heaven"
 					}
 					AND = {
@@ -4861,7 +4861,7 @@ ming_missions_4_dynamic_1 = {
 				}
 				if = { 
 					limit = { 
-						is_emperor_of_china = yes 
+						gdd_gameplay_emperor_of_china = yes
 						has_dlc = "Mandate of Heaven"
 					}
 					AND = {
@@ -5072,7 +5072,7 @@ DOM_Qing_Missions_4 = {
 				duration = 7300
 			}
 			if = { 
-				limit = { is_emperor_of_china = yes }
+				limit = { gdd_gameplay_emperor_of_china = yes }
 				add_meritocracy = 10 
 				change_government_reform_progress = 100 
 			}
@@ -5099,7 +5099,7 @@ ming_missions_4_b = {
 	ai = yes
 	potential = {
 		has_dlc = "Domination"
-		is_emperor_of_china = yes 
+		gdd_gameplay_emperor_of_china = yes
 		#OR = {
 		#	culture_group = east_asian
 		#	has_country_flag = enable_emperor_of_china_missions_flag
@@ -5352,7 +5352,7 @@ ming_missions_4_b = {
 			if = { 
 				limit = { 
 					has_dlc = "Mandate of Heaven" 
-					is_emperor_of_china = yes 
+					gdd_gameplay_emperor_of_china = yes
 				}
 				imperial_mandate = 80 
 			}
@@ -5423,7 +5423,7 @@ ming_missions_4_moh = {
 	potential = {
 		has_dlc = "Domination"
 		has_dlc = "Mandate of Heaven"
-		is_emperor_of_china = yes 
+		gdd_gameplay_emperor_of_china = yes
 		#OR = {
 		#	culture_group = east_asian
 		#	has_country_flag = enable_emperor_of_china_missions_flag
@@ -5469,7 +5469,7 @@ ming_missions_4_moh = {
 		
 		trigger = { 
 			empire_of_china_num_reforms_passed = 15 
-			is_emperor_of_china = yes 
+			gdd_gameplay_emperor_of_china = yes
 			stability = 3 
 			if = { 
 				limit = { has_dlc = "Emperor" }
@@ -5505,7 +5505,7 @@ DOM_Qing_Missions_4_b = {
 		position = 10
 		trigger = {
 			if = {
-				limit = { is_emperor_of_china = yes } 
+				limit = { gdd_gameplay_emperor_of_china = yes }
 				imperial_mandate = 75 
 				empire_of_china_num_reforms_passed = 1
 				meritocracy = 80 
@@ -5526,7 +5526,7 @@ DOM_Qing_Missions_4_b = {
 		
 		effect = {
 			if = { 
-				limit = { is_emperor_of_china = yes } 
+				limit = { gdd_gameplay_emperor_of_china = yes }
 				add_country_modifier = {
 					name = qng_new_chinese_dynasty_modifier
 					duration = 7300 
@@ -5565,7 +5565,7 @@ DOM_Qing_Missions_4_b = {
 					}
 				}
 				AND = { 
-					is_emperor_of_china = yes 
+					gdd_gameplay_emperor_of_china = yes
 					stability = 3 
 					imperial_mandate = 85
 					empire_of_china_num_reforms_passed = 8
@@ -5697,9 +5697,9 @@ chinese_kingdoms_5 = {
 		
 		effect = {
 			if = {
-				limit = { is_emperor_of_china = yes }
+				limit = { gdd_gameplay_emperor_of_china = yes }
 				add_meritocracy = 10 
-				add_mandate = 15
+				gdd_retired_mandate_change = yes
 			}
 			else = { 
 				add_legitimacy = 25 
@@ -5883,7 +5883,7 @@ ming_missions_5 = {
 			custom_tooltip = mng_diplomatic_reward_dai_viet_tt
 			tooltip = { 
 				MNG = {
-					add_mandate = 10
+					gdd_retired_mandate_change = yes
 					add_historical_friend = DAI 
 					add_dip_power = 100 
 				}
@@ -5943,7 +5943,7 @@ ming_missions_5 = {
 						}
 						add_historical_friend = ROOT 
 					}
-					add_mandate = 10
+					gdd_retired_mandate_change = yes
 					add_historical_friend = DAI 
 					add_dip_power = 100 
 				}
@@ -6293,7 +6293,7 @@ DOM_Qing_Missions_5 = {
 					has_country_modifier = black_shamanism_modifier
 				}
 				AND = { 
-					is_emperor_of_china = yes 
+					gdd_gameplay_emperor_of_china = yes
 					religion = confucianism 
 					zhx_lijiao_cohesion_80 = yes 
 				}
@@ -6360,7 +6360,7 @@ ming_missions_5_b = {
 	ai = yes
 	potential = {
 		has_dlc = "Domination"
-		is_emperor_of_china = yes 
+		gdd_gameplay_emperor_of_china = yes
 		#OR = {  
 		#	culture_group = east_asian
 		#	has_country_flag = enable_emperor_of_china_missions_flag
@@ -6576,10 +6576,10 @@ ming_missions_5_b = {
 				}
 				if = { 
 					limit = { 
-						is_emperor_of_china = yes
+						gdd_gameplay_emperor_of_china = yes
 						has_dlc = "Mandate of Heaven" 
 					}
-					add_mandate = 10 
+					gdd_retired_mandate_change = yes
 				}
 				else = { add_prestige_or_monarch_power = { amount = 25 } }
 				change_government_reform_progress = 100 
@@ -6594,10 +6594,10 @@ ming_missions_5_b = {
 					}
 					if = { 
 						limit = { 
-							is_emperor_of_china = yes
+							gdd_gameplay_emperor_of_china = yes
 							has_dlc = "Mandate of Heaven" 
 						}
-						add_mandate = 10 
+						gdd_retired_mandate_change = yes
 					}
 					else = { 
 						add_prestige_or_monarch_power = { amount = 25 }
@@ -6636,7 +6636,7 @@ ming_missions_5_b = {
 					set_country_flag = mng_dev_per_adm_advisor_level_flag
 					if = {
 						limit = { has_dlc = "Mandate of Heaven" }
-						add_mandate = 10
+						gdd_retired_mandate_change = yes
 					}
 					else = {
 						add_prestige_or_monarch_power = { amount = 25 }

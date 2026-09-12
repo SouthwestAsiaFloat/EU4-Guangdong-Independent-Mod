@@ -48,7 +48,7 @@ gdd_proxy_decree_fund_new_centers_of_education = {
 }
 
 gdd_proxy_decree_proclaim_dynastic_name = {
-    imperial_mandate = 0.05
+
     all_estate_loyalty_equilibrium = 0.1
 }
 

@@ -1,5 +1,5 @@
 {
-  "description": "Single registry for every Zhou Mandate source shown by the custom monthly tooltip or deliberately excluded from it.",
+  "description": "Retired historical registry. All old Mandate sources are disabled; the original EOC window is retained as an inert carrier. See gdd_mandate_carrier_overrides.json.",
   "continuous": [
     {
       "id": "prosperous_states",
@@ -137,5 +137,6 @@
       "file": "common/scripted_effects/gdd_celestial_mandate_effects.txt",
       "token": "gdd_leave_tianxia_with_mandate_penalty_effect = {"
     }
-  ]
+  ],
+  "status": "retired_2026-09-12"
 }

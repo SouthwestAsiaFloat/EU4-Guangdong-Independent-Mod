@@ -1,0 +1,12 @@
+{
+  "removed_owned_game_root_fixtures": [
+    "z_wangming_central.txt",
+    "z_wangming_revoke.txt",
+    "z_wangming_local.txt",
+    "zwangmingcentral.txt",
+    "zwangmingrevoke.txt",
+    "zwangminglocal.txt"
+  ],
+  "test_saves_retained": true,
+  "original_manual_saves_modified": false
+}

@@ -92,9 +92,9 @@ country_decisions = {
 			OR = {
 				NOT = { exists = MNG }
 				NOT = { is_subject_of = MNG }
-				MNG = { is_emperor_of_china = no }
+				MNG = { gdd_gameplay_emperor_of_china = no }
 			}
-			is_emperor_of_china = no
+			gdd_gameplay_emperor_of_china = no
 		}
 		allow = {
 			if = {
@@ -102,7 +102,7 @@ country_decisions = {
 					has_dlc = "Mandate of Heaven"
 					event_target:EmperorOfChina = {
 						exists = yes
-						is_emperor_of_china = yes
+						gdd_gameplay_emperor_of_china = yes
 					}
 				}
 				event_target:EmperorOfChina = {

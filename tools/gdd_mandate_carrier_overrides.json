@@ -1,0 +1,601 @@
+{
+  "game_version": "1.37.5.0",
+  "purpose": "Disable script-visible native emperor gameplay while retaining native window identity",
+  "files": [
+    {
+      "path": "common/achievements.txt",
+      "base": "EU4_1.37.5",
+      "base_sha256": "166019e56e370a2e3bcc3c4cfe208ed610a46d9bcc6a25b0093265e4bebc6632",
+      "gameplay_predicates": 2,
+      "retired_mutations": 0
+    },
+    {
+      "path": "common/advisortypes/00_advisortypes.txt",
+      "base": "EU4_1.37.5",
+      "base_sha256": "acfe9e5e2cab4cd7d78cc45e82195873bbc1a0e7c1808ba69209a5b9e2e749e5",
+      "gameplay_predicates": 21,
+      "retired_mutations": 0
+    },
+    {
+      "path": "common/ages/00_default.txt",
+      "base": "EU4_1.37.5",
+      "base_sha256": "5ff31779be9c1c334adf87f4c3986112d88f75559ac67d7ed1ad42eb09e95934",
+      "gameplay_predicates": 2,
+      "retired_mutations": 0
+    },
+    {
+      "path": "common/cb_types/00_cb_types.txt",
+      "base": "existing_mod_HEAD",
+      "base_sha256": "4e114031cd2c4307ab7f8707d9f8db8cc7b1cb27906fc3003009206a949ef15b",
+      "gameplay_predicates": 4,
+      "retired_mutations": 0
+    },
+    {
+      "path": "common/custom_ideas/02_newer_ideas.txt",
+      "base": "EU4_1.37.5",
+      "base_sha256": "99282b11b5c41871f1cb4697e3f64dde36f58faebb3680a2cfe7fbf0934ad14e",
+      "gameplay_predicates": 2,
+      "retired_mutations": 0
+    },
+    {
+      "path": "common/custom_ideas/05_leviathan_custom_ideas.txt",
+      "base": "EU4_1.37.5",
+      "base_sha256": "d5367fd4931598c9ef3190151f1f7b8f0d4f05d0cf7ad8272bc2ed4c268efc43",
+      "gameplay_predicates": 1,
+      "retired_mutations": 0
+    },
+    {
+      "path": "common/disasters/empire_of_china_culture.txt",
+      "base": "existing_mod_HEAD",
+      "base_sha256": "5a065936bb67bdc1d40b998d4fdc132c2480de10a4534988d0ab839d2294eaa3",
+      "gameplay_predicates": 2,
+      "retired_mutations": 0
+    },
+    {
+      "path": "common/disasters/empire_of_china_nomadic_border.txt",
+      "base": "EU4_1.37.5",
+      "base_sha256": "14532b97daf46377e7e514e694f9bc35f3700c265d24baa55815f4e380e0fc3e",
+      "gameplay_predicates": 2,
+      "retired_mutations": 0
+    },
+    {
+      "path": "common/disasters/ming_crisis.txt",
+      "base": "EU4_1.37.5",
+      "base_sha256": "a84dc5f51ed9d2a627b5c14be89ccea7cbfc67a664514fb75bf4d7f2c489aa03",
+      "gameplay_predicates": 4,
+      "retired_mutations": 0
+    },
+    {
+      "path": "common/estate_agendas/09_eunuchs_agendas.txt",
+      "base": "EU4_1.37.5",
+      "base_sha256": "b012d3784131db69a78f9595ae4e79756029abe2f7d2aebf1ac7df95a1e5ef9d",
+      "gameplay_predicates": 7,
+      "retired_mutations": 4
+    },
+    {
+      "path": "common/estate_privileges/01_church_privileges.txt",
+      "base": "EU4_1.37.5",
+      "base_sha256": "d73f5252dd888f22fa86c6d8ea0894476847203b0fbfe933fba2f4c10279f7be",
+      "gameplay_predicates": 0,
+      "retired_mutations": 0
+    },
+    {
+      "path": "common/estate_privileges/02_noble_privileges.txt",
+      "base": "EU4_1.37.5",
+      "base_sha256": "169cefd6d12f13c907a54f494a0905a7bdc8a8a209d8769c6e5a00f04d1ad184",
+      "gameplay_predicates": 2,
+      "retired_mutations": 0
+    },
+    {
+      "path": "common/estate_privileges/09_eunuchs_privileges.txt",
+      "base": "EU4_1.37.5",
+      "base_sha256": "d0ae9314f2702c1d0b555fd4bab931d5fb30cb16a16d14f61efa1c265071294a",
+      "gameplay_predicates": 0,
+      "retired_mutations": 0
+    },
+    {
+      "path": "common/estates/09_eunuchs.txt",
+      "base": "EU4_1.37.5",
+      "base_sha256": "9cb683ec48071401685c61ade4bda1be307854bd67a4388ef05faa5a909d3b38",
+      "gameplay_predicates": 1,
+      "retired_mutations": 0
+    },
+    {
+      "path": "common/event_modifiers/00_event_modifiers.txt",
+      "base": "EU4_1.37.5",
+      "base_sha256": "7a4311ed75c953c21c9b4830094ff9d72dc02b250f21208b84ee77344aecffc5",
+      "gameplay_predicates": 0,
+      "retired_mutations": 0
+    },
+    {
+      "path": "common/event_modifiers/01_mission_modifiers.txt",
+      "base": "EU4_1.37.5",
+      "base_sha256": "c7ab75d23e4214a886e6f54d0192266745495b6595333db24560324bae68ac44",
+      "gameplay_predicates": 0,
+      "retired_mutations": 0
+    },
+    {
+      "path": "common/government_reforms/01_government_reforms_monarchies.txt",
+      "base": "existing_mod_HEAD",
+      "base_sha256": "10670fdfadf333fe07c7351caf4f17525c667ce49155551ecb42f6dc0ddc5adc",
+      "gameplay_predicates": 1,
+      "retired_mutations": 0
+    },
+    {
+      "path": "common/great_projects/01_monuments.txt",
+      "base": "EU4_1.37.5",
+      "base_sha256": "b4137ef3f7026c25540f6063c0f3311d95d03cd8aa02fcce034944a968f552e6",
+      "gameplay_predicates": 3,
+      "retired_mutations": 0
+    },
+    {
+      "path": "common/ideas/00_basic_ideas.txt",
+      "base": "EU4_1.37.5",
+      "base_sha256": "faafedf0fed6b3ca8589f6faafca295d37e1ba0222a1e3e3a404edbae066e121",
+      "gameplay_predicates": 0,
+      "retired_mutations": 0
+    },
+    {
+      "path": "common/ideas/00_country_ideas.txt",
+      "base": "existing_mod_HEAD",
+      "base_sha256": "490a28259d1064053a35aadc68e1637ca7eab03028f763d2ca0220f2590b82e6",
+      "gameplay_predicates": 0,
+      "retired_mutations": 0
+    },
+    {
+      "path": "common/ideas/zz_group_ideas.txt",
+      "base": "EU4_1.37.5",
+      "base_sha256": "bdd4efed4bd3ee82e140610d31da6ca4e5552bed75cbcce8fa4bbe1801fb598c",
+      "gameplay_predicates": 0,
+      "retired_mutations": 0
+    },
+    {
+      "path": "common/insults/00_insults.txt",
+      "base": "EU4_1.37.5",
+      "base_sha256": "4b94e91089d9c62399cb33146f6d21318ed8c90154394e1c179204d0b281f212",
+      "gameplay_predicates": 2,
+      "retired_mutations": 0
+    },
+    {
+      "path": "common/new_diplomatic_actions/00_diplomatic_actions.txt",
+      "base": "EU4_1.37.5",
+      "base_sha256": "69757c4ec1ae1604882d1ed1f90cde2370550e4d533f9f8173ff09cebf6e5bc9",
+      "gameplay_predicates": 1,
+      "retired_mutations": 0
+    },
+    {
+      "path": "common/on_actions/00_on_actions.txt",
+      "base": "EU4_1.37.5",
+      "base_sha256": "5427e045160382e366b10d4721119dcb0b10adb7e380d7ab67a0a8f8ba3dfbc8",
+      "gameplay_predicates": 2,
+      "retired_mutations": 1
+    },
+    {
+      "path": "common/parliament_bribes/lose_mandate.txt",
+      "base": "EU4_1.37.5",
+      "base_sha256": "2459de60faa575b979524695ada1fdabe7a70d0a58f07be46d0c608c80a4b94b",
+      "gameplay_predicates": 2,
+      "retired_mutations": 6
+    },
+    {
+      "path": "common/province_triggered_modifiers/00_modifiers.txt",
+      "base": "EU4_1.37.5",
+      "base_sha256": "fc00e68167abeb2454cb0dd3385dcbf436ed11c63d663d68f5410e8ce7414f2e",
+      "gameplay_predicates": 1,
+      "retired_mutations": 0
+    },
+    {
+      "path": "common/scripted_effects/00_scripted_effects.txt",
+      "base": "EU4_1.37.5",
+      "base_sha256": "a572f46852c539885bc59f3e0ba4dda2bc1110a54d04edc3daa2229a6e8577f3",
+      "gameplay_predicates": 1,
+      "retired_mutations": 0
+    },
+    {
+      "path": "common/scripted_effects/01_scripted_effects_for_empire_of_china.txt",
+      "base": "EU4_1.37.5",
+      "base_sha256": "215899b22207237919443d8dd6242b705321481545a0f96ba5105e2e3cbc23ed",
+      "gameplay_predicates": 8,
+      "retired_mutations": 4
+    },
+    {
+      "path": "common/scripted_effects/01_scripted_effects_for_on_actions.txt",
+      "base": "EU4_1.37.5",
+      "base_sha256": "893b5bb4a7949ccc90e9c9f54a4ecd599dbd6489c866dd05970db1566b5cbc94",
+      "gameplay_predicates": 1,
+      "retired_mutations": 1
+    },
+    {
+      "path": "common/scripted_effects/03_scripted_effects_for_mission_rewards.txt",
+      "base": "EU4_1.37.5",
+      "base_sha256": "a8bf055a924dae7cf726ab6819d60f080611a9d912abb672c017f6dc16d5ab8b",
+      "gameplay_predicates": 1,
+      "retired_mutations": 1
+    },
+    {
+      "path": "common/state_edicts/zzz_chinese_industrialization.txt",
+      "base": "EU4_1.37.5",
+      "base_sha256": "c1c962604dda810e51f42317fcc029900b9cb2cbaf50ad07eb1745df5683b95b",
+      "gameplay_predicates": 1,
+      "retired_mutations": 0
+    },
+    {
+      "path": "common/static_modifiers/00_static_modifiers.txt",
+      "base": "EU4_1.37.5",
+      "base_sha256": "5829d3341fc7a5503dd60d6635bfd1b354ab9466cc05836720c05e38437cffb8",
+      "gameplay_predicates": 0,
+      "retired_mutations": 0
+    },
+    {
+      "path": "decisions/EmpireofChina.txt",
+      "base": "EU4_1.37.5",
+      "base_sha256": "327fbb67eddfba6e8b661b3c73bb98e3eff963c5461532d924c9d52a92f7817e",
+      "gameplay_predicates": 1,
+      "retired_mutations": 0
+    },
+    {
+      "path": "decisions/Estates.txt",
+      "base": "EU4_1.37.5",
+      "base_sha256": "cae19e2a862d55c8d865bb2834532a3a3686ebdab362cb018eaa4f34e7f519ca",
+      "gameplay_predicates": 1,
+      "retired_mutations": 0
+    },
+    {
+      "path": "decisions/KoreanDecisions.txt",
+      "base": "existing_mod_HEAD",
+      "base_sha256": "869b4fb87df5944e8af50c7d675a98c2bf5b9006fbf86bdb495d425a1b88801f",
+      "gameplay_predicates": 3,
+      "retired_mutations": 0
+    },
+    {
+      "path": "decisions/ManchuDecisions.txt",
+      "base": "existing_mod_HEAD",
+      "base_sha256": "64de2dfb7e71c7f528564c38187628d519305c612dd9fd202d65eeed14f978b1",
+      "gameplay_predicates": 2,
+      "retired_mutations": 0
+    },
+    {
+      "path": "decisions/MongolEmpire.txt",
+      "base": "EU4_1.37.5",
+      "base_sha256": "fe4dc46f7d30f18a5b1865d2c4a96dcfa9dee1861971ffc627edc6c3a88c2b20",
+      "gameplay_predicates": 1,
+      "retired_mutations": 0
+    },
+    {
+      "path": "decisions/Muslim.txt",
+      "base": "EU4_1.37.5",
+      "base_sha256": "6c68ec4f9ae1b23d60b862f6f25bb64cdf393439511df7cead29e1e38b5371db",
+      "gameplay_predicates": 1,
+      "retired_mutations": 0
+    },
+    {
+      "path": "decisions/Sinicize.txt",
+      "base": "existing_mod_HEAD",
+      "base_sha256": "c767457cf6800774d47c9d941d625274d6b0407acea47086f806a910ac2a8a17",
+      "gameplay_predicates": 1,
+      "retired_mutations": 0
+    },
+    {
+      "path": "decisions/TurkishNation.txt",
+      "base": "EU4_1.37.5",
+      "base_sha256": "f68acd44f07550f35b28b6c491201575b2522b5e47fadc0c17b25f8d44dd4af6",
+      "gameplay_predicates": 1,
+      "retired_mutations": 0
+    },
+    {
+      "path": "decisions/YuanNation.txt",
+      "base": "EU4_1.37.5",
+      "base_sha256": "945141af35b01ee680fc6b8563695722c5ae1528a76d2c66c96727f3e9af3b39",
+      "gameplay_predicates": 2,
+      "retired_mutations": 0
+    },
+    {
+      "path": "events/AlcheringaEvents.txt",
+      "base": "EU4_1.37.5",
+      "base_sha256": "718e2e1adabb3f9a53be99e40ff35d70b199215f0c1d26ca3c8700a62f36cce2",
+      "gameplay_predicates": 1,
+      "retired_mutations": 0
+    },
+    {
+      "path": "events/ChineseEmpire.txt",
+      "base": "existing_mod_HEAD",
+      "base_sha256": "5f104f0463478aeba012ceb54b76079b37f21579086a8d134b663b1b3263bf98",
+      "gameplay_predicates": 2,
+      "retired_mutations": 0
+    },
+    {
+      "path": "events/ChineseFactions.txt",
+      "base": "EU4_1.37.5",
+      "base_sha256": "3a459ba3824e57ff8465ce82496e4328ea6964ba7169c6e1721780583cb6c13d",
+      "gameplay_predicates": 45,
+      "retired_mutations": 0
+    },
+    {
+      "path": "events/ConsortEvents.txt",
+      "base": "EU4_1.37.5",
+      "base_sha256": "fd1b50ce86fb2d1156f2dcc9c365b15928c690d635379a44a1af74c7c1c4553b",
+      "gameplay_predicates": 0,
+      "retired_mutations": 1
+    },
+    {
+      "path": "events/CultureandReligionEvents.txt",
+      "base": "EU4_1.37.5",
+      "base_sha256": "4510c9de1b66c3a91883fb8b5216f5f3b0ce59e90e6e7889ed3a1741bcf4c9fd",
+      "gameplay_predicates": 1,
+      "retired_mutations": 0
+    },
+    {
+      "path": "events/ExplorationEvents.txt",
+      "base": "EU4_1.37.5",
+      "base_sha256": "0ea319a4766cdf8ca2d31843a26fbbd7e3f871fd5090f7fc7d0e36d7e4a95473",
+      "gameplay_predicates": 0,
+      "retired_mutations": 1
+    },
+    {
+      "path": "events/ManchuMissionEvents.txt",
+      "base": "existing_mod_HEAD",
+      "base_sha256": "77697b4be45edbf5c90647024121346d63e04b78572ce680323ece9e6b816271",
+      "gameplay_predicates": 2,
+      "retired_mutations": 3
+    },
+    {
+      "path": "events/Meritocracy.txt",
+      "base": "EU4_1.37.5",
+      "base_sha256": "16e916447b79674c273b6382778e8026c319b4bab043f0ce073e521b3c65f0b6",
+      "gameplay_predicates": 5,
+      "retired_mutations": 0
+    },
+    {
+      "path": "events/RandomEvents.txt",
+      "base": "existing_mod_HEAD",
+      "base_sha256": "cefdaa7e297ac36406527c9e2c073a010024d34b60e75afef68bd891a6b4043a",
+      "gameplay_predicates": 3,
+      "retired_mutations": 0
+    },
+    {
+      "path": "events/disaster_Revolution.txt",
+      "base": "EU4_1.37.5",
+      "base_sha256": "66de5992a16d70fb824d914afd8b1db6011e2738e1d776a8f234d44ec796f1dc",
+      "gameplay_predicates": 2,
+      "retired_mutations": 0
+    },
+    {
+      "path": "events/disaster_emperor_of_china_in_name.txt",
+      "base": "EU4_1.37.5",
+      "base_sha256": "dd4af7db5000c0ba5b0d115d37aaefd5f111397b647a9c53bec61b390f425e14",
+      "gameplay_predicates": 0,
+      "retired_mutations": 2
+    },
+    {
+      "path": "events/disaster_empire_of_china_nomadic_border.txt",
+      "base": "EU4_1.37.5",
+      "base_sha256": "99907b53966a7d33f9438e2f721177d268df57dd77a1ebbd9917429433cd16ab",
+      "gameplay_predicates": 10,
+      "retired_mutations": 2
+    },
+    {
+      "path": "events/disaster_estates.txt",
+      "base": "EU4_1.37.5",
+      "base_sha256": "7a73ea24c38219129b86026ea6d05ebda9a9402c3a9bd051ca5f8cabb807c95d",
+      "gameplay_predicates": 1,
+      "retired_mutations": 1
+    },
+    {
+      "path": "events/disaster_ming_crisis.txt",
+      "base": "EU4_1.37.5",
+      "base_sha256": "f7e62ae17dc865f76168b880367394659feaf49153420180f3b701465261faf8",
+      "gameplay_predicates": 4,
+      "retired_mutations": 15
+    },
+    {
+      "path": "events/flavorDAI.txt",
+      "base": "EU4_1.37.5",
+      "base_sha256": "e34268299ae34588305ceff7549e1881b362922c25898a0059c36d5be9358e26",
+      "gameplay_predicates": 3,
+      "retired_mutations": 3
+    },
+    {
+      "path": "events/flavorJAP.txt",
+      "base": "EU4_1.37.5",
+      "base_sha256": "00827d0354da599804dffb416fb8da529c0e8d2018c65c765c6ae2e4971f20ff",
+      "gameplay_predicates": 0,
+      "retired_mutations": 0
+    },
+    {
+      "path": "events/flavorMCH.txt",
+      "base": "EU4_1.37.5",
+      "base_sha256": "77248b66bba2d680b0498d770a752d1febd4bcc5774a1a9deb747604521ab8dd",
+      "gameplay_predicates": 1,
+      "retired_mutations": 2
+    },
+    {
+      "path": "events/flavorMNG.txt",
+      "base": "existing_mod_HEAD",
+      "base_sha256": "4cc0b047b913cf3d81089fb21a208a05c5ec80cdf8e7483a6ca56abd8545ed66",
+      "gameplay_predicates": 30,
+      "retired_mutations": 23
+    },
+    {
+      "path": "events/flavorOIR.txt",
+      "base": "EU4_1.37.5",
+      "base_sha256": "c32bdb20675b89666ec79003548bc2dd429242083073f461baf56d9ecfc24d3e",
+      "gameplay_predicates": 2,
+      "retired_mutations": 2
+    },
+    {
+      "path": "events/ideagroups.txt",
+      "base": "EU4_1.37.5",
+      "base_sha256": "ca1485edbe55d7065748af867914257bd97394439fb0b0690ba828f83ba2cf70",
+      "gameplay_predicates": 1,
+      "retired_mutations": 0
+    },
+    {
+      "path": "missions/AFR_Ajuuraan_Missions.txt",
+      "base": "EU4_1.37.5",
+      "base_sha256": "0b4b619be4f9b8afb4ee314d5442aee9a3b7925a1f424cc45667dd2ddb937d8d",
+      "gameplay_predicates": 1,
+      "retired_mutations": 0
+    },
+    {
+      "path": "missions/DH_Taungu_Missions.txt",
+      "base": "EU4_1.37.5",
+      "base_sha256": "e60ee8ad9781f28811207471b514cdb76269bef7b8eb2fd0af445c9285b03c62",
+      "gameplay_predicates": 4,
+      "retired_mutations": 0
+    },
+    {
+      "path": "missions/DOM_Chinese_Missions.txt",
+      "base": "existing_mod_HEAD",
+      "base_sha256": "9ab4dc915f4a386e0a5d8d13976f717d74a399a9a4084763a66b900813447632",
+      "gameplay_predicates": 50,
+      "retired_mutations": 21
+    },
+    {
+      "path": "missions/DOM_Japanese_Missions.txt",
+      "base": "existing_mod_HEAD",
+      "base_sha256": "52f8bc853c8f65538b9c09303a98fe8563a94ebd2adcd22fba2a64046287dc37",
+      "gameplay_predicates": 20,
+      "retired_mutations": 8
+    },
+    {
+      "path": "missions/Dreamtime_Missions.txt",
+      "base": "EU4_1.37.5",
+      "base_sha256": "aae2857123b22a1daaf2a60df11cce9e911d6041f97f02eaa1fc60e025c7c1a2",
+      "gameplay_predicates": 1,
+      "retired_mutations": 0
+    },
+    {
+      "path": "missions/EMP_Florentine_missions.txt",
+      "base": "EU4_1.37.5",
+      "base_sha256": "e85110a9de98478900e7b4966424e10ec54f05b3913ab8e3a5997e39d7a1a509",
+      "gameplay_predicates": 1,
+      "retired_mutations": 1
+    },
+    {
+      "path": "missions/EMP_Italian_Missions.txt",
+      "base": "EU4_1.37.5",
+      "base_sha256": "2184e4fa0aa0ad1756883a352489729624fcb5b312e584bf3a169a44f4dc087e",
+      "gameplay_predicates": 2,
+      "retired_mutations": 0
+    },
+    {
+      "path": "missions/EMP_Papal_missions.txt",
+      "base": "EU4_1.37.5",
+      "base_sha256": "135ee6ed16e20050d82fe30bc5d461615e290be5432f879a280e37d3cc9fa978",
+      "gameplay_predicates": 3,
+      "retired_mutations": 0
+    },
+    {
+      "path": "missions/Japanese_Missions.txt",
+      "base": "existing_mod_HEAD",
+      "base_sha256": "6f45644b6a8c38ab06100dcff304e706cccb8cf95ca13fb3b4c5c861f03b210a",
+      "gameplay_predicates": 5,
+      "retired_mutations": 0
+    },
+    {
+      "path": "missions/Korean_Missions.txt",
+      "base": "existing_mod_HEAD",
+      "base_sha256": "d71ef7afe959ad0d465f1da71abc9a27e999009078eb9a8da8c3584c8bb3c848",
+      "gameplay_predicates": 22,
+      "retired_mutations": 6
+    },
+    {
+      "path": "missions/Lan_Xang_Missions.txt",
+      "base": "EU4_1.37.5",
+      "base_sha256": "b30974da3f701f861bbc6e1c0377015a90583ad582098db6efedbfa6473d4fb1",
+      "gameplay_predicates": 1,
+      "retired_mutations": 0
+    },
+    {
+      "path": "missions/MND_Khmer_Missions.txt",
+      "base": "EU4_1.37.5",
+      "base_sha256": "62a895bea58196d7babdcdb1053346ae6f55745f4314660ac4655ba304b39d75",
+      "gameplay_predicates": 2,
+      "retired_mutations": 1
+    },
+    {
+      "path": "missions/MND_Majapahit_Missions.txt",
+      "base": "EU4_1.37.5",
+      "base_sha256": "4728fd4b48479848b20e40430b214f9c81fd007d67cb4ad5e610a3f8a2b46de0",
+      "gameplay_predicates": 9,
+      "retired_mutations": 0
+    },
+    {
+      "path": "missions/MND_Siamese_Missions.txt",
+      "base": "EU4_1.37.5",
+      "base_sha256": "a70a7174dafd6a3a0939d7401665e5c3b1b3f9ffd4867f84c162fcd699ffde08",
+      "gameplay_predicates": 6,
+      "retired_mutations": 0
+    },
+    {
+      "path": "missions/MND_Vietnamese_Missions.txt",
+      "base": "EU4_1.37.5",
+      "base_sha256": "81c12cab625fd3f47b5fc894d2a85203e4b8e1b21165ca5c190227db395597c4",
+      "gameplay_predicates": 5,
+      "retired_mutations": 1
+    },
+    {
+      "path": "missions/Malacca_Missions.txt",
+      "base": "EU4_1.37.5",
+      "base_sha256": "8c85c144a3a47e2f082ddf9af89b54e63bf5e36fba04d8b5ff040a12e539e10c",
+      "gameplay_predicates": 2,
+      "retired_mutations": 0
+    },
+    {
+      "path": "missions/Manchu_Missions.txt",
+      "base": "existing_mod_HEAD",
+      "base_sha256": "ae2206525cd9ffc0b9afdb58173d594a5af1650b6550db3838e894e9f1417ad0",
+      "gameplay_predicates": 7,
+      "retired_mutations": 2
+    },
+    {
+      "path": "missions/Mongol_Missions.txt",
+      "base": "EU4_1.37.5",
+      "base_sha256": "fb4a66788b51c7959c6183633aa2bd5e41473cc9d70eddb1982c0a94a10b4e2d",
+      "gameplay_predicates": 2,
+      "retired_mutations": 2
+    },
+    {
+      "path": "missions/Tibetan_Missions.txt",
+      "base": "EU4_1.37.5",
+      "base_sha256": "f79d5c8a50977f7ab407f057a330bc62bd8b525114307be0c8601fe0dc460c09",
+      "gameplay_predicates": 3,
+      "retired_mutations": 1
+    },
+    {
+      "path": "missions/WoC_Mongolian_Missions.txt",
+      "base": "EU4_1.37.5",
+      "base_sha256": "ebe314fe1f5b643796725644794af969336f8ae752b759a81df4a28b66906b41",
+      "gameplay_predicates": 1,
+      "retired_mutations": 1
+    },
+    {
+      "path": "missions/gdd_economic_military_missions.txt",
+      "base": "existing_mod_HEAD",
+      "base_sha256": "689a31094f34ed6074d69e6789ff2977dec0dbf0a2ca27c49e465e261cc7c549",
+      "gameplay_predicates": 2,
+      "retired_mutations": 1
+    },
+    {
+      "path": "missions/zz_WoC_Yuan_Flavor_Missions.txt",
+      "base": "EU4_1.37.5",
+      "base_sha256": "1a89d78cb4ba6e205cef8c03a7dbd203d0104e572e8638a5e3a2efff2c596779",
+      "gameplay_predicates": 1,
+      "retired_mutations": 0
+    },
+    {
+      "path": "missions/zzz_WoC_Shared_Horde_Missions.txt",
+      "base": "existing_mod_HEAD",
+      "base_sha256": "2fd9af43f76c2be2acd7ac33993d8309318c2dd79c7a9e793c9b0d28d1c392d3",
+      "gameplay_predicates": 1,
+      "retired_mutations": 1
+    },
+    {
+      "path": "missions/zzzz_WoC_EoC_Yuan_Missions.txt",
+      "base": "existing_mod_HEAD",
+      "base_sha256": "6b4671d90684d7a332c6814487a0eedb551fa1117e0eaf1ba05d48ab5874f11a",
+      "gameplay_predicates": 12,
+      "retired_mutations": 0
+    }
+  ]
+}

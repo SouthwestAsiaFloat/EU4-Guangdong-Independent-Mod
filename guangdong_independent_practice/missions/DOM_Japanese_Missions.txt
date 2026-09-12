@@ -274,8 +274,8 @@ DOM_japanse_missions_1 = {
 			}
 			
 			if = {
-				limit = { is_emperor_of_china = yes } 
-				add_mandate = 20 
+				limit = { gdd_gameplay_emperor_of_china = yes }
+				gdd_retired_mandate_change = yes
 			}
 			
 			custom_tooltip = jap_malacca_claims_tt
@@ -328,7 +328,7 @@ japanese_missions_eoc_1 = {
 	ai = yes
 	potential = {
 		has_dlc = "Domination"
-		is_emperor_of_china = yes 
+		gdd_gameplay_emperor_of_china = yes
 		tag = JAP 
 	}
 	has_country_shield = yes 
@@ -377,7 +377,7 @@ japanese_missions_eoc_1 = {
 				if = {
 					limit = { 
 						has_dlc = "Mandate of Heaven" 
-						is_emperor_of_china = yes 
+						gdd_gameplay_emperor_of_china = yes
 					} 
 					custom_tooltip = mng_palace_bureaucracy_benefits_tt
 				}
@@ -398,7 +398,7 @@ japanese_missions_eoc_1 = {
 						has_mil_advisor = yes 
 						crown_land_share = 40
 						has_dlc = "Mandate of Heaven" 
-						is_emperor_of_china = yes 
+						gdd_gameplay_emperor_of_china = yes
 					}
 					clr_country_flag = mng_kept_restrictions_flag 
 					set_country_flag = mng_expanded_palace_bureaucracy_flag 
@@ -458,12 +458,12 @@ japanese_missions_eoc_1 = {
 		
 		trigger = { 
 			if = { 
-				limit = { is_emperor_of_china = yes } 
+				limit = { gdd_gameplay_emperor_of_china = yes }
 				meritocracy = 90 
 			}
 			else = { legitimacy_equivalent = 90 } 
 			if = {
-				limit = { is_emperor_of_china = yes } 
+				limit = { gdd_gameplay_emperor_of_china = yes }
 				OR = {
 					empire_of_china_has_active_decree = issue_the_great_warnings_decree
 					AND = {
@@ -838,7 +838,7 @@ DOM_japanse_missions_2_b = {
 			
 			if = {
 				limit = { 
-					is_emperor_of_china = yes 
+					gdd_gameplay_emperor_of_china = yes
 					has_dlc = "Mandate of Heaven" 
 				}
 				custom_tooltip = jap_enable_fabricating_trib_CB_tt
@@ -851,7 +851,7 @@ DOM_japanse_missions_2_b = {
 			}
 			else_if = {
 				limit = { 
-					is_emperor_of_china = no 
+					gdd_gameplay_emperor_of_china = no
 					has_dlc = "Mandate of Heaven" 
 				}
 				custom_tooltip = jap_reward_if_EoC_tt
@@ -873,7 +873,7 @@ japanese_missions_eoc_2 = {
 	ai = yes
 	potential = {
 		has_dlc = "Domination"
-		is_emperor_of_china = yes 
+		gdd_gameplay_emperor_of_china = yes
 		tag = JAP 
 		capital_scope = { continent = asia }
 	}
@@ -887,7 +887,7 @@ japanese_missions_eoc_2 = {
 		trigger = {
 			if = {
 				limit = {
-					is_emperor_of_china = yes 
+					gdd_gameplay_emperor_of_china = yes
 					has_dlc = "Mandate of Heaven" 
 				}
 				OR = { 
@@ -1140,7 +1140,7 @@ japanese_missions_eoc_2 = {
 			if = { 
 				limit = {
 					has_dlc = "Mandate of Heaven" 
-					is_emperor_of_china = yes 
+					gdd_gameplay_emperor_of_china = yes
 				}
 				custom_tooltip = mng_5_mandate_per_ally_tt
 			}
@@ -1217,7 +1217,7 @@ japanese_missions_eoc_2 = {
 									}
 								}
 							}
-							ROOT = { add_mandate = 5 } 
+							ROOT = { gdd_retired_mandate_change = yes }
 						}
 					}
 					else = { 
@@ -1453,7 +1453,7 @@ DOM_japanse_missions_3_a = {
 				value = 25 
 			}
 			if = {
-				limit = { is_emperor_of_china = yes } 
+				limit = { gdd_gameplay_emperor_of_china = yes }
 				1816 = { owned_by = ROOT } 
 			}
 		}
@@ -1481,8 +1481,8 @@ DOM_japanse_missions_3_a = {
 			}
 			
 			if = {
-				limit = { is_emperor_of_china = yes } 
-				add_mandate = 25 
+				limit = { gdd_gameplay_emperor_of_china = yes }
+				gdd_retired_mandate_change = yes
 			}
 			else = { 
 				north_china_region = { limit = { country_or_non_sovereign_subject_holds = ROOT } add_local_autonomy = -10 } 
@@ -1825,7 +1825,7 @@ japanese_missions_eoc_3 = {
 	ai = yes
 	potential = {
 		has_dlc = "Domination"
-		is_emperor_of_china = yes 
+		gdd_gameplay_emperor_of_china = yes
 		tag = JAP 
 	}
 	has_country_shield = yes 
@@ -2015,7 +2015,7 @@ japanese_missions_eoc_3 = {
 			if = {
 				limit = { 
 					has_dlc = "Mandate of Heaven" 
-					is_emperor_of_china = yes 
+					gdd_gameplay_emperor_of_china = yes
 				}
 				empire_of_china_num_reforms_passed = 10
 				imperial_mandate = 95 
@@ -2434,7 +2434,7 @@ japanese_missions_eoc_4 = {
 	ai = yes
 	potential = {
 		has_dlc = "Domination"
-		is_emperor_of_china = yes 
+		gdd_gameplay_emperor_of_china = yes
 		tag = JAP 
 	}
 	has_country_shield = yes 	
@@ -2653,7 +2653,7 @@ japanese_missions_eoc_4 = {
 			if = { 
 				limit = { 
 					has_dlc = "Mandate of Heaven" 
-					is_emperor_of_china = yes 
+					gdd_gameplay_emperor_of_china = yes
 				}
 				imperial_mandate = 80 
 			}
@@ -3340,7 +3340,7 @@ japanese_missions_eoc_5 = {
 	ai = yes
 	potential = {
 		has_dlc = "Domination"
-		is_emperor_of_china = yes 
+		gdd_gameplay_emperor_of_china = yes
 		tag = JAP
 		capital_scope = { continent = asia }
 	}
@@ -3500,11 +3500,11 @@ japanese_missions_eoc_5 = {
 				if = {
 					limit = { has_dlc = "Mandate of Heaven" }
 					add_prosperity = 100 
-					add_mandate = 5 
+					gdd_retired_mandate_change = yes
 				}
 				if = {
 					limit = { has_dlc = "Mandate of Heaven" }
-					add_mandate = 5 
+					gdd_retired_mandate_change = yes
 				}
 				else = { 
 					add_base_production = 1 
@@ -3524,10 +3524,10 @@ japanese_missions_eoc_5 = {
 				}
 				if = { 
 					limit = { 
-						is_emperor_of_china = yes
+						gdd_gameplay_emperor_of_china = yes
 						has_dlc = "Mandate of Heaven" 
 					}
-					add_mandate = 10 
+					gdd_retired_mandate_change = yes
 				}
 				else = { add_prestige_or_monarch_power = { amount = 35 } }
 				change_government_reform_progress = 100 
@@ -3542,10 +3542,10 @@ japanese_missions_eoc_5 = {
 					}
 					if = { 
 						limit = { 
-							is_emperor_of_china = yes
+							gdd_gameplay_emperor_of_china = yes
 							has_dlc = "Mandate of Heaven" 
 						}
-						add_mandate = 10 
+						gdd_retired_mandate_change = yes
 					}
 					else = { 
 						add_prestige_or_monarch_power = { amount = 35 }
@@ -3574,7 +3574,7 @@ japanese_missions_eoc_5 = {
 					set_country_flag = mng_dev_per_adm_advisor_level_flag
 					if = {
 						limit = { has_dlc = "Mandate of Heaven" }
-						add_mandate = 5 
+						gdd_retired_mandate_change = yes
 					}
 					else = {
 						add_prestige_or_monarch_power = { amount = 35 }

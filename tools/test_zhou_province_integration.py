@@ -123,7 +123,8 @@ class Integration(unittest.TestCase):
         self.assertNotIn('gdd_apply_tianxia_defense_refusal_mandate_loss_effect',fx)
         proxy=parse((MOD/'common/scripted_effects/gdd_celestial_proxy_effects.txt').read_text())
         enact=str(proxy['gdd_enact_proxy_celestial_reform_effect'])
-        self.assertIn("('add_mandate', '-100')",enact)
+        self.assertIn("('gdd_pay_reform_authority_cost', 'yes')",enact)
+        self.assertNotIn('add_mandate',enact)
         self.assertNotIn('add_stability',enact)
 
 if __name__=='__main__':unittest.main(verbosity=2)

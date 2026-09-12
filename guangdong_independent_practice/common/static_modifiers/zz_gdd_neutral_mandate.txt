@@ -66,3 +66,6 @@ bankruptcy = {
     monthly_russian_modernization = -1
     monthly_authority_power = 0.25
 }
+
+# Native transfer cannot impose an empire-loss punishment.
+lost_mandate_of_heaven = { }

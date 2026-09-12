@@ -12,7 +12,7 @@ country_event = {
 	major = yes
 	
 	trigger = {
-		FROM = { is_emperor_of_china = yes }
+		FROM = { gdd_gameplay_emperor_of_china = yes }
 	}
 	
 	option = {
@@ -50,7 +50,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		is_emperor_of_china = yes
+		gdd_gameplay_emperor_of_china = yes
 		has_dlc = "Mandate of Heaven"
 		NOT = { tag = MNG }
 		NOT = { culture_group = east_asian } #No Chinese Primary Culture

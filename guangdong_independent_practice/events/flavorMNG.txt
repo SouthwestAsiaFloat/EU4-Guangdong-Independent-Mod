@@ -124,9 +124,9 @@ country_event = {
     name = "flavor_mng.EVTOPTB2" 	# Let it continue to crumble
     if = {
       limit = {
-        is_emperor_of_china = yes
+        gdd_gameplay_emperor_of_china = yes
       }
-      add_mandate = -5
+      gdd_retired_mandate_change = yes
     }
     else = {
       add_prestige = -10
@@ -208,9 +208,9 @@ country_event = {
     name = "flavor_mng.EVTOPTB2" 	# Let it continue to crumble
     if = {
       limit = {
-        is_emperor_of_china = yes
+        gdd_gameplay_emperor_of_china = yes
       }
-      add_mandate = -5
+      gdd_retired_mandate_change = yes
     }
     else = {
       add_prestige = -10
@@ -494,9 +494,9 @@ country_event = {
     }
     if = {
       limit = {
-        is_emperor_of_china = yes
+        gdd_gameplay_emperor_of_china = yes
       }
-      add_mandate = -10
+      gdd_retired_mandate_change = yes
     }
     else = {
       add_prestige = -20
@@ -514,9 +514,9 @@ country_event = {
     }
     if = {
       limit = {
-        is_emperor_of_china = yes
+        gdd_gameplay_emperor_of_china = yes
       }
-      add_mandate = -5
+      gdd_retired_mandate_change = yes
     }
     else = {
       add_prestige = -10
@@ -600,9 +600,9 @@ country_event = {
     name = "flavor_mng.EVTOPTA9" 	# We are too weak to crush the rebels
     if = {
       limit = {
-        is_emperor_of_china = yes
+        gdd_gameplay_emperor_of_china = yes
       }
-      add_mandate = -10
+      gdd_retired_mandate_change = yes
     }
     every_owned_province = {
       limit = {
@@ -621,9 +621,9 @@ country_event = {
     name = "flavor_mng.EVTOPTB9" 	# Attempt to crush the rebels
     if = {
       limit = {
-        is_emperor_of_china = yes
+        gdd_gameplay_emperor_of_china = yes
       }
-      add_mandate = 5
+      gdd_retired_mandate_change = yes
     }
     add_mil_power = -100
     every_owned_province = {
@@ -736,9 +736,9 @@ country_event = {
     name = "flavor_mng.EVTOPTA10" 	#  Bah, surely these cultists can do no lasting harm!
     if = {
       limit = {
-        is_emperor_of_china = yes
+        gdd_gameplay_emperor_of_china = yes
       }
-      add_mandate = -10
+      gdd_retired_mandate_change = yes
     }
     random_owned_province = {
       limit = {
@@ -795,9 +795,9 @@ country_event = {
     name = "flavor_mng.EVTOPTB10" 	# Let the forces of the Empire crush the Rebellion!
     if = {
       limit = {
-        is_emperor_of_china = yes
+        gdd_gameplay_emperor_of_china = yes
       }
-      add_mandate = 5
+      gdd_retired_mandate_change = yes
     }
     add_years_of_income = -3
     random_owned_province = {
@@ -872,9 +872,9 @@ country_event = {
     add_inflation = 5
     if = {
       limit = {
-        is_emperor_of_china = yes
+        gdd_gameplay_emperor_of_china = yes
       }
-      add_mandate = -10
+      gdd_retired_mandate_change = yes
     }
   }
   option = {
@@ -1102,9 +1102,9 @@ country_event = {
     name = "flavor_mng.EVTOPTA16" 	# It's likely just harmless talk
     if = {
       limit = {
-        is_emperor_of_china = yes
+        gdd_gameplay_emperor_of_china = yes
       }
-      add_mandate = -10
+      gdd_retired_mandate_change = yes
     }
     random_owned_province = {
       limit = {
@@ -1146,9 +1146,9 @@ country_event = {
     name = "flavor_mng.EVTOPTB16" 	# Crush these plotters!
     if = {
       limit = {
-        is_emperor_of_china = yes
+        gdd_gameplay_emperor_of_china = yes
       }
-      add_mandate = 5
+      gdd_retired_mandate_change = yes
     }
     add_years_of_income = -3
     random_owned_province = {
@@ -1648,7 +1648,7 @@ country_event = {
       limit = {
         has_dlc = "Mandate of Heaven"
       }
-      add_mandate = 5
+      gdd_retired_mandate_change = yes
     }
     else = {
       add_adm_power = 50
@@ -1746,10 +1746,10 @@ country_event = {
     }
     else_if = {
       limit = {
-        is_emperor_of_china = yes
+        gdd_gameplay_emperor_of_china = yes
         has_dlc = "Mandate of Heaven"
       }
-      add_mandate = 5
+      gdd_retired_mandate_change = yes
     }
     else = {
       add_prestige_or_monarch_power = {
@@ -1770,7 +1770,7 @@ country_event = {
   is_triggered_only = yes
   option = {
     name = flavor_mng.29.a
-    add_mandate = 10
+    gdd_retired_mandate_change = yes
     add_government_reform = mng_seal_of_the_emperor_reform
   }
 }
@@ -2079,9 +2079,9 @@ country_event = { 	# Yellow River Dykes
     if = {
       limit = {
         has_dlc = "Mandate of Heaven"
-        is_emperor_of_china = yes
+        gdd_gameplay_emperor_of_china = yes
       }
-      add_mandate = 5
+      gdd_retired_mandate_change = yes
     }
     else = {
       add_adm_power = 100
@@ -2312,10 +2312,10 @@ country_event = { 	# Envoy to the Court of the Hermit Kingdom #Hermit Purple!
     }
     if = {
       limit = {
-        is_emperor_of_china = yes
+        gdd_gameplay_emperor_of_china = yes
         has_dlc = "Mandate of Heaven"
       }
-      add_mandate = 5
+      gdd_retired_mandate_change = yes
     }
     else = {
       add_prestige = 10
@@ -2504,7 +2504,7 @@ country_event = { 	# The Decadent State of the Ming Dynasty
   trigger = {
     has_dlc = "Domination"
     tag = MNG
-    is_emperor_of_china = yes
+    gdd_gameplay_emperor_of_china = yes
     NOT = {
       has_country_flag = mng_received_starting_event
     }
@@ -2535,7 +2535,7 @@ country_event = { 	# Governmental Purges in the Empire of China
   fire_only_once = yes
   trigger = {
     has_dlc = "Domination"
-    is_emperor_of_china = yes
+    gdd_gameplay_emperor_of_china = yes
     has_estate = estate_eunuchs
     corruption = 2
     OR = {
@@ -2593,7 +2593,7 @@ country_event = { 	# Grand Pronouncements of the [Root.Monarch.GetName]
   fire_only_once = yes
   trigger = {
     has_dlc = "Domination"
-    is_emperor_of_china = yes
+    gdd_gameplay_emperor_of_china = yes
     has_estate = estate_eunuchs
     corruption = 5
     has_regency = no
@@ -2726,7 +2726,7 @@ country_event = { 	# Expand the Jinyiwei
   fire_only_once = yes
   trigger = {
     has_dlc = "Domination"
-    is_emperor_of_china = yes
+    gdd_gameplay_emperor_of_china = yes
     OR = {
       any_subject_country = {
         liberty_desire = 50
@@ -2811,9 +2811,9 @@ country_event = { 	# The [GetYear] Yellow River Flood
     name = flavor_mng.46.a
     if = {
       limit = {
-        is_emperor_of_china = yes
+        gdd_gameplay_emperor_of_china = yes
       }
-      add_mandate = -10
+      gdd_retired_mandate_change = yes
       add_stability = -2
     }
     if = {
@@ -3034,9 +3034,9 @@ country_event = { 	# The [GetYear] Yellow River Flood - Neighbor Event
     name = flavor_mng.46.a
     if = {
       limit = {
-        is_emperor_of_china = yes
+        gdd_gameplay_emperor_of_china = yes
       }
-      add_mandate = -10
+      gdd_retired_mandate_change = yes
       add_stability = -2
     }
     custom_tooltip = every_province_yellow_river_suffers_tt
@@ -3223,9 +3223,9 @@ country_event = { 	# The [GetYear] Yangtze River Flood
     name = flavor_mng.48.a
     if = {
       limit = {
-        is_emperor_of_china = yes
+        gdd_gameplay_emperor_of_china = yes
       }
-      add_mandate = -10
+      gdd_retired_mandate_change = yes
       add_stability = -2
     }
     if = {
@@ -3446,9 +3446,9 @@ country_event = { 	# The [GetYear] Yangtze River Flood - Neighbor Event
     name = flavor_mng.48.a
     if = {
       limit = {
-        is_emperor_of_china = yes
+        gdd_gameplay_emperor_of_china = yes
       }
-      add_mandate = -10
+      gdd_retired_mandate_change = yes
       add_stability = -2
     }
     custom_tooltip = every_province_yangtze_river_suffers_tt
@@ -3629,7 +3629,7 @@ country_event = { 	# The Gang of Eight
   picture = ASSASSINATION_eventPicture
   fire_only_once = yes
   trigger = {
-    is_emperor_of_china = yes
+    gdd_gameplay_emperor_of_china = yes
     estate_influence = {
       estate = estate_eunuchs
       influence = 90
@@ -3677,7 +3677,7 @@ country_event = {
     NOT = {
       is_year = 1650
     }
-    is_emperor_of_china = yes
+    gdd_gameplay_emperor_of_china = yes
     total_development = 500
     OR = {
       innovativeness = 35
@@ -3746,7 +3746,7 @@ country_event = { 	# The Mosque of [1816.GetName]
     religion_group = muslim
   }
   trigger = {
-    is_emperor_of_china = yes
+    gdd_gameplay_emperor_of_china = yes
     owns = 1816
     OR = {
       any_ally = {
@@ -3796,7 +3796,7 @@ country_event = { 	# The Poet Yang Shen
     NOT = {
       is_year = 1559
     } 	# because most historical events happen much quicker in EU4 in comparison to real life
-    is_emperor_of_china = yes
+    gdd_gameplay_emperor_of_china = yes
     is_in_deficit = no
     OR = {
       in_golden_age = yes
@@ -3819,7 +3819,7 @@ country_event = { 	# The Poet Yang Shen
       limit = {
         has_dlc = "Mandate of Heaven"
       }
-      add_mandate = 5
+      gdd_retired_mandate_change = yes
     }
     else = {
       add_prestige_or_monarch_power = {
@@ -3863,9 +3863,9 @@ country_event = { 	# The Earthquake of [GetYear]
     if = {
       limit = {
         has_dlc = "Mandate of Heaven"
-        is_emperor_of_china = yes
+        gdd_gameplay_emperor_of_china = yes
       }
-      add_mandate = -20
+      gdd_retired_mandate_change = yes
     }
     else = {
       add_stability = -1
@@ -3893,7 +3893,7 @@ country_event = { 	# The Hijin Policy of the Empire of China
   desc = flavor_mng.55.d
   picture = HARBOUR_eventPicture
   trigger = {
-    is_emperor_of_china = yes
+    gdd_gameplay_emperor_of_china = yes
     has_dlc = "Domination"
     tag = MNG
     not = {
@@ -3970,7 +3970,7 @@ country_event = { 	# Trade Stance between Japan and China
       is_year = 1480
     }
     MNG = {
-      is_emperor_of_china = yes
+      gdd_gameplay_emperor_of_china = yes
     }
   }
   mean_time_to_happen = {
@@ -3980,7 +3980,7 @@ country_event = { 	# Trade Stance between Japan and China
     name = flavor_mng.56.a
     MNG = {
       set_country_flag = mng_has_had_ashikaga_petitions_for_open_trade_event_flag
-      add_mandate = 5
+      gdd_retired_mandate_change = yes
       1376 = {
         add_trade_modifier = {
           who = MNG
@@ -4012,7 +4012,7 @@ country_event = { 	# The Eunuchs of the [Root.GetName] Empire
   desc = flavor_mng.57.d
   picture = EUNUCH_ESTATE_upset_eventPicture
   trigger = {
-    is_emperor_of_china = yes
+    gdd_gameplay_emperor_of_china = yes
     normal_or_historical_nations = yes
     has_estate = estate_eunuchs
     NOT = {

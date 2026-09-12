@@ -75,7 +75,7 @@ manchu_missions_1 = {
 					owner = {
 						war_with = ROOT
 						OR = {
-							is_emperor_of_china = no
+							gdd_gameplay_emperor_of_china = no
 							NOT = { imperial_mandate = 50 }
 						}
 					}
@@ -92,7 +92,7 @@ manchu_missions_1 = {
 								tag = CSH
 								AND = {
 									NOT = { imperial_mandate = 50 }
-									is_emperor_of_china = yes
+									gdd_gameplay_emperor_of_china = yes
 								}
 							}
 						}
@@ -148,7 +148,7 @@ manchu_missions_1 = {
 		position = 6
 		provinces_to_highlight = {
 			owner = {
-				is_emperor_of_china = yes
+				gdd_gameplay_emperor_of_china = yes
 			}
 		}
 		completed_by = 1644.4.22
@@ -158,9 +158,9 @@ manchu_missions_1 = {
 					has_dlc = "Mandate of Heaven"
 				}
 				OR = {
-					is_emperor_of_china = yes
+					gdd_gameplay_emperor_of_china = yes
 					NOT = {
-						any_country = { is_emperor_of_china = yes }
+						any_country = { gdd_gameplay_emperor_of_china = yes }
 					}
 				}
 			}
@@ -324,9 +324,9 @@ manchu_missions_1_b = {
 			if = {
 				limit = {
 					has_dlc = "Mandate of Heaven"
-					is_emperor_of_china = yes
+					gdd_gameplay_emperor_of_china = yes
 				}
-				add_mandate = 20
+				gdd_retired_mandate_change = yes
 			}
 			else = {
 				add_legitimacy = 25
@@ -829,7 +829,7 @@ manchu_missions_2_b = {
 				limit = {
 					has_dlc = "Mandate of Heaven"
 				}
-				add_mandate = 20
+				gdd_retired_mandate_change = yes
 			}
 			else = {
 				add_legitimacy = 20
@@ -1164,7 +1164,7 @@ manchu_missions_3_b = {
 			if = {
 				limit = {
 					has_dlc = "Mandate of Heaven"
-					is_emperor_of_china = yes
+					gdd_gameplay_emperor_of_china = yes
 				}
 				add_country_modifier = {
 					name = "confucian_administration"

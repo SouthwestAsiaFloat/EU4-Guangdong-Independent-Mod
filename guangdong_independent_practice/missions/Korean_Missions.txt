@@ -554,10 +554,10 @@ korea_conquer_china_group = {
 				}
 				AND = {
 					NOT = {
-						root = { is_emperor_of_china = yes }
+						root = { gdd_gameplay_emperor_of_china = yes }
 					}
 					owner = {
-						is_emperor_of_china = yes
+						gdd_gameplay_emperor_of_china = yes
 					}
 					is_capital = yes
 				}
@@ -570,12 +570,12 @@ korea_conquer_china_group = {
 					has_dlc = "Mandate of Heaven"
 				}
 				OR = {
-					is_emperor_of_china = yes
+					gdd_gameplay_emperor_of_china = yes
 					custom_trigger_tooltip = {
 						tooltip = no_country_is_EoC
 						NOT = {
 							any_country = {
-								is_emperor_of_china = yes
+								gdd_gameplay_emperor_of_china = yes
 							}
 						}
 					}
@@ -626,7 +626,7 @@ kor_diplo_missions = {
 				}
 				OR = {
 					any_country = {
-						is_emperor_of_china = yes
+						gdd_gameplay_emperor_of_china = yes
 						OR = {
 							has_opinion = {
 								who = root
@@ -656,12 +656,12 @@ kor_diplo_missions = {
 							}
 						}
 					}
-					is_emperor_of_china = yes
+					gdd_gameplay_emperor_of_china = yes
 					custom_trigger_tooltip = {
 						tooltip = no_country_is_EoC
 						NOT = {
 							any_country = {
-								is_emperor_of_china = yes
+								gdd_gameplay_emperor_of_china = yes
 							}
 						}
 					}
@@ -1658,7 +1658,7 @@ korean_missions_eoc_1 = {
 	ai = yes
 	potential = {
 		has_dlc = "Domination"
-		is_emperor_of_china = yes 
+		gdd_gameplay_emperor_of_china = yes
 		tag = KOR 
 	}
 	has_country_shield = yes 
@@ -1707,7 +1707,7 @@ korean_missions_eoc_1 = {
 				if = {
 					limit = { 
 						has_dlc = "Mandate of Heaven" 
-						is_emperor_of_china = yes 
+						gdd_gameplay_emperor_of_china = yes
 					} 
 					custom_tooltip = mng_palace_bureaucracy_benefits_tt
 				}
@@ -1728,7 +1728,7 @@ korean_missions_eoc_1 = {
 						has_mil_advisor = yes 
 						crown_land_share = 40
 						has_dlc = "Mandate of Heaven" 
-						is_emperor_of_china = yes 
+						gdd_gameplay_emperor_of_china = yes
 					}
 					clr_country_flag = mng_kept_restrictions_flag 
 					set_country_flag = mng_expanded_palace_bureaucracy_flag 
@@ -1788,12 +1788,12 @@ korean_missions_eoc_1 = {
 		
 		trigger = { 
 			if = { 
-				limit = { is_emperor_of_china = yes } 
+				limit = { gdd_gameplay_emperor_of_china = yes }
 				meritocracy = 90 
 			}
 			else = { legitimacy_equivalent = 90 } 
 			if = {
-				limit = { is_emperor_of_china = yes } 
+				limit = { gdd_gameplay_emperor_of_china = yes }
 				OR = {
 					empire_of_china_has_active_decree = issue_the_great_warnings_decree
 					AND = {
@@ -1824,7 +1824,7 @@ korean_missions_eoc_2 = {
 	ai = yes
 	potential = {
 		has_dlc = "Domination"
-		is_emperor_of_china = yes 
+		gdd_gameplay_emperor_of_china = yes
 		tag = KOR 
 		capital_scope = { continent = asia }
 	}
@@ -1838,7 +1838,7 @@ korean_missions_eoc_2 = {
 		trigger = {
 			if = {
 				limit = {
-					is_emperor_of_china = yes 
+					gdd_gameplay_emperor_of_china = yes
 					has_dlc = "Mandate of Heaven" 
 				}
 				OR = { 
@@ -2091,7 +2091,7 @@ korean_missions_eoc_2 = {
 			if = { 
 				limit = {
 					has_dlc = "Mandate of Heaven" 
-					is_emperor_of_china = yes 
+					gdd_gameplay_emperor_of_china = yes
 				}
 				custom_tooltip = mng_5_mandate_per_ally_tt
 			}
@@ -2168,7 +2168,7 @@ korean_missions_eoc_2 = {
 									}
 								}
 							}
-							ROOT = { add_mandate = 5 } 
+							ROOT = { gdd_retired_mandate_change = yes }
 						}
 					}
 					else = { 
@@ -2205,7 +2205,7 @@ korean_missions_eoc_3 = {
 	ai = yes
 	potential = {
 		has_dlc = "Domination"
-		is_emperor_of_china = yes 
+		gdd_gameplay_emperor_of_china = yes
 		tag = KOR 
 	}
 	has_country_shield = yes 
@@ -2395,7 +2395,7 @@ korean_missions_eoc_3 = {
 			if = {
 				limit = { 
 					has_dlc = "Mandate of Heaven" 
-					is_emperor_of_china = yes 
+					gdd_gameplay_emperor_of_china = yes
 				}
 				empire_of_china_num_reforms_passed = 10
 				imperial_mandate = 95 
@@ -2506,7 +2506,7 @@ korean_missions_eoc_4 = {
 	ai = yes
 	potential = {
 		has_dlc = "Domination"
-		is_emperor_of_china = yes 
+		gdd_gameplay_emperor_of_china = yes
 		tag = KOR 
 	}
 	has_country_shield = yes 	
@@ -2725,7 +2725,7 @@ korean_missions_eoc_4 = {
 			if = { 
 				limit = { 
 					has_dlc = "Mandate of Heaven" 
-					is_emperor_of_china = yes 
+					gdd_gameplay_emperor_of_china = yes
 				}
 				imperial_mandate = 80 
 			}
@@ -2809,7 +2809,7 @@ korean_missions_eoc_5 = {
 	ai = yes
 	potential = {
 		has_dlc = "Domination"
-		is_emperor_of_china = yes 
+		gdd_gameplay_emperor_of_china = yes
 		tag = KOR
 		capital_scope = { continent = asia }
 	}
@@ -2966,11 +2966,11 @@ korean_missions_eoc_5 = {
 				if = {
 					limit = { has_dlc = "Mandate of Heaven" }
 					add_prosperity = 100 
-					add_mandate = 5 
+					gdd_retired_mandate_change = yes
 				}
 				if = {
 					limit = { has_dlc = "Mandate of Heaven" }
-					add_mandate = 5 
+					gdd_retired_mandate_change = yes
 				}
 				else = { 
 					add_base_production = 1 
@@ -2990,10 +2990,10 @@ korean_missions_eoc_5 = {
 				}
 				if = { 
 					limit = { 
-						is_emperor_of_china = yes
+						gdd_gameplay_emperor_of_china = yes
 						has_dlc = "Mandate of Heaven" 
 					}
-					add_mandate = 10 
+					gdd_retired_mandate_change = yes
 				}
 				else = { add_prestige_or_monarch_power = { amount = 35 } }
 				change_government_reform_progress = 100 
@@ -3008,10 +3008,10 @@ korean_missions_eoc_5 = {
 					}
 					if = { 
 						limit = { 
-							is_emperor_of_china = yes
+							gdd_gameplay_emperor_of_china = yes
 							has_dlc = "Mandate of Heaven" 
 						}
-						add_mandate = 10 
+						gdd_retired_mandate_change = yes
 					}
 					else = { 
 						add_prestige_or_monarch_power = { amount = 35 }
@@ -3040,7 +3040,7 @@ korean_missions_eoc_5 = {
 					set_country_flag = mng_dev_per_adm_advisor_level_flag
 					if = {
 						limit = { has_dlc = "Mandate of Heaven" }
-						add_mandate = 5 
+						gdd_retired_mandate_change = yes
 					}
 					else = { 
 						add_prestige_or_monarch_power = { amount = 35 }

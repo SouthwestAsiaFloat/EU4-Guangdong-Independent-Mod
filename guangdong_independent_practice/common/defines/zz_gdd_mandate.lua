@@ -1,7 +1,14 @@
--- Mandate is the Zhou realm's institutional reform resource. It therefore no
--- longer scales with stability, tributary development, the Emperor's
--- devastation or ordinary loans. Prosperous states retain their vanilla gain.
+-- Native EOC exists solely to preserve its window and original HUD entry.
+-- Shared reforms use the signed Zhou authority balance instead.
+NDefines.NDiplomacy.CELESTIAL_EMPIRE_DEFAULT_INFLUENCE = 50
 NDefines.NDiplomacy.CELESTIAL_EMPIRE_MANDATE_PER_STABILITY = 0
+NDefines.NDiplomacy.CELESTIAL_EMPIRE_MANDATE_PER_STATE_WITH_PROSPERITY = 0
 NDefines.NDiplomacy.CELESTIAL_EMPIRE_MANDATE_PER_HUNDRED_TRIBUTARY_DEV = 0
+NDefines.NDiplomacy.CELESTIAL_EMPIRE_MANDATE_PER_HUNDRED_NONTRIBUTARY_DEV = 0
 NDefines.NDiplomacy.CELESTIAL_EMPIRE_MANDATE_PER_HUNDRED_DEVASTATION = 0
 NDefines.NDiplomacy.CELESTIAL_EMPIRE_MANDATE_PER_5_LOANS = 0
+NDefines.NDiplomacy.CELESTIAL_EMPIRE_MANDATE_FROM_DEFENDING = 0
+NDefines.NDiplomacy.REFUSED_CALL_FROM_TRIBUTARY_MANDATE_LOSS = 0
+NDefines.NCountry.CELESTIAL_EMPIRE_REFORM_MIN_VALUE = 101
+NDefines.NAI.PEACE_MANDATE_THREAT_FACTOR = 0
+NDefines.NAI.WANT_TRIBUTARY_LOST_MANDATE = 0

@@ -1377,7 +1377,7 @@ cb_chinese_unification = {
 		OR = {
 			AND = {
 				has_dlc = "Mandate of Heaven"
-				is_emperor_of_china = yes
+				gdd_gameplay_emperor_of_china = yes
 			}
 			AND = {
 				NOT = { has_dlc = "Mandate of Heaven" }
@@ -1409,7 +1409,7 @@ cb_chinese_unification = {
 				}
 			}
 			NOT = { has_country_modifier = the_mandate_of_heaven }
-			is_emperor_of_china = no
+			gdd_gameplay_emperor_of_china = no
 		}
 	}
 
@@ -1426,6 +1426,9 @@ cb_take_mandate = {
 	valid_for_subject = no
 
 	prerequisites_self = {
+        always = no
+        always = no
+        always = no
 		has_dlc = "Mandate of Heaven"
 		is_subject = no
 		NOT = { has_reform = shogunate }
@@ -1445,8 +1448,11 @@ cb_take_mandate = {
 	}
 
 	prerequisites = {
+        always = no
+        always = no
+        always = no
 		is_neighbor_of = FROM
-		FROM = { is_emperor_of_china = yes }
+		FROM = { gdd_gameplay_emperor_of_china = yes }
 		NOT = { truce_with = FROM }		
 	}
 
@@ -1469,7 +1475,7 @@ cb_force_tributary = {
 
 	prerequisites_self = {
 		has_dlc = "Mandate of Heaven"
-		is_emperor_of_china = yes
+		gdd_gameplay_emperor_of_china = yes
 	}
 
 	prerequisites = {

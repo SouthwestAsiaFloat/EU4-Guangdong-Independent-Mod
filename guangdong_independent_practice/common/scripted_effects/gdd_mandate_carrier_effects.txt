@@ -1,0 +1,2 @@
+# Retired native one-shot resource changes intentionally have no effect.
+gdd_retired_mandate_change = { }

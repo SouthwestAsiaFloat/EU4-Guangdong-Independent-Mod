@@ -77,7 +77,6 @@ on_monthly_pulse = {
     }
     while = {
         limit = { check_variable = { which = zhx_external_extinction_mandate_queued value = 1 } }
-        if = { limit = { is_emperor_of_china = yes NOT = { has_global_flag = zhx_tianxia_dismantled } } add_mandate = -1 }
         change_variable = { which = zhx_external_extinction_mandate_queued value = -1 }
     }
     # 罕见的非和约首脑归责国收不到 post-peace 回调，在此补发通知。

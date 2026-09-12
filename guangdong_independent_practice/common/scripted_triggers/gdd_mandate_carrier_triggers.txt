@@ -1,0 +1,4 @@
+# The native identity is retained only for its hard-coded window entry.
+# Vanilla gameplay branches must behave as if there is no Mandate emperor.
+# Do not use this predicate for Zhou political offices or meritocracy wiring.
+gdd_gameplay_emperor_of_china = { always = no }

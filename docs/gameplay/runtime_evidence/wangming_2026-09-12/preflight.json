@@ -1,0 +1,17 @@
+{
+  "branch": "codex/wangming-authority",
+  "dlc_load": {
+    "enabled_mods": [
+      "mod/guangdong_independent_practice.mod",
+      "mod/ugc_1999055990.mod",
+      "mod/ugc_2976470733.mod"
+    ],
+    "disabled_dlcs": []
+  },
+  "game_version": "EU4 v1.37.5.0 Inca (491d)",
+  "mod_descriptors": {
+    "mod/guangdong_independent_practice.mod": "version=\"1.0\"\ntags={\n\t\"Alternative History\"\n\t\"Gameplay\"\n}\nname=\"Guangdong Independent Practice\"\ndependencies={\n\t\"Chinese Language Mod for 1.37\"\n\t\"Chinese Language Supplementary Mod for 1.37\"\n}\nsupported_version=\"v1.37.*\"\npath=\"/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/mod/guangdong_independent_practice\"",
+    "mod/ugc_1999055990.mod": "version=\"3.11.5\"\ntags={\n\t\"Translation\"\n}\ndependencies={\n\t\"Chinese Language Mod for 1.37\"\n}\nname=\"Chinese Language Supplementary Mod for 1.37\"\npicture=\"thumbnail.png\"\nsupported_version=\"v1.37.*.*\"\npath=\"/Users/xinanyapiao/Library/Application Support/Steam/steamapps/workshop/content/236850/1999055990\"\nremote_file_id=\"1999055990\"",
+    "mod/ugc_2976470733.mod": "version=\"3.11.6\"\ntags={\n\t\"Translation\"\n}\nname=\"Chinese Language Mod for 1.37\"\nsupported_version=\"v1.37.*.*\"\npath=\"/Users/xinanyapiao/Library/Application Support/Steam/steamapps/workshop/content/236850/2976470733\"\nremote_file_id=\"2976470733\""
+  }
+}

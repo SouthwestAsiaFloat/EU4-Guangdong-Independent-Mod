@@ -216,23 +216,22 @@ def main() -> None:
 
     remove_effect = named_block(effects, "gdd_remove_province_from_tianxia_effect")
     add_effect = named_block(effects, "gdd_add_province_to_tianxia_effect")
-    for token in (
-        "zhx_tianxia_admission_reward_paid",
-        "value = 200",
-        "add_mandate = 0.1",
-    ):
-        require(token in add_effect, f"per-province admission reward drifted: {token}")
-    for token in ("value = 200", "add_mandate = -0.1"):
-        require(token in remove_effect, f"per-province removal cost drifted: {token}")
+    require("zhx_tianxia_admission_reward_paid" in add_effect,
+            "legacy admission ledger is not marked settled")
+    for body in (add_effect, remove_effect):
+        require("add_mandate" not in body and "gdd_retired_mandate_change" not in body,
+                "province registration still routes through retired Mandate")
+        require("zhx_refresh_province_ritual_warscore = yes" in body,
+                "province registration lost ritual protection refresh")
     require("add_opinion" not in remove_effect,
             "province removal still applies opinion from an unreliable province scope")
     removal_opinion = named_block(effects, "gdd_apply_tianxia_removal_opinion_effect")
     for token in (
         "save_event_target_as = gdd_tianxia_removal_offender",
-        "event_target:EmperorOfChina = {",
+        "event_target:zhx_tianzi = {",
         "add_opinion = {",
         "who = event_target:gdd_tianxia_removal_offender",
-        "CZH = { exists = yes is_emperor_of_china = yes }",
+        "CZH = { exists = yes zhx_is_tianzi = yes }",
         "gdd_opinion_removed_tianxia_province",
     ):
         require(token in removal_opinion,
@@ -382,11 +381,11 @@ def main() -> None:
     require(event2 is not None, "missing manual Tianxia-province removal event")
     event2_text = event2.group(1)
     for token in (
-        "event_target:EmperorOfChina = {",
+        "event_target:zhx_tianzi = {",
         "add_opinion = {",
         "who = ROOT",
         "modifier = gdd_opinion_removed_tianxia_province",
-        "CZH = { exists = yes is_emperor_of_china = yes }",
+        "CZH = { exists = yes zhx_is_tianzi = yes }",
         "gdd_remove_province_from_tianxia_effect = yes",
     ):
         require(token in event2_text,

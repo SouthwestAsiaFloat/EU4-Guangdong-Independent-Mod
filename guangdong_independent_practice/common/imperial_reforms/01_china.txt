@@ -90,7 +90,7 @@ vassalize_tributaries_decision = {
 		empire_of_china_num_reforms_passed = 8
 	}
 	emperor = {
-		imperial_mandate = 0.05
+
 		liberty_desire_from_subject_development = -0.33
 	}
 	on_effect = {
@@ -199,7 +199,7 @@ new_keju_formats_decision = {
 	member = { governing_capacity_modifier = 0.05 } 
 	emperor = { 
 		reform_progress_growth = 0.1
-		imperial_mandate = 0.03
+
 	}
 }
 

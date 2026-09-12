@@ -1,5 +1,6 @@
-# Province scope. Adds one eligible province and awards its one-time Mandate
-# grant: 0.1 per development, capped at 20 for this province.
+# Province scope. Registers one eligible province without a resource reward.
+# Retain the legacy admission ledger for save compatibility.
+
 gdd_add_province_to_tianxia_effect = {
     if = {
         limit = {
@@ -10,106 +11,20 @@ gdd_add_province_to_tianxia_effect = {
             owner = { zhx_is_tianxia_polity = yes }
         }
         set_province_flag = zhx_tianxia_province
+        set_province_flag = zhx_tianxia_admission_reward_paid
         zhx_refresh_province_ritual_warscore = yes
-        if = {
-            limit = {
-                NOT = { has_province_flag = zhx_tianxia_admission_reward_paid }
-            }
-            set_province_flag = zhx_tianxia_admission_reward_paid
-            owner = {
-                export_to_variable = {
-                    which = gdd_tianxia_province_mandate_amount
-                    value = development
-                    who = PREV
-                }
-                if = {
-                    limit = {
-                        check_variable = {
-                            which = gdd_tianxia_province_mandate_amount
-                            value = 200
-                        }
-                    }
-                    set_variable = {
-                        which = gdd_tianxia_province_mandate_amount
-                        value = 200
-                    }
-                }
-                while = {
-                    limit = {
-                        check_variable = {
-                            which = gdd_tianxia_province_mandate_amount
-                            value = 1
-                        }
-                    }
-                    every_country = {
-                        limit = { is_emperor_of_china = yes }
-                        add_mandate = 0.1
-                    }
-                    change_variable = {
-                        which = gdd_tianxia_province_mandate_amount
-                        value = -1
-                    }
-                }
-                set_variable = {
-                    which = gdd_tianxia_province_mandate_amount
-                    value = 0
-                }
-            }
-        }
     }
 }
 
-# Province scope. Removes one province and charges 0.1 Mandate per development
-# (capped at 20 for this province). Opinion is applied from country scope by
-# the caller so the current Emperor always receives the correct opinion target.
+# Province scope. Removes one province without a resource cost.
+# The caller applies the existing opinion consequences to the political Tianzi.
 # The permanent reward-paid flag is intentionally retained.
+
 gdd_remove_province_from_tianxia_effect = {
     if = {
         limit = {
             has_province_flag = zhx_tianxia_province
-            owner = {
-                exists = yes
-                NOT = { zhx_is_tianxia_polity = yes }
-            }
-        }
-        owner = {
-            export_to_variable = {
-                which = gdd_tianxia_province_mandate_amount
-                value = development
-                who = PREV
-            }
-            if = {
-                limit = {
-                    check_variable = {
-                        which = gdd_tianxia_province_mandate_amount
-                        value = 200
-                    }
-                }
-                set_variable = {
-                    which = gdd_tianxia_province_mandate_amount
-                    value = 200
-                }
-            }
-            while = {
-                limit = {
-                    check_variable = {
-                        which = gdd_tianxia_province_mandate_amount
-                        value = 1
-                    }
-                }
-                every_country = {
-                    limit = { is_emperor_of_china = yes }
-                    add_mandate = -0.1
-                }
-                change_variable = {
-                    which = gdd_tianxia_province_mandate_amount
-                    value = -1
-                }
-            }
-            set_variable = {
-                which = gdd_tianxia_province_mandate_amount
-                value = 0
-            }
+            owner = { exists = yes NOT = { zhx_is_tianxia_polity = yes } }
         }
         zhx_cancel_owned_province_request = yes
         clr_province_flag = zhx_tianxia_province
@@ -125,12 +40,12 @@ gdd_apply_tianxia_removal_opinion_effect = {
     save_event_target_as = gdd_tianxia_removal_offender
     if = {
         limit = {
-            event_target:EmperorOfChina = {
+            event_target:zhx_tianzi = {
                 exists = yes
-                is_emperor_of_china = yes
+                zhx_is_tianzi = yes
             }
         }
-        event_target:EmperorOfChina = {
+        event_target:zhx_tianzi = {
             add_opinion = {
                 who = event_target:gdd_tianxia_removal_offender
                 modifier = gdd_opinion_removed_tianxia_province
@@ -139,7 +54,7 @@ gdd_apply_tianxia_removal_opinion_effect = {
         }
     }
     else_if = {
-        limit = { CZH = { exists = yes is_emperor_of_china = yes } }
+        limit = { CZH = { exists = yes zhx_is_tianzi = yes } }
         CZH = {
             add_opinion = {
                 who = event_target:gdd_tianxia_removal_offender
@@ -664,8 +579,7 @@ gdd_refuse_tianxia_unlawful_demand_effect = {
     gdd_clear_tianxia_unlawful_request_effect = yes
 }
 
-# Country scope. There is deliberately no batch Mandate cap: each eligible
-# province receives its own first-admission grant and its own 20-point ceiling.
+# Country scope. Registers every eligible owned province without a resource reward.
 gdd_add_all_owned_provinces_to_tianxia_effect = {
     every_owned_province = {
         limit = {
@@ -676,74 +590,22 @@ gdd_add_all_owned_provinces_to_tianxia_effect = {
 }
 
 # Country scope. Voluntary departure removes all directly owned Tianxia
-# provinces, but charges a single aggregate development loss capped at 20.
+# provinces and preserves the Tianzi opinion consequence, without a resource cost.
+
 gdd_leave_tianxia_territory_effect = {
-    set_variable = {
-        which = gdd_tianxia_exit_development
-        value = 0
-    }
     every_owned_province = {
         limit = { has_province_flag = zhx_tianxia_province }
-        PREV = {
-            export_to_variable = {
-                which = gdd_tianxia_exit_province_development
-                value = development
-                who = PREV
-            }
-            change_variable = {
-                which = gdd_tianxia_exit_development
-                which = gdd_tianxia_exit_province_development
-            }
-            set_variable = {
-                which = gdd_tianxia_exit_province_development
-                value = 0
-            }
-        }
         zhx_cancel_owned_province_request = yes
         clr_province_flag = zhx_tianxia_province
         zhx_refresh_province_ritual_warscore = yes
     }
-    if = {
-        limit = {
-            check_variable = {
-                which = gdd_tianxia_exit_development
-                value = 200
-            }
-        }
-        set_variable = {
-            which = gdd_tianxia_exit_development
-            value = 200
-        }
-    }
-    while = {
-        limit = {
-            check_variable = {
-                which = gdd_tianxia_exit_development
-                value = 1
-            }
-        }
-        every_country = { limit = { is_emperor_of_china = yes } add_mandate = -0.1 }
-        change_variable = {
-            which = gdd_tianxia_exit_development
-            value = -1
-        }
-    }
-    set_variable = {
-        which = gdd_tianxia_exit_development
-        value = 0
-    }
-    event_target:EmperorOfChina = {
-        add_opinion = {
-            who = ROOT
-            modifier = gdd_opinion_left_tianxia
-            years = 50
-        }
+    event_target:zhx_tianzi = {
+        add_opinion = { who = ROOT modifier = gdd_opinion_left_tianxia years = 50 }
     }
 }
 
 # One-time v13 migration. Existing Zhou-owned, non-HRE provinces become
-# Tianxia territory without paying Mandate; marking the reward as consumed
-# prevents an old-save remove/re-add exploit.
+# Tianxia territory; retain the legacy reward ledger for save compatibility.
 gdd_bootstrap_tianxia_provinces_effect = {
     if = {
         limit = {

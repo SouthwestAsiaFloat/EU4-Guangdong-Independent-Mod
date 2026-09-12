@@ -1,0 +1,12 @@
+# Disposable new-campaign prerequisites only. No reform is enacted here.
+CZH = {
+    set_variable = { which = gdd_central_authority_balance value = -60 }
+    gdd_clamp_central_authority_balance = yes
+    gdd_refresh_authority_balance_effects = yes
+}
+every_country = {
+    limit = { exists = yes zhx_is_tianxia_polity = yes }
+    set_country_flag = gdd_support_reform_keju
+}
+CZH = { gdd_recalculate_all_reform_votes_effect = yes }
+YAN = { save_global_event_target_as = gdd_principal_vassal }

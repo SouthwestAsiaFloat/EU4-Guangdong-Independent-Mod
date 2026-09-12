@@ -368,10 +368,10 @@ japanse_missions_china = {
 					has_dlc = "Mandate of Heaven"
 				}
 				OR = {
-					is_emperor_of_china = yes
+					gdd_gameplay_emperor_of_china = yes
 					NOT = {
 						any_country = {
-							is_emperor_of_china = yes
+							gdd_gameplay_emperor_of_china = yes
 						}
 					}
 				}
@@ -389,7 +389,7 @@ japanse_missions_china = {
 			if = {
 				limit = {
 					has_dlc = "Mandate of Heaven"
-					is_emperor_of_china = yes
+					gdd_gameplay_emperor_of_china = yes
 				}
 				add_mandate_large_effect = yes
 			}
@@ -397,7 +397,7 @@ japanse_missions_china = {
 				limit = {
 					has_dlc = "Mandate of Heaven"
 					any_country = {
-						is_emperor_of_china = yes
+						gdd_gameplay_emperor_of_china = yes
 					}
 				}
 				custom_tooltip = tau_dragon_throne_fake_mandate
@@ -412,7 +412,7 @@ japanse_missions_china = {
 			if = {
 				limit = {
 					has_dlc = "Mandate of Heaven"
-					is_emperor_of_china = yes
+					gdd_gameplay_emperor_of_china = yes
 				}
 				every_known_country = {
 					limit = {

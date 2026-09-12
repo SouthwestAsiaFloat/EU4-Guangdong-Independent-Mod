@@ -14530,7 +14530,7 @@ CSH_ideas = {
     infantry_power = 0.15
   }
   shun_claim_to_the_mandate = {
-    imperial_mandate = 0.03
+    imperial_mandate = 0
     legitimacy = 0.5
     devotion = 0.5
     republican_tradition = 0.15
@@ -15241,7 +15241,7 @@ gdd_legacy_dai_ideas = {
     republican_tradition = 0.3
     meritocracy = 1
     horde_unity = 1
-    imperial_mandate = 0.05
+    imperial_mandate = 0
   }
   literary_reform = {
     technology_cost = -0.05

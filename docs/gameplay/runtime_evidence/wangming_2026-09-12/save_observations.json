@@ -1,0 +1,82 @@
+{
+  "zwangmingbefore": {
+    "save": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/save games/zwangmingbefore.eu4",
+    "sha256": "9c58cd4bbf4c80355078e3aa24c9909e41563d3e7aaadf2c2c6f0d1e2ded5df8",
+    "date": "1445.1.17",
+    "native_emperor": "\"CZH\"",
+    "mandate": "50.000",
+    "countries": {
+      "CZH": {
+        "authority_balance": "60.000",
+        "stability": "0.000",
+        "keju_actor_flag": false
+      },
+      "YAN": {
+        "authority_balance": null,
+        "stability": "1.000",
+        "keju_actor_flag": false
+      }
+    },
+    "global_keju_flag": false
+  },
+  "zwangmingafter": {
+    "save": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/save games/zwangmingafter.eu4",
+    "sha256": "43e8390e7588149193b3dad7a5d06e593e645fc5e35fcea08b28b99f938dbe90",
+    "date": "1445.1.17",
+    "native_emperor": "\"CZH\"",
+    "mandate": "50.000",
+    "countries": {
+      "CZH": {
+        "authority_balance": "0.000",
+        "stability": "0.000",
+        "keju_actor_flag": true
+      },
+      "YAN": {
+        "authority_balance": null,
+        "stability": "1.000",
+        "keju_actor_flag": false
+      }
+    },
+    "global_keju_flag": true
+  },
+  "zwangmingrepealed": {
+    "save": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/save games/zwangmingrepealed.eu4",
+    "sha256": "90ecfaa89f5c8ac2049b9de550680519395c20d0eab24e733d3875dbba638734",
+    "date": "1445.1.17",
+    "native_emperor": "\"CZH\"",
+    "mandate": "50.000",
+    "countries": {
+      "CZH": {
+        "authority_balance": "40.000",
+        "stability": "0.000",
+        "keju_actor_flag": false
+      },
+      "YAN": {
+        "authority_balance": null,
+        "stability": "1.000",
+        "keju_actor_flag": false
+      }
+    },
+    "global_keju_flag": false
+  },
+  "zwangminglocalafter": {
+    "save": "/Users/xinanyapiao/Documents/Paradox Interactive/Europa Universalis IV/save games/zwangminglocalafter.eu4",
+    "sha256": "2c46cf151972a702cb1fe5518bb299f9a89d419769f4c311297f3203d02a2fac",
+    "date": "1445.1.17",
+    "native_emperor": "\"CZH\"",
+    "mandate": "50.000",
+    "countries": {
+      "CZH": {
+        "authority_balance": "0.000",
+        "stability": "0.000",
+        "keju_actor_flag": false
+      },
+      "YAN": {
+        "authority_balance": null,
+        "stability": "1.000",
+        "keju_actor_flag": true
+      }
+    },
+    "global_keju_flag": true
+  }
+}

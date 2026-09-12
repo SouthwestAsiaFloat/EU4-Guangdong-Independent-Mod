@@ -1,4 +1,4 @@
-WoC_eoc_yuan_flavor_1 = {
+﻿WoC_eoc_yuan_flavor_1 = {
 	slot = 1
 	generic = no
 	ai = yes
@@ -17,7 +17,7 @@ WoC_eoc_yuan_flavor_1 = {
 				was_tag = YUA
 			}
 		}
-		is_emperor_of_china = yes
+		gdd_gameplay_emperor_of_china = yes
 	} 
 	
 	yua_cornerstone_empire = {
@@ -85,7 +85,7 @@ WoC_eoc_yuan_flavor_1 = {
 					if = {
 						limit = { 
 							has_dlc = \"Mandate of Heaven\" 
-							is_emperor_of_china = yes 
+							gdd_gameplay_emperor_of_china = yes
 						} 
 						custom_tooltip = mng_palace_bureaucracy_benefits_tt
 						set_country_flag = mng_expanded_palace_bureaucracy_flag 
@@ -216,12 +216,12 @@ WoC_eoc_yuan_flavor_1 = {
 		
 		trigger = { 
 			if = { 
-				limit = { is_emperor_of_china = yes } 
+				limit = { gdd_gameplay_emperor_of_china = yes }
 				meritocracy = 90 
 			}
 			else = { legitimacy_equivalent = 90 } 
 			if = {
-				limit = { is_emperor_of_china = yes } 
+				limit = { gdd_gameplay_emperor_of_china = yes }
 				OR = {
 					empire_of_china_has_active_decree = issue_the_great_warnings_decree
 					AND = {
@@ -276,7 +276,7 @@ WoC_eoc_yuan_flavor_2 = {
 				was_tag = YUA
 			}
 		}
-		is_emperor_of_china = yes
+		gdd_gameplay_emperor_of_china = yes
 	} 
 	
 	yua_reform_civil_registration = {
@@ -287,7 +287,7 @@ WoC_eoc_yuan_flavor_2 = {
 		trigger = {
 			if = {
 				limit = {
-					is_emperor_of_china = yes 
+					gdd_gameplay_emperor_of_china = yes
 					has_dlc = "Mandate of Heaven" 
 				}
 				OR = { 
@@ -587,7 +587,7 @@ WoC_eoc_yuan_flavor_3 = {
 				was_tag = YUA
 			}
 		}
-		is_emperor_of_china = yes
+		gdd_gameplay_emperor_of_china = yes
 	} 
 	
 	yua_tame_china_sorrow = {
@@ -670,7 +670,7 @@ WoC_eoc_yuan_flavor_3 = {
 					}
 					if = { 
 						limit = {
-							is_emperor_of_china = yes 
+							gdd_gameplay_emperor_of_china = yes
 						}
 						add_mandate = 5 
 					}
@@ -801,7 +801,7 @@ WoC_eoc_yuan_flavor_3 = {
 			if = {
 				limit = { 
 					has_dlc = "Mandate of Heaven" 
-					is_emperor_of_china = yes 
+					gdd_gameplay_emperor_of_china = yes
 				}
 				empire_of_china_num_reforms_passed = 10
 				imperial_mandate = 95 
@@ -922,7 +922,7 @@ WoC_eoc_yuan_flavor_4 = {
 				was_tag = YUA
 			}
 		}
-		is_emperor_of_china = yes
+		gdd_gameplay_emperor_of_china = yes
 	} 
 	
 	yua_expand_bogue = {
@@ -1158,7 +1158,7 @@ WoC_eoc_yuan_flavor_4 = {
 			if = { 
 				limit = { 
 					has_dlc = "Mandate of Heaven" 
-					is_emperor_of_china = yes 
+					gdd_gameplay_emperor_of_china = yes
 				}
 				imperial_mandate = 80 
 			}
@@ -1237,7 +1237,7 @@ WoC_eoc_yuan_flavor_5 = {
 				was_tag = YUA
 			}
 		}
-		is_emperor_of_china = yes
+		gdd_gameplay_emperor_of_china = yes
 	} 
 	
 	yua_form_depots = {

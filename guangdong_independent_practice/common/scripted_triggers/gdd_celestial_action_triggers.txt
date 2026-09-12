@@ -223,16 +223,53 @@ gdd_proxy_decree_base_trigger = {
 
 gdd_proxy_celestial_reform_base_trigger = {
     gdd_celestial_action_authorized_trigger = yes
-    event_target:EmperorOfChina = {
-        exists = yes
-        is_emperor_of_china = yes
-        imperial_mandate = 50
-    }
+    gdd_has_reform_authority_cost = yes
 }
 
 # Active revocation uses the same authority interval as enactment, but does
 # not require Mandate. A future peace treaty can call the
 # matching scripted revoke effect directly.
+
 gdd_can_actively_revoke_proxy_celestial_reform_trigger = {
     gdd_celestial_action_authorized_trigger = yes
+    gdd_has_reform_authority_cost = yes
 }
+
+
+# The balance is signed; test the actual value, not its rounded display.
+# Local authority must be <= -60, including the exact endpoint.
+gdd_has_reform_authority_cost = {
+    custom_trigger_tooltip = {
+        tooltip = GDD_REFORM_AUTHORITY_COST_TT
+        CZH = {
+            OR = {
+                check_variable = { which = gdd_central_authority_balance value = 60 }
+                is_variable_equal = { which = gdd_central_authority_balance value = -60 }
+                NOT = { check_variable = { which = gdd_central_authority_balance value = -60 } }
+            }
+        }
+    }
+}
+
+# Selected-reform transaction guards (scripted parameter substitution).
+gdd_proxy_reform_keju_can_enact = { gdd_can_enact_proxy_keju_trigger = yes }
+gdd_proxy_reform_civil_registration_can_enact = { gdd_can_enact_proxy_civil_registration_trigger = yes }
+gdd_proxy_reform_silver_standard_can_enact = { gdd_can_enact_proxy_silver_standard_trigger = yes }
+gdd_proxy_reform_kanhe_can_enact = { gdd_can_enact_proxy_kanhe_trigger = yes }
+gdd_proxy_reform_unified_market_can_enact = { gdd_can_enact_proxy_unified_market_trigger = yes }
+gdd_proxy_reform_military_branch_can_enact = { gdd_can_enact_proxy_military_branch_trigger = yes }
+gdd_proxy_reform_foreign_ship_designs_can_enact = { gdd_can_enact_proxy_foreign_ship_designs_trigger = yes }
+gdd_proxy_reform_inclusive_monarchy_can_enact = { gdd_can_enact_proxy_inclusive_monarchy_trigger = yes }
+gdd_proxy_reform_establish_gaituguiliu_can_enact = { gdd_can_enact_proxy_establish_gaituguiliu_trigger = yes }
+gdd_proxy_reform_land_tax_can_enact = { gdd_can_enact_proxy_land_tax_trigger = yes }
+gdd_proxy_reform_single_whip_can_enact = { gdd_can_enact_proxy_single_whip_trigger = yes }
+gdd_proxy_reform_centralizing_government_can_enact = { gdd_can_enact_proxy_centralizing_government_trigger = yes }
+gdd_proxy_reform_reign_in_estates_can_enact = { gdd_can_enact_proxy_reign_in_estates_trigger = yes }
+gdd_proxy_reform_vassalize_tributaries_can_enact = { gdd_can_enact_proxy_vassalize_tributaries_trigger = yes }
+gdd_proxy_reform_seaban_can_enact = { gdd_can_enact_proxy_seaban_trigger = yes }
+gdd_proxy_reform_military_governors_can_enact = { gdd_can_enact_proxy_military_governors_trigger = yes }
+gdd_proxy_reform_tributary_embassies_can_enact = { gdd_can_enact_proxy_tributary_embassies_trigger = yes }
+gdd_proxy_reform_modernize_banners_can_enact = { gdd_can_enact_proxy_modernize_banners_trigger = yes }
+gdd_proxy_reform_bureaucratic_faction_can_enact = { gdd_can_enact_proxy_bureaucratic_faction_trigger = yes }
+gdd_proxy_reform_new_world_can_enact = { gdd_can_enact_proxy_new_world_trigger = yes }
+gdd_proxy_reform_military_faction_can_enact = { gdd_can_enact_proxy_military_faction_trigger = yes }

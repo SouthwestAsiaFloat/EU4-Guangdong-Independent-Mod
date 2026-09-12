@@ -1,0 +1,28 @@
+{
+  "sha256": "5678bbf61486f976746f4e8290457f9d3139eab7c1211f52248a90270954a714",
+  "total_lines": 1844,
+  "targeted_keywords": [
+    "gdd_gameplay_emperor",
+    "gdd_retired_mandate",
+    "gdd_celestial_proxy",
+    "celestialempireview",
+    "can_enact",
+    "on_pass"
+  ],
+  "targeted_hits": [],
+  "other_errors_sample": [
+    "[dlc.cpp:254]: Invalid supported_version in  file: mod/ugc_2240394044.mod line: 10",
+    "[dlc.cpp:254]: Invalid supported_version in  file: mod/ugc_2414180090.mod line: 6",
+    "[dlc.cpp:254]: Invalid supported_version in  file: mod/ugc_2742244407.mod line: 11",
+    "[dlc.cpp:254]: Invalid supported_version in  file: mod/ugc_3142739241.mod line: 14",
+    "[dlc.cpp:254]: Invalid supported_version in  file: mod/ugc_3175212378.mod line: 7",
+    "[pdx_pops_login.cpp:493]: Unsupported platform",
+    "[pdx_pops_login.cpp:571]: Could not get session folder",
+    "[virtualfilesystem.cpp:255]: Failed to find pre specified enumerate for 'localisation/replace'(.yml, (null), -1)",
+    "[localize.cpp:671]: Localization hash collision found, more info in text.log! Language: l_english",
+    "[virtualfilesystem.cpp:255]: Failed to find pre specified enumerate for 'localisation/replace'(.yml, (null), -1)",
+    "[localize.cpp:671]: Localization hash collision found, more info in text.log! Language: l_english",
+    "[countrydatabase.cpp:130]: Duplicate Country Tag - HUA"
+  ],
+  "scope": "Targeted review only; other inherited mission/map errors remain."
+}
