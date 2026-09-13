@@ -1,0 +1,8 @@
+spriteTypes = {
+    corneredTileSpriteType = {
+        name = "GFX_zhx_map_exp_hud_background"
+        texturefile = "gfx/interface/scroll_track.dds"
+        size = { x = 440 y = 66 }
+        borderSize = { x = 4 y = 4 }
+    }
+}

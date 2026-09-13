@@ -727,10 +727,9 @@ gdd_quarterly_tianxia_territory_maintenance_effect = {
                 has_province_flag = zhx_tianxia_province
                 is_owned_by_trade_company = yes
             }
-            # No scriptable remove-from-trade-company effect exists. Ordinary
-            # clicks are blocked by the opaque Zhou/HRE/TC shared-slot overlay;
-            # if automation bypasses it, trade-company status wins this safety
-            # repair so the province can never retain both memberships.
+            # No scriptable remove-from-trade-company effect exists. The native
+            # control is independent of the Zhou footer; trade-company status
+            # wins this repair, backing up on_added_to_trade_company.
             zhx_cancel_owned_province_request = yes
         clr_province_flag = zhx_tianxia_province
             zhx_refresh_province_ritual_warscore = yes

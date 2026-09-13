@@ -214,15 +214,10 @@ def diplomacy_category_button(expanded: bool) -> Image.Image:
 
 def write_runtime_assets() -> None:
     """Write the approved province and diplomacy runtime sprites."""
+    from package_zhou_province_seal import build
+    build()
     RUNTIME_DIR.mkdir(parents=True, exist_ok=True)
     outputs = {
-        RUNTIME_DIR / "gdd_tianxia_province_status.tga": button_strip(
-            make_emblem("member"), inert=True
-        ),
-        RUNTIME_DIR / "gdd_tianxia_province_add.tga": button_strip(make_emblem("add")),
-        RUNTIME_DIR / "gdd_tianxia_province_remove.tga": button_strip(
-            make_emblem("remove_hre")
-        ),
         RUNTIME_DIR / "gdd_tianxia_actions_expanded.tga": diplomacy_category_button(
             expanded=True
         ),

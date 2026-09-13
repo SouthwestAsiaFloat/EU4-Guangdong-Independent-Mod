@@ -1,0 +1,20 @@
+# Topbar follows the existing zhx_tianxia_topbar_window integration.
+# Viewer country scope; global active flag makes the warning survive tag changes.
+custom_window = {
+    name = zhx_map_exp_hud
+    potential = { ai = no has_global_flag = zhx_map_exp_active }
+}
+custom_button = {
+    name = zhx_map_exp_hud_background
+    potential = { has_global_flag = zhx_map_exp_active }
+    trigger = { hidden_trigger = { always = yes } }
+    effect = { hidden_effect = { } }
+    tooltip = zhx_map_exp_legend_tt
+}
+custom_button = {
+    name = zhx_map_exp_hud_restore
+    potential = { has_global_flag = zhx_map_exp_active }
+    trigger = { hidden_trigger = { always = yes } }
+    effect = { hidden_effect = { zhx_map_exp_restore = yes } }
+    tooltip = zhx_map_exp_hud_restore_tt
+}

@@ -1,0 +1,14 @@
+namespace = zhx_map_exp
+country_event = {
+    id = zhx_map_exp.1
+    title = zhx_map_exp_prompt_title
+    desc = zhx_map_exp_prompt_desc
+    picture = TRADEGOODS_eventPicture
+    is_triggered_only = yes
+    option = { name = zhx_map_exp_cancel }
+    option = {
+        name = zhx_map_exp_confirm
+        trigger = { NOT = { has_global_flag = zhx_map_exp_active } }
+        hidden_effect = { zhx_map_exp_open = yes }
+    }
+}

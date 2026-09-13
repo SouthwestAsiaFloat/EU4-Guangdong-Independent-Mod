@@ -1,0 +1,8 @@
+spriteTypes = {
+    # Opaque native-sized artwork; runtime controls supply all labels and actions.
+    spriteType = {
+        name = "GFX_zhx_province_mod_background"
+        texturefile = "gfx/interface/zhx_province_panel_v1.tga"
+        noOfFrames = 1
+    }
+}

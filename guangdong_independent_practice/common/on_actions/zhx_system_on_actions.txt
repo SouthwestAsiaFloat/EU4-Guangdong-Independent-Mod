@@ -178,10 +178,9 @@ on_transfer_development = {
 }
 
 # Province scope; FROM is the country that clicked the hard-coded control.
-# Ordinary player clicks are consumed by the opaque Zhou/HRE/TC shared-slot
-# overlay. EU4 exposes no scriptable remove-from-trade-company effect, so if an
-# automation or hotkey bypasses that overlay, trade-company status wins and the
-# Zhou territorial marker is cleared to preserve strict mutual exclusion.
+# The native trade-company control remains clickable beside the Zhou system.
+# Trade-company status wins and clears Zhou registration immediately; EU4 has
+# no scriptable remove-from-trade-company effect.
 on_added_to_trade_company = {
     if = {
         limit = { has_province_flag = zhx_tianxia_province }
@@ -195,7 +194,7 @@ on_added_to_trade_company = {
 }
 
 on_province_owner_change = {
-    # Never let the hard-coded HRE emblem survive underneath a Tianxia mark.
+    # Repair incompatible HRE membership when a registered Zhou province changes owner.
     # A newly conquered HRE-only province is untouched and must still be
     # removed from the HRE before it can be admitted to Tianxia.
     if = {

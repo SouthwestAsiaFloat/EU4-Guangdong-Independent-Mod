@@ -1,0 +1,3 @@
+zhx_map_exp_warning = {
+    global_tax_modifier = 0
+}

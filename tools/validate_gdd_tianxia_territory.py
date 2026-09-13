@@ -551,64 +551,16 @@ def main() -> None:
     require(not (MOD / "gfx/interface/gdd_tianxia_unlawful_territory_alert.tga").exists(),
             "retired scripted alert artwork is still packaged")
 
-    status_pos = province_gui.find('name = "gdd_tianxia_province_member_status_button"')
-    hre_pos = province_gui.find('name ="hre_button"')
-    require(hre_pos >= 0 and status_pos > hre_pos,
-            "Tianxia status does not overlay the hard-coded HRE slot")
-    require(re.search(
-        r"guiButtonType\s*=\s*\{\s*name\s*=\s*"
-        r'"gdd_tianxia_province_member_status_button".*?'
-        r'quadTextureSprite\s*=\s*"GFX_gdd_tianxia_province_status".*?'
-        r'position\s*=\s*\{\s*x\s*=\s*20\s+y\s*=\s*328\s*\}',
-        province_gui,
-        re.S,
-    ) is not None, "member emblem is not anchored to the native imperial button slot")
-    require(re.search(
-        r'name\s*=\s*"trade_company_icon".*?'
-        r'position\s*=\s*\{\s*x\s*=\s*32\s+y\s*=\s*328\s*\}.*?'
-        r'alwaystransparent\s*=\s*yes',
-        province_gui,
-        re.S,
-    ) is not None and re.search(
-        r'name\s*=\s*"trade_company_button".*?'
-        r'position\s*=\s*\{\s*x\s*=\s*20\s+y\s*=\s*328\s*\}',
-        province_gui,
-        re.S,
-    ) is not None,
-            "native HRE/trade-company controls do not share their original slot")
-    require('name = "GFX_gdd_tianxia_province_status"' in tianxia_gfx
-            and "noOfFrames = 4" in tianxia_gfx,
-            "member emblem is not an inert four-state overlay")
-    for control_name in (
-        "gdd_tianxia_province_member_status_button",
-        "gdd_tianxia_province_remove_button",
-    ):
-        require("is_part_of_hre = no" in custom_gui_block(custom_gui, control_name),
-                f"{control_name} can overlap the hard-coded HRE emblem")
+    from validate_gdd_tianxia_province_layout import validate_layout
+    validate_layout(province_gui)
+    require('name = "GFX_gdd_tianxia_province_status"' in tianxia_gfx,
+            "missing province member emblem sprite")
     status_art = Image.open(MOD / "gfx/interface/gdd_tianxia_province_status.tga").convert("RGBA")
     require(status_art.size == (216, 42), "member emblem runtime art is not a four-state strip")
-    # Check the union of the actual native icon and button rectangles, including
-    # the twelve pixels beyond the original 42px glyph, in every button state.
-    for control_name in ("hre_icon", "trade_company_icon", "hre_button", "trade_company_button"):
-        block = re.search(r'name\s*=\s*"' + control_name + r'"(.*?)(?=\n\s*\})', province_gui, re.S)
-        require(block is not None, f"missing native control: {control_name}")
-        pos = re.search(r'position\s*=\s*\{\s*x\s*=\s*(\d+)\s+y\s*=\s*(\d+)', block.group(1))
-        require(pos is not None, f"missing native position: {control_name}")
-        x, y = map(int, pos.groups())
-        for filename in ("gdd_tianxia_province_status.tga", "gdd_tianxia_province_add.tga", "gdd_tianxia_province_remove.tga"):
-            strip = Image.open(MOD / "gfx/interface" / filename).convert("RGBA")
-            w, h = strip.width // 4, strip.height
-            require(20 <= x and 328 <= y and 20 + w >= x + 42 and 328 + h >= y + 42,
-                    f"{filename} leaves part of {control_name} uncovered")
-            for frame in range(4):
-                covered = strip.crop((frame * w + x - 20, y - 328,
-                                      frame * w + x - 20 + 42, y - 328 + 42))
-                require(covered.getchannel("A").getextrema() == (255, 255),
-                        f"{filename} frame {frame} leaks {control_name}")
     status_art = status_art.crop((0, 0, 42, 42))
     status_pixels = list(pixels(status_art))
     require(all(alpha == 255 for _, _, _, alpha in status_pixels),
-            "member overlay does not fully hide the hard-coded controls below it")
+            "member emblem background is not opaque")
     require(sum(1 for red, green, blue, alpha in status_pixels
                 if alpha > 80 and red > 170 and green > 110 and blue < 150) > 40,
             "member emblem has lost its visible gold Zhou glyph")
@@ -623,7 +575,7 @@ def main() -> None:
         require(artwork.size == (216, 42),
                 f"{filename} is not a four-state 54px button strip")
         require(all(alpha == 255 for _, _, _, alpha in pixels(artwork)),
-                f"{filename} does not hide the hard-coded imperial controls below it")
+                f"{filename} has lost its opaque background")
     add_frame = Image.open(MOD / "gfx/interface/gdd_tianxia_province_add.tga").convert("RGBA").crop((0, 0, 42, 42))
     remove_frame = Image.open(MOD / "gfx/interface/gdd_tianxia_province_remove.tga").convert("RGBA").crop((0, 0, 42, 42))
     require(sum(1 for red, green, blue, alpha in pixels(add_frame)

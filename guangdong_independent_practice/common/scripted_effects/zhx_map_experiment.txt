@@ -1,0 +1,129 @@
+# Persistent historical identity, not the temporary commodity backup ledger.
+zhx_seed_longxi_fallen_homeland = {
+    if = {
+        limit = { NOT = { has_global_flag = zhx_longxi_fallen_seeded_v1 } NOT = { has_global_flag = zhx_tianxia_dismantled } }
+        5298 = { set_province_flag = zhx_longxi_fallen_homeland set_province_flag = zhx_tianxia_province set_province_flag = zhx_tianxia_admission_reward_paid } # 瓜州
+        5299 = { set_province_flag = zhx_longxi_fallen_homeland set_province_flag = zhx_tianxia_province set_province_flag = zhx_tianxia_admission_reward_paid } # 苦峪
+        707 = { set_province_flag = zhx_longxi_fallen_homeland set_province_flag = zhx_tianxia_province set_province_flag = zhx_tianxia_admission_reward_paid } # 玉门
+        5297 = { set_province_flag = zhx_longxi_fallen_homeland set_province_flag = zhx_tianxia_province set_province_flag = zhx_tianxia_admission_reward_paid } # 嘉峪
+        5296 = { set_province_flag = zhx_longxi_fallen_homeland set_province_flag = zhx_tianxia_province set_province_flag = zhx_tianxia_admission_reward_paid } # 张掖
+        708 = { set_province_flag = zhx_longxi_fallen_homeland set_province_flag = zhx_tianxia_province set_province_flag = zhx_tianxia_admission_reward_paid } # 武威
+        5295 = { set_province_flag = zhx_longxi_fallen_homeland set_province_flag = zhx_tianxia_province set_province_flag = zhx_tianxia_admission_reward_paid } # 永昌
+        2182 = { set_province_flag = zhx_longxi_fallen_homeland set_province_flag = zhx_tianxia_province set_province_flag = zhx_tianxia_admission_reward_paid } # 靖远
+        5288 = { set_province_flag = zhx_longxi_fallen_homeland set_province_flag = zhx_tianxia_province set_province_flag = zhx_tianxia_admission_reward_paid } # 松山
+        698 = { set_province_flag = zhx_longxi_fallen_homeland set_province_flag = zhx_tianxia_province set_province_flag = zhx_tianxia_admission_reward_paid } # 宁夏
+        5287 = { set_province_flag = zhx_longxi_fallen_homeland set_province_flag = zhx_tianxia_province set_province_flag = zhx_tianxia_admission_reward_paid } # 灵州
+        5286 = { set_province_flag = zhx_longxi_fallen_homeland set_province_flag = zhx_tianxia_province set_province_flag = zhx_tianxia_admission_reward_paid } # 中卫
+        5277 = { set_province_flag = zhx_longxi_fallen_homeland set_province_flag = zhx_tianxia_province set_province_flag = zhx_tianxia_admission_reward_paid } # 固原
+        5276 = { set_province_flag = zhx_longxi_fallen_homeland set_province_flag = zhx_tianxia_province set_province_flag = zhx_tianxia_admission_reward_paid } # 秦安
+        5292 = { set_province_flag = zhx_longxi_fallen_homeland set_province_flag = zhx_tianxia_province set_province_flag = zhx_tianxia_admission_reward_paid } # 碾伯
+        699 = { set_province_flag = zhx_longxi_fallen_homeland set_province_flag = zhx_tianxia_province set_province_flag = zhx_tianxia_admission_reward_paid } # 兰州
+        HMI = { set_country_flag = zhx_longxi_occupying_regime }
+        SHZ = { set_country_flag = zhx_longxi_occupying_regime }
+        GZH = { set_country_flag = zhx_longxi_occupying_regime }
+        WGS = { set_country_flag = zhx_longxi_occupying_regime }
+        HZH = { set_country_flag = zhx_longxi_occupying_regime }
+        set_global_flag = zhx_longxi_fallen_seeded_v1
+    }
+}
+# GENERATED. Country entry; every_province enters province scope.
+# Backups are written before any change. Re-entry is blocked globally.
+zhx_map_exp_open = {
+    if = {
+        limit = { NOT = { has_global_flag = zhx_map_exp_active } NOT = { any_province = { OR = { has_province_flag = zhx_map_exp_saved_chinaware has_province_flag = zhx_map_exp_saved_cloth has_province_flag = zhx_map_exp_saved_cloves has_province_flag = zhx_map_exp_saved_coal has_province_flag = zhx_map_exp_saved_cocoa has_province_flag = zhx_map_exp_saved_coffee has_province_flag = zhx_map_exp_saved_copper has_province_flag = zhx_map_exp_saved_cotton has_province_flag = zhx_map_exp_saved_dyes has_province_flag = zhx_map_exp_saved_fish has_province_flag = zhx_map_exp_saved_fur has_province_flag = zhx_map_exp_saved_gems has_province_flag = zhx_map_exp_saved_glass has_province_flag = zhx_map_exp_saved_gold has_province_flag = zhx_map_exp_saved_grain has_province_flag = zhx_map_exp_saved_incense has_province_flag = zhx_map_exp_saved_iron has_province_flag = zhx_map_exp_saved_ivory has_province_flag = zhx_map_exp_saved_livestock has_province_flag = zhx_map_exp_saved_naval_supplies has_province_flag = zhx_map_exp_saved_paper has_province_flag = zhx_map_exp_saved_salt has_province_flag = zhx_map_exp_saved_silk has_province_flag = zhx_map_exp_saved_slaves has_province_flag = zhx_map_exp_saved_spices has_province_flag = zhx_map_exp_saved_sugar has_province_flag = zhx_map_exp_saved_tea has_province_flag = zhx_map_exp_saved_tobacco has_province_flag = zhx_map_exp_saved_tropical_wood has_province_flag = zhx_map_exp_saved_unknown has_province_flag = zhx_map_exp_saved_wine has_province_flag = zhx_map_exp_saved_wool } } } }
+        zhx_seed_longxi_fallen_homeland = yes
+        set_global_flag = zhx_map_exp_active
+        add_country_modifier = { name = zhx_map_exp_warning duration = -1 }
+        every_province = {
+            limit = { owner = { exists = yes } OR = { trade_goods = chinaware trade_goods = cloth trade_goods = cloves trade_goods = coal trade_goods = cocoa trade_goods = coffee trade_goods = copper trade_goods = cotton trade_goods = dyes trade_goods = fish trade_goods = fur trade_goods = gems trade_goods = glass trade_goods = gold trade_goods = grain trade_goods = incense trade_goods = iron trade_goods = ivory trade_goods = livestock trade_goods = naval_supplies trade_goods = paper trade_goods = salt trade_goods = silk trade_goods = slaves trade_goods = spices trade_goods = sugar trade_goods = tea trade_goods = tobacco trade_goods = tropical_wood trade_goods = unknown trade_goods = wine trade_goods = wool } }
+        if = { limit = { trade_goods = chinaware } set_province_flag = zhx_map_exp_saved_chinaware }
+        if = { limit = { trade_goods = cloth } set_province_flag = zhx_map_exp_saved_cloth }
+        if = { limit = { trade_goods = cloves } set_province_flag = zhx_map_exp_saved_cloves }
+        if = { limit = { trade_goods = coal } set_province_flag = zhx_map_exp_saved_coal }
+        if = { limit = { trade_goods = cocoa } set_province_flag = zhx_map_exp_saved_cocoa }
+        if = { limit = { trade_goods = coffee } set_province_flag = zhx_map_exp_saved_coffee }
+        if = { limit = { trade_goods = copper } set_province_flag = zhx_map_exp_saved_copper }
+        if = { limit = { trade_goods = cotton } set_province_flag = zhx_map_exp_saved_cotton }
+        if = { limit = { trade_goods = dyes } set_province_flag = zhx_map_exp_saved_dyes }
+        if = { limit = { trade_goods = fish } set_province_flag = zhx_map_exp_saved_fish }
+        if = { limit = { trade_goods = fur } set_province_flag = zhx_map_exp_saved_fur }
+        if = { limit = { trade_goods = gems } set_province_flag = zhx_map_exp_saved_gems }
+        if = { limit = { trade_goods = glass } set_province_flag = zhx_map_exp_saved_glass }
+        if = { limit = { trade_goods = gold } set_province_flag = zhx_map_exp_saved_gold }
+        if = { limit = { trade_goods = grain } set_province_flag = zhx_map_exp_saved_grain }
+        if = { limit = { trade_goods = incense } set_province_flag = zhx_map_exp_saved_incense }
+        if = { limit = { trade_goods = iron } set_province_flag = zhx_map_exp_saved_iron }
+        if = { limit = { trade_goods = ivory } set_province_flag = zhx_map_exp_saved_ivory }
+        if = { limit = { trade_goods = livestock } set_province_flag = zhx_map_exp_saved_livestock }
+        if = { limit = { trade_goods = naval_supplies } set_province_flag = zhx_map_exp_saved_naval_supplies }
+        if = { limit = { trade_goods = paper } set_province_flag = zhx_map_exp_saved_paper }
+        if = { limit = { trade_goods = salt } set_province_flag = zhx_map_exp_saved_salt }
+        if = { limit = { trade_goods = silk } set_province_flag = zhx_map_exp_saved_silk }
+        if = { limit = { trade_goods = slaves } set_province_flag = zhx_map_exp_saved_slaves }
+        if = { limit = { trade_goods = spices } set_province_flag = zhx_map_exp_saved_spices }
+        if = { limit = { trade_goods = sugar } set_province_flag = zhx_map_exp_saved_sugar }
+        if = { limit = { trade_goods = tea } set_province_flag = zhx_map_exp_saved_tea }
+        if = { limit = { trade_goods = tobacco } set_province_flag = zhx_map_exp_saved_tobacco }
+        if = { limit = { trade_goods = tropical_wood } set_province_flag = zhx_map_exp_saved_tropical_wood }
+        if = { limit = { trade_goods = unknown } set_province_flag = zhx_map_exp_saved_unknown }
+        if = { limit = { trade_goods = wine } set_province_flag = zhx_map_exp_saved_wine }
+        if = { limit = { trade_goods = wool } set_province_flag = zhx_map_exp_saved_wool }
+            if = {
+                limit = { has_province_flag = zhx_tianxia_province }
+                if = {
+                    limit = { OR = { has_province_flag = zhx_map_exp_sample_fallen zhx_is_fallen_zhou_province = yes } }
+                    change_trade_goods = copper
+                }
+                else = {
+                    if = {
+                        limit = { owner = { zhx_is_seven_great_feudatory = yes } }
+                        change_trade_goods = naval_supplies
+                    }
+                    else = { change_trade_goods = tea }
+                }
+            }
+            else = { change_trade_goods = wool }
+        }
+    }
+}
+
+# Can be invoked by any human country, including after a tag change.
+zhx_map_exp_restore = {
+    every_province = {
+        if = { limit = { has_province_flag = zhx_map_exp_saved_chinaware } change_trade_goods = chinaware clr_province_flag = zhx_map_exp_saved_chinaware }
+        if = { limit = { has_province_flag = zhx_map_exp_saved_cloth } change_trade_goods = cloth clr_province_flag = zhx_map_exp_saved_cloth }
+        if = { limit = { has_province_flag = zhx_map_exp_saved_cloves } change_trade_goods = cloves clr_province_flag = zhx_map_exp_saved_cloves }
+        if = { limit = { has_province_flag = zhx_map_exp_saved_coal } change_trade_goods = coal clr_province_flag = zhx_map_exp_saved_coal }
+        if = { limit = { has_province_flag = zhx_map_exp_saved_cocoa } change_trade_goods = cocoa clr_province_flag = zhx_map_exp_saved_cocoa }
+        if = { limit = { has_province_flag = zhx_map_exp_saved_coffee } change_trade_goods = coffee clr_province_flag = zhx_map_exp_saved_coffee }
+        if = { limit = { has_province_flag = zhx_map_exp_saved_copper } change_trade_goods = copper clr_province_flag = zhx_map_exp_saved_copper }
+        if = { limit = { has_province_flag = zhx_map_exp_saved_cotton } change_trade_goods = cotton clr_province_flag = zhx_map_exp_saved_cotton }
+        if = { limit = { has_province_flag = zhx_map_exp_saved_dyes } change_trade_goods = dyes clr_province_flag = zhx_map_exp_saved_dyes }
+        if = { limit = { has_province_flag = zhx_map_exp_saved_fish } change_trade_goods = fish clr_province_flag = zhx_map_exp_saved_fish }
+        if = { limit = { has_province_flag = zhx_map_exp_saved_fur } change_trade_goods = fur clr_province_flag = zhx_map_exp_saved_fur }
+        if = { limit = { has_province_flag = zhx_map_exp_saved_gems } change_trade_goods = gems clr_province_flag = zhx_map_exp_saved_gems }
+        if = { limit = { has_province_flag = zhx_map_exp_saved_glass } change_trade_goods = glass clr_province_flag = zhx_map_exp_saved_glass }
+        if = { limit = { has_province_flag = zhx_map_exp_saved_gold } change_trade_goods = gold clr_province_flag = zhx_map_exp_saved_gold }
+        if = { limit = { has_province_flag = zhx_map_exp_saved_grain } change_trade_goods = grain clr_province_flag = zhx_map_exp_saved_grain }
+        if = { limit = { has_province_flag = zhx_map_exp_saved_incense } change_trade_goods = incense clr_province_flag = zhx_map_exp_saved_incense }
+        if = { limit = { has_province_flag = zhx_map_exp_saved_iron } change_trade_goods = iron clr_province_flag = zhx_map_exp_saved_iron }
+        if = { limit = { has_province_flag = zhx_map_exp_saved_ivory } change_trade_goods = ivory clr_province_flag = zhx_map_exp_saved_ivory }
+        if = { limit = { has_province_flag = zhx_map_exp_saved_livestock } change_trade_goods = livestock clr_province_flag = zhx_map_exp_saved_livestock }
+        if = { limit = { has_province_flag = zhx_map_exp_saved_naval_supplies } change_trade_goods = naval_supplies clr_province_flag = zhx_map_exp_saved_naval_supplies }
+        if = { limit = { has_province_flag = zhx_map_exp_saved_paper } change_trade_goods = paper clr_province_flag = zhx_map_exp_saved_paper }
+        if = { limit = { has_province_flag = zhx_map_exp_saved_salt } change_trade_goods = salt clr_province_flag = zhx_map_exp_saved_salt }
+        if = { limit = { has_province_flag = zhx_map_exp_saved_silk } change_trade_goods = silk clr_province_flag = zhx_map_exp_saved_silk }
+        if = { limit = { has_province_flag = zhx_map_exp_saved_slaves } change_trade_goods = slaves clr_province_flag = zhx_map_exp_saved_slaves }
+        if = { limit = { has_province_flag = zhx_map_exp_saved_spices } change_trade_goods = spices clr_province_flag = zhx_map_exp_saved_spices }
+        if = { limit = { has_province_flag = zhx_map_exp_saved_sugar } change_trade_goods = sugar clr_province_flag = zhx_map_exp_saved_sugar }
+        if = { limit = { has_province_flag = zhx_map_exp_saved_tea } change_trade_goods = tea clr_province_flag = zhx_map_exp_saved_tea }
+        if = { limit = { has_province_flag = zhx_map_exp_saved_tobacco } change_trade_goods = tobacco clr_province_flag = zhx_map_exp_saved_tobacco }
+        if = { limit = { has_province_flag = zhx_map_exp_saved_tropical_wood } change_trade_goods = tropical_wood clr_province_flag = zhx_map_exp_saved_tropical_wood }
+        if = { limit = { has_province_flag = zhx_map_exp_saved_unknown } change_trade_goods = unknown clr_province_flag = zhx_map_exp_saved_unknown }
+        if = { limit = { has_province_flag = zhx_map_exp_saved_wine } change_trade_goods = wine clr_province_flag = zhx_map_exp_saved_wine }
+        if = { limit = { has_province_flag = zhx_map_exp_saved_wool } change_trade_goods = wool clr_province_flag = zhx_map_exp_saved_wool }
+        clr_province_flag = zhx_map_exp_sample_fallen
+    }
+    every_country = { remove_country_modifier = zhx_map_exp_warning }
+    clr_global_flag = zhx_map_exp_active
+}

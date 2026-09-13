@@ -289,16 +289,15 @@ def main() -> None:
     ):
         require(re.search(
             rf'name = "{name}".*?{sprite_field} = "{sprite}".*?'
-            rf'position = \{{ x = 20 y = 328 \}}',
+            rf'position = \{{ x = 24 y = 220 \}}',
             province_gui,
             re.S,
-        ) is not None, f"province Tianxia indicator left the native HRE slot: {name}")
+        ) is not None, f"province Tianxia indicator left its mod page: {name}")
         custom_block(territory_custom, name)
         require(f'name = "{sprite}"' in tianxia_gfx,
                 f"missing province indicator sprite: {sprite}")
-    require(province_gui.index('name ="hre_button"')
-            < province_gui.index('name = "gdd_tianxia_province_member_status_button"'),
-            "Tianxia indicator no longer overlays the hard-coded HRE button")
+    from validate_gdd_tianxia_province_layout import validate_layout
+    validate_layout(province_gui)
     for filename in (
         "gdd_tianxia_province_status.tga",
         "gdd_tianxia_province_add.tga",

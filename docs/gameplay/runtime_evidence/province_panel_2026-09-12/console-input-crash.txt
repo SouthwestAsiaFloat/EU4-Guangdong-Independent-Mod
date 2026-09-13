@@ -1,0 +1,37 @@
+Application: EUIV
+Version: EU4 v1.37.5.0 Inca
+Date/Time: 2026-09-12 20:26:27
+
+Caught signal 11 (SIGSEGV)
+
+Original Stack Trace:
+  2   ???                                 0x0000000000000000 0x0 + 0
+  3   eu4                                 0x0000000101504cb4 _ZN11CTextSprite7SetTextEP9CGraphicsRK7CStringS4_S4_tt8CVector2IjE14FontFormattingb + 1594
+  4   eu4                                 0x0000000101505225 _ZN11CTextSprite11SetTextDataERK7CStringS2_S2_jj8CVector2IjE14FontFormattingb + 215
+  5   eu4                                 0x000000010148a285 _ZN8CEditBox16UpdateEditSpriteEv + 609
+  6   eu4                                 0x000000010148ac2c _ZN8CEditBox20HandleTextInputEventERK15CTextInputEvent + 228
+  7   eu4                                 0x00000001014a64f8 _ZN4CGui15HandleTextEventER11CInputEvent + 42
+  8   eu4                                 0x00000001014a5e19 _ZN4CGui11HandelInputEP6CMousePK9CKeyBoardR5CListI11CInputEventE + 335
+  9   eu4                                 0x0000000100edf9cc _ZN7CEU3Gui11HandelInputEP6CMousePK9CKeyBoardR5CListI11CInputEventE + 14
+  10  eu4                                 0x0000000100710c3f _ZN12CInGameIdler17ProcessInputQueueEv + 123
+  11  eu4                                 0x0000000100709d7f _ZN12CInGameIdler4IdleEb + 6347
+  12  eu4                                 0x00000001013ca2a0 _ZN12CApplication14UpdateOneFrameEb + 288
+  13  eu4                                 0x00000001013ca74a _ZN12CApplication3RunEv + 48
+  14  eu4                                 0x0000000100755aea main + 10944
+  15  dyld                                0x000000020331dbb8 start + 3240
+
+Demangled Stack Trace:
+  2   ???                                 0x0000000000000000 0x0 + 0
+  3   eu4                                 0x0000000101504cb4 CTextSprite::SetText(CGraphics*, CString const&, CString const&, CString const&, unsigned short, unsigned short, CVector2<unsigned int>, FontFormatting, bool) + 1594
+  4   eu4                                 0x0000000101505225 CTextSprite::SetTextData(CString const&, CString const&, CString const&, unsigned int, unsigned int, CVector2<unsigned int>, FontFormatting, bool) + 215
+  5   eu4                                 0x000000010148a285 CEditBox::UpdateEditSprite()             + 609
+  6   eu4                                 0x000000010148ac2c CEditBox::HandleTextInputEvent(CTextInputEvent const&) + 228
+  7   eu4                                 0x00000001014a64f8 CGui::HandleTextEvent(CInputEvent&)      + 42
+  8   eu4                                 0x00000001014a5e19 CGui::HandelInput(CMouse*, CKeyBoard const*, CList<CInputEvent>&) + 335
+  9   eu4                                 0x0000000100edf9cc CEU3Gui::HandelInput(CMouse*, CKeyBoard const*, CList<CInputEvent>&) + 14
+  10  eu4                                 0x0000000100710c3f CInGameIdler::ProcessInputQueue()        + 123
+  11  eu4                                 0x0000000100709d7f CInGameIdler::Idle(bool)                 + 6347
+  12  eu4                                 0x00000001013ca2a0 CApplication::UpdateOneFrame(bool)       + 288
+  13  eu4                                 0x00000001013ca74a CApplication::Run()                      + 48
+  14  eu4                                 0x0000000100755aea main + 10944
+  15  dyld                                0x000000020331dbb8 start + 3240

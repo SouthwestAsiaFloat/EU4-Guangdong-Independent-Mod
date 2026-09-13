@@ -1,0 +1,458 @@
+# Generated from academy_manifest.json; all readers use province modifiers.
+
+defined_text = {
+    name = GetZhxProvinceTianxiaStatus
+    random = no
+    text = {
+        localisation_key = zhx_province_tianxia_dismantled
+        trigger = { has_global_flag = zhx_tianxia_dismantled }
+    }
+    text = {
+        localisation_key = zhx_province_tianxia_uninitialised
+        trigger = { NOT = { has_global_flag = zhx_system_initialised_v13 } }
+    }
+    text = {
+        localisation_key = zhx_province_tianxia_hre
+        trigger = { is_part_of_hre = yes }
+    }
+    text = {
+        localisation_key = zhx_province_tianxia_tc
+        trigger = { is_owned_by_trade_company = yes }
+    }
+    text = {
+        localisation_key = zhx_province_tianxia_member
+        trigger = { has_province_flag = zhx_tianxia_province owner = { zhx_is_tianxia_polity = yes } }
+    }
+    text = {
+        localisation_key = zhx_province_tianxia_foreign
+        trigger = { has_province_flag = zhx_tianxia_province }
+    }
+    text = {
+        localisation_key = zhx_province_tianxia_unregistered
+        trigger = { owner = { zhx_is_tianxia_polity = yes } }
+    }
+    text = {
+        localisation_key = zhx_province_tianxia_outside
+        trigger = { always = yes }
+    }
+}
+
+defined_text = {
+    name = GetZhxProvinceTianxiaHelp
+    random = no
+    text = {
+        localisation_key = zhx_province_tianxia_help_inactive
+        trigger = { has_global_flag = zhx_tianxia_dismantled }
+    }
+    text = {
+        localisation_key = zhx_province_tianxia_help_inactive
+        trigger = { NOT = { has_global_flag = zhx_system_initialised_v13 } }
+    }
+    text = {
+        localisation_key = zhx_province_tianxia_help_exclusive
+        trigger = { is_part_of_hre = yes }
+    }
+    text = {
+        localisation_key = zhx_province_tianxia_help_exclusive
+        trigger = { is_owned_by_trade_company = yes }
+    }
+    text = {
+        localisation_key = zhx_province_tianxia_help_member
+        trigger = { has_province_flag = zhx_tianxia_province owner = { zhx_is_tianxia_polity = yes } }
+    }
+    text = {
+        localisation_key = zhx_province_tianxia_help_foreign
+        trigger = { has_province_flag = zhx_tianxia_province }
+    }
+    text = {
+        localisation_key = zhx_province_tianxia_help_add
+        trigger = { owner = { zhx_is_tianxia_polity = yes } }
+    }
+    text = {
+        localisation_key = zhx_province_tianxia_help_inactive
+        trigger = { always = yes }
+    }
+}
+
+defined_text = {
+    name = GetZhxProvinceRuinsChongli
+    random = no
+    text = {
+        localisation_key = zhx_province_ruins_chongli
+        trigger = { has_province_modifier = zhx_academy_ruins_chongli }
+    }
+    text = {
+        localisation_key = zhx_province_empty
+        trigger = { always = yes }
+    }
+}
+
+defined_text = {
+    name = GetZhxProvinceRuinsMinglun
+    random = no
+    text = {
+        localisation_key = zhx_province_ruins_minglun
+        trigger = { has_province_modifier = zhx_academy_ruins_minglun }
+    }
+    text = {
+        localisation_key = zhx_province_empty
+        trigger = { always = yes }
+    }
+}
+
+defined_text = {
+    name = GetZhxProvinceRuinsYifa
+    random = no
+    text = {
+        localisation_key = zhx_province_ruins_yifa
+        trigger = { has_province_modifier = zhx_academy_ruins_yifa }
+    }
+    text = {
+        localisation_key = zhx_province_empty
+        trigger = { always = yes }
+    }
+}
+
+defined_text = {
+    name = GetZhxProvinceRuinsXunming
+    random = no
+    text = {
+        localisation_key = zhx_province_ruins_xunming
+        trigger = { has_province_modifier = zhx_academy_ruins_xunming }
+    }
+    text = {
+        localisation_key = zhx_province_empty
+        trigger = { always = yes }
+    }
+}
+
+defined_text = {
+    name = GetZhxProvinceRuinsJianai
+    random = no
+    text = {
+        localisation_key = zhx_province_ruins_jianai
+        trigger = { has_province_modifier = zhx_academy_ruins_jianai }
+    }
+    text = {
+        localisation_key = zhx_province_empty
+        trigger = { always = yes }
+    }
+}
+
+defined_text = {
+    name = GetZhxProvinceRuinsShangtong
+    random = no
+    text = {
+        localisation_key = zhx_province_ruins_shangtong
+        trigger = { has_province_modifier = zhx_academy_ruins_shangtong }
+    }
+    text = {
+        localisation_key = zhx_province_empty
+        trigger = { always = yes }
+    }
+}
+
+defined_text = {
+    name = GetZhxProvinceRuinsXuantong
+    random = no
+    text = {
+        localisation_key = zhx_province_ruins_xuantong
+        trigger = { has_province_modifier = zhx_academy_ruins_xuantong }
+    }
+    text = {
+        localisation_key = zhx_province_empty
+        trigger = { always = yes }
+    }
+}
+
+defined_text = {
+    name = GetZhxProvinceRuinsBaopu
+    random = no
+    text = {
+        localisation_key = zhx_province_ruins_baopu
+        trigger = { has_province_modifier = zhx_academy_ruins_baopu }
+    }
+    text = {
+        localisation_key = zhx_province_empty
+        trigger = { always = yes }
+    }
+}
+
+defined_text = {
+    name = GetZhxProvinceRuinsMiaosuan
+    random = no
+    text = {
+        localisation_key = zhx_province_ruins_miaosuan
+        trigger = { has_province_modifier = zhx_academy_ruins_miaosuan }
+    }
+    text = {
+        localisation_key = zhx_province_empty
+        trigger = { always = yes }
+    }
+}
+
+defined_text = {
+    name = GetZhxProvinceRuinsZhisheng
+    random = no
+    text = {
+        localisation_key = zhx_province_ruins_zhisheng
+        trigger = { has_province_modifier = zhx_academy_ruins_zhisheng }
+    }
+    text = {
+        localisation_key = zhx_province_empty
+        trigger = { always = yes }
+    }
+}
+
+defined_text = {
+    name = GetZhxProvinceRuinsBaihe
+    random = no
+    text = {
+        localisation_key = zhx_province_ruins_baihe
+        trigger = { has_province_modifier = zhx_academy_ruins_baihe }
+    }
+    text = {
+        localisation_key = zhx_province_empty
+        trigger = { always = yes }
+    }
+}
+
+defined_text = {
+    name = GetZhxProvinceRuinsLianheng
+    random = no
+    text = {
+        localisation_key = zhx_province_ruins_lianheng
+        trigger = { has_province_modifier = zhx_academy_ruins_lianheng }
+    }
+    text = {
+        localisation_key = zhx_province_empty
+        trigger = { always = yes }
+    }
+}
+
+defined_text = {
+    name = GetZhxProvinceAcademyName
+    random = no
+    text = {
+        localisation_key = zhx_province_academy_chongli_name
+        trigger = { has_province_modifier = zhx_academy_chongli }
+    }
+    text = {
+        localisation_key = zhx_province_academy_minglun_name
+        trigger = { has_province_modifier = zhx_academy_minglun }
+    }
+    text = {
+        localisation_key = zhx_province_academy_yifa_name
+        trigger = { has_province_modifier = zhx_academy_yifa }
+    }
+    text = {
+        localisation_key = zhx_province_academy_xunming_name
+        trigger = { has_province_modifier = zhx_academy_xunming }
+    }
+    text = {
+        localisation_key = zhx_province_academy_jianai_name
+        trigger = { has_province_modifier = zhx_academy_jianai }
+    }
+    text = {
+        localisation_key = zhx_province_academy_shangtong_name
+        trigger = { has_province_modifier = zhx_academy_shangtong }
+    }
+    text = {
+        localisation_key = zhx_province_academy_xuantong_name
+        trigger = { has_province_modifier = zhx_academy_xuantong }
+    }
+    text = {
+        localisation_key = zhx_province_academy_baopu_name
+        trigger = { has_province_modifier = zhx_academy_baopu }
+    }
+    text = {
+        localisation_key = zhx_province_academy_miaosuan_name
+        trigger = { has_province_modifier = zhx_academy_miaosuan }
+    }
+    text = {
+        localisation_key = zhx_province_academy_zhisheng_name
+        trigger = { has_province_modifier = zhx_academy_zhisheng }
+    }
+    text = {
+        localisation_key = zhx_province_academy_baihe_name
+        trigger = { has_province_modifier = zhx_academy_baihe }
+    }
+    text = {
+        localisation_key = zhx_province_academy_lianheng_name
+        trigger = { has_province_modifier = zhx_academy_lianheng }
+    }
+    text = {
+        localisation_key = zhx_province_academy_none
+        trigger = { always = yes }
+    }
+}
+
+defined_text = {
+    name = GetZhxProvinceAcademyDetails
+    random = no
+    text = {
+        localisation_key = zhx_academy_chongli_desc
+        trigger = { has_province_modifier = zhx_academy_chongli }
+    }
+    text = {
+        localisation_key = zhx_academy_minglun_desc
+        trigger = { has_province_modifier = zhx_academy_minglun }
+    }
+    text = {
+        localisation_key = zhx_academy_yifa_desc
+        trigger = { has_province_modifier = zhx_academy_yifa }
+    }
+    text = {
+        localisation_key = zhx_academy_xunming_desc
+        trigger = { has_province_modifier = zhx_academy_xunming }
+    }
+    text = {
+        localisation_key = zhx_academy_jianai_desc
+        trigger = { has_province_modifier = zhx_academy_jianai }
+    }
+    text = {
+        localisation_key = zhx_academy_shangtong_desc
+        trigger = { has_province_modifier = zhx_academy_shangtong }
+    }
+    text = {
+        localisation_key = zhx_academy_xuantong_desc
+        trigger = { has_province_modifier = zhx_academy_xuantong }
+    }
+    text = {
+        localisation_key = zhx_academy_baopu_desc
+        trigger = { has_province_modifier = zhx_academy_baopu }
+    }
+    text = {
+        localisation_key = zhx_academy_miaosuan_desc
+        trigger = { has_province_modifier = zhx_academy_miaosuan }
+    }
+    text = {
+        localisation_key = zhx_academy_zhisheng_desc
+        trigger = { has_province_modifier = zhx_academy_zhisheng }
+    }
+    text = {
+        localisation_key = zhx_academy_baihe_desc
+        trigger = { has_province_modifier = zhx_academy_baihe }
+    }
+    text = {
+        localisation_key = zhx_academy_lianheng_desc
+        trigger = { has_province_modifier = zhx_academy_lianheng }
+    }
+    text = {
+        localisation_key = zhx_province_academy_none_desc
+        trigger = { always = yes }
+    }
+}
+
+defined_text = {
+    name = GetZhxProvinceAcademyState
+    random = no
+    text = {
+        localisation_key = zhx_province_academy_expelling
+        trigger = { has_province_modifier = zhx_academy_under_expulsion }
+    }
+    text = {
+        localisation_key = zhx_province_academy_main_protected
+        trigger = { has_province_modifier = zhx_academy_chongli owner = { has_country_flag = zhx_doctrine_ru } }
+    }
+    text = {
+        localisation_key = zhx_province_academy_invited_protected
+        trigger = { has_province_modifier = zhx_academy_chongli owner = { has_country_modifier = zhx_ru_invited_scholar_modifier } }
+    }
+    text = {
+        localisation_key = zhx_province_academy_main_protected
+        trigger = { has_province_modifier = zhx_academy_minglun owner = { has_country_flag = zhx_doctrine_ru } }
+    }
+    text = {
+        localisation_key = zhx_province_academy_invited_protected
+        trigger = { has_province_modifier = zhx_academy_minglun owner = { has_country_modifier = zhx_ru_invited_scholar_modifier } }
+    }
+    text = {
+        localisation_key = zhx_province_academy_main_protected
+        trigger = { has_province_modifier = zhx_academy_yifa owner = { has_country_flag = zhx_doctrine_fa } }
+    }
+    text = {
+        localisation_key = zhx_province_academy_invited_protected
+        trigger = { has_province_modifier = zhx_academy_yifa owner = { has_country_modifier = zhx_fa_invited_scholar_modifier } }
+    }
+    text = {
+        localisation_key = zhx_province_academy_main_protected
+        trigger = { has_province_modifier = zhx_academy_xunming owner = { has_country_flag = zhx_doctrine_fa } }
+    }
+    text = {
+        localisation_key = zhx_province_academy_invited_protected
+        trigger = { has_province_modifier = zhx_academy_xunming owner = { has_country_modifier = zhx_fa_invited_scholar_modifier } }
+    }
+    text = {
+        localisation_key = zhx_province_academy_main_protected
+        trigger = { has_province_modifier = zhx_academy_jianai owner = { has_country_flag = zhx_doctrine_mo } }
+    }
+    text = {
+        localisation_key = zhx_province_academy_invited_protected
+        trigger = { has_province_modifier = zhx_academy_jianai owner = { has_country_modifier = zhx_mo_invited_scholar_modifier } }
+    }
+    text = {
+        localisation_key = zhx_province_academy_main_protected
+        trigger = { has_province_modifier = zhx_academy_shangtong owner = { has_country_flag = zhx_doctrine_mo } }
+    }
+    text = {
+        localisation_key = zhx_province_academy_invited_protected
+        trigger = { has_province_modifier = zhx_academy_shangtong owner = { has_country_modifier = zhx_mo_invited_scholar_modifier } }
+    }
+    text = {
+        localisation_key = zhx_province_academy_main_protected
+        trigger = { has_province_modifier = zhx_academy_xuantong owner = { has_country_flag = zhx_doctrine_dao } }
+    }
+    text = {
+        localisation_key = zhx_province_academy_invited_protected
+        trigger = { has_province_modifier = zhx_academy_xuantong owner = { has_country_modifier = zhx_dao_invited_scholar_modifier } }
+    }
+    text = {
+        localisation_key = zhx_province_academy_main_protected
+        trigger = { has_province_modifier = zhx_academy_baopu owner = { has_country_flag = zhx_doctrine_dao } }
+    }
+    text = {
+        localisation_key = zhx_province_academy_invited_protected
+        trigger = { has_province_modifier = zhx_academy_baopu owner = { has_country_modifier = zhx_dao_invited_scholar_modifier } }
+    }
+    text = {
+        localisation_key = zhx_province_academy_main_protected
+        trigger = { has_province_modifier = zhx_academy_miaosuan owner = { has_country_flag = zhx_doctrine_bing } }
+    }
+    text = {
+        localisation_key = zhx_province_academy_invited_protected
+        trigger = { has_province_modifier = zhx_academy_miaosuan owner = { has_country_modifier = zhx_bing_invited_scholar_modifier } }
+    }
+    text = {
+        localisation_key = zhx_province_academy_main_protected
+        trigger = { has_province_modifier = zhx_academy_zhisheng owner = { has_country_flag = zhx_doctrine_bing } }
+    }
+    text = {
+        localisation_key = zhx_province_academy_invited_protected
+        trigger = { has_province_modifier = zhx_academy_zhisheng owner = { has_country_modifier = zhx_bing_invited_scholar_modifier } }
+    }
+    text = {
+        localisation_key = zhx_province_academy_main_protected
+        trigger = { has_province_modifier = zhx_academy_baihe owner = { has_country_flag = zhx_doctrine_zongheng } }
+    }
+    text = {
+        localisation_key = zhx_province_academy_invited_protected
+        trigger = { has_province_modifier = zhx_academy_baihe owner = { has_country_modifier = zhx_zongheng_invited_scholar_modifier } }
+    }
+    text = {
+        localisation_key = zhx_province_academy_main_protected
+        trigger = { has_province_modifier = zhx_academy_lianheng owner = { has_country_flag = zhx_doctrine_zongheng } }
+    }
+    text = {
+        localisation_key = zhx_province_academy_invited_protected
+        trigger = { has_province_modifier = zhx_academy_lianheng owner = { has_country_modifier = zhx_zongheng_invited_scholar_modifier } }
+    }
+    text = {
+        localisation_key = zhx_province_academy_unprotected
+        trigger = { zhx_academy_is_active_province = yes }
+    }
+    text = {
+        localisation_key = zhx_province_empty
+        trigger = { always = yes }
+    }
+}

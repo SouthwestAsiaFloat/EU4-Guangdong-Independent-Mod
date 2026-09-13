@@ -733,6 +733,57 @@ guiTypes = {
 			}
 		}
 
+        # ZHX_MAP_EXPERIMENT_HUD_BEGIN
+        windowType = {
+            name = "zhx_map_exp_hud"
+            position = { x = 560 y = 157 }
+            size = { x = 440 y = 66 }
+            moveable = 0
+            fullScreen = no
+            scripted = yes
+            guiButtonType = {
+                name = "zhx_map_exp_hud_background"
+                position = { x = 0 y = 0 }
+                quadTextureSprite = "GFX_zhx_map_exp_hud_background"
+                scripted = yes
+            }
+            guiButtonType = {
+                name = "zhx_map_exp_hud_frame"
+                position = { x = 0 y = 0 }
+                size = { x = 440 y = 66 }
+                quadTextureSprite = "GFX_gdd_eoc_reform_frame"
+                alwaystransparent = yes
+            }
+            instantTextBoxType = {
+                name = "zhx_map_exp_hud_title"
+                position = { x = 12 y = 5 }
+                font = "vic_22"
+                text = "zhx_map_exp_hud_title"
+                maxWidth = 416
+                maxHeight = 26
+                format = centre
+            }
+            instantTextBoxType = {
+                name = "zhx_map_exp_hud_hint"
+                position = { x = 12 y = 37 }
+                font = "vic_18"
+                text = "zhx_map_exp_hud_hint"
+                maxWidth = 180
+                maxHeight = 24
+                format = left
+            }
+            guiButtonType = {
+                name = "zhx_map_exp_hud_restore"
+                position = { x = 204 y = 33 }
+                quadTextureSprite = "GFX_standard_button_224"
+                buttonText = "zhx_map_exp_hud_restore"
+                buttonFont = "vic_18"
+                clicksound = click
+                scripted = yes
+            }
+        }
+        # ZHX_MAP_EXPERIMENT_HUD_END
+
 		# Zhou/Tianxia HUD entry. This is independent from the native hardcoded
 		# Celestial Empire button and must never replace its dragon emblem.
 		windowType = {

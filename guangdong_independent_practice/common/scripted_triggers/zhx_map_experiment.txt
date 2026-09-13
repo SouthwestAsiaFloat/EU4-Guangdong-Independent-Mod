@@ -1,0 +1,11 @@
+# Province scope. Province identity and the current owner's regime are independent.
+zhx_is_fallen_zhou_province = {
+    has_province_flag = zhx_tianxia_province
+    OR = {
+        owner = { NOT = { zhx_is_tianxia_polity = yes } }
+        AND = {
+            has_province_flag = zhx_longxi_fallen_homeland
+            owner = { has_country_flag = zhx_longxi_occupying_regime }
+        }
+    }
+}

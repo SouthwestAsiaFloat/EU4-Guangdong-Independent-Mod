@@ -1,6 +1,6 @@
 # Province-window controls. ROOT is the selected province and FROM is the
-# clicking country. All three occupy the native HRE indicator slot; strict
-# mutual exclusion ensures only one imperial emblem can be actionable there.
+# clicking country. The three mutually exclusive states share a reserved
+# mod page in buildings_window, separate from native HRE/trade-company controls.
 custom_button = {
     name = gdd_tianxia_province_member_status_button
     potential = {

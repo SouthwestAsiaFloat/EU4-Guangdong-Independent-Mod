@@ -927,7 +927,6 @@ guiTypes = {
 				Orientation = "UPPER_LEFT"
 				frame = 1
 				hint_tag = "hint_hre"
-				alwaystransparent = yes
 			}
 
 			iconType =
@@ -938,7 +937,6 @@ guiTypes = {
 				Orientation = "UPPER_LEFT"
 				frame = 1
 				hint_tag = "hint_hre"
-				alwaystransparent = yes
 			}
 
 			guiButtonType = {
@@ -957,43 +955,6 @@ guiTypes = {
 				frame = 1
 			}
 
-			# Zhou Tianxia territory reuses the native HRE indicator slot.  The
-			# controls are ordered after the hard-coded HRE button so a Tianxia
-			# mark blocks HRE admission until Tianxia status has been removed.
-			guiButtonType = {
-				name = "gdd_tianxia_province_member_status_button"
-				quadTextureSprite = "GFX_gdd_tianxia_province_status"
-				# All imperial-status actions use the native button origin.  The
-				# 54px opaque sprite also covers the passive icon at x=32.
-				# This no-op button consumes the complete native click target.
-				position = { x = 20 y = 328 }
-				tooltip = ""
-				tooltipText = ""
-				delayedTooltipText = ""
-				scripted = yes
-			}
-
-			guiButtonType = {
-				name = "gdd_tianxia_province_add_button"
-				quadTextureSprite = "GFX_gdd_tianxia_province_add"
-				position = { x = 20 y = 328 }
-				tooltip = ""
-				tooltipText = ""
-				delayedTooltipText = ""
-				clicksound = click
-				scripted = yes
-			}
-
-			guiButtonType = {
-				name = "gdd_tianxia_province_remove_button"
-				quadTextureSprite = "GFX_gdd_tianxia_province_remove"
-				position = { x = 20 y = 328 }
-				tooltip = ""
-				tooltipText = ""
-				delayedTooltipText = ""
-				clicksound = click
-				scripted = yes
-			}
 
 			guiButtonType = {
 				name ="client_state_button"
@@ -3804,6 +3765,160 @@ guiTypes = {
 					}
 				}
 			}
+
+			# ZHX_PROVINCE_PANEL_BEGIN
+			windowType = {
+			    name = "zhx_province_mod_window"
+			    position = { x = 0 y = 0 }
+			    size = { x = 348 y = 595 }
+			    moveable = 0
+			    fullScreen = no
+			    scripted = yes
+			    guiButtonType = {
+			        name = "zhx_province_mod_background"
+			        position = { x = 0 y = 115 }
+			        quadTextureSprite = "GFX_zhx_province_mod_background"
+			        scripted = yes
+			    }
+			    instantTextBoxType = {
+			        name = "zhx_province_panel_title"
+			        position = { x = 24 y = 137 }
+			        font = "vic_22"
+			        borderSize = { x = 2 y = 2 }
+			        maxWidth = 110
+			        maxHeight = 32
+			        format = left
+			        scripted = yes
+			    }
+			    instantTextBoxType = {
+			        name = "zhx_province_tianxia_heading"
+			        position = { x = 24 y = 184 }
+			        font = "vic_22"
+			        borderSize = { x = 2 y = 2 }
+			        maxWidth = 290
+			        maxHeight = 32
+			        format = left
+			        scripted = yes
+			    }
+			    instantTextBoxType = {
+			        name = "zhx_province_tianxia_status"
+			        position = { x = 90 y = 225 }
+			        font = "vic_18"
+			        borderSize = { x = 2 y = 2 }
+			        maxWidth = 220
+			        maxHeight = 42
+			        format = left
+			        scripted = yes
+			    }
+			    instantTextBoxType = {
+			        name = "zhx_province_tianxia_help"
+			        position = { x = 24 y = 267 }
+			        font = "vic_18"
+			        borderSize = { x = 2 y = 2 }
+			        maxWidth = 292
+			        maxHeight = 36
+			        format = left
+			        scripted = yes
+			    }
+			    guiButtonType = {
+			        name = "gdd_tianxia_province_member_status_button"
+			        quadTextureSprite = "GFX_gdd_tianxia_province_status"
+			        position = { x = 24 y = 220 }
+			        clicksound = click
+			        scripted = yes
+			    }
+			    guiButtonType = {
+			        name = "gdd_tianxia_province_add_button"
+			        quadTextureSprite = "GFX_gdd_tianxia_province_add"
+			        position = { x = 24 y = 220 }
+			        clicksound = click
+			        scripted = yes
+			    }
+			    guiButtonType = {
+			        name = "gdd_tianxia_province_remove_button"
+			        quadTextureSprite = "GFX_gdd_tianxia_province_remove"
+			        position = { x = 24 y = 220 }
+			        clicksound = click
+			        scripted = yes
+			    }
+			    instantTextBoxType = {
+			        name = "zhx_province_academy_heading"
+			        position = { x = 24 y = 313 }
+			        font = "vic_18"
+			        borderSize = { x = 2 y = 2 }
+			        maxWidth = 290
+			        maxHeight = 20
+			        format = left
+			        scripted = yes
+			    }
+			    instantTextBoxType = {
+			        name = "zhx_province_academy_name"
+			        position = { x = 24 y = 450 }
+			        font = "vic_18"
+			        borderSize = { x = 2 y = 2 }
+			        maxWidth = 292
+			        maxHeight = 26
+			        format = left
+			        scripted = yes
+			    }
+			    instantTextBoxType = {
+			        name = "zhx_province_academy_state"
+			        position = { x = 24 y = 480 }
+			        font = "vic_18"
+			        borderSize = { x = 2 y = 2 }
+			        maxWidth = 292
+			        maxHeight = 28
+			        format = left
+			        scripted = yes
+			    }
+			    instantTextBoxType = {
+			        name = "zhx_province_academy_ruins"
+			        position = { x = 24 y = 517 }
+			        font = "vic_18"
+			        borderSize = { x = 2 y = 2 }
+			        maxWidth = 292
+			        maxHeight = 24
+			        format = left
+			        scripted = yes
+			    }
+			    guiButtonType = {
+			        name = "zhx_province_academy_manage"
+			        position = { x = 24 y = 552 }
+			        quadTextureSprite = "GFX_standard_button_71"
+			        buttonText = "zhx_province_academy_manage"
+			        buttonFont = "vic_18"
+			        clicksound = click
+			        scripted = yes
+			    }
+			    guiButtonType = {
+			        name = "zhx_province_academy_withdraw"
+			        position = { x = 112 y = 552 }
+			        quadTextureSprite = "GFX_standard_button_71"
+			        buttonText = "zhx_province_academy_withdraw"
+			        buttonFont = "vic_18"
+			        clicksound = click
+			        scripted = yes
+			    }
+			}
+			guiButtonType = {
+			    name = "zhx_province_buildings_tab"
+			    position = { x = 146 y = 137 }
+			    quadTextureSprite = "GFX_standard_button_71"
+			    buttonText = "zhx_province_buildings_tab"
+			    buttonFont = "vic_18"
+			    clicksound = click
+			    scripted = yes
+			}
+			guiButtonType = {
+			    name = "zhx_province_mod_tab"
+			    position = { x = 224 y = 137 }
+			    quadTextureSprite = "GFX_standard_button_71"
+			    buttonText = "zhx_province_mod_tab"
+			    buttonFont = "vic_18"
+			    clicksound = click
+			    scripted = yes
+			}
+			# ZHX_PROVINCE_PANEL_END
 
 			guiButtonType = {
 				name = "building_close_button"

@@ -95,6 +95,8 @@ FILES = {
     "gdd_characters_readable_utf8.txt": "gdd_characters_l_english.yml",
     "gdd_liang_restoration_readable_utf8.txt": "gdd_liang_restoration_l_english.yml",
     "gdd_celestial_ui_readable_utf8.txt": "gdd_celestial_ui_l_english.yml",
+    "zhx_map_experiment_readable_utf8.txt": "zhx_map_experiment_l_english.yml",
+    "zhx_province_panel_readable_utf8.txt": "zhx_province_panel_l_english.yml",
     "zhx_system_readable_utf8.txt": "zhx_system_l_english.yml",
     "zhx_doctrine_readable_utf8.txt": "zhx_doctrine_l_english.yml",
     "zhx_doctrine_expansion_readable_utf8.txt": "zhx_doctrine_expansion_l_english.yml",
