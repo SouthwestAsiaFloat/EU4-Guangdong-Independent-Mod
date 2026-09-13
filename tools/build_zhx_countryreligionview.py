@@ -535,7 +535,10 @@ def render(dependency_root: Path) -> str:
         + text[modal_anchor:]
     )
     close = find_named_window_close(text, "countryreligionview")
-    return text[:close] + DOCTRINE_STATUS + text[close:]
+    from build_zhx_academy_directory import render as render_directory
+
+    directory = render_directory()["directory_gui_fragment"]
+    return text[:close] + DOCTRINE_STATUS + directory + text[close:]
 
 
 def run(dependency_root: Path, check: bool) -> None:

@@ -3021,6 +3021,6976 @@ guiTypes = {
 				clicksound = click
 				scripted = yes
 			}
+guiButtonType = {
+    name = "zhx_ad_open_button"
+ position = { x = 366 y = 76 }
+ quadTextureSprite = "GFX_button_straight_148_32"
+ buttonText = "zhx_ad_open_button"
+ buttonFont = "vic_18"
+ clicksound = click
+ scripted = yes
+
+}
+
+windowType = {
+    name = "zhx_ad_panel"
+ position = { x = 535 y = 0 }
+ size = { x = 690 y = 580 }
+ moveable = 0
+ scripted = yes
+guiButtonType = {
+    name = "zhx_ad_background"
+ position = { x = 0 y = 0 }
+ quadTextureSprite = "GFX_zhx_ad_background"
+ buttonText = "zhx_ad_background"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_title"
+ position = { x = 30 y = 20 }
+ font = "zhx_ad_title"
+ text = ""
+ maxWidth = 230
+ maxHeight = 32
+ borderSize = { x = 0 y = 0 }
+ format = left
+ fixedsize = yes
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_close"
+ position = { x = 648 y = 15 }
+ quadTextureSprite = "GFX_zhx_ad_close"
+ buttonText = "zhx_ad_close"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_subtitle"
+ position = { x = 31 y = 53 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 500
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ fixedsize = yes
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_seal"
+ position = { x = 564 y = 26 }
+ spriteType = "GFX_zhx_ad_seal"
+ scale = 1
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_seal_text"
+ position = { x = 575 y = 32 }
+ font = "zhx_ad_red"
+ text = ""
+ maxWidth = 38
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_head_48"
+ position = { x = 48 y = 88 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 116
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_head_180"
+ position = { x = 180 y = 88 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 55
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_head_242"
+ position = { x = 242 y = 88 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 105
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_head_357"
+ position = { x = 357 y = 88 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 100
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_head_470"
+ position = { x = 470 y = 88 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 90
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_head_580"
+ position = { x = 580 y = 88 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 60
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ fixedsize = yes
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_track"
+ position = { x = 661 y = 140 }
+ spriteType = "GFX_zhx_ad_track"
+ scale = 1
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_up"
+ position = { x = 650 y = 113 }
+ quadTextureSprite = "GFX_zhx_ad_up"
+ buttonText = "zhx_ad_up"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_down"
+ position = { x = 650 y = 312 }
+ quadTextureSprite = "GFX_zhx_ad_down"
+ buttonText = "zhx_ad_down"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_thumb_0"
+ position = { x = 659 y = 143 }
+ spriteType = "GFX_zhx_ad_thumb"
+ scale = 1
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_range_0"
+ position = { x = 510 y = 343 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 140
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ fixedsize = yes
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_thumb_1"
+ position = { x = 659 y = 166 }
+ spriteType = "GFX_zhx_ad_thumb"
+ scale = 1
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_range_1"
+ position = { x = 510 y = 343 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 140
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ fixedsize = yes
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_thumb_2"
+ position = { x = 659 y = 190 }
+ spriteType = "GFX_zhx_ad_thumb"
+ scale = 1
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_range_2"
+ position = { x = 510 y = 343 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 140
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ fixedsize = yes
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_thumb_3"
+ position = { x = 659 y = 213 }
+ spriteType = "GFX_zhx_ad_thumb"
+ scale = 1
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_range_3"
+ position = { x = 510 y = 343 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 140
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ fixedsize = yes
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_thumb_4"
+ position = { x = 659 y = 236 }
+ spriteType = "GFX_zhx_ad_thumb"
+ scale = 1
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_range_4"
+ position = { x = 510 y = 343 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 140
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ fixedsize = yes
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_thumb_5"
+ position = { x = 659 y = 260 }
+ spriteType = "GFX_zhx_ad_thumb"
+ scale = 1
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_range_5"
+ position = { x = 510 y = 343 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 140
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ fixedsize = yes
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_thumb_6"
+ position = { x = 659 y = 283 }
+ spriteType = "GFX_zhx_ad_thumb"
+ scale = 1
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_range_6"
+ position = { x = 510 y = 343 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 140
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_scroll_hint"
+ position = { x = 30 y = 343 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 460
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ fixedsize = yes
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_detail_bg"
+ position = { x = 24 y = 371 }
+ spriteType = "GFX_zhx_ad_detail"
+ scale = 1
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_row_chongli_0"
+ position = { x = 20 y = 115 }
+ quadTextureSprite = "GFX_zhx_ad_row"
+ buttonText = "zhx_ad_row_chongli_0"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_chongli_0_selected"
+ position = { x = 20 y = 115 }
+ spriteType = "GFX_zhx_ad_selected"
+ scale = 1
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_chongli_0_emblem"
+ position = { x = 24 y = 120 }
+ spriteType = "GFX_zhx_doctrine_ru_school"
+ scale = 0.5
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_chongli_0_status_seal"
+ position = { x = 466 y = 120 }
+ spriteType = "GFX_zhx_ad_status"
+ scale = 1
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_chongli_0_name"
+ position = { x = 55 y = 123 }
+ font = "zhx_ad_name"
+ text = ""
+ maxWidth = 120
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_chongli_0_school"
+ position = { x = 180 y = 125 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 58
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_chongli_0_site"
+ position = { x = 242 y = 125 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 106
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_chongli_0_owner"
+ position = { x = 357 y = 125 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 106
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_chongli_0_status"
+ position = { x = 481 y = 125 }
+ font = "zhx_ad_body"
+ text = ""
+ maxWidth = 78
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_row_chongli_0_goto"
+ position = { x = 575 y = 119 }
+ quadTextureSprite = "GFX_zhx_ad_small_button"
+ buttonText = "zhx_ad_row_chongli_0_goto"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_detail_chongli"
+ position = { x = 38 y = 383 }
+ font = "zhx_ad_name"
+ text = ""
+ maxWidth = 590
+ maxHeight = 28
+ borderSize = { x = 0 y = 0 }
+ format = left
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_detail_place_chongli"
+ position = { x = 38 y = 499 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 612
+ maxHeight = 22
+ borderSize = { x = 0 y = 0 }
+ format = left
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_detail_benefit_chongli"
+ position = { x = 38 y = 450 }
+ font = "zhx_ad_body"
+ text = ""
+ maxWidth = 612
+ maxHeight = 44
+ borderSize = { x = 0 y = 0 }
+ format = left
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_detail_relation_chongli"
+ position = { x = 38 y = 417 }
+ font = "zhx_ad_body"
+ text = ""
+ maxWidth = 612
+ maxHeight = 28
+ borderSize = { x = 0 y = 0 }
+ format = left
+ fixedsize = yes
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_ruins_button_chongli"
+ position = { x = 38 y = 532 }
+ quadTextureSprite = "GFX_zhx_ad_small_button"
+ buttonText = "zhx_ad_ruins_button_chongli"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_ruins_count_chongli"
+ position = { x = 116 y = 539 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 130
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ fixedsize = yes
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_expel_chongli"
+ position = { x = 328 y = 532 }
+ quadTextureSprite = "GFX_zhx_ad_action_button"
+ buttonText = "zhx_ad_expel_chongli"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_withdraw_chongli"
+ position = { x = 492 y = 532 }
+ quadTextureSprite = "GFX_zhx_ad_action_button"
+ buttonText = "zhx_ad_withdraw_chongli"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_row_minglun_0"
+ position = { x = 20 y = 151 }
+ quadTextureSprite = "GFX_zhx_ad_row"
+ buttonText = "zhx_ad_row_minglun_0"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_minglun_0_selected"
+ position = { x = 20 y = 151 }
+ spriteType = "GFX_zhx_ad_selected"
+ scale = 1
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_minglun_0_emblem"
+ position = { x = 24 y = 156 }
+ spriteType = "GFX_zhx_doctrine_ru_school"
+ scale = 0.5
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_minglun_0_status_seal"
+ position = { x = 466 y = 156 }
+ spriteType = "GFX_zhx_ad_status"
+ scale = 1
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_minglun_0_name"
+ position = { x = 55 y = 159 }
+ font = "zhx_ad_name"
+ text = ""
+ maxWidth = 120
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_minglun_0_school"
+ position = { x = 180 y = 161 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 58
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_minglun_0_site"
+ position = { x = 242 y = 161 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 106
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_minglun_0_owner"
+ position = { x = 357 y = 161 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 106
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_minglun_0_status"
+ position = { x = 481 y = 161 }
+ font = "zhx_ad_body"
+ text = ""
+ maxWidth = 78
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_row_minglun_0_goto"
+ position = { x = 575 y = 155 }
+ quadTextureSprite = "GFX_zhx_ad_small_button"
+ buttonText = "zhx_ad_row_minglun_0_goto"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_row_minglun_1"
+ position = { x = 20 y = 115 }
+ quadTextureSprite = "GFX_zhx_ad_row"
+ buttonText = "zhx_ad_row_minglun_1"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_minglun_1_selected"
+ position = { x = 20 y = 115 }
+ spriteType = "GFX_zhx_ad_selected"
+ scale = 1
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_minglun_1_emblem"
+ position = { x = 24 y = 120 }
+ spriteType = "GFX_zhx_doctrine_ru_school"
+ scale = 0.5
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_minglun_1_status_seal"
+ position = { x = 466 y = 120 }
+ spriteType = "GFX_zhx_ad_status"
+ scale = 1
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_minglun_1_name"
+ position = { x = 55 y = 123 }
+ font = "zhx_ad_name"
+ text = ""
+ maxWidth = 120
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_minglun_1_school"
+ position = { x = 180 y = 125 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 58
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_minglun_1_site"
+ position = { x = 242 y = 125 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 106
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_minglun_1_owner"
+ position = { x = 357 y = 125 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 106
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_minglun_1_status"
+ position = { x = 481 y = 125 }
+ font = "zhx_ad_body"
+ text = ""
+ maxWidth = 78
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_row_minglun_1_goto"
+ position = { x = 575 y = 119 }
+ quadTextureSprite = "GFX_zhx_ad_small_button"
+ buttonText = "zhx_ad_row_minglun_1_goto"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_detail_minglun"
+ position = { x = 38 y = 383 }
+ font = "zhx_ad_name"
+ text = ""
+ maxWidth = 590
+ maxHeight = 28
+ borderSize = { x = 0 y = 0 }
+ format = left
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_detail_place_minglun"
+ position = { x = 38 y = 499 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 612
+ maxHeight = 22
+ borderSize = { x = 0 y = 0 }
+ format = left
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_detail_benefit_minglun"
+ position = { x = 38 y = 450 }
+ font = "zhx_ad_body"
+ text = ""
+ maxWidth = 612
+ maxHeight = 44
+ borderSize = { x = 0 y = 0 }
+ format = left
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_detail_relation_minglun"
+ position = { x = 38 y = 417 }
+ font = "zhx_ad_body"
+ text = ""
+ maxWidth = 612
+ maxHeight = 28
+ borderSize = { x = 0 y = 0 }
+ format = left
+ fixedsize = yes
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_ruins_button_minglun"
+ position = { x = 38 y = 532 }
+ quadTextureSprite = "GFX_zhx_ad_small_button"
+ buttonText = "zhx_ad_ruins_button_minglun"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_ruins_count_minglun"
+ position = { x = 116 y = 539 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 130
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ fixedsize = yes
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_expel_minglun"
+ position = { x = 328 y = 532 }
+ quadTextureSprite = "GFX_zhx_ad_action_button"
+ buttonText = "zhx_ad_expel_minglun"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_withdraw_minglun"
+ position = { x = 492 y = 532 }
+ quadTextureSprite = "GFX_zhx_ad_action_button"
+ buttonText = "zhx_ad_withdraw_minglun"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_row_yifa_0"
+ position = { x = 20 y = 187 }
+ quadTextureSprite = "GFX_zhx_ad_row"
+ buttonText = "zhx_ad_row_yifa_0"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_yifa_0_selected"
+ position = { x = 20 y = 187 }
+ spriteType = "GFX_zhx_ad_selected"
+ scale = 1
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_yifa_0_emblem"
+ position = { x = 24 y = 192 }
+ spriteType = "GFX_zhx_doctrine_fa_school"
+ scale = 0.5
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_yifa_0_status_seal"
+ position = { x = 466 y = 192 }
+ spriteType = "GFX_zhx_ad_status"
+ scale = 1
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_yifa_0_name"
+ position = { x = 55 y = 195 }
+ font = "zhx_ad_name"
+ text = ""
+ maxWidth = 120
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_yifa_0_school"
+ position = { x = 180 y = 197 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 58
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_yifa_0_site"
+ position = { x = 242 y = 197 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 106
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_yifa_0_owner"
+ position = { x = 357 y = 197 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 106
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_yifa_0_status"
+ position = { x = 481 y = 197 }
+ font = "zhx_ad_body"
+ text = ""
+ maxWidth = 78
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_row_yifa_0_goto"
+ position = { x = 575 y = 191 }
+ quadTextureSprite = "GFX_zhx_ad_small_button"
+ buttonText = "zhx_ad_row_yifa_0_goto"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_row_yifa_1"
+ position = { x = 20 y = 151 }
+ quadTextureSprite = "GFX_zhx_ad_row"
+ buttonText = "zhx_ad_row_yifa_1"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_yifa_1_selected"
+ position = { x = 20 y = 151 }
+ spriteType = "GFX_zhx_ad_selected"
+ scale = 1
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_yifa_1_emblem"
+ position = { x = 24 y = 156 }
+ spriteType = "GFX_zhx_doctrine_fa_school"
+ scale = 0.5
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_yifa_1_status_seal"
+ position = { x = 466 y = 156 }
+ spriteType = "GFX_zhx_ad_status"
+ scale = 1
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_yifa_1_name"
+ position = { x = 55 y = 159 }
+ font = "zhx_ad_name"
+ text = ""
+ maxWidth = 120
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_yifa_1_school"
+ position = { x = 180 y = 161 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 58
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_yifa_1_site"
+ position = { x = 242 y = 161 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 106
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_yifa_1_owner"
+ position = { x = 357 y = 161 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 106
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_yifa_1_status"
+ position = { x = 481 y = 161 }
+ font = "zhx_ad_body"
+ text = ""
+ maxWidth = 78
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_row_yifa_1_goto"
+ position = { x = 575 y = 155 }
+ quadTextureSprite = "GFX_zhx_ad_small_button"
+ buttonText = "zhx_ad_row_yifa_1_goto"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_row_yifa_2"
+ position = { x = 20 y = 115 }
+ quadTextureSprite = "GFX_zhx_ad_row"
+ buttonText = "zhx_ad_row_yifa_2"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_yifa_2_selected"
+ position = { x = 20 y = 115 }
+ spriteType = "GFX_zhx_ad_selected"
+ scale = 1
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_yifa_2_emblem"
+ position = { x = 24 y = 120 }
+ spriteType = "GFX_zhx_doctrine_fa_school"
+ scale = 0.5
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_yifa_2_status_seal"
+ position = { x = 466 y = 120 }
+ spriteType = "GFX_zhx_ad_status"
+ scale = 1
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_yifa_2_name"
+ position = { x = 55 y = 123 }
+ font = "zhx_ad_name"
+ text = ""
+ maxWidth = 120
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_yifa_2_school"
+ position = { x = 180 y = 125 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 58
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_yifa_2_site"
+ position = { x = 242 y = 125 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 106
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_yifa_2_owner"
+ position = { x = 357 y = 125 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 106
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_yifa_2_status"
+ position = { x = 481 y = 125 }
+ font = "zhx_ad_body"
+ text = ""
+ maxWidth = 78
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_row_yifa_2_goto"
+ position = { x = 575 y = 119 }
+ quadTextureSprite = "GFX_zhx_ad_small_button"
+ buttonText = "zhx_ad_row_yifa_2_goto"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_detail_yifa"
+ position = { x = 38 y = 383 }
+ font = "zhx_ad_name"
+ text = ""
+ maxWidth = 590
+ maxHeight = 28
+ borderSize = { x = 0 y = 0 }
+ format = left
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_detail_place_yifa"
+ position = { x = 38 y = 499 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 612
+ maxHeight = 22
+ borderSize = { x = 0 y = 0 }
+ format = left
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_detail_benefit_yifa"
+ position = { x = 38 y = 450 }
+ font = "zhx_ad_body"
+ text = ""
+ maxWidth = 612
+ maxHeight = 44
+ borderSize = { x = 0 y = 0 }
+ format = left
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_detail_relation_yifa"
+ position = { x = 38 y = 417 }
+ font = "zhx_ad_body"
+ text = ""
+ maxWidth = 612
+ maxHeight = 28
+ borderSize = { x = 0 y = 0 }
+ format = left
+ fixedsize = yes
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_ruins_button_yifa"
+ position = { x = 38 y = 532 }
+ quadTextureSprite = "GFX_zhx_ad_small_button"
+ buttonText = "zhx_ad_ruins_button_yifa"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_ruins_count_yifa"
+ position = { x = 116 y = 539 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 130
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ fixedsize = yes
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_expel_yifa"
+ position = { x = 328 y = 532 }
+ quadTextureSprite = "GFX_zhx_ad_action_button"
+ buttonText = "zhx_ad_expel_yifa"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_withdraw_yifa"
+ position = { x = 492 y = 532 }
+ quadTextureSprite = "GFX_zhx_ad_action_button"
+ buttonText = "zhx_ad_withdraw_yifa"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_row_xunming_0"
+ position = { x = 20 y = 223 }
+ quadTextureSprite = "GFX_zhx_ad_row"
+ buttonText = "zhx_ad_row_xunming_0"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_xunming_0_selected"
+ position = { x = 20 y = 223 }
+ spriteType = "GFX_zhx_ad_selected"
+ scale = 1
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_xunming_0_emblem"
+ position = { x = 24 y = 228 }
+ spriteType = "GFX_zhx_doctrine_fa_school"
+ scale = 0.5
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_xunming_0_status_seal"
+ position = { x = 466 y = 228 }
+ spriteType = "GFX_zhx_ad_status"
+ scale = 1
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_xunming_0_name"
+ position = { x = 55 y = 231 }
+ font = "zhx_ad_name"
+ text = ""
+ maxWidth = 120
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_xunming_0_school"
+ position = { x = 180 y = 233 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 58
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_xunming_0_site"
+ position = { x = 242 y = 233 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 106
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_xunming_0_owner"
+ position = { x = 357 y = 233 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 106
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_xunming_0_status"
+ position = { x = 481 y = 233 }
+ font = "zhx_ad_body"
+ text = ""
+ maxWidth = 78
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_row_xunming_0_goto"
+ position = { x = 575 y = 227 }
+ quadTextureSprite = "GFX_zhx_ad_small_button"
+ buttonText = "zhx_ad_row_xunming_0_goto"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_row_xunming_1"
+ position = { x = 20 y = 187 }
+ quadTextureSprite = "GFX_zhx_ad_row"
+ buttonText = "zhx_ad_row_xunming_1"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_xunming_1_selected"
+ position = { x = 20 y = 187 }
+ spriteType = "GFX_zhx_ad_selected"
+ scale = 1
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_xunming_1_emblem"
+ position = { x = 24 y = 192 }
+ spriteType = "GFX_zhx_doctrine_fa_school"
+ scale = 0.5
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_xunming_1_status_seal"
+ position = { x = 466 y = 192 }
+ spriteType = "GFX_zhx_ad_status"
+ scale = 1
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_xunming_1_name"
+ position = { x = 55 y = 195 }
+ font = "zhx_ad_name"
+ text = ""
+ maxWidth = 120
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_xunming_1_school"
+ position = { x = 180 y = 197 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 58
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_xunming_1_site"
+ position = { x = 242 y = 197 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 106
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_xunming_1_owner"
+ position = { x = 357 y = 197 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 106
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_xunming_1_status"
+ position = { x = 481 y = 197 }
+ font = "zhx_ad_body"
+ text = ""
+ maxWidth = 78
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_row_xunming_1_goto"
+ position = { x = 575 y = 191 }
+ quadTextureSprite = "GFX_zhx_ad_small_button"
+ buttonText = "zhx_ad_row_xunming_1_goto"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_row_xunming_2"
+ position = { x = 20 y = 151 }
+ quadTextureSprite = "GFX_zhx_ad_row"
+ buttonText = "zhx_ad_row_xunming_2"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_xunming_2_selected"
+ position = { x = 20 y = 151 }
+ spriteType = "GFX_zhx_ad_selected"
+ scale = 1
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_xunming_2_emblem"
+ position = { x = 24 y = 156 }
+ spriteType = "GFX_zhx_doctrine_fa_school"
+ scale = 0.5
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_xunming_2_status_seal"
+ position = { x = 466 y = 156 }
+ spriteType = "GFX_zhx_ad_status"
+ scale = 1
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_xunming_2_name"
+ position = { x = 55 y = 159 }
+ font = "zhx_ad_name"
+ text = ""
+ maxWidth = 120
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_xunming_2_school"
+ position = { x = 180 y = 161 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 58
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_xunming_2_site"
+ position = { x = 242 y = 161 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 106
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_xunming_2_owner"
+ position = { x = 357 y = 161 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 106
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_xunming_2_status"
+ position = { x = 481 y = 161 }
+ font = "zhx_ad_body"
+ text = ""
+ maxWidth = 78
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_row_xunming_2_goto"
+ position = { x = 575 y = 155 }
+ quadTextureSprite = "GFX_zhx_ad_small_button"
+ buttonText = "zhx_ad_row_xunming_2_goto"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_row_xunming_3"
+ position = { x = 20 y = 115 }
+ quadTextureSprite = "GFX_zhx_ad_row"
+ buttonText = "zhx_ad_row_xunming_3"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_xunming_3_selected"
+ position = { x = 20 y = 115 }
+ spriteType = "GFX_zhx_ad_selected"
+ scale = 1
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_xunming_3_emblem"
+ position = { x = 24 y = 120 }
+ spriteType = "GFX_zhx_doctrine_fa_school"
+ scale = 0.5
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_xunming_3_status_seal"
+ position = { x = 466 y = 120 }
+ spriteType = "GFX_zhx_ad_status"
+ scale = 1
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_xunming_3_name"
+ position = { x = 55 y = 123 }
+ font = "zhx_ad_name"
+ text = ""
+ maxWidth = 120
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_xunming_3_school"
+ position = { x = 180 y = 125 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 58
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_xunming_3_site"
+ position = { x = 242 y = 125 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 106
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_xunming_3_owner"
+ position = { x = 357 y = 125 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 106
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_xunming_3_status"
+ position = { x = 481 y = 125 }
+ font = "zhx_ad_body"
+ text = ""
+ maxWidth = 78
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_row_xunming_3_goto"
+ position = { x = 575 y = 119 }
+ quadTextureSprite = "GFX_zhx_ad_small_button"
+ buttonText = "zhx_ad_row_xunming_3_goto"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_detail_xunming"
+ position = { x = 38 y = 383 }
+ font = "zhx_ad_name"
+ text = ""
+ maxWidth = 590
+ maxHeight = 28
+ borderSize = { x = 0 y = 0 }
+ format = left
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_detail_place_xunming"
+ position = { x = 38 y = 499 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 612
+ maxHeight = 22
+ borderSize = { x = 0 y = 0 }
+ format = left
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_detail_benefit_xunming"
+ position = { x = 38 y = 450 }
+ font = "zhx_ad_body"
+ text = ""
+ maxWidth = 612
+ maxHeight = 44
+ borderSize = { x = 0 y = 0 }
+ format = left
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_detail_relation_xunming"
+ position = { x = 38 y = 417 }
+ font = "zhx_ad_body"
+ text = ""
+ maxWidth = 612
+ maxHeight = 28
+ borderSize = { x = 0 y = 0 }
+ format = left
+ fixedsize = yes
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_ruins_button_xunming"
+ position = { x = 38 y = 532 }
+ quadTextureSprite = "GFX_zhx_ad_small_button"
+ buttonText = "zhx_ad_ruins_button_xunming"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_ruins_count_xunming"
+ position = { x = 116 y = 539 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 130
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ fixedsize = yes
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_expel_xunming"
+ position = { x = 328 y = 532 }
+ quadTextureSprite = "GFX_zhx_ad_action_button"
+ buttonText = "zhx_ad_expel_xunming"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_withdraw_xunming"
+ position = { x = 492 y = 532 }
+ quadTextureSprite = "GFX_zhx_ad_action_button"
+ buttonText = "zhx_ad_withdraw_xunming"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_row_jianai_0"
+ position = { x = 20 y = 259 }
+ quadTextureSprite = "GFX_zhx_ad_row"
+ buttonText = "zhx_ad_row_jianai_0"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_jianai_0_selected"
+ position = { x = 20 y = 259 }
+ spriteType = "GFX_zhx_ad_selected"
+ scale = 1
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_jianai_0_emblem"
+ position = { x = 24 y = 264 }
+ spriteType = "GFX_zhx_doctrine_mo_school"
+ scale = 0.5
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_jianai_0_status_seal"
+ position = { x = 466 y = 264 }
+ spriteType = "GFX_zhx_ad_status"
+ scale = 1
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_jianai_0_name"
+ position = { x = 55 y = 267 }
+ font = "zhx_ad_name"
+ text = ""
+ maxWidth = 120
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_jianai_0_school"
+ position = { x = 180 y = 269 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 58
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_jianai_0_site"
+ position = { x = 242 y = 269 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 106
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_jianai_0_owner"
+ position = { x = 357 y = 269 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 106
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_jianai_0_status"
+ position = { x = 481 y = 269 }
+ font = "zhx_ad_body"
+ text = ""
+ maxWidth = 78
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_row_jianai_0_goto"
+ position = { x = 575 y = 263 }
+ quadTextureSprite = "GFX_zhx_ad_small_button"
+ buttonText = "zhx_ad_row_jianai_0_goto"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_row_jianai_1"
+ position = { x = 20 y = 223 }
+ quadTextureSprite = "GFX_zhx_ad_row"
+ buttonText = "zhx_ad_row_jianai_1"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_jianai_1_selected"
+ position = { x = 20 y = 223 }
+ spriteType = "GFX_zhx_ad_selected"
+ scale = 1
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_jianai_1_emblem"
+ position = { x = 24 y = 228 }
+ spriteType = "GFX_zhx_doctrine_mo_school"
+ scale = 0.5
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_jianai_1_status_seal"
+ position = { x = 466 y = 228 }
+ spriteType = "GFX_zhx_ad_status"
+ scale = 1
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_jianai_1_name"
+ position = { x = 55 y = 231 }
+ font = "zhx_ad_name"
+ text = ""
+ maxWidth = 120
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_jianai_1_school"
+ position = { x = 180 y = 233 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 58
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_jianai_1_site"
+ position = { x = 242 y = 233 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 106
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_jianai_1_owner"
+ position = { x = 357 y = 233 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 106
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_jianai_1_status"
+ position = { x = 481 y = 233 }
+ font = "zhx_ad_body"
+ text = ""
+ maxWidth = 78
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_row_jianai_1_goto"
+ position = { x = 575 y = 227 }
+ quadTextureSprite = "GFX_zhx_ad_small_button"
+ buttonText = "zhx_ad_row_jianai_1_goto"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_row_jianai_2"
+ position = { x = 20 y = 187 }
+ quadTextureSprite = "GFX_zhx_ad_row"
+ buttonText = "zhx_ad_row_jianai_2"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_jianai_2_selected"
+ position = { x = 20 y = 187 }
+ spriteType = "GFX_zhx_ad_selected"
+ scale = 1
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_jianai_2_emblem"
+ position = { x = 24 y = 192 }
+ spriteType = "GFX_zhx_doctrine_mo_school"
+ scale = 0.5
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_jianai_2_status_seal"
+ position = { x = 466 y = 192 }
+ spriteType = "GFX_zhx_ad_status"
+ scale = 1
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_jianai_2_name"
+ position = { x = 55 y = 195 }
+ font = "zhx_ad_name"
+ text = ""
+ maxWidth = 120
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_jianai_2_school"
+ position = { x = 180 y = 197 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 58
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_jianai_2_site"
+ position = { x = 242 y = 197 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 106
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_jianai_2_owner"
+ position = { x = 357 y = 197 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 106
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_jianai_2_status"
+ position = { x = 481 y = 197 }
+ font = "zhx_ad_body"
+ text = ""
+ maxWidth = 78
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_row_jianai_2_goto"
+ position = { x = 575 y = 191 }
+ quadTextureSprite = "GFX_zhx_ad_small_button"
+ buttonText = "zhx_ad_row_jianai_2_goto"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_row_jianai_3"
+ position = { x = 20 y = 151 }
+ quadTextureSprite = "GFX_zhx_ad_row"
+ buttonText = "zhx_ad_row_jianai_3"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_jianai_3_selected"
+ position = { x = 20 y = 151 }
+ spriteType = "GFX_zhx_ad_selected"
+ scale = 1
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_jianai_3_emblem"
+ position = { x = 24 y = 156 }
+ spriteType = "GFX_zhx_doctrine_mo_school"
+ scale = 0.5
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_jianai_3_status_seal"
+ position = { x = 466 y = 156 }
+ spriteType = "GFX_zhx_ad_status"
+ scale = 1
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_jianai_3_name"
+ position = { x = 55 y = 159 }
+ font = "zhx_ad_name"
+ text = ""
+ maxWidth = 120
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_jianai_3_school"
+ position = { x = 180 y = 161 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 58
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_jianai_3_site"
+ position = { x = 242 y = 161 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 106
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_jianai_3_owner"
+ position = { x = 357 y = 161 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 106
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_jianai_3_status"
+ position = { x = 481 y = 161 }
+ font = "zhx_ad_body"
+ text = ""
+ maxWidth = 78
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_row_jianai_3_goto"
+ position = { x = 575 y = 155 }
+ quadTextureSprite = "GFX_zhx_ad_small_button"
+ buttonText = "zhx_ad_row_jianai_3_goto"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_row_jianai_4"
+ position = { x = 20 y = 115 }
+ quadTextureSprite = "GFX_zhx_ad_row"
+ buttonText = "zhx_ad_row_jianai_4"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_jianai_4_selected"
+ position = { x = 20 y = 115 }
+ spriteType = "GFX_zhx_ad_selected"
+ scale = 1
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_jianai_4_emblem"
+ position = { x = 24 y = 120 }
+ spriteType = "GFX_zhx_doctrine_mo_school"
+ scale = 0.5
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_jianai_4_status_seal"
+ position = { x = 466 y = 120 }
+ spriteType = "GFX_zhx_ad_status"
+ scale = 1
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_jianai_4_name"
+ position = { x = 55 y = 123 }
+ font = "zhx_ad_name"
+ text = ""
+ maxWidth = 120
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_jianai_4_school"
+ position = { x = 180 y = 125 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 58
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_jianai_4_site"
+ position = { x = 242 y = 125 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 106
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_jianai_4_owner"
+ position = { x = 357 y = 125 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 106
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_jianai_4_status"
+ position = { x = 481 y = 125 }
+ font = "zhx_ad_body"
+ text = ""
+ maxWidth = 78
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_row_jianai_4_goto"
+ position = { x = 575 y = 119 }
+ quadTextureSprite = "GFX_zhx_ad_small_button"
+ buttonText = "zhx_ad_row_jianai_4_goto"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_detail_jianai"
+ position = { x = 38 y = 383 }
+ font = "zhx_ad_name"
+ text = ""
+ maxWidth = 590
+ maxHeight = 28
+ borderSize = { x = 0 y = 0 }
+ format = left
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_detail_place_jianai"
+ position = { x = 38 y = 499 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 612
+ maxHeight = 22
+ borderSize = { x = 0 y = 0 }
+ format = left
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_detail_benefit_jianai"
+ position = { x = 38 y = 450 }
+ font = "zhx_ad_body"
+ text = ""
+ maxWidth = 612
+ maxHeight = 44
+ borderSize = { x = 0 y = 0 }
+ format = left
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_detail_relation_jianai"
+ position = { x = 38 y = 417 }
+ font = "zhx_ad_body"
+ text = ""
+ maxWidth = 612
+ maxHeight = 28
+ borderSize = { x = 0 y = 0 }
+ format = left
+ fixedsize = yes
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_ruins_button_jianai"
+ position = { x = 38 y = 532 }
+ quadTextureSprite = "GFX_zhx_ad_small_button"
+ buttonText = "zhx_ad_ruins_button_jianai"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_ruins_count_jianai"
+ position = { x = 116 y = 539 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 130
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ fixedsize = yes
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_expel_jianai"
+ position = { x = 328 y = 532 }
+ quadTextureSprite = "GFX_zhx_ad_action_button"
+ buttonText = "zhx_ad_expel_jianai"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_withdraw_jianai"
+ position = { x = 492 y = 532 }
+ quadTextureSprite = "GFX_zhx_ad_action_button"
+ buttonText = "zhx_ad_withdraw_jianai"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_row_shangtong_0"
+ position = { x = 20 y = 295 }
+ quadTextureSprite = "GFX_zhx_ad_row"
+ buttonText = "zhx_ad_row_shangtong_0"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_shangtong_0_selected"
+ position = { x = 20 y = 295 }
+ spriteType = "GFX_zhx_ad_selected"
+ scale = 1
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_shangtong_0_emblem"
+ position = { x = 24 y = 300 }
+ spriteType = "GFX_zhx_doctrine_mo_school"
+ scale = 0.5
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_shangtong_0_status_seal"
+ position = { x = 466 y = 300 }
+ spriteType = "GFX_zhx_ad_status"
+ scale = 1
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_shangtong_0_name"
+ position = { x = 55 y = 303 }
+ font = "zhx_ad_name"
+ text = ""
+ maxWidth = 120
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_shangtong_0_school"
+ position = { x = 180 y = 305 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 58
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_shangtong_0_site"
+ position = { x = 242 y = 305 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 106
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_shangtong_0_owner"
+ position = { x = 357 y = 305 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 106
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_shangtong_0_status"
+ position = { x = 481 y = 305 }
+ font = "zhx_ad_body"
+ text = ""
+ maxWidth = 78
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_row_shangtong_0_goto"
+ position = { x = 575 y = 299 }
+ quadTextureSprite = "GFX_zhx_ad_small_button"
+ buttonText = "zhx_ad_row_shangtong_0_goto"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_row_shangtong_1"
+ position = { x = 20 y = 259 }
+ quadTextureSprite = "GFX_zhx_ad_row"
+ buttonText = "zhx_ad_row_shangtong_1"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_shangtong_1_selected"
+ position = { x = 20 y = 259 }
+ spriteType = "GFX_zhx_ad_selected"
+ scale = 1
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_shangtong_1_emblem"
+ position = { x = 24 y = 264 }
+ spriteType = "GFX_zhx_doctrine_mo_school"
+ scale = 0.5
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_shangtong_1_status_seal"
+ position = { x = 466 y = 264 }
+ spriteType = "GFX_zhx_ad_status"
+ scale = 1
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_shangtong_1_name"
+ position = { x = 55 y = 267 }
+ font = "zhx_ad_name"
+ text = ""
+ maxWidth = 120
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_shangtong_1_school"
+ position = { x = 180 y = 269 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 58
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_shangtong_1_site"
+ position = { x = 242 y = 269 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 106
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_shangtong_1_owner"
+ position = { x = 357 y = 269 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 106
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_shangtong_1_status"
+ position = { x = 481 y = 269 }
+ font = "zhx_ad_body"
+ text = ""
+ maxWidth = 78
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_row_shangtong_1_goto"
+ position = { x = 575 y = 263 }
+ quadTextureSprite = "GFX_zhx_ad_small_button"
+ buttonText = "zhx_ad_row_shangtong_1_goto"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_row_shangtong_2"
+ position = { x = 20 y = 223 }
+ quadTextureSprite = "GFX_zhx_ad_row"
+ buttonText = "zhx_ad_row_shangtong_2"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_shangtong_2_selected"
+ position = { x = 20 y = 223 }
+ spriteType = "GFX_zhx_ad_selected"
+ scale = 1
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_shangtong_2_emblem"
+ position = { x = 24 y = 228 }
+ spriteType = "GFX_zhx_doctrine_mo_school"
+ scale = 0.5
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_shangtong_2_status_seal"
+ position = { x = 466 y = 228 }
+ spriteType = "GFX_zhx_ad_status"
+ scale = 1
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_shangtong_2_name"
+ position = { x = 55 y = 231 }
+ font = "zhx_ad_name"
+ text = ""
+ maxWidth = 120
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_shangtong_2_school"
+ position = { x = 180 y = 233 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 58
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_shangtong_2_site"
+ position = { x = 242 y = 233 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 106
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_shangtong_2_owner"
+ position = { x = 357 y = 233 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 106
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_shangtong_2_status"
+ position = { x = 481 y = 233 }
+ font = "zhx_ad_body"
+ text = ""
+ maxWidth = 78
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_row_shangtong_2_goto"
+ position = { x = 575 y = 227 }
+ quadTextureSprite = "GFX_zhx_ad_small_button"
+ buttonText = "zhx_ad_row_shangtong_2_goto"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_row_shangtong_3"
+ position = { x = 20 y = 187 }
+ quadTextureSprite = "GFX_zhx_ad_row"
+ buttonText = "zhx_ad_row_shangtong_3"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_shangtong_3_selected"
+ position = { x = 20 y = 187 }
+ spriteType = "GFX_zhx_ad_selected"
+ scale = 1
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_shangtong_3_emblem"
+ position = { x = 24 y = 192 }
+ spriteType = "GFX_zhx_doctrine_mo_school"
+ scale = 0.5
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_shangtong_3_status_seal"
+ position = { x = 466 y = 192 }
+ spriteType = "GFX_zhx_ad_status"
+ scale = 1
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_shangtong_3_name"
+ position = { x = 55 y = 195 }
+ font = "zhx_ad_name"
+ text = ""
+ maxWidth = 120
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_shangtong_3_school"
+ position = { x = 180 y = 197 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 58
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_shangtong_3_site"
+ position = { x = 242 y = 197 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 106
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_shangtong_3_owner"
+ position = { x = 357 y = 197 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 106
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_shangtong_3_status"
+ position = { x = 481 y = 197 }
+ font = "zhx_ad_body"
+ text = ""
+ maxWidth = 78
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_row_shangtong_3_goto"
+ position = { x = 575 y = 191 }
+ quadTextureSprite = "GFX_zhx_ad_small_button"
+ buttonText = "zhx_ad_row_shangtong_3_goto"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_row_shangtong_4"
+ position = { x = 20 y = 151 }
+ quadTextureSprite = "GFX_zhx_ad_row"
+ buttonText = "zhx_ad_row_shangtong_4"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_shangtong_4_selected"
+ position = { x = 20 y = 151 }
+ spriteType = "GFX_zhx_ad_selected"
+ scale = 1
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_shangtong_4_emblem"
+ position = { x = 24 y = 156 }
+ spriteType = "GFX_zhx_doctrine_mo_school"
+ scale = 0.5
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_shangtong_4_status_seal"
+ position = { x = 466 y = 156 }
+ spriteType = "GFX_zhx_ad_status"
+ scale = 1
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_shangtong_4_name"
+ position = { x = 55 y = 159 }
+ font = "zhx_ad_name"
+ text = ""
+ maxWidth = 120
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_shangtong_4_school"
+ position = { x = 180 y = 161 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 58
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_shangtong_4_site"
+ position = { x = 242 y = 161 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 106
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_shangtong_4_owner"
+ position = { x = 357 y = 161 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 106
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_shangtong_4_status"
+ position = { x = 481 y = 161 }
+ font = "zhx_ad_body"
+ text = ""
+ maxWidth = 78
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_row_shangtong_4_goto"
+ position = { x = 575 y = 155 }
+ quadTextureSprite = "GFX_zhx_ad_small_button"
+ buttonText = "zhx_ad_row_shangtong_4_goto"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_row_shangtong_5"
+ position = { x = 20 y = 115 }
+ quadTextureSprite = "GFX_zhx_ad_row"
+ buttonText = "zhx_ad_row_shangtong_5"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_shangtong_5_selected"
+ position = { x = 20 y = 115 }
+ spriteType = "GFX_zhx_ad_selected"
+ scale = 1
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_shangtong_5_emblem"
+ position = { x = 24 y = 120 }
+ spriteType = "GFX_zhx_doctrine_mo_school"
+ scale = 0.5
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_shangtong_5_status_seal"
+ position = { x = 466 y = 120 }
+ spriteType = "GFX_zhx_ad_status"
+ scale = 1
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_shangtong_5_name"
+ position = { x = 55 y = 123 }
+ font = "zhx_ad_name"
+ text = ""
+ maxWidth = 120
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_shangtong_5_school"
+ position = { x = 180 y = 125 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 58
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_shangtong_5_site"
+ position = { x = 242 y = 125 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 106
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_shangtong_5_owner"
+ position = { x = 357 y = 125 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 106
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_shangtong_5_status"
+ position = { x = 481 y = 125 }
+ font = "zhx_ad_body"
+ text = ""
+ maxWidth = 78
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_row_shangtong_5_goto"
+ position = { x = 575 y = 119 }
+ quadTextureSprite = "GFX_zhx_ad_small_button"
+ buttonText = "zhx_ad_row_shangtong_5_goto"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_detail_shangtong"
+ position = { x = 38 y = 383 }
+ font = "zhx_ad_name"
+ text = ""
+ maxWidth = 590
+ maxHeight = 28
+ borderSize = { x = 0 y = 0 }
+ format = left
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_detail_place_shangtong"
+ position = { x = 38 y = 499 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 612
+ maxHeight = 22
+ borderSize = { x = 0 y = 0 }
+ format = left
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_detail_benefit_shangtong"
+ position = { x = 38 y = 450 }
+ font = "zhx_ad_body"
+ text = ""
+ maxWidth = 612
+ maxHeight = 44
+ borderSize = { x = 0 y = 0 }
+ format = left
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_detail_relation_shangtong"
+ position = { x = 38 y = 417 }
+ font = "zhx_ad_body"
+ text = ""
+ maxWidth = 612
+ maxHeight = 28
+ borderSize = { x = 0 y = 0 }
+ format = left
+ fixedsize = yes
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_ruins_button_shangtong"
+ position = { x = 38 y = 532 }
+ quadTextureSprite = "GFX_zhx_ad_small_button"
+ buttonText = "zhx_ad_ruins_button_shangtong"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_ruins_count_shangtong"
+ position = { x = 116 y = 539 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 130
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ fixedsize = yes
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_expel_shangtong"
+ position = { x = 328 y = 532 }
+ quadTextureSprite = "GFX_zhx_ad_action_button"
+ buttonText = "zhx_ad_expel_shangtong"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_withdraw_shangtong"
+ position = { x = 492 y = 532 }
+ quadTextureSprite = "GFX_zhx_ad_action_button"
+ buttonText = "zhx_ad_withdraw_shangtong"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_row_xuantong_1"
+ position = { x = 20 y = 295 }
+ quadTextureSprite = "GFX_zhx_ad_row"
+ buttonText = "zhx_ad_row_xuantong_1"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_xuantong_1_selected"
+ position = { x = 20 y = 295 }
+ spriteType = "GFX_zhx_ad_selected"
+ scale = 1
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_xuantong_1_emblem"
+ position = { x = 24 y = 300 }
+ spriteType = "GFX_zhx_doctrine_dao_school"
+ scale = 0.5
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_xuantong_1_status_seal"
+ position = { x = 466 y = 300 }
+ spriteType = "GFX_zhx_ad_status"
+ scale = 1
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_xuantong_1_name"
+ position = { x = 55 y = 303 }
+ font = "zhx_ad_name"
+ text = ""
+ maxWidth = 120
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_xuantong_1_school"
+ position = { x = 180 y = 305 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 58
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_xuantong_1_site"
+ position = { x = 242 y = 305 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 106
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_xuantong_1_owner"
+ position = { x = 357 y = 305 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 106
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_xuantong_1_status"
+ position = { x = 481 y = 305 }
+ font = "zhx_ad_body"
+ text = ""
+ maxWidth = 78
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_row_xuantong_1_goto"
+ position = { x = 575 y = 299 }
+ quadTextureSprite = "GFX_zhx_ad_small_button"
+ buttonText = "zhx_ad_row_xuantong_1_goto"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_row_xuantong_2"
+ position = { x = 20 y = 259 }
+ quadTextureSprite = "GFX_zhx_ad_row"
+ buttonText = "zhx_ad_row_xuantong_2"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_xuantong_2_selected"
+ position = { x = 20 y = 259 }
+ spriteType = "GFX_zhx_ad_selected"
+ scale = 1
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_xuantong_2_emblem"
+ position = { x = 24 y = 264 }
+ spriteType = "GFX_zhx_doctrine_dao_school"
+ scale = 0.5
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_xuantong_2_status_seal"
+ position = { x = 466 y = 264 }
+ spriteType = "GFX_zhx_ad_status"
+ scale = 1
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_xuantong_2_name"
+ position = { x = 55 y = 267 }
+ font = "zhx_ad_name"
+ text = ""
+ maxWidth = 120
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_xuantong_2_school"
+ position = { x = 180 y = 269 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 58
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_xuantong_2_site"
+ position = { x = 242 y = 269 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 106
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_xuantong_2_owner"
+ position = { x = 357 y = 269 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 106
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_xuantong_2_status"
+ position = { x = 481 y = 269 }
+ font = "zhx_ad_body"
+ text = ""
+ maxWidth = 78
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_row_xuantong_2_goto"
+ position = { x = 575 y = 263 }
+ quadTextureSprite = "GFX_zhx_ad_small_button"
+ buttonText = "zhx_ad_row_xuantong_2_goto"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_row_xuantong_3"
+ position = { x = 20 y = 223 }
+ quadTextureSprite = "GFX_zhx_ad_row"
+ buttonText = "zhx_ad_row_xuantong_3"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_xuantong_3_selected"
+ position = { x = 20 y = 223 }
+ spriteType = "GFX_zhx_ad_selected"
+ scale = 1
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_xuantong_3_emblem"
+ position = { x = 24 y = 228 }
+ spriteType = "GFX_zhx_doctrine_dao_school"
+ scale = 0.5
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_xuantong_3_status_seal"
+ position = { x = 466 y = 228 }
+ spriteType = "GFX_zhx_ad_status"
+ scale = 1
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_xuantong_3_name"
+ position = { x = 55 y = 231 }
+ font = "zhx_ad_name"
+ text = ""
+ maxWidth = 120
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_xuantong_3_school"
+ position = { x = 180 y = 233 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 58
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_xuantong_3_site"
+ position = { x = 242 y = 233 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 106
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_xuantong_3_owner"
+ position = { x = 357 y = 233 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 106
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_xuantong_3_status"
+ position = { x = 481 y = 233 }
+ font = "zhx_ad_body"
+ text = ""
+ maxWidth = 78
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_row_xuantong_3_goto"
+ position = { x = 575 y = 227 }
+ quadTextureSprite = "GFX_zhx_ad_small_button"
+ buttonText = "zhx_ad_row_xuantong_3_goto"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_row_xuantong_4"
+ position = { x = 20 y = 187 }
+ quadTextureSprite = "GFX_zhx_ad_row"
+ buttonText = "zhx_ad_row_xuantong_4"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_xuantong_4_selected"
+ position = { x = 20 y = 187 }
+ spriteType = "GFX_zhx_ad_selected"
+ scale = 1
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_xuantong_4_emblem"
+ position = { x = 24 y = 192 }
+ spriteType = "GFX_zhx_doctrine_dao_school"
+ scale = 0.5
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_xuantong_4_status_seal"
+ position = { x = 466 y = 192 }
+ spriteType = "GFX_zhx_ad_status"
+ scale = 1
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_xuantong_4_name"
+ position = { x = 55 y = 195 }
+ font = "zhx_ad_name"
+ text = ""
+ maxWidth = 120
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_xuantong_4_school"
+ position = { x = 180 y = 197 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 58
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_xuantong_4_site"
+ position = { x = 242 y = 197 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 106
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_xuantong_4_owner"
+ position = { x = 357 y = 197 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 106
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_xuantong_4_status"
+ position = { x = 481 y = 197 }
+ font = "zhx_ad_body"
+ text = ""
+ maxWidth = 78
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_row_xuantong_4_goto"
+ position = { x = 575 y = 191 }
+ quadTextureSprite = "GFX_zhx_ad_small_button"
+ buttonText = "zhx_ad_row_xuantong_4_goto"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_row_xuantong_5"
+ position = { x = 20 y = 151 }
+ quadTextureSprite = "GFX_zhx_ad_row"
+ buttonText = "zhx_ad_row_xuantong_5"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_xuantong_5_selected"
+ position = { x = 20 y = 151 }
+ spriteType = "GFX_zhx_ad_selected"
+ scale = 1
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_xuantong_5_emblem"
+ position = { x = 24 y = 156 }
+ spriteType = "GFX_zhx_doctrine_dao_school"
+ scale = 0.5
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_xuantong_5_status_seal"
+ position = { x = 466 y = 156 }
+ spriteType = "GFX_zhx_ad_status"
+ scale = 1
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_xuantong_5_name"
+ position = { x = 55 y = 159 }
+ font = "zhx_ad_name"
+ text = ""
+ maxWidth = 120
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_xuantong_5_school"
+ position = { x = 180 y = 161 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 58
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_xuantong_5_site"
+ position = { x = 242 y = 161 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 106
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_xuantong_5_owner"
+ position = { x = 357 y = 161 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 106
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_xuantong_5_status"
+ position = { x = 481 y = 161 }
+ font = "zhx_ad_body"
+ text = ""
+ maxWidth = 78
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_row_xuantong_5_goto"
+ position = { x = 575 y = 155 }
+ quadTextureSprite = "GFX_zhx_ad_small_button"
+ buttonText = "zhx_ad_row_xuantong_5_goto"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_row_xuantong_6"
+ position = { x = 20 y = 115 }
+ quadTextureSprite = "GFX_zhx_ad_row"
+ buttonText = "zhx_ad_row_xuantong_6"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_xuantong_6_selected"
+ position = { x = 20 y = 115 }
+ spriteType = "GFX_zhx_ad_selected"
+ scale = 1
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_xuantong_6_emblem"
+ position = { x = 24 y = 120 }
+ spriteType = "GFX_zhx_doctrine_dao_school"
+ scale = 0.5
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_xuantong_6_status_seal"
+ position = { x = 466 y = 120 }
+ spriteType = "GFX_zhx_ad_status"
+ scale = 1
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_xuantong_6_name"
+ position = { x = 55 y = 123 }
+ font = "zhx_ad_name"
+ text = ""
+ maxWidth = 120
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_xuantong_6_school"
+ position = { x = 180 y = 125 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 58
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_xuantong_6_site"
+ position = { x = 242 y = 125 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 106
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_xuantong_6_owner"
+ position = { x = 357 y = 125 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 106
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_xuantong_6_status"
+ position = { x = 481 y = 125 }
+ font = "zhx_ad_body"
+ text = ""
+ maxWidth = 78
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_row_xuantong_6_goto"
+ position = { x = 575 y = 119 }
+ quadTextureSprite = "GFX_zhx_ad_small_button"
+ buttonText = "zhx_ad_row_xuantong_6_goto"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_detail_xuantong"
+ position = { x = 38 y = 383 }
+ font = "zhx_ad_name"
+ text = ""
+ maxWidth = 590
+ maxHeight = 28
+ borderSize = { x = 0 y = 0 }
+ format = left
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_detail_place_xuantong"
+ position = { x = 38 y = 499 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 612
+ maxHeight = 22
+ borderSize = { x = 0 y = 0 }
+ format = left
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_detail_benefit_xuantong"
+ position = { x = 38 y = 450 }
+ font = "zhx_ad_body"
+ text = ""
+ maxWidth = 612
+ maxHeight = 44
+ borderSize = { x = 0 y = 0 }
+ format = left
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_detail_relation_xuantong"
+ position = { x = 38 y = 417 }
+ font = "zhx_ad_body"
+ text = ""
+ maxWidth = 612
+ maxHeight = 28
+ borderSize = { x = 0 y = 0 }
+ format = left
+ fixedsize = yes
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_ruins_button_xuantong"
+ position = { x = 38 y = 532 }
+ quadTextureSprite = "GFX_zhx_ad_small_button"
+ buttonText = "zhx_ad_ruins_button_xuantong"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_ruins_count_xuantong"
+ position = { x = 116 y = 539 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 130
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ fixedsize = yes
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_expel_xuantong"
+ position = { x = 328 y = 532 }
+ quadTextureSprite = "GFX_zhx_ad_action_button"
+ buttonText = "zhx_ad_expel_xuantong"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_withdraw_xuantong"
+ position = { x = 492 y = 532 }
+ quadTextureSprite = "GFX_zhx_ad_action_button"
+ buttonText = "zhx_ad_withdraw_xuantong"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_row_baopu_2"
+ position = { x = 20 y = 295 }
+ quadTextureSprite = "GFX_zhx_ad_row"
+ buttonText = "zhx_ad_row_baopu_2"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_baopu_2_selected"
+ position = { x = 20 y = 295 }
+ spriteType = "GFX_zhx_ad_selected"
+ scale = 1
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_baopu_2_emblem"
+ position = { x = 24 y = 300 }
+ spriteType = "GFX_zhx_doctrine_dao_school"
+ scale = 0.5
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_baopu_2_status_seal"
+ position = { x = 466 y = 300 }
+ spriteType = "GFX_zhx_ad_status"
+ scale = 1
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_baopu_2_name"
+ position = { x = 55 y = 303 }
+ font = "zhx_ad_name"
+ text = ""
+ maxWidth = 120
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_baopu_2_school"
+ position = { x = 180 y = 305 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 58
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_baopu_2_site"
+ position = { x = 242 y = 305 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 106
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_baopu_2_owner"
+ position = { x = 357 y = 305 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 106
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_baopu_2_status"
+ position = { x = 481 y = 305 }
+ font = "zhx_ad_body"
+ text = ""
+ maxWidth = 78
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_row_baopu_2_goto"
+ position = { x = 575 y = 299 }
+ quadTextureSprite = "GFX_zhx_ad_small_button"
+ buttonText = "zhx_ad_row_baopu_2_goto"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_row_baopu_3"
+ position = { x = 20 y = 259 }
+ quadTextureSprite = "GFX_zhx_ad_row"
+ buttonText = "zhx_ad_row_baopu_3"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_baopu_3_selected"
+ position = { x = 20 y = 259 }
+ spriteType = "GFX_zhx_ad_selected"
+ scale = 1
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_baopu_3_emblem"
+ position = { x = 24 y = 264 }
+ spriteType = "GFX_zhx_doctrine_dao_school"
+ scale = 0.5
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_baopu_3_status_seal"
+ position = { x = 466 y = 264 }
+ spriteType = "GFX_zhx_ad_status"
+ scale = 1
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_baopu_3_name"
+ position = { x = 55 y = 267 }
+ font = "zhx_ad_name"
+ text = ""
+ maxWidth = 120
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_baopu_3_school"
+ position = { x = 180 y = 269 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 58
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_baopu_3_site"
+ position = { x = 242 y = 269 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 106
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_baopu_3_owner"
+ position = { x = 357 y = 269 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 106
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_baopu_3_status"
+ position = { x = 481 y = 269 }
+ font = "zhx_ad_body"
+ text = ""
+ maxWidth = 78
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_row_baopu_3_goto"
+ position = { x = 575 y = 263 }
+ quadTextureSprite = "GFX_zhx_ad_small_button"
+ buttonText = "zhx_ad_row_baopu_3_goto"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_row_baopu_4"
+ position = { x = 20 y = 223 }
+ quadTextureSprite = "GFX_zhx_ad_row"
+ buttonText = "zhx_ad_row_baopu_4"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_baopu_4_selected"
+ position = { x = 20 y = 223 }
+ spriteType = "GFX_zhx_ad_selected"
+ scale = 1
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_baopu_4_emblem"
+ position = { x = 24 y = 228 }
+ spriteType = "GFX_zhx_doctrine_dao_school"
+ scale = 0.5
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_baopu_4_status_seal"
+ position = { x = 466 y = 228 }
+ spriteType = "GFX_zhx_ad_status"
+ scale = 1
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_baopu_4_name"
+ position = { x = 55 y = 231 }
+ font = "zhx_ad_name"
+ text = ""
+ maxWidth = 120
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_baopu_4_school"
+ position = { x = 180 y = 233 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 58
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_baopu_4_site"
+ position = { x = 242 y = 233 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 106
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_baopu_4_owner"
+ position = { x = 357 y = 233 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 106
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_baopu_4_status"
+ position = { x = 481 y = 233 }
+ font = "zhx_ad_body"
+ text = ""
+ maxWidth = 78
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_row_baopu_4_goto"
+ position = { x = 575 y = 227 }
+ quadTextureSprite = "GFX_zhx_ad_small_button"
+ buttonText = "zhx_ad_row_baopu_4_goto"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_row_baopu_5"
+ position = { x = 20 y = 187 }
+ quadTextureSprite = "GFX_zhx_ad_row"
+ buttonText = "zhx_ad_row_baopu_5"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_baopu_5_selected"
+ position = { x = 20 y = 187 }
+ spriteType = "GFX_zhx_ad_selected"
+ scale = 1
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_baopu_5_emblem"
+ position = { x = 24 y = 192 }
+ spriteType = "GFX_zhx_doctrine_dao_school"
+ scale = 0.5
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_baopu_5_status_seal"
+ position = { x = 466 y = 192 }
+ spriteType = "GFX_zhx_ad_status"
+ scale = 1
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_baopu_5_name"
+ position = { x = 55 y = 195 }
+ font = "zhx_ad_name"
+ text = ""
+ maxWidth = 120
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_baopu_5_school"
+ position = { x = 180 y = 197 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 58
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_baopu_5_site"
+ position = { x = 242 y = 197 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 106
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_baopu_5_owner"
+ position = { x = 357 y = 197 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 106
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_baopu_5_status"
+ position = { x = 481 y = 197 }
+ font = "zhx_ad_body"
+ text = ""
+ maxWidth = 78
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_row_baopu_5_goto"
+ position = { x = 575 y = 191 }
+ quadTextureSprite = "GFX_zhx_ad_small_button"
+ buttonText = "zhx_ad_row_baopu_5_goto"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_row_baopu_6"
+ position = { x = 20 y = 151 }
+ quadTextureSprite = "GFX_zhx_ad_row"
+ buttonText = "zhx_ad_row_baopu_6"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_baopu_6_selected"
+ position = { x = 20 y = 151 }
+ spriteType = "GFX_zhx_ad_selected"
+ scale = 1
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_baopu_6_emblem"
+ position = { x = 24 y = 156 }
+ spriteType = "GFX_zhx_doctrine_dao_school"
+ scale = 0.5
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_baopu_6_status_seal"
+ position = { x = 466 y = 156 }
+ spriteType = "GFX_zhx_ad_status"
+ scale = 1
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_baopu_6_name"
+ position = { x = 55 y = 159 }
+ font = "zhx_ad_name"
+ text = ""
+ maxWidth = 120
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_baopu_6_school"
+ position = { x = 180 y = 161 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 58
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_baopu_6_site"
+ position = { x = 242 y = 161 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 106
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_baopu_6_owner"
+ position = { x = 357 y = 161 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 106
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_baopu_6_status"
+ position = { x = 481 y = 161 }
+ font = "zhx_ad_body"
+ text = ""
+ maxWidth = 78
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_row_baopu_6_goto"
+ position = { x = 575 y = 155 }
+ quadTextureSprite = "GFX_zhx_ad_small_button"
+ buttonText = "zhx_ad_row_baopu_6_goto"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_detail_baopu"
+ position = { x = 38 y = 383 }
+ font = "zhx_ad_name"
+ text = ""
+ maxWidth = 590
+ maxHeight = 28
+ borderSize = { x = 0 y = 0 }
+ format = left
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_detail_place_baopu"
+ position = { x = 38 y = 499 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 612
+ maxHeight = 22
+ borderSize = { x = 0 y = 0 }
+ format = left
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_detail_benefit_baopu"
+ position = { x = 38 y = 450 }
+ font = "zhx_ad_body"
+ text = ""
+ maxWidth = 612
+ maxHeight = 44
+ borderSize = { x = 0 y = 0 }
+ format = left
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_detail_relation_baopu"
+ position = { x = 38 y = 417 }
+ font = "zhx_ad_body"
+ text = ""
+ maxWidth = 612
+ maxHeight = 28
+ borderSize = { x = 0 y = 0 }
+ format = left
+ fixedsize = yes
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_ruins_button_baopu"
+ position = { x = 38 y = 532 }
+ quadTextureSprite = "GFX_zhx_ad_small_button"
+ buttonText = "zhx_ad_ruins_button_baopu"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_ruins_count_baopu"
+ position = { x = 116 y = 539 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 130
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ fixedsize = yes
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_expel_baopu"
+ position = { x = 328 y = 532 }
+ quadTextureSprite = "GFX_zhx_ad_action_button"
+ buttonText = "zhx_ad_expel_baopu"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_withdraw_baopu"
+ position = { x = 492 y = 532 }
+ quadTextureSprite = "GFX_zhx_ad_action_button"
+ buttonText = "zhx_ad_withdraw_baopu"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_row_miaosuan_3"
+ position = { x = 20 y = 295 }
+ quadTextureSprite = "GFX_zhx_ad_row"
+ buttonText = "zhx_ad_row_miaosuan_3"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_miaosuan_3_selected"
+ position = { x = 20 y = 295 }
+ spriteType = "GFX_zhx_ad_selected"
+ scale = 1
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_miaosuan_3_emblem"
+ position = { x = 24 y = 300 }
+ spriteType = "GFX_zhx_doctrine_bing_school"
+ scale = 0.5
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_miaosuan_3_status_seal"
+ position = { x = 466 y = 300 }
+ spriteType = "GFX_zhx_ad_status"
+ scale = 1
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_miaosuan_3_name"
+ position = { x = 55 y = 303 }
+ font = "zhx_ad_name"
+ text = ""
+ maxWidth = 120
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_miaosuan_3_school"
+ position = { x = 180 y = 305 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 58
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_miaosuan_3_site"
+ position = { x = 242 y = 305 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 106
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_miaosuan_3_owner"
+ position = { x = 357 y = 305 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 106
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_miaosuan_3_status"
+ position = { x = 481 y = 305 }
+ font = "zhx_ad_body"
+ text = ""
+ maxWidth = 78
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_row_miaosuan_3_goto"
+ position = { x = 575 y = 299 }
+ quadTextureSprite = "GFX_zhx_ad_small_button"
+ buttonText = "zhx_ad_row_miaosuan_3_goto"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_row_miaosuan_4"
+ position = { x = 20 y = 259 }
+ quadTextureSprite = "GFX_zhx_ad_row"
+ buttonText = "zhx_ad_row_miaosuan_4"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_miaosuan_4_selected"
+ position = { x = 20 y = 259 }
+ spriteType = "GFX_zhx_ad_selected"
+ scale = 1
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_miaosuan_4_emblem"
+ position = { x = 24 y = 264 }
+ spriteType = "GFX_zhx_doctrine_bing_school"
+ scale = 0.5
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_miaosuan_4_status_seal"
+ position = { x = 466 y = 264 }
+ spriteType = "GFX_zhx_ad_status"
+ scale = 1
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_miaosuan_4_name"
+ position = { x = 55 y = 267 }
+ font = "zhx_ad_name"
+ text = ""
+ maxWidth = 120
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_miaosuan_4_school"
+ position = { x = 180 y = 269 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 58
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_miaosuan_4_site"
+ position = { x = 242 y = 269 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 106
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_miaosuan_4_owner"
+ position = { x = 357 y = 269 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 106
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_miaosuan_4_status"
+ position = { x = 481 y = 269 }
+ font = "zhx_ad_body"
+ text = ""
+ maxWidth = 78
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_row_miaosuan_4_goto"
+ position = { x = 575 y = 263 }
+ quadTextureSprite = "GFX_zhx_ad_small_button"
+ buttonText = "zhx_ad_row_miaosuan_4_goto"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_row_miaosuan_5"
+ position = { x = 20 y = 223 }
+ quadTextureSprite = "GFX_zhx_ad_row"
+ buttonText = "zhx_ad_row_miaosuan_5"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_miaosuan_5_selected"
+ position = { x = 20 y = 223 }
+ spriteType = "GFX_zhx_ad_selected"
+ scale = 1
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_miaosuan_5_emblem"
+ position = { x = 24 y = 228 }
+ spriteType = "GFX_zhx_doctrine_bing_school"
+ scale = 0.5
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_miaosuan_5_status_seal"
+ position = { x = 466 y = 228 }
+ spriteType = "GFX_zhx_ad_status"
+ scale = 1
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_miaosuan_5_name"
+ position = { x = 55 y = 231 }
+ font = "zhx_ad_name"
+ text = ""
+ maxWidth = 120
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_miaosuan_5_school"
+ position = { x = 180 y = 233 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 58
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_miaosuan_5_site"
+ position = { x = 242 y = 233 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 106
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_miaosuan_5_owner"
+ position = { x = 357 y = 233 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 106
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_miaosuan_5_status"
+ position = { x = 481 y = 233 }
+ font = "zhx_ad_body"
+ text = ""
+ maxWidth = 78
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_row_miaosuan_5_goto"
+ position = { x = 575 y = 227 }
+ quadTextureSprite = "GFX_zhx_ad_small_button"
+ buttonText = "zhx_ad_row_miaosuan_5_goto"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_row_miaosuan_6"
+ position = { x = 20 y = 187 }
+ quadTextureSprite = "GFX_zhx_ad_row"
+ buttonText = "zhx_ad_row_miaosuan_6"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_miaosuan_6_selected"
+ position = { x = 20 y = 187 }
+ spriteType = "GFX_zhx_ad_selected"
+ scale = 1
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_miaosuan_6_emblem"
+ position = { x = 24 y = 192 }
+ spriteType = "GFX_zhx_doctrine_bing_school"
+ scale = 0.5
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_miaosuan_6_status_seal"
+ position = { x = 466 y = 192 }
+ spriteType = "GFX_zhx_ad_status"
+ scale = 1
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_miaosuan_6_name"
+ position = { x = 55 y = 195 }
+ font = "zhx_ad_name"
+ text = ""
+ maxWidth = 120
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_miaosuan_6_school"
+ position = { x = 180 y = 197 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 58
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_miaosuan_6_site"
+ position = { x = 242 y = 197 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 106
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_miaosuan_6_owner"
+ position = { x = 357 y = 197 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 106
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_miaosuan_6_status"
+ position = { x = 481 y = 197 }
+ font = "zhx_ad_body"
+ text = ""
+ maxWidth = 78
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_row_miaosuan_6_goto"
+ position = { x = 575 y = 191 }
+ quadTextureSprite = "GFX_zhx_ad_small_button"
+ buttonText = "zhx_ad_row_miaosuan_6_goto"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_detail_miaosuan"
+ position = { x = 38 y = 383 }
+ font = "zhx_ad_name"
+ text = ""
+ maxWidth = 590
+ maxHeight = 28
+ borderSize = { x = 0 y = 0 }
+ format = left
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_detail_place_miaosuan"
+ position = { x = 38 y = 499 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 612
+ maxHeight = 22
+ borderSize = { x = 0 y = 0 }
+ format = left
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_detail_benefit_miaosuan"
+ position = { x = 38 y = 450 }
+ font = "zhx_ad_body"
+ text = ""
+ maxWidth = 612
+ maxHeight = 44
+ borderSize = { x = 0 y = 0 }
+ format = left
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_detail_relation_miaosuan"
+ position = { x = 38 y = 417 }
+ font = "zhx_ad_body"
+ text = ""
+ maxWidth = 612
+ maxHeight = 28
+ borderSize = { x = 0 y = 0 }
+ format = left
+ fixedsize = yes
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_ruins_button_miaosuan"
+ position = { x = 38 y = 532 }
+ quadTextureSprite = "GFX_zhx_ad_small_button"
+ buttonText = "zhx_ad_ruins_button_miaosuan"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_ruins_count_miaosuan"
+ position = { x = 116 y = 539 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 130
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ fixedsize = yes
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_expel_miaosuan"
+ position = { x = 328 y = 532 }
+ quadTextureSprite = "GFX_zhx_ad_action_button"
+ buttonText = "zhx_ad_expel_miaosuan"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_withdraw_miaosuan"
+ position = { x = 492 y = 532 }
+ quadTextureSprite = "GFX_zhx_ad_action_button"
+ buttonText = "zhx_ad_withdraw_miaosuan"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_row_zhisheng_4"
+ position = { x = 20 y = 295 }
+ quadTextureSprite = "GFX_zhx_ad_row"
+ buttonText = "zhx_ad_row_zhisheng_4"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_zhisheng_4_selected"
+ position = { x = 20 y = 295 }
+ spriteType = "GFX_zhx_ad_selected"
+ scale = 1
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_zhisheng_4_emblem"
+ position = { x = 24 y = 300 }
+ spriteType = "GFX_zhx_doctrine_bing_school"
+ scale = 0.5
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_zhisheng_4_status_seal"
+ position = { x = 466 y = 300 }
+ spriteType = "GFX_zhx_ad_status"
+ scale = 1
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_zhisheng_4_name"
+ position = { x = 55 y = 303 }
+ font = "zhx_ad_name"
+ text = ""
+ maxWidth = 120
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_zhisheng_4_school"
+ position = { x = 180 y = 305 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 58
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_zhisheng_4_site"
+ position = { x = 242 y = 305 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 106
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_zhisheng_4_owner"
+ position = { x = 357 y = 305 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 106
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_zhisheng_4_status"
+ position = { x = 481 y = 305 }
+ font = "zhx_ad_body"
+ text = ""
+ maxWidth = 78
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_row_zhisheng_4_goto"
+ position = { x = 575 y = 299 }
+ quadTextureSprite = "GFX_zhx_ad_small_button"
+ buttonText = "zhx_ad_row_zhisheng_4_goto"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_row_zhisheng_5"
+ position = { x = 20 y = 259 }
+ quadTextureSprite = "GFX_zhx_ad_row"
+ buttonText = "zhx_ad_row_zhisheng_5"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_zhisheng_5_selected"
+ position = { x = 20 y = 259 }
+ spriteType = "GFX_zhx_ad_selected"
+ scale = 1
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_zhisheng_5_emblem"
+ position = { x = 24 y = 264 }
+ spriteType = "GFX_zhx_doctrine_bing_school"
+ scale = 0.5
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_zhisheng_5_status_seal"
+ position = { x = 466 y = 264 }
+ spriteType = "GFX_zhx_ad_status"
+ scale = 1
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_zhisheng_5_name"
+ position = { x = 55 y = 267 }
+ font = "zhx_ad_name"
+ text = ""
+ maxWidth = 120
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_zhisheng_5_school"
+ position = { x = 180 y = 269 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 58
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_zhisheng_5_site"
+ position = { x = 242 y = 269 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 106
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_zhisheng_5_owner"
+ position = { x = 357 y = 269 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 106
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_zhisheng_5_status"
+ position = { x = 481 y = 269 }
+ font = "zhx_ad_body"
+ text = ""
+ maxWidth = 78
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_row_zhisheng_5_goto"
+ position = { x = 575 y = 263 }
+ quadTextureSprite = "GFX_zhx_ad_small_button"
+ buttonText = "zhx_ad_row_zhisheng_5_goto"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_row_zhisheng_6"
+ position = { x = 20 y = 223 }
+ quadTextureSprite = "GFX_zhx_ad_row"
+ buttonText = "zhx_ad_row_zhisheng_6"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_zhisheng_6_selected"
+ position = { x = 20 y = 223 }
+ spriteType = "GFX_zhx_ad_selected"
+ scale = 1
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_zhisheng_6_emblem"
+ position = { x = 24 y = 228 }
+ spriteType = "GFX_zhx_doctrine_bing_school"
+ scale = 0.5
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_zhisheng_6_status_seal"
+ position = { x = 466 y = 228 }
+ spriteType = "GFX_zhx_ad_status"
+ scale = 1
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_zhisheng_6_name"
+ position = { x = 55 y = 231 }
+ font = "zhx_ad_name"
+ text = ""
+ maxWidth = 120
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_zhisheng_6_school"
+ position = { x = 180 y = 233 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 58
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_zhisheng_6_site"
+ position = { x = 242 y = 233 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 106
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_zhisheng_6_owner"
+ position = { x = 357 y = 233 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 106
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_zhisheng_6_status"
+ position = { x = 481 y = 233 }
+ font = "zhx_ad_body"
+ text = ""
+ maxWidth = 78
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_row_zhisheng_6_goto"
+ position = { x = 575 y = 227 }
+ quadTextureSprite = "GFX_zhx_ad_small_button"
+ buttonText = "zhx_ad_row_zhisheng_6_goto"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_detail_zhisheng"
+ position = { x = 38 y = 383 }
+ font = "zhx_ad_name"
+ text = ""
+ maxWidth = 590
+ maxHeight = 28
+ borderSize = { x = 0 y = 0 }
+ format = left
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_detail_place_zhisheng"
+ position = { x = 38 y = 499 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 612
+ maxHeight = 22
+ borderSize = { x = 0 y = 0 }
+ format = left
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_detail_benefit_zhisheng"
+ position = { x = 38 y = 450 }
+ font = "zhx_ad_body"
+ text = ""
+ maxWidth = 612
+ maxHeight = 44
+ borderSize = { x = 0 y = 0 }
+ format = left
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_detail_relation_zhisheng"
+ position = { x = 38 y = 417 }
+ font = "zhx_ad_body"
+ text = ""
+ maxWidth = 612
+ maxHeight = 28
+ borderSize = { x = 0 y = 0 }
+ format = left
+ fixedsize = yes
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_ruins_button_zhisheng"
+ position = { x = 38 y = 532 }
+ quadTextureSprite = "GFX_zhx_ad_small_button"
+ buttonText = "zhx_ad_ruins_button_zhisheng"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_ruins_count_zhisheng"
+ position = { x = 116 y = 539 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 130
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ fixedsize = yes
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_expel_zhisheng"
+ position = { x = 328 y = 532 }
+ quadTextureSprite = "GFX_zhx_ad_action_button"
+ buttonText = "zhx_ad_expel_zhisheng"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_withdraw_zhisheng"
+ position = { x = 492 y = 532 }
+ quadTextureSprite = "GFX_zhx_ad_action_button"
+ buttonText = "zhx_ad_withdraw_zhisheng"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_row_baihe_5"
+ position = { x = 20 y = 295 }
+ quadTextureSprite = "GFX_zhx_ad_row"
+ buttonText = "zhx_ad_row_baihe_5"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_baihe_5_selected"
+ position = { x = 20 y = 295 }
+ spriteType = "GFX_zhx_ad_selected"
+ scale = 1
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_baihe_5_emblem"
+ position = { x = 24 y = 300 }
+ spriteType = "GFX_zhx_doctrine_zongheng_school"
+ scale = 0.5
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_baihe_5_status_seal"
+ position = { x = 466 y = 300 }
+ spriteType = "GFX_zhx_ad_status"
+ scale = 1
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_baihe_5_name"
+ position = { x = 55 y = 303 }
+ font = "zhx_ad_name"
+ text = ""
+ maxWidth = 120
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_baihe_5_school"
+ position = { x = 180 y = 305 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 58
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_baihe_5_site"
+ position = { x = 242 y = 305 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 106
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_baihe_5_owner"
+ position = { x = 357 y = 305 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 106
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_baihe_5_status"
+ position = { x = 481 y = 305 }
+ font = "zhx_ad_body"
+ text = ""
+ maxWidth = 78
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_row_baihe_5_goto"
+ position = { x = 575 y = 299 }
+ quadTextureSprite = "GFX_zhx_ad_small_button"
+ buttonText = "zhx_ad_row_baihe_5_goto"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_row_baihe_6"
+ position = { x = 20 y = 259 }
+ quadTextureSprite = "GFX_zhx_ad_row"
+ buttonText = "zhx_ad_row_baihe_6"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_baihe_6_selected"
+ position = { x = 20 y = 259 }
+ spriteType = "GFX_zhx_ad_selected"
+ scale = 1
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_baihe_6_emblem"
+ position = { x = 24 y = 264 }
+ spriteType = "GFX_zhx_doctrine_zongheng_school"
+ scale = 0.5
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_baihe_6_status_seal"
+ position = { x = 466 y = 264 }
+ spriteType = "GFX_zhx_ad_status"
+ scale = 1
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_baihe_6_name"
+ position = { x = 55 y = 267 }
+ font = "zhx_ad_name"
+ text = ""
+ maxWidth = 120
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_baihe_6_school"
+ position = { x = 180 y = 269 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 58
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_baihe_6_site"
+ position = { x = 242 y = 269 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 106
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_baihe_6_owner"
+ position = { x = 357 y = 269 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 106
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_baihe_6_status"
+ position = { x = 481 y = 269 }
+ font = "zhx_ad_body"
+ text = ""
+ maxWidth = 78
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_row_baihe_6_goto"
+ position = { x = 575 y = 263 }
+ quadTextureSprite = "GFX_zhx_ad_small_button"
+ buttonText = "zhx_ad_row_baihe_6_goto"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_detail_baihe"
+ position = { x = 38 y = 383 }
+ font = "zhx_ad_name"
+ text = ""
+ maxWidth = 590
+ maxHeight = 28
+ borderSize = { x = 0 y = 0 }
+ format = left
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_detail_place_baihe"
+ position = { x = 38 y = 499 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 612
+ maxHeight = 22
+ borderSize = { x = 0 y = 0 }
+ format = left
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_detail_benefit_baihe"
+ position = { x = 38 y = 450 }
+ font = "zhx_ad_body"
+ text = ""
+ maxWidth = 612
+ maxHeight = 44
+ borderSize = { x = 0 y = 0 }
+ format = left
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_detail_relation_baihe"
+ position = { x = 38 y = 417 }
+ font = "zhx_ad_body"
+ text = ""
+ maxWidth = 612
+ maxHeight = 28
+ borderSize = { x = 0 y = 0 }
+ format = left
+ fixedsize = yes
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_ruins_button_baihe"
+ position = { x = 38 y = 532 }
+ quadTextureSprite = "GFX_zhx_ad_small_button"
+ buttonText = "zhx_ad_ruins_button_baihe"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_ruins_count_baihe"
+ position = { x = 116 y = 539 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 130
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ fixedsize = yes
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_expel_baihe"
+ position = { x = 328 y = 532 }
+ quadTextureSprite = "GFX_zhx_ad_action_button"
+ buttonText = "zhx_ad_expel_baihe"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_withdraw_baihe"
+ position = { x = 492 y = 532 }
+ quadTextureSprite = "GFX_zhx_ad_action_button"
+ buttonText = "zhx_ad_withdraw_baihe"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_row_lianheng_6"
+ position = { x = 20 y = 295 }
+ quadTextureSprite = "GFX_zhx_ad_row"
+ buttonText = "zhx_ad_row_lianheng_6"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_lianheng_6_selected"
+ position = { x = 20 y = 295 }
+ spriteType = "GFX_zhx_ad_selected"
+ scale = 1
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_lianheng_6_emblem"
+ position = { x = 24 y = 300 }
+ spriteType = "GFX_zhx_doctrine_zongheng_school"
+ scale = 0.5
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+iconType = {
+    name = "zhx_ad_row_lianheng_6_status_seal"
+ position = { x = 466 y = 300 }
+ spriteType = "GFX_zhx_ad_status"
+ scale = 1
+ alwaystransparent = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_lianheng_6_name"
+ position = { x = 55 y = 303 }
+ font = "zhx_ad_name"
+ text = ""
+ maxWidth = 120
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_lianheng_6_school"
+ position = { x = 180 y = 305 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 58
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_lianheng_6_site"
+ position = { x = 242 y = 305 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 106
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_lianheng_6_owner"
+ position = { x = 357 y = 305 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 106
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_row_lianheng_6_status"
+ position = { x = 481 y = 305 }
+ font = "zhx_ad_body"
+ text = ""
+ maxWidth = 78
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ alwaystransparent = yes
+ fixedsize = yes
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_row_lianheng_6_goto"
+ position = { x = 575 y = 299 }
+ quadTextureSprite = "GFX_zhx_ad_small_button"
+ buttonText = "zhx_ad_row_lianheng_6_goto"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_detail_lianheng"
+ position = { x = 38 y = 383 }
+ font = "zhx_ad_name"
+ text = ""
+ maxWidth = 590
+ maxHeight = 28
+ borderSize = { x = 0 y = 0 }
+ format = left
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_detail_place_lianheng"
+ position = { x = 38 y = 499 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 612
+ maxHeight = 22
+ borderSize = { x = 0 y = 0 }
+ format = left
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_detail_benefit_lianheng"
+ position = { x = 38 y = 450 }
+ font = "zhx_ad_body"
+ text = ""
+ maxWidth = 612
+ maxHeight = 44
+ borderSize = { x = 0 y = 0 }
+ format = left
+ fixedsize = yes
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_detail_relation_lianheng"
+ position = { x = 38 y = 417 }
+ font = "zhx_ad_body"
+ text = ""
+ maxWidth = 612
+ maxHeight = 28
+ borderSize = { x = 0 y = 0 }
+ format = left
+ fixedsize = yes
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_ruins_button_lianheng"
+ position = { x = 38 y = 532 }
+ quadTextureSprite = "GFX_zhx_ad_small_button"
+ buttonText = "zhx_ad_ruins_button_lianheng"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+instantTextBoxType = {
+    name = "zhx_ad_ruins_count_lianheng"
+ position = { x = 116 y = 539 }
+ font = "zhx_ad_muted"
+ text = ""
+ maxWidth = 130
+ maxHeight = 24
+ borderSize = { x = 0 y = 0 }
+ format = left
+ fixedsize = yes
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_expel_lianheng"
+ position = { x = 328 y = 532 }
+ quadTextureSprite = "GFX_zhx_ad_action_button"
+ buttonText = "zhx_ad_expel_lianheng"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+guiButtonType = {
+    name = "zhx_ad_withdraw_lianheng"
+ position = { x = 492 y = 532 }
+ quadTextureSprite = "GFX_zhx_ad_action_button"
+ buttonText = "zhx_ad_withdraw_lianheng"
+ buttonFont = "zhx_ad_body"
+ clicksound = click
+ scripted = yes
+
+}
+
+}
 }
 	
 	################# personal deity		

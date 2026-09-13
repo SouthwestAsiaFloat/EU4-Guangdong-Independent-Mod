@@ -405,6 +405,7 @@ if = {{
     clr_global_flag = zhx_academy_dormant_{key}
     zhx_academy_clear_refuge_offer_flags = yes
     zhx_refresh_academy_country_effects = yes
+    zhx_ad_refresh_viewers = yes
 }}"""
 
 
@@ -419,6 +420,7 @@ def finish_effect(entry: dict[str, object]) -> str:
         duration = -1
     }}
     set_global_flag = zhx_academy_dormant_{key}
+    zhx_ad_refresh_viewers = yes
     owner = {{
         if = {{
             limit = {{ ai = no }}
@@ -947,6 +949,13 @@ def render_events(academies: list[dict[str, object]]) -> str:
             "        }",
             "    }",
             "",
+            "    # Native goto reads event-local targets, not the global index.",
+            "    immediate = {",
+            "        event_target:zhx_academy_arrival_province = {",
+            "            save_event_target_as = zhx_academy_arrival_province",
+            "        }",
+            "    }",
+            "",
             "    option = {",
             "        name = zhx_academy_lifecycle.211.a",
             "        hidden_effect = {",
@@ -999,6 +1008,13 @@ def render_events(academies: list[dict[str, object]]) -> str:
         )
     sections.extend(
         [
+            "        }",
+            "    }",
+            "",
+            "    # Native goto reads event-local targets, not the global index.",
+            "    immediate = {",
+            "        event_target:zhx_academy_withdrawn_province = {",
+            "            save_event_target_as = zhx_academy_withdrawn_province",
             "        }",
             "    }",
             "",

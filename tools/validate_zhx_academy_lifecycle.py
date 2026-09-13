@@ -232,7 +232,14 @@ def validate_unique_generated_blocks(academies: list[dict[str, object]]) -> None
     )
     modifier_owners: dict[str, list[Path]] = {key: [] for key in expected_modifier_keys}
     for path in (MOD / "common/event_modifiers").glob("*.txt"):
-        for key in top_level_keys(path.read_text(encoding="utf-8-sig")):
+        # Inherited vanilla modifiers contain legacy-encoded comments. Keep
+        # bytes lossless while scanning their ASCII top-level identifiers.
+        raw = path.read_bytes()
+        try:
+            source = raw.decode("utf-8-sig")
+        except UnicodeDecodeError:
+            source = raw.decode("latin-1")
+        for key in top_level_keys(source):
             if key in modifier_owners:
                 modifier_owners[key].append(path)
     for key, owners in modifier_owners.items():
@@ -748,6 +755,11 @@ def validate_player_arrival_presentation(
         ".211 must expose the native province locator for its saved destination",
     )
     require(
+        "save_event_target_as = zhx_academy_arrival_province"
+        in nested_block_body(arrival, "immediate"),
+        ".211 native goto requires an event-local destination snapshot",
+    )
+    require(
         arrival.count("clear_global_event_target = zhx_academy_arrival_province")
         == 1,
         ".211 acknowledgement must clear its disposable global destination target",
@@ -983,6 +995,7 @@ def validate_withdrawal_presentation(
             "current ownership check",
         ),
         ("goto = zhx_academy_withdrawn_province", "province goto"),
+        ("save_event_target_as = zhx_academy_withdrawn_province", "event-local goto snapshot"),
         ("name = zhx_academy_lifecycle.230.a", "acknowledgement option"),
         ("zhx_academy_clear_result_flags = yes", "result identity cleanup"),
         (

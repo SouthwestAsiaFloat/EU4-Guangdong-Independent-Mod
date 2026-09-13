@@ -1,0 +1,98 @@
+(lldb) target create "/Users/xinanyapiao/Library/Application Support/Steam/steamapps/common/Europa Universalis IV/eu4.app/Contents/MacOS/eu4"
+Current executable set to '/Users/xinanyapiao/Library/Application Support/Steam/steamapps/common/Europa Universalis IV/eu4.app/Contents/MacOS/eu4' (x86_64).
+(lldb) disassemble -n "CEvent::GetGoToProvince(CEventScope const&) const"
+eu4`CEvent::GetGoToProvince:
+eu4[0x1005fa4de] <+0>:   pushq  %rbp
+eu4[0x1005fa4df] <+1>:   movq   %rsp, %rbp
+eu4[0x1005fa4e2] <+4>:   pushq  %r15
+eu4[0x1005fa4e4] <+6>:   pushq  %r14
+eu4[0x1005fa4e6] <+8>:   pushq  %r12
+eu4[0x1005fa4e8] <+10>:  pushq  %rbx
+eu4[0x1005fa4e9] <+11>:  subq   $0x20, %rsp
+eu4[0x1005fa4ed] <+15>:  movq   %rsi, %r14
+eu4[0x1005fa4f0] <+18>:  movl   0x7fc(%rdi), %eax
+eu4[0x1005fa4f6] <+24>:  cmpl   $0x2992, %eax             ; imm = 0x2992
+eu4[0x1005fa4fb] <+29>:  je     0x1005fa511               ; <+51>
+eu4[0x1005fa4fd] <+31>:  cmpl   $0x2d99, %eax             ; imm = 0x2D99
+eu4[0x1005fa502] <+36>:  je     0x1005fa517               ; <+57>
+eu4[0x1005fa504] <+38>:  cmpl   $0x2d98, %eax             ; imm = 0x2D98
+eu4[0x1005fa509] <+43>:  jne    0x1005fa52d               ; <+79>
+eu4[0x1005fa50b] <+45>:  movq   0x10(%r14), %rax
+eu4[0x1005fa50f] <+49>:  jmp    0x1005fa51b               ; <+61>
+eu4[0x1005fa511] <+51>:  movq   0x18(%r14), %rax
+eu4[0x1005fa515] <+55>:  jmp    0x1005fa51b               ; <+61>
+eu4[0x1005fa517] <+57>:  movq   0x20(%r14), %rax
+eu4[0x1005fa51b] <+61>:  movl   0x28(%rax), %ebx
+eu4[0x1005fa51e] <+64>:  movl   %ebx, %eax
+eu4[0x1005fa520] <+66>:  addq   $0x20, %rsp
+eu4[0x1005fa524] <+70>:  popq   %rbx
+eu4[0x1005fa525] <+71>:  popq   %r12
+eu4[0x1005fa527] <+73>:  popq   %r14
+eu4[0x1005fa529] <+75>:  popq   %r15
+eu4[0x1005fa52b] <+77>:  popq   %rbp
+eu4[0x1005fa52c] <+78>:  retq
+eu4[0x1005fa52d] <+79>:  movq   %rdi, %rbx
+eu4[0x1005fa530] <+82>:  leaq   0x800(%rdi), %r15
+eu4[0x1005fa537] <+89>:  leaq   -0x38(%rbp), %r12
+eu4[0x1005fa53b] <+93>:  movq   %r12, %rdi
+eu4[0x1005fa53e] <+96>:  movq   %r15, %rsi
+eu4[0x1005fa541] <+99>:  callq  0x101864040               ; CString::CString(char const*)
+eu4[0x1005fa546] <+104>: movq   %r14, %rdi
+eu4[0x1005fa549] <+107>: movq   %r12, %rsi
+eu4[0x1005fa54c] <+110>: callq  0x1006067ea               ; CEventScope::HasSavedEventTarget(CString const&) const
+eu4[0x1005fa551] <+115>: movl   %eax, %r12d
+eu4[0x1005fa554] <+118>: testb  $0x1, -0x38(%rbp)
+eu4[0x1005fa558] <+122>: je     0x1005fa563               ; <+133>
+eu4[0x1005fa55a] <+124>: movq   -0x28(%rbp), %rdi
+eu4[0x1005fa55e] <+128>: callq  0x1018cc85a               ; symbol stub for: operator delete(void*)
+eu4[0x1005fa563] <+133>: testb  %r12b, %r12b
+eu4[0x1005fa566] <+136>: je     0x1005fa5a3               ; <+197>
+eu4[0x1005fa568] <+138>: leaq   -0x38(%rbp), %rbx
+eu4[0x1005fa56c] <+142>: movq   %rbx, %rdi
+eu4[0x1005fa56f] <+145>: movq   %r15, %rsi
+eu4[0x1005fa572] <+148>: callq  0x101864040               ; CString::CString(char const*)
+eu4[0x1005fa577] <+153>: movq   %rbx, %rdi
+eu4[0x1005fa57a] <+156>: xorl   %esi, %esi
+eu4[0x1005fa57c] <+158>: callq  0x10063d3a0               ; CIntegerFlags::GetFlagIndex(CString const&, bool)
+eu4[0x1005fa581] <+163>: movswl %ax, %esi
+eu4[0x1005fa584] <+166>: movq   %r14, %rdi
+eu4[0x1005fa587] <+169>: callq  0x100606794               ; CEventScope::GetSavedEventTarget(short) const
+eu4[0x1005fa58c] <+174>: movl   0xc(%rax), %ebx
+eu4[0x1005fa58f] <+177>: testb  $0x1, -0x38(%rbp)
+eu4[0x1005fa593] <+181>: je     0x1005fa51e               ; <+64>
+eu4[0x1005fa595] <+183>: movq   -0x28(%rbp), %rdi
+eu4[0x1005fa599] <+187>: callq  0x1018cc85a               ; symbol stub for: operator delete(void*)
+eu4[0x1005fa59e] <+192>: jmp    0x1005fa51e               ; <+64>
+eu4[0x1005fa5a3] <+197>: addq   $0x7fc, %rbx              ; imm = 0x7FC
+eu4[0x1005fa5aa] <+204>: movq   %rbx, %rdi
+eu4[0x1005fa5ad] <+207>: callq  0x10188274e               ; CToken::GetInt() const
+eu4[0x1005fa5b2] <+212>: movl   %eax, %ebx
+eu4[0x1005fa5b4] <+214>: jmp    0x1005fa51e               ; <+64>
+eu4[0x1005fa5b9] <+219>: jmp    0x1005fa5bb               ; <+221>
+eu4[0x1005fa5bb] <+221>: movq   %rax, %rbx
+eu4[0x1005fa5be] <+224>: testb  $0x1, -0x38(%rbp)
+eu4[0x1005fa5c2] <+228>: je     0x1005fa5cd               ; <+239>
+eu4[0x1005fa5c4] <+230>: movq   -0x28(%rbp), %rdi
+eu4[0x1005fa5c8] <+234>: callq  0x1018cc85a               ; symbol stub for: operator delete(void*)
+eu4[0x1005fa5cd] <+239>: movq   %rbx, %rdi
+eu4[0x1005fa5d0] <+242>: callq  0x1018cc47c               ; symbol stub for: _Unwind_Resume
+eu4[0x1005fa5d5] <+247>: ud2
+eu4[0x1005fa5d7] <+249>: nop
+(lldb) disassemble -n "CEventWindow::GoToProvinceEvent(CEvent const&, CEventScope const&)"
+eu4`CEventWindow::GoToProvinceEvent:
+eu4[0x100eebf36] <+0>:  pushq  %rbp
+eu4[0x100eebf37] <+1>:  movq   %rsp, %rbp
+eu4[0x100eebf3a] <+4>:  cmpl   $0x0, 0x7fc(%rsi)
+eu4[0x100eebf41] <+11>: je     0x100eebf67               ; <+49>
+eu4[0x100eebf43] <+13>: movq   %rsi, %rdi
+eu4[0x100eebf46] <+16>: movq   %rdx, %rsi
+eu4[0x100eebf49] <+19>: callq  0x1005fa4de               ; CEvent::GetGoToProvince(CEventScope const&) const
+eu4[0x100eebf4e] <+24>: leaq   0x136626b(%rip), %rcx     ; CCurrentGameState::_pInstance
+eu4[0x100eebf55] <+31>: movq   (%rcx), %rcx
+eu4[0x100eebf58] <+34>: movq   0x1d48(%rcx), %rdi
+eu4[0x100eebf5f] <+41>: movl   %eax, %esi
+eu4[0x100eebf61] <+43>: popq   %rbp
+eu4[0x100eebf62] <+44>: jmp    0x1005f6f2a               ; CEU3Idler::CenterToAndHighlight(int)
+eu4[0x100eebf67] <+49>: popq   %rbp
+eu4[0x100eebf68] <+50>: retq
+eu4[0x100eebf69] <+51>: nop

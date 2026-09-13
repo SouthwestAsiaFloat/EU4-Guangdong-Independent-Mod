@@ -806,6 +806,13 @@ country_event = {
         }
     }
 
+    # Native goto reads event-local targets, not the global index.
+    immediate = {
+        event_target:zhx_academy_arrival_province = {
+            save_event_target_as = zhx_academy_arrival_province
+        }
+    }
+
     option = {
         name = zhx_academy_lifecycle.211.a
         hidden_effect = {
@@ -852,6 +859,13 @@ country_event = {
             AND = { has_country_flag = zhx_academy_result_zhisheng event_target:zhx_academy_withdrawn_province = { has_province_modifier = zhx_academy_zhisheng } }
             AND = { has_country_flag = zhx_academy_result_baihe event_target:zhx_academy_withdrawn_province = { has_province_modifier = zhx_academy_baihe } }
             AND = { has_country_flag = zhx_academy_result_lianheng event_target:zhx_academy_withdrawn_province = { has_province_modifier = zhx_academy_lianheng } }
+        }
+    }
+
+    # Native goto reads event-local targets, not the global index.
+    immediate = {
+        event_target:zhx_academy_withdrawn_province = {
+            save_event_target_as = zhx_academy_withdrawn_province
         }
     }
 

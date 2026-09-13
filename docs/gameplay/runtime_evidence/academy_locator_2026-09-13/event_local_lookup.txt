@@ -1,0 +1,65 @@
+(lldb) target create "/Users/xinanyapiao/Library/Application Support/Steam/steamapps/common/Europa Universalis IV/eu4.app/Contents/MacOS/eu4"
+Current executable set to '/Users/xinanyapiao/Library/Application Support/Steam/steamapps/common/Europa Universalis IV/eu4.app/Contents/MacOS/eu4' (x86_64).
+(lldb) disassemble -n "CEventScope::HasSavedEventTarget(CString const&) const"
+eu4`CEventScope::HasSavedEventTarget:
+eu4[0x1006067ea] <+0>:  pushq  %rbp
+eu4[0x1006067eb] <+1>:  movq   %rsp, %rbp
+eu4[0x1006067ee] <+4>:  pushq  %r15
+eu4[0x1006067f0] <+6>:  pushq  %r14
+eu4[0x1006067f2] <+8>:  pushq  %rbx
+eu4[0x1006067f3] <+9>:  pushq  %rax
+eu4[0x1006067f4] <+10>: movq   %rsi, %r14
+eu4[0x1006067f7] <+13>: movq   %rdi, %rax
+eu4[0x1006067fa] <+16>: movq   0x18(%rdi), %rdi
+eu4[0x1006067fe] <+20>: cmpq   %rax, %rdi
+eu4[0x100606801] <+23>: jne    0x1006067f7               ; <+13>
+eu4[0x100606803] <+25>: movq   0x80(%rax), %rbx
+eu4[0x10060680a] <+32>: movq   0x88(%rax), %r15
+eu4[0x100606811] <+39>: cmpq   %rbx, %r15
+eu4[0x100606814] <+42>: je     0x100606837               ; <+77>
+eu4[0x100606816] <+44>: movswl 0x20(%rbx), %edi
+eu4[0x10060681a] <+48>: callq  0x10063d768               ; CIntegerFlags::GetFlagString(short)
+eu4[0x10060681f] <+53>: movq   %rax, %rdi
+eu4[0x100606822] <+56>: movq   %r14, %rsi
+eu4[0x100606825] <+59>: callq  0x10000b730               ; CString::operator==(CString const&) const
+eu4[0x10060682a] <+64>: testb  %al, %al
+eu4[0x10060682c] <+66>: jne    0x10060683b               ; <+81>
+eu4[0x10060682e] <+68>: addq   $0x28, %rbx
+eu4[0x100606832] <+72>: cmpq   %r15, %rbx
+eu4[0x100606835] <+75>: jne    0x100606816               ; <+44>
+eu4[0x100606837] <+77>: xorl   %eax, %eax
+eu4[0x100606839] <+79>: jmp    0x10060683d               ; <+83>
+eu4[0x10060683b] <+81>: movb   $0x1, %al
+eu4[0x10060683d] <+83>: addq   $0x8, %rsp
+eu4[0x100606841] <+87>: popq   %rbx
+eu4[0x100606842] <+88>: popq   %r14
+eu4[0x100606844] <+90>: popq   %r15
+eu4[0x100606846] <+92>: popq   %rbp
+eu4[0x100606847] <+93>: retq
+(lldb) disassemble -n "CEventScope::GetSavedEventTarget(short) const"
+eu4`CEventScope::GetSavedEventTarget:
+eu4[0x100606794] <+0>:  pushq  %rbp
+eu4[0x100606795] <+1>:  movq   %rsp, %rbp
+eu4[0x100606798] <+4>:  movq   %rdi, %rax
+eu4[0x10060679b] <+7>:  movq   0x18(%rdi), %rdi
+eu4[0x10060679f] <+11>: cmpq   %rax, %rdi
+eu4[0x1006067a2] <+14>: jne    0x100606798               ; <+4>
+eu4[0x1006067a4] <+16>: movq   0x80(%rax), %rcx
+eu4[0x1006067ab] <+23>: movq   0x88(%rax), %rax
+eu4[0x1006067b2] <+30>: subq   %rcx, %rax
+eu4[0x1006067b5] <+33>: sarq   $0x3, %rax
+eu4[0x1006067b9] <+37>: movabsq $-0x3333333333333333, %rdx ; imm = 0xCCCCCCCCCCCCCCCD
+eu4[0x1006067c3] <+47>: imulq  %rax, %rdx
+eu4[0x1006067c7] <+51>: leaq   0x17b8dc2(%rip), %rax     ; CNullSavedEventTarget::_Instance
+eu4[0x1006067ce] <+58>: testl  %edx, %edx
+eu4[0x1006067d0] <+60>: jle    0x1006067e8               ; <+84>
+eu4[0x1006067d2] <+62>: movl   %edx, %edx
+eu4[0x1006067d4] <+64>: cmpw   %si, 0x20(%rcx)
+eu4[0x1006067d8] <+68>: je     0x1006067e5               ; <+81>
+eu4[0x1006067da] <+70>: addq   $0x28, %rcx
+eu4[0x1006067de] <+74>: decq   %rdx
+eu4[0x1006067e1] <+77>: jne    0x1006067d4               ; <+64>
+eu4[0x1006067e3] <+79>: jmp    0x1006067e8               ; <+84>
+eu4[0x1006067e5] <+81>: movq   %rcx, %rax
+eu4[0x1006067e8] <+84>: popq   %rbp
+eu4[0x1006067e9] <+85>: retq
